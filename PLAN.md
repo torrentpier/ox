@@ -29,7 +29,7 @@ of the deliverable, not a side note.
 | Exporter — `resources` full run     | Done — 230 resources, 2.2 MB on disk   |
 | Builder — minimal slice             | Done — `index`, category, forum, thread, resource and resource-category pages; dark-mode CSS |
 | Builder — pagination (forum + thread) | Not started — every thread/forum is one HTML page |
-| Builder — `message_parsed` rewrite (URLs, sandboxing) | Not started          |
+| Builder — `message_parsed` rewrite (URLs, sandboxing) | Done (sans R2) — strips `<script>` and `on*`; whitelists YouTube iframes; lazy-loads `<img>`; rewrites internal links to relative + canonical slug; collapses `/page-N` until pagination lands |
 | Builder — sitemap, robots.txt       | Done — `sitemap.xml` lists all categories, forums, threads, resources with lastmod where available |
 | Builder — `/resources/` index, `/search/` placeholder | Done                 |
 | Attachment mirror to R2             | Not started — R2 bucket not provisioned|
