@@ -16,9 +16,11 @@ import logging
 from pathlib import Path
 from typing import Any, Iterable
 
+import httpx
+
 from .api import XfClient
 from .io import write_json_atomic
-from .threads import extract_slug, url_path
+from .threads import extract_slug, normalise_attachment, url_path
 from .users import UserCache
 
 log = logging.getLogger(__name__)
@@ -80,9 +82,15 @@ def normalise_resource(r: dict[str, Any], versions: list[dict[str, Any]]) -> dic
         "resource_date": r.get("resource_date"),
         "last_update": r.get("last_update"),
         "icon_url": r.get("icon_url"),
+        "external_url": r.get("external_url") or None,
+        "is_fileless": r.get("is_fileless"),
         "tags": r.get("tags") or [],
         "custom_fields": r.get("custom_fields") or {},
-        "description": r.get("description"),
+        "description_parsed": r.get("description_parsed"),
+        "description_attachments": [
+            normalise_attachment(a) for a in (r.get("DescriptionAttachments") or [])
+        ],
+        "current_files": [normalise_file(f) for f in (r.get("current_files") or [])],
         "versions": [normalise_version(v) for v in versions],
     }
 
@@ -115,8 +123,18 @@ def export_one_resource(
         return False
 
     detail = client.get(f"/resources/{resource_id}").get("resource") or {}
-    versions_payload = client.get(f"/resources/{resource_id}/versions")
-    versions = versions_payload.get("versions") or []
+    versions: list[dict[str, Any]] = []
+    if (detail.get("Category") or {}).get("enable_versioning", True):
+        try:
+            versions_payload = client.get(f"/resources/{resource_id}/versions")
+            versions = versions_payload.get("versions") or []
+        except httpx.HTTPStatusError as e:
+            # XF returns 400 'xfrm_this_resource_is_not_versioned' for single-file
+            # releases living in a versioned category; treat as zero versions.
+            if e.response.status_code == 400:
+                log.info("Resource %s: not versioned (using current_files)", resource_id)
+            else:
+                raise
 
     user_cache.add(detail.get("User"))
 
