@@ -1,0 +1,89 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58578,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 25725,
+  "last_post_date": 1391759401,
+  "node_id": 110,
+  "post_date": 1391550067,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58578,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\n <br />\nСегодня на нашем форуме произошли некоторые изменения в структуре разделов:<br />\n <br />\n1) Тема с пожеланиями по улучшению движка в преддверии стабильного релиза r600 начала бить рекорды по активности, в результате чего на форум был добавлен специальный раздел, в котором в формате &quot;одна тема-одно предложение&quot; вы можете высказать свои предложения и пожелания того, что бы вы хотели видеть в движке нового и/или тех функций, которые по вашему мнению требуется переделать с новой функциональностью. Раздел находится по адресу <b><a href=\"http://torrentpier.com/forums/%D0%9F%D0%BE%D0%B6%D0%B5%D0%BB%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BF%D0%BE-%D1%83%D0%BB%D1%83%D1%87%D1%88%D0%B5%D0%BD%D0%B8%D1%8E-torrentpier-ii.58/\" class=\"link link--internal\">Пожелания по улучшению TorrentPier II</a></b> и вы прямо сейчас можете присоединиться к его наполнению или обсуждению того, что в разделе уже предложено.<br />\n <br />\n2) Так как раздел с основными вопросами по движку изжил себя и по сути превратился в раздел, где в каждой теме задается один вопрос, было принято решение это все &quot;узаконить&quot; и официально привести раздел к виду &quot;одна тема - один вопрос&quot;. В новом разделе <b><a href=\"http://torrentpier.com/forums/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%BF%D0%BE-torrentpier-ii.10/\" class=\"link link--internal\">Основные вопросы по TorrentPier II</a></b> вы можете задать любой вопрос по движку и гарантированно получить на него ответ. А благодаря использованию системы префиксов к темам форума, администрация форума постарается все это дело упорядочить, чтобы раздел содержал исключительно решенные вопросы и/или готовые инструкции (FAQ) для движка.<br />\n <br />\nТакже хотелось бы обратить ваше внимание на блок <b>&quot;Поддержка разработки&quot;</b>, расположенный в боковой панели на главной странице форума. Благодаря нему вы всегда можете поддержать разработку TorrentPier II посредством перевода на наш счет в Яндекс.Деньгах (со своего счета или со счета карты Visa/Mastercard). Все полученные средства пойдут на продление доменного имени и лицензии на форум.<br />\n <br />\nСпасибо за внимание",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1391550067,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58752,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Также сегодня был переделан раздел <a href=\"http://torrentpier.com/forums/%D0%9F%D0%B5%D1%80%D0%B5%D0%B5%D0%B7%D0%B4-%D0%B8-%D0%B0%D0%B4%D0%B0%D0%BF%D1%82%D0%B0%D1%86%D0%B8%D1%8F-%D0%BC%D0%BE%D0%B4%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B9-%D0%BD%D0%B0-torrentpier-ii.19/\" class=\"link link--internal\">Перенос и адаптация модификаций на TorrentPier II</a> - если ранее он содержал в себе только темы по помощи в переезде с иных движков на наш, то теперь там возможно размещение тем с просьбами о помощи в адаптации различных модификаций под наш же движок. В том числе, с просьбами о помощи с адаптацией модификаций для более ранних версий движка.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1391718777,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58784,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Exile</b>, мне кажется получится некая свалка в новом разделе, для модификаций лучше создать отдельный раздел.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1391759401,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "novye-razdely-na-forume",
+  "sticky": false,
+  "tags": [
+    "новости"
+  ],
+  "title": "Новые разделы на форуме",
+  "url_path": "/threads/novye-razdely-na-forume.25725/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 2685
+}

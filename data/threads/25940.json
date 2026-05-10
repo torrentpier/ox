@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 60806,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 25940,
+  "last_post_date": 1402599661,
+  "node_id": 80,
+  "post_date": 1400185463,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60806,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "R585 (чистая).<br />\nПри выборе скрытия pron-форумов при редактировании профиля, прон-форумы на главной не скрываются и свободно работают все топики в таких форумах.<br />\n <br />\nЕсть ли у кого-то такая некорректная работа или естьещё какие-то настройки, которые могли на это повлиять?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1400185463,
+      "user_id": 1478,
+      "user_title": "User",
+      "username": "Nikolay90"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61087,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "В админке в настройках трекера порно-форумы указаны?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1402599661,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 24,
+  "reply_count": 1,
+  "slug": "skrytie-pron-forumov",
+  "sticky": false,
+  "tags": [],
+  "title": "Скрытие pron-форумов",
+  "url_path": "/threads/skrytie-pron-forumov.25940/",
+  "user_id": 1478,
+  "username": "Nikolay90",
+  "view_count": 945
+}

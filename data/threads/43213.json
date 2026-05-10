@@ -1,0 +1,107 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 98264,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 43213,
+  "last_post_date": 1771767718,
+  "node_id": 111,
+  "post_date": 1760508444,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1760508420,
+          "file_size": 6648,
+          "filename": "Cattle.webp",
+          "height": 343,
+          "id": 6591,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/cattle-webp.6591/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6595-87fd22d494bb4cd1271e40dc8625ca3e.jpg?hash=jFIp-r3dyo",
+          "width": 302
+        }
+      ],
+      "id": 98264,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier Cattle. Версия 2.4.13</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/6591/\" alt=\"Cattle.webp\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/releases/tag/v2.4.13\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.4.13 · torrentpier/torrentpier</a><br />\n<br />\n<b>Чейнджлог:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/compare/v2.4.12...v2.4.13\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Comparing v2.4.12...v2.4.13 · torrentpier/torrentpier</a><br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-rocket-features\"></a>🚀 Features&#8203;<a class=\"hoverLink\" href=\"#-rocket-features\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\">Bring back bb_exit() &amp; prn_r() functions (<a href=\"https://github.com/torrentpier/torrentpier/pull/2114\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2114</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/65c1b9c6821bbb96474ec79d02c7d5618b4fddb0\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">65c1b9c</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-bug-bug-fixes\"></a>🐛 Bug Fixes&#8203;<a class=\"hoverLink\" href=\"#-bug-bug-fixes\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(cookie)</i> Correct cookie value handling and add SameSite support (<a href=\"https://github.com/torrentpier/torrentpier/pull/2115\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2115</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/f89551ac18d0fc13cf9df64a75c9fbf6e4727cc5\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">f89551a</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(i18n)</i> Support deep merge for nested translation keys (<a href=\"https://github.com/torrentpier/torrentpier/pull/2111\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2111</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/98583faab9918baa4ad03d1a67e1ebe2640011ab\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">98583fa</a>)</li>\n<li data-xf-list-type=\"ul\">Prevent robots indexing for login &amp; registration pages (<a href=\"https://github.com/torrentpier/torrentpier/pull/2116\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2116</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/e98e66941a8b9b0a9e4b38c0ba4816b2793dcd4e\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">e98e669</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-gear-miscellaneous\"></a>⚙️ Miscellaneous&#8203;<a class=\"hoverLink\" href=\"#-gear-miscellaneous\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(docker)</i> Fixed Caddyfile syntax (<a href=\"https://github.com/torrentpier/torrentpier/pull/2108\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2108</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/2cac35a21840b7d3fa17be651416b87fe3faec07\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">2cac35a</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-reverse-button-revert\"></a>◀️ Revert&#8203;<a class=\"hoverLink\" href=\"#-reverse-button-revert\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\">Demo mode: Save user language in cookies (<a href=\"https://github.com/torrentpier/torrentpier/pull/2117\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2117</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/2061ce29a8a28b902d1042d5c864814b1eb1d1d6\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">2061ce2</a>)</li>\n</ul>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1760508444,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1771767696,
+          "file_size": 78758,
+          "filename": "screenshot_1.webp",
+          "height": 1080,
+          "id": 6717,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot_1-webp.6717/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6721-31ed25676b0ddf6cc1032f0d0c3fc841.jpg?hash=i14N0k4bGw",
+          "width": 1920
+        }
+      ],
+      "id": 98423,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>I don&#039;t understand it. On the virtual machine on my computer everything works on http, not on https. Here on the server I bought, the same problem. The site works on http, but on https it shows me what is in the picture. It has been tested on Debian 13 and Ubuntu 24 LTS. I have been struggling with the problem for two days and I can&#039;t find the solution. 😒</b>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1771767718,
+      "user_id": 10958,
+      "user_title": "User",
+      "username": "haribo"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "torrentpier-cattle-versia-2-4-13",
+  "sticky": false,
+  "tags": [
+    "cattle",
+    "v2.4",
+    "новая версия",
+    "релиз",
+    "ченжлог"
+  ],
+  "title": "TorrentPier Cattle. Версия 2.4.13",
+  "url_path": "/threads/torrentpier-cattle-versia-2-4-13.43213/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 931
+}

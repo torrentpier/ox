@@ -1,0 +1,170 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "Медали 2.1.5.zip",
+      "id": 3741,
+      "local_path": null,
+      "r2_key": null,
+      "size": 554758,
+      "src_url": "https://torrentpier.com/api/resource-versions/320/download?file=3741"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]\n[CODE]SQL\n\nCREATE TABLE IF NOT EXISTS `bb_medal` (\n  `medal_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,\n  `cat_id` mediumint(8) unsigned NOT NULL DEFAULT '1',\n  `medal_name` varchar(40) NOT NULL,\n  `medal_description` varchar(255) NOT NULL,\n  `medal_image` varchar(40) DEFAULT NULL,\n  PRIMARY KEY (`medal_id`)\n) ENGINE=MyISAM  DEFAULT CHARSET=utf8;\n\nCREATE TABLE IF NOT EXISTS `bb_medal_cat` (\n  `cat_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,\n  `cat_title` varchar(100) NOT NULL,\n  `cat_order` mediumint(8) unsigned NOT NULL DEFAULT '0',\n  PRIMARY KEY (`cat_id`),\n  KEY `cat_order` (`cat_order`)\n) ENGINE=MyISAM  DEFAULT CHARSET=utf8;\n\nCREATE TABLE IF NOT EXISTS `bb_medal_mod` (\n  `mod_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,\n  `medal_id` mediumint(8) unsigned NOT NULL,\n  `user_id` mediumint(8) unsigned NOT NULL,\n  PRIMARY KEY (`mod_id`)\n) ENGINE=MyISAM  DEFAULT CHARSET=utf8;\n\nCREATE TABLE IF NOT EXISTS `bb_medal_user` (\n  `issue_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,\n  `medal_id` mediumint(8) unsigned NOT NULL,\n  `user_id` mediumint(8) unsigned NOT NULL,\n  `issue_reason` varchar(255) NOT NULL,\n  `issue_time` int(11) NOT NULL,\n  PRIMARY KEY (`issue_id`)\n) ENGINE=MyISAM  DEFAULT CHARSET=utf8;\n\nINSERT INTO `bb_config` VALUES('dis_medal_display', '1');\nINSERT INTO `bb_config` VALUES('medal_display_row', '1');\nINSERT INTO `bb_config` VALUES('medal_display_col', '3');\nINSERT INTO `bb_config` VALUES('medal_display_width', '');\nINSERT INTO `bb_config` VALUES('medal_display_height', '');\nINSERT INTO `bb_config` VALUES('medal_display_order', '0');\n\n\ninit_bb.php\n\nнайти\n\ndefine('BB_WORDS',                'bb_words');\n\nдобавить\n\n//Medal MOD\ndefine('POST_MEDAL_URL', 'm');    // Medal MOD\ndefine('MEDAL_CAT_URL', 'mc');    // Medal MOD\ndefine('PAGE_MEDALS', -2115);    // Medal MOD\n\ndefine('BB_MEDAL', 'bb_medal');        // Medal MOD\ndefine('BB_MEDAL_MOD', 'bb_medal_mod');    // Medal MOD\ndefine('BB_MEDAL_USER', 'bb_medal_user');    // Medal MOD\ndefine('BB_MEDAL_CAT', 'bb_medal_cat');    // Medal MOD\n\nfunctions.php\n\nдобавить в конец\n\n// Medals\nfunction check_medal_mod($medal_id)\n{\n    global $userdata;\n\n    $sql = \"SELECT *\n    FROM \" . BB_MEDAL_MOD . \"\n    WHERE medal_id =\" . $medal_id;\n\n    if ( !($result = DB()->sql_query($sql)) )\n    {\n        bb_die('Could not obtain user and medal information');\n    }\n\n    $medal_info = array();\n    $found = FALSE;\n    while ( $medal_info = DB()->sql_fetchrow($result) )\n    {\n\n        $medal_moderator = $medal_info['user_id'];\n\n        if ( $medal_moderator == $userdata['user_id'] )\n        {\n            $found = TRUE;\n        }\n    }\n    DB()->sql_freeresult($result);\n\n    return $found;\n}\nmain.php\n\n// Medal MOD\n$lang['Medals'] = 'Администраторы медали';\n$lang['Medal_Config'] = 'Настройка мода наград';\n$lang['Medal_Config_explain'] = 'Эта форма позволит вам настроить общие параметры наград';\n$lang['Medal_setting'] = 'Настройки наград';\n$lang['Allow_medal'] = 'Показывать медали в темах';\n$lang['Medal_rand'] = 'Разрешить случайное изображение наград в темах';\n$lang['Medal_rand_explain'] = 'Изображение будет отображаться в случайном порядке, только если вы позволите показывать награды в теме';\n$lang['Medal_display'] = 'Таблица наград (строки х столбцы)';\n$lang['Medal_display_explain'] = 'Определить, сколько строк и столбцов таблицы должно быть в теме.<br /> Лучше всего поставить значение <b>1х3</b>.';\n$lang['Medal_size'] = 'Максимальный размер награды в теме';\n$lang['Medal_size_explain'] = '(Высота x ширина в пикселах)<br />Если оставить поля пустыми, награда будет в оригинальном размере';\n$lang['Click_return_medalcfg'] = '%sВернуться%s к настройке мода наград';\n$lang['Medal_admin'] = 'Управление наградами';\n$lang['Medal_admin_explain'] = 'Из этой панели можно управлять всеми вашими наградами. Вы можете удалять, создавать и редактировать существующие награды.';\n$lang['Updated_medal'] = 'Медаль была успешно обновлена';\n$lang['Updated_medal_category'] = 'Категория успешно обновлена';\n$lang['Added_new_medal'] = 'Новая медаль была успешно создана';\n$lang['Added_new_category'] = 'Новая категория была успешно создана';\n$lang['Deleted_medal'] = 'Награда успешно удалена';\n$lang['Deleted_medal_category'] = 'Категория успешно удалена';\n$lang['New_medal'] = 'Новая награда';\n$lang['medal_name'] = 'Название награды';\n$lang['medal_description'] = 'Описание награды';\n$lang['medal_image'] = 'Изображение награды';\n$lang['medal_image_explain'] = 'Используйте это, чтобы определить изображение, связанное с медалью <br /> (Относительно phpBB2 корневой каталог)';\n$lang['No_medal_name'] = 'Вы должны указать имя для этой медали';\n$lang['No_medal_description'] = 'Вы должны указать описание для этой медали';\n$lang['No_medal_image'] = 'Вы должны указать изображения для этой медали';\n$lang['Must_select_medal'] = 'Необходимо указать медаль';\n$lang['Click_return_medaladmin'] = '%sВернуться к управлению наградами%s';\n$lang['Medal_mod'] = 'Модератор награды';\n$lang['Medal_mod_admin'] = 'Администрация медали';\n$lang['Medal_mod_admin_explain'] = 'Из этой панели можно назначить модератора медали.';\n$lang['Medal_mod_username'] = 'Назначить одного или нескольких пользователей модераторами награды';\n$lang['Medal_unmod_username'] = 'Удалить одного или нескольких модераторов';\n$lang['Medal_unmod_username_explain'] = 'Выделите модератора(ов) которых нужно удалить';\n$lang['No_medal_mod'] = 'Модератор не назначен';\n$lang['No_medal_in_cat'] = 'Нет медали в этой категории';\n$lang['Must_delete_medal'] = 'Вы должны удалить все медали, прежде чем удалить эту категорию';\n$lang['Category_delete'] = 'Delete Medal Category';\n$lang['Category_delete_explain'] = 'Форма позволит вам удалить категорию и решить, куда вы хотите поместить все медали, которые в ней содержатся.';\n$lang['Move_medals'] = 'Перемещение медали';\n$lang['Category_name'] = 'Название категории';\n$lang['Medal_mod_update_sucessful'] = 'Модератор медали был успешно обновлен';\n$lang['Click_return_medal_mod_admin'] = '%sВернуться к администрированию медалей.%s';\n//Medal MOD [END]\n\n// Medal MOD\n$lang['Medal_Control_Panel'] = 'Панель управления наградой';\n$lang['Medals'] = 'Награды';\n$lang['View_More'] = 'Подробнее';\n$lang['Medal_amount'] = 'Количество: ';\n$lang['Medal_Information'] = 'Информация о награде';\n$lang['Medal_name'] = 'Название';\n$lang['Medal_description'] = 'Описание награды';\n$lang['Medal_image'] = 'Изображение';\n$lang['Medal_details'] = 'Подробнее';\n$lang['Medal_reason'] = 'Причина награждения';\n$lang['Medal_reason_explain'] = 'Вы можете написать причину награждения<br />Это поле не обязательно для заполнения';\n$lang['Medal_no_reason'] = '<i>Не указана</i>';\n$lang['Medal_time'] = 'Время награждения';\n$lang['Medal_moderator'] = 'Модератор награды';\n$lang['No_medal_mod'] = 'Модератор еще не назначен';\n$lang['Medal_userlist'] = 'У кого есть?';\n$lang['Medal_Members'] = 'Награжденные пользователи';\n$lang['Medal_Members_explain'] = 'Нажмите на никнейм, чтобы отредактировать причину вручения';\n$lang['No_medal_members'] = 'Никто еще не награжден';\n$lang['No_medals_exist'] = 'Нет Медалей';\n$lang['Medal_not_exist'] = 'Это медаль не существует';\n$lang['No_username_specified'] = 'Не задано имя пользователя';\n$lang['No_medal_id_specified'] = 'Медаль не указана';\n$lang['Medal_user_username'] = 'Наградить пользователя';\n$lang['Medal_unmedal_username'] = 'Удалить эту награду у одного или нескольких пользователей';\n$lang['Medal_unmedal_username_explain'] = 'Выделите пользователей у которых нужно убрать награду';\n$lang['Medal_added'] = 'Вы были награждены этой медалью.';\n$lang['Medal_update_sucessful'] = 'Изменения внесены успешно';\n$lang['Could_not_anonymous_user'] = 'Нельзя давать награду Anonymous';\n$lang['Not_medal_moderator'] = 'Вы не модератор этой награды';\n$lang['Link_to_cp'] = 'Управление наградой';\n$lang['Click_return_medal'] = '%sВернуться к управлению наградой%s';\n$lang['No_medal'] = 'Нет медали в наличии';\n//Medal MOD [END]\n\n\nviewtopic.php\n\nнайти\n\n$template->assign_block_vars('postrow', array(\n\nперед добавить\n\n    // Medal MOD\n    $medal ='';\n    $sql = \"SELECT m.medal_id, m.medal_name\n        FROM \" . BB_MEDAL . \" m, \" . BB_MEDAL_USER . \" mu\n        WHERE mu.user_id = '\" . $postrow[$i]['user_id'] . \"'\n        AND m.medal_id = mu.medal_id\n        ORDER BY m.medal_name\";\n\n    if(!$result = DB()->sql_query($sql))\n    {\n        bb_die(\"Error getting medal information\");\n    }\n\n    $medal_list = DB()->sql_fetchrowset($result);\n    $medal_count = count($medal_list);\n\n    if ( $postrow[$i]['user_id'] == GUEST_UID )\n    {\n        $medal_count = '';\n    }\n    else\n    {\n        $medal_count = ($medal_count) ? $lang['Medals'] . ': <b>' . $medal_count . '</b>' . '  (<a href=\"profile.php?mode=viewprofile&amp;'. POST_USERS_URL .'='. $postrow[$i]['user_id'] . '#medal\" class=\"gensmall\">' . $lang['View_More'] . '</a>)' : $lang['Medals'] . ': ' . $lang['NONE'];\n    }\n    //Medal [END]\n   \n   \n    найти\n   \n    'POSTER_AVATAR'      => $poster_avatar,\n   \n    добавить\n   \n    'POSTER_MEDAL_COUNT' => $medal_count,\n\n    найти\n   \n        'RG_SIG_ATTACH'      => $postrow[$i]['attach_rg_sig'],\n    ));\n   \n    добавить\n   \n   \n    //Medal MOD\n    if ( $bb_cfg['dis_medal_display'] )\n    {\n        $order = ( $bb_cfg['medal_display_order'] ) ? \"RAND()\" : \"m.medal_name\";\n\n        $template->assign_block_vars('postrow.medal', array());\n\n        $sql = \"SELECT m.medal_id, m.medal_name, m.medal_image\n            FROM \" . BB_MEDAL . \" m, \" . BB_MEDAL_USER . \" mu\n            WHERE mu.user_id = '\" . $poster_id . \"'\n            AND m.medal_id = mu.medal_id\n            ORDER BY \" . $order;\n\n        if ($result = DB()->sql_query($sql))\n        {\n            $rowset = array();\n            while ($row = DB()->sql_fetchrow($result))\n            {\n                $rowset[$row['medal_image']]['medal_name'] = $row['medal_name'];\n                if ($rowset[$row['medal_image']]['medal_name'] == $row['medal_name'])\n                $rowset[$row['medal_image']]['medal_count'] = 1;\n            }\n\n            // Check Medal config in ACP\n            $medal_rows = $bb_cfg['medal_display_row'];\n            $medal_cols = $bb_cfg['medal_display_col'];\n            $medal_width = ( $bb_cfg['medal_display_width'] ) ? 'width=\"'.$bb_cfg['medal_display_width'].'\"' : '';\n            $medal_height = ( $bb_cfg['medal_display_height'] ) ? 'height=\"'.$bb_cfg['medal_display_height'].'\"' : '';\n\n            if ($medal_list)\n            {\n                $split_row = $medal_cols - 1;\n\n                $s_colspan = 0;\n                $row = 0;\n                $col = 0;\n\n                while (list($medal_image, $medal) = @each($rowset))\n                {\n                    if (!$col)\n                           {\n                        $template->assign_block_vars('postrow.medal.medal_row', array());\n                    }\n\n                    $template->assign_block_vars('postrow.medal.medal_row.medal_col', array(\n                        'MEDAL_IMAGE' => BB_ROOT . $medal_image,\n                        'MEDAL_WIDTH' => $medal_width,\n                        'MEDAL_HEIGHT' => $medal_height,\n                        'MEDAL_NAME' => $medal['medal_name'],\n                        'MEDAL_COUNT' => '('. $lang['Medal_amount'] . $medal['medal_count']. ')')\n                    );\n\n                    $s_colspan = max($s_colspan, $col + 1);\n\n                    if ($col == $split_row)\n                    {\n                        if ($row == $medal_rows - 1)\n                        {\n                            break;\n                        }\n                        $col = 0;\n                        $row++;\n                    }\n                    else\n                    {\n                        $col++;\n                    }\n                }\n            }\n        }\n        DB()->sql_freeresult($result);\n    }\n    //Medal MOD [END]\n   \n   \n    viewtopic.tpl\n   \n    найти\n   \n    <!-- IF postrow.POSTER_FROM --><p class=\"from\"><em>{L_LOCATION}:</em> {postrow.POSTER_FROM}</p><!-- ENDIF -->\n   \n    добавить\n   \n        <br /><br />{postrow.POSTER_MEDAL_COUNT}<br />\n        <hr>\n        <center>\n        <!-- BEGIN medal -->\n        <table border=\"0\" cellspacing=\"0\" cellpadding=\"5\">\n        <!-- BEGIN medal_row -->\n        <tr align=\"left\" valign=\"middle\">\n        <!-- BEGIN medal_col -->\n        <td><img src=\"{postrow.medal.medal_row.medal_col.MEDAL_IMAGE}\" border=\"0\" alt=\"{postrow.medal.medal_row.medal_col.MEDAL_NAME} {postrow.medal.medal_row.medal_col.MEDAL_COUNT}\" title=\"{postrow.medal.medal_row.medal_col.MEDAL_NAME} {postrow.medal.medal_row.medal_col.MEDAL_COUNT}\" {postrow.medal.medal_row.medal_col.MEDAL_WIDTH} {postrow.medal.medal_row.medal_col.MEDAL_HEIGHT} /></td>\n        <!-- END medal_col -->\n        </tr>\n        <!-- END medal_row -->\n    </table>\n    <!-- END medal -->\n    </center>\n   \n   \n    usercp_viewprofile.tpl\n   \n    найти\n   \n    <h4 class=\"cat border bw_TB\" id=\"username\">{L_CONTACT} <span class=\"editable bold\">{USERNAME}</span></h4>\n   \n    перед добавить\n   \n        <!-- BEGIN switch_display_medal -->\n        <!-- BEGIN details -->\n        &nbsp;{switch_display_medal.details.MEDAL_IMAGE_SMALL}&nbsp;\n        <!-- END details -->\n        <!-- END switch_display_medal -->\n       \nusercp_viewprofile.php\nнайти\n       \nelse\n{\n    $email = '';\n}\n\nдобавить\n\n// Medal MOD\n\n//\n// Category\n//\n\n$sql = \"SELECT cat_id, cat_title\n    FROM \" . BB_MEDAL_CAT . \"\n    ORDER BY cat_order\";\nif( !($result = DB()->sql_query($sql)) )\n{\n    bb_die('Could not query medal categories list);\n}\n\n$category_rows = array();\nwhile ( $row = DB()->sql_fetchrow($result) )\n{\n    $category_rows[] = $row;\n}\nDB()->sql_freeresult($result);\n\n$sql = \"SELECT m.medal_id, mu.user_id\n    FROM \" . BB_MEDAL . \" m, \" . BB_MEDAL_USER . \" mu\n    WHERE mu.user_id = '\" . $profiledata['user_id'] . \"'\n    AND m.medal_id = mu.medal_id\n    ORDER BY m.medal_name\";\n\nif($result = DB()->sql_query($sql))\n{\n    $medal_list = DB()->sql_fetchrowset($result);\n    $medal_count = count($medal_list);\n\n    if ( $medal_count )\n    {\n        $medal_count = '<b>' . $medal_count . '</b>';\n\n        $template->assign_block_vars('switch_display_medal', array());\n\n        $template->assign_block_vars('switch_display_medal.medal', array(\n            'MEDAL_BUTTON' => '<button onclick=\"ToggleBox(\\'toggle_medal\\')\">'.$lang['Medal_details'].'</button>')\n        );\n    }\n}\n\nfor ($i = 0; $i < count($category_rows); $i++)\n{\n    $cat_id = $category_rows[$i]['cat_id'];\n\n    $sql = \"SELECT m.medal_id, m.medal_name,m.medal_description, m.medal_image, m.cat_id, mu.issue_reason, mu.issue_time, c.cat_id, c.cat_title\n        FROM \" . BB_MEDAL . \" m, \" . BB_MEDAL_USER . \" mu, \" . BB_MEDAL_CAT . \" c\n        WHERE mu.user_id = '\" . $profiledata['user_id'] . \"'\n        AND m.cat_id = c.cat_id\n        AND m.medal_id = mu.medal_id\n        ORDER BY c.cat_order, m.medal_name, mu.issue_time\";\n\n    if ($result = DB()->sql_query($sql))\n    {\n        $row = $rowset = array();\n        $medal_time = $lang['Medal_time'] . ':&nbsp;';\n        $medal_reason = $lang['Medal_reason'] . ':&nbsp;';\n        while ($row = DB()->sql_fetchrow($result))\n        {\n            if (empty($rowset[$row['medal_name']]))\n            {\n                $rowset[$row['medal_name']]['cat_id'] = $row['cat_id'];\n                $rowset[$row['medal_name']]['cat_title'] = $row['cat_title'];\n                $rowset[$row['medal_name']]['medal_description'] = $row['medal_description'];\n                $rowset[$row['medal_name']]['medal_image'] = $row['medal_image'];\n                $row['issue_reason'] = ( $row['issue_reason'] ) ? $row['issue_reason'] : $lang['Medal_no_reason'];\n                $rowset[$row['medal_name']]['medal_issue'] = '<tr><td><span class=\"genmed\">' . $medal_time . bb_date($row['issue_time']) . '</span></td></tr><tr><td><span class=\"genmed\">' . $medal_reason . $row['issue_reason']  . '</span><hr></td></tr>';\n                $rowset[$row['medal_name']]['medal_count'] = '1';\n            }\n            else\n            {\n                $row['issue_reason'] = ( $row['issue_reason'] ) ? $row['issue_reason'] : $lang['Medal_no_reason'];\n                $rowset[$row['medal_name']]['medal_issue'] .= '<tr><td><span class=\"genmed\">' . $medal_time . bb_date($row['issue_time']) . '</span></td></tr><tr><td><span class=\"genmed\">' . $medal_reason . $row['issue_reason'] . '</span><hr /></td></tr>';\n                $rowset[$row['medal_name']]['medal_count'] += '1';\n            }\n        }\n\n        $medal_width = ( $bb_cfg['medal_display_width'] ) ? 'width=\"'.$bb_cfg['medal_display_width'].'\"' : '';\n        $medal_height = ( $bb_cfg['medal_display_height'] ) ? 'height=\"'.$bb_cfg['medal_display_height'].'\"' : '';\n\n        $medal_name = array();\n        $data = array();\n\n        //\n        // Should we display this category/medal set?\n        //\n        $display_medal = 0;\n\n        while (list($medal_name, $data) = @each($rowset))\n        {\n            if ( $cat_id == $data['cat_id'] ) { $display_medal = 1; }\n\n            if ( !empty($display_medal) )\n            {\n                $template->assign_block_vars('switch_display_medal.details', array(\n                    'MEDAL_CAT' => $data['cat_title'],\n                    'MEDAL_NAME' => $medal_name,\n                    'MEDAL_DESCRIPTION' => $data['medal_description'],\n                    'MEDAL_IMAGE' => '<img src=\"'. BB_ROOT . $data['medal_image'] . '\" border=\"0\" alt=\"' . $medal_name . '\" title=\"' . $medal_name . '\" />',\n                    'MEDAL_IMAGE_SMALL' => '<img src=\"'. BB_ROOT . $data['medal_image'] . '\" border=\"0\" alt=\"' . $medal_name . '\" title=\"' . $medal_name . '\"' . $medal_width . $medal_height . ' />',\n                    'MEDAL_ISSUE' => $data['medal_issue'],\n                    'MEDAL_COUNT' => $lang['Medal_amount'] . $data['medal_count'],\n\n                    'L_MEDAL_DESCRIPTION' => $lang['Medal_description'])\n                );\n                $display_medal = 0;\n            }\n        }\n    }\n}\n//Medal MOD [END]\n\nнайти\n\n'TRAF_STATS'           => !(IS_AM || $profile_user_id),\n\nдобавить\n\n    'L_USER_MEDAL' => $lang['Medals'],    // Medal MOD\n    'USER_MEDAL_COUNT' => $medal_count,    // Medal MOD\n    'L_MEDAL_INFORMATION' => $lang['Medal_Information'], // Medal MOD\n    'L_MEDAL_NAME' => $lang['Medal_name'],        // Medal MOD\n    'L_MEDAL_DETAIL' => $lang['Medal_details'],    // Medal MOD[/CODE]\n[/SPOILER]",
+    "owner": "Wertos",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1430245718,
+      "file_size": 5402,
+      "filename": "2B91F91D.webp",
+      "height": 226,
+      "id": 3734,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2b91f91d-webp.3734/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3738-48347241a0693fdfb4350f77987f5777.jpg?hash=6CyD1MDHvK",
+      "width": 377
+    },
+    {
+      "attach_date": 1430245718,
+      "file_size": 46618,
+      "filename": "78dCc8fe.webp",
+      "height": 572,
+      "id": 3735,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/78dcc8fe-webp.3735/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3739-0f489e0dfd3e9d12988d9bccaaaaa222.jpg?hash=pLVHylrn8L",
+      "width": 1244
+    },
+    {
+      "attach_date": 1430245719,
+      "file_size": 2250,
+      "filename": "7473F6e6.webp",
+      "height": 181,
+      "id": 3736,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/7473f6e6-webp.3736/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3740-8b160cfd4926802ead6e55c3ad5d5ee5.jpg?hash=XfD_8TV-RF",
+      "width": 184
+    },
+    {
+      "attach_date": 1430245719,
+      "file_size": 19450,
+      "filename": "79109aE1.webp",
+      "height": 362,
+      "id": 3737,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/79109ae1-webp.3737/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3741-9c71bf83dbad08ba92eb8414f837c3a2.jpg?hash=kcWAx5gQoq",
+      "width": 1254
+    },
+    {
+      "attach_date": 1430245719,
+      "file_size": 24116,
+      "filename": "a0104626.webp",
+      "height": 270,
+      "id": 3738,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/a0104626-webp.3738/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3742-065b3e08b13d08f27e541876e5977f8d.jpg?hash=jGLv07jnQt",
+      "width": 1040
+    },
+    {
+      "attach_date": 1430245719,
+      "file_size": 52676,
+      "filename": "Eec2e44f.webp",
+      "height": 603,
+      "id": 3739,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/eec2e44f-webp.3739/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3743-d0dcb5f528fbdbec7e80eb5bbbdd5acd.jpg?hash=zc2x1NU9_1",
+      "width": 1040
+    },
+    {
+      "attach_date": 1430245720,
+      "file_size": 8228,
+      "filename": "f43e9852.webp",
+      "height": 203,
+      "id": 3740,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/f43e9852-webp.3740/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3744-b9366d7a90cee8588bc93ce83b4f7cdb.jpg?hash=cH9wZkosth",
+      "width": 1243
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет систему наград для пользователей в виде виртуальных медалей.",
+  "download_count": 340,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/229.jpg?1430245849",
+  "id": 229,
+  "is_fileless": null,
+  "last_update": 1430245839,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1430245839,
+  "resource_state": "visible",
+  "slug": "medali",
+  "tag_line": "Добавляет систему наград для пользователей в виде виртуальных медалей.",
+  "tags": [],
+  "title": "Медали",
+  "url_path": "/resources/medali.229/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 340,
+      "files": [
+        {
+          "filename": "Медали 2.1.5.zip",
+          "id": 3741,
+          "local_path": null,
+          "r2_key": null,
+          "size": 554758,
+          "src_url": "https://torrentpier.com/api/resource-versions/320/download?file=3741"
+        }
+      ],
+      "id": 320,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1430245839,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/medali.229/version/320/"
+    }
+  ],
+  "view_count": 1172
+}

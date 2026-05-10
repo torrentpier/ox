@@ -1,0 +1,57 @@
+{
+  "custom_fields": {
+    "torrentpier": "223"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94505,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42089,
+  "last_post_date": 1585909367,
+  "node_id": 57,
+  "post_date": 1585909367,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94505,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет. Подскажите пожалуйста, в чем может быть проблема, поставил сертификат ssl от cloudflare, изменил адрес в Админке до анонсера на Https, скачал свои торренты чтобы встать на раздачу, клиент пишет что соединение закрыто пиром",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1585909367,
+      "user_id": 4854,
+      "user_title": "User",
+      "username": "sergey67"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "ssl-ot-cloudflare",
+  "sticky": false,
+  "tags": [],
+  "title": "ssl от cloudflare",
+  "url_path": "/threads/ssl-ot-cloudflare.42089/",
+  "user_id": 4854,
+  "username": "sergey67",
+  "view_count": 1347
+}

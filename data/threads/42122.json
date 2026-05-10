@@ -1,0 +1,97 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94878,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42122,
+  "last_post_date": 1682846628,
+  "node_id": 47,
+  "post_date": 1682411574,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94878,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1682784885,
+      "message_parsed": "Я новичок на форуме и еще только изучаю эту систему.Это код часов, который я вставил в свой старый трекер Xbtit.Вы можете сами модифицировать его и поставить куда хотите.<br />\n<br />\nДемо: -----<br />\n<br />\n<br />\n<code class=\"xfBb-icode\">\n&lt;html&gt;\n&lt;head&gt;\n&lt;style&gt;\n.clockStyle {\n    background-color:#FFFFFF;\n    border-bottom-right-radius:1em;\n    padding:6px;\n    color:#000000;\n    font-family:&quot;Arial Black&quot;, Gadget, sans-serif;\n    font-size:12px;\n    font-weight:bold;\n    letter-spacing: 2px;\n    display:inline;\n}\n&lt;/style&gt;\n&lt;/head&gt;\n&lt;body&gt;\n&lt;td align=&quot;right&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;b&gt;&lt;?php echo &quot;&quot;.$language[&quot;MNU_TIME&quot;].&quot;&quot;?&gt;&lt;/b&gt;&amp;nbsp;&amp;nbsp;&lt;div id=&quot;clockDisplay&quot; class=&quot;clockStyle&quot;&gt;&lt;/div&gt;&lt;/td&gt;\n&lt;script&gt;\nfunction renderTime() {\n    var currentTime = new Date();\n    var diem = &quot;AM&quot;;\n    var h = currentTime.getHours();\n    var m = currentTime.getMinutes();\n    var s = currentTime.getSeconds();\n    setTimeout(&#039;renderTime()&#039;,1000);\n    if (h == 0) {\n        h = 12;\n    } else if (h &gt; 12) {\n        h = h - 12;\n        diem=&quot;PM&quot;;\n    }\n    if (h &lt; 10) {\n        h = &quot;0&quot; + h;\n    }\n    if (m &lt; 10) {\n        m = &quot;0&quot; + m;\n    }\n    if (s &lt; 10) {\n        s = &quot;0&quot; + s;\n    }\n    var myClock = document.getElementById(&#039;clockDisplay&#039;);\n    myClock.textContent = h + &quot;:&quot; + m + &quot;:&quot; + s + &quot; &quot; + diem;\n    myClock.innerText = h + &quot;:&quot; + m + &quot;:&quot; + s + &quot; &quot; + diem;\n}\nrenderTime();\n&lt;/script&gt;\n&lt;/body&gt;\n&lt;/html\n</code>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1682411574,
+      "user_id": 10665,
+      "user_title": "User",
+      "username": "crowni"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94884,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "что то ничего в demo не увидел",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1682779654,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1682846624,
+          "file_size": 23662,
+          "filename": "Снимка от 2023-04-30 12-23-13.webp",
+          "height": 200,
+          "id": 5411,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimka-ot-2023-04-30-12-23-13-webp.5411/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5415-02bb881f3cfeabb74b69aecec5767f61.jpg?hash=kbW-AyyHYI",
+          "width": 1909
+        }
+      ],
+      "id": 94885,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Kryl\">что то ничего в demo не увидел</blockquote>Вам нужно зарегистрироваться, чтобы увидеть его.Админ этого сайта удалил демо из моего поста.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1682846628,
+      "user_id": 10665,
+      "user_title": "User",
+      "username": "crowni"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "casy",
+  "sticky": false,
+  "tags": [],
+  "title": "Часы",
+  "url_path": "/threads/casy.42122/",
+  "user_id": 10665,
+  "username": "crowni",
+  "view_count": 687
+}

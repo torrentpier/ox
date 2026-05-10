@@ -1,0 +1,70 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 21966,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 50,
+        "title": "Graphics and styles for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 17,
+    "title": "Graphics and styles for TorrentPier (archive)"
+  },
+  "id": 1636,
+  "last_post_date": 1351585740,
+  "node_id": 17,
+  "post_date": 1351585740,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1351585737,
+          "file_size": 135610,
+          "filename": "demo_1517.zip",
+          "height": 0,
+          "id": 1549,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/demo_1517-zip.1549/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 21966,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<div style=\"text-align: center\"><img src=\"http://ruseller.com/lessons/les1517/img_1.jpg\" alt=\"\" />&#8203;</div> <br />\n<span style=\"font-size: 18px\"><b><span style=\"font-family: 'Verdana'\"><span style=\"color: #666666\"><span style=\"font-size: 16px\">Поддержка браузерами</span></span></span></b></span><br />\n<br />\n<span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\"><span style=\"font-size: 12px\">IE8 и IE9 не поддерживают переходы CSS3, поэтому наведение курсора мыши на пункт меню не будет анимироваться в указанных браузерах. IE7 плохо поддерживает псевдо-элементы <span style=\"font-family: 'Consolas'\">:before</span> и <span style=\"font-family: 'Consolas'\">:after</span>, поэтому лента не будет иметь раздвоенных концов и загибов в активном состоянии. При необходимости псевдо-элементы можно заменить другой разметкой.</span></span></span><br />\n<span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\"><span style=\"font-size: 12px\">Во всех остальных браузерах меню отображается и работает отлично.</span></span></span><br />\n <br />\n<span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\"><span style=\"font-size: 12px\"><b><span style=\"font-size: 16px\"><span style=\"color: #666666\">В то место, где хотите вывести</span></span></b></span></span></span><br />\n<pre class=\"xfBb-code\" data-lang=\"html\">&lt;div class=&#039;ribbon&#039;&gt;\n[FONT=Verdana][COLOR=#000000][SIZE=12px] [/SIZE][/COLOR][/FONT]\n    &lt;a href=&#039;#&#039;&gt;&lt;span&gt;Главная&lt;/span&gt;&lt;/a&gt;\n[FONT=Verdana][COLOR=#000000][SIZE=12px] [/SIZE][/COLOR][/FONT]\n    &lt;a href=&#039;#&#039;&gt;&lt;span&gt;О нас&lt;/span&gt;&lt;/a&gt;\n[FONT=Verdana][COLOR=#000000][SIZE=12px] [/SIZE][/COLOR][/FONT]\n    &lt;a href=&#039;#&#039;&gt;&lt;span&gt;Сервисы&lt;/span&gt;&lt;/a&gt;\n[FONT=Verdana][COLOR=#000000][SIZE=12px] [/SIZE][/COLOR][/FONT]\n    &lt;a href=&#039;#&#039;&gt;&lt;span&gt;Кнотакт&lt;/span&gt;&lt;/a&gt;\n[FONT=Verdana][COLOR=#000000][SIZE=12px] [/SIZE][/COLOR][/FONT]\n&lt;/div&gt;\n[FONT=Verdana][COLOR=#000000][SIZE=12px] [/SIZE][/COLOR][/FONT]</pre> <br />\n<b><span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\"><span style=\"font-size: 16px\"><span style=\"color: #666666\">В main.css</span></span></span></span></span></b><br />\n<pre class=\"xfBb-code\" data-lang=\"\">.ribbon:after, .ribbon:before {\n    margin-top:0.5em;\n    content: &quot;&quot;;\n    float:left;\n    border:1.5em solid #fff;\n}\n \n.ribbon:after {\n    border-right-color:transparent;\n}\n \n.ribbon:before {\n    border-left-color:transparent;\n}\n \n.ribbon a:link, .ribbon a:visited {\n    color:#000;\n    text-decoration:none;\n    float:left;\n    height:3.5em;\n    overflow:hidden;\n}\n \n.ribbon span {\n    background:#fff;\n    display:inline-block;\n    line-height:3em;\n    padding:0 1em;\n    margin-top:0.5em;\n    position:relative;\n \n    -webkit-transition: background-color 0.2s, margin-top 0.2s;  /* Saf3.2+, Chrome */\n    -moz-transition: background-color 0.2s, margin-top 0.2s;  /* FF4+ */\n    -ms-transition: background-color 0.2s, margin-top 0.2s;  /* IE10 */\n    -o-transition: background-color 0.2s, margin-top 0.2s;  /* Opera 10.5+ */\n    transition: background-color 0.2s, margin-top 0.2s;\n}\n \n.ribbon a:hover span {\n    background:#FFD204;\n    margin-top:0;\n}\n \n.ribbon span:before {\n    content: &quot;&quot;;\n    position:absolute;\n    top:3em;\n    left:0;\n    border-right:0.5em solid #9B8651;\n    border-bottom:0.5em solid #fff;\n}\n \n.ribbon span:after {\n    content: &quot;&quot;;\n    position:absolute;\n    top:3em;\n    right:0;\n    border-left:0.5em solid #9B8651;\n    border-bottom:0.5em solid #fff;\n}</pre> <br />\n <br />\n <br />\n <br />\n <br />\n <br />\n <br />\n <br />\n <br />\n <br />\n <br />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1351585740,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Prosto"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "lentocnoe-menu-na-css3",
+  "sticky": false,
+  "tags": [],
+  "title": "Ленточное меню на CSS3",
+  "url_path": "/threads/lentocnoe-menu-na-css3.1636/",
+  "user_id": 0,
+  "username": "Prosto",
+  "view_count": 2618
+}

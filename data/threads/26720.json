@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 63699,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 58,
+    "title": "Suggestions for improving TorrentPier"
+  },
+  "id": 26720,
+  "last_post_date": 1412581872,
+  "node_id": 58,
+  "post_date": 1412581702,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63699,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Добрый день, уважаемые разработчики. Хочу внести небольшое предложение, если конечно оно реализуемо. При отключении форума, все разделы и форумы скрываются даже от админа, что не очень удобно. Может реально сделать так, чтоб админу был доступен весь функционал, а скрывалось только от обычных пользователей? Так сделано в PHPBB3.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1412581702,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63700,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Реализация этого была запланирована еще на версию 2.1, но когда стали смотреть - потребовались правки в систему сессий, поэтому отложили на последующие версии и реализован был доступ только до админ-панели (в случае блокировки кроном). Да, вещь нужная и будет реализована.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1412581872,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 32,
+  "reply_count": 1,
+  "slug": "forum-vremenno-otklucen",
+  "sticky": false,
+  "tags": [],
+  "title": "Форум временно отключен",
+  "url_path": "/threads/forum-vremenno-otklucen.26720/",
+  "user_id": 1514,
+  "username": "Begemot",
+  "view_count": 1263
+}

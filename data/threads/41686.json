@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 90740,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41686,
+  "last_post_date": 1493094054,
+  "node_id": 57,
+  "post_date": 1490762234,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90740,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1490762350,
+      "message_parsed": "Не пойму что за фигня, все нормально работает, где-то ночью, перестает работать крон. Утром захожу в админку, последние задачи выполнены вчера в 23,30-23,40, и все висит. С серваком все норм, по логам никакие сервисы не падали. После захода в админку в раздел крон утром, начинаеют отрабатывать утренний задачи, именно когда просто тупо заходишь - отработка и дальше все ок. Уже 2-й день так повторяется...Кто нить сталкивался? Все таблицы прочекал, вроде в поряде. Резервное на внешку работает в 3,00 утра, т.е. выполняется на удаленный бекап диск, но крон виснет дето ранее. Дебиан7+ISP версия 2,1,1",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1490762234,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90745,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">Не пойму что за фигня, все нормально работает, где-то ночью, перестает работать крон. Утром захожу в админку, последние задачи выполнены вчера в 23,30-23,40, и все висит. С серваком все норм, по логам никакие сервисы не падали. После захода в админку в раздел крон утром, начинаеют отрабатывать утренний задачи, именно когда просто тупо заходишь - отработка и дальше все ок. Уже 2-й день так повторяется...Кто нить сталкивался? Все таблицы прочекал, вроде в поряде. Резервное на внешку работает в 3,00 утра, т.е. выполняется на удаленный бекап диск, но крон виснет дето ранее. Дебиан7+ISP версия 2,1,1</blockquote>Попробуйте увеличить время запросов <a href=\"http://www.mysql.ru/docs/tnastroyka.html\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">MYSQL </a>и поменяйте дату выполнения крон задач на 00:00<br />\nДанная проблема в основном встречается из-за того что mysql падает во время выполнения крон задач и тем самым отвергает все ваши запросы.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1490839408,
+      "user_id": 6340,
+      "user_title": "User",
+      "username": "baxa73"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90970,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/896/\">Dr_Brown</a>, релизов много?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1493066765,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90997,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Да не сильно много, дето 140 тысяч. Просто у меня было такое, на одном из трекеров. Но только пара ночей, потом легла таблица бб-сесион я её пересоздал  дальше все ок. А на этом не пойму, тупо то 1,30 то 2,30 ночи подвисает, до момента пока утром в админку не зайдешь.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1493094054,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "zavisaet-kron",
+  "sticky": false,
+  "tags": [],
+  "title": "Зависает крон",
+  "url_path": "/threads/zavisaet-kron.41686/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1224
+}

@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 13548,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1107,
+  "last_post_date": 1331992234,
+  "node_id": 57,
+  "post_date": 1331681640,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13548,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет. Друзья помогите пожалуйста не могу установливать <b>memcached. У </b>меня ISPmanager система centos-5-x86_64-optimized-ispmanager. Если кто то знает как это сделать пожалуйста помогите. А то вот устал искать ответ из Гугль. Не получается почему то.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1331681640,
+      "user_id": 668,
+      "user_title": "",
+      "username": "fariyeld"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13549,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Через ISPmanager не поставишь 🙄",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1331682059,
+      "user_id": 30,
+      "user_title": "User",
+      "username": "krumax"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13550,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"fariyeld\">Всем привет. Друзья помогите пожалуйста не могу установливать <b>memcached. У </b>меня ISPmanager система centos-5-x86_64-optimized-ispmanager. Если кто то знает как это сделать пожалуйста помогите. А то вот устал искать ответ из Гугль. Не получается почему то.</blockquote> <br />\nвот <a href=\"http://lmgtfy.com/?q=%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0+memcached+%D0%BD%D0%B0+centos\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">тут</a> вся инфа.<br />\n <br />\nP.S. С <b>redis</b> загрузка быстрее на ~0.020 сек., если сравнивать с <b>memcached</b>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1331687985,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13781,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "yum install memcached",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1331992234,
+      "user_id": 4,
+      "user_title": "User",
+      "username": "diden05"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "kak-ustanovit-memcached-na-centos-5",
+  "sticky": false,
+  "tags": [],
+  "title": "Как установить memcached на centos-5",
+  "url_path": "/threads/kak-ustanovit-memcached-na-centos-5.1107/",
+  "user_id": 668,
+  "username": "fariyeld",
+  "view_count": 1752
+}

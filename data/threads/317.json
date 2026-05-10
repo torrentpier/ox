@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 3479,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 317,
+  "last_post_date": 1317656402,
+  "node_id": 57,
+  "post_date": 1317569654,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 3479,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Приветствую.<br />\nВ нашей локальной сети для обмена файлами используется DC++ с магнет-ссылками, есть ретрекер, но нет форума\\площадки где те,кто качает с рутрекер.орг могли бы анонсировать свои скачки и раздавать их в сеть(чтобы остальные не качали по много раз разные файлы с похожих релизов).<br />\nМожет ли мне быть полезен ваш движек? Или лучше обойтись какими-то другими решениями? (форумы,блоги)<br />\nНужен совет 🙂",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1317569654,
+      "user_id": 332,
+      "user_title": "User",
+      "username": "dexter537"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 3499,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "магнеты DC++ и торрентов - разные вещи<br />\n<br />\nВыхода два:<br />\nИли ставить этот движок и переходить всем на раздачу торрентов через ретрекер<br />\nИли ставить обычный форум (любой) и пусть в темах народ выкладывает магнет-ссылки из DC++ (сомневаюсь, что будет много желающих, учитывая менталитет юзверей DC сетей)",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1317656402,
+      "user_id": 61,
+      "user_title": "User",
+      "username": "druid"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "treker-retreker-i-lokal-naa-set",
+  "sticky": false,
+  "tags": [],
+  "title": "Трекер ,ретрекер и локальная сеть",
+  "url_path": "/threads/treker-retreker-i-lokal-naa-set.317/",
+  "user_id": 332,
+  "username": "dexter537",
+  "view_count": 1423
+}

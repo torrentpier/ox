@@ -1,0 +1,89 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94806,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42116,
+  "last_post_date": 1678797974,
+  "node_id": 57,
+  "post_date": 1678630388,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94806,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток. В прошлых версиях была возможность включения конструктора шаблона из админ панели , в новых версиях я ее не нашел, удалили ? Версия 2.4",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1678630388,
+      "user_id": 7406,
+      "user_title": "User",
+      "username": "zerus64"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94811,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "он включается непосредственно а форумах",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1678708143,
+      "user_id": 8184,
+      "user_title": "User",
+      "username": "ivangord"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94814,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/threads/kak-vkljuchit-konstruktor-shablonov.42019/\" class=\"link link--internal\">решено - Как включить конструктор шаблонов ?</a> Учитесь пользоваться поиском!!!",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1678797974,
+      "user_id": 8184,
+      "user_title": "User",
+      "username": "ivangord"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "konstruktor-sablonov",
+  "sticky": false,
+  "tags": [],
+  "title": "Конструктор шаблонов.",
+  "url_path": "/threads/konstruktor-sablonov.42116/",
+  "user_id": 7406,
+  "username": "zerus64",
+  "view_count": 806
+}

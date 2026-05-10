@@ -1,0 +1,61 @@
+{
+  "category": {
+    "description": "Section with all paid modifications for TorrentPier.",
+    "id": 2,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Paid",
+    "view_url": "https://torrentpier.com/resources/categories/paid.2/"
+  },
+  "current_files": [],
+  "custom_fields": {},
+  "description_attachments": [
+    {
+      "attach_date": 1369572593,
+      "file_size": 119698,
+      "filename": "91c9f6b0df06dc2549c7bf7c089b522a.webp",
+      "height": 485,
+      "id": 2001,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/91c9f6b0df06dc2549c7bf7c089b522a-webp.2001/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2006-91c9f6b0df06dc2549c7bf7c089b522a.jpg?hash=DGYh3Z6I8W",
+      "width": 1572
+    }
+  ],
+  "description_parsed": "<b>Автор:</b> Zenden<br />\n<b>ICQ:</b> 590-700-200<br />\n<b>Цена:</b> 700<br />\n------------------------<br />\n<b>Описание:</b> Выводит мини топ релизов &quot;материнского&quot; форума. за последние 24 часа, в viewtopic.php или viewforum.php. Всё кешируется.<br />\n<b>Примечание: </b>Необходимо наличие ресайзера",
+  "download_count": 0,
+  "external_url": null,
+  "icon_url": null,
+  "id": 23,
+  "is_fileless": null,
+  "last_update": 1369572575,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1369572575,
+  "resource_state": "visible",
+  "slug": "mini-top-razdac-v-topike",
+  "tag_line": "Вывод лучших раздач \"материнского\" форума в теме",
+  "tags": [],
+  "title": "Мини-топ раздач в топике",
+  "url_path": "/resources/mini-top-razdac-v-topike.23/",
+  "user_id": 97,
+  "username": "Zenden",
+  "version": "1.0",
+  "versions": [
+    {
+      "download_count": 0,
+      "files": [],
+      "id": 23,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1369572575,
+      "version_state": "visible",
+      "version_string": "1.0",
+      "view_url": "https://torrentpier.com/resources/mini-top-razdac-v-topike.23/version/23/"
+    }
+  ],
+  "view_count": 552
+}

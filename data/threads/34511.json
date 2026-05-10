@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 73899,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 34511,
+  "last_post_date": 1422713475,
+  "node_id": 57,
+  "post_date": 1422693615,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 73899,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Добрый день.<br />\n<br />\nПрошу помощи в вопросе по закрытию регистрации на трекере - форуме на базе <b>torrentpier</b>. Как отключить регистрацию новых пользователей?<br />\n<br />\nЗаранее благодарю!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1422693615,
+      "user_id": 5936,
+      "user_title": "User",
+      "username": "Sheitan"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 73901,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://github.com/torrentpier/torrentpier/blob/master/library/config.php#L367\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://github.com/torrentpier/torrentpier/blob/master/library/config.php#L367</a> - ставите значение в true.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1422696791,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 73906,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Благодарю!",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1422713475,
+      "user_id": 5936,
+      "user_title": "User",
+      "username": "Sheitan"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "zapret-registracii",
+  "sticky": false,
+  "tags": [],
+  "title": "Запрет регистрации",
+  "url_path": "/threads/zapret-registracii.34511/",
+  "user_id": 5936,
+  "username": "Sheitan",
+  "view_count": 1009
+}

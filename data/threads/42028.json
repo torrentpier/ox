@@ -1,0 +1,88 @@
+{
+  "custom_fields": {
+    "torrentpier": "2301"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 93855,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42028,
+  "last_post_date": 1544993702,
+  "node_id": 57,
+  "post_date": 1544619444,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1544619379,
+          "file_size": 103524,
+          "filename": "Screenshot_2.webp",
+          "height": 1049,
+          "id": 5232,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot_2-webp.5232/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5236-17dcbdc5cf99f0165ac6de8b5ac39b6b.jpg?hash=f0DmYtRWdg",
+          "width": 1679
+        }
+      ],
+      "id": 93855,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Перенёс сайт с локалки на сервер. При добавлении torrent файла движок вылетает с ошибкой, ругаясь на torrent файл.<br />\nДвижок устанавливал через git clone; composer install. Видел, что помогает изменение кодировки всех файлов на UTF-8 без BOM, но я так понимаю, что git clone и так с репозитория скачивает их в такой кодировке.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1544619444,
+      "user_id": 8750,
+      "user_title": "User",
+      "username": "lufton"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93865,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Господи, как же сложно мне далось решение этой проблемы! Но я нашёл его.<br />\nМне пришлось пройти долгий путь начиная с изучения формата torrent файла до отладки подключаемой библиотеки Bencode. Но я сделал это! Чувствую себя героем!<br />\nОказывается есть такой параметр в <b>php.ini</b>, как <b>mbstring.func_overload</b>, который отвечает за перегрузку функций работы с многобайтовыми строками. Так вот torrent файлы читаются с диска в строковую переменную и если значение <b>mbstring.func_overload</b> установлено в <b>2</b>, то строка считается многобайтовой и её длина, вычисляемая <b>strlen</b> не соответствует количеству байт файла. Поэтому парсер Bencode считает, что файл неправильно сформирован.<br />\nПереключаем <b>mbstring.func_overload</b> в <b>0</b>, перезапускаем сервер и о чудо! Всё работает.<br />\n<span style=\"font-size: 10px\">Если кому интересно почему в php.ini у меня стояло <b>mbstring.func_overload=2</b> – когда-то устанавливал <b>Bitrix24</b>, которые требует установки этого параметра.</span>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1544993702,
+      "user_id": 8750,
+      "user_title": "User",
+      "username": "lufton"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "rych-bencode-exception-runtimeexception-unknown-entity-found-at-offset-611",
+  "sticky": false,
+  "tags": [],
+  "title": "Rych\\Bencode\\Exception\\RuntimeException Unknown entity found at offset 611",
+  "url_path": "/threads/rych-bencode-exception-runtimeexception-unknown-entity-found-at-offset-611.42028/",
+  "user_id": 8750,
+  "username": "lufton",
+  "view_count": 1845
+}

@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 9012,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 702,
+  "last_post_date": 1326105814,
+  "node_id": 57,
+  "post_date": 1326104628,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9012,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Уважаемые форумчане,подскажите пожалуйста,как поменять ссылки на этот текст!<br />\n<br />\n<a href=\"http://img10.imageshack.us/img10/6929/32525152.png\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"http://img341.imageshack.us/img341/6572/thumblad.jpg\" alt=\"\" /></a><br />\n<br />\nБуду очень благодарна за пояснение.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1326104628,
+      "user_id": 726,
+      "user_title": "User",
+      "username": "wiziet"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9013,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "А поиск на что ? или вы файловые менеджеры не используете ?<br />\ntopic_tpl_rules_video.html",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1326105235,
+      "user_id": 14,
+      "user_title": "User",
+      "username": "Chumaster59"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9014,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо сейчас попробую,я только учусь не судите строго(",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1326105814,
+      "user_id": 726,
+      "user_title": "User",
+      "username": "wiziet"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "kak-izminit-ssylki-na-tekst",
+  "sticky": false,
+  "tags": [],
+  "title": "Как изминить ссылки на текст?",
+  "url_path": "/threads/kak-izminit-ssylki-na-tekst.702/",
+  "user_id": 726,
+  "username": "wiziet",
+  "view_count": 1043
+}

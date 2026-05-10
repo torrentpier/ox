@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58259,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25679,
+  "last_post_date": 1390922050,
+  "node_id": 111,
+  "post_date": 1390922050,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58259,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Ссылка</b>:<br />\n<a href=\"http://code.google.com/p/torrentpier2/source/detail?r=569\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"> http://code.google.com/p/torrentpier2/source/detail?r=569</a><br />\n<br />\n<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 569: Унификация языковых</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">nanosimbiot</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/upload/admin/admin_attach_cp.php \n    Modify    /trunk/upload/admin/admin_bt_forum_cfg.php \n    Modify    /trunk/upload/admin/admin_bt_tracker_cfg.php \n    Modify    /trunk/upload/admin/admin_cron.php \n    Modify    /trunk/upload/admin/admin_extensions.php \n    Modify    /trunk/upload/admin/admin_forums.php \n    Modify    /trunk/upload/admin/admin_rebuild_search.php \n    Modify    /trunk/upload/admin/admin_topic_templates.php \n    Modify    /trunk/upload/admin/admin_user_search.php \n    Modify    /trunk/upload/admin/xs_include.php \n    Modify    /trunk/upload/attach_mod/displaying_torrent.php \n    Modify    /trunk/upload/callseed.php \n    Modify    /trunk/upload/common.php \n    Modify    /trunk/upload/config.php \n    Modify    /trunk/upload/includes/functions.php \n    Modify    /trunk/upload/includes/init_bb.php \n    Modify    /trunk/upload/includes/page_footer.php \n    Modify    /trunk/upload/includes/sessions.php \n    Modify    /trunk/upload/includes/topic_templates.php \n    Modify    /trunk/upload/includes/ucp/usercp_attachcp.php \n    Delete    /trunk/upload/language/lang_english/lang_admin.php \n    Delete    /trunk/upload/language/lang_english/lang_admin_attach.php \n    Delete    /trunk/upload/language/lang_english/lang_admin_bt.php \n    Delete    /trunk/upload/language/lang_english/lang_admin_cron.php \n    Delete    /trunk/upload/language/lang_english/lang_admin_rebuild_search.php \n    Delete    /trunk/upload/language/lang_english/lang_bot.php \n    Delete    /trunk/upload/language/lang_english/lang_callseed.php \n    Delete    /trunk/upload/language/lang_english/lang_log_action.php \n    Modify    /trunk/upload/language/lang_english/lang_main.php \n    Delete    /trunk/upload/language/lang_english/lang_topic_templates.php \n    Delete    /trunk/upload/language/lang_english/lang_user_search.php \n    Delete    /trunk/upload/language/lang_english/lang_xs.php \n    Delete    /trunk/upload/language/lang_russian/lang_admin.php \n    Delete    /trunk/upload/language/lang_russian/lang_admin_attach.php \n    Delete    /trunk/upload/language/lang_russian/lang_admin_bt.php \n    Delete    /trunk/upload/language/lang_russian/lang_admin_cron.php \n    Delete    /trunk/upload/language/lang_russian/lang_admin_rebuild_search.php \n    Delete    /trunk/upload/language/lang_russian/lang_bot.php \n    Delete    /trunk/upload/language/lang_russian/lang_callseed.php \n    Delete    /trunk/upload/language/lang_russian/lang_log_action.php \n    Delete    /trunk/upload/language/lang_russian/lang_main.php \n    Delete    /trunk/upload/language/lang_russian/lang_topic_templates.php \n    Delete    /trunk/upload/language/lang_russian/lang_user_search.php \n    Delete    /trunk/upload/language/lang_russian/lang_xs.php \n    Modify    /trunk/upload/memberlist.php \n    Modify    /trunk/upload/posting.php \n    Modify    /trunk/upload/privmsg.php \n    Modify    /trunk/upload/templates/admin/admin_board.tpl \n    Modify    /trunk/upload/templates/admin/admin_bt_tracker_cfg.tpl \n    Modify    /trunk/upload/templates/admin/admin_cron.tpl \n    Modify    /trunk/upload/templates/default/modcp_split.tpl \n    Modify    /trunk/upload/templates/default/page_header.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/audiobooks.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/books.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/games.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/games_ps.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/games_psp.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/games_xbox.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/music.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/progs.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/progs_mac.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/sport.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/video.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/video_home.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/video_lesson.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/video_simple.tpl \n    Modify    /trunk/upload/templates/default/viewonline.tpl \n    Modify    /trunk/upload/viewtopic.php \n\nУнификация языковых</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1390922050,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "revision-569-unifikacia-azykovyh",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 569: Унификация языковых",
+  "url_path": "/threads/revision-569-unifikacia-azykovyh.25679/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 1078
+}

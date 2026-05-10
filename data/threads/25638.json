@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 57883,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 25638,
+  "last_post_date": 1389962374,
+  "node_id": 80,
+  "post_date": 1389956432,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57883,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>R557</b><br />\nПри выполнении крона вручную выдает такую ошибку, если поставить все задачи разом.<br />\n<a href=\"http://fastpic.ru/view/57/2014/0117/70c8a03db06502ec509fe80b223e9af5.png.html\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"http://i57.fastpic.ru/thumb/2014/0117/f5/70c8a03db06502ec509fe80b223e9af5.jpeg\" alt=\"\" /></a><br />\nЕсли по очереди запускать то выдает ошибку только на:<br />\nds_update_cat_forums.php<br />\nds_update_stats.php<br />\n<pre class=\"xfBb-code\" data-lang=\"\">Notice: Undefined variable: datastore in /var/www/бла-бла/data/www/бла-бла.сом/includes/cron/jobs/ds_update_cat_forums.php on line 5</pre><br />\n<pre class=\"xfBb-code\" data-lang=\"\">Fatal error: Call to a member function update() on a non-object in /var/www/бла-бла/data/www/бла-бла.сом/includes/cron/jobs/ds_update_cat_forums.php on line 5</pre><br />\nЧто бы этого не было и работало все нормально, в принципе 🙂, я сделал так, откатив 2 файла из R557.<br />\n/includes/functions_admin.php<br />\n/includes/functions_admin_cron.php<br />\n <br />\n<a href=\"http://code.google.com/p/torrentpier2/source/detail?r=557\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://code.google.com/p/torrentpier2/source/detail?r=557</a><br />\n <br />\nЕсли у кого нибудь такое есть, временный костыль такой пойдет. А если только у меня такая ошибка, значит я где-то напортачил.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1389956432,
+      "user_id": 4646,
+      "user_title": "User",
+      "username": "greencell"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57884,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Да, спасибо, косякнул. Будет исправлено в следующем коммите.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1389956895,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57885,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено, спасибо за своевременный багрепорт: <a href=\"https://code.google.com/p/torrentpier2/source/detail?r=559\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://code.google.com/p/torrentpier2/source/detail?r=559</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1389962374,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 2,
+  "slug": "osibka-pri-vypolnenii-krona-r557",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка при выполнении крона R557",
+  "url_path": "/threads/osibka-pri-vypolnenii-krona-r557.25638/",
+  "user_id": 4646,
+  "username": "greencell",
+  "view_count": 1050
+}

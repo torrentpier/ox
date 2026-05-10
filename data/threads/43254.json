@@ -1,0 +1,79 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 98447,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 50,
+    "title": "Graphics and styles for TorrentPier"
+  },
+  "id": 43254,
+  "last_post_date": 1774179867,
+  "node_id": 50,
+  "post_date": 1774179867,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1774179842,
+          "file_size": 27164,
+          "filename": "logo1.webp",
+          "height": 485,
+          "id": 6744,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/logo1-webp.6744/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6748-f1471dda8b0af66f3fbfbc49533799de.jpg?hash=hGo4D2lc68",
+          "width": 1332
+        },
+        {
+          "attach_date": 1774179842,
+          "file_size": 39194,
+          "filename": "logo2.webp",
+          "height": 301,
+          "id": 6745,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/logo2-webp.6745/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6749-040e80e8a77fbea9b2338f618c2ca505.jpg?hash=AUu1uIJhi7",
+          "width": 828
+        }
+      ],
+      "id": 98447,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Я разработал более современный логотип для TorrenPier.<br />\nОдно лого на белом фоне, другой — прозрачный.Надеюсь, вам понравится.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1774179867,
+      "user_id": 10665,
+      "user_title": "User",
+      "username": "crowni"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "logo-torrentpier",
+  "sticky": false,
+  "tags": [],
+  "title": "Лого TorrentPier",
+  "url_path": "/threads/logo-torrentpier.43254/",
+  "user_id": 10665,
+  "username": "crowni",
+  "view_count": 535
+}

@@ -1,0 +1,180 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 85177,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41284,
+  "last_post_date": 1444693839,
+  "node_id": 57,
+  "post_date": 1444372165,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1444372162,
+          "file_size": 13016,
+          "filename": "2.webp",
+          "height": 229,
+          "id": 4109,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2-webp.4109/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4113-38f41baa03a14a840b58c37a20230426.jpg?hash=hdBJvbW8em",
+          "width": 942
+        }
+      ],
+      "id": 85177,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Добрый день, я недавно столкнулся с такой проблемы.<br />\nКогда человек встает на раздачу и одновременно раздает на другом к примеру трекере все отданное засчитывается на нашем трекере, хотя никто у нас не качает. Даже банить не возможно так как проблема не у них, а у нас. Есть ли какие-нибудь решения этой проблемы?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1444372165,
+      "user_id": 6340,
+      "user_title": "User",
+      "username": "baxa73"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85178,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ты же видишь,  что раздаваемое есть,  а скачанного нет.  Вот и бань таких.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1444372977,
+      "user_id": 61,
+      "user_title": "User",
+      "username": "druid"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1444401758,
+          "file_size": 14842,
+          "filename": "Безымянный.webp",
+          "height": 127,
+          "id": 4110,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bezymannyj-webp.4110/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4114-d0b0738744d05b21d86dfa806958956d.jpg?hash=p1Hm1pmEdG",
+          "width": 564
+        }
+      ],
+      "id": 85186,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1444401989,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/6340/\">@baxa73</a> Посмотрите в админке есть для этого настройки<br />\n<img src=\"https://torrentpier.com/attachments/4110/\" alt=\"Безымянный.webp\" /><br />\nПолучается что пользователь раздает на другие трекеры, сам клиент не учитывает сколько и куда он раздал а отсылает вам информацию в общем",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1444401768,
+      "user_id": 5452,
+      "user_title": "User",
+      "username": "Ress Kent"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1444404999,
+          "file_size": 25354,
+          "filename": "1ы.webp",
+          "height": 142,
+          "id": 4111,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1y-webp.4111/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4115-ecb10637bf2279280f921328da99094a.jpg?hash=Rcu7_kRK8W",
+          "width": 1185
+        }
+      ],
+      "id": 85188,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Посмотрите ведь все правильно?",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1444405016,
+      "user_id": 6340,
+      "user_title": "User",
+      "username": "baxa73"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85189,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"druid\">Ты же видишь,  что раздаваемое есть,  а скачанного нет.  Вот и бань таких.</blockquote><br />\n<blockquote class=\"xfBb-quote\" data-name=\"Ress Kent\"><a href=\"https://torrentpier.com/members/6340/\">@baxa73</a> Посмотрите в админке есть для этого настройки<br />\n<a href=\"https://torrentpier.com/attachments/4110/\">View attachment 4110</a><br />\nПолучается что пользователь раздает на другие трекеры, сам клиент не учитывает сколько и куда он раздал а отсылает вам информацию в общем</blockquote><br />\nЭто не поможет. <br />\n______________________________<br />\nБан + смена пасскея + offdht + приватная рега, только тогда.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1444407477,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85241,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "А вообще это особенность протокола. Или у вас открытый трекер с такой &quot;особенностью&quot; учета трафика или закрытый, где никого нет.",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1444693839,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "otdannoe-na-drugom-trekere-zascityvaetsa-u-nas",
+  "sticky": false,
+  "tags": [],
+  "title": "Отданное на другом трекере засчитывается у нас",
+  "url_path": "/threads/otdannoe-na-drugom-trekere-zascityvaetsa-u-nas.41284/",
+  "user_id": 6340,
+  "username": "baxa73",
+  "view_count": 1202
+}

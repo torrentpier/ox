@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 12067,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 976,
+  "last_post_date": 1329507536,
+  "node_id": 57,
+  "post_date": 1329507536,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 12067,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Народ,помогите разобратся.<br />\nПосле создания темы у меня не пишет,что торрент зарегистрирован на трекере,а просто вариант <b>Посмотреть ваш</b> пост и <b>Вернуться в тем</b>у хотя даный форум выделен в <b>Разрешена регистрация торрентов на трекере, </b>а так же использует нужный шаблон.<br />\n<br />\nПроще говоря,не пишет такого как на <a href=\"http://www.youtube.com/watch?v=44Z27SK3w2A\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">видео</a> на 10:08",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1329507536,
+      "user_id": 864,
+      "user_title": "User",
+      "username": "Antiment"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "ne-registriruetsa-torent-fajl",
+  "sticky": false,
+  "tags": [],
+  "title": "Не регистрируется торент файл",
+  "url_path": "/threads/ne-registriruetsa-torent-fajl.976/",
+  "user_id": 864,
+  "username": "Antiment",
+  "view_count": 1220
+}

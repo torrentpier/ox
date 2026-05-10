@@ -1,0 +1,117 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 90190,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41660,
+  "last_post_date": 1487792947,
+  "node_id": 57,
+  "post_date": 1487743250,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1487743246,
+          "file_size": 13526,
+          "filename": "Безымянный.webp",
+          "height": 460,
+          "id": 4683,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bezymannyj-webp.4683/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4687-8d1810e2cef7a69903db78499101e135.jpg?hash=6n61N5nXLZ",
+          "width": 355
+        }
+      ],
+      "id": 90190,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Помогите разобраться во параметрах peers в файле /admin/stats/tracker.php. Не правильно отображается время $stat[last_peer_time] и $stat[max_peer_time]<br />\n<br />\npeers: all (<b>1,487,742,702 s</b>)<br />\n<br />\nlast peer:<b> -227,216,712</b> seconds ago<br />\n<br />\nГде указать правильно параметры? Самому не получилось найти...",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1487743250,
+      "user_id": 7318,
+      "user_title": "User",
+      "username": "Бандерас"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90192,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "что то где то упущено... не могу понять где потеряно... кто нибудь сталкивался с таким?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1487763557,
+      "user_id": 7318,
+      "user_title": "User",
+      "username": "Бандерас"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1487792943,
+          "file_size": 13700,
+          "filename": "Безымянный.webp",
+          "height": 461,
+          "id": 4685,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bezymannyj-webp.4685/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4689-5f01ca082ce4550c4024bae97198e1bd.jpg?hash=wNHx10Hn6V",
+          "width": 359
+        }
+      ],
+      "id": 90203,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Одну проблему исправил. оказывается какой то был глюк... Один пир из будущего раздавал (как то в базе данных стоял не известно)...<br />\nвторое не трогать как я понимаю, так как по умолчанию настроено так<br />\n<code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\">`update_time` int(11) NOT NULL DEFAULT &#039;0&#039;,</code><br />\nВ итоге осталось так",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1487792947,
+      "user_id": 7318,
+      "user_title": "User",
+      "username": "Бандерас"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "statistika-tracker-php-ne-vernoe-last-peer",
+  "sticky": false,
+  "tags": [],
+  "title": "Статистика tracker.php не верное last peer",
+  "url_path": "/threads/statistika-tracker-php-ne-vernoe-last-peer.41660/",
+  "user_id": 7318,
+  "username": "Бандерас",
+  "view_count": 956
+}

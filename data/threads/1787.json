@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 23807,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1787,
+  "last_post_date": 1354793273,
+  "node_id": 57,
+  "post_date": 1354791710,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23807,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет. Можно ли из старой базы перенести только (!) разделы сайта, категории, подразделы без тем? Если да, то какая таблица отвечает за это действие, и будет ли всё работать хорошо на новой базе?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1354791710,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23809,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Lange</b>, можно, но с обнулением счетчиков<br />\nbb_categories<br />\nbb_forums",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1354792214,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23810,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Gemini_13</b>, счётчики сообщений? Я юзеров не буду переносить, только разделы без тем.<br />\nPS Я так понял, настройки этих форумов не сохранятся?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1354793122,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23811,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "угу<br />\nforum_posts<br />\nforum_topics<br />\nforum_last_post_id<br />\nforum_parent",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1354793273,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "razdely",
+  "sticky": false,
+  "tags": [],
+  "title": "Разделы",
+  "url_path": "/threads/razdely.1787/",
+  "user_id": 55,
+  "username": "Lange",
+  "view_count": 956
+}

@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58468,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25708,
+  "last_post_date": 1391378582,
+  "node_id": 111,
+  "post_date": 1391378582,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58468,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Ссылка</b>:<br />\n<a href=\"http://code.google.com/p/torrentpier2/source/detail?r=580\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"> http://code.google.com/p/torrentpier2/source/detail?r=580</a><br />\n<br />\n<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 580: Фиксы багов по запросам на форуме, большое спасибо всем запостившим найденное; у</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">glix08</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/install/sql/mysql.sql \n    Modify    /trunk/upgrade/r575-poll_upgrade.php \n    Modify    /trunk/upload/admin/admin_extensions.php \n    Modify    /trunk/upload/admin/admin_mass_email.php \n    Modify    /trunk/upload/admin/admin_topic_templates.php \n    Modify    /trunk/upload/admin/admin_user_search.php \n    Modify    /trunk/upload/ajax.php \n    Modify    /trunk/upload/ajax/posts.php \n    Modify    /trunk/upload/config.php \n    Modify    /trunk/upload/groupcp.php \n    Modify    /trunk/upload/includes/functions_post.php \n    Modify    /trunk/upload/includes/functions_report.php \n    Modify    /trunk/upload/includes/ucp/usercp_activate.php \n    Modify    /trunk/upload/includes/ucp/usercp_email.php \n    Modify    /trunk/upload/includes/ucp/usercp_register.php \n    Modify    /trunk/upload/includes/ucp/usercp_sendpasswd.php \n    Modify    /trunk/upload/language/lang_english/lang_main.php \n    Modify    /trunk/upload/language/lang_russian/lang_main.php \n    Modify    /trunk/upload/memberlist.php \n    Modify    /trunk/upload/poll.php \n    Modify    /trunk/upload/posting.php \n    Modify    /trunk/upload/privmsg.php \n    Modify    /trunk/upload/templates/admin/admin_user_search.tpl \n    Modify    /trunk/upload/templates/default/posting.tpl \n    Delete    /trunk/upload/templates/default/posting_poll.tpl \n\nФиксы багов по запросам на форуме, большое спасибо всем запостившим найденное; удаление поиска пользователей с отключенными ЛС (после r600 будет универсальная обработка для поля bf в базе данных); фикс ошибки из-за которой не учитывались сообщения пользователя в счетчике его сообщений; пара фиксов предыдущих ревизий.</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1391378582,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "revision-580-fiksy-bagov-po-zaprosam-na-forume-bol-soe-spasibo-vsem-zapostivsim-najdennoe-u",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 580: Фиксы багов по запросам на форуме, большое спасибо всем запостившим найденное; у",
+  "url_path": "/threads/revision-580-fiksy-bagov-po-zaprosam-na-forume-bol-soe-spasibo-vsem-zapostivsim-najdennoe-u.25708/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 1316
+}

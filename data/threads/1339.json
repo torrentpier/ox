@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 17191,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 1339,
+  "last_post_date": 1361258819,
+  "node_id": 90,
+  "post_date": 1336814366,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 17191,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Решил начать темку 🙂<br />\nВот мои 5 копеек<br />\n<pre class=\"xfBb-code\" data-lang=\"\">#!/bin/bash\nMAX_LOAD=20.0\nADMIN=&quot;admins@example.com&quot;\nLOAD=`awk &#039;{print $2}&#039; /proc/loadavg`\nif [ $LOAD \\&gt; $MAX_LOAD ]; then\ncat &lt;&lt;EOF &gt;/tmp/hl.html\nTo: $ADMIN\nSubject: High load alert\nContent-Type: text/html; charset=&quot;koi8-r&quot;\n&lt;html&gt;\n&lt;body&gt;\n&lt;h1&gt;Host:Allert!  $(hostname) , date $(date)&lt;/h1&gt;\n&lt;h2&gt;High load  $(hostname)&lt;/h2&gt;\n&lt;p&gt;&lt;font size=&quot;2&quot; color=&quot;black&quot; face=&quot;Arial&quot;&gt; Винмание возрасла нагрузка на $(hostname)&lt;/font&gt;\n&lt;p&gt;&lt;font size=&quot;2&quot; color=&quot;black&quot; face=&quot;Arial&quot;&gt; Загрузка системы составляет $LOAD&lt;/font&gt;&lt;/p&gt;\n&lt;p&gt;&lt;font size=&quot;7&quot; color=&quot;red&quot; face=&quot;Arial&quot;&gt; Срочно принять меры&lt;/font&gt;&lt;/p&gt;\n&lt;/body&gt;\n&lt;/html&gt;\nEOF\nsendmail $ADMIN &lt; /tmp/hl.html\nelse\necho &quot;all goooooooooood&quot;\nfi</pre>Собственно скрипт снимает статистику за 5 минут по нагрузки сервера, если нагрузка больше 20.0, то отсылает на указанную почту письмо.<br />\nПеременные <br />\n<b>MAX_LOAD </b>- задаем максимальную нагрузку на хост<br />\n<b>ADMIN </b>-  почта админа/админов.<br />\nПользуйтесь",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1336814366,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24323,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Заливаем дамп всех sql файлов из директории<br />\n<div>Spoiler content hidden.</div>Скрипт меняется под нужды как угодно. Допустим нужно разархивировать кучу архивов.<br />\n<div>Spoiler content hidden.</div> Все предельно просто 🙂",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1355891065,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27089,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Легкий генератор паролей на моем любимом питошки)))<br />\n<pre class=\"xfBb-code\" data-lang=\"\">import string\nfrom random import choice\n \nsize = 9\nprint &#039;&#039;.join([choice(string.letters + string.digits) for i in range(size)])</pre>где size длина<br />\nМожно довести до такого состояния генерацию пароля {ht[ESLq2<br />\nПросто нужно изменить строчку на следующую<br />\n<pre class=\"xfBb-code\" data-lang=\"\">print &#039;&#039;.join([choice(string.printable) for i in range(size)])</pre>Подробнее по модулю  string можно прочитать в документации",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1361258819,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "skripty-s-pylu-s-zaru-napisannye-na-kolenke",
+  "sticky": false,
+  "tags": [],
+  "title": "Скрипты с пылу с жару, написанные на коленке",
+  "url_path": "/threads/skripty-s-pylu-s-zaru-napisannye-na-kolenke.1339/",
+  "user_id": 0,
+  "username": "kenny",
+  "view_count": 2570
+}

@@ -1,0 +1,46 @@
+{
+  "category": {
+    "description": "Section with all paid modifications for TorrentPier.",
+    "id": 2,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Paid",
+    "view_url": "https://torrentpier.com/resources/categories/paid.2/"
+  },
+  "current_files": [],
+  "custom_fields": {},
+  "description_attachments": [],
+  "description_parsed": "<b>Автор:</b> Zenden<br />\n<b>ICQ:</b> 590-700-200<br />\n<b>Описание:</b> Карма пользователей и их постов.<br />\n<b>Цена:</b> 1300 - 1700 в зависимости от комплектации<br />\n<ul>\n<li data-xf-list-type=\"ul\">Возможность менять карму постов +/-</li>\n<li data-xf-list-type=\"ul\">Пост с отрицательным значением прячется под спойлер.</li>\n<li data-xf-list-type=\"ul\">Аякс технология.</li>\n<li data-xf-list-type=\"ul\">Автоматическая выдача РидОнли пользователю (гибка настройка).</li>\n<li data-xf-list-type=\"ul\">Просмотр общей кармы (суммируется по всем постам) в профиле пользователя.</li>\n<li data-xf-list-type=\"ul\">Интеграция с запретами Лога.</li>\n<li data-xf-list-type=\"ul\">Просмотр списка выдачи кармы в админке.</li>\n<li data-xf-list-type=\"ul\">Написана функция &quot;Спасибо за релиз&quot; (каждая &quot;спасибка&quot;, + 1 к карме и сидпоинтам)</li>\n<li data-xf-list-type=\"ul\">Каждый положительное изменение кармы, +1 к сидпоинтам</li>\n<li data-xf-list-type=\"ul\">Просмотр общей кармы в профиле пользователя</li>\n</ul>p.s. В зависимости от желания покупателя, напишу дополнительный функционал",
+  "download_count": 0,
+  "external_url": null,
+  "icon_url": null,
+  "id": 22,
+  "is_fileless": null,
+  "last_update": 1369572463,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1369572463,
+  "resource_state": "visible",
+  "slug": "karma-pol-zovatelej-i-ih-postov",
+  "tag_line": "Возможность оценивать сообщения и пользователей",
+  "tags": [],
+  "title": "Карма пользователей и их постов",
+  "url_path": "/resources/karma-pol-zovatelej-i-ih-postov.22/",
+  "user_id": 97,
+  "username": "Zenden",
+  "version": "1.0",
+  "versions": [
+    {
+      "download_count": 0,
+      "files": [],
+      "id": 22,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1369572463,
+      "version_state": "visible",
+      "version_string": "1.0",
+      "view_url": "https://torrentpier.com/resources/karma-pol-zovatelej-i-ih-postov.22/version/22/"
+    }
+  ],
+  "view_count": 677
+}

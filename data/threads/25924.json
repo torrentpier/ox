@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 60612,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25924,
+  "last_post_date": 1398939310,
+  "node_id": 57,
+  "post_date": 1398928125,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60612,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Не могу найти этот мод. Но помню где то был",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1398928125,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60614,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Вася</b>, правда надо подпилить.<br />\n <br />\n--------------------------------------------------<br />\nНазвание: Канонические ссылки<br />\nАвтор: Gemini_13<br />\nОписание: Добавляет атрибут rel=&quot;canonical&quot; в заголовки страниц с одинаковым контентом. Про канонические ссылки: <a href=\"https://support.google.com/webmasters/answer/139394?hl=ru\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://support.google.com/webmasters/answer/139394?hl=ru</a><br />\nСложность установки: Легкая<br />\nВремя установки: ~ 5 минут<br />\nАдаптирован под версию TPII: R507<br />\nФайлы к редактированию:<br />\n- index.php<br />\n- login.php<br />\n- viewforum.php<br />\n- viewtopic.php<br />\n- templates/default/page_header.tpl<br />\n--------------------------------------------------<br />\n <br />\n# ---- [ Открыть ] -------------------<br />\n <br />\nindex.php<br />\n <br />\n# ---- [ Найти ] -------------------<br />\n <br />\n&#039;U_SEARCH_UNANSWERED&#039; =&gt; &quot;search.php?search_id=unanswered&quot;,<br />\n <br />\n# ---- [ Вставить после ] -------------------<br />\n <br />\n&#039;U_CANONICAL&#039;=&gt; (!$viewcat) ? FULL_URL : &#039;&#039;,<br />\n <br />\n# ---- [ Открыть ] -------------------<br />\n <br />\nlogin.php<br />\n <br />\n# ---- [ Найти ] -------------------<br />\n <br />\n&#039;S_LOGIN_ACTION&#039; =&gt; &quot;login.php&quot;,<br />\n <br />\n# ---- [ Вставить после ] -------------------<br />\n <br />\n&#039;U_CANONICAL&#039; =&gt; &quot;login.php&quot;,<br />\n <br />\n# ---- [ Открыть ] -------------------<br />\n <br />\nviewforum.php<br />\n <br />\n# ---- [ Найти ] -------------------<br />\n <br />\n&#039;PRUNE_DAYS&#039; =&gt; $forum_data[&#039;prune_days&#039;],<br />\n <br />\n# ---- [ Вставить после ] -------------------<br />\n <br />\n&#039;U_CANONICAL&#039; =&gt; FULL_URL . $pg_url . (($start) ? &quot;&amp;start=$start&quot; : &#039;&#039;),<br />\n <br />\n# ---- [ Открыть ] -------------------<br />\n <br />\nviewtopic.php<br />\n <br />\n# ---- [ Найти ] -------------------<br />\n <br />\n&#039;U_SEARCH_SELF&#039; =&gt; &quot;search.php?uid={$userdata[&#039;user_id&#039;]}&amp;t=$topic_id&amp;dm=1&quot;,<br />\n <br />\n# ---- [ Вставить после ] -------------------<br />\n <br />\n&#039;U_CANONICAL&#039; =&gt; FULL_URL . TOPIC_URL . $topic_id . (($start) ? &quot;&amp;start=$start&quot; : &#039;&#039;),<br />\n <br />\n# ---- [ Открыть ] -------------------<br />\n <br />\ntemplates/default/page_header.tpl<br />\n <br />\n# ---- [ Найти ] -------------------<br />\n <br />\n{META}<br />\n <br />\n# ---- [ Вставить до ] -------------------<br />\n <br />\n&lt;!-- IF U_CANONICAL --&gt;&lt;link rel=&quot;canonical&quot; href=&quot;{U_CANONICAL}&quot; /&gt;&lt;!-- ENDIF --&gt;<br />\n <br />\n# ---- [ Конец ] -------------------",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1398939310,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "rel-canonical",
+  "sticky": false,
+  "tags": [],
+  "title": "rel=\"canonical\"",
+  "url_path": "/threads/rel-canonical.25924/",
+  "user_id": 0,
+  "username": "ler",
+  "view_count": 1063
+}

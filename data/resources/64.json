@@ -1,0 +1,103 @@
+{
+  "category": {
+    "description": "Icons, smileys, and other graphic elements for design.",
+    "id": 6,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Graphics and styles",
+    "view_url": "https://torrentpier.com/resources/categories/graphics-and-styles.6/"
+  },
+  "current_files": [
+    {
+      "filename": "эффект_прозрачности.zip",
+      "id": 3861,
+      "local_path": null,
+      "r2_key": null,
+      "size": 768,
+      "src_url": "https://torrentpier.com/api/resource-versions/328/download?file=3861"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]\nОткрываем файл стилей сайта, например [B]style.css[/B] и в самый его конец добавляем следующий код:\n[HTML]#banners a img\n{\nopacity:0.3; -moz-opacity:0.3; filter:alpha(opacity=40);\n}\n\n#banners a:hover img\n{\nopacity:1.0; -moz-opacity:1.0; filter:alpha(opacity=100);\n}\n[/HTML]\n\nОткрываем файл в котором прописаны баннеры, например [B]page_footer.tpl[/B] и заключаем вашу картинку (банер, счетчики) в указанные теги:\n[HTML]<div id=\"banners\">тут картинки , банеры</div>[/HTML]\n\nНапример у меня выглядит это примерно так:\n[HTML]<div id=\"banners\">\n<!--SpyLOG-->\n<span id=\"spylog2042332\"></span><script type=\"text/javascript\"> var spylog = { counter: 2042332, next: spylog , track_links: \"all\" }; document.write(unescape(\"%3Cscript%20src=%22http\" +\n((\"https:\" == document.location.protocol) ? \"s\" : \"\") +\n\"://counter.spylog.com/cnt.js%22%20defer=%22defer%22%3E%3C/script%3E\")); </script>\n<!--SpyLOG-->\n</div>\n[/HTML]\n[/SPOILER]",
+    "owner": "Link"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1431459557,
+      "file_size": 20190,
+      "filename": "922992830dbb63d65519a1e8a84b09d6.webp",
+      "height": 106,
+      "id": 3859,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/922992830dbb63d65519a1e8a84b09d6-webp.3859/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3863-aac48972f9949673f31e663922216b34.jpg?hash=E_1P19cfGW",
+      "width": 978
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> делаем прозрачные счетчики, которые при наведении курсора становятся обычными.",
+  "download_count": 384,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/64.jpg?1431459632",
+  "id": 64,
+  "is_fileless": null,
+  "last_update": 1431459867,
+  "rating_avg": 1,
+  "rating_count": 1,
+  "resource_date": 1389630746,
+  "resource_state": "visible",
+  "slug": "effekt-prozracnosti-bannerov-i-scetcikov",
+  "tag_line": "Делаем прозрачные счетчики, которые при наведении курсора становятся обычными.",
+  "tags": [],
+  "title": "Эффект прозрачности баннеров и счетчиков",
+  "url_path": "/resources/effekt-prozracnosti-bannerov-i-scetcikov.64/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 283,
+      "files": [
+        {
+          "filename": "эффект_прозрачности.zip",
+          "id": 3861,
+          "local_path": null,
+          "r2_key": null,
+          "size": 768,
+          "src_url": "https://torrentpier.com/api/resource-versions/328/download?file=3861"
+        }
+      ],
+      "id": 328,
+      "rating_avg": 1,
+      "rating_count": 1,
+      "release_date": 1431459867,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/effekt-prozracnosti-bannerov-i-scetcikov.64/version/328/"
+    },
+    {
+      "download_count": 102,
+      "files": [
+        {
+          "filename": "эффект_прозрачности.zip",
+          "id": 3860,
+          "local_path": null,
+          "r2_key": null,
+          "size": 768,
+          "src_url": "https://torrentpier.com/api/resource-versions/69/download?file=3860"
+        }
+      ],
+      "id": 69,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1389630746,
+      "version_state": "visible",
+      "version_string": "1.0",
+      "view_url": "https://torrentpier.com/resources/effekt-prozracnosti-bannerov-i-scetcikov.64/version/69/"
+    }
+  ],
+  "view_count": 849
+}

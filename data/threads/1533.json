@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 20379,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 52,
+    "title": "Bug tracker archive"
+  },
+  "id": 1533,
+  "last_post_date": 1347920944,
+  "node_id": 52,
+  "post_date": 1347920944,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20379,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Сабж. На странуцу с номером больше 100 - не переходит и адрес имеет вид viewforum.php?f=19&amp;sort=2&amp;start=1.02E Помогите решить.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1347920944,
+      "user_id": 2152,
+      "user_title": "User",
+      "username": "adamsadriane"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "ne-perehodi-na-stranicu-s-nomerom-bol-se-100-adres-vida-viewforum-php-f-19-sort-2-start-1-02e-4",
+  "sticky": false,
+  "tags": [],
+  "title": "Не переходи на страницу с номером больше 100. Адрес вида viewforum.php?f=19&sort=2&start=1.02E+4",
+  "url_path": "/threads/ne-perehodi-na-stranicu-s-nomerom-bol-se-100-adres-vida-viewforum-php-f-19-sort-2-start-1-02e-4.1533/",
+  "user_id": 2152,
+  "username": "adamsadriane",
+  "view_count": 4801
+}

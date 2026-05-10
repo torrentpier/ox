@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 77529,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 36907,
+  "last_post_date": 1425319642,
+  "node_id": 47,
+  "post_date": 1425319642,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 77529,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Пользователь Exile разместил новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/otkljuchenie-lichnogo-soobschenija-o-proverke-reliza.178/\" class=\"link link--internal\">Отключение личного сообщения о проверке релиза</a> - Дополнение к модификации отключения входящих личных сообщений.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> дополнение к модификации отключения входящих личных сообщений. Отключение личного сообщения о проверке релиза.</blockquote><br />\n<a href=\"https://torrentpier.com/resources/otkljuchenie-lichnogo-soobschenija-o-proverke-reliza.178/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1425319642,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "otklucenie-licnogo-soobsenia-o-proverke-reliza",
+  "sticky": false,
+  "tags": [],
+  "title": "Отключение личного сообщения о проверке релиза",
+  "url_path": "/threads/otklucenie-licnogo-soobsenia-o-proverke-reliza.36907/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 910
+}

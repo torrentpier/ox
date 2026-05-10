@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58582,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25726,
+  "last_post_date": 1415032788,
+  "node_id": 57,
+  "post_date": 1391552706,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58582,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Интересует возможность перехода с предыдущего стабильного релиза на последний (с R400 на R600). Будет ли обновление возможно только с &quot;чистого&quot; К400, с установленными на R400 модами или вообще переход не возможен?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1391552706,
+      "user_id": 3108,
+      "user_title": "",
+      "username": "leszav"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58583,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Будет скрипт для обновления базы. Инструкцию по обновлению также напишем.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1391553191,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66174,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "а где скрипт?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1415031733,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66175,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "в папке upgrade",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1415032788,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "obnovlenie-s-r400-do-r600",
+  "sticky": false,
+  "tags": [],
+  "title": "Обновление с R400 до R600",
+  "url_path": "/threads/obnovlenie-s-r400-do-r600.25726/",
+  "user_id": 3108,
+  "username": "leszav",
+  "view_count": 1377
+}

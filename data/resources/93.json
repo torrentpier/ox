@@ -1,0 +1,61 @@
+{
+  "category": {
+    "description": "Section with all paid modifications for TorrentPier.",
+    "id": 2,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Paid",
+    "view_url": "https://torrentpier.com/resources/categories/paid.2/"
+  },
+  "current_files": [],
+  "custom_fields": {},
+  "description_attachments": [
+    {
+      "attach_date": 1394434592,
+      "file_size": 5914,
+      "filename": "BjqeDAK.webp",
+      "height": 137,
+      "id": 2466,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/bjqedak-webp.2466/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2471-24fb33500f6cd90fd3755143df338275.jpg?hash=2w9lE-gzGp",
+      "width": 367
+    }
+  ],
+  "description_parsed": "<b>ICQ: </b>692652796<br />\n<b>Стоимость:</b> 500р<br />\n<b>Описание: </b>Вывод всех лычек групп, в которых пользователь состоит. Аля tapochek.net<br />\nЛычки выводятся в подпись в сообщениях, а так же в профиле.",
+  "download_count": 0,
+  "external_url": null,
+  "icon_url": null,
+  "id": 93,
+  "is_fileless": null,
+  "last_update": 1394434826,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1394434826,
+  "resource_state": "visible",
+  "slug": "lycki-grupp",
+  "tag_line": "Вывод всех лычек групп, в которых пользователь состоит. Аля tapochek.net",
+  "tags": [],
+  "title": "Лычки групп",
+  "url_path": "/resources/lycki-grupp.93/",
+  "user_id": 3170,
+  "username": "drew",
+  "version": "1.0",
+  "versions": [
+    {
+      "download_count": 0,
+      "files": [],
+      "id": 99,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1394434826,
+      "version_state": "visible",
+      "version_string": "1.0",
+      "view_url": "https://torrentpier.com/resources/lycki-grupp.93/version/99/"
+    }
+  ],
+  "view_count": 696
+}

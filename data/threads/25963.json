@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61054,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25963,
+  "last_post_date": 1402311820,
+  "node_id": 57,
+  "post_date": 1402293600,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61054,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Добрый день, дело в том что пытаюсь отвязать крон, Администратор сервера говорит что с кроном все в порядке, но крон дает вот такие ЛОГИ<br />\n<pre class=\"xfBb-code\" data-lang=\"\">Undefined index: SERVER_ADDR in /home/tracker/www/config.php on line 301</pre>Вот что у меня находится на 301 строке <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$bb_cfg[&#039;cookie_domain&#039;] = ($domain_name != $_SERVER[&#039;SERVER_ADDR&#039;]) ? &quot;.$domain_name&quot; : &#039;.******&#039;; # &#039;.yourdomain.com&#039;</pre>Пожалуйста помогите, буду благодарен..",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1402293600,
+      "user_id": 4341,
+      "user_title": "User",
+      "username": "Ильхом Сафаров"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61057,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<span style=\"font-family: 'andale mono'\"><span style=\"font-size: 18px\"><span style=\"color: #000000\"><span style=\"font-size: 10px\"><span style=\"font-family: 'monospace'\"><span style=\"color: #0000bb\"><pre class=\"xfBb-code\" data-lang=\"\">$bb_cfg[&#039;cookie_domain&#039;] = (isset($_SERVER[&#039;SERVER_ADDR&#039;]) &amp;&amp; $domain_name != $_SERVER[&#039;SERVER_ADDR&#039;]) ? &quot;.$domain_name&quot; : &#039;.******&#039;; # &#039;.yourdomain.com&#039;</pre></span></span></span></span></span></span>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1402311820,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "problema-vo-vrema-otvazki-krona",
+  "sticky": false,
+  "tags": [],
+  "title": "Проблема во время отвязки крона..",
+  "url_path": "/threads/problema-vo-vrema-otvazki-krona.25963/",
+  "user_id": 4341,
+  "username": "Ильхом Сафаров",
+  "view_count": 1040
+}

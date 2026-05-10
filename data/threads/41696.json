@@ -1,0 +1,122 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 90979,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41696,
+  "last_post_date": 1493067592,
+  "node_id": 57,
+  "post_date": 1493067401,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90979,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как отключить?<br />\n<b><br />\n[  Время выполнения: 1.307 сек  |  MySQL: 1.014 сек (78%) · 3 запр.  |  GZIP вкл  |  Память: 836.44 KB / 31.07 MB / 13.41 MB  ]</b>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1493067401,
+      "user_id": 1290,
+      "user_title": "User",
+      "username": "REM"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90980,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Для чего? Видят только пользователи прописанные в конфиге как дебажные. То есть суперадмины.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1493067429,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90981,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/1/\">Exile</a>, Не я просто хочу знать где отключается, а так я не собираюсь её отключать!🙂",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1493067544,
+      "user_id": 1290,
+      "user_title": "User",
+      "username": "REM"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90982,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/1290/\">REM</a>, ну я дал ответ выше. Дебаг-пользователи в конфиге.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1493067573,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90984,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ок, спс!",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1493067592,
+      "user_id": 1290,
+      "user_title": "User",
+      "username": "REM"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "gde-otklucaetsa-funkcia",
+  "sticky": false,
+  "tags": [
+    "дебаг",
+    "отладка"
+  ],
+  "title": "Где отключается функция?",
+  "url_path": "/threads/gde-otklucaetsa-funkcia.41696/",
+  "user_id": 1290,
+  "username": "REM",
+  "view_count": 1274
+}

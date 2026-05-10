@@ -1,0 +1,136 @@
+{
+  "custom_fields": {
+    "torrentpier": "223"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 93308,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41922,
+  "last_post_date": 1530319930,
+  "node_id": 57,
+  "post_date": 1529959325,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1529959283,
+          "file_size": 113256,
+          "filename": "Снимок3.webp",
+          "height": 718,
+          "id": 5154,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok3-webp.5154/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5158-5996b9e96d97731a39fd862b41080ae1.jpg?hash=4XleBsUQl9",
+          "width": 1891
+        }
+      ],
+      "id": 93308,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1529959391,
+      "message_parsed": "Вечер добрый! всем для начала.<br />\nОчень и очень рад что форум и сайт вернулся!!!👍😎<br />\nА теперь по теме, ребята я самоучка, учусь по видео и вашим советам ГУРУ)<br />\nПроблема с BB-кодом, что надо сделать что бы он работал, вот он на скрине,<br />\nне работает, так понемаю что его надо указать в файлеке.<br />\nНо как не знаю. Тыкните носом, как это реализовать.<br />\n<a href=\"https://torrentpier.com/attachments/5154/\"><img src=\"https://torrentpier.com/data/attachments/5/5158-5996b9e96d97731a39fd862b41080ae1.jpg?hash=4XleBsUQl9\" alt=\"Снимок3.webp\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1529959325,
+      "user_id": 8410,
+      "user_title": "User",
+      "username": "Gaus111"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93309,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Уже обсуждалось на форуме. Ищите в теме по автопарсеру.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1529969972,
+      "user_id": 93,
+      "user_title": "User",
+      "username": "Ragnar"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93310,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо, поищу в той теме, но парсер не ставил, себе, и не пользуюсь им, так как люблю темы и топики оформлять по своему вкусу, а каперайт с других топиков и форумов это для лентяев🙂",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1529985817,
+      "user_id": 8410,
+      "user_title": "User",
+      "username": "Gaus111"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93332,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Gaus111\">Но как не знаю. Тыкните носом, как это реализовать.</blockquote>Я предполагаю, что надо две вещи проверить:<br />\n1) шаблон релиза (с помощью конструктора) сами делали или брали откуда-то?<br />\n2) файл posting.tpl. Много в него правок вносили?",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1530308510,
+      "user_id": 1478,
+      "user_title": "User",
+      "username": "Nikolay90"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93333,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Шаблон стандартный, а в posting. tpl всё по инструкции делал из парсинга V0. 7.2<br />\n<blockquote class=\"xfBb-quote\" data-name=\"Nikolay90\">Я предполагаю, что надо две вещи проверить:<br />\n1) шаблон релиза (с помощью конструктора) сами делали или брали откуда-то?<br />\n2) файл posting.tpl. Много в него правок вносили?</blockquote>",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1530319930,
+      "user_id": 8410,
+      "user_title": "User",
+      "username": "Gaus111"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "bb-kod-kak-ispravit",
+  "sticky": false,
+  "tags": [],
+  "title": "bb-код  как исправить?",
+  "url_path": "/threads/bb-kod-kak-ispravit.41922/",
+  "user_id": 8410,
+  "username": "Gaus111",
+  "view_count": 1625
+}

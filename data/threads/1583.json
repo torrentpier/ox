@@ -1,0 +1,134 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 21060,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1583,
+  "last_post_date": 1350514111,
+  "node_id": 57,
+  "post_date": 1349418174,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 21060,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Крон работал отлично. Переехал на дедик и перестали обновляться списки последних добавленных торрентов а также список последних сообщений. Я думкаю проблема в  DS update &#039;cat_forums&#039;<br />\n <br />\nНо фишка в том, что если запустить его вручную из админки, то обновится все. А сам крон его не желает запускать. Куда копать товарищи?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1349418174,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1349418501,
+          "file_size": 130978,
+          "filename": "111.webp",
+          "height": 591,
+          "id": 1494,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/111-webp.1494/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1495-6747b381441515962e6a070097fbd1e7.jpg?hash=XykY0cg3fW",
+          "width": 1043
+        }
+      ],
+      "id": 21062,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/attachments/1494/\"><img src=\"https://torrentpier.com/data/attachments/1/1495-6747b381441515962e6a070097fbd1e7.jpg?hash=XykY0cg3fW\" alt=\"111.webp\" /></a> По скрину видно что все как бы работает",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1349418464,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 21133,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "По каким-то причинам на моем centos 6.2 не стоял крон. Все решилось банально <b>yum install vixie-cron crontabs </b>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1349535979,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 21153,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Вася\">По каким-то причинам на моем centos 6.2 не стоял крон. Все решилось банально <b>yum install vixie-cron crontabs </b></blockquote>аххах, что-то новенькое))))",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1349589355,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 21577,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"dimka3210\">аххах, что-то новенькое))))</blockquote>Вполне правда кстати, утилитку crontab в centos minimal по умолчанию не установили, так же как и wget например, меня весьма удивило 🙂",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1350514111,
+      "user_id": 4,
+      "user_title": "User",
+      "username": "diden05"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "ds-update-cat_forums",
+  "sticky": false,
+  "tags": [],
+  "title": "DS update 'cat_forums'",
+  "url_path": "/threads/ds-update-cat_forums.1583/",
+  "user_id": 0,
+  "username": "ler",
+  "view_count": 1367
+}

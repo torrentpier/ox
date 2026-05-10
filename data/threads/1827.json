@@ -1,0 +1,132 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 24295,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1827,
+  "last_post_date": 1357187583,
+  "node_id": 57,
+  "post_date": 1355809476,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24295,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте, возникла проблема с подсчетом dl/up статистики после переезда c домена вида mysite.com на сабдомен tracker.mysite.com. До переезда все было шикарно. Собственно что я делал, перекинул весь трекер в папку для сабдомена, в конфиге переписал имя домена, выставил права на нужные папки/файлы, переписал в кронтабе задачу на новый адрес, изменил адрес для анонсера. После этого трекер рабоатет, сидбонусы считает, кол-во сидов личей обновляет, кто что качает раздает в профиле тоже пишет и обновляет, а статистика в профиле и скорость обмена на главной по нулям 🙁<br />\nВозникает вопрос что я сделал не так, или что я забыл сделать, второй день сижу мучаюсь не могу понять, прошу помощи.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1355809476,
+      "user_id": 2760,
+      "user_title": "User",
+      "username": "Tehek"
+    },
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1356332023,
+          "file_size": 7427,
+          "filename": "xbt_announce_log.rar",
+          "height": 0,
+          "id": 1762,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/xbt_announce_log-rar.1762/",
+          "thumbnail_url": null,
+          "width": 0
+        },
+        {
+          "attach_date": 1356332264,
+          "file_size": 26360,
+          "filename": "Cron.rar",
+          "height": 0,
+          "id": 1763,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/cron-rar.1763/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 24593,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "UP: После установки чистого трекера проблема осталась прежней, опять не считает ни чего. Крон работает 100%. Попробовал сменить анонсер на xbt, ситуация стала лучше. Теперь на главной и в теме с раздачей отображается скорость обмена. В теме правда только скорость отдачи. Выставил в xbt логирование в базу... Лог xbt и крона в аттаче.<br />\nЛоги крон задачи:<br />\n<b>SQL-tr_cleanup_and_dlstat.php.log</b><br />\n<pre class=\"xfBb-code\" data-lang=\"\">1356345607 | 12-24 14:40:06 | 0.0004 | 0.1  | 02507 | db1 | REPLACE INTO buf_last_seeder (topic_id, seeder_las [...cut...] M bb_bt_tracker WHERE seeder = 1 GROUP BY topic_id # Records: 0 Duplicates: 0 Warnings: 0 # includes/cron/jobs/tr_cleanup_and_dlstat.php(61) cron\n1356345607 | 12-24 14:40:06 | 0.0002 | 0.1  | 02507 | db1 | DELETE FROM bb_bt_tracker WHERE update_time &lt; 1356341101 # includes/cron/jobs/tr_cleanup_and_dlstat.php(70) cron\n1356345607 | 12-24 14:40:06 | 0.0003 | 0.1  | 02507 | db1 | INSERT IGNORE INTO bb_bt_torstat (topic_id, user_i [...cut...] -1, seeder) = 1 AND (up_add != 0 OR down_add != 0) # Records: 0 Duplicates: 0 Warnings: 0 # includes/cron/jobs/tr_cleanup_and_dlstat.php(82) cron\n1356345607 | 12-24 14:40:06 | 0.0002 | 0.1  | 02507 | db1 | UPDATE bb_bt_tracker SET up_add = 0, down_add = 0 # Rows matched: 0 Changed: 0 Warnings: 0 # includes/cron/jobs/tr_cleanup_and_dlstat.php(84) cron\n1356345607 | 12-24 14:40:06 | 0.0004 | 0.1  | 02507 | db1 | CREATE TEMPORARY TABLE tmp_bonus ( user_id INT UNS [...cut...] NT UNSIGNED NOT NULL DEFAULT &#039;0&#039; ) ENGINE = MEMORY # includes/cron/jobs/tr_cleanup_and_dlstat.php(198) cron\n1356345607 | 12-24 14:40:06 | 0.0003 | 0.1  | 02507 | db1 | INSERT INTO tmp_bonus SELECT bt.user_id, count(bt. [...cut...] ND tor.size &gt; 0 AND bt.seeder &gt; 0 GROUP BY user_id # Records: 0 Duplicates: 0 Warnings: 0 # includes/cron/jobs/tr_cleanup_and_dlstat.php(209) cron\n1356345607 | 12-24 14:40:06 | 0.0004 | 0.1  | 02507 | db1 | UPDATE bb_users u, bb_bt_users bu, tmp_bonus b SET [...cut...] ND u.user_active = 1 AND u.user_id not IN(-1,-746) # Rows matched: 0 Changed: 0 Warnings: 0 # includes/cron/jobs/tr_cleanup_and_dlstat.php(235) cron\n1356345607 | 12-24 14:40:06 | 0.0004 | 0.1  | 02507 | db1 | UPDATE bb_users u, bb_bt_users bu, tmp_bonus b SET [...cut...] ND u.user_active = 1 AND u.user_id not IN(-1,-746) # Rows matched: 0 Changed: 0 Warnings: 0 # includes/cron/jobs/tr_cleanup_and_dlstat.php(235) cron\n1356345607 | 12-24 14:40:06 | 0.0003 | 0.1  | 02507 | db1 | UPDATE bb_users u, bb_bt_users bu, tmp_bonus b SET [...cut...] ND u.user_active = 1 AND u.user_id not IN(-1,-746) # Rows matched: 0 Changed: 0 Warnings: 0 # includes/cron/jobs/tr_cleanup_and_dlstat.php(235) cron\n1356345607 | 12-24 14:40:06 | 0.0001 | 0.1  | 02507 | db1 | DROP TEMPORARY TABLE IF EXISTS tmp_bonus # includes/cron/jobs/tr_cleanup_and_dlstat.php(238) cron</pre>Если есть какие либо варианты прошу подсказать.<br />\n <br />\nP.S. Огромное спасибо пользователю <b>Sarymian </b>за попытку помощи 🙂<br />\nP.P.S. Если нужны еще какие-нибудь логи для выявления проблемы, могу выложить и просьба модераторам переименовать тему, т.к. по видимому проблема не связана с переездом на саб домен.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1356333509,
+      "user_id": 2760,
+      "user_title": "User",
+      "username": "Tehek"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24624,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вот если честно в упор не вижу проблемы 🙁<br />\n <br />\nВроде все хорошо. Ноль Варнингов. В чем беда хз.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1356371658,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Sarymian"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25013,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Полагаю что предложений больше не поступит, по видимому тех. поддержка просто отсутствует.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1357187583,
+      "user_id": 2760,
+      "user_title": "User",
+      "username": "Tehek"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "problema-posle-pereezda-na-sabdomen",
+  "sticky": false,
+  "tags": [],
+  "title": "Проблема после переезда на сабдомен",
+  "url_path": "/threads/problema-posle-pereezda-na-sabdomen.1827/",
+  "user_id": 2760,
+  "username": "Tehek",
+  "view_count": 1417
+}

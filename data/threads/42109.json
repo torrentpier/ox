@@ -1,0 +1,79 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94726,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 50,
+    "title": "Graphics and styles for TorrentPier"
+  },
+  "id": 42109,
+  "last_post_date": 1677946816,
+  "node_id": 50,
+  "post_date": 1677946816,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1677946751,
+          "file_size": 12410,
+          "filename": "Snow 60fps.zip",
+          "height": 0,
+          "id": 5359,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snow-60fps-zip.5359/",
+          "thumbnail_url": null,
+          "width": 0
+        },
+        {
+          "attach_date": 1677946788,
+          "file_size": 14636,
+          "filename": "List 60fps.zip",
+          "height": 0,
+          "id": 5361,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/list-60fps-zip.5361/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 94726,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<div style=\"text-align: center\"><b><span style=\"font-size: 26px\"><span style=\"color: rgb(84, 172, 210)\">Снегопад</span> и <span style=\"color: rgb(243, 121, 52)\">Листопад</span> 60FPS</span></b>&#8203;</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1677946816,
+      "user_id": 7621,
+      "user_title": "User",
+      "username": "DimaUZB2001"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "snegopad-i-listopad-60fps",
+  "sticky": false,
+  "tags": [],
+  "title": "Снегопад и Листопад 60FPS",
+  "url_path": "/threads/snegopad-i-listopad-60fps.42109/",
+  "user_id": 7621,
+  "username": "DimaUZB2001",
+  "view_count": 967
+}

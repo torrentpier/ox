@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 25596,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 2071,
+  "last_post_date": 1357967037,
+  "node_id": 3,
+  "post_date": 1357955564,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25596,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<img src=\"http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflYd9UnY.png\" alt=\"\" /><br />\nОбъясните пожалуйста, как вставляют такие картинки на сайте? <br />\nPS Суть в том, что они не по отдельности, а в кучу, и я не понимаю как тут определённая иконка выбирается, и выводится в том месте где нужно.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1357955564,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25597,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Считается расстояние по пикселям, вставляются как background, в background-position вписывается необходимое смещение. Это называтся спрайт",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1357962412,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25604,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Nightmare\">Считается расстояние по пикселям, вставляются как background, в background-position вписывается необходимое смещение. Это называтся спрайт</blockquote>Большое спасибо за информацию, и адекватный комментарий.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1357967037,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "cto-takoe-sprajty",
+  "sticky": false,
+  "tags": [],
+  "title": "Что такое спрайты?",
+  "url_path": "/threads/cto-takoe-sprajty.2071/",
+  "user_id": 55,
+  "username": "Lange",
+  "view_count": 1468
+}

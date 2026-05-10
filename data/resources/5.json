@@ -1,0 +1,118 @@
+{
+  "category": {
+    "description": "Section with all templates for TorrentPier.",
+    "id": 5,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Templates",
+    "view_url": "https://torrentpier.com/resources/categories/templates.5/"
+  },
+  "current_files": [
+    {
+      "filename": "bl_e.zip",
+      "id": 3645,
+      "local_path": null,
+      "r2_key": null,
+      "size": 168209,
+      "src_url": "https://torrentpier.com/api/resource-versions/294/download?file=3645"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "adapt",
+    "installation": "[SPOILER=\"Инструкция\"]Загрузить файлы на сервер.[/SPOILER]",
+    "owner": "co:caine",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1369072963,
+      "file_size": 102530,
+      "filename": "index1.webp",
+      "height": 869,
+      "id": 1968,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/index1-webp.1968/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/1/1973-b90de08b44bbc5702a40df317aa44bf8.jpg?hash=riw8dXYw3F",
+      "width": 1510
+    },
+    {
+      "attach_date": 1369072964,
+      "file_size": 78412,
+      "filename": "index2.webp",
+      "height": 831,
+      "id": 1969,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/index2-webp.1969/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/1/1974-c6edb68d9c136b9945c4f28e48bcf03b.jpg?hash=L9sSBujdVf",
+      "width": 1511
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> шаблон, простой в синих тонах.",
+  "download_count": 512,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/5.jpg?1429570662",
+  "id": 5,
+  "is_fileless": null,
+  "last_update": 1429570771,
+  "rating_avg": 5,
+  "rating_count": 1,
+  "resource_date": 1369072985,
+  "resource_state": "visible",
+  "slug": "sablon-blue-ezar",
+  "tag_line": "Шаблон, простой в синих тонах.",
+  "tags": [],
+  "title": "Шаблон «Blue Ezar»",
+  "url_path": "/resources/sablon-blue-ezar.5/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 333,
+      "files": [
+        {
+          "filename": "bl_e.zip",
+          "id": 3645,
+          "local_path": null,
+          "r2_key": null,
+          "size": 168209,
+          "src_url": "https://torrentpier.com/api/resource-versions/294/download?file=3645"
+        }
+      ],
+      "id": 294,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1429570771,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/sablon-blue-ezar.5/version/294/"
+    },
+    {
+      "download_count": 181,
+      "files": [
+        {
+          "filename": "В корень сайта.rar",
+          "id": 1967,
+          "local_path": null,
+          "r2_key": null,
+          "size": 162618,
+          "src_url": "https://torrentpier.com/api/resource-versions/5/download?file=1967"
+        }
+      ],
+      "id": 5,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1369072985,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/sablon-blue-ezar.5/version/5/"
+    }
+  ],
+  "view_count": 626
+}

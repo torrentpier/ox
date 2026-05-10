@@ -1,0 +1,111 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95341,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 96,
+    "title": "Modifications archive"
+  },
+  "id": 42196,
+  "last_post_date": 1700156325,
+  "node_id": 96,
+  "post_date": 1700156325,
+  "posts": [
+    {
+      "attach_count": 4,
+      "attachments": [
+        {
+          "attach_date": 1700237906,
+          "file_size": 15273,
+          "filename": "jscolor.min.zip",
+          "height": 0,
+          "id": 5613,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/jscolor-min-zip.5613/",
+          "thumbnail_url": null,
+          "width": 0
+        },
+        {
+          "attach_date": 1700237913,
+          "file_size": 40798,
+          "filename": "Снимок экрана (31).webp",
+          "height": 581,
+          "id": 5614,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-ekrana-31-webp.5614/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5618-8a22a4945dda2fdec67ffcff035d8252.jpg?hash=QEi1llo25w",
+          "width": 1313
+        },
+        {
+          "attach_date": 1700237948,
+          "file_size": 41480,
+          "filename": "Снимок экрана (32).webp",
+          "height": 585,
+          "id": 5615,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-ekrana-32-webp.5615/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5619-19e799b78b7b997ad152665673661771.jpg?hash=r0GkPNDWSw",
+          "width": 1315
+        },
+        {
+          "attach_date": 1700237955,
+          "file_size": 42052,
+          "filename": "Снимок экрана (34).webp",
+          "height": 591,
+          "id": 5616,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-ekrana-34-webp.5616/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5620-471ed39817983f5af5199753f226ca89.jpg?hash=tafhfa1xm4",
+          "width": 1323
+        }
+      ],
+      "id": 95341,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1734251267,
+      "message_parsed": "<div style=\"text-align: center\"><span style=\"color: rgb(226, 80, 65)\"><b>Используйте лучше </b><a href=\"https://torrentpier.com/resources/vybor-cveta-teksta-iz-politry.313/\" class=\"link link--internal\"><b>этот мод</b></a></span>&#8203;</div><hr />Совместимость  -  <i>все версии</i><br />\nИзменения в БД -  <i>Не требуются</i><br />\nУстановка - <i>легко<br />\nАвтор - <i>KRYL</i></i><br />\nОбщественное достояние  - <b><span style=\"font-size: 18px\">да</span></b><br />\n<br />\n<div>Spoiler content hidden.</div><br />\n<br />\nСначала выбирается цвет, потом по нажатию на выбранный цвет, оборачивается выделенный текст .<br />\nОбновлено до версии 1.1<br />\n<br />\n<br />\n<a href=\"https://torrentpier.com/attachments/5614/\"><img src=\"https://torrentpier.com/data/attachments/5/5618-8a22a4945dda2fdec67ffcff035d8252.jpg?hash=QEi1llo25w\" alt=\"Снимок экрана (31).png\" /></a><a href=\"https://torrentpier.com/attachments/5615/\"><img src=\"https://torrentpier.com/data/attachments/5/5619-19e799b78b7b997ad152665673661771.jpg?hash=r0GkPNDWSw\" alt=\"Снимок экрана (32).png\" /></a><a href=\"https://torrentpier.com/attachments/5616/\"><img src=\"https://torrentpier.com/data/attachments/5/5620-471ed39817983f5af5199753f226ca89.jpg?hash=tafhfa1xm4\" alt=\"Снимок экрана (34).png\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1700156325,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "vybor-cveta-teksta-iz-politry-v-1-1",
+  "sticky": false,
+  "tags": [
+    "bbcode",
+    "color",
+    "text"
+  ],
+  "title": "Выбор цвета текста из политры (v 1.1)",
+  "url_path": "/threads/vybor-cveta-teksta-iz-politry-v-1-1.42196/",
+  "user_id": 5626,
+  "username": "Kryl",
+  "view_count": 688
+}

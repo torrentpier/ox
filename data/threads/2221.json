@@ -1,0 +1,143 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 27055,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 52,
+    "title": "Bug tracker archive"
+  },
+  "id": 2221,
+  "last_post_date": 1361910119,
+  "node_id": 52,
+  "post_date": 1361180852,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1361179260,
+          "file_size": 22492,
+          "filename": "sshot-1.webp",
+          "height": 386,
+          "id": 1883,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/sshot-1-webp.1883/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1884-e37d71bfca96d3250628030b57249356.jpg?hash=LU_lI3Zud0",
+          "width": 1250
+        },
+        {
+          "attach_date": 1361179384,
+          "file_size": 37824,
+          "filename": "sshot-2.webp",
+          "height": 442,
+          "id": 1884,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/sshot-2-webp.1884/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1885-324b0944d9fc51db28685021860c19ac.jpg?hash=_7fQzHYiHN",
+          "width": 1752
+        }
+      ],
+      "id": 27055,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "1) При регистрации капча не отображается. С виду, дело в том, что она не корректно генерирует имена файлов. <a href=\"http://localhost/torrents/images/captcha/0/379b48d385fc1faa918a769e4cfca22a.jpg\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://localhost/torrents/images/captcha/0/379b48d385fc1faa918a769e4cfca22a.jpg</a><b>?1364335240</b><br />\n<a href=\"https://torrentpier.com/attachments/1883/\"><img src=\"https://torrentpier.com/data/attachments/1/1884-e37d71bfca96d3250628030b57249356.jpg?hash=LU_lI3Zud0\" alt=\"sshot-1.webp\" /></a><br />\n <br />\n2) После выхода из аккуанта(и для не зарегистрированных пользователей) На главной отображается раздел которого нет. Я его в админке удалил.<br />\n<a href=\"https://torrentpier.com/attachments/1884/\"><img src=\"https://torrentpier.com/data/attachments/1/1885-324b0944d9fc51db28685021860c19ac.jpg?hash=_7fQzHYiHN\" alt=\"sshot-2.webp\" /></a><br />\n <br />\n3) Подскажите как сделать так, чтоб &quot;TorrentPier 2 r400 stable&quot; работал из поддомена. т.е. <a href=\"http://localhost/torrents/тут\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://localhost/torrents/тут</a> уже сам сайт. Большинство работает, но posting.php и пр. на отрез отказываются. Например при попытке поправить пост. вылазит ошибка, что страница не найдена. Слетает адрес - <a href=\"http://localhost/posting.php?mode=editpost&amp;p=17\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://localhost/posting.php?mode=editpost&amp;p=17</a> а надо <a href=\"http://localhost/torrents/posting.php?mode=editpost&amp;p=17\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://localhost/torrents/posting.php?mode=editpost&amp;p=17</a><br />\n <br />\nПодскажите, как решить данные проблемы. Заранее спасибо!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1361180852,
+      "user_id": 4099,
+      "user_title": "User",
+      "username": "LaQwer"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27090,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "1) <a href=\"http://torrentpier.com/threads/%D0%B7%D0%B4%D1%80%D0%B0%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5-%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B8%D1%82%D0%B5-%D1%80%D0%B5%D1%88%D0%B8%D1%82-%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC%D1%83.1255/\" class=\"link link--internal\">http://torrentpier.com/threads/здраствуйте-помогите-решит-проблему.1255/</a> уже есть<br />\n <br />\n2) отвяжи крон<br />\n3)<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">найти\n$bb_cfg[&#039;script_path&#039;] = &#039;/&#039;;                      // The path where FORUM is located relative to the domain name\n \nзаменить\n$bb_cfg[&#039;script_path&#039;] = &#039;/torrents/&#039;;                      // The path where FORUM is located relative to the domain name</pre><pre class=\"xfBb-code\" data-lang=\"php\">найти\n$bb_cfg[&#039;cookie_path&#039;]  = &#039;/&#039;;                    # &#039;/forum/&#039;\n \nзаменить\n \n$bb_cfg[&#039;cookie_path&#039;]  = &#039;/torrents/&#039;;                    # &#039;/forum/&#039;</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1361269501,
+      "user_id": 737,
+      "user_title": "User",
+      "username": "Dream"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27091,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Dream</b>, забыл написать что<br />\n<blockquote class=\"xfBb-quote\" data-name=\"Dream\">3)</blockquote>, это всё в конфиг рнр...а то след вопрос был бы а куды все это вставлять?😉",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1361271306,
+      "user_id": 782,
+      "user_title": "User",
+      "username": "qaqra"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27424,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dream\">2) отвяжи крон</blockquote>зачем его отвязывать вообще, если человек даже не в курсе что и как протекает? отключайте кеш ,если хотите онлайн статистики и прочее.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1361909411,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27426,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "та ладно, а в друг)",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1361910119,
+      "user_id": 737,
+      "user_title": "User",
+      "username": "Dream"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "bag-pri-registracii-novogo-akuanta",
+  "sticky": false,
+  "tags": [],
+  "title": "Баг при регистрации нового акуанта",
+  "url_path": "/threads/bag-pri-registracii-novogo-akuanta.2221/",
+  "user_id": 4099,
+  "username": "LaQwer",
+  "view_count": 2344
+}

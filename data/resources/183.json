@@ -1,0 +1,134 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "FULL TOP USER& RELEASE.zip",
+      "id": 3224,
+      "local_path": null,
+      "r2_key": null,
+      "size": 8810,
+      "src_url": "https://torrentpier.com/api/resource-versions/235/download?file=3224"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]\nВСЕ ФАЙЛЫ РАСКИДАТЬ ПО ПАПКАМ, top.php В КОРЕНЬ-----------------------------------------------------------------------------\n\npage_header.tpl-------------------------------------------------------------------------------------------------------------\n\nНАЙТИ\n<a href=\"{U_MEMBERLIST}\"><b>{L_MEMBERLIST}</b></a><span style=\"color:#CDCDCD;\">|</span>\n\nНИЖЕ ДОБАВИТЬ:\n<a href=\"top.php\"><b style=\"color: #993300;\">Наш ТОП</a></b><span style=\"color:#CDCDCD;\">|</span>\n\nlanguage/en/main.php------------------------------------------------------------------------------------------------------------\n\nВ КОНЕЦ:\n\n//TOP\n$lang['TOP_RELEASE_STAT'] = 'Statistics releases';\n$lang['TOP_USERS_STAT'] = 'user Statistics';\n\n$lang['TOP_RELEASE'] = 'TOP releases';\n$lang['TOP_RELEASE_ALL'] = 'all time';\n$lang['TOP_RELEASE_WEEK'] = 'last week';\n$lang['TOP_RELEASE_30DAYS'] = 'last 30 days';\n$lang['TOP_RELEASE_MONTH'] = 'current month';\n$lang['TOP_RELEASE_REPLIES']= 'trending';\n\n$lang['TOP_USERS'] = 'TOP users';\n$lang['TOP_UPLOAD'] = 'given';\n$lang['TOP_DOWNLOAD'] = 'downloaded';\n$lang['TOP_BONUS'] = 'Top on rare';\n$lang['TOP_RELEASES'] = 'on Top their';\n$lang['TOP_SEEDBONUS'] = 'Top seed-bonus';\n$lang['TOP_RATIO'] = 'Top rated';\n\nlanguage/ru/main.php------------------------------------------------------------------------------------------------------------\n\nВ КОНЕЦ:\n\n//TOP\n$lang['TOP_RELEASE_STAT']    = 'Статистика по раздачам';\n$lang['TOP_USERS_STAT']        = 'Статистика по пользователям';\n\n$lang['TOP_RELEASE']        = 'ТОП раздач';\n$lang['TOP_RELEASE_ALL']    = 'За всё время';\n$lang['TOP_RELEASE_WEEK']    = 'За последнюю неделю';\n$lang['TOP_RELEASE_30DAYS']    = 'За последние 30 дней';\n$lang['TOP_RELEASE_MONTH']    = 'За текущий месяц';\n$lang['TOP_RELEASE_REPLIES']= 'Самые обсуждаемые';\n\n$lang['TOP_USERS']            = 'ТОП пользователей';\n$lang['TOP_UPLOAD']            = 'По отданному';\n$lang['TOP_DOWNLOAD']        = 'По скачанному';\n$lang['TOP_BONUS']            = 'Топ на редких';\n$lang['TOP_RELEASES']        = 'Топ на своих';\n$lang['TOP_SEEDBONUS']        = 'Топ сид-бонус';\n$lang['TOP_RATIO']            = 'Топ по рейтингу';\n\nlanguage/ua/main.php------------------------------------------------------------------------------------------------------------\n\nВ КОНЕЦ:\n\n//TOP\n$lang['TOP_RELEASE_STAT'] = 'Статистика роздач';\n$lang['TOP_USERS_STAT'] = 'Статистика користувачів';\n\n$lang['TOP_RELEASE'] = 'ТОП роздач';\n$lang['TOP_RELEASE_ALL'] = 'За весь час';\n$lang['TOP_RELEASE_WEEK'] = 'За останній тиждень';\n$lang['TOP_RELEASE_30DAYS'] = 'За останні 30 днів';\n$lang['TOP_RELEASE_MONTH'] = 'За поточний місяць';\n$lang['TOP_RELEASE_REPLIES']= 'Найбільш обговорювані';\n\n$lang['TOP_USERS'] = 'ТОП користувачів';\n$lang['TOP_UPLOAD'] = 'По відданому';\n$lang['TOP_DOWNLOAD'] = 'По викачаного';\n$lang['TOP_BONUS'] = 'Топ на рідкісних';\n$lang['TOP_RELEASES'] = 'на Топ своїх';\n$lang['TOP_SEEDBONUS'] = 'Топ сід-бонус';\n$lang['TOP_RATIO'] = 'Топ за рейтингом';\n\nTHE END-------------------------------------------------------------------------------------------------------------------[/PHP]\n[/SPOILER]",
+    "owner": "Wertos",
+    "sql": "no",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425404817,
+      "file_size": 45446,
+      "filename": "2015-03-03 20-45-19 Скриншот экрана.webp",
+      "height": 410,
+      "id": 3207,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2015-03-03-20-45-19-skrinsot-ekrana-webp.3207/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3211-9f09d498c677a386590366e6461f3a0a.jpg?hash=2oyjmwjE3v",
+      "width": 1131
+    },
+    {
+      "attach_date": 1425404817,
+      "file_size": 68536,
+      "filename": "2015-03-03 20-31-16 Скриншот экрана.webp",
+      "height": 421,
+      "id": 3208,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2015-03-03-20-31-16-skrinsot-ekrana-webp.3208/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3212-e33eff896d38aefb722099e0a110a2c9.jpg?hash=6EEZJGxuDc",
+      "width": 1129
+    },
+    {
+      "attach_date": 1425404817,
+      "file_size": 66848,
+      "filename": "2015-03-03 20-32-25 Скриншот экрана.webp",
+      "height": 586,
+      "id": 3209,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2015-03-03-20-32-25-skrinsot-ekrana-webp.3209/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3213-e57b2bdbd048c0b0f07fe7d4c458912e.jpg?hash=MzSyma9jSu",
+      "width": 1129
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет возможность просмотра топовых раздач и пользователей за определенный период времени.",
+  "download_count": 782,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/183.jpg?1425405531",
+  "id": 183,
+  "is_fileless": null,
+  "last_update": 1425409009,
+  "rating_avg": 5,
+  "rating_count": 3,
+  "resource_date": 1425404909,
+  "resource_state": "visible",
+  "slug": "topovye-razdaci-i-pol-zovateli",
+  "tag_line": "Добавляет возможность просмотра топовых раздач и пользователей за определенный период времени.",
+  "tags": [],
+  "title": "Топовые раздачи и пользователи",
+  "url_path": "/resources/topovye-razdaci-i-pol-zovateli.183/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 560,
+      "files": [
+        {
+          "filename": "FULL TOP USER& RELEASE.zip",
+          "id": 3224,
+          "local_path": null,
+          "r2_key": null,
+          "size": 8810,
+          "src_url": "https://torrentpier.com/api/resource-versions/235/download?file=3224"
+        }
+      ],
+      "id": 235,
+      "rating_avg": 5,
+      "rating_count": 3,
+      "release_date": 1425409009,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/topovye-razdaci-i-pol-zovateli.183/version/235/"
+    },
+    {
+      "download_count": 224,
+      "files": [
+        {
+          "filename": "FULL TOP USER& RELEASE.zip",
+          "id": 3210,
+          "local_path": null,
+          "r2_key": null,
+          "size": 8828,
+          "src_url": "https://torrentpier.com/api/resource-versions/229/download?file=3210"
+        }
+      ],
+      "id": 229,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425404909,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/topovye-razdaci-i-pol-zovateli.183/version/229/"
+    }
+  ],
+  "view_count": 4698
+}

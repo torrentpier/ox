@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 23338,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 1759,
+  "last_post_date": 1353987692,
+  "node_id": 90,
+  "post_date": 1353987692,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23338,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<span style=\"font-family: 'Georgia'\"><span style=\"color: #333333\"><span style=\"font-size: 13px\">Уникальный контент важен для любого сайта, каждый для себя решает вопросы как защитить свой контент от воровства.</span></span></span><br />\n<span style=\"font-family: 'Georgia'\"><span style=\"color: #333333\"><span style=\"font-size: 13px\">Сегодня я Вам расскажу, как защитить изображения от hotlink на примере веб сервера Nginx.</span></span></span><br />\n<div style=\"margin-left: 20px\">&#8203;</div> <br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><div style=\"margin-left: 20px\"><span style=\"font-size: 13px\"><span style=\"font-family: 'Georgia'\"><span style=\"color: #333333\"><b>Хотлинк</b> (англ. <i>hotlink</i>) — включение в веб-страницу файлов-изображений или других ресурсов с чужого сервера.</span></span></span>&#8203;</div> </blockquote><br />\n <br />\n<span style=\"font-family: 'Georgia'\"><span style=\"color: #333333\"><span style=\"font-size: 13px\">Опишим общую конструкцию для location</span></span></span><br />\n <br />\n<div style=\"margin-left: 20px\"><span style=\"font-size: 13px\"><span style=\"font-family: 'Georgia'\"><span style=\"color: #333333\"><pre class=\"xfBb-code\" data-lang=\"\">location ~ \\.(jpeg|png|gif|jpg)$ {\nvalid_referers none blocked ya.ru *.ya.ru;\nif ($invalid_referer) {\nreturn 403;\n}\n}</pre> <br />\n </span></span></span>&#8203;</div><span style=\"font-family: 'Georgia'\"><span style=\"color: #333333\"><span style=\"font-size: 13px\">Из примера видно что для изображения у нас заданы реферы которые разрешены, то есть Вы с легкостью можите указать, несколько доменов на которых разрешены показы Ваших файлов.</span></span></span><br />\n<span style=\"font-family: 'Georgia'\"><span style=\"color: #333333\"><span style=\"font-size: 13px\">Далее идет конструкция для проверки реферов, если домен с которого идет запрос не входит в число разрешенных то на запрос вернется 403 ошибка.</span></span></span><br />\n<span style=\"font-family: 'Georgia'\"><span style=\"color: #333333\"><span style=\"font-size: 13px\">Рассмотри более интересный пример.</span></span></span><br />\n<div style=\"margin-left: 20px\"><span style=\"font-size: 13px\"><span style=\"font-family: 'Georgia'\"><span style=\"color: #333333\"><pre class=\"xfBb-code\" data-lang=\"\">location ~* ^.+\\.(svg|mp3|ogg|mpe?g|zip|gz|bz2?|rar|jpg|png|gif|jpeg|flv|torrent)$ {\nroot /path/to/site/;\nvalid_referers none blocked server_names ;\nif ($invalid_referer) {\nrewrite ^(.*)$ /path/pic/1x1.png redirect;\n}\n}</pre></span></span></span>&#8203;</div><span style=\"font-family: 'Georgia'\"><span style=\"color: #333333\"><span style=\"font-size: 13px\">root /path/to/site/ - путь где у Вас расположен сайт</span></span></span><br />\n<span style=\"font-family: 'Georgia'\"><span style=\"color: #333333\"><span style=\"font-size: 13px\">server_names - дружественные домены, не забываем что Ваш домен должен находится в джружественных.</span></span></span><br />\n<span style=\"font-family: 'Georgia'\"><span style=\"color: #333333\"><span style=\"font-size: 13px\">Для всех остальных мы делаем реврайт rewrite ^(.*)$ /path/pic/1x1.png redirect; и вместо реального контента отдаем изображение по заданому пути.</span></span></span><br />\n<span style=\"font-family: 'Georgia'\"><span style=\"color: #333333\"><span style=\"font-size: 13px\">Вот таким легким движением руки и немного подумав мы сделали инструмент для борьбы с hotlink</span></span></span><br />\n<span style=\"font-family: 'Georgia'\"><span style=\"color: #333333\"><span style=\"font-size: 13px\"><span style=\"font-size: 10px\"><span style=\"font-family: 'Georgia'\"><span style=\"color: #333333\"><a href=\"http://blog.opennix.ru/nginx-%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B0-%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D1%82%D0%B0-%D0%BE%D1%82-hotlink/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Оригинал</a></span></span></span></span></span></span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1353987692,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "nginx-zasita-ot-hotlink",
+  "sticky": false,
+  "tags": [],
+  "title": "Nginx защита от hotlink",
+  "url_path": "/threads/nginx-zasita-ot-hotlink.1759/",
+  "user_id": 0,
+  "username": "kenny",
+  "view_count": 4239
+}

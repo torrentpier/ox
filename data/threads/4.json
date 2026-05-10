@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 9,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 4,
+  "last_post_date": 1320615738,
+  "node_id": 57,
+  "post_date": 1309181915,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Переделан поиск по топикам с выбором типа [none, mysql, sphinx] (только в tracker.php)</li>\n<li data-xf-list-type=\"ul\">Удалены bbcode_uid и переход на class.bbcode</li>\n<li data-xf-list-type=\"ul\">Изменён метод и способ кеширования (memcache, sqlite, redis, filecache)</li>\n<li data-xf-list-type=\"ul\">Изменён способ подключения к БД и отказ от глобальной переменной $db</li>\n<li data-xf-list-type=\"ul\">Улучшенный дебагер</li>\n<li data-xf-list-type=\"ul\">Полностью переписан и упрощен файл регистрации</li>\n<li data-xf-list-type=\"ul\">Переписана капча (в том числе при быстром ответе у гостя)</li>\n<li data-xf-list-type=\"ul\">Добавлена возможность выбора типа анонсера (xbt или php)</li>\n<li data-xf-list-type=\"ul\">Удаление файлов torrent.php и torstatus.php и перенос их функций в ajax</li>\n</ul>и это только начало =)",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1309181915,
+      "user_id": 2,
+      "user_title": "User",
+      "username": "_Xz_"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 243,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вопрос от не php-программиста. Как ситуация с поддержкой существующих модов?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1309512312,
+      "user_id": 72,
+      "user_title": "User",
+      "username": "Андрей Окипний"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 244,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "в большинстве случаев замена $db на DB() решит проблему",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1309514441,
+      "user_id": 2,
+      "user_title": "User",
+      "username": "_Xz_"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5113,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "генератор шаблонов, школоте не понравиться 🙄<br />\nhttp://s017.*******.host/i432/1111/d2/f7141723f908t.jpg",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1320615738,
+      "user_id": 2,
+      "user_title": "User",
+      "username": "_Xz_"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "cto-izmenilos-v-torrentpier-ii-v-sravnenii-s-svn",
+  "sticky": false,
+  "tags": [],
+  "title": "Что изменилось в TorrentPier II в сравнении с SVN?",
+  "url_path": "/threads/cto-izmenilos-v-torrentpier-ii-v-sravnenii-s-svn.4/",
+  "user_id": 2,
+  "username": "_Xz_",
+  "view_count": 4142
+}

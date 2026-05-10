@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 1373,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 138,
+  "last_post_date": 1312792386,
+  "node_id": 57,
+  "post_date": 1312789692,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 1373,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ку, недавно экспериментировал со второй версией торрентпира, совсем забыл про крон и симлинком примонтировал files из активного трекера к свежем4у движку со старой базой. В итоге после работы  bb_maintenance и всего остального TP2 поудалял файлы из рабочего трекера, но в базе все записи остались и теперь трекер ругается при перезаливании файлов, что такие уже есть.<br />\n<br />\nВопрос - как теперь привести базу к кошерному виду? Пошарился и нашёл поле topic_attachment в таблице bb_topics ну и соответственно в bb_attachments записи соответствющие. Удаления записей из bb_attachments и улстановки topic_attachment в 0 будет достаточно или есть способ чистки покошернее?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1312789692,
+      "user_id": 146,
+      "user_title": "User",
+      "username": "Jim_Di"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 1374,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вроде как нашёл способ - из  bb_bt_torrents грохаем все записи в которых  attach_id не существует, т.е. при выполнении запроса а-ля<pre class=\"xfBb-code\" data-lang=\"\">select * from bb_attachments where attach_id = %attach_id%</pre> не возвращается ничего.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1312792386,
+      "user_id": 146,
+      "user_title": "User",
+      "username": "Jim_Di"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "remont-bazy-posle-udalenia-torrent-fajlov",
+  "sticky": false,
+  "tags": [],
+  "title": "Ремонт базы после удаления торрент-файлов",
+  "url_path": "/threads/remont-bazy-posle-udalenia-torrent-fajlov.138/",
+  "user_id": 146,
+  "username": "Jim_Di",
+  "view_count": 1592
+}

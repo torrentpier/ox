@@ -1,0 +1,84 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 85165,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 58,
+    "title": "Suggestions for improving TorrentPier"
+  },
+  "id": 41282,
+  "last_post_date": 1444326880,
+  "node_id": 58,
+  "post_date": 1444324399,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85165,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Не знаю хорошо это или плохо, но пришла идея и решил пока не забыл написать ее 🙂<br />\n<b>Рейтинг тем </b>будет универсальным в своем роде с привязкой к статусам золотых и серебряных раздач с использованием сидбонусов.<br />\n<b>Пример:</b> Создали раздачу у нее как многих форумах есть рейтинг + или - , чтобы плюсануть или минусануть за это нужно использовать сидбонус 10 штук за голос, это оградит от намеренной накрутки  рейтинга раздачи в каком-то смысле.<br />\nДалее статусы золото и серебро будут автоматом ставиться раздачи по достижению определенного рейтинга например у раздачи рейтинг 250-это значит внесено 2500 сидбонусов  то есть раздача примет автоматом серебро если кто-то минусанул и стало меньше 2500 то обычный статус,<br />\nголосование идет дальше как только достигнут лимит 5000 и выше раздача принимает золото 🙂скаченное не считаем 🙂и далее по аналогии золото и серебро будет варьироваться от рейтинга раздачи или темы )<br />\nНу что-то в этом роде идея  может не хороша но все же 🙂Написал пока не забыл 🙂",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1444324399,
+      "user_id": 6346,
+      "user_title": "User",
+      "username": "redzhet"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85166,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Это  не каждому в движке нужно, тебе проще на заказ попросить сделать.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1444325457,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85168,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1444326948,
+      "message_parsed": "я не говорю что это именно мне нужно это идея как для авторов движка ,чтобы написать такой мод) &quot;платный или халявный&quot; или встроить его в функцинал самого движка что скорее всего не будет  🙂<br />\nА тут все зависит от других пользователей ТП мож кому понравится такая фича 🙂",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1444326880,
+      "user_id": 6346,
+      "user_title": "User",
+      "username": "redzhet"
+    }
+  ],
+  "prefix_id": 41,
+  "reply_count": 2,
+  "slug": "rejting-tem-razdac",
+  "sticky": false,
+  "tags": [
+    "рейтинг"
+  ],
+  "title": "Рейтинг тем (раздач)",
+  "url_path": "/threads/rejting-tem-razdac.41282/",
+  "user_id": 6346,
+  "username": "redzhet",
+  "view_count": 1573
+}

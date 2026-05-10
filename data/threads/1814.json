@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 24179,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1814,
+  "last_post_date": 1355553658,
+  "node_id": 57,
+  "post_date": 1355526820,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24179,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "***************<br />\nCPU 3x2,66 GHz<br />\nRAM 1024Mb + 256Mb<br />\nHDD 20GB<br />\nIP-адреса 6<br />\nNIC 100Mbps<br />\nOS     Linux Ubuntu   <br />\n***************<br />\nНормальная ли машина? Или что по лучше нужно?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1355526820,
+      "user_id": 3266,
+      "user_title": "User",
+      "username": "extazys"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24188,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "ОС можно и на Debian сменить. А так все хорошо.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1355547889,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Sarymian"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24194,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "спасибо!",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1355553658,
+      "user_id": 3266,
+      "user_title": "User",
+      "username": "extazys"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "normal-naa-li-masina-dla-torrent-trekera",
+  "sticky": false,
+  "tags": [],
+  "title": "Нормальная ли машина для Торрент-Трекера?",
+  "url_path": "/threads/normal-naa-li-masina-dla-torrent-trekera.1814/",
+  "user_id": 3266,
+  "username": "extazys",
+  "view_count": 1084
+}

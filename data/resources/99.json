@@ -1,0 +1,89 @@
+{
+  "category": {
+    "description": "Section with all paid modifications for TorrentPier.",
+    "id": 2,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Paid",
+    "view_url": "https://torrentpier.com/resources/categories/paid.2/"
+  },
+  "current_files": [],
+  "custom_fields": {},
+  "description_attachments": [
+    {
+      "attach_date": 1397561961,
+      "file_size": 42828,
+      "filename": "2014-04-15 15-19-50 Администрирование – Yandex.webp",
+      "height": 534,
+      "id": 2501,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2014-04-15-15-19-50-administrirovanie-yandex-webp.2501/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2506-64250c34a8fb662aca503a87b82bf10b.jpg?hash=JDFMn6Pd2f",
+      "width": 1564
+    },
+    {
+      "attach_date": 1397561962,
+      "file_size": 43578,
+      "filename": "2014-04-15 15-24-56 Администрирование – Yandex.webp",
+      "height": 447,
+      "id": 2502,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2014-04-15-15-24-56-administrirovanie-yandex-webp.2502/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2507-f28d85844bd420aa255722e03170b7c5.jpg?hash=8BFSkcVEjO",
+      "width": 1509
+    },
+    {
+      "attach_date": 1397561963,
+      "file_size": 93698,
+      "filename": "2014-04-15 15-25-43 Сериалы онлайн    AlexFilm – Yandex.webp",
+      "height": 679,
+      "id": 2503,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2014-04-15-15-25-43-serialy-onlajn-alexfilm-yandex-webp.2503/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2508-3117ec62e86e2e028cd0617a6b14dfa8.jpg?hash=53FpSKBKl4",
+      "width": 1389
+    }
+  ],
+  "description_parsed": "<b>Автор:</b> Zenden<br />\n<b>icq:</b> 590-700-200<br />\n<b>Описание:</b> Мод объявлений<br />\n<b>Цена:</b> 500р<br />\n<ul>\n<li data-xf-list-type=\"ul\">Возможность выводить сразу несколько объявлений</li>\n<li data-xf-list-type=\"ul\">встроенный html редактор, для более комфортного написания объявлений</li>\n<li data-xf-list-type=\"ul\">гибкая система вывода объявлений, в нужных для вас скриптах</li>\n<li data-xf-list-type=\"ul\">Возможность отключать как всю систему вывода объявлений, так и каждое объявление по отдельности.</li>\n<li data-xf-list-type=\"ul\">использование системы кеширования</li>\n<li data-xf-list-type=\"ul\">Изменение статуса объявления на аяксе (активное, не активное)</li>\n</ul><a href=\"https://torrentpier.com/attachments/2501/\"><img src=\"https://torrentpier.com/data/attachments/2/2506-64250c34a8fb662aca503a87b82bf10b.jpg?hash=JDFMn6Pd2f\" alt=\"2014-04-15 15-19-50 Администрирование – Yandex.webp\" /></a><a href=\"https://torrentpier.com/attachments/2502/\"><img src=\"https://torrentpier.com/data/attachments/2/2507-f28d85844bd420aa255722e03170b7c5.jpg?hash=8BFSkcVEjO\" alt=\"2014-04-15 15-24-56 Администрирование – Yandex.webp\" /></a><a href=\"https://torrentpier.com/attachments/2503/\"><img src=\"https://torrentpier.com/data/attachments/2/2508-3117ec62e86e2e028cd0617a6b14dfa8.jpg?hash=53FpSKBKl4\" alt=\"2014-04-15 15-25-43 Сериалы онлайн    AlexFilm – Yandex.webp\" /></a>",
+  "download_count": 0,
+  "external_url": null,
+  "icon_url": null,
+  "id": 99,
+  "is_fileless": null,
+  "last_update": 1397561988,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1397561988,
+  "resource_state": "visible",
+  "slug": "ob-avlenia",
+  "tag_line": "Мод объявлений",
+  "tags": [],
+  "title": "Объявления",
+  "url_path": "/resources/ob-avlenia.99/",
+  "user_id": 97,
+  "username": "Zenden",
+  "version": "1.1",
+  "versions": [
+    {
+      "download_count": 0,
+      "files": [],
+      "id": 107,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1397561988,
+      "version_state": "visible",
+      "version_string": "1.1",
+      "view_url": "https://torrentpier.com/resources/ob-avlenia.99/version/107/"
+    }
+  ],
+  "view_count": 683
+}

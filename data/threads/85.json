@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 779,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 85,
+  "last_post_date": 1311665166,
+  "node_id": 57,
+  "post_date": 1311659167,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 779,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В общем когда отправляешь сообщение, то вылазит (see $bb_cfg[&#039;tidy_post&#039;] in config.php). Как с ней бороться?<br />\nИ ещё, название торрент-трекера отображается крякозяброй. Нужно поменять кодировку, вместо утф8 на вин1251? И где это поменять? Или всё таки лучше оставить название на английском ради утф8 ?<br />\nИ расскажите пожалуйста про крон, что это и с чем едят))<br />\nДико извиняюсь за свою неграмотность в этом ремесле 🙁",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1311659167,
+      "user_id": 127,
+      "user_title": "User",
+      "username": "kpacaBa"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 780,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>kpacaBa</b>, В config.php ищешь строку $bb_cfg[&#039;tidy_post&#039;] и ставишь true или false<br />\nГде меняешь название трекера  на какое?<br />\nНасчет крона гугл и как его отвязать смотреть тут: <a href=\"http://torrentpier.com/threads/%D0%9E%D1%82%D0%B2%D1%8F%D0%B7%D0%BA%D0%B0-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D1%80%D0%BE%D0%BD%D0%B0.52/\" class=\"link link--internal\">http://torrentpier.com/threads/Отвязка-запуск-крона.52/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1311661816,
+      "user_id": 33,
+      "user_title": "User",
+      "username": "yamaha"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 782,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>yamaha</b>, спс<br />\nуже разобрался с крякозябрами. оказывается akelpad этот кривой октрывал как вин1251, поменял на утф8 и название норм стало отображаться)))",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1311664447,
+      "user_id": 127,
+      "user_title": "User",
+      "username": "kpacaBa"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 784,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"kpacaBa\"><b>yamaha</b>, спс<br />\nуже разобрался с крякозябрами. оказывается akelpad этот кривой октрывал как вин1251, поменял на утф8 и название норм стало отображаться)))</blockquote>AkelPad можно настроить, чтобы по умолчанию открывал в кодировке utf-8. Так что не стоит на него грешить.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1311665166,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Nikolaich"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "esli-ne-trudno-pomogite",
+  "sticky": false,
+  "tags": [],
+  "title": "если не трудно, помогите)))",
+  "url_path": "/threads/esli-ne-trudno-pomogite.85/",
+  "user_id": 127,
+  "username": "kpacaBa",
+  "view_count": 1611
+}

@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 31461,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 47,
+        "title": "Modifications for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 43,
+    "title": "Modifications for TorrentPier (archive)"
+  },
+  "id": 5430,
+  "last_post_date": 1369911615,
+  "node_id": 43,
+  "post_date": 1369893739,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 31461,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Описание: Количество релизов юзера в табличке со статистикой пользователя в боковой панели. За основу взят мод &quot;Количество релизов в профиль (Автор: ХЗ, Автор адаптации на SVN: V@NO)&quot;<br />\nСложностьl: Легко<br />\nВремя установки: 2 минуты<br />\nФайлы для редактирования:<br />\nincludes/functions.php<br />\nlanguage/lang_russian/lang_main.php<br />\ntemplates/default/page_header.tpl<br />\n <br />\n<div>Spoiler content hidden.</div> <br />\n#<br />\n#-----[ OPEN ]---------------------------------<br />\n#<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">includes/functions.php</pre> <br />\n#<br />\n#-----[ FIND ]---------------------------------<br />\n#<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">function get_bt_userdata ($user_id)\n{\nreturn DB()-&gt;fetch_row(&quot;SELECT bt.*, SUM(tr.speed_up) as speed_up, SUM(tr.speed_down) as speed_down\nFROM &quot;. BB_BT_USERS .&quot; bt\nLEFT JOIN &quot;. BB_BT_TRACKER .&quot; tr ON (bt.user_id = tr.user_id)\nWHERE bt.user_id = &quot;. (int) $user_id .&quot;\nGROUP BY bt.user_id&quot;);\n}</pre> <br />\n#<br />\n#-----[ AFTER, ADD ]---------------------------------<br />\n#<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">function get_bt_userdata_reliz_sdb ($user_id)\n{\nreturn DB()-&gt;fetch_row(&quot;SELECT COUNT(tor.poster_id) as ttl_rls_sb, SUM(tor.size) as ttl_rls_size_sb,\ntor.poster_id, SUM(tor.complete_count) as ttl_rls_cmplt_sb\nFROM bb_bt_torrents tor\nLEFT JOIN bb_users u ON(u.user_id = tor.poster_id)\nLEFT JOIN bb_bt_users ut ON(ut.user_id = tor.poster_id)\nWHERE u.user_id = &quot;. (int) $user_id .&quot;\nGROUP BY tor.poster_id\nORDER BY SUM(tor.complete_count) DESC&quot;);\n}</pre> <br />\n#<br />\n#-----[ FIND ]---------------------------------<br />\n#<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$btu = get_bt_userdata($user_id);</pre> <br />\n#<br />\n#-----[ AFTER, ADD ]---------------------------------<br />\n#<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$btu_rlz = get_bt_userdata_reliz_sdb($user_id);</pre> <br />\n#<br />\n#-----[ FIND ]---------------------------------<br />\n#<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&#039;SPEED_DOWN&#039; =&gt; humn_size($btu[&#039;speed_down&#039;], 0, &#039;KB&#039;) .&#039;/s&#039;,</pre> <br />\n#<br />\n#-----[ AFTER, ADD ]---------------------------------<br />\n#<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&#039;TTL_RLS_SB&#039; =&gt; ($btu_rlz[&#039;ttl_rls_sb&#039;]) ? $btu_rlz[&#039;ttl_rls_sb&#039;] : 0,\n&#039;TTL_RLS_SIZE_SB&#039; =&gt; humn_size($btu_rlz[&#039;ttl_rls_size_sb&#039;]) ? humn_size($btu_rlz[&#039;ttl_rls_size_sb&#039;]) : 0,\n&#039;TTL_RLS_CMPLT_SB&#039; =&gt; ($btu_rlz[&#039;ttl_rls_cmplt_sb&#039;]) ? $btu_rlz[&#039;ttl_rls_cmplt_sb&#039;] : &#039;0&#039;,</pre> <br />\n#<br />\n#-----[ OPEN ]---------------------------------<br />\n#<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">templates/default/page_header.tpl</pre> <br />\n#<br />\n#-----[ FIND ]---------------------------------<br />\n#<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;tr&gt;&lt;td&gt;{L_BONUS}&lt;/td&gt;&lt;td class=&quot;seedmed&quot;&gt;{UP_BONUS}&lt;/td&gt;&lt;/tr&gt;</pre> <br />\n#<br />\n#-----[ AFTER, ADD ]---------------------------------<br />\n#<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;tr&gt;&lt;td&gt;{L_RELEASES_ST1}&lt;/td&gt;&lt;td class=&quot;seedmed&quot;&gt;&lt;b&gt;{TTL_RLS_SB}&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\n&lt;tr&gt;&lt;td&gt;{L_CONTENT_ST1}&lt;/td&gt;&lt;td class=&quot;seedmed&quot;&gt;&lt;b&gt;{TTL_RLS_SIZE_SB}&amp;nbsp;&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\n&lt;tr&gt;&lt;td&gt;{L_DOWNLOAD_NUMBER_ST1}&lt;/td&gt;&lt;td class=&quot;seedmed&quot;&gt;&lt;b&gt;{TTL_RLS_CMPLT_SB}&lt;/b&gt;{L_DOWNLOAD_NUMBER_CNT_ST}&lt;/td&gt;&lt;/tr&gt;</pre> <br />\n#<br />\n#-----[ OPEN ]---------------------------------<br />\n#<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">language/lang_russian/lang_main.php</pre> <br />\n#<br />\n#-----[ INSERT ]---------------------------------<br />\n#<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$lang[&#039;RELEASES_ST1&#039;] = &#039;Релизов&#039;;\n$lang[&#039;CONTENT_ST1&#039;] = &#039;Объемом&#039;;\n$lang[&#039;DOWNLOAD_NUMBER_ST1&#039;] = &#039;Скачаны&#039;;\n$lang[&#039;DOWNLOAD_NUMBER_CNT_ST&#039;] = &#039;&amp;nbsp;раз&#039;;</pre> <br />\n#<br />\n#-----[ SAVE/CLOSE ALL FILES ]---------------------------------<br />\n#<br />\n# EoM",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1369893739,
+      "user_id": 4175,
+      "user_title": "User",
+      "username": "sixizm angel"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 31471,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Возникает вопрос, а зачем создавать новую функцию если можно к get_bt_userdata. А так мы получаем еще один запрос лишний, а это не есть гуд.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1369898169,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 31492,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"drew\">Возникает вопрос, а зачем создавать новую функцию если можно к get_bt_userdata. А так мы получаем еще один запрос лишний, а это не есть гуд.</blockquote>и я отдельную функцию сделал, по нескольким причинам... у меня статусы там ещё... Правда у меня функция закеширована сильно !",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1369906400,
+      "user_id": 729,
+      "user_title": "User",
+      "username": "Wertos"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 31507,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Wertos</b>, ну а тут как видно вообще кеша нету. 🙂",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1369911615,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "kolicestvo-relizov-v-statistiku-na-bokovoj-paneli",
+  "sticky": false,
+  "tags": [],
+  "title": "Количество релизов в статистику на боковой панели",
+  "url_path": "/threads/kolicestvo-relizov-v-statistiku-na-bokovoj-paneli.5430/",
+  "user_id": 4175,
+  "username": "sixizm angel",
+  "view_count": 2525
+}

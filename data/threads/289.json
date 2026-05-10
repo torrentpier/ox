@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 3129,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 289,
+  "last_post_date": 1316703190,
+  "node_id": 57,
+  "post_date": 1316700904,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 3129,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "как  сменить пароль от админпанели",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1316700904,
+      "user_id": 300,
+      "user_title": "Blocked",
+      "username": "umaxi"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 3132,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "подробно можно? какая панель<br />\nне понятно",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1316701633,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 3133,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "подробно при установке по пути admin/index.php   находится панель администратора по умолчанию пароль и  логин admin  admin необходимо сменить пароль",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1316702501,
+      "user_id": 300,
+      "user_title": "Blocked",
+      "username": "umaxi"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 3136,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Это права админа на учётку username <b>admin, </b>по дефолту пароль равен username, вам надо менять пароль на учётку, в настройках.<br />\n<br />\n(profile.php?mode=editprofile&amp;u=2 и менять)",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1316703008,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 3137,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "спасибо большое сейчас проверю , еще очень интересует модуль на рекламу",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1316703190,
+      "user_id": 300,
+      "user_title": "Blocked",
+      "username": "umaxi"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "kak-smenit-parol-ot-adminpaneli",
+  "sticky": false,
+  "tags": [],
+  "title": "как  сменить пароль от админпанели",
+  "url_path": "/threads/kak-smenit-parol-ot-adminpaneli.289/",
+  "user_id": 300,
+  "username": "umaxi",
+  "view_count": 2323
+}

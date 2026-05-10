@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 78281,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 37332,
+  "last_post_date": 1425654376,
+  "node_id": 57,
+  "post_date": 1425645526,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 78281,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "После обновления , не приходят сообщения при нажатии кнопки Позвать скачавших .<br />\nСтоит мод переписок ... может поэтому ..<br />\nподскажите какой файлик смотреть надо ..",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1425645526,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 78300,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Ну при нажатии на кнопку позвать скачавших наверное какую-то ошибку выдает как минимум? В логах хотя бы.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1425654376,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "pozvat-skacavsih",
+  "sticky": false,
+  "tags": [],
+  "title": "Позвать скачавших",
+  "url_path": "/threads/pozvat-skacavsih.37332/",
+  "user_id": 5626,
+  "username": "Kryl",
+  "view_count": 967
+}

@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 78382,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 37374,
+  "last_post_date": 1425725337,
+  "node_id": 57,
+  "post_date": 1425717864,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 78382,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1425718048,
+      "message_parsed": "сейчас на хостинге выдается следующий лог - Parse error: syntax error, unexpected T_STRING, expecting T_CONSTANT_ENCAPSED_STRING or &#039;(&#039; in /home/u687542402/public_html/common.php on line 23. Я так понимаю что это из-за того что крон поддерживает только версию php 5.2. Может кто в курсе как поправить?<br />\nДа и трекер (2.1.5) на версии php 5.2 выдает такую же ошибку - она что перестала поддерживаться?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1425717864,
+      "user_id": 6006,
+      "user_title": "User",
+      "username": "lexafromorel"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 78386,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1425718942,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"lexafromorel\">сейчас на хостинге выдается следующий лог - Parse error: syntax error, unexpected T_STRING, expecting T_CONSTANT_ENCAPSED_STRING or &#039;(&#039; in /home/u687542402/public_html/common.php on line 23. Я так понимаю что это из-за того что крон поддерживает только версию php 5.2. Может кто в курсе как поправить?<br />\nДа и трекер (2.1.5) на версии php 5.2 выдает такую же ошибку - она что перестала поддерживаться?</blockquote>## Необходимая версия php<br />\n<br />\nМинимально поддерживаемой версией в настоящий момент является 5.3. Существует поддержка вплоть до версии 5.5 (в данной версии в логах будет уведомление об использовании устаревших функций). Версия php 5.6 в настоящее время движком не поддерживается и его работа на ней не гарантируется. Мы делаем все возможное чтобы в самое ближайшее время добавить его поддержку. Для кого инструкции пишут?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1425718843,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 78393,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Самое интересное, что отказ от поддержки php 5.2 был несколько лет назад, когда разработка еще на другом форуме велась. То есть даже не я инициатор. В дальнейшем все больше зависимостей добавлялось, это да.<br />\n<br />\n<a href=\"https://torrentpier.com/members/6006/\">@lexafromorel</a> что у вас за хостер, ну или по крайней мере из какого вы к нам года пожаловали? Версия 5.3 у php уже не поддерживается, от нее все отказываются, в debian, где стандартные репозитории обновляются крайней редко уже и то php 5.4 минимально доступная версия. Давно пора было съехать с 5.2, а то уже 5.6 есть и 7.0 на носу, а вы на версии, которой 7 лет.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1425725337,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "rabota-na-php-5-2",
+  "sticky": false,
+  "tags": [],
+  "title": "Работа на php 5.2",
+  "url_path": "/threads/rabota-na-php-5-2.37374/",
+  "user_id": 6006,
+  "username": "lexafromorel",
+  "view_count": 1062
+}

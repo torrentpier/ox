@@ -1,0 +1,150 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 991,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 105,
+  "last_post_date": 1328720839,
+  "node_id": 57,
+  "post_date": 1312184956,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 991,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "При создании темы со статусом download пишет:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Не удалось зарегистрировать торрент на трекере</b><br />\n<br />\nВ этом форуме регистрация торрентов на трекере запрещена</blockquote>хотя тема создаётся, но без возможности скачать данный торрент.<br />\nвопрос. как разрешить регистрацию торрентов? уже всю админку перерыл.<br />\np.s. извините если данный вопрос обсуждался на форуме. я здесь новенький🙄",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1312184956,
+      "user_id": 140,
+      "user_title": "User",
+      "username": "shepards86"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 992,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>shepards86</b>, Админка - TorrentPier - Настройки форумов - отметить   левую и правую колонки для форумов, где разрешена регистрация торрентов (Разрешена регистрация торентов на трекере и Разрешено создавать Download топики). Для выделения нескольких форумов использовать нажатую клавишу Ctrl.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1312185630,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Nikolaich"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 993,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Nikolaich</b>, спасибо вам огромное🙂",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1312186364,
+      "user_id": 140,
+      "user_title": "User",
+      "username": "shepards86"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1312186647,
+          "file_size": 115318,
+          "filename": "15.webp",
+          "height": 708,
+          "id": 35,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/15-webp.35/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/0/35-bb51bbd00153c7ccb1a16dced1a5ed89.jpg?hash=whjSIdSNzA",
+          "width": 1024
+        }
+      ],
+      "id": 994,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "﻿",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1312186656,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 2415,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Nikolaich\"><b>shepards86</b>, Админка - TorrentPier - Настройки форумов - отметить левую и правую колонки для форумов, где разрешена регистрация торрентов (Разрешена регистрация торентов на трекере и Разрешено создавать Download топики). Для выделения нескольких форумов использовать нажатую клавишу Ctrl.</blockquote>мне тоже помогло спасибо)",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1315037250,
+      "user_id": 0,
+      "user_title": "",
+      "username": "alexey555"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 11371,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "И мне спс!😉",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1328720839,
+      "user_id": 890,
+      "user_title": "User",
+      "username": "karen"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "pri-sozdanii-temy",
+  "sticky": false,
+  "tags": [],
+  "title": "При создании темы",
+  "url_path": "/threads/pri-sozdanii-temy.105/",
+  "user_id": 140,
+  "username": "shepards86",
+  "view_count": 3859
+}

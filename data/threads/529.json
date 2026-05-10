@@ -1,0 +1,102 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 6651,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 529,
+  "last_post_date": 1323183740,
+  "node_id": 57,
+  "post_date": 1323114719,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1323114711,
+          "file_size": 28666,
+          "filename": "123456.webp",
+          "height": 298,
+          "id": 257,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/123456-webp.257/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/0/257-002f077b70732a932236ce4ffffdf0b4.jpg?hash=jaMyHT43YS",
+          "width": 1665
+        }
+      ],
+      "id": 6651,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Привет всем, помогите решить проблему, дело в том что, когда я зайду на трекер в виде гостя, главная выглядит как будто, только что я его установил, когда зайду в свой профиль, трекер обретает другой вид, всмысле, напиханный модами и плагинами и с разделами.<br />\nСпасибо)<br />\nТак же интересует вопрос в TP2 нужно посторонний ставить плагин который бы отображал пользователей всети или он уже стоит и как мне его включить?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1323114719,
+      "user_id": 498,
+      "user_title": "User",
+      "username": "Xeza"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 6652,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Пошисти кеш шаблонов.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1323115593,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 6719,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"dimka3210\">Пошисти кеш шаблонов.</blockquote>спасибо)",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1323183740,
+      "user_id": 498,
+      "user_title": "User",
+      "username": "Xeza"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "glavnaa-otlicaetsa-esli-a-ne-zasel-v-svoj-profil-pol-zovateli-vseti",
+  "sticky": false,
+  "tags": [],
+  "title": "Главная отличается, если я не зашел в свой профиль.Пользователи всети.",
+  "url_path": "/threads/glavnaa-otlicaetsa-esli-a-ne-zasel-v-svoj-profil-pol-zovateli-vseti.529/",
+  "user_id": 498,
+  "username": "Xeza",
+  "view_count": 1269
+}

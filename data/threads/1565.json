@@ -1,0 +1,86 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 20830,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 47,
+        "title": "Modifications for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 43,
+    "title": "Modifications for TorrentPier (archive)"
+  },
+  "id": 1565,
+  "last_post_date": 1375599610,
+  "node_id": 43,
+  "post_date": 1349012236,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1349012316,
+          "file_size": 14144,
+          "filename": "preloader_page.webp",
+          "height": 128,
+          "id": 1452,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/preloader_page-webp.1452/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1453-9f0c0dd503fddfb8658b9a0d0bfcb31b.jpg?hash=-NBeaitinP",
+          "width": 128
+        }
+      ],
+      "id": 20830,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Время установки: 1 минута.<br />\nОписание: создаёт прелоадер на страницах и исчезает при полной её загрузке.<br />\n<b>Config.php</b><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">// Preloader\n$bb_cfg[&#039;preloader&#039;] = true;\n$bb_cfg[&#039;preloader_position&#039;] = array(&quot;left&quot;, &quot;top&quot;);\n$bb_cfg[&#039;preloader_size&#039;] = array(&quot;width&quot;=&gt;32, &quot;height&quot;=&gt;32);\n$bb_cfg[&#039;preloader_background&#039;] = array(&quot;show&quot;=&gt;false, &quot;color&quot;=&gt;&quot;#000000&quot;);</pre> <br />\n<b>/misc/js/main.js</b><br />\n--find<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$(document).ready(function(){</pre>--after<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">jQuery(&quot;.preloader_page&quot;).hide(&quot;3000&quot;);</pre> <br />\n<b>/templates/default/page_header.tpl</b><br />\n--find<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;body&gt;</pre> <br />\n--after<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;!-- IF PRELOADER_SHOW --&gt;\n    &lt;!-- IF PRELOADER_BACKGROUND --&gt;\n    &lt;span style=&quot;background: {PRELOADER_BACKGROUND_COLOR}; width: {PRELOADER_WIDTH}px; height: {PRELOADER_HEIGHT}px; z-index: 999; position: fixed;&quot;\n          class=&quot;preloader_page&quot;&gt;\n        &lt;!-- ENDIF / PRELOADER_BACKGROUND --&gt;\n    &lt;img src=&quot;./images/preloader_page.gif&quot;\n        style=&quot;position: fixed; z-index: 1000; {PRELOADER_HORISONT}: 0px; {PRELOADER_VERTICAL}: 0px; width: {PRELOADER_WIDTH}px; height: {PRELOADER_HEIGHT}px;&quot;\n        class=&quot;preloader_page&quot;/&gt;\n        &lt;!-- IF PRELOADER_BACKGROUND --&gt;\n    &lt;/span&gt;\n    &lt;!-- ENDIF / PRELOADER_BACKGROUND --&gt;\n&lt;!-- ENDIF / PRELOADER_SHOW --&gt;</pre> <br />\n<b>/includes/page_header.php</b><br />\n--find<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$template-&gt;assign_block_vars(&quot;switch_user_logged_{$in_out}&quot;, array());</pre>--after<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">// Preloader\n$template-&gt;assign_vars(array(\n    &#039;PRELOADER_SHOW&#039;        =&gt; $bb_cfg[&#039;preloader&#039;],\n    &#039;PRELOADER_HORISONT&#039;    =&gt; $bb_cfg[&#039;preloader_position&#039;][0],\n    &#039;PRELOADER_VERTICAL&#039;    =&gt; $bb_cfg[&#039;preloader_position&#039;][1],\n    &#039;PRELOADER_WIDTH&#039;      =&gt; $bb_cfg[&#039;preloader_size&#039;][&#039;width&#039;],\n    &#039;PRELOADER_HEIGHT&#039;      =&gt; $bb_cfg[&#039;preloader_size&#039;][&#039;height&#039;],\n    &#039;PRELOADER_BACKGROUND&#039;  =&gt; $bb_cfg[&#039;preloader_background&#039;][&#039;show&#039;],\n    &#039;PRELOADER_BACKGROUND_COLOR&#039;  =&gt; $bb_cfg[&#039;preloader_background&#039;][&#039;color&#039;]\n));</pre><br />\nГифку скопировать в каталог <b>/images</b>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1349012236,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 39145,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "а как сделать эту гифку индикатором для аякся?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1375599610,
+      "user_id": 0,
+      "user_title": "",
+      "username": "VIP"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "indikator-zagruzki-stranicy",
+  "sticky": false,
+  "tags": [],
+  "title": "Индикатор загрузки страницы",
+  "url_path": "/threads/indikator-zagruzki-stranicy.1565/",
+  "user_id": 19,
+  "username": "dimka3210",
+  "view_count": 4323
+}

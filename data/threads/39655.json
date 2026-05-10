@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 81327,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 39655,
+  "last_post_date": 1486234086,
+  "node_id": 80,
+  "post_date": 1428047063,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 81327,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1428059479,
+      "message_parsed": "Всем привет, столкнулся с такой проблемой.<br />\nНапример я добавляю в конструкторе элемент формы язык.  Соответственно мне выдается на выбор языки а так же Другой. Если выбрать Другой появляется поле для заполнения. Так вот у меня трекер будет для англоязычных пользователей. Я попытался поменять Другой на Other и ничего не получилось.<br />\nПравки кода<br />\n<pre class=\"xfBb-code\" data-lang=\"\">        TPL.build_msg_src();\n        $(&#039;#rel-form&#039;).show();\n\n        $(&#039;select.rel-input&#039;).bind(&#039;change&#039;, function(){\n            var $sel = $(this);\n            if ( $sel.val().toLowerCase().match(/^друг(ой|ая|ое|ие)$/) ) {\n                var $input = $(&#039;&lt;input class=&quot;rel-el rel-input&quot; type=&quot;text&quot; id=&quot;&#039;+ $sel.attr(&#039;id&#039;) +&#039;&quot; style=&quot;width: &#039;+ $sel.width() +&#039;px;&quot; /&gt;&#039;);\n                $sel.after($input);\n                $sel.remove();\n                $input.focus();\n            }\n        });\n    },</pre>Ничего не дают, в итоге перестает работать Другой и Other.<br />\nПомогите как исправить?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1428047063,
+      "user_id": 5842,
+      "user_title": "User",
+      "username": "ShvonderSiN"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 81355,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\">match(/^other)$/) )</code> - так пробовали?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1428059450,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 81374,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\"><code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\">match(/^other)$/) )</code> - так пробовали?</blockquote>да, в этом случае не работает что other что другой",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1428068236,
+      "user_id": 5842,
+      "user_title": "User",
+      "username": "ShvonderSiN"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89961,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено в 2.1.6.<br />\n<br />\n<a href=\"https://torrentpier.com/members/5842/\">ShvonderSiN</a>, корректная замена: <code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\">match(/^друг(ой|ая|ое|ие)|other$/)</code>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1486234086,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 3,
+  "slug": "konstruktor-sablona-reliza-parametr-drugoj",
+  "sticky": false,
+  "tags": [],
+  "title": "Конструктор шаблона релиза параметр \"Другой\"",
+  "url_path": "/threads/konstruktor-sablona-reliza-parametr-drugoj.39655/",
+  "user_id": 5842,
+  "username": "ShvonderSiN",
+  "view_count": 1438
+}

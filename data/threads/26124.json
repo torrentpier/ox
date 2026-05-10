@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 62125,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 26124,
+  "last_post_date": 1409060906,
+  "node_id": 80,
+  "post_date": 1409060660,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62125,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Есть ли необходимость прописания в README к последним ревизиям, что обязательно сменить доменное имя на своё в этом пункте.<br />\n <br />\n// Primary domain name<br />\n$domain_name = &#039;torrentpier.com&#039;; // enter here your primary domain name of your site<br />\n <br />\n <br />\nТак как не сменив имя - мы получим:<br />\n<div>Spoiler content hidden.</div> <br />\n3. Правим файл конфигурации **config.php**, загруженный на сервер:<br />\n&gt; $bb_cfg[&#039;db&#039;][&#039;db1&#039;] = array(&#039;localhost&#039;, &#039;dbase&#039;, &#039;user&#039;, &#039;pass&#039;, $charset, $pconnect);<br />\n&gt; В данной строке изменяем данные входа в базу данных, остальные правки в файле вносятся <b><u>по усмотрению</u></b>, исходя из необходимости из внесения (ориентируйтесь на описания, указанные у полей).<br />\nREADME - практически не изменился а в ревизии добавилась Rss лента в виде - atom, которая вот так вот ведёт себя, если не сменить имя сайта на своё 🙂",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1409060660,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62126,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Добавлю в следующей ревизии.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1409060906,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 1,
+  "slug": "domain_name",
+  "sticky": false,
+  "tags": [],
+  "title": "domain_name",
+  "url_path": "/threads/domain_name.26124/",
+  "user_id": 4163,
+  "username": "vitalix",
+  "view_count": 875
+}

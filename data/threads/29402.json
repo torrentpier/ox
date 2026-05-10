@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 67015,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 29402,
+  "last_post_date": 1415884864,
+  "node_id": 57,
+  "post_date": 1415881625,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 67015,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Когда уже создал раздачу, то пишет вот такую ошибку: <br />\n<br />\n<b>Notice</b>: tidy_repair_string(): Unknown Tidy Configuration Option &#039;merge-spans&#039; in <b>/var/www/vh53972/data/www/юрлсайта/library/includes/bbcode.php</b> on line <b>820</b><br />\n<br />\nПомогите. Заранее спасибо. 🙁",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1415881625,
+      "user_id": 4312,
+      "user_title": "User",
+      "username": "Никита Андриянов"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 67027,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/threads/i-snova-oshibka-notice-tidy_repair_string.26496/#post-63208\" class=\"link link--internal\">Решил.</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1415884864,
+      "user_id": 4312,
+      "user_title": "User",
+      "username": "Никита Андриянов"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "osibka-s-bb-kodami-tidy",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка с бб-кодами (tidy)",
+  "url_path": "/threads/osibka-s-bb-kodami-tidy.29402/",
+  "user_id": 4312,
+  "username": "Никита Андриянов",
+  "view_count": 1068
+}

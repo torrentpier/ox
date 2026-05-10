@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 59006,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25768,
+  "last_post_date": 1392238333,
+  "node_id": 57,
+  "post_date": 1392208398,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59006,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "После сноса хобота, нужна ещё таблица <span style=\"font-size: 12px\"><span style=\"font-family: 'Monaco'\"><span style=\"color: #333333\">bb_bt_torrents_del?</span></span></span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1392208398,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59015,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Нет.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1392219740,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59017,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "она и с хоботом то не нужна. туда данные все равно не заносились",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1392220392,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59018,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>PheRum</b>, 😀",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1392220447,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59027,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>PheRum</b>, заносились на несколько секунд при удалении торрента. Хобот оттуда считывал строки (почти сразу) и удалял пиров для соответствующих раздач. Данные там были, но на долю секунды.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1392238333,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "hobot",
+  "sticky": false,
+  "tags": [],
+  "title": "Хобот",
+  "url_path": "/threads/hobot.25768/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1201
+}

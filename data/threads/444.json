@@ -1,0 +1,116 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 5295,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 444,
+  "last_post_date": 1320860688,
+  "node_id": 57,
+  "post_date": 1320842955,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1320842622,
+          "file_size": 33780,
+          "filename": "1.webp",
+          "height": 251,
+          "id": 191,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1-webp.191/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/0/191-af0eaf11fdc2c6b9b19b43793f357bc7.jpg?hash=n_KVu58Jkn",
+          "width": 1920
+        },
+        {
+          "attach_date": 1320842634,
+          "file_size": 136998,
+          "filename": "2.webp",
+          "height": 1080,
+          "id": 192,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2-webp.192/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/0/192-a9475d8a309e227686ed24ac8a683866.jpg?hash=9SGSP2BWVA",
+          "width": 1920
+        }
+      ],
+      "id": 5295,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Хочу как то преобразовать трекер, выбрана определенная тематика, конечно я не особо верю что он будет иметь большое развитие, но что то из этого можно развить, если можно то помогите решить хоть пару вопросов.)<br />\n1-Как сделать самое скачеваемое? и существует ли такой мод? помогите)<br />\nP.S Что бы отображалась картинка,а рядом с ней название этого поста.<br />\n2-Помогите решить с задачу с twitter feeds, как мне сделать в левой колонке ?<br />\n3-И как сделать раздел, что бы была картинка и рядом надпись и есть ли такой компонент как &quot;вложения&quot; определенные файлы торрента можно было бы туда загружать.p.s администратору) Надеюсь хоть капельку что то тут понятного изъяснил и из этого все можно доступно сделать)<br />\n<a href=\"https://torrentpier.com/attachments/191/\"><img src=\"https://torrentpier.com/data/attachments/0/191-af0eaf11fdc2c6b9b19b43793f357bc7.jpg?hash=n_KVu58Jkn\" alt=\"1.webp\" /></a><a href=\"https://torrentpier.com/attachments/192/\"><img src=\"https://torrentpier.com/data/attachments/0/192-a9475d8a309e227686ed24ac8a683866.jpg?hash=9SGSP2BWVA\" alt=\"2.webp\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1320842955,
+      "user_id": 0,
+      "user_title": "",
+      "username": "AzEXx"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5296,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "1, 3 - в поиск.<br />\n2 - в твиттере есть шаблоны апи, также по интернету полно разнообразных парсеров твитов. сайдбар в папке misc/html",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1320845194,
+      "user_id": 0,
+      "user_title": "",
+      "username": "frank"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5308,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"frank\">1, 3 - в поиск.<br />\n2 - в твиттере есть шаблоны апи, также по интернету полно разнообразных парсеров твитов. сайдбар в папке misc/html</blockquote>не нашел( половину идут по модифигации, другие левые темы, ужас, как хренова когда нет знаний по php. twitter я смотрел, там идут в основном Follow me, но еще нужно гугл посмотреть.А насчет разделов, все же помогите.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1320860688,
+      "user_id": 0,
+      "user_title": "",
+      "username": "AzEXx"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "porabotaem-nad-trekerom",
+  "sticky": false,
+  "tags": [],
+  "title": "Поработаем над трекером ?",
+  "url_path": "/threads/porabotaem-nad-trekerom.444/",
+  "user_id": 0,
+  "username": "AzEXx",
+  "view_count": 1340
+}

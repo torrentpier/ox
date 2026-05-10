@@ -1,0 +1,89 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 59256,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 25794,
+  "last_post_date": 1392925227,
+  "node_id": 110,
+  "post_date": 1392924742,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59256,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\n <br />\nЧуть меньше месяца назад мы анонсировали создание собственного центра загрузки движка на мощностях нашего собственного сервера - <a href=\"http://torrentpier.com/threads/%D0%A6%D0%B5%D0%BD%D1%82%D1%80-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8-torrentpier-ii.25683/\" class=\"link link--internal\">http://torrentpier.com/threads/Центр-загрузки-torrentpier-ii.25683/</a> - а уже сегодня мы рады представить вам его полностью обновленную версию. Встречайте: <a href=\"http://get.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://get.torrentpier.com/</a><br />\n <br />\nЧто нового? Полностью переписанный код, внешний вид, расширенный функционал. Страница отныне является источником всей необходимой информации по движку - в случае наличия критичных багов в движке там будет публиковаться статус-предупреждение, в случае выхода каких-то проблемных в обновлении ревизий - об этом тоже непременно будет упоминаться. Основной же функционал - собственно скачивание интересующей вас версии TorrentPier II остался без изменений и даже прирос - отныне учитывается число скачиваний всех версий, время последнего скачивания, указывается &quot;статус&quot; релиза (альфа, бета, RC-версия, стабильный релиз).<br />\n <br />\nПомимо этого, как уже упомянуто в самом центре загрузки, он теперь представляет из себя тестовый вариант того, что в достаточно скором времени будет активно применяться в нашем движке, начиная от нового шаблонизатора, заканчивая html-фреймворком. <br />\n <br />\nПубликация новых версий движка отныне будет производиться исключительно в центре загрузки, более того, отныне невозможно указание прямых ссылок на скачивание нужной версии (именно поэтому они пропали из боковой панели), поэтому если у вас кто-то спросил где скачать TorrentPier II - просто давайте человеку ссылку: <a href=\"http://get.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://get.torrentpier.com/</a><br />\n <br />\nСпасибо за внимание.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1392924742,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59257,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спс....будем юзать🙂",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1392924968,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59258,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо за информацию 🙂",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1392925227,
+      "user_id": 1314,
+      "user_title": "User",
+      "username": "sergeantcss"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "novyj-centr-zagruzki-torrentpier-ii",
+  "sticky": false,
+  "tags": [
+    "новости"
+  ],
+  "title": "Новый центр загрузки TorrentPier II",
+  "url_path": "/threads/novyj-centr-zagruzki-torrentpier-ii.25794/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 3163
+}

@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "poll",
+  "first_post_id": 85864,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 58,
+    "title": "Suggestions for improving TorrentPier"
+  },
+  "id": 41334,
+  "last_post_date": 1451087946,
+  "node_id": 58,
+  "post_date": 1448610928,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85864,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Создать возможность для размещения торрент раздачи в нескольких форумах разных категорий. Очень удобно когда из категорий и форумов строится своеобразный каталог и необходимо чтобы раздача присутствовала сразу в нескольких &quot;категориях&quot;.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1448610928,
+      "user_id": 6580,
+      "user_title": "User",
+      "username": "CrazyBoss"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86223,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Реализуется через &quot;стабы&quot;, т..е заглушки которые остаются после перемещения тем. А именно чтобы каталог - нет, это про другие движки уже речь.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1451087946,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 34,
+  "reply_count": 1,
+  "slug": "mul-tivybor-forumov-dla-razmesenia-razdaci",
+  "sticky": false,
+  "tags": [],
+  "title": "Мультивыбор форумов для размещения раздачи",
+  "url_path": "/threads/mul-tivybor-forumov-dla-razmesenia-razdaci.41334/",
+  "user_id": 6580,
+  "username": "CrazyBoss",
+  "view_count": 1216
+}

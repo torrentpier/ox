@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 86699,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41386,
+  "last_post_date": 1453142906,
+  "node_id": 57,
+  "post_date": 1453141981,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86699,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "подскажите пожалуйста в какую папку нужно закидовать мод(расширение) , я понимаю что инструкция и описание есть к каждому моду но не кто не указывает куда нужно его закинуть 🙁",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1453141981,
+      "user_id": 6623,
+      "user_title": "User",
+      "username": "geepis"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86700,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Смотря что, а так основную страничку мода в корень а tpl файл в папку default",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1453142210,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86702,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"drew\">Смотря что, а так основную страничку мода в корень а tpl файл в папку default</blockquote>все я понял ,я кончиный рукажоп ! не чего я не понял и даже папки не могу найти . но все равно спасибо большое , пойду грысть подушку!)))",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1453142906,
+      "user_id": 6623,
+      "user_title": "User",
+      "username": "geepis"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "kuda-zakidyvat-mody",
+  "sticky": false,
+  "tags": [],
+  "title": "Куда закидывать моды",
+  "url_path": "/threads/kuda-zakidyvat-mody.41386/",
+  "user_id": 6623,
+  "username": "geepis",
+  "view_count": 1076
+}

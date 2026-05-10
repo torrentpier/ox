@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 2586,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 242,
+  "last_post_date": 1315889795,
+  "node_id": 57,
+  "post_date": 1315386559,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 2586,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Помогите победить этот нотис. Периодически показывается.<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\">Warning: set_time_limit() has been disabled for security reasons in .../netclub-lai.ru/www/forum/includes/cron/jobs/tr_make_snapshot.php on line 24</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1315386559,
+      "user_id": 177,
+      "user_title": "User",
+      "username": "whuru"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 2587,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "функция set_time_limit() отключена на сервере",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1315387158,
+      "user_id": 11,
+      "user_title": "User",
+      "username": "XANDER-CAGE"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 2785,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Можно конечно закомментировать все set_time_limit(), трекер то будет работать но со временем это ни к чему хорошему не приведет.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1315889795,
+      "user_id": 64,
+      "user_title": "User",
+      "username": "ZIM"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "php-notisy",
+  "sticky": false,
+  "tags": [],
+  "title": "php нотисы",
+  "url_path": "/threads/php-notisy.242/",
+  "user_id": 177,
+  "username": "whuru",
+  "view_count": 1347
+}

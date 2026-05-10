@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94703,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 42106,
+  "last_post_date": 1677256899,
+  "node_id": 3,
+  "post_date": 1677088540,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94703,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как это было давно ))) 2014 год, я ничего не знаю, выношу мозг админам )))<br />\nПрошло почти 10 лет, я опять тут)) Хотя в жизни многое поменялось))<br />\nСпасибо что открыли ресурс, понастальгировать )",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1677088540,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94704,
+      "is_admin": false,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Форум открыт не только поностальгировать, а так же  поддержка проекта возобновлена. Следите за обновлениями в гит",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1677092169,
+      "user_id": 1546,
+      "user_title": "Administrator",
+      "username": "Conteo"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94707,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"eXtatik\">Форум открыт не только поностальгировать, а так же  поддержка проекта возобновлена. Следите за обновлениями в гит</blockquote>Здравствуйте . <br />\nТут проблема в том, что движок по сути стоит на месте .. <br />\nВы просто перелапачиваете код на новый php, ни чего нового нет, нет даже мультитрекера по умалчанию, нет адаптивного шаблона ..<br />\nНи кого не хочу обидеть )",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1677232921,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94711,
+      "is_admin": false,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Так все впереди еще 🙂",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1677256899,
+      "user_id": 1546,
+      "user_title": "Administrator",
+      "username": "Conteo"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "kak-eto-bylo-davno",
+  "sticky": false,
+  "tags": [],
+  "title": "Как это было давно )))",
+  "url_path": "/threads/kak-eto-bylo-davno.42106/",
+  "user_id": 5626,
+  "username": "Kryl",
+  "view_count": 995
+}

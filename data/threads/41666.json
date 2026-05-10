@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 90318,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41666,
+  "last_post_date": 1488261631,
+  "node_id": 57,
+  "post_date": 1488230721,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90318,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Только что поставил двиг 2.1, ничего не добавлял, т.е. чистый совсем. При написани поста (любого) появляется вот такой нотис: Notice: tidy_repair_string(): Unknown Tidy Configuration Option &#039;merge-spans&#039; in /home/lqmpzain/public_html/forum/includes/bbcode.php on line 821, при этом с самими сообщениями всё нормально. Прошу подсказать, что за проблема?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1488230721,
+      "user_id": 787,
+      "user_title": "User",
+      "username": "seinex"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90319,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"seinex\">Только что поставил двиг 2.1, ничего не добавлял, т.е. чистый совсем. При написани поста (любого) появляется вот такой нотис: Notice: tidy_repair_string(): Unknown Tidy Configuration Option &#039;merge-spans&#039; in /home/lqmpzain/public_html/forum/includes/bbcode.php on line 821, при этом с самими сообщениями всё нормально. Прошу подсказать, что за проблема?</blockquote>Tidy - вот это тут в поиск вбей. И будешь прекрасно удивлён.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1488230957,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90321,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Отключается использование в конфиге, или решается установкой tidy.so в расширениях php на серваке.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1488261631,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "neponatnye-notisy",
+  "sticky": false,
+  "tags": [],
+  "title": "Непонятные нотисы",
+  "url_path": "/threads/neponatnye-notisy.41666/",
+  "user_id": 787,
+  "username": "seinex",
+  "view_count": 996
+}

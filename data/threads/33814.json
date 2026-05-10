@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 72951,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 33814,
+  "last_post_date": 1421966622,
+  "node_id": 57,
+  "post_date": 1421939796,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 72951,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Добрый день!<br />\n<br />\nИнтересует следующий вопрос. При скачивании торрента с ru&lt;ля-ля-ля&gt;.org в клиенте пишется, что выключено дхт, включен пиринг и включен локальный пиринг. У меня на трекере почему-то все выключено и в настройках я нахожу только возможность выключить/включить дхт. Подскажите, где смотреть добавление возможности пиринга и локального пиринга в настройках?<br />\n<br />\nСпасибо!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1421939796,
+      "user_id": 5916,
+      "user_title": "User",
+      "username": "Audiosoft"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 72986,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"XDA\">«ДХТ» по точнее напиши</blockquote>Тс, имел в виду [DNT]<br />\np.s.<br />\nЧто такое <u>Тс</u> тоже <br />\n<blockquote class=\"xfBb-quote\" data-name=\"XDA\">по точнее напиши</blockquote> ??? :facepalm:",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1421958237,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 72996,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5916/\">@Audiosoft</a> зависит от торрент-файла. Попробуйте создать торрент-файл где локальный обмен и D<span style=\"color: #b30000\"><b>H</b></span>T (<a href=\"https://torrentpier.com/members/4163/\">@vitalix</a>, кхм) включены и проверить. Обычно описанная вами ситуация возникает когда берут торрент-файл с какого-нибудь закрытого трекера, вроде тапок и его регистрируют.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1421966622,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "nastrojka-piringa-i-lokal-nogo-piringa",
+  "sticky": false,
+  "tags": [],
+  "title": "Настройка пиринга и локального пиринга",
+  "url_path": "/threads/nastrojka-piringa-i-lokal-nogo-piringa.33814/",
+  "user_id": 5916,
+  "username": "Audiosoft",
+  "view_count": 1073
+}

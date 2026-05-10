@@ -1,0 +1,65 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95225,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 42175,
+  "last_post_date": 1696242628,
+  "node_id": 3,
+  "post_date": 1696242628,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1696242626,
+          "file_size": 3731986,
+          "filename": "torrentpier-fly.rar",
+          "height": 0,
+          "id": 5528,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/torrentpier-fly-rar.5528/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 95225,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1696246609,
+      "message_parsed": "<b>Год выпуска</b>: 2011<br />\n<b>Версия</b>: 2.0.2<br />\n<b>Платформа</b>: php<br />\n<b>Системные требования</b>:<br />\n- Apache 2.2.6 или lighthttpd или NGINX<br />\n- MySQL 5.0.45 или выше<br />\n- PHP 5.2.5 или выше<br />\n<b>Язык интерфейса</b>: английский + русский<br />\n<b>Таблэтка</b>: Не требуется<br />\n<br />\n<b>Описание</b>: Модифицированный движок трекера torrentpier 2.х<br />\nЗа основу взят TorrentPier SVN 2.0.2 original r588 svn,+ Множество исправлений и доработок.<br />\n+ Мод QuickReply<br />\n+ Мод список файлов раздачи ( FileList on AJAX )<br />\n+ Мод Last added, top torrents, top users<br />\n+ Мод индикации присутствия пользователя на сайте (Online Offline indicator)<br />\n+ Мод спасибов за релиз<br />\n+ Мод для просмотра членства пользователя в группе, просмотр в профайле (user group in viewprofile)<br />\n+ Отменение возможности снятия регистрации торрента с трекера пользователем (оставлена модераторам и админам)<br />\n+ Добавлена автоматическая регистрация торрента на трекере при перезаливке-обновлении торрента<br />\n+ У всех пользователей автоматически отображается ранк &quot;пользователь&quot; если не назначено звание<br />\n+ Скрины заворачиваются в спойлер.<br />\n+ Мод проверки важных полей при регистрации (Ajax cool register) доработанный<br />\n+ Изменение в шаблоне раздач программ &quot;Совместимость с Vista&quot; на &quot;Совместимость с Windows 7&quot;<br />\n+ кнопка &quot;Позвать скачавших&quot;<br />\n+ Улучшенная торрент-статистика в профиле<br />\n+ Закладки<br />\n+ Вывод категории в пути форума в форумах и топиках<br />\n+ Карта форума<br />\n+ Мощный мод предупреждений-банов-репутации (Adapted Democracy MOD by fly_indiz)<br />\n+ два поста одного человека, написанные один за другим, объединяются в один пост<br />\n+ Кто просматривает тему<br />\n+ Мод приглашений (Invites)<br />\n+ Мод массовой рассылки ЛС (Mass PM)<br />\n+ Мод метатегов (для индексации по словам в поисковиках, настраивается в админке) + Мод SiteMapFX<br />\n+ Мод Похожие темы<br />\n+ Переход по страницам aka rutracker.org<br />\n+ Дата вступления в группу<br />\n+ Upload Speed control page для администраторов<br />\n+ Таймер золотых-серебрянных раздач<br />\n+ Золотые дни<br />\n+ Автовыбор часового пояса при регистрации / обновлении профиля<br />\n+ Уведомление о редактировании поста модератором-администратором<br />\n+ Требование оформления недооформленной раздачи перед созданием нового топика-раздачи<br />\n+ Мод поиска по статусу раздачи<br />\n+ Иконки браузеров в списке кто на сайте<br />\n+ Имена torrent-файлов по принципу rutracker.org<br />\n+ Добавлен поиск юзеров по званиям-лычкам в админке<br />\n+ добавлен мод ReadOnly, исправлен и дополнен.<br />\n+ добавлена возможность подключать анонсер retracker.local (включается в профиле)<br />\n+ добавлена возможность закрепления шапки топика + следующие изменения, дополнения, фиксы и внедренные моды:",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1696242628,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "modificirovannyj-torrentpier-svn-na-baze-2-0-2-original-r588-svn-fly_indiz-r29-dla-oznakomlenia",
+  "sticky": false,
+  "tags": [],
+  "title": "Модифицированный TorrentPier SVN на базе 2.0.2 original r588 svn, fly_indiz r29 (для ознакомления)",
+  "url_path": "/threads/modificirovannyj-torrentpier-svn-na-baze-2-0-2-original-r588-svn-fly_indiz-r29-dla-oznakomlenia.42175/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 538
+}

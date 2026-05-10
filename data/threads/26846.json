@@ -1,0 +1,73 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 63843,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 26846,
+  "last_post_date": 1412636393,
+  "node_id": 110,
+  "post_date": 1412636360,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63843,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\n<br />\nСегодня на форуме и связанных проектах (<a href=\"https://get.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">центр загрузки</a>, <a href=\"https://faq.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">расширенная инструкция</a>) был настроен доступ по защищенному SSL-соединению. Отныне форум доступен по адресу <a href=\"https://torrentpier.com/\" class=\"link link--internal\">https://torrentpier.com/</a> и с обычной не защищенной версии установлен автоматический редирект.<br />\n<br />\nНо вот демо-версия на SSL-соединение не переведена, поскольку были обнаружены серьезные недочеты движка в его поддержке - работа над исправлением данной ситуации начата и в самое ближайшее время будет представлен второй альфа-билд версии 2.2, в котором, помимо прочего, будет представлена новая структура файлов движка.<br />\n<br />\nТакже все пользователи, у которых на форуме указан не актуальный адрес электронной почты - в самое ближайшее время будут уведомлены о необходимости его замены, поэтому пока что можете проверить актуальность ящика самостоятельно на странице настроек: <a href=\"https://torrentpier.com/account/contact-details\" class=\"link link--internal\">https://torrentpier.com/account/contact-details</a><br />\n<br />\nСпасибо за внимание.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1412636360,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63844,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "В случае каких-либо проблем, замеченных с форумом, отписывайтесь в этой теме.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1412636393,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "dostup-na-forum-i-svazannye-proekty-po-https",
+  "sticky": false,
+  "tags": [
+    "новости"
+  ],
+  "title": "Доступ на форум и связанные проекты по HTTPS",
+  "url_path": "/threads/dostup-na-forum-i-svazannye-proekty-po-https.26846/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 1662
+}

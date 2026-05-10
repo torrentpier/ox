@@ -1,0 +1,127 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 71416,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 96,
+    "title": "Modifications archive"
+  },
+  "id": 32818,
+  "last_post_date": 1425331965,
+  "node_id": 96,
+  "post_date": 1420667819,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1420667769,
+          "file_size": 1086,
+          "filename": "collDOWN.webp",
+          "height": 16,
+          "id": 2842,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/colldown-webp.2842/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2846-af3611509faf40f2f2f646038205e486.jpg?hash=2xZEx3WXqO",
+          "width": 16
+        },
+        {
+          "attach_date": 1420667769,
+          "file_size": 1080,
+          "filename": "collUP.webp",
+          "height": 16,
+          "id": 2843,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/collup-webp.2843/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2847-1667587fba9449c2c49526617bd95dfa.jpg?hash=_LjV_3dJNK",
+          "width": 16
+        }
+      ],
+      "id": 71416,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет, вот решил сделать доброе людям! И так начнем!<br />\n__________________<br />\nОткрываем ./index.php <br />\n__________________<br />\n<br />\nИщем там:<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">// Build index page\n$forums_count = 0;\nforeach ($cat_forums as $cid =&gt; $c)\n{</pre><br />\nЗАМЕНЯЕМ НА:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$colcookie = &#039;&#039;;\nif(!empty($_COOKIE[&#039;collapsed&#039;]))\n{\n    $colcookie = $_COOKIE[&#039;collapsed&#039;];\n}\n\n$collapsed = false;\n\nif($colcookie)\n{\n    $col = explode(&#039;:&#039;, $colcookie);\n    if(!is_array($col))\n    {\n        $col[0] = $colcookie; \n    }\n    unset($collapsed);\n    foreach($col as $val)\n    {\n        $co = &#039;cat_&#039;.$val;\n        $collapsed[$co] = true;\n    }\n}\n\n// Build index page\n$forums_count = 0;\nforeach ($cat_forums as $cid =&gt; $c)\n{\n\n    $expdisplay = $expclass = &#039;&#039;;\n    $collapsed_name = &quot;cat_&quot; . $cid;\n    if(isset($collapsed[$collapsed_name]) &amp;&amp; $collapsed[$collapsed_name])\n    {\n        $expcolimage = &quot;collDOWN.png&quot;;\n        $expdisplay = &quot;display: none;&quot;;\n        $expclass = &quot;cat_hide&quot;;\n    }\n    else\n    {\n        $expcolimage = &quot;collUP.png&quot;;\n    }</pre><br />\nЧуть ниже ищем: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">        &#039;U_VIEWCAT&#039; =&gt; CAT_URL . $cid,</pre><br />\nпосле вставляем :<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">        &#039;CAT_EXPCOLIMAGE&#039; =&gt; $expcolimage,\n        &#039;CAT_EXPDISPLAY&#039; =&gt; $expdisplay,\n        &#039;CAT_EXPCOLHIDE&#039; =&gt; $expclass,</pre>________________<br />\nОткрываем ./styles/templates/default/index.tpl <br />\n________________<br />\nИщем там:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;!-- BEGIN c --&gt;\n&lt;div class=&quot;category&quot;&gt;\n    &lt;h3 class=&quot;cat_title&quot;&gt;&lt;a href=&quot;{c.U_VIEWCAT}&quot;&gt;{c.CAT_TITLE}&lt;/a&gt;&lt;/h3&gt;\n    &lt;div class=&quot;f_tbl_wrap&quot;&gt;</pre><br />\nЗаменяем на:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;!-- BEGIN c --&gt;\n&lt;div class=&quot;category {c.CAT_EXPCOLHIDE}&quot;&gt;\n    &lt;h3 class=&quot;cat_title&quot;&gt;\n        &lt;a href=&quot;{U_VIEWCAT}&quot;&gt;{c.CAT_TITLE}&lt;/a&gt;\n        &lt;img id=&quot;{c.CAT_ID}_img&quot; class=&quot;toggleCategory&quot; src=&quot;./styles/images/{c.CAT_EXPCOLIMAGE}&quot;&gt;\n    &lt;/h3&gt;\n    &lt;div id=&quot;cat_{c.CAT_ID}&quot; class=&quot;f_tbl_wrap&quot; style=&quot;{c.CAT_EXPDISPLAY}&quot;&gt;</pre><br />\n________________<br />\nОткрываем ./styles/templates/default/css/main.css<br />\n________________<br />\nВ самый конец вставляем:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">.cat_hide .cat_title {\n    opacity: 0.5;\n    transition: all 0.3s linear 0s;\n}\n.toggleCategory {\n    cursor: pointer;\n    float: right;\n    margin-top: 2px;\n    vertical-align: middle;\n    width: auto;\n}</pre><br />\n________________<br />\nОткрываем ./styles/js/main.js<br />\n________________<br />\nВ самый конец вставляем:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">var Cookie = {\n    get: function(name)\n    {\n        name = name;\n        return $.cookie(name);\n    },\n\n    set: function(name, value, expires)\n    {\n        name = name;\n        if(!expires)\n        {\n            expires = 315360000;\n        }\n\n        expire = new Date();\n        expire.setTime(expire.getTime()+(expires * 1000));\n\n        options = {\n            expires: expire,\n            path: cookiePath,\n            domain: cookieDomain\n        };\n\n        return $.cookie(name, value, options);\n    },\n\n    delete: function(name)\n    {\n        name = name;\n\n        options = {\n            path: cookiePath,\n            domain: cookieDomain\n        };\n        return $.removeCookie(name, options);\n    }\n};\n\nvar expandables = {\n\n    init: function()\n    {\n        var expanders = $(&#039;.toggleCategory&#039;);\n\n        if(expanders.length)\n        {\n            expanders.each(function()\n            {\n                var expander = $(this);\n                if(expander.attr(&#039;id&#039;) == false)\n                {\n                    return;\n                }\n                expander.click(function()\n                {\n                    controls = expander.attr(&quot;id&quot;).replace(&#039;_img&#039;, &#039;&#039;);\n                    expandables.expandCollapse(this, controls);\n                });\n            });\n        }\n    },\n\n    expandCollapse: function(e, controls)\n    {\n        element = $(e);\n\n        if(!element || controls == false)\n        {\n            return false;\n        }\n        var expandedItem = $(&#039;#cat_&#039;+ controls);\n\n        if(expandedItem.length /*&amp;&amp; !collapsedItem.length*/)\n        {\n            if(expandedItem.is(&#039;:hidden&#039;))\n            {\n                expandedItem.slideToggle(&#039;fast&#039;);\n                element.attr(&#039;src&#039;, element.attr(&#039;src&#039;).replace(&#039;collDOWN.png&#039;, &#039;collUP.png&#039;));\n                element.parent().parent(&#039;div .category&#039;).removeClass(&#039;cat_hide&#039;);\n                this.save(controls);\n            }\n            else\n            {\n                expandedItem.slideToggle(&#039;fast&#039;);\n                element.attr(&#039;src&#039;, element.attr(&#039;src&#039;).replace(&#039;collUP.png&#039;, &#039;collDOWN.png&#039;));\n                element.parent().parent(&#039;div .category&#039;).addClass(&#039;cat_hide&#039;);\n                this.save(controls, true);\n            }\n        }\n        return true;\n    },\n\n    save: function(id, add)\n    {\n        var saved = [];\n        var newCollapsed = [];\n        var collapsed = Cookie.get(&#039;collapsed&#039;);\n\n        if(collapsed)\n        {\n            saved = collapsed.split(&#039;:&#039;);\n\n            $.each(saved, function(intIndex, objValue)\n            {\n                if(objValue != id &amp;&amp; objValue != &quot;&quot;)\n                {\n                    newCollapsed[newCollapsed.length] = objValue;\n                }\n            });\n        }\n\n        if(add)\n        {\n            newCollapsed[newCollapsed.length] = id;\n        }\n        Cookie.set(&#039;collapsed&#039;, newCollapsed.join(&#039;:&#039;));\n    }\n};\n\n$(document).ready(function() {\n    expandables.init();\n});</pre><br />\nПочти все: в папку с изображениями (./styles/images) закинуть два файла!!!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1420667819,
+      "user_id": 5480,
+      "user_title": "User",
+      "username": "ВаленокPC"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71536,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Древний мод, конечно. В движке, между прочим, из коробки реализован куда более интересный вариант сворачивания - при котором на главной странице не остается миллион &quot;остатков&quot; с заголовками категорий.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1420814307,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71539,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "от этого велосипеда наобор избавились, а Вы его снова предлагаете)",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1420814890,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 77605,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Удалено, поскольку в движке реализован более современный и правильный вариант. Безнадежно устарело.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1425331965,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "cvoracivanie-kategorij-s-zapominaniem",
+  "sticky": false,
+  "tags": [],
+  "title": "Cворачивание категорий с запоминанием",
+  "url_path": "/threads/cvoracivanie-kategorij-s-zapominaniem.32818/",
+  "user_id": 5480,
+  "username": "ВаленокPC",
+  "view_count": 1436
+}

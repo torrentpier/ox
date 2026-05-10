@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 26990,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 2213,
+  "last_post_date": 1360919256,
+  "node_id": 57,
+  "post_date": 1360912217,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26990,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подскажите как показать родную статистику стату в шапке на всех страницах<br />\nПробовал так, выводит, но когда заходиш в чей либо профиль выводит в профиле мою статистику))<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">#\n#-----[ OPEN ]------------------------------------------------\n#\n \nincludes/page_header.php\n \n#\n#-----[ FIND ]------------------------------------------------\n#\n \n// Generate logged in/logged out status\nif ($logged_in)\n{\n    $u_login_logout = BB_ROOT .&quot;login.php?logout=1&quot;;\n}\nelse\n{\n    $u_login_logout = BB_ROOT .&quot;login.php&quot;;\n}\n \n#\n#-----[ AFTER, ADD ]-----------------------------------------\n#\n \nshow_bt_userdata($userdata[&#039;user_id&#039;]);\nif ($bb_cfg[&#039;bt_show_dl_stat_on_index&#039;] &amp;&amp; !IS_GUEST)\n{\n    show_bt_userdata($userdata[&#039;user_id&#039;]);\n}\n$profile_user_id = $userdata[&#039;user_id&#039;];\n \n$seeding = $leeching = $releasing = array();\n \n$sql = &#039;SELECT f.forum_id, f.forum_name, t.topic_title, tor.size,sn.seeders, sn.leechers, tr.*\n    FROM &#039;. BB_FORUMS .&#039; f, &#039;. BB_TOPICS .&#039; t, &#039;. BB_BT_TRACKER .&#039; tr, &#039;. BB_BT_TORRENTS .&#039; tor, &#039;. BB_BT_TRACKER_SNAP .&quot; sn\n    WHERE tr.user_id = $profile_user_id\n        AND tr.topic_id = tor.topic_id\n        AND sn.topic_id = tor.topic_id\n        AND tor.topic_id = t.topic_id\n        AND t.forum_id = f.forum_id\n    GROUP BY tr.topic_id\n    ORDER BY f.forum_name, t.topic_title&quot;;\n \nif (!$result = DB()-&gt;sql_query($sql))\n{\n    message_die(GENERAL_ERROR, &#039;Could not query users torrent profile information&#039;, &#039;&#039;, __LINE__, __FILE__, $sql);\n}\n \nif ($rowset = DB()-&gt;sql_fetchrowset($result))\n{\n    DB()-&gt;sql_freeresult($result);\n    $rowset_count = count($rowset);\n \n    for ($i=0; $i&lt;$rowset_count; $i++)\n    {\n        if ($rowset[$i][&#039;releaser&#039;])\n        {\n            $releasing[] = $rowset[$i];\n        }\n        else if ($rowset[$i][&#039;seeder&#039;])\n        {\n            $seeding[] = $rowset[$i];\n        }\n        else\n        {\n            $leeching[] = $rowset[$i];\n        }\n    }\n    unset($rowset);\n}\n \n$seeding_count = count($seeding);\n$leeching_count = count($leeching);\n$releasing_count = count($releasing);\n \n#\n#-----[ FIND ]------------------------------------------------\n#\n \n&#039;FULL_URL&#039;          =&gt; FULL_URL,\n \n#\n#-----[ AFTER, ADD ]------------------------------------------------\n#\n \n    &#039;RELEASING&#039;  =&gt; ($releasing_count) ? ($releasing_count)  : 0,\n    &#039;SEEDING&#039;    =&gt; ($seeding_count) ? ($seeding_count)  : 0,\n    &#039;LEECHING&#039;    =&gt; ($leeching_count) ?  ($leeching_count)  : 0,\n \n#\n#-----[ OPEN ]------------------------------------------------\n#\n \ntemplates/default/page_header.tpl\n \n#\n#-----[ FIND ]------------------------------------------------\n#\n \n  &lt;!--/logo--&gt;\n \n#\n#-----[ AFTER, ADD ]------------------------------------------------\n#\n \n    &lt;td&gt;\n        &lt;table style=&quot;float: right;&quot;&gt;\n    &lt;tr&gt;\n        &lt;td rowspan=&quot;8&quot; &gt;{THIS_AVATAR}&lt;/td&gt;\n        &lt;td&gt;&lt;tr&gt;&lt;td&gt;\n        &lt;a class=&quot;med&quot;&gt;{L_USER_RATIO}&lt;/a&gt;&lt;/td&gt;\n        &lt;td&gt;&lt;i style=&quot;color: silver !important; font-size: 9px&quot; class=&quot;bold&quot;&gt;(DL &lt; {MIN_DL_FOR_RATIO})&lt;/i&gt;&lt;/td&gt;&lt;/tr&gt;\n        &lt;tr&gt;&lt;td&gt;{L_DOWNLOADED}&lt;/td&gt;&lt;td class=&quot;leechmed&quot;&gt;{DOWN_TOTAL}&lt;/td&gt;&lt;/tr&gt;\n        &lt;tr&gt;&lt;td&gt;{L_UPLOADED}&lt;/td&gt;&lt;td class=&quot;seedmed&quot;&gt;{UP_TOTAL}&lt;/td&gt;&lt;/tr&gt;\n        &lt;tr&gt;&lt;td&gt;{L_RELEASED}&lt;/td&gt;&lt;td class=&quot;seedmed&quot;&gt;{RELEASED}&lt;/td&gt;&lt;/tr&gt;\n        &lt;tr&gt;&lt;td&gt;{L_BONUS}&lt;/td&gt;&lt;td class=&quot;seedmed&quot;&gt;{UP_BONUS}&lt;/td&gt;&lt;/tr&gt;\n        &lt;!-- IF $bb_cfg[&#039;seed_bonus_enabled&#039;] --&gt;&lt;tr&gt;&lt;td&gt;{L_SEED_BONUS}&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;points&quot;&gt;{POINTS}&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;!-- ENDIF --&gt;\n        &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;\n    &lt;/td&gt;\n \n#\n#-----[ SAVE/CLOSE ALL FILES ]--------------------------------\n#</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1360912217,
+      "user_id": 24,
+      "user_title": "User",
+      "username": "WinsOk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26991,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>WinsOk</b>,<br />\n1) Надо создать новую функцию а не подругажть старую. <br />\n2) <a href=\"http://torrentpier.com/threads/%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0-%D0%B2-%D1%88%D0%B0%D0%BF%D0%BA%D0%B5-%D0%B0%D0%BB%D1%8F-tapochek.692/\" class=\"link link--internal\">http://torrentpier.com/threads/Статистика-в-шапке-аля-tapochek.692/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1360913098,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26992,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "я ставил его, на главной норм все, а на других нотисы сыпятся<br />\nссылаясь на <b>MIN_DL_FOR_RATIO</b>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1360916521,
+      "user_id": 24,
+      "user_title": "User",
+      "username": "WinsOk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26993,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>WinsOk</b>, проверяй. Косяк у тебя. Проверил сейчас данный мод. Все ок.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1360916945,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26995,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "решено",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1360919256,
+      "user_id": 24,
+      "user_title": "User",
+      "username": "WinsOk"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "statistika-v-sapke",
+  "sticky": false,
+  "tags": [],
+  "title": "Статистика в шапке",
+  "url_path": "/threads/statistika-v-sapke.2213/",
+  "user_id": 24,
+  "username": "WinsOk",
+  "view_count": 1268
+}

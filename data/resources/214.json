@@ -1,0 +1,86 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "mood.rar",
+      "id": 3521,
+      "local_path": null,
+      "r2_key": null,
+      "size": 586238,
+      "src_url": "https://torrentpier.com/api/resource-versions/278/download?file=3521"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]1. Выполнить запрос:\n[CODE]ALTER TABLE `bb_users` ADD (\n    `moodtext` VARCHAR(255) NOT NULL DEFAULT '',\n    `moodimg` VARCHAR(255) NOT NULL DEFAULT ''\n)[/CODE]\n\n2. Открыть [B]profile.php[/B] найти там\n[PHP]\n\n    case 'watch':\n        if (IS_GUEST) login_redirect();\n        require(UCP_DIR . 'topic_watch.php');\n        break;[/PHP]\nЗаменить на\n[PHP]\n\n    case 'watch':\n        if (IS_GUEST) login_redirect();\n        require(UCP_DIR . 'topic_watch.php');\n        break;\n\n    case 'mood':\n        if (IS_GUEST) login_redirect();\n        require(UCP_DIR . 'mood.php');\n        break;\n\n    [/PHP]\n\n3. Открыть [B]functions.php[/B] заменить\n[PHP]function get_avatar ($user_id, $ext_id, $allow_avatar = true, $size = true, $height = '', $width = '')\n{\n    global $bb_cfg;\n    if ($size)\n    {\n        // TODO размеры: s, m, l + кеширование\n    }\n    $height = ($height != '') ? 'height=\"'. $height .'\"' : '';\n    $width  = ($width != '') ? 'width=\"'. $width .'\"' : '';\n    $user_avatar = '<img src=\"'. make_url($bb_cfg['avatars']['upload_path'] . $bb_cfg['avatars']['no_avatar']) .'\" alt=\"'. $user_id .'\" '. $height .' '. $width .' />';\n    if ($user_id == BOT_UID && $bb_cfg['avatars']['bot_avatar'])\n    {\n        $user_avatar = '<img src=\"'. make_url($bb_cfg['avatars']['upload_path'] . $bb_cfg['avatars']['bot_avatar']) .'\" alt=\"'. $user_id .'\" '. $height .' '. $width .' />';\n    }\n    else if ($allow_avatar && $ext_id)\n    {\n        if (file_exists(get_avatar_path($user_id, $ext_id)))\n        {\n            $user_avatar = '<img src=\"'. make_url(get_avatar_path($user_id, $ext_id)) .'\" alt=\"'. $user_id .'\" '. $height .' '. $width .' />';\n        }\n    }\n    return $user_avatar;\n}[/PHP]\n\nна\n\n[PHP]function get_avatar ($user_id, $ext_id, $allow_avatar = true, $size = true, $height = '', $width = '')\n{\n    global $bb_cfg;\n \n    $rows = get_userdata($user_id);\n\n    if ($size)\n    {\n        // TODO размеры: s, m, l + кеширование\n    }\n\n    $height = ($height != '') ? 'height=\"'. $height .'\"' : '';\n    $width  = ($width != '') ? 'width=\"'. $width .'\"' : '';\n\n    $user_avatar = '<div style=\"position:relative;\"><img src=\"'. make_url($bb_cfg['avatars']['upload_path'] . $bb_cfg['avatars']['no_avatar']) .'\" alt=\"'. $user_id .'\" '. $height .' '. $width .' /><div style=\"right:-15px; top:-15px; position:absolute;\"><img src=\"'.BB_ROOT . 'styles/images/mood/'.$rows['moodimg'].'\" title=\"'. $rows[\"moodtext\"] .'\"></div></div>';\n\n    if ($user_id == BOT_UID && $bb_cfg['avatars']['bot_avatar'])\n    {\n        $user_avatar = '<div style=\"position:relative;\"><img src=\"'. make_url($bb_cfg['avatars']['upload_path'] . $bb_cfg['avatars']['bot_avatar']) .'\" alt=\"'. $user_id .'\" '. $height .' '. $width .' /><div style=\"right:-15px; top:-15px; position:absolute;\"><img src=\"'.BB_ROOT . 'styles/images/mood/'.$rows['moodimg'].'\" title=\"'. $rows[\"moodtext\"] .'\"></div></div>';\n    }\n    else if ($allow_avatar && $ext_id)\n    {\n        if (file_exists(get_avatar_path($user_id, $ext_id)))\n        {\n            $user_avatar = '<div style=\"position:relative;\"><img src=\"'. make_url(get_avatar_path($user_id, $ext_id)) .'\" alt=\"'. $user_id .'\" '. $height .' '. $width .' /><div style=\"right:-15px; top:-15px; position:absolute;\"><img src=\"'.BB_ROOT . 'styles/images/mood/'.$rows['moodimg'].'\" title=\"'. $rows[\"moodtext\"] .'\"></div></div>';\n        }\n    }\n\n    return $user_avatar;\n}[/PHP]\nЗагрузить файлы в корень сайта.\n[/SPOILER]",
+    "owner": "ВаленокPC",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1428309607,
+      "file_size": 4246,
+      "filename": "Image 1.webp",
+      "height": 133,
+      "id": 3520,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/image-1-webp.3520/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3524-d4f72e35c6ffd4cbf62abd13be80a093.jpg?hash=F95MDdatXa",
+      "width": 221
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет возможность указать настроение пользователя.",
+  "download_count": 214,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/214.jpg?1428322545",
+  "id": 214,
+  "is_fileless": null,
+  "last_update": 1428309892,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1428309892,
+  "resource_state": "visible",
+  "slug": "nastroenie",
+  "tag_line": "Добавляет возможность указать настроение пользователя.",
+  "tags": [],
+  "title": "Настроение",
+  "url_path": "/resources/nastroenie.214/",
+  "user_id": 5480,
+  "username": "ВаленокPC",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 214,
+      "files": [
+        {
+          "filename": "mood.rar",
+          "id": 3521,
+          "local_path": null,
+          "r2_key": null,
+          "size": 586238,
+          "src_url": "https://torrentpier.com/api/resource-versions/278/download?file=3521"
+        }
+      ],
+      "id": 278,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1428309892,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/nastroenie.214/version/278/"
+    }
+  ],
+  "view_count": 491
+}

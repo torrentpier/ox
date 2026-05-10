@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61743,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 58,
+    "title": "Suggestions for improving TorrentPier"
+  },
+  "id": 26077,
+  "last_post_date": 1407000643,
+  "node_id": 58,
+  "post_date": 1406998290,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61743,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "1) Вернуть text-decoration:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">a {\n    text-decoration: none; /* Убираем подчеркивание у ссылок */\n  }\n  a:hover {\n    text-decoration: underline; /* Добавляем подчеркивание\n                                  при наведении курсора мыши на ссылку */\n  }</pre> <br />\n2)<br />\n<pre class=\"xfBb-code\" data-lang=\"\">#search-text {\n    background: none repeat scroll 0 0 white;\n    border: 1px solid silver;\n    padding: 2px 3px;\n    width: 300px;\n}</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1406998290,
+      "user_id": 322,
+      "user_title": "User",
+      "username": "botyk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61744,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Если судить по Яндексу, Гуглу и т.д. - подчеркивание ссылок вчерашний день.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1407000643,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 34,
+  "reply_count": 1,
+  "slug": "ulucsenie",
+  "sticky": false,
+  "tags": [],
+  "title": "Улучшение",
+  "url_path": "/threads/ulucsenie.26077/",
+  "user_id": 322,
+  "username": "botyk",
+  "view_count": 1063
+}

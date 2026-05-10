@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 71249,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 32723,
+  "last_post_date": 1420641179,
+  "node_id": 57,
+  "post_date": 1420554168,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71249,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<img src=\"http://i9.pixs.ru/storage/7/2/5/SnimokJPG_9655705_15461725.jpg\" alt=\"\" /> не  обновляется количество созданных тем, сообщений(только после очистки кеша  в админке )",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1420554168,
+      "user_id": 5878,
+      "user_title": "User",
+      "username": "Markis"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71254,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "так надо крон отвязать ...",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1420555424,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71352,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://faq.torrentpier.com/index.html#header\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://faq.torrentpier.com/index.html#header</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1420641179,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "ccetcik-tem",
+  "sticky": false,
+  "tags": [],
+  "title": "Cчетчик тем",
+  "url_path": "/threads/ccetcik-tem.32723/",
+  "user_id": 5878,
+  "username": "Markis",
+  "view_count": 973
+}

@@ -1,0 +1,137 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 91511,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 41745,
+  "last_post_date": 1497313445,
+  "node_id": 110,
+  "post_date": 1497295781,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1497294690,
+          "file_size": 200618,
+          "filename": "upload_2017-6-12_22-11-30.webp",
+          "height": 1470,
+          "id": 4854,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/upload_2017-6-12_22-11-30-webp.4854/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4858-e764eb3ccaa2e242ef1d45023f044f1e.jpg?hash=5VM47jimgK",
+          "width": 2849
+        },
+        {
+          "attach_date": 1497294910,
+          "file_size": 125854,
+          "filename": "upload_2017-6-12_22-15-10.webp",
+          "height": 1510,
+          "id": 4855,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/upload_2017-6-12_22-15-10-webp.4855/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4859-d280a3ab712823f5bcbe773190bd7b2a.jpg?hash=PKY7NoiZ3Q",
+          "width": 2846
+        }
+      ],
+      "id": 91511,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\n<br />\nСпустя практически три года после нашего предыдущего релиза, мы наконец-то собрались с силами и готовы представить новую версию, <a href=\"https://torrentpier.com/forum/threads/torrentpier-aurochs-i-data-reliza.41726/\" class=\"link link--internal\">уже анонсированную ранее</a> - <b>TorrentPier Aurochs</b> или в более привычной для всех нумерации 2.2.0. Путь к релизу был долгий, сложный и несколько раз возникало ощущение что он никогда не увидит свет, однако, как ни странно, всему помогла новая концепция и бренд. И пускай наш первый &quot;бык&quot; - вымерший, релиз полностью ему соответствует.<br />\n<br />\nОсновная цель, которая ставилась перед выпуском новой версии - отвязавшись от терзаний с версией на новой кодовой базе, пилить которую можно вечность - дать всем вам то, что давно стало актуальным - версию, которая нормально будет поддерживать и работать на современных серверах, с новыми версиями PHP. И у нас получился тот продукт, который полностью этому соответствует. Было исправлено огромное количество ошибок и были заменены целые &quot;куски&quot; движка на сторонние стабильные компоненты. <a href=\"https://torrentpier.com/forum/threads/torrentpier-aurochs-versija-2-2-0.41744/\" class=\"link link--internal\">Чейнджлог</a> - огромен, но основные моменты из него можно легко выделить:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Полная и безоговорочная поддержка SSL и PHP 7+ (минимальная версия PHP 5.6)</li>\n<li data-xf-list-type=\"ul\">39 языков локализации из коробки, благодаря <a href=\"https://crowdin.com/project/torrentpier\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">проекту на Crowdin</a></li>\n<li data-xf-list-type=\"ul\">Новая лицензия MIT, позволяющая вам делать с движком все, что угодно</li>\n<li data-xf-list-type=\"ul\">Новый почтовый сервис SwiftMailer, который позволит использовать внешние SMTP-сервера вроде без каких-либо проблем и делать массовые рассылки писем, которые не будут помечаться почтовыми системами как спам при верно выставленных заголовках, как было ранее</li>\n<li data-xf-list-type=\"ul\">Новые компоненты для работы со Sphinx, генерации полностью валидной карты сайта, логирования и отладки ошибок, бенкодером, который теперь не так тормозит на больших торрент-файлах, очистка кода движка от неподдерживаемого мусора</li>\n<li data-xf-list-type=\"ul\">Переход на современные стандарты кодирования и оформления кода, автозагрузку</li>\n<li data-xf-list-type=\"ul\">Исправление десятков и даже сотен ошибок, путем тщательной проработки каждого файла</li>\n</ul>Все это и новый, улучшенный подход к разработке, позволили создать релиз, который, пожалуй, по стабильности работы на порядки выше всего того, что у нас получилось сделать ранее. Конкретно хочется остановиться на поиске ошибок, чтобы показать, как все теперь работает. Если в движке происходит ошибка и у нас установлены настройки по-умолчанию, разработчики сразу же в автоматическом режиме получают отчет по вашей ошибке и могут выкатить исправление не дожидаясь создания вами темы в разделе. Благодаря интеграции с Bugsnag, ошибку мы видим в подобном формате:<br />\n<div style=\"text-align: center\"><a href=\"https://torrentpier.com/attachments/4854/\"><img src=\"https://torrentpier.com/data/attachments/4/4858-e764eb3ccaa2e242ef1d45023f044f1e.jpg?hash=5VM47jimgK\" alt=\"upload_2017-6-12_22-11-30.webp\" /></a>&#8203;</div>Это удобно, позволяет получить максимум нужной для разработчиков информации о проблеме и быстро подготовить исправление. Однако мы понимаем, что не всегда есть возможность отсылать ошибки (внутренний локальный сервер) и поэтому в случае отключения указанной настройки через конфиг:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">// Bugsnag error reporting\n$bb_cfg[&#039;bugsnag&#039;] = [\n    &#039;enabled&#039; =&gt; false,\n];</pre>Вся обработка ошибок станет локальной. Однако и тут есть большие изменения - локальная обработка ошибок стала в десятки раз информативнее уже для вас:<br />\n<div style=\"text-align: center\"><a href=\"https://torrentpier.com/attachments/4855/\"><img src=\"https://torrentpier.com/data/attachments/4/4859-d280a3ab712823f5bcbe773190bd7b2a.jpg?hash=PKY7NoiZ3Q\" alt=\"upload_2017-6-12_22-15-10.webp\" /></a>&#8203;</div>В ней уровень отображаемой информации аналогичен и вы сможете с легкостью создать тему в разделе багов, если привыкли все делать самостоятельно. Более подробно показать остальные изменения - сложнее, потому что в основном они влияют на стабильность работы движка, но это основная особенность релиза - вернуться в график разработки и получить рабочий продукт.<br />\n<br />\nЧто дальше? А дальше версия <b>2.3.0</b>, <b>TorrentPier Bison</b>, в которой мы сосредоточимся уже на переработке всего старого в новое. Новый дизайн и система шаблонов, новая админка, переход на работу всего вообще через API, а также добавление долгожданной возможности установки модов без модификации файлов. Это тот список, который позволит нам стать тем движком, который вы заслуживаете. Разумеется, от части вещей придется отказаться, например от поддержки устаревших версий PHP (работа только с 7 и выше). Часть процессов может стать сложнее для простых обывателей, например работа с консолью будет обыденным делом, но все это позволит сделать то, чего у нас не получалось сделать вот уже практически три года. А чтобы у нас было больше мотивации - вы всегда можете <a href=\"https://torrentpier.com/donate/\" class=\"link link--internal\">оказать поддержку разработке</a>.<br />\n<br />\nВ случае если в <b>TorrentPier Aurochs</b> найдутся какие-то срочные исправления - версия 2.2.1 и т.п. могут быть выпущены в приоритетном порядке и сразу, т.к. мы наконец-то стали придерживаться методологии semver и перестали придумывать новые версии релизам, мешающие в работе.<br />\n<br />\nОжидание закончено. Начинается новая эра - эта быка.<br />\nПоздравляю всех с релизом TorrentPier Aurochs :woot:",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1497295781,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91512,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "По всем вопросам как обновляться и т.п. - запросов в базу <a href=\"https://torrentpier.com/forum/threads/torrentpier-aurochs-versija-2-2-0.41744/\" class=\"link link--internal\">не так и много</a>, но вот по адаптации модов - могут возникнуть. Если у кого-то будут вопросы - <a href=\"http://torrentpier.herokuapp.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">заходите в наш Slack</a>, в комнату #upgrade и задаете свои вопросы там - буду помогать по мере возможности сразу.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1497296408,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91515,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Наблюдаю за первым валом ошибок - все до единой о том, что права на запись не выданы в папки. Возможно в следующей версии какие-то инструменты проверки состояния движка появятся, тем более что запланирована новая админка - это помогло бы решить такие мелкие проблемы.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1497306431,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91552,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "По поводу обновлений дальнейших - 2.2.1 с мелкими исправлениями выйдет когда их нужное количество наберется, пока что просто пара нотисов в поиске пользователей в админке нашлась. Обновиться там можно будет легко заменой файлов правленных или используя историю коммитов или через гит.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1497313445,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "reliz-torrentpier-aurochs-versia-2-2-0",
+  "sticky": false,
+  "tags": [
+    "aurochs",
+    "bison",
+    "новая версия",
+    "релиз"
+  ],
+  "title": "Релиз TorrentPier Aurochs. Версия 2.2.0",
+  "url_path": "/threads/reliz-torrentpier-aurochs-versia-2-2-0.41745/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 5497
+}

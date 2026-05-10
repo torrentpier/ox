@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 92545,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 41864,
+  "last_post_date": 1515848222,
+  "node_id": 3,
+  "post_date": 1515793384,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92545,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Кто ни будь заморачивался, что бы до ума довести приватный доступ к скачиванию к примеру?<br />\nСей час если в каком ни будь форуме поставить скачивание только &quot;приват&quot; то юзеру без привилегий показывается заглушка как не зареганому, а при нажатии на ссылку , редиректит на главную, а по уму бы нужно другую заглушку выводить. Что бы как то стимулировать для получения привилегий, а так он просто думает что сайт тупит и все.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1515793384,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92546,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "через это можно сделать<br />\n<a href=\"https://torrentpier.com/forum/threads/pokaz-reklamy-opredelennym-gruppam.41411/\" class=\"link link--internal\">решено - Показ рекламы определенным группам</a><br />\n<div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1515819088,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92548,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "я как то за это не подумал, но можно по идее и без мода сделать <br />\n<div>Spoiler content hidden.</div><br />\nтут расклад такой если залогиненого пользователя редиректит на viewtopic_attach_guest.tpl то значит на скачивание установлен приватный доступ, нужно еще в форуме подкрутить подобное и все)",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1515848222,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "privatnyj-dostup",
+  "sticky": false,
+  "tags": [],
+  "title": "Приватный доступ",
+  "url_path": "/threads/privatnyj-dostup.41864/",
+  "user_id": 7243,
+  "username": "Protektor",
+  "view_count": 1069
+}

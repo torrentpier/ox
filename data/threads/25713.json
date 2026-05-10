@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58521,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 25713,
+  "last_post_date": 1405117835,
+  "node_id": 80,
+  "post_date": 1391437785,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58521,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Попробуйте создать юзера через админку, как только нажимаешь кнопку отправить, выскакивает сообщение о том, что открыто во фрейме.  На демке воспроизводится.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1391437785,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61376,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено в новой ревизии: <a href=\"https://code.google.com/p/torrentpier2/source/detail?r=589\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://code.google.com/p/torrentpier2/source/detail?r=589</a><br />\nСпасибо за багрепорты.<br />\n<br />\nСкачать r589 можно в центре загрузки: <a href=\"http://get.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://get.torrentpier.com/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1405117835,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 1,
+  "slug": "frejm-v-adminke-r580",
+  "sticky": false,
+  "tags": [],
+  "title": "Фрейм в админке r580",
+  "url_path": "/threads/frejm-v-adminke-r580.25713/",
+  "user_id": 55,
+  "username": "Lange",
+  "view_count": 1059
+}

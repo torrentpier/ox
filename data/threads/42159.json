@@ -1,0 +1,81 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95140,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42159,
+  "last_post_date": 1692207738,
+  "node_id": 47,
+  "post_date": 1692119587,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95140,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "1. Открыть memberlist.php<br />\n2. Найти:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$sql = &quot;SELECT username,</pre>3. Вставить после:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">avatar_ext_id,</pre>4. Найти:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$template-&gt;assign_block_vars(&#039;memberrow&#039;, array(</pre>5. Вставить ниже:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&#039;AVATAR_IMG&#039; =&gt; get_avatar($row[&#039;user_id&#039;], $row[&#039;avatar_ext_id&#039;], !bf($row[&#039;user_opt&#039;], &#039;user_opt&#039;, &#039;dis_avatar&#039;), &#039;&#039;, 50, 50),</pre>--------------------------------------<br />\n6. Открыть memberlist.tpl (внутри вашего шаблона)<br />\n7. Найти:<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">&lt;td&gt;&lt;b&gt;{memberrow.USER}&lt;/b&gt;&lt;/td&gt;</pre>8. Заменить на:<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">&lt;td&gt;&lt;div&gt;{memberrow.AVATAR_IMG}&lt;/div&gt;&lt;b&gt;{memberrow.USER}&lt;/b&gt;&lt;/td&gt;</pre>9. Сохранить все файлы<br />\n<br />\n<span style=\"color: rgb(235, 107, 86)\">P.S: Данный мод установлен по умолчанию начиная с версии v2.3.1-rc1, а так же в LTS начиная с версии v2.1.5-2023.10.</span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1692119587,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1692207737,
+          "file_size": 374338,
+          "filename": "avatar.webp",
+          "height": 3476,
+          "id": 5496,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/avatar-webp.5496/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5500-2200bff46d85ddbd0a0c15ce6ba8d9d8.jpg?hash=THrN3L-3dl",
+          "width": 1920
+        }
+      ],
+      "id": 95143,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "НА главную вывел , осталось все привезти в нормальный вид )",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1692207738,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "vyvod-avatarov-v-memberlist-php-pol-zovateli",
+  "sticky": false,
+  "tags": [],
+  "title": "Вывод аватаров в memberlist.php (Пользователи)",
+  "url_path": "/threads/vyvod-avatarov-v-memberlist-php-pol-zovateli.42159/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 840
+}

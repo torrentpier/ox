@@ -1,0 +1,125 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 96032,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 96,
+    "title": "Modifications archive"
+  },
+  "id": 42259,
+  "last_post_date": 1712172845,
+  "node_id": 96,
+  "post_date": 1712090170,
+  "posts": [
+    {
+      "attach_count": 3,
+      "attachments": [
+        {
+          "attach_date": 1712090164,
+          "file_size": 7426,
+          "filename": "6.webp",
+          "height": 57,
+          "id": 5935,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/6-webp.5935/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5939-f276c551da6274b4f4f9795c4b42b2ad.jpg?hash=j1-f7nzI5c",
+          "width": 350
+        },
+        {
+          "attach_date": 1712090164,
+          "file_size": 8022,
+          "filename": "14.webp",
+          "height": 57,
+          "id": 5936,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/14-webp.5936/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5940-aeb79f30c67e90d650f5c74a95b3f3e7.jpg?hash=zQYqlpuCiq",
+          "width": 350
+        },
+        {
+          "attach_date": 1712090164,
+          "file_size": 336411,
+          "filename": "torrentbar.rar",
+          "height": 0,
+          "id": 5937,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/torrentbar-rar.5937/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 96032,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 1712090529,
+      "message_parsed": "<img src=\"https://torrentpier.com/attachments/5935/\" alt=\"6.png\" /><img src=\"https://torrentpier.com/attachments/5936/\" alt=\"14.png\" /><br />\n<br />\nконфинг<br />\n<pre class=\"xfBb-code\" data-lang=\"\">define(&#039;TORRENTBAR_DIR&#039;, BB_PATH .&#039;/torrentbar/&#039;);\n$bb_cfg[&#039;torrentbar&#039;][&#039;0&#039;]        = &#039;Выберите цвет&#039;;\n$bb_cfg[&#039;torrentbar&#039;][&#039;blue&#039;]     = &#039;Синий&#039;;\n$bb_cfg[&#039;torrentbar&#039;][&#039;green&#039;]    = &#039;Зелёный&#039;;\n$bb_cfg[&#039;torrentbar&#039;][&#039;black&#039;]    = &#039;Чёрный&#039;;\n$bb_cfg[&#039;torrentbar&#039;][&#039;red&#039;]      = &#039;Красный&#039;;\n$bb_cfg[&#039;torrentbar&#039;][&#039;orange&#039;]   = &#039;Оранжевый&#039;;\n$bb_cfg[&#039;torrentbar&#039;][&#039;original&#039;] = &#039;Оригинальный&#039;;</pre>регистрация<br />\n<pre class=\"xfBb-code\" data-lang=\"\">            cache_rm_user_sessions ($pr_data[&#039;user_id&#039;]);\n\n            require(INC_DIR .&#039;class.torrentbar.php&#039;);\n            torrentbar ($pr_data[&#039;user_id&#039;], &#039;user&#039;);\n\n\n\n    &#039;USER_TIMEZONE&#039;      =&gt; $pr_data[&#039;user_timezone&#039;],\n    &#039;TORRENTBAR_SELECT&#039;  =&gt; torrentbar_select($user_bar),</pre>functions_selects.php<br />\n<pre class=\"xfBb-code\" data-lang=\"\">// Torrentbar\nfunction torrentbar_select($default)\n{\n    global $bb_cfg;\n\n    $torrentbar_select = &#039;&lt;select name=&quot;user_bar&quot; onChange=&quot;document.images[\\&#039;user_bar\\&#039;].src = \\&#039;torrentbar/images/\\&#039;+ this.value +\\&#039;.png\\&#039;;&quot; &gt;&#039;;\n    $torrentbar_img = &#039;&#039;;\n    while( list($bar, $bar_name) = @each($bb_cfg[&#039;torrentbar&#039;]) )\n    {\n        $bar_img = $bar;\n\n        $selected = ($bar == $default) ? &#039; selected=&quot;selected&quot;&#039; : &#039;&#039;;\n        $torrentbar_select .= &#039;&lt;option value=&quot;&#039;. $bar .&#039;&quot;&#039; . $selected . &#039;&gt;&#039;. $bar_name .&#039;&lt;/option&gt;&#039;;\n        if (isset($bar) &amp;&amp; ($bar == $default))\n        {\n            $torrentbar_img = ($bar_img) ? $bar_img : &#039;spacer&#039;;\n        }\n    }\n    $torrentbar_select .= &#039;&lt;/select&gt;&amp;nbsp;&amp;nbsp;&lt;img align=&quot;absmiddle&quot; name=&quot;user_bar&quot; src=&quot;torrentbar/images/&#039;. $torrentbar_img .&#039;.png&quot;&gt;&#039;;\n\n    return $torrentbar_select;\n}</pre>профиль<br />\n<pre class=\"xfBb-code\" data-lang=\"\">            &lt;!-- IF TORRENTBAR --&gt;\n            &lt;tr&gt;\n                &lt;th&gt;Ваш торрентбар:&lt;/th&gt;\n                &lt;td&gt;&lt;img src=&quot;{BB_ROOT}{PROFILE_USER_ID}.png&quot;&gt;&lt;/td&gt;\n            &lt;/tr&gt;\n            &lt;tr&gt;\n                &lt;th&gt;BB code:&lt;/th&gt;\n                &lt;td&gt;&lt;input type=&quot;text&quot; id=&quot;codebb&quot; size=&quot;48&quot; value=&quot;[url={TORRENTBAR_URL}][img]{TORRENTBAR_URL}{PROFILE_USER_ID}.png[/img][/url]&quot; onclick=&quot;javascript:this.focus();this.select();&quot; readonly=&quot;true&quot; /&gt;&lt;/td&gt;\n            &lt;/tr&gt;\n            &lt;!-- ENDIF --&gt;</pre>.htaccess<br />\n<pre class=\"xfBb-code\" data-lang=\"\"># Торрентбар\nRewriteRule ^([0-9]*)\\.png$ /torrentbar/index.php?u=$1 [L]</pre><br />\n<b>ALTER TABLE `bb_users` ADD `user_bar` varchar(100) NOT NULL DEFAULT &#039;0&#039; ; </b>#вроде так<br />\n<br />\n<b>PS </b>Права на папки не забудьте ну и сами шаблоны поменять на свои =)<br />\n<b>PSS </b>Модер/админ или еще кто, удаляйте посты с вопросом типо, а куда это вставлять и почему не работает... (<b><i>на этот код ушло много времени, сил, бессонных ночей, поднятие старого бекапа, флешбеки из прошлого и мат на новый код движка... в общем не обессудьте... это мой первый написанный класс на пхп</i></b>)",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1712090170,
+      "user_id": 2,
+      "user_title": "User",
+      "username": "_Xz_"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96033,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Да ладно, кого я вижу 😱😱😱<br />\n<br />\nЛегенда, привет!!!! С возвращением в семью!!! 😀<br />\n<br />\nОтдельное спасибо за мод. Надеюсь будут ещё моды от тебя",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1712111317,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96051,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Дааа, давно тут тебя не видел) легенда))",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1712172845,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "torrentbar",
+  "sticky": false,
+  "tags": [],
+  "title": "Торрентбар",
+  "url_path": "/threads/torrentbar.42259/",
+  "user_id": 2,
+  "username": "_Xz_",
+  "view_count": 5876
+}

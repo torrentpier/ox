@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 73755,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 34398,
+  "last_post_date": 1423522266,
+  "node_id": 80,
+  "post_date": 1422553903,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 73755,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Пишу чтоб не потерялось!<br />\nНеправильный подсчет юзер статы.<br />\n<br />\nup_add down_add из этих полей идет перенос в юзер стату, но в эти поля не попадают данные и тем самым данные висят в теме в дл листе, но юзеру не начисляет.<br />\n Место бага в анонсе<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">// Up/Down addition\n$up_add = ($lp_info &amp;&amp; $uploaded &gt; $lp_info[&#039;uploaded&#039;]) ? $uploaded - $lp_info[&#039;uploaded&#039;] : 0;\n$down_add = ($lp_info &amp;&amp; $downloaded &gt; $lp_info[&#039;downloaded&#039;]) ? $downloaded - $lp_info[&#039;downloaded&#039;] : 0;</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1422553903,
+      "user_id": 2789,
+      "user_title": "User",
+      "username": "Sprinx"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 74826,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Есть идеи?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1423509122,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 74840,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "У меня такой глюк возникает с пользователем у которого очень слабая отдача 0.5-10 кБ/сек<br />\nДо этого устанавливал suhosin, больше никаких изменений не делал",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1423522034,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 74843,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/2685/\">@ler</a> или баг движка (маловероятно, я все никак не пойму проблему на которую <a href=\"https://torrentpier.com/members/2789/\">@Sprinx</a> ссылается) или просто &quot;утерянное&quot; было отдано по DHT/в локалку/на другие трекеры, поэтому потеря трафика закономерна в таком случае. Проверить точно можно только отключив все локальные обмены, DHT и удалить все трекеры кроме одного, на которого раздавать суперсидом. Только тогда будет ясно, теряет ли движок трафик или нет.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1423522266,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 3,
+  "slug": "nepravil-nyj-podscet-uzer-staty",
+  "sticky": false,
+  "tags": [],
+  "title": "Неправильный подсчет юзер статы",
+  "url_path": "/threads/nepravil-nyj-podscet-uzer-staty.34398/",
+  "user_id": 2789,
+  "username": "Sprinx",
+  "view_count": 1341
+}

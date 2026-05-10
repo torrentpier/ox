@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 89639,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41627,
+  "last_post_date": 1485029069,
+  "node_id": 57,
+  "post_date": 1485015404,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89639,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<span style=\"font-size: 22px\">Как сделать чтобы при регистрации нужно было в обязательном порядке указывать пол?<br />\nА если и код кто даст,то вообще буду признателен.<br />\nЗаранее спасибо.<br />\n</span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1485015404,
+      "user_id": 7391,
+      "user_title": "User",
+      "username": "_WolK_"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89641,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"_WolK_\"><span style=\"font-size: 22px\">Как сделать чтобы при регистрации нужно было в обязательном порядке указывать пол?<br />\nА если и код кто даст,то вообще буду признателен.<br />\nЗаранее спасибо.</span></blockquote>Путём отключения CapsLock",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1485015870,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89643,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Нужно зайти в phpMyAdmin и выпонить запрос к базе данных:<br />\n<br />\n<code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\"> <br />\nDROP DATABASE db_name;<br />\n</code><br />\n<br />\nгде db_name - имя базы данных, только в конце запроса обязательно - ; не забыть",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1485020105,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89652,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<img src=\"http://www.malolikto.ru/wp-content/uploads/2016/10/122193716_5420033_700.jpg\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1485021148,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89691,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Ах, какие юмористы. На все вопросы этим юмористам буду отвечать в дальнейшем предложением дропнуть базу и поставить трекер с нуля.<br />\n<br />\n<a href=\"https://torrentpier.com/members/7391/\">_WolK_</a>, после этой строки: <a href=\"https://github.com/torrentpier/torrentpier/blob/master/library/includes/ucp/register.php#L312\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">torrentpier/register.php at master · torrentpier/torrentpier · GitHub</a> надо добавить примерно аналогичные конструкции как вот тут <a href=\"https://github.com/torrentpier/torrentpier/blob/master/library/includes/ucp/register.php#L257\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">torrentpier/register.php at master · torrentpier/torrentpier · GitHub</a> - естественно при этом надо везде поправить коды ошибок, добавить языковые и т.п.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1485029069,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "obazatel-noe-ukazanie-pola-pri-registracii",
+  "sticky": false,
+  "tags": [],
+  "title": "Обязательное указание пола при регистрации",
+  "url_path": "/threads/obazatel-noe-ukazanie-pola-pri-registracii.41627/",
+  "user_id": 7391,
+  "username": "_WolK_",
+  "view_count": 1109
+}

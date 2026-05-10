@@ -1,0 +1,139 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 84547,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41216,
+  "last_post_date": 1523257688,
+  "node_id": 57,
+  "post_date": 1437749022,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84547,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Настройки форумов  -&gt; <br />\nЗапретить DHT сети - ДА<br />\nПроверять announce url - НЕТ<br />\nЗаменять announce url - ДА<br />\nУдалять все дополнительные announce urls -ДА<br />\n<br />\nКрон откреплен и выполняется раз в 5 минут хостингом: <a href=\"https://legalmedia.link/cron.php\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://site_name/cron.php</a> - фаил крона. <br />\nВсе настроено, создает и работает, НО при создании релиза, у пользователей не качает ничего. <br />\n<br />\nРелиз создается, при скачивании торрент билета висит и все, причем при паузе и опять запуске он видит раздающего, его ip и порт, в трекере показывает количество раздающих и скачивающих, но не качает... <br />\nСкрин прилагается: <br />\n<br />\nПричем, некоторые моменты, некоторые релизы скачивало... <br />\nТестировали на 5ти разных машинах, ноутбуках, планшете, и на 2х разных интернет провайдерах.<br />\nАнтивирус, фаерволл отключен. <br />\nПричем на этих машинах с других трекеров качает - например rutracker.org качает...<br />\n<br />\nУже все перепробовали (разние клиенты, разворачивали на другом хостинге), в чем может быть проблема, где смотреть ? <br />\n<br />\nУстановка стандартная, в базе ничего не менялось, в сриптах которые касаются анонсера тоже не менялось... <br />\nКлиенты которые мы тестировали: <br />\nDeluge 1.3.11, qBitTorrent 3.2.0, BitTorrent 7.9.3<br />\n<br />\n// Version info<br />\n$bb_cfg[&#039;tp_version&#039;] = &#039;2.1.5&#039;;<br />\n$bb_cfg[&#039;tp_release_date&#039;] = &#039;06-12-2014&#039;;<br />\n$bb_cfg[&#039;tp_release_state&#039;] = &#039;ALPHA&#039;;<br />\n$bb_cfg[&#039;tp_zf_version&#039;] = &#039;2.3.3&#039;;<br />\n<br />\n<img src=\"http://dl1.joxi.net/drive/0005/0569/340537/150723/5ce4d59949.jpg\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1437749022,
+      "user_id": 6278,
+      "user_title": "User",
+      "username": "riv2"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84592,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/6278/\">@riv2</a> ну вообще, скорее всего, проблема только в связанности пользователей. Тем более что у вас трекер закрытого типа и по DHT сетям и т.п. поиск не идет. Есть возможность дать ссылку на раздачу, где есть активные сиды?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1438214065,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84603,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Такое ощущение что что то с клиентами, но не могу доконца понять что именно, <br />\nПоставил дамбы на анонсер, он запросы видит, ответы делает, в клиентах видит раздающего , его ip, его порт, ошибок не выдает, просто пявляется в списке и потом тупо исчезает... , пробовал сделать раздачу даже на удаленном сервере в Москве, где выделеный ip, все порты открыты и фаерволы отключены. <br />\nС домашнего с него стало стразу качать, поставил на паузу, включил обратно скачивание, и все, не качает... ни ошибок ничего не видит клиент, список раздающих пуст, НО клиент видит количество раздающих...   <br />\nВот тестовая раздача с клиента на моем компьютере, раздача через bittorrent 7.9.3<br />\n<a href=\"https://legalmedia.link/viewtopic.php?t=49\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Тестовый релиз 1 :: Legal Media</a><br />\nлогин - test<br />\nпасс - test",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1438340060,
+      "user_id": 6278,
+      "user_title": "User",
+      "username": "riv2"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92851,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1521894612,
+      "message_parsed": "Такая же петрушка, один в один и клиенты не причём. Целый район по сетке его пытает а он на приватном режиме (отключён DNT) не хочет.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1521894442,
+      "user_id": 8282,
+      "user_title": "User",
+      "username": "Romale999"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92888,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Разобрался, может поможет.  Настройки идентичны твоим. При создании торрент файла не ставь галочку приватный! У меня версия 600 и по https у меня не получилось качать, не видет пиры сиды, при отключении https всё видит (пиры сиды) с этим разберусь позже. Зато хоть качать стало а https что то чувство косяк в движке (наверное) ещё не копал.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1522132621,
+      "user_id": 8282,
+      "user_title": "User",
+      "username": "Romale999"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93050,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "По тара пился днт включил по ошибке, потом выключил и встал. Что может быть? где искать причину",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1523257688,
+      "user_id": 8282,
+      "user_title": "User",
+      "username": "Romale999"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "u-pol-zovatelej-ne-kacaet-pri-nastrojkah-na-privatnyj-treker-dht-otklucen",
+  "sticky": false,
+  "tags": [
+    "dht",
+    "приватный трекер",
+    "проблемы со скачиванием"
+  ],
+  "title": "У пользователей не качает при настройках на приватный трекер (DHT отключен)",
+  "url_path": "/threads/u-pol-zovatelej-ne-kacaet-pri-nastrojkah-na-privatnyj-treker-dht-otklucen.41216/",
+  "user_id": 6278,
+  "username": "riv2",
+  "view_count": 2897
+}

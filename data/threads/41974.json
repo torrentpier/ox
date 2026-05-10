@@ -1,0 +1,104 @@
+{
+  "custom_fields": {
+    "torrentpier": "2301"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 93575,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 41974,
+  "last_post_date": 1537895785,
+  "node_id": 80,
+  "post_date": 1536661164,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93575,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Добрый день!<br />\nПомогите, пожалуйста. <br />\n<br />\nСтолкнулся с проблемой - на чистом движке 2.3.0.1 не до конца проходит процесс регистрации. После заполнения формы регистрации появляется белый экран, в лог записывается fatal_error, в фоне регистрация проходит - но письмо по активации аккаунта не отправляется. Проблема не в рекапче (актуальна и при полном отключении рекапчи). Уже написал в поддержку хостинга. Ответ (не до конца мне понятный) и детали под катом.<br />\n<br />\np.s. нашел несколько подобных тем здесь на форуме - но нигде нет деталей решения проблемы (либо само собой решилось, либо человек включил smtp)<br />\n<br />\n<div>Spoiler content hidden.</div><div>Spoiler content hidden.</div><div>Spoiler content hidden.</div><div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1536661164,
+      "user_id": 4242,
+      "user_title": "User",
+      "username": "Philstone"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93627,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "up!",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1537301209,
+      "user_id": 4242,
+      "user_title": "User",
+      "username": "Philstone"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93679,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Неужели никто не сталкивался?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1537794950,
+      "user_id": 4242,
+      "user_title": "User",
+      "username": "Philstone"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93690,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Добавлю, что почта через web-интерфейс хостера отправляется корректно + также она корректно отправляется, если настроить SMTP.<br />\nТ.о. проблема актуальна только при отправке через sendmail (emailer, enabled=true, smtp=false)",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1537895785,
+      "user_id": 4242,
+      "user_title": "User",
+      "username": "Philstone"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 3,
+  "slug": "belyj-ekran-i-fatal_error-pri-registracii",
+  "sticky": false,
+  "tags": [
+    "sendmail",
+    "swiftmailer",
+    "регистрация"
+  ],
+  "title": "Белый экран и fatal_error при регистрации",
+  "url_path": "/threads/belyj-ekran-i-fatal_error-pri-registracii.41974/",
+  "user_id": 4242,
+  "username": "Philstone",
+  "view_count": 1601
+}

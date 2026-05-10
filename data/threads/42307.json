@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 96668,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42307,
+  "last_post_date": 1771167823,
+  "node_id": 47,
+  "post_date": 1724749522,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96668,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/bbcode-podderzhka-otnositelnyx-ssylok.306/\" class=\"link link--internal\">BBCode: Поддержка относительных ссылок</a> - Данный мод добавляет в BBCode редактор возможность задать относительную ссылку в теге [url].<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><div style=\"text-align: center\"><span style=\"color: rgb(226, 80, 65)\">Данный мод будет добавлен по-умолчанию начиная с версии v2.4.5</span>&#8203;</div><hr /><b>Описание:</b> Данный мод добавляет в BBCode редактор возможность задать относительную ссылку.<br />\n<br />\n<span style=\"color: rgb(0, 0, 0)\"><b>Совместимость: </b>все версии.</span></blockquote><br />\n<a href=\"https://torrentpier.com/resources/bbcode-podderzhka-otnositelnyx-ssylok.306/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1724749522,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98414,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka updated <a href=\"https://torrentpier.com/resources/bbcode-podderzka-otnositel-nyh-ssylok.306/\" class=\"link link--internal\">BBCode: Поддержка относительных ссылок</a> with a new update entry:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/bbcode-podderzka-otnositel-nyh-ssylok.306/update/686/\" class=\"link link--internal\">Update v1.1.0</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Исправлена уязвимость</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/bbcode-podderzka-otnositel-nyh-ssylok.306/update/686/\" class=\"link link--internal\">Read the rest of this update entry...</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1771167823,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "bbcode-podderzka-otnositel-nyh-ssylok",
+  "sticky": false,
+  "tags": [],
+  "title": "BBCode: Поддержка относительных ссылок",
+  "url_path": "/threads/bbcode-podderzka-otnositel-nyh-ssylok.42307/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 703
+}

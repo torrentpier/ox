@@ -1,0 +1,48 @@
+{
+  "category": {
+    "description": "Section with all paid modifications for TorrentPier.",
+    "id": 2,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Paid",
+    "view_url": "https://torrentpier.com/resources/categories/paid.2/"
+  },
+  "current_files": [],
+  "custom_fields": {
+    "compability_check": "yes"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание:</b> Мод позволяет автоматически публиковать новые релизы в facebook.<br />\nРабота с api facebook на прямую без сторонних сервисов<br />\n<a href=\"https://www.facebook.com/AlexFilmBot\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Пример</a>",
+  "download_count": 0,
+  "external_url": "https://www.facebook.com/AlexFilmBot",
+  "icon_url": null,
+  "id": 144,
+  "is_fileless": null,
+  "last_update": 1416811904,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1416811904,
+  "resource_state": "visible",
+  "slug": "avtoposting-poslednih-relizov-v-facebook",
+  "tag_line": "Позволяет автоматически публиковать последние релизы в facebook",
+  "tags": [],
+  "title": "Автопостинг последних релизов в facebook",
+  "url_path": "/resources/avtoposting-poslednih-relizov-v-facebook.144/",
+  "user_id": 97,
+  "username": "Zenden",
+  "version": "2014-11-24",
+  "versions": [
+    {
+      "download_count": 0,
+      "files": [],
+      "id": 157,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1416811904,
+      "version_state": "visible",
+      "version_string": "2014-11-24",
+      "view_url": "https://torrentpier.com/resources/avtoposting-poslednih-relizov-v-facebook.144/version/157/"
+    }
+  ],
+  "view_count": 618
+}

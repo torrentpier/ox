@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 87119,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 58,
+    "title": "Suggestions for improving TorrentPier"
+  },
+  "id": 41417,
+  "last_post_date": 1457431427,
+  "node_id": 58,
+  "post_date": 1457304401,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87119,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "У меня на сервере стоит основной трекер и его вторая копия с костылями (для англоязычной аудитории)<br />\nВторой трекер использует базу, мемкеш, картинки, аттачи первого трекера. При создании торрента на втором трекере, аттачи загружаются на первый трекер.<br />\n<br />\nХотелось бы чтоб такая возможность появилась в версии 2.2",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1457304401,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87144,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Как на рутрекере &quot;национальные&quot; разделы сделаны что ли?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1457398503,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87147,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "У меня в зависимости от выбранного языка раздача оформляется на русском или английском. Так что было решено все раздачи на английском языке выводить на втором домене и сделать там английский основным языком. Из-за того что основной домен был в ru зоне, заграничный трафик почти не шел. Сейчас ситуация поменялась",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1457431427,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    }
+  ],
+  "prefix_id": 41,
+  "reply_count": 2,
+  "slug": "mul-titreker",
+  "sticky": false,
+  "tags": [],
+  "title": "Мультитрекер",
+  "url_path": "/threads/mul-titreker.41417/",
+  "user_id": 6370,
+  "username": "sхс",
+  "view_count": 1498
+}

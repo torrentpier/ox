@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 86127,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 41353,
+  "last_post_date": 1450243777,
+  "node_id": 3,
+  "post_date": 1450243777,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86127,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<div style=\"text-align: center\"><img src=\"http://i.imgur.com/h1LL6jw.jpg\" alt=\"\" /> <br />&#8203;</div><div style=\"text-align: left\">WebTorrent – это проект, позволяющий работать с торрентами без отдельных программ и даже плагинов для браузера.<br />\n<a href=\"https://webtorrent.io/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><br />\nWebTorrent</a> использует только JavaScript и WebRTC, и работает в браузерах Chrome, Firefox и Opera (как на ПК, так и на Android).<br />\n<br />\nПриложение может использоваться для снижения нагрузок на сервер, чтобы при пиковых нагрузках пользователи обменивались файлами между собой, а не только с сервером. Но веб-приложение можно использовать и как замену обычным торрент-клиентам, для скачивания и раздач.<br />\n<br />\nОпробовать WebTorrent в действии можно на официальном <a href=\"https://instant.io/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Instant.io</a>,либо неофициальном, но более удобном,<a href=\"https://btorrent.xyz/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">BTorrent</a>.По второй ссылке поддерживаются .torrent файлы, магнитные ссылки и хэши,в то время,как Insant.io работать с .torrent файлами не умеет.&#8203;</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1450243777,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "webtorrent-torenty-v-brauzere-bez-plaginov",
+  "sticky": false,
+  "tags": [],
+  "title": "WebTorrent – торенты в браузере без плагинов",
+  "url_path": "/threads/webtorrent-torenty-v-brauzere-bez-plaginov.41353/",
+  "user_id": 5704,
+  "username": "ExPlayer",
+  "view_count": 1071
+}

@@ -1,0 +1,99 @@
+{
+  "custom_fields": {
+    "torrentpier": "240_beta2"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95200,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 42168,
+  "last_post_date": 1695383740,
+  "node_id": 80,
+  "post_date": 1695314222,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1695314183,
+          "file_size": 160660,
+          "filename": "Screenshot_1.webp",
+          "height": 1614,
+          "id": 5521,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot_1-webp.5521/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5525-235b3234029ae057ec17ce081eb04237.jpg?hash=61Z8RIWkIW",
+          "width": 3251
+        }
+      ],
+      "id": 95200,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<img src=\"https://torrentpier.com/attachments/5521/\" alt=\"Screenshot_1.webp\" /><br />\n<br />\nздравствуйте поставил для пробы движок на хостинг,иногда выходит такое",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1695314222,
+      "user_id": 5904,
+      "user_title": "User",
+      "username": "andys"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95201,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"andys\"><a href=\"https://torrentpier.com/attachments/5521/\">View attachment 5521</a><br />\n<br />\nздравствуйте поставил для пробы движок на хостинг,иногда выходит такое</blockquote>Да, знаем, исправим скоро. Спасибо за баг репорт",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1695315197,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95203,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "🙂",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1695383740,
+      "user_id": 10732,
+      "user_title": "User",
+      "username": "Самурай"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 2,
+  "slug": "cron",
+  "sticky": false,
+  "tags": [],
+  "title": "Cron",
+  "url_path": "/threads/cron.42168/",
+  "user_id": 5904,
+  "username": "andys",
+  "view_count": 607
+}

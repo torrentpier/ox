@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 80691,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 39152,
+  "last_post_date": 1427617988,
+  "node_id": 57,
+  "post_date": 1427615367,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 80691,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В этом куске кода убрал  &lt;!-- IF IS_ADMIN --&gt;<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;!-- IF SHOW_ONLINE_LIST --&gt;\n                        &lt;p id=&quot;online_time&quot;&gt;Сейчас онлайн:&lt;/p&gt;\n                        &lt;br&gt;\n                            &lt;style type=&quot;text/css&quot;&gt;&lt;!-- IF IS_ADMIN --&gt;.colorISL, a.colorISL, a.colorISL:visited { color: #793D00; }&lt;!-- ELSE --&gt;.ou_stat { display: none; }&lt;!-- ENDIF --&gt;&lt;/style&gt;\n                            &lt;a name=&quot;online&quot;&gt;&lt;/a&gt;\n                            &lt;div id=&quot;online_userlist&quot; style=&quot;margin-top: 4px;&quot;&gt;{LOGGED_IN_USER_LIST}&lt;/div&gt;\n                        &lt;!-- ENDIF --&gt;</pre><br />\nПолучилось так<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">                      &lt;!-- IF SHOW_ONLINE_LIST --&gt;\n                        &lt;p id=&quot;online_time&quot;&gt;Сейчас онлайн:&lt;/p&gt;\n                        &lt;br&gt;\n                            &lt;style type=&quot;text/css&quot;&gt;.colorISL, a.colorISL, a.colorISL:visited { color: #793D00; }&lt;/style&gt;\n                            &lt;a name=&quot;online&quot;&gt;&lt;/a&gt;\n                            &lt;div id=&quot;online_userlist&quot; style=&quot;margin-top: 4px;&quot;&gt;{LOGGED_IN_USER_LIST}&lt;/div&gt;\n                        &lt;!-- ENDIF --&gt;</pre><br />\nНо видно также только мне , подскажите как сделать правильно",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1427615367,
+      "user_id": 5452,
+      "user_title": "User",
+      "username": "Ress Kent"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 80692,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://faq.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://faq.torrentpier.com/</a> 10 пункт",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1427617988,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "vozmoznost-prosmotra-sejcas-onlajn-dla-vseh",
+  "sticky": false,
+  "tags": [],
+  "title": "Возможность просмотра сейчас онлайн для всех",
+  "url_path": "/threads/vozmoznost-prosmotra-sejcas-onlajn-dla-vseh.39152/",
+  "user_id": 5452,
+  "username": "Ress Kent",
+  "view_count": 968
+}

@@ -1,0 +1,134 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 9563,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 50,
+        "title": "Graphics and styles for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 17,
+    "title": "Graphics and styles for TorrentPier (archive)"
+  },
+  "id": 738,
+  "last_post_date": 1329150025,
+  "node_id": 17,
+  "post_date": 1326610163,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1326610143,
+          "file_size": 2196,
+          "filename": "Кнопка наверх.rar",
+          "height": 0,
+          "id": 516,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/knopka-naverh-rar.516/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 9563,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>page_header.tpl</b><br />\n<br />\nнайти:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;script type=&quot;text/javascript&quot; src=&quot;{#BB_ROOT}misc/js/main.js?v={$bb_cfg[&#039;js_ver&#039;]}&quot;&gt;&lt;/script&gt;</pre><br />\nпосле вставить:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;script type=&quot;text/javascript&quot; src=&quot;{#BB_ROOT}misc/js/scroll.js?v={$bb_cfg[&#039;js_ver&#039;]}&quot;&gt;&lt;/script&gt;</pre><br />\n<b>page_footer.tpl</b><br />\n<br />\nперед:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;/div&gt; \n &lt;!--/page_container --&gt;</pre><br />\nвставить:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;div id=&quot;topcontrol&quot; style=&quot;position: fixed; bottom: 50px; right: 15px; cursor: pointer; opacity: 2&quot;&gt;&lt;/div&gt;</pre> <img src=\"http://i5.pixs.ru/storage/2/0/7/ijpg_1582854_2663207.jpg\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1326610163,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Link"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9583,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Автор не знаком с клавишами, &quot;home&quot; и &quot;and&quot;.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1326636882,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9585,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Basilevs</b>, может end?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1326637339,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9867,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Basilevs\">Автор не знаком с клавишами</blockquote>Возможно, что такой вариант будет полезен пользователям бесклавиатурных компьютеров (планшетов).",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1326852734,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Nikolaich"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 11807,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "У krumax куда красивее вариант, заодно и к себе на DLE его вариант прикрутил",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1329150025,
+      "user_id": 14,
+      "user_title": "User",
+      "username": "Chumaster59"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "knopka-naverh",
+  "sticky": false,
+  "tags": [],
+  "title": "Кнопка \"Наверх\"",
+  "url_path": "/threads/knopka-naverh.738/",
+  "user_id": 0,
+  "username": "Link",
+  "view_count": 2956
+}

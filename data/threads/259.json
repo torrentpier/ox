@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 2766,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 259,
+  "last_post_date": 1315820402,
+  "node_id": 57,
+  "post_date": 1315820402,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 2766,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Есть на трекере удобная вещь, Галерея, через неё картинки можно заливать прямо на сайт. Делаю я превью для скриншотов, и в результате при нажатии на маленькую картинку, открывается большая картинка в этом же окне, и чтобы вернуться нужно всё время назад нажимать! А нельзя ли сделать чтобы эта картинка открывалась в отдельном окне, а ещё лучше во всплывающем окне Lightbox на полупрозрачном фоне?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1315820402,
+      "user_id": 251,
+      "user_title": "User",
+      "username": "DeadSoul"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "skrinsot-s-prev-u-v-splyvausem-okne-lightbox",
+  "sticky": false,
+  "tags": [],
+  "title": "Скриншот с превью в сплывающем окне Lightbox",
+  "url_path": "/threads/skrinsot-s-prev-u-v-splyvausem-okne-lightbox.259/",
+  "user_id": 251,
+  "username": "DeadSoul",
+  "view_count": 1559
+}

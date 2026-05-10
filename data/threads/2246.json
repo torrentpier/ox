@@ -1,0 +1,125 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 27209,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 52,
+    "title": "Bug tracker archive"
+  },
+  "id": 2246,
+  "last_post_date": 1361704181,
+  "node_id": 52,
+  "post_date": 1361526744,
+  "posts": [
+    {
+      "attach_count": 3,
+      "attachments": [
+        {
+          "attach_date": 1361526245,
+          "file_size": 290852,
+          "filename": "Безымянный.webp",
+          "height": 673,
+          "id": 1891,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bezymannyj-webp.1891/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1892-4a8d5a979cd7e58895ebbb1db1fc76ae.jpg?hash=uOZViDQFQE",
+          "width": 1355
+        },
+        {
+          "attach_date": 1361526573,
+          "file_size": 35718,
+          "filename": "Безымянный.webp",
+          "height": 453,
+          "id": 1892,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bezymannyj-webp.1892/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1893-6cc2049750276514b8ca07109eea0cac.jpg?hash=lnpADOQSUV",
+          "width": 883
+        },
+        {
+          "attach_date": 1361526683,
+          "file_size": 16070,
+          "filename": "1.webp",
+          "height": 239,
+          "id": 1893,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1-webp.1893/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1894-77b56b673f65b2b30d421cd2b57cc42a.jpg?hash=uRBQg6u4dD",
+          "width": 724
+        }
+      ],
+      "id": 27209,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "скрин проблемы: <a href=\"https://torrentpier.com/attachments/1891/\"><img src=\"https://torrentpier.com/data/attachments/1/1892-4a8d5a979cd7e58895ebbb1db1fc76ae.jpg?hash=uOZViDQFQE\" alt=\"Безымянный.webp\" /></a><br />\n <br />\nВ логах вот это)<br />\n<div>Spoiler content hidden.</div> <br />\nвот что в строчке page_header.php<br />\n <br />\n<a href=\"https://torrentpier.com/attachments/1892/\"><img src=\"https://torrentpier.com/data/attachments/1/1893-6cc2049750276514b8ca07109eea0cac.jpg?hash=lnpADOQSUV\" alt=\"Безымянный.webp\" /></a><br />\n <br />\nвот что в init_bb.php<br />\n <br />\n<a href=\"https://torrentpier.com/attachments/1893/\"><img src=\"https://torrentpier.com/data/attachments/1/1894-77b56b673f65b2b30d421cd2b57cc42a.jpg?hash=uRBQg6u4dD\" alt=\"1.webp\" /></a><br />\n <br />\nПомогите пожалуйста разобраться)",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1361526744,
+      "user_id": 330,
+      "user_title": "User",
+      "username": "Tima"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27219,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "решить вот так:<br />\nв конфиг отключи<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$bb_cfg[&#039;gzip_compress&#039;]      = false;              // compress output</pre> <br />\nа лучше всего поставить норм сервак)",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1361533153,
+      "user_id": 737,
+      "user_title": "User",
+      "username": "Dream"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27296,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "хостер исправил)",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1361704181,
+      "user_id": 330,
+      "user_title": "User",
+      "username": "Tima"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "karakuli-v-tracker-php",
+  "sticky": false,
+  "tags": [],
+  "title": "Каракули в tracker.php",
+  "url_path": "/threads/karakuli-v-tracker-php.2246/",
+  "user_id": 330,
+  "username": "Tima",
+  "view_count": 2061
+}

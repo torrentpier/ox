@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 85679,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 86,
+    "title": "Questions about PHP"
+  },
+  "id": 41320,
+  "last_post_date": 1447689829,
+  "node_id": 86,
+  "post_date": 1447619801,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85679,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет .<br />\nТакая ситуация .<br />\nЕсли зайти на сайт то все нормально ..<br />\nесли не заходить , то на главной страницы  идет подмена домена на   <a href=\"http://api.paypal.com\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://api.paypal.com</a><br />\nкакой то бред ...<br />\nкуда копать то ? Где идет подмена домена ?<br />\n<div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1447619801,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85690,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "где код смотрите? в инспекторе после обработки js или исходник страницы?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1447688124,
+      "user_id": 5765,
+      "user_title": "User",
+      "username": "Diolektor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85691,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Diolektor\">где код смотрите? в инспекторе после обработки js или исходник страницы?</blockquote>Все поправил .... Спасибо за ответ ...",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1447688916,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85695,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1447689890,
+      "message_parsed": "а нет , не исправил  все по новой началось )) смотрю в хроме , инспекторе через кнопку F12 ///<br />\nДля гостей идет подмена доменного имени {SITE_URL}<br />\nДля зареганых нормально все отображается ...",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1447689829,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "domennoe-ima",
+  "sticky": false,
+  "tags": [],
+  "title": "Доменное имя",
+  "url_path": "/threads/domennoe-ima.41320/",
+  "user_id": 5626,
+  "username": "Kryl",
+  "view_count": 1787
+}

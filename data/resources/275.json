@@ -1,0 +1,240 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Социальные сети в профиле by belomaxorka.zip",
+      "id": 6173,
+      "local_path": null,
+      "r2_key": null,
+      "size": 8831,
+      "src_url": "https://torrentpier.com/api/resource-versions/545/download?file=6173"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в папке с модом. Файл: Установка.txt",
+    "owner": "belomaxorka",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1702806575,
+      "file_size": 3554,
+      "filename": "Screenshot 2023-12-17 164326.webp",
+      "height": 112,
+      "id": 5676,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot-2023-12-17-164326-webp.5676/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5680-22fc6565012ff7a8a4b8f503583a14ac.jpg?hash=UQEKHVFQUn",
+      "width": 516
+    },
+    {
+      "attach_date": 1702806575,
+      "file_size": 7352,
+      "filename": "Screenshot 2023-12-17 164403.webp",
+      "height": 153,
+      "id": 5677,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot-2023-12-17-164403-webp.5677/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5681-ad453fb98b333159076e1ffa0fd3d8f6.jpg?hash=0_2gH-dJU7",
+      "width": 366
+    },
+    {
+      "attach_date": 1702806575,
+      "file_size": 32518,
+      "filename": "Screenshot 2023-12-17 164733.webp",
+      "height": 409,
+      "id": 5678,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot-2023-12-17-164733-webp.5678/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5682-0c8936208c3c05f6c8c6594e360016fa.jpg?hash=8sTfYJO6pd",
+      "width": 1177
+    },
+    {
+      "attach_date": 1702806575,
+      "file_size": 19138,
+      "filename": "Screenshot 2023-12-17 164842.webp",
+      "height": 193,
+      "id": 5679,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot-2023-12-17-164842-webp.5679/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5683-31741d2c8e69b5285dc2ef16327c48b7.jpg?hash=EuDmq99Vqb",
+      "width": 1125
+    },
+    {
+      "attach_date": 1702920803,
+      "file_size": 6906,
+      "filename": "photo_2023-12-19_00-33-06.webp",
+      "height": 185,
+      "id": 5686,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2023-12-19_00-33-06-webp.5686/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5690-3262a8d345edd50feb75d5c7bd70abf7.jpg?hash=cQkpAQjmLM",
+      "width": 178
+    },
+    {
+      "attach_date": 1702921369,
+      "file_size": 8586,
+      "filename": "photo_2023-12-19_00-41-27.webp",
+      "height": 235,
+      "id": 5688,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2023-12-19_00-41-27-webp.5688/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5692-e333ead4d2bed2ddadfa1a40769bee69.jpg?hash=GAkZz4m7rl",
+      "width": 179
+    }
+  ],
+  "description_parsed": "<b>Описание: </b>Добавляет пользователю возможность указать дополнительные социальные сети, помимо стандартных.<br />\n<br />\nТак же к моду есть дополнение для вывода социальных сетей в топике, оно находится в архиве с модом. За дополнение спасибо <a href=\"https://torrentpier.com/members/1546/\">Conteo</a>.<br />\n<br />\n<b>Преимущества:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Поддерживается AJAX редактирование</li>\n<li data-xf-list-type=\"ul\">Присутствует AJAX валидация</li>\n<li data-xf-list-type=\"ul\">В админ-панели добавляет поиск пользователей по социальным сетям</li>\n</ul><b>Добавляет социальные сети:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">ВКонтакте</li>\n<li data-xf-list-type=\"ul\">Одноклассники</li>\n<li data-xf-list-type=\"ul\">Steam</li>\n<li data-xf-list-type=\"ul\">Telegram</li>\n</ul>",
+  "download_count": 744,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/275.jpg?1702806628",
+  "id": 275,
+  "is_fileless": null,
+  "last_update": 1727169719,
+  "rating_avg": 5,
+  "rating_count": 1,
+  "resource_date": 1702806628,
+  "resource_state": "visible",
+  "slug": "social-nye-seti-v-profile",
+  "tag_line": "Добавляет возможность указать дополнительные социальные сети.",
+  "tags": [
+    "дополнительные социальные сети",
+    "мод",
+    "социальные сети"
+  ],
+  "title": "Социальные сети в профиле",
+  "url_path": "/resources/social-nye-seti-v-profile.275/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.1.3",
+  "versions": [
+    {
+      "download_count": 298,
+      "files": [
+        {
+          "filename": "[FULL] Социальные сети в профиле by belomaxorka.zip",
+          "id": 6173,
+          "local_path": null,
+          "r2_key": null,
+          "size": 8831,
+          "src_url": "https://torrentpier.com/api/resource-versions/545/download?file=6173"
+        }
+      ],
+      "id": 545,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1727169719,
+      "version_state": "visible",
+      "version_string": "v1.1.3",
+      "view_url": "https://torrentpier.com/resources/social-nye-seti-v-profile.275/version/545/"
+    },
+    {
+      "download_count": 121,
+      "files": [
+        {
+          "filename": "[FULL] Социальные сети в профиле by belomaxorka.zip",
+          "id": 5689,
+          "local_path": null,
+          "r2_key": null,
+          "size": 8828,
+          "src_url": "https://torrentpier.com/api/resource-versions/423/download?file=5689"
+        }
+      ],
+      "id": 423,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1702984289,
+      "version_state": "visible",
+      "version_string": "v1.1.2",
+      "view_url": "https://torrentpier.com/resources/social-nye-seti-v-profile.275/version/423/"
+    },
+    {
+      "download_count": 111,
+      "files": [
+        {
+          "filename": "[FULL] Социальные сети в профиле by belomaxorka.zip",
+          "id": 5687,
+          "local_path": null,
+          "r2_key": null,
+          "size": 8829,
+          "src_url": "https://torrentpier.com/api/resource-versions/422/download?file=5687"
+        }
+      ],
+      "id": 422,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1702920995,
+      "version_state": "visible",
+      "version_string": "v1.1.1",
+      "view_url": "https://torrentpier.com/resources/social-nye-seti-v-profile.275/version/422/"
+    },
+    {
+      "download_count": 118,
+      "files": [
+        {
+          "filename": "[FULL] Социальные сети в профиле by belomaxorka.zip",
+          "id": 5681,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2906,
+          "src_url": "https://torrentpier.com/api/resource-versions/420/download?file=5681"
+        }
+      ],
+      "id": 420,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1702808672,
+      "version_state": "visible",
+      "version_string": "v1.1.0",
+      "view_url": "https://torrentpier.com/resources/social-nye-seti-v-profile.275/version/420/"
+    },
+    {
+      "download_count": 107,
+      "files": [
+        {
+          "filename": "[FULL] Социальные сети в профиле by belomaxorka.zip",
+          "id": 5680,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2876,
+          "src_url": "https://torrentpier.com/api/resource-versions/419/download?file=5680"
+        }
+      ],
+      "id": 419,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1702806628,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/social-nye-seti-v-profile.275/version/419/"
+    }
+  ],
+  "view_count": 1086
+}

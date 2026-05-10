@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 15549,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1248,
+  "last_post_date": 1334690707,
+  "node_id": 57,
+  "post_date": 1334681878,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15549,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как заменить фон меню на другой фон ?<br />\n <br />\n<img src=\"http://portal.esoo.ru/tp2/pictures/3c60249ddff14b83a33d2d32004ae81a.png\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1334681878,
+      "user_id": 0,
+      "user_title": "",
+      "username": "qwerty123"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15550,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Да Вы, что совсем деградировали? Я думаю умные люди проигнорируют данный, в частности бессмысленный вопрос.<br />\n <br />\nP.S. Я тоже начинал с нуля, но я думал и до сих пор анализирую задаваемые мною вопросы.<br />\n<span style=\"font-size: 14px\"><span style=\"font-family: 'palatino linotype'\"><span style=\"color: #011453\">Твои мысли становятся твоей жизнью. </span></span></span><span style=\"font-size: 14px\"><span style=\"font-family: 'palatino linotype'\"><span style=\"color: #011453\">(с)</span></span></span>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1334682163,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Faben"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15556,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>qwerty123</b>, main.css и page_header.tpl и используй исходный код страницы",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1334690707,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Alekseev"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "zamena-menu",
+  "sticky": false,
+  "tags": [],
+  "title": "Замена меню",
+  "url_path": "/threads/zamena-menu.1248/",
+  "user_id": 0,
+  "username": "qwerty123",
+  "view_count": 1168
+}

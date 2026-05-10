@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 8921,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 696,
+  "last_post_date": 1326032176,
+  "node_id": 57,
+  "post_date": 1326031948,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 8921,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подскажите тег(условие), для отображения контента только на главной",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1326031948,
+      "user_id": 69,
+      "user_title": "User",
+      "username": "iFlooder"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 8922,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "чтоб линшие условия не создавать , можешь этим воспользоваться. это при условии, что новости работают<br />\n <br />\n&lt;!-- IF SHOW_LATEST_NEWS --&gt;",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1326032083,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 8923,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>PheRum</b>,благодарю<br />\n<span style=\"color: rgb(204,204,204)\"><span style=\"font-size: 10px\">--- добавлено: Jan 8, 2012 2:16 PM ---</span></span><br />\nВсе ок, тему можно в топку",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1326032176,
+      "user_id": 69,
+      "user_title": "User",
+      "username": "iFlooder"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "teg-otobrazenie-tol-ko-na-glavnoj",
+  "sticky": false,
+  "tags": [],
+  "title": "Тег (отображение только на главной)",
+  "url_path": "/threads/teg-otobrazenie-tol-ko-na-glavnoj.696/",
+  "user_id": 69,
+  "username": "iFlooder",
+  "view_count": 1344
+}

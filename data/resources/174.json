@@ -1,0 +1,100 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL][$][TP2] Ads from Xenforo.zip",
+      "id": 3167,
+      "local_path": null,
+      "r2_key": null,
+      "size": 2667114,
+      "src_url": "https://torrentpier.com/api/resource-versions/208/download?file=3167"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]####[ВЫПОЛНИТЬ]-----SQL\n\nCREATE TABLE IF NOT EXISTS `bb_rules` (\n  `id` int(11) NOT NULL AUTO_INCREMENT,\n  `title` varchar(255) NOT NULL DEFAULT '',\n  `text` text NOT NULL,\n  `active` tinyint(1) NOT NULL DEFAULT '0',\n  PRIMARY KEY (`id`)\n) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;;\n\nALTER TABLE `bb_users` ADD `user_showsrules` text NOT NULL;\n\n####[КОНЕЦ]-----SQL\n\n####[ОТКРЫТЬ]----- index.php\n-----[найти]-----\n\n$user->session_start();\n\n-----[добавить после]-----\n\nif ($bb_cfg['rules']['on'])\n{\n  \n    if (!CACHE('bb_cache')->get('rules'))\n    {\n        $max = DB()->fetch_row(\"SELECT COUNT(id) as max FROM \". BB_RULES .\" LIMIT 1\");\n        if ($max['max'] <= 0)\n        {\n            $template->assign_block_vars('not_rules', array());\n        }else{\n            $sql =  DB()->fetch_rowset(\"SELECT *\n                FROM \". BB_RULES .\" WHERE active = 1 GROUP BY id\");\n            foreach ($sql as $rules)\n            {\n                $sql_r['rules'][$rules['id']] = array('id'=>$rules['id'],'title'=>$rules['title'],'text'=>$rules['text']);\n            }\n            CACHE('bb_cache')->set('rules', $sql_r, $bb_cfg['rules']['cache']);\n        }  \n    }else{\n        $sql_r = CACHE('bb_cache')->get('rules');\n    }\n    if(!empty($sql_r))\n    {\n        $rules_show = !empty($userdata['user_showsrules']) ? array_val_diff($sql_r['rules'], safe_unserialize($userdata['user_showsrules'])) : $sql_r['rules'];\n        if(!empty($rules_show))\n        {\n            $template->assign_vars(array(\n                'RULES_ON'    => true,\n            ));\n            $i=0;\n            foreach ($rules_show as $rules)\n            {\n                $orig_word = $replacement_word = array();\n                obtain_word_list($orig_word, $replacement_word);\n                $title = str_replace('\\\"', '\"', substr(@preg_replace('#(\\>(((?>([^><]+|(?R)))*)\\<))#se', \"@preg_replace(\\$orig_word, \\$replacement_word, '\\\\0')\", '>' . $rules['title'] . '<'), 1, -1));\n              \n                $template->assign_block_vars('rules',array(\n                    'ID'        => $rules['id'],\n                    'BLOCK_ID'    => $i,\n                    'TITLE'     => $title,\n                    'TITLE_MIN' => str_short($title, 31),\n                    'TEXT'      => $rules['text'],\n                ));\n                $i++;\n            }\n        }  \n    }  \n}\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- index.tpl\n\n-----[в любое место]-----\n\n<!-- IF RULES_ON -->\n<link rel=\"stylesheet\" href=\"{TPL_DIR}/rules.css?v={$bb_cfg['css_ver']}\" type=\"text/css\">\n<script type=\"text/javascript\" src=\"{SITE_URL}misc/js/slides.jquery.js\"></script>\n<div id=\"NoticesStart\" style=\"display:none\">\n<div id=\"Notices\" class=\"PanelScroller\">\n    <div id=\"RulesBlock\">\n        <div class=\"scrollContainer\">\n            <div class=\"PanelContainer\">\n                <div class=\"PanelsRules\">\n                <!-- BEGIN rules -->\n                    <div class=\"panel Notice ShowCtrlBlock notice_{rules.ID}\" style=\"float: left;\" data-id=\"{rules.ID}\">\n                        <div class=\"noticeContent\">{rules.TEXT}</div>\n                        <!-- IF LOGGED_IN -->\n                        <a href=\"#notice_{rules.ID}\" data-id=\"{rules.ID}\" title=\"Скрыть объявление\" class=\"ShowCtrlButton\">Скрыть объявление</a>\n                        <!-- ENDIF -->\n                    </div>\n                <!-- END rules -->\n                </div>\n            </div>\n        </div>\n        <div class=\"navContainer\">\n            <span class=\"navControls\">\n                <ul class=\"UlNavControls\">\n                    <!-- BEGIN rules -->\n                    <li data-id=\"{rules.ID}\" ><a href=\"#\" class=\"current\" title=\"{rules.TITLE}\" data-slide-index=\"{rules.BLOCK_ID}\">\n                        <span id=\"select\" class=\"arrow\"><span></span></span>\n                        <!--{rules.ID} -->\n                        {rules.TITLE_MIN}\n                    </a></li>\n                    <!-- END rules -->\n                </ul>\n            </span>\n        </div>\n    </div>  \n</div>\n</div>\n<script type=\"text/javascript\">\n<!-- IF LOGGED_IN -->\n$(document).ready(hide_rules);\n$(document).ajaxComplete(hide_rules);\nfunction hide_rules() {  \n    $('.ShowCtrlButton').on(\"click\", function () {\n        var RBlock = $(\"div#Notices\");\n        var id = $(this).data('id');\n        ajax.exec({\n            action  : 'rules',\n            rules_id : id\n        });\n        ajax.callback.rules = function(data) {\n            if(data.info) alert(data.info);\n            if(data.show)\n            {\n                $('div.PanelsRules li[data-id='+ data.rules_id +']', RBlock).remove();\n                $('div.PanelsRules li.bx-clone[data-id='+ data.rules_id +']', RBlock).remove();\n                $('ul.UlNavControls li[data-id='+ data.rules_id +']', RBlock).remove();\n                slidesRules($(\"div.PanelContainer\", RBlock), true);      \n            }\n        };  \n    });\n}\n<!-- ENDIF -->\nfunction resizerules(block, LeftHeight, RightHeight) {\n    var winWidth = $(window).width();\n    winWidth = winWidth - LeftHeight - RightHeight;\n    $(block).css({width: winWidth + 'px'});\n    $(\"li.Notice\",block).css({width: winWidth + 'px'});\n}\n\nfunction slidesRules(data, rem){\n    $(\"div.PanelContainer\", data).each(function(){\n        if(!rem){\n            var slider = $(\".PanelsRules\", $(this)).bxSlider({\n                slideSelector: \"div.panel\",\n                pagerCustom: '.UlNavControls',\n                speed: 500,\n                auto: true,\n                autoHover: true,\n                pause: 5000,\n                controls: false,\n            });\n        }else{\n            slider.reloadSlider();\n        }\n    });\n}\n\n$(function(){\n    var block = $(\"div#Notices\"); //Блок с новостями\n\n    $(window).on(\"resize\", function(){resizerules(block, 225, 25);});\n    $(window).on(\"load\", function(){resizerules(block, 225, 25);});\n    $(window).on(\"load\", function(){$(\"div#NoticesStart\").css(\"display\", \"block\");slidesRules(block, false)});\n});\n</script>\n<!-- ENDIF -->\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- init_bb.php\n\n-----[найти]-----\n\ndefine('BB_PRIVMSGS_TEXT',        'bb_privmsgs_text');\n\n-----[добавить после]-----\n\n//RULES MODE\ndefine('BB_RULES',              'bb_rules');\n//RULES MODE\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- ajax.php\n\n-----[найти]-----\n\n-----[найти]-----\n\n        'index_data'        => array('guest'),\n\n-----[добавить после]-----\n\n        'rules'             => array('user'),\n\n-----[найти последнюю скобку и перед ней добавить]-----\n\n    function rules()\n    {\n        require(AJAX_DIR .'rules.php');\n    }\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- config.php\n\n-----[в конец добавить]-----\n\n$bb_cfg['rules'] = array(\n  'on'          => true,\n  'cache'       => 24, //кеш держится в часах\n);\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- lang_main.php\n\n-----[в конец добавить]-----\n\n//RULES MODE\n$lang['RULES'] = 'Управление объявлениями';\n$lang['RULES_TEXT'] = 'Содержание';\n$lang['RULES_ID'] = 'ID';\n$lang['RULES_TITLE'] = 'Название';\n$lang['RULES_ACTIVATE'] = 'Активность';\n$lang['RULES_INFO'] = 'Данная страница предназначена для вывода объявлений на главной странице сайта';\n$lang['RULES_INFO_EDIT'] = 'Данная страница предназначена для редактирования/добавления объявлений';\n$lang['RULES_ADD'] = 'Добавить объявление';\n$lang['MISSING_RULES_ID'] = \"ID объявления пропущено\";\n$lang['RULES_REMOVED'] = \"Объявление удалено\";\n$lang['RULES_UPDATED'] = \"Объявление обновлено\";\n$lang['RULES_ADDED'] = \"Объявление добавлено\";\n$lang['CLICK_RETURN_RULESADMIN'] = 'Нажмите %sСюда%s для возврата к управлению объявлениями';\n//RULES MODE\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- functions.php\n\n-----[в конец добавить]-----\n\n\nfunction safe_unserialize($serialized) {\n    if (is_string($serialized) && strpos($serialized, \"\\0\") === false) {\n        if (strpos($serialized, 'O:') === false) {\n            return @unserialize($serialized);\n        } else if (!preg_match('/(^|;|{|})O:[0-9]+:\"/', $serialized)) {\n            return @unserialize($serialized);\n        }\n    }\n    return false;\n}\nfunction might_serialize($val){\n    if(is_object($val)){\n        $obj_keys = array_keys(get_object_vars($val));\n        foreach($obj_keys as $k){ $val->$k = might_serialize($val->$k); }\n        $val = serialize($val);\n    }\n    if(is_array($val)){\n        foreach($val as &$v){ $v = might_serialize($v); }\n        $val = serialize($val);\n    }\n\n    return $val;\n}\nfunction array_key_diff($ar1, $ar2) {  // , $ar3, $ar4, ...\n    $aSubtrahends = array_slice(func_get_args(),1);\n    foreach ($ar1 as $key => $val)\n        foreach ($aSubtrahends as $aSubtrahend)\n            if (array_key_exists($key, $aSubtrahend))\n                unset ($ar1[$key]);\n    return $ar1;\n}\nfunction array_val_diff($ar1, $ar2) {  // , $ar3, $ar4, ...\n    $aSubtrahends = array_slice(func_get_args(),1);\n    foreach ($ar1 as $key => $val)\n        foreach ($aSubtrahends as $aSubtrahend)\n            if (in_array($key, $aSubtrahend))\n                unset ($ar1[$key]);\n    return $ar1;\n}\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n[/PHP][/SPOILER]",
+    "owner": "frost444",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425302383,
+      "file_size": 48896,
+      "filename": "Снимок.webp",
+      "height": 162,
+      "id": 3166,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/snimok-webp.3166/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3170-6ec94dd0fa0d512f7b5b4d7fbaf4f87c.jpg?hash=WmfL6gxboU",
+      "width": 1227
+    },
+    {
+      "attach_date": 1425332073,
+      "file_size": 4202,
+      "filename": "Снимок2.webp",
+      "height": 81,
+      "id": 3201,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/snimok2-webp.3201/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3205-735f5b21c08a249a0904fe167993a456.jpg?hash=TCWJLlE_VB",
+      "width": 445
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет администрации возможность размещать объявления для пользователей.<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Кеширование, AJAX<br />\n</li>\n<li data-xf-list-type=\"ul\">Внешний вид и прокрутка точь в точь как у XenForo</li>\n<li data-xf-list-type=\"ul\">Скрытие объявлений у отдельного пользователя, с запоминанием закрытых блоков</li>\n</ul>",
+  "download_count": 327,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/174.jpg?1425303129",
+  "id": 174,
+  "is_fileless": null,
+  "last_update": 1425303105,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1425303105,
+  "resource_state": "visible",
+  "slug": "sistema-ob-avlenij",
+  "tag_line": "Добавляет администрации возможность размещать объявления для пользователей.",
+  "tags": [],
+  "title": "Система объявлений",
+  "url_path": "/resources/sistema-ob-avlenij.174/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 327,
+      "files": [
+        {
+          "filename": "[FULL][$][TP2] Ads from Xenforo.zip",
+          "id": 3167,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2667114,
+          "src_url": "https://torrentpier.com/api/resource-versions/208/download?file=3167"
+        }
+      ],
+      "id": 208,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425303105,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/sistema-ob-avlenij.174/version/208/"
+    }
+  ],
+  "view_count": 3065
+}

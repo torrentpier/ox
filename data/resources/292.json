@@ -1,0 +1,272 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Количество релизов в профиль by Gemini_13.zip",
+      "id": 6207,
+      "local_path": null,
+      "r2_key": null,
+      "size": 4567,
+      "src_url": "https://torrentpier.com/api/resource-versions/556/download?file=6207"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "В архиве с модом.",
+    "owner": "Gemini_13",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1717585838,
+      "file_size": 12738,
+      "filename": "photo_2024-05-25_02-01-51.webp",
+      "height": 159,
+      "id": 5989,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2024-05-25_02-01-51-webp.5989/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5993-286fc33855d2204fbaade68dcada0963.jpg?hash=RfsZl4EGKx",
+      "width": 650
+    }
+  ],
+  "description_parsed": "<div style=\"text-align: center\"><span style=\"color: rgb(226, 80, 65)\">Данный мод установлен по-умолчанию начиная с версии v2.4.5</span>&#8203;</div><hr /><b>Описание:</b> Добавляет в торрент-статистику отображение количества релизов пользователя, а так же их общий объем. Написан на AJAX.<br />\n<br />\n<b>Совместимость:</b> v2.1.5 (LTS тоже), v2.4.2.<br />\n<b>Автор адаптации:</b> <a href=\"https://torrentpier.com/members/7621/\">DimaUZB2001</a>",
+  "download_count": 2452,
+  "external_url": null,
+  "icon_url": null,
+  "id": 292,
+  "is_fileless": null,
+  "last_update": 1731235225,
+  "rating_avg": 5,
+  "rating_count": 1,
+  "resource_date": 1717585843,
+  "resource_state": "visible",
+  "slug": "kolicestvo-relizov-v-profil",
+  "tag_line": "Добавляет в торрент-статистику отображение количества релизов пользователя, а так же их общий объем",
+  "tags": [
+    "количество релизов",
+    "мод",
+    "моды",
+    "общий объем релизов",
+    "торрент-статистика"
+  ],
+  "title": "Количество релизов в профиль",
+  "url_path": "/resources/kolicestvo-relizov-v-profil.292/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.2.5",
+  "versions": [
+    {
+      "download_count": 535,
+      "files": [
+        {
+          "filename": "[FULL] Количество релизов в профиль by Gemini_13.zip",
+          "id": 6207,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4567,
+          "src_url": "https://torrentpier.com/api/resource-versions/556/download?file=6207"
+        }
+      ],
+      "id": 556,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1731235225,
+      "version_state": "visible",
+      "version_string": "v1.2.5",
+      "view_url": "https://torrentpier.com/resources/kolicestvo-relizov-v-profil.292/version/556/"
+    },
+    {
+      "download_count": 216,
+      "files": [
+        {
+          "filename": "[FULL] Количество релизов в профиль by Gemini_13.zip",
+          "id": 6202,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4482,
+          "src_url": "https://torrentpier.com/api/resource-versions/553/download?file=6202"
+        }
+      ],
+      "id": 553,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1731085789,
+      "version_state": "visible",
+      "version_string": "v1.2.4",
+      "view_url": "https://torrentpier.com/resources/kolicestvo-relizov-v-profil.292/version/553/"
+    },
+    {
+      "download_count": 222,
+      "files": [
+        {
+          "filename": "[FULL] Количество релизов в профиль by Gemini_13.zip",
+          "id": 6140,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4065,
+          "src_url": "https://torrentpier.com/api/resource-versions/541/download?file=6140"
+        }
+      ],
+      "id": 541,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1722851723,
+      "version_state": "visible",
+      "version_string": "v1.2.3",
+      "view_url": "https://torrentpier.com/resources/kolicestvo-relizov-v-profil.292/version/541/"
+    },
+    {
+      "download_count": 212,
+      "files": [
+        {
+          "filename": "[FULL] Количество релизов в профиль by Gemini_13.zip",
+          "id": 6138,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4069,
+          "src_url": "https://torrentpier.com/api/resource-versions/540/download?file=6138"
+        }
+      ],
+      "id": 540,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1722789361,
+      "version_state": "visible",
+      "version_string": "v1.2.2",
+      "view_url": "https://torrentpier.com/resources/kolicestvo-relizov-v-profil.292/version/540/"
+    },
+    {
+      "download_count": 217,
+      "files": [
+        {
+          "filename": "[FULL] Количество релизов в профиль by Gemini_13.zip",
+          "id": 6137,
+          "local_path": null,
+          "r2_key": null,
+          "size": 3974,
+          "src_url": "https://torrentpier.com/api/resource-versions/539/download?file=6137"
+        }
+      ],
+      "id": 539,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1722692131,
+      "version_state": "visible",
+      "version_string": "v1.2.1",
+      "view_url": "https://torrentpier.com/resources/kolicestvo-relizov-v-profil.292/version/539/"
+    },
+    {
+      "download_count": 212,
+      "files": [
+        {
+          "filename": "[FULL] Количество релизов в профиль by Gemini_13.zip",
+          "id": 6000,
+          "local_path": null,
+          "r2_key": null,
+          "size": 3949,
+          "src_url": "https://torrentpier.com/api/resource-versions/499/download?file=6000"
+        }
+      ],
+      "id": 499,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1718096047,
+      "version_state": "visible",
+      "version_string": "v1.2.0",
+      "view_url": "https://torrentpier.com/resources/kolicestvo-relizov-v-profil.292/version/499/"
+    },
+    {
+      "download_count": 212,
+      "files": [
+        {
+          "filename": "[FULL] Количество релизов в профиль by Gemini_13.zip",
+          "id": 5992,
+          "local_path": null,
+          "r2_key": null,
+          "size": 3868,
+          "src_url": "https://torrentpier.com/api/resource-versions/496/download?file=5992"
+        }
+      ],
+      "id": 496,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1717603327,
+      "version_state": "visible",
+      "version_string": "v1.1.1",
+      "view_url": "https://torrentpier.com/resources/kolicestvo-relizov-v-profil.292/version/496/"
+    },
+    {
+      "download_count": 217,
+      "files": [
+        {
+          "filename": "[FULL] Количество релизов в профиль by Gemini_13.zip",
+          "id": 5991,
+          "local_path": null,
+          "r2_key": null,
+          "size": 3939,
+          "src_url": "https://torrentpier.com/api/resource-versions/495/download?file=5991"
+        }
+      ],
+      "id": 495,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1717602123,
+      "version_state": "visible",
+      "version_string": "v1.1.0",
+      "view_url": "https://torrentpier.com/resources/kolicestvo-relizov-v-profil.292/version/495/"
+    },
+    {
+      "download_count": 219,
+      "files": [
+        {
+          "filename": "[FULL] Количество релизов в профиль by DimaUZB2001.zip",
+          "id": 5990,
+          "local_path": null,
+          "r2_key": null,
+          "size": 3960,
+          "src_url": "https://torrentpier.com/api/resource-versions/494/download?file=5990"
+        }
+      ],
+      "id": 494,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1717587407,
+      "version_state": "visible",
+      "version_string": "v1.0.1",
+      "view_url": "https://torrentpier.com/resources/kolicestvo-relizov-v-profil.292/version/494/"
+    },
+    {
+      "download_count": 211,
+      "files": [
+        {
+          "filename": "[FULL] Количество релизов в профиль by DimaUZB2001.zip",
+          "id": 5988,
+          "local_path": null,
+          "r2_key": null,
+          "size": 3880,
+          "src_url": "https://torrentpier.com/api/resource-versions/493/download?file=5988"
+        }
+      ],
+      "id": 493,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1717585843,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/kolicestvo-relizov-v-profil.292/version/493/"
+    }
+  ],
+  "view_count": 3170
+}

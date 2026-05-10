@@ -1,0 +1,114 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "kinopoisk+imdb.zip",
+      "id": 3852,
+      "local_path": null,
+      "r2_key": null,
+      "size": 33631,
+      "src_url": "https://torrentpier.com/api/resource-versions/327/download?file=3852"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]\n[CODE]папку ratings скопировать в корень сайта и установить права 777 на папку и все что в ней..\n\nв файлах kinopoisk.php и imdb.php\nв пятой строке прописать название своего сайта\nЗапрос в базу\n              ALTER TABLE `bb_topics` ADD  `topic_kinopoisk` VARCHAR( 255 ) NOT NULL DEFAULT  '';\n              ALTER TABLE `bb_topics` ADD  `topic_imdb` VARCHAR( 255 ) NOT NULL DEFAULT  '';\n\nОткрыть:\nfunctions_post.php\n\nНайти:\n       function submit_post\n      \nВ строке после $post_subject,\nдобавить\n         $post_kinopoisk, $post_imdb,\n        \nНайти:\ntopic_title = '$post_subject',\n        \nПосле добавить:\ntopic_kinopoisk = '$post_kinopoisk',\ntopic_imdb = '$post_imdb',\n\n\nОткрыть: posting.php\n\nНайти: (первая строчка)\n$subject = ( !empty($_POST['subject']) ) ? clean_title($_POST['subject']) : '';\n\nниже вставить:\n            $kinopoisk = ( !empty($_POST['kinopoisk']) ) ? clean_title($_POST['kinopoisk']) : '';\n            $imdb = ( !empty($_POST['imdb']) ) ? clean_title($_POST['imdb']) : '';\n           \nНайти:\nsubmit_post($mode, $post_data, $return_message, $return_meta, $forum_id, $topic_id, $post_id, $topic_type, DB()->escape($username), DB()->escape($subject),\nдобавить в строке:\nDB()->escape($kinopoisk), DB()->escape($imdb),\n\n\n\nОткрыть: viewtopic.php\n\nНайти:\n$topic_time  = $t_data['topic_time'];\n\nПосле вставить:\n$topic_kinopoisk  = $t_data['topic_kinopoisk'];\n$topic_imdb  = $t_data['topic_imdb'];\n\nНайти:\n'TOPIC_TITLE'         => wbr($topic_title),\n\nПосле вставить:\n    'TOPIC_KINOPOISK'     => $topic_kinopoisk,\n    'TOPIC_IMDB'         => $topic_imdb,\n   \n    Открыть: posting.tpl\n    Найти:\n    <!-- IF ATTACHBOX -->\n   \n    Ниже вставить:\n   \n<tr>\n    <td><b>{L_KINOPOISK}</b></td>\n    <td><input type=\"text\" name=\"kinopoisk\" placeholder=\"Пример ссылки: http://www.kinopoisk.ru/film/681831/\" size=\"90\" tabindex=\"3\" value=\"{KINOPOISK}\" maxlength=\"250\" style=\"width: 40%;\" /></td>\n</tr>\n<tr>\n    <td><b>{L_IMDB}</b></td>\n    <td><input type=\"text\" name=\"imdb\" placeholder=\"Пример ссылки: http://www.imdb.com/title/tt2112343/\" size=\"90\" tabindex=\"4\" value=\"{IMDB}\" maxlength=\"250\" style=\"width: 40%;\" /></td>\n</tr>\n\nОткрыть viewtopic.tpl\nНайти:\n<div class=\"post_body\">\nВыше добавить :\n            <a href=\"{TOPIC_KINOPOISK}\" target=\"_blank\"><img src=\"./ratings/kinopoisk.php?url={TOPIC_KINOPOISK}\" ></a>\n            <a href=\"{TOPIC_IMDB}\" target=\"_blank\"><img src=\"./ratings/imdb.php?url={TOPIC_IMDB}\" ></a>\n\n\n\n\n\nlanguage/lang_russian/lang_main.php\n\nВставить в конец:\n// Рейтинги\n$lang['KINOPOISK'] = 'Рейтинг c Кинопоиска';\n$lang['IMDB'] = 'Рейтинг с IMDB';[/CODE]\n[/SPOILER]",
+    "owner": "Kryl",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1431369268,
+      "file_size": 129262,
+      "filename": "2011.webp",
+      "height": 679,
+      "id": 3849,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2011-webp.3849/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3853-523e6d18ce05514118c63d3953d6e0f9.jpg?hash=nsiRfJBxv4",
+      "width": 1625
+    },
+    {
+      "attach_date": 1431369268,
+      "file_size": 127534,
+      "filename": "2012.webp",
+      "height": 679,
+      "id": 3850,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2012-webp.3850/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3854-b3f92aaff1525b0e907f52a7060a3e2b.jpg?hash=WswG8KwZho",
+      "width": 1625
+    },
+    {
+      "attach_date": 1431369269,
+      "file_size": 107444,
+      "filename": "2013.webp",
+      "height": 538,
+      "id": 3851,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2013-webp.3851/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3855-784a1653fab39d2fb86f5b7495aa44ea.jpg?hash=yIksHySdJz",
+      "width": 1625
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет возможность указания рейтинга фильма на Кинопоиске и IMDB.",
+  "download_count": 291,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/230.jpg?1431369295",
+  "id": 230,
+  "is_fileless": null,
+  "last_update": 1431369280,
+  "rating_avg": 5,
+  "rating_count": 1,
+  "resource_date": 1431369280,
+  "resource_state": "visible",
+  "slug": "rejtingi-kinopoisk-imdb",
+  "tag_line": "Добавляет возможность указания рейтинга фильма на Кинопоиске и IMDB.",
+  "tags": [],
+  "title": "Рейтинги Кинопоиск + IMDB",
+  "url_path": "/resources/rejtingi-kinopoisk-imdb.230/",
+  "user_id": 5626,
+  "username": "Kryl",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 291,
+      "files": [
+        {
+          "filename": "kinopoisk+imdb.zip",
+          "id": 3852,
+          "local_path": null,
+          "r2_key": null,
+          "size": 33631,
+          "src_url": "https://torrentpier.com/api/resource-versions/327/download?file=3852"
+        }
+      ],
+      "id": 327,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1431369280,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/rejtingi-kinopoisk-imdb.230/version/327/"
+    }
+  ],
+  "view_count": 3198
+}

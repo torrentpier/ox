@@ -1,0 +1,91 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 89024,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41586,
+  "last_post_date": 1481314980,
+  "node_id": 57,
+  "post_date": 1481231178,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89024,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток! Вопрос к тем у кого стоит связка nginx+php-frm или если знаете хорошо эту связку. Не обрабатывается файл profile.php (браузер пытается его сохранить) все остальное работает нормально. в чем может быть проблема?<br />\nprofile.php дефолтный, версия TP 2.1.5 система debian8<br />\nна связке nginx+apache работает нормально. Вот в чем прикол то?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1481231178,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89028,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Неужели ни кто не знает в чем может быть проблема?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1481309362,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89029,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Разобрался, с конфигом мой косяк был перед location ~ \\.php$ воткнул rewrite-ы )))",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1481314980,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "nginx-php-frm",
+  "sticky": false,
+  "tags": [
+    "nginx",
+    "nginx+php-frm",
+    "php-frm"
+  ],
+  "title": "nginx+php-frm",
+  "url_path": "/threads/nginx-php-frm.41586/",
+  "user_id": 7243,
+  "username": "Protektor",
+  "view_count": 1016
+}

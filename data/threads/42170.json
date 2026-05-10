@@ -1,0 +1,186 @@
+{
+  "custom_fields": {
+    "torrentpier": "2304_beta2"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95204,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42170,
+  "last_post_date": 1760168646,
+  "node_id": 57,
+  "post_date": 1695384358,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95204,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Кто-то может установить парсер раздач (платно) и настроить прасить по крону?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1695384358,
+      "user_id": 10732,
+      "user_title": "User",
+      "username": "Самурай"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95208,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "парсер на какой ресурс?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1695566582,
+      "user_id": 8184,
+      "user_title": "User",
+      "username": "ivangord"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95209,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"ivangord\">парсер на какой ресурс?</blockquote>Рутор, либо Рутрекер.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1695672734,
+      "user_id": 10732,
+      "user_title": "User",
+      "username": "Самурай"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95213,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Самурай\">Рутор, либо Рутрекер.</blockquote>могу попробовать, но чуть позже",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1695744092,
+      "user_id": 8184,
+      "user_title": "User",
+      "username": "ivangord"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1695786891,
+          "file_size": 41134,
+          "filename": "1695786877513.webp",
+          "height": 279,
+          "id": 5524,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1695786877513-webp.5524/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5528-37f391ec82045a0f7f0ca8c3d5023ae5.jpg?hash=W_X3WcATho",
+          "width": 1503
+        }
+      ],
+      "id": 95214,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Это результат работы парсеров.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1695786892,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95215,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">Это результат работы парсеров.</blockquote>Ну сайт торрент вообще вне закона для ПС, а если парсер сделать по уму, то все будет норм. Такое потоковое УГ что бы шпарил все в подряд, со всеми ^()(*&amp;^ я и сам могу, а если сделать что бы парсилось все чисто, то и контент будет норм*, и не будет Яша говорить что контент малополезный. У меня с RSS Грабером на DLE никогда не было проблем с ПС, думаю и тут не будет.",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1695798055,
+      "user_id": 10732,
+      "user_title": "User",
+      "username": "Самурай"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95216,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"ivangord\">могу попробовать, но чуть позже</blockquote>Не вопрос. Отпишите в ЛС тогда, или в ТГ я скину ник.",
+      "message_state": "visible",
+      "position": 6,
+      "post_date": 1695798083,
+      "user_id": 10732,
+      "user_title": "User",
+      "username": "Самурай"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98258,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Братья помогите с установкой парсера чтобы он работал! за вознаграждение или бесплатно-на ваше усмотрение!<br />\n<br />\nне могу установить парсер не работает он.",
+      "message_state": "visible",
+      "position": 7,
+      "post_date": 1760168646,
+      "user_id": 0,
+      "user_title": "",
+      "username": "крокодил"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 7,
+  "slug": "parser-razdac",
+  "sticky": false,
+  "tags": [
+    "парсер"
+  ],
+  "title": "Парсер раздач",
+  "url_path": "/threads/parser-razdac.42170/",
+  "user_id": 10732,
+  "username": "Самурай",
+  "view_count": 1295
+}

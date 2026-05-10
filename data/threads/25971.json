@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61113,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25971,
+  "last_post_date": 1402687538,
+  "node_id": 111,
+  "post_date": 1402686984,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61113,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Ссылка</b>:<br />\n<a href=\"http://code.google.com/p/torrentpier2/source/detail?r=586\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"> http://code.google.com/p/torrentpier2/source/detail?r=586</a><br />\n<br />\n<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 586: Добавление файла с никами пользователей, оказавшими помощь проекту. Исправления</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">glix08</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Add    /trunk/contributors.txt \n    Modify    /trunk/install/sql/mysql.sql \n    Modify    /trunk/upload/attach_mod/includes/functions_includes.php \n    Modify    /trunk/upload/config.php \n    Modify    /trunk/upload/includes/page_header.php \n    Modify    /trunk/upload/language/lang_english/lang_main.php \n    Modify    /trunk/upload/misc/js/bbcode.js \n    Modify    /trunk/upload/templates/default/page_header.tpl \n\nДобавление файла с никами пользователей, оказавшими помощь проекту. Исправления ошибок по запросам тестеров. Перенос js-кода в bbcode.js; исправление ошибки с проверкой на установленность модуля tidy на сервере; изменения на сервисе для проверки ip пользователей.</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1402686984,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61114,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "В следующей ревизии ошибку с кодировкой файла исправлю.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1402687538,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "revision-586-dobavlenie-fajla-s-nikami-pol-zovatelej-okazavsimi-pomos-proektu-ispravlenia",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 586: Добавление файла с никами пользователей, оказавшими помощь проекту. Исправления",
+  "url_path": "/threads/revision-586-dobavlenie-fajla-s-nikami-pol-zovatelej-okazavsimi-pomos-proektu-ispravlenia.25971/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 1710
+}

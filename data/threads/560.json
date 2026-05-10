@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 7160,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 560,
+  "last_post_date": 1323688647,
+  "node_id": 57,
+  "post_date": 1323663355,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 7160,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>2.1 Stable (R292)</b><br />\nПисьмо с активацией приходит не всем, подскажите пожалуйста в чем может быть проблема?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1323663355,
+      "user_id": 328,
+      "user_title": "User",
+      "username": "2strike"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 7193,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"2strike\"><b>2.1 Stable (R292)</b><br />\nПисьмо с активацией приходит не всем, подскажите пожалуйста в чем может быть проблема?</blockquote>В настройках почтового сервера, например. Конкретно - в записях его DNS. И еще зачастую письма от рассыльщиков попадают в спам.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1323688537,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Nikolaich"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 7194,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Действительно невнимательно настроил = ).<br />\nА по поводу Спама это тоже может быть, спасибо.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1323688647,
+      "user_id": 328,
+      "user_title": "User",
+      "username": "2strike"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "rassylka-pocty",
+  "sticky": false,
+  "tags": [],
+  "title": "рассылка почты",
+  "url_path": "/threads/rassylka-pocty.560/",
+  "user_id": 328,
+  "username": "2strike",
+  "view_count": 1560
+}

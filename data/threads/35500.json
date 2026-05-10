@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 75202,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 58,
+    "title": "Suggestions for improving TorrentPier"
+  },
+  "id": 35500,
+  "last_post_date": 1423747065,
+  "node_id": 58,
+  "post_date": 1423747065,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 75202,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вдогонку к прошлой теме. Добавить селект автоназначения лычки при создании группы.<br />\n<br />\nТакже в движке по умолчанию можно создать три группы и соответсвующие лычки<br />\nАдминистраторы<br />\nМодераторы<br />\nПользователи",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1423747065,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    }
+  ],
+  "prefix_id": 32,
+  "reply_count": 0,
+  "slug": "avtonaznacenie-lycki",
+  "sticky": false,
+  "tags": [],
+  "title": "Автоназначение лычки",
+  "url_path": "/threads/avtonaznacenie-lycki.35500/",
+  "user_id": 0,
+  "username": "ler",
+  "view_count": 1056
+}

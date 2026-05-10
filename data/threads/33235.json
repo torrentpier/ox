@@ -1,0 +1,181 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 72111,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 33235,
+  "last_post_date": 1421284332,
+  "node_id": 57,
+  "post_date": 1421276350,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 72111,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Notice</b>: Undefined index: t_last_added_numtop in <b>C:\\OpenServer\\domains\\strj-str.ru\\index.php</b> on line <b>30</b><br />\n<br />\n<b>Notice</b>: Undefined index: t_last_added_numtop in <b>C:\\OpenServer\\domains\\strj-str.ru\\index.php</b> on line <b>397</b><br />\n<br />\n<b>Notice</b>: Undefined index: t_last_added_numtop in <b>C:\\OpenServer\\domains\\strj-str.ru\\includes\\datastore\\build_cat_forums.php</b> on line <b>165</b><br />\n<br />\n<b>Notice</b>: Undefined index: t_last_added_numtop in <b>C:\\OpenServer\\domains\\strj-str.ru\\includes\\datastore\\build_cat_forums.php</b> on line <b>165</b><br />\n<br />\nкак исправить выскакивают в ленте новинок?,данного мода тут нету.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1421276350,
+      "user_id": 5840,
+      "user_title": "User",
+      "username": "Hopper Around"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1421276470,
+          "file_size": 8756,
+          "filename": "Vanga.webp",
+          "height": 225,
+          "id": 2874,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/vanga-webp.2874/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2878-5a64f1af6820092369425d78d7fbc0c9.jpg?hash=GZS9-1-EQC",
+          "width": 225
+        }
+      ],
+      "id": 72112,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Hopper Around\">t_last_added_numtop</blockquote>Угадать что это за переменная Ванга должна? Ну давайте попробуем...<br />\n<br />\n<img src=\"https://torrentpier.com/attachments/2874/\" alt=\"Vanga.webp\" /> <br />\n<br />\nВижу переменную я. Не определена она. Наверное, она из config.php должна быть, ежели на $bb_cfg начинается. В противном случае даже мне не по силам определить, не видя код, чем ошибка вызвана, о глубокоуважаемый <a href=\"https://torrentpier.com/members/5840/\">@Hopper Around</a>.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1421276550,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 72114,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\">Угадать что это за переменная Ванга должна? Ну давайте попробуем...<br />\n<br />\n<a href=\"https://torrentpier.com/attachments/2874/\">View attachment 2874</a><br />\n<br />\nВижу переменную я. Не определена она. Наверное, она из config.php должна быть, ежели на $bb_cfg начинается. В противном случае даже мне не по силам определить, не видя код, чем ошибка вызвана, о глубокоуважаемый <a href=\"https://torrentpier.com/members/5840/\">@Hopper Around</a>.</blockquote>🙂",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1421276726,
+      "user_id": 5840,
+      "user_title": "User",
+      "username": "Hopper Around"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 72115,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "У все помогло), я то ищу в common.php :С<br />\nдобавил в конце)) confing.php<br />\n//for lenta<br />\n$bb_cfg[&#039;t_last_added_numtop&#039;] = 25;",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1421276870,
+      "user_id": 5840,
+      "user_title": "User",
+      "username": "Hopper Around"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1421277079,
+          "file_size": 13264,
+          "filename": "Безымянный.webp",
+          "height": 209,
+          "id": 2875,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bezymannyj-webp.2875/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2879-b59e904d4518ee46ece9736a284695e2.jpg?hash=dxc37EoFDW",
+          "width": 1257
+        }
+      ],
+      "id": 72116,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "еще 1 вопрос чтобы не плодить темы )), <br />\nПочему когда я создал раздачу  меня в ленте не прогружает картинку ?",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1421277137,
+      "user_id": 5840,
+      "user_title": "User",
+      "username": "Hopper Around"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 72117,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "все решил)) , папку надо было создать:с на ночь вообще голова не варит)",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1421277257,
+      "user_id": 5840,
+      "user_title": "User",
+      "username": "Hopper Around"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 72119,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\">Угадать что это за переменная Ванга должна? Ну давайте попробуем...<br />\n<br />\n<a href=\"https://torrentpier.com/attachments/2874/\">View attachment 2874</a><br />\n<br />\nВижу переменную я. Не определена она. Наверное, она из config.php должна быть, ежели на $bb_cfg начинается. В противном случае даже мне не по силам определить, не видя код, чем ошибка вызвана, о глубокоуважаемый <a href=\"https://torrentpier.com/members/5840/\">@Hopper Around</a>.</blockquote>Не не, контакт с духами потерян, ручку позолоти.😀",
+      "message_state": "visible",
+      "position": 6,
+      "post_date": 1421284332,
+      "user_id": 2789,
+      "user_title": "User",
+      "username": "Sprinx"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 6,
+  "slug": "kak-ispravit-notisy-lenty-novinok",
+  "sticky": false,
+  "tags": [],
+  "title": "Как исправить нотисы ленты новинок",
+  "url_path": "/threads/kak-ispravit-notisy-lenty-novinok.33235/",
+  "user_id": 5840,
+  "username": "Hopper Around",
+  "view_count": 1235
+}

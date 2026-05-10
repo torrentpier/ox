@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 13720,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 47,
+        "title": "Modifications for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 43,
+    "title": "Modifications for TorrentPier (archive)"
+  },
+  "id": 1119,
+  "last_post_date": 1331922667,
+  "node_id": 43,
+  "post_date": 1331922342,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13720,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "################################################################<br />\n## Название мода: Админка для XBTT<br />\n## Автор мода: Roman<br />\n## Адаптация с SVN: Explosive<br />\n## Описание:Данный мод позволяет из админки управлять всеми доступными из конфига настройками для XBTT анонсера.<br />\n## Сложность: легко<br />\n## Время установки: 5 мин<br />\n################################################################<br />\n<b>admin_xbtt.php:</b><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;?php\n// ACP Header - START\nif (!empty($setmodules))\n{\n$module[&#039;TorrentPier&#039;][&#039;XBTT control&#039;] = basename(__FILE__);\nreturn;\n}\nrequire(&#039;./pagestart.php&#039;);\n// ACP Header - END\n$i = 0;\n$sql = &#039;SELECT * from xbt_config&#039;;\nif (!$result = DB()-&gt;sql_query($sql))\n{\nmessage_die(&#039;GENERAL_MESSAGE&#039;, &#039;Ахтунг, таблица пуста&#039;);\n}\nwhile($row = DB()-&gt;sql_fetchrow($result))\n{\n$massiv[] = $row;\n$template-&gt;assign_block_vars(&#039;conf&#039;, array(\n&#039;ROW_CLASS&#039; =&gt; !($i % 2) ? &#039;row2&#039; : &#039;row1&#039;,\n&#039;NAME&#039; =&gt; $row[&#039;name&#039;],\n&#039;VALUE&#039; =&gt; $row[&#039;value&#039;],\n));\n$i++;\n}\nprint_page(&#039;admin_xbtt.tpl&#039;, &#039;admin&#039;);\n?&gt;</pre><b>admin_xbtt.tpl:</b><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;style type=&quot;text/css&quot;&gt;\n.inp-inact { border: 1px solid #7f9dbd; background-color: #D1D7DC; color: grey; }\n&lt;/style&gt;\n&lt;!--========================================================================--&gt;\n&lt;h1 class=&quot;tCenter&quot;&gt;Хобото-админка&lt;/h1&gt;\n&lt;table width=&quot;99%&quot; cellpadding=&quot;4&quot; cellspacing=&quot;1&quot; border=&quot;0&quot; align=&quot;center&quot; class=&quot;forumline&quot;&gt;\n&lt;tr class=&quot;row3&quot;&gt;\n  &lt;td&gt;Параметр&lt;/td&gt;&lt;td&gt;Значение&lt;/td&gt;\n&lt;/tr&gt;\n&lt;form method=&quot;post&quot; name=&quot;post&quot;&gt;\n&lt;!-- BEGIN conf --&gt;\n&lt;tr class=&quot;{conf.ROW_CLASS}&quot;&gt;\n  &lt;td width=&quot;10%&quot; nowrap&gt;{conf.NAME}&lt;/td&gt;\n  &lt;td nowrap&gt;&lt;input class=&quot;inp-inact&quot; name=&quot;{conf.NAME}&quot; type=&quot;text&quot; size=&quot;100&quot; value=&quot;{conf.VALUE}&quot; readonly=&quot;readonly&quot;  /&gt; &amp;nbsp;&amp;nbsp;&lt;input type=&quot;button&quot; value=&quot;Save param&quot; disabled=&quot;disabled&quot; /&gt;&lt;/td&gt;\n \n&lt;/tr&gt;\n&lt;!-- END config --&gt;\n \n&lt;script type=&quot;text/javascript&quot;&gt;\n$(document).ready(function(){\n  var frm = document.post;\n  var val = &#039;&#039;;\n  for (var i=0;i &lt; frm.elements.length;i++) {\n      var elmnt = frm.elements[i];\n      if (elmnt.type==&#039;text&#039;) {\n          $(&quot;:input&quot;).dblclick(function(){\n              $(this).attr(&quot;readonly&quot;,&quot;&quot;);\n              $(this).removeClass(&quot;inp-inact&quot;);\n              $(this).next().removeAttr(&quot;disabled&quot;);\n \n            $(this).next().click(function(){\n                var val = $(this).prev().val();\n                var name= $(this).prev().attr(&quot;name&quot;);\n                ajax.edit_xbtt(name, val);\n            });\n          });\n        break;\n        }\n    }\n  });\najax.edit_xbtt = function(name, val) {\n  ajax.exec({\n    action  : &quot;edit_xbtt&quot;,\n    name    : name,\n    val    : val\n  });\n};\najax.callback.edit_xbtt = function(data){\n  var name = data.name;\n  var th_input = $(&quot;input[name=&#039;&quot;+name+&quot;&#039;]&quot;);\n  th_input.val(data.val);\n  th_input.addClass(&quot;inp-inact&quot;);\n  th_input.next().attr(&quot;disabled&quot;,true);\n};\n&lt;/script&gt;\n \n&lt;/form&gt;\n&lt;/table&gt;</pre><b>Установка:</b><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Открыть ajax.php\nнайти\n&#039;view_post&#039; =&gt; array(&#039;guest&#039;),\nпосле вставить\n&#039;edit_xbtt&#039; =&gt; array(&#039;admin&#039;),\nв самом низу, перед }\nвставить\nfunction edit_xbtt ()\n  {\n    $action = $this-&gt;request[&#039;name&#039;];\n    $val = $this-&gt;request[&#039;val&#039;];\n    if (!$val || !$action)  $this-&gt;ajax_die(&#039;Не введены обязательные параметры&#039;);\n    $action = DB()-&gt;escape($action);\n    $val = DB()-&gt;escape($val);\n    $sql = &#039;UPDATE xbt_config SET value = &quot;&#039;.$val.&#039;&quot; WHERE name = &quot;&#039;.$action.&#039;&quot;&#039;;\n    if (!$db-&gt;query($sql)) $this-&gt;ajax_die(&#039;Ошибка выполнения запроса&#039;);\n    else\n    {\n      $this-&gt;response[&#039;name&#039;]  = $action;\n      $this-&gt;response[&#039;val&#039;]  = $val;\n    }\n \n  }\nadmin_xbtt.php поместить в /admin/\nadmin_xbtt.tpl поместить в /templates/admin/</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1331922342,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Explosive"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13722,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Используй тег <pre class=\"xfBb-code\" data-lang=\"\">[PHP][/PHP]</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1331922561,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13725,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Locer</b>, буду знать🙂",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1331922667,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Explosive"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "adminka-dla-xbtt",
+  "sticky": false,
+  "tags": [],
+  "title": "Админка для XBTT",
+  "url_path": "/threads/adminka-dla-xbtt.1119/",
+  "user_id": 0,
+  "username": "Explosive",
+  "view_count": 1859
+}

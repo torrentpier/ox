@@ -1,0 +1,115 @@
+{
+  "custom_fields": {
+    "torrentpier": ""
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 84165,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 41183,
+  "last_post_date": 1746278038,
+  "node_id": 80,
+  "post_date": 1432974899,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84165,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В atom ленте нет проверки для приватных форумов.<br />\nЕсли к пользователю каким то образом попадет ссылка (atom) на подобный форум, ему будут доступны все внутренние топики.<br />\nНужно подобные форумы как то по другому отдавать, допустим через feed.php, где в свою очередь будут проверятся привилегии.<br />\n<br />\nПочему был выбран именно атом, с ним не работают торрент клиенты.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1432974899,
+      "user_id": 97,
+      "user_title": "User",
+      "username": "Zenden"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84180,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Проверки действительно нет, потому что расчета на приватные темы с обсуждениями не было... Проверку конечно надо бы сделать. А прикручен atom по причине того, что протокол более прогрессивный. По уму надо теперь еще на Zend_Xml переписать, тогда можно хоть atom, хоть rss отдавать.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1432993837,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1435905782,
+          "file_size": 65662,
+          "filename": "Untitled_001.webp",
+          "height": 675,
+          "id": 3978,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/untitled_001-webp.3978/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/3/3982-3281d015c936d096426bfeb9acccda81.jpg?hash=B32VLZcVQK",
+          "width": 1402
+        }
+      ],
+      "id": 84432,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "При проверке ленты в <br />\n<a href=\"http://validator.w3.org/feed/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://validator.w3.org/feed/</a><br />\nвот такое выдает (скриншот) 2+6 строки.<br />\n<br />\nДа , и кто знает , как обозначить в ленте картинку , ссылку вывел , а в какие теги обернуть ?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1435905856,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97222,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено. Исправление попадет в релиз версию v2.4.5.<br />\n<br />\n<a href=\"https://github.com/torrentpier/torrentpier/pull/1889\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">feat(atom): Hide topics from private forums by belomaxorka · Pull Request #1889 · torrentpier/torrentpier</a>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1746278038,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 3,
+  "slug": "atom-i-privatnye-forumy",
+  "sticky": false,
+  "tags": [],
+  "title": "Atom и приватные форумы",
+  "url_path": "/threads/atom-i-privatnye-forumy.41183/",
+  "user_id": 97,
+  "username": "Zenden",
+  "view_count": 4382
+}

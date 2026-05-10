@@ -1,0 +1,105 @@
+{
+  "custom_fields": {
+    "torrentpier": "223"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 93218,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41913,
+  "last_post_date": 1529774267,
+  "node_id": 57,
+  "post_date": 1526476456,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93218,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "кто настраивал на вненший smtp?<br />\n<pre class=\"xfBb-code\" data-lang=\"\">$bb_cfg[&#039;emailer&#039;] = [\n    &#039;enabled&#039; =&gt; true,\n    &#039;smtp&#039; =&gt; [\n        &#039;enabled&#039; =&gt; true, // send email via external SMTP server\n        &#039;host&#039; =&gt; &#039;smtp.yandex.ru&#039;, // SMTP server host\n        &#039;port&#039; =&gt; 465, // SMTP server port\n        &#039;username&#039; =&gt; &#039;логин&#039;, // SMTP username (if server requires it)\n        &#039;password&#039; =&gt; &#039;пасс&#039;, // SMTP password (if server requires it)\n    ],\n    &#039;ssl_type&#039; =&gt; &#039;ssl&#039;, // SMTP ssl type (ssl or tls)\n];</pre>вылезает вот такая балалайка<br />\n<pre class=\"xfBb-code\" data-lang=\"\"> Swift_TransportException (553)\nExpected response code 250 but got code &quot;553&quot;, with message &quot;553 5.7.1 Sender address rejected: not owned by auth user. &quot;</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1526476456,
+      "user_id": 8369,
+      "user_title": "User",
+      "username": "Ральф"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93219,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"рофф\">кто настраивал на вненший smtp?<br />\n<pre class=\"xfBb-code\" data-lang=\"\">$bb_cfg[&#039;emailer&#039;] = [\n    &#039;enabled&#039; =&gt; true,\n    &#039;smtp&#039; =&gt; [\n        &#039;enabled&#039; =&gt; true, // send email via external SMTP server\n        &#039;host&#039; =&gt; &#039;smtp.yandex.ru&#039;, // SMTP server host\n        &#039;port&#039; =&gt; 465, // SMTP server port\n        &#039;username&#039; =&gt; &#039;логин&#039;, // SMTP username (if server requires it)\n        &#039;password&#039; =&gt; &#039;пасс&#039;, // SMTP password (if server requires it)\n    ],\n    &#039;ssl_type&#039; =&gt; &#039;ssl&#039;, // SMTP ssl type (ssl or tls)\n];</pre>вылезает вот такая балалайка<br />\n<pre class=\"xfBb-code\" data-lang=\"\"> Swift_TransportException (553)\nExpected response code 250 but got code &quot;553&quot;, with message &quot;553 5.7.1 Sender address rejected: not owned by auth user. &quot;</pre></blockquote><a href=\"https://toster.ru/q/438511\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Laravel Mail SMTP?</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1526481695,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93220,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Kryl\"><a href=\"https://toster.ru/q/438511\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Laravel Mail SMTP?</a></blockquote>хз.....",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1526483045,
+      "user_id": 8369,
+      "user_title": "User",
+      "username": "Ральф"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93280,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Ну я настраивал. И работает все. Вот только если у вас не Яндекс / Mail.ru и т.п. публичные ресурсы. Потому что они запрещают отправлять письма от чужого имени. У вас даже в ошибке это сказано.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1529774267,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "vnesnij-smtp",
+  "sticky": false,
+  "tags": [],
+  "title": "Внешний smtp",
+  "url_path": "/threads/vnesnij-smtp.41913/",
+  "user_id": 8369,
+  "username": "Ральф",
+  "view_count": 1564
+}

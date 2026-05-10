@@ -1,0 +1,141 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Набор BBCode тегов с рутрекера by belomaxorka.zip",
+      "id": 6455,
+      "local_path": null,
+      "r2_key": null,
+      "size": 2552,
+      "src_url": "https://torrentpier.com/api/resource-versions/633/download?file=6455"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1706889324,
+      "file_size": 3534,
+      "filename": "Screenshot 2024-02-02 224320.webp",
+      "height": 184,
+      "id": 5786,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot-2024-02-02-224320-webp.5786/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5790-34c5519e91d804252c3a7ae8ec01966e.jpg?hash=7WN_g3JCsf",
+      "width": 231
+    },
+    {
+      "attach_date": 1706889325,
+      "file_size": 1870,
+      "filename": "Screenshot 2024-02-02 224339.webp",
+      "height": 54,
+      "id": 5787,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot-2024-02-02-224339-webp.5787/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5791-79c51a1bc2511718c9e7ed9ed56bf967.jpg?hash=gvNNo3qNhS",
+      "width": 274
+    },
+    {
+      "attach_date": 1706889325,
+      "file_size": 6698,
+      "filename": "Screenshot 2024-02-02 224358.webp",
+      "height": 114,
+      "id": 5788,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot-2024-02-02-224358-webp.5788/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5792-13494f0f1d9db609b51dd6fc89c08150.jpg?hash=Ro-UTXijqH",
+      "width": 238
+    }
+  ],
+  "description_parsed": "<div style=\"text-align: center\"><span style=\"color: rgb(235, 107, 86)\">Внимание! Часть тегов из этого мода по умолчанию будут в версии v2.4.1</span>&#8203;</div><hr /><div style=\"text-align: center\"><span style=\"color: rgb(226, 80, 65)\">Начиная с версии движка v2.4.6 данный мод интегрирован полностью</span>&#8203;</div><hr /><b>Описание:</b>  Данный мод добавляет в BBCode редактор несколько тегов которые используются на rutracker.org. Так же эти тэги полностью работоспособны в случае парсинга раздач с рутрекера.<br />\n<br />\n<b>Список тегов:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">box | Рамка вокруг текста</li>\n<li data-xf-list-type=\"ul\">⇛   | Отступ (TAB)</li>\n<li data-xf-list-type=\"ul\">nfo | NFO</li>\n<li data-xf-list-type=\"ul\">pre | Форматированный текст</li>\n</ul>",
+  "download_count": 304,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/283.jpg?1706889328",
+  "id": 283,
+  "is_fileless": null,
+  "last_update": 1749314411,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1706889328,
+  "resource_state": "visible",
+  "slug": "nabor-bbcode-tegov-s-rutrekera",
+  "tag_line": "Данный мод добавляет в BBCode редактор несколько тегов которые используются на rutracker.org",
+  "tags": [
+    "bbcode дополнение",
+    "дополнительные теги",
+    "новые теги",
+    "теги с рутрекера",
+    "улучшения для редактора",
+    "улучшения редактора bbcode"
+  ],
+  "title": "Набор BBCode тегов с рутрекера",
+  "url_path": "/resources/nabor-bbcode-tegov-s-rutrekera.283/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v2.0.0",
+  "versions": [
+    {
+      "download_count": 187,
+      "files": [
+        {
+          "filename": "[FULL] Набор BBCode тегов с рутрекера by belomaxorka.zip",
+          "id": 6455,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2552,
+          "src_url": "https://torrentpier.com/api/resource-versions/633/download?file=6455"
+        }
+      ],
+      "id": 633,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1749314411,
+      "version_state": "visible",
+      "version_string": "v2.0.0",
+      "view_url": "https://torrentpier.com/resources/nabor-bbcode-tegov-s-rutrekera.283/version/633/"
+    },
+    {
+      "download_count": 121,
+      "files": [
+        {
+          "filename": "[FULL] Набор BBCode тегов с рутрекера by belomaxorka.zip",
+          "id": 5785,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1994,
+          "src_url": "https://torrentpier.com/api/resource-versions/447/download?file=5785"
+        }
+      ],
+      "id": 447,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1706889328,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/nabor-bbcode-tegov-s-rutrekera.283/version/447/"
+    }
+  ],
+  "view_count": 2263
+}

@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 89256,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 41604,
+  "last_post_date": 1484631657,
+  "node_id": 80,
+  "post_date": 1483075205,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89256,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток! Не знаю, баг это или нет, но пользователи могут принимать участие в голосовании каждый день. <br />\n<br />\nК примеру: пользователь сегодня проголосовал и если он захочет проголосовать сегодня еще раз, то у него не получится, а если проголосует завтра, то его голос будет учтен.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1483075205,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89514,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "В каком голосовании? Мод или встроенные опросы?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1484603590,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89526,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\">В каком голосовании? Мод или встроенные опросы?</blockquote>Встроенные опросы. Версия движка 2.1.4",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1484631657,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 2,
+  "slug": "povtornyj-golos-v-golosovanii",
+  "sticky": false,
+  "tags": [],
+  "title": "Повторный голос в голосовании",
+  "url_path": "/threads/povtornyj-golos-v-golosovanii.41604/",
+  "user_id": 5704,
+  "username": "ExPlayer",
+  "view_count": 876
+}

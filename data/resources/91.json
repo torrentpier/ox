@@ -1,0 +1,91 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "install.zip",
+      "id": 3077,
+      "local_path": null,
+      "r2_key": null,
+      "size": 2411,
+      "src_url": "https://torrentpier.com/api/resource-versions/188/download?file=3077"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "adapt",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]# ---- [ SQL ] -------------------\n\nINSERT INTO bb_config VALUES ('use_dynamic_description', 1);\nINSERT INTO bb_config VALUES ('use_dynamic_keywords', 1);\nINSERT INTO bb_config VALUES ('global_description', 'ваше глобальное мета-описание');\nINSERT INTO bb_config VALUES ('global_keywords', 'подставьте, сюда, свои, ключевые, слова');\nINSERT INTO bb_config VALUES ('append_global_description', 1);\nINSERT INTO bb_config VALUES ('append_global_keywords', 1);\nINSERT INTO bb_config VALUES ('append_keywords_first', 0);\nINSERT INTO bb_config VALUES ('description_word_count', 150);\nINSERT INTO bb_config VALUES ('keyword_word_count', 50);\n\n# ---- [ Открыть ] -------------------\n\nviewtopic.php\n\n# ---- [ Найти ] -------------------\n\nfor($i = 0; $i < $total_posts; $i++)\n\n# ---- [ Вставить до ] -------------------\n\n$first_post_text = '';\n\n# ---- [ Найти ] -------------------\n\n$message = get_parsed_post($postrow[$i]);\n\n# ---- [ Вставить после ] -------------------\n\n    if ($i == 0)\n    {\n        $first_post_text = $message;\n\n        $post_text = $first_post_text;\n        if (!empty($post_text))\n        {\n            $post_text = mb_strtolower(strip_tags($post_text),\"UTF-8\");\n            $post_text = preg_split(\"/[\\s,.-:]+/\", $post_text);\n            if ($bb_cfg['use_dynamic_keywords'])\n            {\n                $count = 0;\n                $rnd_keywords = array();\n                foreach ($post_text as $word)\n                {\n                    $word = str_replace(\"'\", '', $word);\n                    if (strlen($word) > 2)\n                    {\n                        if (!empty($rnd_keywords) && in_array($word, $rnd_keywords)) continue;\n\n                        $rnd_keywords[] = $word;\n                        $count++;\n                    }\n                    if ($count == $bb_cfg['keyword_word_count']) break;\n                }\n                $rnd_keywords = implode(', ', $rnd_keywords);\n                if ($bb_cfg['append_keywords_first']) $rnd_keywords = ', ' . $rnd_keywords;\n                else $rnd_keywords = $rnd_keywords . ', ';\n            }\n\n            if ($bb_cfg['use_dynamic_description'])\n            {\n                $count = 0;\n                $rnd_description = '';\n                foreach ($post_text as $word)\n                {\n                    $rnd_description .= $word . ' ';\n                    $count++;\n\n                    if ($count == $bb_cfg['description_word_count']) break;\n                }\n            }\n        }\n        $template->assign_vars(array(\n            'RND_DESCRIPTION'    => (preg_match('/viewtopic\\.php/', $_SERVER['SCRIPT_NAME']) && $bb_cfg['use_dynamic_description']) ? $rnd_description : '',\n            'RND_KEYWORDS'      => (preg_match('/viewtopic\\.php/', $_SERVER['SCRIPT_NAME']) && $bb_cfg['use_dynamic_keywords']) ? $rnd_keywords : '',\n        ));\n    }\n\n# ---- [ Открыть ] -------------------\n\nadmin/admin_board.php\n\n# ---- [ Найти ] -------------------\n\n            'SEED_BONUS_USER_REGDATE' => $new['seed_bonus_user_regdate'],\n\n# ---- [ Вставить после ] -------------------\n\n            'USE_DYNAMIC_DESCRIPTION' => $new['use_dynamic_description'],\n            'USE_DYNAMIC_KEYWORDS' => $new['use_dynamic_keywords'],\n            'GLOBAL_DESCRIPTION' => $new['global_description'],\n            'GLOBAL_KEYWORDS' => $new['global_keywords'],\n            'APPEND_GLOBAL_DESCRIPTION' => $new['append_global_description'],\n            'APPEND_GLOBAL_KEYWORDS' => $new['append_global_keywords'],\n            'APPEND_KEYWORDS_FIRST' => $new['append_keywords_first'],\n            'DESCRIPTION_WORD_COUNT' => $new['description_word_count'],\n            'KEYWORD_WORD_COUNT' => $new['keyword_word_count'],\n\n# ---- [ Открыть ] -------------------\n\nincludes/page_header.php\n\n# ---- [ Найти ] -------------------\n\n// FOR SEO\n$template->assign_vars(array(\n\n# ---- [ Вставить до ] -------------------\n\n$viewtopic_page = (preg_match('/viewtopic\\.php/', $_SERVER['SCRIPT_NAME'])) ? true : false;\nif ($bb_cfg['append_global_description'] || $bb_cfg['use_dynamic_description'])\n{\n    $global_description = ($bb_cfg['append_global_description']) ? $bb_cfg['global_description'] : '';\n\n    $template->assign_vars(array(\n        'PAGE_DESCRIPTION' => $global_description,\n        'PAGE_DESCRIPTION_ON' => ($global_description == '' && !$viewtopic_page) ? false : true,\n    ));\n}\n\nif ($bb_cfg['append_global_keywords'] || $bb_cfg['use_dynamic_keywords'])\n{\n    $global_keywords = ($bb_cfg['append_global_keywords']) ? $bb_cfg['global_keywords'] : '';\n\n    $template->assign_vars(array(\n        'PAGE_KEYWORDS' => $global_keywords,\n        'PAGE_KEYWORDS_ON' => ($global_keywords == '' && !$viewtopic_page) ? false : true,\n    ));\n}\n\n# ---- [ Найти ] -------------------\n\n    'U_MY_DRAFTS'              => \"profile.php?mode=viewdraft&u={$userdata['user_id']}\",\n\n# ---- [ Вставить после ] -------------------\n\n    'VIEWTOPIC_PAGE'            => (!$viewtopic_page ) ? true : false,\n\n# ---- [ Открыть ] -------------------\n\nlanguage/lang_russian/lang_admin.php\n\n# ---- [ Вставить в конец ] -------------------\n\n// Meta Tags\n$lang['META_TAGS_MOD'] = 'Генератор мета-тегов';\n$lang['USE_DYNAMIC_DESCRIPTION'] = 'Включить генерацию мета-описания';\n$lang['USE_DYNAMIC_KEYWORDS'] = 'Включить генерацию ключевых слов';\n$lang['GLOBAL_DESCRIPTION'] = 'Глобальное мета-описание';\n$lang['GLOBAL_KEYWORDS'] = 'Глобальные ключевые слова';\n$lang['APPEND_GLOBAL_DESCRIPTION'] = 'Добавлять глобальное мета-описание';\n$lang['APPEND_GLOBAL_DESCRIPTION_EXPLAIN'] = 'Добалять глобальное мета-описание к сгенерироанному описанию.';\n$lang['APPEND_GLOBAL_KEYWORDS'] = 'Добавлять глобальные ключевые слова';\n$lang['APPEND_GLOBAL_KEYWORDS_EXPLAIN'] = 'Добалять глобальные ключевые слова к сгенерироанным ключевым словам.';\n$lang['APPEND_KEYWORDS_FIRST'] = 'Позиция размещения глобальных ключевых слов';\n$lang['APPEND_KEYWORDS_FIRST_EXPLAIN'] = '\"Да\" для размещения перед сгенерированными ключевыми словами,<br />\"Нет\" для размещения после сгенерированных ключевых слов.';\n$lang['DESCRIPTION_WORD_COUNT'] = 'Количество ключевых слов в мета-описании';\n$lang['KEYWORD_WORD_COUNT'] = 'Количество ключевых слов';\n\n# ---- [ Открыть ] -------------------\n\ntemplates/admin/admin_board.tpl\n\n# ---- [ Найти ] -------------------\n\n<!-- ENDIF / CONFIG_MODS -->\n\n# ---- [ Вставить до ] -------------------\n\n<tr class=\"row3 med\">\n    <td class=\"bold tCenter\" colspan=\"2\">{L_META_TAGS_MOD}</td>\n</tr>\n\n<tr>\n    <td><h4>{L_USE_DYNAMIC_DESCRIPTION}</h4></td>\n    <td>\n        <label><input type=\"radio\" name=\"use_dynamic_description\" value=\"1\" <!-- IF USE_DYNAMIC_DESCRIPTION -->checked=\"checked\"<!-- ENDIF --> />{L_ENABLED}</label>&nbsp;&nbsp;\n        <label><input type=\"radio\" name=\"use_dynamic_description\" value=\"0\" <!-- IF not USE_DYNAMIC_DESCRIPTION -->checked=\"checked\"<!-- ENDIF --> />{L_DISABLED}</label>\n    </td>\n</tr>\n<tr>\n    <td><h4>{L_USE_DYNAMIC_KEYWORDS}</h4></td>\n    <td>\n        <label><input type=\"radio\" name=\"use_dynamic_keywords\" value=\"1\" <!-- IF USE_DYNAMIC_KEYWORDS -->checked=\"checked\"<!-- ENDIF --> />{L_ENABLED}</label>&nbsp;&nbsp;\n        <label><input type=\"radio\" name=\"use_dynamic_keywords\" value=\"0\" <!-- IF not USE_DYNAMIC_KEYWORDS -->checked=\"checked\"<!-- ENDIF --> />{L_DISABLED}</label>\n    </td>\n</tr>\n<tr>\n    <td><h4>{L_GLOBAL_DESCRIPTION}</h4></td>\n    <td><input class=\"post\" type=\"text\" size=\"40\" maxlength=\"255\" name=\"global_description\" value=\"{GLOBAL_DESCRIPTION}\" /></td>\n</tr>\n<tr>\n    <td><h4>{L_GLOBAL_KEYWORDS}</h4></td>\n    <td><input class=\"post\" type=\"text\" size=\"40\" maxlength=\"255\" name=\"global_keywords\" value=\"{GLOBAL_KEYWORDS}\" /></td>\n</tr>\n<tr>\n    <td><h4>{L_APPEND_GLOBAL_DESCRIPTION}</h4><h6>{L_APPEND_GLOBAL_DESCRIPTION_EXPLAIN}</h6></td>\n    <td>\n        <label><input type=\"radio\" name=\"append_global_description\" value=\"1\" <!-- IF APPEND_GLOBAL_DESCRIPTION -->checked=\"checked\"<!-- ENDIF --> />{L_ENABLED}</label>&nbsp;&nbsp;\n        <label><input type=\"radio\" name=\"append_global_description\" value=\"0\" <!-- IF not APPEND_GLOBAL_DESCRIPTION -->checked=\"checked\"<!-- ENDIF --> />{L_DISABLED}</label>\n    </td>\n</tr>\n<tr>\n    <td><h4>{L_APPEND_GLOBAL_KEYWORDS}</h4><h6>{L_APPEND_GLOBAL_KEYWORDS_EXPLAIN}</h6></td>\n    <td>\n        <label><input type=\"radio\" name=\"append_global_keywords\" value=\"1\" <!-- IF APPEND_GLOBAL_KEYWORDS -->checked=\"checked\"<!-- ENDIF --> />{L_ENABLED}</label>&nbsp;&nbsp;\n        <label><input type=\"radio\" name=\"append_global_keywords\" value=\"0\" <!-- IF not APPEND_GLOBAL_KEYWORDS -->checked=\"checked\"<!-- ENDIF --> />{L_DISABLED}</label>\n    </td>\n</tr>\n<tr>\n    <td><h4>{L_APPEND_KEYWORDS_FIRST}</h4><h6>{L_APPEND_KEYWORDS_FIRST_EXPLAIN}</h6></td>\n    <td>\n        <label><input type=\"radio\" name=\"append_keywords_first\" value=\"1\" <!-- IF APPEND_KEYWORDS_FIRST -->checked=\"checked\"<!-- ENDIF --> />{L_ENABLED}</label>&nbsp;&nbsp;\n        <label><input type=\"radio\" name=\"append_keywords_first\" value=\"0\" <!-- IF not APPEND_KEYWORDS_FIRST -->checked=\"checked\"<!-- ENDIF --> />{L_DISABLED}</label>\n    </td>\n</tr>\n<tr>\n    <td><h4>{L_DESCRIPTION_WORD_COUNT}</h4></td>\n    <td><input class=\"post\" type=\"text\" size=\"3\" maxlength=\"4\" name=\"description_word_count\" value=\"{DESCRIPTION_WORD_COUNT}\" /></td>\n</tr>\n<tr>\n    <td><h4>{L_KEYWORD_WORD_COUNT}</h4></td>\n    <td><input class=\"post\" type=\"text\" size=\"3\" maxlength=\"4\" name=\"keyword_word_count\" value=\"{KEYWORD_WORD_COUNT}\" /></td>\n</tr>\n\n# ---- [ Открыть ] -------------------\n\ntemplates/default/page_header.tpl\n\n# ---- [ Найти ] -------------------\n\n<head>\n\n# ---- [ Вставить после ] -------------------\n\n<!-- IF PAGE_KEYWORDS_ON -->\n<meta name=\"keywords\" content=\"<!-- IF $bb_cfg['append_keywords_first'] -->{PAGE_KEYWORDS}{RND_KEYWORDS}<!-- ELSE -->{RND_KEYWORDS}{PAGE_KEYWORDS}<!-- ENDIF -->\" />\n<!-- ENDIF -->\n<!-- IF PAGE_DESCRIPTION_ON -->\n<meta name=\"description\" content=\"<!-- IF not $bb_cfg['use_dynamic_description'] || VIEWTOPIC_PAGE -->{PAGE_TITLE}<!-- ELSE -->{RND_DESCRIPTION}<!-- ENDIF --> {PAGE_DESCRIPTION}\" />\n<!-- ENDIF -->\n\n# ---- [ Конец ] -------------------[/PHP]\n[/SPOILER]",
+    "owner": "Gemini_13",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [],
+  "description_parsed": "<div style=\"text-align: center\"><span style=\"color: rgb(226, 80, 65)\">Рекомендуется использовать <a href=\"https://torrentpier.com/resources/generacija-meta-opisanija-seo.325/\" class=\"link link--internal\">данный мод</a></span>&#8203;</div><hr /><b>Описание:</b> генерирует мета-теги ключевых слов (keywords) и описания (description). Настройка производится в разделе: Админка -&gt; Модификации -&gt; Конфигурация.",
+  "download_count": 345,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/91.jpg?1425222870",
+  "id": 91,
+  "is_fileless": null,
+  "last_update": 1425223972,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1391847401,
+  "resource_state": "visible",
+  "slug": "advanced-meta-tags",
+  "tag_line": "Генерирует мета-теги ключевых слов (keywords) и описания (description).",
+  "tags": [],
+  "title": "Advanced Meta Tags",
+  "url_path": "/resources/advanced-meta-tags.91/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 227,
+      "files": [
+        {
+          "filename": "install.zip",
+          "id": 3077,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2411,
+          "src_url": "https://torrentpier.com/api/resource-versions/188/download?file=3077"
+        }
+      ],
+      "id": 188,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425223972,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/advanced-meta-tags.91/version/188/"
+    },
+    {
+      "download_count": 123,
+      "files": [
+        {
+          "filename": "install.txt",
+          "id": 2428,
+          "local_path": null,
+          "r2_key": null,
+          "size": 11030,
+          "src_url": "https://torrentpier.com/api/resource-versions/97/download?file=2428"
+        }
+      ],
+      "id": 97,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1391847401,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/advanced-meta-tags.91/version/97/"
+    }
+  ],
+  "view_count": 676
+}

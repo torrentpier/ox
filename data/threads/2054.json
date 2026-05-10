@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 25499,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 2054,
+  "last_post_date": 1357802604,
+  "node_id": 90,
+  "post_date": 1357798755,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25499,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Может кому пригодится, выкладываю свою копию вики)",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1357798755,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25508,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "ps: удалил вроде все ненужно, но могут быть косяки при конвертации из html--&gt;pdf объем достаточно большой. И вики движки своеобразны<br />\nЕсли что пишите.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1357802604,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "kopia-nginx-wiki",
+  "sticky": false,
+  "tags": [],
+  "title": "Копия nginx wiki",
+  "url_path": "/threads/kopia-nginx-wiki.2054/",
+  "user_id": 0,
+  "username": "kenny",
+  "view_count": 1589
+}

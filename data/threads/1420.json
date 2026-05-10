@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 18451,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 1420,
+  "last_post_date": 1340270242,
+  "node_id": 3,
+  "post_date": 1340270181,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 18451,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Цой жив, жил и будет жить ! ! !<br />\nps Цою 50 лет !",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1340270181,
+      "user_id": 14,
+      "user_title": "User",
+      "username": "Chumaster59"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 18452,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Навек!</b>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1340270242,
+      "user_id": 0,
+      "user_title": "",
+      "username": "SkiFteL"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "coj-ziv",
+  "sticky": false,
+  "tags": [],
+  "title": "Цой жив!",
+  "url_path": "/threads/coj-ziv.1420/",
+  "user_id": 14,
+  "username": "Chumaster59",
+  "view_count": 1232
+}

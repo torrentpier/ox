@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 45401,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 15556,
+  "last_post_date": 1379999073,
+  "node_id": 57,
+  "post_date": 1379973010,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 45401,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Пилил я движок дня 3 наверное, вот сегодня для теста загрузил 1 торрент и скачал его на другом компьютере с другого аккаунта. Только сид не раздает или лич не качает...<br />\nВ торрент клиенте показывает кол-во сидов &amp; пиров данного торрента...<br />\nЧто не так собсно?<br />\nРелиз R525",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1379973010,
+      "user_id": 4615,
+      "user_title": "User",
+      "username": "\"8bit\""
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 45415,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>&quot;8bit&quot;</b>, NAT - порт закрыт.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1379990799,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Sarymian"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 45418,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"&amp;quot;8bit&amp;quot;\">Пилил я движок дня 3 наверное, вот сегодня для теста загрузил 1 торрент и скачал его на другом компьютере с другого аккаунта. Только сид не раздает или лич не качает...<br />\nВ торрент клиенте показывает кол-во сидов &amp; пиров данного торрента...<br />\nЧто не так собсно?<br />\nРелиз R525</blockquote> <br />\nЗначит так и должно, раз показывает всё. Проблема не с трекером 100%.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1379999073,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "ne-rabotaet-torrent",
+  "sticky": false,
+  "tags": [],
+  "title": "Не работает торрент",
+  "url_path": "/threads/ne-rabotaet-torrent.15556/",
+  "user_id": 4615,
+  "username": "\"8bit\"",
+  "view_count": 1252
+}

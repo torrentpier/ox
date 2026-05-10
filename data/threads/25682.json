@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58272,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25682,
+  "last_post_date": 1390944877,
+  "node_id": 111,
+  "post_date": 1390944877,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58272,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Ссылка</b>:<br />\n<a href=\"http://code.google.com/p/torrentpier2/source/detail?r=572\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"> http://code.google.com/p/torrentpier2/source/detail?r=572</a><br />\n<br />\n<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 572: переменные, необходимые для корректной обработки данных</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">pherum83</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/upload/config.php \n    Modify    /trunk/upload/includes/cron/jobs/avatars_cleanup.php \n    Modify    /trunk/upload/includes/cron/jobs/bb_maintenance.php \n    Modify    /trunk/upload/includes/cron/jobs/cache_gc.php \n    Modify    /trunk/upload/includes/cron/jobs/clean_dlstat.php \n    Modify    /trunk/upload/includes/cron/jobs/clean_log.php \n    Modify    /trunk/upload/includes/cron/jobs/db_backup.php \n    Modify    /trunk/upload/includes/cron/jobs/prune_forums.php \n    Modify    /trunk/upload/includes/cron/jobs/prune_inactive_users.php \n    Modify    /trunk/upload/includes/cron/jobs/prune_topic_moved.php \n    Modify    /trunk/upload/includes/cron/jobs/sessions_cleanup.php \n    Modify    /trunk/upload/includes/cron/jobs/site_backup.php \n    Modify    /trunk/upload/includes/cron/jobs/tr_cleanup_and_dlstat.php \n    Modify    /trunk/upload/includes/cron/jobs/tr_maintenance.php \n    Modify    /trunk/upload/includes/cron/jobs/tr_make_snapshot.php \n    Modify    /trunk/upload/includes/functions_admin_cron.php \n    Modify    /trunk/upload/includes/functions_torrent.php \n\nпеременные, необходимые для корректной обработки данных</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1390944877,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "revision-572-peremennye-neobhodimye-dla-korrektnoj-obrabotki-dannyh",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 572: переменные, необходимые для корректной обработки данных",
+  "url_path": "/threads/revision-572-peremennye-neobhodimye-dla-korrektnoj-obrabotki-dannyh.25682/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 995
+}

@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 69777,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 31768,
+  "last_post_date": 1418830954,
+  "node_id": 57,
+  "post_date": 1418765377,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 69777,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подскажите, уважаемые.<br />\n<br />\nХочу включить freeleech <br />\nменяю в bt\\announce.php<br />\n$sql .= ($downloaded != $lp_info[&#039;downloaded&#039;]) ? &quot;, downloaded = <span style=\"color: #ff0000\">$downloaded</span>&quot; : &#039;&#039;;<br />\n<span style=\"color: #ff0000\">$downloaded</span> на 0<br />\nРейтинг продолжает считать.<br />\nчяднт?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1418765377,
+      "user_id": 4818,
+      "user_title": "User",
+      "username": "A-E"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 69783,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"A-E\">Подскажите, уважаемые.<br />\n<br />\nХочу включить freeleech<br />\nменяю в bt\\announce.php<br />\n$sql .= ($downloaded != $lp_info[&#039;downloaded&#039;]) ? &quot;, downloaded = <span style=\"color: #ff0000\">$downloaded</span>&quot; : &#039;&#039;;<br />\n<span style=\"color: #ff0000\">$downloaded</span> на 0<br />\nРейтинг продолжает считать.<br />\nчяднт?</blockquote>Отданное считается, из-за этого и рейтинг.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1418768878,
+      "user_id": 2789,
+      "user_title": "User",
+      "username": "Sprinx"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 69831,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Я как обычно неправильно выразился.<br />\nВ графе &quot;Скачано&quot; значение продолжает увеличиваться.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1418813024,
+      "user_id": 4818,
+      "user_title": "User",
+      "username": "A-E"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 69873,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "https://github.com/torrentpier/torrentpier/blob/master/bt/announce.php#L357 - вот образец как сделано для золотых раздач. Следовательно, вам вот эту переменную https://github.com/torrentpier/torrentpier/blob/master/bt/announce.php#L350 надо следующей строкой приравнять к нулю. В следующем билде опцию в конфиге добавлю.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1418830514,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 69874,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Впрочем вот уже готовое решение: https://github.com/torrentpier/torrentpier/commit/ebafe9474ad2255528a33b0a635be85f3187f9a4",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1418830954,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "frilic",
+  "sticky": false,
+  "tags": [],
+  "title": "Фрилич",
+  "url_path": "/threads/frilic.31768/",
+  "user_id": 4818,
+  "username": "A-E",
+  "view_count": 1982
+}

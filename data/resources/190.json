@@ -1,0 +1,71 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "видео_вк.zip",
+      "id": 3241,
+      "local_path": null,
+      "r2_key": null,
+      "size": 877,
+      "src_url": "https://torrentpier.com/api/resource-versions/244/download?file=3241"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]Файлы к редактированию:\n— includes/bbcode.php\n— templates/default/posting_editor.tpl\n\n##########################################################\n\nОписание: Простой мод который добавляет дополнительный ББ код при редактирование или создания новой темы\n\n##########################################################\n\nОткрываем includes/bbcode.php\n\nНаходим\n\n[PHP]'#\\[quote=\"(.+?)\"\\]#isu'  => $tpl['quote_username_open'],[/PHP]\n\nниже вставляем\n\n[PHP]'#\\[vkontakte\\].*?src=\"https?://(?:www\\.)?vk.com/(.*?)\".*?\\[/vkontakte\\]#is' => \"<iframe width='607' height='360' src='https://vk.com/$1' frameborder='0' scrolling='no'></iframe>\",[/PHP]\n\nОткрываем templates/default/posting_editor.tpl\n\nНаходим\n\n[PHP]bbcode.addTag(\"codeUrl\", \"url\", \"/url\", \"\", ctrl);[/PHP]\n\nниже вставляем\n\n[PHP]bbcode.addTag(\"codeVk\",  \"vkontakte\",  \"/vkontakte\",  \"\", ctrl);[/PHP]\n\nНаходим\n\n[PHP]<input type=\"button\" value=\"{L_URL}\" name=\"codeUrl2\" title=\"{L_URL_TITLE}\" style=\"max-width: 76px;\"/><input type=\"hidden\" name=\"codeUrl\" />[/PHP]\n\nниже вставляем\n\n[PHP]<input type=\"button\" value=\"vk\" name=\"codeVk\" title=\"Вставить видео с ВКонтакте\" style=\"width: 30px;\" />[/PHP]\n\nПример использования:\n\n[CODE]\n[vkontakte]<iframe src=\"https://vk.com/video_ext.php?oid=208336058&id=167381977&hash=bf25168af1907a7b&hd=3\" width=\"607\" height=\"360\" frameborder=\"0\"></iframe>[/vkontakte]\n[/CODE][/SPOILER]",
+    "owner": "xxxx",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание:</b> добавляет BB-код для вставки видео из социальной сети ВКонтакте.<br />\n<br />\n<div data-template-name=\"public:_media_site_embed_youtube\" class=\"bbMediaWrapper\" data-media-site-id=\"youtube\" data-media-key=\"WrdoeeAmA8o\">\n\t<div class=\"bbMediaWrapper-inner\">\n\t\t<iframe src=\"https://www.youtube.com/embed/WrdoeeAmA8o?wmode=opaque\"\n\t\t\t\tloading=\"lazy\"\n\t\t\t\twidth=\"560\" height=\"315\"\n\t\t\t\tframeborder=\"0\" allowfullscreen=\"true\"></iframe>\n\t</div>\n</div>",
+  "download_count": 220,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/190.jpg?1425422299",
+  "id": 190,
+  "is_fileless": null,
+  "last_update": 1425422291,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1425422291,
+  "resource_state": "visible",
+  "slug": "bb-kod-video-vkontakte",
+  "tag_line": "Добавляет BB-код для вставки видео из социальной сети ВКонтакте.",
+  "tags": [],
+  "title": "BB-код: видео ВКонтакте",
+  "url_path": "/resources/bb-kod-video-vkontakte.190/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 220,
+      "files": [
+        {
+          "filename": "видео_вк.zip",
+          "id": 3241,
+          "local_path": null,
+          "r2_key": null,
+          "size": 877,
+          "src_url": "https://torrentpier.com/api/resource-versions/244/download?file=3241"
+        }
+      ],
+      "id": 244,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425422291,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/bb-kod-video-vkontakte.190/version/244/"
+    }
+  ],
+  "view_count": 611
+}

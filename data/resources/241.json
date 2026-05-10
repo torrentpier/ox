@@ -1,0 +1,156 @@
+{
+  "category": {
+    "description": "Icons, smileys, and other graphic elements for design.",
+    "id": 6,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Graphics and styles",
+    "view_url": "https://torrentpier.com/resources/categories/graphics-and-styles.6/"
+  },
+  "current_files": [
+    {
+      "filename": "root.zip",
+      "id": 4015,
+      "local_path": null,
+      "r2_key": null,
+      "size": 24742,
+      "src_url": "https://torrentpier.com/api/resource-versions/350/download?file=4015"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]\n[LIST]\n[*]Разкидать файлы по папкам.\n[/LIST]\n         Открыть page_header.tpl\n         найти\n<link rel=\"stylesheet\" href=\"{SITE_URL}styles/templates/default/css/style.css\" type=\"text/css\">\n\nПосле добавить\n<link rel=\"stylesheet\" href=\"styles/templates/default/css/font/css/font-awesome.css\">\nОткрыть style.css .\n\n[PHP].box{margin:100px auto;margin-top:-2%;width:300px;height:0px;}\n.container-username{width:300px;vertical-align:middle;white-space:pre;position:relative;}\n.container-username input#username{width:300px;height:45px;background:#2b303b;border:none;font-size:10pt;float:left;color:#262626;padding-left:45px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;color:#fff;}\n.container-username input#username::-webkit-input-placeholder{color:#65737e;}\n.container-username input#username:-moz-placeholder{color:#65737e;}\n.container-username input#username::-moz-placeholder{color:#65737e;}\n.container-username input#username:-ms-input-placeholder{color:#65737e;}\n.container-username .icon{position:absolute;top:50%;margin-left:0px;margin-top:20px;z-index:1;color:#28d9ed;-webkit-transition:all .55s ease;-moz-transition:all .55s ease;-ms-transition:all .55s ease;-o-transition:all .55s ease;transition:all .55s ease;}\n.container-username input#username:focus, .container-username input#username:active{outline:none;}\n.container-username:hover .icon{margin-top:16px;color:#28ed28;-webkit-transform:scale(1.5);-moz-transform:scale(1.5);-ms-transform:scale(1.5);-o-transform:scale(1.5);transform:scale(1.5);}\n.container-email{width:300px;vertical-align:middle;white-space:pre;position:relative;}\n.container-email input#email{width:300px;height:45px;background:#2b303b;border:none;font-size:10pt;float:left;color:#262626;padding-left:45px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;color:#fff;}\n.container-email input#email::-webkit-input-placeholder{color:#65737e;}\n.container-email input#email:-moz-placeholder{color:#65737e;}\n.container-email input#email::-moz-placeholder{color:#65737e;}\n.container-email input#email:-ms-input-placeholder{color:#65737e;}\n.container-email .icon{position:absolute;top:50%;margin-left:0px;margin-top:20px;z-index:1;color:#e7ed28;-webkit-transition:all .55s ease;-moz-transition:all .55s ease;-ms-transition:all .55s ease;-o-transition:all .55s ease;transition:all .55s ease;}\n.container-email input#email:focus, .container-email input#email:active{outline:none;}\n.container-email:hover .icon{margin-top:16px;color:#28ed28;-webkit-transform:scale(1.5);-moz-transform:scale(1.5);-ms-transform:scale(1.5);-o-transform:scale(1.5);transform:scale(1.5);}\n.container-pass{width:300px;vertical-align:middle;white-space:pre;position:relative;}\n.container-pass input#pass{width:300px;height:45px;background:#2b303b;border:none;font-size:10pt;float:left;color:#262626;padding-left:45px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;color:#fff;}\n.container-pass input#pass::-webkit-input-placeholder{color:#65737e;}\n.container-pass input#pass:-moz-placeholder{color:#65737e;}\n.container-pass input#pass::-moz-placeholder{color:#65737e;}\n.container-pass input#pass:-ms-input-placeholder{color:#65737e;}\n.container-pass .icon{position:absolute;top:50%;margin-left:0px;margin-top:20px;z-index:1;color:#ed2849;-webkit-transition:all .55s ease;-moz-transition:all .55s ease;-ms-transition:all .55s ease;-o-transition:all .55s ease;transition:all .55s ease;}\n.container-pass input#pass:focus, .container-pass input#pass:active{outline:none;}\n.container-pass:hover .icon{margin-top:16px;color:#28ed28;-webkit-transform:scale(1.5);-moz-transform:scale(1.5);-ms-transform:scale(1.5);-o-transform:scale(1.5);transform:scale(1.5);}\n.container-pass_confirm{width:340px;vertical-align:middle;white-space:pre;position:relative;}\n.container-pass_confirm input#pass_confirm{width:300px;height:45px;background:#2b303b;border:none;font-size:10pt;float:left;color:#262626;padding-left:45px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;color:#fff;}\n.container-pass_confirm input#pass_confirm::-webkit-input-placeholder{color:#65737e;}\n.container-pass_confirm input#pass_confirm:-moz-placeholder{color:#65737e;}\n.container-pass_confirm input#pass_confirm::-moz-placeholder{color:#65737e;}\n.container-pass_confirm input#pass_confirm:-ms-input-placeholder{color:#65737e;}\n.container-pass_confirm .icon{position:absolute;top:50%;margin-left:0px;margin-top:20px;z-index:1;color:#ed2849;-webkit-transition:all .55s ease;-moz-transition:all .55s ease;-ms-transition:all .55s ease;-o-transition:all .55s ease;transition:all .55s ease;}\n.container-pass_confirm input#pass_confirm:focus, .container-pass_confirm input#pass_confirm:active{outline:none;}\n.container-pass_confirm:hover .icon{margin-top:16px;color:#28ed28;-webkit-transform:scale(1.5);-moz-transform:scale(1.5);-ms-transform:scale(1.5);-o-transform:scale(1.5);transform:scale(1.5);}\n.container-registered{width:300px;vertical-align:middle;white-space:pre;position:relative;}\n.container-registered input#registered{width:345px;height:45px;background:#2b303b;border:none;font-size:14pt;float:left;color:#262626;padding-left:6px;color:#fff;}\n.container-registered .icon{position:absolute;top:50%;margin-left:10px;margin-top:20px;z-index:1;color:#edcc28;-webkit-transition:all .55s ease;-moz-transition:all .55s ease;-ms-transition:all .55s ease;-o-transition:all .55s ease;transition:all .55s ease;}\n.container-registered input#registered:focus, .container-registered input#registered:active{outline:none;}\n.container-registered:hover .icon{margin-top:16px;color:#28ed28;-webkit-transform:scale(1.5);-moz-transform:scale(1.5);-ms-transform:scale(1.5);-o-transform:scale(1.5);transform:scale(1.5);}\n.container1{margin-bottom:100px;padding-left:45px;position:relative;}\n.container2{width:300px;vertical-align:middle;white-space:pre;position:relative;}\n.container2{width:300px;height:45px;background:#2b303b;border:none;font-size:10pt;float:left;color:#262626;padding-left:45px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;color:#fff;}[/PHP]\n\n\n[LIST]\n[*]При замене usercp_register.tpl[B][COLOR=#ff0000] сохраните оригинал.[/COLOR][/B]\n[/LIST]\n[/SPOILER]",
+    "owner": "Kryl"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1438699269,
+      "file_size": 19642,
+      "filename": "тест (1).webp",
+      "height": 485,
+      "id": 4019,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/test-1-webp.4019/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4023-3a32f19720afedf7a63330c039a4a079.jpg?hash=e-8t3mZmUG",
+      "width": 1305
+    },
+    {
+      "attach_date": 1438699272,
+      "file_size": 19714,
+      "filename": "тест (2).webp",
+      "height": 485,
+      "id": 4020,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/test-2-webp.4020/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4024-53f2c72a111cdaace0916535f9dfeae4.jpg?hash=5mvMitTyPG",
+      "width": 1305
+    },
+    {
+      "attach_date": 1438699280,
+      "file_size": 22442,
+      "filename": "тест (3).webp",
+      "height": 485,
+      "id": 4021,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/test-3-webp.4021/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4025-ce46672c5f5c4219e3cf87fdb72814ec.jpg?hash=AG2Z8VBRQr",
+      "width": 1305
+    },
+    {
+      "attach_date": 1438699281,
+      "file_size": 21688,
+      "filename": "тест (4).webp",
+      "height": 485,
+      "id": 4022,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/test-4-webp.4022/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4026-ed5f1ac58be17c441c1b54234a1c934c.jpg?hash=Dx5Yj0OFfF",
+      "width": 1305
+    },
+    {
+      "attach_date": 1438699281,
+      "file_size": 21814,
+      "filename": "тест (5).webp",
+      "height": 485,
+      "id": 4023,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/test-5-webp.4023/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4027-6a9372c724521b0886ccc9d16dffb05f.jpg?hash=K-OwSyNP2m",
+      "width": 1305
+    },
+    {
+      "attach_date": 1438699282,
+      "file_size": 30514,
+      "filename": "тест (6).webp",
+      "height": 632,
+      "id": 4024,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/test-6-webp.4024/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4028-9a6c99dc68e2ec95baa1b31e261a32c9.jpg?hash=zIGD81AOUy",
+      "width": 1305
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> простая форма регистрации пользователей. В дальнейшем можно и профиль переделать, так как форма все равно в профиле отображается.",
+  "download_count": 269,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/241.jpg?1438634029",
+  "id": 241,
+  "is_fileless": null,
+  "last_update": 1438699245,
+  "rating_avg": 5,
+  "rating_count": 1,
+  "resource_date": 1438631028,
+  "resource_state": "visible",
+  "slug": "forma-registracii",
+  "tag_line": "Простая форма регистрации пользователей.",
+  "tags": [
+    "регистрация",
+    "форма регистрации"
+  ],
+  "title": "Форма регистрации",
+  "url_path": "/resources/forma-registracii.241/",
+  "user_id": 5626,
+  "username": "Kryl",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 269,
+      "files": [
+        {
+          "filename": "root.zip",
+          "id": 4015,
+          "local_path": null,
+          "r2_key": null,
+          "size": 24742,
+          "src_url": "https://torrentpier.com/api/resource-versions/350/download?file=4015"
+        }
+      ],
+      "id": 350,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1438631028,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/forma-registracii.241/version/350/"
+    }
+  ],
+  "view_count": 2808
+}

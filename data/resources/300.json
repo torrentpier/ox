@@ -1,0 +1,96 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Улучшение стандартной пагинации by belomaxorka.zip",
+      "id": 6087,
+      "local_path": null,
+      "r2_key": null,
+      "size": 1224,
+      "src_url": "https://torrentpier.com/api/resource-versions/528/download?file=6087"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1721561584,
+      "file_size": 4714,
+      "filename": "photo_2024-07-21_18-32-08.webp",
+      "height": 34,
+      "id": 6088,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2024-07-21_18-32-08-webp.6088/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6092-b88cc490bfb344353cf0fb227a1356c6.jpg?hash=WqgxUD8RtK",
+      "width": 423
+    }
+  ],
+  "description_parsed": "<div style=\"text-align: center\"><span style=\"color: rgb(226, 80, 65)\">Начиная с версии v2.4.4 данный мод будет по-умолчанию</span>&#8203;</div><hr /><b>Описание:</b> Добавляет генерацию SEO-тегов <b>prev</b> и <b>next</b> которые помогают в формировании поисковой выдачи. Подробнее можно почитать <a href=\"https://developers.google.com/search/blog/2011/09/pagination-with-relnext-and-relprev?hl=ru\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">тут</a>.<br />\n<b>Совместимость:</b> все версии в которых есть пацинация 🙂",
+  "download_count": 272,
+  "external_url": null,
+  "icon_url": null,
+  "id": 300,
+  "is_fileless": null,
+  "last_update": 1721561594,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1721561594,
+  "resource_state": "visible",
+  "slug": "ulucsenie-standartnoj-paginacii",
+  "tag_line": "Добавляет генерацию SEO-тегов prev и next которые помогают в формировании поисковой выдачи.",
+  "tags": [
+    "seo",
+    "seo оптимизация",
+    "генерация мета",
+    "мета тэги",
+    "мод",
+    "моды",
+    "улучшение",
+    "улучшение seo",
+    "улучшение пагинации"
+  ],
+  "title": "Улучшение стандартной пагинации",
+  "url_path": "/resources/ulucsenie-standartnoj-paginacii.300/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.0",
+  "versions": [
+    {
+      "download_count": 272,
+      "files": [
+        {
+          "filename": "[FULL] Улучшение стандартной пагинации by belomaxorka.zip",
+          "id": 6087,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1224,
+          "src_url": "https://torrentpier.com/api/resource-versions/528/download?file=6087"
+        }
+      ],
+      "id": 528,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1721561594,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/ulucsenie-standartnoj-paginacii.300/version/528/"
+    }
+  ],
+  "view_count": 670
+}

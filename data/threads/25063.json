@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 57115,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25063,
+  "last_post_date": 1389457196,
+  "node_id": 57,
+  "post_date": 1389386289,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57115,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как изменять шаблоны оформления релиза в новой версии (r400) Такого в этой версии я ненашел:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$tpl_sprintf = array(\n&#039;picture&#039; =&gt; &quot;[poster]%s[/poster]\\n\\n&quot;,\n&#039;release_name&#039; =&gt; &quot;[align=center][b][size=$title_font_size]%s[/size][/b][/align][hr][hr]\\n\\n&quot;,\n&#039;year&#039; =&gt; &quot;[*][img]http://krumax.org/pictures/4ceb08952b65f8e15c266e9443a24835.png[/img][b]Год выхода:[b] %s\\n&quot;,\n&#039;country&#039; =&gt; &quot;[*][img]http://krumax.org/pictures/61acbb95e4ebc637527ab2b60faaef22.png[/img][b]Страна:[/b] %s\\n&quot;,\n&#039;genre&#039; =&gt; &quot;[*][img]http://krumax.org/pictures/61acbb95e4ebc637527ab2b60faaef22.png[/img][b]Жанр:[/b] %s\\n&quot;,\n&#039;playtime&#039; =&gt; &quot;[*][img]http://krumax.org/pictures/880881d3fb191a943d4e4f64fd55f73f.png[/img][b]Продолжительность:[/b] %s\\n [*][img]http://krumax.org/pictures/b5f54c116fbc8166bab99036b3584e44.png[/img]&quot;,\n&#039;director&#039; =&gt; &quot;[*][img]http://krumax.org/pictures/510387ea6f425e2dd668830bffb0a18f.png[/img][b]Режисёр:[/b] %s\\n&quot;,\n&#039;casting&#039; =&gt; &quot;[*][img]http://krumax.org/pictures/e2e8e5631b0c008b17484f97a101af5d.png[/img][b]В ролях:[/b] %s\\n [hr]&quot;,\n&#039;description&#039; =&gt; &quot;[*][img]http://krumax.org/pictures/8ba04d16fdf83b5b4a9607bf10babc0d.png[/img][b]Описание:[/b] \\n %s \\n[hr]&quot;,\n&#039;moreinfo&#039; =&gt; &quot;[*][img]http://krumax.org/pictures/8ba04d16fdf83b5b4a9607bf10babc0d.png[/img][b]Доп. информация:[/b] \\n %s \\n[hr]&quot;,\n&#039;quality&#039; =&gt; &quot;[*][img]http://krumax.org/pictures/60512b152955d10f05e51fabe161cd2a.png[/img][b]Качество видео:[/b] %s\\n&quot;,\n&#039;format&#039; =&gt; &quot;[*][img]http://krumax.org/pictures/ca0c5b1c8e0b6d40f7bc15b4b642c2e9.png[/img][b]Формат:[/b] %s\\n&quot;,\n&#039;video_codec&#039; =&gt; &quot;[*][img]http://krumax.org/pictures/9d02270feec0cbd1e933d041a0c68f32.png[/img][b]Видео кодек:[/b] %s\\n&quot;,\n&#039;audio_codec&#039; =&gt; &quot;[*][img]http://krumax.org/pictures/d6d97aa12c7495371dfa4e7b790aa2a0.png[/img][b]Аудио кодек:[/b] %s\\n&quot;,\n&#039;video&#039; =&gt; &quot;[*][img]http://krumax.org/pictures/9d02270feec0cbd1e933d041a0c68f32.png[/img][b]Видео:[/b] %s\\n&quot;,\n&#039;audio&#039; =&gt; &quot;[*][img]http://krumax.org/pictures/d6d97aa12c7495371dfa4e7b790aa2a0.png[/img][b]Аудио:[/b] %s\\n&quot;,\n);</pre><span style=\"font-family: 'monospace'\"><b><span style=\"color: #007700\"><span style=\"font-size: 13px\"><span style=\"font-family: 'monospace'\">Что делать где изменять?</span></span></span></b></span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1389386289,
+      "user_id": 4967,
+      "user_title": "User",
+      "username": "Роман Савчин"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57124,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Роман Савчин</b>, для начала надо придумать что то свое, а не брать чужие идеи у других )",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1389421745,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57147,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"drew\"><b>Роман Савчин</b>, для начала надо придумать что то свое, а не брать чужие идеи у других )</blockquote> <br />\nТы меня не так понял я хочу изменить стандартный шаблон игр Этот:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;?php\n \nif (!defined(&#039;IN_PHPBB&#039;)) die(basename(__FILE__));\nif (!$topic_tpl) die(&#039;$topic_tpl missing&#039;);\n \n$img_align = &#039;=right&#039;;\n$title_font_size = 24;\n \nif (@$_REQUEST[&#039;preview&#039;] &amp;&amp; is_array($_POST[&#039;msg&#039;]))\n{\n    $tpl_items = array(\n        &#039;release_name&#039;,\n        &#039;picture&#039;,\n        &#039;year&#039;,\n        &#039;genre&#039;,\n        &#039;developer&#039;,\n        &#039;publisher&#039;,\n        &#039;platform&#039;,\n        &#039;region&#039;,\n        &#039;medium&#039;,\n        &#039;age&#039;,\n        &#039;sysreq&#039;,\n        &#039;source_type&#039;,\n        &#039;firmware&#039;,\n        &#039;cd_image_type&#039;,\n        &#039;can_play_xbox360&#039;,\n        &#039;localization&#039;,\n        &#039;local_voice&#039;,\n        &#039;translation_type&#039;,\n        &#039;medicine&#039;,\n        &#039;multiplayer&#039;,\n        &#039;description&#039;,\n        &#039;moreinfo&#039;,\n        &#039;screen_shots&#039;,\n    );\n \n    $tpl_sprintf = array(\n        &#039;picture&#039;      =&gt; &quot;[img{$img_align}]%s[/img]\\n\\n&quot;,\n        &#039;release_name&#039; =&gt; &quot;[size=$title_font_size]%s[/size]\\n\\n&quot;,\n    );\n \n    $message = $subject = &#039;&#039;;\n    $msg = $sbj_ext = array();\n \n    foreach ($tpl_items as $item)\n    {\n        $msg[$item] = @$_POST[&#039;msg&#039;][$item];\n    }\n    array_deep($msg, &#039;trim&#039;);\n \n    if ($msg)\n    {\n        $message = tpl_build_message($msg);\n        $subject = $msg[&#039;release_name&#039;];\n        $subject .= ($msg[&#039;year&#039;]) ? &#039; (&#039;. trim($msg[&#039;year&#039;], &#039;/&#039;) .&#039;)&#039; : &#039;&#039;;\n        $subject .= ($msg[&#039;publisher&#039;]) ? &#039; (&#039;. trim($msg[&#039;publisher&#039;], &#039;/&#039;) .&#039;)&#039; : &#039;&#039;;\n \n        if ($msg[&#039;localization&#039;] == $lang[&#039;TPL&#039;][&#039;UI_LANG_OPTIONS&#039;][0]) $subject .= &#039; (ENG+RUS)&#039;;\n        if ($msg[&#039;localization&#039;] == $lang[&#039;TPL&#039;][&#039;UI_LANG_OPTIONS&#039;][1]) $subject .= &#039; (ENG)&#039;;\n        if ($msg[&#039;localization&#039;] == $lang[&#039;TPL&#039;][&#039;UI_LANG_OPTIONS&#039;][2]) $subject .= &#039; (RUS)&#039;;\n        if ($msg[&#039;localization&#039;] == $lang[&#039;TPL&#039;][&#039;UI_LANG_OPTIONS&#039;][3]) $subject .= &#039; (DEU)&#039;;\n       \n        if ($msg[&#039;source_type&#039;] == $lang[&#039;TPL&#039;][&#039;SOURCE_TYPE_OPTIONS&#039;][0]) $subject .= &#039; [L]&#039;;\n        if ($msg[&#039;source_type&#039;] == $lang[&#039;TPL&#039;][&#039;SOURCE_TYPE_OPTIONS&#039;][1]) $subject .= &#039; [P]&#039;;\n        if ($msg[&#039;source_type&#039;] == $lang[&#039;TPL&#039;][&#039;SOURCE_TYPE_OPTIONS&#039;][2]) $subject .= &#039; [Rip]&#039;;\n        if ($msg[&#039;source_type&#039;] == $lang[&#039;TPL&#039;][&#039;SOURCE_TYPE_OPTIONS&#039;][3]) $subject .= &#039; [RePack]&#039;;\n    }\n}</pre> <br />\nНа другой свой",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1389444622,
+      "user_id": 4967,
+      "user_title": "User",
+      "username": "Роман Савчин"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57156,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "можно обновиться до последней ревизии, и использовать встроенный конструктор шаблонов.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1389453325,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57160,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Дык, скажи что именно не получается то у тебя ?",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1389457196,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "sablony-oformlenia-reliza",
+  "sticky": false,
+  "tags": [],
+  "title": "Шаблоны оформления релиза",
+  "url_path": "/threads/sablony-oformlenia-reliza.25063/",
+  "user_id": 4967,
+  "username": "Роман Савчин",
+  "view_count": 1856
+}

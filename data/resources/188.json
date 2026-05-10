@@ -1,0 +1,71 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "Несколько вариантов вставки спойлера.zip",
+      "id": 3239,
+      "local_path": null,
+      "r2_key": null,
+      "size": 1004,
+      "src_url": "https://torrentpier.com/api/resource-versions/241/download?file=3239"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]Несколько вариантов вставки спойлера:\n\nОткрыть: /templates/default/posting_editor.tpl\nНайти:\nHTML:\nbbcode.addTag(\"codeAlign\", function(e) { var v=e.value; e.selectedIndex=0; return \"align=\"+v }, \"/align\");\nПосле вставить:\nHTML:\nbbcode.addTag(\"codeSpoiler\", function(e) { var v=e.value; e.selectedIndex=0; return \"spoiler=\\\"\"+v+\"\\\"\" }, \"/spoiler\");\nНайти и удалить:\nHTML:\n<input type=\"button\" value=\"{L_SPOILER}\" name=\"codeSpoiler\" title=\"{L_SPOILER}\" style=\"width: 65px;\" />\nНайти:\nHTML:\n<select name=\"codeAlign\" class=\"text_size\">\n  <option value=\"left\" selected=\"selected\">{L_ALIGN}</option>\n  <option value=\"left\"> {L_LEFT}</option>\n  <option value=\"right\"> {L_RIGHT}</option>\n  <option value=\"center\"> {L_CENTER}</option>\n  <option value=\"justify\"> {L_JUSTIFY}</option>\n</select>\nПосле вставить:\nHTML:\n&nbsp;\n<select name=\"codeSpoiler\">\n    <option selected=\"selected\">{L_SPOILER}</option>\n    <option value>Простой спойлер</option>\n    <option value=\"ОСТОРОЖНО СПОЙЛЕР!!!\">ОСТОРОЖНО СПОЙЛЕР!!!</option>\n    <option value=\"Открой меня\">Открой меня</option>\n    <option value=\"Очень скрытый текст\">Очень скрытый текст</option>\n    <option value=\"ФОТО\">ФОТО</option>\n    <option value=\"ВИДЕО\">ВИДЕО</option>\n    <option value=\"18+\">18+</option>\n    <option value=\"Внимание: ненормативная лексика!\">Внимание: ненормативная лексика!</option>\n    <option value=\"Постер\">Постер</option>\n    <option value=\"Скриншоты\">Скриншоты</option>\n    <option value=\"Скринлист\">Скринлист</option>\n    <option value=\"Треклист\">Треклист</option>\n    <option value=\"Информация по видеофайлу\">Информация по видеофайлу</option>\n    <option value=\"Читать внимательно\">Читать внимательно</option>\n    <option value=\"Дополнительная информация\">Дополнительная информация</option>\n    <option value=\"Тех. инфо\">Тех. инфо</option>\n</select>\n&nbsp;\nНайти и удалить:\nHTML:\nbbcode.addTag(\"codeSpoiler\", \"spoiler\", null, \"\",  ctrl);[/PHP]\n[/SPOILER]",
+    "owner": "Virtuoz",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание:</b> добавляет в редактор несколько вариантов вставки спойлера.",
+  "download_count": 248,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/188.jpg?1425421476",
+  "id": 188,
+  "is_fileless": null,
+  "last_update": 1425421469,
+  "rating_avg": 2,
+  "rating_count": 4,
+  "resource_date": 1425421469,
+  "resource_state": "visible",
+  "slug": "bb-kod-varianty-vstavki-spojlera",
+  "tag_line": "Добавляет в редактор несколько вариантов вставки спойлера.",
+  "tags": [],
+  "title": "BB-код: варианты вставки спойлера",
+  "url_path": "/resources/bb-kod-varianty-vstavki-spojlera.188/",
+  "user_id": 462,
+  "username": "Virtuoz",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 248,
+      "files": [
+        {
+          "filename": "Несколько вариантов вставки спойлера.zip",
+          "id": 3239,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1004,
+          "src_url": "https://torrentpier.com/api/resource-versions/241/download?file=3239"
+        }
+      ],
+      "id": 241,
+      "rating_avg": 2,
+      "rating_count": 4,
+      "release_date": 1425421469,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/bb-kod-varianty-vstavki-spojlera.188/version/241/"
+    }
+  ],
+  "view_count": 641
+}

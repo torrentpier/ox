@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 76558,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 36451,
+  "last_post_date": 1424938063,
+  "node_id": 57,
+  "post_date": 1424881578,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 76558,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как можно ограничить скачивание для гостей? Например по количеству торрентов или по мегабайтам, а потом выдавать сообщение &#039;Зарегистрируйтесь на трекере&#039;",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1424881578,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 76623,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "В файле dl.php добавить пару запросов:<br />\n<ol>\n<li data-xf-list-type=\"ol\">Из некой таблицы bb_dl_ips перед скачиванием делаем выборку числа скачиваний для определенного IP. Если больше 10 например - bb_die(&#039;Давай до свидания&#039;);<br />\n</li>\n<li data-xf-list-type=\"ol\">Перед отдачей торрент-файла делать запрос в базу с IP пользователя, в некую таблицу bb_dl_ips при условии что юзер гость. В таблице два поля, ip и count, делать обновление (+1) к count если запись уже есть в таблице.</li>\n</ol>Таблицу bb_dl_ips раз в сутки по крону чистить.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1424906701,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 76649,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1424938063,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "ogranicenie-na-skacivanie-gostam",
+  "sticky": false,
+  "tags": [],
+  "title": "Ограничение на скачивание гостям",
+  "url_path": "/threads/ogranicenie-na-skacivanie-gostam.36451/",
+  "user_id": 0,
+  "username": "ler",
+  "view_count": 1005
+}

@@ -1,0 +1,171 @@
+{
+  "category": {
+    "description": "Section with all templates for TorrentPier.",
+    "id": 5,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Templates",
+    "view_url": "https://torrentpier.com/resources/categories/templates.5/"
+  },
+  "current_files": [
+    {
+      "filename": "Шаблон Nifty.zip",
+      "id": 5888,
+      "local_path": null,
+      "r2_key": null,
+      "size": 1317552,
+      "src_url": "https://torrentpier.com/api/resource-versions/478/download?file=5888"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "yes",
+    "installation": "В папке с шаблоном файл install.txt.",
+    "owner": "ilyadimid",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1710083207,
+      "file_size": 16186,
+      "filename": "photo_1_2024-03-10_21-57-01.webp",
+      "height": 665,
+      "id": 5881,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_1_2024-03-10_21-57-01-webp.5881/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5885-ee908001ff6aa47801ce273bfac10ad9.jpg?hash=63ETUZVIsO",
+      "width": 1280
+    },
+    {
+      "attach_date": 1710083207,
+      "file_size": 31372,
+      "filename": "photo_2_2024-03-10_21-57-01.webp",
+      "height": 647,
+      "id": 5882,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2_2024-03-10_21-57-01-webp.5882/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5886-c5384c39dc22eb3016446f73bfe085c5.jpg?hash=Zzpq1VRcPU",
+      "width": 1280
+    },
+    {
+      "attach_date": 1710083207,
+      "file_size": 38332,
+      "filename": "photo_3_2024-03-10_21-57-01.webp",
+      "height": 642,
+      "id": 5883,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_3_2024-03-10_21-57-01-webp.5883/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5887-700a72cef2a6bd5d3e155b72a0548e86.jpg?hash=dvXr_RN7xQ",
+      "width": 1280
+    },
+    {
+      "attach_date": 1710083207,
+      "file_size": 34006,
+      "filename": "photo_4_2024-03-10_21-57-01.webp",
+      "height": 599,
+      "id": 5884,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_4_2024-03-10_21-57-01-webp.5884/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5888-8f4c0a8e0e6c717f1e4914b139c0e3a1.jpg?hash=oLENMuQGH3",
+      "width": 1280
+    },
+    {
+      "attach_date": 1710083207,
+      "file_size": 39196,
+      "filename": "photo_5_2024-03-10_21-57-01.webp",
+      "height": 641,
+      "id": 5885,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_5_2024-03-10_21-57-01-webp.5885/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5889-03413fb709175e0991a5d737ea8f4a44.jpg?hash=3ly7wLLMnz",
+      "width": 1280
+    },
+    {
+      "attach_date": 1710083207,
+      "file_size": 24876,
+      "filename": "photo_6_2024-03-10_21-57-01.webp",
+      "height": 642,
+      "id": 5886,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_6_2024-03-10_21-57-01-webp.5886/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5890-9f8e4f4ef992ec59a766c5e7cc67b355.jpg?hash=L3pB3x13-f",
+      "width": 1280
+    },
+    {
+      "attach_date": 1710083207,
+      "file_size": 38188,
+      "filename": "photo_7_2024-03-10_21-57-01.webp",
+      "height": 768,
+      "id": 5887,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_7_2024-03-10_21-57-01-webp.5887/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5891-763180fd550ea747e3a736b2853f5d26.jpg?hash=YvidxhDgBd",
+      "width": 1280
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Адаптивный шаблон. Только светлая тема. Современный дизайн.<br />\n<b>Совместимость:</b> с v2.1.5.",
+  "download_count": 313,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/290.jpg?1710083211",
+  "id": 290,
+  "is_fileless": null,
+  "last_update": 1710083211,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1710083211,
+  "resource_state": "visible",
+  "slug": "sablon-nifty",
+  "tag_line": "Шаблон Nifty для TorrentPier v2.1.5",
+  "tags": [
+    "шаблон",
+    "шаблон под 2.1.5"
+  ],
+  "title": "Шаблон «Nifty»",
+  "url_path": "/resources/sablon-nifty.290/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.0",
+  "versions": [
+    {
+      "download_count": 313,
+      "files": [
+        {
+          "filename": "Шаблон Nifty.zip",
+          "id": 5888,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1317552,
+          "src_url": "https://torrentpier.com/api/resource-versions/478/download?file=5888"
+        }
+      ],
+      "id": 478,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1710083211,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/sablon-nifty.290/version/478/"
+    }
+  ],
+  "view_count": 1644
+}

@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 514,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 52,
+  "last_post_date": 1311315721,
+  "node_id": 57,
+  "post_date": 1310681429,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 514,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "В <b>TorrentPier II</b> крон уже <u>отвязан</u>, но нужно в админке движка, в пункте Планировщик задач (Cron) выключить его.<br />\n <br />\nЗапуск для <b>windows</b><br />\n<ol>\n<li data-xf-list-type=\"ol\">скачиваем и устанавливаем nncron (<a href=\"http://www.nncron.ru/index_ru.shtml\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://www.nncron.ru/index_ru.shtml</a>)</li>\n<li data-xf-list-type=\"ol\">добавляем задачу<br />\n<pre class=\"xfBb-code\" data-lang=\"\">Time: */5  * * * * *\nAction:\nStartIn: &quot;C:\\путь до папки\\www\\cron\\&quot;\nSWHide  NormalPriority\nSTART-APP: C:\\путь до папки\\php5\\php.exe -f C:\\путь до папки\\www\\cron\\cron.php</pre></li>\n<li data-xf-list-type=\"ol\">усё</li>\n</ol><b><span style=\"color: #ff0000\">*требования </span></b><span style=\"color: #000000\">- должен быть установлен <b>php cli </b></span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1310681429,
+      "user_id": 2,
+      "user_title": "User",
+      "username": "_Xz_"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 637,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "под Linux/Unix<br />\nНи для кого не секрет, что в юникс-подобных системах крон монстр и отличная вещь(намного лучше встроенного планировщика в Винде)<br />\nДля отвезки в таких системах приведенный выше способ подходит, ввиду того что nncron это портатированный никсовый крон.<br />\nОтличается только синтаксис:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">*/5 * * ** путь до папки/php/php -f /путь до папки/www/cron/cron.php</pre>где<br />\n*/5 * ** * -выполняем команду каждый день,каждые 5-минут.<br />\nпуть до php можно узнать командой <b>whereis php</b>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1311315721,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "otvazka-zapusk-krona-instrukcia",
+  "sticky": false,
+  "tags": [],
+  "title": "Отвязка/запуск крона (инструкция)",
+  "url_path": "/threads/otvazka-zapusk-krona-instrukcia.52/",
+  "user_id": 2,
+  "username": "_Xz_",
+  "view_count": 23281
+}

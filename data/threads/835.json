@@ -1,0 +1,150 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 10605,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 835,
+  "last_post_date": 1327762357,
+  "node_id": 57,
+  "post_date": 1327747739,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1327747690,
+          "file_size": 217252,
+          "filename": "Безымянный.webp",
+          "height": 547,
+          "id": 598,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bezymannyj-webp.598/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/0/598-1edeea3fe7a8f4aab369861d689ab8fe.jpg?hash=UPhzijhha4",
+          "width": 1115
+        }
+      ],
+      "id": 10605,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Приветствую торентпирщики! юзаю TP II 2.4 (beta) (R340), при переносе/удалении темы вылазит такая бяка (см. скрин)<br />\n <br />\nвот собсенно эта линия:<br />\nvalidate_topics($forum_id, &amp;$req_topics, &amp;$topic_titles);",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1327747739,
+      "user_id": 622,
+      "user_title": "User",
+      "username": "aamlin"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10617,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Что за хостинг?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1327759751,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10618,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>aamlin</b>, gzip отключай<br />\n$bb_cfg[&#039;gzip_compress&#039;]      = true; <br />\nна <br />\n$bb_cfg[&#039;gzip_compress&#039;]      = false;",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1327759874,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10620,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>DarkMod</b>, AMD Athlon(tm) 64 X2 Dual Core Processor 3800+ с 2 гигами памяти на борту, Linux Gentoo с hardened-профилем<br />\ndev-db/mysql-5.1.56<br />\ndev-lang/php-5.3.8<br />\nwww-servers/nginx-1.0.10 <br />\n <br />\n <br />\n<b>Locer</b>, в modcp.php такого нет",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1327761476,
+      "user_id": 622,
+      "user_title": "User",
+      "username": "aamlin"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10621,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>aamlin</b>, в config.php",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1327761556,
+      "user_id": 30,
+      "user_title": "User",
+      "username": "krumax"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10623,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо Господа, работает😛",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1327762357,
+      "user_id": 622,
+      "user_title": "User",
+      "username": "aamlin"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "osibka-pri-udalenii-temy",
+  "sticky": false,
+  "tags": [],
+  "title": "ошибка при удалении темы",
+  "url_path": "/threads/osibka-pri-udalenii-temy.835/",
+  "user_id": 622,
+  "username": "aamlin",
+  "view_count": 1347
+}

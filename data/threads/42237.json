@@ -1,0 +1,104 @@
+{
+  "custom_fields": {
+    "torrentpier": ""
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95718,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42237,
+  "last_post_date": 1707676855,
+  "node_id": 57,
+  "post_date": 1707504515,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1707504494,
+          "file_size": 37192,
+          "filename": "1707504466415.webp",
+          "height": 853,
+          "id": 5812,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1707504466415-webp.5812/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5816-3f2249a7cc6572519b26f21f1ab94a56.jpg?hash=WAwQdQhlF9",
+          "width": 625
+        }
+      ],
+      "id": 95718,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ктото может помочь с парсером, вот такие теги NFO не берет в спойлер, также не форматирует, только если отредактироовать топик после.<br />\n<img src=\"https://torrentpier.com/attachments/5812/\" alt=\"1707504466415.webp\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1707504515,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95720,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">Ктото может помочь с парсером, вот такие теги NFO не берет в спойлер, также не форматирует, только если отредактироовать топик после.<br />\n<a href=\"https://torrentpier.com/attachments/5812/\">View attachment 5812</a></blockquote>Это не похоже на тэг вообще (Я про NFO строкучку). Парсер который вы используйте точно подразумевает парсинг nfo тэгов?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1707566551,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95722,
+      "is_admin": false,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Спойлер пример:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$text = preg_replace(&#039;/&lt;div class=&quot;sp-body&quot; title=&quot;([^&lt;]*?)&quot;&gt;([^&lt;]*?)&lt;(?=\\/)\\/div&gt;([\\s\\S]*?)&lt;([^&lt;]*?)\\/div&gt;/&#039;, &quot;[spoiler=\\&quot;\\\\1\\&quot;]\\n\\\\2\\n[/spoiler]&quot;, $text);</pre><br />\nАналогично нужно смотреть какие регулярки использует ресурс, с которого происходит парсинг. Откуда парсите (текст ссылки напишите под спойлер, а лучше в ЛС)?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1707676855,
+      "user_id": 1546,
+      "user_title": "Administrator",
+      "username": "Conteo"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "tegi-nfo-ne-beret-v-spojler",
+  "sticky": false,
+  "tags": [],
+  "title": "теги NFO не берет в спойлер",
+  "url_path": "/threads/tegi-nfo-ne-beret-v-spojler.42237/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 723
+}

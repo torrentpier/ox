@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 62068,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 26116,
+  "last_post_date": 1408901906,
+  "node_id": 111,
+  "post_date": 1408901827,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62068,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1698749331,
+      "message_parsed": "<b>Ссылка: </b><a href=\"https://github.com/torrentpier/torrentpier/archive/refs/tags/v2.0.598.zip\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Прямая загрузка</a><br />\n <br />\n<b>Описание:</b><br />\n <br />\nR597<br />\n <br />\nДобавлена схема обновления базы и файлов до ревизии r600 с предыдущей стабильной. Для продвинутых пользователей уже возможно ручное обновление, путем последовательного выполнения запросов и запуска конвертеров &quot;сложных&quot; ревизий. Автоматический конвертер будет в ревизии r599.<br />\n <br />\nОсновные изменения в данной ревизии:<br />\n <br />\n- добавлен поиск раздач по info-hash;<br />\n- добавлен вывод info-hash торрента в теме;<br />\n- добавлен недостающий конвертер на версию r496;<br />\n <br />\n- переделано подключение языков (теперь достаточно закинуть папку и указать его в списке доступных для выбора пользователю в файле config.php);<br />\n <br />\n- исправлена ошибка с автоматическим выбором украинского языка (язык переименован для соответствия стандарту);<br />\n- исправлена ошибка с генерацией atom-лент в случае их отсутствия;<br />\n- исправлено двойное подключение SWFObject в скриптах;<br />\n- исправлено отображение колонок в просмотре форума (небольшие правки стиля).",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1408901827,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62069,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Ну собственно по схеме обновления уже можно без проблем обновиться, все запросы до единого готовы, только новые файлы по очереди закидывай да запросы выполняй. Если кто в состоянии это сделать - милости прошу начинать обновляться. Автоматический конвертер в 599 ревизии только будет.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1408901906,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "r597-dobavlena-shema-obnovlenia-bazy-i-fajlov-do-r600-dobavlen-poisk-razdac-po-info-hash",
+  "sticky": false,
+  "tags": [],
+  "title": "R597: Добавлена схема обновления базы и файлов до r600; добавлен поиск раздач по info-hash...",
+  "url_path": "/threads/r597-dobavlena-shema-obnovlenia-bazy-i-fajlov-do-r600-dobavlen-poisk-razdac-po-info-hash.26116/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 1944
+}

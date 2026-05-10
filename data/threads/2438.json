@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 27737,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 2438,
+  "last_post_date": 1362307460,
+  "node_id": 57,
+  "post_date": 1362300886,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27737,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<img src=\"http://cs421025.vk.me/v421025552/427a/-MOtLMFSqqc.jpg\" alt=\"\" /><br />\n<span style=\"font-size: 11px\"><span style=\"font-family: 'tahoma'\"><span style=\"color: #000000\"> при добавлении простого торрента без [сайт] выдает эту картинку</span></span></span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1362300886,
+      "user_id": 4166,
+      "user_title": "User",
+      "username": "nec"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27740,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>nec</b>, в конфиг рнр в строке -<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">// Torrents\n$bb_cfg[&#039;torrent_sign&#039;]  = &#039;сюды адрес трекера в скобках&#039;;        // e.g. &quot;[yoursite.com]&quot;</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1362304725,
+      "user_id": 782,
+      "user_title": "User",
+      "username": "qaqra"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27748,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "спасибо",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1362307460,
+      "user_id": 4166,
+      "user_title": "User",
+      "username": "nec"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "pomogite-ubrat-etu-osibku",
+  "sticky": false,
+  "tags": [],
+  "title": "Помогите убрать эту ошибку",
+  "url_path": "/threads/pomogite-ubrat-etu-osibku.2438/",
+  "user_id": 4166,
+  "username": "nec",
+  "view_count": 1019
+}

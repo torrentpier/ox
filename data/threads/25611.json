@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 57852,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25611,
+  "last_post_date": 1389873299,
+  "node_id": 111,
+  "post_date": 1389873299,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57852,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 554: Начало очистки движка от непрофильного мусора. Удаление встроенной галереи для з</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">glix08</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/install/sql/mysql.sql \n    Modify    /trunk/upload/admin/admin_board.php \n    Modify    /trunk/upload/config.php \n    Delete    /trunk/upload/gallery.php \n    Modify    /trunk/upload/includes/functions.php \n    Modify    /trunk/upload/includes/functions_admin.php \n    Modify    /trunk/upload/includes/page_header.php \n    Modify    /trunk/upload/language/lang_english/lang_admin.php \n    Delete    /trunk/upload/language/lang_english/lang_gallery.php \n    Modify    /trunk/upload/language/lang_english/lang_main.php \n    Modify    /trunk/upload/language/lang_russian/lang_admin.php \n    Delete    /trunk/upload/language/lang_russian/lang_gallery.php \n    Modify    /trunk/upload/language/lang_russian/lang_main.php \n    Delete    /trunk/upload/pictures \n    Modify    /trunk/upload/templates/admin/admin_board.tpl \n    Delete    /trunk/upload/templates/default/gallery.tpl \n    Modify    /trunk/upload/templates/default/page_header.tpl \n\nНачало очистки движка от непрофильного мусора. Удаление встроенной галереи для загрузки изображений. Для хранения изображений к раздачам отныне стоит использовать сторонние хостинги или собственные решения.</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1389873299,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "revision-554-nacalo-ocistki-dvizka-ot-neprofil-nogo-musora-udalenie-vstroennoj-galerei-dla-z",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 554: Начало очистки движка от непрофильного мусора. Удаление встроенной галереи для з",
+  "url_path": "/threads/revision-554-nacalo-ocistki-dvizka-ot-neprofil-nogo-musora-udalenie-vstroennoj-galerei-dla-z.25611/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 912
+}

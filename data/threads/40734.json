@@ -1,0 +1,86 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 82658,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 40734,
+  "last_post_date": 1429188754,
+  "node_id": 57,
+  "post_date": 1429183082,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1429183065,
+          "file_size": 12228,
+          "filename": "081213_1619_4.webp",
+          "height": 336,
+          "id": 3538,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/081213_1619_4-webp.3538/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/3/3542-7f19d602eeb36b02ff0f875669f7c557.jpg?hash=-okRyeAI7e",
+          "width": 604
+        }
+      ],
+      "id": 82658,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как сделать доступ к Админ панели посредством авторизации.Чтобы зайти в Админку требовалось ввести какие либо данные занесенные ....Думаю многим это было бы интересно<br />\n<br />\nP.S Фото только для примера",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1429183082,
+      "user_id": 5462,
+      "user_title": "User",
+      "username": "nematik"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 82671,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5868/\">@XDA</a> за чаем. Данные админа утекли - в админку зашел без проблем любой. С лишним паролем уже сложнее.<br />\n<br />\n<a href=\"https://torrentpier.com/members/5462/\">@nematik</a> это называется htpasswd. В интернете много статей, вот в принципе готовый пошаговый сервис: <a href=\"https://htmlweb.ru/service/htpasswd.php\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://htmlweb.ru/service/htpasswd.php</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1429188754,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "dostup-k-admin-paneli",
+  "sticky": false,
+  "tags": [],
+  "title": "Доступ к админ панели",
+  "url_path": "/threads/dostup-k-admin-paneli.40734/",
+  "user_id": 5462,
+  "username": "nematik",
+  "view_count": 1193
+}

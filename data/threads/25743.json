@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 58722,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 25743,
+  "last_post_date": 1435005093,
+  "node_id": 47,
+  "post_date": 1391703156,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58722,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Пользователь Dream разместил новый ресурс:<br />\n<br />\n<a href=\"http://torrentpier.com/resources/%D0%97%D0%B0%D0%BA%D1%80%D1%8B%D1%82%D1%8B%D0%B5-%D1%80%D0%B0%D0%B7%D0%B4%D0%B0%D1%87%D0%B8.87/\" class=\"link link--internal\">Закрытые раздачи</a> - Раздачи которые закрыты правообладателем<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><a href=\"https://torrentpier.com/attachments/2411/\">View attachment 2411</a><a href=\"https://torrentpier.com/attachments/2412/\">View attachment 2412</a></blockquote><br />\n<a href=\"http://torrentpier.com/resources/%D0%97%D0%B0%D0%BA%D1%80%D1%8B%D1%82%D1%8B%D0%B5-%D1%80%D0%B0%D0%B7%D0%B4%D0%B0%D1%87%D0%B8.87/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1391703156,
+      "user_id": 737,
+      "user_title": "User",
+      "username": "Dream"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58760,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Подскажете практический смысл мода?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1391719510,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 77247,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Пользователь Exile обновил ресурс <a href=\"https://torrentpier.com/resources/zakrytye-razdachi.87/\" class=\"link link--internal\">Закрытые раздачи</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/zakrytye-razdachi.87/update?update=207\" class=\"link link--internal\">Обновление 1.1.0</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Обновлено описание ресурса</li>\n<li data-xf-list-type=\"ul\">Перепаковка в zip</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/zakrytye-razdachi.87/update?update=207\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1425224269,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84380,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "А как сделать так чтобы было не просто описание закрытой раздачи но и ссылка на неё.<br />\nЗаранее благодарен!",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1435005093,
+      "user_id": 6262,
+      "user_title": "User",
+      "username": "SoulRiver"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "zakrytye-razdaci",
+  "sticky": false,
+  "tags": [],
+  "title": "Закрытые раздачи",
+  "url_path": "/threads/zakrytye-razdaci.25743/",
+  "user_id": 737,
+  "username": "Dream",
+  "view_count": 2211
+}

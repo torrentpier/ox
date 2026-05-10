@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 47577,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 50,
+        "title": "Graphics and styles for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 17,
+    "title": "Graphics and styles for TorrentPier (archive)"
+  },
+  "id": 17249,
+  "last_post_date": 1391346806,
+  "node_id": 17,
+  "post_date": 1381578746,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 47577,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как сделать и в каком файле, чтоб форумы и подфорумы выводились следующим образом?<br />\n<b>Сейчас:</b><br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">Форум\n►подфорум►подфорум►подфорум►подфорум►подфорум\n \nНеобходимо:\n \n►подфорум\n►подфорум\n►подфорум\n►подфорум</pre> <br />\nЗаранее спасибо.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1381578746,
+      "user_id": 3930,
+      "user_title": "User",
+      "username": "soft67"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 47585,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>soft67</b>, main.css",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1381581592,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 47587,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Проблема решена. Вопрос снимается. Спасибо.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1381587355,
+      "user_id": 3930,
+      "user_title": "User",
+      "username": "soft67"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58438,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подскажите, пожалуйста, какие именно нужно сделать изменения в файле стиля?",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1391346806,
+      "user_id": 660,
+      "user_title": "User",
+      "username": "Nightwolf"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "vyvod-forumov-i-podforumov",
+  "sticky": false,
+  "tags": [],
+  "title": "Вывод форумов и подфорумов",
+  "url_path": "/threads/vyvod-forumov-i-podforumov.17249/",
+  "user_id": 3930,
+  "username": "soft67",
+  "view_count": 2565
+}

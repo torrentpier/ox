@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 20647,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 1559,
+  "last_post_date": 1348648509,
+  "node_id": 90,
+  "post_date": 1348647218,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20647,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<span style=\"font-family: 'Calibri'\">Думаю пост будет полезен.</span><br />\n<span style=\"font-family: 'Calibri'\">В любой unix-подобной операционной системе существует хранилище программного обеспечение и соответственно софт для установки/удаления/обновления.</span><br />\n<span style=\"font-family: 'Calibri'\">Давайте рассмотрим способы управления программным обеспечением в наиболее популярных операционных системах.</span><br />\n<span style=\"font-family: 'Calibri'\">Debian(и производные)</span><br />\n<span style=\"font-family: 'Calibri'\">Утилита APT.</span><br />\n<span style=\"font-family: 'Calibri'\">Перво-наперво нужно обновить список доступных пакетов с помощью команды</span><br />\n<span style=\"font-family: 'Calibri'\"><pre class=\"xfBb-code\" data-lang=\"\">apt-get update</pre></span><span style=\"font-family: 'Calibri'\">Чтобы установить программу достаточно ввести команду</span><br />\n<span style=\"font-family: 'Calibri'\"><pre class=\"xfBb-code\" data-lang=\"\">apt-get install [имя программы]</pre></span> <br />\n<span style=\"font-family: 'Calibri'\">Если же вы не знаете, как точно называется программа, то вам поможет  команда</span><br />\n<span style=\"font-family: 'Calibri'\"><pre class=\"xfBb-code\" data-lang=\"\">apt-cache search [имя программы]</pre></span> <br />\n<span style=\"font-family: 'Calibri'\">После выполнения на экран будет выведен предполагаемый список.</span><br />\n<span style=\"font-family: 'Calibri'\">Удаление программ</span><br />\n<span style=\"font-family: 'Calibri'\"><pre class=\"xfBb-code\" data-lang=\"\">apt-get remove [имя программы]</pre></span> <br />\n<span style=\"font-family: 'Calibri'\">Удаление программы и конфигурационных файлов</span><br />\n <br />\n<span style=\"font-family: 'Calibri'\"><pre class=\"xfBb-code\" data-lang=\"\">apt-get --purge remove [имя программы]</pre></span> <br />\n<span style=\"font-family: 'Calibri'\">Обновление программ</span><br />\n <br />\n<span style=\"font-family: 'Calibri'\"><pre class=\"xfBb-code\" data-lang=\"\">apt-get -u upgrade</pre></span> <br />\n<span style=\"font-family: 'Calibri'\">Обновление всей системы</span><br />\n <br />\n<span style=\"font-family: 'Calibri'\"><pre class=\"xfBb-code\" data-lang=\"\">apt-get -u dist-upgrade</pre></span>CenOS(и производные)<br />\nДля управления программным обеспечением используется утилита yum<br />\nДля поиска в репозиториях с помощью yum используются три команды: list, search и provides.<br />\n<pre class=\"xfBb-code\" data-lang=\"\">yum list [имя программы] – ищет в названиях пакетов\nyum search [имя программы] – ищет в названиях и описаниях пакетов\nyum provides [имя файла] – ищет пакеты содержащие файл\nyum install [имя программы] – устанавливает программу с зависимостями.\nyum update – обновляет всю систему.\nyum update  [имя программы] – обновит до актуальной версии программу\nyum remove  [имя программы] – удаляет программу.\nyum reinstall [имя программы] – переустановить программу</pre> <br />\n <br />\nFreebsd<br />\nПоиск нужного порта осуществляется несколькими способами.<br />\n<pre class=\"xfBb-code\" data-lang=\"\">whereis [имя программы]</pre>либо<br />\n<pre class=\"xfBb-code\" data-lang=\"\">cd /usr/ports &amp;&amp; make search name=[имя программы]</pre>Для установки порта необходимо перейти в директорию порта и выполнить команды, например<br />\n<pre class=\"xfBb-code\" data-lang=\"\">cd /usr/ports/misc/mc</pre>Далее выполняем<br />\n<pre class=\"xfBb-code\" data-lang=\"\">make &amp;&amp; make install clean &amp;&amp; rehash</pre>Удаление портов, происходит аналогично, отличаются только последняя команда, так же переходим в директорию порта и выполняем команду make deinstall<br />\n <br />\nО Freebsd можно говорить часами, прочтите хендбук прежде чем покромсать систему.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1348647218,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20648,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"kenny\">то вам поможет <s>прийдет</s> команда</blockquote>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1348648509,
+      "user_id": 630,
+      "user_title": "User",
+      "username": "notebug"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "upravlenie-programnym-obespeceniem-nix",
+  "sticky": false,
+  "tags": [],
+  "title": "Управление програмным обеспечением *nix",
+  "url_path": "/threads/upravlenie-programnym-obespeceniem-nix.1559/",
+  "user_id": 0,
+  "username": "kenny",
+  "view_count": 1337
+}

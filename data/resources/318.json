@@ -1,0 +1,109 @@
+{
+  "category": {
+    "description": "Section with all templates for TorrentPier.",
+    "id": 5,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Templates",
+    "view_url": "https://torrentpier.com/resources/categories/templates.5/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL]Шаблон DarkDefault2.zip",
+      "id": 6502,
+      "local_path": null,
+      "r2_key": null,
+      "size": 2908695,
+      "src_url": "https://torrentpier.com/api/resource-versions/646/download?file=6502"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "yes",
+    "installation": "Установить только чистый движок",
+    "owner": "DimaUZB2001",
+    "was_paid": "no"
+  },
+  "description_attachments": [],
+  "description_parsed": "<div style=\"text-align: center\"><b>Классический темный шаблон.</b> <b>для v2.1.5 ( LTS V10 ) и 2.4.11</b><br />&#8203;</div>",
+  "download_count": 593,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/318.jpg?1736668674",
+  "id": 318,
+  "is_fileless": null,
+  "last_update": 1755439540,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1736668674,
+  "resource_state": "visible",
+  "slug": "sablon-darkdefault",
+  "tag_line": "Шаблон DarkDefault для TorrentPier v2.1.5 ( LTS V10 )",
+  "tags": [],
+  "title": "Шаблон «DarkDefault»",
+  "url_path": "/resources/sablon-darkdefault.318/",
+  "user_id": 7621,
+  "username": "DimaUZB2001",
+  "version": "2.0.0",
+  "versions": [
+    {
+      "download_count": 256,
+      "files": [
+        {
+          "filename": "[FULL]Шаблон DarkDefault2.zip",
+          "id": 6502,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2908695,
+          "src_url": "https://torrentpier.com/api/resource-versions/646/download?file=6502"
+        }
+      ],
+      "id": 646,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1755439540,
+      "version_state": "visible",
+      "version_string": "2.0.0",
+      "view_url": "https://torrentpier.com/resources/sablon-darkdefault.318/version/646/"
+    },
+    {
+      "download_count": 184,
+      "files": [
+        {
+          "filename": "[FULL]Шаблон DarkDefault.zip",
+          "id": 6349,
+          "local_path": null,
+          "r2_key": null,
+          "size": 414320,
+          "src_url": "https://torrentpier.com/api/resource-versions/594/download?file=6349"
+        }
+      ],
+      "id": 594,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1738254603,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/sablon-darkdefault.318/version/594/"
+    },
+    {
+      "download_count": 157,
+      "files": [
+        {
+          "filename": "Шаблон DarkDefault.zip",
+          "id": 6317,
+          "local_path": null,
+          "r2_key": null,
+          "size": 339419,
+          "src_url": "https://torrentpier.com/api/resource-versions/590/download?file=6317"
+        }
+      ],
+      "id": 590,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1736668674,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/sablon-darkdefault.318/version/590/"
+    }
+  ],
+  "view_count": 2117
+}

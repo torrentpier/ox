@@ -1,0 +1,152 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 88628,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41542,
+  "last_post_date": 1477058886,
+  "node_id": 57,
+  "post_date": 1477049657,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1477049623,
+          "file_size": 9944,
+          "filename": "Снимок.webp",
+          "height": 253,
+          "id": 4505,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-webp.4505/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4509-446c2a323e32df3782147fa449f802e2.jpg?hash=oGWxNGMqs5",
+          "width": 493
+        }
+      ],
+      "id": 88628,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем доброго времени суток. В чем может быть проблема (с утра всё было нормально). Не могу редактировать сообщения в приватных форумах. При этом в config.php ник прописан в &quot;super_admins&quot;, а при входе в приватный форум выдает следующее сообщение:<br />\n<a href=\"https://torrentpier.com/attachments/4505/\"><img src=\"https://torrentpier.com/data/attachments/4/4509-446c2a323e32df3782147fa449f802e2.jpg?hash=oGWxNGMqs5\" alt=\"Снимок.webp\" /></a> <br />\n<br />\nВ чем может быть дело? Повторюсь, что с утра такой проблемы не было.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1477049657,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88629,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5704/\">ExPlayer</a>, а в админке права доступа какие? Если попробовать поменять туда/обратно и пересохранить? Или кеш почистить?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1477050529,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88630,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\"><a href=\"https://torrentpier.com/members/5704/\">ExPlayer</a>, а в админке права доступа какие? Если попробовать поменять туда/обратно и пересохранить? Или кеш почистить?</blockquote>Права менял, кэш чистил. Всё равно то же самое. Есть одно замечание: если разлогиниться, а потом снова залогиниться, то кнопки модератора в топике становятся доступные, но при нажатии, снова появляется сообщение о том, что нет прав, такое ощущение, что я логинюсь не под админом, а под обычным пользователем (хотя логинюсь именно под админом).",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1477050801,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88631,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5704/\">ExPlayer</a>, а в группах нужных пользователь состоит? Права доступа не изменены? Просто так таких ошибок не бывает.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1477050897,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88632,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\"><a href=\"https://torrentpier.com/members/5704/\">ExPlayer</a>, а в группах нужных пользователь состоит? Права доступа не изменены? Просто так таких ошибок не бывает.</blockquote>Да, состоит и нет не изменены. Я же говорю, что с утра всё в порядке было. Единственное, что я сегодня сделал это вышел из учетной записи администратора и зашел под учетной записью обычного пользователя, потом разлогинился и снова зашел под учетной записью администратора.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1477051035,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88635,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вопрос решился сам собой. Тему можно закрывать.",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1477058886,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "prava-dostupa-izmeneny",
+  "sticky": false,
+  "tags": [
+    "права доступа"
+  ],
+  "title": "Права доступа изменены",
+  "url_path": "/threads/prava-dostupa-izmeneny.41542/",
+  "user_id": 5704,
+  "username": "ExPlayer",
+  "view_count": 1071
+}

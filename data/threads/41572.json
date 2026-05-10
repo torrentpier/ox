@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 88913,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 41572,
+  "last_post_date": 1484599923,
+  "node_id": 80,
+  "post_date": 1479521258,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88913,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1484599938,
+      "message_parsed": "Всем привет! Установил я на поддомен TP_2.1.5_A5 ввожу логин и пароль admin и входа не происходит, нечего не работает.<br />\n<br />\nА иногда появляеться следущее<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Fatal error: DB Error [library/includes/cron/cron_run.php(18)] in /home/****/web/fox.xporno.bid/public_html/library/includes/core/mysql.php on line 804\n\nFatal error: DB Error [] in /home/****/web/fox.xporno.bid/public_html/library/includes/core/mysql.php on line 804\n\n\nВыкладываю логи ошибок с сервера, кто их понимает, пожайлуста расшифруйте.\n\nЛоги php\n\nrequired &#039;./library/Zend/Loader/StandardAutoloader.php&#039; (include_path=&#039;.:/usr/share/php:/usr/share/pear&#039;) in /home/****/web/fox.xporno.bid/public_html/common.php on line 24\n[19-Nov-2016 00:57:13 UTC] PHP Warning:  require(./library/Zend/Loader/StandardAutoloader.php): failed to open stream: No such file or directory in /home/****/web/fox.xporno.bid/public_html/common.php on line 24\n[19-Nov-2016 00:57:13 UTC] PHP Warning:  require(./library/Zend/Loader/StandardAutoloader.php): failed to open stream: No such file or directory in /home/****/web/fox.xporno.bid/public_html/common.php on line 24\n[19-Nov-2016 00:57:13 UTC] PHP Fatal error:  require(): Failed opening required &#039;./library/Zend/Loader/StandardAutoloader.php&#039; (include_path=&#039;.:/usr/share/php:/usr/share/pear&#039;) in /home/****/web/fox.xporno.bid/public_html/common.php on line 24\n[19-Nov-2016 00:59:48 UTC] PHP Fatal error:  DB Error [library/includes/cron/cron_run.php(18)] in /home/****/web/fox.xporno.bid/public_html/library/includes/core/mysql.php on line 804\n[19-Nov-2016 00:59:48 UTC] PHP Fatal error:  DB Error [] in /home/****/web/fox.xporno.bid/public_html/library/includes/core/mysql.php on line 804\n\n\nЛоги MySQL\n\n#002006 MySQL server has gone away\n\nSET SESSION myisam_sort_buffer_size = 16*1024*1024 , bulk_insert_buffer_size = 8*1024*1024 , join_buffer_size = 4*1024*1024 , read_buffer_size = 4*1024*1024 , read_rnd_buffer_size = 8*1024*1024 , sort_buffer_size = 4*1024*1024 , tmp_table_size = 80*1024*1024 , group_concat_max_len = 1*1024*1024\n\nSource  : library/includes/cron/cron_run.php(18) :: db1.admin_torrent\nIP      :\nDate    : 2016-11-19 00:59:48\nAgent   : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586\nReq_URI : /\nReferer :\nMethod  : GET\nPID     : 21931\nRequest : Array\n(\n)______________________________________________________________________________\n\n#002006 MySQL server has gone away\n\nSELECT RELEASE_LOCK(&#039;admin_torrent_cron&#039;) AS lock_result\n\nSource  :  :: db1.admin_torrent\nIP      :\nDate    : 2016-11-19 00:59:48\nAgent   : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586\nReq_URI : /\nReferer :\nMethod  : GET\nPID     : 21931\nRequest : Array\n(\n)______________________________________________________________________________</pre><br />\n<br />\n<br />\nТакже жду инструкций, как все исправить.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1479521258,
+      "user_id": 7136,
+      "user_title": "User",
+      "username": "Terminator"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89474,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Terminator\">#002006 MySQL server has gone away</blockquote>Пишите хостеру. MySQL мрет.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1484599923,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 1,
+  "slug": "ne-mogu-zajti-na-treker-fatal-error-db-error",
+  "sticky": false,
+  "tags": [],
+  "title": "Не могу зайти на трекер Fatal error: DB Error",
+  "url_path": "/threads/ne-mogu-zajti-na-treker-fatal-error-db-error.41572/",
+  "user_id": 7136,
+  "username": "Terminator",
+  "view_count": 1199
+}

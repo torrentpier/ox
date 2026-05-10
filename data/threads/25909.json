@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 60458,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25909,
+  "last_post_date": 1400015635,
+  "node_id": 57,
+  "post_date": 1398111490,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60458,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Кто нить практикует загрузку, и размещение торрент файлов на внешнем ftp диске ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1398111490,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60476,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "что все бекапят по 100 000 торрент файлов ? никто не юзал ?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1398195348,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60477,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">что все бекапят по 100 000 торрент файлов ? никто не юзал ?</blockquote> <br />\n100 000 не много вроде выходит, не больше 1000 мб.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1398227896,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60480,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "А можно все таки как то помочь с ftp пжл................<br />\nЕсть ftp сервер (диск), есть логин и пароль, пытаюсь включить загрузку приложений по ftp, проверка настроек получаю ответ: &quot;невозможно записать файлы в папку&quot;. Путь указан явно: /torrentpier2 . Права на папку на этом ftp 777. Хотя, что так что так, проверял ошибки, если логин не правильный, пишет что неправильный, если нет доступа к папке, пишет что нет доступа....не фига не пойму в чем трабл. И в пасивном и в не пасивном режимах одна и таже ошибка, даже менял FTP_ASCII на FTP_BINARY похер, не могу записать файлы в указанную папку и все тут. Т.е. серваки конектятся, почему не могу, не фига не понятно. Логи пустые. Очень надо хранить торренты на внешнке....",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1398246493,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60772,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Встроенный в текущий аттач-мод механизм не работает. Исправления не будет, т.к. аттач-мод после r600 будет переделан. Вообще советовал бы поискать на форумах по phpbb2, аттач-мод от него, как-никак.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1400015635,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "vnesnij-ftp-disk",
+  "sticky": false,
+  "tags": [],
+  "title": "Внешний FTP диск",
+  "url_path": "/threads/vnesnij-ftp-disk.25909/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1487
+}

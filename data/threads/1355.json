@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 17398,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1355,
+  "last_post_date": 1357710857,
+  "node_id": 57,
+  "post_date": 1337339644,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 17398,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Всем доброго времени суток. Прошу помощи по настройке значений этой функции:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">// Server load\n$bb_cfg[&#039;max_srv_load&#039;]      = 0;                  // 0 - disable\n$bb_cfg[&#039;tr_working_second&#039;]  = 0;                  // 0 - disable</pre>Как её настроить? Какие значения нужно использовать? И от какого значения отталкиваться?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1337339644,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 17399,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Locer</b>,<br />\nУ себя поставил такие. <br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">// Server load\n$bb_cfg[&#039;max_srv_load&#039;]      = 12;                // 0 - disable\n$bb_cfg[&#039;tr_working_second&#039;] = 0;                  // 0 - disable</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1337340244,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Bustra"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25437,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Так в чем измеряется значение в этих двух настройках? <br />\n0(нуль) - откл., а 1-2-3..100500 - это как?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1357710857,
+      "user_id": 2759,
+      "user_title": "User",
+      "username": "alexsin"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "nastrojka",
+  "sticky": false,
+  "tags": [],
+  "title": "Настройка",
+  "url_path": "/threads/nastrojka.1355/",
+  "user_id": 55,
+  "username": "Lange",
+  "view_count": 1452
+}

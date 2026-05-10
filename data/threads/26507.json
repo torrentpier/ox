@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 63292,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 58,
+    "title": "Suggestions for improving TorrentPier"
+  },
+  "id": 26507,
+  "last_post_date": 1411632907,
+  "node_id": 58,
+  "post_date": 1411631545,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63292,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Можно ли прикрутить такой функционал к движку торрентпира ?<br />\nНапример сайт <a href=\"http://btdigg.org/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://btdigg.org/</a> собирает статистику со всех хешей DHT которые ему попадаются. А торрентпир, может собирать статистику DHT только по тем торрентам, которые зарегистрированы на трекере. И потом эту статистику выводить на странице раздачи.<br />\n<br />\nМожет быть возможно связаться с автором btdigg.org и спросить как он это сделал у себя.<br />\nСам <a href=\"http://btdigg.org/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://btdigg.org/</a> создан нашим человеком (можно с ним общаться на русском). Обратная связь на сайте присутсвует <a href=\"http://btdigg.org/contacts\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://btdigg.org/contacts</a><br />\n<br />\nP.S. <br />\nПо идее, такую же статистику, по тому же принципу можно собрать для DHT в DC++ и для Kad осла.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1411631545,
+      "user_id": 5013,
+      "user_title": "User",
+      "username": "grey_rat"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63294,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"http://torrentpier.com/threads/prioritetnoe-dobavlenie-vozmozhnostej.26335/#post-62926\" class=\"link link--internal\">http://torrentpier.com/threads/prioritetnoe-dobavlenie-vozmozhnostej.26335/#post-62926</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1411632758,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63296,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вау 👍",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1411632907,
+      "user_id": 5013,
+      "user_title": "User",
+      "username": "grey_rat"
+    }
+  ],
+  "prefix_id": 32,
+  "reply_count": 2,
+  "slug": "dht-statistika-pirov-na-razdacah",
+  "sticky": false,
+  "tags": [],
+  "title": "DHT статистика пиров на раздачах",
+  "url_path": "/threads/dht-statistika-pirov-na-razdacah.26507/",
+  "user_id": 5013,
+  "username": "grey_rat",
+  "view_count": 1524
+}

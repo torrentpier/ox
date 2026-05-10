@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 26442,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 2163,
+  "last_post_date": 1359961003,
+  "node_id": 57,
+  "post_date": 1359959982,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26442,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Поставил <span style=\"font-size: 12px\"><span style=\"color: #000000\">491 ревизию движка и после установки пишет</span></span><br />\n<span style=\"font-size: 12px\"><span style=\"color: #000000\">set magic_quotes off </span></span><br />\n<span style=\"font-size: 12px\"><span style=\"color: #000000\">Кто-нибудь встречался с этим? Как с этим бороться?</span></span><br />\n<span style=\"font-size: 12px\"><span style=\"color: #000000\">Подскажите пожалуйста</span></span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1359959982,
+      "user_id": 0,
+      "user_title": "",
+      "username": "co:caine"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26443,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>co:caine</b>, волшебные кавычки отключи.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1359960531,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26444,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>co:caine</b>, в хтацесс засунь <span style=\"font-size: 14px\"><span style=\"font-family: 'Consolas'\"><span style=\"color: #000000\">php_flag magic_quotes_gpc Off</span></span></span>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1359960596,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26445,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем спасибо🙂<br />\nСам разобрался🙂",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1359961003,
+      "user_id": 0,
+      "user_title": "",
+      "username": "co:caine"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "set-magic_quotes-off",
+  "sticky": false,
+  "tags": [],
+  "title": "set magic_quotes off",
+  "url_path": "/threads/set-magic_quotes-off.2163/",
+  "user_id": 0,
+  "username": "co:caine",
+  "view_count": 992
+}

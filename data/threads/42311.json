@@ -1,0 +1,92 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 96716,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 109,
+    "title": "LTS version archive"
+  },
+  "id": 42311,
+  "last_post_date": 1725694622,
+  "node_id": 109,
+  "post_date": 1725694622,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1725694605,
+          "file_size": 12342,
+          "filename": "LTS.webp",
+          "height": 100,
+          "id": 6168,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/lts-webp.6168/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6172-833c6d5c69163ad819911ac32e7a993a.jpg?hash=8VrPBjbU8j",
+          "width": 300
+        },
+        {
+          "attach_date": 1725694612,
+          "file_size": 4933208,
+          "filename": "torrentpier-lts-2.1.5-2024.09.zip",
+          "height": 0,
+          "id": 6169,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/torrentpier-lts-2-1-5-2024-09-zip.6169/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 96716,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier LTS. Версия 2.1.5-2024.09 [Final v7]</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/6168/\" alt=\"LTS.webp\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier-lts/releases/tag/v2.1.5-2024.09\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.1.5-2024.09 [Final v7] · torrentpier/torrentpier-lts</a><br />\n<br />\n<b>Основные изменения:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Release v2.1.5-2024.09 🎉</li>\n<li data-xf-list-type=\"ul\">Fixed Template.php caching issue</li>\n<li data-xf-list-type=\"ul\">Fixed undefined $lang in functions_delete.php</li>\n<li data-xf-list-type=\"ul\">Fixed incorrect SQL-query in topic_watch.php</li>\n<li data-xf-list-type=\"ul\">Some fixes for is_unread() working</li>\n<li data-xf-list-type=\"ul\">Increased USEREMAIL_MAX_LENGTH</li>\n<li data-xf-list-type=\"ul\">Some other changes / improvements</li>\n<li data-xf-list-type=\"ul\">Updated Download Center link</li>\n<li data-xf-list-type=\"ul\">Updated translations</li>\n</ul>Для обновления на версию не нужно выполнять дополнительные запросы к базе данных.<br />\n<hr />Вероятно последняя версия из LTS. Буквально исправлять уже больше нечего, если пытаться улучшать дальше, то это уже будет не LTS. Можете смело ставить эту версию на долгую перспективу, она, пожалуй, самая стабильная из всех)<br />\n<hr /><b>MD5:</b> FDBB2D42BBA5A0E50691DB233921C4B9<br />\n<b>SHA-256:</b> 794B2373F28C735A6A08EF9B714C644B3CD3265F544C7D3ADA4267C1E9D4FA3B",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1725694622,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-lts-versia-2-1-5-2024-09-final-v7",
+  "sticky": false,
+  "tags": [
+    "lts",
+    "lts-final",
+    "torrentpier",
+    "torrentpier-lts",
+    "новая версия",
+    "релиз",
+    "ченжлог"
+  ],
+  "title": "TorrentPier LTS. Версия 2.1.5-2024.09 [Final v7]",
+  "url_path": "/threads/torrentpier-lts-versia-2-1-5-2024-09-final-v7.42311/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 604
+}

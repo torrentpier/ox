@@ -1,0 +1,94 @@
+{
+  "category": {
+    "description": "Section with all paid modifications for TorrentPier.",
+    "id": 2,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Paid",
+    "view_url": "https://torrentpier.com/resources/categories/paid.2/"
+  },
+  "current_files": [],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "owner": "RYT.",
+    "sql": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1431978531,
+      "file_size": 49300,
+      "filename": "59d016773a3eab7f33102aebadf1f409.webp",
+      "height": 768,
+      "id": 3875,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/59d016773a3eab7f33102aebadf1f409-webp.3875/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3879-ea11994e52f774a40480c26fe2c47048.jpg?hash=tYXVsD26wJ",
+      "width": 1366
+    },
+    {
+      "attach_date": 1431978531,
+      "file_size": 86048,
+      "filename": "920979fcf66a76a5a8bd68c0fb3570ca.webp",
+      "height": 768,
+      "id": 3876,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/920979fcf66a76a5a8bd68c0fb3570ca-webp.3876/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3880-186edfd4a68e47bd5e1180f9fec6a222.jpg?hash=Y4yUpSy51Y",
+      "width": 1366
+    },
+    {
+      "attach_date": 1431978532,
+      "file_size": 81804,
+      "filename": "d37da05fbf399ca5ba81ef6c5eb7c15a.webp",
+      "height": 768,
+      "id": 3877,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/d37da05fbf399ca5ba81ef6c5eb7c15a-webp.3877/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3881-a708b33d5834454997da2d825b30f35b.jpg?hash=FB0pSm2HNi",
+      "width": 1366
+    }
+  ],
+  "description_parsed": "<b>Описание: </b>Мод позволяет покупать окраску ника за очки сидирование (сидбонусы) на выставленный вами срок<br />\n<br />\nНастройка цены, срока действия окраски и добавление новых (своих) цветов проходит через админку.<br />\n<br />\n<b>ICQ: </b>596622802",
+  "download_count": 0,
+  "external_url": null,
+  "icon_url": null,
+  "id": 231,
+  "is_fileless": null,
+  "last_update": 1431974315,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1431974315,
+  "resource_state": "visible",
+  "slug": "smena-cveta-nika-za-ocki-sidirovania-sidbonusy",
+  "tag_line": "Мод позволяет покупать окраску ника за сидбонусы на указанный вами срок.",
+  "tags": [],
+  "title": "Смена цвета ника за очки сидирования (сидбонусы)",
+  "url_path": "/resources/smena-cveta-nika-za-ocki-sidirovania-sidbonusy.231/",
+  "user_id": 5166,
+  "username": "RYT.",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 0,
+      "files": [],
+      "id": 330,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1431974315,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/smena-cveta-nika-za-ocki-sidirovania-sidbonusy.231/version/330/"
+    }
+  ],
+  "view_count": 749
+}

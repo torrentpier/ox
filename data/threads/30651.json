@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 68537,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 30651,
+  "last_post_date": 1417715373,
+  "node_id": 57,
+  "post_date": 1417501063,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 68537,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как сделать крон задачу, по типу, выбираем из базы все топики где сидеров по нулям, и удаляем, по типу prune_topic_moved ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1417501063,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 68650,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Лучше не так делать.<br />\n<br />\nЛучше определить для группы форумов один архивный форум и переносить туда кроном темы, при условии что торрент разрегистрирован. А там уже чистка форума, если в теме не было ответов.<br />\n<br />\nКстати решение, по-моему, было на .info...",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1417561105,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 68822,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/896/\">@Dr_Brown</a> <a href=\"https://torrentpier.com/members/119/\">@Basilevs</a> вообще в движке есть задача удаления тем, точнее разрегистрации торрента, где давно не было сидера. Удаление в реальном времени не представляю как реализовать - сиюмитнутно, особенно ночь, на многих раздачах не может быть сидеров вовсе.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1417715373,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "pomogite-napisat-kron-zadacu",
+  "sticky": false,
+  "tags": [],
+  "title": "Помогите написать крон задачу",
+  "url_path": "/threads/pomogite-napisat-kron-zadacu.30651/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 963
+}

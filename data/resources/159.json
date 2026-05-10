@@ -1,0 +1,273 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Запреты и предупреждения by _Xz_.zip",
+      "id": 5814,
+      "local_path": null,
+      "r2_key": null,
+      "size": 21435,
+      "src_url": "https://torrentpier.com/api/resource-versions/460/download?file=5814"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "В папке с движком. Файл: Установка.txt.",
+    "owner": "_Xz_",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425301438,
+      "file_size": 37626,
+      "filename": "38eA956E.webp",
+      "height": 379,
+      "id": 3142,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/38ea956e-webp.3142/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3146-2b33109cff592c4952ef99a562424ceb.jpg?hash=v9GJXlXHTX",
+      "width": 861
+    },
+    {
+      "attach_date": 1425301439,
+      "file_size": 11792,
+      "filename": "a45171C9.webp",
+      "height": 208,
+      "id": 3143,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/a45171c9-webp.3143/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3147-fd674155176deeee70507127d3eec38f.jpg?hash=fy7k_KWAx8",
+      "width": 392
+    },
+    {
+      "attach_date": 1425301451,
+      "file_size": 18798,
+      "filename": "21d854bB.webp",
+      "height": 236,
+      "id": 3144,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/21d854bb-webp.3144/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3148-8d11637c12f2555d150cb858231cb2a8.jpg?hash=MwGctqYmBK",
+      "width": 1256
+    },
+    {
+      "attach_date": 1425919124,
+      "file_size": 12014,
+      "filename": "2015-03-09 19-37-49 Скриншот экрана.webp",
+      "height": 267,
+      "id": 3385,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2015-03-09-19-37-49-skrinsot-ekrana-webp.3385/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3389-5aaa9117f20159d24fbb6636e4031e5b.jpg?hash=cuYSdi9GD9",
+      "width": 691
+    },
+    {
+      "attach_date": 1425919284,
+      "file_size": 7570,
+      "filename": "2015-03-09 19-40-47 Скриншот экрана.webp",
+      "height": 198,
+      "id": 3386,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2015-03-09-19-40-47-skrinsot-ekrana-webp.3386/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3390-9673d026515a36578428cec62660a443.jpg?hash=an8uzQ9VQp",
+      "width": 375
+    }
+  ],
+  "description_parsed": "<b>Описание: </b>Добавляет систему наказаний пользователей на основе стандартной системы, встроенной в движок.",
+  "download_count": 6238,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/159.jpg?1425299126",
+  "id": 159,
+  "is_fileless": null,
+  "last_update": 1707823092,
+  "rating_avg": 4.33333,
+  "rating_count": 3,
+  "resource_date": 1425204698,
+  "resource_state": "visible",
+  "slug": "zaprety-i-preduprezdenia",
+  "tag_line": "Добавляет систему наказаний пользователей на основе стандартной системы, встроенной в движок.",
+  "tags": [
+    "warnings mod",
+    "баны",
+    "выдать бан",
+    "выдача запретов",
+    "запреты",
+    "запреты и предупреждения",
+    "мод",
+    "моды",
+    "предупреждения",
+    "система банов"
+  ],
+  "title": "Запреты и предупреждения",
+  "url_path": "/resources/zaprety-i-preduprezdenia.159/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.3.3",
+  "versions": [
+    {
+      "download_count": 1537,
+      "files": [
+        {
+          "filename": "[FULL] Запреты и предупреждения by _Xz_.zip",
+          "id": 5814,
+          "local_path": null,
+          "r2_key": null,
+          "size": 21435,
+          "src_url": "https://torrentpier.com/api/resource-versions/460/download?file=5814"
+        }
+      ],
+      "id": 460,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1707823092,
+      "version_state": "visible",
+      "version_string": "v1.3.3",
+      "view_url": "https://torrentpier.com/resources/zaprety-i-preduprezdenia.159/version/460/"
+    },
+    {
+      "download_count": 724,
+      "files": [
+        {
+          "filename": "[FULL] Запреты и предупреждения by _Xz_.zip",
+          "id": 5804,
+          "local_path": null,
+          "r2_key": null,
+          "size": 31251,
+          "src_url": "https://torrentpier.com/api/resource-versions/456/download?file=5804"
+        }
+      ],
+      "id": 456,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1707215354,
+      "version_state": "visible",
+      "version_string": "v1.3.2",
+      "view_url": "https://torrentpier.com/resources/zaprety-i-preduprezdenia.159/version/456/"
+    },
+    {
+      "download_count": 836,
+      "files": [
+        {
+          "filename": "warnings131.zip",
+          "id": 3194,
+          "local_path": null,
+          "r2_key": null,
+          "size": 26192,
+          "src_url": "https://torrentpier.com/api/resource-versions/222/download?file=3194"
+        }
+      ],
+      "id": 222,
+      "rating_avg": 4.333333333333333,
+      "rating_count": 3,
+      "release_date": 1425328143,
+      "version_state": "visible",
+      "version_string": "1.3.1",
+      "view_url": "https://torrentpier.com/resources/zaprety-i-preduprezdenia.159/version/222/"
+    },
+    {
+      "download_count": 726,
+      "files": [
+        {
+          "filename": "warnings.zip",
+          "id": 3191,
+          "local_path": null,
+          "r2_key": null,
+          "size": 25956,
+          "src_url": "https://torrentpier.com/api/resource-versions/221/download?file=3191"
+        }
+      ],
+      "id": 221,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425327289,
+      "version_state": "visible",
+      "version_string": "1.3.0",
+      "view_url": "https://torrentpier.com/resources/zaprety-i-preduprezdenia.159/version/221/"
+    },
+    {
+      "download_count": 724,
+      "files": [
+        {
+          "filename": "warnings.zip",
+          "id": 3189,
+          "local_path": null,
+          "r2_key": null,
+          "size": 16501,
+          "src_url": "https://torrentpier.com/api/resource-versions/220/download?file=3189"
+        }
+      ],
+      "id": 220,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425325743,
+      "version_state": "visible",
+      "version_string": "1.2.0",
+      "view_url": "https://torrentpier.com/resources/zaprety-i-preduprezdenia.159/version/220/"
+    },
+    {
+      "download_count": 834,
+      "files": [
+        {
+          "filename": "warnings.zip",
+          "id": 3175,
+          "local_path": null,
+          "r2_key": null,
+          "size": 17093,
+          "src_url": "https://torrentpier.com/api/resource-versions/210/download?file=3175"
+        }
+      ],
+      "id": 210,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425316096,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/zaprety-i-preduprezdenia.159/version/210/"
+    },
+    {
+      "download_count": 885,
+      "files": [
+        {
+          "filename": "warnings.zip",
+          "id": 3024,
+          "local_path": null,
+          "r2_key": null,
+          "size": 17093,
+          "src_url": "https://torrentpier.com/api/resource-versions/176/download?file=3024"
+        }
+      ],
+      "id": 176,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425204698,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/zaprety-i-preduprezdenia.159/version/176/"
+    }
+  ],
+  "view_count": 2833
+}

@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 84730,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 11,
+    "title": "Questions about styles for TorrentPier"
+  },
+  "id": 41236,
+  "last_post_date": 1440795890,
+  "node_id": 11,
+  "post_date": 1439923033,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84730,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подскажите, где есть инструкция по адаптации шаблонов где-то видел ссылку на гитхаб но не помню )<br />\nнашел шаблончики для старых версий хотел пополнить коллекцию для новой версии TP старых шаблонов )",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1439923033,
+      "user_id": 6346,
+      "user_title": "User",
+      "username": "redzhet"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84735,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "А просто сравнить .tpl и .css файлы?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1439943143,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84766,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/6346/\">@redzhet</a> ссылка на GitHub на главной странице форума.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1440795890,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 42,
+  "reply_count": 2,
+  "slug": "adaptacia-sablonov-s-svn-r534-do-poslednej-versii",
+  "sticky": false,
+  "tags": [],
+  "title": "Адаптация шаблонов  с SVN r534 до последней версии",
+  "url_path": "/threads/adaptacia-sablonov-s-svn-r534-do-poslednej-versii.41236/",
+  "user_id": 6346,
+  "username": "redzhet",
+  "view_count": 1716
+}

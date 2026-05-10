@@ -1,0 +1,91 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "поиск_пылесосов.zip",
+      "id": 3198,
+      "local_path": null,
+      "r2_key": null,
+      "size": 984,
+      "src_url": "https://torrentpier.com/api/resource-versions/224/download?file=3198"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]# ---- [ Открыть ] -------------------\n\nviewtopic.php\n\n# ---- [ Найти ] -------------------\n\n        SELECT\n          u.username, u.user_id, u.user_rank, u.user_posts, u.user_from,\n          u.user_regdate, u.user_sig,\n          u.user_avatar, u.user_avatar_type,\n          u.user_opt, u.user_gender, u.user_birthday,\n\n# ---- [ Вставить после ] -------------------\n\n          bt.u_up_total, bt.u_down_total, bt.u_up_release, bt.u_up_bonus,\n\n# ---- [ Найти ] -------------------\n\n        LEFT JOIN \". BB_POSTS_HTML .\" h  ON(h.post_id = p.post_id)\n\n# ---- [ Вставить после ] -------------------\n\n        LEFT JOIN \". BB_BT_USERS  .\" bt ON(p.poster_id = bt.user_id)\n\n# ---- [ Найти ] -------------------\n\n    SELECT\n      u.username, u.user_id, u.user_rank, u.user_posts, u.user_from,\n      u.user_regdate, u.user_sig,\n      u.user_avatar, u.user_avatar_type,\n      u.user_opt, u.user_gender, u.user_birthday,\n\n# ---- [ Вставить после ] -------------------\n\n      bt.u_up_total, bt.u_down_total, bt.u_up_release, bt.u_up_bonus,\n\n# ---- [ Найти ] -------------------\n    LEFT JOIN \". BB_POSTS_HTML .\" h  ON(h.post_id = p.post_id)\n\n# ---- [ Вставить после ] -------------------\n\n    LEFT JOIN \". BB_BT_USERS  .\" bt ON(p.poster_id = bt.user_id)\n\n# ---- [ Найти ] -------------------\n\n    $poster_longevity = ( $postrow[$i]['user_id'] != GUEST_UID ) ? delta_time($postrow[$i]['user_regdate']) : '';\n\n# ---- [ Вставить после ] -------------------\n\n    if ($poster_id != GUEST_UID)\n    {\n        $upload = $postrow[$i]['u_up_total'] + $postrow[$i]['u_up_release'] + $postrow[$i]['u_up_bonus'];\n        $download = $postrow[$i]['u_down_total'];\n        $ratio = ($upload > 0 && $download > 0) ? round($upload / $download) : 0;\n    }\n\n# ---- [ Найти ] -------------------\n\n    if (!$user-&gt;opt_js['h_rnk_i'] AND isset($ranks[$user_rank]))\n    {\n        $rank_image = ($bb_cfg['show_rank_image'] &amp;&amp; $ranks[$user_rank]['rank_image']) ? '<img title=\"\" alt=\"\" src=\"'. $ranks[$user_rank]['rank_image'] .'\" border=\"0\" />' : '';\n        $poster_rank = ($bb_cfg['show_rank_text']) ? $ranks[$user_rank]['rank_title'] : '';\n    }\n\n# ---- [ Заменить на ] -------------------\n\n    if ($ratio &lt; $bb_cfg['bt_min_ratio_allow_dl_tor'] &amp;&amp; $download &gt; MIN_DL_FOR_RATIO)\n    {\n        $rank_image = '<img title=\"\" alt=\"\" src=\"images/ranks/baklazhan.gif\" border=\"0\" />';\n        $poster_rank = $lang['BAKLAZHAN'];\n    }\n    else\n    {\n        if (!$user-&gt;opt_js['h_rnk_i'] &amp;&amp; isset($ranks[$user_rank]))\n        {\n            $rank_image = ($bb_cfg['show_rank_image'] &amp;&amp; $ranks[$user_rank]['rank_image']) ? '<img title=\"\" alt=\"\" src=\"'. $ranks[$user_rank]['rank_image'] .'\" border=\"0\" />' : '';\n            $poster_rank = ($bb_cfg['show_rank_text']) ? $ranks[$user_rank]['rank_title'] : '';\n        }\n    }\n\n# ---- [ Открыть ] -------------------\n\nlanguage/lang_russian/lang_main.php\n\n# ---- [ Добавить в конец ] -------------------\n\n$lang['BAKLAZHAN'] = 'Пылесос';\n\n# ---- [ Конец ] -------------------[/PHP]\n[/SPOILER]",
+    "owner": "Gemini_13",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание:</b> добавляет возможность автоматической установки &quot;позорной&quot; лычки пользователям с маленьким рейтингом.",
+  "download_count": 403,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/118.jpg?1425329532",
+  "id": 118,
+  "is_fileless": null,
+  "last_update": 1425329566,
+  "rating_avg": 5,
+  "rating_count": 1,
+  "resource_date": 1406073092,
+  "resource_state": "visible",
+  "slug": "pozornaa-lycka",
+  "tag_line": "Добавляет возможность автоматической установки \"позорной\" лычки пользователям с маленьким рейтингом.",
+  "tags": [],
+  "title": "Позорная лычка",
+  "url_path": "/resources/pozornaa-lycka.118/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 297,
+      "files": [
+        {
+          "filename": "поиск_пылесосов.zip",
+          "id": 3198,
+          "local_path": null,
+          "r2_key": null,
+          "size": 984,
+          "src_url": "https://torrentpier.com/api/resource-versions/224/download?file=3198"
+        }
+      ],
+      "id": 224,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1425329566,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/pozornaa-lycka.118/version/224/"
+    },
+    {
+      "download_count": 106,
+      "files": [
+        {
+          "filename": "поиск_пылесосов.zip",
+          "id": 3197,
+          "local_path": null,
+          "r2_key": null,
+          "size": 984,
+          "src_url": "https://torrentpier.com/api/resource-versions/129/download?file=3197"
+        }
+      ],
+      "id": 129,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1406073092,
+      "version_state": "visible",
+      "version_string": "1.0",
+      "view_url": "https://torrentpier.com/resources/pozornaa-lycka.118/version/129/"
+    }
+  ],
+  "view_count": 839
+}

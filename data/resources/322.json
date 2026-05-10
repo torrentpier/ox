@@ -1,0 +1,245 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Быстрая загрузка изображений в топике by belomaxorka.zip",
+      "id": 6492,
+      "local_path": null,
+      "r2_key": null,
+      "size": 13091,
+      "src_url": "https://torrentpier.com/api/resource-versions/645/download?file=6492"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "gd",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1742740818,
+      "file_size": 7166,
+      "filename": "photo_2025-03-23_17-38-05.webp",
+      "height": 65,
+      "id": 6411,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2025-03-23_17-38-05-webp.6411/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6415-28e975fcf4ac42942df4aeaee7f8a7fe.jpg?hash=CUw-p5R-e5",
+      "width": 1113
+    },
+    {
+      "attach_date": 1742740821,
+      "file_size": 6410,
+      "filename": "photo_2025-03-23_17-38-20.webp",
+      "height": 78,
+      "id": 6412,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2025-03-23_17-38-20-webp.6412/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6416-fd62652982ee76946601118bf399b61e.jpg?hash=uaSf-BcI2S",
+      "width": 760
+    },
+    {
+      "attach_date": 1742740825,
+      "file_size": 10180,
+      "filename": "photo_2025-03-23_17-39-18.webp",
+      "height": 78,
+      "id": 6413,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2025-03-23_17-39-18-webp.6413/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6417-21cc46ebef229a9f66d84800e5838046.jpg?hash=6mdkrlFieL",
+      "width": 803
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Добавляет возможность быстрой загрузки изображений в топик (постер / скриншоты). Реализовано с использованием AJAX технологии. Есть конвертация в WEBP.<br />\n<b>Совместимость:</b> LTS (php 5.6), v2.1.5 (php 5.6), v2.2.*, v2.3.*, v2.4.*.",
+  "download_count": 756,
+  "external_url": null,
+  "icon_url": null,
+  "id": 322,
+  "is_fileless": null,
+  "last_update": 1753718265,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1742740830,
+  "resource_state": "visible",
+  "slug": "bystraa-zagruzka-izobrazenij-v-topike",
+  "tag_line": "Добавляет возможность быстрой загрузки изображений в топик (постер / скриншоты).",
+  "tags": [
+    "ajax загрузка",
+    "быстрая загрузка",
+    "быстрая загрузка изображений",
+    "галерея",
+    "загрузка постера",
+    "загрузка скринов",
+    "загрузка скринов в топик",
+    "мод",
+    "моды",
+    "топик"
+  ],
+  "title": "Быстрая загрузка изображений в топике",
+  "url_path": "/resources/bystraa-zagruzka-izobrazenij-v-topike.322/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.2.2",
+  "versions": [
+    {
+      "download_count": 192,
+      "files": [
+        {
+          "filename": "[FULL] Быстрая загрузка изображений в топике by belomaxorka.zip",
+          "id": 6492,
+          "local_path": null,
+          "r2_key": null,
+          "size": 13091,
+          "src_url": "https://torrentpier.com/api/resource-versions/645/download?file=6492"
+        }
+      ],
+      "id": 645,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1753718265,
+      "version_state": "visible",
+      "version_string": "v1.2.2",
+      "view_url": "https://torrentpier.com/resources/bystraa-zagruzka-izobrazenij-v-topike.322/version/645/"
+    },
+    {
+      "download_count": 78,
+      "files": [
+        {
+          "filename": "[FULL] Быстрая загрузка изображений в топике by belomaxorka.zip",
+          "id": 6488,
+          "local_path": null,
+          "r2_key": null,
+          "size": 13098,
+          "src_url": "https://torrentpier.com/api/resource-versions/643/download?file=6488"
+        }
+      ],
+      "id": 643,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1752570715,
+      "version_state": "visible",
+      "version_string": "v1.2.1",
+      "view_url": "https://torrentpier.com/resources/bystraa-zagruzka-izobrazenij-v-topike.322/version/643/"
+    },
+    {
+      "download_count": 75,
+      "files": [
+        {
+          "filename": "[FULL] Быстрая загрузка изображений в топике by belomaxorka.zip",
+          "id": 6487,
+          "local_path": null,
+          "r2_key": null,
+          "size": 13095,
+          "src_url": "https://torrentpier.com/api/resource-versions/642/download?file=6487"
+        }
+      ],
+      "id": 642,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1752567265,
+      "version_state": "visible",
+      "version_string": "v1.2.0",
+      "view_url": "https://torrentpier.com/resources/bystraa-zagruzka-izobrazenij-v-topike.322/version/642/"
+    },
+    {
+      "download_count": 110,
+      "files": [
+        {
+          "filename": "[FULL] Быстрая загрузка изображений в топике by belomaxorka.zip",
+          "id": 6441,
+          "local_path": null,
+          "r2_key": null,
+          "size": 9930,
+          "src_url": "https://torrentpier.com/api/resource-versions/626/download?file=6441"
+        }
+      ],
+      "id": 626,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1744561362,
+      "version_state": "visible",
+      "version_string": "v1.1.2",
+      "view_url": "https://torrentpier.com/resources/bystraa-zagruzka-izobrazenij-v-topike.322/version/626/"
+    },
+    {
+      "download_count": 83,
+      "files": [
+        {
+          "filename": "[FULL] Быстрая загрузка изображений в топике by belomaxorka.zip",
+          "id": 6440,
+          "local_path": null,
+          "r2_key": null,
+          "size": 9916,
+          "src_url": "https://torrentpier.com/api/resource-versions/625/download?file=6440"
+        }
+      ],
+      "id": 625,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1744467659,
+      "version_state": "visible",
+      "version_string": "v1.1.1",
+      "view_url": "https://torrentpier.com/resources/bystraa-zagruzka-izobrazenij-v-topike.322/version/625/"
+    },
+    {
+      "download_count": 96,
+      "files": [
+        {
+          "filename": "[FULL] Быстрая загрузка изображений в топике by belomaxorka.zip",
+          "id": 6426,
+          "local_path": null,
+          "r2_key": null,
+          "size": 9885,
+          "src_url": "https://torrentpier.com/api/resource-versions/619/download?file=6426"
+        }
+      ],
+      "id": 619,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1743524286,
+      "version_state": "visible",
+      "version_string": "v1.1.0",
+      "view_url": "https://torrentpier.com/resources/bystraa-zagruzka-izobrazenij-v-topike.322/version/619/"
+    },
+    {
+      "download_count": 140,
+      "files": [
+        {
+          "filename": "[FULL] Быстрая загрузка изображений в топике by belomaxorka.zip",
+          "id": 6410,
+          "local_path": null,
+          "r2_key": null,
+          "size": 9742,
+          "src_url": "https://torrentpier.com/api/resource-versions/612/download?file=6410"
+        }
+      ],
+      "id": 612,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1742740830,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/bystraa-zagruzka-izobrazenij-v-topike.322/version/612/"
+    }
+  ],
+  "view_count": 2549
+}

@@ -1,0 +1,150 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 81304,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 39639,
+  "last_post_date": 1428017228,
+  "node_id": 57,
+  "post_date": 1428014736,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1428014653,
+          "file_size": 14992,
+          "filename": "баг.webp",
+          "height": 235,
+          "id": 3496,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bag-webp.3496/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/3/3500-c04a1f338975ea1bf7e5e304bb08a511.jpg?hash=on7hEG3W7l",
+          "width": 1295
+        }
+      ],
+      "id": 81304,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Поставил чистый двиг 2.1.5, создал раздачу под админом все нормально, а вот когда заходишь, как обычный юзер, вылазит это:<br />\n<br />\n<div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1428014736,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 81306,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "terms.php - это страница правил, заполняется в админке",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1428015786,
+      "user_id": 5166,
+      "user_title": "User",
+      "username": "RYT."
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 81307,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"RYT.\">terms.php - это страница правил, заполняется в админке</blockquote>Я как бы в курсе, что это страница правил и в админке все заполнено, вопрос в другом, какого хутора это вылезло в viewtopic_attach (вроде этот файл отвечает)",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1428016629,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 81308,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "в config.php убери",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1428016836,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 81309,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/1514/\">@Begemot</a> <a href=\"https://torrentpier.com/threads/vopros-po-konfigu-tor_help_links.36198/#post-76396\" class=\"link link--internal\">https://torrentpier.com/threads/vopros-po-konfigu-tor_help_links.36198/#post-76396</a>",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1428016897,
+      "user_id": 5166,
+      "user_title": "User",
+      "username": "RYT."
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 81310,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5166/\">@RYT.</a> <a href=\"https://torrentpier.com/members/462/\">@Virtuoz</a> , благодарю. Вроде юзал поиск, но этой темы не нашел.",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1428017228,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "vylez-terms-php",
+  "sticky": false,
+  "tags": [],
+  "title": "Вылез terms.php",
+  "url_path": "/threads/vylez-terms-php.39639/",
+  "user_id": 1514,
+  "username": "Begemot",
+  "view_count": 1016
+}

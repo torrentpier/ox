@@ -1,0 +1,113 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 26185,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 96,
+    "title": "Modifications archive"
+  },
+  "id": 2138,
+  "last_post_date": 1425490700,
+  "node_id": 96,
+  "post_date": 1359291746,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1359291610,
+          "file_size": 40898,
+          "filename": "Снимок.webp",
+          "height": 522,
+          "id": 1834,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-webp.1834/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1835-902fb9bec96b2ef56e0bf77a764c4555.jpg?hash=d52zCHDaxt",
+          "width": 860
+        }
+      ],
+      "id": 26185,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Мод работает на технологии ajax, что позволяет упростить работу с ним без перезагрузки страницы<br />\n <br />\nвстроено:<br />\n- добавление в список друзей<br />\n- удаление из списка друзей<br />\n <br />\nвозможность дописать функции под потребность пользователя<br />\n <br />\nцена от 20$ <br />\n <br />\nВсе вопросы в ICQ 580403056",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1359291746,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26196,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>PheRum</b>, доделал бы игнор бы ещё. 🙂",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1359314718,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 77960,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Этот ресурс был удалён и более недоступен для скачивания.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1425490694,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 77961,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/resources/druzja.201/\" class=\"link link--internal\">https://torrentpier.com/resources/druzja.201/</a>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1425490700,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "social-nyj-mod-druz-a-udalennyj",
+  "sticky": false,
+  "tags": [],
+  "title": "Социальный мод Друзья [удаленный]",
+  "url_path": "/threads/social-nyj-mod-druz-a-udalennyj.2138/",
+  "user_id": 23,
+  "username": "PheRum",
+  "view_count": 2295
+}

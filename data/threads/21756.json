@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 53140,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 21756,
+  "last_post_date": 1385742200,
+  "node_id": 57,
+  "post_date": 1385739435,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 53140,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подскажите как сделать функцию для показа рекламы всем, кроме администраторов и модераторов ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1385739435,
+      "user_id": 2839,
+      "user_title": "User",
+      "username": "deemon"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 53141,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "IS_AM",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1385740263,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 53143,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Включил код &lt;!-- IS_AM --&gt; код &lt;!-- ENDIF --&gt; в шаблоне page_header.tpl<br />\nНЕ РАБОТАЕТ 🙁",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1385741948,
+      "user_id": 2839,
+      "user_title": "User",
+      "username": "deemon"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 53144,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Круто, только и не будет работать<br />\n&lt;!-- IF !IS_AM --&gt;код&lt;!-- ENDIF --&gt;",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1385742016,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 53145,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо, работает.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1385742200,
+      "user_id": 2839,
+      "user_title": "User",
+      "username": "deemon"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "podskazite-kak-sdelat-funkciu-dla-pokaza-reklamy-vsem-krome-administratorov-i-moderatorov",
+  "sticky": false,
+  "tags": [],
+  "title": "Подскажите как сделать функцию для показа рекламы всем, кроме администраторов и модераторов ?",
+  "url_path": "/threads/podskazite-kak-sdelat-funkciu-dla-pokaza-reklamy-vsem-krome-administratorov-i-moderatorov.21756/",
+  "user_id": 2839,
+  "username": "deemon",
+  "view_count": 1297
+}

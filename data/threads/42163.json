@@ -1,0 +1,76 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95182,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 109,
+    "title": "LTS version archive"
+  },
+  "id": 42163,
+  "last_post_date": 1693716985,
+  "node_id": 109,
+  "post_date": 1693716985,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1693716946,
+          "file_size": 12342,
+          "filename": "LTS.webp",
+          "height": 100,
+          "id": 5516,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/lts-webp.5516/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5520-833c6d5c69163ad819911ac32e7a993a.jpg?hash=8VrPBjbU8j",
+          "width": 300
+        }
+      ],
+      "id": 95182,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier LTS. Версия 2.1.5-2023.08</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/5516/\" alt=\"LTS.webp\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier-lts/releases/tag/v2.1.5-2023.08\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.1.5-2023.08 · torrentpier/torrentpier-lts</a><br />\n<br />\n<b>Основные изменения:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Release v2.1.5-2023.08 🎉</li>\n<li data-xf-list-type=\"ul\">Captcha improvements <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/229\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#229</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Show renamed topic actions in log actions <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/227\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#227</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Show set/unset downloaded actions in log actions <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/226\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#226</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Show pin &amp; unpin actions in log actions <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/225\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#225</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Minor improvements <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/215\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#215</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/216\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#216</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/217\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#217</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/218\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#218</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/221\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#221</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/222\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#222</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/224\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#224</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/228\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#228</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/234\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#234</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n</ul>Для обновления на версию не нужно выполнять дополнительные запросы к базе данных.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1693716985,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-lts-versia-2-1-5-2023-08",
+  "sticky": false,
+  "tags": [
+    "lts",
+    "torrentpier-lts",
+    "новая версия",
+    "релиз",
+    "ченжлог"
+  ],
+  "title": "TorrentPier LTS. Версия 2.1.5-2023.08",
+  "url_path": "/threads/torrentpier-lts-versia-2-1-5-2023-08.42163/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 735
+}

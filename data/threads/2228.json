@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 27087,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 2228,
+  "last_post_date": 1361258712,
+  "node_id": 3,
+  "post_date": 1361256837,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27087,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Сеня хотел отредактировать крон, но там появился редактор vim. И так водим команду<br />\n<pre class=\"xfBb-code\" data-lang=\"\">update-alternatives --config editor</pre> и выбераем nano<br />\n<pre class=\"xfBb-code\" data-lang=\"\">There are 4 choices for the alternative editor (providing /usr/bin/editor).\n \n  Selection    Path                Priority  Status\n------------------------------------------------------------\n* 0            /bin/nano            40        auto mode\n  1            /bin/nano            40        manual mode\n  2            /usr/bin/mcedit      25        manual mode\n  3            /usr/bin/vim.basic  30        manual mode\n  4            /usr/bin/vim.tiny    10        manual mode</pre>если нету nano, то устанавливаем его<br />\n<pre class=\"xfBb-code\" data-lang=\"\">apt-get install nano</pre>конечно, кому какой редактор нравится это ваш выбор",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1361256837,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27088,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Или труЪ метод.<br />\nДля Freebsd<br />\n<pre class=\"xfBb-code\" data-lang=\"\">export EDITOR=/usr/bin/ee</pre>Для линуха<br />\n<span style=\"font-family: 'Consolas'\"><pre class=\"xfBb-code\" data-lang=\"\">export EDITOR=/usr/bin/ee</pre></span><span style=\"font-family: 'Consolas'\">Для csh <pre class=\"xfBb-code\" data-lang=\"\">setenv EDITOR /usr/bin/ee</pre></span>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1361258712,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "redaktor-po-umalcaniu",
+  "sticky": false,
+  "tags": [],
+  "title": "Редактор по умалчанию",
+  "url_path": "/threads/redaktor-po-umalcaniu.2228/",
+  "user_id": 22,
+  "username": "DarkMod",
+  "view_count": 1251
+}

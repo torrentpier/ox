@@ -1,0 +1,147 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 96717,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42312,
+  "last_post_date": 1726395447,
+  "node_id": 47,
+  "post_date": 1725859919,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96717,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Есть ли тема либо инструкция по установке чата с пользователем как в соц сетях. Так как общение с пользователям посредством сообщения как на данный момент не очень удобный и целесообразный.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1725859919,
+      "user_id": 10662,
+      "user_title": "User",
+      "username": "LAV"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96718,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Да, но он не разработан.Просто нужно сделать файл для интеграции в TorrentPier.Я заставил это работать некоторое время назад за Xbtit и Btit. <a href=\"https://torrentpier.com/threads/arrowchat.42144/\" class=\"link link--internal\">Arrowchat</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1725944359,
+      "user_id": 10665,
+      "user_title": "User",
+      "username": "crowni"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96719,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Должен быть такой мод, друзья чтобы создать файл интеграции!",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1725944504,
+      "user_id": 10665,
+      "user_title": "User",
+      "username": "crowni"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96720,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 1725967601,
+      "message_parsed": "Это нужно делать интеграцию через бота с телегой. Пользователь в профиле указывает свой аккаунт телеграм и отмечает галкой получать ответы на свой tg аккаунт. Отвечает боту и сообщение автоматом отправляется пользователю на сайт. Я пока в раздумьях как это реализовать, но позже обязательно поделюсь",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1725967304,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1726322523,
+          "file_size": 21038,
+          "filename": "Снимок.webp",
+          "height": 582,
+          "id": 6170,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-webp.6170/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6174-e0a0d17c507d4f21feb7bda8f8254088.jpg?hash=n9lgZD__j2",
+          "width": 269
+        }
+      ],
+      "id": 96721,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"sхс\">Это нужно делать интеграцию через бота с телегой. Пользователь в профиле указывает свой аккаунт телеграм и отмечает галкой получать ответы на свой tg аккаунт. Отвечает боту и сообщение автоматом отправляется пользователю на сайт. Я пока в раздумьях как это реализовать, но позже обязательно поделюсь</blockquote><img src=\"https://torrentpier.com/attachments/6170/\" alt=\"Снимок.webp\" /> <br />\n<br />\nэтот что ли?",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1726322530,
+      "user_id": 7621,
+      "user_title": "User",
+      "username": "DimaUZB2001"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96722,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "нет не сам чат нужен, а сделать личные сообщение в виде чата",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1726395447,
+      "user_id": 10662,
+      "user_title": "User",
+      "username": "LAV"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "cat-s-pol-zovatelem",
+  "sticky": false,
+  "tags": [
+    "чат"
+  ],
+  "title": "Чат с пользователем.",
+  "url_path": "/threads/cat-s-pol-zovatelem.42312/",
+  "user_id": 10662,
+  "username": "LAV",
+  "view_count": 888
+}

@@ -1,0 +1,46 @@
+{
+  "category": {
+    "description": "Section with all paid modifications for TorrentPier.",
+    "id": 2,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Paid",
+    "view_url": "https://torrentpier.com/resources/categories/paid.2/"
+  },
+  "current_files": [],
+  "custom_fields": {},
+  "description_attachments": [],
+  "description_parsed": "<b>ICQ: </b>692652796<br />\n<b>Стоимость:</b> 400р<br />\n<ul>\n<li data-xf-list-type=\"ul\">Смена автора поста</li>\n<li data-xf-list-type=\"ul\">Смена id темы на указаный</li>\n<li data-xf-list-type=\"ul\">Смена всех тем и постов автора (в профиле)</li>\n</ul>",
+  "download_count": 0,
+  "external_url": null,
+  "icon_url": null,
+  "id": 90,
+  "is_fileless": null,
+  "last_update": 1391767200,
+  "rating_avg": 5,
+  "rating_count": 2,
+  "resource_date": 1391767200,
+  "resource_state": "visible",
+  "slug": "smena-id-pol-zovatela-id-temy",
+  "tag_line": "Смена id автора / id темы",
+  "tags": [],
+  "title": "Смена id пользователя / id темы",
+  "url_path": "/resources/smena-id-pol-zovatela-id-temy.90/",
+  "user_id": 3170,
+  "username": "drew",
+  "version": "1.1",
+  "versions": [
+    {
+      "download_count": 0,
+      "files": [],
+      "id": 96,
+      "rating_avg": 5,
+      "rating_count": 2,
+      "release_date": 1391767200,
+      "version_state": "visible",
+      "version_string": "1.1",
+      "view_url": "https://torrentpier.com/resources/smena-id-pol-zovatela-id-temy.90/version/96/"
+    }
+  ],
+  "view_count": 777
+}

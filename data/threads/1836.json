@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 24402,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1836,
+  "last_post_date": 1356006834,
+  "node_id": 57,
+  "post_date": 1356004037,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24402,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В Torrent Pier R775 был файл admin/<b>admin_users.php</b>, а как сейчас он называется, подскажите пожалуйста",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1356004037,
+      "user_id": 0,
+      "user_title": "",
+      "username": "<Span>"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24403,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "никак. удалили его",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1356004504,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24404,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"PheRum\">никак. удалили его</blockquote>Подскажите пожалуйста, как тогда проделать данную операцию? <br />\n<pre class=\"xfBb-code\" data-lang=\"\">#\n#-----[ OPEN ]------------------------------------------\n#\n \nadmin/admin_users.php\n \n#\n#-----[ FIND ]------------------------------------------\n#\n                user_delete($user_id, !empty($_POST[&#039;delete_user_posts&#039;]));\n#\n#-----[ AFTER, ADD ]------------------------------------------\n#\n                // Bookmarks\n                $sql = &quot;DELETE FROM &quot; . BB_BOOKMARKS . &quot;\n                    WHERE user_id = $user_id&quot;;\n                if ( !DB()-&gt;sql_query($sql) )\n                {\n                    message_die(GENERAL_ERROR, &#039;Could not delete user from bookmarks table&#039;, &#039;&#039;, __LINE__, __FILE__, $sql);\n                }\n                // Bookmarks [END]</pre>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1356005575,
+      "user_id": 0,
+      "user_title": "",
+      "username": "<Span>"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24405,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"http://torrentpier.com/threads/bookmarks-%D0%97%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D0%B8.273/page-2\" class=\"link link--internal\">http://torrentpier.com/threads/bookmarks-Закладки.273/page-2</a>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1356006706,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24406,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо🙂",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1356006834,
+      "user_id": 0,
+      "user_title": "",
+      "username": "<Span>"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "fajl",
+  "sticky": false,
+  "tags": [],
+  "title": "Файл",
+  "url_path": "/threads/fajl.1836/",
+  "user_id": 0,
+  "username": "<Span>",
+  "view_count": 1244
+}

@@ -1,0 +1,75 @@
+{
+  "category": {
+    "description": "Section with all paid modifications for TorrentPier.",
+    "id": 2,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Paid",
+    "view_url": "https://torrentpier.com/resources/categories/paid.2/"
+  },
+  "current_files": [],
+  "custom_fields": {},
+  "description_attachments": [
+    {
+      "attach_date": 1369572796,
+      "file_size": 15620,
+      "filename": "group.webp",
+      "height": 261,
+      "id": 2002,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/group-webp.2002/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2007-0b3f1f37940b3a8e2ca41083e1ad9f6b.jpg?hash=g1qxIxG0Qo",
+      "width": 235
+    },
+    {
+      "attach_date": 1369572796,
+      "file_size": 5292,
+      "filename": "select_rank.webp",
+      "height": 205,
+      "id": 2003,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/select_rank-webp.2003/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2008-6cb2409a3468adf78697b6fd1804eedd.jpg?hash=2wFvV3DJGG",
+      "width": 233
+    }
+  ],
+  "description_parsed": "<b>Автор:</b> Zenden<br />\n<b>Описание:</b> Рассортировывает пользователей по группам в зависимости от уплоада, с последующим выбором лычки из профиля. Т.е. если пользователь попадает под критерии соответствующие группам &quot;НовичеГ&quot; и &quot;РаздающиЙ&quot;, он сможет выбрать лычки привязанные к этим группам<br />\n<b>ICQ:</b> 590-700-200<br />\n<b>Цена: </b>1500. Возможен торг в зависимости от комплектации",
+  "download_count": 0,
+  "external_url": null,
+  "icon_url": null,
+  "id": 25,
+  "is_fileless": null,
+  "last_update": 1369572798,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1369572798,
+  "resource_state": "visible",
+  "slug": "vybor-lycki-pol-zovatelem",
+  "tag_line": "Возможность выбора лычки пользователем в зависимости от количества розданного",
+  "tags": [],
+  "title": "Выбор лычки пользователем",
+  "url_path": "/resources/vybor-lycki-pol-zovatelem.25/",
+  "user_id": 97,
+  "username": "Zenden",
+  "version": "1.0",
+  "versions": [
+    {
+      "download_count": 0,
+      "files": [],
+      "id": 25,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1369572798,
+      "version_state": "visible",
+      "version_string": "1.0",
+      "view_url": "https://torrentpier.com/resources/vybor-lycki-pol-zovatelem.25/version/25/"
+    }
+  ],
+  "view_count": 487
+}

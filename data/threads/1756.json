@@ -1,0 +1,118 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 23318,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1756,
+  "last_post_date": 1354037132,
+  "node_id": 57,
+  "post_date": 1353932943,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1353932891,
+          "file_size": 4876,
+          "filename": "Безымянный.webp",
+          "height": 36,
+          "id": 1658,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bezymannyj-webp.1658/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1659-10a2ed2f6918f5830b653783b499d50f.jpg?hash=kLqc0Sb_j-",
+          "width": 1564
+        }
+      ],
+      "id": 23318,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем доброго времени суток.<br />\nКто может сделать счетчик новых тем, которые пользователь еще не просмотрел.<br />\n <br />\nЧтоб выглядело примерно так:<br />\n<img src=\"https://torrentpier.com/attachments/1658/\" alt=\"Безымянный.webp\" /><br />\n <br />\nСпасибо.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1353932943,
+      "user_id": 0,
+      "user_title": "",
+      "username": "NewLife"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23345,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Никто не знает как так сделать?🙁",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1353992021,
+      "user_id": 0,
+      "user_title": "",
+      "username": "NewLife"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23360,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "По лёгкому нет. А вот с парой запросов в каждую страничку - запросто. Но это не разумно.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1354019325,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23367,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"dimka3210\">А вот с парой запросов</blockquote>Запрос очень тяжелым будет. Если трекер посещаемый - напрочь убъет производительность. В phpbb2 на ядре которого tp2 построен очень дурная система определения прочитанности топиков. Во-первых как уже писал тяжелые запросы по сути своей сравнимые с полнотекстовым поиском, во-вторых данные о просмотрах тем хранятся черт знает где и регулярно &quot;слетают&quot;. Фиксироввать прочтенность тем можно только установкой отдельного мода, но это совсем другая история.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1354037132,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "novye-temy",
+  "sticky": false,
+  "tags": [],
+  "title": "Новые темы",
+  "url_path": "/threads/novye-temy.1756/",
+  "user_id": 0,
+  "username": "NewLife",
+  "view_count": 1138
+}

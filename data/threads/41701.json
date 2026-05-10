@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 91020,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41701,
+  "last_post_date": 1493390424,
+  "node_id": 57,
+  "post_date": 1493388469,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91020,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "есть древняя версия трекера. структура бд не совпадает уже на уровне таблиц.<br />\nесть шансы нормально мигрировать?<br />\nинтересуют аккаунты со статистикой - прежде всего.<br />\nну и собственно форум - во вторую, но не в последнюю очередь.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1493388469,
+      "user_id": 7811,
+      "user_title": "User",
+      "username": "Warden"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91021,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "абсолютно все версии нормально мигрируются без потери данных, начиная с доисторической версии 0.3.5 и заканчивая TP1 (R600+)",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1493389178,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91022,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "подсунуть торрент-файлы и старую базу",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1493390424,
+      "user_id": 7811,
+      "user_title": "User",
+      "username": "Warden"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "migracia-so-staroj-versii-tp",
+  "sticky": false,
+  "tags": [],
+  "title": "Миграция со старой версии TP",
+  "url_path": "/threads/migracia-so-staroj-versii-tp.41701/",
+  "user_id": 7811,
+  "username": "Warden",
+  "view_count": 1038
+}

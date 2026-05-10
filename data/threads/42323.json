@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 96877,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42323,
+  "last_post_date": 1734279190,
+  "node_id": 47,
+  "post_date": 1732958570,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96877,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/smena-nika-za-sid-bonusy.310/\" class=\"link link--internal\">Смена ника за сид-бонусы</a> - Добавляет возможность пользователю изменить свой ник за сид-бонусы.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> Добавляет возможность пользователю изменить свой ник за сид-бонусы. Смена возможна ограниченное количество раз (указывается в настройках). Мод работает только в том случае, если в настройках форума отключена возможность смены ника пользователями <i>($bb_cfg[&#039;allow_namechange&#039;])</i>.<br />\nСамый первый ник пользователя (ник который указан при регистрации) сохраняется в базу данных (мало-ли понадобиться найти пользователя по старому нику).<br />\n<b>Совместимость:</b> v2.1.5, LTS.</blockquote><br />\n<a href=\"https://torrentpier.com/resources/smena-nika-za-sid-bonusy.310/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1732958570,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96878,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/smena-nika-za-sid-bonusy.310/\" class=\"link link--internal\">Смена ника за сид-бонусы</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/smena-nika-za-sid-bonusy.310/update/589/\" class=\"link link--internal\">Обновление v1.1.0</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Добавлен перевод на английский язык</li>\n<li data-xf-list-type=\"ul\">Добавлена поддержка логирования действий (отслеживание смены ника)</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/smena-nika-za-sid-bonusy.310/update/589/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1732983433,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96920,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/smena-nika-za-sid-bonusy.310/\" class=\"link link--internal\">Смена ника за сид-бонусы</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/smena-nika-za-sid-bonusy.310/update/603/\" class=\"link link--internal\">Обновление v1.1.1</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Скорректирован SQL-запрос</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/smena-nika-za-sid-bonusy.310/update/603/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1734279190,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "smena-nika-za-sid-bonusy",
+  "sticky": false,
+  "tags": [],
+  "title": "Смена ника за сид-бонусы",
+  "url_path": "/threads/smena-nika-za-sid-bonusy.42323/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 494
+}

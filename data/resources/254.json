@@ -1,0 +1,70 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[B]sql запрос в базу[/B]\n[CODE]ALTER TABLE `bb_topics` ADD `noindex` INT(1) NOT NULL DEFAULT '0' AFTER `topic_show_first_post`;[/CODE]\n\n[B]posting.php[/B]\nперед\n[PHP]$message = prepare_message($message);[/PHP]\nвставляем\n[PHP]$post_data['noindex'] = ( isset($_POST['noindex']) ) ? 1 : 0;[/PHP]\n\nперед\n[PHP]'U_VIEWTOPIC' =>[/PHP]\nвставляем\n[PHP]'S_NOINDEX_CHECKED' => ( isset($post_info['noindex']) AND $post_info['noindex']==1 ) ? 'checked=\"checked\"' : '',[/PHP]\n\n[B]posting.tpl[/B]\nпосле\n[PHP]<!-- INCLUDE posting_editor.tpl -->[/PHP]\nвставляем\n[PHP]<div class=\"checkbox\"> <input type=\"checkbox\" {S_NOINDEX_CHECKED} id=\"noindex\" title=\"{L_NOINDEX}\" name=\"noindex\"><label for=\"noindex\">{L_NOINDEX}</label></div>[/PHP]\n\n[B]lang_main.php[/B]\n[PHP]$lang['NOINDEX'] = \"Запретить поисковым системам индексировать тему? (noindex)\";[/PHP]\n\n[B]function_post.php[/B]\nнаходим функцию submit_post и после\n[PHP]$current_time = TIMENOW;[/PHP]\nвставляем\n[PHP]$post_data['noindex'] = (isset($post_data['noindex']) AND $post_data['noindex']==1) ? 1 : 0;[/PHP]\n\n[B]page_header.tpl[/B]\nпосле\n[PHP]<head>[/PHP]\nвставляем\n[PHP]<!-- IF TOPIC_NOINDEX --><meta name=\"robots\" content=\"noindex, nofollow\" /><!-- ENDIF -->[/PHP]\n\n[B]viewtopic.php[/B]\nперед\n[PHP]'TOPIC_TYPE' =>[/PHP]\nвставляем\n[PHP]'TOPIC_NOINDEX' => (isset($t_data['noindex']) AND $t_data['noindex']==1) ? true: false,[/PHP]",
+    "owner": "zxc",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1478726088,
+      "file_size": 6906,
+      "filename": "2016-11-10_0-14-19.webp",
+      "height": 80,
+      "id": 4527,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2016-11-10_0-14-19-webp.4527/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4531-6927db3818f30692dfd042256306671c.jpg?hash=XhUp-fpSKX",
+      "width": 468
+    },
+    {
+      "attach_date": 1478726089,
+      "file_size": 11694,
+      "filename": "2016-11-10_0-13-49.webp",
+      "height": 198,
+      "id": 4528,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2016-11-10_0-13-49-webp.4528/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4532-325c6691219db69f35fb819e15a309b6.jpg?hash=rlp7VrGEUm",
+      "width": 429
+    }
+  ],
+  "description_parsed": "<div style=\"text-align: center\"><span style=\"color: rgb(226, 80, 65)\">Используйте лучше <a href=\"https://torrentpier.com/resources/nastrojka-indeksacii-pri-sozdanii-temy.305/\" class=\"link link--internal\">данный мод</a></span>&#8203;</div><hr />Вот думаю запилю ка я свой первый мод на torrentpier 🙂 Это так сказать вступительная часть мода AntiCopyright который выложу позже<br />\n<br />\n<b>Что делает мод:</b><br />\nПри выставлении галочки<br />\n<img src=\"https://torrentpier.com/attachments/4528/\" alt=\"2016-11-10_0-13-49.jpg\" /><br />\nДобавление тега в &lt;head&gt;<br />\n<img src=\"https://torrentpier.com/attachments/4527/\" alt=\"2016-11-10_0-14-19.jpg\" />",
+  "download_count": 0,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/254.jpg?1478726419",
+  "id": 254,
+  "is_fileless": null,
+  "last_update": 1478726413,
+  "rating_avg": 3,
+  "rating_count": 2,
+  "resource_date": 1478726413,
+  "resource_state": "visible",
+  "slug": "mod-noindex-nofollow",
+  "tag_line": "Запрет индексации темы поисковиками при создании или редактировании",
+  "tags": [],
+  "title": "Мод noindex,nofollow",
+  "url_path": "/resources/mod-noindex-nofollow.254/",
+  "user_id": 6370,
+  "username": "sхс",
+  "version": null,
+  "versions": [],
+  "view_count": 650
+}

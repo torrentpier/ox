@@ -1,0 +1,61 @@
+{
+  "category": {
+    "description": "Section with all paid modifications for TorrentPier.",
+    "id": 2,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Paid",
+    "view_url": "https://torrentpier.com/resources/categories/paid.2/"
+  },
+  "current_files": [],
+  "custom_fields": {},
+  "description_attachments": [
+    {
+      "attach_date": 1369574493,
+      "file_size": 11424,
+      "filename": "Снимок.webp",
+      "height": 114,
+      "id": 2014,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/snimok-webp.2014/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2019-ef95f86da552871eff46a5a42179c66d.jpg?hash=4-VXHWIpVn",
+      "width": 791
+    }
+  ],
+  "description_parsed": "<b>Автор:</b> Zenden<br />\n<b>ICQ:</b> 590-700-200<br />\n<b>Описание первого мода:</b> Отсылает пользователям скачавшим релиз, личные сообщения (если торрент был перезалит).<br />\n<b>Описание второго мода:</b> Отсылает автору топика личное сообщение (если в его теме появился новый пост).<br />\n<b>Цена:</b> 600р за два мода",
+  "download_count": 0,
+  "external_url": null,
+  "icon_url": null,
+  "id": 29,
+  "is_fileless": null,
+  "last_update": 1369574500,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1369574500,
+  "resource_state": "visible",
+  "slug": "ls-pri-obnovlenii-torrenta",
+  "tag_line": "Оповещения пользователей об обновлении скачанных ими раздач",
+  "tags": [],
+  "title": "ЛС при обновлении торрента",
+  "url_path": "/resources/ls-pri-obnovlenii-torrenta.29/",
+  "user_id": 97,
+  "username": "Zenden",
+  "version": "1.0",
+  "versions": [
+    {
+      "download_count": 0,
+      "files": [],
+      "id": 29,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1369574500,
+      "version_state": "visible",
+      "version_string": "1.0",
+      "view_url": "https://torrentpier.com/resources/ls-pri-obnovlenii-torrenta.29/version/29/"
+    }
+  ],
+  "view_count": 394
+}

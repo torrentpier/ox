@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 17899,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 1391,
+  "last_post_date": 1338712687,
+  "node_id": 90,
+  "post_date": 1338712687,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 17899,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В интернете не одного разумного решения так и не нашел, некоторые говорят есть ли такая <b>client_temp</b> папка по существующему адресу <b>/tmp/nginx/client_temp/ </b>естественно есть и внутри папки тоже все есть! Тогда в чем проблема не кто не может сказать.<br />\n<pre class=\"xfBb-code\" data-lang=\"\">WARNING: [pool gardnet] child 68480 said into stderr: &quot;NOTICE: PHP message: PHP Warning:  REQUEST_BODY_FILE: open(&#039;/tmp/nginx/client_temp/0/31/0018541310&#039;) failed: No such file or directory (2) in Unknown on line 0&quot;\n \n \nNOTICE: [pool gardnet] child 74416 exited with code 0 after 152710.771658 seconds from start\n \n \nNOTICE: [pool gardnet] child 87006 started</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1338712687,
+      "user_id": 15,
+      "user_title": "User",
+      "username": "phpfox"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "osibka-request_body_file",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка REQUEST_BODY_FILE",
+  "url_path": "/threads/osibka-request_body_file.1391/",
+  "user_id": 15,
+  "username": "phpfox",
+  "view_count": 1851
+}

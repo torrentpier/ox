@@ -1,0 +1,102 @@
+{
+  "custom_fields": {
+    "torrentpier": "223"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 92850,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 41892,
+  "last_post_date": 1529867629,
+  "node_id": 80,
+  "post_date": 1521890575,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92850,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Когда <span style=\"color: rgb(226, 80, 65)\">новый </span>пользователь, скачивает раздачу по magnet ссылке, не создается passkey.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1521890575,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93215,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Сделал не большую проверку на наличие паскея при создании ссылки в create_magnet()<br />\nвот так:<br />\nбыло<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">function create_magnet($infohash, $auth_key, $logged_in)\n{\n    global $bb_cfg, $_GET, $images;\n    $passkey_url = ((!$logged_in || isset($_GET[&#039;no_passkey&#039;])) &amp;&amp; $bb_cfg[&#039;bt_tor_browse_only_reg&#039;]) ? &#039;&#039; : &quot;?{$bb_cfg[&#039;passkey_key&#039;]}=$auth_key&quot;;\n    return &#039;&lt;a href=&quot;magnet:?xt=urn:btih:&#039; . bin2hex($infohash) . &#039;&amp;tr=&#039; . urlencode($bb_cfg[&#039;bt_announce_url&#039;] . $passkey_url) . &#039;&quot; onclick=&quot;yaCounter47224737.reachGoal(\\&#039;magnet\\&#039;); return true;&quot;&gt;&lt;img src=&quot;&#039; . $images[&#039;icon_magnet&#039;] . &#039;&quot; width=&quot;12&quot; height=&quot;12&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&#039;;\n}</pre><br />\nстало<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">function create_magnet($infohash, $auth_key, $logged_in)\n{\n    global $bb_cfg, $_GET, $images, $userdata;\n    if(!$auth_key) {\n        require_once INC_DIR . &#039;/functions_torrent.php&#039;;\n        generate_passkey($userdata[&#039;user_id&#039;], true);\n    }\n    $passkey_url = ((!$logged_in || isset($_GET[&#039;no_passkey&#039;])) &amp;&amp; $bb_cfg[&#039;bt_tor_browse_only_reg&#039;]) ? &#039;&#039; : &quot;?{$bb_cfg[&#039;passkey_key&#039;]}=$auth_key&quot;;\n    return &#039;&lt;a href=&quot;magnet:?xt=urn:btih:&#039; . bin2hex($infohash) . &#039;&amp;tr=&#039; . urlencode($bb_cfg[&#039;bt_announce_url&#039;] . $passkey_url) . &#039;&quot; onclick=&quot;yaCounter47224737.reachGoal(\\&#039;magnet\\&#039;); return true;&quot;&gt;&lt;img src=&quot;&#039; . $images[&#039;icon_magnet&#039;] . &#039;&quot; width=&quot;12&quot; height=&quot;12&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&#039;;\n}</pre><br />\nСмысл такой, при формировании магнет ссылки проверка на паскей, если нет то создается новый, так как магнет ссылка формируется при загрузке страницы то и паскей (если его нет) будет сформирован сразу, а не после нажатия на магнет, то есть при первом заходе нового юзера на страницу где есть магнет ссылка.<br />\nЕсть одно но: паскей создается и записывается в базу без проблем, но вот что бы он подхватился из базы требуется перезагрузка страницы",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1526411555,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93216,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "позно увидел что событие на клик повешено для яндекс метрики, на стандартном шаблоне выглядит так:<br />\n<a href=\"https://github.com/PR0TEKT0R/torrentpier/commit/075cc1c31988db728c7c1415240042e341339934\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">create magnet · PR0TEKT0R/torrentpier@075cc1c</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1526412256,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93292,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено в версии 2.3.0 (TorrentPier Bison). Релиз 26 числа.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1529867629,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 3,
+  "slug": "ne-dobavlaetsa-passkey-novomu-uzeru",
+  "sticky": false,
+  "tags": [
+    "passkey"
+  ],
+  "title": "Не добавляется passkey новому юзеру",
+  "url_path": "/threads/ne-dobavlaetsa-passkey-novomu-uzeru.41892/",
+  "user_id": 7243,
+  "username": "Protektor",
+  "view_count": 1215
+}

@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 66041,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 28660,
+  "last_post_date": 1414906676,
+  "node_id": 57,
+  "post_date": 1414819043,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66041,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго дня здоровья!<br />\n<br />\nАдаптировал данный мод по r.600 <br />\n<br />\n<a href=\"https://torrentpier.com/threads/reputacija.202/\" class=\"link link--internal\">https://torrentpier.com/threads/reputacija.202/</a><br />\n<br />\nСтолкнулся с проблемой, не подтягивает копирайт в всплывающее окно, если отнять или отдать репутацию.<br />\n<br />\nТакже адаптировал один старый свой шаблон с r.543 до r.600 также не подтягивает копирайт в всплывающее окно с доп. смайлами. Хотя строка debug отображается, ну там где для админа чисто внизу страницы с временем выполнения и все такое.<br />\n<br />\nПоделитесь кто знает как правильно подтягивать копирайт в всплывающие окна. Просто в окошке, срабатывает защита по снятию копирайта, и перебрасывает на наш форум ). По остальным страницам все нормально. Копирайт есть.<br />\n<br />\nСпс.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1414819043,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66044,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Мод какими-то нестандартными методами значит выводит футер. Есть 2 варианта в шаблонизаторе - обычный, когда выводятся все ссылки на контанты для правообладателей, текст для них же, счетчики и т.п., а есть вариант simple - когда выводится серый фон с одной лишь надписью. Она расположена вот здесь: https://github.com/torrentpier/torrentpier/blob/develop/styles/templates/default/page_footer.tpl#L1 - там же и вывод копирайта. Мод как бы должен это выводить так или иначе.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1414832733,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66085,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "по simple понял. попробую.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1414906676,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "vopros-po-kopirajtu-v-vsplyvausih-oknah",
+  "sticky": false,
+  "tags": [],
+  "title": "Вопрос по копирайту в всплывающих окнах",
+  "url_path": "/threads/vopros-po-kopirajtu-v-vsplyvausih-oknah.28660/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 878
+}

@@ -1,0 +1,48 @@
+{
+  "category": {
+    "description": "Section with all paid modifications for TorrentPier.",
+    "id": 2,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Paid",
+    "view_url": "https://torrentpier.com/resources/categories/paid.2/"
+  },
+  "current_files": [],
+  "custom_fields": {
+    "compability_check": "yes"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание:</b> Мод позволяет автоматически постить новые релизы в твиттер.<br />\n<ul>\n<li data-xf-list-type=\"ul\">Генерация хештегов (опционально)</li>\n<li data-xf-list-type=\"ul\">Постинг ссылки на релиз</li>\n</ul><a href=\"https://twitter.com/AlexFilmcc\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Пример</a>",
+  "download_count": 0,
+  "external_url": "https://twitter.com/AlexFilmcc",
+  "icon_url": null,
+  "id": 143,
+  "is_fileless": null,
+  "last_update": 1416238781,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1416238781,
+  "resource_state": "visible",
+  "slug": "posting-poslednih-relizov-v-tvitter",
+  "tag_line": "Позволяет автоматически постит последние релизы в твиттер ленту",
+  "tags": [],
+  "title": "Постинг последних релизов в твиттер",
+  "url_path": "/resources/posting-poslednih-relizov-v-tvitter.143/",
+  "user_id": 97,
+  "username": "Zenden",
+  "version": "2014-11-17",
+  "versions": [
+    {
+      "download_count": 0,
+      "files": [],
+      "id": 155,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1416238781,
+      "version_state": "visible",
+      "version_string": "2014-11-17",
+      "view_url": "https://torrentpier.com/resources/posting-poslednih-relizov-v-tvitter.143/version/155/"
+    }
+  ],
+  "view_count": 576
+}

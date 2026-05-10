@@ -1,0 +1,145 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Заметки by belomaxorka.zip",
+      "id": 5951,
+      "local_path": null,
+      "r2_key": null,
+      "size": 1581,
+      "src_url": "https://torrentpier.com/api/resource-versions/487/download?file=5951"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "В архиве с модом. Файл: Заметки.txt.",
+    "owner": "druid",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1699518277,
+      "file_size": 4696,
+      "filename": "Capture.webp",
+      "height": 197,
+      "id": 5583,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/capture-webp.5583/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5587-5283475803a8f18d3e0bc8ff768190b7.jpg?hash=YHExIzwTb1",
+      "width": 1127
+    },
+    {
+      "attach_date": 1699518281,
+      "file_size": 6192,
+      "filename": "Capture1.webp",
+      "height": 193,
+      "id": 5584,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/capture1-webp.5584/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5588-2539df9d7be70392a3294bc61dab95fc.jpg?hash=22fCEWeT54",
+      "width": 1125
+    }
+  ],
+  "description_parsed": "Данный мод добавляет в администраторском разделе возможность писать и сохранять заметки. Реализовано с помощью технологии AJAX.<br />\n<br />\nПроверялся на совместимость в v2.1.5 LTS. В других более новых / старых версиях тоже должен работать.<br />\n<br />\nПреимущества мода:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Поддерживает перенос строк (в отличие от <a href=\"https://torrentpier.com/threads/zapiski-administratora.104/\" class=\"link link--internal\">оригинальной</a> версии от <a href=\"https://torrentpier.com/members/61/\">druid</a>)</li>\n<li data-xf-list-type=\"ul\">Переписан код (во многом улучшен)</li>\n<li data-xf-list-type=\"ul\">Добавлены языковые переменные</li>\n<li data-xf-list-type=\"ul\">Улучшен интерфейс</li>\n</ul><hr /><div>Spoiler content hidden.</div>",
+  "download_count": 405,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/271.jpg?1699518890",
+  "id": 271,
+  "is_fileless": null,
+  "last_update": 1712486349,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1699518017,
+  "resource_state": "visible",
+  "slug": "zametki-administratora",
+  "tag_line": "Мод позволяет писать заметки в админ-панели.",
+  "tags": [
+    "заметки",
+    "заметки администратора",
+    "записки",
+    "записки администратора"
+  ],
+  "title": "Заметки администратора",
+  "url_path": "/resources/zametki-administratora.271/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.2.1",
+  "versions": [
+    {
+      "download_count": 235,
+      "files": [
+        {
+          "filename": "[FULL] Заметки by belomaxorka.zip",
+          "id": 5951,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1581,
+          "src_url": "https://torrentpier.com/api/resource-versions/487/download?file=5951"
+        }
+      ],
+      "id": 487,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1712486349,
+      "version_state": "visible",
+      "version_string": "v1.2.1",
+      "view_url": "https://torrentpier.com/resources/zametki-administratora.271/version/487/"
+    },
+    {
+      "download_count": 91,
+      "files": [
+        {
+          "filename": "[FULL] Заметки by belomaxorka.zip",
+          "id": 5731,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1576,
+          "src_url": "https://torrentpier.com/api/resource-versions/434/download?file=5731"
+        }
+      ],
+      "id": 434,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1705056422,
+      "version_state": "visible",
+      "version_string": "v1.2.0",
+      "view_url": "https://torrentpier.com/resources/zametki-administratora.271/version/434/"
+    },
+    {
+      "download_count": 82,
+      "files": [
+        {
+          "filename": "Заметки.zip",
+          "id": 5582,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1200,
+          "src_url": "https://torrentpier.com/api/resource-versions/404/download?file=5582"
+        }
+      ],
+      "id": 404,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1699518017,
+      "version_state": "visible",
+      "version_string": "v1.1.0",
+      "view_url": "https://torrentpier.com/resources/zametki-administratora.271/version/404/"
+    }
+  ],
+  "view_count": 872
+}

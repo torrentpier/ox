@@ -1,0 +1,111 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "Запрет лс для групп.zip",
+      "id": 3204,
+      "local_path": null,
+      "r2_key": null,
+      "size": 2567,
+      "src_url": "https://torrentpier.com/api/resource-versions/228/download?file=3204"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]Сделать запрос в базу данных\n\nINSERT INTO `bb_config` VALUES ('allow_pm_group', '');\n\n\nОткрыть language/russian/main.php\n\nВ самый конец вставить\n\n$lang['PM_GROUP_NOT_ALLOW'] = 'Вы не можете использовать личные сообщения';\n\nОткрыть language/english/main.php\n\nВ самый конец вставить\n\n$lang['PM_GROUP_NOT_ALLOW'] = 'You can not use your private messages';\n\n\nОткрыть privmsg.php\n\nНайти\n\n$user->session_start(array('req_login' => true));\n\nНиже вставить\n\nif(!IS_ADMIN) {\n    $sql = DB()->fetch_rowset(\"SELECT group_id FROM \". BB_USER_GROUP .\" WHERE user_id = \". $userdata['user_id']);\n    if($sql){\n        foreach($sql as $row) {\n   \n            if(!in_array($row['group_id'], explode(\", \", $bb_cfg['allow_pm_group']))) {\n                bb_die($lang['PM_GROUP_NOT_ALLOW']);\n            }   \n        }\n    } else {\n        bb_die($lang['PM_GROUP_NOT_ALLOW']);\n    }\n}[/PHP]\n[/SPOILER]",
+    "owner": "Sprinx",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание:</b> добавляет администрации возможность запретить отправку личных сообщений членами определенных групп.",
+  "download_count": 443,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/121.jpg?1425333279",
+  "id": 121,
+  "is_fileless": null,
+  "last_update": 1425333314,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1410868645,
+  "resource_state": "visible",
+  "slug": "zapret-licnyh-soobsenij-dla-opredelennyh-grupp",
+  "tag_line": "Добавляет администрации возможность запретить отправку личных сообщений членами определенных групп.",
+  "tags": [],
+  "title": "Запрет личных сообщений для определенных групп",
+  "url_path": "/resources/zapret-licnyh-soobsenij-dla-opredelennyh-grupp.121/",
+  "user_id": 2789,
+  "username": "Sprinx",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 244,
+      "files": [
+        {
+          "filename": "Запрет лс для групп.zip",
+          "id": 3204,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2567,
+          "src_url": "https://torrentpier.com/api/resource-versions/228/download?file=3204"
+        }
+      ],
+      "id": 228,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425333314,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/zapret-licnyh-soobsenij-dla-opredelennyh-grupp.121/version/228/"
+    },
+    {
+      "download_count": 108,
+      "files": [
+        {
+          "filename": "Запрет лс для групп.zip",
+          "id": 2648,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2567,
+          "src_url": "https://torrentpier.com/api/resource-versions/133/download?file=2648"
+        }
+      ],
+      "id": 133,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1410868799,
+      "version_state": "visible",
+      "version_string": "1.1",
+      "view_url": "https://torrentpier.com/resources/zapret-licnyh-soobsenij-dla-opredelennyh-grupp.121/version/133/"
+    },
+    {
+      "download_count": 96,
+      "files": [
+        {
+          "filename": "Запрет лс для групп.zip",
+          "id": 2647,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2566,
+          "src_url": "https://torrentpier.com/api/resource-versions/132/download?file=2647"
+        }
+      ],
+      "id": 132,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1410868645,
+      "version_state": "visible",
+      "version_string": "2014-09-16",
+      "view_url": "https://torrentpier.com/resources/zapret-licnyh-soobsenij-dla-opredelennyh-grupp.121/version/132/"
+    }
+  ],
+  "view_count": 868
+}

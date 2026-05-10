@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58392,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 25700,
+  "last_post_date": 1391240871,
+  "node_id": 80,
+  "post_date": 1391238923,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58392,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<span style=\"font-size: 15px\"><span style=\"font-family: 'Times New Roman'\"><span style=\"color: #000000\">Fatal error: Call to undefined method user_common::set_shortcuts() in /var/www/dr_brown/data/www/unitaz.org.ua/includes/sessions.php on line 21</span></span></span><span style=\"font-size: 15px\"><span style=\"font-family: 'Times New Roman'\"><span style=\"color: #000000\">1</span></span></span><br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">        define(&#039;IS_GUEST&#039;,        (!$this-&gt;data[&#039;session_logged_in&#039;]));\n        define(&#039;IS_ADMIN&#039;,        (!IS_GUEST &amp;&amp; $this-&gt;data[&#039;user_level&#039;] == ADMIN));\n        define(&#039;IS_MOD&#039;,          (!IS_GUEST &amp;&amp; $this-&gt;data[&#039;user_level&#039;] == MOD));\n        define(&#039;IS_GROUP_MEMBER&#039;, (!IS_GUEST &amp;&amp; $this-&gt;data[&#039;user_level&#039;] == GROUP_MEMBER));\n        define(&#039;IS_USER&#039;,        (!IS_GUEST &amp;&amp; $this-&gt;data[&#039;user_level&#039;] == USER));\n        define(&#039;IS_SUPER_ADMIN&#039;,  (IS_ADMIN &amp;&amp; isset($bb_cfg[&#039;super_admins&#039;][$this-&gt;data[&#039;user_id&#039;]])));\n        define(&#039;IS_AM&#039;,          (IS_ADMIN || IS_MOD));\n \n211  $this-&gt;set_shortcuts();\n \n        // Redirect guests to login page\n        if (IS_GUEST &amp;&amp; $this-&gt;cfg[&#039;req_login&#039;])</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1391238923,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58393,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "исправил, руки кривые, соррри",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1391239676,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58394,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вроде в 569 lang_bot.php удалили, а при переносе топика лезут ошибки:<br />\n <br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">[01-Feb-2014 09:37:01] PHP Warning:  require(/var/www/dr_brown/data/www/unitaz.org.ua/language/lang_russian/lang_bot.php): failed to open stream: Нет такого файла или каталога in /var/www/dr_brown/data/www/unitaz.org.ua/includes/functions_post.php on line 628\n[01-Feb-2014 09:37:01] PHP Fatal error:  require(): Failed opening required &#039;/var/www/dr_brown/data/www/unitaz.org.ua/language/lang_russian/lang_bot.php&#039; (include_path=&#039;.:/usr/share/php:/usr/share/pear&#039;) in /var/www/dr_brown/data/www/unitaz.org.ua/includes/functions_post.php on line 628</pre> <br />\nfunctions_post.php on line 628:<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">require(DEFAULT_LANG_DIR .&#039;lang_bot.php&#039;);</pre>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1391240871,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 2,
+  "slug": "r-574",
+  "sticky": false,
+  "tags": [],
+  "title": "r.574",
+  "url_path": "/threads/r-574.25700/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1001
+}

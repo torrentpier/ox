@@ -1,0 +1,83 @@
+{
+  "category": {
+    "description": "Icons, smileys, and other graphic elements for design.",
+    "id": 6,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Graphics and styles",
+    "view_url": "https://torrentpier.com/resources/categories/graphics-and-styles.6/"
+  },
+  "current_files": [
+    {
+      "filename": "snowdrift.zip",
+      "id": 6313,
+      "local_path": null,
+      "r2_key": null,
+      "size": 11204,
+      "src_url": "https://torrentpier.com/api/resource-versions/589/download?file=6313"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "yes",
+    "installation": "[CODE=html]-------------------------------- Открыть page_header.tpl и найти  ----------------------------------\n\n</head>\n\n-------------------------------- После ставить -----------------------------------------------------\n\n<link href=\"styles/snowFlakes/snow.min.css\" rel=\"stylesheet\">\n\n-------------------------------- Найти -------------------------------------------------------------\n\n<body>\n\n-------------------------------- После ставить -----------------------------------------------------\n\n<script src=\"styles/snowFlakes/Snow.js\"></script>\n<script>\n    new Snow ();\n</script>\n\n------------------------------- snowFlakes кинуть в папку styles -----------------------------------[/CODE]",
+    "owner": "DimaUZB2001"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1736311725,
+      "file_size": 256962,
+      "filename": "321.webp",
+      "height": 960,
+      "id": 6314,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/321-webp.6314/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6318-981ecba63fd49dca1776b0d3904ee83e.jpg?hash=GK3--QCr8m",
+      "width": 1902
+    }
+  ],
+  "description_parsed": "<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-velikolepnyj-skript-padausego-snega-na-sajt-na-js-css-sugroby\"></a><div style=\"text-align: center\"><span style=\"color: rgb(41, 105, 176)\">Великолепный скрипт падающего снега на сайт на JS+CSS + сугробы!</span>&#8203;</div><a class=\"hoverLink\" href=\"#-velikolepnyj-skript-padausego-snega-na-sajt-na-js-css-sugroby\" title=\"Permanent link\"></a></h3><div style=\"text-align: center\"><a href=\"https://torrentpier.com/attachments/6314/\"><img src=\"https://torrentpier.com/data/attachments/6/6318-981ecba63fd49dca1776b0d3904ee83e.jpg?hash=GK3--QCr8m\" alt=\"321.webp\" /></a>&#8203;</div>",
+  "download_count": 296,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/317.jpg?1736311736",
+  "id": 317,
+  "is_fileless": null,
+  "last_update": 1736311736,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1736311736,
+  "resource_state": "visible",
+  "slug": "padausij-sneg-sugroby",
+  "tag_line": "Падаюший снег + сугробы",
+  "tags": [],
+  "title": "Падаюший снег + сугробы",
+  "url_path": "/resources/padausij-sneg-sugroby.317/",
+  "user_id": 7621,
+  "username": "DimaUZB2001",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 296,
+      "files": [
+        {
+          "filename": "snowdrift.zip",
+          "id": 6313,
+          "local_path": null,
+          "r2_key": null,
+          "size": 11204,
+          "src_url": "https://torrentpier.com/api/resource-versions/589/download?file=6313"
+        }
+      ],
+      "id": 589,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1736311736,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/padausij-sneg-sugroby.317/version/589/"
+    }
+  ],
+  "view_count": 1057
+}

@@ -1,0 +1,118 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 68969,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 31012,
+  "last_post_date": 1418479652,
+  "node_id": 111,
+  "post_date": 1417889567,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 68969,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Ссылка:</b><a href=\"https://github.com/torrentpier/torrentpier/archive/refs/tags/v2.1.5.zip\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"> Прямая загрузка</a><br />\n<br />\n<b>Описание:</b><br />\n<br />\nПятый ALPHA-билд.<br />\n<br />\nОсновные изменения:<br />\n<br />\n- замена стандартной капчи на reCAPTCHA v2;<br />\n- новый формат подключения языковых файлов и обновления в них;<br />\n- переход на использование в проекте JSON от ZF 2;<br />\n- перенос задачи начисления сидбонусов в отдельную и исправления ошибок в ней;<br />\n- исправление ошибки с английской системной локалью;<br />\n- обновление схемы обновления базы данных;<br />\n- переименование шаблонов email в .html для возможности локализации через Crowdin;<br />\n- прочие мелкие исправления.<br />\n<br />\nДля обновления на версию, необходимо выполнить следующие запросы к базе данных:<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"sql\">SET GLOBAL sql_mode = &#039;&#039;;\nSET SESSION sql_mode = &#039;&#039;;\nDROP TABLE IF EXISTS `bb_captcha`;\nDELETE FROM `bb_cron` WHERE `cron_script` = &#039;captcha_gen_gc.php&#039;;\nINSERT INTO `bb_cron` VALUES (&#039;998&#039;, &#039;1&#039;, &#039;Accrual seedbonus&#039;, &#039;tr_seed_bonus.php&#039;, &#039;interval&#039;, &#039;&#039;, &#039;&#039;, &#039;25&#039;, &#039;&#039;, &#039;&#039;, &#039;00:15:00&#039;, &#039;1&#039;, &#039;&#039;, &#039;0&#039;, &#039;1&#039;, &#039;0&#039;);</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1417889567,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 68970,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Скачать версию можно в центре загрузки: <a href=\"https://get.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://get.torrentpier.com/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1417889717,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1418425721,
+          "file_size": 179362,
+          "filename": "4235345.webp",
+          "height": 960,
+          "id": 2780,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/4235345-webp.2780/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2784-b3f5aa5ebc9d59b4ecbb87dcea09fd89.jpg?hash=61LrROc_pQ",
+          "width": 1920
+        }
+      ],
+      "id": 69515,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1418426107,
+      "message_parsed": "Радует что все моды (кроме <a href=\"https://torrentpier.com/threads/spasibo-za-razdachu-i-ocenka-reliza.40/\" class=\"link link--internal\">этого</a>) успешно удалось восстановить<br />\nВыходит такая шняга<br />\n<img src=\"http://i63.fastpic.ru/big/2014/1213/51/7aab7931bf2f834ab332945c54eb4151.png\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1418425881,
+      "user_id": 5452,
+      "user_title": "User",
+      "username": "Ress Kent"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 69532,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "мод поставился, немного не туда код вставил🙂",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1418479652,
+      "user_id": 5452,
+      "user_title": "User",
+      "username": "Ress Kent"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "versia-2-1-5-alpha-5-zamena-standartnoj-kapci-na-recaptcha",
+  "sticky": false,
+  "tags": [],
+  "title": "Версия 2.1.5 ALPHA-5: замена стандартной капчи на reCAPTCHA...",
+  "url_path": "/threads/versia-2-1-5-alpha-5-zamena-standartnoj-kapci-na-recaptcha.31012/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 6214
+}

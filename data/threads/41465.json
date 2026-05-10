@@ -1,0 +1,102 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 87614,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41465,
+  "last_post_date": 1463377892,
+  "node_id": 57,
+  "post_date": 1463217767,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1463217711,
+          "file_size": 133668,
+          "filename": "Снимок экрана (3).webp",
+          "height": 1080,
+          "id": 4383,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-ekrana-3-webp.4383/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4387-1a9078679cd1dac9c09f80b5dfd6d9a7.jpg?hash=0_2lJys0xO",
+          "width": 1920
+        }
+      ],
+      "id": 87614,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Помогите решить проблему<br />\nВнезапно перестал отображаться аватар админа (только админа, другие все норм)<br />\n<div>Spoiler content hidden.</div><br />\n<a href=\"https://torrentpier.com/attachments/4383/\"><img src=\"https://torrentpier.com/data/attachments/4/4387-1a9078679cd1dac9c09f80b5dfd6d9a7.jpg?hash=0_2lJys0xO\" alt=\"Снимок экрана (3).webp\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1463217767,
+      "user_id": 6106,
+      "user_title": "User",
+      "username": "veliant9"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87620,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Права на папку с аватарками со вложенными файлами установите корректные.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1463348554,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87624,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/1/\">Exile</a> , да да я пробывал 777 хоть на весь движок =&gt; бесполезно, решил <b>бэкап сайта с базой</b> перезалить и все ок",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1463377892,
+      "user_id": 6106,
+      "user_title": "User",
+      "username": "veliant9"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "you-dont-have-permission-to-access-data-avatars-0-2-2-png-on-this-server",
+  "sticky": false,
+  "tags": [],
+  "title": "You don't have permission to access /data/avatars//0/2/2.png on this server.",
+  "url_path": "/threads/you-dont-have-permission-to-access-data-avatars-0-2-2-png-on-this-server.41465/",
+  "user_id": 6106,
+  "username": "veliant9",
+  "view_count": 959
+}

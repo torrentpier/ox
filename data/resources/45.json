@@ -1,0 +1,104 @@
+{
+  "category": {
+    "description": "Section with all templates for TorrentPier.",
+    "id": 5,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Templates",
+    "view_url": "https://torrentpier.com/resources/categories/templates.5/"
+  },
+  "current_files": [
+    {
+      "filename": "underverse.zip",
+      "id": 3631,
+      "local_path": null,
+      "r2_key": null,
+      "size": 305861,
+      "src_url": "https://torrentpier.com/api/resource-versions/286/download?file=3631"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "adapt",
+    "installation": "[SPOILER=\"Инструкция\"]\n[CODE]рип сайта underverse\nпод SVN r483\n\n=====================================================================\nесли не хотим ставить имеющийся в архиве файл viewforum.php то\n\nнаходим в своём viewforum.php\n=====================================================================\n\n    // Gold/Silver releases mod\n    $is_gold = '';\n    if ($bb_cfg['gold_silver_enabled'] && isset($topic['tor_type']))\n    {\n        if ($topic['tor_type'] == TOR_TYPE_GOLD)\n        {\n            $is_gold = '<img src=\"images/tor_gold.gif\" width=\"16\" height=\"15\" title=\"'.$lang['GOLD'].'\" />&nbsp;';\n        }\n        elseif ($topic['tor_type'] == TOR_TYPE_SILVER)\n        {\n            $is_gold = '<img src=\"images/tor_silver.gif\" width=\"16\" height=\"15\" title=\"'.$lang['SILVER'].'\" />&nbsp;';\n        }\n    }\n    // END Gold/Silver releases mod\n\n\n=====================================================================\nменяем на\n=====================================================================\n\n    // Gold/Silver releases mod\n    $is_gold = '';\n    if ($bb_cfg['gold_silver_enabled'] && isset($topic['tor_type']))\n    {\n        if ($topic['tor_type'] == TOR_TYPE_GOLD)\n        {\n            $is_gold = '<img src=\"images/tor_gold.gif\" width=\"33\" height=\"16\" title=\"'.$lang['GOLD'].'\" />&nbsp;';\n        }\n        elseif ($topic['tor_type'] == TOR_TYPE_SILVER)\n        {\n            $is_gold = '<img src=\"images/tor_silver.gif\" width=\"33\" height=\"16\" title=\"'.$lang['SILVER'].'\" />&nbsp;';\n        }\n    }\n    // END Gold/Silver releases mod\n\n=====================================================================\nсохраняем и закрываем, теперь файл из архива нам не нужен.[/CODE]\n[/SPOILER]",
+    "owner": "Razor",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1374869484,
+      "file_size": 97430,
+      "filename": "4c0eb0e956c2f16d3cf775ab89829cc5.webp",
+      "height": 763,
+      "id": 2145,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/4c0eb0e956c2f16d3cf775ab89829cc5-webp.2145/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2150-87e0e6a0259f2780edabf9578382f9e6.jpg?hash=C62f8yxvQq",
+      "width": 1279
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> шаблон, рип с трекера Underverse.",
+  "download_count": 516,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/45.jpg?1429568555",
+  "id": 45,
+  "is_fileless": null,
+  "last_update": 1429568589,
+  "rating_avg": 5,
+  "rating_count": 1,
+  "resource_date": 1374869486,
+  "resource_state": "visible",
+  "slug": "sablon-underverse",
+  "tag_line": "Шаблон, рип с трекера Underverse.",
+  "tags": [],
+  "title": "Шаблон «Underverse»",
+  "url_path": "/resources/sablon-underverse.45/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 362,
+      "files": [
+        {
+          "filename": "underverse.zip",
+          "id": 3631,
+          "local_path": null,
+          "r2_key": null,
+          "size": 305861,
+          "src_url": "https://torrentpier.com/api/resource-versions/286/download?file=3631"
+        }
+      ],
+      "id": 286,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1429568589,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/sablon-underverse.45/version/286/"
+    },
+    {
+      "download_count": 157,
+      "files": [
+        {
+          "filename": "underverse.rar",
+          "id": 2144,
+          "local_path": null,
+          "r2_key": null,
+          "size": 274786,
+          "src_url": "https://torrentpier.com/api/resource-versions/46/download?file=2144"
+        }
+      ],
+      "id": 46,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1374869486,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/sablon-underverse.45/version/46/"
+    }
+  ],
+  "view_count": 676
+}

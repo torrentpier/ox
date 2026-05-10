@@ -1,0 +1,106 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "Last Post.zip",
+      "id": 3074,
+      "local_path": null,
+      "r2_key": null,
+      "size": 8243,
+      "src_url": "https://torrentpier.com/api/resource-versions/185/download?file=3074"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]####[Открыть]----- config.php\n-----[в конец]-----\n\n$bb_cfg['new_add_post_num'] = array(\n    'on'  => true,        // количество выводимых сообщений\n    'num' => 10,        // количество выводимых сообщений\n    'cache' => 20,\n    'ignor' => '0',        //‘орумы которые нужно игнорировать, строка должна выгл¤деть так '1,2,3,4'\n);\n$bb_cfg['title_lp_stext'] = 40; // сколько символов выводитс¤ в заглавии темы\n$bb_cfg['new_add_post_ignor_f'] = '0'; //‘орумы которые нужно игнорировать, строка должна выгл¤деть так '1,2,3,4'\n$bb_cfg['new_add_post_col'] = '#FAA'; //цвет нового сообщени¤ ( в состо¤нии теста )\n$bb_cfg['forum_lp_on'] = true; // включить или отключить вывод форума true|false\n$bb_cfg['data_lp_on'] = true; // включить или отключить вывод форума true|false\n$bb_cfg['ava_lp_on'] = true; // включить или отключить вывод форума true|false\n\n$page_cfg['show_new_add_post'] = array(\n#    BB_SCRIPT => true\n    'index'  => true,\n);\n\n####[Открыть]----- ajax.php\n-----[найти]-----\n\n        'index_data'        => array('guest'),\n\n-----[добавить ниже]-----\n\n        'last_post'         => array('user'),\n    \n-----[найти последнюю скобку и перед ней добавить]-----\n\n    function last_post()\n    {\n        require(AJAX_DIR .'last_post.php');\n    }\n\n####[Открыть]----- lang_main.php\n-----[в конец]-----\n\n$lang['LAST_ADD_POST'] = 'Последние сообщения';\n\n####[Открыть]----- page_header.php\n-----[найти]-----\n\n$template->assign_vars(array(\n\n-----[добавить выше]-----\n\nif($bb_cfg['new_add_post_num']['on'] && !empty($page_cfg['show_new_add_post'][BB_SCRIPT]))\n{\n    $trash_forums = $bb_cfg['trash_forum_id'] ? $bb_cfg['trash_forum_id'] : '0';\n    $ignor_forum = $bb_cfg['new_add_post_num']['ignor'];\n    if (!$sql_p = CACHE('bb_cache')->get('last_post'))\n    {\n        $sql_p = DB()->fetch_rowset(\"SELECT\n            p.topic_id, p.forum_id, p.poster_id, p.post_id, p.post_time,\n            t.topic_id, t.topic_title, t.forum_id, t.topic_last_post_time, f.*, u.user_id, u.username, u.user_avatar, u.user_avatar_type, u.user_opt, u.user_rank\n            FROM \". BB_TOPICS .\" AS t, \". BB_POSTS .\" AS p, \". BB_USERS .\" AS u, \". BB_FORUMS . \" AS f\n            WHERE p.forum_id = p.forum_id\n                AND f.auth_read = \". AUTH_ALL .\"\n                AND p.forum_id NOT IN($ignor_forum, f.allow_porno_topic, $trash_forums)\n                AND p.post_id = p.post_id\n                AND p.poster_id = u.user_id\n                AND p.forum_id = f.forum_id\n                AND p.poster_id = u.user_id\n                AND t.topic_id = p.topic_id\n                AND u.username = u.username\n            GROUP BY p.post_time DESC\n            LIMIT 0,\".$bb_cfg['new_add_post_num']['num']);\n        CACHE('bb_cache')->set('last_post', $sql_p, $bb_cfg['new_add_post_num']['cache']*60);\n    }\n    foreach ($sql_p as $new_post)\n    {\n        $user_avatar = '';\n        if ( !$user->opt_js['h_av'] && $new_post['user_id'] != ANONYMOUS )\n        {\n            $user_avatar = get_avatar($new_post['user_avatar'], $new_post['user_avatar_type'], !bf($new_post['user_opt'], 'user_opt', 'allow_avatar'), '32', '32');\n        }\n\n        $template -> assign_block_vars('newaddpost',array(\n            'LP_USER_AVA'   => $user_avatar,\n            'TOPIC_TITLE'   => wbr(str_short($new_post['topic_title'], $bb_cfg['title_lp_stext'])),\n            'POST_ID'       => $new_post['post_id'],\n            'TOPIC_ID'      => $new_post['topic_id'],\n            'FORUM'         => $new_post['forum_name'],\n            'FORUM_ON'      => $bb_cfg['forum_lp_on'],\n            'FORUM_ID'      => $new_post['forum_id'],\n            'AUTOR_POST'    => profile_url(array('username' => $new_post['username'], 'user_id' => $new_post['user_id'], 'user_rank' => $new_post['user_rank'])),\n            'AUTOR_POST_ID' => $new_post['user_id'],\n            'POST_TIME'     => bb_date($new_post['post_time']),\n            'URL_FORUM'     => make_url(FORUM_URL . $new_post['forum_id'], true),\n            'URL_NEW_POST'  => make_url(POST_URL . $new_post['post_id'], true),\n            //'NEW'           => (is_unread($new_post['post_time'], $new_post['topic_id'], $new_post['forum_id'])) ? 'HOT' : '',\n        )) ;\n    }\n}\n\n####[Открыть]----- page_header.tpl\n-----[в любое место]-----\n\n    <!-- IF $bb_cfg['new_add_post_num']['on'] -->\n    <link rel=\"stylesheet\" href=\"{TPL_DIR}/jstip.css?v={$bb_cfg['css_ver']}\" type=\"text/css\">\n    <script type=\"text/javascript\" src=\"{SITE_URL}misc/js/jstip.js\"></script>\n    <script type=\"text/javascript\">\n        ajax.callback.last_post = function(data) {\n          $('#load_last_post').html(data.message);\n        };\n    </script>\n    <div class=\"spacer\">&nbsp;</div>\n    <div>\n        <h3><a href=\"search.php?search_id=latest\">{L_LAST_ADD_POST}</a></h3>\n        <div align=\"center\" class=\"hrs\"></div>\n        <div>\n            <table id=\"load_last_post\" cellspacing=\"0\" border=\"0\" width=\"100%\">\n                <!-- BEGIN newaddpost -->\n                <tr    rel=\"viewpost.php?id={newaddpost.POST_ID}\" class=\"jsTip\" jtip=\"true\" name=\"{newaddpost.TOPIC_TITLE}\" id=\"post_{newaddpost.POST_ID}\">\n                    <td style=\"border-bottom: 1px solid #C3CBD1;\">{newaddpost.LP_USER_AVA}</td>\n                    <td class=\"f_titles\" style=\"border-bottom: 1px solid #C3CBD1;\">\n                        <div><a href=\"{newaddpost.URL_NEW_POST}\" style=\"font-size:11px\">{newaddpost.NEW}{newaddpost.TOPIC_TITLE}</a></div>\n                        <div style=\"font-size:10px\"><a href=\"profile.php?mode=viewprofile&u={newaddpost.AUTOR_POST_ID}\">{newaddpost.AUTOR_POST}</a> {newaddpost.POST_TIME} <a href=\"{newaddpost.URL_NEW_POST}{newaddpost.POST_ID}#{newaddpost.POST_ID}\">>></a></div>\n                        <!-- IF newaddpost.FORUM_ON -->\n                        <div style=\"font-size:10px\"> {L_FORUM}: <a href=\"{newaddpost.URL_FORUM}\">{newaddpost.FORUM}</a></div>\n                        <!-- ENDIF -->\n                    </td>\n                </tr>\n                <!-- END newaddpost -->\n                <tr>\n                    <td align=\"left\"></td>\n                    <td align=\"right\"><a data-tooltip=\"true\" title=\"—ледующие 5 тем\" href=\"#\" onclick=\"ajax.exec({action : 'last_post', mode: 'new_post', type: 1}); return false;\">>>></a></td>\n                </tr>\n            </table>\n        </div>\n        <div class=\"tCenter mask_links\">\n            <span class=\"morebutton\" onclick=\"ajax.exec({action : 'last_post', mode: 'update'}); return false;\">ќбновить</span>\n        </div>\n    </div>\n    <div class=\"spacer\">&nbsp;</div>\n    <!-- ENDIF -->[/PHP]\n[/SPOILER]",
+    "owner": "frost444",
+    "sql": "no",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1377229669,
+      "file_size": 48474,
+      "filename": "1.webp",
+      "height": 743,
+      "id": 2218,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/1-webp.2218/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2223-93976edcc98f9aab4fc82d57d08f7224.jpg?hash=WEAzr-59dv",
+      "width": 268
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет вывод новых сообщений и тем форума в боковой панели (с предпросмотром).<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">AJAX навигация</li>\n<li data-xf-list-type=\"ul\">Полное кэширование</li>\n<li data-xf-list-type=\"ul\">Предварительный просмотр</li>\n</ul>",
+  "download_count": 565,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/49.jpg?1425219656",
+  "id": 49,
+  "is_fileless": null,
+  "last_update": 1425219752,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1377229530,
+  "resource_state": "visible",
+  "slug": "novye-soobsenia-s-predprosmotrom",
+  "tag_line": "Добавляет вывод новых сообщений и тем форума в боковой панели (с предпросмотром).",
+  "tags": [],
+  "title": "Новые сообщения (с предпросмотром)",
+  "url_path": "/resources/novye-soobsenia-s-predprosmotrom.49/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 352,
+      "files": [
+        {
+          "filename": "Last Post.zip",
+          "id": 3074,
+          "local_path": null,
+          "r2_key": null,
+          "size": 8243,
+          "src_url": "https://torrentpier.com/api/resource-versions/185/download?file=3074"
+        }
+      ],
+      "id": 185,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425219752,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/novye-soobsenia-s-predprosmotrom.49/version/185/"
+    },
+    {
+      "download_count": 225,
+      "files": [
+        {
+          "filename": "[$][TP2] Last Post.zip",
+          "id": 2217,
+          "local_path": null,
+          "r2_key": null,
+          "size": 36703,
+          "src_url": "https://torrentpier.com/api/resource-versions/51/download?file=2217"
+        }
+      ],
+      "id": 51,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1377229530,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/novye-soobsenia-s-predprosmotrom.49/version/51/"
+    }
+  ],
+  "view_count": 836
+}

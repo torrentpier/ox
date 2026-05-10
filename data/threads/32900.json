@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 71474,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 32900,
+  "last_post_date": 1420813632,
+  "node_id": 57,
+  "post_date": 1420727259,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71474,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "подскажите почему      кол-во &quot;скачан раз&quot; не обновляется ,статистика сидов показывает .",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1420727259,
+      "user_id": 5875,
+      "user_title": "User",
+      "username": "Nswers"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71532,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Крон-задачи выполняются нормально? Если раздача пользователем действительно скачивалась, то это число должно обновляться так или иначе.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1420813632,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "ne-obnovlaetsa-statistika-skacan-raz",
+  "sticky": false,
+  "tags": [],
+  "title": "Не обновляется статистика скачан раз",
+  "url_path": "/threads/ne-obnovlaetsa-statistika-skacan-raz.32900/",
+  "user_id": 5875,
+  "username": "Nswers",
+  "view_count": 1115
+}

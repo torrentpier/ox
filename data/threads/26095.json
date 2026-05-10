@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61883,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 26095,
+  "last_post_date": 1408091371,
+  "node_id": 57,
+  "post_date": 1408049636,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61883,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Я так понимаю уровень вложенности иерархии форумов ограничен лишь двумя ступенями? Создал форум а в нём ещё один, попытался создать третий вложенный, и вроде бы получилось, но везде в деревьях иерархии третий форум отображается как дочерний первого а не второго, то же самое и в &quot;хлебных крошках&quot; когда в него захожу. Т.е. идёт главная -&gt; первый форум -&gt; третий форум.<br />\n <br />\nТ.е. разрешена всего лишь двойная вложенность что ли? У движка rutracker более глубокая вложенность присутствует...",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1408049636,
+      "user_id": 5368,
+      "user_title": "User",
+      "username": "phobols"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61884,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Да, вложенность сейчас двойная. Позднее вариант с неограниченной рассмотрим.<br />\n <br />\nPS. А где на рутрекере увидели большую вложенность?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1408050579,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61890,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ну да, там тоже нет вроде, перепутал.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1408091371,
+      "user_id": 5368,
+      "user_title": "User",
+      "username": "phobols"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "uroven-vlozennosti-forumov",
+  "sticky": false,
+  "tags": [],
+  "title": "Уровень вложенности форумов",
+  "url_path": "/threads/uroven-vlozennosti-forumov.26095/",
+  "user_id": 5368,
+  "username": "phobols",
+  "view_count": 1030
+}

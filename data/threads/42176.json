@@ -1,0 +1,65 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95226,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 42176,
+  "last_post_date": 1696243462,
+  "node_id": 3,
+  "post_date": 1696243462,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1696243461,
+          "file_size": 2391372,
+          "filename": "torrentpier_v.1.0.2_r537_utf8_flyindiz_r188_for_torrentpier.kz.zip",
+          "height": 0,
+          "id": 5529,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/torrentpier_v-1-0-2_r537_utf8_flyindiz_r188_for_torrentpier-kz-zip.5529/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 95226,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1696243526,
+      "message_parsed": "<i><b>Год выпуска:</b></i> <b>2010</b><br />\n<i><b>Версия: </b></i><b>1.0.2</b><br />\n<i><b>Разработчик:</b></i> <b>Meithar, torrentper team, fly_indiz</b><br />\n<i><b>Платформа:</b></i> <b>php</b><br />\n<hr /><i><b>Системные требования:</b></i><br />\n<hr />Apache 2.2.6 или lighthttpd или NGINX<br />\nMySQL 5.0.45 или выше<br />\nPHP 5.2.5 или выше<br />\nЯзык интерфейса: английский + русский<br />\nТаблэтка: Не требуется<br />\n<hr /><i><b>Описание:</b></i><br />\n<hr /><i>Модифицированный движок трекера torrentpier 1.х , продаваемый на рутрекере за 50$ СОВЕРШЕННО БЕСПЛАТНО<br />\nСборка основана на последней версии TorrentPier 2.0.7 SVN r549<br />\nдвижок полностью на unicode UTF-8</i><br />\n<div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1696243462,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "modificirovannyj-torrentpier-svn-1-0-2-r537-dla-oznakomlenia",
+  "sticky": false,
+  "tags": [],
+  "title": "Модифицированный TorrentPier SVN 1.0.2 r537 (для ознакомления)",
+  "url_path": "/threads/modificirovannyj-torrentpier-svn-1-0-2-r537-dla-oznakomlenia.42176/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 529
+}

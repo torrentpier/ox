@@ -1,0 +1,140 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL][$][TP2] Кешированная статистика ajax.zip",
+      "id": 3364,
+      "local_path": null,
+      "r2_key": null,
+      "size": 6617,
+      "src_url": "https://torrentpier.com/api/resource-versions/275/download?file=3364"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]Автор мода: frost444\n\n####[ОТКРЫТЬ]----- ajax.php\n-----[найти]-----\n\n'manage_group'      => array('user'),\n\n-----[после вставить]-----\n\n'UserStats'         => array('user'),\n\n-----[найти]-----\n\nfunction manage_user()\n{\n    require(AJAX_DIR . 'manage_user.php');\n}\n\n-----[после вставить]-----\n\nfunction UserStats()\n{\n    require(AJAX_DIR .'UserStats.php');\n}\n\n####[ОТКРЫТЬ]----- config.php\n-----[найти]-----\n\n// Atom feed\n$bb_cfg['atom'] = array(\n    'path' => INT_DATA_DIR .'atom',                   // without ending slash\n    'url'  => './internal_data/atom',                 // without ending slash\n);\n\n-----[после вставить]-----\n\n$bb_cfg['userstat'] = array(\n    'cache'     => 60,\n);\n\n####[ОТКРЫТЬ]----- page_header.php\n-----[найти]-----\n\n$template->assign_vars(array(\n    'SIMPLE_HEADER'      => !empty($gen_simple_header),\n\n-----[выше вставить]-----\n\nif ($bb_cfg['bt_show_dl_stat_on_index'] && !IS_GUEST)\n{\n    show_bt_userdata_only();\n}\n\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- page_header.tpl\n-----[найти]-----\n\n     <!-- IF SHOW_BT_USERDATA --><div id=\"user_ratio\">\n      <h3>{L_USER_RATIO}</h3>\n       <table cellpadding=\"0\">\n       <div align=\"center\">{THIS_AVATAR}</div>\n       <tr><td>{L_USER_RATIO}</td><td><!-- IF DOWN_TOTAL_BYTES gt MIN_DL_BYTES --><b>{USER_RATIO}</b><!-- ELSE --><b>{L_NONE}</b> (DL < {MIN_DL_FOR_RATIO})<!-- ENDIF --></td></tr>\n       <tr><td>{L_DOWNLOADED}</td><td class=\"leechmed\"><b>{DOWN_TOTAL}</b></td></tr>\n       <tr><td>{L_UPLOADED}</td><td class=\"seedmed\"><b>{UP_TOTAL}</b></td></tr>\n       <tr><td>{L_RELEASED}</td><td class=\"seedmed\">{RELEASED}</td></tr>\n       <tr><td>{L_BONUS}</td><td class=\"seedmed\">{UP_BONUS}</td></tr>\n       <!-- IF $bb_cfg['seed_bonus_enabled'] --><tr><td>{L_SEED_BONUS}</td><td><a href=\"profile.php?mode=bonus\"><span class=\"points bold\">{POINTS}</span></a></td></tr><!-- ENDIF -->\n       </table>\n     </div><!-- ENDIF -->\n\n-----[заменить]-----\n\n     <!-- IF SHOW_BT_RATE -->\n    <!-- BEGIN rate -->\n     <div id=\"user_ratio\" class=\"ajax_user_{rate.USER_ID}\" data-userstats=\"true\">\n      <h3>{L_USER_RATIO} <span id=\"update_userstat\" onclick=\"user_stats({rate.USER_ID}, 'stats')\" class=\"clickable\" data-tooltip=\"true\" title=\"Обновить статистику.(Авто обновление будет: {rate.TIME_UDATE_STATS} )\">[{L_UPDATE}]</span></h3>\n       <table cellpadding=\"0\">\n       <div align=\"center\">{rate.AVATAR}</div>\n       <tr><td>{L_USER_RATIO}</td><td id=\"ajax_userratio\"><!-- IF rate.DOWN_TOTAL_BYTES gt rate.MIN_DL_BYTES --><b>{rate.USER_RATIO}</b><!-- ELSE --><b>{L_NONE}</b> (DL < {rate.MIN_DL_FOR_RATIO})<!-- ENDIF --></td></tr>\n       <tr><td>{L_DOWNLOADED}</td><td class=\"leechmed\"><b id=\"ajax_userdownloaded\">{rate.DOWN_TOTAL}</b></td></tr>\n       <tr><td>{L_UPLOADED}</td><td class=\"seedmed\"><b id=\"ajax_useruploaded\">{rate.UP_TOTAL}</b></td></tr>\n       <tr><td>{L_RELEASED}</td><td class=\"seedmed\" id=\"ajax_userrelesed\">{rate.RELEASED}</td></tr>\n       <tr><td>{L_BONUS}</td><td class=\"seedmed\" id=\"ajax_userbonus\">{rate.UP_BONUS}</td></tr>\n       <!-- IF $bb_cfg['seed_bonus_enabled'] --><tr><td>{L_SEED_BONUS}</td><td><a href=\"profile.php?mode=bonus\"><span class=\"points bold\" id=\"ajax_userseedbonus\">{rate.POINTS}</span></a></td></tr><!-- ENDIF -->\n       </table>\n     </div>\n    <!-- END rate -->\n     <!-- ENDIF -->\n                                               \n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- usercp_register.tpl\n-----[найти]-----\n\nfunction get_bt_userdata ($user_id, $update = true)\n{\n    ...\n}\n   \n-----[заменить]-----\n\nfunction get_bt_userdata ($user_id, $update = true)\n{\n    global $bb_cfg;\n\n    if($update)\n    {\n        $resoult = DB()->fetch_row(\"\n                            SELECT bt.*, SUM(tr.speed_up) as speed_up, SUM(tr.speed_down) as speed_down\n                            FROM      \". BB_BT_USERS   .\" bt\n                            LEFT JOIN \". BB_BT_TRACKER .\" tr ON (bt.user_id = tr.user_id)\n                            WHERE bt.user_id = \". (int) $user_id .\"\n                            GROUP BY bt.user_id\n                        \");\n        if($resoult)\n        {\n            $resoult['expire'] = TIMENOW + $bb_cfg['userstat']['cache']*60*60;\n            CACHE('bb_cache')->set('userstat['.$user_id.']', $resoult, $bb_cfg['userstat']['cache']*60*60);\n        }\n    }\n    else\n    {\n        if (!$resoult = CACHE('bb_cache')->get('userstat['.$user_id.']'))\n        {\n            $resoult = DB()->fetch_row(\"\n                                SELECT bt.*, SUM(tr.speed_up) as speed_up, SUM(tr.speed_down) as speed_down\n                                FROM      \". BB_BT_USERS   .\" bt\n                                LEFT JOIN \". BB_BT_TRACKER .\" tr ON (bt.user_id = tr.user_id)\n                                WHERE bt.user_id = \". (int) $user_id .\"\n                                GROUP BY bt.user_id\n                            \");\n            if($resoult)\n            {\n                $resoult['expire'] = TIMENOW + $bb_cfg['userstat']['cache']*60*60;\n                CACHE('bb_cache')->set('userstat['.$user_id.']', $resoult, $bb_cfg['userstat']['cache']*60*60);\n            }\n        }\n        else\n        {\n            $resoult = CACHE('bb_cache')->get('userstat['.$user_id.']');\n        }\n    }\n\n    return $resoult;\n}\n\nfunction show_bt_userdata_only ()\n{\n    global $lang, $userdata;\n\n    $btu = get_bt_userdata($userdata['user_id'], false);\n\n    $GLOBALS['template']->assign_vars(array(\n        'SHOW_BT_RATE' => true,\n    ));\n\n    $GLOBALS['template']->assign_block_vars('rate', array(\n        'UP_TOTAL'            => humn_size($btu['u_up_total']),\n        'UP_BONUS'            => humn_size($btu['u_up_bonus']),\n        'RELEASED'            => humn_size($btu['u_up_release']),\n        'DOWN_TOTAL'          => humn_size($btu['u_down_total']),\n        'DOWN_TOTAL_BYTES'    => $btu['u_down_total'],\n        'USER_RATIO'          => get_bt_ratio($btu),\n        'MIN_DL_FOR_RATIO'    => humn_size(MIN_DL_FOR_RATIO),\n        'MIN_DL_BYTES'        => MIN_DL_FOR_RATIO,\n        'AUTH_KEY'            => ($btu['auth_key']) ? $btu['auth_key'] : $lang['NONE'],\n\n        'TD_DL'                => humn_size($btu['down_today']),\n        'TD_UL'                => humn_size($btu['up_today']),\n        'TD_REL'               => humn_size($btu['up_release_today']),\n        'TD_BONUS'             => humn_size($btu['up_bonus_today']),\n        'TD_POINTS'            => ($btu['auth_key']) ? $btu['points_today'] : '0.00',\n\n        'YS_DL'                => humn_size($btu['down_yesterday']),\n        'YS_UL'                => humn_size($btu['up_yesterday']),\n        'YS_REL'               => humn_size($btu['up_release_yesterday']),\n        'YS_BONUS'             => humn_size($btu['up_bonus_yesterday']),\n        'YS_POINTS'            => ($btu['auth_key']) ? $btu['points_yesterday'] : '0.00',\n\n        'SPEED_UP'             => humn_size($btu['speed_up'], 0, 'KB') .'/s',\n        'SPEED_DOWN'           => humn_size($btu['speed_down'], 0, 'KB') .'/s',\n        'TIME_UDATE_STATS'     => bb_date($btu['expire']),\n        'POINTS'               => $userdata['user_points'],\n        'USER_ID'              => $userdata['user_id'],\n        'AVATAR'               => get_avatar($userdata['user_id'], $userdata['avatar_ext_id'], !bf($userdata['user_opt'], 'user_opt', 'dis_avatar')),\n    ));\n}\n\n####[СОХРАНИТЬ_ФАЙЛ]####[/PHP]\n[/SPOILER]",
+    "owner": "frost444",
+    "sql": "no",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425588453,
+      "file_size": 12608,
+      "filename": "1.webp",
+      "height": 134,
+      "id": 3336,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/1-webp.3336/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3340-1db2f3b00176f144aba3aed6f307841d.jpg?hash=sKWPysojXR",
+      "width": 390
+    },
+    {
+      "attach_date": 1425588453,
+      "file_size": 13142,
+      "filename": "2.webp",
+      "height": 139,
+      "id": 3337,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2-webp.3337/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3341-ed4efdaf7d841e9f26cb05000362ab87.jpg?hash=2p7Mm5PTU7",
+      "width": 383
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет возможность обновления статистики пользователя по AJAX-запросу.",
+  "download_count": 423,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/209.jpg?1425588534",
+  "id": 209,
+  "is_fileless": null,
+  "last_update": 1425676601,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1425588510,
+  "resource_state": "visible",
+  "slug": "ajax-statistika",
+  "tag_line": "Добавляет возможность обновления статистики пользователя по AJAX-запросу.",
+  "tags": [],
+  "title": "AJAX-статистика",
+  "url_path": "/resources/ajax-statistika.209/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.2.0",
+  "versions": [
+    {
+      "download_count": 257,
+      "files": [
+        {
+          "filename": "[FULL][$][TP2] Кешированная статистика ajax.zip",
+          "id": 3364,
+          "local_path": null,
+          "r2_key": null,
+          "size": 6617,
+          "src_url": "https://torrentpier.com/api/resource-versions/275/download?file=3364"
+        }
+      ],
+      "id": 275,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425676601,
+      "version_state": "visible",
+      "version_string": "1.2.0",
+      "view_url": "https://torrentpier.com/resources/ajax-statistika.209/version/275/"
+    },
+    {
+      "download_count": 79,
+      "files": [
+        {
+          "filename": "UserStats.zip",
+          "id": 3359,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4719,
+          "src_url": "https://torrentpier.com/api/resource-versions/273/download?file=3359"
+        }
+      ],
+      "id": 273,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425661357,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/ajax-statistika.209/version/273/"
+    },
+    {
+      "download_count": 94,
+      "files": [
+        {
+          "filename": "[FULL][$][TP2] Кешированная статистика ajax.zip",
+          "id": 3338,
+          "local_path": null,
+          "r2_key": null,
+          "size": 6344,
+          "src_url": "https://torrentpier.com/api/resource-versions/269/download?file=3338"
+        }
+      ],
+      "id": 269,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425588510,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/ajax-statistika.209/version/269/"
+    }
+  ],
+  "view_count": 518
+}

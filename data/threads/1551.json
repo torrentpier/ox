@@ -1,0 +1,148 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 20587,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 47,
+        "title": "Modifications for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 43,
+    "title": "Modifications for TorrentPier (archive)"
+  },
+  "id": 1551,
+  "last_post_date": 1348530158,
+  "node_id": 43,
+  "post_date": 1348493022,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1348493420,
+          "file_size": 29462,
+          "filename": "1.webp",
+          "height": 225,
+          "id": 1438,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1-webp.1438/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1439-0404ee124e57702d33bee5a7f884c1a2.jpg?hash=4zfk0La6E-",
+          "width": 996
+        },
+        {
+          "attach_date": 1348493426,
+          "file_size": 31956,
+          "filename": "2.webp",
+          "height": 227,
+          "id": 1439,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2-webp.1439/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1440-533b50f0eddd7415e2c35c90d659e5bf.jpg?hash=wG-xxUNHNy",
+          "width": 996
+        }
+      ],
+      "id": 20587,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/attachments/1439/\"><img src=\"https://torrentpier.com/data/attachments/1/1440-533b50f0eddd7415e2c35c90d659e5bf.jpg?hash=wG-xxUNHNy\" alt=\"2.webp\" /></a> <a href=\"https://torrentpier.com/attachments/1438/\"><img src=\"https://torrentpier.com/data/attachments/1/1439-0404ee124e57702d33bee5a7f884c1a2.jpg?hash=4zfk0La6E-\" alt=\"1.webp\" /></a><br />\n--tracker.tpl<br />\nfind<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;a class=&quot;menu-root&quot; href=&quot;#tr-options&quot;&gt;{L_DISPLAYING_OPTIONS}&lt;/a&gt;</pre>after<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;span style=&quot;color: #006699; cursor: pointer;&quot; id=&quot;multi-download&quot;&gt;&amp;middot;&amp;nbsp;Массовая закачка&lt;/span&gt;</pre> <br />\nfind<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;th class=&quot;{sorter: &#039;digit&#039;}&quot; title=&quot;{L_SIZE}&quot;&gt;&lt;b class=&quot;tbs-text&quot;&gt;{L_SIZE}&lt;/b&gt;&lt;/th&gt;</pre>after<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;th style=&quot;display: none;&quot; title=&quot;Multi Download&quot; attr=&quot;MD&quot;&gt;&lt;b&gt;M D&lt;/b&gt;&lt;/th&gt;</pre> <br />\nfind<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;td class=&quot;row4 small nowrap&quot;&gt;</pre>replace<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;td class=&quot;row4 small nowrap&quot; attr=&quot;download&quot;&gt;</pre> <br />\nfind<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;td class=&quot;catBottom&quot; colspan=&quot;{TOR_COLSPAN}&quot;&gt;&amp;nbsp;&lt;/td&gt;</pre>replace<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;td class=&quot;catBottom&quot; colspan=&quot;{TOR_COLSPAN}&quot; align=&quot;center&quot;&gt;&amp;nbsp;&lt;input type=&quot;button&quot; value=&quot;Скачать&quot; class=&quot;bold long&quot; id=&quot;multiDownloadsAction&quot; style=&quot;display: none;&quot;&gt;&amp;nbsp;&lt;/td&gt;</pre> <br />\n--main.js<br />\nfind(~350 line)<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">.filter(&#039;.error&#039;).one(&#039;focus&#039;, function(){\n            $(this).removeClass(&#039;error&#039;);</pre>after<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">    /* Tracker */\n    jQuery(&quot;#multi-download&quot;).click(function(){\n        jQuery(&quot;th[attr=MD]&quot;).show();\n        jQuery(&quot;#multi-download&quot;).hide();\n        var i = 0;\n        var jTorTable = jQuery(&quot;#tor-tbl&quot;);\n        var aTd = jQuery(&quot;[attr=download]&quot;, jTorTable);\n        var aIdsDownloads = {};\n        if(aTd.length){\n        aTd.each(function(){\n            aIdsDownloads[i] = jQuery(&quot;a&quot;, jQuery(this)).attr(&quot;href&quot;);\n            jQuery(this).after(&quot;&lt;td class=\\&quot;row4\\&quot;&gt;&lt;input type=\\&quot;checkbox\\&quot; name=\\&quot;downloadsArray\\&quot; value=\\&quot;&quot;+ aIdsDownloads[i] +&quot;\\&quot;&gt;&lt;/td&gt;&quot;);\n            i++;\n        });\n            var jInput = jQuery(&quot;#multiDownloadsAction&quot;);\n            jInput.show();\n        }else{\n            alert(&quot;Нет ни одной раздачи.&quot;);\n        }\n    });\n \n    jQuery(&quot;#multiDownloadsAction&quot;).click(function(){\n        var aIds = {};\n        var i = 0;\n        var jACheckbox = jQuery(&quot;input[name=downloadsArray]:checked&quot;);\n        if(jACheckbox.length){\n        jACheckbox.each(function(){\n            aIds[i] = jQuery(this).val();\n            window.open(aIds[i], &quot;download_&quot;+i);\n            i++;\n        });\n        }else{\n            alert(&quot;Не выбрано ни одной раздачи.&quot;);\n        }\n    });</pre> <br />\nПо просьбе Gemini_13 🙂",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1348493022,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20588,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>dimka3210</b>, он в архив собирает? Или тупо все закачки разом в браузер закидывает для сохранения?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1348494184,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20590,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Lange\"><b>dimka3210</b>, он в архив собирает? Или тупо все закачки разом в браузер закидывает для сохранения?</blockquote>Второй вариант. Там с архивом заминочка вышла. Я пока ещё не додумал как сделать.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1348494259,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20592,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо, Дим!)) Классная вещь)))",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1348496019,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20596,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "в архив не сложно собрать, пиши расскажу как)",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1348530158,
+      "user_id": 2,
+      "user_title": "User",
+      "username": "_Xz_"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "multidownloads-torrents-files",
+  "sticky": false,
+  "tags": [],
+  "title": "MultiDownloads Torrents Files",
+  "url_path": "/threads/multidownloads-torrents-files.1551/",
+  "user_id": 19,
+  "username": "dimka3210",
+  "view_count": 1941
+}

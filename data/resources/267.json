@@ -1,0 +1,81 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "drag_drop_duration.zip",
+      "id": 5236,
+      "local_path": null,
+      "r2_key": null,
+      "size": 3432,
+      "src_url": "https://torrentpier.com/api/resource-versions/387/download?file=5236"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[LIST=1]\n[*]В корневой папке сайта создать папку [B]mods[/B] (если не создана).\n[*]Скопировать содержимое архива в папку папку [B]mods[/B].\n[*]Отредактировать [B]config.php[/B] в папке мода в соответствии с вашими предпочтениями.\n[*]В конце файла [B]\\styles\\templates\\posting_tpl.tpl[/B] добавить строчку (если ещё не подключали [URL='https://torrentpier.com/resources/authors/lufton.8750/']мои моды[/URL]):\n[CODE=php]<?php foreach (glob(BB_ROOT . '/mods/*' , GLOB_ONLYDIR) as $dir) require $dir . '/index.php'; ?>[/CODE]\n[*]Пользоваться с удовольствием.\n[/LIST]\nДемонстрация работы, установка, настройка рассмотрена в следующем видео:\n[MEDIA=youtube]dPNHVIqGSW4[/MEDIA]",
+    "owner": "lufton",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [],
+  "description_parsed": "Мод поля продолжительности с поддержкой автозаполнения при перетаскивании на него аудио-файлов. Можно связать с <a href=\"https://torrentpier.com/resources/drag-and-drop-fajl-list.268/\" class=\"link link--internal\">модом файл-листа</a> для его автозаполнения вместе с продолжительностью файлов. Может быть полезным для аудио-релизов.",
+  "download_count": 226,
+  "external_url": null,
+  "icon_url": null,
+  "id": 267,
+  "is_fileless": null,
+  "last_update": 1544813885,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1544813885,
+  "resource_state": "visible",
+  "slug": "drag-and-drop-duration",
+  "tag_line": "Поле продолжительности с поддержкой автозаполнения при перетаскивании файлов",
+  "tags": [
+    "audio",
+    "drag",
+    "drop",
+    "duration",
+    "music",
+    "аудио",
+    "длительность",
+    "музыка",
+    "продолжительность"
+  ],
+  "title": "Drag and Drop Duration",
+  "url_path": "/resources/drag-and-drop-duration.267/",
+  "user_id": 8750,
+  "username": "lufton",
+  "version": "1.0",
+  "versions": [
+    {
+      "download_count": 226,
+      "files": [
+        {
+          "filename": "drag_drop_duration.zip",
+          "id": 5236,
+          "local_path": null,
+          "r2_key": null,
+          "size": 3432,
+          "src_url": "https://torrentpier.com/api/resource-versions/387/download?file=5236"
+        }
+      ],
+      "id": 387,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1544813885,
+      "version_state": "visible",
+      "version_string": "1.0",
+      "view_url": "https://torrentpier.com/resources/drag-and-drop-duration.267/version/387/"
+    }
+  ],
+  "view_count": 731
+}

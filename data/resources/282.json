@@ -1,0 +1,169 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Список пользователей за 24 часа by belomaxorka.zip",
+      "id": 6542,
+      "local_path": null,
+      "r2_key": null,
+      "size": 1959,
+      "src_url": "https://torrentpier.com/api/resource-versions/651/download?file=6542"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1706108306,
+      "file_size": 7670,
+      "filename": "Screenshot 2024-01-24 214909.webp",
+      "height": 60,
+      "id": 5772,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot-2024-01-24-214909-webp.5772/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5776-3d020799515609be4f439b6837b896a8.jpg?hash=Cth4sWDxST",
+      "width": 402
+    },
+    {
+      "attach_date": 1706108306,
+      "file_size": 6676,
+      "filename": "Screenshot 2024-01-24 214945.webp",
+      "height": 54,
+      "id": 5773,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot-2024-01-24-214945-webp.5773/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5777-5849ce72b37609865a9acc66700a44d6.jpg?hash=uBT9pBxW63",
+      "width": 402
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> В статистике форума отображает пользователей посетивших ресурс за последние 24 часа. Если пользователь скрыл свой онлайн, то он в списке не будет показан (Исключение для админов).",
+  "download_count": 605,
+  "external_url": null,
+  "icon_url": null,
+  "id": 282,
+  "is_fileless": null,
+  "last_update": 1758826994,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1706108343,
+  "resource_state": "visible",
+  "slug": "ajax-pol-zovateli-za-24-casa",
+  "tag_line": "В статистике форума отображает пользователей посетивших ресурс за последние 24 часа.",
+  "tags": [
+    "ajax",
+    "аякс",
+    "мод",
+    "моды",
+    "посетител за 24 часа",
+    "посещения за день",
+    "список пользователей за 24 часа",
+    "статистика"
+  ],
+  "title": "[AJAX] Пользователи за 24 часа",
+  "url_path": "/resources/ajax-pol-zovateli-za-24-casa.282/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.1.2",
+  "versions": [
+    {
+      "download_count": 196,
+      "files": [
+        {
+          "filename": "[FULL] Список пользователей за 24 часа by belomaxorka.zip",
+          "id": 6542,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1959,
+          "src_url": "https://torrentpier.com/api/resource-versions/651/download?file=6542"
+        }
+      ],
+      "id": 651,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1758826994,
+      "version_state": "visible",
+      "version_string": "v1.1.2",
+      "view_url": "https://torrentpier.com/resources/ajax-pol-zovateli-za-24-casa.282/version/651/"
+    },
+    {
+      "download_count": 176,
+      "files": [
+        {
+          "filename": "[FULL] Список пользователей за 24 часа by belomaxorka.zip",
+          "id": 6035,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1653,
+          "src_url": "https://torrentpier.com/api/resource-versions/512/download?file=6035"
+        }
+      ],
+      "id": 512,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1720593444,
+      "version_state": "visible",
+      "version_string": "v1.1.1",
+      "view_url": "https://torrentpier.com/resources/ajax-pol-zovateli-za-24-casa.282/version/512/"
+    },
+    {
+      "download_count": 119,
+      "files": [
+        {
+          "filename": "[FULL] Список пользователей за 24 часа by belomaxorka.zip",
+          "id": 6034,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1645,
+          "src_url": "https://torrentpier.com/api/resource-versions/511/download?file=6034"
+        }
+      ],
+      "id": 511,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1720592747,
+      "version_state": "visible",
+      "version_string": "v1.1.0",
+      "view_url": "https://torrentpier.com/resources/ajax-pol-zovateli-za-24-casa.282/version/511/"
+    },
+    {
+      "download_count": 121,
+      "files": [
+        {
+          "filename": "[FULL] Список пользователей за 24 часа by belomaxorka.zip",
+          "id": 5770,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1529,
+          "src_url": "https://torrentpier.com/api/resource-versions/444/download?file=5770"
+        }
+      ],
+      "id": 444,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1706108343,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/ajax-pol-zovateli-za-24-casa.282/version/444/"
+    }
+  ],
+  "view_count": 2959
+}

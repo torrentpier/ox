@@ -1,0 +1,70 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 91422,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 41732,
+  "last_post_date": 1496557409,
+  "node_id": 80,
+  "post_date": 1496555867,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91422,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "При активации учетки по почте выдает Bad request<br />\nТак же ругается что не может отправить почту по php<br />\nfreebsd 11 php56+mysql57+apache24<br />\nTorrentpier 2.15 накатывал свежий, если интересно посмотрите <a href=\"http://torrent.assasinfil.ru\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">torrent.assasinfil.ru</a>.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1496555867,
+      "user_id": 6511,
+      "user_title": "User",
+      "username": "assasinfil"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91423,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Bad request и прочие ошибки аппача никакого отношения к движку не имеют. Криво настроили сервер, курите логи.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1496557409,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 1,
+  "slug": "registracia",
+  "sticky": false,
+  "tags": [
+    "bad request",
+    "smtp",
+    "регистрация"
+  ],
+  "title": "Регистрация",
+  "url_path": "/threads/registracia.41732/",
+  "user_id": 6511,
+  "username": "assasinfil",
+  "view_count": 1025
+}

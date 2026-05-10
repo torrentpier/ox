@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95210,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 42171,
+  "last_post_date": 1695676935,
+  "node_id": 3,
+  "post_date": 1695676935,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95210,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Есть задача, заносить в базу жанры фильмов, реализовано на основе мода <a href=\"https://torrentpier.com/threads/meta-tegi-rasshirennaja-versija.25864/\" class=\"link link--internal\">Мета-теги (расширенная версия)</a><br />\nВ базе таблица создана, данные заносятся, но некорректно. По аналогии с description написал для genre.<br />\nПишутся все слова после &quot;<b>Жанр</b>:&quot; и далее ограничено количеством символов 25, а нужно сделать чтобы только до следующего слова &quot;<b>Страна</b>:&quot;<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\">$search_word = array(&quot;Жанр&quot;);\n$i= array_count_values($search_word);\n\nif (preg_match(&#039;#Жанр#is&#039;, $text))\n        {\n        $pos = strpos($text, &#039;Жанр&#039;);\n        $text_d = substr($text, $pos);\n        }\n    else{ $text_d = &#039;&#039;;}\n        \n    if($text_d = ($text_d != &#039;&#039;) ? $text_d : $text)\n        {\n        $genre = str_replace($fastquotes, &#039;&#039;, $text_d);\n        $genre = str_replace(&quot;:&quot;, &#039;&#039;, $genre);\n        $genre = preg_replace(&quot;/(\\s){2,}/&quot;,&#039; &#039;,$genre);\n        $genre = str_replace($search_word, &#039;&#039;, trim($genre));\n        $meta[&#039;genre&#039;] = trim(bb_substr( stripslashes($genre), 0, 25, &#039;utf-8&#039; ));\n        \n    } else { $meta[&#039;genre&#039;] = &#039;&#039;; }</pre><br />\nПолный код функции формирования мета-тегов:<br />\n<div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1695676935,
+      "user_id": 10618,
+      "user_title": "User",
+      "username": "nexo"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "zanr-kak-teg-dla-poiska",
+  "sticky": false,
+  "tags": [],
+  "title": "Жанр как тег для поиска",
+  "url_path": "/threads/zanr-kak-teg-dla-poiska.42171/",
+  "user_id": 10618,
+  "username": "nexo",
+  "view_count": 567
+}

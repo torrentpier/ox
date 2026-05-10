@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 69574,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 31508,
+  "last_post_date": 1418573020,
+  "node_id": 57,
+  "post_date": 1418565356,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 69574,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подскажите пожалуйста, почему идут дубли релизов ?<br />\n<br />\n<img src=\"http://i68.fastpic.ru/big/2014/1214/21/45bfa546f9d99b260006656768c7fd21.png\" alt=\"\" /> <br />\nКак избавится от дублей - так как гугл ругается на это.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1418565356,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 69583,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1418572797,
+      "message_parsed": "это откуда скрин ?<br />\n<br />\nну так это нормально, p и t ссылка на топик и ссылка на пост.<br />\n<br />\nКанонические url в помощь или rel=canonical<br />\n<br />\n<a href=\"https://support.google.com/webmasters/answer/139066?rd=1\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://support.google.com/webmasters/answer/139066?rd=1</a><br />\n<br />\n<a href=\"http://seo-for-ucoz.com/blog/atribut_rel_canonical_chto_takoe_kanonicheskaja_ssylka/2014-06-04-11\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://seo-for-ucoz.com/blog/atribut_rel_canonical_chto_takoe_kanonicheskaja_ssylka/2014-06-04-11</a><br />\n<br />\nу тебя ещё дубли есть такие<br />\n<br />\nviewforum.php?f=37 и viewforum.php?f=37&amp;start=50 - это одинаковые страницы<br />\nтакже<br />\n/tracker.php и tracker.php?search_id=dcnfJxjruref&amp;start=50<br />\nтоже одинаковые<br />\nзайди в Гугле вебмастер оптимизация html охереешь сколько у тебя страниц с одинаковыми титлами и описаниями.<br />\nseo занялся.......😆",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1418572424,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 69585,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1418573147,
+      "message_parsed": "Примерно так прописуется в топике:<br />\n<br />\n&lt;link rel=&quot;canonical&quot; href=&quot;<a href=\"http://xn--e1aqbiaibf.xn--j1amh/viewtopic.php?t=42860\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://мой-охеренный-трекер/viewtopic.php?t=</a>61244&quot; /&gt;<br />\n<br />\nт.е. в посте 63435 толжна быть ссылка на топик, как я выше написал<br />\n<br />\nставиться после мета тегов, в &lt;head&gt; &lt;/head&gt;",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1418573020,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "dubli-tem",
+  "sticky": false,
+  "tags": [],
+  "title": "Дубли тем",
+  "url_path": "/threads/dubli-tem.31508/",
+  "user_id": 4163,
+  "username": "vitalix",
+  "view_count": 908
+}

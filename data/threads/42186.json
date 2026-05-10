@@ -1,0 +1,72 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_data"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95283,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42186,
+  "last_post_date": 1698752873,
+  "node_id": 57,
+  "post_date": 1698752873,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1698752845,
+          "file_size": 11374,
+          "filename": "Capture.webp",
+          "height": 460,
+          "id": 5567,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/capture-webp.5567/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5571-c5a9938e23d4cbcdeb7a428980a0dfe1.jpg?hash=s0hHn_oFYh",
+          "width": 1158
+        }
+      ],
+      "id": 95283,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Все старые версии (с 260 ревизии по 2.1.5 версию) находятся на GitHub, но они тщательно спрятаны 🙂. Старые версии вы не найдете в разделе релизов, они размещены в тэгах, туда они попали после переноса с GoogleCode. Если у вас появилось желание попользоваться старой версией движка, то вы можете это сделать перейдя по <a href=\"https://github.com/torrentpier/torrentpier/tags?after=v2.2.0\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">этой ссылке</a> для загрузки.<br />\n<br />\n<img src=\"https://torrentpier.com/attachments/5567/\" alt=\"Capture.PNG\" /><br />\n<br />\nИз самых новых тут v2.1.5, листая ниже вы найдете версии старее, страниц там много. Для загрузки кликните на желаемый формат архива (.zip или tar.gz), после чего начнется загрузка версии.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1698752873,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "kak-mne-najti-starye-versii-dvizka",
+  "sticky": false,
+  "tags": [],
+  "title": "Как мне найти старые версии движка?",
+  "url_path": "/threads/kak-mne-najti-starye-versii-dvizka.42186/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 1427
+}

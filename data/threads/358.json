@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 4016,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 358,
+  "last_post_date": 1318715919,
+  "node_id": 57,
+  "post_date": 1318715919,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 4016,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Добрый вечер.<br />\nСобрался xbtt.<br />\nдебиан, минималка.<br />\nСуть в том, что при запуске ругается EAFNOSUPPORT на Адрес имеет некорректную семью адресов в поле sa_family. Подозрения есть, что это что-то связанное с адресацией ipv6.<br />\nПробовал и выключать на уровне ядра поддержку - не запускался хобот. Пробовал и оставлять &quot; как из коробки&quot; все. Так же пробовал играться с параметрво trust_ipv6 в конфиге.<br />\nПо факту на машине ipv6 нету.. как запустить хобот без этой ошибки?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1318715919,
+      "user_id": 0,
+      "user_title": "",
+      "username": "allano"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "problema-s-ustanovkoj-xbt",
+  "sticky": false,
+  "tags": [],
+  "title": "Проблема с установкой XBT",
+  "url_path": "/threads/problema-s-ustanovkoj-xbt.358/",
+  "user_id": 0,
+  "username": "allano",
+  "view_count": 1225
+}

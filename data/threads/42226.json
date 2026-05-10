@@ -1,0 +1,90 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95568,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 109,
+    "title": "LTS version archive"
+  },
+  "id": 42226,
+  "last_post_date": 1705820470,
+  "node_id": 109,
+  "post_date": 1705820470,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1705820453,
+          "file_size": 4916862,
+          "filename": "torrentpier-lts-2.1.5-2024.02.zip",
+          "height": 0,
+          "id": 5740,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/torrentpier-lts-2-1-5-2024-02-zip.5740/",
+          "thumbnail_url": null,
+          "width": 0
+        },
+        {
+          "attach_date": 1705820453,
+          "file_size": 12342,
+          "filename": "LTS.webp",
+          "height": 100,
+          "id": 5742,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/lts-webp.5742/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5746-833c6d5c69163ad819911ac32e7a993a.jpg?hash=8VrPBjbU8j",
+          "width": 300
+        }
+      ],
+      "id": 95568,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier LTS. Версия 2.1.5-2024.02 [Final v2]</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/5742/\" alt=\"LTS.png\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier-lts/releases/tag/v2.1.5-2024.02\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.1.5-2024.02 [Final v2] · torrentpier/torrentpier-lts</a><br />\n<br />\n<b>Основные изменения:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Release v2.1.5-2024.02 🎉</li>\n<li data-xf-list-type=\"ul\">Added Fastly CDN support</li>\n<li data-xf-list-type=\"ul\">Some improvements in default template</li>\n<li data-xf-list-type=\"ul\">Fixed void function result used</li>\n<li data-xf-list-type=\"ul\">Feature to ban specific torrent clients</li>\n<li data-xf-list-type=\"ul\">Get SERVER_NAME variable for cron tasks</li>\n<li data-xf-list-type=\"ul\">Improved handling errors while uploading</li>\n<li data-xf-list-type=\"ul\">Hide vote button in poll if user already voted</li>\n<li data-xf-list-type=\"ul\">Fixed Undefined index: to_id when trying to delete empty forum category</li>\n<li data-xf-list-type=\"ul\">Fixed HTTP 500 while cron running in server-side</li>\n<li data-xf-list-type=\"ul\">Fixed auth(): empty $f_access</li>\n<li data-xf-list-type=\"ul\">Fixed broken captcha check on login.php</li>\n<li data-xf-list-type=\"ul\">Fixed broken sorting in group.php</li>\n<li data-xf-list-type=\"ul\">Fixed extensions issue</li>\n<li data-xf-list-type=\"ul\">Restored unused functionality &quot;Block torrent editing with certain status&quot;</li>\n<li data-xf-list-type=\"ul\">Some fixes for Thumbnails functionality</li>\n<li data-xf-list-type=\"ul\">Some fixes for Ban functionality</li>\n<li data-xf-list-type=\"ul\">Some enhancements for dl.php</li>\n<li data-xf-list-type=\"ul\">Some other changes / improvements</li>\n<li data-xf-list-type=\"ul\">Some reported bugfixes</li>\n<li data-xf-list-type=\"ul\">Updated translations</li>\n</ul>Для обновления на версию необходимо выполнить следующие запросы к базе данных:<br />\n<pre class=\"xfBb-code\" data-lang=\"sql\">DELETE FROM `bb_extensions` WHERE `extension` = &#039;tga&#039;;\nDELETE FROM `bb_extensions` WHERE `extension` = &#039;tif&#039;;\nDELETE FROM `bb_extensions` WHERE `extension` = &#039;tiff&#039;;</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1705820470,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-lts-versia-2-1-5-2024-02-final-v2",
+  "sticky": false,
+  "tags": [
+    "lts",
+    "torrentpier-lts",
+    "новая версия",
+    "релиз",
+    "ченжлог"
+  ],
+  "title": "TorrentPier LTS. Версия 2.1.5-2024.02 [Final v2]",
+  "url_path": "/threads/torrentpier-lts-versia-2-1-5-2024-02-final-v2.42226/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 763
+}

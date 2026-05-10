@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 63511,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 26579,
+  "last_post_date": 1414944291,
+  "node_id": 57,
+  "post_date": 1412430423,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63511,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Где-то видел мод, позволяющий при желании закреплять первое сообщение в теме. А как такое реализовать по умолчанию, без возможности отключить?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1412430423,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63512,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "оно уже есть встроено по-умолчанию. закрепляется в первом сообщении топика, возьле даты создания сообщения",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1412431081,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63513,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"PheRum\">оно уже есть встроено по-умолчанию. закрепляется в первом сообщении топика, возьле даты создания сообщения</blockquote>Так, это нашел. Но как теперь сделать, чтоб при создании темы, кем бы то ни было, будь то админ, модератор, или обычный юзер, сообщение автоматом закреплялось, чтоб не ползать по новым темам и не закреплять вручную?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1412432381,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63514,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вопрос решен правкой значения по умолчанию в БД.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1412434375,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66115,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Делаем запрос в базу<br />\n<pre class=\"xfBb-code\" data-lang=\"\">UPDATE `bb_topics` SET `topic_show_first_post`=1</pre>в файле function_post.php<br />\n<br />\nнаходим<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$sql  = ($mode != &quot;editpost&quot;) ? &quot;INSERT INTO &quot; . BB_TOPICS . &quot; (topic_title, topic_poster, topic_time, forum_id, topic_status, topic_type, topic_dl_type, topic_vote) VALUES (&#039;$post_subject&#039;, &quot; . $userdata[&#039;user_id&#039;] . &quot;, $current_time, $forum_id, &quot; . TOPIC_UNLOCKED . &quot;, $topic_type, $topic_dl_type, $topic_vote)&quot; : &quot;UPDATE &quot; . BB_TOPICS . &quot; SET topic_title = &#039;$post_subject&#039;, topic_type = $topic_type, topic_dl_type = $topic_dl_type &quot; . ((@$post_data[&#039;edit_vote&#039;] || !empty($poll_title)) ? &quot;, topic_vote = &quot; . $topic_vote : &quot;&quot;) . &quot; WHERE topic_id = $topic_id&quot;;</pre>меняем на<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$sql  = ($mode != &quot;editpost&quot;) ? &quot;INSERT INTO &quot; . BB_TOPICS . &quot; (topic_title, topic_poster, topic_time, forum_id, topic_status, topic_type, topic_dl_type, topic_vote, topic_show_first_post) VALUES (&#039;$post_subject&#039;, &quot; . $userdata[&#039;user_id&#039;] . &quot;, $current_time, $forum_id, &quot; . TOPIC_UNLOCKED . &quot;, $topic_type, $topic_dl_type, $topic_vote, &quot;.(($bb_cfg[&#039;topic_show_first_post&#039;]==1) ? 1 : 0).&quot;)&quot; : &quot;UPDATE &quot; . BB_TOPICS . &quot; SET topic_title = &#039;$post_subject&#039;, topic_type = $topic_type, topic_dl_type = $topic_dl_type &quot; . ((@$post_data[&#039;edit_vote&#039;] || !empty($poll_title)) ? &quot;, topic_vote = &quot; . $topic_vote : &quot;&quot;) . &quot; WHERE topic_id = $topic_id&quot;;</pre><br />\nв config.php вставляем<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$bb_cfg[&#039;topic_show_first_post&#039;]    =    1; // 1 - закрепляем первый топик ; 0 - не закрепляем</pre>Мне не подошло, потому что комменты на аяксе, коряво выводилось",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1414944291,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "pervoe-soobsenie-v-teme",
+  "sticky": false,
+  "tags": [],
+  "title": "Первое сообщение в теме",
+  "url_path": "/threads/pervoe-soobsenie-v-teme.26579/",
+  "user_id": 1514,
+  "username": "Begemot",
+  "view_count": 1155
+}

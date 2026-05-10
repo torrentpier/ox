@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 88145,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41500,
+  "last_post_date": 1471973296,
+  "node_id": 57,
+  "post_date": 1470386354,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88145,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ребят помогите пожалуйста, хз почему темы не удаляются.<br />\nПросто выбираешь &quot;удалить&quot; она типа удаляет но в конце пишет &quot;Не было удалено не одной темы&quot; ((((<br />\nСтал разбираться вродь все ок - фигня какая то! Уповаю на вашу помощь и заранее спс!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1470386354,
+      "user_id": 6737,
+      "user_title": "User",
+      "username": "Fantom 13"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88168,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "В логах ошибок что-нибудь есть?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1470596735,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88169,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/1/\">Exile</a> уже проверил версию с центра загрузки, там всё полностью работает, в данном случае косяк может находиться в шаблоне",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1470620426,
+      "user_id": 2684,
+      "user_title": "User",
+      "username": "dredd"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88244,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Нашел в чем ошибка что то с функцией было в <b>functions_admin.php</b>- заменил на оригинальную и все ок! Огромное спс за помощь!",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1471973296,
+      "user_id": 6737,
+      "user_title": "User",
+      "username": "Fantom 13"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "ne-udalautsa-temy",
+  "sticky": false,
+  "tags": [],
+  "title": "Не удаляются темы",
+  "url_path": "/threads/ne-udalautsa-temy.41500/",
+  "user_id": 6737,
+  "username": "Fantom 13",
+  "view_count": 1083
+}

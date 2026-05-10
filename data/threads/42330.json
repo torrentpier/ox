@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 96923,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 42330,
+  "last_post_date": 1734526641,
+  "node_id": 90,
+  "post_date": 1734468666,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96923,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте. По гиту если пройтись. Хочет ssh доступ через cli, но его нету. Есть ли другая возможность? 2. Поставил для теста на впс, крон таб есть все записано но получаю такое Warning! Running cron scripts is disabled. To enable it, set the APP_CRON_ENABLED variable. = куда копать? Спасибо",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1734468666,
+      "user_id": 10983,
+      "user_title": "User",
+      "username": "torrentkingt"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96924,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "сам крон же судя по run запускается) из крон таба.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1734511259,
+      "user_id": 10983,
+      "user_title": "User",
+      "username": "torrentkingt"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96928,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"torrentkingt\">куда копать?</blockquote>Это не ошибка, это предупреждение что работает крон движка. Чтобы отключить крон движка и перейти на человеческий кронтаб (серверный крон), надо в env файле опцию APP_CRON_ENABLED поставить в значение false. Ну и в кронтабе поставить задачу на запуск cron.php раз в 10 минут.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1734526641,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "prosu-pomosi-po-ustanovka-torrentpier-cerez-cpanel",
+  "sticky": false,
+  "tags": [],
+  "title": "Прошу помощи по установка torrentpier через cpanel",
+  "url_path": "/threads/prosu-pomosi-po-ustanovka-torrentpier-cerez-cpanel.42330/",
+  "user_id": 10983,
+  "username": "torrentkingt",
+  "view_count": 3369
+}

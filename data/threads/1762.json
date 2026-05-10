@@ -1,0 +1,147 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 23400,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 47,
+        "title": "Modifications for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 43,
+    "title": "Modifications for TorrentPier (archive)"
+  },
+  "id": 1762,
+  "last_post_date": 1354131362,
+  "node_id": 43,
+  "post_date": 1354104893,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1354104837,
+          "file_size": 24108,
+          "filename": "Безымянный.webp",
+          "height": 743,
+          "id": 1669,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bezymannyj-webp.1669/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1670-bb2ff6b0803eaeb78cc4c1719336796b.jpg?hash=a95gLd_MR6",
+          "width": 1115
+        },
+        {
+          "attach_date": 1354104887,
+          "file_size": 144037,
+          "filename": "maths.rar",
+          "height": 0,
+          "id": 1670,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/maths-rar.1670/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 23400,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Хотелось бы сделать получение СидБонусов в случае победы, но вот как, понять не могу🙁<br />\nКому не сложно, помогите пожалуйста.<br />\n<div style=\"text-align: center\"><a href=\"https://torrentpier.com/attachments/1669/\"><img src=\"https://torrentpier.com/data/attachments/1/1670-bb2ff6b0803eaeb78cc4c1719336796b.jpg?hash=a95gLd_MR6\" alt=\"Безымянный.webp\" /></a>&#8203;</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1354104893,
+      "user_id": 0,
+      "user_title": "",
+      "username": "NewLife"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23403,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как вариант при победе:<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">// Игра закончена\nif (numbers.length == 0) {\n  $(&quot;#nextsum&quot;).html(&quot;Спасибо за игру!&quot;);\n}</pre>посылать запрос (ajax) на скрипт, который будет добавлять сидбонусы.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1354110900,
+      "user_id": 21,
+      "user_title": "User",
+      "username": "RomM1"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1354121225,
+          "file_size": 134609,
+          "filename": "maths.7z",
+          "height": 0,
+          "id": 1671,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/maths-7z.1671/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 23411,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Архив в корень.<br />\nв config.php<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$bb_cfg[&#039;maths_bonus&#039;] = 30;</pre>ajax.php<br />\nпосле<br />\n<pre class=\"xfBb-code\" data-lang=\"\">function index_data()\n    {\n        require(AJAX_DIR .&#039;index_data.php&#039;);\n    }</pre>вставить<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">function mathsBonus(){\n        global $userdata, $bb_cfg;\n        DB()-&gt;query(&quot;UPDATE `bb_users` SET `user_points` = `user_points`+{$bb_cfg[&#039;maths_bonus&#039;]} WHERE `user_id` = {$userdata[&#039;user_id&#039;]}&quot;);\n        $this-&gt;response[&#039;name&#039;] = $userdata[&#039;username&#039;];\n        $this-&gt;response[&#039;bonus&#039;] = $bb_cfg[&#039;maths_bonus&#039;];\n    }</pre>вверху после<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&#039;change_tor_status&#039; =&gt; array(&#039;user&#039;),</pre>вставить<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&#039;mathsBonus&#039; =&gt; array(&#039;user&#039;),</pre> <br />\nПример: <b><a href=\"http://demo.port32.ru/maths/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://demo.port32.ru/maths/</a></b>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1354121347,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23423,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"dimka3210\">Архив в корень.<br />\nв config.php<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$bb_cfg[&#039;maths_bonus&#039;] = 30;</pre>ajax.php<br />\nпосле<br />\n<pre class=\"xfBb-code\" data-lang=\"\">function index_data()\n    {\n        require(AJAX_DIR .&#039;index_data.php&#039;);\n    }</pre>вставить<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">function mathsBonus(){\n        global $userdata, $bb_cfg;\n        DB()-&gt;query(&quot;UPDATE `bb_users` SET `user_points` = `user_points`+{$bb_cfg[&#039;maths_bonus&#039;]} WHERE `user_id` = {$userdata[&#039;user_id&#039;]}&quot;);\n        $this-&gt;response[&#039;name&#039;] = $userdata[&#039;username&#039;];\n        $this-&gt;response[&#039;bonus&#039;] = $bb_cfg[&#039;maths_bonus&#039;];\n    }</pre>вверху после<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&#039;change_tor_status&#039; =&gt; array(&#039;user&#039;),</pre>вставить<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&#039;mathsBonus&#039; =&gt; array(&#039;user&#039;),</pre> <br />\nПример: <b><a href=\"http://demo.port32.ru/maths/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://demo.port32.ru/maths/</a></b></blockquote>Спасибо огромное🙂",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1354131362,
+      "user_id": 0,
+      "user_title": "",
+      "username": "NewLife"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "matematiceskaa-igra",
+  "sticky": false,
+  "tags": [],
+  "title": "Математическая игра",
+  "url_path": "/threads/matematiceskaa-igra.1762/",
+  "user_id": 0,
+  "username": "NewLife",
+  "view_count": 1725
+}

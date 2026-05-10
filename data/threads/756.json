@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 9683,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 52,
+    "title": "Bug tracker archive"
+  },
+  "id": 756,
+  "last_post_date": 1327132754,
+  "node_id": 52,
+  "post_date": 1326701358,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9683,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "вобщем проблемка такая: при  массовой рассылке почты когда настроен SMTP  вылазиет ошибка <pre class=\"xfBb-code\" data-lang=\"\">Ran into problems sending Mail. Response: 550 non-local recipient verification failed</pre> , если без SMTP - <pre class=\"xfBb-code\" data-lang=\"\">Failed sending email :: PHP ::</pre> куда копать?<br />\n<br />\n<span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\"><br />\n<br />\n Версия TorrenPier: <b>2.4 (beta) (R337)</b><br />\n Дата выпуска: <b>17-12-2011</b></span></span></span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1326701358,
+      "user_id": 0,
+      "user_title": "",
+      "username": "alexey555"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9735,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Копать в сторону не рабочей почты, настраивай почту+ обновись ещё до 340.Ну это уже так просто.Такие проблемы уже решались, пользуйся поиском !!!!",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1326741228,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Bustra"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9737,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "авторизация, логи!!! такая ошибка если пытаемся слать сообшение не авторизовавшись! то есть проверяем smtp и прочее!!!!!!",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1326742645,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10153,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "гугл транслейтом пользоваться и прописать в настройках smtp сети правильно откуда можно почту слать.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1327132754,
+      "user_id": 4,
+      "user_title": "User",
+      "username": "diden05"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "otpravka-ls",
+  "sticky": false,
+  "tags": [],
+  "title": "отправка ЛС",
+  "url_path": "/threads/otpravka-ls.756/",
+  "user_id": 0,
+  "username": "alexey555",
+  "view_count": 2293
+}

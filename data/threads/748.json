@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 9614,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 748,
+  "last_post_date": 1326856062,
+  "node_id": 57,
+  "post_date": 1326652370,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9614,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Через админ панель устанавливаю англ как основной язык, на главной странице не меняется, на остальных все ок, в чем может быть проблема?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1326652370,
+      "user_id": 756,
+      "user_title": "User",
+      "username": "Aleksey"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9615,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "config.php <pre class=\"xfBb-code\" data-lang=\"php\">$bb_cfg[&#039;auto_language&#039;] = false;</pre> Ну и про кеш не забываем все же",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1326652493,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9676,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Nightmare\">config.php <pre class=\"xfBb-code\" data-lang=\"php\">$bb_cfg[&#039;auto_language&#039;] = false;</pre> Ну и про кеш не забываем все же</blockquote>спасибо за быстрый ответ)<br />\nстрочки такой не нашел, помогла переустановка движка)",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1326696971,
+      "user_id": 756,
+      "user_title": "User",
+      "username": "Aleksey"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9883,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Aleksey\">строчки такой не нашел, помогла переустановка движка)</blockquote>Из серии &quot;В автомобильной пепельнице накопилось много окурков, пришлось купить новую машину&quot;.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1326856062,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Nikolaich"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "osnovnoj-azyk-trekera",
+  "sticky": false,
+  "tags": [],
+  "title": "основной язык трекера",
+  "url_path": "/threads/osnovnoj-azyk-trekera.748/",
+  "user_id": 756,
+  "username": "Aleksey",
+  "view_count": 1643
+}

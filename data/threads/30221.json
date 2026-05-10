@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 68011,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 30221,
+  "last_post_date": 1416953030,
+  "node_id": 57,
+  "post_date": 1416950127,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 68011,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подскажите пожалуйста, в каком файле и какой кусок кода отвечает за этот блок (скрин)<br />\n<br />\n<img src=\"http://i63.fastpic.ru/big/2014/1126/95/bbf3e02efb72c726153b5972330c3495.png\" alt=\"\" /> <br />\nХочу вырезать этот блок.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1416950127,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 68012,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "index.tpl<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">            &lt;td class=&quot;row2 f_topics&quot;&gt;{c.f.TOPICS}&lt;/td&gt;\n            &lt;td class=&quot;row2 f_posts&quot;&gt;{c.f.POSTS}&lt;/td&gt;\n            &lt;td class=&quot;row2 f_last_post last_td&quot;&gt;\n\n            &lt;!-- IF c.f.POSTS --&gt;\n                &lt;!-- BEGIN last --&gt;\n                    &lt;!-- IF SHOW_LAST_TOPIC --&gt;\n                    &lt;h6 class=&quot;last_topic&quot;&gt;\n                        &lt;a href=&quot;{TOPIC_URL}{c.f.last.LAST_TOPIC_ID}{NEWEST_URL}&quot; title=&quot;{c.f.last.LAST_TOPIC_TIP}&quot;&gt;{c.f.last.LAST_TOPIC_TITLE}&lt;/a&gt;\n                    &lt;/h6&gt;\n                    &lt;!-- ENDIF / SHOW_LAST_TOPIC --&gt;\n\n                    &lt;p class=&quot;last_post_time&quot;&gt;\n                        &lt;span class=&quot;last_time&quot;&gt;{c.f.last.LAST_POST_TIME}&lt;/span&gt;\n                        &lt;span class=&quot;last_author&quot;&gt;&amp;middot;\n                            {c.f.last.LAST_POST_USER}\n                        &lt;/span&gt;\n                    &lt;/p&gt;\n                &lt;!-- END last --&gt;\n\n            &lt;!-- ELSE / start of !c.f.POSTS --&gt;\n                {L_NO_POSTS}\n            &lt;!-- ENDIF --&gt;\n\n            &lt;/td&gt;</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1416950582,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 68014,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всё ок, но только белый квадрат )) что ещё нужно поправить ?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1416952749,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 68015,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всё спасибо - дальше разобрался )",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1416953030,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "blok-v-sablone",
+  "sticky": false,
+  "tags": [],
+  "title": "Блок в шаблоне",
+  "url_path": "/threads/blok-v-sablone.30221/",
+  "user_id": 4163,
+  "username": "vitalix",
+  "view_count": 1037
+}

@@ -1,0 +1,89 @@
+{
+  "category": {
+    "description": "Section with all paid modifications for TorrentPier.",
+    "id": 2,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Paid",
+    "view_url": "https://torrentpier.com/resources/categories/paid.2/"
+  },
+  "current_files": [],
+  "custom_fields": {},
+  "description_attachments": [
+    {
+      "attach_date": 1369234892,
+      "file_size": 156834,
+      "filename": "Снимок.webp",
+      "height": 901,
+      "id": 1989,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/snimok-webp.1989/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/1/1994-f139af75e2bc0d8f754f01a1179d9fce.jpg?hash=HaP5cyrB3p",
+      "width": 1661
+    },
+    {
+      "attach_date": 1369234898,
+      "file_size": 10832,
+      "filename": "Снимок1.webp",
+      "height": 199,
+      "id": 1990,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/snimok1-webp.1990/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/1/1995-667537f8d76f1ae255d33b67e37b5cd3.jpg?hash=D3L2bpJAGZ",
+      "width": 1650
+    },
+    {
+      "attach_date": 1369235040,
+      "file_size": 84898,
+      "filename": "Снимок2.webp",
+      "height": 452,
+      "id": 1991,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/snimok2-webp.1991/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/1/1996-10d2dc31a14a32063233d6af8c8167c4.jpg?hash=pdB4ZIdu_-",
+      "width": 1658
+    }
+  ],
+  "description_parsed": "Рейтинг по версии пользователей<br />\n<ul>\n<li data-xf-list-type=\"ul\">90% аякс технология</li>\n<li data-xf-list-type=\"ul\">поиск по базе</li>\n<li data-xf-list-type=\"ul\">поиск похожих раздач на трекере</li>\n<li data-xf-list-type=\"ul\">&quot;тонкая&quot; фильтрация</li>\n</ul><a href=\"https://torrentpier.com/attachments/1991/\"><img src=\"https://torrentpier.com/data/attachments/1/1996-10d2dc31a14a32063233d6af8c8167c4.jpg?hash=pdB4ZIdu_-\" alt=\"Снимок2.webp\" /></a><a href=\"https://torrentpier.com/attachments/1989/\"><img src=\"https://torrentpier.com/data/attachments/1/1994-f139af75e2bc0d8f754f01a1179d9fce.jpg?hash=HaP5cyrB3p\" alt=\"Снимок.webp\" /></a><a href=\"https://torrentpier.com/attachments/1990/\"><img src=\"https://torrentpier.com/data/attachments/1/1995-667537f8d76f1ae255d33b67e37b5cd3.jpg?hash=D3L2bpJAGZ\" alt=\"Снимок1.webp\" /></a>",
+  "download_count": 0,
+  "external_url": null,
+  "icon_url": null,
+  "id": 11,
+  "is_fileless": null,
+  "last_update": 1369234965,
+  "rating_avg": 5,
+  "rating_count": 1,
+  "resource_date": 1369234965,
+  "resource_state": "visible",
+  "slug": "rejting-po-versii-pol-zovatelej",
+  "tag_line": "Рейтинг по версии пользователей",
+  "tags": [],
+  "title": "Рейтинг по версии пользователей",
+  "url_path": "/resources/rejting-po-versii-pol-zovatelej.11/",
+  "user_id": 97,
+  "username": "Zenden",
+  "version": "1.0",
+  "versions": [
+    {
+      "download_count": 0,
+      "files": [],
+      "id": 11,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1369234965,
+      "version_state": "visible",
+      "version_string": "1.0",
+      "view_url": "https://torrentpier.com/resources/rejting-po-versii-pol-zovatelej.11/version/11/"
+    }
+  ],
+  "view_count": 791
+}

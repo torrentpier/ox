@@ -1,0 +1,151 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 96969,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 51,
+    "title": "Templates for TorrentPier"
+  },
+  "id": 42340,
+  "last_post_date": 1735629717,
+  "node_id": 51,
+  "post_date": 1735553638,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96969,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "DimaUZB2001 добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/shablon-blackbit.316/\" class=\"link link--internal\">Шаблон «BlackBit»</a> - Шаблон BlackBit для TorrentPier v2.1.5 ( LTS V10 )<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><div style=\"text-align: center\"><b>Адаптивный шаблон.  для v2.1.5 ( LTS V10 )<br />\n<br />\n<a href=\"https://torrentpier.com/attachments/6299/\">View attachment 6299</a><a href=\"https://torrentpier.com/attachments/6300/\">View attachment 6300</a><a href=\"https://torrentpier.com/attachments/6301/\">View attachment 6301</a><a href=\"https://torrentpier.com/attachments/6302/\">View attachment 6302</a></b>&#8203;</div></blockquote><br />\n<a href=\"https://torrentpier.com/resources/shablon-blackbit.316/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1735553638,
+      "user_id": 7621,
+      "user_title": "User",
+      "username": "DimaUZB2001"
+    },
+    {
+      "attach_count": 6,
+      "attachments": [
+        {
+          "attach_date": 1735629636,
+          "file_size": 134058,
+          "filename": "1735629492311.webp",
+          "height": 950,
+          "id": 6304,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1735629492311-webp.6304/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6308-9a72e78e0584626137370eabf5243e49.jpg?hash=YzJLjsJqMu",
+          "width": 1903
+        },
+        {
+          "attach_date": 1735629636,
+          "file_size": 119070,
+          "filename": "1735629523891.webp",
+          "height": 952,
+          "id": 6305,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1735629523891-webp.6305/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6309-d42a049aff6c45c453d56b7405c5a93a.jpg?hash=74uBZJT_yi",
+          "width": 1902
+        },
+        {
+          "attach_date": 1735629636,
+          "file_size": 139234,
+          "filename": "1735629542710.webp",
+          "height": 953,
+          "id": 6306,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1735629542710-webp.6306/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6310-449ef75c7be8f3842e220086b6200566.jpg?hash=J8HqGdUxjV",
+          "width": 1904
+        },
+        {
+          "attach_date": 1735629636,
+          "file_size": 111552,
+          "filename": "1735629555292.webp",
+          "height": 953,
+          "id": 6307,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1735629555292-webp.6307/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6311-a91184364c87401b2843c572aa9624e8.jpg?hash=L3gwDUxGa0",
+          "width": 1902
+        },
+        {
+          "attach_date": 1735629636,
+          "file_size": 85698,
+          "filename": "1735629582154.webp",
+          "height": 954,
+          "id": 6308,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1735629582154-webp.6308/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6312-2c049cc2990f3a8ec8411a047dbc9037.jpg?hash=yVpoc4uc2r",
+          "width": 1902
+        },
+        {
+          "attach_date": 1735629673,
+          "file_size": 109306,
+          "filename": "1735629674277.webp",
+          "height": 952,
+          "id": 6309,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1735629674277-webp.6309/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6313-15445e3ba5594be940bea6aed35c7270.jpg?hash=EVfzQfdCya",
+          "width": 1900
+        }
+      ],
+      "id": 96972,
+      "is_admin": false,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1735629850,
+      "message_parsed": "<a href=\"https://torrentpier.com/attachments/6304/\"><img src=\"https://torrentpier.com/data/attachments/6/6308-9a72e78e0584626137370eabf5243e49.jpg?hash=YzJLjsJqMu\" alt=\"1735629492311.png\" /></a><a href=\"https://torrentpier.com/attachments/6305/\"><img src=\"https://torrentpier.com/data/attachments/6/6309-d42a049aff6c45c453d56b7405c5a93a.jpg?hash=74uBZJT_yi\" alt=\"1735629523891.png\" /></a><a href=\"https://torrentpier.com/attachments/6306/\"><img src=\"https://torrentpier.com/data/attachments/6/6310-449ef75c7be8f3842e220086b6200566.jpg?hash=J8HqGdUxjV\" alt=\"1735629542710.png\" /></a><a href=\"https://torrentpier.com/attachments/6307/\"><img src=\"https://torrentpier.com/data/attachments/6/6311-a91184364c87401b2843c572aa9624e8.jpg?hash=L3gwDUxGa0\" alt=\"1735629555292.png\" /></a><a href=\"https://torrentpier.com/attachments/6308/\"><img src=\"https://torrentpier.com/data/attachments/6/6312-2c049cc2990f3a8ec8411a047dbc9037.jpg?hash=yVpoc4uc2r\" alt=\"1735629582154.png\" /></a><a href=\"https://torrentpier.com/attachments/6309/\"><img src=\"https://torrentpier.com/data/attachments/6/6313-15445e3ba5594be940bea6aed35c7270.jpg?hash=EVfzQfdCya\" alt=\"1735629674277.png\" /></a><br />\n<br />\n<a href=\"https://torrentpier.com/threads/torrentpier-lts-versija-2-1-5-2024-12-final-v10.42337/\" class=\"link link--internal\"><b>TorrentPier LTS. Версия 2.1.5-2024.12 [Final v10]</b></a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1735629717,
+      "user_id": 1546,
+      "user_title": "Administrator",
+      "username": "Conteo"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "sablon-blackbit",
+  "sticky": false,
+  "tags": [],
+  "title": "Шаблон «BlackBit»",
+  "url_path": "/threads/sablon-blackbit.42340/",
+  "user_id": 7621,
+  "username": "DimaUZB2001",
+  "view_count": 743
+}

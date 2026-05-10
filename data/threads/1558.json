@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 20625,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1558,
+  "last_post_date": 1348628917,
+  "node_id": 57,
+  "post_date": 1348627965,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20625,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<span style=\"font-size: 15px\">Когда заходишь в трекер справа показывает: <b><span style=\"color: #000000\">Результатов поиска: 1039 (max: 2000)</span></b><span style=\"color: #000000\"> - для Админа, а для Юзверя </span><b><span style=\"color: #000000\">Результатов поиска: 500 (max: 500), </span></b><span style=\"color: #000000\">г</span><span style=\"color: #000000\">де изменить эти значения, перерыл админку не нашел ?</span></span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1348627965,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20627,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "это в коде tracker.php:<pre class=\"xfBb-code\" data-lang=\"php\">$tor_search_limit    = (IS_AM) ? 2000 : 500;</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1348628917,
+      "user_id": 8,
+      "user_title": "User",
+      "username": "fly_indiz"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "treker-rezul-taty-poiska",
+  "sticky": false,
+  "tags": [],
+  "title": "Трекер, результаты поиска",
+  "url_path": "/threads/treker-rezul-taty-poiska.1558/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1845
+}

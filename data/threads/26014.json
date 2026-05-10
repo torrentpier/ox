@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61501,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 26014,
+  "last_post_date": 1405768948,
+  "node_id": 57,
+  "post_date": 1405768948,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61501,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток, такой вопрос - может кто знает, как на рутреке реализован тэг раздачи вот таким образом:<br />\n <br />\n<img src=\"http://rghost.ru/56979484/image.png\" alt=\"\" /><br />\n <br />\nПричем такой вид только при просмотре через tracker.php. При обычном просмотре в категории форума вид такой:<br />\n <br />\n<img src=\"http://rghost.ru/56979496/image.png\" alt=\"\" /><br />\n <br />\nМожет кто-нибудь знает уже готовый мод или еще что-то, подскажите, пожалуйста.<br />\nЗаранее спасибо!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1405768948,
+      "user_id": 4439,
+      "user_title": "User",
+      "username": "Wii"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "teg-razdaci",
+  "sticky": false,
+  "tags": [],
+  "title": "Тэг раздачи",
+  "url_path": "/threads/teg-razdaci.26014/",
+  "user_id": 4439,
+  "username": "Wii",
+  "view_count": 988
+}

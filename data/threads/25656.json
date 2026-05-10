@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58031,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25656,
+  "last_post_date": 1390252003,
+  "node_id": 111,
+  "post_date": 1390252003,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58031,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Ссылка</b>:<br />\n<a href=\"http://code.google.com/p/torrentpier2/source/detail?r=564\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"> http://code.google.com/p/torrentpier2/source/detail?r=564</a><br />\n<br />\n<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 564: Очистка от неиспользуемого мусора в репозитарии; попытки начать рефакторинг движ</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">glix08</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/upload/ajax.php \n    Modify    /trunk/upload/config.php \n    Delete    /trunk/upload/develop/source \n\nОчистка от неиспользуемого мусора в репозитарии; попытки начать рефакторинг движка на примере ajax.php</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1390252003,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "revision-564-ocistka-ot-neispol-zuemogo-musora-v-repozitarii-popytki-nacat-refaktoring-dviz",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 564: Очистка от неиспользуемого мусора в репозитарии; попытки начать рефакторинг движ",
+  "url_path": "/threads/revision-564-ocistka-ot-neispol-zuemogo-musora-v-repozitarii-popytki-nacat-refaktoring-dviz.25656/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 951
+}

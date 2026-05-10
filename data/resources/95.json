@@ -1,0 +1,134 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Contact_Us.zip",
+      "id": 3202,
+      "local_path": null,
+      "r2_key": null,
+      "size": 8242,
+      "src_url": "https://torrentpier.com/api/resource-versions/226/download?file=3202"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]QUERY in DB ~~~~~~~~~\n\nCREATE TABLE IF NOT EXISTS `bb_contactus` (\n  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,\n  `msg_type` tinyint(1) NOT NULL,\n  `admin_type` tinyint(1) NOT NULL,\n  `user_ip` char(32) NOT NULL,\n  `msg_time` int(11) NOT NULL DEFAULT '0',\n  `name` varchar(25) NOT NULL,\n  `email` varchar(255) NOT NULL DEFAULT '',\n  `subject` varchar(250) NOT NULL DEFAULT '',\n  `massege` text NOT NULL,\n  PRIMARY KEY (`id`)\n) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;\n\n~~~~ OPEN init_bb.php and FIND ~~~~~~~~~~~~~\n\n    TOR_CONSUMED        => true,\n);\n\n~~~~ AFTER ADD ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n// Связь с администрацией\n$bb_cfg['massege_type'] = array(\n    0 => 'Укажите тип',\n    1 => 'Техническoе',\n    2 => 'Корпоративное',\n    3 => 'Организационное',\n    4 => 'Пожелатильное',\n    5 => 'другое ',\n);\n\n$bb_cfg['massege_type_view'] = array(\n    1 => '<span class=\"prefix prefixGray\">Техническoе</span>',\n    2 => '<span class=\"prefix prefixOrange\">Корпоративное</span>',\n    3 => '<span class=\"prefix prefixYellow\">Организационное</span>',\n    4 => '<span class=\"prefix prefixSkyBlue\">Пожелатильное</span>',\n    5 => '<span class=\"prefix prefixSilver\">другое</span>',\n);\n\n$bb_cfg['admin_type'] = array(\n    0 => 'На мадерации',\n    1 => 'Будет реализовано',\n    2 => 'На обсуждении',\n    3 => 'Уже реализовано',\n    4 => 'Отказано',\n);\n\n$bb_cfg['admin_type_view'] = array(\n    0 => '<span class=\"prefix prefixSecondary\">На мадерации</span>',\n    1 => '<span class=\"prefix prefixGray\">Будет реализовано</span>',\n    2 => '<span class=\"prefix prefixOlive\">На обсуждении</span>',\n    3 => '<span class=\"prefix prefixSilver\">Уже реализовано</span>',\n    4 => '<span class=\"prefix prefixRed\">Отказано</span>',\n);\n\n~~~~ OPEN lang_main.php and ADD ~~~~~~~~~~~~~~~~\n\n$lang['CONTACTUS'] = 'Вопросы от гостей';\n\n~~~~ OPEN main.css and ADD ~~~~~~~~~~~~~~~~~~~~~\n\n.prefix{\n    background:transparent url('http://torrentpier.me/styles/default/xenforo/gradients/form-button-white-25px.png') repeat-x top;\n    padding:0px 6px;\n    margin: -1px 0;\n    border:1px\n    solid transparent;border-radius:4px;\n    -webkit-border-radius:4px;\n    -moz-border-radius:4px;\n    -khtml-border-radius:4px;\n    display:inline-block\n}\n.prefixSkyBlue{color:black;background-color:skyblue;border-color:skyblue}\n.prefixGray{color:black;background-color:gray;border-color:#AAA}\n.prefixSilver{color:black;background-color:silver;border-color:silver}\n.prefixYellow{color:black;background-color:yellow;border-color:#E0E000}\n.prefixOrange{color:black;background-color:orange;border-color:#FFC520}\n.prefixSecondary{color:#8f6c3f;background-color:#f9d9b0;border-color:#f9d9b0}\n.prefixRed{color:black;background-color:red;border-color:#F88}\n.prefixGreen{color:white;background-color:green;border-color:green}\n.prefixOlive{color:black;background-color:olive;border-color:olive}\n.prefixLightGreen{color:black;background-color:lightgreen;border-color:lightgreen}\n.prefixBlue{color:white;background-color:blue;border-color:#88F}\n.prefixRoyalBlue{color:white;background-color:royalblue;border-color:#81A9E1}\n\n~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[/PHP]\n[/SPOILER]",
+    "owner": "Dream",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1395436150,
+      "file_size": 58872,
+      "filename": "001.webp",
+      "height": 875,
+      "id": 2473,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/001-webp.2473/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2478-2f8b05752147c572a930863512c5c1b1.jpg?hash=S-yoAk1bKx",
+      "width": 1280
+    },
+    {
+      "attach_date": 1395436172,
+      "file_size": 42388,
+      "filename": "002.webp",
+      "height": 647,
+      "id": 2474,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/002-webp.2474/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2479-8a54ddd45939fd0287c0e62bfbdaf3ce.jpg?hash=wM4X0JKQfS",
+      "width": 1280
+    },
+    {
+      "attach_date": 1395436184,
+      "file_size": 60586,
+      "filename": "003.webp",
+      "height": 699,
+      "id": 2475,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/003-webp.2475/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2480-4bb60ca4d66c2702b15f3d1136ae5d67.jpg?hash=9F9tpS7yk_",
+      "width": 1280
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет форму обратной связи с администрацией. Отправлять запросы могут только гости. Администрация отвечает на запросы через администраторский раздел.",
+  "download_count": 412,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/95.jpg?1425407145",
+  "id": 95,
+  "is_fileless": null,
+  "last_update": 1425332462,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1395436188,
+  "resource_state": "visible",
+  "slug": "obratnaa-svaz",
+  "tag_line": "Добавляет форму обратной связи с администрацией.",
+  "tags": [],
+  "title": "Обратная связь",
+  "url_path": "/resources/obratnaa-svaz.95/",
+  "user_id": 737,
+  "username": "Dream",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 277,
+      "files": [
+        {
+          "filename": "[FULL] Contact_Us.zip",
+          "id": 3202,
+          "local_path": null,
+          "r2_key": null,
+          "size": 8242,
+          "src_url": "https://torrentpier.com/api/resource-versions/226/download?file=3202"
+        }
+      ],
+      "id": 226,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425332462,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/obratnaa-svaz.95/version/226/"
+    },
+    {
+      "download_count": 142,
+      "files": [
+        {
+          "filename": "[FULL] Contact_Us.rar",
+          "id": 2472,
+          "local_path": null,
+          "r2_key": null,
+          "size": 179834,
+          "src_url": "https://torrentpier.com/api/resource-versions/101/download?file=2472"
+        }
+      ],
+      "id": 101,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1395436188,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/obratnaa-svaz.95/version/101/"
+    }
+  ],
+  "view_count": 680
+}

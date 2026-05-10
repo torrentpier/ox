@@ -1,0 +1,120 @@
+{
+  "custom_fields": {
+    "torrentpier": "223"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 92643,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41874,
+  "last_post_date": 1520881323,
+  "node_id": 57,
+  "post_date": 1518126748,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92643,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В админке находится по ссылке - Tracker settings<br />\nЛезу в конфиг, ничего кроме строки <pre class=\"xfBb-code\" data-lang=\"\">$bb_cfg[&#039;passkey_key&#039;]        = &#039;uk&#039;;</pre>найти не могу<br />\n<br />\nв админке строка называется так:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">Allow guest access to tracker   No</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1518126748,
+      "user_id": 561,
+      "user_title": "User",
+      "username": "John Smith"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92738,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "подскажите кто знает",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1520795069,
+      "user_id": 561,
+      "user_title": "User",
+      "username": "John Smith"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92742,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Добавь в конфиг строку:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">$bb_cfg[&#039;bt_tor_browse_only_reg&#039;] = 0;</pre>Или в базе данных в таблице <i>bb_config</i> в строке <i>bt_tor_browse_only_reg</i> изменить значение <i>config_value</i> на <i>0</i>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1520878651,
+      "user_id": 6275,
+      "user_title": "User",
+      "username": "Геннадий Ф"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1520881320,
+          "file_size": 85196,
+          "filename": "2018-03-12.webp",
+          "height": 709,
+          "id": 5094,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2018-03-12-webp.5094/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5098-56eb7bb311ff4ba89ee946ca78c86ed0.jpg?hash=lD_yIaXMQH",
+          "width": 1413
+        }
+      ],
+      "id": 92744,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/attachments/5094/\"><img src=\"https://torrentpier.com/data/attachments/5/5098-56eb7bb311ff4ba89ee946ca78c86ed0.jpg?hash=lD_yIaXMQH\" alt=\"2018-03-12.webp\" /></a>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1520881323,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "kak-izmenit-znacenie-allow-guest-access-to-tracker",
+  "sticky": false,
+  "tags": [],
+  "title": "Как изменить значение \"Allow guest access to tracker\"",
+  "url_path": "/threads/kak-izmenit-znacenie-allow-guest-access-to-tracker.41874/",
+  "user_id": 561,
+  "username": "John Smith",
+  "view_count": 1404
+}

@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 86140,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 41354,
+  "last_post_date": 1450352334,
+  "node_id": 47,
+  "post_date": 1450350866,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86140,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Если кто сталкивался с таким. Расскажите как сделать так чтобы можно было размещать подфорум в нескольких форумах.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1450350866,
+      "user_id": 6580,
+      "user_title": "User",
+      "username": "CrazyBoss"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86141,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/6580/\">@CrazyBoss</a> в движке нету такой функции",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1450351110,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86142,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Я знаю что нету вот и спрашиваю где что нужно переписать чтоб было. Мне хотелось бы точно узнать в каких файлах нужно это дорабатывать чтоб ничего не упустить. Я сам это сделаю. Просто структуру нигде найти не могу",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1450351451,
+      "user_id": 6580,
+      "user_title": "User",
+      "username": "CrazyBoss"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86143,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Создается это все в админке, потом смотри viewforum.php на вывод",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1450352334,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "razmesenie-podforuma-v-neskol-kih-forumah",
+  "sticky": false,
+  "tags": [],
+  "title": "Размещение подфорума в нескольких форумах",
+  "url_path": "/threads/razmesenie-podforuma-v-neskol-kih-forumah.41354/",
+  "user_id": 6580,
+  "username": "CrazyBoss",
+  "view_count": 1183
+}

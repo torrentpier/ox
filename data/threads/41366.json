@@ -1,0 +1,81 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 86307,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 41366,
+  "last_post_date": 1451377540,
+  "node_id": 3,
+  "post_date": 1451333279,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1451333139,
+          "file_size": 7219544,
+          "filename": "tracker.rar",
+          "height": 0,
+          "id": 4220,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/tracker-rar.4220/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 86307,
+      "is_admin": false,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<div style=\"text-align: center\"><img src=\"https://torrentpier.com/styles/default/xenforo/logo_small.png\" alt=\"\" />&#8203;</div><br />\nВерсия TorrentPier II: <b>2.1.5 [ALPHA]</b><br />\nДата выпуска: <b>06-12-2014</b><br />\nВерсия Zend Framework: <b>2.3.3</b><br />\nШаблон: <a href=\"https://torrentpier.com/resources/shablon-infinite.217/\" class=\"link link--internal\">Infinite</a><br />\n<br />\nЛогин: admin<br />\nПароль: admin<br />\n<br />\nДоброго времени суток!<br />\nВ общем пока возобновлять работу не планирую в первой половине 2016 года.<br />\nВыложу на белый, что собрал. Особо не занимался трекером (возможны ошибки). Много чего ставил и сносил (имейте ввиду). Все ставил с данного форума. Если честно уже и не помню что там установлено. <br />\nВ общем интересовал сам шаблон infinite, начал работу только из-за него (адаптация). Кто искал этот шаблон уже готовым на 2.1.5 - вот он) Может уже и есть, просто не читал тему с шаблоном. Хочу все же подождать след. версию TPII)<br />\n<br />\nТестите... С наступающим Новым годом, друзья 🙂 <br />\n<br />\nБудут вопросы - задавайте, по мере возможности постараюсь ответить. Т.к. на носу праздники, на работе полный дурдом и времени выделяю мало интернету. <br />\n<br />\nЗеркало:<br />\n<a href=\"https://yadi.sk/d/KjMU8ygfmZEX3\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Яндекс Диск</a><br />\n<a href=\"http://rghost.ru/8Mfpv8bWL\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">RGHost</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1451333279,
+      "user_id": 1546,
+      "user_title": "Administrator",
+      "username": "Conteo"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86310,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Думал свой выложить, да опередил меня маленько)",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1451377540,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "sborka-trekera",
+  "sticky": false,
+  "tags": [],
+  "title": "Сборка трекера",
+  "url_path": "/threads/sborka-trekera.41366/",
+  "user_id": 1546,
+  "username": "Conteo",
+  "view_count": 1194
+}

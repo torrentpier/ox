@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 13351,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1091,
+  "last_post_date": 1331363698,
+  "node_id": 57,
+  "post_date": 1331340395,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13351,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Открыл доступ к онлай статистике обычным пользователям убрав  || IS_USER  из этой строки if (defined(&#039;IS_GUEST&#039;) &amp;&amp; !(IS_GUEST || IS_USER)), но появилась проблема, если в профиле скрыть пребывание на форуме, то в индексе, в онлайн статистике, этого пользователя всеравно видно (тобишь эта статистика для модеров и админов), скажите возможно ли что нибуть сделать с этим? что бы было например как в виевонлайне, т.е если юзер скрыт, то его видит только админ и ник этого пользователя курсивом. За ранее спасибо 🙂<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">// Online userlist\nif (defined(&#039;SHOW_ONLINE&#039;) &amp;&amp; SHOW_ONLINE)\n{\n$online_full = !empty($_REQUEST[&#039;online_full&#039;]);\n$online_list = ($online_full) ? &#039;online&#039; : &#039;online_short&#039;;\n \n${$online_list} = array(\n&#039;stat&#039; =&gt; &#039;&#039;,\n&#039;userlist&#039; =&gt; &#039;&#039;,\n&#039;cnt&#039; =&gt; &#039;&#039;,\n);\n \nif (defined(&#039;IS_GUEST&#039;) &amp;&amp; !(IS_GUEST || IS_USER)) ============================= Так выглядила строка в изначальном состоянии\n{\n$template-&gt;assign_var(&#039;SHOW_ONLINE_LIST&#039;);\n \nif (!${$online_list} = CACHE(&#039;bb_cache&#039;)-&gt;get($online_list))\n{\nrequire(INC_DIR .&#039;online_userlist.php&#039;);\n}\n}\n \n$template-&gt;assign_vars(array(\n&#039;TOTAL_USERS_ONLINE&#039; =&gt; ${$online_list}[&#039;stat&#039;],\n&#039;LOGGED_IN_USER_LIST&#039; =&gt; ${$online_list}[&#039;userlist&#039;],\n&#039;USERS_ONLINE_COUNTS&#039; =&gt; ${$online_list}[&#039;cnt&#039;],\n&#039;RECORD_USERS&#039; =&gt; sprintf($lang[&#039;RECORD_ONLINE_USERS&#039;], $bb_cfg[&#039;record_online_users&#039;], bb_date($bb_cfg[&#039;record_online_date&#039;])),\n&#039;U_VIEWONLINE&#039; =&gt; &quot;viewonline.php&quot;,\n));\n}</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1331340395,
+      "user_id": 724,
+      "user_title": "User",
+      "username": "pilot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13353,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>pilot</b>, кеш чистил?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1331350239,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13358,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Locer</b>,<br />\nКак связан кэш и online_userlist.php?<br />\nкопать кстати тоже в нем надо либо сам запрос либо писать доп конструкцию для этого всего.<br />\n <br />\nЕсли уж на то пошло то я проверил версию с кэшем чтобы безосновательно не писать, видно всех включая спрятанных.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1331363698,
+      "user_id": 824,
+      "user_title": "User",
+      "username": "anton4er"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "onlajn-statistika",
+  "sticky": false,
+  "tags": [],
+  "title": "Онлайн статистика",
+  "url_path": "/threads/onlajn-statistika.1091/",
+  "user_id": 724,
+  "username": "pilot",
+  "view_count": 1500
+}

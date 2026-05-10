@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 96094,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 42264,
+  "last_post_date": 1712977942,
+  "node_id": 3,
+  "post_date": 1712944993,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96094,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Господа, подскажите какой минимальный набор нужно для создания адалт торента?<br />\nКакие модификаторы выбрать.<br />\nКакие плееры поставить чтобы могли онлайн просматривать",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1712944993,
+      "user_id": 10814,
+      "user_title": "User",
+      "username": "cjcrazy"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96096,
+      "is_admin": false,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Привет. Ну тут уже на вкус и цвет.<br />\n<blockquote class=\"xfBb-quote\" data-name=\"cjcrazy\">Какие плееры поставить чтобы могли онлайн просматривать</blockquote>Знаю только 2 таких модификаций:<br />\n1. Уже не актуальный <a href=\"https://torrentpier.com/threads/torrentstream.36733/\" class=\"link link--internal\">TorrentStream 1.1.0</a> (доделывать самостоятельно)<br />\n2. <a href=\"https://torrentpier.com/threads/onlajn-prosmotr.41751/\" class=\"link link--internal\">Онлайн просмотр</a> , сам не тестировал, сказать ни чего не могу",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1712949478,
+      "user_id": 1546,
+      "user_title": "Administrator",
+      "username": "Conteo"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96097,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"cjcrazy\">Господа, подскажите какой минимальный набор нужно для создания адалт торента?<br />\nКакие модификаторы выбрать.<br />\nКакие плееры поставить чтобы могли онлайн просматривать</blockquote>Когда то держал адалт, по сути для такого рода ресурса как таковых модов и не надо, кроме того что если только дизайн изменить, а так использовал в основном парсер с различных ресурсов",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1712977942,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "adalt-torrent",
+  "sticky": false,
+  "tags": [],
+  "title": "Адалт торрент",
+  "url_path": "/threads/adalt-torrent.42264/",
+  "user_id": 10814,
+  "username": "cjcrazy",
+  "view_count": 858
+}

@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 36702,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 9214,
+  "last_post_date": 1373873912,
+  "node_id": 57,
+  "post_date": 1373873912,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 36702,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте уважаемые пользователи.<br />\nПроблема такова:<br />\n <br />\nЕсть у меня торрент трекер - <a href=\"http://p2peer.org/index.php\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://p2peer.org/index.php</a><br />\n <br />\nПроблемы:<br />\nНа главной странице и у самой раздаче не показывается статистика раздачи(<span style=\"font-size: 11px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\">Пиров: </span></span></span><b><span style=\"font-size: 11px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\">0</span></span></span></b><span style=\"font-size: 11px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\">,  Сидов: </span></span></span><b><span style=\"font-family: 'Verdana'\"><span style=\"font-size: 11px\"><span style=\"color: #006600\">0</span></span></span></b><span style=\"font-size: 11px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\">,  Личеров: </span></span></span><b><span style=\"font-family: 'Verdana'\"><span style=\"font-size: 11px\"><span style=\"color: #800000\">0) </span></span></span></b>Кругом 0, как у теме так и у самой статистике трекера. Как настроить что бы отображалась полная статистика?<br />\n <br />\nВопрос 2:<br />\nНе показывает хост, от куда скачивает, а просто отображается youdomain.com<br />\n <br />\nВ чем проблема?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1373873912,
+      "user_id": 4257,
+      "user_title": "",
+      "username": "zhecka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "problema-so-statistikoj",
+  "sticky": false,
+  "tags": [],
+  "title": "Проблема со статистикой",
+  "url_path": "/threads/problema-so-statistikoj.9214/",
+  "user_id": 4257,
+  "username": "zhecka",
+  "view_count": 705
+}

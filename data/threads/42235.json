@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 95706,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42235,
+  "last_post_date": 1707206162,
+  "node_id": 47,
+  "post_date": 1707206162,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95706,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/politicheskie-vzgljady.286/\" class=\"link link--internal\">Политические взгляды</a> - Добавляет возможность пользователю указать свои политические взгляды.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> Добавляет возможность пользователю указать свои политические взгляды. Имеется поддержка AJAX редактирования.<br />\n<br />\nДоступные варианты:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Не выбраны</li>\n<li data-xf-list-type=\"ul\">Индифферентные</li>\n<li data-xf-list-type=\"ul\">Коммунистические</li>\n<li data-xf-list-type=\"ul\">Социалистические</li>\n<li data-xf-list-type=\"ul\">Умеренные</li>\n<li data-xf-list-type=\"ul\">Либеральные</li>\n<li data-xf-list-type=\"ul\">Консервативные</li>\n<li data-xf-list-type=\"ul\">Монархические</li>\n<li data-xf-list-type=\"ul\">Ультраконсервативные</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/politicheskie-vzgljady.286/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1707206162,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "politiceskie-vzglady",
+  "sticky": false,
+  "tags": [],
+  "title": "Политические взгляды",
+  "url_path": "/threads/politiceskie-vzglady.42235/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 520
+}

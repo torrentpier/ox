@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 9837,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 769,
+  "last_post_date": 1326824892,
+  "node_id": 57,
+  "post_date": 1326823642,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9837,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вкладка обычно такого вида &quot;Главная:: Torrentpier II&quot; а как сделать &quot;Torrentpier II&quot; ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1326823642,
+      "user_id": 69,
+      "user_title": "User",
+      "username": "iFlooder"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9839,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>iFlooder</b>,  &lt;title&gt;&lt;!-- IF PAGE_TITLE --&gt;{PAGE_TITLE} :: {SITENAME}&lt;!-- ELSE --&gt;{SITENAME}&lt;!-- ENDIF --&gt;&lt;/title&gt; дальше думай сам",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1326824426,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Bustra"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9840,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>iFlooder</b>, самое начало page_header.tpl",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1326824463,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9841,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Bustra</b>,<br />\n<b>Locer</b>,<br />\nблагодарю 🙂",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1326824892,
+      "user_id": 69,
+      "user_title": "User",
+      "username": "iFlooder"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "ubrat-nadpisi-glavnaa-treker-i-t-p",
+  "sticky": false,
+  "tags": [],
+  "title": "Убрать надписи \"Главная::, Трекер и т.п\"",
+  "url_path": "/threads/ubrat-nadpisi-glavnaa-treker-i-t-p.769/",
+  "user_id": 69,
+  "username": "iFlooder",
+  "view_count": 1588
+}

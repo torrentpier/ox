@@ -1,0 +1,113 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 74204,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 34747,
+  "last_post_date": 1422985089,
+  "node_id": 80,
+  "post_date": 1422981240,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1422981214,
+          "file_size": 40168,
+          "filename": "ScreenShot.webp",
+          "height": 409,
+          "id": 2933,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot-webp.2933/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2937-6b2ce04735f99159cdf8c983fe62a0f3.jpg?hash=PM6rDXwZ2F",
+          "width": 1346
+        }
+      ],
+      "id": 74204,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Приветствую, столкнулся вот с такой проблемой<br />\nподскажите как решить<img src=\"https://torrentpier.com/attachments/2933/\" alt=\"ScreenShot.webp\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1422981240,
+      "user_id": 5847,
+      "user_title": "User",
+      "username": "ivanesko261"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 74206,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Это - не баг, уже обсуждалось где то на форуме, [s:4] -  кол-во открытых сессий вроде бы...",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1422982476,
+      "user_id": 4447,
+      "user_title": "User",
+      "username": "DreamHD"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 74207,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/threads/faq-dlja-novichkov.260/#post-38744\" class=\"link link--internal\">https://torrentpier.com/threads/faq-dlja-novichkov.260/#post-38744</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1422982930,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 74210,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"DreamHD\">Это - не баг, уже обсуждалось где то на форуме, [s:4] - кол-во открытых сессий вроде бы...</blockquote>Понял спасибо за информацию",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1422985089,
+      "user_id": 5847,
+      "user_title": "User",
+      "username": "ivanesko261"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 3,
+  "slug": "bag-s-kto-onlajn",
+  "sticky": false,
+  "tags": [],
+  "title": "Баг с кто онлайн",
+  "url_path": "/threads/bag-s-kto-onlajn.34747/",
+  "user_id": 5847,
+  "username": "ivanesko261",
+  "view_count": 1210
+}

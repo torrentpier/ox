@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 88558,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41538,
+  "last_post_date": 1516145396,
+  "node_id": 57,
+  "post_date": 1475935163,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88558,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 1475935246,
+      "message_parsed": "Для тех, кому лень подтверждать каждое вступление пользователя в откытую группу<br />\n<br />\nconfig.php после строки<br />\n<pre class=\"xfBb-code\" data-lang=\"\">$bb_cfg[&#039;groupcp_members_per_page&#039;]     = 300;</pre>вставляем<br />\n<pre class=\"xfBb-code\" data-lang=\"\">$bb_cfg[&#039;groupcp_pending&#039;]     = 0; // модерировать вступление в открытую группу? 0 - нет, 1 - да</pre><br />\nlang.php<br />\nвставляем<br />\n<pre class=\"xfBb-code\" data-lang=\"\">$lang[&#039;GROUP_JOINED_NOPENDING&#039;] = &#039;Вы успешно вступили в группу.&#039;;</pre><br />\nв файле group.php или groupcp.php<br />\nзаменяем<br />\n<pre class=\"xfBb-code\" data-lang=\"\">bb_die($lang[&#039;GROUP_JOINED&#039;]);</pre>на<br />\n<pre class=\"xfBb-code\" data-lang=\"\">$message=($bb_cfg[&#039;groupcp_pending&#039;]==1) ? $lang[&#039;GROUP_JOINED&#039;] : $lang[&#039;GROUP_JOINED_NOPENDING&#039;];\nbb_die($message);</pre><br />\nзаменяем<br />\n<pre class=\"xfBb-code\" data-lang=\"\">add_user_into_group($group_id, $userdata[&#039;user_id&#039;], 1, TIMENOW);</pre>на<br />\n<pre class=\"xfBb-code\" data-lang=\"\">add_user_into_group($group_id, $userdata[&#039;user_id&#039;], $bb_cfg[&#039;groupcp_pending&#039;], TIMENOW);</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1475935163,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92562,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "отличный мод. и идея дополнения к нему - кокого вида гиперссылку юзеру нужно кликнуть чтобы вступить в эту группу без подтверждения?<br />\n<br />\nэто будет что-то вроде такого: <a href=\"http://localhost/group.php?g=&amp;u=2&amp;action=join&amp;validate=true\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://localhost/group.php?g=11&amp;u=2&amp;action=join&amp;validate=true</a><br />\nно это конечно же не работает<br />\n<br />\nи я столкнулся с проблемой, какой она должна иметь вид? чтобы кликнуть и сразу попасть в группу без подтверждения 👍",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1516145396,
+      "user_id": 561,
+      "user_title": "User",
+      "username": "John Smith"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "vstuplenie-v-gruppu-bez-podtverzdenia",
+  "sticky": false,
+  "tags": [],
+  "title": "Вступление в группу без подтверждения",
+  "url_path": "/threads/vstuplenie-v-gruppu-bez-podtverzdenia.41538/",
+  "user_id": 6370,
+  "username": "sхс",
+  "view_count": 1318
+}

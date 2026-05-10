@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 12608,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 52,
+    "title": "Bug tracker archive"
+  },
+  "id": 1028,
+  "last_post_date": 1330240645,
+  "node_id": 52,
+  "post_date": 1330162788,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 12608,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Перевел трекер на xbtt анонсер, в клиенте всё работает, качается, раздается. А на форуме во всех раздачах 0 сидов/0 личеров. Подскажите в каком направлении копать? Крон отвязан, до смены анонсера работало как часы.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1330162788,
+      "user_id": 561,
+      "user_title": "User",
+      "username": "John Smith"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 12657,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "уже обсуждалась тема",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1330240645,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "otvalilas-statistika-posle-perehoda-na-xbtt-anonser",
+  "sticky": false,
+  "tags": [],
+  "title": "Отвалилась статистика после перехода на xbtt анонсер",
+  "url_path": "/threads/otvalilas-statistika-posle-perehoda-na-xbtt-anonser.1028/",
+  "user_id": 561,
+  "username": "John Smith",
+  "view_count": 1664
+}

@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 37207,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 9579,
+  "last_post_date": 1375828740,
+  "node_id": 57,
+  "post_date": 1374171926,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 37207,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Привет всем !<br />\nТут такая проблема: на FreeBSD с отключенным accept filter&#039;ом (полностью выпилен из ядра и не подгружен модулем) XBT быстро и правильно обновляет стату и записывает в базу, но если включить поддержу accept filter&#039;а то XBT перестает считать стату, и записывать в базу, он обновляет статистику только при его перезапуске, допустим поставил на закачку раздачу подождал 5 минуть статистика не изменилась таблица bb_bt_tracker пуста, после того как перезапустил XBT статистика обновилась данные в таблу записаны.<br />\nв других *nix, на debian&#039;е и gentoo у меня статистика не работала возможно из за accept filter&#039;а<br />\nкрон работает, памяти хватает, фаервол отключен (его нет)<br />\nподскажите в чём проблема ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1374171926,
+      "user_id": 41,
+      "user_title": "User",
+      "username": "XLex"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 37538,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "мдэ...<br />\nпомочь никто не может",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1374499631,
+      "user_id": 41,
+      "user_title": "User",
+      "username": "XLex"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 37541,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "в хоботе тут единицы варят, их отлавливать нужно с фонариком..<br />\nа по линуху - kenny отлавливай )",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1374501190,
+      "user_id": 8,
+      "user_title": "User",
+      "username": "fly_indiz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 39478,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "исправлено !!!<br />\nпроблема решена (установил более высокие значиния в xbt_config)<br />\nвот такие (пример взял с тапок)<br />\nannounce_interval           = 700<br />\nclean_up_interval           = 60<br />\nread_config_interval        = 60<br />\nread_db_interval            = 600<br />\nscrape_interval             = 0<br />\nwrite_db_interval           = 30<br />\nread_files_interval         = 30",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1375828683,
+      "user_id": 41,
+      "user_title": "User",
+      "username": "XLex"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 39479,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "конечно не понимаю почему заработало, похоже из за тюнинга TCP и прочей хрени на фряхе",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1375828740,
+      "user_id": 41,
+      "user_title": "User",
+      "username": "XLex"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "problema-s-accept-filterom-ili-nepojmu-v-cem-pricina",
+  "sticky": false,
+  "tags": [],
+  "title": "Проблема с accept filter'ом или непойму в чём причина",
+  "url_path": "/threads/problema-s-accept-filterom-ili-nepojmu-v-cem-pricina.9579/",
+  "user_id": 41,
+  "username": "XLex",
+  "view_count": 1230
+}

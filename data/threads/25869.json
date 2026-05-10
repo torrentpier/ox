@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 59968,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25869,
+  "last_post_date": 1396187988,
+  "node_id": 57,
+  "post_date": 1396164402,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59968,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Возник вопрос в каком файле прописываются ссылки для U_SEARCH, U_GROUP_CP и т.п.<br />\nСпасибо за помощь🙂",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1396164402,
+      "user_id": 4540,
+      "user_title": "User",
+      "username": "Glava"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59969,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "page_header.tpl (nav_menu)",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1396165990,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59974,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вообще-то в  includes/page_header.php<br />\n <br />\n&#039;U_SEARCH&#039;           =&gt; &quot;search.php&quot;,<br />\n&#039;U_GROUP_CP&#039;         =&gt; &quot;groupcp.php&quot;,",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1396187988,
+      "user_id": 4447,
+      "user_title": "User",
+      "username": "DreamHD"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "v-kakom-fajle-propisyvautsa-ssylki",
+  "sticky": false,
+  "tags": [],
+  "title": "В каком файле прописываются ссылки",
+  "url_path": "/threads/v-kakom-fajle-propisyvautsa-ssylki.25869/",
+  "user_id": 4540,
+  "username": "Glava",
+  "view_count": 1060
+}

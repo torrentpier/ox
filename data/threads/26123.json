@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 62120,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 26123,
+  "last_post_date": 1409058963,
+  "node_id": 57,
+  "post_date": 1409058167,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62120,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "r597<br />\nВ логах cron_error.log<br />\nCan not run &quot;Avatars cleanup&quot; : file &quot;/var/www/****/data/www/torrent-hub.com/includes/cron/jobs/avatars_cleanup.php&quot; not found<br />\nЭтого файла и нет. Почему же крон задача ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1409058167,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62121,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Потому что из таблицы ее не удалили и она исполняется? В админке крона посмотрите.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1409058700,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62122,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Так наверное задачу из базы удалить надо",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1409058865,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62123,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "потомучто в 583 это убрали",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1409058912,
+      "user_id": 43,
+      "user_title": "User",
+      "username": "JDVU"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62124,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ага просмотрел ща ревизии - понял )",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1409058963,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "logi",
+  "sticky": false,
+  "tags": [],
+  "title": "Логи",
+  "url_path": "/threads/logi.26123/",
+  "user_id": 4163,
+  "username": "vitalix",
+  "view_count": 1110
+}

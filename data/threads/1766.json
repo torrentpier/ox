@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 23460,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1766,
+  "last_post_date": 1354243440,
+  "node_id": 57,
+  "post_date": 1354214065,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23460,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток. <br />\n <br />\nЕсть ли возможность настройки разрегистрации релизов с отдельно выбранными статусами?  <br />\nСейчас для всех действует $bb_cfg[&#039;seeder_last_seen_days_keep&#039;]=хх,<br />\nКак сделать, что бы этому правилу подчинялись все TOR_STATUS_ххх, кроме определенных?<br />\n <br />\nПочему возникла такая необходимость: есть несколько релизеров, которые выкладывают некий контент, в силу своей специфичности пользуется не громадным спросом. Релизеры имеют обыкновение уезжать в длительные поездки, порою на два-три месяца. Увеличивать только из-за них   $bb_cfg[&#039;seeder_last_seen_days_keep&#039;] не имеет смысла, оставлять так - тоже. Восстанавливать 400-500 раздач после каждой командировки терпения хватит не надолго, отказываться от таких релизеров - не резон. <br />\n <br />\nЕсть идея создать дополнительный статус, который оставался бы всегда жив, не влияя при этом на нормальную жизнь трекера.  Или может у вас есть другая идея для такой ситуации?<br />\n <br />\nРевизия r400.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1354214065,
+      "user_id": 1148,
+      "user_title": "User",
+      "username": "baruk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23461,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "да, это возможно. первое, что пришло в голову.<br />\n <br />\nincludes/cron/jobs/tr_maintenance.php<br />\nНайти:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$sql = &quot;SELECT topic_id, attach_id\n    FROM &quot;. BB_BT_TORRENTS .&quot;\n    WHERE reg_time &lt; $never_seen_time\n        AND seeder_last_seen &lt; $last_seen_time\n    LIMIT $limit_sql&quot;;</pre>Заменить на:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$white_statuses = TOR_NOT_APPROVED, TOR_CHECKING; // Через запятую название статуса или его id\n$sql = &quot;SELECT topic_id, attach_id\n    FROM &quot;. BB_BT_TORRENTS .&quot;\n    WHERE reg_time &lt; $never_seen_time\n        AND seeder_last_seen &lt; $last_seen_time\n        AND tor_status NOT IN ($white_statuses)\n    LIMIT $limit_sql&quot;;</pre> <br />\n$white_statuses - это список статусов, релизы с которым должны оставатся. Этот список можно перенести в админку или в файл конфига. тут уже дело фантазии.<br />\n <br />\nСписок статусов хранится в includes/init_bb.php:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">// Torrents    (reserved: -1)\ndefine(&#039;TOR_NOT_APPROVED&#039;,  0);  // не проверено\ndefine(&#039;TOR_CLOSED&#039;,        1);  // закрыто\ndefine(&#039;TOR_APPROVED&#039;,      2);  // проверено\ndefine(&#039;TOR_NEED_EDIT&#039;,    3);  // недооформлено\ndefine(&#039;TOR_NO_DESC&#039;,      4);  // неоформлено\ndefine(&#039;TOR_DUP&#039;,          5);  // повтор\ndefine(&#039;TOR_CLOSED_CPHOLD&#039;, 6);  // закрыто правообладателем\ndefine(&#039;TOR_CONSUMED&#039;,      7);  // поглощено\ndefine(&#039;TOR_DOUBTFUL&#039;,      8);  // сомнительно\ndefine(&#039;TOR_CHECKING&#039;,      9);  // проверяется\ndefine(&#039;TOR_TMP&#039;,          10);  // временная\ndefine(&#039;TOR_PREMOD&#039;,        11);  // премодерация</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1354215716,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23465,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Gemini_13</b>, Спасибо! Должно сработать. Попробую на днях 🙂",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1354243440,
+      "user_id": 1148,
+      "user_title": "User",
+      "username": "baruk"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "razregistracia-relizov-s-otdel-nymi-statusami",
+  "sticky": false,
+  "tags": [],
+  "title": "Разрегистрация релизов с отдельными статусами",
+  "url_path": "/threads/razregistracia-relizov-s-otdel-nymi-statusami.1766/",
+  "user_id": 1148,
+  "username": "baruk",
+  "view_count": 1075
+}

@@ -1,0 +1,133 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 90677,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 96,
+    "title": "Modifications archive"
+  },
+  "id": 41684,
+  "last_post_date": 1698921367,
+  "node_id": 96,
+  "post_date": 1490371882,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90677,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "С помощью мода можно организовать авторизацию и регистрацию по одному клику через различные социальные сети. Построен на основе сервиса <b>ulogin</b>.<br />\n<br />\n<ul>\n<li data-xf-list-type=\"ul\">Позволяет заходить через аккаунты Google, Яндекс, ВКонтакте, mail.ru и многие другие.</li>\n<li data-xf-list-type=\"ul\">Новые записи попадают сразу в базу, как будто пользователь был зарегистрирован через стандартный механизм.</li>\n<li data-xf-list-type=\"ul\">Новым пользователям на почту приходит их логин и пароль для авторизации стандартным механизмом, он также будет доступен.</li>\n</ul><br />\nПротестирован на версии движка 2.1.5.<br />\nВ комплекте все нужные файлы и инструкция по установке.<br />\n<br />\nЦена - 700р.<br />\nЗа покупкой - добро пожаловать на почту (******) или в Skype (******).<br />\n<br />\n[GALLERY=media, 69]uLoginMod от Man197 опубликован 24 мар 2017 в 19:03[/GALLERY]",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1490371882,
+      "user_id": 7767,
+      "user_title": "User",
+      "username": "Man197"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90696,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Тестить тут <a href=\"http://trackertest.tk\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Главная :: TorrentPier II - Torrent Tracker</a> чем быстрее тем лучше, данный сайт сделан был специально для тестов проработает около недели",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1490391127,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90702,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Protektor\">Тестить тут <a href=\"http://trackertest.tk\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Главная :: TorrentPier II - Torrent Tracker</a> чем быстрее тем лучше, данный сайт сделан был специально для тестов проработает около недели</blockquote>Если и делать авторизацию то по ФИ, то что псевдоним это все хрень, авторизировался под псевдонимом Andrey, следующий авторизируется Andrey2 и т.д. мне допустим как пользователю эта нумерация не нравится, так что не продумано.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1490417714,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90704,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/462/\">Virtuoz</a>, это по моей просьбе было сделано, т.к. не во всех соц сетях указана фамилия, и если ее нет то ulogin, ее отдельно просит а когда идет регистрация по имени, проходит быстрее, единственное если почта не указана, то он ее в обязательном порядке требует, и так же требует ее подтвердить. В принципе можно и по ФИ сделать, это уже не вкус и цвет...",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1490443924,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90705,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Это хорошо , что написали мод , попробовал на тестовом сайте ... работает .<br />\nТолько лишние скрипты опять же подключать + если ulogin перестанет работать ? <br />\nДи и вообще рега на фиг не надо , так как все практически доступно без нее 🙂",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1490455062,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95291,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1698921443,
+      "message_parsed": "Мод был <a href=\"https://torrentpier.com/resources/registracija-i-vxod-cherez-ulogin.270/\" class=\"link link--internal\">перенесен</a> в категорию &quot;Бесплатные&quot;. Согласно программе перехода кода в <a href=\"https://torrentpier.com/threads/platnye-modifikacii-i-ix-dalnejshaja-podderzhka.36722/\" class=\"link link--internal\">Общественное достояния</a>.",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1698921367,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "registracia-i-vhod-cerez-ulogin-platnyj",
+  "sticky": false,
+  "tags": [
+    "ulogin",
+    "авторизация через социальные сети"
+  ],
+  "title": "Регистрация и вход через ulogin [платный]",
+  "url_path": "/threads/registracia-i-vhod-cerez-ulogin-platnyj.41684/",
+  "user_id": 7767,
+  "username": "Man197",
+  "view_count": 8966
+}

@@ -1,0 +1,134 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Вывод релиз группы на странице форума by belomaxorka.zip",
+      "id": 6192,
+      "local_path": null,
+      "r2_key": null,
+      "size": 1631,
+      "src_url": "https://torrentpier.com/api/resource-versions/550/download?file=6192"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1728746233,
+      "file_size": 11956,
+      "filename": "firefox_BntHJm7ffa.webp",
+      "height": 228,
+      "id": 6189,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_bnthjm7ffa-webp.6189/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6193-212e0921745136c35481e70e146793c5.jpg?hash=yrhx19BNS1",
+      "width": 408
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Добавляет вывод названия релиз группы рядом с названием топика на странице форума.<br />\n<b>Совместимость: </b>v2.1.5, LTS и версии новее.",
+  "download_count": 409,
+  "external_url": null,
+  "icon_url": null,
+  "id": 308,
+  "is_fileless": null,
+  "last_update": 1729877020,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1728746236,
+  "resource_state": "visible",
+  "slug": "vyvod-reliz-gruppy-na-stranice-foruma",
+  "tag_line": "Добавляет вывод названия релиз группы рядом с названием топика на странице форума.",
+  "tags": [
+    "вывод названия релиз группы",
+    "мод",
+    "мод rg",
+    "мод релиз группы",
+    "моды",
+    "релиз группа",
+    "релиз группы на форуме"
+  ],
+  "title": "Вывод релиз группы на странице форума",
+  "url_path": "/resources/vyvod-reliz-gruppy-na-stranice-foruma.308/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.2",
+  "versions": [
+    {
+      "download_count": 235,
+      "files": [
+        {
+          "filename": "[FULL] Вывод релиз группы на странице форума by belomaxorka.zip",
+          "id": 6192,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1631,
+          "src_url": "https://torrentpier.com/api/resource-versions/550/download?file=6192"
+        }
+      ],
+      "id": 550,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1729877020,
+      "version_state": "visible",
+      "version_string": "v1.0.2",
+      "view_url": "https://torrentpier.com/resources/vyvod-reliz-gruppy-na-stranice-foruma.308/version/550/"
+    },
+    {
+      "download_count": 89,
+      "files": [
+        {
+          "filename": "[FULL] Вывод релиз группы на странице форума by belomaxorka.zip",
+          "id": 6190,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1628,
+          "src_url": "https://torrentpier.com/api/resource-versions/548/download?file=6190"
+        }
+      ],
+      "id": 548,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1728914842,
+      "version_state": "visible",
+      "version_string": "v1.0.1",
+      "view_url": "https://torrentpier.com/resources/vyvod-reliz-gruppy-na-stranice-foruma.308/version/548/"
+    },
+    {
+      "download_count": 87,
+      "files": [
+        {
+          "filename": "[FULL] Вывод релиз группы на странице форума by belomaxorka.zip",
+          "id": 6188,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1572,
+          "src_url": "https://torrentpier.com/api/resource-versions/547/download?file=6188"
+        }
+      ],
+      "id": 547,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1728746236,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/vyvod-reliz-gruppy-na-stranice-foruma.308/version/547/"
+    }
+  ],
+  "view_count": 622
+}

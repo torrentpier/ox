@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 17364,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1353,
+  "last_post_date": 1337162207,
+  "node_id": 57,
+  "post_date": 1337112637,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 17364,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени.<br />\n<br />\nВ основном работал с двигом форума vb.<br />\nВопрос как работать на этом движке с модераторами и их правами...<br />\nКак к примеру дать возможность модераторам удалять пользователей.<br />\nИ чем отличается Администратор от Site Admin<br />\nРасскажите пожалуйста или ткните где можно почитать...<br />\n<br />\nЗаранее благодарен.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1337112637,
+      "user_id": 57,
+      "user_title": "User",
+      "username": "coffeman"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 17365,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здарова.<br />\n1. молодец<br />\n2. Как обычно<br />\n3. Установить двиг и поэксперементировать<br />\n4. Транслитом",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1337129384,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Trancef"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 17366,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>coffeman</b>, без доп прав модераторы никак не могут удалять пользователей.<br />\nА приведенные выше Администратор от Site Admin тем что одно просто звание, а второе непосредственно админские права",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1337162207,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "moderatory",
+  "sticky": false,
+  "tags": [],
+  "title": "Модераторы.",
+  "url_path": "/threads/moderatory.1353/",
+  "user_id": 57,
+  "username": "coffeman",
+  "view_count": 1143
+}

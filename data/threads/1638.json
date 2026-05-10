@@ -1,0 +1,114 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 21977,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 50,
+        "title": "Graphics and styles for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 17,
+    "title": "Graphics and styles for TorrentPier (archive)"
+  },
+  "id": 1638,
+  "last_post_date": 1351596629,
+  "node_id": 17,
+  "post_date": 1351596111,
+  "posts": [
+    {
+      "attach_count": 3,
+      "attachments": [
+        {
+          "attach_date": 1351596110,
+          "file_size": 52641,
+          "filename": "3D меню.rar",
+          "height": 0,
+          "id": 1550,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/3d-menu-rar.1550/",
+          "thumbnail_url": null,
+          "width": 0
+        },
+        {
+          "attach_date": 1351597244,
+          "file_size": 68204,
+          "filename": "меню.webp",
+          "height": 743,
+          "id": 1551,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/menu-webp.1551/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1552-a3ac97f522f63c15bd9a6184919eb31a.jpg?hash=CvlpgXjxMR",
+          "width": 1220
+        },
+        {
+          "attach_date": 1351597248,
+          "file_size": 65240,
+          "filename": "меню2.webp",
+          "height": 847,
+          "id": 1552,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/menu2-webp.1552/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1553-07b11ac92a4f49a62b5a20bcd6a4ff16.jpg?hash=WpvrrlzHpy",
+          "width": 1221
+        }
+      ],
+      "id": 21977,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<div style=\"text-align: left\"><a href=\"https://torrentpier.com/attachments/1551/\"><img src=\"https://torrentpier.com/data/attachments/1/1552-a3ac97f522f63c15bd9a6184919eb31a.jpg?hash=CvlpgXjxMR\" alt=\"меню.webp\" /></a><a href=\"https://torrentpier.com/attachments/1552/\"><img src=\"https://torrentpier.com/data/attachments/1/1553-07b11ac92a4f49a62b5a20bcd6a4ff16.jpg?hash=WpvrrlzHpy\" alt=\"меню2.webp\" /></a>&#8203;</div><b>Файлы </b><b>из архива</b><br />\n <br />\n<ul>\n<li data-xf-list-type=\"ul\">layout.css</li>\n<li data-xf-list-type=\"ul\">menu.css</li>\n</ul><div style=\"margin-left: 20px\"><b>Закинуть в:</b>&#8203;</div><div style=\"margin-left: 20px\">\\templates\\default\\css&#8203;</div><div style=\"margin-left: 20px\">&#8203;</div><ul>\n<li data-xf-list-type=\"ul\">1.png</li>\n<li data-xf-list-type=\"ul\">2.png</li>\n<li data-xf-list-type=\"ul\">3.png</li>\n<li data-xf-list-type=\"ul\">4.png</li>\n<li data-xf-list-type=\"ul\">5.png</li>\n<li data-xf-list-type=\"ul\">6.png</li>\n<li data-xf-list-type=\"ul\">7.png</li>\n</ul><div style=\"margin-left: 20px\"><b>Закинуть в:</b>&#8203;</div><div style=\"margin-left: 20px\">/images/&#8203;</div><div style=\"margin-left: 20px\">&#8203;</div>Добавить в <b>page_header.tpl</b><br />\n<div style=\"margin-left: 20px\">&#8203;</div><pre class=\"xfBb-code\" data-lang=\"html\">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;{SITE_URL}templates/default/css/menu.css&quot;&gt;\n&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;{SITE_URL}templates/default/css/layout.css&quot;&gt;</pre> <br />\n <br />\n<b>Найти</b><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;body&gt;</pre> <br />\n<b>перед &gt; добавить</b><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">class=&quot;menu_body&quot;</pre> <br />\n<b>перед</b><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;!--page_container--&gt;</pre><b>вставить</b><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">        &lt;div class=&quot;menu&quot;&gt;\n            &lt;ul&gt;\n                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/1.png&quot; /&gt;&lt;/a&gt;&lt;/li&gt;\n                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/2.png&quot; /&gt;&lt;/a&gt;&lt;/li&gt;\n                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/3.png&quot; /&gt;&lt;/a&gt;&lt;/li&gt;\n                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/4.png&quot; /&gt;&lt;/a&gt;&lt;/li&gt;\n                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/5.png&quot; /&gt;&lt;/a&gt;&lt;/li&gt;\n                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/6.png&quot; /&gt;&lt;/a&gt;&lt;/li&gt;\n                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/7.png&quot; /&gt;&lt;/a&gt;&lt;/li&gt;\n            &lt;/ul&gt;\n        &lt;/div&gt;</pre> <br />\n<b>перед</b><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;div id=&quot;page_container&quot;&gt;</pre> <br />\n<b>вставить</b><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;div class=&quot;page_content&quot;&gt;</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1351596111,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Prosto"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 21978,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Оформите правильно, код в html, скрин в мини",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1351596629,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "menu-s-effektom-3d",
+  "sticky": false,
+  "tags": [],
+  "title": "Меню с эффектом 3D",
+  "url_path": "/threads/menu-s-effektom-3d.1638/",
+  "user_id": 0,
+  "username": "Prosto",
+  "view_count": 2718
+}

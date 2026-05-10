@@ -1,0 +1,60 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_data"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 96939,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 10,
+    "title": "Main questions about TorrentPier"
+  },
+  "id": 42335,
+  "last_post_date": 1734705779,
+  "node_id": 10,
+  "post_date": 1734705779,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96939,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "В данном руководстве будет рассказано как максимально быстро установить движок на только что купленный вами сервер.<br />\nДля установки понадобиться чистый дистрибутив Ubuntu 22.04, 24.04 или Debian 12.<br />\n<br />\nДалее, подключитесь по SSH к вашему серверу, войдите как root-пользователь и выполните данную команду:<br />\n<pre class=\"xfBb-code\" data-lang=\"bash\">wget https://torrentpier.github.io/autoinstall/install.sh &amp;&amp; bash install.sh</pre>Далее следуйте шагам установки.<br />\n<br />\nПо итогу установки вы получите данные для авторизации. На этом установка успешно завершена!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1734705779,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 37,
+  "reply_count": 0,
+  "slug": "kak-bystro-ustanovit-torrentpier-na-debian-ili-ubuntu",
+  "sticky": false,
+  "tags": [
+    "faq",
+    "быстрая установка движка",
+    "для новичков",
+    "как установить движок",
+    "установка torrentpier",
+    "установка движка на debian",
+    "установка движка на ubuntu"
+  ],
+  "title": "Как быстро установить TorrentPier на Debian или Ubuntu",
+  "url_path": "/threads/kak-bystro-ustanovit-torrentpier-na-debian-ili-ubuntu.42335/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 1239
+}

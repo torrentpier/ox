@@ -1,0 +1,148 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 14516,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 47,
+        "title": "Modifications for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 43,
+    "title": "Modifications for TorrentPier (archive)"
+  },
+  "id": 1163,
+  "last_post_date": 1333030960,
+  "node_id": 43,
+  "post_date": 1333022808,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1333022777,
+          "file_size": 3828,
+          "filename": "2.webp",
+          "height": 62,
+          "id": 947,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2-webp.947/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/0/948-96bf979046e0c9796fad0acf20a6077e.jpg?hash=4YvIEWlBh5",
+          "width": 751
+        },
+        {
+          "attach_date": 1333022793,
+          "file_size": 8384,
+          "filename": "Снимок.webp",
+          "height": 109,
+          "id": 948,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-webp.948/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/0/949-688a301c11c50a65e14d79dd471cc1cf.jpg?hash=xMmcvwf4Wb",
+          "width": 465
+        }
+      ],
+      "id": 14516,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Автор</b>: TorrentPier II<br />\n <br />\nЗапрос<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">ALTER TABLE `bb_users` ADD `user_political` tinyint(1) NOT NULL DEFAULT &#039;0&#039;;</pre> <br />\n<b>usercp_viewprofile.php </b><br />\n<b>найти </b><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&#039;SKYPE&#039;                =&gt; $profiledata[&#039;user_skype&#039;],</pre>после<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&#039;POLITICAL&#039;              =&gt; ($profiledata[&#039;user_political&#039;]) ? $lang[&#039;POLITICAL_SELECT&#039;][$profiledata[&#039;user_political&#039;]]: &#039;&#039;,</pre> <br />\n<b>usercp_register.php</b><br />\n<b>найти</b><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&#039;user_gender&#039;      =&gt; true,</pre><b><br />\nпосле</b><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&#039;user_political&#039;  =&gt; true,</pre> <br />\n<b>найти </b><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">*  Возраст (edit, reg)</pre><b>перед</b><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">    /**\n    *  Политические взгляды (edit, reg)\n    */       \n    case &#039;user_political&#039;:\n        $political = isset($_POST[&#039;user_political&#039;]) ? (int) $_POST[&#039;user_political&#039;] : $pr_data[&#039;user_political&#039;];\n        if ($submit &amp;&amp; $political != $pr_data[&#039;user_political&#039;])\n        {\n            $pr_data[&#039;user_political&#039;] = $political;\n            $db_data[&#039;user_political&#039;] = $political;\n        }\n        $tp_data[&#039;USER_POLITICAL&#039;] = build_select(&#039;user_political&#039;, array_flip($lang[&#039;POLITICAL_SELECT&#039;]), $pr_data[&#039;user_political&#039;]);\n        break;</pre> <br />\nlang_main.php<br />\nв конец <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$lang[&#039;POLITICAL&#039;] = &#039;Политические взгляды:&#039;;\n$lang[&#039;POLITICAL_SELECT&#039;] = array(\n    0 =&gt; &#039;Не определилось&#039;,\n    1 =&gt; &#039;Индифферентные&#039;,\n    2 =&gt; &#039;Коммунистические&#039;,\n    3 =&gt; &#039;Социалистические&#039;,\n    4 =&gt; &#039;Умеренные&#039;,\n    5 =&gt; &#039;Либеральные&#039;,\n    6 =&gt; &#039;Консервативные&#039;,\n    7 =&gt; &#039;Монархические&#039;,\n    8 =&gt; &#039;Ультраконсервативные&#039;,\n  9 =&gt; &#039;Либертарианские&#039;,\n);</pre> <br />\n<b>usercp_viewprofile.tpl </b><br />\n<b>найти </b><br />\n<pre class=\"xfBb-code\" data-lang=\"html\">&lt;!-- IF BIRTHDAY --&gt;</pre><b>Перед</b><br />\n<pre class=\"xfBb-code\" data-lang=\"html\"> &lt;!-- IF POLITICAL --&gt;\n&lt;tr&gt;\n&lt;th&gt;{L_POLITICAL}:&lt;/th&gt;\n&lt;td&gt;&lt;b&gt;{POLITICAL}&lt;/b&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;!-- ENDIF --&gt;</pre> <br />\n<b>usercp_register.tpl </b><br />\n<b> найти</b><br />\n<pre class=\"xfBb-code\" data-lang=\"html\">&lt;!-- IF BIRTHDAY --&gt;</pre> перед<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">&lt;tr&gt;\n    &lt;td&gt;Политические взгляды:&lt;/td&gt;\n    &lt;td&gt;{USER_POLITICAL}&lt;/td&gt;\n&lt;/tr&gt;</pre> <a href=\"https://torrentpier.com/attachments/947/\"><img src=\"https://torrentpier.com/data/attachments/0/948-96bf979046e0c9796fad0acf20a6077e.jpg?hash=4YvIEWlBh5\" alt=\"2.webp\" /></a><a href=\"https://torrentpier.com/attachments/948/\"><img src=\"https://torrentpier.com/data/attachments/0/949-688a301c11c50a65e14d79dd471cc1cf.jpg?hash=xMmcvwf4Wb\" alt=\"Снимок.webp\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1333022808,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14520,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Скоро наверное будет мод &quot;[FULL] СП&quot; 😀",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1333028901,
+      "user_id": 0,
+      "user_title": "",
+      "username": "blackjack"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14521,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>DarkMod</b>, тоже либерал! Жму руку 🙂",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1333029135,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Explosive"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14522,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>DarkMod</b>, приколист 😀",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1333029725,
+      "user_id": 69,
+      "user_title": "User",
+      "username": "iFlooder"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14525,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Explosive</b>, для скрина сделал 😀",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1333030960,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "politiceskie-vzglady",
+  "sticky": false,
+  "tags": [],
+  "title": "Политические взгляды",
+  "url_path": "/threads/politiceskie-vzglady.1163/",
+  "user_id": 22,
+  "username": "DarkMod",
+  "view_count": 1787
+}

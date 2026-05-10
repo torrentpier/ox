@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 8352,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 52,
+    "title": "Bug tracker archive"
+  },
+  "id": 654,
+  "last_post_date": 1325281936,
+  "node_id": 52,
+  "post_date": 1325281936,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 8352,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Установил sphinx<br />\nПроверка работы сфинкса <a href=\"http://brodim.com/sphinxtest.php\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://brodim.com/sphinxtest.php</a> , отрабатывает правильно !<br />\nИсходник скрипта:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;?php\n\n$s = new SphinxClient;\n$s-&gt;setServer(&quot;localhost&quot;, &#039;3312&#039;);\n$s-&gt;setMatchMode(SPH_MATCH_ANY);\n$s-&gt;setMaxQueryTime(3);\n\n$result = $s-&gt;query(&quot;DVD9&quot;);\n\nvar_dump($result);\n\n?&gt;</pre><br />\nСфинкс слушает на 127.0.0.1:3312<br />\nИ после того как включил его в конфиге, при поиске пишет ошибку:<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\">Fatal error: Cannot redeclare class SphinxClient in /sd/tt/includes/sphinxapi.php on line 0 Call Stack: 0.0001 631712 1. {main}() /sd/tt/tracker.php:0 0.0691 2224176 2. get_title_match_topics() /sd/tt/tracker.php:508 0.0692 2224616 3. init_sphinx() /sd/tt/includes/functions.php:2621</pre><br />\nПодскажите как исправить , версия релиза последняя R339",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1325281936,
+      "user_id": 389,
+      "user_title": "",
+      "username": "diim"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "osibka-raboty-sphinx-podskazite-kak-ispravit",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка работы sphinx, подскажите как исправить ?",
+  "url_path": "/threads/osibka-raboty-sphinx-podskazite-kak-ispravit.654/",
+  "user_id": 389,
+  "username": "diim",
+  "view_count": 1538
+}

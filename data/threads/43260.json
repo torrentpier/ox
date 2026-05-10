@@ -1,0 +1,68 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_data"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 98472,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 10,
+    "title": "Main questions about TorrentPier"
+  },
+  "id": 43260,
+  "last_post_date": 1777795404,
+  "node_id": 10,
+  "post_date": 1777795221,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98472,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Hi everyone, how&#039;s it going? I&#039;m trying to register on the website <a href=\"https://www.god-files.faith/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Home :: god-files.faith</a> but I keep getting a database error. Could someone help me?<br />\n<br />\nThe error is: Database Error: A database error occurred. Please contact the administrator if this problem persists.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1777795221,
+      "user_id": 11131,
+      "user_title": "User",
+      "username": "theusunited"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98473,
+      "is_admin": false,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Dear <a href=\"https://torrentpier.com/members/11131/\">theusunited</a> , we don&#039;t administer that website, you should contact the admin to fix the error, if there&#039;s a contact information present there.<br />\n<br />\nThis forum&#039;s purpose is to guide and discuss the TorrentPier engine. Your forementioned website uses it, but we don&#039;t have an association with the god-files.faith service.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1777795404,
+      "user_id": 10699,
+      "user_title": "Developer (ex)",
+      "username": "kovalensky"
+    }
+  ],
+  "prefix_id": 38,
+  "reply_count": 1,
+  "slug": "novo-cadastro-usuario-god-files-faith",
+  "sticky": false,
+  "tags": [],
+  "title": "Novo Cadastro usuário god-files.faith",
+  "url_path": "/threads/novo-cadastro-usuario-god-files-faith.43260/",
+  "user_id": 11131,
+  "username": "theusunited",
+  "view_count": 68
+}

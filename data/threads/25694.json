@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58363,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 25694,
+  "last_post_date": 1391204777,
+  "node_id": 80,
+  "post_date": 1391162319,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58363,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "в файле admin_forums.php<br />\n <br />\n$message = $lang[&#039;FORUMS_UPDATED&#039;] . &#039;&lt;br /&gt;&lt;br /&gt;&#039; . sprintf($lang[&#039;CLICK_RETURN_FORUMADMIN&#039;], &#039;&lt;a href=&quot;admin_forums.php&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039;) . &#039;&lt;br /&gt;&lt;br /&gt;&#039; . sprintf($lang[&#039;CLICK_RETURN_ADMIN_INDEX&#039;], &#039;&lt;a href=&quot;index.php?pane=right&quot;&gt;&#039;, &#039;/a&gt;&#039;);<br />\n <br />\nзаменить на<br />\n <br />\n$message = $lang[&#039;FORUMS_UPDATED&#039;] . &#039;&lt;br /&gt;&lt;br /&gt;&#039; . sprintf($lang[&#039;CLICK_RETURN_FORUMADMIN&#039;], &#039;&lt;a href=&quot;admin_forums.php&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039;) . &#039;&lt;br /&gt;&lt;br /&gt;&#039; . sprintf($lang[&#039;CLICK_RETURN_ADMIN_INDEX&#039;], &#039;&lt;a href=&quot;index.php?pane=right&quot;&gt;&#039;, &#039;<span style=\"color: #ff0000\">&lt;</span>/a&gt;&#039;);",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1391162319,
+      "user_id": 0,
+      "user_title": "",
+      "username": "sockrat"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58387,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено в новой ревизии, спасибо за багрепорты: <a href=\"https://code.google.com/p/torrentpier2/source/detail?r=578\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://code.google.com/p/torrentpier2/source/detail?r=578</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1391204777,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 1,
+  "slug": "ne-bag-no-stoit-popravit",
+  "sticky": false,
+  "tags": [],
+  "title": "не баг, но стоит поправить)",
+  "url_path": "/threads/ne-bag-no-stoit-popravit.25694/",
+  "user_id": 0,
+  "username": "sockrat",
+  "view_count": 865
+}

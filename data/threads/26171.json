@@ -1,0 +1,118 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 62584,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 26171,
+  "last_post_date": 1424088139,
+  "node_id": 57,
+  "post_date": 1410084630,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1410084896,
+          "file_size": 22,
+          "filename": "tpl_default_posting.tpl.php.zip",
+          "height": 0,
+          "id": 2636,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/tpl_default_posting-tpl-php-zip.2636/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 62584,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как вылечить подскажите плиз?<br />\n <br />\n<b><span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\">Notice</span></span></span></b><span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\">: Undefined index: ATTACHBOX in </span></span></span><b><span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\">/home/u137696873/public_html/cache/tpl_default_posting.tpl.php</span></span></span></b><span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\"> on line </span></span></span><b><span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\">199</span></span></span></b>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1410084630,
+      "user_id": 5533,
+      "user_title": "User",
+      "username": "dm2007"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62593,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Где у вас возникает эта ошибка? При отправке сообщения или еще где? И вообще, какая у вас ревизия? В 600 это было исправлено.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1410095149,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 75433,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "А каким образом исправлено?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1424026315,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 75526,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/2685/\">@ler</a> конкретную правку сейчас и не вспомню, перед релизом очень много всего было, но изменения были в аттач-моде.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1424088139,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "osibka-attachbox",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка ATTACHBOX",
+  "url_path": "/threads/osibka-attachbox.26171/",
+  "user_id": 5533,
+  "username": "dm2007",
+  "view_count": 1270
+}

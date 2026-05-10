@@ -1,0 +1,73 @@
+{
+  "custom_fields": {
+    "torrentpier": "223"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94327,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42072,
+  "last_post_date": 1573625699,
+  "node_id": 57,
+  "post_date": 1573577557,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94327,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1573577704,
+      "message_parsed": "Всем привет.<br />\nу кого была такая проблема - ставлю ббкод<br />\n<pre class=\"xfBb-code\" data-lang=\"\">[url=https://fastpic.ru/view/87/2019/0902/62f1d6352d7058e3c8676ce93eeb6175.png.html][img]https://i87.fastpic.ru/thumb/2019/0902/75/62f1d6352d7058e3c8676ce93eeb6175.jpeg[/img][/url]</pre>Отправляю, вместо превью получаю pic , открываю исходный код, <pre class=\"xfBb-code\" data-lang=\"html\">&lt;a href=&quot;https://fastpic.ru/view/87/2019/0902/62f1d6352d7058e3c8676ce93eeb6175.png.html&quot; class=&quot;postLink&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot;&gt;&lt;var class=&quot;postImg&quot; title=&quot;https://i87.fastpic.ru/th/2019/0902/75/62f1d6352d7058e3c8676ce93eeb6175.jpeg&quot;&gt;&lt;img src=&quot;https://i87.fastpic.ru/th/2019/0902/75/62f1d6352d7058e3c8676ce93eeb6175.jpeg&quot; class=&quot;postImg&quot; alt=&quot;pic&quot;&gt;&lt;/var&gt;&lt;/a&gt;</pre>Почему-то в исходном коде thumb заменяется на th",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1573577557,
+      "user_id": 4854,
+      "user_title": "User",
+      "username": "sergey67"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94328,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вопрос снят (автоцензор)...",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1573625699,
+      "user_id": 4854,
+      "user_title": "User",
+      "username": "sergey67"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "generacia-html",
+  "sticky": false,
+  "tags": [],
+  "title": "генерация html",
+  "url_path": "/threads/generacia-html.42072/",
+  "user_id": 4854,
+  "username": "sergey67",
+  "view_count": 1842
+}

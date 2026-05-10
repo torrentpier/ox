@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 95462,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42213,
+  "last_post_date": 1721194768,
+  "node_id": 47,
+  "post_date": 1703066405,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95462,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/sluchajnaja-razdacha.277/\" class=\"link link--internal\">Случайная раздача</a> - Добавляет кнопку &quot;Случайная раздача&quot; на трекере.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> Добавляет кнопку &quot;Случайная раздача&quot; на странице tracker.php (трекер). При нажатии на кнопку будет выбрана случайным образом раздача, после чего пользователь будет переадресован на страницу с раздачей (viewtopic.php).</blockquote><br />\n<a href=\"https://torrentpier.com/resources/sluchajnaja-razdacha.277/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1703066405,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95614,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/sluchajnaja-razdacha.277/\" class=\"link link--internal\">Случайная раздача</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/sluchajnaja-razdacha.277/update/466/\" class=\"link link--internal\">Обновление v1.0.2</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Мелкие улучшения кода</li>\n<li data-xf-list-type=\"ul\">Небольшие исправления в инструкции</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/sluchajnaja-razdacha.277/update/466/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1706024491,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96436,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/sluchajnaja-razdacha.277/\" class=\"link link--internal\">Случайная раздача</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/sluchajnaja-razdacha.277/update/545/\" class=\"link link--internal\">Обновление v1.0.3</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Небольшие улучшения</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/sluchajnaja-razdacha.277/update/545/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1721194768,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "slucajnaa-razdaca",
+  "sticky": false,
+  "tags": [],
+  "title": "Случайная раздача",
+  "url_path": "/threads/slucajnaa-razdaca.42213/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 866
+}

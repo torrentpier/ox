@@ -1,0 +1,61 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 87319,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 41440,
+  "last_post_date": 1458953019,
+  "node_id": 110,
+  "post_date": 1458953019,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87319,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1459185591,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/1/\">Exile</a> разместил новую запись в блоге:<br />\n<br />\n<a href=\"https://torrentpier.com/2016/03/reorganizatsiya-sajta-podderzhki-torrentpier/\" class=\"link link--internal\">Реорганизация сайта поддержки TorrentPier</a><br />\n<br />\n<br />\nДоброго времени суток.<br />\n<br />\nНа сайте поддержки произошло самое большое изменение с момента его появления в 2012 году - у нас появилась контент-составляющая. Теперь главная страница сайта поддержки TorrentPier это блог на WordPress. Форум же <a href=\"https://torrentpier.com/forum/\" class=\"link link--internal\">переместился в поддиректорию</a> с редиректом со всех старых ссылок.<br />\n<br />\n<img src=\"https://torrentpier.com/wp-content/uploads/2016/03/2016-03-26-03-41-04-Forum-torrentpier.com_-1024x698.png\" alt=\"\" /> <i>Главная страница форума</i><br />\n<br />\nВ рамках блога мы сможем на регулярной основе информировать вас о разработке новых версий TorrentPier, публиковать статьи о, например, используемом при этом программном обеспечении, прочие статьи на околотрекерную тематику. В рамках форума это не всегда можно и нужно было разместить в нужных разделах. Более того, в дальнейшем роль форума может быть значительно уменьшена и весь основной контент сайта будет располагаться как раз в блоге и <a href=\"https://github.com/torrentpier\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">нашем репозитории на GitHub</a>. Не исключен вариант и того, что форум в целом будет закрыт (оставлен только в архивном виде) и вместо него будет установлено более простое решение вопросно-ответного типа, поскольку основное предназначение форума на данный момент как раз вопросы и ответы по программированию/движку.<br />\n<br />\nВаша учетная запись на форуме и блоге - едина, в дальнейшем, как и было когда-то обещано, возможность авторизации на сторонних сайтах при помощи нашего форума будет предоставлена для любого трекера на основе TorrentPier. Размещать комментарии к статьям вы можете как на форуме, так и в блоге - они зеркальны и принципиальной разницы в месте их размещения нет.<br />\n<br />\nТак как процесс такого &quot;обновления&quot; сайта достаточно длительный и тот же WordPress требует не одного вечера для настройки, в настоящее время могут наблюдаться технические проблемы с доступностью/отсутствие локализации, да и внешний вид у главной страницы сайта на данный момент очень простенький. Но постепенно все наладится и я очень надеюсь, что задумка по реорганизации сайта в конечном итоге положительно повлияет как на активность сообщества, так и на аудиторию TorrentPier в целом.<br />\n<br />\nСпасибо за внимание и оставайтесь с нами.<br />\n<br />\n<a href=\"https://torrentpier.com/2016/03/reorganizatsiya-sajta-podderzhki-torrentpier/\" class=\"link link--internal\">Прочитать оригинальную запись в блоге...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1458953019,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "reorganizacia-sajta-podderzki-torrentpier",
+  "sticky": false,
+  "tags": [
+    "torrentpier",
+    "блог",
+    "новости",
+    "технические работы",
+    "форум"
+  ],
+  "title": "Реорганизация сайта поддержки TorrentPier",
+  "url_path": "/threads/reorganizacia-sajta-podderzki-torrentpier.41440/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 2371
+}

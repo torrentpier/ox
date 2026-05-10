@@ -1,0 +1,79 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 92255,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 50,
+    "title": "Graphics and styles for TorrentPier"
+  },
+  "id": 41821,
+  "last_post_date": 1506205103,
+  "node_id": 50,
+  "post_date": 1506205103,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1506204736,
+          "file_size": 41278,
+          "filename": "screen.webp",
+          "height": 332,
+          "id": 4923,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screen-webp.4923/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4927-da9c97ee9deb8f244045395d25315edf.jpg?hash=Etgn4kt93H",
+          "width": 1673
+        },
+        {
+          "attach_date": 1506205031,
+          "file_size": 7574,
+          "filename": "up.webp",
+          "height": 197,
+          "id": 4924,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/up-webp.4924/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4928-6af3da8d16ef26f70e6d07294034db18.jpg?hash=pg11e9LTQb",
+          "width": 148
+        }
+      ],
+      "id": 92255,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1506205271,
+      "message_parsed": "Доброго времени суток!<br />\nСкриншот:<br />\n<img src=\"https://torrentpier.com/attachments/4923/\" alt=\"screen.webp\" /><br />\nУстановка:<br />\n<br />\nОткрыть <b>pageheader.tpl</b> и после (по крайней мере я сюда вставил)<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;link rel=&quot;search&quot; type=&quot;application/opensearchdescription+xml&quot; href=&quot;{SITE_URL}opensearch_desc_bt.xml&quot; title=&quot;{SITENAME} (Tracker)&quot; /&gt;</pre>Вставить (по желанию скрипт можете разместить у себя на сайте):<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js&quot;&gt;&lt;/script&gt;</pre><br />\nНАЙТИ <code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\">&lt;/head&gt;</code> перед вставить:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;!-- Кнопка наверх --&gt;\n&lt;div id=&quot;upbutton&quot;&gt;&lt;/div&gt;\n\n&lt;script&gt;\n    $(window).scroll(function() {\n        if ($(this).scrollTop() &gt; 100) {\n            if ($(&#039;#upbutton&#039;).is(&#039;:hidden&#039;)) {\n                $(&#039;#upbutton&#039;).css({opacity : 1}).fadeIn(&#039;slow&#039;);\n            }\n        } else { $(&#039;#upbutton&#039;).stop(true, false).fadeOut(&#039;fast&#039;); }\n    });\n    $(&#039;#upbutton&#039;).click(function() {\n        $(&#039;html, body&#039;).stop().animate({scrollTop : 0}, 300);\n    });\n&lt;/script&gt;\n\n&lt;style&gt;\n  #upbutton {\n    background: url(&quot;styles/images/up.png&quot;) no-repeat top left;\n    height: 197px;\n    width: 148px;\n    bottom: 30px;\n    right: 30px;\n    cursor: pointer;\n    display: none;\n    position: fixed;\n    z-index: 999;\n  }\n&lt;/style&gt;\n&lt;!-- кнопка наверх --&gt;</pre><br />\nРисунок:<br />\n<img src=\"https://torrentpier.com/attachments/4924/\" alt=\"up.webp\" /><br />\n<br />\nНе забудьте загрузить рисунок, можете его поменять на свой.<br />\n<br />\nP.S. Я понимаю, что в инете до фига разных способов как прикрутить эту кнопку к сайту, но лично я перепробовал штук 5, пока не наткнулся на этот метод. Решил поделиться.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1506205103,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "knopka-naverh",
+  "sticky": false,
+  "tags": [],
+  "title": "Кнопка \"Наверх\"",
+  "url_path": "/threads/knopka-naverh.41821/",
+  "user_id": 5704,
+  "username": "ExPlayer",
+  "view_count": 1336
+}

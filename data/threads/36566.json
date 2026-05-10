@@ -1,0 +1,118 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 76745,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 36566,
+  "last_post_date": 1424985752,
+  "node_id": 57,
+  "post_date": 1424969112,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 76745,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1424969291,
+      "message_parsed": "Fatal error: DB Error [includes/functions_admin.php(294)] in /var/www/..../data/www/...../includes/db/mysql.php on line 804<br />\n<br />\nОшибка при массовом удалении топиков с торрентами.<br />\n<br />\nПо отдельности удаляет, но через раз<br />\n<br />\nДвижок R600, установлен с нуля",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1424969112,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1424969487,
+          "file_size": 25762,
+          "filename": "26-02-2015 19-51-10.webp",
+          "height": 384,
+          "id": 2990,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/26-02-2015-19-51-10-webp.2990/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2994-160e4498ef6899c7f99cda10acb2b667.jpg?hash=ySqUg4yLCZ",
+          "width": 478
+        }
+      ],
+      "id": 76746,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<img src=\"https://torrentpier.com/attachments/2990/\" alt=\"26-02-2015 19-51-10.webp\" />",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1424969491,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 76747,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Проблема решилась после синхронизации сообщений и тем. <br />\n<br />\nИз-за чего эта ошибка? Топики парсились автоматом",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1424969626,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 76773,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "В папке с логами есть sql-файл, где ошибка по сути прямым текстом написана. Проблема возникает когда у пользователя после удаления становится меньше сообщений, чем в счетчике его сообщений. Это из-за того, что какие-то кривые моды пишут сообщения от имени пользователя, а счетчик сообщений ему не обновляют. В итоге когда удаляете, в счетчике 10 сообщений, а удалить пытаетесь 100 - возникает -90 сообщений, от чего MySQL приходит в ужас.<br />\n<br />\nРешение: синхронизация сообщений на главной странице админки.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1424985752,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "fatal-error-db-error-includes-functions_admin-php-294",
+  "sticky": false,
+  "tags": [],
+  "title": "Fatal error: DB Error [includes/functions_admin.php(294)]",
+  "url_path": "/threads/fatal-error-db-error-includes-functions_admin-php-294.36566/",
+  "user_id": 0,
+  "username": "ler",
+  "view_count": 957
+}

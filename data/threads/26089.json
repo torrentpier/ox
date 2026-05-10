@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61850,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 26089,
+  "last_post_date": 1407852767,
+  "node_id": 80,
+  "post_date": 1407841198,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61850,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет, не могу не как понять как подружить <b>Templates</b> с <b>Ajax</b>?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1407841198,
+      "user_id": 5480,
+      "user_title": "User",
+      "username": "ВаленокPC"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61851,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "В данный момент чудовищными костылями, в шаблонизаторе требуются правки достаточно большие. Мы планировали перенос ajax на поддержку шаблонов, но только после так называемой 600 ревизии сделаем.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1407847216,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61852,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\">В данный момент чудовищными костылями, в шаблонизаторе требуются правки достаточно большие. Мы планировали перенос ajax на поддержку шаблонов, но только после так называемой 600 ревизии сделаем.</blockquote>Понятно, печально ну что будем ждать!",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1407852767,
+      "user_id": 5480,
+      "user_title": "User",
+      "username": "ВаленокPC"
+    }
+  ],
+  "prefix_id": 31,
+  "reply_count": 2,
+  "slug": "templates-i-ajax",
+  "sticky": false,
+  "tags": [],
+  "title": "Templates и Ajax",
+  "url_path": "/threads/templates-i-ajax.26089/",
+  "user_id": 5480,
+  "username": "ВаленокPC",
+  "view_count": 1090
+}

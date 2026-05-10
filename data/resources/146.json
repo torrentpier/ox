@@ -1,0 +1,91 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "root.zip",
+      "id": 3098,
+      "local_path": null,
+      "r2_key": null,
+      "size": 33230,
+      "src_url": "https://torrentpier.com/api/resource-versions/194/download?file=3098"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]Открыть [B]common.php:[/B]\nНайти:\n[PHP]// Board init\nif (defined('IN_FORUM'))\n{[/PHP]\nВыше добавить:\n[PHP]require(INC_DIR .'classes/seoUrl.php');[/PHP]\n\nОткрыть [B]init_bb.php:[/B]\nНайти:\n[PHP]if (defined('PAGE_HEADER_SENT')) return;[/PHP]\nНиже добавить:\n[PHP]if (!defined('BB_SCRIPT')) define('BB_SCRIPT', 'undefined');[/PHP]\n\nОткрыть [B]page_header.tpl:[/B]\nНайти:\n[PHP]{META}[/PHP]\nВыше добавить:\n[PHP]\n<!-- IF not IN_ADMIN -->\n<base href=\"{SITE_URL}\" />\n<!-- ENDIF -->\n[/PHP]\n\nОткрыть [B]page_header.php:[/B]\nНайти и удалить\n[PHP]if (!defined('BB_SCRIPT')) define('BB_SCRIPT', 'undefined');[/PHP]\n\nОткрыть [B]config.php[/B] и добавить:\n[PHP]//seoUrl\n$bb_cfg['romanize'] = true; //транслит\n$bb_cfg['no_rewite_url'] = true; //выключение реврайта\n\n$bb_cfg['fulllink'] = array(\n   'ucp' => array(\n       'register',\n       'users',\n       'settings',\n     ),\n);[/PHP]\nРеврайт для [B]nginx[/B]:\n[PHP]location / {\n     try_files $uri $uri/ /index.php?$uri&$args;\n   }[/PHP]\nРеврайт для [B]apache[/B]:\n[PHP]RewriteEngine On\nRewriteRule ^.*$ index.php [NC,L][/PHP]\n[LIST]\n[*]Перенести файл [B]viewtopic.php[/B] в папку [B]page[/B] и переименовать в [B]topic.php[/B]\n[*]Перенести файл [B]viewforum.ph[/B]p в папку [B]page[/B] и переименовать в [B]forums.php[/B]\n[*]Перенести файл [B]index.php[/B] в папку [B]page[/B]\n[/LIST]\nОткрыть [B]topic.php:[/B]\nНайти:\n[PHP]$topic_id = isset($_GET[POST_TOPIC_URL]) ? (int) $_GET[POST_TOPIC_URL] : 0;[/PHP]\nЗаменить на:\n[PHP]$topic_id = (SEO_ID) ? (int) SEO_ID : 0;[/PHP]\nОткрыть [B]forums.php[/B]:\nНайти:\n[PHP]$forum_id  = (int) request_var('f', '');[/PHP]\nЗаменить на:\n[PHP]$forum_id  = (int) SEO_ID;[/PHP]\nПример использования:\n[PHP]Link::BuildUrl('forums', '1', 'Мой титле') -> http://domain.ru/forums/moy-title.1/ если выключены реврайты http://domain.ru/index.php?=forums/moy-title.1/\nLink::BuildUrl('forums', '1') -> http://domain.ru/forums/1/ если выключены реврайты http://domain.ru/index.php?=forums/1/\nLink::BuildUrl('forums') -> http://domain.ru/forums/ если выключены реврайты http://domain.ru/index.php?=forums/\nLink::BuildUrl() -> http://domain.ru/ если выключены реврайты http://domain.ru/index.php[/PHP]\n\n[B]Реврайт nginx для старых ссылок(мода лога):[/B]\n[CODE]rewrite ^/category-(.*)-(.*).html /rewrite.php?c=$2 last;\nrewrite ^/forum-(.*)-(.*).html /rewrite.php?f=$2 last;\nrewrite ^/topic-(.*)-(.*).html /rewrite.php?t=$2 last;[/CODE]\n\n[B]Пример для ссылок из папки ucp:[/B]\nПример для файла register.php\nСоздать папку ucp в папке page и закинуть туда данный файл\nВ файле добавить после <?php\n[PHP]\n$user->session_start();\n\n$mode = SEO_MODE;\nif (IS_GUEST && $mode == 'settings') login_redirect();\n[/PHP]\n\nЗаменить в файле все вхождения\n[CODE]editprofile[/CODE]\nна\n[CODE]settings[/CODE]\nТем самым будут ссылки редактирования domain.ru/settings/\n\nПри добавление новых файлов в ucp нужно их указать в конфиге, для их работы.\n[/SPOILER]",
+    "owner": "Sprinx",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание:</b> добавляет генерацию ссылок ЧПУ.<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Удобная генерация и добавление ссылок</li>\n<li data-xf-list-type=\"ul\">Возможна работа без реврайтов (работает на хостингах)</li>\n<li data-xf-list-type=\"ul\">Поддержка коротких ссылок (domain.ru/topic/4437/)</li>\n</ul>SEO_ID - это ид, например топика, который передается в урл domain.ru/topic/<b>4437</b>/<br />\n<br />\nSEO_MODE - это имя файла, например топика, который передается в урл(лежит в папке page) domain.ru/<b>topic</b>/4437/",
+  "download_count": 718,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/146.jpg?1425233859",
+  "id": 146,
+  "is_fileless": null,
+  "last_update": 1425234461,
+  "rating_avg": 4.5,
+  "rating_count": 4,
+  "resource_date": 1421441674,
+  "resource_state": "visible",
+  "slug": "seo-url-cpu",
+  "tag_line": "Добавляет генерацию ссылок ЧПУ.",
+  "tags": [],
+  "title": "SEO URL / ЧПУ",
+  "url_path": "/resources/seo-url-cpu.146/",
+  "user_id": 2789,
+  "username": "Sprinx",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 527,
+      "files": [
+        {
+          "filename": "root.zip",
+          "id": 3098,
+          "local_path": null,
+          "r2_key": null,
+          "size": 33230,
+          "src_url": "https://torrentpier.com/api/resource-versions/194/download?file=3098"
+        }
+      ],
+      "id": 194,
+      "rating_avg": 4,
+      "rating_count": 2,
+      "release_date": 1425234461,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/seo-url-cpu.146/version/194/"
+    },
+    {
+      "download_count": 205,
+      "files": [
+        {
+          "filename": "root.zip",
+          "id": 2877,
+          "local_path": null,
+          "r2_key": null,
+          "size": 33232,
+          "src_url": "https://torrentpier.com/api/resource-versions/159/download?file=2877"
+        }
+      ],
+      "id": 159,
+      "rating_avg": 5,
+      "rating_count": 2,
+      "release_date": 1421441674,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/seo-url-cpu.146/version/159/"
+    }
+  ],
+  "view_count": 1918
+}

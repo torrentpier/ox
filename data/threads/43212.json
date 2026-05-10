@@ -1,0 +1,76 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 98263,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 43212,
+  "last_post_date": 1760508278,
+  "node_id": 111,
+  "post_date": 1760508278,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1760508254,
+          "file_size": 6648,
+          "filename": "Cattle.webp",
+          "height": 343,
+          "id": 6590,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/cattle-webp.6590/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6594-7c51d07566ebb04f1ffbc544a5db8d0f.jpg?hash=jFIp-r3dyo",
+          "width": 302
+        }
+      ],
+      "id": 98263,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier Cattle. Версия 2.4.12</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/6590/\" alt=\"Cattle.webp\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/releases/tag/v2.4.12\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.4.12 · torrentpier/torrentpier</a><br />\n<br />\n<b>Чейнджлог:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/compare/v2.4.11...v2.4.12\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Comparing v2.4.11...v2.4.12 · torrentpier/torrentpier</a><br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-rocket-features\"></a>🚀 Features&#8203;<a class=\"hoverLink\" href=\"#-rocket-features\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(installer)</i> Add web server config guidance post-installation (<a href=\"https://github.com/torrentpier/torrentpier/pull/2086\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2086</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/b1b8c23d93af2bb2ee3069ca9e87273a2675d546\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">b1b8c23</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(log action)</i> Show poll (create, finish, edit, delete) actions (<a href=\"https://github.com/torrentpier/torrentpier/pull/2095\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2095</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/36837f4bc9e8327b0115873a14551f925b4db3b7\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">36837f4</a>)</li>\n<li data-xf-list-type=\"ul\">Allow setting custom ban reason when banning users (<a href=\"https://github.com/torrentpier/torrentpier/pull/2094\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2094</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/16e28a5c41d775a9fbaae8dbc80f0c3ef89a2d65\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">16e28a5</a>)</li>\n<li data-xf-list-type=\"ul\">Bring back support seo_url function in Sitemap.php (<a href=\"https://github.com/torrentpier/torrentpier/pull/2093\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2093</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/af9bf7382ca1318eef3f349efeddbd1ea32b28b1\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">af9bf73</a>)</li>\n<li data-xf-list-type=\"ul\">Add system information dashboard to admin panel (<a href=\"https://github.com/torrentpier/torrentpier/pull/2092\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2092</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/9a4d30c6daadf3d413239b1cf0c06373e174b672\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">9a4d30c</a>)</li>\n<li data-xf-list-type=\"ul\">Enhance client IP detection with trusted proxy validation (<a href=\"https://github.com/torrentpier/torrentpier/pull/2085\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2085</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/1e3e58aeed66d73292c529eb2c3110408ae83e71\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">1e3e58a</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-gear-miscellaneous\"></a>⚙️ Miscellaneous&#8203;<a class=\"hoverLink\" href=\"#-gear-miscellaneous\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(ci)</i> Removed docker-publish.yml (<a href=\"https://github.com/torrentpier/torrentpier/pull/2107\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2107</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/67af55216999020bda7186e22301a626c95d3667\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">67af552</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(docker)</i> Configure MySQL charset and collation (<a href=\"https://github.com/torrentpier/torrentpier/pull/2102\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2102</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/9b00d571b14acb1c93515f98f9233b340dc9a7ea\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">9b00d57</a>)</li>\n<li data-xf-list-type=\"ul\">Some minor improvements &amp; updated Docker setup instructions (<a href=\"https://github.com/torrentpier/torrentpier/pull/2101\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2101</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/01b5269f22eb3d926a5453767bc295364ad8210c\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">01b5269</a>)</li>\n<li data-xf-list-type=\"ul\">Docker support (<a href=\"https://github.com/torrentpier/torrentpier/pull/2100\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2100</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/e7b178146eea02b77c4d89cdfa02a4dfe34ade57\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">e7b1781</a>)</li>\n<li data-xf-list-type=\"ul\">Added missing mysqli extension in README &amp; updated some workflows (<a href=\"https://github.com/torrentpier/torrentpier/pull/2091\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2091</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/7c3faa922f610810d06c05c7044e07ac18952593\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">7c3faa9</a>)</li>\n<li data-xf-list-type=\"ul\">Fixed incorrect installation guidlines in README.md (<a href=\"https://github.com/torrentpier/torrentpier/pull/2090\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2090</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/2468b60363e303747c614bb4854f022c2abd32c2\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">2468b60</a>)</li>\n<li data-xf-list-type=\"ul\">Use text captcha driver by default (<a href=\"https://github.com/torrentpier/torrentpier/pull/2084\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2084</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/7a393e3548cf9866e322794b88e105da780ecbfe\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">7a393e3</a>)</li>\n</ul><h2 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-new-contributors-red-heart\"></a><span style=\"font-size: 18px\">New Contributors</span> ❤️&#8203;<a class=\"hoverLink\" href=\"#-new-contributors-red-heart\" title=\"Permanent link\"></a></h2><ul>\n<li data-xf-list-type=\"ul\"><a href=\"https://github.com/advancedalloy\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">@advancedalloy</a> made their first contribution in <a href=\"https://github.com/torrentpier/torrentpier/pull/2100\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2100</a></li>\n</ul>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1760508278,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-cattle-versia-2-4-12",
+  "sticky": false,
+  "tags": [
+    "cattle",
+    "v2.4",
+    "новая версия",
+    "релиз",
+    "ченжлог"
+  ],
+  "title": "TorrentPier Cattle. Версия 2.4.12",
+  "url_path": "/threads/torrentpier-cattle-versia-2-4-12.43212/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 306
+}

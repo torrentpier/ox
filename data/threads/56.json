@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 551,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 56,
+  "last_post_date": 1310845804,
+  "node_id": 57,
+  "post_date": 1310811057,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 551,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Хотел бы себе сделать генерацию названия torrent файла как на rutracker.org<br />\nНапример: [rutracker.org].t123456.torrent<br />\n<br />\nНедавно видел на torrentpier.com инструкцию как сделать это, но у меня при скачивании, название файла [мойсайт.ru].t.torrents. - т.е. в названии файла нет числа, но вот в теме название файла отображается нормально, с числом..а при скачивании, число пропадает =(<br />\n <br />\nПомогите пожалуйста сделать эту фишку на TP2 =)",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1310811057,
+      "user_id": 90,
+      "user_title": "User",
+      "username": "Dev_ua"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 566,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "в <b>functions_torrent.php</b><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">    header(&quot;Content-Type: $mimetype $charset name=\\&quot;$filename\\&quot;&quot;);\n    header(&quot;Content-Disposition: attachment; filename=\\&quot;$filename\\&quot;&quot;);</pre>заменить <b>$filename</b> на своё, правда <b>$topic_id</b> там не задаётся, но есть <b>$post_id</b> по которому можно определить <pre class=\"xfBb-code\" data-lang=\"php\">$topic_id = DB()-&gt;fetch_row(&quot;SELECT topic_id FROM &quot;. BB_POSTS .&quot; WHERE post_id = $post_id&quot;, &#039;topic_id&#039;);</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1310836614,
+      "user_id": 2,
+      "user_title": "User",
+      "username": "_Xz_"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 580,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"_Xz_\">в <b>functions_torrent.php</b><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">    header(&quot;Content-Type: $mimetype $charset name=\\&quot;$filename\\&quot;&quot;);\n    header(&quot;Content-Disposition: attachment; filename=\\&quot;$filename\\&quot;&quot;);</pre>заменить <b>$filename</b> на своё, правда <b>$topic_id</b> там не задаётся, но есть <b>$post_id</b> по которому можно определить <pre class=\"xfBb-code\" data-lang=\"php\">$topic_id = DB()-&gt;fetch_row(&quot;SELECT topic_id FROM &quot;. BB_POSTS .&quot; WHERE post_id = $post_id&quot;, &#039;topic_id&#039;);</pre></blockquote><br />\nа можешь глупому расживать всё по пунктам? ^_^ а то я не очень понял)) 🙁",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1310845485,
+      "user_id": 90,
+      "user_title": "User",
+      "username": "Dev_ua"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 581,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "и что мне прикажешь делать? послать тебя обратно в школу, учиться читать? в сообщении всё расписано! ну если ты переменную не можешь заменить, значит тебе это не нужно.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1310845729,
+      "user_id": 2,
+      "user_title": "User",
+      "username": "_Xz_"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 582,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"_Xz_\">и что мне прикажешь делать? послать тебя обратно в школу, учиться читать? в сообщении всё расписано! ну если ты переменную не можешь заменить, значит тебе это не нужно.</blockquote><br />\nпрочитал внимательнее, теперь понял ^_^",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1310845804,
+      "user_id": 90,
+      "user_title": "User",
+      "username": "Dev_ua"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "generacia-imeni-torrent-fajla",
+  "sticky": false,
+  "tags": [],
+  "title": "Генерация имени .torrent файла",
+  "url_path": "/threads/generacia-imeni-torrent-fajla.56/",
+  "user_id": 90,
+  "username": "Dev_ua",
+  "view_count": 2292
+}

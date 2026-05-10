@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 7287,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 571,
+  "last_post_date": 1323772807,
+  "node_id": 57,
+  "post_date": 1323772616,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 7287,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Сделал блок, но теперь хочу сделать его видимым только для залогиненых, подскажите какое условие ставить, чтобы такое реализовать",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1323772616,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ИгорьСытник"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 7288,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"php\">&lt;!-- IF LOGGED_IN --&gt; ... &lt;!-- ENDIF --&gt;</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1323772807,
+      "user_id": 71,
+      "user_title": "User",
+      "username": "ChihPyh"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "uslovie-dla-zaloginenogo-pol-zovatela",
+  "sticky": false,
+  "tags": [],
+  "title": "Условие для залогиненого пользователя",
+  "url_path": "/threads/uslovie-dla-zaloginenogo-pol-zovatela.571/",
+  "user_id": 0,
+  "username": "ИгорьСытник",
+  "view_count": 1176
+}

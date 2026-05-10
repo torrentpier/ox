@@ -1,0 +1,150 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 85640,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41313,
+  "last_post_date": 1451089334,
+  "node_id": 57,
+  "post_date": 1447264226,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85640,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток!<br />\nЯ недавно подключил окелот и хотел ещё так же подключить вместо ретрекера /bt/announce.php не получается дабы uk с id не добавляется как можно сделать так что бы работало и то и другое?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1447264226,
+      "user_id": 6340,
+      "user_title": "User",
+      "username": "baxa73"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85641,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Добавить в таблицу торрентов новое поле, в файле функций торрента дописать какой теме выдавать какой анонсер. Второй аннонсер повесить на другой поддомен, аля рутрекер",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1447267298,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85642,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"drew\">Добавить в таблицу торрентов новое поле, в файле функций торрента дописать какой теме выдавать какой анонсер. Второй аннонсер повесить на другой поддомен, аля рутрекер</blockquote>Я в этом ещё так хорошо не специализируюсь, можете сказать где и как? Пожалуйста.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1447269618,
+      "user_id": 6340,
+      "user_title": "User",
+      "username": "baxa73"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85643,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/6340/\">@baxa73</a> <a href=\"https://torrentpier.com/threads/2-domena-dlja-sajta.38182/#post-79838\" class=\"link link--internal\">решено - 2 домена для сайта</a>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1447271390,
+      "user_id": 5452,
+      "user_title": "User",
+      "username": "Ress Kent"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1447284045,
+          "file_size": 12458,
+          "filename": "1ы.webp",
+          "height": 150,
+          "id": 4165,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1y-webp.4165/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4169-3c81763420b77fa21820a1a260e9a42b.jpg?hash=igRNkJWcSh",
+          "width": 849
+        }
+      ],
+      "id": 85644,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Ress Kent\"><a href=\"https://torrentpier.com/members/6340/\">@baxa73</a> <a href=\"https://torrentpier.com/threads/2-domena-dlja-sajta.38182/#post-79838\" class=\"link link--internal\">решено - 2 домена для сайта</a></blockquote>Спасибо получилось, но теперь ещё одна проблема. В статистике я отображаюсь с двух других ip. Разве так должно быть?",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1447284047,
+      "user_id": 6340,
+      "user_title": "User",
+      "username": "baxa73"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86237,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/6340/\">@baxa73</a>, второй сильно похож на ipv6, который движок &quot;не умеет&quot;.",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1451089334,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "kak-podklucit-dva-anonsera",
+  "sticky": false,
+  "tags": [],
+  "title": "Как подключить два анонсера?",
+  "url_path": "/threads/kak-podklucit-dva-anonsera.41313/",
+  "user_id": 6340,
+  "username": "baxa73",
+  "view_count": 1291
+}

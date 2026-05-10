@@ -1,0 +1,86 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 70552,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 32320,
+  "last_post_date": 1419619612,
+  "node_id": 110,
+  "post_date": 1419619612,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1419619483,
+          "file_size": 4266,
+          "filename": "bitbucket_logo.webp",
+          "height": 100,
+          "id": 2798,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bitbucket_logo-webp.2798/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2802-c92ad139f6f5847cf90ef8d1d6a929ea.jpg?hash=KtRqrVwB76",
+          "width": 347
+        },
+        {
+          "attach_date": 1419619484,
+          "file_size": 1680,
+          "filename": "github.webp",
+          "height": 100,
+          "id": 2799,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/github-webp.2799/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2803-23a4cc910d52e9b3359a5a0c78b569ad.jpg?hash=YQC4lHnWku",
+          "width": 244
+        }
+      ],
+      "id": 70552,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\n<br />\nВ дополнение к <a href=\"https://github.com/torrentpier\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">репозиторию на GitHub</a>, отныне у нас есть зеркальный <a href=\"https://bitbucket.org/torrentpier\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">репозиторий и на Bitbucket</a>. Репозитории полностью идентичны по коду и будут синхронизироваться между собой. Если у вас заблокирован GitHub (совсем недавний случай с Роскомнадзором) - вы можете воспользоваться Bitbucket и наоборот. Более того, вы отныне можете выбирать, на каком из репозиториев вам удобнее просматривать изменения, сделанные в коде. Как пример: <br />\n<ul>\n<li data-xf-list-type=\"ul\">Bitbucket: <a href=\"https://bitbucket.org/torrentpier/torrentpier/commits/ebafe9474ad2255528a33b0a635be85f3187f9a4\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://bitbucket.org/torrentpier/torrentpier/commits/ebafe9474ad2255528a33b0a635be85f3187f9a4</a></li>\n<li data-xf-list-type=\"ul\">GitHub: <a href=\"https://github.com/torrentpier/torrentpier/commit/ebafe9474ad2255528a33b0a635be85f3187f9a4\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://github.com/torrentpier/torrentpier/commit/ebafe9474ad2255528a33b0a635be85f3187f9a4</a></li>\n</ul>Ну и в целом интерфейс и возможности у сайтов несколько отличаются, в некоторых вещах Bitbucket может показаться проще. Чем пользоваться - решать вам, у нас все будет максимально автоматизированно и особой разницы между двумя способами получения исходного кода вы не заметите. Поэтому заходите на страницу нашей команды на Bitbucket, нажимайте сверху кнопочку &quot;Follow&quot; и не забывайте нажать аналогичную по функциональности &quot;звездочку&quot; в репозитории на GitHub <a href=\"https://github.com/torrentpier/torrentpier\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://github.com/torrentpier/torrentpier</a> (он, к слову, был переименован с tracker).<br />\n<br />\n<a href=\"https://bitbucket.org/torrentpier\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"https://torrentpier.com/attachments/2798/\" alt=\"bitbucket_logo.webp\" /></a><br />\n<a href=\"https://github.com/torrentpier\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"https://torrentpier.com/attachments/2799/\" alt=\"github.webp\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1419619612,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "teper-my-i-na-bitbucket",
+  "sticky": false,
+  "tags": [
+    "новости"
+  ],
+  "title": "Теперь мы и на Bitbucket",
+  "url_path": "/threads/teper-my-i-na-bitbucket.32320/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 1865
+}

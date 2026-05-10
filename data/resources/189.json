@@ -1,0 +1,71 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "Несколько вариантов вставки изображения.zip",
+      "id": 3238,
+      "local_path": null,
+      "r2_key": null,
+      "size": 619,
+      "src_url": "https://torrentpier.com/api/resource-versions/242/download?file=3238"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]Открыть posting_editor.tpl\n\nНайти:\n\n<option value=\"justify\">&nbsp;{L_JUSTIFY}</option>\n</select>\n\nНиже добавить:\n\n&nbsp;\n<select name=\"codeImg\">\n   <option selected=\"selected\">Img</option>\n   <option value=\"right\">Вправо</option>\n   <option value=\"left\">Влево</option>\n   <option value=\"center\">По центру</option>\n</select>\n&nbsp;\n\nНайти:\n\n<input type=\"button\" value=\"Img\" name=\"codeImg\" title=\"{L_IMG_TITLE}\" style=\"width: 40px;\" />\n\nЗаменить на:\n\n<input type=\"button\" value=\"Img\" name=\"codeImgg\" title=\"{L_IMG_TITLE}\" style=\"width: 40px;\" />\n\nНайти:\n\nbbcode.addTag(\"codeImg\", \"img\", null, \"R\", ctrl);\n\nЗаменить на:\n\nbbcode.addTag(\"codeImgg\", \"img\", null, \"Rf\", ctrl);\n\nНайти:\n\nbbcode.addTag(\"codeAlign\", function(e) { var v=e.value; e.selectedIndex=0; return \"align=\"+v }, \"/align\");\n\nНиже добавить:\n\nbbcode.addTag(\"codeImg\", function(e) { var v=e.value; e.selectedIndex=0; return \"Img=\"+v }, \"/Img\");[/PHP]\n[/SPOILER]",
+    "owner": "Virtuoz",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание:</b> добавляет в редактор несколько вариантов вставки изображений.",
+  "download_count": 283,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/189.jpg?1425421481",
+  "id": 189,
+  "is_fileless": null,
+  "last_update": 1425421472,
+  "rating_avg": 2,
+  "rating_count": 4,
+  "resource_date": 1425421472,
+  "resource_state": "visible",
+  "slug": "bb-kod-varianty-vstavki-izobrazenij",
+  "tag_line": "Добавляет в редактор несколько вариантов вставки изображений.",
+  "tags": [],
+  "title": "BB-код: варианты вставки изображений",
+  "url_path": "/resources/bb-kod-varianty-vstavki-izobrazenij.189/",
+  "user_id": 462,
+  "username": "Virtuoz",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 283,
+      "files": [
+        {
+          "filename": "Несколько вариантов вставки изображения.zip",
+          "id": 3238,
+          "local_path": null,
+          "r2_key": null,
+          "size": 619,
+          "src_url": "https://torrentpier.com/api/resource-versions/242/download?file=3238"
+        }
+      ],
+      "id": 242,
+      "rating_avg": 2,
+      "rating_count": 4,
+      "release_date": 1425421472,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/bb-kod-varianty-vstavki-izobrazenij.189/version/242/"
+    }
+  ],
+  "view_count": 700
+}

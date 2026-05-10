@@ -1,0 +1,80 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Автоматическая проверка релизов для админов by belomaxorka.zip",
+      "id": 6439,
+      "local_path": null,
+      "r2_key": null,
+      "size": 2611,
+      "src_url": "https://torrentpier.com/api/resource-versions/624/download?file=6439"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом.",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание:</b> Ставит автоматически статус &quot;Проверено&quot; если релиз создан админом.<br />\n<b>Совместимость:</b>  v2.1.5, LTS, v2.2.* - v2.4.*.",
+  "download_count": 239,
+  "external_url": null,
+  "icon_url": null,
+  "id": 323,
+  "is_fileless": null,
+  "last_update": 1744273779,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1744273779,
+  "resource_state": "visible",
+  "slug": "avtomaticeskaa-proverka-relizov-dla-adminov",
+  "tag_line": "Ставит автоматически статус \"Проверено\" если релиз создан админом.",
+  "tags": [
+    "авто проверка",
+    "автоматическая проверка релизов",
+    "мод",
+    "моды",
+    "проверка релиза",
+    "статус проверено",
+    "статус торрента",
+    "статусы торрентов"
+  ],
+  "title": "Автоматическая проверка релизов для админов",
+  "url_path": "/resources/avtomaticeskaa-proverka-relizov-dla-adminov.323/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.0",
+  "versions": [
+    {
+      "download_count": 239,
+      "files": [
+        {
+          "filename": "[FULL] Автоматическая проверка релизов для админов by belomaxorka.zip",
+          "id": 6439,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2611,
+          "src_url": "https://torrentpier.com/api/resource-versions/624/download?file=6439"
+        }
+      ],
+      "id": 624,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1744273779,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/avtomaticeskaa-proverka-relizov-dla-adminov.323/version/624/"
+    }
+  ],
+  "view_count": 1957
+}

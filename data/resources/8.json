@@ -1,0 +1,104 @@
+{
+  "category": {
+    "description": "Section with all templates for TorrentPier.",
+    "id": 5,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Templates",
+    "view_url": "https://torrentpier.com/resources/categories/templates.5/"
+  },
+  "current_files": [
+    {
+      "filename": "tp2.R325.zip",
+      "id": 3646,
+      "local_path": null,
+      "r2_key": null,
+      "size": 74768,
+      "src_url": "https://torrentpier.com/api/resource-versions/295/download?file=3646"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "adapt",
+    "installation": "[SPOILER=\"Инструкция\"]Загрузить файлы на сервер.[/SPOILER]",
+    "owner": "ChihPyh",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1369073371,
+      "file_size": 230888,
+      "filename": "78af20a49d846a367588867add45f687.webp",
+      "height": 1586,
+      "id": 1977,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/78af20a49d846a367588867add45f687-webp.1977/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/1/1982-effe41d280719a718640805ab30d0cf3.jpg?hash=mXmJkamARP",
+      "width": 1263
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> шаблон, простой в бежевых тонах.",
+  "download_count": 468,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/8.jpg?1429570965",
+  "id": 8,
+  "is_fileless": null,
+  "last_update": 1429570999,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1369073372,
+  "resource_state": "visible",
+  "slug": "sablon-pastel",
+  "tag_line": "Шаблон, простой в бежевых тонах.",
+  "tags": [],
+  "title": "Шаблон «Пастель»",
+  "url_path": "/resources/sablon-pastel.8/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 349,
+      "files": [
+        {
+          "filename": "tp2.R325.zip",
+          "id": 3646,
+          "local_path": null,
+          "r2_key": null,
+          "size": 74768,
+          "src_url": "https://torrentpier.com/api/resource-versions/295/download?file=3646"
+        }
+      ],
+      "id": 295,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1429570999,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/sablon-pastel.8/version/295/"
+    },
+    {
+      "download_count": 122,
+      "files": [
+        {
+          "filename": "tp2.R325.rar",
+          "id": 1976,
+          "local_path": null,
+          "r2_key": null,
+          "size": 72698,
+          "src_url": "https://torrentpier.com/api/resource-versions/8/download?file=1976"
+        }
+      ],
+      "id": 8,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1369073372,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/sablon-pastel.8/version/8/"
+    }
+  ],
+  "view_count": 633
+}

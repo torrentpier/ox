@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 23792,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 47,
+        "title": "Modifications for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 43,
+    "title": "Modifications for TorrentPier (archive)"
+  },
+  "id": 1785,
+  "last_post_date": 1354861952,
+  "node_id": 43,
+  "post_date": 1354766922,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23792,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Внедрения кода биржи ссылок Sape, выложил в эту тему, так как не сильно силен в php, помогите доработать, так как есть небольшая проблема. Возможно что в будущем пригодится кому. Сразу оговорюсь, что клиентский код предоставлен в дефолте, самой Сапой.<br />\n <br />\nОткрываем: /includes/page_header.php<br />\n <br />\nв самом начале, после:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">if (defined(&#039;PAGE_HEADER_SENT&#039;)) return;</pre> <br />\nдобавляем:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">global $sape;\n    if (!defined(&#039;_SAPE_USER&#039;)){\n        define(&#039;_SAPE_USER&#039;, &#039;имя вашей папки в корне, предоставляется Сапой&#039;);\n    }\n    require_once($_SERVER[&#039;DOCUMENT_ROOT&#039;].&#039;/&#039;._SAPE_USER.&#039;/sape.php&#039;);\n    $o[&#039;force_show_code&#039;] = true;\n    $o[&#039;charset&#039;] = &#039;UTF-8&#039;;\n    $sape = new SAPE_client($o);\n    unset($o);</pre> <br />\nгде, <br />\n$o[&#039;force_show_code&#039;] = true; - включение проверки корректности установки кода, в случае если все правильно сделано, в месте установки кода выводит закоментируемую строку &lt;!--check code--&gt;, или число типа &lt;!--1709685970547--&gt;;<br />\n$o[&#039;charset&#039;] = &#039;UTF-8&#039;; - вывод размещенных ссылок в нашей кодировке;<br />\n <br />\nВывод ссылок (блоком, нововведение Сапы) делаем например, в футере, в удобном для Вас месте.<br />\n <br />\nОткрываем: /templates/default/page_footer.tpl, в удобном для вас месте (обрамляем своими стилями если надо) делаем вывод ссылок в блочном виде, предварительно включив данный тип вывода, в профиле по площадке на Сапе:<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"html\">&lt;?php\n    global $sape;\n    echo $sape-&gt;return_block_links();\n?&gt;</pre> <br />\nОриентация блока, кол-во ссылок, размер, цвета, настраивается в Профиле Сапы, по Вашей площадке.<br />\n <br />\nВсе как бы хорошо, работает....но есть проблема...<br />\n <br />\nПри попытке очистить в админке кэш шаблона, появляется ошибка, вида:<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">Fatal error: Call to a member function return_block_links() on a non-object in /var/www/........../includes/template.php(305) : eval()&#039;d code on line 19</pre> <br />\nПосле того как нажимаешь скомпилировать, лезет ещё одна ошибка, типа:<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">Fatal error: Call to a member function return_block_links() on a non-object in /var/www/.........../cache/tpl_default_page_footer.tpl.php on line 19</pre> <br />\nЯ так понимаю что связно с кэшированием, и  функцию return_block_links() надо гдето еще предопределить, помогите доработать.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1354766922,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23804,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Dr_Brown</b>, по-моему нужно использовать return_links()",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1354785328,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23827,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"\"> /includes/page_header.php</pre><pre class=\"xfBb-code\" data-lang=\"php\">require_once($_SERVER[&#039;DOCUMENT_ROOT&#039;].&#039;/&#039;._SAPE_USER.&#039;/sape.php&#039;);\n$o[&#039;force_show_code&#039;] = true;\n$o[&#039;charset&#039;] = &#039;UTF-8&#039;;\n$sape = new SAPE_client($o);\nunset($o);\n$template-&gt;assign_vars(array(\n&quot;SAPE&quot; =&gt; $sape\n));</pre> <br />\n<pre class=\"xfBb-code\" data-lang=\"\"> /tepmlates/default/page_header.tpl</pre><pre class=\"xfBb-code\" data-lang=\"php\">#В нужное место\n{SAPE}</pre> <br />\nВсё. Нафиг выдумывать?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1354806123,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23841,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Gemini_13\"><b>Dr_Brown</b>, по-моему нужно использовать return_links()</blockquote> <br />\nТа там щас без разницы, или return_links() или return_block_links(), разница есть если ты выводишь смешанный и блочный тип одновременно.<br />\n <br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><span style=\"font-size: 11px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #333333\">Для вывода ссылок в виде блока используйте метод </span></span></span><span style=\"font-size: 11px\"><span style=\"color: #333333\">return_block_links()</span></span><span style=\"font-size: 11px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #333333\"> или </span></span></span><span style=\"font-size: 11px\"><span style=\"color: #333333\">return_links($n, $offset, $options)</span></span><span style=\"font-size: 11px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #333333\"> с параметром </span></span></span><span style=\"font-size: 11px\"><span style=\"color: #333333\">$options[&#039;as_block&#039;] = true;</span></span><br />\n<span style=\"font-size: 11px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #333333\">Для вывода простых ссылок по-прежнему используйте </span></span></span><span style=\"font-size: 11px\"><span style=\"color: #333333\">return_links()</span></span></blockquote> <br />\n<b>dimka3210</b>, все понятно, а если надо вывести на странице в 2-х или 3-х местах, как быть ? Или смешанный тип, в одном месте блоком, в другом просто ссылками ?<br />\n <br />\nВ дефолте таким образом:<br />\n <br />\n <br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #333333\"><span style=\"font-size: 11px\"><i>Пример:</i> предположим, Вы планируете выводить на странице 5 ссылок в 3-х блоках, разнесенных в разные места страницы, например, 1 ссылку под левым навигационным меню, 2 ссылки под правым меню и оставшиеся 2 ссылки в «подвале» страницы. В этой ситуации вам необходимо сделать в исходном коде страницы 3 дополнительные php-вставки:</span></span></span><br />\n<ul>\n<li data-xf-list-type=\"ul\"><span style=\"color: #000000\"><span style=\"color: #0000bb\">&lt;? </span><span style=\"color: #007700\">echo </span><span style=\"color: #0000bb\">$sape</span><span style=\"color: #007700\">-&gt;</span><span style=\"color: #0000bb\">return_links</span><span style=\"color: #007700\">(</span><span style=\"color: #0000bb\">1</span><span style=\"color: #007700\">); </span><span style=\"color: #0000bb\">?&gt;</span></span>- под левым меню;</li>\n<li data-xf-list-type=\"ul\"><span style=\"color: #000000\"><span style=\"color: #0000bb\">&lt;? </span><span style=\"color: #007700\">echo </span><span style=\"color: #0000bb\">$sape</span><span style=\"color: #007700\">-&gt;</span><span style=\"color: #0000bb\">return_links</span><span style=\"color: #007700\">(</span><span style=\"color: #0000bb\">2</span><span style=\"color: #007700\">); </span><span style=\"color: #0000bb\">?&gt;</span></span>- под правым меню;</li>\n<li data-xf-list-type=\"ul\"><span style=\"color: #000000\"><span style=\"color: #0000bb\">&lt;? </span><span style=\"color: #007700\">echo </span><span style=\"color: #0000bb\">$sape</span><span style=\"color: #007700\">-&gt;</span><span style=\"color: #0000bb\">return_links</span><span style=\"color: #007700\">(); </span><span style=\"color: #0000bb\">?&gt;</span></span>- в «подвале» (обратите внимание, функция вызывается без параметра, т.к. это последний ее вызов на данной странице);</li>\n</ul></blockquote> <br />\nвсе таки, где надо определить return_links() или return_block_links(), при моем варианте ?",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1354815156,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23857,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">а если надо вывести на странице в 2-х или 3-х местах, как быть</blockquote>разные или одинаковые?",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1354861952,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "sape",
+  "sticky": false,
+  "tags": [],
+  "title": "Sape",
+  "url_path": "/threads/sape.1785/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 2041
+}

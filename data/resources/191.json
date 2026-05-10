@@ -1,0 +1,86 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "ratings.zip",
+      "id": 3243,
+      "local_path": null,
+      "r2_key": null,
+      "size": 32071,
+      "src_url": "https://torrentpier.com/api/resource-versions/245/download?file=3243"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]templates/default/posting_editor.tpl\n\nНайти:\n    <input type=\"button\" value=\"&para;\" name=\"codeBR\" title=\"{L_NEW_LINE}\" style=\"width: 26px;\" />\n\nВставить после:\n    <input type=\"button\" value=\"kp\" name=\"codeKp\" title=\"{L_KINOPOISK}\" style=\"width: 30px;\" />\n    <input type=\"button\" value=\"imdb\" name=\"codeIMDB\" title=\"{L_IMDB}\" style=\"width: 45px;\" />\n\nНайти:\nbbcode.addTag(\"codeBR\",      \"br\",      \"\",            \"\",  ctrl);\n\nВставить после:\nbbcode.addTag(\"codeKp\",         \"kp\",        \"/kp\",        \"\", ctrl);\nbbcode.addTag(\"codeIMDB\",     \"imdb\",    \"/imdb\",     \"\", ctrl);\n\nincludes/bbcode.php\n\nНайти:\n            \"#\\[email\\]($email_exp)\\[/email\\]#isu\"                   => '<a href=\"mailto:$1\">$1</a>',\n\nВставить после:\n            \"#\\[kp\\]($url_exp)\\[/kp\\]#isu\"                             => '<a href=\"$1\" target=\"_blank\"><img src=\"./ratings/kinopoisk.php?url=$1\" ></a>',\n            \"#\\[imdb\\]($url_exp)\\[/imdb\\]#isu\"                         => '<a href=\"$1\" target=\"_blank\"><img src=\"./ratings/imdb.php?url=$1\" ></a>',\n\nlanguage/lang_russian/lang_main.php\n\nВставить в конец:\n// Рейтинги\n$lang['KINOPOISK'] = 'Рейтинг Кинопоиск';\n$lang['IMDB'] = 'Рейтинг IMDB';[/PHP]\n[/SPOILER]",
+    "owner": "Gemini_13",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425422499,
+      "file_size": 8614,
+      "filename": "123.webp",
+      "height": 160,
+      "id": 3242,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/123-webp.3242/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3246-3ba2834b1147d4d135f9f0398adaea57.jpg?hash=pk3XxHbSbI",
+      "width": 416
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет возможность вставки изображения с рейтингом фильма с IMDB и КиноПоиска.<br />\n<br />\nМодификация парсит рейтинг фильма с указанных сайтов, наносит цифры на шаблон, кеширует изображение и хранит его в папке. Время обновления данных задается в ручную (в секундах).",
+  "download_count": 389,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/191.jpg?1425422580",
+  "id": 191,
+  "is_fileless": null,
+  "last_update": 1425422571,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1425422571,
+  "resource_state": "visible",
+  "slug": "bb-kod-rejting-fil-ma-s-imdb-i-kinopoiska",
+  "tag_line": "Добавляет возможность вставки изображения с рейтингом фильма с IMDB и КиноПоиска.",
+  "tags": [],
+  "title": "BB-код: рейтинг фильма с IMDB и КиноПоиска",
+  "url_path": "/resources/bb-kod-rejting-fil-ma-s-imdb-i-kinopoiska.191/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 389,
+      "files": [
+        {
+          "filename": "ratings.zip",
+          "id": 3243,
+          "local_path": null,
+          "r2_key": null,
+          "size": 32071,
+          "src_url": "https://torrentpier.com/api/resource-versions/245/download?file=3243"
+        }
+      ],
+      "id": 245,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425422571,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/bb-kod-rejting-fil-ma-s-imdb-i-kinopoiska.191/version/245/"
+    }
+  ],
+  "view_count": 787
+}

@@ -1,0 +1,134 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 70937,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 32576,
+  "last_post_date": 1420839055,
+  "node_id": 110,
+  "post_date": 1420136811,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1420136625,
+          "file_size": 32754,
+          "filename": "2015-01-01 21-23-27 Персональная информация | torrentpier.com.webp",
+          "height": 430,
+          "id": 2813,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2015-01-01-21-23-27-personal-naa-informacia-torrentpier-com-webp.2813/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2817-5dad251fccfe9e9761cbffb9f5e3c5a3.jpg?hash=7_E7DUso0Y",
+          "width": 1324
+        },
+        {
+          "attach_date": 1420136709,
+          "file_size": 11718,
+          "filename": "2015-01-01 21-17-11 Ограничение доступа к перепискам | torrentpier.com.webp",
+          "height": 530,
+          "id": 2814,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2015-01-01-21-17-11-ogranicenie-dostupa-k-perepiskam-torrentpier-com-webp.2814/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2818-25928b46d0e5e6c713b680a28cff59b6.jpg?hash=xdMZFX7AlB",
+          "width": 312
+        }
+      ],
+      "id": 70937,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1420136916,
+      "message_parsed": "Доброго времени суток.<br />\n<br />\nНа форум была добавлена возможность выбрать установленную у вас версию TorrentPier, для упрощения поддержки. Указать эту информацию вы сможете на странице <a href=\"https://torrentpier.com/account/personal-details\" class=\"link link--internal\">https://torrentpier.com/account/personal-details</a> - нужное поле расположено почти в самом конце списка:<br />\n<br />\n<a href=\"https://torrentpier.com/attachments/2813/\"><img src=\"https://torrentpier.com/data/attachments/2/2817-5dad251fccfe9e9761cbffb9f5e3c5a3.jpg?hash=7_E7DUso0Y\" alt=\"2015-01-01 21-23-27 Персональная информация | torrentpier.com.webp\" /></a><br />\n<br />\nПосле того, как вы укажете версию - она будет отображаться под вашим аватаром, примерно вот так:<br />\n<br />\n<a href=\"https://torrentpier.com/attachments/2814/\"><img src=\"https://torrentpier.com/data/attachments/2/2818-25928b46d0e5e6c713b680a28cff59b6.jpg?hash=xdMZFX7AlB\" alt=\"2015-01-01 21-17-11 Ограничение доступа к перепискам | torrentpier.com.webp\" /></a><br />\n<br />\nВыбор установленной версии позволит вам избежать ненужного дублирования информации, когда вы задаете вопросы на форуме. Ее указание является обязательным, а поэтому всем пользователям, которые ее не укажут, будет демонстрироваться соответствующее уведомление.<br />\n<br />\nСпасибо.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1420136811,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71575,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"XDA\">Добавьте 2.4 r400</blockquote>Если речь про SVN - то это ветка 1.0 (SVN) и для нее выбора вариантов не будет, слишком уж там много их было + история утеряна. Если речь про 2 версию (где в копирайте уже TorrentPier II) - она есть.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1420837296,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71579,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5868/\">@XDA</a> если в копирайте этот форум - это путаница в нумерации. У нас и версия 2.6 была в свое время. 2.0 (R400) выбирайте.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1420837978,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71582,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5868/\">@XDA</a> да.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1420839055,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "vybor-ustanovlennoj-versii-torrentpier",
+  "sticky": false,
+  "tags": [
+    "новости"
+  ],
+  "title": "Выбор установленной версии TorrentPier",
+  "url_path": "/threads/vybor-ustanovlennoj-versii-torrentpier.32576/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 2202
+}

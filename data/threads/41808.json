@@ -1,0 +1,81 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 92115,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 41808,
+  "last_post_date": 1502382160,
+  "node_id": 90,
+  "post_date": 1502322386,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1502322173,
+          "file_size": 85384,
+          "filename": "скрин.webp",
+          "height": 918,
+          "id": 4908,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/skrin-webp.4908/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4912-68f0b415819d2f1812e7e5af99414ad8.jpg?hash=VAE_xQgOw_",
+          "width": 1279
+        }
+      ],
+      "id": 92115,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В данной теме речь идёт об обновлении PHP на сервере (для корректной работы новых версий движка TP) с помощью панели управления IspManager.<br />\n<br />\n<i>ОС на сервере:</i> CentOS<br />\n<i>Установленная панель управления:</i> IspManager Lite 5<br />\n<i>Задача:</i> обновить php на сервере до максимально возможной (stable) версии.<br />\n<i>Решение:</i><br />\nВойти на сервер под <b>root</b>&#039;ом -&gt; пункт Настройки -&gt; Возможности -&gt; далее из списка возможностей выбрать самую &quot;высокую&quot; версию php (в данный момент - панель показывает версию 7.1).<br />\n<i>Скрин прилагается.</i><br />\n<br />\nЯ правильно понимаю, что для обновления php на сервере больше ничего другого предпринимать не нужно? Какие ещё действия может понадобиться осуществить и/или что ещё системное ПО на сервере потребуется обновить?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1502322386,
+      "user_id": 1478,
+      "user_title": "User",
+      "username": "Nikolay90"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92118,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/1478/\">Nikolay90</a>, в настройках домена надо будет сменить используемую версию php.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1502382160,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "obnovlenie-php-s-pomos-u-paneli-ispmanager",
+  "sticky": false,
+  "tags": [],
+  "title": "Обновление PHP с помощью панели IspManager",
+  "url_path": "/threads/obnovlenie-php-s-pomos-u-paneli-ispmanager.41808/",
+  "user_id": 1478,
+  "username": "Nikolay90",
+  "view_count": 1562
+}

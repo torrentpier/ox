@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 60012,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25875,
+  "last_post_date": 1406542918,
+  "node_id": 57,
+  "post_date": 1396375725,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60012,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Сайт работал несколько лет без проблем (R400).<br />\nСегодня захожу на сайт и наблюдаю  белую(пустую) страницу.<br />\nВ php.ini включаю display_errors = On<br />\n <br />\nВ браузере ошибка:<br />\nFatal error: Cannot redeclare file_write() in /var/www/Имя пользователя/data/www/Сайт.Ру/common.php on line 1853 <br />\n <br />\nПодскажите как решить проблему , вот часть кода из   common.php: <br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">{\n    $bytes_written = false;\n \n    if ($max_size &amp;&amp; @filesize($file) &gt;= $max_size)\n    {\n        $old_name = $file; $ext = &#039;&#039;;\n        if (preg_match(&#039;#^(.+)(\\.[^\\\\/]+)$#&#039;, $file, $matches))\n        {\n            $old_name = $matches[1]; $ext = $matches[2];\n        }\n        $new_name = $old_name .&#039;_[old]_&#039;. date(&#039;Y-m-d_H-i-s_&#039;) . getmypid() . $ext;\n        clearstatcache();\n        if (@file_exists($file) &amp;&amp; @filesize($file) &gt;= $max_size &amp;&amp; !@file_exists($new_name))\n        {\n            @rename($file, $new_name);\n        }\n    }\n    if (!$fp = @fopen($file, &#039;ab&#039;))\n    {\n        if ($dir_created = bb_mkdir(dirname($file)))\n        {\n            $fp = @fopen($file, &#039;ab&#039;);\n        }\n    }\n    if ($fp)\n    {\n        if ($lock)\n        {\n            @flock($fp, LOCK_EX);\n        }\n        if ($replace_content)\n        {\n            @ftruncate($fp, 0);\n            @fseek($fp, 0, SEEK_SET);\n        }\n        $bytes_written = @fwrite($fp, $str);\n        @fclose($fp);\n    }\n \n    return $bytes_written;\n} ЗДЕСЬ СТРОКА 1853\n \nfunction bb_mkdir ($path, $mode = 0777)\n{\n    $old_um = umask(0);\n    $dir = mkdir_rec($path, $mode);\n    umask($old_um);\n    return $dir;\n}</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1396375725,
+      "user_id": 4749,
+      "user_title": "User",
+      "username": "Arkadont"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60761,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Права на папку с кешем стоят некорректные.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1400012369,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60784,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\">Права на папку с кешем стоят некорректные.</blockquote>Как стояли права 777 на папки с кешем - так и стоят, никто их не менял, думаю дело в настройках php.ini, только не знаю в каких именно, потому что файлы сайта и права на его папки не менялись!",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1400046081,
+      "user_id": 4749,
+      "user_title": "User",
+      "username": "Arkadont"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61653,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "кто готов разобраться за WMR пишите в личку!",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1406542918,
+      "user_id": 4749,
+      "user_title": "User",
+      "username": "Arkadont"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "fatal-error-cannot-redeclare-file_write",
+  "sticky": false,
+  "tags": [],
+  "title": "Fatal error: Cannot redeclare file_write()",
+  "url_path": "/threads/fatal-error-cannot-redeclare-file_write.25875/",
+  "user_id": 4749,
+  "username": "Arkadont",
+  "view_count": 1408
+}

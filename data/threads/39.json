@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 405,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 47,
+        "title": "Modifications for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 43,
+    "title": "Modifications for TorrentPier (archive)"
+  },
+  "id": 39,
+  "last_post_date": 1369408535,
+  "node_id": 43,
+  "post_date": 1309960354,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 405,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Мод добавляет панель для перехода к пред. или след. сообщению<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">#\n#-----[ Открыть ]------------------------------------------\n#\n\nprivmsg.php\n\n#\n#-----[ Найти ]------------------------------------------\n#\n\n        default:\n            message_die(GENERAL_ERROR, $lang[&#039;NO_SUCH_FOLDER&#039;]);\n            break;\n    }\n\n#\n#-----[ После добавить ]------------------------------------------\n#\n\n    // BEGIN PM Navigation MOD\n    if (isset($_GET[&#039;view&#039;]) &amp;&amp; ($_GET[&#039;view&#039;]==&#039;next&#039; || $_GET[&#039;view&#039;]==&#039;prev&#039;))\n    {\n        $sql_condition = ( $_GET[&#039;view&#039;] == &#039;next&#039; ) ? &#039;&gt;&#039; : &#039;&lt;&#039;;\n        $sql_ordering  = ( $_GET[&#039;view&#039;] == &#039;next&#039; ) ? &#039;ASC&#039; : &#039;DESC&#039;;\n\n        $sql_nav = &quot;SELECT SQL_CACHE pm.privmsgs_id FROM bb_privmsgs pm, bb_privmsgs p2\n            WHERE p2.privmsgs_id = $privmsgs_id\n            $pm_sql_user\n            AND pm.privmsgs_date $sql_condition p2.privmsgs_date\n            ORDER BY pm.privmsgs_date $sql_ordering LIMIT 1&quot; ;\n\n        if ( !($result2 = DB()-&gt;sql_query($sql_nav)) )\n        {\n            message_die(GENERAL_ERROR, &#039;Could not query private message post information&#039;, &#039;&#039;, __LINE__, __FILE__, $sql);\n        }\n        if ( $row = DB()-&gt;sql_fetchrow($result2) )\n        {\n            $privmsgs_id = intval($row[&#039;privmsgs_id&#039;]);\n        }\n        else\n        {\n            $message = ( $_GET[&#039;view&#039;] == &#039;next&#039; ) ? $lang[&#039;NO_NEWER_PM&#039;] : $lang[&#039;NO_OLDER_PM&#039;];\n            $mes = &#039;&lt;b&gt;&#039; . $message . &#039;&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;&#039; . sprintf($lang[&#039;CLICK_RETURN_INBOX&#039;], &#039;&lt;a href=&quot;&#039; . append_sid(&quot;privmsg.php?folder=inbox&quot;) . &#039;&quot;&gt;&#039;, &#039;&lt;/a&gt; &#039;) . sprintf($lang[&#039;CLICK_RETURN_SENTBOX&#039;], &#039;&lt;a href=&quot;&#039; . append_sid(&quot;privmsg.php?folder=sentbox&quot;) . &#039;&quot;&gt;&#039;, &#039;&lt;/a&gt; &#039;) . sprintf($lang[&#039;CLICK_RETURN_OUTBOX&#039;], &#039;&lt;a href=&quot;&#039; . append_sid(&quot;privmsg.php?folder=outbox&quot;) . &#039;&quot;&gt;&#039;, &#039;&lt;/a&gt; &#039;) . sprintf($lang[&#039;CLICK_RETURN_SAVEBOX&#039;], &#039;&lt;a href=&quot;&#039; . append_sid(&quot;privmsg.php?folder=savebox&quot;) . &#039;&quot;&gt;&#039;, &#039;&lt;/a&gt; &#039;) . &#039;&lt;br /&gt;&lt;br /&gt;&#039; . sprintf($lang[&#039;CLICK_RETURN_INDEX&#039;], &#039;&lt;a href=&quot;&#039; . append_sid(&quot;index.php&quot;) . &#039;&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039;);\n            message_die(GENERAL_MESSAGE, $mes);\n        }\n    }\n    // END PM Navigation MOD\n\n#\n#-----[ Найти ]------------------------------------------\n#\n\n        &#039;S_PRIVMSGS_ACTION&#039; =&gt; append_sid(&quot;privmsg.php?folder=$folder&quot;),\n\n#\n#-----[ После добавить ]------------------------------------------\n#\n\n        // BEGIN PM Navigation MOD\n        &#039;U_PRIVMSG_NEXT&#039; =&gt; append_sid(&quot;privmsg.php?folder=$folder&amp;mode=$mode&amp;&quot; . POST_POST_URL . &quot;=$privmsgs_id&amp;view=next&quot;, true),\n        &#039;U_PRIVMSG_PREVIOUS&#039; =&gt; append_sid(&quot;privmsg.php?folder=$folder&amp;mode=$mode&amp;&quot; . POST_POST_URL . &quot;=$privmsgs_id&amp;view=prev&quot;, true),\n        // END PM Navigation MOD\n\n#\n#-----[ Открыть ]------------------------------------------\n#\n\nlang_russian/lang_main.php\n\n#\n#-----[ добавить в конец ]------------------------------------------\n#\n\n// BEGIN PM Navigation MOD\n$lang[&#039;NEXT_PRIVMSG&#039;] = &#039;Следующее сообщение&#039;;\n$lang[&#039;PREVIOUS_PRIVMSG&#039;] = &#039;Предыдущее сообщение&#039;;\n$lang[&#039;NO_NEWER_PM&#039;] = &#039;Нет более новых сообщений чем это&#039;;\n$lang[&#039;NO_OLDER_PM&#039;] = &#039;Нет более старых сообщений чем это&#039;;\n// END PM Navigation MOD\n\n#\n#-----[ Открыть ]------------------------------------------\n#\n\ntemplates/default/privmsgs_read.tpl\n\n#\n#-----[ Найти ]------------------------------------------\n#\n\n&lt;tr&gt;\n    &lt;td colspan=&quot;2&quot; class=&quot;row4 gen pad_4&quot;&gt;\n        &lt;div class=&quot;post_wrap&quot;&gt;&lt;div class=&quot;post_body&quot;&gt;{PM_MESSAGE}&lt;/div&gt;&lt;/div&gt;\n        &lt;div class=&quot;clearB tRight&quot;&gt;{QUOTE_PM_IMG} {EDIT_PM_IMG} {REPORT_PM_IMG}&lt;/div&gt;\n    &lt;/td&gt;\n&lt;/tr&gt;\n\n#\n#-----[ После добавить ]------------------------------------------\n#\n\n&lt;tr&gt;\n    &lt;td class=&quot;row2&quot; colspan=&quot;3&quot; align=&quot;center&quot;&gt;\n        &lt;span class=&quot;nav&quot;&gt;&lt;a href=&quot;{U_PRIVMSG_PREVIOUS}&quot;&gt;{L_PREVIOUS_PRIVMSG}&lt;/a&gt;&amp;nbsp;&amp;nbsp; ::&amp;nbsp;&amp;nbsp; &lt;a href=&quot;{U_PRIVMSG_NEXT}&quot;&gt;{L_NEXT_PRIVMSG}&lt;/a&gt;&lt;/span&gt;\n    &lt;/td&gt;\n&lt;/tr&gt;\n\n#\n#-----[ Сохранить и закрыть всё файлы ]------------------------------------------\n#</pre><br />\n<a href=\"http://i26.fastpic.ru/big/2011/0706/f7/fc19126bcc9203bfad191e937b774af7.png\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"http://i.imgur.com/2JUbltI.jpg\" alt=\"\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1309960354,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 19240,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>PheRum</b>, Обновить 😛",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1342805687,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 30840,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<span style=\"font-size: 13px\"><span style=\"font-family: 'monospace'\"><span style=\"color: #0000bb\">append_sid когда уберёте ? </span></span></span>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1369398447,
+      "user_id": 4266,
+      "user_title": "User",
+      "username": "demondroid.ya.ru"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 30862,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>demondroid.ya.ru</b>, а самому никак ?",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1369406199,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 30867,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "😉 да я ужо всё сделал",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1369408535,
+      "user_id": 4266,
+      "user_title": "User",
+      "username": "demondroid.ya.ru"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "navigacia-v-licnyh-soobseniah",
+  "sticky": false,
+  "tags": [],
+  "title": "Навигация в личных сообщениях",
+  "url_path": "/threads/navigacia-v-licnyh-soobseniah.39/",
+  "user_id": 23,
+  "username": "PheRum",
+  "view_count": 2603
+}

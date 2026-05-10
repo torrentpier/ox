@@ -1,0 +1,111 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 97196,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 58,
+    "title": "Suggestions for improving TorrentPier"
+  },
+  "id": 42361,
+  "last_post_date": 1743681350,
+  "node_id": 58,
+  "post_date": 1743660398,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1743660383,
+          "file_size": 52590,
+          "filename": "1.webp",
+          "height": 896,
+          "id": 6427,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1-webp.6427/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6431-f59b5dda3dea13c47a6d2217cc1a425e.jpg?hash=Tnt-VnT1Im",
+          "width": 701
+        },
+        {
+          "attach_date": 1743660391,
+          "file_size": 3330,
+          "filename": "2.webp",
+          "height": 25,
+          "id": 6428,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2-webp.6428/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6432-c00c67e3bd86c16437d74b77904852e5.jpg?hash=scbZyn0-TY",
+          "width": 659
+        }
+      ],
+      "id": 97196,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Было бы хорошо иметь отдельную страницу для торрент-загрузок.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1743660398,
+      "user_id": 10665,
+      "user_title": "User",
+      "username": "crowni"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97197,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "А куда он загружался бы?<br />\n<br />\nСейчас есть четкая связь между темой и торрентом. Торрент существует в рамках существующей темы, а не отдельно от неё",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1743679341,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97198,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Я имею веду как нормалние торент трекеров а не на основе форума .В меню есть бутон загрузка торент upload.php ты выбираеш категорию, заполняеш информацию о торренте и загружаеш.А сейчас заходиш в форум в указанную категорию а потом  загружаш торрент.Например как в xbtit <a href=\"http://p2pbg.com\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Посмотри суда</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1743681350,
+      "user_id": 10665,
+      "user_title": "User",
+      "username": "crowni"
+    }
+  ],
+  "prefix_id": 41,
+  "reply_count": 2,
+  "slug": "stranica-zagruzka",
+  "sticky": false,
+  "tags": [],
+  "title": "Страница загрузка",
+  "url_path": "/threads/stranica-zagruzka.42361/",
+  "user_id": 10665,
+  "username": "crowni",
+  "view_count": 852
+}

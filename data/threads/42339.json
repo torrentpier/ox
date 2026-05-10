@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 96966,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 51,
+    "title": "Templates for TorrentPier"
+  },
+  "id": 42339,
+  "last_post_date": 1735492058,
+  "node_id": 51,
+  "post_date": 1735487329,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96966,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "DimaUZB2001 добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/shablon-blackgames.315/\" class=\"link link--internal\">Шаблон BlackGames</a> - Игровой Шаблон<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Адаптивный шаблон. Игровой дизайн</blockquote><br />\n<a href=\"https://torrentpier.com/resources/shablon-blackgames.315/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1735487329,
+      "user_id": 7621,
+      "user_title": "User",
+      "username": "DimaUZB2001"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96967,
+      "is_admin": false,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Выражаю моё спасибо.. На какой версии LTS делали?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1735491865,
+      "user_id": 1546,
+      "user_title": "Administrator",
+      "username": "Conteo"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96968,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Conteo\">Выражаю моё спасибо.. На какой версии LTS делали?</blockquote>LTS V10",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1735492058,
+      "user_id": 7621,
+      "user_title": "User",
+      "username": "DimaUZB2001"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "sablon-blackgames",
+  "sticky": false,
+  "tags": [],
+  "title": "Шаблон «BlackGames»",
+  "url_path": "/threads/sablon-blackgames.42339/",
+  "user_id": 7621,
+  "username": "DimaUZB2001",
+  "view_count": 765
+}

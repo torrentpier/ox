@@ -1,0 +1,90 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 93314,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 41923,
+  "last_post_date": 1530049530,
+  "node_id": 110,
+  "post_date": 1530024518,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1530047612,
+          "file_size": 6174,
+          "filename": "1530047612341.webp",
+          "height": 343,
+          "id": 5160,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1530047612341-webp.5160/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5164-cc219dc9fcb70c98ae6138c2da004d20.jpg?hash=bw0YAL_RO7",
+          "width": 302
+        }
+      ],
+      "id": 93314,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\n<br />\nКак и <a href=\"https://torrentpier.com/forum/threads/torrentpier-bison-i-data-reliza-novyj-proekt-na-laravel.41920/\" class=\"link link--internal\">было анонсировано</a> пару дней назад, <a href=\"https://github.com/torrentpier/torrentpier/releases/tag/v2.3.0.1\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">сегодня состоялся релиз новой версии 2.3.0.1</a>, исправляющий ошибки предыдущих версий и повышающий минимальные требования к используемой версии PHP до 7.1 / 7.2 / 7.3. На прочих устаревших версиях PHP движок работать больше не будет. Это то решение, которое позволит нам развивать проект в разрезе ускорения его работы не смотря на устаревшую кодовую часть. Большая часть хостингов уже предлагает актуальные версии PHP - настало время обновиться для тех, кто этого еще не сделал. Каких-либо реверансов в сторону поддержки устаревшего больше не будет.<br />\n<br />\nВ данной версии изменения по большей части структурные и направленные на исправление ошибок, начиная с версии 2.3.1 начнется переделка каждого структурного компонента, добавление новых возможностей, интеграция популярных модов. Поэтому обновляйтесь сейчас, если не хотите потерять в новом функционале в дальнейшем.<br />\n<br />\n<div style=\"text-align: center\"><a href=\"https://github.com/torrentpier/torrentpier/releases/tag/v2.3.0.1\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"https://torrentpier.com/attachments/5160/\" alt=\"1530047612341.webp\" /></a>&#8203;</div><br />\nТакже хотелось бы напомнить, что задать совершенно любые вопросы по обновлению на новую версию вы можете <a href=\"http://torrentpier.herokuapp.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">в нашем Slack</a>, в комнате #upgrade. Заходите, не стесняйтесь, тем более что есть и другие комнаты, в которых можно общаться куда более неформально чем тут.<br />\n<br />\nСпасибо за внимание.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1530024518,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93321,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://github.com/torrentpier/torrentpier/releases/tag/v2.3.0.1\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Вышла патч-версия 2.3.0.1</a>, исправлена найденная после релиза ошибка в работе крона.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1530049530,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "reliz-torrentpier-bison-versia-2-3-0-1",
+  "sticky": false,
+  "tags": [
+    "bison",
+    "новая версия",
+    "релиз"
+  ],
+  "title": "Релиз TorrentPier Bison. Версия 2.3.0.1",
+  "url_path": "/threads/reliz-torrentpier-bison-versia-2-3-0-1.41923/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 1824
+}

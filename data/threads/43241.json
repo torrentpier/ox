@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 98365,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 43241,
+  "last_post_date": 1768231861,
+  "node_id": 47,
+  "post_date": 1768231861,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98365,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka submitted a new resource:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/zasita-ot-mul-tipostinga.332/\" class=\"link link--internal\">Защита от мультипостинга</a> - Запрещает пользователям писать несколько сообщений подряд в одной теме.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> Запрещает пользователям писать несколько сообщений подряд в одной теме. Если пользователь является автором последнего поста и не прошло заданное время — предлагает отредактировать существующее сообщение вместо создания нового. Администраторы и модераторы работают без ограничений.<br />\n<b>Совместимость:</b> все версии.</blockquote><br />\n<a href=\"https://torrentpier.com/resources/zasita-ot-mul-tipostinga.332/\" class=\"link link--internal\">Read more about this resource...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1768231861,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "zasita-ot-mul-tipostinga",
+  "sticky": false,
+  "tags": [],
+  "title": "Защита от мультипостинга",
+  "url_path": "/threads/zasita-ot-mul-tipostinga.43241/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 195
+}

@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 91472,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 41738,
+  "last_post_date": 1496854564,
+  "node_id": 3,
+  "post_date": 1496854564,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91472,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Роскомнадзор разослал провайдерам список сайтов, «доступ к которым рекомендуется не ограничивать», сообщил в <a href=\"https://t.me/unkn0wnerror\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">своем канале в Telegram</a> сооснователь компаний TgVPN и Newcaster.TV Владислав Здольников. Такое письмо получили как минимум три оператора, сказал он «Роем!».<br />\n<br />\n<a href=\"https://roem.ru/wp-content/uploads/2017/06/rkn.png\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"https://roem.ru/wp-content/uploads/2017/06/rkn.png\" alt=\"\" /></a><br />\n<br />\nРанее надзорное ведомство <a href=\"https://roem.ru/04-06-2017/251656/tele-pereobulsya/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">признало</a>, что некорректная работа системы«Ревизор», которая используется для мониторинга выполнения провайдерами решений о блокировках сайтов, позволяет злоумышленникам инициировать блокировку любого сайта. Сегодня также <a href=\"https://roem.ru/07-06-2017/251880/reviziya-ivi/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">оказался</a> заблокирован сайт кинотеатра Ivi.ru из-за того, что кто-то внес IP-адрес кинотеатра в заблокированный домен.<br />\n<br />\n<i><a href=\"https://roem.ru/04-06-2017/251656/tele-pereobulsya/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Недоступны «Яндекс», «ВКонтакте», «Вики», «Одноклассники», РБК и другие? Ваш провайдер установил «Ревизор» → Roem.ru</a></i><br />\n<br />\nСейчас ведомство решает эту проблему, но ситуация осложняется тем, что на 15 июня запланирована прямая линия по общению президента Владимира Путина с населением и часть общения будет осуществляться через интернет,вероятнее всего найдутся желающие помешать корректной работе каналов связи с президентом. Поэтому Роскомнадзор отдельно предупредил операторов о каналах связи, выделенных под трансляцию общения с Путиным 15 числа и предупредил о необходимости обеспечить корректную работу этих каналов.<br />\n<br />\n<a href=\"https://roem.ru/wp-content/uploads/2017/06/20170607.0003.w640.jpg\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"https://roem.ru/wp-content/uploads/2017/06/20170607.0003.w640.jpg\" alt=\"\" /></a><br />\n<br />\n<i>© <a href=\"http://nag.ru/news/newsline/31825/rkn-v-futlyare.html\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Nag.ru</a>: телеграмма (бумажная) с просьбой обеспечить живучесть видеообращения Путина в интернете</i><br />\n<br />\nПохожие письма рассылают региональные РКН:<br />\n<br />\n<a href=\"https://roem.ru/wp-content/uploads/2017/06/tver.jpg\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"https://roem.ru/wp-content/uploads/2017/06/tver.jpg\" alt=\"\" /></a><br />\n<br />\nВ письме, которое Роскомнадзор разослал провайдерам, перечислено 2257 сайтов, помимо сайтов правительства России и других органов государственной власти есть также все ключевые порталы Рунета, включая «Яндекс», Google,YouTube, «ВКонтакте», «Одноклассники», Twitter и т. д. При этом адреса указаны в виде «*.odnoklassniki.ru», то есть если прямо следовать рекомендациям Роскомнадзора, то оператор связи не может блокировать никакой контент на всех перечисленных площадках, даже если он очевидно нарушает российские законы,например содержит пропаганду самоубийства, или потребления наркотиков. А запись вида «*.google.*&quot;, которая также есть в списке РКН, позволит вывести из-под блокировки любой сайт, который будет содержать поддомен с этим словом,например «google.siniekity.ru».",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1496854564,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "roskomnadzor-sdelal-belyj-spisok-dla-provajderov-ctoby-oni-ne-blokirovali-andeks-google-i-mail",
+  "sticky": false,
+  "tags": [],
+  "title": "Роскомнадзор сделал «белый список» для провайдеров, чтобы они не блокировали «Яндекс», Google и Mail",
+  "url_path": "/threads/roskomnadzor-sdelal-belyj-spisok-dla-provajderov-ctoby-oni-ne-blokirovali-andeks-google-i-mail.41738/",
+  "user_id": 5626,
+  "username": "Kryl",
+  "view_count": 1105
+}

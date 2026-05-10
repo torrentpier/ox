@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 28428,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 2942,
+  "last_post_date": 1362888462,
+  "node_id": 57,
+  "post_date": 1362879999,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 28428,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброе утро! Я хочу запустить проект на базе TorrentPier 2 с домашнего пк, но попрежнему использовать его в работе пример (фильмы онлайн,музыка ..).Но не очень то получается все вместе связать. Кто хочет сделать доброе дело и напишет пошаговую инструкцию.Заранее спасибо 😉",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1362879999,
+      "user_id": 0,
+      "user_title": "",
+      "username": "redline"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 28430,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "пошаговые инструкции тут врятли кто-то напишет на такую тему.<br />\n <br />\n<a href=\"http://ru.wikipedia.org/wiki/%D0%92%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%B0\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://ru.wikipedia.org/wiki/Виртуальная_машина</a><br />\n<a href=\"http://ru.wikipedia.org/wiki/Internet_Information_Services\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://ru.wikipedia.org/wiki/Internet_Information_Services</a><br />\n<a href=\"http://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F_%D0%B1%D0%B0%D0%B7%D0%B0%D0%BC%D0%B8_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://ru.wikipedia.org/wiki/Система_управления_базами_данных</a><br />\n<a href=\"http://ru.wikipedia.org/wiki/MySQL\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://ru.wikipedia.org/wiki/MySQL</a> (ибо самая популярная и самая простая)<br />\n<a href=\"http://habrahabr.ru/post/30154/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://habrahabr.ru/post/30154/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1362881778,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 28432,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"http://www.kakprosto.ru/kak-52813-kak-sdelat-kompyuter-serverom\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://www.kakprosto.ru/kak-52813-kak-sdelat-kompyuter-serverom</a><br />\n<a href=\"http://www.pcdays.ru/articles/networks-and-communications/kak-sdelat-iz-svoego-kompyutera-server\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://www.pcdays.ru/articles/networks-and-communications/kak-sdelat-iz-svoego-kompyutera-server</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1362888462,
+      "user_id": 0,
+      "user_title": "",
+      "username": "FoxBit"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "sajt-na-domasnem-pk",
+  "sticky": false,
+  "tags": [],
+  "title": "Сайт на домашнем пк",
+  "url_path": "/threads/sajt-na-domasnem-pk.2942/",
+  "user_id": 0,
+  "username": "redline",
+  "view_count": 1073
+}

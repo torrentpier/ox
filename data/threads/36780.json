@@ -1,0 +1,137 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 77273,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 36780,
+  "last_post_date": 1425426388,
+  "node_id": 110,
+  "post_date": 1425232174,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 77273,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\n<br />\nМеня достаточно давно просили опубликовать карту развития проекта, думаю пора сделать первый шаг. Это позволит вам понять, почему произошла задержка с выходом версии 2.1.6 и что ждет вас в самом ближайшем будущем. На данный момент, список первоочередных задач следующий:<br />\n<ol>\n<li data-xf-list-type=\"ol\">Перенос всех имеющихся для TorrentPier модификаций в <a href=\"https://torrentpier.com/resources/\" class=\"link link--internal\">менеджер ресурсов</a>. Таким образом, будет создано единое место, откуда можно будет скачать любую модификацию для движка и получить исчерпывающую поддержку по ней.</li>\n<li data-xf-list-type=\"ol\">Доделать новую систему вложений, работа над которой уже длительное время ведется в develop-ветке нашего репозитория на Bitbucket / GitHub.</li>\n<li data-xf-list-type=\"ol\"><span style=\"color: #b30000\"><b>Адаптировать все имеющиеся модификации для TorrentPier в целях их совместимости с последней имеющейся версией. Абсолютно бесплатно и все модификации до единой, которые этого потребуют и не будут добавлены в движок в ближайшее время (например, мультитрекер, адаптации не потребует - он будет в движке &quot;из коробки&quot; немного позднее).</b></span></li>\n<li data-xf-list-type=\"ol\">Открытие магазина для разработчиков платных модификаций. Более подробную информацию о нем и условия для разработчиков я опубликую позднее, но для конечных пользователей это будет означать гарантированное получение модификации сразу после оплаты, наличие поддержки и удобный инструмент для публичного общения с разработчиком в лице администрации ресурса как гаранта сделок. И при всем этом - никакого уклона в сторону &quot;коммерциализации&quot; проекта.<br />\n</li>\n<li data-xf-list-type=\"ol\">После открытия магазина и завершения адаптации модификаций (исключительно после нее) - выпустить TorrentPier 2.1.6.</li>\n</ol>Начиная с TorrentPier 2.1.6, не будет существовать &quot;стабильных&quot; и &quot;не стабильных&quot; версий - у нас будет простое инкрементное увеличение версий. Да, в версии 2.1.6 могут содержаться некритичные ошибки - но все необходимые изменения будут сразу же публиковаться для того, чтобы вы могли исправить их у себя. На версию 2.1.6 будет опубликована инструкция по переходу с 2.1 и все последующие версии (2.1.7, 2.1.8), будут считаться необходимыми к установке для получения поддержки.<br />\n<br />\nВ настоящее время основная проблема проекта - большая фрагментация версий. Много тех, кто сидит на версии 2.0 (r400) и не думает обновляться даже до 2.1, не говоря уже о 2.1.5 из-за того, что большая часть модификаций написана именно под версию 2.0 (r400) и банально не адаптирована. У другой части пользователей ступор вызывает существование STABLE и ALPHA/BETA-билдов, хотя вторые, на самом деле, куда стабильнее имеющейся STABLE-сборки. Поэтому, начнем с малого - для начала перенесем в менеджер ресурсов все имеющиеся модификации и адаптируем их. Необходимость иметь актуальную версию TorrentPier, после этого, станет достаточно важным шагом для конечных пользователей.<br />\n<br />\nМарт будет &quot;жарким&quot;, это я могу гарантировать. Готовьтесь к обновлению своих трекеров до версии 2.1.6 и оставайтесь на связи. В данной теме будет публиковаться весь прогресс по выполнению карты развития, а более подробная информация о магазине будет опубликована позднее.<br />\n<br />\nСпасибо за внимание.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1425232174,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 77275,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Не плохой размах, как вернусь домой обязательно поддержу проект круглой суммой",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1425232999,
+      "user_id": 5415,
+      "user_title": "User",
+      "username": "crazy_dog"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 77307,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/1/\">@Exile</a> сижу и восхищаюсь, откуда столько сил, рвения, терпения и времени? 🙂<br />\n<br />\nНужно для работы и фри столько возможностей и желания 😉<br />\n<br />\nТак держать)",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1425241853,
+      "user_id": 630,
+      "user_title": "User",
+      "username": "notebug"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 77314,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5868/\">@XDA</a> за чаем. Поддержка версий ниже 2.1.6 оказываться не будет, по крайней мере все модификации именно под нее будут адаптироваться из-за отказа в обратной совместимости у пары вещей. Можно будет конечно остаться на 2.1.5, но вопросы про &quot;как адаптировать&quot; под нее повлекут за собой закрытия тем.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1425243766,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 77422,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "😀тут еще и оцелот допилил до 1.0 актуальной <a href=\"https://github.com/torrentpier/ocelot/tree/1.0\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://github.com/torrentpier/ocelot/tree/1.0</a> осталось только доку обновить",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1425297326,
+      "user_id": 5319,
+      "user_title": "User",
+      "username": "Softwarez"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 77804,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Ситуация на данный момент времени.<br />\n<br />\n<a href=\"https://torrentpier.com/resources/categories/besplatnye.3/\" class=\"link link--internal\">https://torrentpier.com/resources/categories/besplatnye.3/</a> - как видите, раздел значительно пополнился. Часть модификаций даже уже адаптирована простыми пользователями в том числе. Для всех модификаций при добавлении их в менеджер ресурсов соблюдается определенный стандарт оформления, это очень пригодится для реализации системы автоматической установки модов в дальнейшем. Полностью перенесен в менеджер ресурсов раздел <a href=\"https://torrentpier.com/forums/modifikacii-dlja-torrentpier.47/\" class=\"link link--internal\">https://torrentpier.com/forums/modifikacii-dlja-torrentpier.47/</a> - теперь очередь за разделом <a href=\"https://torrentpier.com/forums/modifikacii-dlja-torrentpier-arxiv.43/\" class=\"link link--internal\">https://torrentpier.com/forums/modifikacii-dlja-torrentpier-arxiv.43/</a> и еще несколькими десятками модификаций, которые выкладываются по программе поддержки модификаций.",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1425426388,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "karta-razvitia-proekta-roadmap-i-para-slov-pro-stabil-nye-versii",
+  "sticky": false,
+  "tags": [
+    "новости"
+  ],
+  "title": "Карта развития проекта (roadmap) и пара слов про стабильные версии",
+  "url_path": "/threads/karta-razvitia-proekta-roadmap-i-para-slov-pro-stabil-nye-versii.36780/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 4264
+}

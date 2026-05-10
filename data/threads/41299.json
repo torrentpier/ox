@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 85482,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41299,
+  "last_post_date": 1446238303,
+  "node_id": 57,
+  "post_date": 1445623746,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85482,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "При цитировании поста цитата вставляется в value а мне нужно чтоб она вставлялась между тегами textarea&gt;...&lt;/textarea<br />\nУкажите кусок кода который за это отвечает",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1445623746,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85554,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Сам спросил, сам ответил<br />\nв viewtopic.tpl<br />\n<br />\nТак будет правильнее, потому что у textarea нет значения value <br />\n<pre class=\"xfBb-code\" data-lang=\"\">if(data.quote) $(&#039;textarea#message&#039;).val(data.message +&#039; &#039;).focus();</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1446238303,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "ajax-exec-action-posts-post_id-7031-type-reply-return-false",
+  "sticky": false,
+  "tags": [],
+  "title": "ajax.exec({ action: 'posts', post_id: 7031, type: 'reply'}); return false;",
+  "url_path": "/threads/ajax-exec-action-posts-post_id-7031-type-reply-return-false.41299/",
+  "user_id": 6370,
+  "username": "sхс",
+  "view_count": 914
+}

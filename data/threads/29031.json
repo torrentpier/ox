@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 66559,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 29031,
+  "last_post_date": 1415489532,
+  "node_id": 57,
+  "post_date": 1415435416,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66559,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте, возникла проблема с построением названия топика в конструкторе, скорее всего я что-то делаю не так. По какой-то причине после создания раздачи в заголовке темы отсутствуют разделители между группами элементов<br />\n<br />\nВот пример как я это делаю, вроде бы все по инструкции, кроме запятых в скобках, которые не нужны, тк значение в поле подразумевается одно и запятой разделять нечего<br />\n<br />\n&lt;-title_rus-&gt;/ &lt;-title_eng-&gt;/ (&lt;-datavihoda-&gt;)/ &lt;-gui_lang_new-&gt;() &lt;-genre-&gt;() &lt;-publishing_type-&gt;[] &lt;-versiya-&gt;[]<br />\n<br />\n<br />\nНа выходе получаю в названии простое предложение без знаков препинания, разделителей, скобок и другого. Подскажите пожалуйста в какую сторону копать, чтобы работало как положено",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1415435416,
+      "user_id": 561,
+      "user_title": "User",
+      "username": "John Smith"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66593,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Обратите внимание на базовый пример из демо движка: <pre class=\"xfBb-code\" data-lang=\"\">&lt;-{Название на языке оригинала} {Название на русском}-&gt;/ &lt;-game_type_edition_abr-&gt;[,] &lt;-game_lang_abr game_lang_sound_abr-&gt;[/] &lt;-{Год выпуска}-&gt;(,) &lt;-{Версия}-&gt;(,)</pre>То есть, как можно понять, надо нужные &quot;разделители&quot; брать в скобки.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1415489439,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66594,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Ну и в движке все же несколько иначе описано чем вы делаете:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">пример:<br />\n<b>&lt;-</b>title_rus title_eng<b>-&gt;/</b> <b>&lt;-</b>director year<b>-&gt;(,)</b> <b>&lt;-</b>genre video_quality<b>-&gt;[,]</b><br />\nсоздаст:<br />\nНазвание <b>/</b> Оригинальное название <b>(</b>Режиссер<b>,</b> 2000 г.<b>)</b> <b>[</b>Жанр<b>,</b> DVDRip<b>]</b></blockquote>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1415489532,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "konstruktor-postroenie-nazvania-topika",
+  "sticky": false,
+  "tags": [],
+  "title": "Конструктор. Построение названия топика",
+  "url_path": "/threads/konstruktor-postroenie-nazvania-topika.29031/",
+  "user_id": 561,
+  "username": "John Smith",
+  "view_count": 1074
+}

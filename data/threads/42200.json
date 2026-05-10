@@ -1,0 +1,79 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95353,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 50,
+    "title": "Graphics and styles for TorrentPier"
+  },
+  "id": 42200,
+  "last_post_date": 1700670354,
+  "node_id": 50,
+  "post_date": 1700670354,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1700670353,
+          "file_size": 699,
+          "filename": "btn_bg.rar",
+          "height": 0,
+          "id": 5635,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/btn_bg-rar.5635/",
+          "thumbnail_url": null,
+          "width": 0
+        },
+        {
+          "attach_date": 1700670353,
+          "file_size": 4720,
+          "filename": "1700670289540.webp",
+          "height": 58,
+          "id": 5636,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1700670289540-webp.5636/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5640-5fd0507725723876c28cfbfb30467a63.jpg?hash=B75-r6FOk0",
+          "width": 709
+        }
+      ],
+      "id": 95353,
+      "is_admin": false,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Открыть <b>styles/templates/default/css/main.css</b> и в самый конц вставить:<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">/* ---------------------------------- *\n     BTN Style\n * ---------------------------------- */\ninput[type=&quot;button&quot;],input[type=&quot;submit&quot;],input[type=&quot;reset&quot;]{\n    background: #e6e6e6 url(../images/btn_bg.png) repeat-x 0px 0px ;\n    border-bottom: 1px solid #B3B3BD;\n    border-left: 1px solid #DDDDEB;\n    border-right: 1px solid #DDDDEB;\n    border-top: 0px solid #FFFFFF;\n    font-family: Calibri,&#039;Trebuchet MS&#039;,Verdana,Geneva,Arial,Helvetica,sans-serif;\n    font-size: 12px;\n    cursor: pointer;\n    text-shadow: 0px 1px 1px white;\n    box-shadow: 0 1px 4px 0 #C8C8D2;\n    -moz-box-shadow: 0 1px 4px 0 #C8C8D2;\n    -webkit-box-shadow: 0 1px 4px 0 #C8C8D2;\n    padding: 0px 7px 1px 7px;\n    -webkit-border-radius: 5px;\n    -moz-border-radius: 5px;\n    border-radius: 5px;\n}\n@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) {\n input[type=&quot;button&quot;],input[type=&quot;submit&quot;],input[type=&quot;reset&quot;] {\n    padding: 1px 7px 2px 7px !important;}\n}\ninput[type=&quot;button&quot;]:hover,input[type=&quot;submit&quot;]:hover,input[type=&quot;reset&quot;]:hover{\n    background: url(../images/form-button-white-25px.png) repeat-x scroll center top #CAFFF9;\n    border-bottom: 1px solid #B3B3BD;\n    border-left: 1px solid #DDDDEB;\n    border-right: 1px solid #DDDDEB;\n    border-top: 1px solid #FFFFFF;\n}\ninput[type=&quot;button&quot;]:active,input[type=&quot;submit&quot;]:active,input[type=&quot;reset&quot;]:active{\n   background-color: #9999A3;\n   border-bottom-color: white;\n   border-left-color: #C8C8D7;\n   border-right-color: #C8C8D7;\n   border-top-color: #B3B3BD;\n}\n input[type=&quot;button&quot;][disabled],input[type=&quot;submit&quot;][disabled],input[type=&quot;reset&quot;][disabled]{\n  background-position: 0px 0px;\n  color: gray;opacity: 0.5;\n}</pre><br />\nСтиль работает на все кнопки, не только BBCode!<br />\n<br />\nЗагрузить в <b>styles/templates/default/images/btn_bg.png<br />\n<br />\n<div>Spoiler content hidden.</div></b>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1700670354,
+      "user_id": 1546,
+      "user_title": "Administrator",
+      "username": "Conteo"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "stil-knopok",
+  "sticky": false,
+  "tags": [],
+  "title": "Стиль кнопок",
+  "url_path": "/threads/stil-knopok.42200/",
+  "user_id": 1546,
+  "username": "Conteo",
+  "view_count": 714
+}

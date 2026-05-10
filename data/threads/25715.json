@@ -1,0 +1,129 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58528,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 25715,
+  "last_post_date": 1391442615,
+  "node_id": 80,
+  "post_date": 1391439946,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1391439941,
+          "file_size": 54398,
+          "filename": "Безымянный.webp",
+          "height": 502,
+          "id": 2409,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bezymannyj-webp.2409/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2414-2a687a0d68de604be1e00f09256214ae.jpg?hash=74eaPjRtHG",
+          "width": 1290
+        }
+      ],
+      "id": 58528,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Собственно ещё один баг, по моему мнению. Массово удалил темы бота, в итоге такая вот ерунда получилась (см скрин). Чистил абсолютно всё, кеш шаба, кеш, и датастора, синхронизацию делал.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1391439946,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58530,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "обновляется по крону",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1391440488,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58531,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"PheRum\">обновляется по крону</blockquote> <br />\nЗапустил крон в ручную, в итоге всё тоже самое.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1391440698,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58534,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Lange</b>, заходишь в bb_post и чистишь посты бота, если конечно найдешь....тем же самым дрочился 2 дня.... тоже мод парса с 3d news ?<br />\nТрабла полезла после фикса сообщений гостя....и удаления черновиков, надо править запросы. У меня вообще bot 2 недели херячил в топики посты вместо новостей сети, пока я не раздуплил.<br />\n <br />\n<a href=\"http://torrentpier.com/threads/Счетчик-топиков-и-постов-на-форуме.25711/\" class=\"link link--internal\">http://torrentpier.com/threads/Счетчик-топиков-и-постов-на-форуме.25711/</a>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1391441989,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58535,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\"><b>Lange</b>, заходишь в bb_post и чистишь посты бота, если конечно найдешь....тем же самым дрочился 2 дня.... тоже мод парса с 3d news ?<br />\nТрабла полезла после фикса сообщений гостя....и удаления черновиков, надо править запросы. У меня вообще bot 2 недели херячил в топики посты вместо новостей сети, пока я не раздуплил.<br />\n <br />\n<a href=\"http://torrentpier.com/threads/Счетчик-топиков-и-постов-на-форуме.25711/\" class=\"link link--internal\">http://torrentpier.com/threads/Счетчик-топиков-и-постов-на-форуме.25711/</a></blockquote> <br />\nВсё тоже самое к сожалению...",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1391442615,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    }
+  ],
+  "prefix_id": 24,
+  "reply_count": 4,
+  "slug": "kes-r580",
+  "sticky": false,
+  "tags": [],
+  "title": "Кеш r580",
+  "url_path": "/threads/kes-r580.25715/",
+  "user_id": 55,
+  "username": "Lange",
+  "view_count": 1277
+}

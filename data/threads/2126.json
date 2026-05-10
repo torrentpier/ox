@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 26023,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 2126,
+  "last_post_date": 1358935275,
+  "node_id": 57,
+  "post_date": 1358934630,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26023,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как сделать название торрент файла. когда торрент фаел регистрируется что бы переименовывалась название.<br />\n <br />\nу меня так:<br />\n <br />\nНазвание.torrent<br />\n <br />\nнужно:<br />\n <br />\nНазвание[название сайта].torrent<br />\n <br />\nкак это сделать ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1358934630,
+      "user_id": 3938,
+      "user_title": "User",
+      "username": "Drupa"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26024,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Поиск никто не отменял.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1358935265,
+      "user_id": 1069,
+      "user_title": "Blocked",
+      "username": "makar"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26025,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"http://torrentpier.com/threads/Имя-сайта-имя-торрента.195/\" class=\"link link--internal\">http://torrentpier.com/threads/Имя-сайта-имя-торрента.195/</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1358935275,
+      "user_id": 1126,
+      "user_title": "User",
+      "username": "fiks44"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "nazvanie-torent-fajla",
+  "sticky": false,
+  "tags": [],
+  "title": "Название торент файла",
+  "url_path": "/threads/nazvanie-torent-fajla.2126/",
+  "user_id": 3938,
+  "username": "Drupa",
+  "view_count": 997
+}

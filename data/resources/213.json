@@ -1,0 +1,120 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "Order.zip",
+      "id": 3530,
+      "local_path": null,
+      "r2_key": null,
+      "size": 4156,
+      "src_url": "https://torrentpier.com/api/resource-versions/279/download?file=3530"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "PHP 5.4+",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"][B]Закинуть файлы на сайт\n\nВыполнить запросы в базу:[/B]\n[PHP]CREATE TABLE IF NOT EXISTS `bb_order` (\n  `id` int(11) unsigned NOT NULL auto_increment,\n  `forum_id` int(11) NOT NULL default '0',\n  `topic_id` int(11) NOT NULL default '0',\n  `user_id` int(11) NOT NULL default '0',\n  `poster_id` int(11) NOT NULL default '0',\n  `title` varchar(200) NOT NULL,\n  `description` text,\n  `time` int(11) NOT NULL default '0',\n  `vote` int(11) NOT NULL default '0',\n  PRIMARY KEY  (`id`)\n) ENGINE=MyISAM  DEFAULT CHARSET=utf8;\nCREATE TABLE IF NOT EXISTS `bb_order_vote` (\n  `id` int(11) NOT NULL default '0',\n  `user_id` int(11) NOT NULL default '0',\n  KEY  (`id`)\n) ENGINE=MyISAM  DEFAULT CHARSET=utf8;[/PHP]\n\n[B]Открыть library/includes/functions.php\n\nНайти[/B]\n\n[PHP]$all_forums_option = null)[/PHP]\n\n[B]Заменить на[/B]\n\n[PHP]$all_forums_option = null, $tor_f = false)[/PHP]\n\n[B]Найти[/B]\n\n[PHP]foreach ($forums['f'] as $fid => $f)\n{\n[/PHP]\n[B]Заменить на[/B]\n\n[PHP]foreach ($forums[(($tor_f) ? 'forum' : 'f')] as $fid => $f)\n{\n   if($tor_f && !$f['allow_reg_tracker']) continue;\n[/PHP]\n[B]Найти[/B]\n\n[PHP]function generate_pagination ($base_url, $num_items, $per_page, $start_item, $add_prevnext_text = TRUE)[/PHP]\n\n[B]Заменить на[/B]\n\n[PHP]function generate_pagination ($base_url, $num_items, $per_page, $start_item, $add_prevnext_text = TRUE, $prifix = '&amp;')[/PHP]\n\n[B]Найти все значения[/B]\n\n[PHP]\"&amp;start=\"[/PHP]\n\n[B]Заменить на[/B]\n\n[PHP]$prifix .\"start=\"[/PHP]\n\n[B]Открыть library/ajax/index_data.php[/B]\n\n[B]Найти[/B]\n\n[PHP]}\n\n$this->response['html'] = $html;\n$this->response['mode'] = $mode;\n[/PHP]\n[B]Выше вставить[/B]\n[PHP]\n   case 'order_vote':\n\n     global $bb_cfg, $userdata, $lang;\n\n     $id = (int) $this->request['id'];\n\n     if(!DB()->fetch_row(\"SELECT * FROM bb_order_vote WHERE id = '\". $id .\"' AND user_id = \". $userdata['user_id'])) {\n       if(DB()->query(\"INSERT INTO bb_order_vote (id, user_id) VALUES ('\". DB()->escape($id) .\"', '\". $userdata['user_id'] .\"')\")) {\n         if(DB()->query(\"UPDATE bb_order SET vote = vote + '1' WHERE id = \".$id)) $this->ajax_die($lang['ORDER_THANKS']);\n       }\n       else $this->ajax_die($lang['ERROR']);\n     } else $this->ajax_die($lang['ORDER_VOTE_ERROR']);\n\n   break;\n[/PHP]\n[B]Открыть library/language/ru/main.php[/B]\n\n[B]В самый конец файла вставить[/B]\n[PHP]\n$lang['ORDER_THANKS'] = 'Спасибо, ваш голос учтен';\n$lang['ORDER_VOTE_ERROR'] = 'Вы уже голосовали';\n$lang['ORDER_DEL'] = 'Вы не можете удалять чужие заказы';\n$lang['ORDER_EDIT'] = 'Успешно изменено';\n$lang['ORDER_ERROR_EDIT'] = 'Введите все параметры';\n$lang['ORDER_ERROR_ED'] = 'Вы не можете редактировать чужие заказы';\n$lang['ORDER_NOT_FOUND'] = 'Такого заказа не найдено';\n$lang['ORDER_ADD'] = 'Успешно добавлено';\n$lang['ORDER_T_EDIT'] = 'Редактирование заказа';\n$lang['ORDER_T_DEL'] = 'Удаление заказа';\n$lang['ORDER_CREACTE'] = 'Создать заказ';\n$lang['ORDER_MY'] = 'Показать мои заказы';\n$lang['ORDER_HIDE_F'] = 'Скрыть выполненые заказы';\n$lang['ORDER_O'] = 'Заказ';\n$lang['ORDER_COM'] = 'Выполнил';\n$lang['ORDER_NEW'] = 'Новый заказ';\n$lang['ORDER_VOTE_O'] = 'Проголосовать за заказ';\n$lang['ORDER_DETAILS'] = 'Детали заказа';\n[/PHP]\n\n[B]Открыть library/language/en/main.php[/B]\n\n[B]В самый конец файла вставить[/B]\n[PHP]\n$lang['ORDER_THANKS'] = 'Thanks for your vote';\n$lang['ORDER_VOTE_ERROR'] = 'You already voted';\n$lang['ORDER_DEL'] = 'You cannot delete not owned order';\n$lang['ORDER_EDIT'] = 'Successfully edited';\n$lang['ORDER_ERROR_EDIT'] = 'Please enter all details';\n$lang['ORDER_ERROR_ED'] = 'You cannot edit not owned order';\n$lang['ORDER_NOT_FOUND'] = 'The order is not exist';\n$lang['ORDER_ADD'] = 'Sucessfully added';\n$lang['ORDER_T_EDIT'] = 'Edit order';\n$lang['ORDER_T_DEL'] = 'Delete order';\n$lang['ORDER_CREACTE'] = 'Create a request';\n$lang['ORDER_MY'] = 'View only my orders';\n$lang['ORDER_HIDE_F'] = 'Hide filled orders';\n$lang['ORDER_O'] = 'Order';\n$lang['ORDER_COM'] = 'Performed';\n$lang['ORDER_NEW'] = 'New order';\n$lang['ORDER_VOTE_O'] = 'Vote for this order';\n$lang['ORDER_DETAILS'] = 'Order Details';\n[/PHP]\n[/SPOILER]",
+    "owner": "Sprinx",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1427730211,
+      "file_size": 10586,
+      "filename": "Screenshot_1.webp",
+      "height": 214,
+      "id": 3486,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot_1-webp.3486/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3490-85c2fca1c126d1738d2decd7cd9abc8b.jpg?hash=0deWGcCnn4",
+      "width": 1914
+    },
+    {
+      "attach_date": 1427730212,
+      "file_size": 21108,
+      "filename": "yyYAtoJ.webp",
+      "height": 265,
+      "id": 3487,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/yyyatoj-webp.3487/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3491-533bc57abb5dd3c5c6ecf3d7e26f7218.jpg?hash=FjJKTTA7He",
+      "width": 1919
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет возможность заказывать раздачи на трекере.",
+  "download_count": 405,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/213.jpg?1428259664",
+  "id": 213,
+  "is_fileless": null,
+  "last_update": 1428510707,
+  "rating_avg": 5,
+  "rating_count": 1,
+  "resource_date": 1427727320,
+  "resource_state": "visible",
+  "slug": "stol-zakazov",
+  "tag_line": "Добавляет возможность заказывать раздачи на трекере.",
+  "tags": [],
+  "title": "Стол заказов",
+  "url_path": "/resources/stol-zakazov.213/",
+  "user_id": 2789,
+  "username": "Sprinx",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 303,
+      "files": [
+        {
+          "filename": "Order.zip",
+          "id": 3530,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4156,
+          "src_url": "https://torrentpier.com/api/resource-versions/279/download?file=3530"
+        }
+      ],
+      "id": 279,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1428510707,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/stol-zakazov.213/version/279/"
+    },
+    {
+      "download_count": 112,
+      "files": [
+        {
+          "filename": "Order.zip",
+          "id": 3485,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4214,
+          "src_url": "https://torrentpier.com/api/resource-versions/277/download?file=3485"
+        }
+      ],
+      "id": 277,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1427727320,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/stol-zakazov.213/version/277/"
+    }
+  ],
+  "view_count": 698
+}

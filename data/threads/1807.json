@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 24088,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1807,
+  "last_post_date": 1355390426,
+  "node_id": 57,
+  "post_date": 1355388705,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24088,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<div style=\"text-align: center\">я загрузил новый шаблон очистил кеш выходит вот такая ошибка! кто может помогите!&#8203;</div><div style=\"text-align: center\"><img src=\"http://s3.uploads.ru/gUN1B.png\" alt=\"\" />&#8203;</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1355388705,
+      "user_id": 3219,
+      "user_title": "User",
+      "username": "jamik"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24089,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>jamik</b>, добавь ленги",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1355389479,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24090,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "а откуда их взять? я просто новичок) можете по подробнее обьяснить? и куда вставлять?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1355389832,
+      "user_id": 3219,
+      "user_title": "User",
+      "username": "jamik"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24092,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>jamik</b>, в моде в инструкции должно быть - откройте language/lang_russian/lang_main.php  ....смотрите внимательнее....",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1355390060,
+      "user_id": 782,
+      "user_title": "User",
+      "username": "qaqra"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24093,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Зачем что то добавлять измени то что есть:<br />\nоткрой page_header.tpl и найди:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">{L_BT_RATIO} замени на {L_USER_RATIO}</pre><pre class=\"xfBb-code\" data-lang=\"php\">{L_BT_BONUS} замени на {L_BONUS}</pre>",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1355390426,
+      "user_id": 737,
+      "user_title": "User",
+      "username": "Dream"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "pomogite-vyhodit-osibka",
+  "sticky": false,
+  "tags": [],
+  "title": "помогите выходит ошибка!",
+  "url_path": "/threads/pomogite-vyhodit-osibka.1807/",
+  "user_id": 3219,
+  "username": "jamik",
+  "view_count": 1092
+}

@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 3688,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 333,
+  "last_post_date": 1318076880,
+  "node_id": 57,
+  "post_date": 1318065169,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 3688,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Когда обычный пользоватль жмет на свое имя, рядом с надписью: &quot;Рады видеть Вас, SkaZo4nik&quot;- как пример, при нажатии на ник, выдает: <span style=\"color: #ff0000\"><b>Could not insert warning information </b></span><br />\n<span style=\"color: #00ff00\"><b>Что делать подскажите пожалуйста. Мне кажется, что тут виноват WarningsMod. </b></span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1318065169,
+      "user_id": 272,
+      "user_title": "",
+      "username": "Red Bullok"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 3689,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "что делать, что делать. в логи смотреть. другого варианта пока нет",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1318066005,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 3690,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>PheRum</b>, Проблему решил.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1318068988,
+      "user_id": 272,
+      "user_title": "",
+      "username": "Red Bullok"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 3697,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Red Bullok</b>, да еп*, ты еще много будешь создавать тем? Прежде чем создавать темы, хорошо подумай, посмотри логи, и т.д. Проблему решил буквально за час ИМХО",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1318076880,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "obycnyj-pol-zovatel-ne-mozet-prosmotret-svoj-profil-administrator-mozet-pocemu",
+  "sticky": false,
+  "tags": [],
+  "title": "Обычный пользователь не может просмотреть свой профиль. Администратор может. Почему?",
+  "url_path": "/threads/obycnyj-pol-zovatel-ne-mozet-prosmotret-svoj-profil-administrator-mozet-pocemu.333/",
+  "user_id": 272,
+  "username": "Red Bullok",
+  "view_count": 1410
+}

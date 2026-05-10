@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 10624,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 837,
+  "last_post_date": 1327764612,
+  "node_id": 57,
+  "post_date": 1327764612,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10624,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте.<br />\nЕсть ли возможность сделать так, чтобы в момент создания раздачи не добавлять .torrent файл, а указывать ссылку к дц++ клиенту (например, GreyLink DC++).<br />\nНапример, ссылку вида:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">magnet:?xt=urn:tree:tiger:YYC3MQVOT2LXUSCHMCLPGXZ5RYQISDB7TULPVMQ&amp;xl=1460983808&amp;dn=Golubaja.volna.2.2011.XviD.HDRip.avi</pre>В итоге хочется видеть портал, который выглядит как торрент-трекер, но работает с magnet-ссылками, чтобы после нажатия на кнопку &quot;скачать&quot; запускался дц-клиент.<br />\n <br />\nСпасибо заранее за все ответы.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1327764612,
+      "user_id": 827,
+      "user_title": "User",
+      "username": "danclaimant"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "magnet-ssylki-dla-dc",
+  "sticky": false,
+  "tags": [],
+  "title": "magnet-ссылки для dc++",
+  "url_path": "/threads/magnet-ssylki-dla-dc.837/",
+  "user_id": 827,
+  "username": "danclaimant",
+  "view_count": 1725
+}

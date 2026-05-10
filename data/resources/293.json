@@ -1,0 +1,128 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] BBCode - DVD Кейс by DimaUZB2001.zip",
+      "id": 5995,
+      "local_path": null,
+      "r2_key": null,
+      "size": 30797,
+      "src_url": "https://torrentpier.com/api/resource-versions/498/download?file=5995"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом.",
+    "owner": "DimaUZB2001",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1717764177,
+      "file_size": 36062,
+      "filename": "photo_2024-06-07_10-27-36.webp",
+      "height": 631,
+      "id": 5994,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2024-06-07_10-27-36-webp.5994/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5998-5b7df5f5d89f12f681a97c95cd35595d.jpg?hash=ChUcbHydfV",
+      "width": 520
+    },
+    {
+      "attach_date": 1717766658,
+      "file_size": 27748,
+      "filename": "photo_2024-06-07_20-24-08.webp",
+      "height": 462,
+      "id": 5996,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2024-06-07_20-24-08-webp.5996/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6000-24fb47dcbf11e38d894efa81ec0926f6.jpg?hash=wviPJNu-gk",
+      "width": 371
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Добавляет BBCode тэг который добавляет эффект кейса компакт диска на изображение.<br />\n<b>Совместимость:</b> v2.1.5 (LTS), v2.4.2.",
+  "download_count": 314,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/293.jpg?1717764161",
+  "id": 293,
+  "is_fileless": null,
+  "last_update": 1717766093,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1717764161,
+  "resource_state": "visible",
+  "slug": "bbcode-dvd-kejs",
+  "tag_line": "Добавляет BBCode тэг который добавляет эффект кейса компакт диска на изображение",
+  "tags": [
+    "bbcode",
+    "bbcode case",
+    "bbcode disk",
+    "bbcode dvd",
+    "dvd case",
+    "мод",
+    "моды"
+  ],
+  "title": "BBCode: DVD Кейс",
+  "url_path": "/resources/bbcode-dvd-kejs.293/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.1.0",
+  "versions": [
+    {
+      "download_count": 223,
+      "files": [
+        {
+          "filename": "[FULL] BBCode - DVD Кейс by DimaUZB2001.zip",
+          "id": 5995,
+          "local_path": null,
+          "r2_key": null,
+          "size": 30797,
+          "src_url": "https://torrentpier.com/api/resource-versions/498/download?file=5995"
+        }
+      ],
+      "id": 498,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1717766093,
+      "version_state": "visible",
+      "version_string": "v1.1.0",
+      "view_url": "https://torrentpier.com/resources/bbcode-dvd-kejs.293/version/498/"
+    },
+    {
+      "download_count": 92,
+      "files": [
+        {
+          "filename": "[FULL] BBCode - DVD Кейс.zip",
+          "id": 5993,
+          "local_path": null,
+          "r2_key": null,
+          "size": 30574,
+          "src_url": "https://torrentpier.com/api/resource-versions/497/download?file=5993"
+        }
+      ],
+      "id": 497,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1717764161,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/bbcode-dvd-kejs.293/version/497/"
+    }
+  ],
+  "view_count": 718
+}

@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58116,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 25666,
+  "last_post_date": 1390506187,
+  "node_id": 80,
+  "post_date": 1390490298,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58116,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "R565, но этакое заметил весьма давно. При нажатии быстро 2раза на [ Адрес IP ] открывается поправка &quot;Зарегистрирован: 2011-12-17 23:04&quot; На видео более понятно все видно. <div data-template-name=\"public:_media_site_embed_youtube\" class=\"bbMediaWrapper\" data-media-site-id=\"youtube\" data-media-key=\"TX_MKc5-w7U\">\n\t<div class=\"bbMediaWrapper-inner\">\n\t\t<iframe src=\"https://www.youtube.com/embed/TX_MKc5-w7U?wmode=opaque\"\n\t\t\t\tloading=\"lazy\"\n\t\t\t\twidth=\"560\" height=\"315\"\n\t\t\t\tframeborder=\"0\" allowfullscreen=\"true\"></iframe>\n\t</div>\n</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1390490298,
+      "user_id": 4646,
+      "user_title": "User",
+      "username": "greencell"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58117,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>greencell</b><br />\nТо же самое если нажмёшь (быстро) на &quot;Администрирование&quot; ))  и на &quot;Стаж:&quot; Если установлен мод.<br />\nВ общем ню любое в этой строке.<br />\nЭто не баг 🙂",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1390490566,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58118,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>vitalix</b>, это хорошо, что не баг. Хотя по хорошему этого не должно быть.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1390490800,
+      "user_id": 4646,
+      "user_title": "User",
+      "username": "greencell"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58148,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "согласен, есть такое",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1390506187,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 3,
+  "slug": "r565-nalozenie-klikabel-nyh-polej-v-profile-pol-zovatela",
+  "sticky": false,
+  "tags": [],
+  "title": "R565 наложение кликабельных полей в профиле пользователя",
+  "url_path": "/threads/r565-nalozenie-klikabel-nyh-polej-v-profile-pol-zovatela.25666/",
+  "user_id": 4646,
+  "username": "greencell",
+  "view_count": 1064
+}

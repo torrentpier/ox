@@ -1,0 +1,140 @@
+{
+  "category": {
+    "description": "Section with all templates for TorrentPier.",
+    "id": 5,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Templates",
+    "view_url": "https://torrentpier.com/resources/categories/templates.5/"
+  },
+  "current_files": [
+    {
+      "filename": "Шаблон BlackGames.zip",
+      "id": 6291,
+      "local_path": null,
+      "r2_key": null,
+      "size": 1854390,
+      "src_url": "https://torrentpier.com/api/resource-versions/587/download?file=6291"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "yes",
+    "installation": "Установить только чистый движок\nСкопировать и всё",
+    "owner": "DimaUZB2001",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1735487270,
+      "file_size": 134834,
+      "filename": "Снимок.webp",
+      "height": 957,
+      "id": 6293,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/snimok-webp.6293/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6297-166176154e25b24ac0227a8a09dfe29d.jpg?hash=D32TbGhMqi",
+      "width": 1920
+    },
+    {
+      "attach_date": 1735487270,
+      "file_size": 111764,
+      "filename": "Снимок1.webp",
+      "height": 957,
+      "id": 6294,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/snimok1-webp.6294/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6298-8fab7aed4bf173e29b069dee8a4a3c5a.jpg?hash=av9ZQbgd8j",
+      "width": 1920
+    },
+    {
+      "attach_date": 1735487270,
+      "file_size": 123698,
+      "filename": "Снимок2.webp",
+      "height": 959,
+      "id": 6295,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/snimok2-webp.6295/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6299-1297e3af2455e1b6533d128a24f6b928.jpg?hash=m5PEjelVh9",
+      "width": 1920
+    },
+    {
+      "attach_date": 1735487270,
+      "file_size": 94598,
+      "filename": "Снимок3.webp",
+      "height": 960,
+      "id": 6296,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/snimok3-webp.6296/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6300-f4e987b22d1b8ff4ea687cadc775b8ee.jpg?hash=e_Iz7cDxDE",
+      "width": 1920
+    },
+    {
+      "attach_date": 1735487270,
+      "file_size": 66588,
+      "filename": "Снимок4.webp",
+      "height": 957,
+      "id": 6297,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/snimok4-webp.6297/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6301-16ef657075a99e1524d8a84355ce392f.jpg?hash=oFztC1-BFD",
+      "width": 1920
+    }
+  ],
+  "description_parsed": "<div style=\"text-align: center\"><b>Адаптивный шаблон. Игровой дизайн для v2.1.5 ( LTS V10 )</b>&#8203;</div><a href=\"https://torrentpier.com/attachments/6297/\"><img src=\"https://torrentpier.com/data/attachments/6/6301-16ef657075a99e1524d8a84355ce392f.jpg?hash=oFztC1-BFD\" alt=\"Снимок4.PNG\" /></a><a href=\"https://torrentpier.com/attachments/6294/\"><img src=\"https://torrentpier.com/data/attachments/6/6298-8fab7aed4bf173e29b069dee8a4a3c5a.jpg?hash=av9ZQbgd8j\" alt=\"Снимок1.PNG\" /></a><a href=\"https://torrentpier.com/attachments/6293/\"><img src=\"https://torrentpier.com/data/attachments/6/6297-166176154e25b24ac0227a8a09dfe29d.jpg?hash=D32TbGhMqi\" alt=\"Снимок.PNG\" /></a><a href=\"https://torrentpier.com/attachments/6295/\"><img src=\"https://torrentpier.com/data/attachments/6/6299-1297e3af2455e1b6533d128a24f6b928.jpg?hash=m5PEjelVh9\" alt=\"Снимок2.PNG\" /></a><a href=\"https://torrentpier.com/attachments/6296/\"><img src=\"https://torrentpier.com/data/attachments/6/6300-f4e987b22d1b8ff4ea687cadc775b8ee.jpg?hash=e_Iz7cDxDE\" alt=\"Снимок3.PNG\" /></a>",
+  "download_count": 364,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/315.jpg?1735487329",
+  "id": 315,
+  "is_fileless": null,
+  "last_update": 1735487329,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1735487329,
+  "resource_state": "visible",
+  "slug": "sablon-blackgames",
+  "tag_line": "Шаблон BlackGames для TorrentPier v2.1.5 ( LTS V10 )",
+  "tags": [],
+  "title": "Шаблон «BlackGames»",
+  "url_path": "/resources/sablon-blackgames.315/",
+  "user_id": 7621,
+  "username": "DimaUZB2001",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 364,
+      "files": [
+        {
+          "filename": "Шаблон BlackGames.zip",
+          "id": 6291,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1854390,
+          "src_url": "https://torrentpier.com/api/resource-versions/587/download?file=6291"
+        }
+      ],
+      "id": 587,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1735487329,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/sablon-blackgames.315/version/587/"
+    }
+  ],
+  "view_count": 739
+}

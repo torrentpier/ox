@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 67918,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 30148,
+  "last_post_date": 1416904503,
+  "node_id": 57,
+  "post_date": 1416902111,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 67918,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток,<br />\nС недавнего времени при отправки писем,стала появляться такая ошибка<br />\n<br />\nRan into problems sending Mail. Response: 530 5.7.7 Email sending without SSL/TLS encryption is not allowed. Please see: <a href=\"http://help.yandex.ru/mail/mail-clients/ssl.xml\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://help.yandex.ru/mail/mail-clients/ssl.xml</a><br />\n<br />\nОчевидно,Яндекс теперь не отправляет письма без SLL или TSL<br />\nВопрос: Как же настроить сервер/сам двиг,что бы данные шифровались?<br />\nСпасибо",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1416902111,
+      "user_id": 5546,
+      "user_title": "User",
+      "username": "Deishelon"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 67923,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Вообще в третьем альфа-билде это исправлено. Обновляться по версиям настоятельно советовал бы.<br />\n<br />\nhttps://github.com/torrentpier/torrentpier/commit/5c51e6a824e6239cb5634ea5c457e4c32b9ba012 - вот непосредственно нужный коммит для исправления конкретно этой проблемы.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1416902940,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 67924,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\">Вообще в третьем альфа-билде это исправлено. Обновляться по версиям настоятельно советовал бы.<br />\n<br />\nhttps://github.com/torrentpier/torrentpier/commit/5c51e6a824e6239cb5634ea5c457e4c32b9ba012 - вот непосредственно нужный коммит для исправления конкретно этой проблемы.</blockquote><br />\nА как же поступить обладателю <b>2.0.7?<br />\n</b><br />\nЕсли добавить $ssl = ($bb_cfg[&#039;smtp_ssl&#039;]) ? &#039;ssl://&#039; : &#039;&#039;;     в smtp.php  ошибка сохраняется",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1416903840,
+      "user_id": 5546,
+      "user_title": "User",
+      "username": "Deishelon"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 67925,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Проблема решена!<br />\nСпасибо за намек<br />\n<br />\nЕсли кому будет нужно<br />\n<br />\nВ config.php<br />\n<pre class=\"xfBb-code\" data-lang=\"\"> // SMPT\n$bb_cfg[&#039;smtp_port&#039;]               = 465;    // SMTP server port\n$bb_cfg[&#039;smtp_host&#039;]               = &#039;smtp.yandex.ru&#039;;    // SMTP server host\n$bb_cfg[&#039;smtp_ssl&#039;]                = true; // use ssl connect\n$bb_cfg[&#039;smtp_username&#039;]           = &#039;&#039;;    // enter a username if your SMTP server requires it\n$bb_cfg[&#039;smtp_password&#039;]           = &#039;&#039;;    // enter a password if your SMTP server requires it</pre><br />\n<div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1416904503,
+      "user_id": 5546,
+      "user_title": "User",
+      "username": "Deishelon"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "osibka-ssl-tls-nastrojki-e-mail",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка SSL/TLS. Настройки e-mail",
+  "url_path": "/threads/osibka-ssl-tls-nastrojki-e-mail.30148/",
+  "user_id": 5546,
+  "username": "Deishelon",
+  "view_count": 6712
+}

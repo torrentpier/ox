@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 77526,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 36906,
+  "last_post_date": 1425319024,
+  "node_id": 47,
+  "post_date": 1425319024,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 77526,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Пользователь Exile разместил новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/otkljuchenie-vxodjaschix-lichnyx-soobschenij.177/\" class=\"link link--internal\">Отключение входящих личных сообщений</a> - Добавляет пользователю возможность отключения входящих личных сообщений.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> добавляет пользователю возможность отключения входящих личных сообщений. Каждый пользователь устанавливает настройку самостоятельно, при редактировании профиля.</blockquote><br />\n<a href=\"https://torrentpier.com/resources/otkljuchenie-vxodjaschix-lichnyx-soobschenij.177/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1425319024,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "otklucenie-vhodasih-licnyh-soobsenij",
+  "sticky": false,
+  "tags": [],
+  "title": "Отключение входящих личных сообщений",
+  "url_path": "/threads/otklucenie-vhodasih-licnyh-soobsenij.36906/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 1001
+}

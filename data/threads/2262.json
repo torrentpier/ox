@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 27313,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 2262,
+  "last_post_date": 1361756398,
+  "node_id": 57,
+  "post_date": 1361733623,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27313,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В статистике возле ника <b>admin</b>, появился вот такой символ (картинка прилагается) и не работает выход с сайта. После клика <b>выйти</b>, все равно я остаюсь в авторизованном режиме.<br />\n <br />\n<img src=\"http://hostfoto.net/images/2013/02/24/pKRP.jpg\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1361733623,
+      "user_id": 3930,
+      "user_title": "User",
+      "username": "soft67"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27314,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "При чем, самое интересное, что эти красные номера меняются периодически.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1361734398,
+      "user_id": 3930,
+      "user_title": "User",
+      "username": "soft67"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27325,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>soft67</b>, пр это где то тут было, это вроде со сколки компов зашел или раздаешь",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1361756398,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Alekseev"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "kto-podskazet-cto-eto",
+  "sticky": false,
+  "tags": [],
+  "title": "Кто подскажет. Что это?",
+  "url_path": "/threads/kto-podskazet-cto-eto.2262/",
+  "user_id": 3930,
+  "username": "soft67",
+  "view_count": 882
+}

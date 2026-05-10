@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 57991,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25652,
+  "last_post_date": 1390167656,
+  "node_id": 111,
+  "post_date": 1390167354,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57991,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Ссылка</b>:<br />\n<a href=\"http://code.google.com/p/torrentpier2/source/detail?r=562\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"> http://code.google.com/p/torrentpier2/source/detail?r=562</a><br />\n<br />\n<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 562: Удаление мода виртуальной клавиатуры из основного дистрибутива; фикс главной стр</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">glix08</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Delete    /trunk/mods \n    Modify    /trunk/upload/admin/admin_disallow.php \n    Modify    /trunk/upload/admin/admin_ranks.php \n    Modify    /trunk/upload/admin/admin_topic_templates.php \n    Modify    /trunk/upload/admin/admin_user_search.php \n    Modify    /trunk/upload/admin/index.php \n    Modify    /trunk/upload/ajax.php \n    Modify    /trunk/upload/ajax/edit_user_profile.php \n    Modify    /trunk/upload/ajax/manage_user.php \n    Modify    /trunk/upload/ajax/posts.php \n    Modify    /trunk/upload/ajax/user_register.php \n    Modify    /trunk/upload/ajax/view_post.php \n    Modify    /trunk/upload/ajax/view_profile.php \n    Modify    /trunk/upload/bt/announce.php \n    Modify    /trunk/upload/bt/includes/init_tr.php \n    Modify    /trunk/upload/config.php \n    Modify    /trunk/upload/develop/profiler/profiler_dbg.php \n    Modify    /trunk/upload/dl_list.php \n    Modify    /trunk/upload/download.php \n    Modify    /trunk/upload/includes/cron/cron_init.php \n    Modify    /trunk/upload/login.php \n    Modify    /trunk/upload/modcp.php \n    Modify    /trunk/upload/posting.php \n    Modify    /trunk/upload/viewforum.php \n    Modify    /trunk/upload/viewtopic.php \n\nУдаление мода виртуальной клавиатуры из основного дистрибутива; фикс главной страницы админ-панели; фикс панели управления шаблонами в админ-панели; частичная замена else if на elseif, для возможности отхода от использования фигурных скобок в дальнейшем. Дальнейшая поддержка и распространение мода виртуальной клавиатуры осуществляется на форуме: http://torrentpier.com/resources/84/</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1390167354,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57993,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Клавиатура выложена на форуме отдельным модом. Кому надо - ставьте: <a href=\"http://torrentpier.com/resources/%D0%92%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%B0.84/\" class=\"link link--internal\">http://torrentpier.com/resources/Виртуальная-клавиатура.84/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1390167656,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "revision-562-udalenie-moda-virtual-noj-klaviatury-iz-osnovnogo-distributiva-fiks-glavnoj-str",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 562: Удаление мода виртуальной клавиатуры из основного дистрибутива; фикс главной стр",
+  "url_path": "/threads/revision-562-udalenie-moda-virtual-noj-klaviatury-iz-osnovnogo-distributiva-fiks-glavnoj-str.25652/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 1046
+}

@@ -1,0 +1,86 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL][$][TP2] Like Post.zip",
+      "id": 3298,
+      "local_path": null,
+      "r2_key": null,
+      "size": 10765,
+      "src_url": "https://torrentpier.com/api/resource-versions/261/download?file=3298"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]Автор мода: frost444\n\n//-----[Обновления]-----\\\\\n\n|--(00.00.0000)\n   1) измененный код: ---\n   2) ---\n   info: (1) ---\n  \n\\\\-----[Обновления]-----//\n\n####[ВЫПОЛНИТЬ]-----SQL\n\nCREATE TABLE  `bb_like_post` (\n  `lk_post_id` mediumint(11) unsigned NOT NULL DEFAULT '0',\n  `lk_autor_id` mediumint(11) unsigned NOT NULL DEFAULT '0',\n  `lk_user_id` mediumint(11) NOT NULL DEFAULT '0',\n  `lk_time` int(11) NOT NULL DEFAULT '0',\n  PRIMARY KEY (`lk_autor_id`,`lk_post_id`,`lk_user_id`,`lk_time`)\n);\nALTER TABLE `bb_posts` ADD `like_for_post` INT( 10 ) NOT NULL DEFAULT '0';\nALTER TABLE `bb_users` ADD `user_likes` int(11) DEFAULT '0' NOT NULL;\n\n####[КОНЕЦ]-----SQL\n\n####[ОТКРЫТЬ]----- config.php\n\n$bb_cfg['like_post'] = array(\n  'on'          => true,\n  'cache'       => 24, //кеш держится в часах\n  'cache_autor' => 24, //кеш держится в часах\n);\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- init_bb.php\n\n-----[найти]-----\n\ndefine('BB_USERS',                'bb_users');\n\n-----[добавить после]-----\n\ndefine('BB_LIKE_POST',            'bb_like_post');\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- ajax.php\n\n-----[найти]-----\n\n        'index_data'        => array('guest'),\n\n-----[добавить после]-----\n\n        'like_post'            => array('user'),\n\n-----[найти]-----\n\n    последнюю скобку }\n\n-----[добавить перед]-----\n\n    function like_post()\n    {\n        require(AJAX_DIR .'like_post.php');\n    }\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- viewtopic.php\n\n-----[найти]-----\n\n    'FORUM_ID'            => $forum_id,\n\n-----[добавить после]-----\n\n    'LIKE_POST_ON'        => ($bb_cfg['like_post']['on'] && $userdata['session_logged_in']),\n\n-----[найти]------\n//\n// Go ahead and pull all data for this topic\n//\n// 1. Add first post of topic if it pinned and page of topic not first\n\n-----[найти]------\n\n          p.*,\n\n-----[ниже добавить]------\n\n          lk.*,\n\n-----[найти]------\n\n        LEFT JOIN \". BB_POSTS_HTML .\" h  ON(h.post_id = p.post_id)\n\n-----[ниже добавить]------\n\n        LEFT JOIN \". BB_LIKE_POST  .\" lk ON(lk.lk_post_id = p.post_id)\n               \n-----[найти]------\n// 2. All others posts\n\n-----[найти]------\n\n      p.*,\n\n-----[ниже добавить]------\n\n      lk.*,\n\n-----[найти]------\n\n    LEFT JOIN \". BB_POSTS_HTML .\" h  ON(h.post_id = p.post_id)\n\n-----[ниже добавить]------\n\n    LEFT JOIN \". BB_LIKE_POST  .\" lk ON(lk.lk_post_id = p.post_id)\n           \n-----[найти]------\n\n$template->assign_block_vars('postrow', array(\n\n-----[перед добавить]------\n\n    $set_like_post = ($postrow[$i]['poster_id'] <> $userdata['user_id'] && $postrow[$i]['poster_id'] > 0);\n   \n-----[найти]------\n\n$template->assign_block_vars('postrow', array(\n   \n-----[ниже добавить]------\n\n        'LIKE_POST'          => $postrow[$i]['like_for_post'],\n        'SET_LIKE_POST'      => $set_like_post,\n        'GET_LIKE_POST'      => ($postrow[$i]['like_for_post'] > 0),\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- includes\\ucp\\usercp_viewprofile.php\n-----[найти]------\n\n    'ICQ'                  => $profiledata['user_icq'],\n   \n-----[ниже добавить]------\n\n    'LIKES'                => ($bb_cfg['like_post']['on']) ? $profiledata['user_likes'] : '',\n    'LIKES_ON'             => $bb_cfg['like_post']['on'],\n   \n####[СОХРАНИТЬ_ФАЙЛ]####\n   \n####[ОТКРЫТЬ]----- usercp_viewprofile.tpl\n-----[найти]------\n\n<var class=\"ajax-params\">{action: \"edit_user_profile\", id: \"user_birthday\"}</var>\n   \n-----[ниже добавить]------\n\n<var class=\"ajax-params\">{action: \"edit_user_profile\", id: \"user_likes\"}</var>\n\n-----[найти]------\n\n            <tr>\n                <th>{L_AGE}:</th>\n                <td><b>{AGE}</b></td>\n            </tr>\n            <!-- ENDIF -->\n   \n-----[ниже добавить]------\n\n            <!-- IF LIKES_ON -->\n            <tr>\n                <th>Лайки:</th>\n                <td id=\"user_likes\"><b class=\"editable\">{LIKES}</b></td>\n            </tr>\n            <!-- ENDIF -->\n           \n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- viewtopic.tpl\n\n-----[в самом начале добавить]-----\n<link rel=\"stylesheet\" href=\"{TPL_DIR}/popup.css?v={$bb_cfg['css_ver']}\" type=\"text/css\">\n<!-- IF LIKE_POST_ON -->\n<link rel=\"stylesheet\" href=\"{TPL_DIR}/like.css?v={$bb_cfg['css_ver']}\" type=\"text/css\">\n<script type=\"text/javascript\">\nfunction like_post(post_id, mode, type = 0){\n    ajax.exec({\n        action  : 'like_post',\n        mode    : mode,\n        post_id    : post_id,\n        type    : type,\n    });\n    ajax.callback.like_post = function(data) {\n        if(data.like){\n            $('#post_like_count-'+ data.post_id).html(data.html_count);\n            if (!data.html_list)\n            {\n                $('#post_like_list-'+ data.post_id).removeClass('post_like');\n            }else{       \n                $('#post_like_list-'+ data.post_id).addClass('post_like');\n            }\n            $('#post_like_list-'+ data.post_id).html(data.html_list);\n        }\n        if(data.list){\n            $('#like_post').html(data.html);\n        }\n    };\n}\n</script>\n<span id=\"like_post\"></span>\n<!-- ENDIF -->\n\n-----[найти]-----\n\n            <!-- IF postrow.EDITED_MESSAGE --><div class=\"last_edited\">{postrow.EDITED_MESSAGE}</div><!-- ENDIF -->\n\n-----[добавить ниже]-----\n\n            <!-- IF LIKE_POST_ON -->\n            <div class=\"floatR\">\n                <span class=\"like_list\" style=\"display:none;\" id=\"likelist-popup-{postrow.POST_ID}\"></span>\n                <div id=\"setlike-{postrow.POST_ID}\">\n                    <div class=\"post_like_wrap fl_r\">\n                        <div class=\"post_like floatL\" onclick=\"like_post({postrow.POST_ID}, 'like');\">\n                            <span class=\"post_like_link floatL\">Мне нравится</span>\n                            <i class=\"post_like_icon my_like floatL\"></i>\n                            <span id=\"post_like_count-{postrow.POST_ID}\" class=\"post_like_count floatL\" >{postrow.LIKE_POST}</span>\n                        </div>\n                        <div id=\"post_like_list-{postrow.POST_ID}\" class=\"<!-- IF postrow.GET_LIKE_POST -->post_like <!-- ELSE --><!-- ENDIF -->floatL\">\n                            <!-- IF postrow.GET_LIKE_POST --><span class=\"post_like_count floatR\" onclick=\"like_post({postrow.POST_ID}, 'list');\"><b>&#8593;&#8593;</b></span><!-- ELSE --><!-- ENDIF -->\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <!-- ENDIF -->\n\n####[СОХРАНИТЬ_ФАЙЛ]####[/PHP]\n[/SPOILER]",
+    "owner": "frost444",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425492572,
+      "file_size": 43058,
+      "filename": "likemod.webp",
+      "height": 377,
+      "id": 3297,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/likemod-webp.3297/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3301-6c2b0ba4abbc27aac600f4011892a988.jpg?hash=pVqfWwOraS",
+      "width": 925
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет возможность установки отметок &quot;Мне нравится&quot; у сообщений.<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Внешний вид как у известной социальной сети</li>\n<li data-xf-list-type=\"ul\">Работа на AJAX</li>\n<li data-xf-list-type=\"ul\">Всплывающее окно со списком выразивших симпатию</li>\n</ul>",
+  "download_count": 353,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/204.jpg?1425492701",
+  "id": 204,
+  "is_fileless": null,
+  "last_update": 1425492693,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1425492693,
+  "resource_state": "visible",
+  "slug": "mne-nravitsa",
+  "tag_line": "Добавляет возможность установки отметок \"Мне нравится\" у сообщений.",
+  "tags": [],
+  "title": "Мне нравится",
+  "url_path": "/resources/mne-nravitsa.204/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 353,
+      "files": [
+        {
+          "filename": "[FULL][$][TP2] Like Post.zip",
+          "id": 3298,
+          "local_path": null,
+          "r2_key": null,
+          "size": 10765,
+          "src_url": "https://torrentpier.com/api/resource-versions/261/download?file=3298"
+        }
+      ],
+      "id": 261,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425492693,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/mne-nravitsa.204/version/261/"
+    }
+  ],
+  "view_count": 873
+}

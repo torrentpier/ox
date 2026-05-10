@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 18023,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1398,
+  "last_post_date": 1339062684,
+  "node_id": 57,
+  "post_date": 1339062396,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 18023,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подскажите пожалуйста, как бороться с такой ошибкой<br />\nset magic_quotes",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1339062396,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Link"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 18024,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Читать ReadMe.txt",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1339062684,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "set-magic_quotes",
+  "sticky": false,
+  "tags": [],
+  "title": "set magic_quotes",
+  "url_path": "/threads/set-magic_quotes.1398/",
+  "user_id": 0,
+  "username": "Link",
+  "view_count": 1015
+}

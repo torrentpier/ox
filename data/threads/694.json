@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 8901,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 694,
+  "last_post_date": 1326026361,
+  "node_id": 57,
+  "post_date": 1326025791,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 8901,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Возможно внедрить данную опцию. Чтоб сразу после регистрации нового пользователя ему на ЛС пришли нужные админу сообщения? Об правилах, новостях и группах к примеру...",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1326025791,
+      "user_id": 88,
+      "user_title": "User",
+      "username": "Lion18"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 8904,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "засунуть в <b>usercp_register.php</b> после <b>$new_user_id = DB()-&gt;sql_nextid();</b><br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$gender = if($db_data[&#039;user_gender&#039;] == 2) ? &#039;ая&#039; : &#039;ый&#039;;\n$message = &quot;Уважаем$gender [b]&quot;. $db_data[&#039;username&#039;] .&quot;[/b]&quot;;\n$subject = &quot;Тема сообщения&quot;;\n\nsend_pm($user_id, $subject, $message, BOT_UID);</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1326026361,
+      "user_id": 2,
+      "user_title": "User",
+      "username": "_Xz_"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "ls-posle-registracii-pol-zovatela",
+  "sticky": false,
+  "tags": [],
+  "title": "ЛС после регистрации пользователя",
+  "url_path": "/threads/ls-posle-registracii-pol-zovatela.694/",
+  "user_id": 88,
+  "username": "Lion18",
+  "view_count": 1234
+}

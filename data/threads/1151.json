@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 14351,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1151,
+  "last_post_date": 1332702103,
+  "node_id": 57,
+  "post_date": 1332700294,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14351,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "раньше была эта тема на тп.инфо но не нашел её подскажите как мне сделать более двух анонсеров то есть у меня есть лакалка на пример 172.16.0.2 и домен torrent.vistlink.ru как сделать при скачке торрент файла добавлялся ip и домен сразу ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1332700294,
+      "user_id": 191,
+      "user_title": "User",
+      "username": "lexXxa"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14352,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "А зачем ?<br />\nПользователи получают доступ по этому IP в локалке ?<br />\nЕсли да есть два варианта, пусть хост прописывают или ставьте BIND",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1332700859,
+      "user_id": 14,
+      "user_title": "User",
+      "username": "Chumaster59"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14353,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Если нужно добавление сразу то:<br />\n <br />\nОткрыть <b>includes/functions_torrent.php</b><br />\nНайти:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$tor[&#039;announce-list&#039;] = array_merge($tor[&#039;announce-list&#039;], array(array($announce)));</pre>Добавить после:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$tor[&#039;announce-list&#039;] = array(array($announce),array(&#039;http://твой-домен/announce&#039;));</pre>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1332701049,
+      "user_id": 235,
+      "user_title": "User",
+      "username": "Boec"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14355,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>lexXxa</b>,<br />\n<a href=\"http://torrentpier.com/threads/retracker-local.186/\" class=\"link link--internal\">http://torrentpier.com/threads/retracker-local.186/</a><br />\nчитаем потом моё сообщение<br />\n<a href=\"http://torrentpier.com/threads/retracker-local.186/page-2#post-8506\" class=\"link link--internal\">http://torrentpier.com/threads/retracker-local.186/page-2#post-8506</a>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1332702103,
+      "user_id": 14,
+      "user_title": "User",
+      "username": "Chumaster59"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "bolee-dvuh-announce",
+  "sticky": false,
+  "tags": [],
+  "title": "более двух announce",
+  "url_path": "/threads/bolee-dvuh-announce.1151/",
+  "user_id": 191,
+  "username": "lexXxa",
+  "view_count": 1246
+}

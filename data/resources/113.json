@@ -1,0 +1,91 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "канонические_ссылки.zip",
+      "id": 3200,
+      "local_path": null,
+      "r2_key": null,
+      "size": 633,
+      "src_url": "https://torrentpier.com/api/resource-versions/225/download?file=3200"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]# ---- [ Открыть ] -------------------\n\nindex.php\n\n# ---- [ Найти ] -------------------\n\n    'U_SEARCH_UNANSWERED'  => \"search.php?search_id=unanswered\",\n\n# ---- [ Вставить после ] -------------------\n\n    'U_CANONICAL'          => (!$viewcat) ? FULL_URL : '',\n\n# ---- [ Открыть ] -------------------\n\nlogin.php\n\n# ---- [ Найти ] -------------------\n\n        'S_LOGIN_ACTION'  => \"login.php\",\n\n# ---- [ Вставить после ] -------------------\n\n        'U_CANONICAL'    => \"login.php\",\n\n# ---- [ Открыть ] -------------------\n\nviewforum.php\n\n# ---- [ Найти ] -------------------\n\n    'PRUNE_DAYS'      => $forum_data['prune_days'],\n\n# ---- [ Вставить после ] -------------------\n\n    'U_CANONICAL'      => FULL_URL . $pg_url . (($start) ? \"&start=$start\" : ''),\n\n# ---- [ Открыть ] -------------------\n\nviewtopic.php\n\n# ---- [ Найти ] -------------------\n\n    'U_SEARCH_SELF'      => \"search.php?uid={$userdata['user_id']}&t=$topic_id&dm=1\",\n\n# ---- [ Вставить после ] -------------------\n\n    'U_CANONICAL'        => FULL_URL . TOPIC_URL . $topic_id . (($start) ? \"&start=$start\" : ''),\n\n# ---- [ Открыть ] -------------------\n\ntemplates/default/page_header.tpl\n\n# ---- [ Найти ] -------------------\n\n{META}\n\n# ---- [ Вставить до ] -------------------\n\n<!-- IF U_CANONICAL --><link rel=\"canonical\" href=\"{U_CANONICAL}\" /><!-- ENDIF -->\n\n# ---- [ Конец ] -------------------[/PHP]\n[/SPOILER]",
+    "owner": "Gemini_13",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [],
+  "description_parsed": "Описание: добавляет атрибут rel=&quot;canonical&quot; в заголовки страниц с одинаковым контентом. Более подробная информация про канонические ссылки есть тут: <a href=\"https://support.google.com/webmasters/answer/139066?hl=ru&amp;rd=1\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://support.google.com/webmasters/answer/139066?hl=ru&amp;rd=1</a>",
+  "download_count": 352,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/113.jpg?1425329787",
+  "id": 113,
+  "is_fileless": null,
+  "last_update": 1425329813,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1406072703,
+  "resource_state": "visible",
+  "slug": "kanoniceskie-stranicy",
+  "tag_line": "Добавляет атрибут rel=\"canonical\" в заголовки страниц с одинаковым контентом.",
+  "tags": [],
+  "title": "Канонические страницы",
+  "url_path": "/resources/kanoniceskie-stranicy.113/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 248,
+      "files": [
+        {
+          "filename": "канонические_ссылки.zip",
+          "id": 3200,
+          "local_path": null,
+          "r2_key": null,
+          "size": 633,
+          "src_url": "https://torrentpier.com/api/resource-versions/225/download?file=3200"
+        }
+      ],
+      "id": 225,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425329813,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/kanoniceskie-stranicy.113/version/225/"
+    },
+    {
+      "download_count": 104,
+      "files": [
+        {
+          "filename": "канонические_ссылки.zip",
+          "id": 3199,
+          "local_path": null,
+          "r2_key": null,
+          "size": 633,
+          "src_url": "https://torrentpier.com/api/resource-versions/124/download?file=3199"
+        }
+      ],
+      "id": 124,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1406072703,
+      "version_state": "visible",
+      "version_string": "1.0",
+      "view_url": "https://torrentpier.com/resources/kanoniceskie-stranicy.113/version/124/"
+    }
+  ],
+  "view_count": 539
+}

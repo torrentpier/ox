@@ -1,0 +1,75 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 97690,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      }
+    ],
+    "id": 2,
+    "title": "Resource news"
+  },
+  "id": 42696,
+  "last_post_date": 1760542869,
+  "node_id": 2,
+  "post_date": 1756110538,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97690,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1760542777,
+      "message_parsed": "Начиная с версий v2.4.12 и v2.8.7 будет возможность разворачивать TorrentPier в докере!<br />\n<br />\nНастройки Caddy (веб сервер) находятся по этому пути: <b>install/docker/Caddyfile</b><br />\nНастройки PHP находятся по этому пути: <b>install/docker/php.ini<br />\n<br />\nПошаговая инструкция:</b><br />\n<ol>\n<li data-xf-list-type=\"ol\">Убедитесь, что у вас установлены <b>Docker</b> и <b>Docker Compose</b>.<br />\nПроверьте, что порты <b>80 (HTTP)</b> и <b>443 (HTTPS)</b> свободны, либо измените их в файле <b>docker-compose.yml</b>.</li>\n<li data-xf-list-type=\"ol\">Выберите папку, в которую хотите установить TorrentPier:<br />\n<pre class=\"xfBb-code\" data-lang=\"bash\">cd /path/to/www</pre></li>\n<li data-xf-list-type=\"ol\">Скачайте последнюю версию TorrentPier:<br />\n<pre class=\"xfBb-code\" data-lang=\"bash\">git clone --branch &lt;тут ветка&gt; --depth 1 https://github.com/torrentpier/torrentpier.git .</pre></li>\n<li data-xf-list-type=\"ol\">Скопируйте шаблон конфигурации окружения:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">cp .env.docker .env</pre></li>\n<li data-xf-list-type=\"ol\">Отредактируйте файл <b>.env</b> и укажите свои настройки:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">nano .env</pre></li>\n<li data-xf-list-type=\"ol\">Запустите приложение через Docker Compose:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">docker compose up -d</pre></li>\n<li data-xf-list-type=\"ol\">Всё готово! ✨</li>\n</ol><br />\n<span style=\"color: rgb(226, 80, 65)\">* &lt;тут ветка&gt; - доступные значения: v2.4 и master (v2.8)</span><br />\n<br />\nПодробнее можно почитать тут: <a href=\"https://github.com/torrentpier/torrentpier/tree/master?tab=readme-ov-file#using-docker-\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">GitHub - torrentpier/torrentpier</a><br />\nСсылка на PR: <a href=\"https://github.com/torrentpier/torrentpier/pull/2100\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">chore: Docker support by advancedalloy · Pull Request #2100 · torrentpier/torrentpier</a>, <a href=\"https://github.com/torrentpier/torrentpier/pull/2101\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">chore: Some minor improvements &amp; updated Docker setup instructions by belomaxorka · Pull Request #2101 · torrentpier/torrentpier</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1756110538,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98277,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "UPD (15.10.25): В инструкцию добавлена версия TorrentPier v2.8.*",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1760542869,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "torrentpier-v2-4-v2-8-teper-podderzivaut-zapusk-v-docker",
+  "sticky": false,
+  "tags": [
+    "docker",
+    "torrentpier",
+    "докер",
+    "запуск в контейнере",
+    "контейнер",
+    "контейнеры",
+    "новости",
+    "новости разработки"
+  ],
+  "title": "TorrentPier v2.4.* / v2.8.* теперь поддерживают запуск в Docker!",
+  "url_path": "/threads/torrentpier-v2-4-v2-8-teper-podderzivaut-zapusk-v-docker.42696/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 793
+}

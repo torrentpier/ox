@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 95306,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42191,
+  "last_post_date": 1712486349,
+  "node_id": 47,
+  "post_date": 1699518017,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95306,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/zametki-administratora.271/\" class=\"link link--internal\">Заметки администратора</a> - Мод позволяет писать заметки в админ-панели.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Данный мод добавляет в администраторском разделе возможность писать и сохранять заметки. Реализовано с помощью технологии AJAX.<br />\n<br />\nПреимущества мода:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Поддерживает перенос строк (в отличии от <a href=\"https://torrentpier.com/threads/zapiski-administratora.104/\" class=\"link link--internal\">оригинальной</a> версии от druid)</li>\n<li data-xf-list-type=\"ul\">Переписан код (во многом улучшен)</li>\n<li data-xf-list-type=\"ul\">Добавлены языковые переменные</li>\n<li data-xf-list-type=\"ul\">Улучшен интерфейс</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/zametki-administratora.271/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1699518017,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95543,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/zametki-administratora.271/\" class=\"link link--internal\">Заметки администратора</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/zametki-administratora.271/update/457/\" class=\"link link--internal\">Обновление v1.2.0</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Исправлены неточности в инструкции</li>\n<li data-xf-list-type=\"ul\">Добавлен перевод на EN <span style=\"color: rgb(71, 85, 119)\">(Будет использоваться по умолчанию если в выбранном языке не окажется языковых переменных)</span></li>\n<li data-xf-list-type=\"ul\">Улучшен код</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/zametki-administratora.271/update/457/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1705056422,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95544,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 1705582906,
+      "message_parsed": "Доработка для особо ленивых. Вставить перед &lt;/script&gt; 🙂<br />\n<pre class=\"xfBb-code\" data-lang=\"\">$(document).ready(function(){\n    $(&quot;#admin_note&quot;).on(&#039;change keyup paste&#039;, function() {\n        ajax.manage_admin(&#039;admin_note&#039;, $(this).val());\n    });\n});</pre>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1705442250,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96075,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/zametki-administratora.271/\" class=\"link link--internal\">Заметки администратора</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/zametki-administratora.271/update/509/\" class=\"link link--internal\">Обновление v1.2.1</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Мелкие улучшения кода</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/zametki-administratora.271/update/509/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1712486349,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "zametki-administratora",
+  "sticky": false,
+  "tags": [],
+  "title": "Заметки администратора",
+  "url_path": "/threads/zametki-administratora.42191/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 872
+}

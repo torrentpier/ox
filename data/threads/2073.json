@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 25612,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 2073,
+  "last_post_date": 1357994837,
+  "node_id": 57,
+  "post_date": 1357989296,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25612,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Мод стоял нормально, проблем небыло, вчера заметил что дата в блоке отображается таким типом <b>FPMThursday50UTC</b><br />\nхотя в блоке популярное - все работает без проблем",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1357989296,
+      "user_id": 3266,
+      "user_title": "User",
+      "username": "extazys"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25615,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "&#039;TORRENT_TIME&#039; =&gt; bb_date($last_add[&#039;reg_time&#039;], &#039;H:i d-M&#039;, &#039;false&#039;),<br />\nЕсли я правильно понял о чём ты.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1357994011,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25616,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "да, все нормально, спасибо!",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1357994837,
+      "user_id": 3266,
+      "user_title": "User",
+      "username": "extazys"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "novye-torrenty-ne-pravil-no-otobrazaet-datu",
+  "sticky": false,
+  "tags": [],
+  "title": "[новые торренты] не правильно отображает дату",
+  "url_path": "/threads/novye-torrenty-ne-pravil-no-otobrazaet-datu.2073/",
+  "user_id": 3266,
+  "username": "extazys",
+  "view_count": 1349
+}

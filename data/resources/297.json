@@ -1,0 +1,251 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Спасибо by kovalensky.zip",
+      "id": 6671,
+      "local_path": null,
+      "r2_key": null,
+      "size": 4986,
+      "src_url": "https://torrentpier.com/api/resource-versions/659/download?file=6671"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "kovalensky",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1720629392,
+      "file_size": 5450,
+      "filename": "photo_2024-07-10_21-39-11.webp",
+      "height": 103,
+      "id": 6042,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2024-07-10_21-39-11-webp.6042/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6046-ddc88c55d4d9dac8698f6a6ab53f3f50.jpg?hash=vzWHtd-8LK",
+      "width": 1160
+    },
+    {
+      "attach_date": 1720629392,
+      "file_size": 7028,
+      "filename": "photo_2024-07-10_21-39-25.webp",
+      "height": 102,
+      "id": 6043,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2024-07-10_21-39-25-webp.6043/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6047-f708387563f40021f0cc23b0f381c3b3.jpg?hash=LJUC-WTHUm",
+      "width": 1166
+    }
+  ],
+  "description_parsed": "<div style=\"text-align: center\"><span style=\"color: rgb(226, 80, 65)\">Данный мод интегрирован по-умолчанию в v2.4.0 и выше!</span>&#8203;</div><hr /><b>Описание:</b> Добавляет кнопку &quot;Спасибо&quot; как на рутрекере. Реализация точь-в-точь, даже на уровне текста. Код очень хорошо оптимизирован, вызов AJAX происходит один раз при первом открытии спойлера. Также мод не конфликтует с опцией &quot;Отображать спойлеры открытыми&quot;.<br />\n<b>Совместимость:</b> почти все версии, проверялся на LTS и v2.4.0.",
+  "download_count": 943,
+  "external_url": null,
+  "icon_url": null,
+  "id": 297,
+  "is_fileless": null,
+  "last_update": 1767186280,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1720629401,
+  "resource_state": "visible",
+  "slug": "spasibo-kak-na-rutracker-org",
+  "tag_line": "Добавляет возможность сказать автору релиза \"Спасибо\".",
+  "tags": [
+    "благодарности",
+    "мод",
+    "мод благодарностей",
+    "мод спасибо",
+    "моды",
+    "поблагодарить",
+    "рейтинг постов",
+    "рейтинг топика",
+    "сказать спасибо",
+    "спасибы"
+  ],
+  "title": "Спасибо [Как на rutracker.org]",
+  "url_path": "/resources/spasibo-kak-na-rutracker-org.297/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v2.2.1",
+  "versions": [
+    {
+      "download_count": 84,
+      "files": [
+        {
+          "filename": "[FULL] Спасибо by kovalensky.zip",
+          "id": 6671,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4986,
+          "src_url": "https://torrentpier.com/api/resource-versions/659/download?file=6671"
+        }
+      ],
+      "id": 659,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1767186280,
+      "version_state": "visible",
+      "version_string": "v2.2.1",
+      "view_url": "https://torrentpier.com/resources/spasibo-kak-na-rutracker-org.297/version/659/"
+    },
+    {
+      "download_count": 142,
+      "files": [
+        {
+          "filename": "[FULL] Спасибо by kovalensky.zip",
+          "id": 6549,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4853,
+          "src_url": "https://torrentpier.com/api/resource-versions/655/download?file=6549"
+        }
+      ],
+      "id": 655,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1758881089,
+      "version_state": "visible",
+      "version_string": "v2.2.0",
+      "view_url": "https://torrentpier.com/resources/spasibo-kak-na-rutracker-org.297/version/655/"
+    },
+    {
+      "download_count": 182,
+      "files": [
+        {
+          "filename": "[FULL] Спасибо by kovalensky.zip",
+          "id": 6065,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4397,
+          "src_url": "https://torrentpier.com/api/resource-versions/522/download?file=6065"
+        }
+      ],
+      "id": 522,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1721151716,
+      "version_state": "visible",
+      "version_string": "v2.1.2",
+      "view_url": "https://torrentpier.com/resources/spasibo-kak-na-rutracker-org.297/version/522/"
+    },
+    {
+      "download_count": 108,
+      "files": [
+        {
+          "filename": "[FULL] Спасибо by kovalensky.zip",
+          "id": 6047,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4387,
+          "src_url": "https://torrentpier.com/api/resource-versions/518/download?file=6047"
+        }
+      ],
+      "id": 518,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1720681730,
+      "version_state": "visible",
+      "version_string": "v2.1.1",
+      "view_url": "https://torrentpier.com/resources/spasibo-kak-na-rutracker-org.297/version/518/"
+    },
+    {
+      "download_count": 110,
+      "files": [
+        {
+          "filename": "[FULL] Спасибо by kovalensky.zip",
+          "id": 6046,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4410,
+          "src_url": "https://torrentpier.com/api/resource-versions/517/download?file=6046"
+        }
+      ],
+      "id": 517,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1720681521,
+      "version_state": "visible",
+      "version_string": "v2.1.0",
+      "view_url": "https://torrentpier.com/resources/spasibo-kak-na-rutracker-org.297/version/517/"
+    },
+    {
+      "download_count": 112,
+      "files": [
+        {
+          "filename": "[FULL] Спасибо by kovalensky.zip",
+          "id": 6045,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4381,
+          "src_url": "https://torrentpier.com/api/resource-versions/516/download?file=6045"
+        }
+      ],
+      "id": 516,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1720678655,
+      "version_state": "visible",
+      "version_string": "v2.0.0",
+      "view_url": "https://torrentpier.com/resources/spasibo-kak-na-rutracker-org.297/version/516/"
+    },
+    {
+      "download_count": 101,
+      "files": [
+        {
+          "filename": "[FULL] Спасибо by kovalensky.zip",
+          "id": 6044,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4444,
+          "src_url": "https://torrentpier.com/api/resource-versions/515/download?file=6044"
+        }
+      ],
+      "id": 515,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1720675571,
+      "version_state": "visible",
+      "version_string": "v1.1.0",
+      "view_url": "https://torrentpier.com/resources/spasibo-kak-na-rutracker-org.297/version/515/"
+    },
+    {
+      "download_count": 112,
+      "files": [
+        {
+          "filename": "[FULL] Спасибо by kovalensky.zip",
+          "id": 6040,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4305,
+          "src_url": "https://torrentpier.com/api/resource-versions/514/download?file=6040"
+        }
+      ],
+      "id": 514,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1720629401,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/spasibo-kak-na-rutracker-org.297/version/514/"
+    }
+  ],
+  "view_count": 2811
+}

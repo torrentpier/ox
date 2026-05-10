@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 36279,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 8914,
+  "last_post_date": 1373469844,
+  "node_id": 57,
+  "post_date": 1373462262,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 36279,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Не работает мульти ссылки как сделать такие ссылки bbcode?<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"html\">[url=Скачать тест]http://test.ru[/url]\n[url=&quot;Скачать тест&quot;]http://test.ru[/url]\n[url Скачать тест]http://test.ru[/url]</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1373462262,
+      "user_id": 322,
+      "user_title": "User",
+      "username": "botyk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 36289,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>botyk</b>, а разве ссылку с текстом не надо поменять местами ?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1373467215,
+      "user_id": 729,
+      "user_title": "User",
+      "username": "Wertos"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 36299,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ой я тупой извините меня за флуд.<br />\n<br />\n<b>Wertos</b>,Спасибо!",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1373469844,
+      "user_id": 322,
+      "user_title": "User",
+      "username": "botyk"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "ne-rabotaet-mul-ti-ssylki",
+  "sticky": false,
+  "tags": [],
+  "title": "Не работает мульти ссылки",
+  "url_path": "/threads/ne-rabotaet-mul-ti-ssylki.8914/",
+  "user_id": 322,
+  "username": "botyk",
+  "view_count": 1139
+}

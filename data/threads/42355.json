@@ -1,0 +1,107 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 97117,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 42355,
+  "last_post_date": 1742049474,
+  "node_id": 111,
+  "post_date": 1741674876,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1741674872,
+          "file_size": 6648,
+          "filename": "Cattle.webp",
+          "height": 343,
+          "id": 6388,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/cattle-webp.6388/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6392-921e5090a4f5bf87db249c0cb261be23.jpg?hash=jFIp-r3dyo",
+          "width": 302
+        }
+      ],
+      "id": 97117,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier Cattle. Версия 2.4.5-rc.4</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/6388/\" alt=\"Cattle.webp\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/releases/tag/v2.4.5-rc.4\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.4.5-rc.4 · torrentpier/torrentpier</a><br />\n<br />\n<b>Чейнджлог:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/compare/v2.4.5-rc.3...v2.4.5-rc.4\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Comparing v2.4.5-rc.3...v2.4.5-rc.4 · torrentpier/torrentpier</a><br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-rocket-features\"></a>🚀 Features&#8203;<a class=\"hoverLink\" href=\"#-rocket-features\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(captcha)</i> Added Text Captcha provider (<a href=\"https://github.com/torrentpier/torrentpier/pull/1839\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1839</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/74ea1573b298be5a935caaca0b3cc57cb1e9264a\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">74ea157</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(show post bbcode)</i> Added &#039;only_for_first_post&#039; param (<a href=\"https://github.com/torrentpier/torrentpier/pull/1830\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1830</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/4dcd1fb16e4e84acd1231ad821a2f05658b849ad\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">4dcd1fb</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(sitemap)</i> Update lastmod when a new reply in topic (<a href=\"https://github.com/torrentpier/torrentpier/pull/1737\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1737</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/bc95e14be328303bb37e31299661b03045e37d07\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">bc95e14</a>)</li>\n<li data-xf-list-type=\"ul\">Added $bb_cfg[&#039;auto_language_detection&#039;] parametr (<a href=\"https://github.com/torrentpier/torrentpier/pull/1835\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1835</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/b550fa59f9ee96ca89e5b6db880147bc72841e93\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">b550fa5</a>)</li>\n<li data-xf-list-type=\"ul\">Easter egg for the 20th anniversary of the TorrentPier! (<a href=\"https://github.com/torrentpier/torrentpier/pull/1831\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1831</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/f2e513dd8b0f82f4f02474db4b83d83904a93f29\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">f2e513d</a>)</li>\n<li data-xf-list-type=\"ul\">Added configuration files for nginx &amp; caddy (<a href=\"https://github.com/torrentpier/torrentpier/pull/1787\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1787</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/f7d394607e4ea5bb9b7f2b33692204a226a4d78b\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">f7d3946</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-bug-bug-fixes\"></a>🐛 Bug Fixes&#8203;<a class=\"hoverLink\" href=\"#-bug-bug-fixes\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(info.php)</i> Undefined array key &quot;show&quot; (<a href=\"https://github.com/torrentpier/torrentpier/pull/1836\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1836</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/f8c4e8fb14090bc7403f24e363603bad9e231351\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">f8c4e8f</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(tr_seed_bonus.php)</i> Incorrect GROUP BY (<a href=\"https://github.com/torrentpier/torrentpier/pull/1820\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1820</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/dfd4e5ebc9df916868210a7844f2a6f35e7b8aca\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">dfd4e5e</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-package-dependencies\"></a>📦 Dependencies&#8203;<a class=\"hoverLink\" href=\"#-package-dependencies\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(deps)</i> Bump bugsnag/bugsnag from 3.29.2 to 3.29.3 (<a href=\"https://github.com/torrentpier/torrentpier/pull/1837\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1837</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/b954815f5d0dce9520f65679e834d8bd49e571e0\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">b954815</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(deps)</i> Bump php-curl-class/php-curl-class from 11.0.3 to 11.0.4 (<a href=\"https://github.com/torrentpier/torrentpier/pull/1823\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1823</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/1c323a45d777b033155da9a2becec506215bd94c\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">1c323a4</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(deps)</i> Bump php-curl-class/php-curl-class from 11.0.1 to 11.0.3 (<a href=\"https://github.com/torrentpier/torrentpier/pull/1821\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1821</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/dedf35b794196034eb27d4125dff0798aed5f315\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">dedf35b</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-wastebasket-removed\"></a>🗑️ Removed&#8203;<a class=\"hoverLink\" href=\"#-wastebasket-removed\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(posting.php)</i> Unused &#039;U_VIEWTOPIC variable (<a href=\"https://github.com/torrentpier/torrentpier/pull/1818\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1818</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/03ebbda6be567d82d2a49fefe02356544fbd07cb\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">03ebbda</a>)</li>\n<li data-xf-list-type=\"ul\">Integrity checker 🥺🪦 (<a href=\"https://github.com/torrentpier/torrentpier/pull/1827\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1827</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/ba3ce885c8d84ae939a0ce9c79b97877d3aaab41\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">ba3ce88</a>)</li>\n<li data-xf-list-type=\"ul\">Redundant .htaccess files (<a href=\"https://github.com/torrentpier/torrentpier/pull/1826\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1826</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/912b080b16438b09f82fbc72a363589cc2f6209e\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">912b080</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-tractor-refactor\"></a>🚜 Refactor&#8203;<a class=\"hoverLink\" href=\"#-tractor-refactor\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\">Moved classes from Legacy folder to src root (<a href=\"https://github.com/torrentpier/torrentpier/pull/1828\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1828</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/92ce77ec0ec703c08a659419087a373f76e711f7\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">92ce77e</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-gear-miscellaneous\"></a>⚙️ Miscellaneous&#8203;<a class=\"hoverLink\" href=\"#-gear-miscellaneous\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(Caddyfile)</i> Some minor fixes (<a href=\"https://github.com/torrentpier/torrentpier/pull/1822\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1822</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/6f641aa9d8d7afb30920c054a43347393ea05cc4\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">6f641aa</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(README)</i> Fixed all grammatical errors, sentence structure and readibility (<a href=\"https://github.com/torrentpier/torrentpier/pull/1812\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1812</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/bea3b0bccf335970ea5826543d8fa223329ef077\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">bea3b0b</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(_cleanup.php)</i> Added CLI mode check (<a href=\"https://github.com/torrentpier/torrentpier/pull/1834\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1834</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/5dc9a5475c051911c579ea732ef52d7feb78e8ac\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">5dc9a54</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(announcer)</i> Some minor improvements (<a href=\"https://github.com/torrentpier/torrentpier/pull/1819\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1819</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/bdefed4dab3cc65330fcb9cb9750cc8e84beda1d\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">bdefed4</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(cliff)</i> Removed TorrentPier logo (<a href=\"https://github.com/torrentpier/torrentpier/pull/1817\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1817</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/7794242750b44183312a2a45c9f54c6afde12f0e\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">7794242</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(cliff)</i> Synced cliff-releases.toml with cliff.toml changes (<a href=\"https://github.com/torrentpier/torrentpier/pull/1815\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1815</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/f2aea92b3d79d72254e696fde31ad9b4bec5dcd0\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">f2aea92</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(cliff)</i> Added missing line breaks after body (<a href=\"https://github.com/torrentpier/torrentpier/pull/1814\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1814</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/2593f093a389a9c450725290862b99d911fbef5d\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">2593f09</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(installer)</i> Added cleanup step (for master builds) (<a href=\"https://github.com/torrentpier/torrentpier/pull/1838\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1838</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/dd721367c7dc9956861fcd33af7f9f822cf80011\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">dd72136</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(installer)</i> Some minor improvements (<a href=\"https://github.com/torrentpier/torrentpier/pull/1825\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1825</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/4f896854d3bb67300027f7542704f41c4869837f\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">4f89685</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(installer)</i> Some minor improvements (<a href=\"https://github.com/torrentpier/torrentpier/pull/1824\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1824</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/f3714f02f2c8fbfaccfdafb8f25a269664c48950\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">f3714f0</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(workflow)</i> Short release_name (<a href=\"https://github.com/torrentpier/torrentpier/pull/1816\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1816</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/c57db2104d7b8363d0b8ce8872ce90fc7410c724\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">c57db21</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(workflow)</i> Added workflow_dispatch for  schedule.yml (<a href=\"https://github.com/torrentpier/torrentpier/pull/1813\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1813</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/d54c07b3da00fc8bcba5413cd4ae3f3c9f6007bb\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">d54c07b</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(workflow)</i> Some improvements (<a href=\"https://github.com/torrentpier/torrentpier/pull/1811\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1811</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/3a9dd6a3c931cfbd682257c283a3296c4914548f\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">3a9dd6a</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(workflow)</i> Some improvements (<a href=\"https://github.com/torrentpier/torrentpier/pull/1810\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1810</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/c168c3956cf77886c14133ac10ec33aa0ae5bc4e\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">c168c39</a>)</li>\n<li data-xf-list-type=\"ul\">Replaced gregwar/captcha with my own fork (<a href=\"https://github.com/torrentpier/torrentpier/pull/1840\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1840</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/858556043d3e45218ea8e803786d6b6de6d485d0\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">8585560</a>)</li>\n<li data-xf-list-type=\"ul\">Created cleanup script (for releases preparation) (<a href=\"https://github.com/torrentpier/torrentpier/pull/1833\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1833</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/68bf26d0f4ab33f5394d26f425e53817f3464ac8\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">68bf26d</a>)</li>\n<li data-xf-list-type=\"ul\">Bring back missing cache &amp; log directories (<a href=\"https://github.com/torrentpier/torrentpier/pull/1832\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1832</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/249c9889890291d56317dd703414bdb57ecaa41f\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">249c988</a>)</li>\n<li data-xf-list-type=\"ul\">Some minor improvements (<a href=\"https://github.com/torrentpier/torrentpier/pull/1829\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1829</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/3b8ee4c4d3ab4631425fbe44f197b6a9bd7d158c\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">3b8ee4c</a>)</li>\n</ul><br />\nДля обновления на версию не нужно выполнять дополнительные запросы к базе данных.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1741674876,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97121,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Было бы здорово, если бы без регистрации можно было смотреть список изменений)",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1742047390,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97122,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Lange\">Было бы здорово, если бы без регистрации можно было смотреть список изменений)</blockquote>Я смотрел настройки в админке, что-то не смог найти параметр который отвечает за это.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1742049474,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "torrentpier-cattle-versia-2-4-5-rc-4-bird-fire",
+  "sticky": false,
+  "tags": [
+    "cattle",
+    "новая версия",
+    "релиз",
+    "ченжлог"
+  ],
+  "title": "TorrentPier Cattle. Версия 2.4.5-rc.4 🐦‍🔥",
+  "url_path": "/threads/torrentpier-cattle-versia-2-4-5-rc-4-bird-fire.42355/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 690
+}

@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 20190,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 50,
+        "title": "Graphics and styles for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 17,
+    "title": "Graphics and styles for TorrentPier (archive)"
+  },
+  "id": 1515,
+  "last_post_date": 1347272687,
+  "node_id": 17,
+  "post_date": 1347272687,
+  "posts": [
+    {
+      "attach_count": 3,
+      "attachments": [
+        {
+          "attach_date": 1347272527,
+          "file_size": 22304,
+          "filename": "биг.webp",
+          "height": 494,
+          "id": 1385,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/big-webp.1385/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1386-402faeab858db185b2c9c6cde2b0eff6.jpg?hash=9R8gtn8kPb",
+          "width": 467
+        },
+        {
+          "attach_date": 1347272530,
+          "file_size": 6680,
+          "filename": "смалл.webp",
+          "height": 140,
+          "id": 1386,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/small-webp.1386/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1387-945997c2ac0e9623140189d151fab1d0.jpg?hash=wHFMxnf7ar",
+          "width": 371
+        },
+        {
+          "attach_date": 1347272673,
+          "file_size": 82924,
+          "filename": "Спасибо.7z",
+          "height": 0,
+          "id": 1387,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/spasibo-7z.1387/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 20190,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В папке есть несколько ключевых файлов, с которыми нужно поработать:<br />\n<b>1.</b>Изображения для баннера small.jpg (75×75 px) и big.jpg (500×500 px) — маленький и большой (развёрнутый) уголок соответственно.<br />\nИх нужно поменять на свои изображения.<br />\n<b>2.</b>Нужно настроить пути к большим и маленьким SWF и JPEG-файлам в скрипте pagepeel.js. Все нужные настройки переменных в скрипте помечены комментариями . Остальные параметры меняете на свой страх и риск. Сохраните скрипт (в кодировке UTF-8).<br />\n<b>3.</b>В templates/default/page_header.tpl, между тегами &lt;head&gt;…&lt;/head&gt; необходимо прописать:&lt;script src=&quot;ваш_путь/PagePeel.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;<br />\n <br />\nВсё, баннер должен работать.<br />\n <br />\nПри тестировании локально, нужно отключить предупреждения о подключении к Интернету в браузерах, иначе проверить работу скрипта не получится.<br />\n <br />\nТакже можно использовать как рекламное место 😉<br />\n <br />\n<b>взято с другого ресурса </b>(если надо могу выложить ссыль и автора)",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1347272687,
+      "user_id": 782,
+      "user_title": "User",
+      "username": "qaqra"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "uglovoj-flash-banner",
+  "sticky": false,
+  "tags": [],
+  "title": "угловой flash-баннер",
+  "url_path": "/threads/uglovoj-flash-banner.1515/",
+  "user_id": 782,
+  "username": "qaqra",
+  "view_count": 2597
+}

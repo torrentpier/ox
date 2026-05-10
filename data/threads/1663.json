@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 22286,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1663,
+  "last_post_date": 1351955241,
+  "node_id": 57,
+  "post_date": 1351948927,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 22286,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подскажите пожалуйста как сделать: ?<br />\n <br />\n<b>Когда Модератор удаляет роздачу она не удалялась а переносилась в корзину</b><br />\n <br />\n$bb_cfg[&#039;trash_forum_id&#039;] = 246;<br />\nУдаляет из базы, не переносит в указанный форум или я не так понял",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1351948927,
+      "user_id": 2636,
+      "user_title": "User",
+      "username": "fail"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 22290,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "в правах форума разреши удаление только админам, а модерам скажи переносить",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1351952068,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 22299,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "тогда зачем это <b>$bb_cfg[&#039;trash_forum_id&#039;] = 246;</b> какая роль?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1351954918,
+      "user_id": 2636,
+      "user_title": "User",
+      "username": "fail"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 22300,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "форум-корзина. используется в крон-задаче. ну и в некоторых модах.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1351955241,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "udalenie-moderatorom",
+  "sticky": false,
+  "tags": [],
+  "title": "Удаление Модератором!",
+  "url_path": "/threads/udalenie-moderatorom.1663/",
+  "user_id": 2636,
+  "username": "fail",
+  "view_count": 979
+}

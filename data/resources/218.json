@@ -1,0 +1,124 @@
+{
+  "category": {
+    "description": "Section with all templates for TorrentPier.",
+    "id": 5,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Templates",
+    "view_url": "https://torrentpier.com/resources/categories/templates.5/"
+  },
+  "current_files": [
+    {
+      "filename": "Шаблон Salafit [2.1.1].zip",
+      "id": 3650,
+      "local_path": null,
+      "r2_key": null,
+      "size": 208393,
+      "src_url": "https://torrentpier.com/api/resource-versions/298/download?file=3650"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "adapt",
+    "installation": "[SPOILER=\"Инструкция\"]\n[CODE]##############################################################\n## Название: Шаблон \"Salafit\" beta\n## Автор: ChihPyh\n## Переделка: botyk\n## Проверен в браузерах: IE, Opera, Mozilla, Google Chrome\n## Версия шаблона: v1.0 beta\n## Валидация: HTML5\n##############################################################\n\nОписание: Шаблон \"Salafit\" beta - светло-синий шаблон для сайта любой тематики.\nКрасивый шаблон, подойдет любителям светло-синего цвета. Шаблон выполнен на HTML5 и CSS3. Ширина контента 760 пикселей.\n\n1) Все содержимое, заливаем в корень сайта кроме \"Установка.txt\".\n\n2) Заходим в админку (На Всяки случи очистить кэш браузера)\n   Очистить кеш: Datastore, Весь кеш, Шаблона\n\n3) Все шаблон готов к использованию![/CODE]\n[/SPOILER]",
+    "owner": "ChihPyh, botyk",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1429571447,
+      "file_size": 131026,
+      "filename": "4ffcacadcca853f9c8e354620d886fc4.webp",
+      "height": 2081,
+      "id": 3647,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/4ffcacadcca853f9c8e354620d886fc4-webp.3647/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3651-73c3d5ae1f9a374651a12895ecafbb24.jpg?hash=gid7wrT3Wj",
+      "width": 1264
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> шаблон, простой и легкий в белых тонах.",
+  "download_count": 555,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/218.jpg?1429571493",
+  "id": 218,
+  "is_fileless": null,
+  "last_update": 1429571545,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1429571484,
+  "resource_state": "visible",
+  "slug": "sablon-salafit",
+  "tag_line": "Шаблон, простой и легкий в белых тонах.",
+  "tags": [],
+  "title": "Шаблон «Salafit»",
+  "url_path": "/resources/sablon-salafit.218/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.2.0",
+  "versions": [
+    {
+      "download_count": 341,
+      "files": [
+        {
+          "filename": "Шаблон Salafit [2.1.1].zip",
+          "id": 3650,
+          "local_path": null,
+          "r2_key": null,
+          "size": 208393,
+          "src_url": "https://torrentpier.com/api/resource-versions/298/download?file=3650"
+        }
+      ],
+      "id": 298,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1429571545,
+      "version_state": "visible",
+      "version_string": "1.2.0",
+      "view_url": "https://torrentpier.com/resources/sablon-salafit.218/version/298/"
+    },
+    {
+      "download_count": 111,
+      "files": [
+        {
+          "filename": "Шаблон Salafit [2.1].zip",
+          "id": 3649,
+          "local_path": null,
+          "r2_key": null,
+          "size": 208198,
+          "src_url": "https://torrentpier.com/api/resource-versions/297/download?file=3649"
+        }
+      ],
+      "id": 297,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1429571529,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/sablon-salafit.218/version/297/"
+    },
+    {
+      "download_count": 105,
+      "files": [
+        {
+          "filename": "Шаблон Salafit [R590].zip",
+          "id": 3648,
+          "local_path": null,
+          "r2_key": null,
+          "size": 208597,
+          "src_url": "https://torrentpier.com/api/resource-versions/296/download?file=3648"
+        }
+      ],
+      "id": 296,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1429571484,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/sablon-salafit.218/version/296/"
+    }
+  ],
+  "view_count": 854
+}

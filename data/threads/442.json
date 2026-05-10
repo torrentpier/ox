@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 5274,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 442,
+  "last_post_date": 1320985778,
+  "node_id": 57,
+  "post_date": 1320820493,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5274,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Где в viewtopic.tpl находится первое сообещние?<br />\nт.е хочу сделать что бы в первом сообщении (автора темы) в теме был определенный &lt;тег&gt;<br />\nа в последующих сообщениях в этой теме уже его не было.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1320820493,
+      "user_id": 152,
+      "user_title": "User",
+      "username": "levantuev"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5281,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "&lt;!-- IF postrow.IS_FIRST_POST --&gt;<br />\n<br />\nЗЫ: можно иногда и в php заглядывать для интереса 🙂",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1320823925,
+      "user_id": 8,
+      "user_title": "User",
+      "username": "fly_indiz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5285,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Да да да, извините что такой торопливый. все сделал...<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&#039;SOCNETWORKS&#039;=&gt; ($postrow[$i][&#039;user_id&#039;] == $t_data[&#039;topic_poster&#039;] and $i == 0) ? true : false,</pre>в tpl:<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">&lt;!-- IF postrow.SOCNETWORKS --&gt;&lt;!-- ENDIF --&gt;</pre>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1320825402,
+      "user_id": 152,
+      "user_title": "User",
+      "username": "levantuev"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5370,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<span style=\"font-size: 13px\"><span style=\"font-family: 'Consolas'\">причем тут SOCNETWORKS ?? я ж написал как правильно</span></span>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1320985778,
+      "user_id": 8,
+      "user_title": "User",
+      "username": "fly_indiz"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "gde-v-viewtopic-tpl-nahoditsa-avtor-temy",
+  "sticky": false,
+  "tags": [],
+  "title": "Где в viewtopic.tpl находится Автор темы",
+  "url_path": "/threads/gde-v-viewtopic-tpl-nahoditsa-avtor-temy.442/",
+  "user_id": 152,
+  "username": "levantuev",
+  "view_count": 1338
+}

@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 70054,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 58,
+    "title": "Suggestions for improving TorrentPier"
+  },
+  "id": 31922,
+  "last_post_date": 1419356750,
+  "node_id": 58,
+  "post_date": 1419006231,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 70054,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Но вначале нужно узнать как работает этот механизм в utorrent. Может у вас получится 🙂<br />\nПо сути это подписка на обновление раздачи на трекере (добавление новой серии в раздачу)<br />\n<br />\nРанее я предпринимал попытку узнать как работает эта фича, но безуспешно <a href=\"http://toster.ru/q/51204\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://toster.ru/q/51204</a><br />\nТак же пытался выяснить о ней у разработчиков utorrent , ответ был примерно  такой же :<br />\n<br />\n<i>For the torrent to be updatable, it has to have either a «collections» key or «similar» key or both, and torrent downloaded by the update-url must be signed by the original torrent&#039;s originator.<br />\n<br />\n«collections» key or «similar» key is described in:<br />\n<a href=\"http://www.bittorrent.org/beps/bep_0038.html\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">www.bittorrent.org/beps/bep_0038.html</a><br />\n<br />\nupdate-url is described in:<br />\n<a href=\"http://www.bittorrent.org/beps/bep_0039.html\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">www.bittorrent.org/beps/bep_0039.html</a><br />\n<br />\nthe signing is described in:<br />\n<a href=\"http://www.bittorrent.org/beps/bep_0035.html\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">www.bittorrent.org/beps/bep_0035.html</a><br />\n<br />\nthanks,<br />\n<br />\n-Jeanette</i>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1419006231,
+      "user_id": 5013,
+      "user_title": "User",
+      "username": "grey_rat"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 70061,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Стоит в планах на разработку.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1419013272,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 70309,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "На рутрекере один человек сделал программу  просмотра и редактирования торрент-файла <a href=\"http://rutracker.org/forum/viewtopic.php?t=4872319\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://rutracker.org/forum/viewtopic.php?t=4872319</a><br />\nЕсли загрузить специальный торрент-файл, который сделали разработчики utorrent (со встроенной ссылкой обновления) в программе показывается информация и дерево по этим специальным опциям<br />\n<img src=\"https://dl.dropboxusercontent.com/u/43001898/tpeer/tupd.JPG\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1419356750,
+      "user_id": 5013,
+      "user_title": "User",
+      "username": "grey_rat"
+    }
+  ],
+  "prefix_id": 32,
+  "reply_count": 2,
+  "slug": "avtomaticeskoe-obnovlenie-torrent-fajlov-u-uzera",
+  "sticky": false,
+  "tags": [],
+  "title": "Автоматическое обновление торрент-файлов у юзера",
+  "url_path": "/threads/avtomaticeskoe-obnovlenie-torrent-fajlov-u-uzera.31922/",
+  "user_id": 5013,
+  "username": "grey_rat",
+  "view_count": 4188
+}

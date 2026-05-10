@@ -1,0 +1,81 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 91903,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 41790,
+  "last_post_date": 1499360238,
+  "node_id": 80,
+  "post_date": 1499281570,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1499281553,
+          "file_size": 10552,
+          "filename": "7E8C540d.webp",
+          "height": 488,
+          "id": 4877,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/7e8c540d-webp.4877/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4881-a82e3aaa5625ebb5b0687f0dd110e76d.jpg?hash=wnUyrroNUg",
+          "width": 301
+        }
+      ],
+      "id": 91903,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Не работает переход",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1499281570,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91907,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/462/\">Virtuoz</a>, в соседней теме описано.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1499360238,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 26,
+  "reply_count": 1,
+  "slug": "perehody-po-forumu",
+  "sticky": false,
+  "tags": [],
+  "title": "Переходы по форуму",
+  "url_path": "/threads/perehody-po-forumu.41790/",
+  "user_id": 462,
+  "username": "Virtuoz",
+  "view_count": 806
+}

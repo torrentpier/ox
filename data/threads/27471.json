@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 64593,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 27471,
+  "last_post_date": 1413473531,
+  "node_id": 57,
+  "post_date": 1413311194,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 64593,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Есть два выделенных сервера<br />\n<br />\nНа первом стоит сам трекер плюс установлен transmission в роли сидбокса<br />\nНа втором тоже стоит transmission<br />\n<br />\nНа первом и втором с загрузкой все хорошо, но на втором стали появляться проблемы с отдачей<br />\nЗагрузка 11мбайт<br />\nОтдача 50кбайт<br />\n<br />\nНа первом сервере прописал правила через ssh iptables -A INPUT -s IP-АДРЕС-2-СЕРВЕРА -j ACCEPT<br />\n<br />\nВроде увеличилась отдача до 200, но потом опять ступор<br />\n<br />\nПытаюсь качнуть раздачу с трекера. Вот что выдает (сиды 1 и 2 сервер)<br />\n<br />\n<img src=\"http://i6.imageban.ru/out/2014/10/14/d789a3d59dfd5140596d9e44088ae714.png\" alt=\"\" /> <br />\n<br />\nСмущает количество запросов. Три и не более. Также флаг d не радует<br />\n<br />\nВ каждом демоне по 2000 активных торрентов.<br />\nВот конфиг<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\">{\n    &quot;alt-speed-down&quot;: 99999,\n    &quot;alt-speed-enabled&quot;: false,\n    &quot;alt-speed-time-begin&quot;: 540,\n    &quot;alt-speed-time-day&quot;: 127,\n    &quot;alt-speed-time-enabled&quot;: false,\n    &quot;alt-speed-time-end&quot;: 1020,\n    &quot;alt-speed-up&quot;: 99999,\n    &quot;bind-address-ipv4&quot;: &quot;0.0.0.0&quot;,\n    &quot;bind-address-ipv6&quot;: &quot;::&quot;,\n    &quot;blocklist-enabled&quot;: false,\n    &quot;blocklist-url&quot;: &quot;http://www.example.com/blocklist&quot;,\n    &quot;cache-size-mb&quot;: 96,\n    &quot;dht-enabled&quot;: true,\n    &quot;download-dir&quot;: &quot;/home/trnsmssn/Downloads&quot;,\n    &quot;download-limit&quot;: 100,\n    &quot;download-limit-enabled&quot;: 0,\n    &quot;download-queue-enabled&quot;: false,\n    &quot;download-queue-size&quot;: 10,\n    &quot;encryption&quot;: 0,\n    &quot;idle-seeding-limit&quot;: 30,\n    &quot;idle-seeding-limit-enabled&quot;: false,\n    &quot;incomplete-dir&quot;: &quot;/root/Downloads&quot;,\n    &quot;incomplete-dir-enabled&quot;: false,\n    &quot;lpd-enabled&quot;: true,\n    &quot;max-peers-global&quot;: 200,\n    &quot;message-level&quot;: 2,\n    &quot;peer-congestion-algorithm&quot;: &quot;&quot;,\n    &quot;peer-limit-global&quot;: 2000,\n    &quot;peer-limit-per-torrent&quot;: 10,\n    &quot;peer-port&quot;: 51413,\n    &quot;peer-port-random-high&quot;: 65535,\n    &quot;peer-port-random-low&quot;: 49152,\n    &quot;peer-port-random-on-start&quot;: false,\n    &quot;peer-socket-tos&quot;: &quot;default&quot;,\n    &quot;pex-enabled&quot;: true,\n    &quot;port-forwarding-enabled&quot;: false,\n    &quot;preallocation&quot;: 1,\n    &quot;prefetch-enabled&quot;: 1,\n    &quot;queue-stalled-enabled&quot;: true,\n    &quot;queue-stalled-minutes&quot;: 15,\n    &quot;ratio-limit&quot;: 2,\n    &quot;ratio-limit-enabled&quot;: false,\n    &quot;rename-partial-files&quot;: true,\n    &quot;rpc-authentication-required&quot;: true,\n    &quot;rpc-bind-address&quot;: &quot;0.0.0.0&quot;,\n    &quot;rpc-enabled&quot;: true,\n    &quot;rpc-password&quot;: &quot;{cbbcc817228183139f04a11cc2aa97bb121c5e61N7n3IHgV&quot;,\n    &quot;rpc-port&quot;: 9091,\n    &quot;rpc-url&quot;: &quot;/transmission/&quot;,\n    &quot;rpc-username&quot;: &quot;transmission&quot;,\n    &quot;rpc-whitelist&quot;: &quot;127.0.0.1&quot;,\n    &quot;rpc-whitelist-enabled&quot;: false,\n    &quot;scrape-paused-torrents-enabled&quot;: true,\n    &quot;script-torrent-done-enabled&quot;: false,\n    &quot;script-torrent-done-filename&quot;: &quot;&quot;,\n    &quot;seed-queue-enabled&quot;: false,\n    &quot;seed-queue-size&quot;: 999,\n    &quot;speed-limit-down&quot;: 3000,\n    &quot;speed-limit-down-enabled&quot;: false,\n    &quot;speed-limit-up&quot;: 100,\n    &quot;speed-limit-up-enabled&quot;: false,\n    &quot;start-added-torrents&quot;: true,\n    &quot;trash-original-torrent-files&quot;: false,\n    &quot;umask&quot;: 18,\n    &quot;upload-limit&quot;: 100,\n    &quot;upload-limit-enabled&quot;: 0,\n    &quot;upload-slots-per-torrent&quot;: 14,\n    &quot;utp-enabled&quot;: true\n}</pre><br />\nЧто не так? куда копать?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1413311194,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 64598,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Посоветуйте по поводу этих параметров<br />\n<span style=\"font-size: 12px\"><b>Leech expire factor 60min</b><br />\n<b><span style=\"font-size: 12px\"><b>Announce интервал 4700sec</b></span><br />\n</b></span>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1413316845,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 64713,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Вася\"><b>Leech expire factor 60min<br />\n<span style=\"font-size: 12px\"><b>Announce интервал 4700sec</b></span></b></blockquote>Вообще большие значения не повредят, только время анонса я бы все же уменьшил. А так еще советовал бы проверить отдачу на сервере в целом - может проблема в канале, а не торрент-клиенте.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1413406775,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 64753,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "4700 чет уж очень много, если аннонсер бинарный и пиров не больше 100к можно и 2400 оставить с чистой совестью, а то и меньше... да даже для php крайне большой интервал",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1413451757,
+      "user_id": 5319,
+      "user_title": "User",
+      "username": "Softwarez"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 64789,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Была когда то ошибка <b><a href=\"https://www.google.ru/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=2&amp;cad=rja&amp;uact=8&amp;ved=0CCcQFjAB&amp;url=http%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.0%2Fen%2Fgone-away.html&amp;ei=TeQ_VOK8FOrjywOEqoKoDA&amp;usg=AFQjCNHNlnysfEf8VTn_IIIkSwABzcmCxw&amp;sig2=4NBmEO8JCTaKLejp7JvqfQ\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">MySQL server has gone away</a> </b>поэтому увеличил<br />\nСейчас попробую тогда 1500",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1413473531,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "optimal-nye-nastrojki-transmission",
+  "sticky": false,
+  "tags": [],
+  "title": "Оптимальные настройки transmission",
+  "url_path": "/threads/optimal-nye-nastrojki-transmission.27471/",
+  "user_id": 0,
+  "username": "ler",
+  "view_count": 5903
+}

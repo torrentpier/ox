@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 13971,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1131,
+  "last_post_date": 1332205188,
+  "node_id": 57,
+  "post_date": 1332203862,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13971,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Собственно хочу показать php что считывать нужно с пользователя оставившего комментарий, а не с моего профиля, дело обстоит так: (пытаюсь вычислить пол оставившего сообщение в теме)<br />\n<pre class=\"xfBb-code\" data-lang=\"php\"> if($userdata[&#039;user_gender&#039;] == 0){\nланг Не определился\n \n}\nelse if($userdata[&#039;user_gender&#039;] == 1){\nланг Мужской\n \n}\nelse{\nланг Женский\n \n}</pre>Но  как я понял  $userdata считывает мой собственный пол и присваивает его потом каждому пользователю , который запостил в теме.  Прошу помочь разобраться с ситуацией.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1332203862,
+      "user_id": 887,
+      "user_title": "User",
+      "username": "r3vizor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13972,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "для топика<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">    if($postrow[$i][&#039;user_gender&#039;] == 1) $lang[&#039;GENDER_SELECT&#039;][1];\nelseif($postrow[$i][&#039;user_gender&#039;] == 2) $lang[&#039;GENDER_SELECT&#039;][2];\nelseif($postrow[$i][&#039;user_gender&#039;] == 0) $lang[&#039;GENDER_SELECT&#039;][0];</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1332205188,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "kakoj-funkciej-vyzyvaetsa-id-kommentiruusego-pol-zovatela",
+  "sticky": false,
+  "tags": [],
+  "title": "Какой функцией вызывается id комментирующего пользователя",
+  "url_path": "/threads/kakoj-funkciej-vyzyvaetsa-id-kommentiruusego-pol-zovatela.1131/",
+  "user_id": 887,
+  "username": "r3vizor",
+  "view_count": 1145
+}

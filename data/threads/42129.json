@@ -1,0 +1,134 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94903,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 42129,
+  "last_post_date": 1683778866,
+  "node_id": 80,
+  "post_date": 1683527155,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94903,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "После обновления движка (Kouprey 2.4.0.5) я наблюдаю такую картину:<br />\n<br />\nУ меня в торент-клиенте показывается порт 4830<br />\nНо на сайте (в админке) мой порт как клиента 13232<br />\n<br />\nУ другого юзера такая же фигня, 20207 и 20215 соответственно.<br />\n<br />\nИ порты постоянно меняются (у торент-клиентов), при каждой перезагрузке например, или просто со временем. А сервер зафиксировал один порт и в другие (видимо) не пускает.<br />\n<br />\nИз-за этого почти все раздачи в торент-клиенте (с новым портом) не могут подцепиться и показывают Internal server error.<br />\n<br />\nЯ не могу обойти это даже ручным добавлением пира в торент-клиенте (потому что порт на сайте <b>не</b> тот же что и в клиенте).<br />\n<br />\nМожет быть это не баг, и есть какой-то способ настроить автоматический подхват портов при обращении от торент-клиента?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1683527155,
+      "user_id": 10674,
+      "user_title": "User",
+      "username": "Iris"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94906,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "UPD информации. После запуска клиента показывается что всё ок, стоит статус &quot;работает&quot;. Но стоит добавить новый трекер в список анонсов (или удалить какой-нибудь, даже неработающий), анонс на мой трекер сразу сыпется с Internal server error. Переанонсирование не помогает. Перезапуск клиента не помогает.<br />\n<br />\nПри этом, сервер упорно показывает что всё ок, и я стою на раздаче (но de-facto ко мне никто не может подцепиться и скачать). Я выключаю клиент - сервер сразу реагирует, и выписывает меня из активных сидов. От клиента это не зависит, пробовал четыре разных - одинаковый результат. У всех юзеров такая же проблема, вне зависимости от провайдера и торент-клиента.<br />\n<br />\nВ связи с простоем трекера, если необходимо, могу предоставить небольшую финансовую мотивацию за решение данной проблемы.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1683675407,
+      "user_id": 10674,
+      "user_title": "User",
+      "username": "Iris"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94907,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Я надеюсь это не qBittorent?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1683736973,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94908,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">Я надеюсь это не qBittorent?</blockquote>Он самый.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1683747166,
+      "user_id": 10674,
+      "user_title": "User",
+      "username": "Iris"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1683778864,
+          "file_size": 13398,
+          "filename": "1683778772804.webp",
+          "height": 365,
+          "id": 5413,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1683778772804-webp.5413/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5417-dee91214c7a6a44179c333f0b8803b21.jpg?hash=obVB5TNzm4",
+          "width": 1170
+        }
+      ],
+      "id": 94909,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "в настройках роутера на свой комп",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1683778866,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    }
+  ],
+  "prefix_id": 24,
+  "reply_count": 4,
+  "slug": "obnovlenie-porta-klienta",
+  "sticky": false,
+  "tags": [
+    "торрент-клиент",
+    "торрент-трекер"
+  ],
+  "title": "Обновление порта клиента",
+  "url_path": "/threads/obnovlenie-porta-klienta.42129/",
+  "user_id": 10674,
+  "username": "Iris",
+  "view_count": 1401
+}

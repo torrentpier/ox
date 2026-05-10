@@ -1,0 +1,79 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95342,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 50,
+    "title": "Graphics and styles for TorrentPier"
+  },
+  "id": 42197,
+  "last_post_date": 1700186561,
+  "node_id": 50,
+  "post_date": 1700186561,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1700186549,
+          "file_size": 23468,
+          "filename": "Снимок.webp",
+          "height": 375,
+          "id": 5607,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-webp.5607/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5611-80146258ab7ab5aa3bd9ddafe2f95f33.jpg?hash=2IkuwIP73D",
+          "width": 789
+        },
+        {
+          "attach_date": 1700186549,
+          "file_size": 472041,
+          "filename": "NickEffect.zip",
+          "height": 0,
+          "id": 5608,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/nickeffect-zip.5608/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 95342,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<div style=\"text-align: center\"><b><span style=\"color: rgb(41, 105, 176)\"><span style=\"font-size: 26px\">Анимация Ники<br />\n<img src=\"https://torrentpier.com/attachments/5607/\" alt=\"Снимок.PNG\" /></span></span></b>&#8203;</div><b>Установка main.css :</b><br />\n<pre class=\"xfBb-code\" data-lang=\"css\">.colorAdmin, a.colorAdmin, a.colorAdmin:visited {\n    color: #DE0000;\n    font-weight: bold;\n    text-shadow: 0px 0px 7px;\n    background: url(../images/NickEffect/AdminEffect.gif) !important;\n}</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1700186561,
+      "user_id": 7621,
+      "user_title": "User",
+      "username": "DimaUZB2001"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "animacia-niki",
+  "sticky": false,
+  "tags": [],
+  "title": "Анимация Ники",
+  "url_path": "/threads/animacia-niki.42197/",
+  "user_id": 7621,
+  "username": "DimaUZB2001",
+  "view_count": 666
+}

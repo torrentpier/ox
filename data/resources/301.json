@@ -1,0 +1,105 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] BBCode - WebTor.io онлайн просмотр.zip",
+      "id": 6092,
+      "local_path": null,
+      "r2_key": null,
+      "size": 1243,
+      "src_url": "https://torrentpier.com/api/resource-versions/529/download?file=6092"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1721810656,
+      "file_size": 57330,
+      "filename": "firefox_C5OWCUBtft.webp",
+      "height": 190,
+      "id": 6093,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_c5owcubtft-webp.6093/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6097-40825679165defe14f7353842f8671f3.jpg?hash=nd2sg1uDKh",
+      "width": 1175
+    },
+    {
+      "attach_date": 1721810673,
+      "file_size": 59422,
+      "filename": "firefox_r7Pc3ECPfX.webp",
+      "height": 495,
+      "id": 6094,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_r7pc3ecpfx-webp.6094/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6098-2bf424c4d9ed0b8427c0ecf52c413f30.jpg?hash=yBZV5uWVWc",
+      "width": 972
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Добавляет интеграцию сервиса <a href=\"https://webtor.io/#/ru/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">WebTor.io</a>. Для вставки плеера нужно в BBCode указать магнит-ссылку на торрент (можно скопировать прям из созданой раздачи).<br />\n<br />\n<b>Совместимость: </b>все версии.<br />\n<hr />❤️ Поддержать автора WebTor.io - <a href=\"https://www.patreon.com/join/pavel_tatarskiy\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Patreon</a>",
+  "download_count": 228,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/301.jpg?1721821868",
+  "id": 301,
+  "is_fileless": null,
+  "last_update": 1721810676,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1721810676,
+  "resource_state": "visible",
+  "slug": "bbcode-webtor-io-onlajn-prosmotr-torrent-fajlov",
+  "tag_line": "Добавляет интеграцию сервиса WebTor.io.",
+  "tags": [
+    "мод",
+    "моды",
+    "онлайн просмотр",
+    "онлайн просмотр торрент файлов"
+  ],
+  "title": "BBCode: Webtor.io - Онлайн просмотр торрент-файлов",
+  "url_path": "/resources/bbcode-webtor-io-onlajn-prosmotr-torrent-fajlov.301/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.0",
+  "versions": [
+    {
+      "download_count": 228,
+      "files": [
+        {
+          "filename": "[FULL] BBCode - WebTor.io онлайн просмотр.zip",
+          "id": 6092,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1243,
+          "src_url": "https://torrentpier.com/api/resource-versions/529/download?file=6092"
+        }
+      ],
+      "id": 529,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1721810676,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/bbcode-webtor-io-onlajn-prosmotr-torrent-fajlov.301/version/529/"
+    }
+  ],
+  "view_count": 835
+}

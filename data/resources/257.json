@@ -1,0 +1,122 @@
+{
+  "category": {
+    "description": "Section with all paid modifications for TorrentPier.",
+    "id": 2,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Paid",
+    "view_url": "https://torrentpier.com/resources/categories/paid.2/"
+  },
+  "current_files": [],
+  "custom_fields": {
+    "additional_content": "Стол заказов от _Xz_",
+    "compability_check": "yes",
+    "owner": "dredd",
+    "sql": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1488999971,
+      "file_size": 55066,
+      "filename": "Screenshot_1.webp",
+      "height": 664,
+      "id": 4736,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot_1-webp.4736/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4740-34db55d11c5f38244b4db9c948d555d5.jpg?hash=ywxUmTf8P5",
+      "width": 1365
+    },
+    {
+      "attach_date": 1488999971,
+      "file_size": 47626,
+      "filename": "Screenshot_2.webp",
+      "height": 663,
+      "id": 4737,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot_2-webp.4737/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4741-0317389ed5232fb43bfe67cc5e99b89e.jpg?hash=g3szquDrAA",
+      "width": 1365
+    },
+    {
+      "attach_date": 1488999972,
+      "file_size": 44410,
+      "filename": "Screenshot_3.webp",
+      "height": 665,
+      "id": 4738,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot_3-webp.4738/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4742-a402d785b928632d39ddbce92278c2fd.jpg?hash=oewDoOcEci",
+      "width": 1365
+    },
+    {
+      "attach_date": 1488999972,
+      "file_size": 53786,
+      "filename": "Screenshot_4.webp",
+      "height": 662,
+      "id": 4739,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot_4-webp.4739/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4743-1a8cbc736eb796a01c3a9450a1ee2b9f.jpg?hash=UHOH1-GZO0",
+      "width": 1365
+    },
+    {
+      "attach_date": 1488999973,
+      "file_size": 56684,
+      "filename": "Screenshot_5.webp",
+      "height": 663,
+      "id": 4740,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot_5-webp.4740/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4744-1893c2057b158ea21e889372a2b25dc4.jpg?hash=5tm0bkpjS-",
+      "width": 1365
+    }
+  ],
+  "description_parsed": "Добавляет возможность искать, помимо фильмов, игры.<br />\n<a href=\"https://torrentpier.com/attachments/4736/\"><img src=\"https://torrentpier.com/data/attachments/4/4740-34db55d11c5f38244b4db9c948d555d5.jpg?hash=ywxUmTf8P5\" alt=\"Screenshot_1.webp\" /></a> <a href=\"https://torrentpier.com/attachments/4737/\"><img src=\"https://torrentpier.com/data/attachments/4/4741-0317389ed5232fb43bfe67cc5e99b89e.jpg?hash=g3szquDrAA\" alt=\"Screenshot_2.webp\" /></a> <a href=\"https://torrentpier.com/attachments/4738/\"><img src=\"https://torrentpier.com/data/attachments/4/4742-a402d785b928632d39ddbce92278c2fd.jpg?hash=oewDoOcEci\" alt=\"Screenshot_3.webp\" /></a> <a href=\"https://torrentpier.com/attachments/4739/\"><img src=\"https://torrentpier.com/data/attachments/4/4743-1a8cbc736eb796a01c3a9450a1ee2b9f.jpg?hash=UHOH1-GZO0\" alt=\"Screenshot_4.webp\" /></a> <a href=\"https://torrentpier.com/attachments/4740/\"><img src=\"https://torrentpier.com/data/attachments/4/4744-1893c2057b158ea21e889372a2b25dc4.jpg?hash=5tm0bkpjS-\" alt=\"Screenshot_5.webp\" /></a>",
+  "download_count": 0,
+  "external_url": null,
+  "icon_url": null,
+  "id": 257,
+  "is_fileless": null,
+  "last_update": 1603573095,
+  "rating_avg": 5,
+  "rating_count": 1,
+  "resource_date": 1489000142,
+  "resource_state": "visible",
+  "slug": "parser-playground-dla-stola-zakazov",
+  "tag_line": "добавляет возможность искать нужные игры для стола заказов",
+  "tags": [],
+  "title": "Парсер Playground для стола заказов",
+  "url_path": "/resources/parser-playground-dla-stola-zakazov.257/",
+  "user_id": 2684,
+  "username": "dredd",
+  "version": "1.0",
+  "versions": [
+    {
+      "download_count": 0,
+      "files": [],
+      "id": 377,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1489000142,
+      "version_state": "visible",
+      "version_string": "1.0",
+      "view_url": "https://torrentpier.com/resources/parser-playground-dla-stola-zakazov.257/version/377/"
+    }
+  ],
+  "view_count": 857
+}

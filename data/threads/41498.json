@@ -1,0 +1,102 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 88114,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41498,
+  "last_post_date": 1470252671,
+  "node_id": 57,
+  "post_date": 1470072509,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88114,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Какие то крон задачи не отрабатывают, например перестал считается сид рейтинг. Скорее всего до них очередь не доходит.<br />\n<br />\nКак можно узнать сколько времени выполняется каждая задача? И какая не была выполнена?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1470072509,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88116,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/6370/\">zxc</a>, в админке в управлении кроном задачи по очереди выполните, поймете.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1470079490,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1470252350,
+          "file_size": 74802,
+          "filename": "2016-08-03_22-24-38.webp",
+          "height": 519,
+          "id": 4464,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2016-08-03_22-24-38-webp.4464/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4468-d312fcaf8a3449880ff1e2970e48dcf2.jpg?hash=NCC3EUOBFk",
+          "width": 540
+        }
+      ],
+      "id": 88140,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Да думал в движке есть такое, в логах крона не разобрался в цифрах, в итоге пришлось понавтыкать костылей в каждый файл типа<br />\n<code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\">$start = microtime(true);<br />\n<br />\n.....<br />\n<br />\n$time = microtime(true) - $start;<br />\nprintf(&#039; Время выполнения:%.4F сек.&#039;, $time);<br />\necho &quot;-medals_count_update - OK&quot;;<br />\necho &quot; Памяти сожрало:&quot;.convert_bytes(memory_get_usage(true)).&quot;&lt;br&gt;&quot;;</code><br />\n<a href=\"https://torrentpier.com/attachments/4464/\"><img src=\"https://torrentpier.com/data/attachments/4/4468-d312fcaf8a3449880ff1e2970e48dcf2.jpg?hash=NCC3EUOBFk\" alt=\"2016-08-03_22-24-38.webp\" /></a> <br />\n<br />\nНужно бы добавить вывод статы после запуска крон задач в админке. Вот так я вчера узнал, что у меня была крон задача, которая выполняла 90 тыс запросов UPDATE за раз 😱",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1470252671,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "ne-otrabatyvaut-kron-zadaci",
+  "sticky": false,
+  "tags": [],
+  "title": "Не отрабатывают крон задачи",
+  "url_path": "/threads/ne-otrabatyvaut-kron-zadaci.41498/",
+  "user_id": 6370,
+  "username": "sхс",
+  "view_count": 916
+}

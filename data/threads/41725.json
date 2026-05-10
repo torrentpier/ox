@@ -1,0 +1,123 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 91344,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 41725,
+  "last_post_date": 1495778552,
+  "node_id": 110,
+  "post_date": 1495658385,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1495656862,
+          "file_size": 8384,
+          "filename": "big-logo-t@0,5x.webp",
+          "height": 460,
+          "id": 4833,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/big-logo-t-0-5x-webp.4833/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4837-003d6ea5e858534d32b150863abe06f8.jpg?hash=4ugybWF6TR",
+          "width": 520
+        }
+      ],
+      "id": 91344,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1495669242,
+      "message_parsed": "Доброго времени суток.<br />\n<br />\nС самого появления TorrentPier как такового логотипа у нас не было. Были собранные самостоятельно и при помощи добровольцев простые клипартовые заглушки. Но так не может продолжаться вечно, а так как у нас есть планы по развитию проекта и планы большие - при помощи весьма талантливого дизайнера логотип у нас появился. Без долгих разговоров сразу же представляем вам его, потому что именно он будет диктовать все остальную линию визуального развития проекта:<br />\n<br />\n<div style=\"text-align: center\"><img src=\"https://torrentpier.com/attachments/4833/\" alt=\"big-logo-t@0,5x.webp\" />&#8203;</div><br />\nУ нас появился символ, так называемый маскот, в виде быка - и многие могут задаться вопросом, какое отношение он имеет ко всему этому, но обоснование куда проще, чем кажется. У слова <i>pier</i> есть множество толкований, и именно бык является одним из них. Сота на фоне тоже несет определенный смысл, ну и задает основную стилистику проекта - простые ровные линии, минимальное количество цветов и в то же время огромный потенциал к визуальной стилизации.<br />\n<br />\nПомимо маскота появился и новый лозунг, одновременно являющийся кратким и емким описанием проекта, но только на английском языке - <i>&quot;Bull-powered BitTorrent tracker engine&quot;</i>, потому что как бы нам не хотелось, но мы всеми силами будем стремиться к интернационализации проекта.<br />\n<br />\nЧто означает смена логотипа для простых пользователей? Новое визуальное представление о проекте и первый намек на полный редизайн, который состоится в версии 2.2.0, но об этом <a href=\"https://torrentpier.com/forum/threads/torrentpier-aurochs-i-data-reliza.41726/\" class=\"link link--internal\">в следующей новости</a>.<br />\n<br />\nСпасибо за внимание.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1495658385,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91354,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Годный логотип. Но например тут, цвет букв сделать белым лучше было бы. А то сейчас чёрные буквы на синем фоне так себе смотрятся.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1495778215,
+      "user_id": 1053,
+      "user_title": "User",
+      "username": "Alexander.S"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91355,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/1053/\">Alexander.S</a>, на форуме изменения дизайна будут, но потом, после релиза.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1495778269,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91356,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/1/\">Exile</a>, Да, уже на slack&#039;е прочитал сейчас 😉",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1495778552,
+      "user_id": 1053,
+      "user_title": "User",
+      "username": "Alexander.S"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "novoe-nacalo-novyj-logotip",
+  "sticky": false,
+  "tags": [
+    "бык",
+    "новости",
+    "новый логотип",
+    "редизайн"
+  ],
+  "title": "Новое начало. Новый логотип",
+  "url_path": "/threads/novoe-nacalo-novyj-logotip.41725/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 2014
+}

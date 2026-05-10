@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 17465,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 1365,
+  "last_post_date": 1337756234,
+  "node_id": 90,
+  "post_date": 1337597853,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 17465,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Собрал на досуге пакетеГ 😉<br />\n<a href=\"http://dump.ru/file/5737869\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Скачать файл nginx_1.2.0-1squeeze_i386.deb</a><br />\nможет кому пригодится<br />\nв конфиге есть ряд коментариев",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1337597853,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 17503,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "просьба!<br />\nЕсли нашли ошибку в пакете или какие-то замечания отписаться.<br />\nТак же могу собрать ряд пакетов и сделать отдельное зеркало для них, с кастомными конфигами.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1337756234,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "debian-nginx-custom-v-1-2-0-deb",
+  "sticky": false,
+  "tags": [],
+  "title": "Debian nginx custom v. 1.2.0 deb",
+  "url_path": "/threads/debian-nginx-custom-v-1-2-0-deb.1365/",
+  "user_id": 0,
+  "username": "kenny",
+  "view_count": 1354
+}

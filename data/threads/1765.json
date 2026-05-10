@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 23435,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 52,
+    "title": "Bug tracker archive"
+  },
+  "id": 1765,
+  "last_post_date": 1354180624,
+  "node_id": 52,
+  "post_date": 1354175954,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23435,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как исправить чтобы 2 торента не загружались в раздачу?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1354175954,
+      "user_id": 3161,
+      "user_title": "User",
+      "username": "Дмитрий"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23436,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "какая версия движка?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1354177532,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23438,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Torrent pier ll R400",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1354180624,
+      "user_id": 3161,
+      "user_title": "User",
+      "username": "Дмитрий"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "2-torrenta-v-razdace",
+  "sticky": false,
+  "tags": [],
+  "title": "2 торрента в раздаче",
+  "url_path": "/threads/2-torrenta-v-razdace.1765/",
+  "user_id": 3161,
+  "username": "Дмитрий",
+  "view_count": 1893
+}

@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 84160,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 41181,
+  "last_post_date": 1700853059,
+  "node_id": 3,
+  "post_date": 1432932137,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84160,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет.<br />\nХотелось бы обменяться опытом по рекламе на ресурсах. То есть кто что юзает.<br />\nСам использую в данный момент - sape, mainlink.<br />\n<br />\nSape - что то не радует совсем, очень низкая покупка ссылок.<br />\nmainlink - вроде нормально берут - что радует, в любой момент (минимум вывода суммы, помоему не указанно даже) можно вывести средства на кошель, в течении 15-20мин.<br />\nХотелось бы узнать отзывы по банерной рекламе, за показы. Но не жёсткой. Кликандеры - сразу в топку. Лёгкой рекламы не вредящей пользователям.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1432932137,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84162,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Adsense - долго, дешево, доход практически пассивный. Но внешне наиболее приятная из реклам.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1432942481,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84187,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\">Adsense - долго, дешево, доход практически пассивный. Но внешне наиболее приятная из реклам.</blockquote><br />\nAdsense может и заблокировать без причины. Года три назад мой сайт попал в блок вообще не из-за чего. Контент был легальный, все статьи написаны самостоятельно, однако в гугле решили меня кинуть))). При этом через неделю мне пришло письмо от них с кодом на вывод денег (или подтверждение адреса, не помню уже). Но суть в том, что мои законные 300$ канули в лету.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1433014069,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95369,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"vitalix\">Всем привет.<br />\nХотелось бы обменяться опытом по рекламе на ресурсах. То есть кто что юзает.<br />\nСам использую в данный момент - sape, mainlink.<br />\n<br />\nSape - что то не радует совсем, очень низкая покупка ссылок.<br />\nmainlink - вроде нормально берут - что радует, в любой момент (минимум вывода суммы, помоему не указанно даже) можно вывести средства на кошель, в течении 15-20мин.<br />\nХотелось бы узнать отзывы по банерной рекламе, за показы. Но не жёсткой. Кликандеры - сразу в топку. Лёгкой рекламы не вредящей пользователям.</blockquote>Подскажите как прописать код маинлинка",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1700853059,
+      "user_id": 8246,
+      "user_title": "User",
+      "username": "daemonz"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "reklama-na-resurse",
+  "sticky": false,
+  "tags": [],
+  "title": "Реклама на ресурсе",
+  "url_path": "/threads/reklama-na-resurse.41181/",
+  "user_id": 4163,
+  "username": "vitalix",
+  "view_count": 1648
+}

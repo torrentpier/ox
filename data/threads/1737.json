@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 23037,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1737,
+  "last_post_date": 1353893498,
+  "node_id": 57,
+  "post_date": 1353345732,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23037,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "А можно как-то ограничить заголовок(имя) торрент файла по количеству символов ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1353345732,
+      "user_id": 1075,
+      "user_title": "User",
+      "username": "GENERALVIP"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23038,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Вопрос один - зачем? Конкретный пример приведите, а то пока не вполне понятно для чего это вообще требуется, если торренты по-идее переименовываются по имени трекера во время скачивания.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1353347610,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23039,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ну у меня во время скачивание на переименовываются, а переименовываются сами во время заливки релиза(когда торрент файл кидают в релиз), а уменьшить количество надо чтоб не было в дальнейшем громадных названий торрентов, со всякими ссылками на релизеров типо.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1353347989,
+      "user_id": 1075,
+      "user_title": "User",
+      "username": "GENERALVIP"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23286,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<span style=\"font-size: 13px\"><span style=\"font-family: 'Monaco'\"><span style=\"color: #000000\">$string = &#039;Это строка которую нужно урезать&#039;;</span></span></span><br />\n<span style=\"font-size: 13px\"><span style=\"font-family: 'Monaco'\"><span style=\"color: #000000\">$string =  substr($string, 0, 21);</span></span></span>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1353893498,
+      "user_id": 3149,
+      "user_title": "User",
+      "username": "Steiz"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "ogranicenie-dliny-imeni-torrent-fajla",
+  "sticky": false,
+  "tags": [],
+  "title": "Ограничение длины имени торрент-файла",
+  "url_path": "/threads/ogranicenie-dliny-imeni-torrent-fajla.1737/",
+  "user_id": 1075,
+  "username": "GENERALVIP",
+  "view_count": 1245
+}

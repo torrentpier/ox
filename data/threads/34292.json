@@ -1,0 +1,191 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 73629,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 34292,
+  "last_post_date": 1422560016,
+  "node_id": 80,
+  "post_date": 1422468941,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1422468915,
+          "file_size": 69218,
+          "filename": "ScreenShot.webp",
+          "height": 585,
+          "id": 2924,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot-webp.2924/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2928-49e191199af8b456202a4ab69e747bee.jpg?hash=qIxCfij4NO",
+          "width": 758
+        }
+      ],
+      "id": 73629,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Приветствую, форумчане случилась сегодня такая ситуация.<br />\nПерестал работать сайт, кинулся зайти на myadmin не тут то было не пустило<br />\nПишу письмо хостеру что мол и так не работает трекер <br />\n<br />\nвот такой ответ я получил.....<br />\n<br />\n<i>У mysql есть несколько параметров отвечающие за использование памяти. Одни из этих параметров статические, т.е. Вы задали размер key_buffer и он не изменяется пока Вы его не измените сами.<br />\nИ есть динамические параметры которые занимают память при каждом соединении с mysql и освобождают при завершении соединения. Количество соединений ограничивается переменной max_connections и объемом памяти. У Вас или софт (cms/php скрипт) не закрывает за собой соединение с mysql сервером и память алоцируется под каждое соединение. Сейчас Вы уперлись в ограничение количества соединений в конфигурационном файле. Можно увеличивать это значение пока у сервера не закончится свободная память, но правильнее будет найти и исправить код.<br />\n<br />\nприлагаю скрин процесов бд <br />\n<a href=\"https://torrentpier.com/attachments/2924/\"><img src=\"https://torrentpier.com/data/attachments/2/2928-49e191199af8b456202a4ab69e747bee.jpg?hash=qIxCfij4NO\" alt=\"ScreenShot.webp\" /></a> <br />\n</i>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1422468941,
+      "user_id": 5847,
+      "user_title": "User",
+      "username": "ivanesko261"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 73630,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "конфиг сервака ? <br />\n<br />\nи my.cnf выложи",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1422469726,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1422469933,
+          "file_size": 14146,
+          "filename": "1.webp",
+          "height": 138,
+          "id": 2925,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1-webp.2925/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2929-cfbca11aa63f4c52068e35cee70eb956.jpg?hash=NIenyKcSDY",
+          "width": 1054
+        }
+      ],
+      "id": 73631,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">конфиг сервака ?</blockquote><br />\n<img src=\"https://torrentpier.com/attachments/2925/\" alt=\"1.webp\" /> <br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">и my.cnf выложи</blockquote><br />\nне знаю где его искать",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1422470363,
+      "user_id": 5847,
+      "user_title": "User",
+      "username": "ivanesko261"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1422471369,
+          "file_size": 1368,
+          "filename": "my.rar",
+          "height": 0,
+          "id": 2926,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/my-rar.2926/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 73633,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">и my.cnf выложи</blockquote>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1422471377,
+      "user_id": 5847,
+      "user_title": "User",
+      "username": "ivanesko261"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 73709,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "А какой обьем БД?<br />\n<br />\n10 Гб ? )))",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1422537296,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 73720,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">А какой обьем БД?<br />\n<br />\n10 Гб ? )))</blockquote><br />\n500мб",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1422538156,
+      "user_id": 5847,
+      "user_title": "User",
+      "username": "ivanesko261"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 73761,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "mysqtuner в помощь.<br />\n<br />\nи ещё, верни конфиг мускула на дефолтный.",
+      "message_state": "visible",
+      "position": 6,
+      "post_date": 1422560016,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 6,
+  "slug": "upala-baza-dannyh",
+  "sticky": false,
+  "tags": [],
+  "title": "Упала база данных",
+  "url_path": "/threads/upala-baza-dannyh.34292/",
+  "user_id": 5847,
+  "username": "ivanesko261",
+  "view_count": 1522
+}

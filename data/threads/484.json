@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 5830,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 484,
+  "last_post_date": 1326397139,
+  "node_id": 57,
+  "post_date": 1321911345,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5830,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В общем решили вынести БД на отдельный сервер и все бы хорошо, только хобот не хочет до конца подключаться. В xbt_tracker.conf исправил на ип, а задачи по крону именно для хбтт не работают, выдают ошибку на запросе, все остальное что не связано с хбтт работает, значит по идее проблема с ним, так вот вопрос, где еще указывает адрес бд как localhost, ибо на локалхосте все работает, на удалёнке - нет.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1321911345,
+      "user_id": 33,
+      "user_title": "User",
+      "username": "yamaha"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5859,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Возможно Mysql не дает доступ к удаленному<br />\nЗЫ Мое мнение",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1321970445,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5893,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ну а как тогда трекер подключился и сфинкс?...",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1322036622,
+      "user_id": 33,
+      "user_title": "User",
+      "username": "yamaha"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5935,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Если роутер то порты пробросил?",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1322081111,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9331,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "мозг включить 🙂",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1326397139,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "podklucenie-xbtt-k-udalennoj-mysql",
+  "sticky": false,
+  "tags": [],
+  "title": "Подключение XBTT к удаленной Mysql",
+  "url_path": "/threads/podklucenie-xbtt-k-udalennoj-mysql.484/",
+  "user_id": 33,
+  "username": "yamaha",
+  "view_count": 1671
+}

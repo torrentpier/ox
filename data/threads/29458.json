@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 67082,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 29458,
+  "last_post_date": 1416024730,
+  "node_id": 57,
+  "post_date": 1415953045,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 67082,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1415953175,
+      "message_parsed": "Приветствую всех, собственно задался вопросом, использую мод &quot;доска почёт&quot; и в этой таблице выводятся мёртвые души, я не знаю как до этого их удаляли, но нужно их как то удалить под корень. Сколько их, я не знаю, но на скрине уже несколько. <br />\n<br />\n<img src=\"http://storage6.static.itmages.ru/i/14/1114/h_1415953183_9869779_f38c0e3a2b.png\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1415953045,
+      "user_id": 1053,
+      "user_title": "User",
+      "username": "Alexander.S"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 67104,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Alexander.S\">Приветствую всех, собственно задался вопросом, использую мод &quot;доска почёт&quot; и в этой таблице выводятся мёртвые души, я не знаю как до этого их удаляли, но нужно их как то удалить под корень. Сколько их, я не знаю, но на скрине уже несколько.<br />\n<br />\n<img src=\"http://storage6.static.itmages.ru/i/14/1114/h_1415953183_9869779_f38c0e3a2b.png\" alt=\"\" /></blockquote>Скорей всего данные из bb_bt_users, остались данные удаленных юзеров.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1415961361,
+      "user_id": 2789,
+      "user_title": "User",
+      "username": "Sprinx"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 67117,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Sprinx\">Скорей всего данные из bb_bt_users, остались данные удаленных юзеров.</blockquote><br />\nНу это понятно. Теперь же нужно эти все мёртвые души разом удалить... А вот как быстро и безопасно.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1415964378,
+      "user_id": 1053,
+      "user_title": "User",
+      "username": "Alexander.S"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 67141,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"php\">DELETE FROM bb_bt_users WHERE NOT EXISTS (SELECT * FROM bb_users WHERE user_id = bb_bt_users.user_id)</pre>Вообще странно что у вас это в таблице осталось. Движок какой версии?",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1415975003,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 67164,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\"><pre class=\"xfBb-code\" data-lang=\"php\">DELETE FROM bb_bt_users WHERE NOT EXISTS (SELECT * FROM bb_users WHERE user_id = bb_bt_users.user_id)</pre>Вообще странно что у вас это в таблице осталось. Движок какой версии?</blockquote><br />\n485, обновить планирую скоро.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1416024730,
+      "user_id": 1053,
+      "user_title": "User",
+      "username": "Alexander.S"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "mertvye-dusi-ili",
+  "sticky": false,
+  "tags": [],
+  "title": "Мёртвые души или?",
+  "url_path": "/threads/mertvye-dusi-ili.29458/",
+  "user_id": 1053,
+  "username": "Alexander.S",
+  "view_count": 1248
+}

@@ -1,0 +1,170 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 84671,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41232,
+  "last_post_date": 1439331808,
+  "node_id": 57,
+  "post_date": 1439326791,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1439326476,
+          "file_size": 53980,
+          "filename": "Screenshot_1.webp",
+          "height": 527,
+          "id": 4031,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot_1-webp.4031/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4035-f507d030d6a707074b03614d73857182.jpg?hash=wSLtTV7h4I",
+          "width": 1031
+        }
+      ],
+      "id": 84671,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени подскажите как магнет сделать чтобы было название торрент а не домена как на скрине<img src=\"https://torrentpier.com/attachments/4031/\" alt=\"Screenshot_1.webp\" /><br />\nЗаодно можете протестить раздачу на скачивание. Это  не спам треке в тесте и разработке<br />\n<a href=\"http://mod-wg.16mb.com/viewtopic.php?t=3&amp;view=newest#newest\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://mod-wg.16mb.com/viewtopic.php?t=3</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1439326791,
+      "user_id": 6346,
+      "user_title": "User",
+      "username": "redzhet"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84672,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/6346/\">@redzhet</a> вообще функция сейчас сделать есть, но уже в следующей версии ее не будет, как и возможности выводить название прикрепленного торрент-файла. Поэтому я бы задумался над тем, чтобы оставить все как есть.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1439328796,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84673,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Да в настройках магнет я знаю что можно отключить если он мешает 🙂<br />\nА вот название поле можно было бы на место магнет и поставить 🙂",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1439329185,
+      "user_id": 6346,
+      "user_title": "User",
+      "username": "redzhet"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84674,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Я понимаю про что вы, но в файле config.php есть возможность вывода названия торрент-файла вместо адреса трекера, но ее нет в следующей же версии, а поэтому решение крайне временным получается.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1439329300,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84675,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Понял теперь🙂 А можете протестить на раздачу топик?)Мне одному никакх не протестить или можно с 2 торрент клиентов протестить?",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1439329409,
+      "user_id": 6346,
+      "user_title": "User",
+      "username": "redzhet"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84676,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/6346/\">@redzhet</a> не качает, у вас адрес анонса указан неверно. <br />\n<pre class=\"xfBb-code\" data-lang=\"\">https://mod-wg.16mb.com/bt/announce.php?uk=Wf00Xo1nfG   отключён (превышено время ожидания)</pre>У вас просто http, а не https.",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1439331343,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84677,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1439331981,
+      "message_parsed": "все разобрался с  двук клиентов проверил ))) аннонс поправил ) инструкцию выложил )<br />\nСейчас скаю проверю статистику  ) заодно в самой теме",
+      "message_state": "visible",
+      "position": 6,
+      "post_date": 1439331808,
+      "user_id": 6346,
+      "user_title": "User",
+      "username": "redzhet"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 6,
+  "slug": "magnet",
+  "sticky": false,
+  "tags": [
+    "магнет-ссылка",
+    "название торрент-файла",
+    "торрент-файл"
+  ],
+  "title": "Магнет",
+  "url_path": "/threads/magnet.41232/",
+  "user_id": 6346,
+  "username": "redzhet",
+  "view_count": 1264
+}

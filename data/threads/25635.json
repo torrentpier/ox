@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 57876,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25635,
+  "last_post_date": 1389885934,
+  "node_id": 111,
+  "post_date": 1389884100,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57876,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 558: Удаление черновиков из основного движка, ввиду их малой востребованности. Для ос</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">glix08</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/install/sql/mysql.sql \n    Modify    /trunk/upload/ajax.php \n    Modify    /trunk/upload/config.php \n    Modify    /trunk/upload/includes/datastore/build_cat_forums.php \n    Modify    /trunk/upload/includes/functions_post.php \n    Modify    /trunk/upload/includes/page_header.php \n    Delete    /trunk/upload/includes/ucp/usercp_viewdraft.php \n    Modify    /trunk/upload/includes/ucp/usercp_viewprofile.php \n    Modify    /trunk/upload/language/lang_english/lang_main.php \n    Modify    /trunk/upload/language/lang_russian/lang_main.php \n    Modify    /trunk/upload/posting.php \n    Modify    /trunk/upload/profile.php \n    Modify    /trunk/upload/search.php \n    Modify    /trunk/upload/templates/default/css/main.css \n    Delete    /trunk/upload/templates/default/images/draft.gif \n    Modify    /trunk/upload/templates/default/page_header.tpl \n    Modify    /trunk/upload/templates/default/posting.tpl \n    Modify    /trunk/upload/templates/default/tpl_config.php \n    Delete    /trunk/upload/templates/default/usercp_viewdraft.tpl \n    Modify    /trunk/upload/templates/default/usercp_viewprofile.tpl \n    Modify    /trunk/upload/templates/default/viewforum.tpl \n    Modify    /trunk/upload/viewforum.php \n    Modify    /trunk/upload/viewtopic.php \n\nУдаление черновиков из основного движка, ввиду их малой востребованности. Для осуществления дальнейшей поддержки оных, будет выпущен отдельный мод. После сохранения всех изменений из коммита, выполнить запрос к базе данных: ALTER TABLE `bb_topics` DROP COLUMN `is_draft`; - перед выполнением любых запросов к базе данных, в обязательном порядке на забывайте делать бекап.</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1389884100,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57878,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Модификация черновиков выложена: <a href=\"http://torrentpier.com/resources/%D0%A7%D0%B5%D1%80%D0%BD%D0%BE%D0%B2%D0%B8%D0%BA%D0%B8.82/\" class=\"link link--internal\">http://torrentpier.com/resources/Черновики.82/</a> - инструкция по установке, конечно, временная, но этим можно будет заняться позднее, на данный момент любой желающий, который будет ставить данную ревизию, сможет &quot;вернуть&quot; черновики обратно.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1389885934,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "revision-558-udalenie-cernovikov-iz-osnovnogo-dvizka-vvidu-ih-maloj-vostrebovannosti-dla-os",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 558: Удаление черновиков из основного движка, ввиду их малой востребованности. Для ос",
+  "url_path": "/threads/revision-558-udalenie-cernovikov-iz-osnovnogo-dvizka-vvidu-ih-maloj-vostrebovannosti-dla-os.25635/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 1082
+}

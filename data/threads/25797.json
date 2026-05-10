@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 59299,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 25797,
+  "last_post_date": 1394223862,
+  "node_id": 80,
+  "post_date": 1393189016,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59299,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "К настройкам &quot;Опции показа&quot;, можно добавить недочет, мигрирующий с ревизии R521 вплоть до последней версии, где при включении в меню &quot;Опции показа&quot; одной из опций &quot;только новые сообщения&quot; или &quot;только новые темы&quot;, при отсутствии результата для вывода, будет нотис на главной странице.<br />\n <br />\nОткрыть index.php<br />\nнайти и удалить:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$cat_forums = array();</pre>найти:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">if (!$cat_forums = CACHE(&#039;bb_cache&#039;)-&gt;get($cache_name))\n{</pre>ниже добавить:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">    $cat_forums = array();</pre>P.S. информация скорей предназначена для раздела &quot;Программные баги TorrentPier II&quot;...",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1393189016,
+      "user_id": 4363,
+      "user_title": "User",
+      "username": "Phoenix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59300,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Phoenix</b>, а тебя в разработчики взяли?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1393189895,
+      "user_id": 0,
+      "user_title": "",
+      "username": "sockrat"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59316,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "R581 Перестала работать функция &quot;Опции показа&quot; на главной странице (при нажатии на кнопку &quot;отправить&quot; ни чего не происходит)",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1393281621,
+      "user_id": 5040,
+      "user_title": "User",
+      "username": "Алёна"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59456,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено в новой ревизии: <a href=\"https://code.google.com/p/torrentpier2/source/detail?r=584\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://code.google.com/p/torrentpier2/source/detail?r=584</a><br />\nСпасибо за багрепорты.<br />\n <br />\nСкачать r584 можно в центре загрузки: <a href=\"http://get.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://get.torrentpier.com/</a>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1394223862,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 3,
+  "slug": "skrytie-forumov-s-glavnoj",
+  "sticky": false,
+  "tags": [],
+  "title": "Скрытие форумов с главной",
+  "url_path": "/threads/skrytie-forumov-s-glavnoj.25797/",
+  "user_id": 4363,
+  "username": "Phoenix",
+  "view_count": 1216
+}

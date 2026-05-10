@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61810,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 26084,
+  "last_post_date": 1407433926,
+  "node_id": 111,
+  "post_date": 1407427847,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61810,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Ссылка</b>:<br />\nhttps://github.com/torrentpier/torrentpier/commit/b7d59873f31e8cc83fcfce0017552a1ff6bea921<br />\n <br />\n<b>Описание</b>:<br />\n <br />\nОсновные изменения в данной ревизии:<br />\n <br />\n- переделана система отключения форума (триггером и администратором);<br />\n- переделано использование конструктора шаблонов для разных стилей;<br />\n <br />\n- исправлена отправка карты сайта (sitemap);<br />\n- исправлена работа построения списка разделов в админке, добавлен кеш;<br />\n- исправления в локализации и файлах шаблона;<br />\n- исправление в классе бб-кодов (символ табуляции, фильтрация спама);<br />\n <br />\n- обновление Bootstrap до версии v3.2.0.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1407427847,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61815,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "К ревизии вышел хотфикс - r594b. Случайно допущенная ошибка из-за IDE 🙁<br />\n <br />\nhttps://github.com/torrentpier/torrentpier/commit/1e78d6c0ea62243fb7733e106c4750642c459f77<br />\n <br />\nЗамененная ревизия уже в центре загрузки.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1407433926,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "r594-peredelana-sistema-otklucenia-foruma-triggerom-i-administratorom-peredelano",
+  "sticky": false,
+  "tags": [],
+  "title": "R594: Переделана система отключения форума (триггером и администратором), переделано...",
+  "url_path": "/threads/r594-peredelana-sistema-otklucenia-foruma-triggerom-i-administratorom-peredelano.26084/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 1973
+}

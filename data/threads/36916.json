@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 77548,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 36916,
+  "last_post_date": 1425323453,
+  "node_id": 47,
+  "post_date": 1425323453,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 77548,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Пользователь Exile разместил новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/otkljuchenie-ucheta-soobschenij-v-forumax-flud-forumy.179/\" class=\"link link--internal\">Отключение учета сообщений в форумах (флуд-форумы)</a> - Добавляет возможность отключить учет сообщений в конкретных форумах (создать флуд-форумы).<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> добавляет возможность отключить учет сообщений в конкретных форумах (создать флуд-форумы). Сообщения, созданные в таких разделах, не зачисляются в статистику пользователям.</blockquote><br />\n<a href=\"https://torrentpier.com/resources/otkljuchenie-ucheta-soobschenij-v-forumax-flud-forumy.179/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1425323453,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "otklucenie-uceta-soobsenij-v-forumah-flud-forumy",
+  "sticky": false,
+  "tags": [],
+  "title": "Отключение учета сообщений в форумах (флуд-форумы)",
+  "url_path": "/threads/otklucenie-uceta-soobsenij-v-forumah-flud-forumy.36916/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 1032
+}

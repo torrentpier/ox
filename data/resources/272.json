@@ -1,0 +1,137 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "Упоминания.zip",
+      "id": 5591,
+      "local_path": null,
+      "r2_key": null,
+      "size": 1236,
+      "src_url": "https://torrentpier.com/api/resource-versions/406/download?file=5591"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Установка\"][CODE=php]\n======================= открыть styles/js/bbcode.js и найти =======================\nthis.insertAtCursor(\"[b]\" + name + '[/b], ');\n======================= заменить на =======================\nthis.insertAtCursor(\"[@]\" + name + '[/@], ');\n======================= открыть posting_editor.tpl и найти =======================\n<input type=\"button\" value=\"s\" name=\"codeS\" title=\"{L_STRIKEOUT}\" style=\"width: 25px; text-decoration: line-through;\" />&nbsp;&nbsp;\n======================= вставить ниже =======================\n<input type=\"button\" value=\"@\" name=\"codeMention\" title=\"{L_MENTION}\" style=\"width: 25px;\" />\n======================= далее найти =======================\nbbcode.addTag(\"codeQuote\", \"quote\", null, \"Q\", ctrl);\n======================= вставить ниже =======================\nbbcode.addTag(\"codeMention\", \"@\", null, \"\", ctrl);\n======================= открыть library/ajax/posts.php и найти =======================\n<input type=\"button\" value=\"s\" name=\"codeS\" title=\"'. $lang['STRIKEOUT'] .'\" style=\"width: 25px; text-decoration: line-through;\" />&nbsp;&nbsp;\n======================= вставить ниже =======================\n<input type=\"button\" value=\"@\" name=\"codeMention\" title=\"'. $lang['MENTION'] .'\" style=\"width: 25px;\" />\n======================= далее найти =======================\nbbcode.addTag(\"codeQuote\", \"quote\", null, \"Q\", ctrl);\n======================= вставить ниже =======================\nbbcode.addTag(\"codeMention\", \"@\", null, \"\", ctrl);\n======================= открыть library/language/ru/main.php (или другой язык) и найти =======================\n$lang['QUOTE_TITLE'] = 'Цитата: [quote]текст[/quote] (Ctrl+Q)';\n======================= вставить ниже =======================\n$lang['MENTION'] = 'Упомянуть: [@]имя, имя2[/@], текст...';\n======================= открыть library/includes/bbcode.php и найти =======================\n// [code]\n======================= вставить выше =======================\n// [@] (Select user)\n$text = preg_replace_callback('#\\[@\\](.*?)\\[/@\\]#isu', [&$this, 'get_username_callback'], $text);\n======================= далее найти =======================\n    return $this->tpl['code_open'] . $code . $this->tpl['code_close'];\n}\n======================= вставить ниже =======================\n/**\n * Callback to [@] (Select username)\n *\n * @param $m\n * @return string\n * @throws Exception\n */\nfunction get_username_callback($m)\n{\n    $users = explode(',', $m[1]);\n    $output = [];\n\n    foreach ($users as $user)\n    {\n        if (!$user_data = get_userdata(get_user_id(trim($user))))\n        {\n            $output[] = '[b]' . $user . '[/b]';\n        }\n        else\n        {\n            $output[] = profile_url($user_data);\n        }\n    }\n\n    return implode(', ', $output);\n}\n======================= сохранить все файлы :D =======================\n[/CODE][/SPOILER]",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1699539886,
+      "file_size": 3190,
+      "filename": "1.webp",
+      "height": 183,
+      "id": 5587,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/1-webp.5587/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5591-4965b63fffcb6e01153d32d09c2a4ad4.jpg?hash=hZRpxQff-_",
+      "width": 366
+    },
+    {
+      "attach_date": 1699539886,
+      "file_size": 2688,
+      "filename": "2.webp",
+      "height": 105,
+      "id": 5588,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2-webp.5588/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5592-03c2f82c1c2ac665246e8d4f9059f72a.jpg?hash=n3JOXAxx6f",
+      "width": 287
+    },
+    {
+      "attach_date": 1699539886,
+      "file_size": 2462,
+      "filename": "Capture.webp",
+      "height": 105,
+      "id": 5590,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/capture-webp.5590/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5594-ff4edc8777c87c68fad87f450b4284b9.jpg?hash=DK0jLgnvsP",
+      "width": 276
+    }
+  ],
+  "description_parsed": "При указании ника / ников в тэге [@]...[/@] генерируется ссылка на профиль пользователя и сохраняется в сообщении при отправке.<br />\n<br />\nСовместимость с v2.1.5 LTS / v2.1.5 и более старыми. Для новых версий нужна минимальная адаптация.<br />\n<br />\nПреимущества мода:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Возможность указывать бесконечное количество пользователей через запятую</li>\n<li data-xf-list-type=\"ul\">Поддержка званий и их стилей. Так-же цвета ников (Админ, модератор, пользователь)</li>\n<li data-xf-list-type=\"ul\">Кнопка в BBCode редакторе (в AJAX редакторе в том числе) для быстрого вызова</li>\n<li data-xf-list-type=\"ul\">Если пользователя не существует (или гость), то отобразиться просто ник</li>\n</ul>",
+  "download_count": 719,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/272.jpg?1699540060",
+  "id": 272,
+  "is_fileless": null,
+  "last_update": 1699548730,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1699539901,
+  "resource_state": "visible",
+  "slug": "bbcode-upominania",
+  "tag_line": "Данный мод добавляет систему упоминаний",
+  "tags": [
+    "упоминания",
+    "упоминания пользователей"
+  ],
+  "title": "BBCode: Упоминания",
+  "url_path": "/resources/bbcode-upominania.272/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.1",
+  "versions": [
+    {
+      "download_count": 509,
+      "files": [
+        {
+          "filename": "Упоминания.zip",
+          "id": 5591,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1236,
+          "src_url": "https://torrentpier.com/api/resource-versions/406/download?file=5591"
+        }
+      ],
+      "id": 406,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1699548730,
+      "version_state": "visible",
+      "version_string": "v1.0.1",
+      "view_url": "https://torrentpier.com/resources/bbcode-upominania.272/version/406/"
+    },
+    {
+      "download_count": 211,
+      "files": [
+        {
+          "filename": "Упоминания.zip",
+          "id": 5586,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1185,
+          "src_url": "https://torrentpier.com/api/resource-versions/405/download?file=5586"
+        }
+      ],
+      "id": 405,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1699539901,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/bbcode-upominania.272/version/405/"
+    }
+  ],
+  "view_count": 3145
+}

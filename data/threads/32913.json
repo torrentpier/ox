@@ -1,0 +1,134 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 71581,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 32913,
+  "last_post_date": 1420894703,
+  "node_id": 57,
+  "post_date": 1420838660,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71581,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет, интересует как изменить BB код img, чтобы при нажатии он сразу выравнивался по левому краю  [img=&quot; left&quot;]  ну фактически так же как на рутрекере, понятно что в файле bbcode.php, только вот строку эту затруднительно найти.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1420838660,
+      "user_id": 5886,
+      "user_title": "User",
+      "username": "founder"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71584,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "posting_editor.tpl<br />\n<pre class=\"xfBb-code\" data-lang=\"\">bbcode.addTag(&quot;codeImg&quot;, &quot;img&quot;, null, &quot;R&quot;, ctrl);</pre>Заменить на<br />\n<pre class=\"xfBb-code\" data-lang=\"\">bbcode.addTag(&quot;codeImg&quot;, &#039;img=&quot;left&quot;&#039;, &quot;/img&quot;, &quot;R&quot;, ctrl);</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1420841056,
+      "user_id": 2789,
+      "user_title": "User",
+      "username": "Sprinx"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71585,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Sprinx\">posting_editor.tpl<br />\n<pre class=\"xfBb-code\" data-lang=\"\">bbcode.addTag(&quot;codeImg&quot;, &quot;img&quot;, null, &quot;R&quot;, ctrl);</pre>Заменить на<br />\n<pre class=\"xfBb-code\" data-lang=\"\">bbcode.addTag(&quot;codeImg&quot;, &#039;img=&quot;left&quot;&#039;, &quot;/img&quot;, &quot;R&quot;, ctrl);</pre></blockquote>Спасибо большое, оказывается я еще и не там искал...",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1420841135,
+      "user_id": 5886,
+      "user_title": "User",
+      "username": "founder"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1420883536,
+          "file_size": 985,
+          "filename": "Несколько вариантов вставки изображения.txt",
+          "height": 0,
+          "id": 2845,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/neskol-ko-variantov-vstavki-izobrazenia-txt.2845/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 71603,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вот еще вариант",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1420883568,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71619,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Virtuoz\">&lt;option value=&quot;right&quot;&gt;С право&lt;/option&gt;<br />\n   &lt;option value=&quot;left&quot;&gt;С лева&lt;/option&gt;</blockquote>😢 :banghead:",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1420894703,
+      "user_id": 43,
+      "user_title": "User",
+      "username": "JDVU"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "vnesenie-izmenenij-v-panel-bb-kodov",
+  "sticky": false,
+  "tags": [],
+  "title": "Внесение изменений в панель BB кодов",
+  "url_path": "/threads/vnesenie-izmenenij-v-panel-bb-kodov.32913/",
+  "user_id": 5886,
+  "username": "founder",
+  "view_count": 968
+}

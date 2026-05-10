@@ -1,0 +1,57 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 98212,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 43206,
+  "last_post_date": 1756769473,
+  "node_id": 57,
+  "post_date": 1756769473,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98212,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "I&#039;m using <b>Cattle (v2.4.13) </b>and I&#039;m wondering if there&#039;s a way to make 1-time invites. In config.php, I see<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">// Syntax: &#039;invite_code&#039; =&gt; &#039;validity_period&#039;<br />\n // The &#039;validity_period&#039; value is based on strtotime() function: <a href=\"https://www.php.net/manual/en/function.strtotime.php\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">PHP: strtotime - Manual</a><br />\n // You can also create a permanent invite, set &#039;permanent&#039; value for &#039;validity_period&#039;</blockquote>But I don&#039;t see a way to make only 1 time invites.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1756769473,
+      "user_id": 11063,
+      "user_title": "User",
+      "username": "Fakewad"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "make-1-time-invite",
+  "sticky": false,
+  "tags": [],
+  "title": "Make 1 time invite",
+  "url_path": "/threads/make-1-time-invite.43206/",
+  "user_id": 11063,
+  "username": "Fakewad",
+  "view_count": 211
+}

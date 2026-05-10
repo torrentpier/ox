@@ -1,0 +1,57 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 72466,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 33440,
+  "last_post_date": 1421579219,
+  "node_id": 110,
+  "post_date": 1421579219,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 72466,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\n<br />\nПрактически 4 года назад, когда появился наш проект, было выбрано имя TorrentPier II, чтобы показать фундаментальное отличие от движка первой версии. Спустя 4 года, когда все &quot;альтернативные&quot; форумы поддержки либо умерли, либо прекратили свое существование, стало ясно то, что TorrentPier поддерживается отныне только нами. <span style=\"color: #b30000\"><b>По этой причине, мы отказываемся от названия TorrentPier II и с этого самого момента называемся просто как TorrentPier.</b></span> С припиской к названию возникала ситуация с дублированием версии в названии движка - теперь этой проблемы нет. Все необходимые изменения в копирайт, языковые переменные будут представлены в следующем билде, на исправления в заголовках на форуме и прочих ресурсах также уйдет некоторое время.<br />\n<span style=\"color: #b30000\"><br />\n<b>TorrentPier II умер, да здравствует TorrentPier!</b></span><br />\n<br />\nК другим новостям:<br />\n<br />\n1) В структуре форумов были произведены изменения. Появился большой раздел, в котором вы можете задавать вопросы, не связанные с движком, но имеющим отношение к интернету и веб-разработке в целом:<br />\n<ul>\n<li data-xf-list-type=\"ul\"><span style=\"font-size: 15px\"><a href=\"https://torrentpier.com/forums/administrirovanie-serverov.90/\" class=\"link link--internal\">Администрирование серверов</a></span></li>\n<li data-xf-list-type=\"ul\"><span style=\"font-size: 15px\"><a href=\"https://torrentpier.com/forums/voprosy-po-php.86/\" class=\"link link--internal\">Вопросы по PHP</a></span></li>\n<li data-xf-list-type=\"ul\"><span style=\"font-size: 15px\"><a href=\"https://torrentpier.com/forums/voprosy-po-html-css.87/\" class=\"link link--internal\">Вопросы по HTML / CSS</a></span></li>\n<li data-xf-list-type=\"ul\"><span style=\"font-size: 15px\"><a href=\"https://torrentpier.com/forums/poiskovaja-optimizacija-seo.88/\" class=\"link link--internal\">Поисковая оптимизация (SEO)</a></span></li>\n<li data-xf-list-type=\"ul\"><span style=\"font-size: 15px\"><a href=\"https://torrentpier.com/forums/xosting-i-domeny.89/\" class=\"link link--internal\">Хостинг и домены</a></span></li>\n</ul><span style=\"font-size: 15px\">Были добавлены разделы для покупки и продажи чего-либо (например, сайтов):</span><br />\n<ul>\n<li data-xf-list-type=\"ul\"><span style=\"font-size: 15px\"><a href=\"https://torrentpier.com/forums/kuplju-chto-nibud.84/\" class=\"link link--internal\">Куплю что-нибудь</a></span></li>\n<li data-xf-list-type=\"ul\"><span style=\"font-size: 15px\"><a href=\"https://torrentpier.com/forums/prodam-chto-nibud.85/\" class=\"link link--internal\">Продам что-нибудь</a></span></li>\n</ul><span style=\"font-size: 15px\">На форуме раньше было большое количество вопросов по PHP и т.п., но формально они к движку не относились - теперь же вы можете задавать их в любом количестве и обсуждать </span>в специально предназначенных для этого разделах.<br />\n<br />\n2) На этой неделе на ресурс была установлена <a href=\"https://torrentpier.com/media/\" class=\"link link--internal\">медиа-галерея</a>, которую вы можете найти по соответствующей ссылке в шапке форума. В ней будут размещаться все фото и видео-файлы, связанные с движком и не только. Для примера, весь раздел <span style=\"font-size: 15px\"><a href=\"https://torrentpier.com/forums/video-uroki-po-torrentpier-ii.24/\" class=\"link link--internal\">Видео-уроки по TorrentPier </a></span> перенесен в нее. В галере вы можете в удобном виде просматривать видео, оценивать и комментировать их. Все новые видео-ролики, скриншоты модов и т.д. и т.п. будут размещаться в ней, благодаря чему будет организовано единое место хранения всех медиа-файлов. Искать обучающие видео, раскиданные по всему форуму, вам больше не придется.<br />\n<br />\n3) В связи с переименованием проекта и изменениями в структуре форума - проведена полная амнистия. Снята блокировка со всех пользователей форума, которые получили ее по тем или иным причинам. В случае продолжения нарушения <a href=\"https://torrentpier.com/terms/\" class=\"link link--internal\">правил форума</a> блокировка будет восстановлена, это стоит учесть.<br />\n<br />\nСпасибо за внимание.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1421579219,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "novoe-ima-proekta-torrentpier-i-procie-izmenenia",
+  "sticky": false,
+  "tags": [
+    "новости"
+  ],
+  "title": "Новое имя проекта TorrentPier и прочие изменения",
+  "url_path": "/threads/novoe-ima-proekta-torrentpier-i-procie-izmenenia.33440/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 1930
+}

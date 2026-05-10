@@ -1,0 +1,79 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 83814,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 51,
+    "title": "Templates for TorrentPier"
+  },
+  "id": 41150,
+  "last_post_date": 1431044079,
+  "node_id": 51,
+  "post_date": 1431044079,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1431043975,
+          "file_size": 40716,
+          "filename": "b240e472c17cb0a1983a446ec91eccda.webp",
+          "height": 453,
+          "id": 3817,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/b240e472c17cb0a1983a446ec91eccda-webp.3817/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/3/3821-b240e472c17cb0a1983a446ec91eccda.jpg?hash=ZplGP_A0SO",
+          "width": 800
+        },
+        {
+          "attach_date": 1431044004,
+          "file_size": 213356,
+          "filename": "prowebber.zip",
+          "height": 0,
+          "id": 3818,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/prowebber-zip.3818/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 83814,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Шаблон сайта prowebber adapt for R775 modern RC9<br />\nНазвание шаблона: prowebber<br />\nКомплектация: TPL, CSS, html<br />\nТип шаблона: Adapt<br />\nАдаптирован под чистый torrentpier версии: TorrentPier R775 modern RC9<br />\nПроверен в браузерах: Opera 10, Mozilla, IE.<br />\nАвтор Адапта: Fate<br />\nЗатронутые файлы: page_header.tpl, page_footer.tpl, main.css, sidebar1.html<br />\nГод: 2011<br />\n<br />\nКак поставить на новую ревизию: Найти инструкцию/умельца, либо вытащить элементы шаблона из файлов самостоятельно, сравнивая файлы чистой версии R775 modern RC9 с файлами в архиве используя программные среды для разработки.<br />\nВ эти файлы не заглядывал с 2011 года, подсказать что там и как не смогу.<br />\n<a href=\"https://torrentpier.com/attachments/3817/\"><img src=\"https://torrentpier.com/data/attachments/3/3821-b240e472c17cb0a1983a446ec91eccda.jpg?hash=ZplGP_A0SO\" alt=\"b240e472c17cb0a1983a446ec91eccda.webp\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1431044079,
+      "user_id": 602,
+      "user_title": "User",
+      "username": "Fate"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "sablon-prowebber-old-revision-r775-modern-rc9",
+  "sticky": false,
+  "tags": [],
+  "title": "Шаблон Prowebber (old revision R775 modern RC9)",
+  "url_path": "/threads/sablon-prowebber-old-revision-r775-modern-rc9.41150/",
+  "user_id": 602,
+  "username": "Fate",
+  "view_count": 2062
+}

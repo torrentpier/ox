@@ -1,0 +1,100 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "user_todey.zip",
+      "id": 4067,
+      "local_path": null,
+      "r2_key": null,
+      "size": 3480,
+      "src_url": "https://torrentpier.com/api/resource-versions/353/download?file=4067"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция по установке\"]\n\nФайл\nuser_todey.php\nзакинуть в папку /library/ajax\nФайл\npopup.css\nзакинуть в папку /styles/templates/default/css/\n\n\nОткрыть page_header.tpl\nНайти:\n[PHP]<script type=\"text/javascript\" src=\"{SITE_URL}styles/js/main.js?v={$bb_cfg['js_ver']}\"></script>[/PHP]\nпосле добавить:\n[PHP]<link rel=\"stylesheet\" href=\"{SITE_URL}styles/templates/default/css/popup.css?v={$bb_cfg['css_ver']}\" type=\"text/css\">[/PHP]\n\nОткрыть ajax.php\nнайти:\n  [PHP]  'avatar'            => array('user'),[/PHP]\nпосле добавить:\n  [PHP]  'user_todey'        => array('user'),[/PHP]\n\nнайти:\n[PHP]   function sitemap()\n    {\n        require(AJAX_DIR .'sitemap.php');\n    }[/PHP]\nпосле добавить:\n  [PHP]      function user_todey()\n    {\n        require(AJAX_DIR . 'user_todey.php');\n    }[/PHP]\n\nОткрыть index.tpl\nнайти:\n\n[PHP] <p>{SPEED_STAT}</p>\n                <!-- ENDIF -->[/PHP]\n\nпосле добавить:\n\n[PHP]<script type=\"text/javascript\">\n                ajax.user_todey = function(mode) {\n                    ajax.exec({\n                        action  : 'user_todey',\n                        mode    : mode\n                    });\n                }\n                ajax.callback.user_todey = function(data) {\n                    $('#user_todey').html(data.html);\n                }\n                </script>\n                <a class=\"clickable\" href=\"#\" onclick=\"ajax.user_todey('list'); return false;\">Пользователи, посетившие <b>НАЗВАНИЕ САЙТА</b> сегодня (нажмите для просмотра)</a>\n                <span id=\"user_todey\"></span>[/PHP]\n\nРасположение блока меняются в файле user_todey.php\nВ строчке  №25\n[PHP]$html = '<div class=\"xenOverlay\" style=\"z-index: 50000; top: 0.0px; left: 25.5px; display: block; position: fixed\"><div class=\"section\">';[/PHP]\n\n[PHP]top [/PHP]- смещение вверх -низ (можно применять отрицательное число)\n[PHP]left[/PHP] - смещение влево-вправо (можно применять отрицательное число)\n\n[/SPOILER]",
+    "owner": "",
+    "sql": "no",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1441459911,
+      "file_size": 48226,
+      "filename": "1 (2).webp",
+      "height": 743,
+      "id": 4062,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/1-2-webp.4062/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4066-75bba2485844b9eba77e7a5f278b3422.jpg?hash=rXxh9-Rf2-",
+      "width": 756
+    },
+    {
+      "attach_date": 1441459915,
+      "file_size": 76938,
+      "filename": "1 (1).webp",
+      "height": 743,
+      "id": 4063,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/1-1-webp.4063/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4067-235d0c23fb65a42846a7e626cfd92aa6.jpg?hash=leQlA1Qc14",
+      "width": 756
+    }
+  ],
+  "description_parsed": "<div style=\"text-align: center\"><span style=\"color: rgb(235, 107, 86)\">Используйте лучше <a href=\"https://torrentpier.com/resources/ajax-polzovateli-za-24-chasa.282/\" class=\"link link--internal\">этот</a> мод</span>&#8203;</div><hr />Просмотр пользователей посетивших ресурс за 24 часа .<br />\nВсплывающее окно аякс.",
+  "download_count": 311,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/243.jpg?1442394690",
+  "id": 243,
+  "is_fileless": null,
+  "last_update": 1441480561,
+  "rating_avg": 5,
+  "rating_count": 3,
+  "resource_date": 1441459924,
+  "resource_state": "visible",
+  "slug": "pol-zovateli-za-24-casa-na-ajax-versia-1-1",
+  "tag_line": "Просмотр пользователей посетивших ресурс за 24 часа",
+  "tags": [],
+  "title": "Пользователи за 24 часа на Ajax версия (1.1)",
+  "url_path": "/resources/pol-zovateli-za-24-casa-na-ajax-versia-1-1.243/",
+  "user_id": 5626,
+  "username": "Kryl",
+  "version": "2015-09-05",
+  "versions": [
+    {
+      "download_count": 311,
+      "files": [
+        {
+          "filename": "user_todey.zip",
+          "id": 4067,
+          "local_path": null,
+          "r2_key": null,
+          "size": 3480,
+          "src_url": "https://torrentpier.com/api/resource-versions/353/download?file=4067"
+        }
+      ],
+      "id": 353,
+      "rating_avg": 5,
+      "rating_count": 3,
+      "release_date": 1441459924,
+      "version_state": "visible",
+      "version_string": "2015-09-05",
+      "view_url": "https://torrentpier.com/resources/pol-zovateli-za-24-casa-na-ajax-versia-1-1.243/version/353/"
+    }
+  ],
+  "view_count": 690
+}

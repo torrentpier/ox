@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 97213,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42364,
+  "last_post_date": 1744273779,
+  "node_id": 47,
+  "post_date": 1744273779,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97213,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/avtomaticheskaja-proverka-relizov-dlja-adminov.323/\" class=\"link link--internal\">Автоматическая проверка релизов для админов</a> - Ставит автоматически статус &quot;Проверено&quot; если релиз создан админом.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> Ставит автоматически статус &quot;Проверено&quot; если релиз создан админом.<br />\n<b>Совместимость:</b>  v2.1.5, LTS, v2.2.* - v2.4.*.</blockquote><br />\n<a href=\"https://torrentpier.com/resources/avtomaticheskaja-proverka-relizov-dlja-adminov.323/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1744273779,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "avtomaticeskaa-proverka-relizov-dla-adminov",
+  "sticky": false,
+  "tags": [],
+  "title": "Автоматическая проверка релизов для админов",
+  "url_path": "/threads/avtomaticeskaa-proverka-relizov-dla-adminov.42364/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 374
+}

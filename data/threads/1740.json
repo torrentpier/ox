@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 23089,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1740,
+  "last_post_date": 1353424431,
+  "node_id": 57,
+  "post_date": 1353414043,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23089,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подскажите, пожалуйста, как реализовать поиск по info_hash? Многие пользователи жалуются, что раздача которую они создают зачастую существует под другим названием и не может быть найдена посредством стандартного поиска, поэтому очень не помешала бы такая опция.<br />\n <br />\nПримерно то что требуется уже сделано на рутрекере:<br />\n<a href=\"http://fastpic.ru/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"http://i48.fastpic.ru/big/2012/1120/a4/c0d56165ea54701d1a563b3d51b84da4.jpg\" alt=\"\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1353414043,
+      "user_id": 561,
+      "user_title": "User",
+      "username": "John Smith"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23095,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>John Smith</b>, трекер не даст зарегистрировать раздачу с таким же info_hash который уже зарегистрирован на трекере.<br />\nmysql.sql:<br />\n<div>Spoiler content hidden.</div><span style=\"color: #ff0000\">PRIMARY KEY (`info_hash`),</span><br />\nmysql не даст это сделать как минимум.<br />\nно поиск по infohash всётаки иногда полезен, согласен. Думаю надо запилить в SVN",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1353417790,
+      "user_id": 8,
+      "user_title": "User",
+      "username": "fly_indiz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23097,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "некоторые умудряются удалить первичный ключ))",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1353419365,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23098,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>fly_indiz</b>, я в курсе что трекер не даст зарегистрировать раздачу, в этом и проблема. например пользователи готовят объемную раздачу, тратят много времени, а она уже существует под совершенно другим именем, проблему решил бы поиск по хэшу",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1353422317,
+      "user_id": 561,
+      "user_title": "User",
+      "username": "John Smith"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23099,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>John Smith</b>, логично 🙂",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1353424431,
+      "user_id": 8,
+      "user_title": "User",
+      "username": "fly_indiz"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "poisk-po-info_hash",
+  "sticky": false,
+  "tags": [],
+  "title": "Поиск по info_hash",
+  "url_path": "/threads/poisk-po-info_hash.1740/",
+  "user_id": 561,
+  "username": "John Smith",
+  "view_count": 1409
+}

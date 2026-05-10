@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 19899,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1494,
+  "last_post_date": 1345884235,
+  "node_id": 57,
+  "post_date": 1345804520,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 19899,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "у меня есть html код сую его в page_footer.tpl но толка нету уже обыскал тут весь форум и гугл вот мой page_footer.tpl   <br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;!-- IF SIMPLE_FOOTER --&gt;&lt;!-- ELSEIF IN_ADMIN --&gt;&lt;!-- ELSE --&gt;\n \n    &lt;/div&gt;&lt;!--/main_content_wrap--&gt;\n    &lt;/td&gt;&lt;!--/main_content--&gt;\n \n    &lt;!-- IF SHOW_SIDEBAR2 --&gt;\n        &lt;!--sidebar2--&gt;\n        &lt;td id=&quot;sidebar2&quot;&gt;\n        &lt;div id=&quot;sidebar2_wrap&quot;&gt;\n       \n       \n            &lt;?php if (!empty($bb_cfg[&#039;sidebar2_static_content_path&#039;])) include($bb_cfg[&#039;sidebar2_static_content_path&#039;]); ?&gt;\n            &lt;img width=&quot;210&quot; class=&quot;spacer&quot; src=&quot;{SPACER}&quot; alt=&quot;&quot; /&gt;\n           \n        &lt;/div&gt;&lt;!--/sidebar2_wrap--&gt;\n        &lt;/td&gt;&lt;!--/sidebar2--&gt;\n    &lt;!-- ENDIF --&gt;\n \n    &lt;/tr&gt;&lt;/table&gt;\n    &lt;/div&gt;\n    &lt;!--/page_content--&gt;\n \n    &lt;!--page_footer--&gt;\n    &lt;div id=&quot;page_footer&quot;&gt;\n \n        &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\n \n        &lt;br /&gt;&lt;br /&gt;\n       \n&lt;br /&gt;&lt;br /&gt;\n        &lt;!-- IF $bb_cfg[&#039;user_agreement_html_path&#039;] --&gt;\n        &lt;div class=&quot;med bold tCenter&quot;&gt;\n            &lt;a href=&quot;{$bb_cfg[&#039;user_agreement_url&#039;]}&quot; onclick=&quot;window.open(this.href, &#039;&#039;, InfoWinParams); return false;&quot;&gt;{L_USER_AGREEMENT}&lt;/a&gt;\n            &lt;!-- IF $bb_cfg[&#039;copyright_holders_html_path&#039;] --&gt;\n            &lt;span class=&quot;normal&quot;&gt;&amp;nbsp;|&amp;nbsp;&lt;/span&gt;\n            &lt;a href=&quot;{$bb_cfg[&#039;copyright_holders_url&#039;]}&quot; onclick=&quot;window.open(this.href, &#039;&#039;, InfoWinParams); return false;&quot;&gt;{L_COPYRIGHT_HOLDERS}&lt;/a&gt;\n            &lt;!-- ENDIF --&gt;\n            &lt;!-- IF $bb_cfg[&#039;advert_html_path&#039;] --&gt;\n            &lt;span class=&quot;normal&quot;&gt;&amp;nbsp;|&amp;nbsp;&lt;/span&gt;\n            &lt;a href=&quot;{$bb_cfg[&#039;advert_url&#039;]}&quot; onclick=&quot;window.open(this.href, &#039;&#039;, InfoWinParams); return false;&quot;&gt;{L_ADVERT}&lt;/a&gt;\n            &lt;!-- ENDIF --&gt;\n        &lt;/div&gt;\n        &lt;br /&gt;\n        &lt;!-- ENDIF --&gt;\n \n        &lt;!-- IF IS_AM --&gt;\n        &lt;div class=&quot;tiny tCenter&quot;&gt;\n&lt;a href=&quot;mod.php&quot;&gt;{L_MODERATE_PANEL}&lt;/a&gt;&lt;/div&gt;\n        &lt;br /&gt;\n        &lt;!-- ENDIF --&gt;\n \n \n        &lt;!-- IF SHOW_ADMIN_LINK --&gt;\n        &lt;div class=&quot;tiny tCenter&quot;&gt;&lt;a href=&quot;{ADMIN_LINK_HREF}&quot;&gt;{L_ADMIN_PANEL}&lt;/a&gt;&lt;/div&gt;\n        &lt;br /&gt;\n        &lt;!-- ENDIF --&gt;\n \n        &lt;div class=&quot;copyright tCenter&quot; id=&quot;t2t&quot;&gt;\n            {POWERED} &lt;br /&gt;\n            {L_NEWSRBK} &lt;br /&gt;\n        &lt;/div&gt;\n \n    &lt;/div&gt;\n \n   \n    &lt;div class=&quot;copyright tCenter&quot;&gt;\n        &lt;b style=&quot;color:rgb(204,0,0);&quot;&gt;{L_NOTICE}&lt;/b&gt;&lt;br /&gt;\n        {L_COPY}\n    &lt;/div&gt;\n \n    &lt;!--/page_footer --&gt;\n \n    &lt;/div&gt;\n    &lt;!--/page_container --&gt;\n \n&lt;!-- ENDIF --&gt;\n \n&lt;!-- IF ONLOAD_FOCUS_ID --&gt;\n \n&lt;script type=&quot;text/javascript&quot;&gt;\n$p(&#039;{ONLOAD_FOCUS_ID}&#039;).focus();\n&lt;/script&gt;\n \n&lt;!-- ENDIF --&gt;</pre>а вот и сам код<br />\n<pre class=\"xfBb-code\" data-lang=\"\"> &lt;!-- START WWW.UZ TOP-RATING --&gt;&lt;SCRIPT language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;\n&lt;!--\ntop_js=&quot;1.0&quot;;top_r=&quot;id=28063&amp;r=&quot;+escape(document.referrer)+&quot;&amp;pg=&quot;+escape(window.location.href);document.cookie=&quot;smart_top=1; path=/&quot;; top_r+=&quot;&amp;c=&quot;+(document.cookie?&quot;Y&quot;:&quot;N&quot;)\n//--&gt;\n&lt;/SCRIPT&gt;\n&lt;SCRIPT language=&quot;javascript1.1&quot; type=&quot;text/javascript&quot;&gt;\n&lt;!--\ntop_js=&quot;1.1&quot;;top_r+=&quot;&amp;j=&quot;+(navigator.javaEnabled()?&quot;Y&quot;:&quot;N&quot;)\n//--&gt;\n&lt;/SCRIPT&gt;\n&lt;SCRIPT language=&quot;javascript1.2&quot; type=&quot;text/javascript&quot;&gt;\n&lt;!--\ntop_js=&quot;1.2&quot;;top_r+=&quot;&amp;wh=&quot;+screen.width+&#039;x&#039;+screen.height+&quot;&amp;px=&quot;+\n(((navigator.appName.substring(0,3)==&quot;Mic&quot;))?screen.colorDepth:screen.pixelDepth)\n//--&gt;\n&lt;/SCRIPT&gt;\n&lt;SCRIPT language=&quot;javascript1.3&quot; type=&quot;text/javascript&quot;&gt;\n&lt;!--\ntop_js=&quot;1.3&quot;;\n//--&gt;\n&lt;/SCRIPT&gt;\n&lt;SCRIPT language=&quot;JavaScript&quot; type=&quot;text/javascript&quot;&gt;\n&lt;!--\ntop_rat=&quot;&amp;col=0063AF&amp;t=ffffff&amp;p=DD7900&quot;;top_r+=&quot;&amp;js=&quot;+top_js+&quot;&quot;;document.write(&#039;&lt;img src=&quot;http://www.uz/plugins/top_rating/count/cnt0.png?&#039;+top_r+top_rat+&#039;&quot; width=0 height=0 border=0 /&gt;&#039;)//--&gt;\n&lt;/SCRIPT&gt;&lt;NOSCRIPT&gt;&lt;IMG height=0 src=&quot;http://www.uz/plugins/top_rating/count/cnt0.png?id=28063&amp;pg=http%3A//hottorrents.uz&amp;col=0063AF&amp;t=ffffff&amp;p=DD7900&quot; width=0 border=0 /&gt;&lt;/NOSCRIPT&gt;&lt;!-- END WWW.UZ TOP-RATING --&gt;</pre> Не осуждайте чайника помогите куда именно сунуть его!!!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1345804520,
+      "user_id": 1567,
+      "user_title": "User",
+      "username": "Kolya"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 19900,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "после этих строк добавляй<br />\n <br />\n&lt;div class=&quot;copyright tCenter&quot;&gt;<br />\n&lt;b style=&quot;color:rgb(204,0,0);&quot;&gt;{L_NOTICE}&lt;/b&gt;&lt;br /&gt;<br />\n{L_COPY}<br />\n&lt;/div&gt;",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1345806354,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 19906,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вот я сделал тока нече не проиходи хеш тоже читил толка нету может че добавить нужно   <br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;!-- IF SIMPLE_FOOTER --&gt;&lt;!-- ELSEIF IN_ADMIN --&gt;&lt;!-- ELSE --&gt;\n \n    &lt;/div&gt;&lt;!--/main_content_wrap--&gt;\n    &lt;/td&gt;&lt;!--/main_content--&gt;\n \n    &lt;!-- IF SHOW_SIDEBAR2 --&gt;\n        &lt;!--sidebar2--&gt;\n        &lt;td id=&quot;sidebar2&quot;&gt;\n        &lt;div id=&quot;sidebar2_wrap&quot;&gt;\n       \n       \n            &lt;?php if (!empty($bb_cfg[&#039;sidebar2_static_content_path&#039;])) include($bb_cfg[&#039;sidebar2_static_content_path&#039;]); ?&gt;\n            &lt;img width=&quot;210&quot; class=&quot;spacer&quot; src=&quot;{SPACER}&quot; alt=&quot;&quot; /&gt;\n           \n        &lt;/div&gt;&lt;!--/sidebar2_wrap--&gt;\n        &lt;/td&gt;&lt;!--/sidebar2--&gt;\n    &lt;!-- ENDIF --&gt;\n \n    &lt;/tr&gt;&lt;/table&gt;\n    &lt;/div&gt;\n    &lt;!--/page_content--&gt;\n \n    &lt;!--page_footer--&gt;\n    &lt;div id=&quot;page_footer&quot;&gt;\n \n        &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\n \n        &lt;br /&gt;&lt;br /&gt;\n       \n&lt;br /&gt;&lt;br /&gt;\n        &lt;!-- IF $bb_cfg[&#039;user_agreement_html_path&#039;] --&gt;\n        &lt;div class=&quot;med bold tCenter&quot;&gt;\n            &lt;a href=&quot;{$bb_cfg[&#039;user_agreement_url&#039;]}&quot; onclick=&quot;window.open(this.href, &#039;&#039;, InfoWinParams); return false;&quot;&gt;{L_USER_AGREEMENT}&lt;/a&gt;\n            &lt;!-- IF $bb_cfg[&#039;copyright_holders_html_path&#039;] --&gt;\n            &lt;span class=&quot;normal&quot;&gt;&amp;nbsp;|&amp;nbsp;&lt;/span&gt;\n            &lt;a href=&quot;{$bb_cfg[&#039;copyright_holders_url&#039;]}&quot; onclick=&quot;window.open(this.href, &#039;&#039;, InfoWinParams); return false;&quot;&gt;{L_COPYRIGHT_HOLDERS}&lt;/a&gt;\n            &lt;!-- ENDIF --&gt;\n            &lt;!-- IF $bb_cfg[&#039;advert_html_path&#039;] --&gt;\n            &lt;span class=&quot;normal&quot;&gt;&amp;nbsp;|&amp;nbsp;&lt;/span&gt;\n            &lt;a href=&quot;{$bb_cfg[&#039;advert_url&#039;]}&quot; onclick=&quot;window.open(this.href, &#039;&#039;, InfoWinParams); return false;&quot;&gt;{L_ADVERT}&lt;/a&gt;\n            &lt;!-- ENDIF --&gt;\n        &lt;/div&gt;\n        &lt;br /&gt;\n        &lt;!-- ENDIF --&gt;\n \n        &lt;!-- IF IS_AM --&gt;\n        &lt;div class=&quot;tiny tCenter&quot;&gt;\n&lt;a href=&quot;mod.php&quot;&gt;{L_MODERATE_PANEL}&lt;/a&gt;&lt;/div&gt;\n        &lt;br /&gt;\n        &lt;!-- ENDIF --&gt;\n \n \n        &lt;!-- IF SHOW_ADMIN_LINK --&gt;\n        &lt;div class=&quot;tiny tCenter&quot;&gt;&lt;a href=&quot;{ADMIN_LINK_HREF}&quot;&gt;{L_ADMIN_PANEL}&lt;/a&gt;&lt;/div&gt;\n        &lt;br /&gt;\n        &lt;!-- ENDIF --&gt;\n \n        &lt;div class=&quot;copyright tCenter&quot; id=&quot;t2t&quot;&gt;\n            {POWERED} &lt;br /&gt;\n            {L_NEWSRBK} &lt;br /&gt;\n        &lt;/div&gt;\n \n    &lt;/div&gt;\n \n   \n    &lt;div class=&quot;copyright tCenter&quot;&gt;\n        &lt;b style=&quot;color:rgb(204,0,0);&quot;&gt;{L_NOTICE}&lt;/b&gt;&lt;br /&gt;\n        {L_COPY}\n    &lt;/div&gt;\n  &lt;!-- START WWW.UZ TOP-RATING --&gt;&lt;SCRIPT language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;\n&lt;!--\ntop_js=&quot;1.0&quot;;top_r=&quot;id=28063&amp;r=&quot;+escape(document.referrer)+&quot;&amp;pg=&quot;+escape(window.location.href);document.cookie=&quot;smart_top=1; path=/&quot;; top_r+=&quot;&amp;c=&quot;+(document.cookie?&quot;Y&quot;:&quot;N&quot;)\n//--&gt;\n&lt;/SCRIPT&gt;\n&lt;SCRIPT language=&quot;javascript1.1&quot; type=&quot;text/javascript&quot;&gt;\n&lt;!--\ntop_js=&quot;1.1&quot;;top_r+=&quot;&amp;j=&quot;+(navigator.javaEnabled()?&quot;Y&quot;:&quot;N&quot;)\n//--&gt;\n&lt;/SCRIPT&gt;\n&lt;SCRIPT language=&quot;javascript1.2&quot; type=&quot;text/javascript&quot;&gt;\n&lt;!--\ntop_js=&quot;1.2&quot;;top_r+=&quot;&amp;wh=&quot;+screen.width+&#039;x&#039;+screen.height+&quot;&amp;px=&quot;+\n(((navigator.appName.substring(0,3)==&quot;Mic&quot;))?screen.colorDepth:screen.pixelDepth)\n//--&gt;\n&lt;/SCRIPT&gt;\n&lt;SCRIPT language=&quot;javascript1.3&quot; type=&quot;text/javascript&quot;&gt;\n&lt;!--\ntop_js=&quot;1.3&quot;;\n//--&gt;\n&lt;/SCRIPT&gt;\n&lt;SCRIPT language=&quot;JavaScript&quot; type=&quot;text/javascript&quot;&gt;\n&lt;!--\ntop_rat=&quot;&amp;col=0063AF&amp;t=ffffff&amp;p=DD7900&quot;;top_r+=&quot;&amp;js=&quot;+top_js+&quot;&quot;;document.write(&#039;&lt;img src=&quot;http://www.uz/plugins/top_rating/count/cnt0.png?&#039;+top_r+top_rat+&#039;&quot; width=0 height=0 border=0 /&gt;&#039;)//--&gt;\n&lt;/SCRIPT&gt;&lt;NOSCRIPT&gt;&lt;IMG height=0 src=&quot;http://www.uz/plugins/top_rating/count/cnt0.png?id=28063&amp;pg=http%3A//hottorrents.uz&amp;col=0063AF&amp;t=ffffff&amp;p=DD7900&quot; width=0 border=0 /&gt;&lt;/NOSCRIPT&gt;&lt;!-- END WWW.UZ TOP-RATING --&gt;\n    &lt;!--/page_footer --&gt;\n \n    &lt;/div&gt;\n    &lt;!--/page_container --&gt;\n \n&lt;!-- ENDIF --&gt;\n \n&lt;!-- IF ONLOAD_FOCUS_ID --&gt;\n \n&lt;script type=&quot;text/javascript&quot;&gt;\n$p(&#039;{ONLOAD_FOCUS_ID}&#039;).focus();\n&lt;/script&gt;\n \n&lt;!-- ENDIF --&gt;</pre>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1345815687,
+      "user_id": 1567,
+      "user_title": "User",
+      "username": "Kolya"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 19912,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Kolya, попробуй после того куска кода,как PheRum сказал сделать так -<br />\n <br />\n&lt;div class=&quot;banners&quot; align=&quot;right&quot;&gt; сюды код &lt;/div&gt;<br />\n <br />\nа в майн цсс добавь -<br />\n <br />\n.banners a img{opacity:0.3;-moz-opacity:0.3;filter:alpha(opacity=40)}<br />\n.banners a:hover img{opacity:1.0;-moz-opacity:1.0;filter:alpha(opacity=100)}<br />\n <br />\nпри наведении мышки счетчик будет полностью виден а так прозрачным,<br />\n <br />\n <br />\n <br />\nхотя...это всего лиш оформление...но думаю определение места поможет...хотя может и нет...",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1345881917,
+      "user_id": 782,
+      "user_title": "User",
+      "username": "qaqra"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 19913,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "все сделал спасибо",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1345884235,
+      "user_id": 1567,
+      "user_title": "User",
+      "username": "Kolya"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "scetik",
+  "sticky": false,
+  "tags": [],
+  "title": "Счетик",
+  "url_path": "/threads/scetik.1494/",
+  "user_id": 1567,
+  "username": "Kolya",
+  "view_count": 1851
+}

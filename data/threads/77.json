@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 686,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 47,
+        "title": "Modifications for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 43,
+    "title": "Modifications for TorrentPier (archive)"
+  },
+  "id": 77,
+  "last_post_date": 1359248172,
+  "node_id": 43,
+  "post_date": 1311411378,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 686,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Автор:</b> Zenden<br />\n<b>Описание:</b> Данный мод служит для быстрого перемещения топиков в &#039;Корзину&#039;<br />\n<b>Аннотация:</b> Идея взята у wertosa, но в его моде было слишком много ненужного кода.<br />\n<br />\nСкопировать вашу иконкус корзиной в папку /templates/default/images/<br />\nopen config.php<br />\nfind<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$bb_cfg[&#039;trash_forum_id&#039;] = 0;</pre>replace<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$bb_cfg[&#039;trash_forum_id&#039;] = id форума вашей корзины;</pre>open lang_main.php в самом низу добавить.<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">// Start add - Bin Mod\n$lang[&#039;MOVE_BIN&#039;] = &#039;Переместить топик в корзинку&#039;;\n$lang[&#039;TOPICS_MOVED_BIN&#039;] = &#039;Отмеченный топик был перенесён в корзинку.&#039;;\n// End add - Bin Mod</pre><br />\nopen modcp.php<br />\n find<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">    else if (isset($_REQUEST[&#039;unlock&#039;]) || @$_POST[&#039;mod_action&#039;] === &#039;topic_unlock&#039;)\n    {\n        $mode = &#039;unlock&#039;;\n    }</pre>past after<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">    else if (isset($_REQUEST[&#039;trash&#039;]) || @$_POST[&#039;mod_action&#039;] === &#039;topic_trash&#039;)\n    {\n        $mode = &#039;trash&#039;;\n    }</pre>find<br />\n  <pre class=\"xfBb-code\" data-lang=\"php\"> case &#039;unset_download&#039;:</pre>past after<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">case &#039;trash&#039;:</pre>find<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">    default:\n        bb_die(&#039;invalid action&#039;);\n        break;\n}\n\n$template-&gt;assign_vars(array(&#039;PAGE_TITLE&#039; =&gt; $lang[&#039;MOD_CP&#039;]));\n\nrequire(PAGE_HEADER);\n\n$template-&gt;pparse(&#039;body&#039;);\n\nrequire(PAGE_FOOTER);</pre>  past before<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">    case &#039;trash&#039;:\n\n        if ($confirmed = true)\n        {\n            $new_forum_id = (int) $bb_cfg[&#039;trash_forum_id&#039;];\n            $result = topic_move($req_topics, $new_forum_id, $forum_id, $leave_shadow = true, $insert_bot_msg = true);\n\n            //Обновление кеша новостей на главной\n            $news_forums = array_flip(explode(&#039;,&#039;, $bb_cfg[&#039;latest_news_forum_id&#039;]));\n            if((isset($news_forums[$forum_id]) || isset($news_forums[$new_forum_id])) &amp;&amp; $bb_cfg[&#039;show_latest_news&#039;] &amp;&amp; $result)\n            {\n                $datastore-&gt;enqueue(&#039;latest_news&#039;);\n                $datastore-&gt;update(&#039;latest_news&#039;);\n            }\n\n            $msg = ($result) ? $lang[&#039;TOPICS_MOVED_BIN&#039;] : $lang[&#039;NO_TOPICS_MOVED&#039;];\n            message_die(GENERAL_MESSAGE, return_msg_mcp($msg));\n        }\n        else\n        {\n            $template-&gt;assign_vars(array(\n                &#039;TPL_MODCP_MOVE&#039;    =&gt; true,\n                &#039;TOPIC_TITLES&#039;        =&gt; join(&quot;\\n&lt;/li&gt;\\n&lt;li&gt;\\n&quot;, $topic_titles),\n                &#039;S_MODCP_ACTION&#039;    =&gt; &quot;modcp.php&quot;,\n                &#039;S_HIDDEN_FIELDS&#039;    =&gt; build_hidden_fields($hidden_fields),\n            ));\n\n            $template-&gt;set_filenames(array(&#039;body&#039; =&gt; &#039;modcp.tpl&#039;));\n        }\n    break;</pre>open templates/default/tpl_config.php<br />\nfind<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$images[&#039;icon_newest_reply&#039;]  = $_main .&#039;icon_newest_reply.gif&#039;;</pre>after add<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$images[&#039;topic_mod_bin&#039;]      = $_main .&#039;icon_topic_bin.gif&#039;;</pre> open viewtopic.php<br />\nfind<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$topic_mod .= &quot;&lt;a href=\\&quot;modcp.php?&quot; . POST_TOPIC_URL . &quot;=$topic_id&amp;amp;mode=split&amp;amp;sid=&quot; . $userdata[&#039;session_id&#039;] . &#039;&quot;&gt;&lt;img src=&quot;&#039; . $images[&#039;topic_mod_split&#039;] . &#039;&quot; alt=&quot;&#039; . $lang[&#039;SPLIT_TOPIC&#039;] . &#039;&quot; title=&quot;&#039; . $lang[&#039;SPLIT_TOPIC&#039;] . &#039;&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&amp;nbsp;&#039;;</pre>add after<br />\n<pre class=\"xfBb-code\" data-lang=\"php\"> $topic_mod .= &quot;&lt;a href=\\&quot;modcp.php?&quot; . POST_TOPIC_URL . &quot;=$topic_id&amp;amp;mode=trash&amp;amp;sid=&quot; . $userdata[&#039;session_id&#039;] . &#039;&quot;&gt;&lt;img src=&quot;&#039; . $images[&#039;topic_mod_bin&#039;] . &#039;&quot; alt=&quot;&#039; . $lang[&#039;MOVE_BIN&#039;] . &#039;&quot; title=&quot;&#039; . $lang[&#039;MOVE_BIN&#039;] . &#039;&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&amp;nbsp;&#039;;</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1311411378,
+      "user_id": 97,
+      "user_title": "User",
+      "username": "Zenden"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 4249,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Работает без ошибок?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1319053508,
+      "user_id": 364,
+      "user_title": "",
+      "username": "Saint"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23874,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Saint\">Работает без ошибок?</blockquote>да. но не ищет в этом топике.... = (",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1354902040,
+      "user_id": 209,
+      "user_title": "User",
+      "username": "max"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26177,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Небольшая правка для того, чтобы спокойно управлять параметрами переноса темы (выкл ссылку в старом разделе или выкл мессагу бота)<br />\n <br />\n<b>modcp.php</b><br />\nНайти в блоке trash:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">            $template-&gt;assign_vars(array(\n                &#039;TPL_MODCP_MOVE&#039;    =&gt; true,\n                &#039;TOPIC_TITLES&#039;        =&gt; join(&quot;\\n&lt;/li&gt;\\n&lt;li&gt;\\n&quot;, $topic_titles),\n                &#039;S_MODCP_ACTION&#039;    =&gt; &quot;modcp.php&quot;,\n                &#039;S_HIDDEN_FIELDS&#039;    =&gt; build_hidden_fields($hidden_fields),\n            ));</pre>Заменить на:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">            $template-&gt;assign_vars(array(\n                &#039;TPL_MODCP_MOVE&#039;    =&gt; true,\n                &#039;TOPIC_TITLES&#039;        =&gt; join(&quot;\\n&lt;/li&gt;\\n&lt;li&gt;\\n&quot;, $topic_titles),\n                &#039;S_MODCP_ACTION&#039;    =&gt; &quot;modcp.php&quot;,\n                &#039;S_HIDDEN_FIELDS&#039;    =&gt; build_hidden_fields($hidden_fields),\n                &#039;SHOW_LEAVESHADOW&#039;    =&gt; $leave_shadow,\n                &#039;SHOW_BOT_OPTIONS&#039;    =&gt; $insert_bot_msg,\n            ));</pre>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1359248172,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "korzina",
+  "sticky": false,
+  "tags": [],
+  "title": "Корзина",
+  "url_path": "/threads/korzina.77/",
+  "user_id": 97,
+  "username": "Zenden",
+  "view_count": 3167
+}

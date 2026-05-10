@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 97238,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42370,
+  "last_post_date": 1756125821,
+  "node_id": 47,
+  "post_date": 1748787576,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97238,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/generacija-meta-opisanija-seo.325/\" class=\"link link--internal\">Генерация мета описания (SEO)</a> - Добавляет мета описание для страниц. Также автоматически генерирует описание для тем.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><div style=\"text-align: center\"><span style=\"color: rgb(226, 80, 65)\">Начиная с версии движка v2.4.6 добавлен по умолчанию</span>&#8203;</div><hr /><b>Описание:</b> Добавляет мета описание для страниц (index.php, viewforum.php, viewtopic.php).<br />\nОсобенности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Автоматически генерирует описание темы (берет первые 220 символов из первого сообщения)</li>\n<li data-xf-list-type=\"ul\">На странице форума также генерируется описание (описание форума, если оно есть)</li>\n<li data-xf-list-type=\"ul\">На главной странице выводится описание сайта (на основе одноименной настройки в...</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/generacija-meta-opisanija-seo.325/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1748787576,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97239,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/generacija-meta-opisanija-seo.325/\" class=\"link link--internal\">Генерация мета описания (SEO)</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/generacija-meta-opisanija-seo.325/update/654/\" class=\"link link--internal\">Обновление v1.0.1</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Обновлена инструкция</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/generacija-meta-opisanija-seo.325/update/654/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1748788715,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97244,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/generacija-meta-opisanija-seo.325/\" class=\"link link--internal\">Генерация мета описания (SEO)</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/generacija-meta-opisanija-seo.325/update/656/\" class=\"link link--internal\">Обновление v1.1.0 [Stable]</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Улучшена логика генерации мета описания</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/generacija-meta-opisanija-seo.325/update/656/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1749449288,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97691,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/generacija-meta-opisanija-seo.325/\" class=\"link link--internal\">Генерация мета описания (SEO)</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/generacija-meta-opisanija-seo.325/update/669/\" class=\"link link--internal\">Обновление v1.2.0 [Stable]</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Отключена генерация мета-описания для приватных тем</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/generacija-meta-opisanija-seo.325/update/669/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1756125821,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "generacia-meta-opisania-seo",
+  "sticky": false,
+  "tags": [],
+  "title": "Генерация мета описания (SEO)",
+  "url_path": "/threads/generacia-meta-opisania-seo.42370/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 638
+}

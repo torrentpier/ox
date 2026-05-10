@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 95687,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42229,
+  "last_post_date": 1749314412,
+  "node_id": 47,
+  "post_date": 1706889328,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95687,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/nabor-bbcode-tegov-s-rutrekera.283/\" class=\"link link--internal\">Набор BBCode тегов с рутрекера</a> - Данный мод добавляет в BBCode редактор несколько тегов которые используются на rutracker.org<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b>  Данный мод добавляет в BBCode редактор несколько тегов которые используются на rutracker.org. Так же эти тэги полностью работоспособны в случае парсинга раздач с рутрекера.<br />\n<br />\n<b>Список тегов:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">box | Рамка вокруг текста</li>\n<li data-xf-list-type=\"ul\">⇛   | Отступ (TAB)</li>\n<li data-xf-list-type=\"ul\">nfo | NFO</li>\n<li data-xf-list-type=\"ul\">pre | Форматированный текст</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/nabor-bbcode-tegov-s-rutrekera.283/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1706889328,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97243,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/nabor-bbcode-tegov-s-rutrekera.283/\" class=\"link link--internal\">Набор BBCode тегов с рутрекера</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/nabor-bbcode-tegov-s-rutrekera.283/update/655/\" class=\"link link--internal\">Обновление v2.0.0</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Добавлена возможность указать цвет (фона и обводки) для тега box</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/nabor-bbcode-tegov-s-rutrekera.283/update/655/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1749314412,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "nabor-bbcode-tegov-s-rutrekera",
+  "sticky": false,
+  "tags": [],
+  "title": "Набор BBCode тегов с рутрекера",
+  "url_path": "/threads/nabor-bbcode-tegov-s-rutrekera.42229/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 701
+}

@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 98432,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 43252,
+  "last_post_date": 1772908253,
+  "node_id": 47,
+  "post_date": 1772908253,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98432,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka submitted a new resource:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/cs-1-6-server-statistics.334/\" class=\"link link--internal\">CS 1.6 Server Statistics</a> - Мод для отображения статистики Counter-Strike 1.6 серверов в реальном времени.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> Мод для отображения статистики Counter-Strike 1.6 серверов в реальном времени.<br />\nИспользует протокол A2S (UDP) для запроса серверов.<br />\n<br />\n<b>Требования:</b><br />\n- TorrentPier 2.4.x<br />\n- PHP 8.0+ (рекомендуется 8.3) с расширением `sockets`<br />\n- MySQL / MariaDB</blockquote><br />\n<a href=\"https://torrentpier.com/resources/cs-1-6-server-statistics.334/\" class=\"link link--internal\">Read more about this resource...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1772908253,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "cs-1-6-server-statistics",
+  "sticky": false,
+  "tags": [],
+  "title": "CS 1.6 Server Statistics",
+  "url_path": "/threads/cs-1-6-server-statistics.43252/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 494
+}

@@ -1,0 +1,134 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 69165,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 31138,
+  "last_post_date": 1418149874,
+  "node_id": 57,
+  "post_date": 1418081313,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 69165,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Возникает такая проблема, но очень редко и случаи единичные<br />\nВ конфиге прописано<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">// Сколько дней сохранять торрент зарегистрированным / Days to keep torrent registered, if:\n$bb_cfg[&#039;seeder_last_seen_days_keep&#039;]  = 0; // сколько дней назад был сид последний раз\n$bb_cfg[&#039;seeder_never_seen_days_keep&#039;] = 0; // сколько дней имеется статус &quot;Сида не было никогда&quot;</pre><br />\nЕсть идеи? Или же грешить на обидчивых модераторов, которые втихаря удаляют.<br />\n<br />\nКак вообще отслеживать такие действия? Потому что я на такие топики случайно натыкаюсь и их трудно искать",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1418081313,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1418081874,
+          "file_size": 9672,
+          "filename": "09-12-2014 2-37-11.webp",
+          "height": 314,
+          "id": 2775,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/09-12-2014-2-37-11-webp.2775/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2779-549af5fa004363b3c44e4dc193d2e5ec.jpg?hash=s1Fs0laQJE",
+          "width": 172
+        }
+      ],
+      "id": 69166,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Нашел. Как сюда добавить действие торрент разрегистрирован?<br />\n<img src=\"https://torrentpier.com/attachments/2775/\" alt=\"09-12-2014 2-37-11.webp\" />",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1418081882,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 69251,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "хорошо хоть не удаляются сами )))",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1418143831,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 69257,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"ler\">Как сюда добавить действие торрент разрегистрирован?</blockquote>Добавить свой элемент в этот массив: https://github.com/torrentpier/torrentpier/blob/master/library/includes/functions.php#L2109<br />\nА логирование производится примерно так: https://github.com/torrentpier/torrentpier/blob/master/modcp.php#L563",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1418149835,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 69258,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Движок тут вряд ли виноват, разве что у вас сами файлы физически куда-то пропадают. Так как это единственный вариант разрегистрации при такой настройке.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1418149874,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "torrenty-sami-po-sebe-razregistriruutsa",
+  "sticky": false,
+  "tags": [],
+  "title": "Торренты сами по себе разрегистрируются",
+  "url_path": "/threads/torrenty-sami-po-sebe-razregistriruutsa.31138/",
+  "user_id": 0,
+  "username": "ler",
+  "view_count": 1092
+}

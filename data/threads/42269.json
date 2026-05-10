@@ -1,0 +1,164 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 96203,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42269,
+  "last_post_date": 1717327336,
+  "node_id": 57,
+  "post_date": 1717164835,
+  "posts": [
+    {
+      "attach_count": 3,
+      "attachments": [
+        {
+          "attach_date": 1717164819,
+          "file_size": 179446,
+          "filename": "Снимок2.webp",
+          "height": 698,
+          "id": 5985,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok2-webp.5985/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5989-6333a6ca7f505cb9c437ccef70d22b3a.jpg?hash=ECk9gJfany",
+          "width": 1698
+        },
+        {
+          "attach_date": 1717164819,
+          "file_size": 20312,
+          "filename": "Снимок3.webp",
+          "height": 675,
+          "id": 5986,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok3-webp.5986/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5990-3e07d061f58c0c418adefe2b49db3800.jpg?hash=8lUW6d2-PJ",
+          "width": 458
+        },
+        {
+          "attach_date": 1717164819,
+          "file_size": 4626,
+          "filename": "Снимок4.webp",
+          "height": 143,
+          "id": 5987,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok4-webp.5987/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5991-919f4a0b5558955537c1f01ea02d0a33.jpg?hash=edf18vHeek",
+          "width": 387
+        }
+      ],
+      "id": 96203,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Сайт переехал на новый сервер. В планировщике, задачи, вроде бы, отрабатываются (время меняется). <br />\n<br />\nСам планировщик, скриншоты сделаны в 17:02 и 17:04, а в планировщике время следующего запуска в 13:49, причем время меняется, значит в планировщике задачи выполняются.<br />\n<br />\nНа сервере время правильное указано, внизу сайта время тоже верно указано.<br />\n<br />\nКак в планировщике задач изменить время (последнего запуска и следующего запуска)?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1717164835,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96204,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Время последнего запуска и следующего - вычисляются на основе тех настроек (интервалов), которые прописаны для каждой конкретной крон задачи (определяется это в её настройках соответственно). Чтобы изменить интервал выполнения конкретной крон задачи, нажмте рядом на шестиренку.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1717258725,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96205,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"belomaxorka\">Время последнего запуска и следующего - вычисляются на основе тех настроек (интервалов), которые прописаны для каждой конкретной крон задачи (определяется это в её настройках соответственно). Чтобы изменить интервал выполнения конкретной крон задачи, нажмте рядом на шестиренку.</blockquote>Это понятно. Как сделать, что бы в планировщике время указывалось на основе серверного времени (т.е. в планировщике указывается, к примеру, 13:00, а должно быть 17:00), т.е. не интервал выполнения, а само время?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1717327143,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96206,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Там используется функция из MySQL. Вам нужно часовой пояс в MySQL поменять вероятно на тот, который у вас по факту",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1717327268,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96207,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"belomaxorka\">Там используется функция из MySQL. Вам нужно часовой пояс в MySQL поменять вероятно на тот, который у вас по факту</blockquote>лучше всего через конфиг самого мускуля это сделать",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1717327336,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "vopros-po-planirovsiku-zadac-cron",
+  "sticky": false,
+  "tags": [],
+  "title": "Вопрос по планировщику задач (cron)",
+  "url_path": "/threads/vopros-po-planirovsiku-zadac-cron.42269/",
+  "user_id": 5704,
+  "username": "ExPlayer",
+  "view_count": 914
+}

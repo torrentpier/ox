@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 13636,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1114,
+  "last_post_date": 1331848919,
+  "node_id": 57,
+  "post_date": 1331840154,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13636,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В папке files скопилось некоторое колличество неиспользованных торрент файлов. Повторные добавления раздачей с уже зарегистрированными торрентами, залился торрент но не создали тему и т.п.. Собственно нужно удалить их. Подскажите, каким образом можно это сделать, найти все незарегистрированные торрент файлы на трекере и удалить их?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1331840154,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Trancef"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13637,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "за удаление неиспользуемых торрентов отвеает крон задача bb_maintenance.php<br />\nона их и почистит",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1331848919,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "torrent-fajly",
+  "sticky": false,
+  "tags": [],
+  "title": "Торрент файлы.",
+  "url_path": "/threads/torrent-fajly.1114/",
+  "user_id": 0,
+  "username": "Trancef",
+  "view_count": 1367
+}

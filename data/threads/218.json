@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 2290,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 218,
+  "last_post_date": 1314794464,
+  "node_id": 57,
+  "post_date": 1314793096,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 2290,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "1. Скачал посл ревизию, залил базу от 775, переконвертировал ее в тп 2. Цвета ников не окрашиваются. Отменили это?<br />\n<br />\n2. После апдейта с 775 на тп 2 в админке пропал крон.<br />\n<br />\n3. ночью в 5 утра запускается задача bb_maintenance.php, база начинает хавать 100% одного ядра и которые сайты стоят в этомже мускуле падают и выдают ошибку 502<br />\nИзвините если создал не в тот раздел",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1314793096,
+      "user_id": 65,
+      "user_title": "",
+      "username": "patroshka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 2295,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"\">Скачал посл ревизию, залил базу от 775, переконвертировал ее в тп 2</blockquote><br />\n первый пост читаем внимательно, а именно для какого билда дампер  <a href=\"http://torrentpier.com/threads/Переезд-с-r775.32/\" class=\"link link--internal\">http://torrentpier.com/threads/Переезд-с-r775.32/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1314794464,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "paru-voprosov",
+  "sticky": false,
+  "tags": [],
+  "title": "Пару вопросов",
+  "url_path": "/threads/paru-voprosov.218/",
+  "user_id": 65,
+  "username": "patroshka",
+  "view_count": 1469
+}

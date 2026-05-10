@@ -1,0 +1,53 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 98395,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      }
+    ],
+    "id": 2,
+    "title": "Resource news"
+  },
+  "id": 43247,
+  "last_post_date": 1771105621,
+  "node_id": 2,
+  "post_date": 1771105621,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98395,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Привет.<br />\n<br />\nПродолжаем серию статей о том, что появится в новой мажорной версии проекта.<br />\n<br />\nСегодня поговорим об одном из самых масштабных изменений - мы полностью переработали систему вложений, выкинув легаси-модуль <code class=\"xfBb-icode\">attach_mod</code>, доставшийся в наследство от phpBB2, и заменив его на простую и понятную архитектуру, привязанную напрямую к темам.<br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-cto-bylo\"></a>Что было&#8203;<a class=\"hoverLink\" href=\"#-cto-bylo\" title=\"Permanent link\"></a></h3>Система вложений в TorrentPier была унаследована от phpBB Attachment Mod - отдельного модуля, который прикручивался к phpBB2 как дополнение. Это восемь таблиц в базе данных, куча самописной логики, огромные разделы в панели администрирования, и примерно 6500 строк кода, которые по факту обслуживают одну единственную задачу - прикрепить торрент-файл к теме.<br />\n<br />\nПроблем с этим подходом было несколько. Чтобы получить информацию о торренте, нужно было делать JOIN через три таблицы: <code class=\"xfBb-icode\">bb_topics</code> → <code class=\"xfBb-icode\">bb_posts</code> → <code class=\"xfBb-icode\">bb_attachments</code> → <code class=\"xfBb-icode\">bb_attachments_desc</code>. Вложения привязывались к посту, а не к теме - а нам нужна привязка именно к теме, потому что торрент в TorrentPier это всегда свойство темы, а не отдельного сообщения.<br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-cto-stalo\"></a>Что стало&#8203;<a class=\"hoverLink\" href=\"#-cto-stalo\" title=\"Permanent link\"></a></h3>В версии 3.0 торрент-файл привязан напрямую к теме через два новых поля в таблице bb_topics:<br />\n<ul>\n<li data-xf-list-type=\"ul\"><code class=\"xfBb-icode\">attach_ext_id</code> — идентификатор расширения файла</li>\n<li data-xf-list-type=\"ul\"><code class=\"xfBb-icode\">attach_filesize</code> — размер файла в байтах</li>\n</ul>Все. Никаких промежуточных таблиц, никаких JOIN&#039;ов. Чтобы узнать есть ли у темы торрент - достаточно проверить одно поле. Путь к файлу вычисляется из <code class=\"xfBb-icode\">topic_id</code>, а не хранится в базе.<br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-cto-udaleno\"></a>Что удалено&#8203;<a class=\"hoverLink\" href=\"#-cto-udaleno\" title=\"Permanent link\"></a></h3>Масштаб зачистки можно оценить по цифрам: <b>~6,500 строк удалено, ~2,700 строк добавлено</b>. Чистое сокращение кодовой базы - почти 4,000 строк.<br />\n<br />\nУдалены:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Вся директория <code class=\"xfBb-icode\">library/attach_mod/</code> (7 файлов)</li>\n<li data-xf-list-type=\"ul\">Несколько файлов админ-панели и их шаблоны</li>\n<li data-xf-list-type=\"ul\">Легаси-классы <code class=\"xfBb-icode\">Attach.php</code> (865 строк), <code class=\"xfBb-icode\">AttachPosting.php</code>, <code class=\"xfBb-icode\">Torrent.php</code> (792 строки)</li>\n<li data-xf-list-type=\"ul\">Билдер для кеша расширений <code class=\"xfBb-icode\">build_attach_extensions.php</code></li>\n<li data-xf-list-type=\"ul\">Крон <code class=\"xfBb-icode\">attach_maintenance.php</code></li>\n<li data-xf-list-type=\"ul\">Восемь таблиц базы данных</li>\n<li data-xf-list-type=\"ul\">Система квот</li>\n<li data-xf-list-type=\"ul\">Около 200 неиспользуемых языковых строк</li>\n</ul><br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-novye-komponenty\"></a>Новые компоненты&#8203;<a class=\"hoverLink\" href=\"#-novye-komponenty\" title=\"Permanent link\"></a></h3>Вместо монолитного <code class=\"xfBb-icode\">attach_mod</code> появился набор компактных классов:<br />\n<br />\n<b><code class=\"xfBb-icode\">TorrentPier\\Attachment</code></b> - централизованное управление файлами вложений. Простые статические методы: store(), delete(), getPath(), getSize(), exists(). Ничего лишнего.<br />\n<b><code class=\"xfBb-icode\">TorrentPier\\Torrent\\Registry</code></b> - регистрация и снятие торрентов с трекера. Включает умную авто-регистрацию с поддержкой премодерации.<br />\n<b><code class=\"xfBb-icode\">TorrentPier\\Torrent\\Sender</code></b> — отдача торрент-файла пользователю с инъекцией passkey в announce-URL.<br />\n<b><code class=\"xfBb-icode\">TorrentPier\\Torrent\\Moderation</code></b> — действия модерации над торрентами (смена статуса, типа раздачи).<br />\n<b><code class=\"xfBb-icode\">TorrentPier\\Torrent\\Passkey</code></b> — генерация и валидация passkey.<br />\n<b><code class=\"xfBb-icode\">TorrentPier\\Torrent\\DownloadCounter</code></b> — трекинг скачиваний с дневными лимитами.<br />\n<b><code class=\"xfBb-icode\">TorrentPier\\Torrent\\FileList</code></b> — парсинг и отображение содержимого торрент-файла.<br />\n<br />\nКаждый класс отвечает за свою задачу. Монолитный <code class=\"xfBb-icode\">Torrent.php</code> на 800 строк, где всё было свалено в кучу, ушел в прошлое.<br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-limity-skacivania\"></a>Лимиты скачивания&#8203;<a class=\"hoverLink\" href=\"#-limity-skacivania\" title=\"Permanent link\"></a></h3>Появилась новая функциональность: настраиваемые дневные лимиты скачивания.<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$bb_cfg[&#039;torrent_dl&#039;] = [\n    &#039;daily_limit&#039; =&gt; 50,         // Обычные пользователи\n    &#039;daily_limit_premium&#039; =&gt; 100, // Премиум-пользователи\n];</pre><br />\nСистема отслеживает уникальные скачивания: если пользователь уже скачивал этот торрент — повторная загрузка не считается. Гости проходят без ограничений (скачивание без учета). Счетчики сбрасываются ежедневно через крон.<br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-migracia-dla-susestvuusih-ustanovok\"></a>Миграция для существующих установок&#8203;<a class=\"hoverLink\" href=\"#-migracia-dla-susestvuusih-ustanovok\" title=\"Permanent link\"></a></h3>Для тех, кто обновляется с 2.x — мы подготовили скрипт миграции <code class=\"xfBb-icode\">install/scripts/migrate_attachments.php</code>, который:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Переносит данные из старых таблиц вложений в новые поля <code class=\"xfBb-icode\">bb_topics</code></li>\n<li data-xf-list-type=\"ul\">Сохраняет пути к торрент-файлам</li>\n<li data-xf-list-type=\"ul\">Обновляет ссылки на статусы трекера</li>\n<li data-xf-list-type=\"ul\">Поддерживает откат в случае проблем</li>\n</ul>После запуска скрипта достаточно выполнить миграции (<code class=\"xfBb-icode\">php vendor/bin/phinx migrate</code>), и все заработает на новой системе.<br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-ulucsenia-torrserver\"></a>Улучшения TorrServer&#8203;<a class=\"hoverLink\" href=\"#-ulucsenia-torrserver\" title=\"Permanent link\"></a></h3>В рамках этой же работы мы оптимизировали интеграцию с TorrServer:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Добавлен метод <code class=\"xfBb-icode\">isAvailable()</code> с 30-секундным кешем — если TorrServer недоступен, движок не будет тратить время на таймауты</li>\n<li data-xf-list-type=\"ul\">Таймаут по умолчанию уменьшен с 5 до 3 секунд</li>\n<li data-xf-list-type=\"ul\">Используется упрощенный HTTP-клиент без retry middleware для быстрого отказа</li>\n<li data-xf-list-type=\"ul\">Корректная деградация при недоступности TorrServer — интерфейс не ломается, просто не показывает элементы связанные с TorrServer</li>\n</ul><br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-izmenenia-v-konfiguracii\"></a>Изменения в конфигурации&#8203;<a class=\"hoverLink\" href=\"#-izmenenia-v-konfiguracii\" title=\"Permanent link\"></a></h3>Удалены старые опции <code class=\"xfBb-icode\">tracker.use_real_filename</code> и <code class=\"xfBb-icode\">tracker.use_old_torrent_name_format</code>. Вместо них — одна простая настройка:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$bb_cfg[&#039;tracker&#039;][&#039;torrent_filename_with_title&#039;] = true; // Включать ли название темы в имя файла</pre><br />\nКонфигурация вложений стала тривиальной:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$bb_cfg[&#039;attach&#039;] = [\n    &#039;upload_path&#039; =&gt; DATA_DIR . &#039;/uploads&#039;,\n    &#039;max_size&#039; =&gt; 5 * 1024 * 1024,\n    &#039;up_allowed&#039; =&gt; true,\n    &#039;allowed_ext&#039; =&gt; [&#039;torrent&#039;],\n];</pre><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-cto-eto-daet\"></a>Что это дает&#8203;<a class=\"hoverLink\" href=\"#-cto-eto-daet\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><b>Производительность.</b> Один запрос вместо цепочки JOIN&#039;ов через четыре таблицы</li>\n<li data-xf-list-type=\"ul\"><b>Простота.</b> Шесть компактных классов вместо монолита на тысячи строк</li>\n<li data-xf-list-type=\"ul\"><b>Поддерживаемость.</b> Каждый класс делает одно дело и делает его хорошо</li>\n<li data-xf-list-type=\"ul\"><b>Чистота.</b> Минус 4,000 строк мертвого кода, который тащили с 2005 года</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-cto-dal-se\"></a>Что дальше&#8203;<a class=\"hoverLink\" href=\"#-cto-dal-se\" title=\"Permanent link\"></a></h3>Переработка системы вложений - одно из ключевых изменений версии 3.0. В следующих статьях расскажем о других нововведениях.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1771105621,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-3-0-novaa-sistema-vlozenij",
+  "sticky": false,
+  "tags": [
+    "3.0",
+    "attachments"
+  ],
+  "title": "TorrentPier 3.0: новая система вложений",
+  "url_path": "/threads/torrentpier-3-0-novaa-sistema-vlozenij.43247/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 206
+}

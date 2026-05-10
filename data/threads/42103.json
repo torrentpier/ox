@@ -1,0 +1,75 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94695,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 42103,
+  "last_post_date": 1676537740,
+  "node_id": 111,
+  "post_date": 1676537740,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1676537813,
+          "file_size": 6168,
+          "filename": "[torrentpier.com]logos-hexagon-blue@0,5x.webp",
+          "height": 343,
+          "id": 5350,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/torrentpier-com-logos-hexagon-blue-0-5x-webp.5350/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5354-932c76a757e415468823a44c2d5b46ce.jpg?hash=ZWQVz4Xylz",
+          "width": 302
+        }
+      ],
+      "id": 94695,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1677914682,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier Bison. Версия 2.3.0.2</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/5350/\" alt=\"[torrentpier.com]logos-hexagon-blue@0,5x.png\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/releases/tag/v2.3.0.2\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.3.0.2 · torrentpier/torrentpier</a><br />\n<br />\n<b>Чейнджлог:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/compare/v2.3.0.1...v2.3.0.2\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Comparing v2.3.0.1...v2.3.0.2 · torrentpier/torrentpier</a><br />\n<br />\n<b>Основные изменения:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Fixed PHP 7.3: Deprecate FILTER_FLAG_SCHEME_REQUIRED and FILTER_FLAG_HOST_REQUIRED flags used with FILTER_VALIDATE_URL <a href=\"https://github.com/torrentpier/torrentpier/pull/507\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#507</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Fixed broken user search in admin_groups <a href=\"https://github.com/torrentpier/torrentpier/pull/508\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#508</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Fix some bugs with MySQL strict mode <a href=\"https://github.com/torrentpier/torrentpier/pull/509\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#509</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Fixed and improvements for SQL <a href=\"https://github.com/torrentpier/torrentpier/pull/510\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#510</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Added showing post number in viewtopic <a href=\"https://github.com/torrentpier/torrentpier/pull/511\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#511</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Updated composer dependencies <a href=\"https://github.com/torrentpier/torrentpier/pull/512\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#512</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Added symfony/polyfill <a href=\"https://github.com/torrentpier/torrentpier/pull/513\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#513</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Updated jQuery up to 1.12.4 <a href=\"https://github.com/torrentpier/torrentpier/pull/514\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#514</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Updated normalize css up to 8.0.1 <a href=\"https://github.com/torrentpier/torrentpier/pull/515\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#515</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Misc code improvements <a href=\"https://github.com/torrentpier/torrentpier/pull/516\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#516</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Fixed broken file_write() function <a href=\"https://github.com/torrentpier/torrentpier/pull/517\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#517</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Fixed array multi sorting <a href=\"https://github.com/torrentpier/torrentpier/pull/518\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#518</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n</ul>Для обновления на версию необходимо выполнить следующие запросы к базе данных:<br />\n<pre class=\"xfBb-code\" data-lang=\"sql\">ALTER TABLE `bb_users` CHANGE `user_sig` `user_sig` TEXT NOT NULL DEFAULT &#039;&#039;;\nALTER TABLE `bb_groups` CHANGE `group_signature` `group_signature` TEXT NOT NULL DEFAULT &#039;&#039;;\nALTER TABLE `bb_groups` CHANGE `group_description` `group_description` TEXT NOT NULL DEFAULT &#039;&#039;;\nUPDATE `bb_smilies` SET `code` = &#039;:cd:&#039;, `smile_url` = &#039;cd.gif&#039;, `emoticon` = &#039;cd&#039; WHERE `code` = &#039;:сd:&#039; AND `smile_url` = &#039;сd.gif&#039; AND `emoticon` = &#039;сd&#039;;</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1676537740,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-bison-versia-2-3-0-2",
+  "sticky": false,
+  "tags": [
+    "bison",
+    "новая версия",
+    "релиз",
+    "чейнджлог"
+  ],
+  "title": "TorrentPier Bison. Версия 2.3.0.2",
+  "url_path": "/threads/torrentpier-bison-versia-2-3-0-2.42103/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 792
+}

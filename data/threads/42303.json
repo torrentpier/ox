@@ -1,0 +1,52 @@
+{
+  "custom_fields": {
+    "torrentpier": "243"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 96645,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 42303,
+  "last_post_date": 1723918450,
+  "node_id": 80,
+  "post_date": 1723918450,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96645,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 1723918591,
+      "message_parsed": "<s>Привет всем. Заметил, что не работает поиск раздач по infohash.<br />\nЗаметил у себя на демо движке, и на демодвижке разрабов (создал специально раздачу для проверки).<br />\nВ теме раздачи скопировал infohash, вставил сверху в поиск, выбрал infohash, тупо ничего не произошло. Из самого поиска не находит ничего.</s><br />\nНаверно не актуально.<br />\nОказывается, добавляется вся инфа в поиск спустя какое то время. Прям сразу не получится найти, либо надо чтобы кто то нашёл это как то проиндексировалось и потом заработает.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1723918450,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 0,
+  "slug": "poisk-po-infohash",
+  "sticky": false,
+  "tags": [],
+  "title": "Поиск по infohash",
+  "url_path": "/threads/poisk-po-infohash.42303/",
+  "user_id": 55,
+  "username": "Lange",
+  "view_count": 485
+}

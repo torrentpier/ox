@@ -1,0 +1,67 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95307,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42192,
+  "last_post_date": 1699523340,
+  "node_id": 47,
+  "post_date": 1699523340,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1699523335,
+          "file_size": 2982,
+          "filename": "Capture.webp",
+          "height": 60,
+          "id": 5585,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/capture-webp.5585/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5589-161d9776d014de5ab7a1a74cd92a4e12.jpg?hash=B1tzoIX1ji",
+          "width": 200
+        }
+      ],
+      "id": 95307,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1714101046,
+      "message_parsed": "Добавляет порядковый номер поста рядом с датой публикации. Мод совместим со всеми версиями движка. Мод присутствует по умолчанию в LTS версии и v2.4.0 и выше.<br />\n<br />\nПример:<br />\n<img src=\"https://torrentpier.com/attachments/5585/\" alt=\"Capture.PNG\" /><br />\n<br />\nУстановка:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">======= открыть viewtopic.tpl (в вашем шаблоне) и найти =======\n{postrow.POST_DATE}&lt;/a&gt;\n======= заменить на =======\n{postrow.POST_DATE}&amp;nbsp;|&amp;nbsp;#{postrow.POST_NUMBER}&lt;/a&gt;\n======= сохранить файл =======</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1699523340,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "vyvod-poradkovogo-nomera-posta-v-topike",
+  "sticky": false,
+  "tags": [
+    "вывод номера поста"
+  ],
+  "title": "Вывод порядкового номера поста в топике",
+  "url_path": "/threads/vyvod-poradkovogo-nomera-posta-v-topike.42192/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 563
+}

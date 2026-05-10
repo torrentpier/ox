@@ -1,0 +1,154 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "seo.zip",
+      "id": 3383,
+      "local_path": null,
+      "r2_key": null,
+      "size": 4963,
+      "src_url": "https://torrentpier.com/api/resource-versions/276/download?file=3383"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]<?php\n\n####[ОТКРЫТЬ]-----.htaccess\n+ (добавить после RewriteEngine On) [Примечание, на сервере дожен был включен mod rewrite]\n# Главная\nRewriteRule ^index\\.html$ /index.php [QSA,L,NC]\n# Категории\nRewriteRule ^category-(.*)-(.*).html /index.php?$2 [QSA,L,NC]\n# Форумы\nRewriteRule ^forum-(.*)-(.*).html /viewforum.php?$2 [QSA,L,NC]\n# Темы\nRewriteRule ^topic-(.*)-(.*).html /viewtopic.php?$2 [QSA,L,NC]\n# Профиль\nRewriteRule ^profile-(.*)-(.*).html /profile.php?$2 [QSA,L,NC]\n\n####[SAVE_FILE]####\n\n####[ОТКРЫТЬ]-----includes/functions.php\n\n-----в конец добавить-----\n\nfunction encodestring($text)\n{\n    $text = mb_strtolower(trim($text), 'UTF-8');\n    $text = str_replace('ё', 'e', $text);\n\n    $search  = array(\n        '#([\\ri\\n])[\\s]+#is',\n        '#[^a-zа-я0-9-\\/\\s]#ui',\n        '#\\s+#i',\n        '#[\\/]#',\n        '#_+#'\n    );\n    $replace = array(\n        '$1',\n        '',\n        '_',\n        '_',\n        '_'\n    );\n    $text = preg_replace($search, $replace, $text);\n\n    $text = strtr($text, array(\"а\"=>\"a\",\"б\"=>\"b\",\n        \"в\"=>\"v\",\"г\"=>\"g\",\"д\"=>\"d\",\"е\"=>\"e\",\"ж\"=>\"j\",\n        \"з\"=>\"z\",\"и\"=>\"i\",\"й\"=>\"y\",\"к\"=>\"k\",\"л\"=>\"l\",\n        \"м\"=>\"m\",\"н\"=>\"n\",\"о\"=>\"o\",\"п\"=>\"p\",\"р\"=>\"r\",\n        \"с\"=>\"s\",\"т\"=>\"t\",\"у\"=>\"u\",\"ф\"=>\"f\",\"х\"=>\"h\",\n        \"ц\"=>\"ts\",\"ч\"=>\"ch\",\"ш\"=>\"sh\",\"щ\"=>\"sch\",\"ъ\"=>\"y\",\n        \"ы\"=>\"yi\",\"ь\"=>\"'\",\"э\"=>\"e\",\"ю\"=>\"yu\",\"я\"=>\"ya\"\n    ));\n\n    $text = trim($text, \"_\");\n\n    return $text;\n}\n\nfunction seo_url($url, $title = false)\n{\n    global $bb_cfg;\n\n    if(!$bb_cfg['seo_url_enabled']) return $url;\n\n    $url_start = '';\n\n    $url_title = encodestring(html_ent_decode($title));\n    if(!$url_title) return $url;\n\n    $url_end = '.html';\n\n    $url = str_replace('/', '', $url);\n    $url_temp = parse_url($url);\n\n    switch($url_temp['path'])\n    {\n        case 'index.php':\n            $url_start .= 'category-';\n        break;\n\n        case 'viewtopic.php':\n            $url_start .= 'topic-';\n        break;\n\n        case 'viewforum.php':\n            $url_start .= 'forum-';\n        break;\n\n        case 'profile.php':\n            $url_start .= 'profile-';\n        break;\n    }\n\n    $url = str_replace($url_temp['path'], '', $url);\n    $url = str_replace('?', '-', $url);\n\n    if(isset($url_temp['fragment']))\n    {\n    $url_end .= '#'. $url_temp['fragment'];\n    $url = str_replace('#'. $url_temp['fragment'], '', $url);\n    }\n\n    return $url_start . $url_title . $url . $url_end;\n}\n\nfunction seo_url_check($url)\n{\n    global $bb_cfg;\n    //if(isset($bb_cfg['seo_ids'][$userdata['user_id']])) $bb_cfg['seo_url_enabled'] = true;\n\n    if ($bb_cfg['seo_url_enabled'] && !preg_match('#(category-|topic-|forum-|profile-)#is', $url)) return true;\n    return false;\n}\n\n-----заменить функцию-----\n\nfunction generate_pagination($base_url, $num_items, $per_page, $start_item, $title = false, $style = false)\n{\n    global $lang, $template;\n\n// Pagination Mod\n    $begin_end = 3;\n    $from_middle = 1;\n/*\n    By default, $begin_end is 3, and $from_middle is 1, so on page 6 in a 12 page view, it will look like this:\n\n    a, d = $begin_end = 3\n    b, c = $from_middle = 1\n\n\"begin\"        \"middle\"           \"end\"\n    |              |                 |\n    |     a     b  |  c     d        |\n    |     |     |  |  |     |        |\n    v     v     v  v  v     v        v\n    1, 2, 3 ... 5, 6, 7 ... 10, 11, 12\n\n    Change $begin_end and $from_middle to suit your needs appropriately\n*/\n\n    $total_pages = ceil($num_items/$per_page);\n\n    if ( $total_pages == 1 || $num_items == 0 )\n    {\n        return '';\n    }\n\n    if($style) $style = \"#$style\";\n\n    $on_page = floor($start_item / $per_page) + 1;\n\n    $page_string = '';\n    if ( $total_pages > ((2*($begin_end + $from_middle)) + 2) )\n    {\n        $init_page_max = ( $total_pages > $begin_end ) ? $begin_end : $total_pages;\n        for($i = 1; $i < $init_page_max + 1; $i++)\n        {\n            $page_string .= ( $i == $on_page ) ? '<b>' . $i . '</b>' : '<a href=\"' . seo_url($base_url . \"&amp;start=\" . ( ( $i - 1 ) * $per_page ) . $style, $title) .'\">' . $i . '</a>';\n\n            if ( $i <  $init_page_max )\n            {\n                $page_string .= \", \";\n            }\n        }\n        if ( $total_pages > $begin_end )\n        {\n            if ( $on_page > 1  && $on_page < $total_pages )\n            {\n                $page_string .= ( $on_page > ($begin_end + $from_middle + 1) ) ? ' ... ' : ', ';\n\n                $init_page_min = ( $on_page > ($begin_end + $from_middle) ) ? $on_page : ($begin_end + $from_middle + 1);\n\n                $init_page_max = ( $on_page < $total_pages - ($begin_end + $from_middle) ) ? $on_page : $total_pages - ($begin_end + $from_middle);\n\n                for($i = $init_page_min - $from_middle; $i < $init_page_max + ($from_middle + 1); $i++)\n                {\n                    $page_string .= ($i == $on_page) ? '<b>' . $i . '</b>' : '<a href=\"' . seo_url($base_url . \"&amp;start=\" . ( ( $i - 1 ) * $per_page ) . $style, $title) .'\">' . $i . '</a>';\n\n                    if ( $i <  $init_page_max + $from_middle )\n                    {\n                        $page_string .= ', ';\n                    }\n                }\n                $page_string .= ( $on_page < $total_pages - ($begin_end + $from_middle) ) ? ' ... ' : ', ';\n            }\n            else\n            {\n                $page_string .= '&nbsp;...&nbsp;';\n            }\n            for($i = $total_pages - ($begin_end - 1); $i < $total_pages + 1; $i++)\n            {\n                $page_string .= ( $i == $on_page ) ? '<b>' . $i . '</b>'  : '<a href=\"' . seo_url($base_url . \"&amp;start=\" . ( ( $i - 1 ) * $per_page ) . $style, $title) .'\">' . $i . '</a>';\n\n                if( $i <  $total_pages )\n                {\n                    $page_string .= \", \";\n                }\n            }\n        }\n    }\n    else\n    {\n        for($i = 1; $i < $total_pages + 1; $i++)\n        {\n            $page_string .= ( $i == $on_page ) ? '<b>' . $i . '</b>' : '<a href=\"' . seo_url($base_url . \"&amp;start=\" . ( ( $i - 1 ) * $per_page ) . $style, $title) .'\">' . $i . '</a>';\n\n            if ( $i <  $total_pages )\n            {\n                $page_string .= ', ';\n            }\n        }\n    }\n\n    if ( $on_page > 1 )\n    {\n        $page_string = ' <a href=\"' . seo_url($base_url . \"&amp;start=\" . ( ( $on_page - 2 ) * $per_page ) . $style, $title) .'\">' . $lang['PREVIOUS'] . '</a>&nbsp;&nbsp;' . $page_string;\n    }\n\n    if ( $on_page < $total_pages )\n    {\n        $page_string .= '&nbsp;&nbsp;<a href=\"' . seo_url($base_url . \"&amp;start=\" . ( $on_page * $per_page ) . $style, $title) .'\">' . $lang['NEXT'] . '</a>';\n    }\n\n    $pagination = ($page_string) ? '<a class=\"menu-root\" href=\"#pg-jump\">'. $lang['GOTO_PAGE'] .'</a> :&nbsp;&nbsp;'. $page_string : '';\n    $pagination = str_replace('&amp;start=0', '', $pagination);\n\n    $template->assign_vars(array(\n        'PAGINATION'   => $pagination,\n        'PAGE_NUMBER'  => sprintf($lang['PAGE_OF'], ( floor($start_item/$per_page) + 1 ), ceil( $num_items / $per_page )),\n        'PAGE_NUMBER_TITLE'  => 'страница '. (floor($start_item/$per_page) + 1 ) .' из '. ceil( $num_items / $per_page ),\n        'PG_BASE_URL'  => $base_url,\n        'PG_PER_PAGE'  => $per_page,\n    ));\n\n    return $pagination;\n}\n\n-----заменить функцию-----\n\nfunction build_topic_pagination ($url, $replies, $per_page, $title = false)\n{\n    $pg = '';\n\n    if (++$replies > $per_page)\n    {\n        $total_pages = ceil($replies / $per_page);\n\n        for ($j=0, $page=1; $j < $replies; $j += $per_page, $page++)\n        {\n            $href = ($j) ? seo_url(\"$url&amp;start=$j\", $title) : seo_url($url, $title);\n            $pg .= '<a href=\"'. $href .'\" class=\"topicPG\">'. $page .'</a>';\n\n            if ($page == 1 && $total_pages > 3)\n            {\n                $pg .= ' .. ';\n                $page = $total_pages - 2;\n                $j += ($total_pages - 3) * $per_page;\n            }\n            else if ($page < $total_pages)\n            {\n                $pg .= ', ';\n            }\n        }\n    }\n\n    return $pg;\n}\n\n-----найти-----\n\n    if (!in_array($user_id, array('', GUEST_UID, BOT_UID)) && $username)\n    {\n        $profile = '<a href=\"'. make_url(PROFILE_URL . $user_id) .'\">'. $profile .'</a>';\n    }\n\n-----заменить-----\n\n    if (!in_array($user_id, array('', GUEST_UID, BOT_UID)) && $username)\n    {\n        $profile = '<a href=\"'. seo_url(PROFILE_URL . $user_id, $username) .'\">'. $profile .'</a>';\n    }\n\n####[SAVE_FILE]####\n\n####[ОТКРЫТЬ]-----config.php\n\n-----в конец добавить-----\n\n$bb_cfg['seo_url_enabled'] = true;\n\n####[SAVE_FILE]####\n\n####[ОТКРЫТЬ]-----index.php\n\n-----найти-----\n\n// Build index page\nforeach ($cat_forums as $cid => $c)\n\n-----выше добавить-----\n\nif($viewcat && seo_url_check($_SERVER['REQUEST_URI'])) redirect(seo_url($_SERVER['REQUEST_URI'], $cat_title_html[$viewcat]));\n\n-----найти-----\n\n        'U_VIEWCAT' => CAT_URL . $cid,\n\n-----заменить-----\n\n        'U_VIEWCAT' => seo_url(CAT_URL . $cid, $cat_title_html[$cid]),\n\n-----найти-----\n\n                'SF_NEW'  => $new ? ' new' : '',\n\n-----выше добавить-----\n\n                'SF_URL'  => seo_url(FORUM_URL . $fid, $fname_html),\n\n-----найти-----\n\n            'FORUM_FOLDER_IMG' => $folder_image,\n\n-----ниже добавить-----\n\n                        'FORUM_URL'        => seo_url(FORUM_URL . $fid, $fname_html),\n\n-----найти-----\n\n            'NEWS_TOPIC_ID' => $news['topic_id'],\n\n-----ниже добавить-----\n\n            'U_NEWS_TOPIC'  => seo_url(TOPIC_URL . $news['topic_id'], $news['topic_title']),\n\n-----найти-----\n\n            'NEWS_TOPIC_ID' => $net['topic_id'],\n\n-----ниже добавить-----\n\n            'U_NEWS_TOPIC'  => seo_url(TOPIC_URL . $net['topic_id'], $net['topic_title']),\n\n-----найти-----\n\n                'LAST_TOPIC_ID'       => $f['last_topic_id'],\n\n-----ниже добавить-----\n\n                'LAST_TOPIC_URL'      => seo_url(TOPIC_URL . $f['last_topic_id'] .'&amp;view=newest#newest', $f['last_topic_title']),\n\n####[SAVE_FILE]####\n\n####[ОТКРЫТЬ]-----viewforum.php\n\n-----найти-----\n\n// Only new\n$only_new = $user->opt_js['only_new'];\n\n-----выше добавить-----\n\nif(seo_url_check($_SERVER['REQUEST_URI'])) redirect(seo_url($_SERVER['REQUEST_URI'], $forums['forum'][$forum_id]['forum_name']));\n\n-----найти-----\n\n            'U_VIEWFORUM' => FORUM_URL . $sf_forum_id,\n\n-----заменить-----\n\n            'U_VIEWFORUM' => seo_url(FORUM_URL . $sf_forum_id, $fname_html),\n\n-----найти-----\n\n                'ICON_LATEST_REPLY'   => $images['icon_latest_reply'],\n\n-----ниже добавить-----\n\n                'U_LAST_POST_ID'      => seo_url(POST_URL . $sf_data['forum_last_post_id'] .'#'. $sf_data['forum_last_post_id'],  $sf_data['last_topic_title']),\n\n-----найти-----\n\n        'PARENT_FORUM_HREF'      => ($parent_id = $forum_data['forum_parent']) ? FORUM_URL . $forum_data['forum_parent'] : '',\n\n-----заменить-----\n\n        'PARENT_FORUM_HREF'      => ($parent_id = $forum_data['forum_parent']) ? seo_url(FORUM_URL . $forum_data['forum_parent'], $forums['forum_name_html'][$parent_id]) : '',\n\n-----найти-----\n\n    'U_VIEW_FORUM'        => FORUM_URL . $forum_id,\n    'U_MARK_READ'         => FORUM_URL . $forum_id .\"&amp;mark=topics\",\n\n-----заменить-----\n\n    'U_VIEW_FORUM'        => seo_url(FORUM_URL . $forum_id, $forum_data['forum_name']),\n    'U_MARK_READ'         => seo_url(FORUM_URL . $forum_id .\"&amp;mark=topics\", $forum_data['forum_name']),\n\n-----найти-----\n\n    $template->assign_block_vars('t', array(\n        'FORUM_ID'         => $forum_id,\n\n-----выше добавить-----\n\n    $moved_id = ($moved) ? $topic['topic_moved_id'] : $topic['topic_id'];\n\n-----найти-----\n\n        'HREF_TOPIC_ID'    => ($moved) ? $topic['topic_moved_id'] : $topic['topic_id'],\n\n-----заменить-----\n\n        'HREF_TOPIC_ID'    => seo_url(TOPIC_URL . $moved_id, $topic['topic_title']),\n        'HREF_TOPIC_ID_UN' => seo_url(TOPIC_URL . $moved_id .'&amp;view=newest#newest', $topic['topic_title']),\n        'POSTER_URL'       => seo_url(PROFILE_URL . $topic['first_user_id'], $topic['last_username']),\n\n-----найти-----\n\n        'PAGINATION'       => ($moved) ? '' : build_topic_pagination(TOPIC_URL . $topic_id, $replies, $bb_cfg['posts_per_page']),\n\n-----заменить-----\n\n        'PAGINATION'       => ($moved) ? '' : build_topic_pagination(TOPIC_URL . $topic_id, $replies, $bb_cfg['posts_per_page'], $topic['topic_title']),\n\n-----найти-----\n\n        'LAST_POST_ID'     => $topic['topic_last_post_id'],\n\n-----ниже добавить-----\n\n        'U_LAST_POST_ID'   => seo_url(POST_URL . $topic['topic_last_post_id'] .'#'. $topic['topic_last_post_id'], $topic['topic_title']),\n\n-----найти-----\n\n    generate_pagination($pg_url, $forum_topics, $topics_per_page, $start);\n\n-----заменить-----\n\n    generate_pagination($pg_url, $forum_topics, $topics_per_page, $start, $forum_data['forum_name']);\n\n####[SAVE_FILE]####\n\n####[ОТКРЫТЬ]-----viewtopic.php\n\n-----найти-----\n\nif (!$t_data = DB()->fetch_row($sql))\n{\n    meta_refresh('index.php' , 10);\n    bb_die($lang['TOPIC_POST_NOT_EXIST']);\n}\n\n-----ниже добавить-----\n\nif($post_id == $t_data['topic_first_post_id']) redirect(seo_url(TOPIC_URL . $t_data['topic_id'], $t_data['topic_title']));\nif(seo_url_check($_SERVER['REQUEST_URI'])) redirect(seo_url($_SERVER['REQUEST_URI'], $t_data['topic_title']));\n\n-----найти-----\n\n        'PARENT_FORUM_HREF'    => ($parent_id = $t_data['forum_parent']) ? FORUM_URL . $parent_id : '',\n\n-----заменить-----\n\n        'PARENT_FORUM_HREF'    => ($parent_id = $t_data['forum_parent']) ? seo_url(FORUM_URL . $parent_id, $forums['f'][$parent_id]['forum_name']) : '',\n\n-----найти-----\n\n    'U_VIEW_TOPIC'        => TOPIC_URL . $topic_id,\n    'U_VIEW_FORUM'        => $view_forum_url,\n    'U_VIEW_OLDER_TOPIC'  => $view_prev_topic_url,\n    'U_VIEW_NEWER_TOPIC'  => $view_next_topic_url,\n    'U_POST_NEW_TOPIC'    => $new_topic_url,\n    'U_POST_REPLY_TOPIC'  => $reply_topic_url,\n\n-----заменить-----\n\n    'U_VIEW_TOPIC'        => seo_url(TOPIC_URL . $topic_id, $topic_title),\n    'U_VIEW_FORUM'        => seo_url($view_forum_url, $forum_name),\n    'U_VIEW_OLDER_TOPIC'  => seo_url($view_prev_topic_url, $topic_title),\n    'U_VIEW_NEWER_TOPIC'  => seo_url($view_next_topic_url, $topic_title),\n    'U_POST_NEW_TOPIC'    => seo_url($new_topic_url, $topic_title),\n    'U_POST_REPLY_TOPIC'  => seo_url($reply_topic_url, $topic_title),\n\n\n-----найти-----\n\ngenerate_pagination($pg_url, $total_replies, $posts_per_page, $start);\n\n-----заменить-----\n\ngenerate_pagination($pg_url, $total_replies, $posts_per_page, $start, $topic_title);\n\n####[SAVE_FILE]####\n\n####[ОТКРЫТЬ]-----search.php\n-----найти------\n\n        $template->assign_block_vars('t', array(\n            'FORUM_ID'    => $forum_id,\n            'FORUM_NAME'  => $forum_name_html[$forum_id],\n            'TOPIC_ID'    => $topic_id,\n\n-----ниже добавить------\n\n            'S_TOPIC_URL' => seo_url(TOPIC_URL . $topic_id, $first_post['topic_title']),\n            'S_FORUM_URL' => seo_url(FORUM_URL . $forum_id, $forum_name_html[$forum_id]),\n\n-----найти------\n\n            'HREF_TOPIC_ID' => ($moved) ? $topic['topic_moved_id'] : $topic['topic_id'],\n\n-----заменить------\n\n            'HREF_TOPIC_ID' => ($moved) ? seo_url(TOPIC_URL . $topic['topic_moved_id'], $topic['topic_title']) : seo_url(TOPIC_URL . $topic['topic_id'], $topic['topic_title']),\n\n-----найти------\n\n            'LAST_POSTER'   => profile_url(array('username' => $topic['last_username'], 'user_id' => $topic['last_user_id'], 'user_rank' => $topic['last_user_rank'])),\n            'LAST_POST_TIME' => bb_date($topic['topic_last_post_time']),\n            'LAST_POST_ID'  => $topic['topic_last_post_id'],\n\n-----ниже добавить------\n\n            'S_TOPIC_URL'   => seo_url(TOPIC_URL . $topic_id, $topic['topic_title']),\n            'S_FORUM_URL'   => seo_url(FORUM_URL . $forum_id, $forum_name_html[$forum_id]),\n\n-----найти------\n\n            $template->assign_block_vars('t.p', array(\n\n-----ниже добавить------\n\n                'S_TOPIC_URL'  => seo_url(TOPIC_URL . $topic_id, $first_post['topic_title']),\n\n####[SAVE_FILE]####\n\n####[ОТКРЫТЬ]-----tracker.php\n\n-----найти------\n\n                'ADDED_RAW'    => $tor['reg_time'],\n                'ADDED_TIME'   => bb_date($tor['reg_time'], $time_format),\n                'ADDED_DATE'   => bb_date($tor['reg_time'], $date_format, false),\n\n-----ниже добавить------\n\n                'TOR_TOPIC_URL'=> seo_url(TOPIC_URL . $tor['topic_id'], $tor['topic_title']),\n                'TOR_FORUM_URL'=> seo_url(FORUM_URL . $forum_id, $forum_name_html[$forum_id]),\n\n####[SAVE_FILE]####\n\n####[ОТКРЫТЬ]-----viewprofile.php\n\n-----найти------\n\nif (!$userdata['session_logged_in'])\n{\n    redirect(LOGIN_URL . \"?redirect={$_SERVER['REQUEST_URI']}\");\n}\n\n-----ниже добавить------\n\nif(seo_url_check($_SERVER['REQUEST_URI'])) redirect(seo_url($_SERVER['REQUEST_URI'], $profiledata['username']));\n\n####[SAVE_FILE]####\n\n####[ОТКРЫТЬ]-----templates/default/index.tpl\n\n-----найти------\n\n                <h4 class=\"forumlink\"><a href=\"{FORUM_URL}{c.f.FORUM_ID}\">{c.f.FORUM_NAME}</a></h4>\n\n-----заменить------\n\n                <h4 class=\"forumlink\"><a href=\"{c.f.FORUM_URL}\">{c.f.FORUM_NAME}</a></h4>\n\n-----найти------\n\n                    <span class=\"sf_title{c.f.sf.SF_NEW}\"><a href=\"search.php?f={c.f.sf.SF_ID}&amp;new=1&amp;dm=1&amp;s=0&amp;o=1\" class=\"dot-sf\">&#9658;</a><a href=\"{FORUM_URL}{c.f.sf.SF_ID}\" class=\"dot-sf\">{c.f.sf.SF_NAME}</a></span><span class=\"sf_separator\"></span>\n\n-----заменить------\n\n                    <span class=\"sf_title{c.f.sf.SF_NEW}\"><a href=\"search.php?f={c.f.sf.SF_ID}&amp;new=1&amp;dm=1&amp;s=0&amp;o=1\" class=\"dot-sf\">&#9658;</a><a href=\"{c.f.sf.SF_URL}\">{c.f.sf.SF_NAME}</a></span><span class=\"sf_separator\"></span>\n\n-----найти------\n\n                        <a href=\"{TOPIC_URL}{c.f.last.LAST_TOPIC_ID}{NEWEST_URL}\" title=\"{c.f.last.LAST_TOPIC_TIP}\">{c.f.last.LAST_TOPIC_TITLE}</a>\n\n-----заменить------\n\n                        <a href=\"{c.f.last.LAST_TOPIC_URL}\" title=\"{c.f.last.LAST_TOPIC_TIP}\">{c.f.last.LAST_TOPIC_TITLE}</a>\n\n####[SAVE_FILE]####\n\n####[ОТКРЫТЬ]-----templates/default/viewforum.tpl\n\n-----найти------\n\n{TOPIC_URL}{t.HREF_TOPIC_ID}{NEWEST_URL}\n\n-----заменить везде------\n\n{t.HREF_TOPIC_ID_UN}\n\n-----найти------\n\n{TOPIC_URL}{t.HREF_TOPIC_ID}\n\n-----заменить везде------\n\n{t.HREF_TOPIC_ID}\n\n-----найти------\n\n{POST_URL}{t.LAST_POST_ID}#{t.LAST_POST_ID}\n\n-----заменить везде------\n\n{t.U_LAST_POST_ID}\n\n####[SAVE_FILE]####\n\n####[ОТКРЫТЬ]-----templates/default/viewtopic.tpl\n\n-----найти------\n\n{POST_URL}{postrow.POST_ID}#{postrow.POST_ID}\n\n-----заменить------\n\n{U_POST_ID}\n\n####[SAVE_FILE]####\n\n####[ОТКРЫТЬ]-----templates/default/tracker.tpl\n-----найти-----\n\n<a class=\"gen\" href=\"{TR_FORUM_URL}{tor.FORUM_ID}\">{tor.FORUM_NAME}</a>\n-----заменить------\n\n<a class=\"gen\" href={tor.TOR_FORUM_URL} onclick=\"javascript:window.location.href='{TR_FORUM_URL}{tor.FORUM_ID}'; return false;\">{tor.FORUM_NAME}</a>\n\n-----найти------\n\n<a class=\"{tor.DL_CLASS}<!-- IF AJAX_TOPICS --> folded2<!-- ENDIF --> tLink\" <!-- IF AJAX_TOPICS -->onclick=\"ajax.view_post({tor.POST_ID}, this); return false;\"<!-- ENDIF --> href=\"{TOPIC_URL}{tor.TOPIC_ID}\"><!-- IF tor.TOR_FROZEN -->{tor.TOPIC_TITLE}<!-- ELSE -->{tor.TOR_TYPE}<b>{tor.TOPIC_TITLE}</b><!-- ENDIF --></a>\n-----заменить------\n\n<a class=\"{tor.DL_CLASS}<!-- IF AJAX_TOPICS --> folded2 tLink<!-- ENDIF -->\" <!-- IF AJAX_TOPICS -->onclick=\"ajax.view_post({tor.POST_ID}, this); return false;\"<!-- ENDIF --> href=\"{tor.TOR_TOPIC_URL}\"><!-- IF tor.TOR_FROZEN -->{tor.TOPIC_TITLE}<!-- ELSE -->{tor.TOR_TYPE}<b>{tor.TOPIC_TITLE}</b><!-- ENDIF --></a>\n\n####[SAVE_FILE]####\n\n####[ОТКРЫТЬ]-----templates/default/search_results.tpl\n-----найти-----\n\n        <a href=\"{FORUM_URL}{t.FORUM_ID}\" class=\"med normal\"><i>{t.FORUM_NAME}</i></a>\n\n-----заменить------\n\n        <a href=\"{t.S_FORUM_URL}\" class=\"med normal\"><i>{t.FORUM_NAME}</i></a>\n\n-----найти------\n\n        <a href=\"{TOPIC_URL}{t.TOPIC_ID}\" class=\"med\">{t.TOPIC_TITLE}</a>\n\n-----заменить------\n\n        <a href=\"{t.S_TOPIC_URL}\" class=\"med\">{t.TOPIC_TITLE}</a>\n\n-----найти------\n\n                <a class=\"small\" href=\"{POST_URL}{t.p.POST_ID}#{t.p.POST_ID}\" title=\"{L_POST_LINK}\">{t.p.POST_DATE}</a>\n\n-----заменить------\n\n                <a class=\"small\" href=\"{t.p.S_TOPIC_URL}{t.p.POST_ID}#{t.p.POST_ID}\" title=\"{L_POST_LINK}\">{t.p.POST_DATE}</a>\n\n-----найти------\n\n<a href=\"{FORUM_URL}{t.FORUM_ID}\" class=\"gen\">{t.FORUM_NAME}</a>\n\n-----заменить------\n\n<a href=\"{t.S_FORUM_URL}\" class=\"gen\">{t.FORUM_NAME}</a>\n\n-----найти------\n\n<a href=\"{TOPIC_URL}{t.HREF_TOPIC_ID}{NEWEST_URL}\">{ICON_NEWEST_REPLY}</a>\n\n-----заменить------\n\n<a href=\"{t.HREF_TOPIC_ID}{NEWEST_URL}\">{ICON_NEWEST_REPLY}</a>\n\n-----найти------\n\n<a href=\"{TOPIC_URL}{t.TOPIC_ID}\" class=\"topictitle\"><span id=\"tid_{t.TOPIC_ID}\">{t.TOPIC_TITLE}</span></a>\n\n-----заменить------\n\n<a href=\"{t.S_TOPIC_URL}\" class=\"topictitle\"><span id=\"tid_{t.TOPIC_ID}\">{t.TOPIC_TITLE}</span></a>\n\n-----найти------\n\n<a href=\"{POST_URL}{t.LAST_POST_ID}#{t.LAST_POST_ID}\">{ICON_LATEST_REPLY}</a>\n\n-----заменить------\n\n<a href=\"{t.S_TOPIC_URL}{t.LAST_POST_ID}#{t.LAST_POST_ID}\">{ICON_LATEST_REPLY}</a>\n\n####[SAVE_FILE]####\n\n#########[END]#########[/PHP]\n[/SPOILER]",
+    "owner": "frost444",
+    "sql": "no",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425206062,
+      "file_size": 1874,
+      "filename": "1.webp",
+      "height": 36,
+      "id": 3025,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/1-webp.3025/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3029-0645c002d1b0d4dc5e7b3046afea253f.jpg?hash=Bl-Cnrt_dL",
+      "width": 256
+    },
+    {
+      "attach_date": 1425206062,
+      "file_size": 3658,
+      "filename": "2.webp",
+      "height": 35,
+      "id": 3026,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2-webp.3026/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3030-340c223bf40f727a7d7c8734fea26b35.jpg?hash=l-Eo2wZ5LY",
+      "width": 551
+    },
+    {
+      "attach_date": 1425206062,
+      "file_size": 1970,
+      "filename": "3.webp",
+      "height": 32,
+      "id": 3027,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/3-webp.3027/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3031-f02b371fdcd97a02a29067eef6782326.jpg?hash=phneFWdynx",
+      "width": 265
+    }
+  ],
+  "description_parsed": "<b>Описание: </b>добавляет возможность приводить ссылки в удобный формат, предпочтительный для поисковых систем.",
+  "download_count": 621,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/158.jpg?1425424198",
+  "id": 158,
+  "is_fileless": null,
+  "last_update": 1425846720,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1425204461,
+  "resource_state": "visible",
+  "slug": "cpu",
+  "tag_line": "Добавляет возможность приводить ссылки в удобный формат, предпочтительный для поисковых систем.",
+  "tags": [],
+  "title": "ЧПУ",
+  "url_path": "/resources/cpu.158/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "1.2.0",
+  "versions": [
+    {
+      "download_count": 365,
+      "files": [
+        {
+          "filename": "seo.zip",
+          "id": 3383,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4963,
+          "src_url": "https://torrentpier.com/api/resource-versions/276/download?file=3383"
+        }
+      ],
+      "id": 276,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425846720,
+      "version_state": "visible",
+      "version_string": "1.2.0",
+      "view_url": "https://torrentpier.com/resources/cpu.158/version/276/"
+    },
+    {
+      "download_count": 131,
+      "files": [
+        {
+          "filename": "seo_5.zip",
+          "id": 3253,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4938,
+          "src_url": "https://torrentpier.com/api/resource-versions/251/download?file=3253"
+        }
+      ],
+      "id": 251,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425424230,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/cpu.158/version/251/"
+    },
+    {
+      "download_count": 130,
+      "files": [
+        {
+          "filename": "seo_5.zip",
+          "id": 3023,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4842,
+          "src_url": "https://torrentpier.com/api/resource-versions/175/download?file=3023"
+        }
+      ],
+      "id": 175,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425204461,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/cpu.158/version/175/"
+    }
+  ],
+  "view_count": 775
+}

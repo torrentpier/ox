@@ -1,0 +1,214 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 92341,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41833,
+  "last_post_date": 1742152573,
+  "node_id": 57,
+  "post_date": 1509541399,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1509541390,
+          "file_size": 26364,
+          "filename": "2017-11-01_16-00-30.webp",
+          "height": 590,
+          "id": 4956,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2017-11-01_16-00-30-webp.4956/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4960-3ee851909438a97d22dc7dba018480c2.jpg?hash=LFgW92eOQi",
+          "width": 1084
+        }
+      ],
+      "id": 92341,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Такая ошибка возникает только в клиенте Free Download Manager. Как узнать в чем причина?<br />\n<br />\n<a href=\"https://torrentpier.com/attachments/4956/\"><img src=\"https://torrentpier.com/data/attachments/4/4960-3ee851909438a97d22dc7dba018480c2.jpg?hash=LFgW92eOQi\" alt=\"2017-11-01_16-00-30.webp\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1509541399,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92838,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "В самом клиенте.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1521833881,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1687630365,
+          "file_size": 46168,
+          "filename": "2023-06-24_21-11-04.webp",
+          "height": 337,
+          "id": 5447,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2023-06-24_21-11-04-webp.5447/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5451-fdd4ee34ae95c7888aeadc1b5d62164f.jpg?hash=8JglSWvVfl",
+          "width": 974
+        }
+      ],
+      "id": 94944,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/attachments/5447/\"><img src=\"https://torrentpier.com/data/attachments/5/5451-fdd4ee34ae95c7888aeadc1b5d62164f.jpg?hash=8JglSWvVfl\" alt=\"2023-06-24_21-11-04.webp\" /></a><br />\nВ qbittorrent та же беда при постановке торрента на паузу. Куда копать в scrape.php?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1687630370,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97098,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Просьба проверить, при постановке на паузу торрента в <b>qbittorent</b> у вас тоже <b>scrape.php</b> выдает ошибку <b>unexpected end of file in bencoded string</b> ?<br />\n\n\n<div data-template-name=\"public:_media_site_embed_imgur\" class=\"bbMediaWrapper\" data-media-site-id=\"imgur\" data-media-key=\"5cVkRRg\">\n\t<blockquote class=\"imgur-embed-pub\" lang=\"en\" data-id=\"5cVkRRg\">\n\t\t<a href=\"https://imgur.com/5cVkRRg\" rel=\"external\" target=\"_blank\">https://imgur.com/5cVkRRg</a>\n\t</blockquote>\n</div>Может есть мысли как это исправить? У рутрекера все норм с этим",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1739995326,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97101,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"sхс\">Просьба проверить, при постановке на паузу торрента в <b>qbittorent</b> у вас тоже <b>scrape.php</b> выдает ошибку <b>unexpected end of file in bencoded string</b> ?<br />\n\n\n<div data-template-name=\"public:_media_site_embed_imgur\" class=\"bbMediaWrapper\" data-media-site-id=\"imgur\" data-media-key=\"5cVkRRg\">\n\t<blockquote class=\"imgur-embed-pub\" lang=\"en\" data-id=\"5cVkRRg\">\n\t\t<a href=\"https://imgur.com/5cVkRRg\" rel=\"external\" target=\"_blank\">https://imgur.com/5cVkRRg</a>\n\t</blockquote>\n</div>Может есть мысли как это исправить? У рутрекера все норм с этим</blockquote>Можете уточнить версию движка?",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1740138847,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97102,
+      "is_admin": false,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Это уже в самом клиенте нужно настраивать. В вашем случае как вижу qbittorrent.<br />\nВерхнее меню:<br />\n- Сервис - Настройки (Alt-O) - Расширенные - Упреждать серверную подделку запроса (SSRF)<br />\nСнять галку. Перезагрузиться.<br />\nНо это костыль, имейте это ввиду.<br />\n<br />\nP.S. Может и не сработать, но в 50% работает. Не забывайте обновлять клиент (имхо)",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1740156693,
+      "user_id": 1546,
+      "user_title": "Administrator",
+      "username": "Conteo"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97103,
+      "is_admin": false,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"sхс\">У рутрекера все норм с этим</blockquote>Они отключили скрейп",
+      "message_state": "visible",
+      "position": 6,
+      "post_date": 1740168642,
+      "user_id": 10699,
+      "user_title": "Developer (ex)",
+      "username": "kovalensky"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1742152569,
+          "file_size": 72600,
+          "filename": "Screenshot_20250316_221324.webp",
+          "height": 1320,
+          "id": 6400,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot_20250316_221324-webp.6400/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6404-48f2fa2e8580d90abae18029e126ffad.jpg?hash=7c0FIjwaTW",
+          "width": 1600
+        }
+      ],
+      "id": 97127,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 1742152733,
+      "message_parsed": "Тоже пытался достучаться до разрабов ttorrent о причине ошибки... в ответ тишина.<br />\n<br />\nКаждый клиент живет своей жизнью и приходится подстраиваться... <br />\n<br />\n<div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 7,
+      "post_date": 1742152573,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 7,
+  "slug": "unexpected-end-of-file-in-bencoded-string",
+  "sticky": false,
+  "tags": [],
+  "title": "unexpected end of file in bencoded string",
+  "url_path": "/threads/unexpected-end-of-file-in-bencoded-string.41833/",
+  "user_id": 6370,
+  "username": "sхс",
+  "view_count": 5859
+}

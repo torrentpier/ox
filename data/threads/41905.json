@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 93141,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 11,
+    "title": "Questions about styles for TorrentPier"
+  },
+  "id": 41905,
+  "last_post_date": 1524859874,
+  "node_id": 11,
+  "post_date": 1524858284,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93141,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Есть код,показывает для авторизированным:   <br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;div class=&quot;navbar-right&quot;&gt;\n        \n        &lt;!-- IF LOGGED_IN --&gt;\n            &lt;ul class=&quot;nav navbar-nav no-borders&quot;&gt;\n                &lt;li class=&quot;dropdown&quot;&gt;\n                  Вы Авторизированы\n                &lt;/li&gt;\n            &lt;/ul&gt;\n        &lt;!-- ENDIF --&gt;\n        &lt;/div&gt;</pre>А как показать вместо этого &quot;Зарегистрироваться&quot; для гостей, вернее не могу разобраться с <br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;!-- ELSE --&gt;</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1524858284,
+      "user_id": 7828,
+      "user_title": "User",
+      "username": "weber_u"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93142,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"html\">&lt;!-- IF LOGGED_IN --&gt;\n            &lt;ul class=&quot;nav navbar-nav no-borders&quot;&gt;\n                &lt;li class=&quot;dropdown&quot;&gt;\n                  Вы Авторизированы\n                &lt;/li&gt;\n            &lt;/ul&gt;\n&lt;!-- ELSE --&gt;\n&lt;p&gt;Зарегистрироваться&lt;/p&gt;\n&lt;!-- ENDIF --&gt;</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1524859874,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "pokazyvat-gostam-esli-avtorizovan-to-pokazyvat-drugoe",
+  "sticky": false,
+  "tags": [],
+  "title": "Показывать гостям,если авторизован,то показывать другое?",
+  "url_path": "/threads/pokazyvat-gostam-esli-avtorizovan-to-pokazyvat-drugoe.41905/",
+  "user_id": 7828,
+  "username": "weber_u",
+  "view_count": 5485
+}

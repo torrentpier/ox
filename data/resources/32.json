@@ -1,0 +1,51 @@
+{
+  "category": {
+    "description": "Section with all paid modifications for TorrentPier.",
+    "id": 2,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Paid",
+    "view_url": "https://torrentpier.com/resources/categories/paid.2/"
+  },
+  "current_files": [],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "",
+    "owner": "",
+    "sql": ""
+  },
+  "description_attachments": [],
+  "description_parsed": "<div style=\"text-align: center\">Используйте этот <a href=\"https://torrentpier.com/resources/lokalnaja-galereja.147/\" class=\"link link--internal\">мод</a>&#8203;</div><hr /><b>Автор:</b> Zenden<br />\n<b>ICQ:</b> 590-700-200<br />\n<b>Цена:</b> 300 рублей<br />\n<b>Описание:</b> Ватермарка для встроенной галереи. Логотип делаете сами. На скрине черновой.",
+  "download_count": 0,
+  "external_url": null,
+  "icon_url": null,
+  "id": 32,
+  "is_fileless": null,
+  "last_update": 1369575020,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1369575020,
+  "resource_state": "visible",
+  "slug": "vatermarka-dla-vstroennoj-galerei",
+  "tag_line": "Скриншоты с вашей галереи теперь никто не стащит",
+  "tags": [],
+  "title": "Ватермарка для встроенной галереи",
+  "url_path": "/resources/vatermarka-dla-vstroennoj-galerei.32/",
+  "user_id": 97,
+  "username": "Zenden",
+  "version": "1.0",
+  "versions": [
+    {
+      "download_count": 0,
+      "files": [],
+      "id": 32,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1369575020,
+      "version_state": "visible",
+      "version_string": "1.0",
+      "view_url": "https://torrentpier.com/resources/vatermarka-dla-vstroennoj-galerei.32/version/32/"
+    }
+  ],
+  "view_count": 389
+}

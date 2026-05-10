@@ -1,0 +1,107 @@
+{
+  "custom_fields": {
+    "torrentpier": "2301"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94244,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42067,
+  "last_post_date": 1565893077,
+  "node_id": 57,
+  "post_date": 1564245947,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94244,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здрастуйте, <br />\nвозникла необходимость добаить на сайт тег rel canonical в &lt;header&gt; но и тут все не так просто:<br />\nвписывать адрес главной страницы - оно будет отображаться на всех страницах сайтах причем одно и то же<br />\nя знаю, что в движке есть свой синтаксис и в шаблон можно вставлять переменные, например {PAGE_TITLE} - она выводит &lt;title&gt; открытой в данный момент страницы<br />\n<br />\nМой вопрос - нет ли такой переменной которая вывод текущий открытый URL на сайте? Как быть в этом случае?<br />\nСпасибо",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1564245947,
+      "user_id": 7853,
+      "user_title": "User",
+      "username": "andypanda"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94245,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Сам под себя переделаешь.<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">--------------------------------------------------\nНазвание: Канонические ссылки\nАвтор: Gemini_13\nОписание: Добавляет атрибут rel=&quot;canonical&quot; в заголовки страниц с одинаковым контентом. Про канонические ссылки: https://support.google.com/webmasters/answer/139394?hl=ru\nСложность установки: Легкая\nВремя установки: ~ 5 минут\nАдаптирован под версию TPII: R507\nФайлы к редактированию:\n - index.php\n - login.php\n - viewforum.php\n - viewtopic.php\n - templates/default/page_header.tpl\n--------------------------------------------------\n\n# ---- [ Открыть ] -------------------\n\nindex.php\n\n# ---- [ Найти ] -------------------\n\n    &#039;U_SEARCH_UNANSWERED&#039;   =&gt; &quot;search.php?search_id=unanswered&quot;,\n\n# ---- [ Вставить после ] -------------------\n\n    &#039;U_CANONICAL&#039;            =&gt; (!$viewcat) ? FULL_URL : &#039;&#039;,\n\n# ---- [ Открыть ] -------------------\n\nlogin.php\n\n# ---- [ Найти ] -------------------\n\n        &#039;S_LOGIN_ACTION&#039;  =&gt; &quot;login.php&quot;,\n\n# ---- [ Вставить после ] -------------------\n\n        &#039;U_CANONICAL&#039;      =&gt; &quot;login.php&quot;,\n\n# ---- [ Открыть ] -------------------\n\nviewforum.php\n\n# ---- [ Найти ] -------------------\n\n    &#039;PRUNE_DAYS&#039;       =&gt; $forum_data[&#039;prune_days&#039;],\n\n# ---- [ Вставить после ] -------------------\n\n    &#039;U_CANONICAL&#039;       =&gt; FULL_URL . $pg_url . (($start) ? &quot;&amp;start=$start&quot; : &#039;&#039;),\n\n# ---- [ Открыть ] -------------------\n\nviewtopic.php\n\n# ---- [ Найти ] -------------------\n\n    &#039;U_SEARCH_SELF&#039;       =&gt; &quot;search.php?uid={$userdata[&#039;user_id&#039;]}&amp;t=$topic_id&amp;dm=1&quot;,\n\n# ---- [ Вставить после ] -------------------\n\n    &#039;U_CANONICAL&#039;          =&gt; FULL_URL . TOPIC_URL . $topic_id . (($start) ? &quot;&amp;start=$start&quot; : &#039;&#039;),\n\n# ---- [ Открыть ] -------------------\n\ntemplates/default/page_header.tpl\n\n# ---- [ Найти ] -------------------\n\n{META}\n\n# ---- [ Вставить до ] -------------------\n\n&lt;!-- IF U_CANONICAL --&gt;&lt;link rel=&quot;canonical&quot; href=&quot;{U_CANONICAL}&quot; /&gt;&lt;!-- ENDIF --&gt;\n\n# ---- [ Конец ] -------------------</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1565525142,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94247,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">Сам под себя переделаешь.<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">--------------------------------------------------\nНазвание: Канонические ссылки\nАвтор: Gemini_13\nОписание: Добавляет атрибут rel=&quot;canonical&quot; в заголовки страниц с одинаковым контентом. Про канонические ссылки: https://support.google.com/webmasters/answer/139394?hl=ru\nСложность установки: Легкая\nВремя установки: ~ 5 минут\nАдаптирован под версию TPII: R507\nФайлы к редактированию:\n- index.php\n- login.php\n- viewforum.php\n- viewtopic.php\n- templates/default/page_header.tpl\n--------------------------------------------------\n\n# ---- [ Открыть ] -------------------\n\nindex.php\n\n# ---- [ Найти ] -------------------\n\n    &#039;U_SEARCH_UNANSWERED&#039;   =&gt; &quot;search.php?search_id=unanswered&quot;,\n\n# ---- [ Вставить после ] -------------------\n\n    &#039;U_CANONICAL&#039;            =&gt; (!$viewcat) ? FULL_URL : &#039;&#039;,\n\n# ---- [ Открыть ] -------------------\n\nlogin.php\n\n# ---- [ Найти ] -------------------\n\n        &#039;S_LOGIN_ACTION&#039;  =&gt; &quot;login.php&quot;,\n\n# ---- [ Вставить после ] -------------------\n\n        &#039;U_CANONICAL&#039;      =&gt; &quot;login.php&quot;,\n\n# ---- [ Открыть ] -------------------\n\nviewforum.php\n\n# ---- [ Найти ] -------------------\n\n    &#039;PRUNE_DAYS&#039;       =&gt; $forum_data[&#039;prune_days&#039;],\n\n# ---- [ Вставить после ] -------------------\n\n    &#039;U_CANONICAL&#039;       =&gt; FULL_URL . $pg_url . (($start) ? &quot;&amp;start=$start&quot; : &#039;&#039;),\n\n# ---- [ Открыть ] -------------------\n\nviewtopic.php\n\n# ---- [ Найти ] -------------------\n\n    &#039;U_SEARCH_SELF&#039;       =&gt; &quot;search.php?uid={$userdata[&#039;user_id&#039;]}&amp;t=$topic_id&amp;dm=1&quot;,\n\n# ---- [ Вставить после ] -------------------\n\n    &#039;U_CANONICAL&#039;          =&gt; FULL_URL . TOPIC_URL . $topic_id . (($start) ? &quot;&amp;start=$start&quot; : &#039;&#039;),\n\n# ---- [ Открыть ] -------------------\n\ntemplates/default/page_header.tpl\n\n# ---- [ Найти ] -------------------\n\n{META}\n\n# ---- [ Вставить до ] -------------------\n\n&lt;!-- IF U_CANONICAL --&gt;&lt;link rel=&quot;canonical&quot; href=&quot;{U_CANONICAL}&quot; /&gt;&lt;!-- ENDIF --&gt;\n\n# ---- [ Конец ] -------------------</pre></blockquote>Данный мод нужно адаптировать под версию<b> Aurochs (2.2.3)</b>?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1565678892,
+      "user_id": 4854,
+      "user_title": "User",
+      "username": "sergey67"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94248,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "без понятия, дал что было.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1565893077,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "rel-canonical",
+  "sticky": false,
+  "tags": [
+    "canonical"
+  ],
+  "title": "rel canonical",
+  "url_path": "/threads/rel-canonical.42067/",
+  "user_id": 7853,
+  "username": "andypanda",
+  "view_count": 1944
+}

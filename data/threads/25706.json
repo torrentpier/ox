@@ -1,0 +1,128 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58449,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 25706,
+  "last_post_date": 1392329933,
+  "node_id": 80,
+  "post_date": 1391366606,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1391366583,
+          "file_size": 30538,
+          "filename": "test.webp",
+          "height": 537,
+          "id": 2405,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/test-webp.2405/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2410-648fc5dc41e20ed1257a1f6fc89b59ed.jpg?hash=p2MterTQT2",
+          "width": 1128
+        }
+      ],
+      "id": 58449,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "При добавлении шаблона для релизов. <b><span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\">(R578)</span></span></span></b><br />\n<div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1391366606,
+      "user_id": 4610,
+      "user_title": "User",
+      "username": "lex"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58464,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено в новой ревизии, спасибо за багрепорты: <a href=\"https://code.google.com/p/torrentpier2/source/detail?r=580\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://code.google.com/p/torrentpier2/source/detail?r=580</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1391377736,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1391382393,
+          "file_size": 23718,
+          "filename": "Безымянный.webp",
+          "height": 372,
+          "id": 2407,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bezymannyj-webp.2407/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2412-38c719ccac46086694f48210d51bde6b.jpg?hash=EHsZ3BRkqf",
+          "width": 1157
+        }
+      ],
+      "id": 58487,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Новую тему создавать не стал, так как баг все там же) <b>(R580)</b><br />\n<div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1391382408,
+      "user_id": 4610,
+      "user_title": "User",
+      "username": "lex"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59059,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "После ревизии 584 - неактуально. Ревизия скоро выйдет.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1392329933,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 25,
+  "reply_count": 3,
+  "slug": "undefinited-index",
+  "sticky": false,
+  "tags": [],
+  "title": "Undefinited index",
+  "url_path": "/threads/undefinited-index.25706/",
+  "user_id": 4610,
+  "username": "lex",
+  "view_count": 1144
+}

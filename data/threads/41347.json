@@ -1,0 +1,121 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 86045,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41347,
+  "last_post_date": 1449849361,
+  "node_id": 57,
+  "post_date": 1449682779,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86045,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Такая ситуация, не трекере старый админ сделал запрет оставлять сообщения пользователям у которых нет релизов, я хотел бы сделать так что б могли оставлять сообщения пользователи с рейтингом от 3 и с релизами или просто убрать это ограничение, подскажите есть ли такой мод или это он сам писал, если сам писал то подскажите в каких файлах искать. Спасибо.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1449682779,
+      "user_id": 6271,
+      "user_title": "User",
+      "username": "vertuhay"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86050,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"vertuhay\">Такая ситуация, не трекере старый админ сделал запрет оставлять сообщения пользователям у которых нет релизов, я хотел бы сделать так что б могли оставлять сообщения пользователи с рейтингом от 3 и с релизами или просто убрать это ограничение, подскажите есть ли такой мод или это он сам писал, если сам писал то подскажите в каких файлах искать. Спасибо.</blockquote>posting.php смотри.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1449727724,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86078,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/3170/\">@drew</a> спс нашел<br />\n<br />\n// Запрет на постинг без релизов<br />\n        if ($userdata[&#039;user_have_release&#039;] == 0)<br />\n        {<br />\n            bb_die($lang[&#039;REG_BLOCK_POST&#039;]);<br />\n        }       <br />\n        //<br />\n<br />\nПодскажите а как теперь сделать ограничение писать юзерам с регой до 3 мес.<br />\nНашел в  viewprofile.php <br />\n&#039;USER_REGDATE&#039;        =&gt; bb_date($profiledata[&#039;user_regdate&#039;], &#039;Y-m-d H:i&#039;, false),<br />\n<br />\nКак это там применить?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1449770421,
+      "user_id": 6271,
+      "user_title": "User",
+      "username": "vertuhay"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86079,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Помог знакомый прогер, может кому сгодится. <br />\n<br />\n// Запрет на постинг без релизов или меньше 3 месяцев на трекере<br />\n       if ($userdata[&#039;user_have_release&#039;] == 0 )<br />\n        {<br />\n   $naw =time(); <br />\n   $res = $naw-$userdata[user_regdate];<br />\n   // если чувак меньше 3 месяцев на трекере, выводит сообщение<br />\n   if($res &lt;&#039;7776000&#039;){<br />\n    bb_die($lang[&#039;REG_BLOCK_POST&#039;]);<br />\n   }<br />\n        }       <br />\n        //",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1449793149,
+      "user_id": 6271,
+      "user_title": "User",
+      "username": "vertuhay"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86081,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"vertuhay\">Помог знакомый прогер, может кому сгодится.<br />\n<br />\n// Запрет на постинг без релизов или меньше 3 месяцев на трекере<br />\n       if ($userdata[&#039;user_have_release&#039;] == 0 )<br />\n        {<br />\n   $naw =time();<br />\n   $res = $naw-$userdata[user_regdate];<br />\n   // если чувак меньше 3 месяцев на трекере, выводит сообщение<br />\n   if($res &lt;&#039;7776000&#039;){<br />\n    bb_die($lang[&#039;REG_BLOCK_POST&#039;]);<br />\n   }<br />\n        }      <br />\n        //</blockquote>Велосипедный велосипед 😱",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1449849361,
+      "user_id": 2789,
+      "user_title": "User",
+      "username": "Sprinx"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "ogranicenie-pisat-soobsenia",
+  "sticky": false,
+  "tags": [
+    "ограничение сообщения"
+  ],
+  "title": "Ограничение писать сообщения",
+  "url_path": "/threads/ogranicenie-pisat-soobsenia.41347/",
+  "user_id": 6271,
+  "username": "vertuhay",
+  "view_count": 1216
+}

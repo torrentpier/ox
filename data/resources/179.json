@@ -1,0 +1,71 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "флуд_форумы.zip",
+      "id": 3185,
+      "local_path": null,
+      "r2_key": null,
+      "size": 1855,
+      "src_url": "https://torrentpier.com/api/resource-versions/216/download?file=3185"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]# ---- [ SQL ] -------------------\n\nALTER TABLE bb_forums ADD forum_postcount TINYINT(1) DEFAULT '1' NOT NULL;\nALTER TABLE bb_posts ADD posts_count TINYINT(1) DEFAULT '1' NOT NULL;\n\n# ---- [ Открыть ] -------------------\n\nadmin/admin_forums.php\n\n# ---- [ Найти ] -------------------\n\n                'S_STATUS_LIST' => $statuslist,\n\n# ---- [ Вставить после ] -------------------\n\n                'S_FORUM_POSTCOUNT' => ( isset($row) && isset($row['forum_postcount']) && ($row['forum_postcount'] == 0) ) ? '' : 'checked=\"checked\"',\n\n# ---- [ Найти ] -------------------\n\n$columns = '\n\n# ---- [ Вставить до ] -------------------\n\n            $forum_postcount = isset($_POST['forum_postcount']) ? intval($_POST['forum_postcount']) : 0;\n\n# ---- [ Найти ] -------------------\n\n$columns = '\n\n# ---- [ В строке найти ] -------------------\n\n,  forum_display_order\n\n# ---- [ В строке добавить после ] -------------------\n\n, forum_postcount\n\n# ---- [ Найти ] -------------------\n\n$values = \"\n\n# ---- [ В строке найти ] -------------------\n\n, $forum_display_order\n\n# ---- [ В строке добавить после ] -------------------\n\n, $forum_postcount\n\n# ---- [ Найти ] -------------------\n\n                $prune_days = $row['prune_days'];\n\n# ---- [ Вставить после ] -------------------\n\n                $forum_postcount = ($row['forum_postcount']) ? HTML_CHECKED : '';\n\n# ---- [ Найти ] -------------------\n\n                $prune_days = 0;\n\n# ---- [ Вставить после ] -------------------\n\n                $forum_postcount = '';\n\n# ---- [ Найти ] -------------------\n\n            $forum_data = get_forum_data($forum_id);\n            $old_cat_id = $forum_data['cat_id'];\n            $forum_order = $forum_data['forum_order'];\n\n# ---- [ Вставить после ] -------------------\n\n            $forum_postcount = '';\n\n# ---- [ Найти ] -------------------\n\n            DB()->query(\"\n                UPDATE \". BB_FORUMS .\" SET\n                    forum_name          = '$forum_name',\n                    cat_id              = $cat_id,\n\n# ---- [ Вставить до ] -------------------\n\n            $forum_postcount = isset($_POST['forum_postcount']) ? intval($_POST['forum_postcount']) : 0;\n            $forum_postcount_old = DB()->query(\"\n                SELECT forum_postcount\n                FROM bb_forums\n                WHERE forum_id = $forum_id\n            \");\n\n            // Update posts count options if changed forum_postcount\n            if ($forum_postcount != $forum_postcount_old)\n            {\n                DB()->query(\"\n                    UPDATE \". BB_POSTS .\"\n                    SET posts_count = $forum_postcount\n                    WHERE forum_id = $forum_id\n                \");\n            }\n\n# ---- [ Найти ] -------------------\n\n            DB()->query(\"\n                UPDATE \". BB_FORUMS .\" SET\n                    forum_name          = '$forum_name',\n                    cat_id              = $cat_id,\n\n# ---- [ В строке найти ] -------------------\n\n                    prune_days    = $prune_days,\n\n# ---- [ В строке добавить после ] -------------------\n\n                    forum_postcount = $forum_postcount,\n\n# ---- [ Найти ] -------------------\n\n                // Update topics\n                DB()->query(\"\n                    UPDATE \". BB_TOPICS .\" SET\n                        forum_id = $to_id\n                    WHERE forum_id = $from_id\n                \");\n\n# ---- [ Вставить после ] -------------------\n\n                // Update posts count options\n                DB()->query(\"\n                    UPDATE \". BB_POSTS .\" p\n                    SET p.posts_count = (\n                        SELECT f.forum_postcount\n                        FROM \". BB_FORUMS .\" f\n                        WHERE f.forum_id = $to_id\n                    )\n                    WHERE p.forum_id = $from_id\n                \");\n\n# ---- [ Открыть ] -------------------\n\nincludes/functions_admin.php\n\n# ---- [ Найти ] -------------------\n\n                        DB()->query(\"\n                                REPLACE INTO $tmp_user_posts\n                                        SELECT user_id, 0\n                                        FROM \". BB_USERS .\"\n                                        WHERE user_id != \". GUEST_UID .\"\n                                                $where_user_sql\n                                UNION\n                                        SELECT poster_id, COUNT(*)\n                                        FROM \". BB_POSTS .\"\n                                        WHERE poster_id != \". GUEST_UID .\"\n\n# ---- [ Вставить после ] -------------------\n\nAND posts_count != 0\n\n# ---- [ Найти ] -------------------\n\n    DB()->query(\"\n        INSERT INTO $tmp_user_posts\n\n# ---- [ В строке найти ] -------------------\n\n                AND p.poster_id != \". GUEST_UID .\"\n\n# ---- [ В строке добавить после ] -------------------\n\n                AND p.posts_count != 0\n\n# ---- [ Найти ] -------------------\n\n    // Update torrents\n    DB()->query(\"\n        UPDATE \". BB_BT_TORRENTS .\" SET\n            forum_id = $to_forum_id\n        WHERE topic_id IN($topic_csv)\n    \");\n\n# ---- [ Вставить после ] -------------------\n\n    // Update posts count options\n    DB()->query(\"\n        UPDATE \". BB_POSTS .\" p\n        SET p.posts_count = (\n            SELECT f.forum_postcount\n            FROM \". BB_FORUMS .\" f\n            WHERE f.forum_id = $to_forum_id\n        )\n        WHERE p.topic_id IN ($topic_csv)\n    \");\n\n# ---- [ Открыть ] -------------------\n\nincludes/functions_post.php\n\n# ---- [ Найти ] -------------------\n\n    // Flood control\n    $row = null;\n    $where_sql = (IS_GUEST) ? \"p.poster_ip = '\". USER_IP .\"'\" : \"p.poster_id = {$userdata['user_id']}\";\n     \n# ---- [ Вставить до ] -------------------\n\n    // Check post count option\n    $sql = \"SELECT forum_postcount AS forum_post_count FROM \". BB_FORUMS .\" WHERE forum_id = '\" . $forum_id . \"'\";\n    if (!$forum_posts_count = DB()->fetch_row($sql))\n    {\n        message_die(GENERAL_ERROR, $forum_posts_count['forum_post_count']);\n    }\n    $posts_count = (intval($forum_posts_count['forum_post_count'])) ? intval($forum_posts_count['forum_post_count']) : 0;\n\n# ---- [ Найти ] -------------------\n\n    $sql = ($mode != \"editpost\") ? \"INSERT INTO \" . BB_POSTS\n\n# ---- [ В строке найти ] -------------------\n\npost_time, poster_ip\n\n# ---- [ В строке добавить после ] -------------------\n\n, posts_count\n\n# ---- [ В строке найти ] -------------------\n\n, $current_time, '\". USER_IP .\"'\n\n# ---- [ В строке добавить после ] -------------------\n\n, $posts_count\n\n# ---- [ Найти ] -------------------\n\n        $sql = \"UPDATE \" . BB_USERS . \"\n\n# ---- [ Вставить до ] -------------------\n\n        $sql = \"SELECT forum_postcount\n            FROM \" . BB_FORUMS . \"\n            WHERE forum_id = $forum_id\n            AND forum_postcount = 0\";\n        if (!$result = DB()->sql_query($sql))\n        {\n            message_die(GENERAL_ERROR, 'Error in deleting post', '', __LINE__, __FILE__, $sql);\n        }\n        if ($row = DB()->sql_fetchrow($result))\n        {\n            return;\n        }\n\n# ---- [ Открыть ] -------------------\n\nlanguage/lang_russian/lang_admin.php\n\n# ---- [ Найти ] -------------------\n\n$lang['PRUNE_DAYS']\n\n# ---- [ Вставить до ] -------------------\n\n$lang['FORUM_POSTCOUNT'] = 'Считать сообщения пользователей';\n\n# ---- [ Открыть ] -------------------\n\ntemplates/admin/admin_forums.tpl\n\n# ---- [ Найти ] -------------------\n\n    <tr>\n        <td class=\"catBottom\" colspan=\"2\">\n            <input type=\"submit\" name=\"submit\" value=\"{S_SUBMIT_VALUE}\" class=\"mainoption\" />\n        </td>\n    </tr>\n\n# ---- [ Вставить до ] -------------------\n\n    <tr>\n        <td class=\"row1\">{L_FORUM_POSTCOUNT}</td>\n        <td class=\"row2\">{L_ENABLED}<input type=\"checkbox\" name=\"forum_postcount\" value=\"1\" {S_FORUM_POSTCOUNT} /></td>\n    </tr>\n\n# ---- [ Конец ] -------------------[/PHP]\n[/SPOILER]",
+    "owner": "Gemini_13",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание:</b> добавляет возможность отключить учет сообщений в конкретных форумах (создать флуд-форумы). Сообщения, созданные в таких разделах, не зачисляются в статистику пользователям.",
+  "download_count": 216,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/179.jpg?1425323481",
+  "id": 179,
+  "is_fileless": null,
+  "last_update": 1425323453,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1425323453,
+  "resource_state": "visible",
+  "slug": "otklucenie-uceta-soobsenij-v-forumah-flud-forumy",
+  "tag_line": "Добавляет возможность отключить учет сообщений в конкретных форумах (создать флуд-форумы).",
+  "tags": [],
+  "title": "Отключение учета сообщений в форумах (флуд-форумы)",
+  "url_path": "/resources/otklucenie-uceta-soobsenij-v-forumah-flud-forumy.179/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 216,
+      "files": [
+        {
+          "filename": "флуд_форумы.zip",
+          "id": 3185,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1855,
+          "src_url": "https://torrentpier.com/api/resource-versions/216/download?file=3185"
+        }
+      ],
+      "id": 216,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425323453,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/otklucenie-uceta-soobsenij-v-forumah-flud-forumy.179/version/216/"
+    }
+  ],
+  "view_count": 640
+}

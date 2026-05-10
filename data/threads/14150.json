@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 43616,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 14150,
+  "last_post_date": 1378654252,
+  "node_id": 57,
+  "post_date": 1378646016,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 43616,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Суть проблемы такова при скачивание торрента пишиет Торрент неверно закодирован  в чем может быть проблема ревизия двига 552",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1378646016,
+      "user_id": 4249,
+      "user_title": "User",
+      "username": "Muzik"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 43637,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"http://torrentpier.com/search/2134243/?q=Торрент+неверно+закодирован&amp;o=date&amp;c[node]=10\" class=\"link link--internal\">http://torrentpier.com/search/2134243/?q=Торрент+неверно+закодирован&amp;o=date&amp;c[node]=10</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1378654252,
+      "user_id": 191,
+      "user_title": "User",
+      "username": "lexXxa"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "torrent-neverno-zakodirovan",
+  "sticky": false,
+  "tags": [],
+  "title": "Торрент неверно закодирован",
+  "url_path": "/threads/torrent-neverno-zakodirovan.14150/",
+  "user_id": 4249,
+  "username": "Muzik",
+  "view_count": 2388
+}

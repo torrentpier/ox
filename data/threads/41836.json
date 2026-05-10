@@ -1,0 +1,101 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 92356,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 89,
+    "title": "Hosting and domains"
+  },
+  "id": 41836,
+  "last_post_date": 1510143225,
+  "node_id": 89,
+  "post_date": 1510097442,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92356,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Раньше все работало, потом не вовремя продлил хостинг и заливал все заново.<br />\nТеперь Защищено перечеркнуто. Как раньше настраивал попросту не помню.<br />\nПодскажите.<br />\nХостинг - cityhost",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1510097442,
+      "user_id": 7504,
+      "user_title": "User",
+      "username": "mochernyak"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92357,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://certbot.eff.org/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Certbot</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1510100418,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92358,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Protektor\"><a href=\"https://certbot.eff.org/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Certbot</a></blockquote>Ничего о SSL не нашел",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1510103818,
+      "user_id": 7504,
+      "user_title": "User",
+      "username": "mochernyak"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92360,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Если vestacp то достаточно отредактировать домен и выставить галочку на ssl, по ispmanager есть мануал на форуме, в остальных случаях если поддержка адекватная то они помогут настроить",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1510143225,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "kak-nastroit-ssl-sertifikat",
+  "sticky": false,
+  "tags": [
+    "https",
+    "ssl"
+  ],
+  "title": "Как настроить SSL сертификат?",
+  "url_path": "/threads/kak-nastroit-ssl-sertifikat.41836/",
+  "user_id": 7504,
+  "username": "mochernyak",
+  "view_count": 1543
+}

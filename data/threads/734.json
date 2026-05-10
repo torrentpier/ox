@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 9554,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 52,
+    "title": "Bug tracker archive"
+  },
+  "id": 734,
+  "last_post_date": 1326624958,
+  "node_id": 52,
+  "post_date": 1326591687,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9554,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<img src=\"http://i30.fastpic.ru/big/2012/0115/a8/5b37ceb23d51dcfa301f976f06715ba8.png\" alt=\"\" /><br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\">Notice: Undefined index: forums in /home/dev/data/www/***/admin/admin_ug_auth.php on line 225\n\nWarning: Invalid argument supplied for foreach() in /home/dev/data/www/***/admin/admin_ug_auth.php on line 225\n\nNotice: Undefined index: forums in /home/dev/data/www/***/admin/admin_ug_auth.php on line 225\n\nWarning: Invalid argument supplied for foreach() in /home/dev/data/www/***/admin/admin_ug_auth.php on line 225</pre><br />\nВ профиле пользователя я нажал &quot;Права доступа&quot;, далее &quot;Открыть все форумы...&quot; и такая &quot;шапка&quot;",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1326591687,
+      "user_id": 752,
+      "user_title": "User",
+      "username": "Pacifik"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9562,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "У меня всё нормально.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1326609182,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9575,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Есть такое дело, правда у меня не последняя ревизия может дальше уже исправили...<br />\n<b>Решение:</b><br />\nперед<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">foreach ($c_data[&#039;forums&#039;] as $f_id)</pre>находим<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">        if (!$c =&amp; $_REQUEST[&#039;c&#039;] OR !in_array($c, array(&#039;all&#039;, $c_id)))\n        {\n            continue;\n        }</pre>и заменяем на<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">        if (!$c =&amp; $_REQUEST[&#039;c&#039;] OR !in_array($c, array(&#039;all&#039;, $c_id)) OR empty($c_data[&#039;forums&#039;]))\n        {\n            continue;\n        }</pre>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1326624958,
+      "user_id": 30,
+      "user_title": "User",
+      "username": "krumax"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "warning-invalid-argument-supplied-for-foreach",
+  "sticky": false,
+  "tags": [],
+  "title": "Warning: Invalid argument supplied for foreach()",
+  "url_path": "/threads/warning-invalid-argument-supplied-for-foreach.734/",
+  "user_id": 752,
+  "username": "Pacifik",
+  "view_count": 2187
+}

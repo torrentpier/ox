@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 394,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 52,
+    "title": "Bug tracker archive"
+  },
+  "id": 36,
+  "last_post_date": 1309907514,
+  "node_id": 52,
+  "post_date": 1309902553,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 394,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ошибки в логах <br />\n[04-Jul-2011 13:48:46] PHP Notice: Undefined index: rating in /var/www/сайт.org/attach_mod/displaying_torrent.php on line 84<br />\n[04-Jul-2011 13:48:46] PHP Notice: Undefined index: thanked in /var/www/сайт.org/attach_mod/displaying_torrent.php on line 86<br />\n[04-Jul-2011 13:48:46] PHP Notice: Undefined index: L_NONE in /var/www/сайт.org/cache/tpl_default_viewtopic_torrent.tpl.php on line 118 <br />\n<br />\nстроки:<br />\n$your_vote = $attachments[&#039;_&#039;. $post_id][$i][&#039;rating&#039;]; строчка 84<br />\n$thanked = $attachments[&#039;_&#039;. $post_id][$i][&#039;thanked&#039;]; строчка 86<br />\n&#039;TRACKER_LINK&#039; =&gt; $tracker_link, строчка 118 <br />\n<br />\nСборка от TorrentPier SVN на базе 2.0.1 r539",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1309902553,
+      "user_id": 88,
+      "user_title": "User",
+      "username": "Lion18"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 395,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "вы ошиблись форумом<br />\n<span style=\"color: rgb(204,204,204)\"><span style=\"font-size: 10px\">--- добавлено: 6 июл 2011 в 01:54 ---</span></span><br />\nспасибки ещё никто не адаптировал. после завершения дампа для апгрейда адаптну",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1309902843,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 398,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"\">Сборка от TorrentPier SVN на базе 2.0.1 r539</blockquote><br />\nвам сюда  <a href=\"http://torrentpier.com/threads/Переезд-с-svn-hg-со-всех-версий.37/\" class=\"link link--internal\">http://torrentpier.com/threads/Переезд-с-svn-hg-со-всех-версий.37/</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1309907514,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "osibki-v-logah",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибки в логах",
+  "url_path": "/threads/osibki-v-logah.36/",
+  "user_id": 88,
+  "username": "Lion18",
+  "view_count": 1520
+}

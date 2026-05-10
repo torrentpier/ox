@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 24441,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1841,
+  "last_post_date": 1356093398,
+  "node_id": 57,
+  "post_date": 1356092944,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24441,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте, по примеру рисованного вида сообщений (точно не знаю как назвать его)<br />\nКак вывести?<br />\n<img src=\"http://data1.floomby.com/files/share/21_12_2012/BV1mutqrYE6vFVwddGNS8g.png\" alt=\"\" /><br />\n <br />\nБуду благодарен если кто нибудь поможет!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1356092944,
+      "user_id": 3266,
+      "user_title": "User",
+      "username": "extazys"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24443,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"http://torrentpier.com/threads/full-up-dl-ratio-%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0-ajax.184/\" class=\"link link--internal\">http://torrentpier.com/threads/full-up-dl-ratio-Статистика-ajax.184/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1356093183,
+      "user_id": 737,
+      "user_title": "User",
+      "username": "Dream"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24444,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо, в обще слепой 😱",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1356093398,
+      "user_id": 3266,
+      "user_title": "User",
+      "username": "extazys"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "vyvod-upload-download-rejtinga-v-pole-s-soobseniem",
+  "sticky": false,
+  "tags": [],
+  "title": "Вывод upload, download, рейтинга в поле с сообщением",
+  "url_path": "/threads/vyvod-upload-download-rejtinga-v-pole-s-soobseniem.1841/",
+  "user_id": 3266,
+  "username": "extazys",
+  "view_count": 1062
+}

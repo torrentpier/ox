@@ -1,0 +1,120 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "Закрытые раздачи.zip",
+      "id": 3078,
+      "local_path": null,
+      "r2_key": null,
+      "size": 2536,
+      "src_url": "https://torrentpier.com/api/resource-versions/189/download?file=3078"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]Закрытые раздачи\n========================================================\nОткрыть index.php и найти: -----------------------------\n\n$lastvisit = (IS_GUEST) ? TIMENOW : $userdata['user_lastvisit'];\n\nПосле этого добавить: ----------------------------------\n\n$closed_release = isset($_GET['closed']) ? $_GET['closed'] : 0;\n\nif ($bb_cfg['closed_release']['on'] && $closed_release)\n{\n    $start = isset($_GET['start']) ? abs(intval($_GET['start'])) : 0;\n    $per_page = $bb_cfg['closed_release']['max_topic_page'];\n  \n    $count_topic = DB()->fetch_row(\"SELECT COUNT(topic_id) AS topic FROM \". BB_BT_TORRENTS .\" WHERE tor_status IN (\". TOR_CLOSED_CPHOLD .\")\");\n  \n    $closed_release = DB()->fetch_rowset(\"SELECT\n        tor.info_hash, tor.topic_id, tor.size, tor.tor_status, tor.checked_time,\n        t.topic_id, t.topic_title\n    FROM \". BB_BT_TORRENTS .\" tor\n    LEFT JOIN \". BB_TOPICS .\" t ON (t.topic_id = tor.topic_id)\n    WHERE tor.tor_status IN (\". TOR_CLOSED_CPHOLD .\")\n    LIMIT $start, $per_page\");\n      \n    foreach($closed_release as $row)\n    {\n        $template->assign_block_vars('closed', array(\n            'TOPIC_TITLE'        => $row['topic_title'],\n            'SIZE'                => humn_size($row['size']),\n            'TIME_STOPED'        => bb_date($row['checked_time'], 'd-M-y'),\n            'HASH'                => '<span style=\"text-transform: uppercase;\">'. bin2hex($row['info_hash']) .'</span>'\n        ));\n    }\n  \n    $template->assign_vars(array(\n        'PAGINATION'  => generate_pagination(BB_ROOT .'index.php?closed=1', $count_topic['topic'], $per_page, $start),\n    ));\n  \n    print_page('closed.tpl', 'simple', 'no_header');\n}\n\nОткрыть config.php в конец добавить: -------------------------\n\n$bb_cfg['closed_release'] = array(\n    'on'                => true,\n    'max_topic_page'    => 100,\n);\n\nОткрыть index.tpl и найти: -----------------------------------\n\n        <a href=\"{U_SEARCH_LATEST}\" class=\"med\">{L_SEARCH_LATEST}</a>\n\nЗаменить на: -------------------------------------------------\n\n        <a href=\"{U_SEARCH_LATEST}\" class=\"med\">{L_SEARCH_LATEST}</a> &#0183;\n        <a href=\"{U_INDEX}?closed=1\" class=\"med\">Закрытые раздачи</a>\nИ закинуть файл closed.tpl в свой шаблон! [/PHP]\n[/SPOILER]",
+    "owner": "Dream",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1391703138,
+      "file_size": 18016,
+      "filename": "crop_63035990_vGkNIh.webp",
+      "height": 222,
+      "id": 2411,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/crop_63035990_vgknih-webp.2411/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2416-99c7a61e687d296c2ca31717556ff008.jpg?hash=oGbMKi0b1T",
+      "width": 984
+    },
+    {
+      "attach_date": 1391703147,
+      "file_size": 12416,
+      "filename": "crop_63036066_yQitnY.webp",
+      "height": 189,
+      "id": 2412,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/crop_63036066_yqitny-webp.2412/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2417-47c2563f67d4fc1f44fa1105c1e52b3f.jpg?hash=4-Rd00P70z",
+      "width": 1000
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет вывод списка раздач, которые закрыты правообладателем.",
+  "download_count": 353,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/87.jpg?1425226683",
+  "id": 87,
+  "is_fileless": null,
+  "last_update": 1425224269,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1391703156,
+  "resource_state": "visible",
+  "slug": "zakrytye-razdaci",
+  "tag_line": "Добавляет вывод списка раздач, которые закрыты правообладателем.",
+  "tags": [],
+  "title": "Закрытые раздачи",
+  "url_path": "/resources/zakrytye-razdaci.87/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 242,
+      "files": [
+        {
+          "filename": "Закрытые раздачи.zip",
+          "id": 3078,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2536,
+          "src_url": "https://torrentpier.com/api/resource-versions/189/download?file=3078"
+        }
+      ],
+      "id": 189,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425224269,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/zakrytye-razdaci.87/version/189/"
+    },
+    {
+      "download_count": 119,
+      "files": [
+        {
+          "filename": "Закрытые раздачи.rar",
+          "id": 2410,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2243,
+          "src_url": "https://torrentpier.com/api/resource-versions/92/download?file=2410"
+        }
+      ],
+      "id": 92,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1391703156,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/zakrytye-razdaci.87/version/92/"
+    }
+  ],
+  "view_count": 680
+}

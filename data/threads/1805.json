@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 24058,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1805,
+  "last_post_date": 1355345398,
+  "node_id": 57,
+  "post_date": 1355343556,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24058,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ни как не могу найти как выключить кеширование корня сайт и index.php при входе гостем на страницы. Версия SVN последняя.<br />\nМожет быть можно выставить что то, что бы выключить совсем керирование<br />\n&#039;bb_cache&#039; =&gt; array(&#039;ВЫКЛЮЧИТЬ&#039;, array()),",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1355343556,
+      "user_id": 424,
+      "user_title": "User",
+      "username": "nemec2000"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24059,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Закомменитируйте весь кусок от // Cache до // Server",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1355344362,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24063,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "кеширование не отключается же...",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1355344927,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24064,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "а не, отключается..<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">// Available cache types: memcache, sqlite, redis, eaccelerator, apc, xcache (default of filecache)\n# name =&gt; array( (string) type, (array) cfg )\n$bb_cfg[&#039;cache&#039;][&#039;engines&#039;] = array(\n    &#039;bb_cache&#039;      =&gt; array(&#039;&#039;,  array()),\n    &#039;tr_cache&#039;      =&gt; array(&#039;&#039;,  array()),\n    &#039;session_cache&#039;  =&gt; array(&#039;&#039;,  array()),\n \n    &#039;bb_cap_sid&#039;    =&gt; array(&#039;&#039;,  array()),\n    &#039;bb_login_err&#039;  =&gt; array(&#039;&#039;,  array()),\n);\n \n// Datastore\n// Available datastore types: memcache, sqlite, redis, eaccelerator, apc, xcache  (default filecache)\n$bb_cfg[&#039;datastore_type&#039;] = &#039;&#039;;</pre>-----------------<br />\nUPD: нет... все-равно не отключается. используется файлкеш.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1355345069,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24066,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Basilevs</b>, да помогло, выключилось, спасибо",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1355345398,
+      "user_id": 424,
+      "user_title": "User",
+      "username": "nemec2000"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "kak-vyklucit-kesirovanie-korna-i-index-php",
+  "sticky": false,
+  "tags": [],
+  "title": "Как выключить кеширование корня / и index.php",
+  "url_path": "/threads/kak-vyklucit-kesirovanie-korna-i-index-php.1805/",
+  "user_id": 424,
+  "username": "nemec2000",
+  "view_count": 1264
+}

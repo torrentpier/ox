@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 5972,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 489,
+  "last_post_date": 1322139938,
+  "node_id": 57,
+  "post_date": 1322125379,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5972,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как сделать Вывод статистики скачаного/отданого/ратио в viewtopic.tpl<br />\n<br />\nПробую вставлять код:<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">      &lt;tr&gt;&lt;td&gt;{L_BT_RATIO}&lt;/td&gt;&lt;td&gt;&lt;!-- IF DOWN_TOTAL_BYTES gt MIN_DL_BYTES --&gt;&lt;b&gt;{USER_RATIO}&lt;/b&gt;&lt;!-- ELSE --&gt;&lt;b&gt;{L_NONE}&lt;/b&gt; (DL &lt; {MIN_DL_FOR_RATIO})&lt;!-- ENDIF --&gt;&lt;/td&gt;&lt;/tr&gt;\n      &lt;tr&gt;&lt;td&gt;{L_DOWNLOADED}&lt;/td&gt;&lt;td class=&quot;leechmed&quot;&gt;&lt;b&gt;{DOWN_TOTAL}&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\n      &lt;tr&gt;&lt;td&gt;{L_UPLOADED}&lt;/td&gt;&lt;td class=&quot;seedmed&quot;&gt;&lt;b&gt;{UP_TOTAL}&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\n      &lt;tr&gt;&lt;td&gt;{L_RELEASED}&lt;/td&gt;&lt;td class=&quot;seedmed&quot;&gt;{RELEASED}&lt;/td&gt;&lt;/tr&gt;\n      &lt;tr&gt;&lt;td&gt;{L_BT_BONUS_UP}&lt;/td&gt;&lt;td class=&quot;seedmed&quot;&gt;{UP_BONUS}&lt;/td&gt;&lt;/tr&gt;</pre><br />\nНе отображает....",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1322125379,
+      "user_id": 152,
+      "user_title": "User",
+      "username": "levantuev"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5973,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"http://torrentpier.com/threads/full-up-dl-ratio-%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0-ajax.184/\" class=\"link link--internal\">http://torrentpier.com/threads/full-up-dl-ratio-Статистика-ajax.184/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1322127249,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5974,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>levantuev</b>,откуда он тебе отображать то будет? В viewtopic.php запрос сделал ?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1322127724,
+      "user_id": 63,
+      "user_title": "User",
+      "username": "nord51"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5982,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Locer\"><a href=\"http://torrentpier.com/threads/full-up-dl-ratio-%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0-ajax.184/\" class=\"link link--internal\">http://torrentpier.com/threads/full-up-dl-ratio-Статистика-ajax.184/</a></blockquote>спасибо",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1322136189,
+      "user_id": 152,
+      "user_title": "User",
+      "username": "levantuev"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5986,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"levantuev\">спасибо</blockquote>Для этого кнопка &quot;мне нравится&quot; есть 😉",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1322139938,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "vyvod-statistiki-v-viewtopic-tpl",
+  "sticky": false,
+  "tags": [],
+  "title": "Вывод статистики в viewtopic.tpl",
+  "url_path": "/threads/vyvod-statistiki-v-viewtopic-tpl.489/",
+  "user_id": 152,
+  "username": "levantuev",
+  "view_count": 1331
+}

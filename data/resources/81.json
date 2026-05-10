@@ -1,0 +1,46 @@
+{
+  "category": {
+    "description": "Section with all paid modifications for TorrentPier.",
+    "id": 2,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Paid",
+    "view_url": "https://torrentpier.com/resources/categories/paid.2/"
+  },
+  "current_files": [],
+  "custom_fields": {},
+  "description_attachments": [],
+  "description_parsed": "<b>Автор: </b>drew<br />\n<b>ICQ: </b>692652796<br />\n<b>Описание</b>: данный мод ловит пользователей которые имеют более одного аккаунта.<br />\n<b>Возможности:</b><br />\n- Ловля по кукам<br />\n- Ловля по одинаковому ip адресу<br />\n- Функция добавления пользователя в белый или черный список<br />\n- И т.д.<br />\n<b>Стоимость:</b> 1200р<br />\nЗа подробностями и покупкой писать в личку, либо в аську.",
+  "download_count": 0,
+  "external_url": null,
+  "icon_url": null,
+  "id": 81,
+  "is_fileless": null,
+  "last_update": 1389634226,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1389634226,
+  "resource_state": "visible",
+  "slug": "mul-tiakkaunty",
+  "tag_line": "Данный мод ловит пользователей которые имеют более одного аккаунта",
+  "tags": [],
+  "title": "Мультиаккаунты",
+  "url_path": "/resources/mul-tiakkaunty.81/",
+  "user_id": 3170,
+  "username": "drew",
+  "version": "1.0",
+  "versions": [
+    {
+      "download_count": 0,
+      "files": [],
+      "id": 86,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1389634226,
+      "version_state": "visible",
+      "version_string": "1.0",
+      "view_url": "https://torrentpier.com/resources/mul-tiakkaunty.81/version/86/"
+    }
+  ],
+  "view_count": 747
+}

@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 22432,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1672,
+  "last_post_date": 1352384260,
+  "node_id": 57,
+  "post_date": 1352381847,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 22432,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте, у тега img есть автоматическое изменение размера больших изображений. Вопрос где находится функция этого авторесайза, задача сделать уменьшение изображения до 640px.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1352381847,
+      "user_id": 2760,
+      "user_title": "User",
+      "username": "Tehek"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 22434,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Tehek</b>, в page_header.tpl",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1352384260,
+      "user_id": 8,
+      "user_title": "User",
+      "username": "fly_indiz"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "teg-img",
+  "sticky": false,
+  "tags": [],
+  "title": "Тег [img]",
+  "url_path": "/threads/teg-img.1672/",
+  "user_id": 2760,
+  "username": "Tehek",
+  "view_count": 856
+}

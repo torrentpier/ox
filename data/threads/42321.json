@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 96816,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 42321,
+  "last_post_date": 1731813727,
+  "node_id": 3,
+  "post_date": 1731787588,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96816,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "When I am trying to execute <span style=\"color: rgb(235, 107, 86)\">php install.php</span> in the cmd I&#039;m getting this following problem <span style=\"color: rgb(184, 49, 47)\"><b>ext-mysqli not installed</b></span><b><span style=\"color: rgb(184, 49, 47)\"> . Check out php.ini file</span></b> please help couldn&#039;t solve after spending so much time",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1731787588,
+      "user_id": 10965,
+      "user_title": "User",
+      "username": "dataofcow"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96818,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Hi! Check your php.ini file on the server, it must have ext-mysql enabled<br />\n<br />\nFind something like this<br />\n<pre class=\"xfBb-code\" data-lang=\"\">;extension=mysqli</pre>and uncomment this line<br />\n<pre class=\"xfBb-code\" data-lang=\"\">extension=mysqli</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1731813727,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "cant-install-the-install-php",
+  "sticky": false,
+  "tags": [],
+  "title": "Can't Install the install.php",
+  "url_path": "/threads/cant-install-the-install-php.42321/",
+  "user_id": 10965,
+  "username": "dataofcow",
+  "view_count": 430
+}

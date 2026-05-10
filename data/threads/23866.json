@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 55709,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 23866,
+  "last_post_date": 1389729836,
+  "node_id": 57,
+  "post_date": 1387867592,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 55709,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Когда на сайте было зарегано 30-40 чел, нажимал рассылку и все готово, сейчас, когда зарегистрированы около 10к, выходит такая ошибка, в чем может быть дело? <br />\n<br />\nЕсли это как-то поможет, у хостера спрашивал, они говорят &quot;Ограничение на 10 человек в письме, то есть кусками по 10 человек в письме отсылать, суточного лимита нет&quot;",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1387867592,
+      "user_id": 4938,
+      "user_title": "User",
+      "username": "Артур Фазлыев"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 55787,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "в предотвращении спама хостеры устанавливают такое ограничение, т.е больше чем 10 писем за один раз отправить не получиться",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1387910924,
+      "user_id": 724,
+      "user_title": "User",
+      "username": "pilot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 55879,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "1. заведи свой север<br />\n2. гугл рулит - рассылка писем от 20к писем в месяц",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1387993867,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57609,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Для torrentpier была модификация megamail или как-то так, для отсылки сообщений крон-задачей &quot;пачками&quot;.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1389729836,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "failed-sending-email-php",
+  "sticky": false,
+  "tags": [],
+  "title": "Failed sending email :: PHP ::",
+  "url_path": "/threads/failed-sending-email-php.23866/",
+  "user_id": 4938,
+  "username": "Артур Фазлыев",
+  "view_count": 2317
+}

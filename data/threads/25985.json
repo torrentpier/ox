@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61245,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 25985,
+  "last_post_date": 1405248721,
+  "node_id": 80,
+  "post_date": 1403897230,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61245,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "1. Админка-Общие настройки-не изменяется язык по умолчанию, т.е. стоит по умолчанию русский, изменяешь на любой другой, изменения не сохраняются, типа нет изменяня в bb_config - default_lang<br />\n2. И ещё случайно удалили в укр ланге:<br />\n<span style=\"font-size: 12px\"><span style=\"font-family: 'Monaco'\"><span style=\"color: #333333\">$lang[&#039;NO_POSTS&#039;] = &#039;Немає повідомлень&#039;;</span></span></span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1403897230,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61418,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено в новой ревизии: <a href=\"https://code.google.com/p/torrentpier2/source/detail?r=591\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://code.google.com/p/torrentpier2/source/detail?r=591</a><br />\nСпасибо за багрепорты.<br />\n<br />\nСкачать r591 можно в центре загрузки: <a href=\"http://get.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://get.torrentpier.com/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1405248721,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 1,
+  "slug": "590-ne-izm-azyk-po-umolcaniu",
+  "sticky": false,
+  "tags": [],
+  "title": "590 не изм. язык по умолчанию",
+  "url_path": "/threads/590-ne-izm-azyk-po-umolcaniu.25985/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1102
+}

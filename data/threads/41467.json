@@ -1,0 +1,127 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 87619,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 87,
+    "title": "Questions about HTML / CSS"
+  },
+  "id": 41467,
+  "last_post_date": 1471165920,
+  "node_id": 87,
+  "post_date": 1463348020,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1463347681,
+          "file_size": 332282,
+          "filename": "Снимок экрана (4).webp",
+          "height": 1080,
+          "id": 4384,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-ekrana-4-webp.4384/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4388-2f73bbdc3df2127c4fb48ab7a6e1cb84.jpg?hash=YI5XHkCUhC",
+          "width": 1920
+        },
+        {
+          "attach_date": 1463347948,
+          "file_size": 298436,
+          "filename": "head_bg.webp",
+          "height": 500,
+          "id": 4385,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/head_bg-webp.4385/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4389-200695c33c952a3756b6251ec4b65363.jpg?hash=TDpjf8L-fm",
+          "width": 2500
+        }
+      ],
+      "id": 87619,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как можно вписать картинку в шапку сайта и сделать ее резиновой???<br />\n<br />\nкартинка 2500x500px<br />\n<br />\n<div>Spoiler content hidden.</div><br />\n<div>Spoiler content hidden.</div><br />\n<a href=\"https://torrentpier.com/attachments/4384/\"><img src=\"https://torrentpier.com/data/attachments/4/4388-2f73bbdc3df2127c4fb48ab7a6e1cb84.jpg?hash=YI5XHkCUhC\" alt=\"Снимок экрана (4).webp\" /></a>      <a href=\"https://torrentpier.com/attachments/4385/\"><img src=\"https://torrentpier.com/data/attachments/4/4389-200695c33c952a3756b6251ec4b65363.jpg?hash=TDpjf8L-fm\" alt=\"head_bg.webp\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1463348020,
+      "user_id": 6106,
+      "user_title": "User",
+      "username": "veliant9"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87621,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ну ты сам указываешь размер картинки, поставь авто",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1463376148,
+      "user_id": 6554,
+      "user_title": "User",
+      "username": "Fakt_37"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87630,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/6554/\">Fakt_37</a> , спс<br />\n<div>Spoiler content hidden.</div><div>Spoiler content hidden.</div>сделал так, кому тоже, чтоб не париться)))",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1463416364,
+      "user_id": 6106,
+      "user_title": "User",
+      "username": "veliant9"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88214,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "так же один из вариантов, использую и все четко<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;table align=&quot;center&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td&gt;\n&lt;IMG style=&quot;vertical-align: top;&quot; src=&quot;images/logo/logo.png&quot; border=&quot;0&quot; width=&quot;100%&quot; &gt;\n&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;</pre>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1471165920,
+      "user_id": 1338,
+      "user_title": "User",
+      "username": "Alex39"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "rezinovaa-sapka",
+  "sticky": false,
+  "tags": [],
+  "title": "Резиновая шапка",
+  "url_path": "/threads/rezinovaa-sapka.41467/",
+  "user_id": 6106,
+  "username": "veliant9",
+  "view_count": 2025
+}

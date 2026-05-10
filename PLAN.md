@@ -23,10 +23,11 @@ of the deliverable, not a side note.
 | Exporter — atomic JSON writer       | Done                                   |
 | Exporter — `nodes` stage            | Done — first end-to-end run wrote `data/meta.json` (34 nodes, 27 forums) |
 | Exporter — `threads` stage (code)   | Done — smoke-tested on thread 2 (50 posts, 5 pages → 32 KB JSON) |
-| Exporter — `threads` full run       | In progress / pending                  |
-| Exporter — `users` stage            | Captured incidentally during `threads` (27 users from thread 2 smoke run) |
+| Exporter — `threads` full run       | Done — 3280 threads, 42623 posts (sum matches `reply_count+1` exactly), ~30 min wall time at 3 rps |
+| Exporter — `users` stage            | Done — 1085 users captured incidentally from embedded `post.User` |
 | Exporter — `resources` stage (code) | Done                                   |
 | Exporter — `resources` full run     | Done — 230 resources, 2.2 MB on disk   |
+| Builder — full-export build         | Done — 6030 thread pages + 230 resource pages + listings, 58 MB `dist/` |
 | Builder — minimal slice             | Done — `index`, category, forum, thread, resource and resource-category pages; dark-mode CSS |
 | Builder — pagination (forum + thread) | Done — 30 threads/page on forums, 10 posts/page on threads (matches XF). Page 1 is the bare base URL; later pages live under `/page-N/` |
 | Builder — `message_parsed` rewrite (URLs, sandboxing) | Done (sans R2) — strips `<script>` and `on*`; whitelists YouTube iframes; lazy-loads `<img>`; rewrites internal links to relative + canonical slug; collapses `/page-N` until pagination lands |
@@ -445,6 +446,7 @@ CREATE VIRTUAL TABLE posts_fts USING fts5(
 ## Open questions
 
 - [ ] Server-side size of the forum's actual attachments (not resource files). User's estimate is 1–5 GB; well within the R2 free tier of 10 GB. Will be measured precisely during stage 1 by summing `attachments[].file_size` across all posts.
+- [ ] **Profile posts / resource discussion comments not exported.** Public message counter on the forum (45,473) is ~2,850 higher than the forum posts we captured (42,623); the delta is almost certainly profile-wall comments and resource discussion threads, which live behind `/api/profile-posts/` and `/api/resources/{id}/discussions/` (TBC). Decide whether to add a fifth export stage for them.
 - [ ] **Resource version downloads require API auth.** `download_url` in `/api/resources/{id}/versions[].files[]` is `https://torrentpier.com/api/resource-versions/{vid}/download?file={fid}` — fetching it without `XF-Api-Key` returns 403. Must download every file via the API during the mirror stage and rehost on R2; the rendered resource page must point at R2 URLs, not the API endpoint.
 - [ ] **YouTube iframes.** Keep as iframes (relies on YouTube staying online) or downgrade to text links during HTML rewrite? Decide during stage 3.
 

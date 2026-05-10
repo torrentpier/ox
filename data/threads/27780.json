@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 64952,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 27780,
+  "last_post_date": 1413819737,
+  "node_id": 90,
+  "post_date": 1413756129,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 64952,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В этой теме привожу решения ряда вопросов связанных с конфигурированием нашего любимого nginx&#039;a.<br />\n<br />\nДабы не искать в инетах. Дополнения приветствуются. 🙂<br />\n<br />\n<br />\nРедирект с <a href=\"http://www.localhost\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">www.localhost</a> на localhost<br />\n<pre class=\"xfBb-code\" data-lang=\"\">if ( $host = &#039;www.localhost&#039; ) {\n        rewrite  ^/(.*)$  http://localhost/$1  permanent;\n        }</pre><br />\n<br />\nЗапрет на вход по ip<br />\n <pre class=\"xfBb-code\" data-lang=\"\">if ($http_host ~ &quot;\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}&quot;) {\n        return 444;\n        }</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1413756129,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 64962,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Basilevs\">Запрет на вход по ip</blockquote>А почему через listener по человечески не сделать?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1413782771,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 65052,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "этот вариант мне удобнее.<br />\n<br />\nНаписано именно как используется в рабочей версии, у меня. <br />\n<br />\nЭта тема не говорит что Вам всем надо делать так же.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1413819737,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "zametki-sisadmina-nginx-konfigurirovanie",
+  "sticky": false,
+  "tags": [],
+  "title": "Заметки сисадмина [nginx конфигурирование]",
+  "url_path": "/threads/zametki-sisadmina-nginx-konfigurirovanie.27780/",
+  "user_id": 119,
+  "username": "Basilevs",
+  "view_count": 1620
+}

@@ -1,0 +1,140 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94964,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 109,
+    "title": "LTS version archive"
+  },
+  "id": 42143,
+  "last_post_date": 1688482826,
+  "node_id": 109,
+  "post_date": 1688446732,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1688446724,
+          "file_size": 12342,
+          "filename": "12006d8a-1811-11e4-8a21-ace42af9db9e.webp",
+          "height": 100,
+          "id": 5457,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/12006d8a-1811-11e4-8a21-ace42af9db9e-webp.5457/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5461-833c6d5c69163ad819911ac32e7a993a.jpg?hash=8VrPBjbU8j",
+          "width": 300
+        }
+      ],
+      "id": 94964,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier LTS. Версия 2.1.5-2023.06</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/5457/\" alt=\"12006d8a-1811-11e4-8a21-ace42af9db9e.png\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier-lts/releases/tag/v2.1.5-2023.06\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.1.5-2023.06 · torrentpier/torrentpier-lts</a><br />\n<br />\n<b>Основные изменения:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Release v2.1.5-2023.06 🎉</li>\n<li data-xf-list-type=\"ul\">Fixed broken sessions <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/205\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#205</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Fixed broken skype widget in user profile <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/203\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#203</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Redirect to viewprofile.php if profile.php hasn&#039;t arguments <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/202\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#202</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Show smilies in post for guests <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/196\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#196</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Added showing PM counter in page title <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/193\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#193</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Corrected translations <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/183\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#183</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Fixed $bb_cfg[&#039;pm_days_keep&#039;] <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/180\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#180</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">IP storage bugfix <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/177\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#177</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Minor improvements <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/172\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#172</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/175\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#175</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/176\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#176</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/178\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#178</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/179\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#179</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/181\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#181</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/187\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#187</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/192\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#192</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/194\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#194</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/195\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#195</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/199\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#199</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/200\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#200</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/201\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#201</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/208\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#208</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/209\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#209</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Fixed empty user search box <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/171\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#171</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Added some placeholders for input fields <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/173\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#173</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n</ul>Для обновления на версию необходимо выполнить следующие запросы к базе данных:<br />\n<pre class=\"xfBb-code\" data-lang=\"sql\">SET GLOBAL sql_mode = &#039;&#039;;\nSET SESSION sql_mode = &#039;&#039;;\nUPDATE `bb_posts` SET `poster_ip` = &#039;0&#039;;\nALTER TABLE `bb_posts` CHANGE `poster_ip` `poster_ip` char(32) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT &#039;0&#039;;\nUPDATE `bb_bt_tracker` SET `ip` = &#039;0&#039;;\nALTER TABLE `bb_bt_tracker` CHANGE `ip` `ip` char(8) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT &#039;0&#039;;\nUPDATE `bb_users` SET `user_last_ip` = &#039;0&#039;;\nALTER TABLE `bb_users` CHANGE `user_last_ip` `user_last_ip` char(32) NOT NULL DEFAULT &#039;0&#039;;\nUPDATE `bb_users` SET `user_reg_ip` = &#039;0&#039;;\nALTER TABLE `bb_users` CHANGE `user_reg_ip` `user_reg_ip` char(32) NOT NULL DEFAULT &#039;0&#039;;\nUPDATE `bb_log` SET `log_user_ip` = &#039;0&#039;;\nALTER TABLE `bb_log` CHANGE `log_user_ip` `log_user_ip` varchar(32) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT &#039;0&#039;;\nUPDATE `bb_poll_users` SET `vote_ip` = &#039;0&#039;;\nALTER TABLE `bb_poll_users` CHANGE `vote_ip` `vote_ip` varchar(32) NOT NULL DEFAULT &#039;0&#039;;\nUPDATE `bb_privmsgs` SET `privmsgs_ip` = &#039;0&#039;;\nALTER TABLE `bb_privmsgs` CHANGE `privmsgs_ip` `privmsgs_ip` varchar(32) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT &#039;0&#039;;\nUPDATE `bb_sessions` SET `session_ip` = &#039;0&#039;;\nALTER TABLE `bb_sessions` CHANGE `session_ip` `session_ip` char(32) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT &#039;0&#039;;\nUPDATE `bb_banlist` SET `ban_ip` = &#039;0&#039;;\nALTER TABLE `bb_banlist` CHANGE `ban_ip` `ban_ip` varchar(32) NOT NULL DEFAULT &#039;0&#039;;\nINSERT INTO `bb_cron` VALUES (&#039;999&#039;, &#039;1&#039;, &#039;PM cleanup&#039;, &#039;clean_pm.php&#039;, &#039;daily&#039;, &#039;&#039;, &#039;05:00:00&#039;, &#039;70&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, &#039;1&#039;, &#039;&#039;, &#039;0&#039;, &#039;1&#039;, &#039;0&#039;);</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1688446732,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94965,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "А с чем связан баг, что varchar увеличили до 42?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1688449001,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94966,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Вообще, это слепой перенос из 2.2.0 (2.1.6). Это нужно было для поддержки ipv6. <br />\n<br />\nБольше роли в этих sql запросах играет <b>DEFAULT &#039;0&#039; </b>ко всем полям с IP. Это фиксит пару багов которые я нашёл в 2.1.5, поэтому запросы всё же нужны.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1688449978,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94969,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "как я понял ipv6 поддерживается, не нужно включать настройку в cloudflare?",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1688482171,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94970,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">как я понял ipv6 поддерживается, не нужно включать настройку в cloudflare?</blockquote>Все шаги по развертыванию такие же как и в 2.1.5. Поддержки ipv6 нигде нету",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1688482826,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "torrentpier-lts-versia-2-1-5-2023-06",
+  "sticky": false,
+  "tags": [
+    "lts",
+    "torrentpier-lts",
+    "новая версия",
+    "релиз",
+    "ченжлог"
+  ],
+  "title": "TorrentPier LTS. Версия 2.1.5-2023.06",
+  "url_path": "/threads/torrentpier-lts-versia-2-1-5-2023-06.42143/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 1021
+}

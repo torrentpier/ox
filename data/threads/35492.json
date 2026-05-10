@@ -1,0 +1,143 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 75193,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 58,
+    "title": "Suggestions for improving TorrentPier"
+  },
+  "id": 35492,
+  "last_post_date": 1762915133,
+  "node_id": 58,
+  "post_date": 1423743159,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 75193,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1423743223,
+      "message_parsed": "Например<br />\nПри достижении количества сообщений &gt;n но &lt;m<br />\nПри достижении количества релизов &gt;n<br />\nПри рейтинге&gt;n<br />\nПри репутации&gt;n<br />\nРегистрация на сайте &gt;n месяцев<br />\n<br />\nИ дальше при создании группы указать любое из условий или несколько<br />\n<br />\nНапример создав группу СуперСидер установить параметр автоматического перемещения в группу при отданном трафике &gt;10TB<br />\n<br />\nНу вы короче поняли",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1423743159,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 75197,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "составляешь нужные выборки и в цикле добавляешь в группу<br />\n<br />\nadd_user_into_group ($group_id, $user_id);",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1423744489,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 75203,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ну я себе такое частично сделал, точнее ты сделал крон задачу автоматического добавления в вип группу при достижении репутации",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1423747160,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1762886085,
+          "file_size": 1680,
+          "filename": "seeder_en.webp",
+          "height": 24,
+          "id": 6637,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/seeder_en-webp.6637/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6641-51e28daff6f39d0d8f37b44903c2d18b.jpg?hash=H-vFK4hdyb",
+          "width": 100
+        },
+        {
+          "attach_date": 1763296654,
+          "file_size": 1422,
+          "filename": "seeder.webp",
+          "height": 24,
+          "id": 6640,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/seeder-webp.6640/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6644-1e8c16b55038c54340d90586ff026a3a.jpg?hash=AcVlrZRVha",
+          "width": 100
+        }
+      ],
+      "id": 98297,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 1762885898,
+      "message_parsed": "Сам спрашивал, сам отвечу. Создаете группу в админке ТрастСидер (Активный сидер или как нравится) и также создаете звание (лычку)<br />\n<div>Spoiler content hidden.</div><div>Spoiler content hidden.</div>Создаете в админке две крон задачи для<br />\ntrustseeder.php время выполнения каждый час<br />\nuntrustseeder.php время выполнения раз в неделю<br />\n<br />\nСуть: мы каждый час в течение недели собираем сидеров у которых активно более 50 торрентов и раз в неделю делаем проверку и удаляем бездельников<br />\n<br />\nВ новых версиях движка возможно потребуется удалить<br />\nrequire_once(INC_DIR .&#039;functions_group.php&#039;);<br />\nИ заменить<br />\nadd_user_into_group ($group_seeder_id, $row[&#039;user_id&#039;]);<br />\nна<br />\n\\TorrentPier\\Legacy\\Group::add_user_into_group($group_seeder_id, $row[&#039;user_id&#039;]);<br />\n<br />\nТоже самое для<br />\ndelete_user_group ($group_seeder_id, $row[&#039;user_id&#039;]);",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1762885627,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98300,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "@sxc Спасибо. Выпущу как мод в ближайшее время",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1762915133,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 32,
+  "reply_count": 4,
+  "slug": "avtomaticeskoe-dobavlenie-v-gruppu-po-kronu-pri-uslovii",
+  "sticky": false,
+  "tags": [],
+  "title": "Автоматическое добавление в группу по крону при условии",
+  "url_path": "/threads/avtomaticeskoe-dobavlenie-v-gruppu-po-kronu-pri-uslovii.35492/",
+  "user_id": 0,
+  "username": "ler",
+  "view_count": 2076
+}

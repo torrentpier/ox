@@ -1,0 +1,88 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 25737,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 2090,
+  "last_post_date": 1358346373,
+  "node_id": 110,
+  "post_date": 1358332870,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1358332955,
+          "file_size": 120584,
+          "filename": "Снимок экрана 2013-01-16 в 14.41.54.webp",
+          "height": 1126,
+          "id": 1820,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-ekrana-2013-01-16-v-14-41-54-webp.1820/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1821-a70fccdfad247be7eeb988958052b017.jpg?hash=6qgqi0GvFJ",
+          "width": 2148
+        }
+      ],
+      "id": 25737,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\n <br />\nСегодня днем в результате обновления форума был добавлен блок с небольшой статистической информацией форума (самые пишушие, самые любимые, новые пользователи) и новыми темами (новости ресурса, новые модификации и шаблоны) на нем. Данное нововведение должно помочь пользователям быть в курсе новостей ресурса и жизни сообщества в целом, а в дальнейшем, возможно, блок будет задействован для уведомления о выходе новых ревизий TorrentPier II.<br />\n <br />\n<a href=\"https://torrentpier.com/attachments/1820/\"><img src=\"https://torrentpier.com/data/attachments/1/1821-a70fccdfad247be7eeb988958052b017.jpg?hash=6qgqi0GvFJ\" alt=\"Снимок экрана 2013-01-16 в 14.41.54.webp\" /></a><br />\n <br />\nТакже напоминаю о том, что на ресурсе появился чат, в котором можно поговорить на отвлеченные от разработки темы или задать простые вопросы, не требующие обсуждений в отдельных темах. Воспользоваться им можно как напрямую с главной страницы форума, так и с <a href=\"http://torrentpier.com/shoutbox/\" class=\"link link--internal\">отдельной, специально выделенной страницы</a>. Просим соблюдать все правила форума при общении в чате, так как у модераторов есть все полномочия наказать нарушителей.<br />\n <br />\nСпасибо.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1358332870,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25739,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Круто, спасибо.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1358346373,
+      "user_id": 3317,
+      "user_title": "User",
+      "username": "Max7"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "blok-novogo-na-nasem-forume",
+  "sticky": false,
+  "tags": [
+    "новости"
+  ],
+  "title": "Блок нового на нашем форуме",
+  "url_path": "/threads/blok-novogo-na-nasem-forume.2090/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 3864
+}

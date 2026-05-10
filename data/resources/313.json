@@ -1,0 +1,143 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Выбор цвета текста из палитры by Kryl.zip",
+      "id": 6268,
+      "local_path": null,
+      "r2_key": null,
+      "size": 18182,
+      "src_url": "https://torrentpier.com/api/resource-versions/582/download?file=6268"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "Kryl",
+    "sql": "no",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1734251135,
+      "file_size": 9832,
+      "filename": "firefox_sNHzh8sZ69.webp",
+      "height": 208,
+      "id": 6263,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_snhzh8sz69-webp.6263/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6267-811a6414eb31936425d7dcdd43ad8a6a.jpg?hash=E_3Q8avrQL",
+      "width": 528
+    },
+    {
+      "attach_date": 1734251136,
+      "file_size": 6272,
+      "filename": "firefox_Ekyhn4ejd5.webp",
+      "height": 191,
+      "id": 6264,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_ekyhn4ejd5-webp.6264/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6268-e83d13b65432288bd79d831e7cd00037.jpg?hash=S6AK1RoUWE",
+      "width": 372
+    },
+    {
+      "attach_date": 1734251136,
+      "file_size": 6416,
+      "filename": "firefox_KKv9yZ3yju.webp",
+      "height": 192,
+      "id": 6265,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_kkv9yz3yju-webp.6265/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6269-edf4efd3b2346e853ce811036967816b.jpg?hash=Bt2ss9N6-R",
+      "width": 379
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Добавляет удобный выбор цвета для текста в редактор при публикации сообщения. При этом оригинальные цвета также доступны для выбора в палитре.<br />\n<br />\n<b>Совместимость:</b> v2.1.5, LTS, v2.2.*, v2.3.*, v2.4.*, прошлые версии.",
+  "download_count": 354,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/313.jpg?1734251169",
+  "id": 313,
+  "is_fileless": null,
+  "last_update": 1734279264,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1734251169,
+  "resource_state": "visible",
+  "slug": "vybor-cveta-teksta-iz-palitry",
+  "tag_line": "Добавляет удобный выбор цвета для текста в редактор при публикации сообщения.",
+  "tags": [
+    "выбор цвета",
+    "выбор цвета из палитры",
+    "мод",
+    "моды",
+    "удобный выбор цвета",
+    "улучшения",
+    "улучшения для редактора",
+    "улучшения редактора bbcode"
+  ],
+  "title": "Выбор цвета текста из палитры",
+  "url_path": "/resources/vybor-cveta-teksta-iz-palitry.313/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v2.0.1",
+  "versions": [
+    {
+      "download_count": 249,
+      "files": [
+        {
+          "filename": "[FULL] Выбор цвета текста из палитры by Kryl.zip",
+          "id": 6268,
+          "local_path": null,
+          "r2_key": null,
+          "size": 18182,
+          "src_url": "https://torrentpier.com/api/resource-versions/582/download?file=6268"
+        }
+      ],
+      "id": 582,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1734279264,
+      "version_state": "visible",
+      "version_string": "v2.0.1",
+      "view_url": "https://torrentpier.com/resources/vybor-cveta-teksta-iz-palitry.313/version/582/"
+    },
+    {
+      "download_count": 106,
+      "files": [
+        {
+          "filename": "[FULL] Выбор цвета текста из политры by Kryl.zip",
+          "id": 6262,
+          "local_path": null,
+          "r2_key": null,
+          "size": 18173,
+          "src_url": "https://torrentpier.com/api/resource-versions/579/download?file=6262"
+        }
+      ],
+      "id": 579,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1734251169,
+      "version_state": "visible",
+      "version_string": "v2.0.0",
+      "view_url": "https://torrentpier.com/resources/vybor-cveta-teksta-iz-palitry.313/version/579/"
+    }
+  ],
+  "view_count": 685
+}

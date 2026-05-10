@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 43367,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 13972,
+  "last_post_date": 1378443040,
+  "node_id": 57,
+  "post_date": 1378439060,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 43367,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем снова привет, на этот раз не буду задавать вопросы про движок, т.к. вроде бы понял и изучил, вопрос собственно про сами торренты, возможно ли сделать подобную ситуацию?<br />\nДопустим я слямзил торрент файл из рутрекера, и залил на свой торрент, возможно ли сделать так что бы он показывал на моём сайте кол-во сидеров и личей, ибо показывает 0 но раздача сама по себе есть.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1378439060,
+      "user_id": 4568,
+      "user_title": "User",
+      "username": "webgamer92"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 43371,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Раздача идет, потому что торрент не пересоздан и в нем указан путь к рутрекеру. Чтобы показывал сидеров-личеров у тебя с рутрекера, просто впиши адрес анонсера рутрекера у себя в админке, вместо своего. Поправте если не прав.<br />\nНо в таком случаи статистика пользователей работать не будет и твой сайт превратится просто в портал рутрекера, в каталог ссылок.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1378441446,
+      "user_id": 4452,
+      "user_title": "User",
+      "username": "Kof"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 43374,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>webgamer92</b>, для такой цели есть мультитрекер. пиши Xz.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1378443040,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "pro-torrenty",
+  "sticky": false,
+  "tags": [],
+  "title": "Про торренты",
+  "url_path": "/threads/pro-torrenty.13972/",
+  "user_id": 4568,
+  "username": "webgamer92",
+  "view_count": 1034
+}

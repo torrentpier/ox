@@ -1,0 +1,105 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Причина переноса топика by belomaxorka.zip",
+      "id": 5808,
+      "local_path": null,
+      "r2_key": null,
+      "size": 1771,
+      "src_url": "https://torrentpier.com/api/resource-versions/458/download?file=5808"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1707311667,
+      "file_size": 19692,
+      "filename": "Screenshot 2024-02-07 200555.webp",
+      "height": 367,
+      "id": 5809,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot-2024-02-07-200555-webp.5809/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5813-2ecbc717697691ad156f5cc5d3f17033.jpg?hash=_7NLe-pMmN",
+      "width": 940
+    },
+    {
+      "attach_date": 1707311671,
+      "file_size": 16736,
+      "filename": "Screenshot 2024-02-07 200640.webp",
+      "height": 255,
+      "id": 5810,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot-2024-02-07-200640-webp.5810/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5814-7cba0bb177edf24564eea6f267f809cc.jpg?hash=ldEedmenR3",
+      "width": 1026
+    }
+  ],
+  "description_parsed": "<div style=\"text-align: center\"><span style=\"color: rgb(235, 107, 86)\">Данный мод добавлен по умолчанию начиная с версии TorrentPier v2.4.2</span>&#8203;</div><hr /><b>Описание:</b> Добавляет возможность указать причину переноса топика, которая будет отображаться в сообщении о переносе.",
+  "download_count": 251,
+  "external_url": null,
+  "icon_url": null,
+  "id": 287,
+  "is_fileless": null,
+  "last_update": 1707311682,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1707311682,
+  "resource_state": "visible",
+  "slug": "pricina-perenosa-topika",
+  "tag_line": "Добавляет возможность указать причину переноса топика.",
+  "tags": [
+    "мод",
+    "моды",
+    "перенос темы",
+    "причина переноса"
+  ],
+  "title": "Причина переноса топика",
+  "url_path": "/resources/pricina-perenosa-topika.287/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.0",
+  "versions": [
+    {
+      "download_count": 251,
+      "files": [
+        {
+          "filename": "[FULL] Причина переноса топика by belomaxorka.zip",
+          "id": 5808,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1771,
+          "src_url": "https://torrentpier.com/api/resource-versions/458/download?file=5808"
+        }
+      ],
+      "id": 458,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1707311682,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/pricina-perenosa-topika.287/version/458/"
+    }
+  ],
+  "view_count": 657
+}

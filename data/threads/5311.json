@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 31313,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 5311,
+  "last_post_date": 1369768719,
+  "node_id": 90,
+  "post_date": 1369764642,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 31313,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<span style=\"font-size: 22px\"><b>Установка subversion (SVN) на FreeBSD и создание репозиториев</b></span><br />\n <br />\nЭта заметка не претендует на право быть первоисточником информации связанным с администрированием сервера subversion (SVN). Она скорее создавалась для того, чтобы можно было быстро решить конкретную прикладную задачу. Я не могу дать никаких гарантий, что все написанное ниже у вас заработает и вам поможет. Воспринимайте это как отправную точку для решения конкретной задачи.<br />\nДля того, чтобы установить сервер subversion (SVN) на FreeBSD необходимо:<br />\n<ul>\n<li data-xf-list-type=\"ul\">зайти с правами root</li>\n<li data-xf-list-type=\"ul\">выполнить команды:</li>\n</ul><pre class=\"xfBb-code\" data-lang=\"\">cd /usr/ports/devel/subversion\nmake clean install &amp;&amp; make clean</pre>подождать пока все что нужно установится<br />\nотредактировать скрипт запуска системы vi /etc/rc.conf<br />\nдобавить в него строки:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">svnserve_enable=&quot;YES&quot;\nsvnserve_flags=&quot;-d --listen-port=3690&quot;\nsvnserve_data=&quot;/home/svn/repositories&quot;\nsvnserve_user=&quot;svn&quot;\nsvnserve_group=&quot;svn&quot;</pre>сохранить изменения и выйти из редактора Vi команда :wq<br />\n<ul>\n<li data-xf-list-type=\"ul\">создать директории для репозиториев mkdir -p /home/svn/repositories</li>\n<li data-xf-list-type=\"ul\">добавить группу SVN pw group add svn</li>\n<li data-xf-list-type=\"ul\">и пользователя SVN в одноименную группу pw user add svn -g svn -s /sbin/nologin -d /home/svn/repositories/</li>\n</ul>Запуск сервера subversion:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">/usr/local/etc/rc.d/svnserve start</pre>Перезапуск сервера subversion:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">/usr/local/etc/rc.d/svnserve restart</pre><b>Создание и базовая настройка репозитория:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Для примера создадим репозиторий под названием <span style=\"color: #ff0000\">htdocs,</span> который будет храниться в директории <span style=\"color: #ff0000\">/home/svn/repositories/htdocs/</span></li>\n</ul><pre class=\"xfBb-code\" data-lang=\"\"> svnadmin create /home/svn/repositories/htdocs/</pre>Права:<br />\n<pre class=\"xfBb-code\" data-lang=\"\"> chown -R svn:svn /home/svn/</pre><ul>\n<li data-xf-list-type=\"ul\">Теперь настроим репозиторий так, чтобы анонимные пользователи не имели к нему доступа, а изменения могли вносить только разегистрированые пользователи<br />\n<pre class=\"xfBb-code\" data-lang=\"\"> cd /home/svn/repositories/htdocs/conf\nvi svnserve.conf</pre>раскомменитруем строки:</li>\n</ul><pre class=\"xfBb-code\" data-lang=\"\">anon-access = none\nauth-access = write\npassword-db = passwd</pre>сохраним изменения и выйдем из редактора командой :wq<br />\nтеперь в файле passwd создаем пользователей, которые могут работать с репозиторием в <span style=\"color: #0000ff\"><b>формате логин = пароль</b></span><br />\nперезапускаем сервер:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">  subversion: /usr/local/etc/rc.d/svnserve restart</pre>работаем с созданным репозиторием",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1369764642,
+      "user_id": 37,
+      "user_title": "User",
+      "username": "Varius"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 31314,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<span style=\"font-family: 'tahoma'\">svnserve_flags=&quot;-d --listen-port=3690&quot; </span><br />\n<span style=\"font-family: 'tahoma'\">Адрес порта сменить можно же?</span>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1369766374,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 31316,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Lange</b>,да. если не указана, то используется порт 3690, но имей ввиду,  что  в черепахе порт тоже придется поменять)",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1369768719,
+      "user_id": 37,
+      "user_title": "User",
+      "username": "Varius"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "ustanovka-subversion-svn-na-freebsd-i-sozdanie-repozitoriev",
+  "sticky": false,
+  "tags": [],
+  "title": "Установка subversion (SVN) на FreeBSD и создание репозиториев",
+  "url_path": "/threads/ustanovka-subversion-svn-na-freebsd-i-sozdanie-repozitoriev.5311/",
+  "user_id": 37,
+  "username": "Varius",
+  "view_count": 2650
+}

@@ -1,0 +1,153 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 40134,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 11669,
+  "last_post_date": 1386758285,
+  "node_id": 3,
+  "post_date": 1376287859,
+  "posts": [
+    {
+      "attach_count": 5,
+      "attachments": [
+        {
+          "attach_date": 1376287567,
+          "file_size": 436,
+          "filename": "no_th.webp",
+          "height": 90,
+          "id": 2202,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/no_th-webp.2202/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2207-e2ddfee11ae7edcae257da47f3a78a70.jpg?hash=7JJE8NoT0U",
+          "width": 120
+        },
+        {
+          "attach_date": 1376287567,
+          "file_size": 892,
+          "filename": "no_tha.webp",
+          "height": 90,
+          "id": 2203,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/no_tha-webp.2203/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2208-7d709c5a0b5dc91519baf8829aeaa261.jpg?hash=peY_dnZ1vu",
+          "width": 120
+        },
+        {
+          "attach_date": 1376287568,
+          "file_size": 1280,
+          "filename": "no_thm.webp",
+          "height": 90,
+          "id": 2204,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/no_thm-webp.2204/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2209-5993cf4988e765a76afa10a3d1fc145b.jpg?hash=6psIlB1JhI",
+          "width": 120
+        },
+        {
+          "attach_date": 1376287569,
+          "file_size": 2990,
+          "filename": "xhm_no_th.webp",
+          "height": 90,
+          "id": 2205,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/xhm_no_th-webp.2205/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2210-f9abd3a3c4aed943de35901db11d514c.jpg?hash=aWyYZXQXhV",
+          "width": 120
+        },
+        {
+          "attach_date": 1377495166,
+          "file_size": 860,
+          "filename": "mail_no_th.webp",
+          "height": 90,
+          "id": 2223,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/mail_no_th-webp.2223/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2228-8590fec9d048ceb842fccc0d5d3a4108.jpg?hash=iiC7uT9lpZ",
+          "width": 120
+        }
+      ],
+      "id": 40134,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Раз уж флудилка, можно попостить сюда наброски... а то разбросаны кучей по всему форуму... Тут хоть обновлять буду.<br />\nФункция определения торрент-клиента по peer_id<br />\n<div>Spoiler content hidden.</div> <br />\n-------------------------------------------------------<br />\n <br />\nBB Media, поддерживает сервисы<br />\nYouTube с превьюхой<br />\nVimeo с превьюхой<br />\nRuTube с превьюхой<br />\nxyu (адалт) с превьюхой(????)<br />\nredtube (адалт) с превьюхой<br />\nxhamster (адалт) без превьюхи<br />\nmail.ru video(???) без превьюхи <br />\nПрямые ссылки на медиа файлы<br />\navi,mpg,mp4,vob,3gp,mov,mov,mp3,wav,ogg,wma,ac3,aac<br />\nИспользует плагин Windows Media Player(прикручивать флеш плеер посчитал нецелесообразным).<br />\nПревьюх нет, выдирать кадр из видео не хотелось... Вроде на phpFFMpeg делается... да ну нафиг...<br />\nfix !! youtube additional parameter (&amp;feature=player_embedded#at=177 etc...)<br />\nfix !! add object2array function<br />\nupdate !! переход на новую версию кода для youtube<br />\nadd !! mail.ru video <br />\n<div>Spoiler content hidden.</div> <br />\n-------------------------------------------------------<br />\n <br />\nПеречёркнутый ник с XBTT аннонсером (реализация под ?)<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">          $update_time = (TIMENOW &gt; ($peer[&#039;update_time&#039;] + $bb_cfg[&#039;announce_interval&#039;]));\n          $name    = ($update_time) ? &#039;&lt;a href=&quot;&#039;. $u_prof_href .&#039;&quot; style=&quot;text-decoration: line-through !important;&quot; class=&quot;&#039;. $link_class .&#039;&quot;&gt;&#039;. wbr($peer[&#039;username&#039;]) .&#039;&lt;/a&gt;&#039;. $rel_sign : &#039;&lt;a href=&quot;&#039;. $u_prof_href .&#039;&quot; class=&quot;&#039;. $link_class .&#039;&quot;&gt;&#039;. wbr($peer[&#039;username&#039;]) .&#039;&lt;/a&gt;&#039;. $rel_sign;</pre>и<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">            &#039;NAME&#039;        =&gt; $name,</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1376287859,
+      "user_id": 729,
+      "user_title": "User",
+      "username": "Wertos"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 40169,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Фигова тут нет своих дневников ((((",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1376297631,
+      "user_id": 729,
+      "user_title": "User",
+      "username": "Wertos"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 54443,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Wertos\">return (string) $img_ary[0][&#039;thumb&#039;][0];</blockquote> <br />\nНа эту строку вылазит нотис:<br />\n <br />\nUndefined offset: 0 in /var/www/lynx/data/www/***/includes/bbcode.php on line 119",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1386758285,
+      "user_id": 79,
+      "user_title": "User",
+      "username": "Lynx"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "dop-funkcii",
+  "sticky": false,
+  "tags": [],
+  "title": "Доп. функции",
+  "url_path": "/threads/dop-funkcii.11669/",
+  "user_id": 729,
+  "username": "Wertos",
+  "view_count": 2098
+}

@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61162,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 25977,
+  "last_post_date": 1405248731,
+  "node_id": 80,
+  "post_date": 1403103402,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61162,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В templates/default/usercp_register.tpl<br />\nНайти:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;!-- IF CAPTCHA_HTML --&gt;\n&lt;tr&gt;\n    &lt;td&gt;{L_CONFIRM_CODE}:&lt;/td&gt;\n    &lt;td&gt;&lt;span id=&quot;refresh_captcha&quot;&gt;{CAPTCHA_HTML}&lt;/span&gt; &lt;img align=&quot;middle&quot; src=&quot;./images/pic_loading.gif&quot; title=&quot;{L_UPDATE}&quot; onclick=&quot;ajax.exec({ action: &#039;user_register&#039;, mode: &#039;refresh_captcha&#039;}); return false;&quot; /&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;!-- ENDIF --&gt;</pre> <br />\nЗаменить:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;!-- IF CAPTCHA_HTML --&gt;\n&lt;tr&gt;\n    &lt;td&gt;{L_CONFIRM_CODE}: *&lt;/td&gt;\n    &lt;td&gt;&lt;span id=&quot;refresh_captcha&quot;&gt;{CAPTCHA_HTML}&lt;/span&gt; &lt;img align=&quot;middle&quot; src=&quot;./images/pic_loading.gif&quot; title=&quot;{L_UPDATE}&quot; onclick=&quot;ajax.exec({ action: &#039;user_register&#039;, mode: &#039;refresh_captcha&#039;}); return false;&quot; /&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;!-- ENDIF --&gt;</pre> <br />\nи был бы хорошо если они красные <span style=\"color: #ff0000\">*</span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1403103402,
+      "user_id": 322,
+      "user_title": "User",
+      "username": "botyk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61419,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено в новой ревизии: <a href=\"https://code.google.com/p/torrentpier2/source/detail?r=590\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://code.google.com/p/torrentpier2/source/detail?r=590</a><br />\nСпасибо за багрепорты.<br />\n<br />\nСкачать r590 можно в центре загрузки: <a href=\"http://get.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://get.torrentpier.com/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1405248731,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 1,
+  "slug": "obazatel-nye-pola-formy",
+  "sticky": false,
+  "tags": [],
+  "title": "Обязательные поля формы",
+  "url_path": "/threads/obazatel-nye-pola-formy.25977/",
+  "user_id": 322,
+  "username": "botyk",
+  "view_count": 1065
+}

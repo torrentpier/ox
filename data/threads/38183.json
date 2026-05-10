@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 79536,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 38183,
+  "last_post_date": 1426618081,
+  "node_id": 57,
+  "post_date": 1426590088,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 79536,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет ..<br />\nВ логе пишет нотиссы на пустые строки:<br />\nКак поправить ?<br />\n[17-Mar-2015 00:37:50 Europe/Moscow] PHP Fatal error:  invalid profile field: user_city in /var/www/60fps/data/www/60-fps.org/library/includes/ucp/register.php on line 603<br />\n[17-Mar-2015 00:41:04 Europe/Moscow] PHP Fatal error:  invalid profile field: user_city in /var/www/60fps/data/www/60-fps.org/library/includes/ucp/register.php on line 604",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1426590088,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 79546,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Файл includes/ucp/register.php в архиве в тему можно приложить?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1426592138,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 79552,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В нем изменений не было .<br />\nВчера после удаления мода , закинул чистый файл с последней ревизии ...",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1426594170,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 79605,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Я не вижу чтобы это был &quot;чистый&quot; файл. На 603 строке в оригинале пустота, а на 604 проверка, там теоретически ошибки быть не может: <a href=\"https://github.com/torrentpier/torrentpier/blob/master/library/includes/ucp/register.php#L603\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://github.com/torrentpier/torrentpier/blob/master/library/includes/ucp/register.php#L603</a>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1426615155,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 79619,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Так , я же написал , что файл без изменений заливал (чистый) .. все правильно , на те строки и ссылается что указаны выше .. 603-604.<br />\nСейчас зашел , посмотрел логи ...чисто .. странно как то ... <br />\nНаверное погорячился с созданием темы ..<br />\nВ корзинку удалите .)",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1426618081,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "notisy",
+  "sticky": false,
+  "tags": [],
+  "title": "Нотисы",
+  "url_path": "/threads/notisy.38183/",
+  "user_id": 5626,
+  "username": "Kryl",
+  "view_count": 984
+}

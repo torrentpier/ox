@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 64486,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 27371,
+  "last_post_date": 1413234060,
+  "node_id": 57,
+  "post_date": 1413232281,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 64486,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Такой вопрос. Что в БД отвечает за золото/серебро. Хочу поменять параметр по умолчанию, чтоб раздачи автоматом становились золотыми.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1413232281,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 64489,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вопрос снят. Разобрался. Если кому-то понадобится то в bb_bt_torrents надо поменять значение tor_type<br />\n0 - обычная раздача<br />\n1 - золотая раздача<br />\n2 - серебряная раздача",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1413234060,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "zolotaa-razdaca",
+  "sticky": false,
+  "tags": [],
+  "title": "Золотая раздача",
+  "url_path": "/threads/zolotaa-razdaca.27371/",
+  "user_id": 1514,
+  "username": "Begemot",
+  "view_count": 1120
+}

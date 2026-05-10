@@ -1,0 +1,46 @@
+{
+  "category": {
+    "description": "Section with all paid modifications for TorrentPier.",
+    "id": 2,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Paid",
+    "view_url": "https://torrentpier.com/resources/categories/paid.2/"
+  },
+  "current_files": [],
+  "custom_fields": {},
+  "description_attachments": [],
+  "description_parsed": "<b>Что умеет</b>:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Обновление Последние сообщения на Ajax.</li>\n<li data-xf-list-type=\"ul\">Перелистывание последних сообщений на Ajax.</li>\n<li data-xf-list-type=\"ul\">Предварительный просмотр сообщения.</li>\n<li data-xf-list-type=\"ul\">Минимальная нагрузка(при показе 50 сообщений или более 50 сообщений на главной).</li>\n</ul><b>Цена</b>: 10$<br />\nО покупке писать в лс.<br />\nТак же имеется Последние темы или как их называют новые темы.",
+  "download_count": 0,
+  "external_url": null,
+  "icon_url": null,
+  "id": 76,
+  "is_fileless": null,
+  "last_update": 1389633346,
+  "rating_avg": 5,
+  "rating_count": 1,
+  "resource_date": 1389633346,
+  "resource_state": "visible",
+  "slug": "poslednie-soobsenia-na-ajax",
+  "tag_line": "Вывод последних сообщений на ajax",
+  "tags": [],
+  "title": "Последние сообщения на ajax",
+  "url_path": "/resources/poslednie-soobsenia-na-ajax.76/",
+  "user_id": 3170,
+  "username": "drew",
+  "version": "1.0",
+  "versions": [
+    {
+      "download_count": 0,
+      "files": [],
+      "id": 81,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1389633346,
+      "version_state": "visible",
+      "version_string": "1.0",
+      "view_url": "https://torrentpier.com/resources/poslednie-soobsenia-na-ajax.76/version/81/"
+    }
+  ],
+  "view_count": 800
+}

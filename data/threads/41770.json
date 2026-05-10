@@ -1,0 +1,121 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 91747,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41770,
+  "last_post_date": 1498163664,
+  "node_id": 57,
+  "post_date": 1498071626,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91747,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<div style=\"margin-left: 20px\"><div style=\"margin-left: 20px\"><span style=\"font-size: 18px\">Я так много пытался, чтобы установить torrentpier в godaddy cpanel, и я не смог установить<br />\nпожалуйста помогите</span>&#8203;</div></div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1498071626,
+      "user_id": 7910,
+      "user_title": "User",
+      "username": "mchairi"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91751,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "А можно больше информации о ваших попытках?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1498075111,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91754,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Так же как и на любой другой хостинг, по инструкции со страницы на github?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1498078702,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91757,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\">Так же как и на любой другой хостинг, по инструкции со страницы на github?</blockquote><blockquote class=\"xfBb-quote\" data-name=\"Virtuoz\">А можно больше информации о ваших попытках?</blockquote><br />\n<div style=\"margin-left: 20px\"><div style=\"margin-left: 20px\"><div style=\"margin-left: 20px\"><div style=\"margin-left: 20px\"><div style=\"margin-left: 20px\"><span style=\"font-size: 18px\">Im купить хостинг от godaddy , И скачать torrentpier из github<br />\nИ когда я пытаюсь установить torrentpier<br />\nУстановка не работает<br />\nЯ не знаю, почему<br />\nПожалуйста, помогите мне</span>&#8203;</div></div></div></div></div>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1498093492,
+      "user_id": 7910,
+      "user_title": "User",
+      "username": "mchairi"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91764,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/7910/\">mchairi</a>, read this: <a href=\"https://github.com/torrentpier/torrentpier/blob/master/README.md#installation\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">torrentpier/README.md at master · torrentpier/torrentpier · GitHub</a>",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1498163664,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "kak-ustanovit-torrentpier-v-cpanel-na-godaddy",
+  "sticky": false,
+  "tags": [
+    "как установить torrentpier"
+  ],
+  "title": "Как установить TorrentPier в Cpanel на godaddy",
+  "url_path": "/threads/kak-ustanovit-torrentpier-v-cpanel-na-godaddy.41770/",
+  "user_id": 7910,
+  "username": "mchairi",
+  "view_count": 1290
+}

@@ -1,0 +1,106 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "Голосовалка на главной by _Xz_.zip",
+      "id": 3075,
+      "local_path": null,
+      "r2_key": null,
+      "size": 3474,
+      "src_url": "https://torrentpier.com/api/resource-versions/186/download?file=3075"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"][PHP]\n-- сделать запросы\n- SQL\nINSERT INTO `bb_config` VALUES ('poll_index', '');\nINSERT INTO `bb_config` VALUES ('poll_name', '');\nINSERT INTO `bb_config` VALUES ('poll_vote', '');\nINSERT INTO `bb_config` VALUES ('poll_users', '');\nINSERT INTO `bb_config` VALUES ('poll_result', '');\nALTER TABLE `bb_users` ADD `poll_index` TINYINT( 1 ) NOT NULL DEFAULT '0';\n\n-- ajax.php\n- найти\n        'index_data'        => array('guest'),\n- после добавить\n        'poll_index'        => array('guest'),\n- найти последнюю скобку\n}\n- перед добавить\n    function poll_index()\n    {\n        global $userdata, $lang, $bb_cfg, $images;\n\n        $mode = (string) $this->request['mode'];\n\n        switch($mode)\n        {\n            case 'poll':\n                if(!$bb_cfg['poll_vote']) bb_die($lang['NO_POLL']);\n                if(!empty($userdata['poll_index']) || (!empty($_COOKIE['poll_index']) && IS_GUEST)) bb_die($lang['ALREADY_VOTED']);\n\n                $poll = (int) $this->request['poll'];\n\n                $poll_vote   = unserialize($bb_cfg['poll_vote']);\n                $poll_users  = unserialize($bb_cfg['poll_users']);\n                $poll_result = unserialize($bb_cfg['poll_result']);\n\n                $vote_results_sum = 0;\n\n                foreach($poll_vote as $i => $row)\n                {\n                    if(!$row) continue;\n\n                    if($i == $poll) $poll_users[$i]  = !empty($poll_users[$i]) ? ($poll_users[$i] + 1) : 1;\n                    if($i == $poll) $poll_result[$i] = !empty($poll_result[$i]) ? ($poll_result[$i] + 1) : 1;\n\n                    $vote_results_sum += !empty($poll_result[$i]) ? $poll_result[$i] : 0;\n                }\n\n                bb_update_config(array(\n                    'poll_users'  => serialize($poll_users),\n                    'poll_result' => serialize($poll_result),\n                ));\n\n                if(!IS_GUEST)\n                {\n                    DB()->query(\"UPDATE \". BB_USERS .\" SET poll_index = 1 WHERE user_id = \". $userdata['user_id']);\n                    cache_rm_user_sessions ($userdata['user_id']);\n                }\n\n                $html = '';\n\n                foreach($poll_vote as $i => $row)\n                {\n                    if(!$row) continue;\n\n                    $users = !empty($poll_users[$i]) ? $poll_users[$i]: 0;\n                    $result = !empty($poll_result[$i]) ? $poll_result[$i]: 0;\n\n                    $vote_percent = ( $vote_results_sum > 0 ) ? $result / $vote_results_sum : 0;\n                    $vote_graphic_length = round($vote_percent * 190);\n\n                    $html .= '\n                        <div align=\"left\">\n                            '. $row .'\n                            <div class=\"clear\"></div>\n                            <div class=\"floatL\">\n                                <div class=\"vote category\" style=\"width: '. $vote_graphic_length .'px;\"></div>\n                            </div>\n                            <div class=\"floatR med\">\n                                '. sprintf(\"%.1d%%\", ($vote_percent * 100)) .'&nbsp;['. $users .']\n                            </div>\n                            <div class=\"clear\"></div>\n                        </div>';\n                }\n\n                $this->response['html'] = $html;\n                break;\n\n            case 'delete':\n                bb_update_config(array(\n                    'poll_name'   => '',\n                    'poll_vote'   => '',\n                    'poll_users'  => '',\n                    'poll_result' => '',\n                ));\n                DB()->query(\"UPDATE \". BB_USERS .\" SET poll_index = 0\");\n\n                bb_die($lang['POLL_DELETED']);\n            break;\n        }\n    }\n\n-- page_header.php\n- найти\n    'U_SEARCH_SELF_BY_LAST' => \"search.php?uid={$userdata['user_id']}&amp;o=5\",\n));\n- после добавить\nif($bb_cfg['poll_index'] && !empty($page_cfg['show_sidebar1'][BB_SCRIPT]))\n{\n    $template->assign_vars(array(\n        'POLL_NAME'    => $bb_cfg['poll_name'],\n        'POLL_ENABLED' => true,\n    ));\n\n    $poll_vote   = unserialize($bb_cfg['poll_vote']);\n    $poll_users  = unserialize($bb_cfg['poll_users']);\n    $poll_result = unserialize($bb_cfg['poll_result']);\n\n    if(!$bb_cfg['poll_vote'])\n    {\n        $template->assign_vars(array(\n            'POLL_ENABLED' => false,\n        ));\n    }\n    elseif(!empty($userdata['poll_index']) || (!empty($_COOKIE['poll_index']) && IS_GUEST))\n    {\n        $vote_results_sum = 0;\n\n        foreach($poll_vote as $i => $row)\n        {\n            if(!$row) continue;\n            $vote_results_sum += !empty($poll_result[$i]) ? $poll_result[$i]: 0;\n        }\n\n        foreach($poll_vote as $i => $row)\n        {\n            if(!$row) continue;\n\n            $poll = !empty($poll_result[$i]) ? $poll_result[$i]: 0;\n\n            $vote_percent = ( $vote_results_sum > 0 ) ? $poll / $vote_results_sum : 0;\n            $vote_graphic_length = round($vote_percent * 190);\n\n            $template->assign_block_vars('poll_result', array(\n                'ID'      => $i,\n                'OPTION'  => $row,\n                'LENGTH'  => $vote_graphic_length,\n                'PERCENT' => sprintf(\"%.1d%%\", ($vote_percent * 100)),\n                'USERS'   => !empty($poll_users[$i]) ? $poll_users[$i]: 0,\n            ));\n        }\n    }\n    else\n    {\n        foreach($poll_vote as $i => $row)\n        {\n            if(!$row) continue;\n\n            $template->assign_block_vars('poll', array(\n                'ID'      => $i,\n                'OPTION'  => $row,\n            ));\n        }\n    }\n}\n\n-- page_header.tpl\n- добавить в sidebar\n<!-- IF $bb_cfg['poll_index'] -->\n<script type=\"text/javascript\">\n$(document).ready(function(){\n    $('.RadioClass').change(function(){\n        if($(this).is(':checked')){\n            $('.RadioSelected:not(:checked)').removeClass('RadioSelected');\n            $(this).next('label').addClass('RadioSelected');\n            $('#poll_submit').show();\n        }\n    });\n});\n\nfunction polling(){\n    var poll = -1;\n    $('input.RadioClass:checked').each(function(){\n        poll = this.value;\n    });\n\n    $('#poll_option').html('<i class=\"loading-1\">{L_LOADING}</i>');\n\n    if(poll < 0) alert('{L_NO_VOTE_OPTION}');\n    else {\n        ajax.exec({action : 'poll_index', mode: 'poll', poll: poll});\n        <!-- IF IS_GUEST -->\n        var ws = new Date();\n        ws.setDate(1+ws.getDate());\n        document.cookie=\"poll_index=1; path=/; expires=\"+ ws.toGMTString();\n        <!-- ENDIF -->\n    }\n}\najax.callback.poll_index = function(data) {\n    $('#poll_option').html(data.html);\n}\n</script>\n<style>\n.RadioClass{\n    display: none;\n}\n.RadioLabelClass{\n    background: url(\"/images/poll_index/UnCheck.png\") no-repeat;\n    padding-left: 30px;\n    padding-top: 3px;\n    margin: 5px;\n    height: 28px;\n    width: 70px;\n    display: block;\n}\n.RadioSelected{\n    background: url(\"/images/poll_index/Check.png\") no-repeat;\n}\n.vote {\n    border: 1px solid #D6D6D6; height: 7px; border-radius: 4px;\n    margin: 3px;\n    background-image: linear-gradient(bottom, #D6D6D6 10%, #FFFFFF 51%);\n    background-image: -o-linear-gradient(bottom, #D6D6D6 10%, #FFFFFF 51%);\n    background-image: -moz-linear-gradient(bottom, #D6D6D6 10%, #FFFFFF 51%);\n    background-image: -webkit-linear-gradient(bottom, #D6D6D6 10%, #FFFFFF 51%);\n    background-image: -ms-linear-gradient(bottom, #D6D6D6 10%, #FFFFFF 51%);\n}\n</style>\n<a name=\"poll\"></a>\n<div align=\"center\" class=\"category bw_TRBL border\">\n<h3 class=\"cat_title tLeft\">{L_POLL}</h3>\n<!-- IF POLL_ENABLED -->\n    <span class=\"maintitle\">{POLL_NAME}</span>\n    <div class=\"clear hr1 mrg_4\"></div>\n\n    <div id=\"poll_option\" class=\"mrg_6\">\n\n    <!-- BEGIN poll -->\n    <div align=\"left\">\n        <input id=\"{poll.ID}\" type=\"radio\" name=\"poll\" class=\"RadioClass\" value=\"{poll.ID}\" >\n        <label for=\"{poll.ID}\" class=\"RadioLabelClass\">{poll.OPTION}</label>\n    </div>\n    <!-- END poll -->\n\n    <!-- BEGIN poll_result -->\n    <div align=\"left\">\n        {poll_result.OPTION}\n        <div class=\"clear\"></div>\n        <div class=\"floatL\">\n            <div class=\"vote category\" style=\"width: {poll_result.LENGTH}px;\"></div>\n        </div>\n        <div class=\"floatR med\">\n            {poll_result.PERCENT}&nbsp;[{poll_result.USERS}]\n        </div>\n        <div class=\"clear\"></div>\n    </div>\n    <!-- END poll_result -->\n\n    <input id=\"poll_submit\" onclick=\"polling();\" type=\"submit\" class=\"hidden\" name=\"{L_SUBMIT_VOTE}\" />\n\n    </div>\n<!-- ELSE -->\n    <div class=\"mrg_6 med\">{L_NO_POLL}</div>\n<!-- ENDIF -->\n</div>\n<div class=\"cat_separator\"></div>\n<!-- ENDIF -->\n\nадминка\n-- admin/admin_board.php\n- найти\n            bb_update_config(array($config_name => $new[$config_name]));\n- перед добавить\n            if($config_name == 'poll_vote') $new[$config_name] = serialize($new[$config_name]);\n- найти\n            'SEED_BONUS_USER_REGDATE' => $new['seed_bonus_user_regdate'],\n        ));\n- заменить на\n            'SEED_BONUS_USER_REGDATE' => $new['seed_bonus_user_regdate'],\n            'POLL_NAME'    => $new['poll_name'],\n            'POLL_ENABLED' => $new['poll_index'],\n        ));\n\n        if($new['poll_vote'])\n        {\n            foreach(unserialize($new['poll_vote']) as $i => $row)\n            {\n                if(!$row) continue;\n\n                $template->assign_block_vars('poll', array(\n                    'ID'      => $i,\n                    'OPTION'  => $row,\n                ));\n            }\n        }\n\n-- admin/admin_board.tpl\n- найти\n<tr>\n    <td><h4>{L_NEWS_FORUM_ID}</h4></td>\n    <td><input class=\"post\" type=\"text\" size=\"25\" maxlength=\"100\" name=\"network_news_forum_id\" value=\"{NETWORK_NEWS_FORUM_ID}\" /></td>\n</tr>\n- после вставить\n<tr class=\"row3 med\">\n    <td class=\"bold tCenter\" colspan=\"2\">{L_POLL_ON_INDEX}</td>\n</tr>\n<tr>\n    <td><h4>{L_POLL_ON_INDEX}</h4></td>\n    <td>\n        <label><input type=\"radio\" name=\"poll_index\" value=\"1\" <!-- IF POLL_ENABLED -->checked=\"checked\"<!-- ENDIF --> />{L_ENABLED}</label>&nbsp;&nbsp;\n        <label><input type=\"radio\" name=\"poll_index\" value=\"0\" <!-- IF not POLL_ENABLED -->checked=\"checked\"<!-- ENDIF --> />{L_DISABLED}</label>\n    </td>\n</tr>\n<tr>\n    <td><h4>{L_POLL_QUESTION}</h4></td>\n    <td>\n        <script type=\"text/javascript\">\n        function poll_delete(){\n            if(!confirm('{L_CONFIRM_DELETE_POLL}')) return false;\n            ajax.exec({action : 'poll_index', mode : 'delete'});\n            $('#poll_vote').attr('value', '');\n            $('#poll_option').remove();\n        }\n        </script>\n        <input id=\"poll_vote\" class=\"post\" type=\"text\" size=\"50\" maxlength=\"200\" name=\"poll_name\" value=\"{POLL_NAME}\" />\n        <input onclick=\"poll_delete();\" class=\"post\" type=\"button\" size=\"2\" value=\"{L_DELETE_POLL}\" />\n    </td>\n</tr>\n<tbody id=\"poll_option\">\n<!-- BEGIN poll -->\n<tr id=\"poll_{poll.id}\">\n    <td><h4>{L_ADD_OPTION}</h4><h6></h6></td>\n    <td>\n        <input class=\"post\" type=\"text\" size=\"25\" maxlength=\"100\" name=\"poll_vote[]\" value=\"{poll.OPTION}\" />\n        <input onclick=\"$('#poll_{poll.ID}').remove();\" class=\"post\" type=\"button\" size=\"2\" value=\"{L_DELETE}\" />\n    </td>\n</tr>\n<!-- END poll -->\n</tbody>\n<tr class=\"row3 med\"><td colspan=\"2\"></td></tr>\n<tr id=\"poll\">\n    <td><h4>{L_ADD_OPTION}</h4><h6></h6></td>\n    <td>\n        <input class=\"post\" type=\"text\" size=\"25\" maxlength=\"100\" name=\"poll_vote[]\" value=\"\" />\n        <input onclick=\"$('#poll').clone().appendTo('.poll');\" class=\"post\" type=\"button\" size=\"2\" value=\"+\" />\n        <input onclick=\"$('#poll').remove();\" class=\"post\" type=\"button\" size=\"2\" value=\"-\" />\n    </td>\n</tr>\n<tbody class=\"poll\"></tbody>\n<tr class=\"row3 med\"><td colspan=\"2\"></td></tr>\n\n\nlang_main.php\n// Опрос на главной\n$lang['POLL'] = 'Опрос';\n$lang['POLL_ON_INDEX'] = 'Опрос на главной';\n$lang['NO_POLL'] = 'В данный момент нет активных опросов';\n$lang['POLL_DELETED'] = 'Опрос удален и все результаты сброшены';[/PHP][/SPOILER]",
+    "owner": "_Xz_",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1369675565,
+      "file_size": 33304,
+      "filename": "Безымянный.webp",
+      "height": 687,
+      "id": 2020,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/bezymannyj-webp.2020/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2025-4ed741af4fee35b6e266962baea0fc77.jpg?hash=EQTWKlDLVX",
+      "width": 298
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет создание опросов для пользователей и гостей сайта на главной странице.",
+  "download_count": 411,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/33.jpg?1425219915",
+  "id": 33,
+  "is_fileless": null,
+  "last_update": 1425220241,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1369644100,
+  "resource_state": "visible",
+  "slug": "oprosnik-na-glavnoj",
+  "tag_line": "Добавляет создание опросов для пользователей и гостей сайта на главной странице.",
+  "tags": [],
+  "title": "Опросник на главной",
+  "url_path": "/resources/oprosnik-na-glavnoj.33/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 241,
+      "files": [
+        {
+          "filename": "Голосовалка на главной by _Xz_.zip",
+          "id": 3075,
+          "local_path": null,
+          "r2_key": null,
+          "size": 3474,
+          "src_url": "https://torrentpier.com/api/resource-versions/186/download?file=3075"
+        }
+      ],
+      "id": 186,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425220241,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/oprosnik-na-glavnoj.33/version/186/"
+    },
+    {
+      "download_count": 180,
+      "files": [
+        {
+          "filename": "Голосовалка на главной by _Xz_.txt",
+          "id": 2018,
+          "local_path": null,
+          "r2_key": null,
+          "size": 10787,
+          "src_url": "https://torrentpier.com/api/resource-versions/33/download?file=2018"
+        }
+      ],
+      "id": 33,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1369644100,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/oprosnik-na-glavnoj.33/version/33/"
+    }
+  ],
+  "view_count": 614
+}

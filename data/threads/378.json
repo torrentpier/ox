@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 4429,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 378,
+  "last_post_date": 1319385572,
+  "node_id": 90,
+  "post_date": 1319380385,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 4429,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вот решил написать небольшую инструкцию по подготовке и настройке сервера со всеми ништяками (Apache, PHP, MySQL) для работы под управлением CentOS.<br />\nДля кого это написано? Ну скорее для тех кто только начал пробовать использовать на серверах linux системы, и кто никогда не работал с командной строкой. То есть я постараюсь написать все так, и по возможности объяснить все что я делаю, что бы в конце вы получили полностью готовый сервер. От вас нужно просто вбивать приведенные команды и в конце-концов надеюсь вы получите полностью готовый сервер.<br />\n<br />\nРовно 2 года назад я наконец решился взять ВДС (до этого пользовался только хостингом), и если честно, то вид командной строки приводил меня в ужас. Что делать, черный экран какие-то буковки? В общем на тот момент я о linux не знал практически ничего(да и сейчас много не понимаю и не знаю). Вот тогда пришел на помощь гугл.<br />\n<br />\nВсезнающий гугл объяснил мне что я нуб,  и что пока я ничего не знаю для управления сервером мне лучше установить такую панель как Webmin.<br />\n<br />\n<img src=\"http://puterabintan.files.wordpress.com/2010/01/31.jpg\" alt=\"\" /><br />\nТеперь немного о том что это за панель. Эта панель позволяет с помощью веб интерфейса полностью управлять сервером. Кроме того она бесплатна.<br />\n<br />\nИтак, наша цель поставить на чистый сервер панель управления. Этим мы и займемся.<br />\n<br />\nХочу сказать что многие хостеры ВДС имеют шаблоны CentOS в разной комплектации. Я всегда использую centos-minimal, то есть с минимальным набором пакетов, только то что необходимо для запуска системы и её работы. В любом случае все остальное легко ставиться дополнительно. В этой комплектации нет всех тех сервисов которые в принципе не нужны на ВДС но будут использовать ресурсы. У одного хостера кстати однажды встретил например сервис bluetooth. Зачем он там нужен я так и не понял. Ну в общем выбор минимальной комплектации понятен - минимум ненужного. А все что нужно будем ставить сами. Начали<br />\n<br />\nПервым делом обновим систему:<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\">yum update</pre><br />\nБудут обновлены все пакеты которые устарели. Большинство хостеров не следят за актуальностью образа ОС поэтому обновится нужно.<br />\n<br />\n После обновления можно даже перезагрузить ВДС<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\">reboot</pre><br />\nили<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\">shutdown -r now</pre><br />\nВозможно если выбран CentOS в минимальной комплектации в нем не будет wget который позволит нам скачивать необходимые пакеты. Тут уже как повезет, у некоторых он установлен у некоторых нет. Если он не установлен то выполняем<br />\n<br />\n   <pre class=\"xfBb-code\" data-lang=\"\">yum install wget</pre><br />\nЕсли пакет уже установлен то мы увидим сообщение nothing to do.<br />\n<br />\nТеперь установим  perl-Net-SSLeay (он нужен для работы c Webmin по https, за ним кстати качается и сам perl)<br />\n<br />\n  <pre class=\"xfBb-code\" data-lang=\"\">yum -y install perl-Net-SSLeay</pre><br />\nТеперь самое интересное качаем пакет  Webmin<br />\n<br />\n     <pre class=\"xfBb-code\" data-lang=\"\">wget http://prdownloads.sourceforge.net/webadmin/webmin-1.570-1.noarch.rpm</pre><br />\nПосле того как он скачался устанавливаем<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\">rpm -Uvh webmin-1.570-1.noarch.rpm</pre><br />\nПосле установки заходим <a href=\"https://IPсервера:10000\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://IPсервера:10000</a><br />\nПанель имеет русский язык так что практически все что нужно можно сделать через неё.<br />\nВот так. В следующий раз будем ставить MySQL сервер.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1319380385,
+      "user_id": 64,
+      "user_title": "User",
+      "username": "ZIM"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 4448,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Переведи вебмин на другой порт, и он еще нормально памяти жрет так что можно его отключать",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1319385572,
+      "user_id": 82,
+      "user_title": "User",
+      "username": "vanechek"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "server-na-centos-cast-1-stavim-webmin",
+  "sticky": false,
+  "tags": [],
+  "title": "Сервер на CentOS (Часть 1) Ставим Webmin",
+  "url_path": "/threads/server-na-centos-cast-1-stavim-webmin.378/",
+  "user_id": 64,
+  "username": "ZIM",
+  "view_count": 5703
+}

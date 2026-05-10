@@ -1,0 +1,69 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 88497,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 58,
+    "title": "Suggestions for improving TorrentPier"
+  },
+  "id": 41528,
+  "last_post_date": 1475701827,
+  "node_id": 58,
+  "post_date": 1475259417,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88497,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Суть проста , научить автоцензор понимать регулярку, что бы можно было не только слово искать в тексте, но и то,- что будет соответствовать регулярке.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1475259417,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88550,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Автоцензор, bb-коды, смайлы - взаимосвязанно будут на новой технологии, совершенно верно. С релизом по мере возможностей торопимся, просто изменения сейчас архитектурного плана огромные готовятся.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1475701827,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 32,
+  "reply_count": 1,
+  "slug": "avtocenzor-s-podderzkoj-regex",
+  "sticky": false,
+  "tags": [
+    "regex",
+    "автоцензор"
+  ],
+  "title": "Автоцензор с поддержкой regex",
+  "url_path": "/threads/avtocenzor-s-podderzkoj-regex.41528/",
+  "user_id": 7243,
+  "username": "Protektor",
+  "view_count": 1251
+}

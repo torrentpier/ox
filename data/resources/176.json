@@ -1,0 +1,111 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "ParsMod072.zip",
+      "id": 3179,
+      "local_path": null,
+      "r2_key": null,
+      "size": 18814,
+      "src_url": "https://torrentpier.com/api/resource-versions/213/download?file=3179"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "Требуется CURL",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]##############################################################\n## MOD Title: ParserMod\n## MOD Author: Lektor\n## MOD Description: This mod will add a feature for getting bccode from html pages of some sites, which helps to copy the releases from other places.\n##                 \n## MOD Version: 0.7.2\n##\n## Installation Level: easy\n## Installation Time: 5 Minutes\n## Files To Edit: 4\n##                ajax.php,\n##                posting.php,\n##                library/language/ru/main.php,\n##                styles/templates/default/posting.tpl\n## Included Files: 8\n##                library/ajax/parser.php\n##          library/includes/functions_parser.php\n##                styles/templates/default/images/p/nnm-club.ico\n##                styles/templates/default/images/p/rutor.ico\n##                styles/templates/default/images/p/rutracker.ico\n##                admin/admin_pars_cfg.php\n##                styles/templates/admin/admin_pars_cfg.tpl\n##                data/cookies/.htaccess\n##\n## License: http://opensource.org/licenses/gpl-license.php GNU General Public License, version 3.0 (GPLv3)\n##############################################################\n## For security purposes, please check: http://www.torrentpier.me\n## for the latest version of this MOD.\n##############################################################\n## Author Notes:\n##\n##############################################################\n## MOD History:\n##   2015-01-15 - Version 0.5.0\n##          - First Release\n##\n##   2015-01-17 - Version 0.6.1\n##          - fix minor bugs\n##          - Add a possibility to copy the torrents from the rutracker\n##          - add module's settings to admin panel\n##\n##   2015-02-21 - Version 0.7.2\n##          - fix bugs with downloading torrents and etc.\n##          - Add parser menu which gives you the possibility to choose download a torrent file or not, to preview a post or not\n##          - add possibility of parsing www.rutor.org, nnm-club.me\n##\n##\n##############################################################\n## Before Adding This MOD To Your Forum, You Should Back Up All Files Related To This MOD\n##############################################################\n##\n#\n#-----[ COPY ]------------------------------------------\n#\ncopy library/ajax/parser.php to library/ajax/parser.php\ncopy library/includes/functions_parser.php to library/includes/functions_parser.php\ncopy styles/templates/default/images/p/nnm-club.ico to styles/templates/default/images/p/nnm-club.ico\ncopy styles/templates/default/images/p/rutor.ico to styles/templates/default/images/p/rutor.ico\ncopy styles/templates/default/images/p/rutracker.ico to styles/templates/default/images/p/rutracker.ico\ncopy admin/admin_pars_cfg.php to admin/admin_pars_cfg.php\ncopy styles/templates/admin/admin_pars_cfg.tpl to styles/templates/admin/admin_pars_cfg.tpl\ncopy data/cookies/.htaccess to data/cookies/.htaccess\n\n#\n#-----[ SQL ]------------------------------------------\n#\nINSERT INTO `bb_config` (`config_name`, `config_value`) VALUES\n('parsmod_disable', '0'),\n('parsmod_rutracker_login', ''),\n('parsmod_nnm_login', ''),\n('parsmod_nnm_password', ''),\n('parsmod_rutracker_password', '');\n\n#\n#-----[ OPEN ]------------------------------------------\n#\najax.php\n\n#\n#-----[ FIND ]------------------------------------------\n#\n        require(CLASS_DIR .'sitemap.php');\n        break;\n\n#\n#-----[ AFTER, ADD ]------------------------------------------\n#\n    case 'pars':\n        require(INC_DIR . 'functions_parser.php');\n        break;\n\n#\n#-----[ FIND ]------------------------------------------\n#\n        'manage_group'      => array('user'),\n\n#\n#-----[ AFTER, ADD ]------------------------------------------\n#\n        'pars'            => array('user'),\n\n#\n#-----[ FIND ]------------------------------------------\n#\n        require(AJAX_DIR . 'edit_group_profile.php');\n    }\n\n#\n#-----[ AFTER, ADD ]------------------------------------------\n#\n    function pars()\n    {\n        require(AJAX_DIR . 'parser.php');\n    }\n     \n\n#\n#-----[ OPEN ]------------------------------------------\n#\nposting.php\n\n#\n#-----[ FIND ]------------------------------------------\n#\nif ($mode == 'newtopic' || $post_data['first_post'])\n{\n    $template->assign_var('POSTING_SUBJECT');\n}\n\n#\n#-----[ AFTER, ADD ]------------------------------------------\n#\nif (!$bb_cfg['parsmod_disable'] && ($mode == 'newtopic' || $post_data['first_post']))\n{\n    $template->assign_var('PARSMOD_ON');\n}\n\n#\n#-----[ OPEN ]------------------------------------------\n#\nlibrary/language/ru/main.php\n\n#\n#-----[ FIND ]---------------------------------\n#\n$lang['CAPTCHA_WRONG'] = 'Вы не смогли подтвердить, что вы не робот';\n\n#\n#-----[ AFTER, ADD ]---------------------------------\n#\n//PARS\n$lang['PARS_NEW_RELEASE'] = 'Скопировать готовое оформление релиза';\n$lang['PARS_ALLOWED_SOURCES'] = 'Поддерживаемые источники';\n$lang['PARS_RUTRACKER_SOURCES'] = 'Rutracker';\n$lang['PARS_NNM_SOURCES'] = 'NNM-Club';\n$lang['PARS_RUTOR_SOURCES'] = 'Rutor';\n\n$lang['PARS_IN_NEXT_VERSION'] = 'В следующей версии';\n$lang['PARS_SOURCE'] = 'Источник';\n$lang['PARS_PASTE_SOURCE_URL'] = 'Вставьте ссылку на тему с релизом...';\n$lang['PARS_NO_URL'] = 'Вставьте ссылку на релиз';\n$lang['PARS_NOT_ALLOWED_SOURCES'] = 'С указанным источником не умею работать';\n$lang['PARS_NO_WORK'] = 'Использование мода запрещено администратором.';\n$lang['PARS_CONFIG'] = 'Настройки ParsMod';\n$lang['PARS_CONFIG_DESC'] = 'Эта форма позволит вам изменить общие настройки мода, а также ввести логины/пароли к учетным записям трекеров, с которых будут парситься торрент файлы.';\n$lang['PARS_GENERAL_SETTINGS'] = 'Общие настройки мода';\n$lang['PARS_DISABLE_MOD'] = 'Отключить мод';\n$lang['PARS_DISABLE_MOD_DESC'] = 'Использование мода станет не доступным.';\n$lang['PARS_RUTRACKER'] = 'Настройки для Rutracker';\n$lang['PARS_NNM'] = 'Настройки для NNM-Club';\n$lang['PARS_LOGIN'] = 'Логин';\n$lang['PARS_PASS'] = 'Пароль';\n$lang['CLICK_RETURN_PARS_CFG'] = '%sВернуться к  настройкам ParsMod%s';\n\n$lang['PARS_OPT'] = 'Опции';\n$lang['PARS_OPT_TITLE'] = 'Опции парсера';\n$lang['PARS_OPT_TOR'] = '.torrent';\n$lang['PARS_OPT_DWNLD'] = 'Скачать .torrent из источника';\n$lang['PARS_OPT_NO_DWNLD'] = 'Не скачивать .torrent из источника';\n$lang['PARS_OPT_VIEW'] = 'Опции просмотра';\n$lang['PARS_OPT_NO_VIEW'] = 'Без просмотра';\n$lang['PARS_OPT_QVIEW'] = 'Быстрый просмотр';\n$lang['PARS_OPT_PREVIEW'] = 'Предварительный просмотр';\n$lang['PARS_OPT_POST'] = 'Сразу создавать топик';\n\n#\n#-----[ OPEN ]---------------------------------\n#\nstyles/templates/default/posting.tpl\n\n\n#\n#-----[ FIND ]---------------------------------\n#\n<div class=\"spacer_12\"></div>\n\n#\n#-----[ BEFORE, ADD ]---------------------------------\n#\n<div class=\"menu-sub\" id=\"pars-opt\">\n    <table cellspacing=\"1\" cellpadding=\"4\">\n    <tr><th>{L_PARS_OPT_TITLE}</th></tr>\n    <tr><td>\n        <fieldset id=\"p_tor\">\n        <legend>{L_PARS_OPT_TOR}</legend>\n            <div class=\"pad_4\">\n            <label><input id=\"dwnld_tor\" name=\"pars_tor\" type=\"checkbox\" <!-- IF DOWNLOAD_TORRENT_ON -->{CHECKED}<!-- ENDIF -->\n                    onclick=\"return checkmeman(this, {DOWNLOAD_TORRENT});\" />{L_PARS_OPT_DWNLD}\n            </label><label>\n                <input id=\"not_dwnld_tor\" name=\"pars_tor\" type=\"checkbox\" <!-- IF NOT_DOWNLOAD_TORRENT_ON -->{CHECKED}<!-- ENDIF -->\n                    onclick=\"return checkmeman(this, {NOT_DOWNLOAD_TORRENT});\" />{L_PARS_OPT_NO_DWNLD}\n            </label></div>\n        </fieldset>\n        <fieldset id=\"p_view\">\n        <legend>{L_PARS_OPT_VIEW}</legend>\n            <div class=\"pad_4\">\n            <label>\n                <input id=\"p_no_view\" name=\"pars_view\" type=\"checkbox\" <!-- IF PARS_NO_VIEW_ON -->{CHECKED}<!-- ENDIF -->\n                    onclick=\"return checkmeman(this, {PARS_NO_VIEW});\" />{L_PARS_OPT_NO_VIEW}\n            </label><label>\n                <input id=\"p_view_mess\" name=\"pars_view\" type=\"checkbox\" <!-- IF PARS_VIEW_MESSAGE_ON -->{CHECKED}<!-- ENDIF -->\n                    onclick=\"return checkmeman(this, {PARS_VIEW_MESSAGE});\" />{L_PARS_OPT_QVIEW}\n            </label><label>\n                <input id=\"p_preview_mess\" name=\"pars_view\" type=\"checkbox\" <!-- IF PARS_PREVIEW_MESSAGE_ON -->{CHECKED}<!-- ENDIF -->\n                        onclick=\"return checkmeman(this, {PARS_PREVIEW_MESSAGE});\" />{L_PARS_OPT_PREVIEW}\n            </label><label>\n                <input id=\"p_post_topic\" name=\"pars_view\" type=\"checkbox\" <!-- IF PARS_POST_TOPIC_ON -->{CHECKED}<!-- ENDIF -->\n                        onclick=\"return checkmeman(this, {PARS_POST_TOPIC});\" />{L_PARS_OPT_POST}\n            </label></div>\n            </fieldset>\n    </td></tr>\n    </table>\n</div>\n\n#\n#-----[ FIND ]---------------------------------\n#\n<tr>\n    <th colspan=\"2\" class=\"thHead\"><b>{POSTING_TYPE_TITLE}</b></th>\n\n#\n#-----[ BEFORE, ADD ]---------------------------------\n#\n<!-- IF PARSMOD_ON -->\n<tbody class=\"pad_4\">\n<tr>\n    <th colspan=\"2\" class=\"thHead\"><b>{L_PARS_NEW_RELEASE}</b><div class=\"floatR med bold\"><a class=\"menu-root\" style=\"color:white;\" href=\"#pars-opt\">{L_PARS_OPT}</a></div></th>\n</tr>\n<tr>\n    <td style=\"vertical-align:top;\">\n        <div title=\"{L_PARS_ALLOWED_SOURCES}\" style=\"float: right;vertical-align:top;\">\n            <img src=\"./styles/templates/default/images/p/rutracker.ico\" alt=\"Rutracker\" title=\"{L_PARS_RUTRACKER_SOURCES}\">\n            <img src=\"./styles/templates/default/images/p/nnm-club.ico\" alt=\"nnm-club\" title=\"{L_PARS_NNM_SOURCES}\">\n            <img src=\"./styles/templates/default/images/p/rutor.ico\" alt=\"Rutor\" title=\"{L_PARS_RUTOR_SOURCES}\"><br>\n        </div>\n        <b>{L_PARS_SOURCE}</b> <br>\n    </td>\n    <td>\n        <input id=\"release_url\" type=\"url\" size=60 placeholder=\"{l_PARS_PASTE_SOURCE_URL}\"> <input type=\"button\" value=\"{L_SUBMIT}\" name=\"Send\" id=\"pars\">\n\n \n    <div id=\"hida\"></div>\n    </td>\n\n\n</tr>\n<script type=\"text/javascript\">\n\nfunction checkmeman(e, val){\n    var ptag = $(e).attr('name');\n    user.set(ptag, ( $(e).is(\":checked\") ? val : 0 ), 365, false);\n    $(\"input[name=\"+ptag+\"]:checked\").attr('checked',  false);\n    $(e).attr('checked', true);\n}\n\n$('#pars').click(function(){\nvar fileid = [0,0];\nvar gettorrent = (($( \"input[name='pars_tor']:checked\" ).attr('id')) == 'dwnld_tor') ? 1:0;\nvar filename = $(\".gen:contains('torrent')\" ).text();\nvar mode = $(\"input[name|=mode]\" ).val();\n\nif (filename && gettorrent  && mode == 'editpost') gettorrent = confirm(\"Перезаписать торрент?\")? 1:0;\nif (filename && gettorrent) {\n    var attach_url = $(\"a:contains(\"+filename+\")\").attr('href');\n    if (fileid = attach_url.match(/dl\\.php\\?id=(\\d+)/)) {\n            var tmp_str = $(\"input[name|='update_attachment[\"+fileid[1]+\"]']\" ).next(\"input\" ).attr(\"name\");\n            var phys_name = tmp_str.match(/del_attachment\\[(.*)\\]/); \n            $( \"input[value|='\"+fileid[1]+\"']\" ).remove();\n    }else{\n                var phys_name = attach_url.match(/.*\\/(.*)/);\n        var fileid = [0,0];\n    }\n\n        $( \"input[value|='\"+filename+\"']\" ).remove();\n        $( \"input[value|='\"+phys_name[1]+\"']\" ).remove();\n        $(\"a:contains(\"+filename+\")\").attr({href:\" \"});\n    $(\"a:contains(\"+filename+\")\").text('  ');\n}\n\najax.exec({action: 'pars', pars_url: $('#release_url').val(), gettorrent:gettorrent, tor_id:fileid[1]});\n    ajax.callback.pars = function(data) {\n        $( \"#hida\" ).html(data.hid);\n        $( \"input[name='subject']\" ).val(data.title);\n        $('textarea#message').val(data.bbcode)\n        var p_view = $(\"input[name='pars_view']:checked\").attr('id');\n        switch (p_view) {\n          case 'p_view_mess': ajax.exec({ action: 'posts', type: 'view_message', message: $('textarea#message').val()});break\n          case 'p_preview_mess': $('#post-preview-btn').click();break\n          case 'p_post_topic': $('#post-submit-btn').click();break\n        }\n    };\n});\n\n</script>\n<!-- ENDIF -->\n\n#\n#-----[ SAVE/CLOSE ALL FILES ]------------------------------------------\n#\n# EoM[/PHP]\n[/SPOILER]",
+    "owner": "Lektor",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание:</b> добавляет возможность пользователям парсить раздачи с некоторых популярных трекеров.<br />\nПоддерживаемые в настоящий момент трекеры:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Rutracker</li>\n<li data-xf-list-type=\"ul\">Rutor</li>\n<li data-xf-list-type=\"ul\">NNM-Club</li>\n</ul><b>Известные баги:</b><br />\n- рутор без www в ссылке не парсит<br />\n<br />\nПоддержка автора через Webmoney:<br />\n<ul>\n<li data-xf-list-type=\"ul\">R650139346710</li>\n<li data-xf-list-type=\"ul\">U212798489152</li>\n<li data-xf-list-type=\"ul\">Z409111469631</li>\n</ul>[GALLERY=media, 19]ParsMod (парсер) 0.7.2[/GALLERY]",
+  "download_count": 922,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/176.jpg?1425317109",
+  "id": 176,
+  "is_fileless": null,
+  "last_update": 1425317352,
+  "rating_avg": 4.73333,
+  "rating_count": 15,
+  "resource_date": 1425317100,
+  "resource_state": "visible",
+  "slug": "universal-nyj-parser",
+  "tag_line": "Добавляет возможность пользователям парсить раздачи с некоторых популярных трекеров.",
+  "tags": [],
+  "title": "Универсальный парсер",
+  "url_path": "/resources/universal-nyj-parser.176/",
+  "user_id": 5893,
+  "username": "Lektor",
+  "version": "0.7.2",
+  "versions": [
+    {
+      "download_count": 648,
+      "files": [
+        {
+          "filename": "ParsMod072.zip",
+          "id": 3179,
+          "local_path": null,
+          "r2_key": null,
+          "size": 18814,
+          "src_url": "https://torrentpier.com/api/resource-versions/213/download?file=3179"
+        }
+      ],
+      "id": 213,
+      "rating_avg": 4.733333333333333,
+      "rating_count": 15,
+      "release_date": 1425317352,
+      "version_state": "visible",
+      "version_string": "0.7.2",
+      "view_url": "https://torrentpier.com/resources/universal-nyj-parser.176/version/213/"
+    },
+    {
+      "download_count": 148,
+      "files": [
+        {
+          "filename": "ParsMod061.zip",
+          "id": 3178,
+          "local_path": null,
+          "r2_key": null,
+          "size": 14251,
+          "src_url": "https://torrentpier.com/api/resource-versions/212/download?file=3178"
+        }
+      ],
+      "id": 212,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425317260,
+      "version_state": "visible",
+      "version_string": "0.6.1",
+      "view_url": "https://torrentpier.com/resources/universal-nyj-parser.176/version/212/"
+    },
+    {
+      "download_count": 137,
+      "files": [
+        {
+          "filename": "ParsMod.zip",
+          "id": 3177,
+          "local_path": null,
+          "r2_key": null,
+          "size": 8178,
+          "src_url": "https://torrentpier.com/api/resource-versions/211/download?file=3177"
+        }
+      ],
+      "id": 211,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425317100,
+      "version_state": "visible",
+      "version_string": "0.5.0",
+      "view_url": "https://torrentpier.com/resources/universal-nyj-parser.176/version/211/"
+    }
+  ],
+  "view_count": 3885
+}

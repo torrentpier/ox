@@ -1,0 +1,81 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 91852,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 41785,
+  "last_post_date": 1501307835,
+  "node_id": 80,
+  "post_date": 1498932570,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1498932555,
+          "file_size": 11866,
+          "filename": "bA8Da66A.webp",
+          "height": 165,
+          "id": 4874,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/ba8da66a-webp.4874/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4878-8ebcf9e9c8b0b5e1f374f25eb31a60e4.jpg?hash=po-Lw-OiOW",
+          "width": 1039
+        }
+      ],
+      "id": 91852,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Невозможно добавить запрещенное имя в админ панели, на демо так же.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1498932570,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91982,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено в 2.2.3.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1501307835,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 1,
+  "slug": "zapresennye-imena",
+  "sticky": false,
+  "tags": [],
+  "title": "Запрещенные имена",
+  "url_path": "/threads/zapresennye-imena.41785/",
+  "user_id": 462,
+  "username": "Virtuoz",
+  "view_count": 931
+}

@@ -1,0 +1,116 @@
+{
+  "custom_fields": {
+    "torrentpier": ""
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 66613,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 29057,
+  "last_post_date": 1529955110,
+  "node_id": 80,
+  "post_date": 1415537273,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66613,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вопрос,<br />\nразрешаю скачивать в определенном форуме, определенной группе<br />\nЕсли зайти в топик юзером который там неможет качать, получаю заглушку, типа viewtopic_atach_guest, т.е. стандартную, типа зарегистрируйтесь и скачайте...и т.п.<br />\nКак поставить свою заглушку ?<br />\nТак как тупо посылать залогиненого юзера на регистрацию.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1415537273,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66737,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "На демо воспроизведете? Потому что судя по коду, там будет просто неактивна ссылка &quot;скачать&quot;, если группе недоступно скачивание.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1415654526,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66749,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\">На демо воспроизведете? Потому что судя по коду, там будет просто неактивна ссылка &quot;скачать&quot;, если группе недоступно скачивание.</blockquote><br />\nВоспроизвел на демо:<br />\n<br />\nКатегория с раздачами, права на скачивание файлов: Приватный<br />\nГруппа которой разрешено скачивать: RG IOS<br />\nТестовый пользователь: Логин: TEST Пароль: 123456",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1415687368,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66752,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<img src=\"http://i65.fastpic.ru/big/2014/1111/58/602053175191606762d376e43c95e058.png\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1415687671,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93305,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Воспроизводится, но исправление идет в разрез с текущей логикой. Для не соответствующего рейтинга показывает предупреждение. Для рейтинга ниже - запрет на скачивание. Для тех кто в целом не может - ссылка на регистрацию как предложение так скажем &quot;перелогиниться&quot;. С новой системой вложений поправим, пока - нет.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1529955110,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 25,
+  "reply_count": 4,
+  "slug": "zagluska-dla-gostej",
+  "sticky": false,
+  "tags": [],
+  "title": "Заглушка для гостей",
+  "url_path": "/threads/zagluska-dla-gostej.29057/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1767
+}

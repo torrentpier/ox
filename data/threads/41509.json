@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 88217,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41509,
+  "last_post_date": 1471330241,
+  "node_id": 57,
+  "post_date": 1471193732,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88217,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "У некоторых торрент сайтов когда скачиваешь у них релизы и нажимаешь на свойство Торрент файлов присутствуют ретрекеры,хотел попробовать сделать так же но не понял куда их добавлять,тоесть какие файлы нужно редактировать?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1471193732,
+      "user_id": 7391,
+      "user_title": "User",
+      "username": "_WolK_"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88225,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"_WolK_\">У некоторых торрент сайтов когда скачиваешь у них релизы и нажимаешь на свойство Торрент файлов присутствуют ретрекеры,хотел попробовать сделать так же но не понял куда их добавлять,тоесть какие файлы нужно редактировать?</blockquote>Это имело смысл когда были локальные трекеры. Сейчас все ушло в общедоступный интернет и вероятность того что два человека в раздаче встретятся из одной сети стремится к нулю. Как то мне, оно того не стоит. Если же все равно считаете это целесообразным, то <a href=\"https://torrentpier.com/forum/threads/retracker-local.186/\" class=\"link link--internal\">вот тема </a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1471330241,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "retrekery",
+  "sticky": false,
+  "tags": [],
+  "title": "Ретрекеры",
+  "url_path": "/threads/retrekery.41509/",
+  "user_id": 7391,
+  "username": "_WolK_",
+  "view_count": 932
+}

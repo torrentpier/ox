@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 8808,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 687,
+  "last_post_date": 1325930140,
+  "node_id": 57,
+  "post_date": 1325926812,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 8808,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте! После перехода с движка TorrentPier 2.0.2 на TorrentPier II R340 у нас стали появлятся ошибки. Сначала не было connect с Mysql базой, помогло полностью пересоздание базы и перезаливки движка. Но сейчас появилась ошибка &quot;Internal Server Error&quot;.<br />\n&lt;&lt;&lt; PHP Warning: PHP Startup: Unable to load dynamic library &#039;/usr/lib/php5/20090626/php_curl.so&#039; - /usr/lib/php5/20090626/php_curl.so: file too short in Unknown on line 0<br />\nPHP Warning: Module &#039;curl&#039; already loaded in Unknown on line 0<br />\n[Sat Jan 07 09:50:57 2012] [warn] RSA server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)<br />\n[Sat Jan 07 09:50:57 2012] [warn] RSA server certificate CommonName (CN) `mag.2me.be&#039; does NOT match server name!?<br />\n[Sat Jan 07 09:50:57 2012] [notice] Apache/2.2.17 (Ubuntu) PHP/5.3.5-1ubuntu7.4 with Suhosin-Patch mod_ssl/2.2.17 OpenSSL/0.9.8o configured -- resuming normal operations<br />\n[Sat Jan 07 09:51:27 2012] [notice] Graceful restart requested, doing restart<br />\n[Sat Jan 07 09:51:27 2012] [error] (9)Bad file descriptor: apr_socket_accept: (client socket)<br />\nВот логи apache",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1325926812,
+      "user_id": 714,
+      "user_title": "",
+      "username": "gooch"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 8810,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "если не ошибаюсь не хватает curl",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1325927377,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Bustra"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 8811,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"\">PHP Warning: PHP Startup: Unable to load dynamic library &#039;/usr/lib/php5/20090626/php_curl.so&#039; - /usr/lib/php5/20090626/php_curl.so: file too short in Unknown on line 0</blockquote>Посматри есть ли модуль php_curl.so<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">PHP Warning: Module &#039;curl&#039; already loaded in Unknown on line 0<br />\n[Sat Jan 07 09:50:57 2012] [warn] RSA server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)<br />\n[Sat Jan 07 09:50:57 2012] [warn] RSA server certificate CommonName (CN) `mag.2me.be&#039; does NOT match server name!?<br />\n[Sat Jan 07 09:50:57 2012] [notice] Apache/2.2.17 (Ubuntu) PHP/5.3.5-1ubuntu7.4 with Suhosin-Patch mod_ssl/2.2.17 OpenSSL/0.9.8o configured -- resuming normal operations<br />\n[Sat Jan 07 09:51:27 2012] [notice] Graceful restart requested, doing restart<br />\n[Sat Jan 07 09:51:27 2012] [error] (9)Bad file descriptor: apr_socket_accept: (client socket)</blockquote>В инете есть много решений<br />\n<a href=\"http://www.sql.ru/forum/actualthread.aspx?tid=699806\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://www.sql.ru/forum/actualthread.aspx?tid=699806</a><br />\n<a href=\"http://forum.lissyara.su/viewtopic.php?f=3&amp;t=9675\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://forum.lissyara.su/viewtopic.php?f=3&amp;t=9675</a><br />\n<br />\nPs У Вас проблемы на сервере а не с перездом",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1325927932,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 8819,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>gooch</b>, OC у вас ubuntu? По первому, у вас curl не хватает(команда для ubuntu, установка curl): <pre class=\"xfBb-code\" data-lang=\"\">sudo apt-get install php5-curl</pre>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1325930140,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "zdravstvujte-posle-perehoda-s-dvizka-torrentpier-2-0-2-na-torrentpier-ii-r340-u-nas",
+  "sticky": false,
+  "tags": [],
+  "title": "Здравствуйте! После перехода с движка TorrentPier 2.0.2 на TorrentPier II R340 у нас",
+  "url_path": "/threads/zdravstvujte-posle-perehoda-s-dvizka-torrentpier-2-0-2-na-torrentpier-ii-r340-u-nas.687/",
+  "user_id": 714,
+  "username": "gooch",
+  "view_count": 2254
+}

@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 62257,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 58,
+    "title": "Suggestions for improving TorrentPier"
+  },
+  "id": 26139,
+  "last_post_date": 1409320773,
+  "node_id": 58,
+  "post_date": 1409320394,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62257,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Кстати неплохо было бы, добавить в стандартную поставку <a href=\"http://torrentpier.com/threads/spasibo-za-razdachu-i-ocenka-reliza.40/\" class=\"link link--internal\">http://torrentpier.com/threads/spasibo-za-razdachu-i-ocenka-reliza.40/</a> и доску почёта/позора оттуда <a href=\"http://torrentpier.com/threads/doska-pocheta.356/\" class=\"link link--internal\">http://torrentpier.com/threads/doska-pocheta.356/</a> оба эти модуля мне кажется зарекомендовали себя.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1409320394,
+      "user_id": 1053,
+      "user_title": "User",
+      "username": "Alexander.S"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62260,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Будет.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1409320773,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 32,
+  "reply_count": 1,
+  "slug": "dobavit-moduli-cpasibo-za-razdacu-i-ocenka-reliza-doska-poceta-pozora-v-standartnuu-sborku",
+  "sticky": false,
+  "tags": [],
+  "title": "Добавить модули \"Cпасибо за раздачу и оценка релиза\" \"Доска почёта/позора\" в стандартную сборку.",
+  "url_path": "/threads/dobavit-moduli-cpasibo-za-razdacu-i-ocenka-reliza-doska-poceta-pozora-v-standartnuu-sborku.26139/",
+  "user_id": 1053,
+  "username": "Alexander.S",
+  "view_count": 1049
+}

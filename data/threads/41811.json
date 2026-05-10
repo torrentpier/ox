@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 92153,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 86,
+    "title": "Questions about PHP"
+  },
+  "id": 41811,
+  "last_post_date": 1502999741,
+  "node_id": 86,
+  "post_date": 1502999741,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92153,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1502999891,
+      "message_parsed": "<code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\"><br />\n<b>Parse error</b>: syntax error, unexpected end of file in <b>/library/includes/template.php(259) : eval()&#039;d code</b> on line <b>395</b></code><br />\n<br />\nвот<br />\n<code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\"><br />\n        $this-&gt;vars[$varname] = ob_get_contents();</code><br />\nхотя она отнюдь не последняя или я что-то не понял?<br />\n<br />\n<br />\nвозникает при создании новой темы. установлен парсер, но отключен",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1502999741,
+      "user_id": 7474,
+      "user_title": "User",
+      "username": "ДядяМища"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "syntax-error-unexpected-end-of-file",
+  "sticky": false,
+  "tags": [],
+  "title": "syntax error, unexpected end of file",
+  "url_path": "/threads/syntax-error-unexpected-end-of-file.41811/",
+  "user_id": 7474,
+  "username": "ДядяМища",
+  "view_count": 1238
+}

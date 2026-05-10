@@ -1,0 +1,136 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94400,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42078,
+  "last_post_date": 1580148902,
+  "node_id": 57,
+  "post_date": 1580138461,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94400,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Не работает модерирование форумов. Версия TorrentPier II R400 (Stable). При попытке переместить, удалить, закрыть и т.д. темы ничего не происходит, вместо выбора вариантов действий и их подтверждений - пустая белая страница. <br />\n<br />\nКак это можно вылечить?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1580138461,
+      "user_id": 4450,
+      "user_title": "User",
+      "username": "FarabundoMarti"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94401,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Так подробнее опиши, версия php, лог приложи ошибок, а то так долго ответа ждать будешь",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1580139783,
+      "user_id": 1338,
+      "user_title": "User",
+      "username": "Alex39"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1580146347,
+          "file_size": 3618,
+          "filename": "error_log.txt",
+          "height": 0,
+          "id": 5318,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/error_log-txt.5318/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 94402,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Версия PHP 5.6. Содержимое лога - в приложении. Подозреваю, что нужна более ранняя версия PHP<br />\n.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1580146393,
+      "user_id": 4450,
+      "user_title": "User",
+      "username": "FarabundoMarti"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94403,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1580148941,
+      "message_parsed": "PHP 5. 3 надо<br />\n<a href=\"http://www.varconer.ru/2014/03/perexod-na-php-5-4-i-fatal-error-call-time-pass-by-reference-has-been-removed-in/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Переход на PHP 5.4 и Fatal error: Call-time pass-by-reference has been removed in | VARCONER</a>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1580148771,
+      "user_id": 4854,
+      "user_title": "User",
+      "username": "sergey67"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94404,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b><a href=\"https://torrentpier.com/members/4854/\">sergey67</a></b><br />\nБлагодарю!",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1580148902,
+      "user_id": 4450,
+      "user_title": "User",
+      "username": "FarabundoMarti"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "ne-rabotaet-moderirovanie-forumov",
+  "sticky": false,
+  "tags": [],
+  "title": "Не работает модерирование форумов",
+  "url_path": "/threads/ne-rabotaet-moderirovanie-forumov.42078/",
+  "user_id": 4450,
+  "username": "FarabundoMarti",
+  "view_count": 1963
+}

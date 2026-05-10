@@ -1,0 +1,92 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 97201,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 109,
+    "title": "LTS version archive"
+  },
+  "id": 42363,
+  "last_post_date": 1743782155,
+  "node_id": 109,
+  "post_date": 1743782155,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1743782146,
+          "file_size": 4929387,
+          "filename": "torrentpier-lts-2.1.5-2025.04.zip",
+          "height": 0,
+          "id": 6429,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/torrentpier-lts-2-1-5-2025-04-zip.6429/",
+          "thumbnail_url": null,
+          "width": 0
+        },
+        {
+          "attach_date": 1743782146,
+          "file_size": 12342,
+          "filename": "LTS.webp",
+          "height": 100,
+          "id": 6430,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/lts-webp.6430/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6434-833c6d5c69163ad819911ac32e7a993a.jpg?hash=8VrPBjbU8j",
+          "width": 300
+        }
+      ],
+      "id": 97201,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier LTS. Версия 2.1.5-2025.04 [Final v11]</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/6430/\" alt=\"LTS.webp\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier-lts/releases/tag/v2.1.5-2025.04\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.1.5-2025.04 [Final v11] · torrentpier/torrentpier-lts</a><br />\n<br />\n<b>Основные изменения:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Release v2.1.5-2025.04 🎉</li>\n<li data-xf-list-type=\"ul\">Improved sitemap generation</li>\n<li data-xf-list-type=\"ul\">Fixed pagination issue (in admin_log.php)</li>\n<li data-xf-list-type=\"ul\">Fixed YouTube player</li>\n<li data-xf-list-type=\"ul\">Fixed broken table sorting in groups page (For pending users)</li>\n<li data-xf-list-type=\"ul\">Some other changes / improvements</li>\n</ul>Для обновления на версию не нужно выполнять дополнительные запросы к базе данных.<br />\n<hr />Вероятно последняя версия из LTS. Буквально исправлять уже больше нечего, если пытаться улучшать дальше, то это уже будет не LTS. Можете смело ставить эту версию на долгую перспективу, она, пожалуй, самая стабильная из всех).<br />\n<hr /><b>MD5</b>: 4FE8A68ABDBBAA054F872C6CA138D591<br />\n<b>SHA-1</b>: EB2CC40531E502F0A91E0213436D60351CF2BDE8",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1743782155,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-lts-versia-2-1-5-2025-04-final-v11",
+  "sticky": false,
+  "tags": [
+    "lts",
+    "lts-final",
+    "torrentpier",
+    "torrentpier-lts",
+    "новая версия",
+    "релиз",
+    "ченжлог"
+  ],
+  "title": "TorrentPier LTS. Версия 2.1.5-2025.04 [Final v11]",
+  "url_path": "/threads/torrentpier-lts-versia-2-1-5-2025-04-final-v11.42363/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 861
+}

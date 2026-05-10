@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58550,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25719,
+  "last_post_date": 1391511650,
+  "node_id": 57,
+  "post_date": 1391510696,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58550,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ребят ну подскажите, не удлаяются топики, идут логи:<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">[04-Feb-2014 12:41:20] PHP Fatal error:  DB Error [includes/functions_admin.php(296)] in /var/www/dr_brown/data/www/unitaz.org.ua/includes/db/mysql.php on line 804</pre> <br />\nругня идет на эту функцию:<br />\n <br />\n// Delete votes<br />\nDB()-&gt;query(&quot;<br />\nDELETE pv, pu<br />\nFROM &quot;. $tmp_delete_topics .&quot; del<br />\nLEFT JOIN &quot;. BB_POLL_VOTES .&quot; pv USING(topic_id)<br />\nLEFT JOIN &quot;. BB_POLL_USERS .&quot; pu USING(vote_id)<br />\n&quot;);<br />\n <br />\nможет фиксили позже 577",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1391510696,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58551,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "нашел сука ошибка, compare хорошая весчь, закройте тему, извените",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1391511650,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "osibka-posle-r577",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка после r577",
+  "url_path": "/threads/osibka-posle-r577.25719/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1016
+}

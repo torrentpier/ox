@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 47910,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 17529,
+  "last_post_date": 1381917438,
+  "node_id": 57,
+  "post_date": 1381862704,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 47910,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Зашел сюда: <a href=\"http://developers.google.com/speed/pagespeed/insights/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://developers.google.com/speed/pagespeed/insights/</a> недавно и пробил сайт на скорость загрузки страницы, оказывается почему то не работает или не включен gzip.....также не используется кэш в браузере на стороне пользователя, в частности для картинок там и все такое. В папке apache2/mods-avaible валяется deflate.conf такого содержания:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;IfModule mod_deflate.c&gt;\n          # these are known to be safe with MSIE 6\n          AddOutputFilterByType DEFLATE text/html text/plain text/xml\n \n          # everything else may cause problems with MSIE 6\n          AddOutputFilterByType DEFLATE text/css\n          AddOutputFilterByType DEFLATE application/x-javascript application/javascript application/ecmascript\n          AddOutputFilterByType DEFLATE application/rss+xml\n&lt;/IfModule&gt;</pre>Также эта фича вроде запущена и видна в папке /mods-enable<br />\nНикакие  добавления различных кодов в .htaccess, или в конфиг deflate.conf нарытых в нете успехом не увенчались. gzip в конфиге включен. Куда рыть подскажите добрые люди хотелось бы поджать яваскрипты и css, бо сильно шаб жесткий ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1381862704,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 47914,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"http://httpd.apache.org/docs/2.2/mod/mod_deflate.html\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://httpd.apache.org/docs/2.2/mod/mod_deflate.html</a><br />\n <br />\nпздц) сидеть на апаче, а в соседней ветке с хоботом говорить про оптимизации... ну ты мочишь)",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1381868234,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 47981,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вся проблема была в том что стоит связяка apache2+nginx, поэтому пришлось gzip включать в конфиге nginx, и все заработало.<br />\nЗакройте тему.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1381917438,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "kak-vklucit-mod-deflate",
+  "sticky": false,
+  "tags": [],
+  "title": "Как включить mod-deflate ?",
+  "url_path": "/threads/kak-vklucit-mod-deflate.17529/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 3215
+}

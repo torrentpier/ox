@@ -1,0 +1,114 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 88287,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41519,
+  "last_post_date": 1472375885,
+  "node_id": 57,
+  "post_date": 1472369048,
+  "posts": [
+    {
+      "attach_count": 3,
+      "attachments": [
+        {
+          "attach_date": 1472368639,
+          "file_size": 21008,
+          "filename": "2.webp",
+          "height": 768,
+          "id": 4473,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2-webp.4473/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4477-f584681fc7479eb400f39c39b3b0369d.jpg?hash=iLLmwesVq2",
+          "width": 1366
+        },
+        {
+          "attach_date": 1472368662,
+          "file_size": 85232,
+          "filename": "1.webp",
+          "height": 768,
+          "id": 4474,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1-webp.4474/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4478-64256f4151d7cc14a07f7be1a888367b.jpg?hash=LU2ZjJrtYO",
+          "width": 1366
+        },
+        {
+          "attach_date": 1472368671,
+          "file_size": 89114,
+          "filename": "3.webp",
+          "height": 768,
+          "id": 4475,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/3-webp.4475/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4479-3e04016506af06e4bccd736c9ced59e1.jpg?hash=0wcIZRGgYu",
+          "width": 1366
+        }
+      ],
+      "id": 88287,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1472375985,
+      "message_parsed": "Добрый день! У меня вот такая проблема: в config.php ввел данные БД <b><u>(рисунок №1)</u></b>, после этого браузер начал ругать <u><b>(рисунок №2)</b></u>  на 217 строку config.php <u><b>(рисунок №3)</b></u> =&gt;&gt; <br />\n<b>(&#039;DIR_SEPR&#039;, DIRECTORY_SEPARATOR);</b><br />\n<br />\n<a href=\"https://torrentpier.com/attachments/4474/\"><img src=\"https://torrentpier.com/data/attachments/4/4478-64256f4151d7cc14a07f7be1a888367b.jpg?hash=LU2ZjJrtYO\" alt=\"1.webp\" /></a> <br />\n<a href=\"https://torrentpier.com/attachments/4473/\"><img src=\"https://torrentpier.com/data/attachments/4/4477-f584681fc7479eb400f39c39b3b0369d.jpg?hash=iLLmwesVq2\" alt=\"2.webp\" /></a> <br />\n<a href=\"https://torrentpier.com/attachments/4475/\"><img src=\"https://torrentpier.com/data/attachments/4/4479-3e04016506af06e4bccd736c9ced59e1.jpg?hash=0wcIZRGgYu\" alt=\"3.webp\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1472369048,
+      "user_id": 7422,
+      "user_title": "User",
+      "username": "Inutero"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88288,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Ну так с оригиналом-то сравните, у вас как минимум в строке define куда-то испарился.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1472375885,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "problema-s-config-php",
+  "sticky": false,
+  "tags": [],
+  "title": "Проблема с config.php",
+  "url_path": "/threads/problema-s-config-php.41519/",
+  "user_id": 7422,
+  "username": "Inutero",
+  "view_count": 998
+}

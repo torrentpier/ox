@@ -1,0 +1,97 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 96090,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 52,
+    "title": "Bug tracker archive"
+  },
+  "id": 42263,
+  "last_post_date": 1712806725,
+  "node_id": 52,
+  "post_date": 1712760482,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1712760477,
+          "file_size": 15666,
+          "filename": "2024-04-10_17-45-43.webp",
+          "height": 342,
+          "id": 5961,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2024-04-10_17-45-43-webp.5961/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5965-a048c23974eae908b13d20b9a9ce3006.jpg?hash=l6RSMO3Nmy",
+          "width": 309
+        }
+      ],
+      "id": 96090,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "У кого тоже иконки квадратом в Edge и Chrome? В Firefox все нормально",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1712760482,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96091,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"zxc\">У кого тоже иконки квадратом в Edge и Chrome? В Firefox все нормально</blockquote>Есть такое, проблема в плагине для XenForo",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1712769450,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96092,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"belomaxorka\">Есть такое, проблема в плагине для XenForo</blockquote>Копался в его настройках, выставил иконки, но он их не отображает, если убрать иконки в принципе, то квадраты все равно остаются. Надо модуль сам ковырять.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1712806725,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "ikonki",
+  "sticky": false,
+  "tags": [],
+  "title": "Иконки",
+  "url_path": "/threads/ikonki.42263/",
+  "user_id": 6370,
+  "username": "sхс",
+  "view_count": 3896
+}

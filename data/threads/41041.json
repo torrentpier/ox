@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 83196,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 51,
+    "title": "Templates for TorrentPier"
+  },
+  "id": 41041,
+  "last_post_date": 1429571586,
+  "node_id": 51,
+  "post_date": 1429571484,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 83196,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Пользователь Exile разместил новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/shablon-salafit.218/\" class=\"link link--internal\">Шаблон «Salafit»</a> - Шаблон, простой и легкий в белых тонах.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> шаблон, простой и легкий в белых тонах.</blockquote><br />\n<a href=\"https://torrentpier.com/resources/shablon-salafit.218/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1429571484,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 83197,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Пользователь Exile обновил ресурс <a href=\"https://torrentpier.com/resources/shablon-salafit.218/\" class=\"link link--internal\">Шаблон «Salafit»</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/shablon-salafit.218/update?update=315\" class=\"link link--internal\">Обновление 1.1.0</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Адаптация шаблона до версии 2.1.0</li>\n<li data-xf-list-type=\"ul\">Большое спасибо <a href=\"https://torrentpier.com/members/2789/\">@Sprinx</a></li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/shablon-salafit.218/update?update=315\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1429571529,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 83198,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Пользователь Exile обновил ресурс <a href=\"https://torrentpier.com/resources/shablon-salafit.218/\" class=\"link link--internal\">Шаблон «Salafit»</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/shablon-salafit.218/update?update=316\" class=\"link link--internal\">Обновление 1.2.0</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Адаптация шаблона до версии 2.1.1</li>\n<li data-xf-list-type=\"ul\">Большое спасибо <a href=\"https://torrentpier.com/members/2789/\">@Sprinx</a></li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/shablon-salafit.218/update?update=316\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1429571545,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 83199,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Если кто-то у себя использует - большая просьба предоставить скриншотов для описания. Ну и мало ли адаптировал кто, тут уже не так и много.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1429571586,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "sablon-salafit",
+  "sticky": false,
+  "tags": [],
+  "title": "Шаблон «Salafit»",
+  "url_path": "/threads/sablon-salafit.41041/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 2622
+}

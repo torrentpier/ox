@@ -1,0 +1,166 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94149,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42053,
+  "last_post_date": 1554959975,
+  "node_id": 57,
+  "post_date": 1553327731,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1553327560,
+          "file_size": 81976,
+          "filename": "bandicam 2019-03-03 20-12-07-250.webp",
+          "height": 1024,
+          "id": 5289,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bandicam-2019-03-03-20-12-07-250-webp.5289/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5293-aa16473ba12e86fa6d7b478e1eeeb564.jpg?hash=NdLiCn7FXJ",
+          "width": 1280
+        },
+        {
+          "attach_date": 1553327562,
+          "file_size": 116064,
+          "filename": "bandicam 2019-03-03 20-12-16-635.webp",
+          "height": 1024,
+          "id": 5290,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bandicam-2019-03-03-20-12-16-635-webp.5290/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5294-5562ccf95330ac94215bdc44f60284ae.jpg?hash=ZNtxxYIwSR",
+          "width": 1280
+        }
+      ],
+      "id": 94149,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<div style=\"text-align: center\"><a href=\"https://torrentpier.com/attachments/5290/\"><img src=\"https://torrentpier.com/data/attachments/5/5294-5562ccf95330ac94215bdc44f60284ae.jpg?hash=ZNtxxYIwSR\" alt=\"bandicam 2019-03-03 20-12-16-635.webp\" /></a><a href=\"https://torrentpier.com/attachments/5289/\"><img src=\"https://torrentpier.com/data/attachments/5/5293-aa16473ba12e86fa6d7b478e1eeeb564.jpg?hash=NdLiCn7FXJ\" alt=\"bandicam 2019-03-03 20-12-07-250.webp\" /></a><br />\n<br />\n<b><span style=\"font-size: 26px\">Поможете как сделать что-бы пользователи видели кто проверил статусы?</span></b>&#8203;</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1553327731,
+      "user_id": 7621,
+      "user_title": "User",
+      "username": "DimaUZB2001"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94150,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1553367986,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dima08\"><div style=\"text-align: center\"><a href=\"https://torrentpier.com/attachments/5290/\">View attachment 5290</a><a href=\"https://torrentpier.com/attachments/5289/\">View attachment 5289</a><br />\n<br />\n<b><span style=\"font-size: 26px\">Поможете как сделать что-бы пользователи видели кто проверил статусы?</span></b>&#8203;</div></blockquote>Возможно и помогут если ты укажешь - в место <b>Версия TP иная </b>реальную,но я крайне сомневаюсь  в этом.<br />\nЗабросили это всё дело, очень жаль. Это движок - один из моих первых в освоении был.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1553367909,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94151,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Версия TorrentPier II: <b>2.1.5 [ALPHA] </b><br />\nДата выпуска: <b>06-12-2014</b><br />\n  <br />\nВсё работает из коробки, до сих пор. Насчёт стабильности - зачёт.<br />\nДалее не обновлялся - так как .....",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1553369207,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94154,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"vitalix\">Версия TorrentPier II: <b>2.1.5 [ALPHA] </b><br />\nДата выпуска: <b>06-12-2014</b><br />\n<br />\nВсё работает из коробки, до сих пор. Насчёт стабильности - зачёт.<br />\nДалее не обновлялся - так как .....</blockquote><blockquote class=\"xfBb-quote\" data-name=\"vitalix\">Возможно и помогут если ты укажешь - в место <b>Версия TP иная </b>реальную,но я крайне сомневаюсь  в этом.<br />\nЗабросили это всё дело, очень жаль. Это движок - один из моих первых в освоении был.</blockquote><br />\nты про версий говоришь уф<br />\n<br />\nя люблю такую версий 2.1.5 оно и так стабильный и всё<br />\n<br />\n<b>помоги пожалуйста как сделать,даже код не нашёл что бы видеть юзер</b>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1553695212,
+      "user_id": 7621,
+      "user_title": "User",
+      "username": "DimaUZB2001"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94159,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 1554885969,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dima08\">ты про версий говоришь уф<br />\n<br />\nя люблю такую версий 2.1.5 оно и так стабильный и всё<br />\n<br />\n<b>помоги пожалуйста как сделать,даже код не нашёл что бы видеть юзер</b></blockquote>в файле displaying_torrent.php правки сделай<br />\nЗаменить на это надо.<br />\n&#039;TOR_STATUS_BY&#039; =&gt; &#039;&lt;span title=&quot;&#039; . bb_date($tor_info[&#039;checked_time&#039;]) . &#039;&quot;&gt; &amp;middot; &#039; . profile_url($tor_info) . &#039; &amp;middot; &lt;i&gt;&#039; . delta_time($tor_info[&#039;checked_time&#039;]) . $lang[&#039;TOR_BACK&#039;] . &#039;&lt;/i&gt;&lt;/span&gt;&#039;),",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1554885854,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94160,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"drew\">в файле displaying_torrent.php правки сделай<br />\nЗаменить на это надо.<br />\n&#039;TOR_STATUS_BY&#039; =&gt; &#039;&lt;span title=&quot;&#039; . bb_date($tor_info[&#039;checked_time&#039;]) . &#039;&quot;&gt; &amp;middot; &#039; . profile_url($tor_info) . &#039; &amp;middot; &lt;i&gt;&#039; . delta_time($tor_info[&#039;checked_time&#039;]) . $lang[&#039;TOR_BACK&#039;] . &#039;&lt;/i&gt;&lt;/span&gt;&#039;),</blockquote>огромный спасибо",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1554959975,
+      "user_id": 7621,
+      "user_title": "User",
+      "username": "DimaUZB2001"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "pol-zovatel-ne-vidit-kto-proveril-statusy",
+  "sticky": false,
+  "tags": [],
+  "title": "Пользователь не видит кто проверил статусы",
+  "url_path": "/threads/pol-zovatel-ne-vidit-kto-proveril-statusy.42053/",
+  "user_id": 7621,
+  "username": "DimaUZB2001",
+  "view_count": 2567
+}

@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 62268,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 26140,
+  "last_post_date": 1409328784,
+  "node_id": 57,
+  "post_date": 1409323487,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62268,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Есть ли возможность импортировать новости через rss канал?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1409323487,
+      "user_id": 5539,
+      "user_title": "User",
+      "username": "subtek"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62274,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Разумеется есть, если напишете или вам напишут соответствующую модификацию.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1409328784,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "import-novostej",
+  "sticky": false,
+  "tags": [],
+  "title": "Импорт новостей",
+  "url_path": "/threads/import-novostej.26140/",
+  "user_id": 5539,
+  "username": "subtek",
+  "view_count": 937
+}

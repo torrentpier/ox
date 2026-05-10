@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 74426,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 34919,
+  "last_post_date": 1423166352,
+  "node_id": 57,
+  "post_date": 1423139990,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 74426,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Запрет по ip уже не катит. Поэтому пытаюсь придумать велосипед<br />\n<br />\nДля этого нужно на стороне клиента генерировать вечную куку в которую сохранять user_id и при новой регистрации делать проверку куки и выдавать что такой аккаунт уже есть<br />\n<br />\nВот хороший пример <a href=\"http://www.ts0.com/crosscookie/example.html\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://www.ts0.com/crosscookie/example.html</a><br />\nЯваскрипт не понимаю, поэтому не получается сделать. Может кто поможет?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1423139990,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 74427,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1423140469,
+      "message_parsed": "Алгоритм таков:<br />\n1. При первой регистрации делаем проверку на существование этой куки, если ее нет, разрешаем регистрацию<br />\n2. После первой успешной авторизации записываем куку с данными [user_id;username]<br />\n3. При повторной регистрации снова делается проверка и если кука существует выводим что вы уже регались под ником username<br />\n<br />\nкод в usercp register tpl<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">&lt;script type=&quot;text/javascript&quot; src=&quot;/misc/js/crosscookie/CrossBrowserCookieManager.js&quot;&gt;&lt;/script&gt;\n    &lt;script type=&quot;text/javascript&quot;&gt;\n   \n   \n    /*\n   \n    jQuery and SWFObject are required. Everything else is in the CrossBrowserCookieManager namespace.\n    It initializes automatically, all you need to do is call either:\n        CrossBrowserCookieManager.LoadCookie()\n            To load from cross browser storage into document.cookie\n        CrossBrowserCookieManager.SaveCookie()\n            To save document.cookie back to cross browser storage\n           \n   \n    */\n   \n   \n    $(function(){\n   \n        // make current document.cookie visible\n        setInterval(function(){\n            $(&#039;#out&#039;).html(document.cookie);\n        },100);\n       \n        // saves new cookie\n        $(&#039;#save&#039;).click(function(){\n            document.cookie = $(&#039;#name&#039;)[0].value+&#039;=&#039;+$(&#039;#value&#039;)[0].value;\n            // call to cross browser manager stores current document.cookie in cross browser storage\n            CrossBrowserCookieManager.SaveCookie();\n        });\n       \n        $(&#039;#load&#039;).click(function(){\n            // appends cross browser store to current document.cookie\n           CrossBrowserCookieManager.LoadCookie();\n        });\n   \n    });\n    &lt;/script&gt;\n&lt;tr style=&quot;display:none&quot;&gt;\n&lt;td&gt;\n&lt;p&gt;Current document.cookie: &lt;span id=&quot;out&quot;&gt;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt; \n    &lt;fieldset&gt;\n        &lt;label&gt;Name &lt;input id=&quot;name&quot; value=&quot;Hello&quot; /&gt;&lt;/label&gt;\n        &lt;label&gt;Value &lt;input id=&quot;value&quot; value=&quot;World&quot; /&gt;&lt;/label&gt;\n        &lt;button id=&quot;save&quot;&gt;Save&lt;/button&gt;\n    &lt;/fieldset&gt;\n   \n    &lt;h3&gt;Load cookie from cross browser storage&lt;/h3&gt;\n    &lt;button id=&quot;load&quot;&gt;Load&lt;/button&gt;\n\n&lt;/td&gt;\n&lt;/tr&gt;</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1423140288,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 74476,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Это велосипед велосипедный 😉<br />\nМожно отслеживать по местоположению и проверять.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1423166352,
+      "user_id": 2789,
+      "user_title": "User",
+      "username": "Sprinx"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "zapret-mul-tiakkauntov-po-kukam",
+  "sticky": false,
+  "tags": [],
+  "title": "Запрет мультиаккаунтов по кукам",
+  "url_path": "/threads/zapret-mul-tiakkauntov-po-kukam.34919/",
+  "user_id": 0,
+  "username": "ler",
+  "view_count": 1390
+}

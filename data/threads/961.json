@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 11933,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 961,
+  "last_post_date": 1329631808,
+  "node_id": 57,
+  "post_date": 1329307312,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 11933,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вобщем что и зачем: хочу привязать аккаунты форума к аккам клиента ( не суть тела какого ) , для этого я перегнал из бд зашифрованные пароли, но чтобы перекодировать их в структуру паролей клиента, необходимо для начала расшифровать их в исходной вид. Как это сделать и каким способом идет их шифрование в базовый вид?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1329307312,
+      "user_id": 887,
+      "user_title": "User",
+      "username": "r3vizor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 11934,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"http://ru.wikipedia.org/wiki/MD5\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://ru.wikipedia.org/wiki/MD5</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1329307854,
+      "user_id": 30,
+      "user_title": "User",
+      "username": "krumax"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 11935,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>r3vizor</b>, шифрование md5 односторонее. Т.е. можно только зашифровать, а расшифровать уже нет. Тем более что в торрентпире 2  используется двойное шифрование md5. md5(md5(&#039;password&#039;)). Не думаю что вернуть пассы в исходный вид получится.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1329308685,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 12148,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Не получится, при шифровании пароля в md5() и последующей связки двух движков, используют как правило либо пароль одного из движков, и к этому аккаунту привязывают второй, либо заставляют пользователей в принудительном порядке менять пароль, разумеется новый пароль тоже шифруют.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1329631808,
+      "user_id": 4,
+      "user_title": "User",
+      "username": "diden05"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "struktura-kodirovki-parola",
+  "sticky": false,
+  "tags": [],
+  "title": "Структура кодировки пароля",
+  "url_path": "/threads/struktura-kodirovki-parola.961/",
+  "user_id": 887,
+  "username": "r3vizor",
+  "view_count": 1406
+}

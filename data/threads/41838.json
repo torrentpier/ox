@@ -1,0 +1,117 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 92365,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 41838,
+  "last_post_date": 1517189225,
+  "node_id": 80,
+  "post_date": 1510324874,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92365,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "TP 2.2.3<br />\nТекущая версия bootstrap.js требует jquery 1.9.1 ! Текущая 1.8.х несовместима.<br />\nНа новую версию (jQuery 3.2.1) вроде-бы обновляется безболезненно ! <b><u>Повторяю, вроде-бы</u></b> !",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1510324874,
+      "user_id": 5829,
+      "user_title": "Blocked",
+      "username": "smile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92387,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"smile\">bootstrap.js</blockquote>В движке бутстрап не используется.<br />\n<blockquote class=\"xfBb-quote\" data-name=\"smile\">требует jquery 1.9.1 ! Текущая 1.8.х несовместима.</blockquote>Охуеть. Поменять 1 скрипт, из-за своей прихоти - проблема.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1510781040,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92389,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\">В движке бутстрап не используется.</blockquote>Тогда объясните мне, зачем он там , да ещё и обновляется ? Для &quot;что бы было&quot; ?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1510814177,
+      "user_id": 5829,
+      "user_title": "Blocked",
+      "username": "smile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92605,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"smile\">На новую версию (jQuery 3.2.1) вроде-бы обновляется безболезненно !</blockquote>Не совсем так, не будет работать определение браузеров , без сторонних скриптов, а именно $.browser выпилили из jquery, в этом и проблемка и .size() в main.js тоже должно выдать ошибку, вот правда уже не помню какую, обнаруживается последняя когда в профиле юзера добавляешь или отнимаешь скачано/отдано и т.д.<br />\nрешить это можно так:<br />\nкачаем<br />\n<a href=\"https://github.com/pupunzi/jquery.mb.browser/blob/master/inc/jquery.mb.browser.min.js\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">jquery.mb.browser/jquery.mb.browser.min.js at master · pupunzi/jquery.mb.browser · GitHub</a><br />\n(и подключам соответственно, я прям в jquery.pack.js засунул)<br />\nдалее в <br />\nфайле main.js<br />\n.size()<br />\nзаменить на <br />\n.length<br />\n<br />\nну и подключить сам 3.2.1 jquery предворительно закоментировав или удалив старый<br />\nв принципе все, я больше ошибок не заметил , тестил с неделю где то. Конечно 100% гарантии я не даю что у вас будет также, так как мало ли какие скрипты у вас установлены, как всегда все делаете на свой страх и риск. Замену производил на TP 223",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1517178688,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92606,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"smile\">TP 2.2.3<br />\nТекущая версия bootstrap.js требует jquery 1.9.1 ! Текущая 1.8.х несовместима.<br />\nНа новую версию (jQuery 3.2.1) вроде-бы обновляется безболезненно ! <b><u>Повторяю, вроде-бы</u></b> !</blockquote>есть jQuery Migrate",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1517189225,
+      "user_id": 4866,
+      "user_title": "User",
+      "username": "Bender"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 4,
+  "slug": "nesovmestimost-versij-js-bootstrap",
+  "sticky": false,
+  "tags": [
+    "bootstrap",
+    "jquery"
+  ],
+  "title": "Несовместимость версий js bootstrap",
+  "url_path": "/threads/nesovmestimost-versij-js-bootstrap.41838/",
+  "user_id": 5829,
+  "username": "smile",
+  "view_count": 1569
+}

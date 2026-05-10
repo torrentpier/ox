@@ -1,0 +1,139 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 98329,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      }
+    ],
+    "id": 2,
+    "title": "Resource news"
+  },
+  "id": 43233,
+  "last_post_date": 1765292834,
+  "node_id": 2,
+  "post_date": 1765292834,
+  "posts": [
+    {
+      "attach_count": 6,
+      "attachments": [
+        {
+          "attach_date": 1765292804,
+          "file_size": 61376,
+          "filename": "Screenshot 2025-12-09 at 17.54.17.webp",
+          "height": 1068,
+          "id": 6659,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot-2025-12-09-at-17-54-17-webp.6659/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6663-d1f18e01abfa3da7e7f0780c72295a72.jpg?hash=iJ27K8JXUZ",
+          "width": 1322
+        },
+        {
+          "attach_date": 1765292804,
+          "file_size": 62648,
+          "filename": "Screenshot 2025-12-09 at 17.54.25.webp",
+          "height": 1062,
+          "id": 6660,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot-2025-12-09-at-17-54-25-webp.6660/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6664-4f99e1cb3757f495fc0703454c4705aa.jpg?hash=uAMl5QIeqB",
+          "width": 1780
+        },
+        {
+          "attach_date": 1765292804,
+          "file_size": 57550,
+          "filename": "Screenshot 2025-12-09 at 17.54.33.webp",
+          "height": 1062,
+          "id": 6661,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot-2025-12-09-at-17-54-33-webp.6661/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6665-728ccb0125f519bd84766ffb66b1eaf7.jpg?hash=vsowHNFZht",
+          "width": 1642
+        },
+        {
+          "attach_date": 1765292804,
+          "file_size": 36686,
+          "filename": "Screenshot 2025-12-09 at 17.54.51.webp",
+          "height": 786,
+          "id": 6662,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot-2025-12-09-at-17-54-51-webp.6662/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6666-a2a54bf8b0993f0b728906fab62654ed.jpg?hash=76sfcpTYo-",
+          "width": 1116
+        },
+        {
+          "attach_date": 1765292804,
+          "file_size": 66166,
+          "filename": "Screenshot 2025-12-09 at 17.55.55.webp",
+          "height": 1078,
+          "id": 6663,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot-2025-12-09-at-17-55-55-webp.6663/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6667-9e8720e3ad5e0342fa0fb292cd4aee47.jpg?hash=KMhVYpO_7B",
+          "width": 1804
+        },
+        {
+          "attach_date": 1765292804,
+          "file_size": 52410,
+          "filename": "Screenshot 2025-12-09 at 17.55.26.webp",
+          "height": 992,
+          "id": 6664,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot-2025-12-09-at-17-55-26-webp.6664/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6668-45361d0c1b31d90428d4d98e02a45cfa.jpg?hash=6bNT1yYUe7",
+          "width": 1098
+        }
+      ],
+      "id": 98329,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Привет.<br />\n<br />\nВторая статья из серии обещанных, в рамках которой мы будем рассказывать о том, что появится в новой мажорной версии проекта.<br />\n<br />\nСегодня очень приятное изменение для разработчиков - мы интегрировали <a href=\"https://tracy.nette.org/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Nette Tracy</a> - профессиональный инструмент отладки от создателей Nette Framework. Tracy предоставляет красивую панель отладки, которая:<br />\n<br />\n- Не мешает работе с сайтом (сворачивается в компактную панель)<br />\n- Имеет интерактивный интерфейс и может быть закреплена в любом месте экрана<br />\n- Легко расширяется кастомными панелями (в том числе будущими модами)<br />\n- Используется тысячами PHP-проектов<br />\n<br />\nВся функциональность старой панели была сохранена, и мы реализовали несколько своих панелей, которые позволят легко и быстро понять, есть ли какие-то проблемы в работе движка и что именно тормозит рендер страницы.<br />\n<br />\n<b>Общий анализ производительности</b>:<br />\n<br />\n<img src=\"https://torrentpier.com/attachments/6659/\" alt=\"Screenshot 2025-12-09 at 17.54.17.webp\" /><br />\n<br />\n<b>Анализ SQL запросов, запросов в кеш и работы шаблонизатора</b>:<br />\n<br />\n<img src=\"https://torrentpier.com/attachments/6660/\" alt=\"Screenshot 2025-12-09 at 17.54.25.webp\" /><img src=\"https://torrentpier.com/attachments/6661/\" alt=\"Screenshot 2025-12-09 at 17.54.33.webp\" /><img src=\"https://torrentpier.com/attachments/6662/\" alt=\"Screenshot 2025-12-09 at 17.54.51.webp\" /><br />\n<br />\n<b>Поиск ошибок в шаблонах и кривых запросов в базу данных</b>:<br />\n<br />\n<img src=\"https://torrentpier.com/attachments/6663/\" alt=\"Screenshot 2025-12-09 at 17.55.55.webp\" /><img src=\"https://torrentpier.com/attachments/6664/\" alt=\"Screenshot 2025-12-09 at 17.55.26.webp\" /><br />\n<br />\nИнтеграция Nette Tracy - это ещё один шаг к превращению TorrentPier в современный PHP-проект. Мы получили:<br />\n<br />\n- Профессиональный инструмент отладки<br />\n- Чистую архитектуру с разделением ответственности<br />\n- Платформу для будущих расширений<br />\n<br />\nОтносительно будущих расширений - к релизу в панели появится возможность дебага роутинга, сессий, скачивания файлов, просмотр логов и событий.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1765292834,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-3-0-instrumenty-otladki-nette-tracy",
+  "sticky": false,
+  "tags": [
+    "3.0",
+    "debug",
+    "tracy"
+  ],
+  "title": "TorrentPier 3.0: инструменты отладки Nette Tracy",
+  "url_path": "/threads/torrentpier-3-0-instrumenty-otladki-nette-tracy.43233/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 189
+}

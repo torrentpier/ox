@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 57867,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25626,
+  "last_post_date": 1389875700,
+  "node_id": 111,
+  "post_date": 1389875700,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57867,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 544: Фикс ошибки доступа в админку настроек шаблонизатора.</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">glix08</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/upload/admin/.htaccess \n    Modify    /trunk/upload/config.php \n\nФикс ошибки доступа в админку настроек шаблонизатора.</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1389875700,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "revision-544-fiks-osibki-dostupa-v-adminku-nastroek-sablonizatora",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 544: Фикс ошибки доступа в админку настроек шаблонизатора.",
+  "url_path": "/threads/revision-544-fiks-osibki-dostupa-v-adminku-nastroek-sablonizatora.25626/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 843
+}

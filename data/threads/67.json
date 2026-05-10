@@ -1,0 +1,129 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 621,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 67,
+  "last_post_date": 1314984060,
+  "node_id": 90,
+  "post_date": 1311174339,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 621,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Что понадобится?<br />\n-mysql server<br />\n-vsftp server<br />\n-прямые руки и ясная голова<br />\nОпишу структуру.<br />\nЧто хочу реализовать. Хочу сделать виртуальных пользователей с хранением паролей и логинов в БД mysql , так же хочу открыть некоторым доступ только для чтения.<br />\nУстановку и настройку mysql server я пропущу, как и установку vsftpd.<br />\nСтавим pam_mysql<br />\n<pre class=\"xfBb-code\" data-lang=\"\">cd /usr/ports/security/pam-mysql\nmake install clean</pre>Далее нужно сделать ссылку<br />\n<pre class=\"xfBb-code\" data-lang=\"\">ln -sf /usr/local/lib/pam_mysql.so /usr/lib/pam_mysql.so</pre>Создаем базу, пользователя для базы<br />\n<pre class=\"xfBb-code\" data-lang=\"\">#mysql -u root\nCREATE DATABASE vsftpd;\nGRANT SELECT, INSERT, UPDATE, DELETE, CREATE, \\\nDROP ON ftpserver.* TO &#039; ftpserver &#039;@&#039;localhost&#039; IDENTIFIED BY &#039; ftpserver &#039;;\nGRANT SELECT, INSERT, UPDATE, DELETE, CREATE, \\\nDROP ON vsftpd.* TO &#039; ftpserver &#039;@&#039;localhost.localdomain&#039; IDENTIFIED BY &#039; ftpserver &#039;;\nFLUSH PRIVILEGES;</pre>Создаем таблицу:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">USE vsftpd;\nCREATE TABLE `accounts` (\n`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,\n`username` VARCHAR( 30 ) NOT NULL ,\n`pass` VARCHAR( 50 ) NOT NULL ,\nUNIQUE (\n`username`\n)\n) ENGINE = MYISAM ;\nquit;</pre>Создаем юзвера vsftpd с помощью adduser, должно получиться что-то наподобе<br />\n<pre class=\"xfBb-code\" data-lang=\"\">mail# cat /etc/passwd |grep vsftp\nvsftpd:*:1002:1002:User &amp;:/home/vsftpd:/usr/sbin/nologin</pre>Правим конфиг<br />\n<pre class=\"xfBb-code\" data-lang=\"\">/usr/local/etc/vsftpd.conf\nanonymous_enable=NO\nlocal_enable=YES\nwrite_enable=YES\nlocal_umask=077\nanon_upload_enable=NO\nanon_mkdir_write_enable=NO\ndirmessage_enable=YES\nxferlog_enable=YES\nconnect_from_port_20=YES\nchown_uploads=YES\nchown_username=vsftpd\nnopriv_user=vsftpd\nasync_abor_enable=NO\nascii_upload_enable=YES\nascii_download_enable=YES\nftpd_banner=Welcome to FTP service.\nchroot_local_user=YES\nwrite_enable=YES\nlisten=YES\nsecure_chroot_dir=/home/test\npam_service_name=vsftpd\nguest_enable=YES\nguest_username=vsftpd\nlocal_root=/home/test2/$USER\nuser_sub_token=$USER\nvirtual_use_local_privs=YES\nuser_config_dir=/usr/local/etc/vsftpd_user_conf\nbackground=YES</pre>Создадим директорию где будем хранить настройки для пользователей<br />\n<pre class=\"xfBb-code\" data-lang=\"\">mkdir /usr/local/etc/vsftpd_user_conf</pre>теперь надо настроить механизм подключения к базе данных<br />\n<pre class=\"xfBb-code\" data-lang=\"\">ee /etc/pam.d/vsftpd\nauth required pam_mysql.so user= ftpserver passwd= ftpserver \\\nhost=localhost db=vsftpd table=accounts usercolumn=username passwdcolumn=pass crypt=2\naccount required pam_mysql.so user= ftpserver passwd= ftpserver \\\nhost=localhost db=vsftpd table=accounts usercolumn=username passwdcolumn=pass crypt=2</pre>Теперь потестируем<br />\n<pre class=\"xfBb-code\" data-lang=\"\">mysql -u root\nUSE vsftpd;\nINSERT INTO accounts (username, pass) VALUES(&#039;testuser&#039;, PASSWORD(&#039;secret&#039;));\nINSERT INTO accounts (username, pass) VALUES(&#039;testuser2&#039;, PASSWORD(&#039;secret2&#039;));\nquit;</pre>Создаем папку и выставляем права<br />\n<pre class=\"xfBb-code\" data-lang=\"\">mkdir  /home/test2/testuser\nchown vsftpd:nogroup /home/test2/testuser</pre>А теперь разделим права межу двумя пользователями, предположим testuser должен иметь полный доступ к каталогу, а testuser2 только на чтение<br />\nСоздаем в папке <b>/usr/local/etc/vsftpd_user_conf/</b> два файла testuser и testuser2<br />\n<pre class=\"xfBb-code\" data-lang=\"\">mail# cat /usr/local/etc/vsftpd_user_conf/testuser2\ndirlist_enable=YES\ndownload_enable=YES\nlocal_root=/home/ test2/testuser\nwrite_enable=NO</pre>и<br />\n<pre class=\"xfBb-code\" data-lang=\"\">mail# cat /usr/local/etc/vsftpd_user_conf/testuser2\ndirlist_enable=YES\ndownload_enable=YES\nlocal_root=/home/ test2/testuser\nwrite_enable=YES</pre>Запускаем/перезапускаем сервер<br />\nИ в итоге у нас поставленная задача выполнена testuser отлично читает/пишет в папку, а testuser2 может только скачать )))<br />\nСкажите параноидально? Нет конечно не всем следует разрешать редактировать/удалять файлы на сервере",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1311174339,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 622,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Не плохо",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1311175846,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 661,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"\">Опешу структуру.</blockquote>Исправь ошибочку, и потом удали мой пост).",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1311342712,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 662,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>dimka3210</b>,<br />\nспасибо за правку 🙂 не удалять не стоит, не люблю когда строят из себя идеал 🙂 все могут ошибаться.<br />\np.s: если найдете еще ошибки просьба сообщить))) так как у меня с русским траблы (хотя я ж не русский 🙂)",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1311344327,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1314984052,
+          "file_size": 5768,
+          "filename": "vsftpd_users.txt",
+          "height": 0,
+          "id": 84,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/vsftpd_users-txt.84/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 2404,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Есть хороший скрипт для управления пользователями сервера vsftp (см. вложение). Позволяет создавать, удалять (создавая при этом резервную копию каталога ftp), менять пароль пользователей.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1314984060,
+      "user_id": 246,
+      "user_title": "User",
+      "username": "Dwolfix"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "nastraivaem-vsftp-ili-kak-paranoidal-no-razresat-dostup",
+  "sticky": false,
+  "tags": [],
+  "title": "Настраиваем vsftp или как параноидально разрешать доступ",
+  "url_path": "/threads/nastraivaem-vsftp-ili-kak-paranoidal-no-razresat-dostup.67/",
+  "user_id": 0,
+  "username": "kenny",
+  "view_count": 4234
+}

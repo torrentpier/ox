@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 96482,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42288,
+  "last_post_date": 1721561595,
+  "node_id": 47,
+  "post_date": 1721561595,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96482,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/uluchshenie-standartnoj-paginacii.300/\" class=\"link link--internal\">Улучшение стандартной пагинации</a> - Добавляет генерацию мета-тегов prev и next которые помогают индексации страниц.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> Добавляет генерацию мета-тегов <b>prev</b> и <b>next </b>которые помогают индексации страниц. Подробнее можно почитать <a href=\"https://developers.google.com/search/blog/2011/09/pagination-with-relnext-and-relprev?hl=ru\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">тут</a>.<br />\n<b>Совместимость:</b> все версии в которых есть пацинация 🙂</blockquote><br />\n<a href=\"https://torrentpier.com/resources/uluchshenie-standartnoj-paginacii.300/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1721561595,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "ulucsenie-standartnoj-paginacii",
+  "sticky": false,
+  "tags": [],
+  "title": "Улучшение стандартной пагинации",
+  "url_path": "/threads/ulucsenie-standartnoj-paginacii.42288/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 509
+}

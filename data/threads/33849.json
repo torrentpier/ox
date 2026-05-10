@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 73007,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 33849,
+  "last_post_date": 1422011835,
+  "node_id": 57,
+  "post_date": 1421992815,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 73007,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Сильно тапками не кидайтесь из-за название темы (не знал, как правильно назвать 🙁). <br />\n<br />\nСуть в следующем, как можно запретить пользователям использовать при регистрации на трекере только цифры?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1421992815,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 73049,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Вообще для запрета использования чисел можно из этой строки их удалить: <a href=\"https://github.com/torrentpier/torrentpier/blob/master/library/includes/functions_validate.php#L10\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://github.com/torrentpier/torrentpier/blob/master/library/includes/functions_validate.php#L10</a> - если надо запретить ники которые только из чисел, не запрещая сами числа, то надо добавить проверку на это условие. В PHP есть функция ctype_digit для такого. Где-нибудь над этой строкой (<a href=\"https://github.com/torrentpier/torrentpier/blob/master/library/includes/functions_validate.php#L24\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://github.com/torrentpier/torrentpier/blob/master/library/includes/functions_validate.php#L24</a>) добавьте:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">    if (ctype_digit($username)) {\n        return $lang[&#039;NO_ONLY_DIGITS&#039;];\n    }</pre>Ну и языковую переменную в файл с ними: <pre class=\"xfBb-code\" data-lang=\"php\">$lang[&#039;NO_ONLY_DIGITS&#039;] = &#039;Имя пользователя не может состоять из одних чисел&#039;;</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1422011835,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "zapret-cislovyh-nikov-na-trekere",
+  "sticky": false,
+  "tags": [],
+  "title": "Запрет числовых ников на трекере",
+  "url_path": "/threads/zapret-cislovyh-nikov-na-trekere.33849/",
+  "user_id": 5704,
+  "username": "ExPlayer",
+  "view_count": 890
+}

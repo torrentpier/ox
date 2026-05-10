@@ -1,0 +1,86 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "уведомления.zip",
+      "id": 3250,
+      "local_path": null,
+      "r2_key": null,
+      "size": 1077,
+      "src_url": "https://torrentpier.com/api/resource-versions/248/download?file=3250"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]\nВ main.css добавить:\n\n[code]\n.div_avert {\n  width: 95%;\n  margin: 8px auto;\n  padding: 10px 6px 6px 8px;\n  min-height: 18px;\n  height:auto;\n  border-radius: 8px;\n  -moz-border-radius: 8px;\n  -webkit-border-radius: 8px;\n  -webkit-box-shadow: 1px 1px 12px #555;\n  -moz-box-shadow: 1px 1px 12px #555;\n  box-shadow: 1px 1px 12px #555;\n}\n.span_avert {\n  padding-left: 26px;\n}\n.info_div {\n  background-image: url(\"/images/info.png\");\n  background-position: 4px 4px;\n  background-repeat: no-repeat;\n  background-color: #b2ccff;\n  border: 2px solid #80aaff;\n}\n.error_div {\n  background-image: url(\"/images/error.png\");\n  background-position: 4px 4px;\n  background-repeat: no-repeat;\n  background-color: #ffb2b2;\n  border: 2px solid #ff8080;\n}\n.ok_div {\n  background-image: url(\"/images/ok.png\");\n  background-position: 4px 4px;\n  background-repeat: no-repeat;\n  background-color: #c2f2b3;\n  border: 2px solid #3cb371;\n}\n[/code]\n\nОткрыть bbcode.php\n\nНайти:\n\n[code]\n// Quote\n$bbcode_tpl['quote_open'] = <<<HTML\n  <div class=\"q-wrap\">\n  <div class=\"q\">\nHTML;\n[/code]\n\nДобавить до:\n\n[code]\n$bbcode_tpl['ok_open'] = <<<HTML\n<div class=\"div_avert ok_div\"><span class=\"span_avert\">\nHTML;\n\n$bbcode_tpl['ok_close'] = <<<HTML\n</span></div>\nHTML;\n\n$bbcode_tpl['info_open'] = <<<HTML\n<div class=\"div_avert info_div\"><span class=\"span_avert\">\nHTML;\n\n$bbcode_tpl['info_close'] = <<<HTML\n</span></div>\nHTML;\n\n$bbcode_tpl['error_open'] = <<<HTML\n<div class=\"div_avert error_div\"><span class=\"span_avert\">\nHTML;\n\n$bbcode_tpl['error_close'] = <<<HTML\n</span></div>\nHTML;\n[/code]\n\nНайти:\n\n[code]\n'[quote]'  => $tpl['quote_open'],\n[/code]\n\nДобавить до:\n\n[code]\n  '[ok]'  => $tpl['ok_open'],\n  '[/ok]'  => $tpl['ok_close'],\n  '[info]'  => $tpl['info_open'],\n  '[/info]'  => $tpl['info_close'],\n  '[error]'  => $tpl['error_open'],\n  '[/error]'  => $tpl['error_close'],\n[/code]\n\nОткрыть posting_editor.tpl\n\nНайти:\n\n[code]\n<input type=\"button\" value=\"{L_QUOTE}\" name=\"codeQuote\" title=\"{L_QUOTE_TITLE}\" style=\"width: 57px;\" />\n[/code]\n\nДобавить после:\n\n[code]\n<input type=\"button\" value=\"{L_OK}\" name=\"codeOk\" title=\"{L_OK_TITLE}\" style=\"width: 20px;\" />\n<input type=\"button\" value=\"{L_INFO}\" name=\"codeInfo\" title=\"{L_INFO_TITLE}\" style=\"width: 20px;\" />\n<input type=\"button\" value=\"{L_ERROR}\" name=\"codeError\" title=\"{L_ERROR_TITLE}\" style=\"width: 20px;\" />\n[/code]\n[B]Размер (20px) настраивайте под себя[/B]\n\nНайти:\n\n[code]\nbbcode.addTag(\"codeQuote\", \"quote\", null, \"Q\", ctrl);\n[/code]\n\nДобавить до:\n\n[code]\nbbcode.addTag(\"codeOk\", \"ok\", null, \"\", ctrl);\nbbcode.addTag(\"codeInfo\", \"info\", null, \"\", ctrl);\nbbcode.addTag(\"codeError\", \"error\", null, \"\", ctrl);\n[/code]\n\nВ language/ru/main.php добавить:\n\n[code]\n$lang['OK_TITLE'] = 'Ok: [ok]текст[/ok]';\n$lang['OK'] = 'Ok: [ok]текст[/ok]';\n$lang['INFO_TITLE'] = 'Info: [info]текст[/info]';\n$lang['INFO'] = 'Info: [info]текст[/info]';\n$lang['ERROR_TITLE'] = 'Error: [error]текст[/error]';\n$lang['ERROR'] = 'Error: [error]текст[/error]';\n[/code]\n[/SPOILER]",
+    "owner": "Begemot",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425423167,
+      "file_size": 98158,
+      "filename": "okinfoerror.webp",
+      "height": 820,
+      "id": 3246,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/okinfoerror-webp.3246/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3250-843084d1231731265763c22acc447fa3.jpg?hash=AzQ4gO5kdD",
+      "width": 1361
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет BB-код уведомлений.",
+  "download_count": 303,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/194.jpg?1425423773",
+  "id": 194,
+  "is_fileless": null,
+  "last_update": 1425423753,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1425423753,
+  "resource_state": "visible",
+  "slug": "bb-kod-uvedomlenia",
+  "tag_line": "Добавляет BB-код уведомлений.",
+  "tags": [],
+  "title": "BB-код: уведомления",
+  "url_path": "/resources/bb-kod-uvedomlenia.194/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 303,
+      "files": [
+        {
+          "filename": "уведомления.zip",
+          "id": 3250,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1077,
+          "src_url": "https://torrentpier.com/api/resource-versions/248/download?file=3250"
+        }
+      ],
+      "id": 248,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425423753,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/bb-kod-uvedomlenia.194/version/248/"
+    }
+  ],
+  "view_count": 589
+}

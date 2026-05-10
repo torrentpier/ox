@@ -1,0 +1,131 @@
+{
+  "custom_fields": {
+    "torrentpier": ""
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 84664,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 41230,
+  "last_post_date": 1710250686,
+  "node_id": 80,
+  "post_date": 1439233494,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1439233476,
+          "file_size": 123860,
+          "filename": "2015-08-10_22-01-44.webp",
+          "height": 567,
+          "id": 4030,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2015-08-10_22-01-44-webp.4030/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4034-7b4636f083f6a9eb5dcb249b6e063e6c.jpg?hash=lv4VNp2AfW",
+          "width": 1366
+        }
+      ],
+      "id": 84664,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Права на папки с кешем выставил 777 но почему после обновления главной страницы снова происходит cache-&gt;set? По идее там должен быть только cache-&gt;get<br />\n<br />\n<a href=\"https://torrentpier.com/attachments/4030/\"><img src=\"https://torrentpier.com/data/attachments/4/4034-7b4636f083f6a9eb5dcb249b6e063e6c.jpg?hash=lv4VNp2AfW\" alt=\"2015-08-10_22-01-44.webp\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1439233494,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84665,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/6370/\">@zxc</a> новости есть в списке последних новостей? Баг есть такой, да, но если нет новостей.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1439239393,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84666,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "чистый движок",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1439239592,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93301,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Проблема в работе файлового кеша. Данная конкретная тема багом не является.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1529867755,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95938,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Проблема возникала из-за опечатки в файле. Кому нужно исправление, то <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/78\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">вот</a>.<br />\n<br />\n<span style=\"color: rgb(226, 80, 65)\">Данная проблема исправлена уже давно, начиная с версии v2.3.1 и LTS. Если у вас по каким то причинам движок старый, то это исправление вам поможет.</span>",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1710250686,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 4,
+  "slug": "cache-set",
+  "sticky": false,
+  "tags": [],
+  "title": "cache->set?",
+  "url_path": "/threads/cache-set.41230/",
+  "user_id": 6370,
+  "username": "sхс",
+  "view_count": 2413
+}

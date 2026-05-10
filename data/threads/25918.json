@@ -1,0 +1,102 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 60532,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25918,
+  "last_post_date": 1398615203,
+  "node_id": 57,
+  "post_date": 1398612683,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1398612482,
+          "file_size": 27692,
+          "filename": "Untitled-3.webp",
+          "height": 245,
+          "id": 2517,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/untitled-3-webp.2517/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2522-11a995dd3928ac88f5f671e17855abd6.jpg?hash=mIl_7pnOF0",
+          "width": 877
+        }
+      ],
+      "id": 60532,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Собственно в чем проблема, сейчас у меня вот так (цвет новых тем - серые, посещенных - черные):<br />\n<img src=\"https://torrentpier.com/attachments/2517/\" alt=\"Untitled-3.webp\" /><br />\n <br />\nНужно сделать наоборот (новые - черные, посещенные - серые). Пробовал менять в main.css:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">:link        { color: #808080; text-decoration: none !important; }\n:visited    { color: #444444; text-decoration: none !important; }</pre> <br />\nМеняются все посещенные ссылки, кроме тем/раздач. Хоть убей они остаются черного цвета.<br />\nМожет кто знает и подскажет как решить ситуацию?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1398612683,
+      "user_id": 4439,
+      "user_title": "User",
+      "username": "Wii"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60534,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Wii</b>, наоборот....))",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1398615138,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60535,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\"><b>Wii</b>, наоборот....))</blockquote>Да, верно, это когда пост писал перепутал, не работает все равно ))<br />\nПоправил 1й пост.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1398615203,
+      "user_id": 4439,
+      "user_title": "User",
+      "username": "Wii"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "cvet-posesennyh-tem-razdac",
+  "sticky": false,
+  "tags": [],
+  "title": "Цвет посещенных тем/раздач",
+  "url_path": "/threads/cvet-posesennyh-tem-razdac.25918/",
+  "user_id": 4439,
+  "username": "Wii",
+  "view_count": 1042
+}

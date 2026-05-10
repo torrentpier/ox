@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 59680,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25842,
+  "last_post_date": 1395208399,
+  "node_id": 57,
+  "post_date": 1395202807,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59680,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "после переезда на другой хостинг, каждое утро форум временно отключен, приходится вручную запускать его. В логах только это Premature end of script headers: cron.php<br />\n[Wed Mar 19 05:05:31 2014] [error] [client 144.76.9.110], кто подскажет где капать, cron то работает нормально",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1395202807,
+      "user_id": 4096,
+      "user_title": "User",
+      "username": "Pika"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59683,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "всё стало ясно это задача крона Board maintenance , так как сервер находится в германии и разница с москоу в 3 часа форум отключается в 8:00  а не в 5:00 . можно удалить тему, соррь за флуд.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1395208399,
+      "user_id": 4096,
+      "user_title": "User",
+      "username": "Pika"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "forum-vremenno-otklucen",
+  "sticky": false,
+  "tags": [],
+  "title": "Форум временно отключен",
+  "url_path": "/threads/forum-vremenno-otklucen.25842/",
+  "user_id": 4096,
+  "username": "Pika",
+  "view_count": 1531
+}

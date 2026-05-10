@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 3324,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 19,
+    "title": "Adaptation of modifications to TorrentPier"
+  },
+  "id": 306,
+  "last_post_date": 1317213552,
+  "node_id": 19,
+  "post_date": 1317142691,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 3324,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "День добрый,<br />\nнадеюсь что пишу в правильном разделе 🙂<br />\n<br />\nу нас стоит доисторический уже движек <a href=\"http://www.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">TorrentPier</a> 0.3.5 + кто то что то там дописывал + стоит небольшая кучка модов.<br />\n<br />\nЕсть ли какой либо более или менее простой и быстрый способ переезда на новый <a href=\"http://www.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">TorrentPier</a> II?<br />\n<br />\nИли придется вручную переносить по маленьким частям?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1317142691,
+      "user_id": 319,
+      "user_title": "User",
+      "username": "Sir_Antonio"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 3326,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "через сравнивание бд - ручками",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1317143250,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 3332,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "эх... думал может есть другой способ ) на какой релиз посоветуете переезжать на 261 (stable) или 293 или может планируется новый stable релиз в ближайшем будущем?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1317190421,
+      "user_id": 319,
+      "user_title": "User",
+      "username": "Sir_Antonio"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 3342,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "баги в обоих.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1317213552,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    }
+  ],
+  "prefix_id": 45,
+  "reply_count": 3,
+  "slug": "pereezd-s-torrentpier-0-3-5",
+  "sticky": false,
+  "tags": [],
+  "title": "Переезд с TorrentPier 0.3.5",
+  "url_path": "/threads/pereezd-s-torrentpier-0-3-5.306/",
+  "user_id": 319,
+  "username": "Sir_Antonio",
+  "view_count": 2881
+}

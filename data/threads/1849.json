@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 24551,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1849,
+  "last_post_date": 1356311477,
+  "node_id": 57,
+  "post_date": 1356267276,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24551,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вот страница сайта незарегистрированных пользователей которые еще не вошли на трекер<img src=\"http://i51.fastpic.ru/big/2012/1223/bc/c6e44d83367e4d6a8e904cf489aee9bc.png\" alt=\"\" /><br />\n <br />\nА когда вошол на сайт через логин и пороль сразу вот все норм<br />\n<img src=\"http://i51.fastpic.ru/big/2012/1223/49/8416c5b1428ac4bc4432b854cc106549.png\" alt=\"\" /><br />\n <br />\nКак сделать так чтоб незарегистрированные пользователи видели тоже что и зарегистрированные?????",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1356267276,
+      "user_id": 3322,
+      "user_title": "User",
+      "username": "nasa32"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24560,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Кеш очистить.<br />\n <br />\nPS. Гениальное решение - замазывать на скриншотах свой ник, который идентичен нику на этом форуме. И адрес трекера, который в логотипе содержится.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1356273332,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24564,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\">PS. Гениальное решение - замазывать на скриншотах свой ник, который идентичен нику на этом форуме. И адрес трекера, который в логотипе содержится.</blockquote>С утра поднял настроение на весь день 😀",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1356279176,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Sarymian"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24565,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Форумы- права доступа",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1356280029,
+      "user_id": 1126,
+      "user_title": "User",
+      "username": "fiks44"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24574,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\">замазывать</blockquote>ещё и паинте).",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1356311477,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "raznoe-otobrazenie-dla-zaloginennyh-i-gostej",
+  "sticky": false,
+  "tags": [],
+  "title": "Разное отображение для залогиненных и гостей",
+  "url_path": "/threads/raznoe-otobrazenie-dla-zaloginennyh-i-gostej.1849/",
+  "user_id": 3322,
+  "username": "nasa32",
+  "view_count": 1388
+}

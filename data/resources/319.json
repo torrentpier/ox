@@ -1,0 +1,226 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Улучшенная капча by belomaxorka.zip",
+      "id": 6431,
+      "local_path": null,
+      "r2_key": null,
+      "size": 10994,
+      "src_url": "https://torrentpier.com/api/resource-versions/620/download?file=6431"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "curl",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1737470258,
+      "file_size": 29370,
+      "filename": "photo_2025-01-21_17-35-17.webp",
+      "height": 322,
+      "id": 6329,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2025-01-21_17-35-17-webp.6329/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6333-fb71dcbd66bb607db51b45c6e5972244.jpg?hash=J4llDHC9DZ",
+      "width": 1280
+    },
+    {
+      "attach_date": 1737470259,
+      "file_size": 23040,
+      "filename": "photo_2025-01-21_17-35-46.webp",
+      "height": 324,
+      "id": 6330,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2025-01-21_17-35-46-webp.6330/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6334-97dbfe1be71dc89584e482447b7876dc.jpg?hash=qnkcvLpJbJ",
+      "width": 1280
+    },
+    {
+      "attach_date": 1737470465,
+      "file_size": 27698,
+      "filename": "photo_2025-01-21_17-40-50.webp",
+      "height": 421,
+      "id": 6331,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2025-01-21_17-40-50-webp.6331/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6335-c344b2fbbb371321631406a83b7310a7.jpg?hash=uM-wbgpENq",
+      "width": 1280
+    },
+    {
+      "attach_date": 1737480123,
+      "file_size": 26710,
+      "filename": "photo_2025-01-21_20-21-42.webp",
+      "height": 363,
+      "id": 6333,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2025-01-21_20-21-42-webp.6333/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6337-b877817b5fe9e7dd9ae6f75a6b4a5af8.jpg?hash=yP5ZQcDZqZ",
+      "width": 1280
+    },
+    {
+      "attach_date": 1737792881,
+      "file_size": 14950,
+      "filename": "[torrentpier.com]1737792746094.webp",
+      "height": 237,
+      "id": 6339,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/torrentpier-com-1737792746094-webp.6339/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6343-2c882cb7a61a24e05bd676a38d0ff0cd.jpg?hash=RnQS15-PGh",
+      "width": 1880
+    },
+    {
+      "attach_date": 1737793114,
+      "file_size": 17242,
+      "filename": "[torrentpier.com]1737793022259.webp",
+      "height": 239,
+      "id": 6342,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/torrentpier-com-1737793022259-webp.6342/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6346-4cb7055f1e7215ae436fcc0dbd64fe27.jpg?hash=2csslrnDpc",
+      "width": 1882
+    }
+  ],
+  "description_parsed": "<div style=\"text-align: center\"><span style=\"color: rgb(226, 80, 65)\">Данный мод интегрирован по-умолчанию начиная с версии v2.4.5</span>&#8203;</div><hr /><b>Описание:</b> Добавляет большое количество новых сервисов капчи.<br />\n<b>Совместимость</b>: все версии выше v2.1.4, LTS.<br />\n<b>Список поддерживаемых сервисов капчи:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">ReCaptcha v2</li>\n<li data-xf-list-type=\"ul\">ReCaptcha v3</li>\n<li data-xf-list-type=\"ul\">hCaptcha</li>\n<li data-xf-list-type=\"ul\">Yandex Smart Captcha</li>\n<li data-xf-list-type=\"ul\">Cloudflare Turnstile</li>\n</ul>",
+  "download_count": 653,
+  "external_url": null,
+  "icon_url": null,
+  "id": 319,
+  "is_fileless": null,
+  "last_update": 1743787637,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1737468195,
+  "resource_state": "visible",
+  "slug": "ulucsennaa-kapca",
+  "tag_line": "Добавляет большое количество новых сервисов капчи",
+  "tags": [
+    "recaptcha",
+    "recaptcha v3",
+    "боты",
+    "гугл капча",
+    "капча",
+    "капча v3",
+    "мод",
+    "моды",
+    "обход капчи"
+  ],
+  "title": "Улучшенная капча",
+  "url_path": "/resources/ulucsennaa-kapca.319/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.2.0",
+  "versions": [
+    {
+      "download_count": 223,
+      "files": [
+        {
+          "filename": "[FULL] Улучшенная капча by belomaxorka.zip",
+          "id": 6431,
+          "local_path": null,
+          "r2_key": null,
+          "size": 10994,
+          "src_url": "https://torrentpier.com/api/resource-versions/620/download?file=6431"
+        }
+      ],
+      "id": 620,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1743787637,
+      "version_state": "visible",
+      "version_string": "v1.2.0",
+      "view_url": "https://torrentpier.com/resources/ulucsennaa-kapca.319/version/620/"
+    },
+    {
+      "download_count": 162,
+      "files": [
+        {
+          "filename": "[FULL] Улучшенная капча by belomaxorka.zip",
+          "id": 6345,
+          "local_path": null,
+          "r2_key": null,
+          "size": 10803,
+          "src_url": "https://torrentpier.com/api/resource-versions/593/download?file=6345"
+        }
+      ],
+      "id": 593,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1737794723,
+      "version_state": "visible",
+      "version_string": "v1.1.1",
+      "view_url": "https://torrentpier.com/resources/ulucsennaa-kapca.319/version/593/"
+    },
+    {
+      "download_count": 135,
+      "files": [
+        {
+          "filename": "[FULL] Улучшенная капча by belomaxorka.zip",
+          "id": 6332,
+          "local_path": null,
+          "r2_key": null,
+          "size": 10797,
+          "src_url": "https://torrentpier.com/api/resource-versions/592/download?file=6332"
+        }
+      ],
+      "id": 592,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1737471419,
+      "version_state": "visible",
+      "version_string": "v1.1.0",
+      "view_url": "https://torrentpier.com/resources/ulucsennaa-kapca.319/version/592/"
+    },
+    {
+      "download_count": 140,
+      "files": [
+        {
+          "filename": "[FULL] Улучшенная капча by belomaxorka.zip",
+          "id": 6328,
+          "local_path": null,
+          "r2_key": null,
+          "size": 11914,
+          "src_url": "https://torrentpier.com/api/resource-versions/591/download?file=6328"
+        }
+      ],
+      "id": 591,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1737468195,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/ulucsennaa-kapca.319/version/591/"
+    }
+  ],
+  "view_count": 1246
+}

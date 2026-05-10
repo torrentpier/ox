@@ -1,0 +1,161 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Подсветка ников по званию by frost444.zip",
+      "id": 6266,
+      "local_path": null,
+      "r2_key": null,
+      "size": 19894,
+      "src_url": "https://torrentpier.com/api/resource-versions/580/download?file=6266"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "frost444",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1734005399,
+      "file_size": 22654,
+      "filename": "firefox_80fXOjxLSv.webp",
+      "height": 139,
+      "id": 6255,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_80fxojxlsv-webp.6255/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6259-aba4badcbcd24cdb29897339b064a7a9.jpg?hash=uLW9YaYeqy",
+      "width": 958
+    },
+    {
+      "attach_date": 1734005399,
+      "file_size": 5108,
+      "filename": "firefox_0255KRiBwD.webp",
+      "height": 237,
+      "id": 6256,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_0255kribwd-webp.6256/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6260-daeed40bce59fa66349fd29faa2cf10b.jpg?hash=6hsrA872g-",
+      "width": 160
+    },
+    {
+      "attach_date": 1734005399,
+      "file_size": 23570,
+      "filename": "firefox_Mlh0qXM9gX.webp",
+      "height": 202,
+      "id": 6257,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_mlh0qxm9gx-webp.6257/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6261-ce4751c1ccb5234c831ab06617d0d3a3.jpg?hash=fUmRiQTey-",
+      "width": 710
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Добавляет возможность выбрать для ника определенный цвет, при этом без необходимости править / добавлять css-класс. В случае если у вас указан стиль (css-класс) для звания, то цвет указанный в нём будет замен цветом который вы укажите в поле &quot;Цвет ника&quot;. Если вы не хотите для звания устанавливать цвет ника, то поле можно оставить пустым, в таком случае цвет ника и звания будет взят напрямую с css-класса.<br />\n<br />\n<b>Изменения в сравнении с </b><a href=\"https://torrentpier.com/threads/podsvetka-nikov-po-zvaniju.531/\" class=\"link link--internal\"><b>оригинальным модом</b></a><b>:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Используется новая версия библиотеки</li>\n<li data-xf-list-type=\"ul\">Исправлены найденные проблемы</li>\n<li data-xf-list-type=\"ul\">Возможность использовать CSS-классы сохранена</li>\n</ul><b>Совместимость:</b> v2.1.5, LTS, версии новее.",
+  "download_count": 518,
+  "external_url": null,
+  "icon_url": null,
+  "id": 312,
+  "is_fileless": null,
+  "last_update": 1734251652,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1734005418,
+  "resource_state": "visible",
+  "slug": "podsvetka-nikov-po-zvaniu",
+  "tag_line": "Добавляет возможность выбрать цвет ника по званию.",
+  "tags": [
+    "звания",
+    "мод",
+    "моды",
+    "ник",
+    "смена цвета ника",
+    "цвет ника по званию"
+  ],
+  "title": "Подсветка ников по званию",
+  "url_path": "/resources/podsvetka-nikov-po-zvaniu.312/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.2",
+  "versions": [
+    {
+      "download_count": 281,
+      "files": [
+        {
+          "filename": "[FULL] Подсветка ников по званию by frost444.zip",
+          "id": 6266,
+          "local_path": null,
+          "r2_key": null,
+          "size": 19894,
+          "src_url": "https://torrentpier.com/api/resource-versions/580/download?file=6266"
+        }
+      ],
+      "id": 580,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1734251652,
+      "version_state": "visible",
+      "version_string": "v1.0.2",
+      "view_url": "https://torrentpier.com/resources/podsvetka-nikov-po-zvaniu.312/version/580/"
+    },
+    {
+      "download_count": 123,
+      "files": [
+        {
+          "filename": "[FULL] Подсветка ников по званию by frost444.zip",
+          "id": 6258,
+          "local_path": null,
+          "r2_key": null,
+          "size": 19853,
+          "src_url": "https://torrentpier.com/api/resource-versions/577/download?file=6258"
+        }
+      ],
+      "id": 577,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1734016245,
+      "version_state": "visible",
+      "version_string": "v1.0.1",
+      "view_url": "https://torrentpier.com/resources/podsvetka-nikov-po-zvaniu.312/version/577/"
+    },
+    {
+      "download_count": 115,
+      "files": [
+        {
+          "filename": "[FULL] Подсветка ников по званию by frost444.zip",
+          "id": 6254,
+          "local_path": null,
+          "r2_key": null,
+          "size": 19774,
+          "src_url": "https://torrentpier.com/api/resource-versions/576/download?file=6254"
+        }
+      ],
+      "id": 576,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1734005418,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/podsvetka-nikov-po-zvaniu.312/version/576/"
+    }
+  ],
+  "view_count": 574
+}

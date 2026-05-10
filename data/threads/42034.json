@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 93863,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42034,
+  "last_post_date": 1544814242,
+  "node_id": 47,
+  "post_date": 1544814242,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93863,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "lufton добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/drag-and-drop-fajl-list.268/\" class=\"link link--internal\">Drag and Drop файл-лист</a> - Поле файл-листа с поддержкой автозаполнения при перетаскивании файлов<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Мод поля файл-листа с поддержкой автозаполнения при перетаскивании на него файлов. Можно связать с <a href=\"https://torrentpier.com/resources/drag-and-drop-duration.267/\" class=\"link link--internal\">модом продолжительности</a> для его автозаполнения вместе с файл-листом. Может быть полезным для аудио-релизов.</blockquote><br />\n<a href=\"https://torrentpier.com/resources/drag-and-drop-fajl-list.268/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1544814242,
+      "user_id": 8750,
+      "user_title": "User",
+      "username": "lufton"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "drag-and-drop-fajl-list",
+  "sticky": false,
+  "tags": [],
+  "title": "Drag and Drop файл-лист",
+  "url_path": "/threads/drag-and-drop-fajl-list.42034/",
+  "user_id": 8750,
+  "username": "lufton",
+  "view_count": 830
+}

@@ -1,0 +1,112 @@
+{
+  "category": {
+    "description": "Section with all templates for TorrentPier.",
+    "id": 5,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Templates",
+    "view_url": "https://torrentpier.com/resources/categories/templates.5/"
+  },
+  "current_files": [
+    {
+      "filename": "AdminLTE-TP 2.1.5.rar",
+      "id": 4269,
+      "local_path": null,
+      "r2_key": null,
+      "size": 4183780,
+      "src_url": "https://torrentpier.com/api/resource-versions/364/download?file=4269"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "yes",
+    "installation": "Установка только на чистый движок заменой файлов.",
+    "owner": "AnSan",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1453030724,
+      "file_size": 37336,
+      "filename": "1.webp",
+      "height": 678,
+      "id": 4255,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/1-webp.4255/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4259-0f127407c385852e45b7b9b28522c37b.jpg?hash=HRzo4Mj7Ko",
+      "width": 1910
+    },
+    {
+      "attach_date": 1453030728,
+      "file_size": 64026,
+      "filename": "2.webp",
+      "height": 744,
+      "id": 4256,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2-webp.4256/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4260-9a9921348729d57443ed863d136edc68.jpg?hash=nmcnAdsiR4",
+      "width": 1913
+    },
+    {
+      "attach_date": 1453030731,
+      "file_size": 102024,
+      "filename": "3.webp",
+      "height": 775,
+      "id": 4257,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/3-webp.4257/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4261-963382599657b7079a6c35b41c44e9ab.jpg?hash=IgkWSH1OnE",
+      "width": 1913
+    }
+  ],
+  "description_parsed": "<a href=\"https://torrentpier.com/attachments/4255/\"><img src=\"https://torrentpier.com/data/attachments/4/4259-0f127407c385852e45b7b9b28522c37b.jpg?hash=HRzo4Mj7Ko\" alt=\"1.webp\" /></a> <a href=\"https://torrentpier.com/attachments/4256/\"><img src=\"https://torrentpier.com/data/attachments/4/4260-9a9921348729d57443ed863d136edc68.jpg?hash=nmcnAdsiR4\" alt=\"2.webp\" /></a> <a href=\"https://torrentpier.com/attachments/4257/\"><img src=\"https://torrentpier.com/data/attachments/4/4261-963382599657b7079a6c35b41c44e9ab.jpg?hash=IgkWSH1OnE\" alt=\"3.webp\" /></a> Шаблон для админ панели.",
+  "download_count": 401,
+  "external_url": null,
+  "icon_url": null,
+  "id": 247,
+  "is_fileless": null,
+  "last_update": 1453030790,
+  "rating_avg": 3.66667,
+  "rating_count": 6,
+  "resource_date": 1453030790,
+  "resource_state": "visible",
+  "slug": "sablon-adminlte",
+  "tag_line": "Шаблон для админ панели",
+  "tags": [],
+  "title": "Шаблон AdminLTE",
+  "url_path": "/resources/sablon-adminlte.247/",
+  "user_id": 35,
+  "username": "AnSan",
+  "version": "2016-01-17",
+  "versions": [
+    {
+      "download_count": 401,
+      "files": [
+        {
+          "filename": "AdminLTE-TP 2.1.5.rar",
+          "id": 4269,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4183780,
+          "src_url": "https://torrentpier.com/api/resource-versions/364/download?file=4269"
+        }
+      ],
+      "id": 364,
+      "rating_avg": 3.6666666666666665,
+      "rating_count": 6,
+      "release_date": 1453030790,
+      "version_state": "visible",
+      "version_string": "2016-01-17",
+      "view_url": "https://torrentpier.com/resources/sablon-adminlte.247/version/364/"
+    }
+  ],
+  "view_count": 924
+}

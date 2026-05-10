@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 25735,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 2089,
+  "last_post_date": 1358404070,
+  "node_id": 90,
+  "post_date": 1358319384,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25735,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "И так мы установили nginx, он даже у нас запущен, что нам нужно сделать следующим шагом? А дальше нам надо узнать, что такое модули!<br />\n <br />\nСила nginx в том, что модули статически компилируются вместе с сервером, тем самым можно оптимизировать сервер уже в процессе сборки, указав, только нужные модули.<br />\nКоротко о модулях:<br />\n <br />\n<b>core modules самое ядро</b><br />\n<b>Имя Описание</b><br />\nMain Отвечает за логирование ошибок, процессы, права доступа и тд.<br />\nEvents Настройка epoll, kqueue, select, poll и тд.<br />\n <br />\n<b>HTTP modules</b><br />\nЭти модули могут быть вкомпилированы в веб сервер при его сборки, или отключены при сборки веб сервера.<br />\n<b>Имя Описание </b>Опция отключения<br />\n<b>Core</b> Отвечает за ports, locations, error pages, aliases. --without-http<br />\n<b>Access</b> Модуль доступа, разрешающий или запрещающий соединения с ip адреса . --without-http_access_module<br />\n<b>Auth Basic </b>HTTP авторизация, наподобе Apache. --without-http_auth_basic_module<br />\n<b>Auto Index </b>Автоиндекс директории, то есть выводит листинг директории. --without-http_autoindex_module<br />\n<b>Browser </b>Распознавание &quot;User-Agent --without-http_browser_module<br />\n<b>Charset</b> Отвечает за кодировки. --without-http_charset_module<br />\n<b>Empty GIF</b> Выводит 1x1 пикселя изображение. --without-http_empty_gif_module<br />\n<b>FastCGI</b> Включает поддержку FastCGI. --without-http_fastcgi_module<br />\n<b>Geo</b> Модуль отвечает за геолокацию, используются базы MaxMind --without-http_geo_module<br />\n<b>Gzip</b> Gzip сжатие. --without-http_gzip_module<br />\n<b>Headers</b> Установка значений HTTP headers.<br />\n<b>Index</b> Установка и контроль файлов которые используются как index.<br />\n<b>Limit Requests </b>Отвечает за ограничение клиентских соединений --without-http_limit_req_module<br />\n<b>Limit Zone</b> Устанавливает ограничение соеденений для конкретной зоны(локейшен и тд), в настоящий момент не используется и следует использовать Limit Conn. --without-http_limit_zone_module<br />\n<b>Limit Conn </b>Ограничивает одновременные соеденения. --without-http_limit_conn_module<br />\n<b>Log </b>Пригодится если вам нужно сделать кастомные логи, допустим разделить гет и пост запросы по разным файлам<br />\n<b>Map</b> Отвечает за конфигурационные переменные, применяется связка ключ<span style=\"font-family: 'Wingdings'\">ß</span><span style=\"font-family: 'Wingdings'\">à</span>значение. --without-http_map_module<br />\n<b>Memcached</b> Поддержка Memcached( только чтение). --without-http_memcached_module<br />\n<b>Proxy</b> Модуль отвечающий за проксирование запросов на бекенд. --without-http_proxy_module<br />\n<b>Referer </b>Фильтрация запросов по реферу. --without-http_referer_module<br />\n<b>Rewrite</b> Модуль отвечающий за реврайты. --without-http_rewrite_module<br />\n<b>SCGI</b> поддержка протокола SCGI. --without-http_scgi_module<br />\n<b>Split Clients</b> Разделение соеденений клиентов по определенным вами условиям --without-http_split_clients_module<br />\n<b>SSI </b>Server-side includes( не реально перевести на русский, скажем так инклуды на стороне сервера). --without-http_ssi_module<br />\n<b>Upstream </b>Модуль балансировки бекендов. --without-http_upstream_ip_hash_module (ip_hash )<br />\n<b>User ID </b>Индифицирование пользователя по cookies. --without-http_userid_module<br />\n<b>uWSGI</b> Поддержка uWSGI. --without-http_uwsgi_module<br />\n<b>X-Accel </b>X-Sendfile-like модуль.<br />\n<b>Дополнительные HTTP модули</b><br />\nМогут быть добавлены при сборки.<br />\n<b>Имя Описание Опция для сборки</b><br />\n<b>Addition</b> Append text to pages. --with-http_addition_module<br />\n<b>Degradation</b> Модуль который позволяет вернуть 204 или 444 для локейшен при неватки памяти . --with-http_degradation_module<br />\n<b>Embedded Perl</b> Использование Perl в конфигурационных файлах --with-http_perl_module<br />\nFLVМодуль псевдостриминга Flash--with-http_flv_module<br />\n<b>GeoIP</b>Модуль для использование переменных из MaxMind GeoIP --with-http_geoip_module<br />\n<b>Google Perftools</b> Поддержка Google Performance Tools . --with-google_perftools_module<br />\n<b>Gzip</b> Сжатие статических файлов для увеличение скорости отдачи. --with-http_gzip_static_module<br />\n<b>Image Filter</b>Преобразование изображений с помощью Libgd --with-http_image_filter_module<br />\n<b>MP4</b> Псевдостриминг mp4 файлов с прокруткой. --with-http_mp4_module<br />\n<b>Random Index</b> Randomize directory indexes. --with-http_random_index_module<br />\n<b>Real IP</b> Позволяет изменить адрес клиента, когда Nginx используется в качестве бекэнда --with-http_realip_module<br />\n<b>Secure Link</b> С помощью модуля можно защитить файлы/директрии. --with-http_secure_link_module<br />\n<b>SSL</b> Поддержка HTTPS/SSL. --with-http_ssl_module<br />\n<b>Stub Status</b> Статистика Nginx. --with-http_stub_status_module<br />\n<b>Substitution</b> Подмена некого текста в ответах клиенту --with-http_sub_module<br />\n<b>WebDAV</b> При включение модуля Nginx можно использовать в качестве сервера WebDAV. --with-http_dav_module<br />\n<b>XSLT</b> Модуль который преобразует XML-ответ с помощью одного или нескольких шаблонов XSLT --with-http_xslt_module<br />\nТак же существуют, так называемые модули третьей части, которые по тем или иным параметрам еще не попали в дополнительные.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1358319384,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25736,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "P.S: включение/выключение модулей происходит при ручной сборки сервера или при установки в Freebsd из портов или в Gentoo c помощью use флагов.<br />\nДля <s>любителей </s><b>админов </b>бинарников придется либо руками собирать либо пользоваться как есть. 🙂",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1358325228,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25759,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "А если потом расширить нужно, то только перекомпилить? В апаче докачал, закинул в папку, всё. А тут как?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1358399017,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25762,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Только пересборка, nginx изначально позиционировался как монолитный сервер. <br />\nЗато получается огромный прирост в производительности и более безопасный сервер.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1358404070,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "zizn-posle-ustanovki-nginx",
+  "sticky": false,
+  "tags": [],
+  "title": "Жизнь после установки nginx",
+  "url_path": "/threads/zizn-posle-ustanovki-nginx.2089/",
+  "user_id": 0,
+  "username": "kenny",
+  "view_count": 4077
+}

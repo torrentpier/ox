@@ -1,0 +1,89 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 96280,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42277,
+  "last_post_date": 1720248854,
+  "node_id": 57,
+  "post_date": 1720118521,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96280,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Приветствую!<br />\n<br />\nКто-нибудь пробовал сделать на своем сайте авторизацию через VK ID и получится ли вообще её подключить к TP?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1720118521,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96286,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Ulogin поищи по форуму, уже делали и адаптация есть.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1720246663,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96287,
+      "is_admin": false,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/threads/registracija-i-vxod-cherez-ulogin.42188/\" class=\"link link--internal\"><b>Регистрация и вход через uLogin v2.1.3</b></a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1720248854,
+      "user_id": 1546,
+      "user_title": "Administrator",
+      "username": "Conteo"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "avtorizacia-na-sajte-cerez-vk-id",
+  "sticky": false,
+  "tags": [],
+  "title": "Авторизация на сайте через VK ID",
+  "url_path": "/threads/avtorizacia-na-sajte-cerez-vk-id.42277/",
+  "user_id": 5704,
+  "username": "ExPlayer",
+  "view_count": 562
+}

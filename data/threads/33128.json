@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 71905,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 33128,
+  "last_post_date": 1421171456,
+  "node_id": 57,
+  "post_date": 1421163290,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71905,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вывожу эту переменную на главной. Считает количество изменений репутации за сутки, но как быть с юзерами в других часовых поясах?<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$karmarow = DB()-&gt;fetch_row(&quot;SELECT COUNT(newid) as count FROM &quot;. BB_KARMA .&quot;  WHERE poster_id = &quot;.$userdata[&#039;user_id&#039;].&quot;  AND `time`&gt;= UNIX_TIMESTAMP(CURDATE())&quot;);</pre><br />\nВот такой велосипед не едет<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">//$tzone= (TIMENOW + (3600 * ($bb_cfg[&#039;board_timezone&#039;])))-24*3600-(3*3600);\n//$karmarow = DB()-&gt;fetch_row(&quot;SELECT COUNT(newid) as count FROM &quot;. BB_KARMA .&quot;  WHERE poster_id = &quot;.$userdata[&#039;user_id&#039;].&quot;  AND `time`&gt;= &quot;.$tzone.&quot;&quot;);</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1421163290,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71909,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"ler\">AND `time`&gt;= UNIX_TIMESTAMP(CURDATE())</blockquote>Вообще все время должно храниться в UTC, а уж часовые пояса его выводят автоматом как надо. В движке по крайней мере с датами так.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1421163616,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71910,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Т.е. UTC это ноль по гринвичу?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1421163751,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71917,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Понял, я считал за сутки а не за сегодня<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$tzone= (TIMENOW + (3600 * ($bb_cfg[&#039;board_timezone&#039;])))-24*3600;</pre>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1421164901,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71930,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"XDA\">Он наверное не поедет</blockquote>затычка в каждой <s>дырке</s> теме 👎",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1421171456,
+      "user_id": 43,
+      "user_title": "User",
+      "username": "JDVU"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "mysql-curdate-timezone",
+  "sticky": false,
+  "tags": [],
+  "title": "mysql curdate timezone",
+  "url_path": "/threads/mysql-curdate-timezone.33128/",
+  "user_id": 0,
+  "username": "ler",
+  "view_count": 1299
+}

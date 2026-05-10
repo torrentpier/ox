@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 5176,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 436,
+  "last_post_date": 1320770213,
+  "node_id": 57,
+  "post_date": 1320700230,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5176,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как реализовать?В шаблоне добавление выпадающий список, а в форуме тип в виде картинки, как на рисунке по выбору пользователем?<br />\n<img src=\"http://img204.imageshack.us/img204/9551/71633850.gif\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1320700230,
+      "user_id": 88,
+      "user_title": "User",
+      "username": "Lion18"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5179,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "могу на заказ написать",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1320704498,
+      "user_id": 2,
+      "user_title": "User",
+      "username": "_Xz_"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5185,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Lion18</b>, системы тегов не хватает?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1320711810,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5239,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Basilevs\"><b>Lion18</b>, системы тегов не хватает?</blockquote>Точнее?Я просто в шаблоны еще не лазил.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1320764139,
+      "user_id": 88,
+      "user_title": "User",
+      "username": "Lion18"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5243,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Что точнее? Это torrentpier, а не TBdev.<br />\n<br />\nВ заголовке есть BD, HD, AVI etc... Есть фильтрация в tracker.php, мало того есть возможность структурировать по типу, да почему угодно - форум позволяет.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1320770213,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "sablon-novosti-i-forum",
+  "sticky": false,
+  "tags": [],
+  "title": "Шаблон новости и форум",
+  "url_path": "/threads/sablon-novosti-i-forum.436/",
+  "user_id": 88,
+  "username": "Lion18",
+  "view_count": 1803
+}

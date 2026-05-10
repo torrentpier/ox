@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 66093,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 28684,
+  "last_post_date": 1414936499,
+  "node_id": 57,
+  "post_date": 1414926092,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66093,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Нужен мод чтобы читать переписку пользователей ЛС. Не хочется все время лазать в базу.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1414926092,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66097,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1414929488,
+      "message_parsed": "А зачем ?   Узнать о себе все хорошее? 😀",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1414929410,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66103,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Напишите сами. На данном форуме распространение этой модификации запрещено.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1414936499,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "citat-perepisku-pol-zovatelej",
+  "sticky": false,
+  "tags": [],
+  "title": "Читать переписку пользователей",
+  "url_path": "/threads/citat-perepisku-pol-zovatelej.28684/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 849
+}

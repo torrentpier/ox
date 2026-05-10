@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 2636,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 249,
+  "last_post_date": 1315488213,
+  "node_id": 57,
+  "post_date": 1315486688,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 2636,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Собственно кто-нибудь сможет это сделать или нет. Существующий announce.php с  ipv6 не дружит совсем",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1315486688,
+      "user_id": 64,
+      "user_title": "User",
+      "username": "ZIM"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 2638,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "xbt дружить умеет<br />\n<span style=\"font-size: 10px\"><span style=\"font-family: 'monospace'\"><span style=\"color: #0000bb\"><pre class=\"xfBb-code\" data-lang=\"php\">inet_pton</pre></span></span></span>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1315488213,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "polnaa-podderzka-ipv6",
+  "sticky": false,
+  "tags": [],
+  "title": "Полная поддержка ipv6",
+  "url_path": "/threads/polnaa-podderzka-ipv6.249/",
+  "user_id": 64,
+  "username": "ZIM",
+  "view_count": 1454
+}

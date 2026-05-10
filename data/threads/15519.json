@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 45355,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 15519,
+  "last_post_date": 1379971735,
+  "node_id": 57,
+  "post_date": 1379946338,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 45355,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Я хочу таблично определить место для фотографии (постера)  и место для описания. Но вот в каком файле это меняется я не знаю.<br />\nБуду рад помощи.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1379946338,
+      "user_id": 4603,
+      "user_title": "User",
+      "username": "Barkar"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 45356,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "viewtopic.tpl",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1379947292,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 45396,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо. Добавьте в вашу справку. Пригодиться.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1379968746,
+      "user_id": 4603,
+      "user_title": "User",
+      "username": "Barkar"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 45400,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Barkar</b>, не пригодится.<br />\n <br />\nз.ы. вроде и написать хочется, и вроде чувствую себя что тупо посты набиваю 🙂",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1379971735,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Sarymian"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "kakoj-fajl-sablona-otvecaet-za-stranicu-pokaza-torrenta",
+  "sticky": false,
+  "tags": [],
+  "title": "Какой файл шаблона отвечает за страницу показа торрента",
+  "url_path": "/threads/kakoj-fajl-sablona-otvecaet-za-stranicu-pokaza-torrenta.15519/",
+  "user_id": 4603,
+  "username": "Barkar",
+  "view_count": 1136
+}

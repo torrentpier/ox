@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 88242,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 41514,
+  "last_post_date": 1471984427,
+  "node_id": 90,
+  "post_date": 1471884185,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88242,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Всем доброго времени суток. Подружил апач с нджинкс, всё работает хорошо. Один ньанс появился, отключаю конфиг одного из двух сайтов, при заходе на этот сайт, открывается страница второго не отключенного сайта, как исправить это? <br />\n<code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\"><br />\nServerName 127.0.1.1<br />\n<br />\nMutex file:${APACHE_LOCK_DIR} default<br />\n<br />\nPidFile ${APACHE_PID_FILE}<br />\n<br />\nTimeout 300<br />\n<br />\nKeepAlive On<br />\n<br />\nMaxKeepAliveRequests 100<br />\n<br />\nKeepAliveTimeout 5<br />\n<br />\nUser ${APACHE_RUN_USER}<br />\nGroup ${APACHE_RUN_GROUP}<br />\n<br />\nHostnameLookups Off<br />\n<br />\nErrorLog ${APACHE_LOG_DIR}/error.log<br />\n<br />\nLogLevel warn<br />\n<br />\nIncludeOptional mods-enabled/*.load<br />\nIncludeOptional mods-enabled/*.conf<br />\n<br />\nInclude ports.conf<br />\n<br />\n&lt;Directory /&gt;<br />\n        Options FollowSymLinks<br />\n        AllowOverride None<br />\n        Require all denied<br />\n&lt;/Directory&gt;<br />\n<br />\n&lt;Directory /usr/share&gt;<br />\n        AllowOverride None<br />\n        Require all granted<br />\n&lt;/Directory&gt;<br />\n<br />\n&lt;Directory /var/www/&gt;<br />\n        Options Indexes FollowSymLinks<br />\n        AllowOverride None<br />\n        Require all granted<br />\n&lt;/Directory&gt;<br />\n<br />\n#&lt;Directory /srv/&gt;<br />\n#       Options Indexes FollowSymLinks<br />\n#       AllowOverride None<br />\n#       Require all granted<br />\n#&lt;/Directory&gt;<br />\n<br />\nAccessFileName .htaccess<br />\n<br />\n&lt;FilesMatch &quot;^\\.ht&quot;&gt;<br />\n        Require all denied<br />\n&lt;/FilesMatch&gt;<br />\n<br />\nLogFormat &quot;%v:%p %h %l %u %t \\&quot;%r\\&quot; %&gt;s %O \\&quot;%{Referer}i\\&quot; \\&quot;%{User-Agent}i\\&quot;&quot; vhost_combined<br />\nLogFormat &quot;%h %l %u %t \\&quot;%r\\&quot; %&gt;s %O \\&quot;%{Referer}i\\&quot; \\&quot;%{User-Agent}i\\&quot;&quot; combined<br />\nLogFormat &quot;%h %l %u %t \\&quot;%r\\&quot; %&gt;s %O&quot; common<br />\nLogFormat &quot;%{Referer}i -&gt; %U&quot; referer<br />\nLogFormat &quot;%{User-agent}i&quot; agent<br />\n<br />\nIncludeOptional conf-enabled/*.conf<br />\n<br />\nIncludeOptional sites-enabled/*.conf<br />\n<br />\n</code><br />\n<br />\nСобственно кофиг апача, не виртуалхоста.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1471884185,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88245,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/55/\">Lange</a>, не подскажу в случае с аппачем, но в случае с nginx проблема вызвана default_server директивой. Как костыльный вариант решения могу посоветовать сделать домен который будет представлен ip-адресом. Тогда при открытии сайта вашего хотя бы будет пустая страница открываться.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1471984427,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "apache2-i-nginx",
+  "sticky": false,
+  "tags": [],
+  "title": "Apache2 и nginx",
+  "url_path": "/threads/apache2-i-nginx.41514/",
+  "user_id": 55,
+  "username": "Lange",
+  "view_count": 1496
+}

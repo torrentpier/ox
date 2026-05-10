@@ -1,0 +1,139 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95293,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 109,
+    "title": "LTS version archive"
+  },
+  "id": 42189,
+  "last_post_date": 1699254891,
+  "node_id": 109,
+  "post_date": 1699025500,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1699025491,
+          "file_size": 12342,
+          "filename": "LTS.webp",
+          "height": 100,
+          "id": 5576,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/lts-webp.5576/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5580-833c6d5c69163ad819911ac32e7a993a.jpg?hash=8VrPBjbU8j",
+          "width": 300
+        },
+        {
+          "attach_date": 1699025623,
+          "file_size": 4909457,
+          "filename": "torrentpier-lts-2.1.5-2023.10.zip",
+          "height": 0,
+          "id": 5577,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/torrentpier-lts-2-1-5-2023-10-zip.5577/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 95293,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier LTS. Версия 2.1.5-2023.10 [Final]</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/5576/\" alt=\"LTS.png\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier-lts/releases/tag/v2.1.5-2023.10\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.1.5-2023.10 · torrentpier/torrentpier-lts</a><br />\n<br />\n<b>Основные изменения:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Release v2.1.5-2023.10 🎉</li>\n<li data-xf-list-type=\"ul\">Added ability to debug ajax_die() calls</li>\n<li data-xf-list-type=\"ul\">Added missing migration file (lts03-user_birthday.php)</li>\n<li data-xf-list-type=\"ul\">Check $tpl_vars[&#039;QUESTION&#039;] in print_confirmation() <a href=\"https://github.com/torrentpier/torrentpier-lts/commit/5bff794ac21035768e2b5f4ece716ec5d897aa94\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">5bff794</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Some fixes in admin_attach_cp.php</li>\n<li data-xf-list-type=\"ul\">Fixed undefined $lang[&#039;PREVIOUS&#039;] <a href=\"https://github.com/torrentpier/torrentpier-lts/commit/c0769be368aaac27f9e7e26b49980d1b25fbab84\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">c0769be</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Fixed broken letter marking in memberlist.php <a href=\"https://github.com/torrentpier/torrentpier-lts/commit/6be1eb994a377e75ae8a901e47ae41ecacec98c8\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">6be1eb9</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Fixed error while trying to delete posts by bot <a href=\"https://github.com/torrentpier/torrentpier-lts/commit/8ee06f87ed5b31ad327b6e159789fa016a6c4a72\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">8ee06f8</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/commit/df5ed816bfee5d68d87c7c34e5f14045e87e1b9d\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">df5ed81</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Added the ability to add additional announce URLs into torrent files</li>\n<li data-xf-list-type=\"ul\">Added check $bb_cfg[&#039;magnet_links_enabled&#039;] in create_magnet()</li>\n<li data-xf-list-type=\"ul\">Added $lang[&#039;BT_UNREGISTERED_ALREADY&#039;] lang key</li>\n<li data-xf-list-type=\"ul\">SQL: Increase speed_up &amp; speed_down type limits</li>\n<li data-xf-list-type=\"ul\">Use strip_tags() for message in prompt_for_confirm()</li>\n<li data-xf-list-type=\"ul\">Use strip_tags() for error message in ajax_die()</li>\n<li data-xf-list-type=\"ul\">Use lang variable $lang[&#039;BT_REG_FAIL&#039;] instead of text</li>\n<li data-xf-list-type=\"ul\">Fixed percentage calculation for SQL debug</li>\n<li data-xf-list-type=\"ul\">Minor improvements <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/297\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#297</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/298\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#298</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/300\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#300</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/301\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#301</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/302\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#302</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/303\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#303</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/305\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#305</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/306\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#306</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/307\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#307</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/310\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#310</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/312\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#312</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/313\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#313</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/315\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#315</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/316\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#316</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/317\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#317</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/319\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#319</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/321\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#321</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/322\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#322</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/323\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#323</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/324\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#324</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n</ul>Для обновления на версию необходимо выполнить следующие запросы к базе данных:<br />\n<pre class=\"xfBb-code\" data-lang=\"sql\">DELETE FROM `bb_extensions` WHERE `extension` = &#039;tif&#039;;\nINSERT INTO `bb_extensions` VALUES (&#039;997&#039;, &#039;4&#039;, &#039;tif&#039;, &#039;&#039;);\nDELETE FROM `bb_extensions` WHERE `extension` = &#039;tga&#039;;\nINSERT INTO `bb_extensions` VALUES (&#039;998&#039;, &#039;4&#039;, &#039;tga&#039;, &#039;&#039;);\nINSERT INTO `bb_extensions` VALUES (&#039;999&#039;, &#039;4&#039;, &#039;tiff&#039;, &#039;&#039;);\nALTER TABLE `bb_bt_tracker` CHANGE `speed_up` `speed_up` int(11) unsigned NOT NULL DEFAULT &#039;0&#039;;\nALTER TABLE `bb_bt_tracker` CHANGE `speed_down` `speed_down` int(11) unsigned NOT NULL DEFAULT &#039;0&#039;;\nALTER TABLE `bb_bt_tracker_snap` CHANGE `speed_up` `speed_up` int(11) unsigned NOT NULL DEFAULT &#039;0&#039;;\nALTER TABLE `bb_bt_tracker_snap` CHANGE `speed_down` `speed_down` int(11) unsigned NOT NULL DEFAULT &#039;0&#039;;</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1699025500,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95301,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "How to change language to english on lts version?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1699253576,
+      "user_id": 8152,
+      "user_title": "User",
+      "username": "MetalDragon"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95302,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1699254473,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"arne\">How to change language to english on lts version?</blockquote>Hello. If you want change board lanugage (in whole) go to Admin panel, is called in russia as &quot;Администраторский раздел&quot;. That link located at the bottom of page (if you loggined as admin). Next go to &quot;Конфигурация&quot; in left sidebar. Next step click on &quot;Общие настройки&quot; at the top of page. Next find &quot;Язык по умолчанию&quot; selector and choose target language.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1699254092,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95303,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"belomaxorka\">Hello. If you want change board lanugage (in whole) go to Admin panel, is called in russia as &quot;Администраторский раздел&quot;. That link located at the bottom of page (if you loggined as admin). Next go to &quot;Конфигурация&quot; in left sidebar. Next step click on &quot;Общие настройки&quot; at the top of page. Next find &quot;Язык по умолчанию&quot; selector and choose target language.</blockquote>Many many thanks",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1699254891,
+      "user_id": 8152,
+      "user_title": "User",
+      "username": "MetalDragon"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "torrentpier-lts-versia-2-1-5-2023-10-final",
+  "sticky": false,
+  "tags": [
+    "lts",
+    "lts-final",
+    "torrentpier-lts",
+    "новая версия",
+    "релиз",
+    "ченжлог"
+  ],
+  "title": "TorrentPier LTS. Версия 2.1.5-2023.10 [Final]",
+  "url_path": "/threads/torrentpier-lts-versia-2-1-5-2023-10-final.42189/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 1125
+}

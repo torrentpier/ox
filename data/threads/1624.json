@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 21790,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1624,
+  "last_post_date": 1351138225,
+  "node_id": 57,
+  "post_date": 1351138225,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 21790,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Захожу в свой профиль, в раздел аватар. Нажимаю загрузить с компьютера и выдаёт такие ошибки.<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Произошла ошибка:\nrename(/tmp/phpYHP2eK,/usr/home/Exile/www/torrentpier.com/data/avatars/l/2/2822.jpg) [function.rename]: Operation not permitted\n \n    XenForo_Application::handlePhpError()\n    rename() in XenForo/Model/Avatar.php at line 342\n    XenForo_Model_Avatar-&gt;_writeAvatar() in XenForo/Model/Avatar.php at line 206\n    XenForo_Model_Avatar-&gt;applyAvatar() in XenForo/Model/Avatar.php at line 69\n    XenForo_Model_Avatar-&gt;uploadAvatar() in XenForo/ControllerPublic/Account.php at line 482\n    XenForo_ControllerPublic_Account-&gt;actionAvatarUpload() in XenForo/FrontController.php at line 310\n    XenForo_FrontController-&gt;dispatch() in XenForo/FrontController.php at line 132\n    XenForo_FrontController-&gt;run() in /usr/home/Exile/www/torrentpier.com/index.php at line 13</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1351138225,
+      "user_id": 2822,
+      "user_title": "User",
+      "username": "RoosTeR"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "osibka-pri-ustanovke-avatarki-u-vas-na-forume",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка при установке аватарки у вас на форуме.",
+  "url_path": "/threads/osibka-pri-ustanovke-avatarki-u-vas-na-forume.1624/",
+  "user_id": 2822,
+  "username": "RoosTeR",
+  "view_count": 1302
+}

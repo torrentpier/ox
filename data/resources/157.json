@@ -1,0 +1,166 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "Чат на Аяксе.zip",
+      "id": 5493,
+      "local_path": null,
+      "r2_key": null,
+      "size": 7273,
+      "src_url": "https://torrentpier.com/api/resource-versions/393/download?file=5493"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"][PHP]\nФайл chat.php поместить в library/ajax.\n\n----------------------------------------------------\n-- index.php\n- найти\n$user->session_start();\n+ после вставить\n$page_cfg['include_bbcode_js'] = true;\n\nif($bb_cfg['chat'])\n{\n    if (!$sql = CACHE('bb_cache')->get('chat'))\n    {\n        $sql = DB()->fetch_rowset(\"SELECT c.*, u.username, u.user_rank, u.avatar_ext_id, u.user_opt\n            FROM bb_chat c\n            LEFT JOIN \". BB_USERS .\" u ON(u.user_id = c.user_id)\n            ORDER BY c.id DESC\n            LIMIT {$bb_cfg['chat_message']}\");\n        CACHE('bb_cache')->set('chat', $sql);\n    }\n\n    foreach($sql as $row)\n    {\n        $message = '<div class=\"row1 chat-comment\" id=\"pp_'. $row['id'] .'\"><div style=\"min-height: 32px;\">';\n        $message .= ($row['user_id'] == GUEST_UID) ? '' : '<a href=\"'. PROFILE_URL . $row['user_id'] .'\">';\n        $message .= str_replace('<img', '<img align=\"left\" height=\"32\" width=\"32\" style=\"padding-right: 3px;\"', get_avatar($row['user_id'], $row['avatar_ext_id'], !bf($row['user_opt'], 'user_opt', 'dis_avatar')));\n        $message .= ($row['user_id'] == GUEST_UID) ? '' : '</a>';\n        if(IS_AM)\n        {\n            $message .= '<input onclick=\"set_hid_chbox('. $row['id'] .');\" class=\"floatR chat-post\" type=\"checkbox\" value=\"'. $row['id'] .'\" />';\n            $message .= '<span onclick=\"edit_comment('. $row['id'] .'); return false;\" class=\"txtb floatR\">[p]</span>';\n        }\n        $title_ip = (IS_ADMIN) ? decode_ip($row['ip']) : 'Ник в чат';\n        $message .= '<a href=\"#\" class=\"bold\" title=\"'. $title_ip .'\" onclick=\"add_nick(\\'[n]'. $row['username'] .'[/n]\\'); return false;\">'. str_replace('title=\"', 'data=\"', profile_url(array('username' => $row['username'], 'user_rank' => $row['user_rank']))) .'</a><div class=\"small\">'. bb_date($row['time']) .'</div></div>';\n        $message .= '<div class=\"spacer_2\"></div><span style=\"font-size: 11px;\">'. $row['text_html'] .'</span></div>';\n        $message .= (IS_AM) ? '<span id=\"pe_'. $row['id'] .'\"></span>' : '';\n\n        $template->assign_block_vars('chat', array(\n            'TEXT'        => $message,\n        ));\n    }\n    $template->assign_vars(array(\n        'CHAT_ID' => (int) @$sql[0]['id'],\n    ));\n}\n----------------------------------------------------\n-- page_header.tpl\n+ вставить в удобное место (Желательно внутри <!--sidebar1-->)\n<!-- IF $bb_cfg['chat'] -->\n            <script type=\"text/javascript\">\n                var id = {CHAT_ID};\n                ajax.callback.chat = function(data) {\n                    if(data.up) $('#chat').scrollTop(0);\n                    if(data.clear) {\n                        $('.chat_message').attr('value', '');\n                        get_message_chat(1);\n                    }\n                    <!-- IF IS_AM -->\n                    else if(data.del) {\n                        for(i=0; i < data.del.length; i++) {\n                            $('#pp_'+ data.del[i]).hide();\n                        }\n                    }else if(data.html){\n                        $('#pp_'+ data.post_id).show().html(data.html);\n                        initPostBBCode('#pp_'+ data.post_id);\n                        $('#pe_'+ data.post_id).hide();\n                        ajax.open = false;\n                    } else if(data.text){\n                        ajax.open = data.post_id;\n                        $('#pe_'+ data.post_id).html(data.text);\n                    }\n                    <!-- ENDIF -->\n                    else {\n                        if(data.message) $('#chat').prepend(data.message);\n                        initPostBBCode('#chat');\n                    }\n\n                    if(data.id) id = data.id;\n                };\n                setInterval(function(){ get_message_chat(0); }, 25000);\n\n                function get_message_chat(up){\n                    ajax.exec({action : 'chat', mode: 'select', id: id, up: up});\n                }\n                function submit_click(e) {\n                    e = e || window.event;\n                    if (e.keyCode == 13 && e.ctrlKey) {\n                        submit_chat();\n                    };\n                }\n                function submit_chat(){\n                    var message = $('.chat_message').val();\n                    if (message.length < 3) {\n                        alert('Вы должны ввести текст сообщения');\n                        $('.chat_message').focus();\n                        return false;\n                    }\n                    ajax.exec({action : 'chat', mode: 'insert', message: message});\n                }\n                function add_nick(text){\n                    var message = $('.chat_message').val();\n                    $('.chat_message').attr('value', message + text +' ');\n                    $('.chat_message').focus();\n                }\n            </script>\n            <!-- IF IS_AM -->\n            <script type=\"text/javascript\">\n                ajax.open = false;\n                function edit_comment (post_id, text, type) {\n                    if(ajax.open && ajax.open != post_id) {\n                        alert('У вас уже открыто одно быстрое редактирование!');\n                    } else{\n                        if(ajax.open && !text){\n                            $('#pp_'+ post_id).show();\n                            $('#pe_'+ post_id).hide();\n                        } else{\n                            $('#pp_'+ post_id).hide();\n                            $('#pe_'+ post_id).show();\n\n                            ajax.exec({\n                                action  : 'chat',\n                                mode    : 'edit',\n                                post_id : post_id,\n                                text    : text,\n                                type    : type\n                            });\n                        }\n                        ajax.open = false;\n                    }\n                }\n                function del_message_chat(){\n                    if(!confirm('Вы уверены, что хотите удалить эти сообщения?')) return false;\n                    var ids = 0;\n                    $('input.chat-post:checked').each(function(){\n                        ids += ','+ this.value;\n                    });\n                    if(!ids) alert('Вы не выбрали сообщения.');\n                    else ajax.exec({action : 'chat', mode: 'delete', ids: ids});\n                }\n                function set_hid_chbox(id)\n                {\n                    $('#pp_'+ id).toggleClass('hl-selected-post');\n                    return false;\n                }\n            </script>\n            <!-- ENDIF -->\n            <style type=\"text/css\">\n                #chat { overflow: auto; height: 300px; }\n                .chat-comment {\n                    margin: 3px;\n                    padding: 4px;\n                    border: solid 1px #b7c0c5;\n                    border-radius: 5px;\n                    -moz-border-radius: 5px;\n                    -webkit-border-radius: 5px;\n                }\n                textarea.chat_message {\n                    height: 40px;\n                    margin: 4px;\n                    border-radius: 0px;\n                    -moz-border-radius: 0px;\n                    -webkit-border-radius: 0px;\n                    font-size: 11px;\n                }\n                #submit_chat {\n                    border: 1px solid #b7c0c5;\n                    padding: 2px;\n                    background-color: #EFEFEF;\n                    font-size: 10px;\n                    font-weight: bold;\n                }\n                #submit_chat:hover { color: #0080FF; }\n            </style>\n            <h3>Мини чат</h3>\n            <div class=\"tCenter\">\n                <form name=\"post\">\n                    <textarea class=\"chat_message w90\" id=\"message\" onkeydown=\"submit_click(event)\"></textarea>\n                    <div class=\"buttons mrg_4\">\n                        <input type=\"button\" value=\"B\" name=\"codeB\" title=\"{L_BOLD}\" style=\"font-weight: bold; width: 30px;\" />\n                        <input type=\"button\" value=\"i\" name=\"codeI\" title=\"{L_ITALIC}\" style=\"width: 30px; font-style: italic;\" />\n                        <input type=\"button\" value=\"u\" name=\"codeU\" title=\"{L_UNDERLINE}\" style=\"width: 30px; text-decoration: underline;\" />\n                        <input type=\"button\" value=\"s\" name=\"codeS\" title=\"{L_STRIKEOUT}\" style=\"width: 30px; text-decoration: line-through;\" />&nbsp;&nbsp;\n                        <input type=\"button\" value=\"{L_QUOTE}\" name=\"codeQuote\" title=\"{L_QUOTE_TITLE}\" style=\"width: 57px;\" />\n                        <input type=\"button\" value=\"Img\" name=\"codeImg\" title=\"{L_IMG_TITLE}\" style=\"width: 40px;\" />\n                        <input type=\"button\" value=\"{L_URL}\" name=\"codeUrl\" title=\"{L_URL_TITLE}\" style=\"width: 63px; text-decoration: underline;\" />\n                        <input type=\"hidden\" name=\"codeUrl2\" />&nbsp;\n                        <input type=\"button\" value=\"{L_CODE}\" name=\"codeCode\" title=\"{L_CODE_TITLE}\" style=\"width: 43px;\" />\n                        <input type=\"button\" value=\"{L_LIST}\" name=\"codeList\" title=\"{L_LIST_TITLE}\" style=\"width: 60px;\" />\n                        <input type=\"button\" value=\"1.\" name=\"codeOpt\" title=\"{L_LIST_ITEM}\" style=\"width: 30px;\" />&nbsp;\n                        <input type=\"button\" value=\"{L_QUOTE_SEL}\" name=\"quoteselected\" title=\"{L_QUOTE_SELECTED}\" onmouseout=\"bbcode.refreshSelection(false);\" onmouseover=\"bbcode.refreshSelection(true);\" onclick=\"bbcode.onclickQuoteSel();\" />&nbsp;\n                    </div>\n                    <script type=\"text/javascript\">\n                        var bbcode = new BBCode(\"message\");\n                        var ctrl = \"ctrl\";\n\n                        bbcode.addTag(\"codeB\", \"b\", null, \"B\", ctrl);\n                        bbcode.addTag(\"codeI\", \"i\", null, \"I\", ctrl);\n                        bbcode.addTag(\"codeU\", \"u\", null, \"U\", ctrl);\n                        bbcode.addTag(\"codeS\", \"s\", null, \"S\", ctrl);\n\n                        bbcode.addTag(\"codeQuote\", \"quote\", null, \"Q\", ctrl);\n                        bbcode.addTag(\"codeImg\", \"img\", null, \"R\", ctrl);\n                        bbcode.addTag(\"codeUrl\", \"url\", \"/url\", \"\", ctrl);\n                        bbcode.addTag(\"codeUrl2\", \"url=\", \"/url\", \"W\", ctrl);\n\n                        bbcode.addTag(\"codeCode\", \"code\", null, \"K\", ctrl);\n                        bbcode.addTag(\"codeList\",  \"list\", null, \"L\", ctrl);\n                        bbcode.addTag(\"codeOpt\", \"*\", \"\", \"0\", ctrl);\n                    </script>\n\n                    <div class=\"floatR pad_4\">\n                        <span title=\"Оправить (Ctrl+Enter)\" id=\"submit_chat\" onclick=\"submit_chat(); return false;\">Отправить</span>\n                        <span title=\"Очистить\" id=\"submit_chat\" onclick=\"$('.chat_message').attr('value', ''); $('.chat_message').focus();\">&nbsp;X&nbsp;</span>\n                        <span title=\"Смайлы\" id=\"submit_chat\" onclick=\"window.open('posting.php?mode=smilies', '_phpbbsmilies', 'height=540, resizable=yes, scrollbars=yes ,width=620, left=360, top=60'); return false;\">&nbsp;:)&nbsp;</span>\n                        <!-- IF IS_AM --><span title=\"Удалялка\" id=\"submit_chat\" onclick=\"del_message_chat();\">&#8224;</span><!-- ENDIF -->\n                        <img title=\"Обновить чат\" onclick=\"get_message_chat(1);\" src=\"/styles/images/pic_loading.gif\">\n                    </div>\n                    <div class=\"clear\"></div>\n                    <div class=\"spacer_2\"></div>\n                    <div class=\"tLeft w100\" id=\"chat\">\n                        <!-- BEGIN chat -->{chat.TEXT}<!-- END chat -->\n                    </div>\n                </form>\n            </div>\n        </div>\n        <div class=\"cat_separator\"></div>\n        <!-- ENDIF -->\n----------------------------------------------------\n-- config.php\n+ в самый конец\n$bb_cfg['chat']         = true;\n$bb_cfg['chat_message'] = 50;\n----------------------------------------------------\n-- sql\nCREATE TABLE `bb_chat` (\n  `id` int(11) NOT NULL auto_increment,\n  `user_id` int(11) NOT NULL default '0',\n  `time` int(11) NOT NULL default '0',\n  `text` text NOT NULL,\n  `text_html` text NOT NULL,\n  `ip` char(32) NOT NULL,\n  PRIMARY KEY  (`id`)\n) ENGINE=MyISAM  DEFAULT CHARSET=utf8;\n----------------------------------------------------\n-- ajax.php\n- найти\nswitch ($ajax->action)\n{\n    case 'view_post':\n    case 'posts':\n    case 'post_mod_comment':\n        require INC_DIR . '/bbcode.php';\n        break;\n+ заменить на\nswitch ($ajax->action)\n{\n    case 'chat':\n    case 'view_post':\n    case 'posts':\n    case 'post_mod_comment':\n        require INC_DIR . '/bbcode.php';\n        break;\n----------------------------------------------------\n-- src/Ajax.php\n- найти\n        'view_post' => ['guest'],\n+ после вставить\n        'chat' => ['guest'],\n- найти\n    public function manage_user()\n    {\n        require AJAX_DIR . '/manage_user.php';\n    }\n+ после вставить\n    public function chat()\n    {\n        require AJAX_DIR . '/chat.php';\n    }\n----------------------------------------------------\n[/PHP][/SPOILER]",
+    "owner": "_Xz_",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425214382,
+      "file_size": 113426,
+      "filename": "1.webp",
+      "height": 923,
+      "id": 3053,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/1-webp.3053/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3057-806262a8a86db32b7c15e63ca1aff776.jpg?hash=IbYJRiL1CA",
+      "width": 1280
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет чат с большим числом возможностей.",
+  "download_count": 1613,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/157.jpg?1425424703",
+  "id": 157,
+  "is_fileless": null,
+  "last_update": 1691308067,
+  "rating_avg": 5,
+  "rating_count": 2,
+  "resource_date": 1425204343,
+  "resource_state": "visible",
+  "slug": "cat",
+  "tag_line": "Добавляет чат с большим числом возможностей.",
+  "tags": [],
+  "title": "Чат",
+  "url_path": "/resources/cat.157/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "2.0.1",
+  "versions": [
+    {
+      "download_count": 563,
+      "files": [
+        {
+          "filename": "Чат на Аяксе.zip",
+          "id": 5493,
+          "local_path": null,
+          "r2_key": null,
+          "size": 7273,
+          "src_url": "https://torrentpier.com/api/resource-versions/393/download?file=5493"
+        }
+      ],
+      "id": 393,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1691308067,
+      "version_state": "visible",
+      "version_string": "2.0.1",
+      "view_url": "https://torrentpier.com/resources/cat.157/version/393/"
+    },
+    {
+      "download_count": 239,
+      "files": [
+        {
+          "filename": "Чат на Аяксе.zip",
+          "id": 5425,
+          "local_path": null,
+          "r2_key": null,
+          "size": 7225,
+          "src_url": "https://torrentpier.com/api/resource-versions/392/download?file=5425"
+        }
+      ],
+      "id": 392,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1685343075,
+      "version_state": "visible",
+      "version_string": "2.0.0",
+      "view_url": "https://torrentpier.com/resources/cat.157/version/392/"
+    },
+    {
+      "download_count": 391,
+      "files": [
+        {
+          "filename": "Чат Лога.zip",
+          "id": 3054,
+          "local_path": null,
+          "r2_key": null,
+          "size": 6212,
+          "src_url": "https://torrentpier.com/api/resource-versions/181/download?file=3054"
+        }
+      ],
+      "id": 181,
+      "rating_avg": 5,
+      "rating_count": 2,
+      "release_date": 1425214441,
+      "version_state": "visible",
+      "version_string": "1.2.0",
+      "view_url": "https://torrentpier.com/resources/cat.157/version/181/"
+    },
+    {
+      "download_count": 231,
+      "files": [
+        {
+          "filename": "[FULL] Чат.zip",
+          "id": 3033,
+          "local_path": null,
+          "r2_key": null,
+          "size": 6931,
+          "src_url": "https://torrentpier.com/api/resource-versions/178/download?file=3033"
+        }
+      ],
+      "id": 178,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425209537,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/cat.157/version/178/"
+    },
+    {
+      "download_count": 236,
+      "files": [
+        {
+          "filename": "Чат.zip",
+          "id": 3022,
+          "local_path": null,
+          "r2_key": null,
+          "size": 5606,
+          "src_url": "https://torrentpier.com/api/resource-versions/174/download?file=3022"
+        }
+      ],
+      "id": 174,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425204343,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/cat.157/version/174/"
+    }
+  ],
+  "view_count": 3837
+}

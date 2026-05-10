@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 11202,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 889,
+  "last_post_date": 1328530147,
+  "node_id": 3,
+  "post_date": 1328529861,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 11202,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Что-то с этим не все хорошо, а точнее плохо, и скорей всего не только у меня. Хотелось бы обсудить кто какие методы стимулирования пользователей к созданию и поддержанию релизов на трекере использует у себя? Рейтинг и сидбонусы уже как то не очень эффективны, про них не упоминаем, может вместе пора придумать что-то новое? У кого какие мысли есть? У меня например есть мысль сделать отдачу пополам с чужой раздачи, а со своей раздачи в удвоенном количестве, но это опять же про рейтинг.<br />\nЯ думаю полезно будет всем поучаствовать, может общим разумом придумаем и реализуем ноу-хау? А все остальные трекеры, не TP2, будут тихо курить в сторонке 🙂",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1328529861,
+      "user_id": 238,
+      "user_title": "User",
+      "username": "Kex"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 11203,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "давно у себя практикую игры, а также покупка подарков за бонусы",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1328530007,
+      "user_id": 2,
+      "user_title": "User",
+      "username": "_Xz_"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 11204,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "А можно поподробней, что за игры, какого характера подарки?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1328530147,
+      "user_id": 238,
+      "user_title": "User",
+      "username": "Kex"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "stimulirovanie-pol-zovatelej-sozdavat-relizy-na-trekere",
+  "sticky": false,
+  "tags": [],
+  "title": "Стимулирование пользователей создавать релизы на трекере",
+  "url_path": "/threads/stimulirovanie-pol-zovatelej-sozdavat-relizy-na-trekere.889/",
+  "user_id": 238,
+  "username": "Kex",
+  "view_count": 1556
+}

@@ -1,0 +1,180 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Торрентбар by _Xz_.zip",
+      "id": 5950,
+      "local_path": null,
+      "r2_key": null,
+      "size": 250238,
+      "src_url": "https://torrentpier.com/api/resource-versions/486/download?file=5950"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "gd расширение",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "_Xz_",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1712415884,
+      "file_size": 7872,
+      "filename": "photo_2024-04-06_21-49-55.webp",
+      "height": 149,
+      "id": 5941,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2024-04-06_21-49-55-webp.5941/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5945-88d6f8296061fc25cfb6939424a63a99.jpg?hash=__9aduVwE9",
+      "width": 1050
+    },
+    {
+      "attach_date": 1712415884,
+      "file_size": 24262,
+      "filename": "photo_2024-04-06_21-50-28.webp",
+      "height": 265,
+      "id": 5942,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2024-04-06_21-50-28-webp.5942/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5946-4ceb75cdc93c2c7bbf25fc7d223d66f1.jpg?hash=9jQemouquf",
+      "width": 1280
+    },
+    {
+      "attach_date": 1712415885,
+      "file_size": 16268,
+      "filename": "photo_2024-04-06_21-50-56.webp",
+      "height": 337,
+      "id": 5943,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2024-04-06_21-50-56-webp.5943/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5947-52e8f906462ec91a09ca0c93e24ea765.jpg?hash=RmcWYlqTPI",
+      "width": 825
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Мод добавляет BBCode для вставки уникального баннера пользователя. Баннер содержит ник, аватарку, лычку и торрент-статистику владельца баннера. Удобно использовать в качестве подписи на других трекерах.<br />\n<br />\n<b>Достоинства мода</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Возможность выбора пользователем шаблона баннера</li>\n<li data-xf-list-type=\"ul\">Автоматическая генерация баннера</li>\n<li data-xf-list-type=\"ul\">Система кэширования</li>\n</ul><b>Что содержит баннер?</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Ссылка на трекер</li>\n<li data-xf-list-type=\"ul\">Ник пользователя</li>\n<li data-xf-list-type=\"ul\">Аватарка пользователя</li>\n<li data-xf-list-type=\"ul\">Лычка пользователя</li>\n<li data-xf-list-type=\"ul\">Торрент-статистика</li>\n</ul>",
+  "download_count": 1016,
+  "external_url": null,
+  "icon_url": null,
+  "id": 291,
+  "is_fileless": null,
+  "last_update": 1712482210,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1712415943,
+  "resource_state": "visible",
+  "slug": "torrentbar",
+  "tag_line": "Мод добавляет BBCode для вставки уникального баннера пользователя",
+  "tags": [
+    "bbcode",
+    "мод",
+    "моды",
+    "торрент-бар",
+    "торрентбар"
+  ],
+  "title": "Торрентбар",
+  "url_path": "/resources/torrentbar.291/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.2.1",
+  "versions": [
+    {
+      "download_count": 448,
+      "files": [
+        {
+          "filename": "[FULL] Торрентбар by _Xz_.zip",
+          "id": 5950,
+          "local_path": null,
+          "r2_key": null,
+          "size": 250238,
+          "src_url": "https://torrentpier.com/api/resource-versions/486/download?file=5950"
+        }
+      ],
+      "id": 486,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1712482210,
+      "version_state": "visible",
+      "version_string": "v1.2.1",
+      "view_url": "https://torrentpier.com/resources/torrentbar.291/version/486/"
+    },
+    {
+      "download_count": 196,
+      "files": [
+        {
+          "filename": "[FULL] Торрентбар by _Xz_.zip",
+          "id": 5945,
+          "local_path": null,
+          "r2_key": null,
+          "size": 411983,
+          "src_url": "https://torrentpier.com/api/resource-versions/485/download?file=5945"
+        }
+      ],
+      "id": 485,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1712422205,
+      "version_state": "visible",
+      "version_string": "v1.2.0",
+      "view_url": "https://torrentpier.com/resources/torrentbar.291/version/485/"
+    },
+    {
+      "download_count": 187,
+      "files": [
+        {
+          "filename": "[FULL] Торрентбар by _Xz_.zip",
+          "id": 5944,
+          "local_path": null,
+          "r2_key": null,
+          "size": 411952,
+          "src_url": "https://torrentpier.com/api/resource-versions/484/download?file=5944"
+        }
+      ],
+      "id": 484,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1712420721,
+      "version_state": "visible",
+      "version_string": "v1.1.0",
+      "view_url": "https://torrentpier.com/resources/torrentbar.291/version/484/"
+    },
+    {
+      "download_count": 189,
+      "files": [
+        {
+          "filename": "[FULL] Торрентбар by _Xz_.zip",
+          "id": 5940,
+          "local_path": null,
+          "r2_key": null,
+          "size": 412242,
+          "src_url": "https://torrentpier.com/api/resource-versions/483/download?file=5940"
+        }
+      ],
+      "id": 483,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1712415943,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/torrentbar.291/version/483/"
+    }
+  ],
+  "view_count": 3119
+}

@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 2772,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 260,
+  "last_post_date": 1375328967,
+  "node_id": 57,
+  "post_date": 1315854425,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 2772,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<span style=\"color: #0000ff\"><b> <b><span style=\"color: #008000\"><a href=\"http://torrentpier.com/threads/torrentpier-ii-%D0%B3%D0%B4%D0%B5-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C.10/\" class=\"link link--internal\"><span style=\"color: #008000\">torrentpier II Скачать</span></a></span></b> </b></span><br />\n<span style=\"color: #ff0000\"><b><a href=\"http://code.google.com/p/torrentpier2/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><span style=\"color: #ff0000\">Системные требования Смотреть</span></a></b></span><br />\n<span style=\"color: #0000ff\"><b>Читать readMe в первую очередь! (идёт в комплекте с движком)</b></span><br />\n <br />\n<span style=\"color: #339966\"><a href=\"http://torrentpier.com/threads/%D0%A7%D1%82%D0%BE-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C-%D0%B2-torrentpier-ii.153/\" class=\"link link--internal\"><span style=\"color: #339966\"><b>--!&gt;</b><b>Что изменить/добавить в Torrentpier</b><b>&lt;!--</b></span></a></span><br />\n <br />\n<b><a href=\"http://torrentpier.com/forums/%D0%91%D0%B0%D0%B3%D0%B8-torrentpier-ii.12/\" class=\"link link--internal\"><span style=\"color: #339966\">--!&gt;Прежде чем задать вопрос !не забудь! указать свою ревизию движка&lt;!--</span></a> </b><br />\n<span style=\"color: #800000\"><b>При любых манипуляциях с кодом не забываем чистить кэш (т.е. удалить всё из папки cache), сохранять исходный файл (backup) и прописывайте по возможности комменты (// /**/ &lt;!-- --&gt;) чтобы потом легко найти все изменения</b></span><span style=\"color: #800000\"><b>.</b></span><br />\n <br />\n<b>1.</b> Как отвязать крон?<br />\n <br />\n<a href=\"http://torrentpier.com/threads/%D0%9E%D1%82%D0%B2%D1%8F%D0%B7%D0%BA%D0%B0-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D1%80%D0%BE%D0%BD%D0%B0.52/\" class=\"link link--internal\">Ответ.</a><br />\n_<br />\n<b>2.</b> У меня не считает статистику <b>up/dl </b>и т.д<b>. </b>что делать?<br />\n <br />\nКрон выключен или завис. Включить/восстановить крон.<br />\n_<br />\n<b>3.</b> У меня тормоза на форуме/трекере, как быть?<br />\n <br />\nОтвязать крон...см. пункт <b>1., </b>перейти на новое железо, оптимизировать работу движка.<br />\n_<br />\n<b>4.</b> Где взять форму при создании нового релиза?<br />\n <br />\nАдминка &gt; Шаблоны<br />\n_<br />\n<b>5. </b>Какой пароль для учётки <b>admin</b>?<br />\n <br />\nПароль = username т.е. <b>admin</b><br />\n<b>_</b><br />\n<b>6.</b> Удалил/Создал форум, но их не видно?<br />\n <br />\nОтвязать крон, почистить кеш. см. пункт <b>1.</b><br />\n<b>_</b><br />\n<b>7.</b> Как подключить первый сайдбар?<br />\n <br />\nsidebar в конфиге:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$page_cfg[&#039;show_sidebar1&#039;] = array(\n#    BB_SCRIPT =&gt; true\n    &#039;index&#039;  =&gt; true,\n);</pre> <br />\nСодержимое в misc\\html &gt; sidebar1.html<br />\n_<br />\n<b>8.</b> Как добавить своё в donate.php?<br />\n <br />\nДонат редактируется в donate.tpl (\\templates\\default).<br />\n_<br />\n<b>9.</b> Где включается/отключается блок рейтинга на главной?<br />\n <br />\nАдминка&gt;Настройка форумов&gt;Показывать UP/DL<br />\n_<br />\n<b>10. </b>Кто онлайн, открываем для всех, кроме гостей.<br />\n <br />\n&gt; page_header.php<br />\n <br />\nнайти:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">if (defined(&#039;IS_GUEST&#039;) &amp;&amp; !(IS_GUEST || IS_USER))</pre> <br />\nзаменить на:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">if (defined(&#039;IS_GUEST&#039;) &amp;&amp; !(IS_GUEST))</pre>_<br />\n<b>11.</b> Премодерация раздач.<br />\n <br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><i><span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\"><b><span style=\"color: blue\">∏</span> <span style=\"color: #006699\">премодерация</span></b></span></span></span></i><i><span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\"> — если у пользователя нет раздач со статусом </span></span></span></i><i><span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\"><b><span style=\"color: #008000\">√</span></b></span></span></span></i><i><span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\">, </span></span></span></i><i><span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\"><b><span style=\"color: #008000\">#</span></b></span></span></span></i><i><span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\"> или </span></span></span></i><i><span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\"><b><span style=\"color: blue\">T</span></b></span></span></span></i><i><span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\"> в текущем разделе, включая подразделы, то раздача автоматически получает данный статус</span></span></span></i></blockquote>_<br />\n<b>12.</b> Как заблокировать отдельные хостинги изображений.<br />\n <br />\n<a href=\"http://torrentpier.com/threads/%D0%90%D0%B2%D1%82%D0%BE%D1%86%D0%B5%D0%BD%D0%B7%D0%BE%D1%80-%D0%B2-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0%D1%85.515/#post-6571\" class=\"link link--internal\">Ответ.</a><br />\n_<br />\n<b>13.</b> Как мне скрыть форумы с главной?<br />\n <br />\n<a href=\"http://torrentpier.com/threads/%D0%A1%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5-%D1%84%D0%BE%D1%80%D1%83%D0%BC%D0%BE%D0%B2-%D1%81-%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B9.427/#post-5122\" class=\"link link--internal\">Ответ.</a><br />\n_<br />\n<b>14. </b>Ошибка при подключении sphinx<br />\n<span style=\"color: #007700\"><span style=\"font-size: 13px\"><span style=\"font-family: 'monospace'\">[</span></span></span><span style=\"color: #0000bb\"><span style=\"font-size: 13px\"><span style=\"font-family: 'monospace'\">26</span></span></span><span style=\"color: #007700\"><span style=\"font-size: 13px\"><span style=\"font-family: 'monospace'\">-</span></span></span><span style=\"color: #0000bb\"><span style=\"font-size: 13px\"><span style=\"font-family: 'monospace'\">Sep</span></span></span><span style=\"color: #007700\"><span style=\"font-size: 13px\"><span style=\"font-family: 'monospace'\">-</span></span></span><span style=\"color: #0000bb\"><span style=\"font-size: 13px\"><span style=\"font-family: 'monospace'\">2011 03</span></span></span><span style=\"color: #007700\"><span style=\"font-size: 13px\"><span style=\"font-family: 'monospace'\">:</span></span></span><span style=\"color: #0000bb\"><span style=\"font-size: 13px\"><span style=\"font-family: 'monospace'\">36</span></span></span><span style=\"color: #007700\"><span style=\"font-size: 13px\"><span style=\"font-family: 'monospace'\">:</span></span></span><span style=\"color: #0000bb\"><span style=\"font-size: 13px\"><span style=\"font-family: 'monospace'\">31</span></span></span><span style=\"color: #007700\"><span style=\"font-size: 13px\"><span style=\"font-family: 'monospace'\">] </span></span></span><span style=\"color: #0000bb\"><span style=\"font-size: 13px\"><span style=\"font-family: 'monospace'\">PHP Fatal error</span></span></span><span style=\"color: #007700\"><span style=\"font-size: 13px\"><span style=\"font-family: 'monospace'\">: </span></span></span><span style=\"color: #0000bb\"><span style=\"font-size: 13px\"><span style=\"font-family: 'monospace'\">Allowed memory size of 104857600 </span></span></span><br />\n <br />\nвнимательнее прописывайте порты в конфигах. (<a href=\"http://torrentpier.com/threads/sphinx-%D0%B8-%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D1%8C.303/\" class=\"link link--internal\">история темы</a>)<br />\n_<br />\n<b>15.</b> Перевести время на на час вперед/назад<br />\n <br />\nsql запрос - UPDATE bb_users SET user_timezone = user_timezone + 1;<br />\nили UPDATE bb_users SET user_timezone = &#039;3.00&#039;;<br />\n_<br />\n<b>16.</b> Изменение торрент статусов на картинку.<br />\n <br />\n<span style=\"font-size: 22px\"><span style=\"font-family: 'Georgia'\"><span style=\"font-size: 15px\">init_bb.php</span></span></span><br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$bb_cfg[&#039;tor_icons&#039;] = array(</pre>_<br />\n<b>17.</b> Как восстановить акк admin?<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">INSERT INTO `bb_users` VALUES (2, 1, &#039;admin&#039;, &#039;c3284d0f94606de1fd2af172aba15bf3&#039;, 0, 0, &#039;0&#039;, &#039;&#039;, &#039;0&#039;, 1, 1, &#039;+4.00&#039;, &#039;&#039;, 0, 0, 0, 304, 1, &#039;&#039;, 1, 0, 0, 0, &#039;[EMAIL]admin@admin.com[/EMAIL]&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, 0, &#039;&#039;, 0);</pre> Это если вообще его нету, или удалить старую запись и после выполнить запрос, можно и UPDATE сделать.<br />\n_<br />\n<b>18.</b> У меня разрегистрируются торренты что-делать?<br />\n <br />\nconfig.php<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$bb_cfg[&#039;seeder_last_seen_days_keep&#039;] = 0;\n$bb_cfg[&#039;seeder_never_seen_days_keep&#039;] = 0;</pre>_<br />\n<b>19.</b> Пользователь с таким именем уже существует?<br />\n <br />\n<span style=\"font-size: 22px\"><span style=\"font-size: 15px\"> Смотрите записи users в бд.</span></span><br />\n<span style=\"font-size: 22px\"><b><span style=\"font-size: 15px\">_</span></b></span><br />\n<span style=\"font-size: 22px\"><b><b><span style=\"font-size: 15px\">20. </span></b></b><span style=\"font-size: 15px\">Свой цвет званию.</span></span><br />\n <br />\n<span style=\"font-size: 22px\"><span style=\"font-size: 15px\">main.css </span></span><br />\n <br />\n<span style=\"font-size: 22px\"><span style=\"font-size: 15px\">искать</span></span><br />\n<span style=\"font-size: 22px\"><span style=\"font-size: 15px\"><pre class=\"xfBb-code\" data-lang=\"php\">.colorAdmin</pre> </span></span><br />\n <br />\n<span style=\"font-size: 22px\"><span style=\"font-size: 15px\">и добавлять по аналогии </span></span><br />\n<span style=\"font-size: 22px\"><b><span style=\"font-size: 15px\">_</span></b></span><br />\n<span style=\"font-size: 22px\"><b><span style=\"font-size: 15px\"><b>21.</b> </span></b></span><span style=\"font-size: 22px\"><span style=\"font-size: 15px\">Разрешить не авторизованным пользователям скачивать торренты.</span></span><br />\n <br />\n<span style=\"font-size: 15px\">Админка &gt; Список прав доступа &gt; Разрешить всем скачивать файлы. </span><br />\n<span style=\"font-size: 15px\"><b>_</b></span><br />\n<span style=\"font-size: 15px\"><b><b>22. </b></b></span><span style=\"font-size: 15px\">Бэкапы импорт/экспорт</span><br />\n <br />\n<span style=\"font-size: 15px\"><a href=\"http://sypex.net\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Решение.</a></span><br />\n________________<br />\nЭта тема - попытка создать инструкцию с описанием типовых проблем/ошибок/основного функционала у начинающих админов. На основании моих собственных наблюдений.<br />\n <br />\nДополнения (если будут) прошу присылать в лс.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1315854425,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 38744,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>23. </b>Что за странные символы рядом с именами пользователей<br />\n <br />\nusername[<b>s</b>:<b>3</b>]<br />\nusername[<b>ip</b>:<b>2</b>]<br />\nusername[<b>t</b>:<b>10</b>]<br />\n <br />\n[<b>s:n</b>] - количество открытых сессий пользователем, где n это количество. Появляется при более 3-х открытых сессиях<br />\n[<b>ip:n</b>] - количество ip адресов пользователя, n опять же количество. Появляется если на пользователе больше 2-х ip<br />\n[<b>t:n</b>] - Длительность открытой сессии, n собственно длительность в часах. Появляется при длительности сессии более 6 часов<br />\n <br />\n<b>24. </b>Как создать свою страницу<br />\n <br />\n<a href=\"http://torrentpier.com/threads/Создать-любую-страницу.9158/#post-37798\" class=\"link link--internal\">Ответ</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1375328967,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "faq-dla-novickov",
+  "sticky": false,
+  "tags": [],
+  "title": "FAQ для \"новичков\"",
+  "url_path": "/threads/faq-dla-novickov.260/",
+  "user_id": 119,
+  "username": "Basilevs",
+  "view_count": 46961
+}

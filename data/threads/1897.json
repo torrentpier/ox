@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 25071,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1897,
+  "last_post_date": 1357224510,
+  "node_id": 57,
+  "post_date": 1357223694,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25071,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Нубский вопрос, но что то туплю. Внизу есть зеленым <b>Moderator</b><br />\n<b>как добавить в эту группу? при том что, если давать права на форумы - ник не становится зеленым...</b>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1357223694,
+      "user_id": 3266,
+      "user_title": "User",
+      "username": "extazys"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25072,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Администраторский раздел - Звания -Добавляешь звание модератора и ставишь цвет colorMod, ну и за тем в профиле пользователя выбираешь соответственное звание и будет ник зеленым.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1357224208,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Credo"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25073,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "спасибо!",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1357224510,
+      "user_id": 3266,
+      "user_title": "User",
+      "username": "extazys"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "moderator-kak",
+  "sticky": false,
+  "tags": [],
+  "title": "Moderator, как?",
+  "url_path": "/threads/moderator-kak.1897/",
+  "user_id": 3266,
+  "username": "extazys",
+  "view_count": 1083
+}

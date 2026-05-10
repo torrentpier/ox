@@ -1,0 +1,147 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Знак зодиака by belomaxorka.zip",
+      "id": 5836,
+      "local_path": null,
+      "r2_key": null,
+      "size": 7818,
+      "src_url": "https://torrentpier.com/api/resource-versions/469/download?file=5836"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1703742718,
+      "file_size": 7034,
+      "filename": "Screenshot 2023-12-28 123141.webp",
+      "height": 94,
+      "id": 5710,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot-2023-12-28-123141-webp.5710/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5714-afa0f618624a669ff551d0bfbe2b2730.jpg?hash=SStIBdBJKX",
+      "width": 382
+    },
+    {
+      "attach_date": 1703742719,
+      "file_size": 2510,
+      "filename": "Screenshot 2023-12-28 123159.webp",
+      "height": 46,
+      "id": 5711,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot-2023-12-28-123159-webp.5711/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5715-506cc4dad47b0182c67884414e978f87.jpg?hash=cZ090sO0pI",
+      "width": 325
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Данный мод добавляет отображение знака зодиака в профиле пользователя. Пользователь так-же может включить / отключить мод через настройки профиля. Мод отображает знак зодиака только в том случае, если у пользователя стоит дата рождения.",
+  "download_count": 414,
+  "external_url": null,
+  "icon_url": null,
+  "id": 278,
+  "is_fileless": null,
+  "last_update": 1708250489,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1703742725,
+  "resource_state": "visible",
+  "slug": "znak-zodiaka",
+  "tag_line": "Добавляет отображение знака зодиака в профиле.",
+  "tags": [
+    "знак зодиака",
+    "знак зодиака в профиле",
+    "знак зодиака пользователя",
+    "мод",
+    "моды",
+    "улучшения для профиля"
+  ],
+  "title": "Знак зодиака",
+  "url_path": "/resources/znak-zodiaka.278/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.2",
+  "versions": [
+    {
+      "download_count": 240,
+      "files": [
+        {
+          "filename": "[FULL] Знак зодиака by belomaxorka.zip",
+          "id": 5836,
+          "local_path": null,
+          "r2_key": null,
+          "size": 7818,
+          "src_url": "https://torrentpier.com/api/resource-versions/469/download?file=5836"
+        }
+      ],
+      "id": 469,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1708250489,
+      "version_state": "visible",
+      "version_string": "v1.0.2",
+      "view_url": "https://torrentpier.com/resources/znak-zodiaka.278/version/469/"
+    },
+    {
+      "download_count": 92,
+      "files": [
+        {
+          "filename": "[FULL] Знак зодиака by belomaxorka.zip",
+          "id": 5776,
+          "local_path": null,
+          "r2_key": null,
+          "size": 7812,
+          "src_url": "https://torrentpier.com/api/resource-versions/446/download?file=5776"
+        }
+      ],
+      "id": 446,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1706253985,
+      "version_state": "visible",
+      "version_string": "v1.0.1",
+      "view_url": "https://torrentpier.com/resources/znak-zodiaka.278/version/446/"
+    },
+    {
+      "download_count": 87,
+      "files": [
+        {
+          "filename": "[FULL] Знак зодиака by belomaxorka.zip",
+          "id": 5709,
+          "local_path": null,
+          "r2_key": null,
+          "size": 7805,
+          "src_url": "https://torrentpier.com/api/resource-versions/428/download?file=5709"
+        }
+      ],
+      "id": 428,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1703742725,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/znak-zodiaka.278/version/428/"
+    }
+  ],
+  "view_count": 748
+}

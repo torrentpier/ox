@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 71874,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 33102,
+  "last_post_date": 1421165681,
+  "node_id": 57,
+  "post_date": 1421145375,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71874,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подскажите, можно ли в main.php применить теги к тексту?<br />\nНадо чтоб в posting_edition.tpl работало вот это:<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;b&gt;X&lt;/b&gt;&lt;small&gt;&lt;sup&gt;&lt;b&gt;2&lt;/b&gt;&lt;/sup&gt;&lt;/small&gt;\n&lt;b&gt;X&lt;/b&gt;&lt;small&gt;&lt;sub&gt;&lt;b&gt;2&lt;/b&gt;&lt;/sub&gt;&lt;/small&gt;</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1421145375,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71894,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"XDA\">что он делает?</blockquote>Как ты собрался помогать, если не знаешь что делают эти теги?<br />\n<br />\nВопрос снимаю, вышел из положения довольно просто - выдрал кнопки из известного мода, заодно и несколько кодов добавил в ТР<br />\n<br />\n<div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1421157438,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71906,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"XDA\"><a href=\"https://torrentpier.com/members/1514/\">@Begemot</a> Первый раз слышу что есть main.php Может Вы перепутали с Main.css</blockquote>Вот уж удивили. Это файл языковой основной.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1421163449,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71907,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"XDA\"><a href=\"https://torrentpier.com/members/1514/\">@Begemot</a> Первый раз слышу что есть main.php Может Вы перепутали с Main.css</blockquote>Не перепутал. Загляни в ланги",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1421163471,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71922,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"XDA\">А, вы имеете виду что в папке <pre class=\"xfBb-code\" data-lang=\"\">language/ru/main.php</pre> ?</blockquote>Именно. Но уже не актуально. Мое решение меня вполне устраивает.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1421165681,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "tegi-v-main-php",
+  "sticky": false,
+  "tags": [],
+  "title": "Теги в main.php",
+  "url_path": "/threads/tegi-v-main-php.33102/",
+  "user_id": 1514,
+  "username": "Begemot",
+  "view_count": 1312
+}

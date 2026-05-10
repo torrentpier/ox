@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58094,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25660,
+  "last_post_date": 1390429132,
+  "node_id": 111,
+  "post_date": 1390429132,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58094,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Ссылка</b>:<br />\n<a href=\"http://code.google.com/p/torrentpier2/source/detail?r=565\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"> http://code.google.com/p/torrentpier2/source/detail?r=565</a><br />\n<br />\n<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 565: Удаление лимита одновременно раздаваемых торрентов (нарушает принципы свободного</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">glix08</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/install/sql/mysql.sql \n    Modify    /trunk/upload/admin/admin_bt_forum_cfg.php \n    Modify    /trunk/upload/config.php \n    Modify    /trunk/upload/includes/bbcode.php \n    Modify    /trunk/upload/includes/functions.php \n    Modify    /trunk/upload/includes/functions_torrent.php \n    Modify    /trunk/upload/language/lang_english/lang_admin_bt.php \n    Modify    /trunk/upload/language/lang_russian/lang_admin_bt.php \n    Modify    /trunk/upload/templates/admin/admin_bt_forum_cfg.tpl \n\nУдаление лимита одновременно раздаваемых торрентов (нарушает принципы свободного файлообмена); принудительное автоматическое создание пасскея и размещение в торрент-файле информации об издателе и странице-источнике; новая функция для страницы &quot;смерти&quot; скрипта без какого-либо оформления; фикс неверного опознания файла, который нельзя бенкодировать; фикс добавления поисковых слов, некорректного постинга смайликов в некоторых окружениях; фикс некорректной загрузки торрент-файлов в новой версии Opera; отмена отключения DHT в Azureus; отладка скрипта выдачи торрент-файла; замена пары значений в SQL-дампе базы.</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1390429132,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "revision-565-udalenie-limita-odnovremenno-razdavaemyh-torrentov-narusaet-principy-svobodnogo",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 565: Удаление лимита одновременно раздаваемых торрентов (нарушает принципы свободного",
+  "url_path": "/threads/revision-565-udalenie-limita-odnovremenno-razdavaemyh-torrentov-narusaet-principy-svobodnogo.25660/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 942
+}

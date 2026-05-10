@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 15199,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1220,
+  "last_post_date": 1334293693,
+  "node_id": 57,
+  "post_date": 1334287420,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15199,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте, у меня такой вопрос в тестовом сервере все работает отлично а в основном сервер не работает <br />\nна данный момент отличия между основным и тестовым сервером тока в базах",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1334287420,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Alekseev"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15203,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Не эксперт, но проверь базу на наличие статусов на основном сервере и сравни с тестовым.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1334293693,
+      "user_id": 1168,
+      "user_title": "User",
+      "username": "ShineOfDark"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "ne-rabotaet-zapret-na-sozdanie-novyh-razdac-esli-stoit-status-nedooformleno-neoformleno-somnitel-no",
+  "sticky": false,
+  "tags": [],
+  "title": "не работает Запрет на создание новых раздач если стоит статус недооформлено/неоформлено/сомнительно",
+  "url_path": "/threads/ne-rabotaet-zapret-na-sozdanie-novyh-razdac-esli-stoit-status-nedooformleno-neoformleno-somnitel-no.1220/",
+  "user_id": 0,
+  "username": "Alekseev",
+  "view_count": 1136
+}

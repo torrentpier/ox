@@ -1,0 +1,68 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 91108,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 41706,
+  "last_post_date": 1494800633,
+  "node_id": 3,
+  "post_date": 1493909033,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91108,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<img src=\"https://habrastorage.org/getpro/habr/post_images/e86/405/fbd/e86405fbdc91873ffc4b729e8a5f6d4a.jpg\" alt=\"\" /><br />\n<br />\nRutracker толком не потерявший свою аудиторию вполне закономерно вызывает недовольство Роскомнадзора и других ведомств. Они все-таки старались, деньги тратили, выступали с заявлениями, а оно все работает и помирать не собирается. Под блокировкой был основной сайт rutracker.org, который, по сути, был просто каталогом magnet-ссылок и torrent-файлов. Новый виток борьбы привел в добавлению в списки блокировок серверов-анонсеров. Именно они поддерживают инфраструктуру ресурса и позволяют отдельным пирам найти друг друга.<br />\n<br />\nUpdate<br />\n2 мая СМИ запестрели заголовками о начале массовой блокировки всех анонсеров и зеркал Rutracker: <a href=\"https://lenta.ru/news/2017/05/02/finishhim/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">lenta.ru</a>, <a href=\"http://hitech.vesti.ru/news/view/id/11461\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Вести</a>, <a href=\"http://izvestia.ru/news/695690\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Известия</a>, <a href=\"https://www.vedomosti.ru/technology/news/2017/05/02/688377-roskomnadzor-tormozit-torrenti\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Ведомости</a>. Однако в <a href=\"https://www.gazeta.ru/tech/2017/05/02/10653011/rutracker_still_breathing.shtml#page1\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">интервью Газете.Ру</a> представитель Роскомнадзора сообщил, что блокировки проводятся в плановом режиме и ничего глобального в плане тотальных блокировок они не производили за последние дни.<br />\n«Мы не проводим никакие массированные атаки. Мы ведем целенаправленную работу по повышению эффективности блокировки пиратского контента», — подчеркнул пресс-секретарь Роскомнадзора в беседе с корреспондентом «Газеты.Ru».<br />\n<br />\nОн уточнил, что ни о каком замедлении трафика для пользователей трекера речи не идет, а блокировка RuTracker проводится в плановом режиме.<br />\nТем не менее проблема реальна, сервера блокируются, а в посте есть полезные ссылки на открытые трекеры. Поэтому решил не удалять материал.<br />\n<a href=\"http://bt.t-ru.org/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">bt.t-ru.org</a><br />\n<ul>\n<li data-xf-list-type=\"ul\"><a href=\"http://bt2.t-ru.org/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">bt2.t-ru.org</a></li>\n</ul><ul>\n<li data-xf-list-type=\"ul\"><a href=\"http://bt3.t-ru.org/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">bt3.t-ru.org</a></li>\n</ul><ul>\n<li data-xf-list-type=\"ul\"><a href=\"http://bt4.t-ru.org/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">bt4.t-ru.org</a></li>\n</ul>Это приводит к тому, что клиент, который только что получил torrent-файл не может подключиться к серверам, которые расскажут ему где найти других пиров. В итоге соединение не устанавливается и закачки не происходит. Так задумано, по крайней мере. На самом Rutracker висит соответствующее сообщение:<br />\nС начала марта 2017 российские провайдеры по указанию Роскомнадзора блокируют трекеры-анонсеры (bt, bt2, bt3, bt4) нашего ресурса.<br />\n<br />\nВ связи с этим затруднен учет статистики в профилях пользователей, попадающих под блокировки, а также могут возникать ошибки в статусах раздач в торрент-клиентах. При этом фактически раздачи скачиваются и раздаются при включенных опциях DHT и «обмен пирами (PEX)» .<br />\nТо есть по факту, если не заморачиваться со статистикой закачек и раздач, то протокол DHT позволит пользователям найти Васю, который знает Джона, который знает Владилену Аристарховну, у которой как раз есть немного нужных файлов.<br />\n<br />\n<span style=\"font-size: 18px\"><b>Что с этим делать?</b></span><br />\n<br />\nВы не можете выкачать произведения любимой группы, которая выложила свои записи под свободной лицензией на трекер? Писать в Спортлото довольно бесполезно, пока действуют соответствующие законы, но ничто не мешает немного подпилить торрент-клиент, если это еще не было сделано. Rutracker любезно разместил поясняющие скриншоты. В первую очередь убедитесь, что у вас работает DHT и PEX. С ними вы можете присоединяться к раздаче даже при полной блокировке анонсеров.<br />\n<br />\n<img src=\"https://habrastorage.org/files/744/290/949/744290949e6c4725931b2a839ed91fc4.png\" alt=\"\" /><br />\n<br />\n<i>Пример для uTorrent.</i><br />\n<br />\nТакже можно использовать предоставленный прокси-сервер, но в этом случае отвалятся все остальные трекеры. Подходит только, если вы пользуетесь исключительно Rutracker.org.<br />\n<br />\n<img src=\"https://habrastorage.org/files/103/705/716/103705716e094cf28e5ae37f2f2ab3bd.png\" alt=\"\" /><br />\n<br />\n<span style=\"font-size: 18px\"><b>Добавление открытых трекеров для поиска пиров</b></span><br />\n<br />\nЕсть еще очень неплохой метод увеличения облака пиров — добавление открытых трекеров. Чаще всего они не имеют веб-морды и нужны работают исключительно как сервис. Никакого контента. Создали раздачу, прописали их, передали друзьям. Очень часто можно найти много дополнительных раздающих, если хеш раздачи совпадает. Взять проще всего <a href=\"https://github.com/ngosang/trackerslist\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">здесь, на Github.</a> Он обновляется автоматически.<br />\n<br />\nСписок адресов для копипасты<br />\n<br />\n<img src=\"https://habrastorage.org/files/6f6/2ea/718/6f62ea718b414396ad9288412289af3d.png\" alt=\"\" /><br />\n<br />\n<i>Мой KTorrent автоматом подставляет список новых серверов из буфера обмена при добавлении.</i><br />\n<br />\n<img src=\"https://habrastorage.org/files/029/ae1/889/029ae18892ef4f69a67193630ca8d6de.png\" alt=\"\" /><br />\n<i>Вид для раздачи образа дистрибутива Ubuntu Linux.</i><br />\n<ul>\n<li data-xf-list-type=\"ul\"><a href=\"https://habrahabr.ru/search/?q=%5B%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BC%D0%BD%D0%B0%D0%B4%D0%B7%D0%BE%D1%80%20%D0%BD%D0%B0%D0%BD%D0%BE%D1%81%D0%B8%D1%82%20%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D0%BD%D1%8B%D0%B9%20%D1%83%D0%B4%D0%B0%D1%80%5D&amp;target_type=posts\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">роскомнадзор наносит ответный удар</a>,</li>\n<li data-xf-list-type=\"ul\"><a href=\"https://habrahabr.ru/search/?q=%5Brutracker%5D&amp;target_type=posts\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">rutracker</a>,</li>\n<li data-xf-list-type=\"ul\"><a href=\"https://habrahabr.ru/search/?q=%5Btorrent%5D&amp;target_type=posts\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">torrent</a></li>\n</ul>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1493909033,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91305,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Я прогу недавно нашел, для работы с заблокированным сайтом вообще бомба!!! Но именно для работы, то есть если нужно через ftp клиент работать или putty без танцев с бубном, ставиться просто поддерживает и MacOS и Windows. Но главный плюс, что весь трафик с компа идет через прокси. Хочешь с сайтом работай, хочешь раздавай. Недавно ей пользовался - очень понравилась стран на выбор штук 20, скорость хорошая, но есть один минус ПЛАТНАЯ ((( Хотя кто сталкивался с бесплатными прокси тот меня поймет, лучше заплатить иной раз чем постоянно искать новый прокси. Ну а теперь самое интересное О ценах)))<br />\nНе большое отступление)) мне как то пришлись с сайтом с недельку через прокси работать (точнее с сервером) я на второй день забил на поиск бесплатных прокси так как постоянно дохнут, скорость никакая, да и много не рабочих приходилось фильтровать. Вообщем в одной конторе взял на месяц один прокси за 100 р. по моему, работал нормально, но скорость 8 Mbps как то не очень, плюс везде нужно включить подключение через прокси, вписать его туда кароче еще с настройкой час убил. Ну воконцовке все сделал и забыл. <br />\nТак вот, вернемся к ценам, 3 месяца стоит 10$ год 36$ цены средние стоил бы год 20$ ей бы цены не было!<br />\nДа, и если кому такая штука на неделю понадобится то есть 7 дней триала)))<br />\n<a href=\"https://www.s4m.xyz/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">VPN for iPhone, VPN for Android by Seed4.Me VPN Club</a><br />\n<br />\nPS: Буду очень рад если в меня полетят коменты, мол реклама и все такое &quot;вот <span style=\"color: #4d4dff\">ТУТ</span> такая же но дешевле&quot; или вообще бесплатная 😀 <br />\n(я просто бесплатных подобного функционала, что бы не нужно было самому искать прокси, не нашел)",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1494800633,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "blokirovki-serverov-anonserov-i-metody-obhoda",
+  "sticky": false,
+  "tags": [
+    "анонсер"
+  ],
+  "title": "Блокировки серверов-анонсеров и методы обхода",
+  "url_path": "/threads/blokirovki-serverov-anonserov-i-metody-obhoda.41706/",
+  "user_id": 5626,
+  "username": "Kryl",
+  "view_count": 6048
+}

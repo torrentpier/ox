@@ -1,0 +1,111 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 88923,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41573,
+  "last_post_date": 1484601308,
+  "node_id": 57,
+  "post_date": 1479659590,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88923,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1479659797,
+      "message_parsed": "<div style=\"text-align: center\"><span style=\"color: #ff0000\">Для начала попрошу не судить строго, т.к. все вы когда-то были такими же нубами.</span>&#8203;</div><br />\nВ общем ситуация такая. Загрузил я сайт по ftp - Success, расставил permissions&#039;ы как сказано в readMe - не Success. Показывает такую вот картину - &lt;a target=&quot;_blank&quot; href=&quot;Радикал-Фото: Картинка&quot;&gt;&lt;img src=&quot;http://s019.*******.host/i643/1611/d9/16691a95b48dt.jpg&quot; /&gt;&lt;/a&gt;<br />\nПочти все кликабельно и работает, кроме &quot;Трекер&quot;. Он у нас отличился и при попытке открыть показывает ошибку 403 Access denied. Подозреваю в этом не до конца расставленные permissions&#039;ы или же хостинг решил отличиться [&lt;a href=&quot;<a href=\"https://byet.host\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Free Hosting, Paid Hosting, Paid Web Hosting, Free Web Hosting, Reseller Services &amp; VPS Servers : Byet Internet</a>&quot; &gt;byet.host&lt;/a&gt;]<br />\nПри этом жалуется что не получается открыть tracker.php (кстати на нем стоят 777). Также подозреваю в этом .htaccess:<br />\n<code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\"><br />\n## Set charset server<br />\nAddDefaultCharset UTF-8<br />\n<br />\n#RewriteEngine On<br />\n<br />\n## Access control<br />\n&lt;FilesMatch &quot;\\.(.*sql|tpl|inc|db|log)|(config|common).php$&quot;&gt;<br />\ndeny from all<br />\n&lt;/FilesMatch&gt;<br />\nphp_value allow_call_time_pass_reference On<br />\n</code><br />\n<br />\nПриложу robots.txt(на всякий):<br />\n<code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\"><br />\nUser-agent: *<br />\nDisallow: /download.php<br />\nDisallow: /groupcp.php<br />\nDisallow: /login.php<br />\nDisallow: /memberlist.php<br />\nDisallow: /modcp.php<br />\nDisallow: /posting.php<br />\nDisallow: /privmsg.php<br />\nDisallow: /profile.php<br />\nDisallow: /release.php<br />\nDisallow: /viewonline.php<br />\nCrawl-delay: 0.3<br />\nHost: torro.cu.cc<br />\nClean-param: sid /*.php<br />\n<br />\nSitemap: <a href=\"http://torro.cu.cc/sitemap.php\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://torro.cu.cc/sitemap.php</a><br />\n</code><br />\n<br />\nАдрес сайта: <a href=\"http://torro.cu.cc/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://torro.cu.cc/</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1479659590,
+      "user_id": 7568,
+      "user_title": "User",
+      "username": "AK-47"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88924,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Бесплатный хостинг ?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1479673451,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88925,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/7568/\">AK-47</a>  ревизия движка R-600? Если да, то поддержка по этой ревизии не оказывается (поправьте если я не прав).",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1479718878,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89497,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/7568/\">AK-47</a>, хостеру пишите, у них какая-то защита видимо стоит кривая.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1484601308,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "ne-daet-otkryt-tracker-php",
+  "sticky": false,
+  "tags": [
+    "403",
+    "access denied",
+    "torrentpier",
+    "tracker.php",
+    "v.2.1",
+    "не открывается",
+    "трекер"
+  ],
+  "title": "Не дает открыть tracker.php",
+  "url_path": "/threads/ne-daet-otkryt-tracker-php.41573/",
+  "user_id": 7568,
+  "username": "AK-47",
+  "view_count": 1312
+}

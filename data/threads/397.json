@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 4778,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 397,
+  "last_post_date": 1320033558,
+  "node_id": 57,
+  "post_date": 1320031867,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 4778,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В данный момент при создании раздачи присваивается название следующим образом:<br />\n<br />\n<a href=\"http://tp.u2torrent.ru/viewtopic.php?t=288\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><span style=\"font-family: 'Verdana'\"><span style=\"font-size: 11px\"><span style=\"color: #006699\"><b>Мальчишник 2: Из Вегаса в Бангкок / The Hangover Part II (Тодд Филлипс) [2011 г., комедия, DVDRip]</b></span></span></span></a><br />\n<br />\nт.е: Название на русском / Английском (Режисер) [год, жанр, качество]<br />\n<br />\nКак поправить формат названия раздач?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1320031867,
+      "user_id": 152,
+      "user_title": "User",
+      "username": "levantuev"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 4779,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "video.php",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1320032126,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 4780,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "немного не могу разобраться там 🙁 помогите пожалуйста.<br />\nнужен такой формат: Название на русском / Оригинальное название (год) Качество<br />\n<span style=\"color: rgb(204,204,204)\"><span style=\"font-size: 10px\">--- добавлено: Oct 31, 2011 3:59 AM ---</span></span><br />\nРазобрался",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1320033558,
+      "user_id": 152,
+      "user_title": "User",
+      "username": "levantuev"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "formatirovanie-vyvoda-nazvania-razdaci",
+  "sticky": false,
+  "tags": [],
+  "title": "Форматирование вывода названия раздачи",
+  "url_path": "/threads/formatirovanie-vyvoda-nazvania-razdaci.397/",
+  "user_id": 152,
+  "username": "levantuev",
+  "view_count": 1328
+}

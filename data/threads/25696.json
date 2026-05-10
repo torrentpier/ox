@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58365,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 25696,
+  "last_post_date": 1391204763,
+  "node_id": 80,
+  "post_date": 1391172179,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58365,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<div data-template-name=\"public:_media_site_embed_youtube\" class=\"bbMediaWrapper\" data-media-site-id=\"youtube\" data-media-key=\"EVZzqqAwGjQ\">\n\t<div class=\"bbMediaWrapper-inner\">\n\t\t<iframe src=\"https://www.youtube.com/embed/EVZzqqAwGjQ?wmode=opaque\"\n\t\t\t\tloading=\"lazy\"\n\t\t\t\twidth=\"560\" height=\"315\"\n\t\t\t\tframeborder=\"0\" allowfullscreen=\"true\"></iframe>\n\t</div>\n</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1391172179,
+      "user_id": 0,
+      "user_title": "",
+      "username": "sockrat"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58374,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "найти <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">LEFT JOIN &quot;. BB_POLL_USERS  .&quot; pu USING(vote_id)</pre>заменить <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">LEFT JOIN &quot;. BB_POLL_USERS   .&quot; pu USING(topic_id)</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1391182314,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58386,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено в новой ревизии, спасибо за багрепорты: <a href=\"https://code.google.com/p/torrentpier2/source/detail?r=578\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://code.google.com/p/torrentpier2/source/detail?r=578</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1391204763,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 2,
+  "slug": "udalenie-foruma",
+  "sticky": false,
+  "tags": [],
+  "title": "Удаление форума",
+  "url_path": "/threads/udalenie-foruma.25696/",
+  "user_id": 0,
+  "username": "sockrat",
+  "view_count": 1222
+}

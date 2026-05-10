@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 27241,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 2254,
+  "last_post_date": 1361574167,
+  "node_id": 57,
+  "post_date": 1361572267,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27241,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Такой вопрос: подскажите как увеличить интервал окраски новой темы...<br />\n <br />\n<img src=\"http://s-pic.ru/i/71040.png\" alt=\"\" /><br />\nПо стандарту снимается окраска после, посищения темы. Нужно выставить на сутки.<br />\n <br />\nСпасибо!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1361572267,
+      "user_id": 2636,
+      "user_title": "User",
+      "username": "fail"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27242,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "в индексе замени<br />\n <br />\n&#039;NEWS_IS_NEW&#039; =&gt; TIMENOW &lt; ($news[&#039;topic_time&#039;] + 86400),",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1361572795,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27243,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>PheRum</b>, БОЛЬШОЕ СПАСИБО!!!",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1361574167,
+      "user_id": 2636,
+      "user_title": "User",
+      "username": "fail"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "novosti-trekera",
+  "sticky": false,
+  "tags": [],
+  "title": "Новости трекера",
+  "url_path": "/threads/novosti-trekera.2254/",
+  "user_id": 2636,
+  "username": "fail",
+  "view_count": 1014
+}

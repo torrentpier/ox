@@ -1,0 +1,91 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "redirect.zip",
+      "id": 3252,
+      "local_path": null,
+      "r2_key": null,
+      "size": 22708,
+      "src_url": "https://torrentpier.com/api/resource-versions/250/download?file=3252"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"][PHP]найти функцию function make_url_clickable_callback ($m) в bbcode.php и заменить на\n\nfunction make_url_clickable_callback ($m)\n{\nglobal $bb_cfg;\n    $max_len = 70;\n    $href    = $m[1];\n    $scheme  = strtolower(@$m[2]);\n    $name    = $href;\n\n    if (strlen($name) > $max_len)\n    {\n        $name = substr($name, 0, $max_len - 19) .'...'. substr($name, -16);\n    }\n    if (strpos($scheme, '://') === false)\n    {\n        $href = (strpos($scheme, 'www') !== false) ? \"http://$href\" : \"$href\";\n    }\n\n        if(!preg_match(\"#{$bb_cfg['server_name']}#\", $href))\n         {\n             require_once(INC_DIR . 'class.idna_convert.php');\n             $IDN = new idna_convert();\n             return '<a href=\"'. make_url('/go.php?url=') . $href .'\" class=\"postLink\" target=\"_blank\">'. $name .'</a>';\n         }\n         else\n         {\n             return \"<a href=\\\"$href\\\" class=\\\"postLink\\\">$name</a>\";\n         }\n}\n\n==================================================================================\n\nв page_header.tpl перед </head> добавить\n\n<script type=\"text/javascript\">\n  function initExternalLinks(context)\n  {\n    var context = context || 'body';\n    if (ExternalLinks_InNewWindow) {\n      $(\"a.postLink:not([href*='\"+ window.location.hostname +\"/'])\", context).attr({\n        href: function(){ return '/go.php?url='+ this.href; },\n        target: '_blank' });\n    }\n  }\n</script>\n=================================================================================\nвсе ссылки которые через редирект нужно сделать так /go.php?url=http://ссылка.ru\n\n[/PHP]\n[/SPOILER]",
+    "owner": "_Xz_",
+    "sql": "no",
+    "was_paid": "yes"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание: </b>добавляет страницу-редирект на внешние сайты.",
+  "download_count": 391,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/154.jpg?1425423941",
+  "id": 154,
+  "is_fileless": null,
+  "last_update": 1425423990,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1425203268,
+  "resource_state": "visible",
+  "slug": "redirekt-na-vnesnie-sajty",
+  "tag_line": "Добавляет страницу-редирект на внешние сайты.",
+  "tags": [],
+  "title": "Редирект на внешние сайты",
+  "url_path": "/resources/redirekt-na-vnesnie-sajty.154/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 291,
+      "files": [
+        {
+          "filename": "redirect.zip",
+          "id": 3252,
+          "local_path": null,
+          "r2_key": null,
+          "size": 22708,
+          "src_url": "https://torrentpier.com/api/resource-versions/250/download?file=3252"
+        }
+      ],
+      "id": 250,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425423990,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/redirekt-na-vnesnie-sajty.154/version/250/"
+    },
+    {
+      "download_count": 100,
+      "files": [
+        {
+          "filename": "redirect.zip",
+          "id": 3020,
+          "local_path": null,
+          "r2_key": null,
+          "size": 22708,
+          "src_url": "https://torrentpier.com/api/resource-versions/171/download?file=3020"
+        }
+      ],
+      "id": 171,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425203268,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/redirekt-na-vnesnie-sajty.154/version/171/"
+    }
+  ],
+  "view_count": 575
+}

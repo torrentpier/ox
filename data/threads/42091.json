@@ -1,0 +1,67 @@
+{
+  "custom_fields": {
+    "torrentpier": "2301"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94531,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 42091,
+  "last_post_date": 1588236894,
+  "node_id": 80,
+  "post_date": 1588236894,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1588236862,
+          "file_size": 76900,
+          "filename": "Screenshot_1.webp",
+          "height": 942,
+          "id": 5326,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot_1-webp.5326/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5330-6b92488264337f67a7b9d1b1da15396e.jpg?hash=Gon7UKEYSr",
+          "width": 1810
+        }
+      ],
+      "id": 94531,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "При создании группы выскакивает ошибка. Ставил последнюю версию из гитаба.<br />\nСкрин приложил.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1588236894,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 0,
+  "slug": "osibka-sozdania-gruppy",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка создания группы",
+  "url_path": "/threads/osibka-sozdania-gruppy.42091/",
+  "user_id": 55,
+  "username": "Lange",
+  "view_count": 1671
+}

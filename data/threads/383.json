@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 4513,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 383,
+  "last_post_date": 1319476513,
+  "node_id": 90,
+  "post_date": 1319476513,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 4513,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вот снизошло на меня озарение, запасшийся чаем решил продолжить писанину начатую <a href=\"http://torrentpier.com/threads/Сервер-на-centos-Часть-1-Ставим-webmin.378/\" class=\"link link--internal\">тут</a><br />\nКонечно все должны понимать что эта статья не претендует на полноценный мануал, и я не говорю что нужно делать именно так. Эта статья лишь отражает мой взгляд на настройку сервера. В принципе во второй части ми лишь установим самую новую версию mysql которую сможем найти.<br />\n<br />\n<div style=\"text-align: center\"><img src=\"http://www.kusnetsoff.ru/wp-content/uploads/2011/01/mysql_logo-300x218.jpg\" alt=\"\" />&#8203;</div><br />\nКак ни крути CentOS система которая обновляется не очень часто. Главная задача этой ос это стабильная работа на сервере. Поэтому разработчики пораскинули мозгами и решили что не будут включать по умолчанию в этот дистрибутив самую новую версию компонентов. Они включили компоненты которые на момент сборки были самыми стабильными и проверенными, что бы потом с ними не возникало проблем.<br />\n<br />\nИ что мы имеем? А мы имеем что в пятой версии СentOS лежит MySQL 5.0.x скажем так очень древний MySQL. Мы конечно же можем и использовать его но сейчас вопрос об актуальности этой версии очень спорный.(В CentOS 6 лежит что-то новее я уже не помню что, но 99% вдс хостеров используют шаблон СentOS 5, так как шестая ветка только недавно вышла и косяков пока от неё достаточно много)<br />\n<br />\nНапомню что мы нубы, мы не знаем как собрать самим из исходников MYSQL. Поэтому не будем изобретать велосипедов а просто поищем тех кто уже за нас сделал всё грязную работу, благо таких много(и спасибо им )<br />\n<br />\nИтак первым делом что нам нужно это добавить дополнительные репозитории - хранилища компонентов. Некоторые очень активно поддерживаются и там всегда можно будет найти самые свежие компоненты. Итак выполним на сервере это<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\">rpm -ihv http://download.fedora.redhat.com/pub/epel/5/i386/epel-release-5-4.noarch.rpm\nrpm -ihv http://centos.alt.ru/repository/centos/5/i386/centalt-release-5-3.noarch.rpm\nrpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-5.rpm</pre><br />\nТолько эти 3 команды и мы теперь имеем доступ к новеньким mysql, php, apache, nginx и т.п<br />\n(Хочу сказать что эти репозитории используются для 32 битной системы)<br />\n<br />\nСтавим сервер баз даных(на момент написания там лежит  mysql-5.5.17)<br />\n<pre class=\"xfBb-code\" data-lang=\"\">yum --enablerepo=remi install mysql-server</pre><br />\nЗапускаем установленный сервер<br />\n<pre class=\"xfBb-code\" data-lang=\"\">service mysqld start</pre>Ставим пароль для root пользователя mysql(выполнять команды по очереди)<br />\n<pre class=\"xfBb-code\" data-lang=\"\">mysql\nUSE mysql;\nUPDATE user SET Password=PASSWORD(&#039;[COLOR=#ff0000]ТУТМЕГОПАРОЛЬ[/COLOR]&#039;) WHERE user=&#039;root&#039;;\nFLUSH PRIVILEGES;\nexit</pre>Собственно теперь сервер работает, пароль для рута установлен. Добавляем сервис в автозагрузку<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\"> chkconfig --level 235 mysqld on</pre>В Webmin есть модуль для управления и мониторинга MySQL , my.ini лежит в /etc<br />\nВот на сегодня и все",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1319476513,
+      "user_id": 64,
+      "user_title": "User",
+      "username": "ZIM"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "server-na-centos-cast-2-stavim-mysql",
+  "sticky": false,
+  "tags": [],
+  "title": "Сервер на CentOS (Часть 2) Ставим MySQL",
+  "url_path": "/threads/server-na-centos-cast-2-stavim-mysql.383/",
+  "user_id": 64,
+  "username": "ZIM",
+  "view_count": 2301
+}

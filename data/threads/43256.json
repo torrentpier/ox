@@ -1,0 +1,81 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 98455,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 43256,
+  "last_post_date": 1774952090,
+  "node_id": 47,
+  "post_date": 1774952090,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1774952063,
+          "file_size": 161170,
+          "filename": "1.webp",
+          "height": 1976,
+          "id": 6752,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1-webp.6752/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6756-3cde4110f6449b34497a1a03555fa13a.jpg?hash=nvvpYNe4i6",
+          "width": 1344
+        },
+        {
+          "attach_date": 1774952064,
+          "file_size": 707458,
+          "filename": "2.webp",
+          "height": 4548,
+          "id": 6753,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2-webp.6753/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6757-d473c1cce533aba7dd6bd3f98e1781ef.jpg?hash=9_VP4wac4z",
+          "width": 1343
+        }
+      ],
+      "id": 98455,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Это моя модификация страницы торрентов.Отредактировано tracker.php и tracker.tpl<br />\nЭто как идея для следующего проекта TorrentPier.<br />\nНадеюсь, вам понравится этот вариант.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1774952090,
+      "user_id": 10665,
+      "user_title": "User",
+      "username": "crowni"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrent-stranica-pohozaa-na-netflix",
+  "sticky": false,
+  "tags": [
+    "netflix"
+  ],
+  "title": "Торрент-страница, похожая на Netflix",
+  "url_path": "/threads/torrent-stranica-pohozaa-na-netflix.43256/",
+  "user_id": 10665,
+  "username": "crowni",
+  "view_count": 433
+}

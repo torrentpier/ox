@@ -1,0 +1,147 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 88849,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41562,
+  "last_post_date": 1484602390,
+  "node_id": 57,
+  "post_date": 1478705440,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1478702867,
+          "file_size": 9300,
+          "filename": "2016-11-09_17-45-47.webp",
+          "height": 93,
+          "id": 4522,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2016-11-09_17-45-47-webp.4522/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4526-3bd34f01a17e7d5d03f891042fb4ebbc.jpg?hash=vonwMrzGt8",
+          "width": 757
+        },
+        {
+          "attach_date": 1478705283,
+          "file_size": 11266,
+          "filename": "2016-11-09_18-27-35.webp",
+          "height": 67,
+          "id": 4524,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2016-11-09_18-27-35-webp.4524/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4528-c998dbff18c49be5226c91c7c1acc63c.jpg?hash=5bxIFt9Gso",
+          "width": 998
+        }
+      ],
+      "id": 88849,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Давно не обращал внимания, но сегодня в bb_bt_users обнаружил что много скачано гостем<br />\n<img src=\"https://torrentpier.com/attachments/4522/\" alt=\"2016-11-09_17-45-47.webp\" /> <br />\nНа трекере гостям не разрешено скачивать аттачи<br />\n<br />\nbb_users<br />\n<img src=\"https://torrentpier.com/attachments/4524/\" alt=\"2016-11-09_18-27-35.webp\" /> <br />\n<br />\nНикто не видит ничего подозрительного?<br />\n<br />\nУ меня пока только одна идея. Кто-то каким то образом узнал passkey гостя",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1478705440,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88850,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Атачи не разрешено, а торрент файлы можна ))) Это разные права.<br />\n<br />\nВсе гости качают под одним юзером и с одним IP. Раньше это был user_bot<br />\n<br />\nКак права выставляли, скрин админко - список прав доступа - дайте плизз",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1478706493,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1478710385,
+          "file_size": 25306,
+          "filename": "2016-11-09_19-52-54.webp",
+          "height": 187,
+          "id": 4526,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2016-11-09_19-52-54-webp.4526/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4530-db1d6a999260998ab77bf01807a747c7.jpg?hash=GE2sOPUrfl",
+          "width": 847
+        }
+      ],
+      "id": 88852,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Торрент файлы тоже запрещено качать.<br />\n<br />\nВ общем сменил passkey гостя и хэш пароля, но через некоторое время снова стали появляться единичные записи в bb_bt_tracker с user_id -1 и тем же peer_id<br />\n<img src=\"https://torrentpier.com/attachments/4526/\" alt=\"2016-11-09_19-52-54.webp\" /><br />\n<br />\nВот что видим в логах<br />\n<code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\">89.179.70.91 - - [09/Nov/2016:19:37:23 +0300] &quot;GET /bt/announce.php?uk=MHfFQUmxC1&amp;info_hash=e%22%0c%c6%d8%1f%af%d5%df_%02%02%2f%da%d6%12%88%b4P%b2&amp;peer_id=-DE13C0-YoI(Ipymy40Q&amp;port=6881&amp;uploaded=4779215917&amp;downloaded=0&amp;left=0&amp;corrupt=0&amp;key=527BFC26&amp;numwant=200&amp;compact=1&amp;no_peer_id=1&amp;supportcrypto=1&amp;redundant=0 HTTP/1.0&quot; 200 102 &quot;-&quot; &quot;Deluge 1.3.12&quot;</code><br />\n<br />\nЗаписей с новым пасскеем пока нет",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1478710576,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89505,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/6370/\">zxc</a>, удаленные пользователи как вариант.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1484602390,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "zapret-skacivania-torrentov-dla-gostej",
+  "sticky": false,
+  "tags": [],
+  "title": "Запрет скачивания торрентов для гостей",
+  "url_path": "/threads/zapret-skacivania-torrentov-dla-gostej.41562/",
+  "user_id": 6370,
+  "username": "sхс",
+  "view_count": 1193
+}

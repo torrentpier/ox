@@ -1,0 +1,134 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 25404,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 2004,
+  "last_post_date": 1357709862,
+  "node_id": 57,
+  "post_date": 1357675141,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25404,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Возможно ли добавление к примеру .тхт файла когда на трекер загружается торрент (таким же путём к примеру как добавляется аннонс?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1357675141,
+      "user_id": 3266,
+      "user_title": "User",
+      "username": "extazys"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1357708040,
+          "file_size": 48740,
+          "filename": "Снимок экрана - 09.01.2013 - 11:06:58.webp",
+          "height": 741,
+          "id": 1812,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-ekrana-09-01-2013-11-06-58-webp.1812/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1813-118d841b068970d1c8a9ee6cbb26ab04.jpg?hash=uTNB8OoLU0",
+          "width": 1063
+        }
+      ],
+      "id": 25432,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Конечно можно<a href=\"https://torrentpier.com/attachments/1812/\"><img src=\"https://torrentpier.com/data/attachments/1/1813-118d841b068970d1c8a9ee6cbb26ab04.jpg?hash=uTNB8OoLU0\" alt=\"Снимок экрана - 09.01.2013 - 11:06:58.webp\" /></a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1357708045,
+      "user_id": 30,
+      "user_title": "User",
+      "username": "krumax"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25433,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "krumax, так он добавляет в сам торрент файл?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1357709573,
+      "user_id": 3266,
+      "user_title": "User",
+      "username": "extazys"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25434,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"extazys\">krumax, так он добавляет в сам торрент файл?</blockquote>Как он добавит в сам торрент-файл?<br />\nСозданием торрент-файлов занимается торрент-клиент<br />\nP.S.<br />\nИзначально тебе не так понял.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1357709779,
+      "user_id": 30,
+      "user_title": "User",
+      "username": "krumax"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25435,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ну тогда что именно ты имел в виду?",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1357709862,
+      "user_id": 3266,
+      "user_title": "User",
+      "username": "extazys"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "dobavlenie-dop-fajla-k-torrentu-pri-ego-zagruzke",
+  "sticky": false,
+  "tags": [],
+  "title": "Добавление доп. файла к торренту (при его загрузке)",
+  "url_path": "/threads/dobavlenie-dop-fajla-k-torrentu-pri-ego-zagruzke.2004/",
+  "user_id": 3266,
+  "username": "extazys",
+  "view_count": 1163
+}

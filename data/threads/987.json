@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 12228,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 987,
+  "last_post_date": 1329740974,
+  "node_id": 57,
+  "post_date": 1329711067,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 12228,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<span style=\"font-size: 13px\"><span style=\"font-family: 'Trebuchet MS'\"><div style=\"margin-left: 20px\"><span style=\"font-family: 'Georgia'\">Здравствуйте.<br />\n<br />\nПеренес свой торрент трейкер на новый хостинг, после переноса возникла пару проблема хотелось бы совета, и так:<br />\n1. При входе в тему не чего не отображается, это после регистрации и входа на сайт а если без регистрации попробовать то все нормально.<br />\n2.Все торренты не зарегистрированы на сайте.<br />\n<br />\nЕсли кто то уже проходил через это то прошу помочь.<br />\n<br />\nСпасибо.<br />\n<br />\nЗ.Ы. Права на папки дал кэш очистил не помогло.</span>&#8203;</div></span></span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1329711067,
+      "user_id": 946,
+      "user_title": "User",
+      "username": "Komil"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 12238,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "А крон работает?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1329724314,
+      "user_id": 149,
+      "user_title": "User",
+      "username": "demmon"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 12241,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Работает, а как проверить?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1329727789,
+      "user_id": 946,
+      "user_title": "User",
+      "username": "Komil"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 12250,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Все кроны запустил разом и все решилось но через некоторое время снова такая проблема, вроде сделал Enable все кроны но все равно такая проблема 🙁",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1329740974,
+      "user_id": 946,
+      "user_title": "User",
+      "username": "Komil"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "ne-otobrazautsa-temy-posle-avtorizacii-pol-zovatelej",
+  "sticky": false,
+  "tags": [],
+  "title": "Не отображаются темы после авторизации пользователей",
+  "url_path": "/threads/ne-otobrazautsa-temy-posle-avtorizacii-pol-zovatelej.987/",
+  "user_id": 946,
+  "username": "Komil",
+  "view_count": 1377
+}

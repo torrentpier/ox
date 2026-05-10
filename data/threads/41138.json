@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 83794,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 41138,
+  "last_post_date": 1430992941,
+  "node_id": 3,
+  "post_date": 1430992941,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 83794,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Знаете ли вы как настроить или статьи как настроить для трекера Teredo то есть если я правильно понял IPV6 для пользователей из сети NAT.Помогите кто знает",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1430992941,
+      "user_id": 5462,
+      "user_title": "User",
+      "username": "nematik"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "pol-zovatelam-pod-nat",
+  "sticky": false,
+  "tags": [],
+  "title": "Пользователям под nat",
+  "url_path": "/threads/pol-zovatelam-pod-nat.41138/",
+  "user_id": 5462,
+  "username": "nematik",
+  "view_count": 1129
+}

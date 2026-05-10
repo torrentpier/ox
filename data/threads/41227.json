@@ -1,0 +1,69 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 84629,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 50,
+    "title": "Graphics and styles for TorrentPier"
+  },
+  "id": 41227,
+  "last_post_date": 1438699245,
+  "node_id": 50,
+  "post_date": 1438631028,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84629,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Пользователь Kryl разместил новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/forma-registracii.241/\" class=\"link link--internal\">Форма регистрации .</a> - Форма регистрации пользователей<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Форма регистрации новых пользователей . <br />\nВ дальнейшем можно и профиль переделать .<br />\nТак как форма все равно в профиле отображается .</blockquote><br />\n<a href=\"https://torrentpier.com/resources/forma-registracii.241/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1438631028,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84631,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Пользователь Kryl обновил ресурс <a href=\"https://torrentpier.com/resources/forma-registracii.241/\" class=\"link link--internal\">Форма регистрации</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/forma-registracii.241/update?update=374\" class=\"link link--internal\">Форма регистрации</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">простая форма регистрации пользователей c иконками font-awesome.</blockquote><br />\n<a href=\"https://torrentpier.com/resources/forma-registracii.241/update?update=374\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1438699245,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "forma-registracii",
+  "sticky": false,
+  "tags": [
+    "регистрация",
+    "форма регистрации"
+  ],
+  "title": "Форма регистрации",
+  "url_path": "/threads/forma-registracii.41227/",
+  "user_id": 5626,
+  "username": "Kryl",
+  "view_count": 2057
+}

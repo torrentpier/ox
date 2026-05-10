@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 85646,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 86,
+    "title": "Questions about PHP"
+  },
+  "id": 41315,
+  "last_post_date": 1447341675,
+  "node_id": 86,
+  "post_date": 1447341171,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85646,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подскажите по регистрации. Надо, чтоб указываемые пользователем данные, заносились в две таблицы - родную bb_users и дополнительную, допустим bb_users_two. Реально ли это сделать, без дополнительных полей в форме регистрации? А то маразм выйдет - мол, введите имя, а теперь еще разик... молодцы, теперь четыре раза пароль, два раза e-mail и вы почти на сайте)))<br />\n<br />\nЕсли можно обойтись, без доп полей, то ткните мордой, как сделать...",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1447341171,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85647,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "/ucp/register.php<br />\n<br />\nпосле строки <br />\n$new_user_id = DB()-&gt;sql_nextid();<br />\nможешь делать свои запросы, все данные по юзеру уже собраны на этом месте",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1447341675,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "zanesenie-dannyh-v-2-tablicy",
+  "sticky": false,
+  "tags": [],
+  "title": "Занесение данных в 2 таблицы",
+  "url_path": "/threads/zanesenie-dannyh-v-2-tablicy.41315/",
+  "user_id": 1514,
+  "username": "Begemot",
+  "view_count": 1364
+}

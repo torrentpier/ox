@@ -1,0 +1,79 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Защита от мультипостинга by belomaxorka.zip",
+      "id": 6678,
+      "local_path": null,
+      "r2_key": null,
+      "size": 2415,
+      "src_url": "https://torrentpier.com/api/resource-versions/663/download?file=6678"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание:</b> Запрещает пользователям писать несколько сообщений подряд в одной теме. Если пользователь является автором последнего поста и не прошло заданное время — предлагает отредактировать существующее сообщение вместо создания нового. Администраторы и модераторы работают без ограничений.<br />\n<b>Совместимость:</b> все версии.",
+  "download_count": 106,
+  "external_url": null,
+  "icon_url": null,
+  "id": 332,
+  "is_fileless": null,
+  "last_update": 1768231861,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1768231861,
+  "resource_state": "visible",
+  "slug": "zasita-ot-mul-tipostinga",
+  "tag_line": "Запрещает пользователям писать несколько сообщений подряд в одной теме.",
+  "tags": [
+    "flood protection",
+    "запрет на мультипостинг",
+    "запрет редактирования темы",
+    "защита от флуда",
+    "мод",
+    "моды",
+    "мультипостинг"
+  ],
+  "title": "Защита от мультипостинга",
+  "url_path": "/resources/zasita-ot-mul-tipostinga.332/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.0",
+  "versions": [
+    {
+      "download_count": 106,
+      "files": [
+        {
+          "filename": "[FULL] Защита от мультипостинга by belomaxorka.zip",
+          "id": 6678,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2415,
+          "src_url": "https://torrentpier.com/api/resource-versions/663/download?file=6678"
+        }
+      ],
+      "id": 663,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1768231861,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/zasita-ot-mul-tipostinga.332/version/663/"
+    }
+  ],
+  "view_count": 766
+}

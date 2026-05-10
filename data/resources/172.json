@@ -1,0 +1,156 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL][$][TP2] Blog.zip",
+      "id": 3121,
+      "local_path": null,
+      "r2_key": null,
+      "size": 174756,
+      "src_url": "https://torrentpier.com/api/resource-versions/206/download?file=3121"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]Автор мода: frost444\n//Кеширование было удвлено, по запросу заказчика.\n\n//-----[Обновления]-----\\\\\n\n|--(00.00.0000)\n   1) измененный код: ---\n   2) ---\n   info: (1) ---\n  \n\\\\-----[Обновления]-----//\n\n####[ВЫПОЛНИТЬ]-----SQL\n\nCREATE TABLE `bb_blog_auth_access` (\n  `group_id` mediumint(8) NOT NULL DEFAULT '0',\n  `blog_cat_id` smallint(5) unsigned NOT NULL DEFAULT '0',\n  `blog_cat_perm` int(11) NOT NULL DEFAULT '0',\n  PRIMARY KEY (`group_id`,`blog_cat_id`),\n  KEY `blog_cat_id` (`blog_cat_id`)\n) ENGINE=MyISAM DEFAULT CHARSET=utf8    ;\n\nCREATE TABLE `bb_blog_auth_access_snap` (\n  `user_id` mediumint(9) NOT NULL DEFAULT '0',\n  `blog_cat_id` smallint(6) NOT NULL DEFAULT '0',\n  `blog_cat_perm` int(11) NOT NULL DEFAULT '0',\n  PRIMARY KEY (`user_id`,`blog_cat_id`)\n) ENGINE=MyISAM DEFAULT CHARSET=utf8    ;\n\nCREATE TABLE `bb_blog_cat` (\n  `blog_cat_id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,\n  `blog_cat_name` varchar(150) NOT NULL DEFAULT '',\n  `blog_cat_desc` text NOT NULL,\n  `blog_cat_status` tinyint(4) NOT NULL DEFAULT '0',\n  `blog_cat_posts` mediumint(8) unsigned NOT NULL DEFAULT '0',\n  `blog_cat_topics` mediumint(8) unsigned NOT NULL DEFAULT '0',\n  `blog_cat_order` smallint(5) unsigned NOT NULL DEFAULT '1',\n  `blog_cat_show_on_index` tinyint(1) NOT NULL DEFAULT '1',\n  `blog_cat_icon` varchar(100) NOT NULL DEFAULT '0',\n  `blog_cat_auth_view` tinyint(2) NOT NULL DEFAULT '0',\n  `blog_cat_auth_read` tinyint(2) NOT NULL DEFAULT '0',\n  `blog_cat_auth_post` tinyint(2) NOT NULL DEFAULT '0',\n  `blog_cat_auth_post_view` tinyint(2) NOT NULL DEFAULT '0',\n  `blog_cat_auth_reply` tinyint(2) NOT NULL DEFAULT '0',\n  `blog_cat_auth_edit` tinyint(2) NOT NULL DEFAULT '0',\n  `blog_cat_auth_delete` tinyint(2) NOT NULL DEFAULT '0',\n  PRIMARY KEY (`blog_cat_id`),\n  KEY `blog_cat_order` (`blog_cat_order`),\n  KEY `blog_cat_id` (`blog_cat_id`)\n) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8    ;\n\nCREATE TABLE `bb_blog_config` (\n  `config_name` varchar(255) NOT NULL DEFAULT '',\n  `config_value` text NOT NULL,\n  PRIMARY KEY (`config_name`)\n) ENGINE=MyISAM DEFAULT CHARSET=utf8    ;\n\nCREATE TABLE `bb_blog_rating` (\n  `blog_id` mediumint(8) unsigned NOT NULL DEFAULT '0',\n  `user_id` mediumint(9) NOT NULL DEFAULT '0',\n  `user_ip` char(32) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',\n  `blog_like` tinyint(1) NOT NULL DEFAULT '0',\n  `blog_rate` int(2) NOT NULL DEFAULT '0',\n  `time` int(11) NOT NULL DEFAULT '0',\n  PRIMARY KEY (`blog_id`,`user_id`)\n) ENGINE=MyISAM DEFAULT CHARSET=utf8    ;\n\nCREATE TABLE `bb_blog_reply` (\n  `blog_reply_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,\n  `blog_id` mediumint(8) unsigned NOT NULL DEFAULT '0',\n  `blog_reply_user_id` mediumint(8) NOT NULL DEFAULT '0',\n  `blog_reply_user_name` varchar(25) NOT NULL DEFAULT '0',\n  `blog_reply_time` int(11) NOT NULL DEFAULT '0',\n  `blog_reply_user_ip` char(32) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '0',\n  `blog_reply_email` varchar(30) NOT NULL,\n  `blog_reply_avatar` varchar(250) NOT NULL DEFAULT '0',\n  `blog_reply_active` tinyint(1) NOT NULL DEFAULT '0',\n  `blog_reply_active_key` varchar(64) NOT NULL DEFAULT '0',\n  `blog_reply_edit_time` int(11) NOT NULL DEFAULT '0',\n  `blog_reply_edit_count` smallint(5) unsigned NOT NULL DEFAULT '0',\n  PRIMARY KEY (`blog_reply_id`),\n  KEY `blog_id` (`blog_id`),\n  KEY `blog_reply_user_id` (`blog_reply_user_id`),\n  KEY `blog_reply_time` (`blog_reply_time`),\n  KEY `blog_reply_id_post_time` (`blog_reply_time`)\n) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8    ;\n\nCREATE TABLE `bb_blog_reply_html` (\n  `blog_reply_id` mediumint(9) NOT NULL DEFAULT '0',\n  `blog_reply_html_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,\n  `blog_reply_html` mediumtext NOT NULL,\n  PRIMARY KEY (`blog_reply_id`)\n) ENGINE=MyISAM DEFAULT CHARSET=utf8    ;\n\nCREATE TABLE `bb_blog_reply_text` (\n  `blog_reply_id` mediumint(8) unsigned NOT NULL DEFAULT '0',\n  `blog_reply_text` text NOT NULL,\n  PRIMARY KEY (`blog_reply_id`),\n  FULLTEXT KEY `blog_reply_text` (`blog_reply_text`)\n) ENGINE=MyISAM DEFAULT CHARSET=utf8    ;\n\nCREATE TABLE `bb_blog_tag` (\n  `blog_topics_id` mediumint(8) unsigned NOT NULL DEFAULT '0',\n  `blog_tag` text NOT NULL,\n  PRIMARY KEY (`blog_topics_id`)\n) ENGINE=MyISAM DEFAULT CHARSET=utf8    ;\n\nCREATE TABLE `bb_blog_topics` (\n  `blog_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,\n  `blog_cat_id` varchar(250) NOT NULL DEFAULT '0',\n  `blog_title` varchar(250) NOT NULL DEFAULT '',\n  `blog_autor` mediumint(8) NOT NULL DEFAULT '0',\n  `blog_time` int(11) NOT NULL DEFAULT '0',\n  `blog_views` mediumint(8) unsigned NOT NULL DEFAULT '0',\n  `blog_replies` mediumint(8) unsigned NOT NULL DEFAULT '0',\n  `blog_lock` tinyint(1) NOT NULL DEFAULT '0',\n  `blog_dost` tinyint(1) NOT NULL DEFAULT '0',\n  `blog_first_post_id` mediumint(8) unsigned NOT NULL DEFAULT '0',\n  `blog_last_post_id` mediumint(8) unsigned NOT NULL DEFAULT '0',\n  `blog_last_post_time` int(11) NOT NULL DEFAULT '0',\n  `blog_like` int(11) NOT NULL DEFAULT '0',\n  `blog_like_count` mediumint(8) NOT NULL DEFAULT '0',\n  `blog_rating_sum` int(11) NOT NULL DEFAULT '0',\n  `blog_rating_count` mediumint(8) NOT NULL DEFAULT '0',\n  PRIMARY KEY (`blog_id`),\n  KEY `blog_cat_id` (`blog_cat_id`),\n  KEY `blog_last_post_id` (`blog_last_post_id`),\n  KEY `blog_last_post_time` (`blog_last_post_time`),\n  FULLTEXT KEY `blog_title` (`blog_title`)\n) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8    ;\n\nCREATE TABLE `bb_blog_topics_prev` (\n  `blog_topics_id` mediumint(8) unsigned NOT NULL DEFAULT '0',\n  `blog_topics_prev` text NOT NULL,\n  `blog_topics_img` text NOT NULL,\n  PRIMARY KEY (`blog_topics_id`)\n) ENGINE=MyISAM DEFAULT CHARSET=utf8    ;\n\nCREATE TABLE `bb_blog_topics_text` (\n  `blog_topics_id` mediumint(8) unsigned NOT NULL DEFAULT '0',\n  `blog_topics_text` text NOT NULL,\n  PRIMARY KEY (`blog_topics_id`)\n) ENGINE=MyISAM DEFAULT CHARSET=utf8    ;\n\nCREATE TABLE `buf_blog_view` (\n  `blog_id` mediumint(8) unsigned NOT NULL DEFAULT '0',\n  `blog_views` mediumint(8) unsigned NOT NULL DEFAULT '0',\n  PRIMARY KEY (`blog_id`)\n) ENGINE=MyISAM DEFAULT CHARSET=utf8    ;\n\n####[КОНЕЦ]-----SQL\n\n\n####[ОТКРЫТЬ]----- init_bb.php\n\n-----[найти]-----\n\ndefine('BB_PRIVMSGS_TEXT',        'bb_privmsgs_text');\n\n-----[добавить после]-----\n\n//Blog table\ndefine('BUF_BLOG_VIEW',                    'buf_blog_view');\ndefine('BB_BLOG_CONFIG',                'bb_blog_config');\ndefine('BB_BLOG_TOPICS',                'bb_blog_topics');\ndefine('BB_BLOG_TAG',                    'bb_blog_tag');\ndefine('BB_BLOG_TOPICS_TEXT',            'bb_blog_topics_text');\ndefine('BB_BLOG_TOPICS_PREV',            'bb_blog_topics_prev');\ndefine('BB_BLOG_REPLEY',                'bb_blog_reply');\ndefine('BB_BLOG_REPLEY_TEXT',            'bb_blog_reply_text');\ndefine('BB_BLOG_REPLEY_HTML',            'bb_blog_reply_html');\ndefine('BB_BLOG_RATING',                'bb_blog_rating');\ndefine('BB_BLOG_CAT',                    'bb_blog_cat');\n\n////(START) Blog\ndefine('PAGE_BLOG',                    100);\ndefine('PAGE_BLOG_ALLENTRIES',        101);\ndefine('PAGE_BLOG_BLOCKED',            102);\ndefine('PAGE_BLOG_CFG',                103);\ndefine('PAGE_BLOG_CONTRIBUTORS',    104);\ndefine('PAGE_BLOG_ENTRY',            105);\ndefine('PAGE_BLOG_FRIENDS',            106);\ndefine('PAGE_BLOG_FPOSTING',        107);\ndefine('PAGE_BLOG_RSS',                108);\ndefine('PAGE_BLOGS',                109);\ndefine('PAGE_BLOGS_NEWS',            110);\n////(END) Blog\n\n-----[найти]-----\n\ndefine('POST_USERS_URL',  'u');\n\n-----[добавить после]-----\n\n//Blog URL\ndefine('BLOG_POST_URL',        'p');\ndefine('BLOG_POST_ADD',        'post');\ndefine('BLOG_TOPIC_URL',    'b');\ndefine('BLOG_CAT_URL',        'c');\ndefine('BLOG_TAG_URL',        't');\ndefine('BLOG_TITLE_URL',    'tit');\ndefine('BLOG_TEXT_URL',        'text');\ndefine('BLOG_SEARCH_MODE',    'search_mode');\ndefine('BLOG_PAGE_URL',        'start');\ndefine('BLOG_MODE_URL',        \"blog.php?\" .'mode=');\ndefine('BLOG_URL',            'b=');\ndefine('BLOG_POSTS_URL',    'p=');\ndefine('BLOG_CATEGORY_URL',    'c=');\ndefine('BLOG_TAGS_URL',        't=');\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- sessions.php\n\n-----[найти]-----\n\n        require(LANG_DIR .'lang_main.php');\n\n-----[добавить после]-----\n\n        require(LANG_DIR .'lang_blog_main.php');\n       \n-----[найти]-----\n\n            require(LANG_DIR .'lang_admin_attach.php');\n\n-----[добавить после]-----\n\n            require(LANG_DIR .'lang_blog_admin.php');\n       \n-----[найти]-----\n\n    /**\n    *  Enqueue ads\n    */\n           \n-----[добавить перед]-----\n\n    function get_not_auth_blog_cat ($auth_type)\n    {\n        global $datastore, $blog;\n\n        if (IS_ADMIN) return '';\n\n        if (!$forums = $datastore->get('blog_cat_forums'))\n        {\n            $datastore->update('blog_cat_forums');\n            $forums = $datastore->get('blog_cat_forums');\n        }\n\n        if ($auth_type == AUTH_VIEW)\n        {\n            if (IS_GUEST)\n            {\n                return $forums['blog_cat_not_auth_forums']['blog_cat_guest_view'];\n            }\n        }\n        if ($auth_type == AUTH_READ)\n        {\n            if (IS_GUEST)\n            {\n                return $forums['blog_cat_not_auth_forums']['blog_cat_guest_read'];\n            }\n        }\n\n        $auth_field_match = array(\n            AUTH_VIEW       => 'blog_cat_auth_view',\n            AUTH_READ       => 'blog_cat_auth_read',\n            AUTH_POST       => 'blog_cat_auth_post',\n            AUTH_REPLY      => 'blog_cat_auth_reply',\n            AUTH_EDIT       => 'blog_cat_auth_edit',\n            AUTH_DELETE     => 'blog_cat_auth_delete',\n        );\n\n        $not_auth_forums = array();\n        $auth_field = $auth_field_match[$auth_type];\n        $is_auth_ary = $blog->auth($auth_type, AUTH_LIST_ALL, $this->data);\n\n        foreach ($is_auth_ary as $forum_id => $is_auth)\n        {\n            if (!$is_auth[$auth_field])\n            {\n                $not_auth_forums[] = $forum_id;\n            }\n        }\n\n        return join(',', $not_auth_forums);\n    }\n\n    /**\n    *  Get excluded blog\n    */\n    function get_excluded_blog ($auth_type, $return_as = 'csv')\n    {\n        $excluded = array();\n\n        if ($not_auth = $this->get_not_auth_blog_cat($auth_type))\n        {\n            $excluded[] = $not_auth;\n        }\n       \n        switch ($return_as)\n        {\n            case   'csv': return join(',', $excluded);\n            case 'array': return $excluded;\n            case  'flip': return array_flip(explode(',', $excluded));\n        }\n    }\n   \n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- tpl_config.php\n\n-----[найти]-----\n\n$images['release_new']         = $_lang .'release.gif';\n\n-----[добавить после]-----\n\n$images['blog_news_new']       = $_lang .'blog_news.gif';\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- functions.php\n\n-----[найти]-----\n\ndefine('AUTH_DOWNLOAD',   13);\n\n-----[добавить после]-----\n\ndefine('AUTH_POST_VIEW',  14);\n\n-----[найти]-----\n\n        require($bb_cfg['default_lang_dir'] .'lang_main.php');\n\n-----[добавить после]-----\n\n        require($bb_cfg['default_lang_dir'] .'lang_blog_main.php');\n\n-----[найти]-----\n\n        'adm_user_unban'     => 9,\n\n-----[добавить после]-----\n\n        'blog_post_delete'   => 10,\n        'blog_topic_delete'  => 11,\n\n\n-----[найти]-----\n\n$bf['forum_perm'] = array(\n...\n);\n\n-----[добавить после]-----\n\n$bf['blog_auth'] = array(\n    'blog_cat_auth_view'        => AUTH_VIEW,\n    'blog_cat_auth_read'        => AUTH_READ,\n    'blog_cat_auth_mod'         => AUTH_MOD,\n    'blog_cat_auth_post'        => AUTH_POST,\n    'blog_cat_auth_post_view'   => AUTH_POST_VIEW,\n    'blog_cat_auth_reply'       => AUTH_REPLY,\n    'blog_cat_auth_edit'        => AUTH_EDIT,\n    'blog_cat_auth_delete'      => AUTH_DELETE,\n);\n\n-----[добавить в конец]-----\n\nfunction int_check ($value, $array = false)\n{\n    if(isset($value))\n    {\n        if(!empty($array))\n        {\n            foreach ( $value as $v )\n            {\n                if (!is_numeric($v))\n                {\n                    return false;\n                }   \n            }\n            return true;\n        }else{\n            $int = ( !is_int($value) ? (ctype_digit($value)) : true );\n            return $int;\n        }\n    }   \n    return false;\n}\nfunction implode_wrap($before, $after, $array)\n{\n    return $before . implode($after . $before, $array) . $after;\n}\nfunction is_level()\n{\n    global $template;\n    $template->assign_vars(array(\n        'IS_GUEST'           => IS_GUEST,\n        'IS_USER'            => IS_USER,\n        'IS_ADMIN'           => IS_ADMIN,\n        'IS_MOD'             => IS_MOD,\n        'IS_AM'              => IS_AM,\n    ));\n}\nfunction syte_realpath($path)\n{\n    return (!@function_exists('realpath') || !@realpath(INC_DIR . 'functions.php')) ? $path : @realpath($path);\n}\nfunction limit_words ($string, $word_limit)\n{\n    $words = explode(\" \",$string);\n    return implode(\" \",array_splice($words,0,$word_limit));\n}\nfunction chek_qb_mail ($email)\n{\n    $mail = htmlspecialchars(strip_tags(trim($email)));\n\n    return $mail;\n}\nfunction generate_code ($length = 12)\n{\n   $chars = 'abdefhiknrstyz1234567890';\n   $numChars = strlen($chars);\n   $string = '';\n   for ($i = 0; $i < $length; $i++)\n   {\n      $string .= substr($chars, rand(1, $numChars) - 1, 1);\n   }\n   return $string;\n}\nfunction specified_array_unique($array, $value)\n{\n    $count = 0;\n  \n    foreach($array as $array_key => $array_value)\n    {\n        if ( ($count > 0) && ($array_value == $value) )\n        {\n            unset($array[$array_key]);\n        }\n      \n        if ($array_value == $value) $count++;\n    }\n  \n    return array_filter($array);\n}\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- ajax.php\n\n-----[найти]-----\n\n    case 'group_membership':\n        require(INC_DIR .'functions_group.php');\n    break;\n\n-----[добавить после]-----\n\n    case 'blog':\n        require(INC_DIR .'bbcode.php');\n        require(INC_DIR .'functions_post.php');\n        require(INC_DIR .'functions_admin.php');\n        require(INC_DIR .'functions_blog.php');\n    break;\n\n-----[найти]-----\n\n        'index_data'        => array('guest'),\n\n-----[добавить после]-----\n\n\n        'rate_blogs'        => array('user'),\n        'blog'                => array('guest'),\n\n-----[найти]-----\n\n    последнюю скобку }\n\n-----[добавить перед]-----\n\n    function rate_blogs()\n    {\n        require(AJAX_DIR .'rate_blogs.php');\n    }\n    function blog()\n    {\n        require(AJAX_DIR .'blog.php');\n    }\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- build_cat_forums.php\n\n-----[найти]-----\n\n$this->store('cat_forums', $data);\n\n-----[добавить после]-----\n\n//\n// cat_blog\n//\n$data = array(\n    'blog_cat_not_auth_forums' => array(\n        'blog_cat_guest_view' => array(),\n        'blog_cat_guest_read' => array(),\n        'blog_cat_user_view'  => array(),\n        'blog_cat_user_read'  => array(),\n    ),\n    'blog_cat_title_html'  => array(),\n    'blog_cat_name_html' => array(),\n    'c' => array(),                // also has $data['c']['cat_id']['forums'] key\n    'f' => array(),                // also has $data['f']['forum_id']['subforums'] key\n);\n\n// Store only these fields from BB_FORUMS in $data['f']\n$forum_store_fields += array_flip(array(\n  'blog_cat_id',\n  'blog_cat_name',\n  'blog_cat_desc',\n  'blog_cat_status',\n  'blog_cat_posts',\n  'blog_cat_topics',\n));\n\n// Categories\n$sql = \"SELECT * FROM \". BB_BLOG_CAT .\" ORDER BY blog_cat_order\";\n\nforeach(DB()->fetch_rowset($sql) as $row)\n{\n    $data['c'][$row['blog_cat_id']] = $row;\n    $data['blog_cat_title_html'][$row['blog_cat_id']] = htmlCHR($row['blog_cat_name']);\n}\n\nforeach (DB()->fetch_rowset($sql) as $row)\n{\n    $fid = $row['blog_cat_id'];\n    $not_auth =& $data['blog_cat_not_auth_forums'];\n\n    // Find not auth forums\n    if ($row['blog_cat_auth_view'] != AUTH_ALL)\n    {\n        $not_auth['blog_cat_guest_view'][] = $fid;\n    }\n    if ($row['blog_cat_auth_view'] != AUTH_ALL && $row['blog_cat_auth_view'] != AUTH_REG)\n    {\n        $not_auth['blog_cat_user_view'][] = $fid;\n    }\n    if ($row['blog_cat_auth_read'] != AUTH_ALL)\n    {\n        $not_auth['blog_cat_guest_read'][] = $fid;\n    }\n    if ($row['blog_cat_auth_read'] != AUTH_ALL && $row['blog_cat_auth_read'] != AUTH_REG)\n    {\n        $not_auth['blog_cat_user_read'][] = $fid;\n    }\n\n    $data['forum'][$fid] = $row;\n\n    // Store forums data\n\n    $data['f'][$fid] = array_intersect_key($row, $forum_store_fields);\n    $data['blog_cat_name_html'][$fid] = htmlCHR($row['blog_cat_name']);\n\n    // Forum ids in cat\n    $data['c'][$row['blog_cat_id']]['forums'][] = $fid;\n}\nforeach ($data['blog_cat_not_auth_forums'] as $key => $val)\n{\n    $data['blog_cat_not_auth_forums'][$key] = join(',', $val);\n}\n\n$this->store('blog_cat_forums', $data);\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- common.php\n\n-----[найти]-----\n\n        'cat_forums'             => 'build_cat_forums.php',\n\n-----[добавить после]-----\n\n        'blog_cat_forums'        => 'build_cat_forums.php',\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- sessions.php\n\n-----[найти]-----\n\n    /**\n    *  Enqueue ads\n    */\n\n-----[выше добавить]-----\n\n    function get_not_auth_group_chat ($auth_type)\n    {\n        global $datastore, $chat;\n\n        if (IS_ADMIN) return '';\n\n        if (!$forums = $datastore->get('group_chat'))\n        {\n            $datastore->update('group_chat');\n            $forums = $datastore->get('group_chat');\n        }\n\n        if ($auth_type == AUTH_VIEW)\n        {\n            if (IS_GUEST)\n            {\n                return $forums['group_not_auth']['group_guest_view'];\n            }\n        }\n        if ($auth_type == AUTH_READ)\n        {\n            if (IS_GUEST)\n            {\n                return $forums['group_not_auth']['group_guest_read'];\n            }\n        }\n\n        $auth_field_match = array(\n            AUTH_VIEW       => 'group_auth_view',\n            AUTH_REPLY      => 'group_auth_reply',\n            AUTH_EDIT       => 'group_auth_edit',\n            AUTH_DELETE     => 'group_auth_delete',\n        );\n\n        $not_auth_forums = array();\n        $auth_field = $auth_field_match[$auth_type];\n        $is_auth_ary = $chat->auth($auth_type, AUTH_LIST_ALL, $this->data);\n        foreach ($is_auth_ary as $forum_id => $is_auth)\n        {\n            if (!$is_auth[$auth_field])\n            {\n                $not_auth_forums[] = $forum_id;\n            }\n        }\n\n        return join(',', $not_auth_forums);\n    }\n\n    function get_excluded_group_chat ($auth_type, $return_as = 'csv')\n    {\n        $excluded = array();\n\n        if ($not_auth = $this->get_not_auth_group_chat($auth_type))\n        {\n            $excluded[] = $not_auth;\n        }\n       \n        switch ($return_as)\n        {\n            case   'csv': return join(',', $excluded);\n            case 'array': return $excluded;\n            case  'flip': return array_flip(explode(',', $excluded));\n        }\n    }\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- config.php\n\n-----[в самый низ добавить]-----\n\n$bb_cfg['blog'] = array(\n  'on'                => true,\n  'on_rate'            => true,\n  'cache'            => 24, //кеш держится в часах\n  'cache_rate'        => 24, //кеш держится в часах\n  'captcha_on'         => true,\n  'captcha'            => 'captcha', // может иметь значения recaptcha или captcha\n  'chek_user'          => true, // true - user, false - administrator/moderator\n);\n$bb_cfg['dir_blog_cat_icon'] = BB_ROOT .'images/blog_icons/';\n$bb_cfg['dir_blog_cat_icon_s'] = 'images/blog_icons/';\n$recaptcha_public_key = '6LeD4s8SAAAAAKue7AK1Nlali1iuyabJwwMViAZq';  // You need to put your public key here\n$recaptcha_private_key = '6LeD4s8SAAAAALuKkXp6WAyiFnjXwqN01rsUkNDJ'; // You need to put your private key here\n$recaptchaData['lang'] = \"ru\";    // reCAPTCHA Язык\n$recaptchaData['theme'] = \"white\";  // red, white, blackglass, clean, custom\n$recaptcha_code = null;\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- posting_editor.tpl\n\n-----[найти]-----\n\n<div class=\"mrg_8 tCenter\">\n    <div id=\"post-buttons-block\" style=\"display: none;\">\n        <div class=\"pad_4\">{CAPTCHA_HTML}</div>\n        <input type=\"submit\" name=\"preview\" value=\"{L_PREVIEW}\" id=\"post-preview-btn\" onclick=\"$('#post-submit').remove();\">&nbsp;&nbsp;\n        <input onclick=\"submitted = true;\" title=\"Ctrl+Enter\" type=\"submit\" name=\"post\" class=\"bold\" value=\"{L_SUBMIT}\" id=\"post-submit-btn\">&nbsp;&nbsp;\n        <input type=\"button\" value=\"{L_AJAX_PREVIEW}\" onclick=\"ajax.exec({ action: 'posts', type: 'view_message', message: $('textarea#message').val()});\">\n    </div>\n    <div id=\"post-js-warn\">{L_JAVASCRIPT_ON}</div>\n</div>\n\n-----[заменить]-----\n\n<div class=\"mrg_8 tCenter\">\n    <!-- IF CAPTCHA_ON -->\n    <!-- IF CAPTCHA_IS == 'captcha' -->\n        <div align=\"center\"><span id=\"refresh_captcha\">{CAPTCHA_HTML}</span> <img align=\"middle\" src=\"images/pic_loading.gif\" title=\"{L_UPDATE}\" onclick=\"ajax.exec({ action: 'user_register', mode: 'refresh_captcha'}); return false;\"></div>\n    <!-- ENDIF -->\n    <!-- IF CAPTCHA_IS == 'recaptcha' -->\n        <div align=\"center\">{RECAPTCHA_CODE}</div>\n    <!-- ENDIF -->\n    <!-- ENDIF -->\n    <div id=\"post-buttons-block\" style=\"display: none;\">\n        <!-- IF CAPTCHA_ON --><!-- ELSE --><div class=\"pad_4\">{CAPTCHA_HTML}</div><!-- ENDIF -->\n        <!-- IF QUESTS_REPLY --><!-- ELSE --><input type=\"submit\" name=\"preview\" value=\"{L_PREVIEW}\" id=\"post-preview-btn\" onclick=\"$('#post-submit').remove();\">&nbsp;&nbsp;<!-- ENDIF -->\n        <input onclick=\"submitted = true;\" title=\"Ctrl+Enter\" type=\"submit\" name=\"post\" class=\"bold\" value=\"{L_SUBMIT}\" id=\"post-submit-btn\">&nbsp;&nbsp;\n        <input type=\"button\" value=\"{L_AJAX_PREVIEW}\" onclick=\"ajax.exec({ action: 'posts', type: 'view_message', message: $('textarea#message').val()});\">\n    </div>\n    <div id=\"post-js-warn\">{L_JAVASCRIPT_ON}</div>\n</div>\n\n-----[найти]-----\n\n<!-- IF QUICK_REPLY -->\n<!-- IF IN_PM -->\n<!-- ELSE -->\n\n-----[заменить]-----\n\n<!-- IF QUESTS_REPLY -->\n<!-- ELSE -->\n<!-- IF QUICK_REPLY -->\n<!-- IF IN_PM -->\n<!-- ELSE -->\n\n-----[найти]-----\n\n<!-- ENDIF -->\n<!-- ENDIF -->\n<!-- ENDIF -->\n\n-----[заменить]-----\n\n<!-- ENDIF -->\n<!-- ENDIF -->\n<!-- ENDIF -->\n<!-- ENDIF -->\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n|||||||||||||||||||||||||||||||||||||\n|        ЗАПУСТИТЕ CRON ЗАДАЧУ        |\n|                И                    |\n|           ОЧИСТИТЕ КЕШ!!!!!        |\n|||||||||||||||||||||||||||||||||||||[/PHP]\n[/SPOILER]",
+    "owner": "frost444",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425254397,
+      "file_size": 31808,
+      "filename": "1.webp",
+      "height": 498,
+      "id": 3115,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/1-webp.3115/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3119-2f8916e6e682e034f4f884cc948bba3f.jpg?hash=-Vor4nk6rf",
+      "width": 1103
+    },
+    {
+      "attach_date": 1425254398,
+      "file_size": 49362,
+      "filename": "2.webp",
+      "height": 762,
+      "id": 3116,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2-webp.3116/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3120-a376da831a24af29fdc02633e2d0ff60.jpg?hash=7noT-1PZlp",
+      "width": 1032
+    },
+    {
+      "attach_date": 1425254398,
+      "file_size": 16410,
+      "filename": "3.webp",
+      "height": 322,
+      "id": 3117,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/3-webp.3117/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3121-090af6a8727302195173f6dcae8aad8f.jpg?hash=i5EA4wWL94",
+      "width": 1045
+    },
+    {
+      "attach_date": 1425254399,
+      "file_size": 15678,
+      "filename": "4.webp",
+      "height": 345,
+      "id": 3118,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/4-webp.3118/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3122-01d614350d42f689fbc86eccb742e860.jpg?hash=cvW5dhV3Tp",
+      "width": 1034
+    },
+    {
+      "attach_date": 1425254399,
+      "file_size": 23760,
+      "filename": "5.webp",
+      "height": 496,
+      "id": 3119,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/5-webp.3119/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3123-316c531acb5d4f624a64757101c48e28.jpg?hash=ZFYcQDOxXK",
+      "width": 696
+    },
+    {
+      "attach_date": 1425254400,
+      "file_size": 58240,
+      "filename": "6.webp",
+      "height": 1067,
+      "id": 3120,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/6-webp.3120/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3124-32349436621b28e34e029acc3c039690.jpg?hash=5LPG8h_SW_",
+      "width": 1076
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет пользователям возможность вести блоги.<br />\n<br />\nОсновные возможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Добавление комментариев</li>\n<li data-xf-list-type=\"ul\">Переключение капчи, recaptcha или стандартная</li>\n<li data-xf-list-type=\"ul\">Поиск как по комментариям так и по статьям</li>\n<li data-xf-list-type=\"ul\">Облако тегов генерируется из тех которые есть в блогах</li>\n<li data-xf-list-type=\"ul\">Гибкая настройка</li>\n<li data-xf-list-type=\"ul\">Возможность добавить быструю запись в блог, при создании темы или раздачи( с редиректом в форум)</li>\n<li data-xf-list-type=\"ul\">Отдельная система доступа к категориям и новостям</li>\n<li data-xf-list-type=\"ul\">Нагрузка сведена к минимуму</li>\n</ul>",
+  "download_count": 221,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/172.jpg?1425254715",
+  "id": 172,
+  "is_fileless": null,
+  "last_update": 1425254698,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1425254698,
+  "resource_state": "visible",
+  "slug": "blogi",
+  "tag_line": "Добавляет пользователям возможность вести блоги.",
+  "tags": [],
+  "title": "Блоги",
+  "url_path": "/resources/blogi.172/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 221,
+      "files": [
+        {
+          "filename": "[FULL][$][TP2] Blog.zip",
+          "id": 3121,
+          "local_path": null,
+          "r2_key": null,
+          "size": 174756,
+          "src_url": "https://torrentpier.com/api/resource-versions/206/download?file=3121"
+        }
+      ],
+      "id": 206,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425254698,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/blogi.172/version/206/"
+    }
+  ],
+  "view_count": 502
+}

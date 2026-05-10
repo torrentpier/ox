@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 9154,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 709,
+  "last_post_date": 1326397038,
+  "node_id": 57,
+  "post_date": 1326201196,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9154,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Сделал у себя SMTP сервер и выходит ошибка:<br />\nCould not connect to smtp host : 0 : php_network_getaddresses: getaddrinfo failed: ���� ���� ����������.<br />\nВидно, что проблема в адресе. Какой у него должен быть адрес? Мне осталось указать адрес в настройках e-mail на трекере.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1326201196,
+      "user_id": 722,
+      "user_title": "User",
+      "username": "Азат"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9156,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Сделал SMTP у себя на компе.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1326203732,
+      "user_id": 722,
+      "user_title": "User",
+      "username": "Азат"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9157,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здесь не форум с обучением, как установить сервер.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1326204503,
+      "user_id": 30,
+      "user_title": "User",
+      "username": "krumax"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9172,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Просто активацию по почте хотелось сделать. Я-то SMTP сделал, но вот адрес какой вписывать в настройки емейл  (на трекере) не знаю.<br />\n<span style=\"color: rgb(204,204,204)\"><span style=\"font-size: 10px\">--- добавлено: 10 янв 2012 в 19:52 ---</span></span><br />\nЯ забыл написать, что эта ошибка выходит на трекере при регистрации.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1326210765,
+      "user_id": 722,
+      "user_title": "User",
+      "username": "Азат"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9330,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "ну так авторизации нет, и инфы мало!",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1326397038,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "sdelal-u-seba-na-kompe-smtp-server-i-vyhodit-osibka",
+  "sticky": false,
+  "tags": [],
+  "title": "Сделал у себя на компе SMTP сервер. И выходит ошибка...",
+  "url_path": "/threads/sdelal-u-seba-na-kompe-smtp-server-i-vyhodit-osibka.709/",
+  "user_id": 722,
+  "username": "Азат",
+  "view_count": 1644
+}

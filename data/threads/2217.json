@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 27032,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 2217,
+  "last_post_date": 1361277052,
+  "node_id": 57,
+  "post_date": 1361044802,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27032,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "[16-Feb-2013 20:45:34 Europe/Moscow] PHP Fatal error: Call to a member function spellDelta() on a non-object in /includes/functions.php on line 661<br />\n <br />\nВ чем проблема?<br />\n <br />\n<b>php.ini</b><br />\ndate.timezone = Europe/Moscow",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1361044802,
+      "user_id": 2636,
+      "user_title": "User",
+      "username": "fail"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27065,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"\">return $GLOBALS[&#039;DeltaTime&#039;]-&gt;spellDelta($timestamp_1, $timestamp_2, $granularity);</pre> <br />\nЛезет и лезет....  [ php 5.4.11 ]<br />\n <br />\nПомогите",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1361185017,
+      "user_id": 2636,
+      "user_title": "User",
+      "username": "fail"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27093,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Проблема вроде решилась: На серваке стояла другая тайм зона! Нужно было в админке поставть такую же...",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1361277052,
+      "user_id": 2636,
+      "user_title": "User",
+      "username": "fail"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "log",
+  "sticky": false,
+  "tags": [],
+  "title": "Лог",
+  "url_path": "/threads/log.2217/",
+  "user_id": 2636,
+  "username": "fail",
+  "view_count": 995
+}

@@ -1,0 +1,105 @@
+{
+  "custom_fields": {
+    "torrentpier": "243"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 96991,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42343,
+  "last_post_date": 1736000399,
+  "node_id": 57,
+  "post_date": 1735917411,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96991,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Привет,<br />\n<br />\nНедавно я просмотрел все торрент-трекеры для своего проекта и должен сказать, что Torrentpier — самый впечатляющий на сегодняшний день.  У меня есть всего один вопрос, прежде чем я решусь и сделаю на его основе свой трекер.  Я хочу знать, можно ли скрыть торрент-ссылки для определенных групп, а также предотвратить загрузку торрентов, даже если у кого-то есть файл, если ему это не разрешено.<br />\n<br />\nСпасибо.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1735917411,
+      "user_id": 10975,
+      "user_title": "User",
+      "username": "Stacker"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96992,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Stacker\">Привет,<br />\n<br />\nНедавно я просмотрел все торрент-трекеры для своего проекта и должен сказать, что Torrentpier — самый впечатляющий на сегодняшний день.  У меня есть всего один вопрос, прежде чем я решусь и сделаю на его основе свой трекер.  Я хочу знать, можно ли скрыть торрент-ссылки для определенных групп, а также предотвратить загрузку торрентов, даже если у кого-то есть файл, если ему это не разрешено.<br />\n<br />\nСпасибо.</blockquote>Описанный функционал не в полной мере реализован на данный момент.<br />\n<br />\nПроблема в том, что даже скрыв ссылку на загрузку, останется Magnet ссылка которая будет видна все пользователям, и по которой можно будет загрузить торрент.<br />\n<br />\nСистема управления группами / правами нуждается в серьезном пересмотре, ибо текущая реализация имеет много недостатков.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1735926644,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96993,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо за ответ.<br />\n<br />\nНо я предполагаю, что мы соблюдаем соотношение, если у пользователя недостаточно кредитов, он не сможет загрузить файл, верно?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1735939953,
+      "user_id": 10975,
+      "user_title": "User",
+      "username": "Stacker"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96999,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Stacker\">Спасибо за ответ.<br />\n<br />\nНо я предполагаю, что мы соблюдаем соотношение, если у пользователя недостаточно кредитов, он не сможет загрузить файл, верно?</blockquote>Есть такое понятие как User Ratio (некая система рейтинга, которая формируется на основе отданного (seed) к скачанному (leech). Вот формула: <pre class=\"xfBb-code\" data-lang=\"php\">$btu[&#039;u_up_total&#039;] + $btu[&#039;u_up_release&#039;] + $btu[&#039;u_up_bonus&#039;]) / $btu[&#039;u_down_total&#039;]\n// (Всего отдано + на своих раздачах + бонусных) / Скачано = Рейтинг</pre>Если пользователь скачал много торрентов, но при этом не раздает их (not seeding), то его User Ratio начинает ухудшаться, и он не сможет скачать новые торренты до тех пор, пока не раздаст те, которые уже скачал.<br />\n<br />\nПри рейтинге <b>0.6</b> и ниже, пользователю будет выдано предупреждение на странице с раздачей.<br />\nПри рейтинге <b>0.3</b> и ниже, пользователь не сможет скачать торрент.<br />\nВот эти настройки (config.php):<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">// Torrents\n$bb_cfg[&#039;bt_min_ratio_allow_dl_tor&#039;] = 0.3; // 0 - disable\n$bb_cfg[&#039;bt_min_ratio_warning&#039;] = 0.6; // 0 - disable</pre><br />\nТут можно настроить размер скачанного, начиная с которого будет считаться рейтинг (defines.php):<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">define(&#039;MIN_DL_FOR_RATIO&#039;, 10737418240); // 10 GB in bytes, 0 - disable</pre><br />\nТакже, стоит знать что для администраторов (IS_ADMIN константа) ограничения рейтинга не работают.<br />\n<br />\nПри желании систему рейтинга можно отключить (defines.php):<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">define(&#039;TR_RATING_LIMITS&#039;, true);        // ON/OFF</pre>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1736000399,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "skrytie-ssylok-na-skacivanie-torrentov-dla-opredelennyh-grupp-pol-zovatelej",
+  "sticky": false,
+  "tags": [],
+  "title": "Скрытие ссылок на скачивание торрентов для определенных групп пользователей",
+  "url_path": "/threads/skrytie-ssylok-na-skacivanie-torrentov-dla-opredelennyh-grupp-pol-zovatelej.42343/",
+  "user_id": 10975,
+  "username": "Stacker",
+  "view_count": 690
+}

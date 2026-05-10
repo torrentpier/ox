@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 60117,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25878,
+  "last_post_date": 1400014647,
+  "node_id": 57,
+  "post_date": 1396932372,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60117,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как првильно, через nginx или апач там, закрыть возможность перехода юзера на сайт по IP в смысле по IP сайта, т.е. что бы доступ был тока по доменному имени...можно конечно тупо создать домен с таким же ip, и нечего там не положить но это как то не правильно?....просто был прецедент когда сайт индексировался гуглом по апу а не домену...",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1396932372,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60131,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Что никто не знает как nginx отстроить ?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1397026887,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60141,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Знаем. Но это гуглится по первой ссылке. Неужели это трудно?<br />\nПодсказка: listen в директории server.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1397054933,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60766,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Или еще один простой вариант (если панель ISP или подобная): делаем &quot;домен&quot; с именем равным IP-адресу и с него ставим редирект на основной домен средствами все той же панели.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1400014647,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "ip",
+  "sticky": false,
+  "tags": [],
+  "title": "IP",
+  "url_path": "/threads/ip.25878/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1183
+}

@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 80660,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 58,
+        "title": "Suggestions for improving TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 112,
+    "title": "Reviewed & processed suggestions"
+  },
+  "id": 39126,
+  "last_post_date": 1771106009,
+  "node_id": 112,
+  "post_date": 1427542797,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 80660,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Для аудио файлов в раздаче вывести аудиоплеер, для возможности прослушать и оценить качество раздаваемых файлов без предварительной загрузки.  <br />\n <img src=\"https://dl.dropboxusercontent.com/u/43001898/tpeer/itp1.jpg\" alt=\"\" /> <br />\n <br />\nПонятно, что аудио будет загружаться с веб-сида при его наличии. Но, если будет возможность релизеру вписать потом sid торрента, либо sid будет узнавать движок трекера, тогда ко всем аудиофайлам на всех раздачах можно вывести линки загрузки и проигрыватель по умолчанию.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1427542797,
+      "user_id": 5013,
+      "user_title": "User",
+      "username": "grey_rat"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 80662,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Можно прямо переделать TorrentStream для MP3 Файлов.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1427543142,
+      "user_id": 6095,
+      "user_title": "Blocked",
+      "username": "satan"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 80667,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Не у каждого есть TorrentStream, хотя я не против переделывания для mp3 файлов под него . <br />\nПросто линк веб-сида доступен всем, даже если у человека вообще нет на компьютере торрент-клиента, или его провайдер блокирует p2p трафик.<br />\n<br />\nКстати, если торрент-трекер может достать IP и порт юзера, и идентефицировать его по отосланному пасскею  (что он собственно и делает). То наверно можно сделать и так : <br />\nПри оформлении раздачи на трекере, после загрузки торрент-файла, трекер выведет окошко с просьбой указать sid торрента. Этот sid будет потом вписан в описание раздачи под неотображающемся BB-кодом. И при открытие Списка файлов автоматом подставляться в ссылки веб-сида. <br />\nК примеру, релизер зашёл на раздачу, трекер видит что он есть и получает его IP и порт которые подставляет в ссылку, затем если трекер видит BB-код sid в описании раздачи - включается механизм отображения дополнительного значка/ссылки веб-сида в списке файлов на utorrent релизера раздачи . <br />\n<br />\nТогда настройки Удалённого доступа utorrent не будут нужны. Трекер будет работать с теми данными что он получает сейчас.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1427549297,
+      "user_id": 5013,
+      "user_title": "User",
+      "username": "grey_rat"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 80669,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "TorrentStream и так может воспроизвести mp3, но это очень не удобно",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1427550244,
+      "user_id": 5415,
+      "user_title": "User",
+      "username": "crazy_dog"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98401,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Реализовано.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1771106009,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 33,
+  "reply_count": 4,
+  "slug": "proigryvatel-audiofajlov-v-spiske-fajlov-razdaci",
+  "sticky": false,
+  "tags": [],
+  "title": "Проигрыватель аудиофайлов в списке файлов раздачи",
+  "url_path": "/threads/proigryvatel-audiofajlov-v-spiske-fajlov-razdaci.39126/",
+  "user_id": 5013,
+  "username": "grey_rat",
+  "view_count": 2258
+}

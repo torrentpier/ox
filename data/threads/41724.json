@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 91342,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 19,
+    "title": "Adaptation of modifications to TorrentPier"
+  },
+  "id": 41724,
+  "last_post_date": 1495461234,
+  "node_id": 19,
+  "post_date": 1495458603,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91342,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/forum/threads/tajmer-zoloto-serebro.58/\" class=\"link link--internal\">https://torrentpier.com/forum/threads/tajmer-zoloto-serebro.58/</a><br />\n<br />\nПросьба адаптировать под <b>2.1.5</b>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1495458603,
+      "user_id": 1290,
+      "user_title": "User",
+      "username": "REM"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91343,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"REM\"><a href=\"https://torrentpier.com/forum/threads/tajmer-zoloto-serebro.58/\" class=\"link link--internal\">https://torrentpier.com/forum/threads/tajmer-zoloto-serebro.58/</a><br />\n<br />\nПросьба адаптировать под <b>2.1.5</b></blockquote>Эм, а что там адаптировать то ?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1495461234,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    }
+  ],
+  "prefix_id": 50,
+  "reply_count": 1,
+  "slug": "tajmer-zoloto-i-serebro",
+  "sticky": false,
+  "tags": [],
+  "title": "Таймер золото и серебро",
+  "url_path": "/threads/tajmer-zoloto-i-serebro.41724/",
+  "user_id": 1290,
+  "username": "REM",
+  "view_count": 1395
+}

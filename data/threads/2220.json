@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 27048,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 2220,
+  "last_post_date": 1361126550,
+  "node_id": 57,
+  "post_date": 1361126550,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27048,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброе время суток. У меня возникла проблема с импорта базы данных, помогите кто то решить эту проблему. Заранее спасибо.<br />\n <br />\nhttp://s019.*******.host/i620/1302/9e/c4b625bfcf80.gif",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1361126550,
+      "user_id": 5861,
+      "user_title": "User",
+      "username": "bestmd"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "osibka-v-sql-zapros",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка в SQL-запрос!",
+  "url_path": "/threads/osibka-v-sql-zapros.2220/",
+  "user_id": 5861,
+  "username": "bestmd",
+  "view_count": 879
+}

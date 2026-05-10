@@ -1,0 +1,65 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95222,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 42172,
+  "last_post_date": 1696242093,
+  "node_id": 3,
+  "post_date": 1696242093,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1696242091,
+          "file_size": 2124213,
+          "filename": "TorrentPier_SVN_v.2.х_R553_by_TorrentPier.kz.rar",
+          "height": 0,
+          "id": 5525,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/torrentpier_svn_v-2-h_r553_by_torrentpier-kz-rar.5525/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 95222,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Модифицированный TorrentPier SVN v 2.х r553<br />\n<hr />Год выпуска: 2011<br />\nВерсия: 2.х<br />\nРазработчик: Meithar<br />\nСборка модификации: ZerocooL<br />\nПлатформа: php<br />\n<hr />Системные требования:<br />\n<hr />Apache 2.2.6 или lighthttpd или NGINX<br />\nMySQL 5.0.45 или выше<br />\nPHP 5.2.5 или выше<br />\nЯзык интерфейса: английский + русский<br />\nТаблэтка: Не требуется<br />\n<hr />Описание:<br />\n<hr />Модифицированный движок трекера torrentpier 2.х ,<br />\nСборка основана на последней версии TorrentPier 2.0.7 SVN r553<br />\nдвижок полностью на unicode UTF-8<br />\nTorrentPier - популярный движок (русскоязычных и не только) BitTorrent-трекеров основанный на PhpBB2. Относительно популярен у российских пользователей, из-за его использования каталогом RuTracker.org.<br />\nПолностью написан на PHP, включая анонсер. В основе организации лежит принцип торрент → топик, то есть торренту сопоставлена единственная тема на форуме. Торрент-файл загружается в первое сообщение темы автором, после чего происходит регистрация этого торрента на трекере. Следует учесть, что хотя форумная и трекерная части достаточно тесно интегрированы, трекерная часть использует отдельные таблицы в БД, поэтому возможно отделить трекерную часть (анонсер) и вынести её, к примеру, на отдельный сервер.<br />\nНа текущий момент существует версия анонсера на C++ XBT Tracker (англ.).<br />\nПоддержка трекеров на базе данного движка осуществляется на неофициальном сайте torrentpier.com - Клуб разработчиков TorrentPier.<br />\nПоддержку и обновление данной сборки осуществляет &quot;torrentpier.com - форум поддержки TorrentPier в KZ&quot;<br />\n<hr /><div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1696242093,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "modificirovannyj-torrentpier-svn-v-2-h-r553-ot-torrentpier-com-dla-oznakomlenia",
+  "sticky": false,
+  "tags": [],
+  "title": "Модифицированный TorrentPier SVN v 2.х r553 от torrentpier.com (для ознакомления)",
+  "url_path": "/threads/modificirovannyj-torrentpier-svn-v-2-h-r553-ot-torrentpier-com-dla-oznakomlenia.42172/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 466
+}

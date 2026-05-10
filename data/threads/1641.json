@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 21992,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1641,
+  "last_post_date": 1351679944,
+  "node_id": 57,
+  "post_date": 1351613974,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 21992,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Сабственно САБЖ.<br />\nГлобальная статистика трекера не обновляется. Т.е. добавляешь раздачу или сообщение все остается в прежнем состоянии.<br />\n<img src=\"http://img.multi-up.by/images/249stats.gif\" alt=\"\" />крон работает нормально, в лога все нормально старт-работа-завершение.<br />\nСтатистика обновляется только после того, как через админку сделаю зачистку вручную, т.е.<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Очистить кеш</b>:    Datastore, Весь кеш, Шаблона</blockquote> <span style=\"color: #ff0000\"><b>Вопрос</b></span>:<br />\nЧто не так?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1351613974,
+      "user_id": 2816,
+      "user_title": "User",
+      "username": "Silverado"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 21999,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "кеш чистит крон...",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1351620421,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 22000,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Очистить кеш</b>: Datastore, Весь кеш, Шаблона</blockquote>Работает и сразу показывает",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1351620784,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 22035,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"PheRum\">кеш чистит крон...</blockquote>Так вот почему-то не чистит?<br />\n<b>Решение таково</b>:<br />\nУ меня R463 залита. Я взял крон-задачи из 460, перезалил в свою ревизию и все встало на свои места.<br />\n<b>Вывод</b>: где-то в 463-ей не правильные крон-задачи. Пробовал запускать по-одиночке и проверял статистику - в результате ничего не изменялось. Потом просто перезаписал крон-задачи и все заработало. На первый взгляд вроде без ошибок всё",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1351679944,
+      "user_id": 2816,
+      "user_title": "User",
+      "username": "Silverado"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "statistika-trekera-ne-obnovlaetsa",
+  "sticky": false,
+  "tags": [],
+  "title": "Статистика трекера не обновляется",
+  "url_path": "/threads/statistika-trekera-ne-obnovlaetsa.1641/",
+  "user_id": 2816,
+  "username": "Silverado",
+  "view_count": 1426
+}

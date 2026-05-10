@@ -1,0 +1,102 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 88535,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41535,
+  "last_post_date": 1475701046,
+  "node_id": 57,
+  "post_date": 1475657398,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1475657180,
+          "file_size": 168720,
+          "filename": "cron.webp",
+          "height": 767,
+          "id": 4497,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/cron-webp.4497/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4501-4992417081bd9c43eab972150cf01489.jpg?hash=PKYquRo1MK",
+          "width": 1366
+        }
+      ],
+      "id": 88535,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте уважаемые знатоки. У меня на трекере в логах пишутся какие то странное ошибки. С поиск юзал но подходящий ответы на нашел. Дайте пожалуйста свой советы.<br />\n<br />\nОшибки в логи <b>php_err.log</b><br />\n<pre class=\"xfBb-code\" data-lang=\"\">[05-Oct-2016 07:40:12 Europe/Moscow] PHP Stack trace:\n[05-Oct-2016 07:40:12 Europe/Moscow] PHP   1. {main}() E:\\Openserver\\domains\\сайт\\cron.php:0\n[05-Oct-2016 07:40:12 Europe/Moscow] PHP   2. require() E:\\Openserver\\domains\\сайт\\cron.php:6\n[05-Oct-2016 07:40:12 Europe/Moscow] PHP   3. require() E:\\Openserver\\domains\\сайт\\common.php:481\n[05-Oct-2016 07:40:12 Europe/Moscow] PHP   4. require() E:\\Openserver\\domains\\сайт\\library\\includes\\init_bb.php:517\n[05-Oct-2016 07:40:12 Europe/Moscow] PHP   5. require() E:\\Openserver\\domains\\сайт\\library\\includes\\cron\\cron_init.php:59\n[05-Oct-2016 07:40:12 Europe/Moscow] PHP   6. require() E:\\Openserver\\domains\\сайт\\library\\includes\\cron\\cron_check.php:30\n[05-Oct-2016 07:40:12 Europe/Moscow] PHP   7. require() E:\\Openserver\\domains\\сайт\\library\\includes\\cron\\cron_run.php:64\n[05-Oct-2016 07:40:12 Europe/Moscow] PHP   8. sql_db-&gt;query() E:\\Openserver\\domains\\сайт\\library\\includes\\cron\\jobs\\flash_topic_view.php:20\n[05-Oct-2016 07:40:12 Europe/Moscow] PHP   9. sql_db-&gt;trigger_error() E:\\Openserver\\domains\\сайт\\library\\includes\\core\\mysql.php:174\n[05-Oct-2016 07:40:12 Europe/Moscow] PHP  10. trigger_error() E:\\Openserver\\domains\\сайт\\library\\includes\\core\\mysql.php:804</pre> на<b> sql_error_bb.log</b><br />\n<pre class=\"xfBb-code\" data-lang=\"\">#001032 Can&#039;t find record in &#039;buf_topic_view&#039;\n\nUPDATE bb_topics t, buf_topic_view buf SET t.topic_views = t.topic_views + buf.topic_views WHERE t.topic_id = buf.topic_id\n\nSource  : library\\includes\\cron\\jobs\\flash_topic_view.php(20) :: db1.pier\nIP      : 127.0.0.1\nDate    : 2016-10-05 07:40:12\nAgent   :\nReq_URI :\nReferer :\nMethod  :\nPID     : 04220\nRequest : Array\n(\n)______________________________________________________________________________</pre><br />\n2. require() E:\\Openserver\\domains\\сайт\\cron.php:6<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;?php\n\ndefine(&#039;START_CRON&#039;, true);\ndefine(&#039;BB_ROOT&#039;, dirname ( __FILE__ ) . &#039;/&#039;);\n\nrequire(BB_ROOT. &#039;common.php&#039;); // &lt;-------6 строка</pre>3. require() E:\\Openserver\\domains\\сайт\\common.php:481<br />\n<pre class=\"xfBb-code\" data-lang=\"\">// Board init\nif (defined(&#039;IN_FORUM&#039;))\n{\n    require(INC_DIR .&#039;init_bb.php&#039;); // &lt;-------481 строка \n}</pre>4. require() E:\\Openserver\\domains\\сайт\\library\\includes\\init_bb.php:517<br />\n<pre class=\"xfBb-code\" data-lang=\"\">// Cron\nif ((empty($_POST) &amp;&amp; !defined(&#039;IN_ADMIN&#039;) &amp;&amp; !defined(&#039;IN_AJAX&#039;) &amp;&amp; !file_exists(CRON_RUNNING) &amp;&amp; ($bb_cfg[&#039;cron_enabled&#039;] || defined(&#039;START_CRON&#039;))) || defined(&#039;FORCE_CRON&#039;))\n{\n    if (TIMENOW - $bb_cfg[&#039;cron_last_check&#039;] &gt; $bb_cfg[&#039;cron_check_interval&#039;])\n    {\n        // Update cron_last_check\n        bb_update_config(array(&#039;cron_last_check&#039; =&gt; (TIMENOW + 10)));\n\n        define(&#039;CRON_LOG_ENABLED&#039;, true);  // global ON/OFF\n        define(&#039;CRON_FORCE_LOG&#039;,   false); // always log regardless of job settings\n\n        define(&#039;CRON_DIR&#039;,      INC_DIR  .&#039;cron/&#039;);\n        define(&#039;CRON_JOB_DIR&#039;,  CRON_DIR .&#039;jobs/&#039;);\n        define(&#039;CRON_LOG_DIR&#039;,  &#039;cron/&#039;); // inside LOG_DIR\n        define(&#039;CRON_LOG_FILE&#039;, &#039;cron&#039;);  // without ext\n\n        bb_log(date(&#039;H:i:s - &#039;) . getmypid() .&#039; -x-- DB-LOCK try&#039;. LOG_LF, CRON_LOG_DIR .&#039;cron_check&#039;);\n\n        if (DB()-&gt;get_lock(&#039;cron&#039;, 1))\n        {\n            bb_log(date(&#039;H:i:s - &#039;) . getmypid() .&#039; --x- DB-LOCK OBTAINED !!!!!!!!!!!!!!!!!&#039;. LOG_LF, CRON_LOG_DIR .&#039;cron_check&#039;);\n\n            sleep(2);\n            require(CRON_DIR .&#039;cron_init.php&#039;);  &lt;-------517 строка \n\n            DB()-&gt;release_lock(&#039;cron&#039;);\n        }\n    }\n}</pre>5. require() E:\\Openserver\\domains\\сайт\\library\\includes\\cron\\cron_init.php:59<br />\n<pre class=\"xfBb-code\" data-lang=\"\">//\n// Run cron\n//\nif (cron_get_file_lock())\n{\n    ignore_user_abort(true);\n    register_shutdown_function(&#039;cron_release_file_lock&#039;);\n    register_shutdown_function(&#039;cron_enable_board&#039;);\n\n#    bb_log(date(&#039;H:i:s - &#039;) . getmypid() .&#039; --x- FILE-LOCK OBTAINED ###############&#039;. LOG_LF, CRON_LOG_DIR .&#039;cron_check&#039;);\n\n    cron_track_running(&#039;start&#039;);\n\n    require(CRON_DIR .&#039;cron_check.php&#039;); &lt;-------59 строка\n\n    cron_track_running(&#039;end&#039;);\n}</pre>6. require() E:\\Openserver\\domains\\сайт\\library\\includes\\cron\\cron_check.php:30<br />\n<pre class=\"xfBb-code\" data-lang=\"\">// Run cron jobs\nif ($cron_jobs)\n{\n    bb_log(date(&#039;H:i:s - &#039;) . getmypid() .&#039; --x- RUN jobs&#039;. LOG_LF, CRON_LOG_DIR .&#039;cron_check&#039;);\n\n    foreach ($cron_jobs as $job)\n    {\n        if ($job[&#039;disable_board&#039;])\n        {\n            cron_disable_board();\n            sleep(10);\n            break;\n        }\n    }\n\n    require(CRON_DIR .&#039;cron_run.php&#039;); &lt;-------30 строка</pre>7. require() E:\\Openserver\\domains\\сайт\\library\\includes\\cron\\cron_run.php:64<br />\n<pre class=\"xfBb-code\" data-lang=\"\">// $cron_jobs obtained in cron_check.php\nforeach ($cron_jobs as $job)\n{\n    $job_script = CRON_JOB_DIR . basename($job[&#039;cron_script&#039;]);\n\n    if (file_exists($job_script))\n    {\n        $cron_start_time   = utime();\n        $cron_runtime_log  = &#039;&#039;;\n        $cron_write_log    = (CRON_LOG_ENABLED &amp;&amp; (CRON_FORCE_LOG || $job[&#039;log_enabled&#039;] &gt;= 1));\n        $cron_sql_log_file = CRON_LOG_DIR .&#039;SQL-&#039;. basename($job[&#039;cron_script&#039;]);\n\n        if ($cron_write_log)\n        {\n            $msg = array();\n            $msg[] = &#039;start&#039;;\n            $msg[] = date(&#039;m-d&#039;);\n            $msg[] = date(&#039;H:i:s&#039;);\n            $msg[] = sprintf(&#039;%-4s&#039;, round(sys(&#039;la&#039;), 1));\n            $msg[] = sprintf(&#039;%05d&#039;, getmypid());\n            $msg[] = $job[&#039;cron_title&#039;];\n            $msg = join(LOG_SEPR, $msg);\n            bb_log($msg . LOG_LF, CRON_LOG_DIR . CRON_LOG_FILE);\n        }\n\n        if ($job[&#039;log_sql_queries&#039;])\n        {\n            DB()-&gt;log_next_query(100000, $cron_sql_log_file);\n        }\n\n        set_time_limit(600);\n        require($job_script); &lt;-------64 строка</pre>8. sql_db-&gt;query() E:\\Openserver\\domains\\сайт\\library\\includes\\cron\\jobs\\flash_topic_view.php:20<br />\n<pre class=\"xfBb-code\" data-lang=\"\">// Flash buffered records\nDB()-&gt;query(&quot;\n    UPDATE\n        &quot;. BB_TOPICS         .&quot; t,\n        &quot;. BUF_TOPIC_VIEW .&quot; buf\n    SET\n        t.topic_views = t.topic_views + buf.topic_views\n    WHERE\n        t.topic_id = buf.topic_id\n&quot;);  &lt;-------20 строка</pre>9. sql_db-&gt;trigger_error() E:\\Openserver\\domains\\сайт\\library\\includes\\core\\mysql.php:174<br />\n<pre class=\"xfBb-code\" data-lang=\"\">    function query ($query)\n    {\n        if (!$result = $this-&gt;sql_query($query))\n        {\n            $this-&gt;trigger_error();\n        }\n\n        return $result; &lt;-------174 строка\n    }</pre>10. trigger_error() E:\\Openserver\\domains\\сайт\\library\\includes\\core\\mysql.php:804<br />\n<pre class=\"xfBb-code\" data-lang=\"\">function trigger_error ($msg = &#039;DB Error&#039;)\n    {\n        if (error_reporting())\n        {\n            if (DBG_LOG === true)\n            {\n                $err = $this-&gt;sql_error();\n                $msg .= &quot;\\n&quot;. trim(sprintf(&#039;#%06d %s&#039;, $err[&#039;code&#039;], $err[&#039;message&#039;]));\n            }\n            else\n            {\n                $msg .= &quot; [&quot;. $this-&gt;debug_find_source() .&quot;]&quot;;\n            }\n\n            trigger_error($msg, E_USER_ERROR); &lt;-------804 строка\n        }\n    }</pre>Вот крон задача. Что сделал не так? Помогите решать проблему. Заранее спасибо.<br />\n<a href=\"https://torrentpier.com/attachments/4497/\"><img src=\"https://torrentpier.com/data/attachments/4/4501-4992417081bd9c43eab972150cf01489.jpg?hash=PKYquRo1MK\" alt=\"cron.webp\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1475657398,
+      "user_id": 6187,
+      "user_title": "User",
+      "username": "Darkterror"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88536,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "на <b>cron_check.log<br />\n<pre class=\"xfBb-code\" data-lang=\"\">11:35:00 - 4404 -x-- DB-LOCK try\n11:35:00 - 4404 --x- DB-LOCK OBTAINED !!!!!!!!!!!!!!!!!\n11:35:02 - 4404 --x- SELECT jobs\n11:35:02 - 4404 --x- RUN jobs\n11:35:14 - 4404 --x- ALL jobs FINISHED *************************************************\n11:40:01 - 416 -x-- DB-LOCK try\n11:40:01 - 416 --x- DB-LOCK OBTAINED !!!!!!!!!!!!!!!!!\n11:40:03 - 416 --x- SELECT jobs\n11:40:03 - 416 --x- RUN jobs\n11:40:15 - 416 --x- ALL jobs FINISHED *************************************************\n11:45:00 - 1392 -x-- DB-LOCK try\n11:45:00 - 1392 --x- DB-LOCK OBTAINED !!!!!!!!!!!!!!!!!\n11:45:02 - 1392 --x- SELECT jobs\n11:45:02 - 1392 --x- RUN jobs\n11:45:16 - 1392 --x- ALL jobs FINISHED *************************************************\n11:50:00 - 808 -x-- DB-LOCK try\n11:50:00 - 808 --x- DB-LOCK OBTAINED !!!!!!!!!!!!!!!!!\n11:50:02 - 808 --x- SELECT jobs\n11:50:02 - 808 --x- RUN jobs\n11:50:15 - 808 --x- ALL jobs FINISHED *************************************************\n11:55:00 - 1064 -x-- DB-LOCK try\n11:55:00 - 1064 --x- DB-LOCK OBTAINED !!!!!!!!!!!!!!!!!\n11:55:02 - 1064 --x- SELECT jobs\n11:55:02 - 1064 --x- RUN jobs\n11:55:15 - 1064 --x- ALL jobs FINISHED *************************************************\n12:00:00 - 3124 -x-- DB-LOCK try\n12:00:00 - 3124 --x- DB-LOCK OBTAINED !!!!!!!!!!!!!!!!!\n12:00:02 - 3124 --x- SELECT jobs\n12:00:02 - 3124 --x- RUN jobs\n12:00:16 - 3124 --x- ALL jobs FINISHED *************************************************</pre></b>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1475658319,
+      "user_id": 6187,
+      "user_title": "User",
+      "username": "Darkterror"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88543,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Ну полностью выкладывать листинги файлов и не стоило, все по sql-логу понятно.<br />\n<pre class=\"xfBb-code\" data-lang=\"\">#001032 Can&#039;t find record in &#039;buf_topic_view&#039;\n\nUPDATE bb_topics t, buf_topic_view buf SET t.topic_views = t.topic_views + buf.topic_views WHERE t.topic_id = buf.topic_id</pre>Судя по ошибке, у вас в таблице тем есть тема, которая удалена, но которой почему-то пытаются засчитаться просмотры. Видимо тема удалялась, но удалилась не до конца.<br />\n<br />\nРешения два:<br />\n<ol>\n<li data-xf-list-type=\"ol\">В админке запустите перестроение тем на главной странице</li>\n<li data-xf-list-type=\"ol\">Выполните запрос в базу: <code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\">TRUNCATE TABLE buf_topic_view;</code></li>\n</ol>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1475701046,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "php-stack-trace-osibka",
+  "sticky": false,
+  "tags": [],
+  "title": "PHP Stack trace: Ошибка",
+  "url_path": "/threads/php-stack-trace-osibka.41535/",
+  "user_id": 6187,
+  "username": "Darkterror",
+  "view_count": 1211
+}

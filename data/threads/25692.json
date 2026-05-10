@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58342,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25692,
+  "last_post_date": 1391117708,
+  "node_id": 57,
+  "post_date": 1391112610,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58342,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Выкачиваю отсюда <a href=\"http://get.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://get.torrentpier.com/</a> 572 ревизию. Файл<span style=\"font-size: 12px\"><span style=\"font-family: 'arial'\"><span style=\"color: #000000\"> usercp_attachcp.php правился последний раз в r.569</span></span></span><br />\n<span style=\"font-size: 12px\"><span style=\"font-family: 'arial'\"><span style=\"color: #000000\">Найдите 10 отличий: </span></span></span><a href=\"https://code.google.com/p/torrentpier2/source/browse/trunk/upload/includes/ucp/usercp_attachcp.php?spec=svn569&amp;r=569\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://code.google.com/p/torrentpi...des/ucp/usercp_attachcp.php?spec=svn569&amp;r=569</a> здесь<br />\nи здесь, кусок кода из 572 ревизии:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;?php\n \nif (!defined(&#039;IN_FORUM&#039;)) die(&quot;Hacking attempt&quot;);\n \nrequire(BB_ROOT .&#039;attach_mod/attachment_mod.php&#039;);\n \nif (!$userdata[&#039;session_logged_in&#039;])\n{\n    redirect(LOGIN_URL . &quot;?redirect={$_SERVER[&#039;REQUEST_URI&#039;]}&quot;);\n}\n \n// Page config\n$page_cfg[&#039;use_tablesorter&#039;]  = true;\n \n// Obtain initial var settings\n$user_id = request_var(POST_USERS_URL, 0);\n \nif (!$user_id)\n{\n    message_die(GENERAL_MESSAGE, $lang[&#039;NO_USER_ID_SPECIFIED&#039;]);\n}\n \n$profiledata = get_userdata($user_id);\n \nif ($profiledata[&#039;user_id&#039;] != $userdata[&#039;user_id&#039;] &amp;&amp; !IS_ADMIN)\n{\n    message_die(GENERAL_MESSAGE, $lang[&#039;NOT_AUTHORISED&#039;]);\n}\n \n$start      = request_var(&#039;start&#039;, 0);\n$sort_order = request_var(&#039;order&#039;, &#039;ASC&#039;);\n$sort_order = ($sort_order == &#039;ASC&#039;) ? &#039;ASC&#039; : &#039;DESC&#039;;\n$mode      = request_var(&#039;mode_a&#039;, &#039;&#039;);\n \n$mode_types_text = array($lang[&#039;SORT_FILENAME&#039;], $lang[&#039;SORT_COMMENT&#039;], $lang[&#039;SORT_EXTENSION&#039;], $lang[&#039;SORT_SIZE&#039;], $lang[&#039;SORT_DOWNLOADS&#039;], $lang[&#039;SORT_POSTTIME&#039;]);\n$mode_types = array(&#039;real_filename&#039;, &#039;comment&#039;, &#039;extension&#039;, &#039;filesize&#039;, &#039;downloads&#039;, &#039;post_time&#039;);</pre> <br />\nи это не единичный случай. Так где правильный вариант ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1391112610,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58348,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Стесняюсь спросить, а это что? <a href=\"https://code.google.com/p/torrentpier2/source/browse/trunk/upload/includes/ucp/usercp_attachcp.php?r=571\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://code.google.com/p/torrentpi...upload/includes/ucp/usercp_attachcp.php?r=571</a><br />\n <br />\nПоследняя правка этого файла была в r571.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1391117708,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "nesootvetstvie-repozitaria-i-centra-zagruzki",
+  "sticky": false,
+  "tags": [],
+  "title": "Несоответствие репозитария и центра загрузки",
+  "url_path": "/threads/nesootvetstvie-repozitaria-i-centra-zagruzki.25692/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1204
+}

@@ -1,0 +1,91 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 97227,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 42367,
+  "last_post_date": 1747036200,
+  "node_id": 111,
+  "post_date": 1747034628,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1747034626,
+          "file_size": 6648,
+          "filename": "logos-hexagon-green&blue@0,5x.webp",
+          "height": 343,
+          "id": 6447,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/logos-hexagon-green-blue-0-5x-webp.6447/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6451-921e5090a4f5bf87db249c0cb261be23.jpg?hash=jFIp-r3dyo",
+          "width": 302
+        }
+      ],
+      "id": 97227,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier Cattle. Версия 2.4.5</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/6447/\" alt=\"logos-hexagon-green&amp;blue@0,5x.webp\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/releases/tag/v2.4.5\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.4.5 · torrentpier/torrentpier</a><br />\n<br />\n<b>Чейнджлог:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/compare/v2.4.5-rc.5...v2.4.5\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Comparing v2.4.5-rc.5...v2.4.5 · torrentpier/torrentpier</a><br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-rocket-features\"></a>🚀 Features&#8203;<a class=\"hoverLink\" href=\"#-rocket-features\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(admin_smilies)</i> Added confirmation on smilie deleting (<a href=\"https://github.com/torrentpier/torrentpier/pull/1895\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1895</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/b51820e1861044143321fcde5239c22abc3de984\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">b51820e</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(announcer)</i> Check for frozen torrents (<a href=\"https://github.com/torrentpier/torrentpier/pull/1770\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1770</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/6e0786bdee8f1a2557f9ac1dc628983bcafe3f5f\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">6e0786b</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(freeipapi)</i> Added ability to use own API token (<a href=\"https://github.com/torrentpier/torrentpier/pull/1901\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1901</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/513e3065d34409931c4198c03b080f232f1d809b\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">513e306</a>)</li>\n<li data-xf-list-type=\"ul\">Added ability to hide peer username in peer list (<a href=\"https://github.com/torrentpier/torrentpier/pull/1903\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1903</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/3a64f8595cafd99b9cb821d52ec5d3b3e8e467c0\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">3a64f85</a>)</li>\n<li data-xf-list-type=\"ul\">Added ability to hide peer country in peer list (<a href=\"https://github.com/torrentpier/torrentpier/pull/1891\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1891</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/2555ebce4717f871922495e48cbca9e22da78bd5\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">2555ebc</a>)</li>\n<li data-xf-list-type=\"ul\">Added ability to hide BitTorrent client in peers list (<a href=\"https://github.com/torrentpier/torrentpier/pull/1890\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1890</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/f5d65b8911c5e864f000348a6d1aefbb4c09c2b4\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">f5d65b8</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-bug-bug-fixes\"></a>🐛 Bug Fixes&#8203;<a class=\"hoverLink\" href=\"#-bug-bug-fixes\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(peers list)</i> IPv6 showing (<a href=\"https://github.com/torrentpier/torrentpier/pull/1902\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1902</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/4b7203f8aeeeffc1b163bd3db1dd6b2cac33c923\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">4b7203f</a>)</li>\n<li data-xf-list-type=\"ul\">Incorrect rounding in execution time counter (<a href=\"https://github.com/torrentpier/torrentpier/pull/1899\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1899</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/781b7240c41ddd141cfb057480c10d9cee30e6d7\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">781b724</a>)</li>\n<li data-xf-list-type=\"ul\">Undefined array key &quot;smile&quot; when are no smilies (<a href=\"https://github.com/torrentpier/torrentpier/pull/1896\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1896</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/36d399220e2c16a582e1e400df0002c164f5ec3b\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">36d3992</a>)</li>\n<li data-xf-list-type=\"ul\">Peer country flag not shown in peers list (<a href=\"https://github.com/torrentpier/torrentpier/pull/1894\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1894</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/8edba72f09f037225ede058cf09c830b1a01e78f\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">8edba72</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-package-dependencies\"></a>📦 Dependencies&#8203;<a class=\"hoverLink\" href=\"#-package-dependencies\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(deps)</i> Bump symfony/polyfill from 1.31.0 to 1.32.0 (<a href=\"https://github.com/torrentpier/torrentpier/pull/1900\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1900</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/a4793f6ce103f22941d72793e2bf8cdf9f78d494\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">a4793f6</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-gear-miscellaneous\"></a>⚙️ Miscellaneous&#8203;<a class=\"hoverLink\" href=\"#-gear-miscellaneous\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\">Minor improvements (<a href=\"https://github.com/torrentpier/torrentpier/pull/1904\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1904</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/3cdf843a0442d4cdf9b70702c6092d05df86c7e0\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">3cdf843</a>)</li>\n<li data-xf-list-type=\"ul\">Minor improvements (<a href=\"https://github.com/torrentpier/torrentpier/pull/1898\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1898</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/2f026921ee331226900b3cd4f1bb238f6562b48d\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">2f02692</a>)</li>\n<li data-xf-list-type=\"ul\">Minor improvements (<a href=\"https://github.com/torrentpier/torrentpier/pull/1897\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1897</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/14086a0ed6181a0ff4496ee2e56f4fb70bfe18d5\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">14086a0</a>)</li>\n<li data-xf-list-type=\"ul\">Minor improvements (<a href=\"https://github.com/torrentpier/torrentpier/pull/1893\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1893</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/90ece5c7621789f170246b2898841b347e264674\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">90ece5c</a>)</li>\n<li data-xf-list-type=\"ul\">Minor improvements (<a href=\"https://github.com/torrentpier/torrentpier/pull/1892\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1892</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/1e5b93d2c072c5c35feef7567b3fcdb4b3597935\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">1e5b93d</a>)</li>\n</ul>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1747034628,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97228,
+      "is_admin": false,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1747042541,
+      "message_parsed": "Новые возможности в релизе:<br />\n- Теперь пользователи могут скрыть имя пользователя, страну и клиент в списке пиров раздачи.<br />\n- Исправлена ошибка с показом IpV6 пользователя.<br />\n- Генерация списка файлов из v1 / v2 торрентов для улучшения индексации поисковиками.<br />\n<br />\nИ другие исправления.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1747036200,
+      "user_id": 10699,
+      "user_title": "Developer (ex)",
+      "username": "kovalensky"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "torrentpier-cattle-versia-2-4-5-tropical-fish",
+  "sticky": false,
+  "tags": [
+    "cattle",
+    "новая версия",
+    "релиз",
+    "ченжлог"
+  ],
+  "title": "TorrentPier Cattle. Версия 2.4.5 🐠",
+  "url_path": "/threads/torrentpier-cattle-versia-2-4-5-tropical-fish.42367/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 781
+}

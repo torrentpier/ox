@@ -1,0 +1,160 @@
+{
+  "category": {
+    "description": "Section with all templates for TorrentPier.",
+    "id": 5,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Templates",
+    "view_url": "https://torrentpier.com/resources/categories/templates.5/"
+  },
+  "current_files": [
+    {
+      "filename": "Шаблон Infinite R494.zip",
+      "id": 3688,
+      "local_path": null,
+      "r2_key": null,
+      "size": 297573,
+      "src_url": "https://torrentpier.com/api/resource-versions/304/download?file=3688"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "adapt",
+    "installation": "[SPOILER=\"Инструкция\"]\n[CODE]\n----ajax.php----\nнайти\n'modify_draft'      => array('user'),\n\nдобавить после\n'user_stats'        => array('user'),\n\nнайти последнюю скобку }\n\nперед ней добавить\n    function user_stats()\n    {   \n        global $bb_cfg, $lang;\n        if(!$bb_cfg['user_stats']) $this->ajax_die($lang['MODULE_OFF']);\n        $user_id = (int) $this->request['user_id'];\n        $btu = get_bt_userdata($user_id);\n        $profiledata = get_userdata($user_id);\n\n        $ratio = get_bt_ratio($btu);\n        $u_up_total = humn_size($btu['u_up_total']);\n        $u_up_bonus = humn_size($btu['u_up_bonus']);\n        $u_up_release = humn_size($btu['u_up_release']);\n        $u_down_total = humn_size($btu['u_down_total']);\n        $u_points = $profiledata['user_points'];\n       \n        $speed_up = ($btu['speed_up']) ? humn_size($btu['speed_up']).'/s' : '0 KB/s';\n        $speed_down = ($btu['speed_down']) ? humn_size($btu['speed_down']).'/s' : '0 KB/s';\n       \n        if ($btu['u_down_total'] < MIN_DL_FOR_RATIO) $ratio = '---';\n       \n        $this->response['post_id'] = (int) $this->request['post_id'];\n        $this->response['html'] = '\n        <table class=\"ratio1 table-wrap bCenter borderl w100\" cellspacing=\"1\">\n            <tr class=\"row3 tCenter\">\n                  <td colspan=\"2\" class=\"bold\">'.$lang['STATISTICS'].':</p></td>\n                </tr>\n                <tr class=\"row5 seed\">\n                  <td class=\"med tLeft\">&nbsp;'.$lang['USER_RATIO'].':</p></td>\n                  <td class=\"bold tLeft\">&nbsp;'.$ratio.'</td>\n                </tr>\n                <tr class=\"row5 leech\">\n                  <td class=\"med tLeft\">&nbsp;<a class=\"leechsmall\" href=\"search.php?dlu='.$user_id.'&dlc=1#results\">'.$lang['DOWNLOADED'].'</a>:&nbsp;</td>\n                  <td class=\"bold tLeft\">&nbsp;'.$u_down_total.'</td>\n                </tr>\n                <tr class=\"row1 seed\">\n                  <td class=\"med tLeft\">&nbsp;'.$lang['UPLOADED'].':&nbsp;</p></td>\n                  <td class=\"bold tLeft\">&nbsp;'.$u_up_total.'</td>\n                </tr>\n                <tr class=\"row5 seed\">\n                  <td class=\"med tLeft\">&nbsp;<i><a class=\"seedsmall\" href=\"tracker.php?rid='.$user_id.'#results\">'.$lang['RELEASED'].'</a>:</i>&nbsp;</td>\n                  <td class=\"tLeft\">&nbsp;<i>'.$u_up_release.'</i></td>\n                </tr>\n                <tr class=\"row1 dlWill\">\n                  <td class=\"med tLeft\">&nbsp;<i><a class=\"small dlWill\" href=\"viewtopic.php?t=79\">'.$lang['BONUS'].'</a>:</i>&nbsp;</td>\n                  <td class=\"tLeft\">&nbsp;<i>'.$u_up_bonus.'</i></td>\n                </tr>\n                <tr class=\"row1 editable bold points\">\n                  <td class=\"med tLeft\">&nbsp;<i><a class=\"small editable bold points\" href=\"profile.php?mode=bonus\">'.$lang['SEED_BONUS'].'</a>:</i>&nbsp;</td>\n                  <td class=\"tLeft\">&nbsp;<i>'.$u_points.'</i></td>\n                </tr>\n                <tr class=\"row3\">\n                    <td colspan=\"2\" class=\"med tCenter bold\">'.$lang['MAX_SPEED'].':</td>\n                </tr>\n                <tr class=\"row1 seed\">\n                  <td class=\"med tLeft\">&nbsp;'.$lang['USER_STATS_SP_UP'].':</td>\n                  <td class=\"bold tLeft\">&nbsp;'.$speed_up.'</td>\n                </tr>\n                <tr class=\"row1 leech\">\n                  <td class=\"med tLeft\">&nbsp;'.$lang['USER_STATS_SP_DL'].':</td>\n                  <td class=\"bold tLeft\">&nbsp;'.$speed_down.'</td>\n                </tr>\n        </table>';\n    }\n   \n   \n----viewforum.php----\n\nнайти\nt.*, t.topic_poster AS first_user_id, u1.user_rank as first_user_rank,\n\nпосле добавить\nu1.user_avatar as author_ava, u1.user_avatar_type as author_ava_type,\n\nнайти\n$template->assign_block_vars('t', array(\n\nперед добавить\n    // Ава топикстартера\n    $avatar_img = '<img align=\"left\" height=\"36\" width=\"36\" src=\"./images/avatars/gallery/noavatar.png\">'; // путь до noavatar.gif\n    if ($topic['author_ava_type'] )\n    {\n    switch($topic['author_ava_type'] )\n     {\n       case USER_AVATAR_UPLOAD:\n         $avatar_img = ( $bb_cfg['allow_avatar_upload'] ) ? '<img align=\"left\" height=\"36\" width=\"36\" src=\"' . $bb_cfg['avatar_path'] . '/' . $topic['author_ava'] . '\" alt=\"\" border=\"0\" />' : '';\n       break;\n       case USER_AVATAR_REMOTE:\n         $avatar_img = ( $bb_cfg['allow_avatar_remote'] ) ? '<img align=\"left\" height=\"36\" width=\"36\" src=\"' . $topic['author_ava'] . '\" alt=\"\" border=\"0\" />' : '';\n       break;\n       case USER_AVATAR_GALLERY:\n         $avatar_img = ( $bb_cfg['allow_avatar_local'] ) ? '<img align=\"left\" height=\"36\" width=\"36\" src=\"' . $bb_cfg['avatar_gallery_path'] . '/' . $topic['author_ava'] . '\" alt=\"\" border=\"0\" />' : '';\n       break;\n     }\n    }\n    // END Ава топикстартера\n   \nнайти\n'TOPIC_AUTHOR'     => profile_url(array('username' => str_short($topic['first_username'], 15), 'user_id' => $topic['first_user_id'], 'user_rank' => $topic['first_user_rank'])),\n\nпосле добавить\n'AUTHOR_AVA'       => $avatar_img,\n\n\n-----admin/admin_board.php-----\nнайти\n// ACP Header - START\nif (!empty($setmodules))\n{\n    $module['General']['Configuration'] = basename(__FILE__) .'?mode=config';\n    $module['Mods']['Configuration'] = basename(__FILE__) .'?mode=config_mods';\n    return;\n}\n\nзаменить на\n// ACP Header - START\nif (!empty($setmodules))\n{\n    $module['General']['Configuration'] = basename(__FILE__) .'?mode=config';\n    $module['Mods']['Configuration'] = basename(__FILE__) .'?mode=config_mods';\n    if(IS_SUPER_ADMIN){$module['Mods']['global'] = basename(__FILE__) .'?mode=config_super_mods';}\n    return;\n}\n\nнайти\n$return_links = array(\n    'index' => '<br /><br />'. sprintf($lang['CLICK_RETURN_ADMIN_INDEX'], '<a href=\"index.php?pane=right\">', '</a>'),\n    'config' => '<br /><br />'. sprintf($lang['CLICK_RETURN_CONFIG'], '<a href=\"admin_board.php?mode=config\">', '</a>'),\n    'config_mods' => '<br /><br />'. sprintf($lang['CLICK_RETURN_CONFIG_MODS'], '<a href=\"admin_board.php?mode=config_mods\">', '</a>')\n);\n\nзаменить на\n$return_links = array(\n    'index' => '<br /><br />'. sprintf($lang['CLICK_RETURN_ADMIN_INDEX'], '<a href=\"index.php?pane=right\">', '</a>'),\n    'config' => '<br /><br />'. sprintf($lang['CLICK_RETURN_CONFIG'], '<a href=\"admin_board.php?mode=config\">', '</a>'),\n    'config_mods' => '<br /><br />'. sprintf($lang['CLICK_RETURN_CONFIG_MODS'], '<a href=\"admin_board.php?mode=config_mods\">', '</a>'),\n    'config_super_mods' => '<br /><br />'. sprintf($lang['CLICK_RETURN_CONFIG_SUPER_MODS'], '<a href=\"admin_board.php?mode=config_super_mods\">', '</a>')\n);\n\nнайти\n        elseif ($mode == 'config_mods')\n        {\n            message_die(GENERAL_MESSAGE, $lang['CONFIG_UPDATED'] . $return_links['config_mods'] . $return_links['index']);\n        }\n       \nпосле добавить\n        elseif ($mode == 'config_super_mods')\n        {\n            message_die(GENERAL_MESSAGE, $lang['CONFIG_UPDATED'] . $return_links['config_super_mods'] . $return_links['index']);\n        }\n       \nнайти\n    case 'config_mods':\n        $template->assign_vars(array(\n            'S_CONFIG_ACTION' => 'admin_board.php?mode=config_mods',\n            'CONFIG_MODS' => true,\n           \nперед добавить\n    case 'config_super_mods':\n        $template->assign_vars(array(\n            'S_CONFIG_ACTION' => 'admin_board.php?mode=config_super_mods',\n            'CONFIG_SUPER_MODS' => true,\n           \n            'SEO_LINK_HOME_PAGE' => $new['seo_link_home_page'],\n            'FIRST_LOGON_REDIRECT_URL' => $new['first_logon_redirect_url'],\n            'FAQ_URL' => $new['faq_url'],\n            'TERMS_AND_CONDITIONS_URL' => $new['terms_and_conditions_url'],\n            'COLOR_NICK' => $new['color_nick'],\n            'USER_NOT_ACTIVATED_DAYS_KEEP' => $new['user_not_activated_days_keep'],\n            'USER_NOT_ACTIVE_DAYS_KEEP' => $new['user_not_active_days_keep'],\n            'PREVENT_MULTIPOSTING' => $new['prevent_multiposting'],\n            'MAX_SMILIES' => $new['max_smilies'],\n            'SHOW_QUICK_REPLY' => $new['show_quick_reply'],\n            'SHOW_RANK_TEXT' => $new['show_rank_text'],\n            'SHOW_RANK_IMAGE' => $new['show_rank_image'],\n            'SHOW_POSTER_JOINED' => $new['show_poster_joined'],\n            'SHOW_POSTER_POSTS' => $new['show_poster_posts'],\n            'SHOW_POSTER_FROM' => $new['show_poster_from'],\n            'SHOW_BOT_NICK' => $new['show_bot_nick'],\n            'TEXT_BUTTONS' => $new['text_buttons'],\n            'PARSE_ED2K_LINKS' => $new['parse_ed2k_links'],\n            'EXT_LINK_NEW_WIN' => $new['ext_link_new_win'],\n            'EMAILER_DISABLED' => $new['emailer_disabled'],\n            'TOPIC_NOTIFY_ENABLED' => $new['topic_notify_enabled'],\n            'PM_NOTIFY_ENABLED' => $new['pm_notify_enabled'],\n            'GROUPCP_SEND_EMAIL' => $new['groupcp_send_email'],\n            'INVALID_LOGINS' => $new['invalid_logins'],\n            'NEW_USER_REG_DISABLED' => $new['new_user_reg_disabled'],\n            'UNIQUE_IP' => $new['unique_ip'],\n            'NEW_USER_REG_RESTRICTED' => $new['new_user_reg_restricted'],\n        ));\n    break;\n\nнайти\n'PREMOD'     => $new['premod'],\n\nпосле добавить\n'USER_STATS'    => $new['user_stats'],\n\n\n-----language/lang_english/lang_admin.php-----\n\nнайти\n$lang['CONFIGURATION'] = 'Configuration';\n\nпосле добавить\n$lang['GLOBAL'] = 'Technical configuration';\n\nнайти\n$lang['CLICK_RETURN_CONFIG'] = '%sClick Here to return to General Configuration%s';\n$lang['CLICK_RETURN_CONFIG_MODS'] = '%sBack to the settings modifications%s';\n\nзаменить на\n$lang['CONFIG_SUPER_MODS'] = 'Configure global modifications';\n$lang['SUPER_MODS_EXPLAIN'] = 'This form will allow you to change the global modifications. <br /> <h6 Class=\"gensmall\"> It is available only Super Administrator (super_admins) </ h6';\n\n$lang['CLICK_RETURN_CONFIG'] = '%sClick Here to return to General Configuration%s';\n$lang['CLICK_RETURN_CONFIG_MODS'] = '%sBack to the settings modifications%s';\n$lang['CLICK_RETURN_CONFIG_SUPER_MODS'] = '%sBack to global settings%s';\n\nнайти\n$lang['PREMOD_HELP'] = '<h4><span class=\"tor-icon tor-dup\">&#8719;</span> Pre-moderation</h4> <h6>If you do not have hands to the status of v, #, or T in this section, including subsections, the distribution will automatically receive this status</h6>';\n\nпосле добавить\n$lang['USER_STATS'] = 'Torrent stats';\n\n\nв конец файла добавить\n//\n// Super Admin\n//\n$lang['USER'] = 'Options user';\n$lang['REGISTR'] = 'Options news user';\n$lang['EMAIL'] = 'Options sumbit message Email';\n$lang['POSTING'] = 'Options posting';\n$lang['TOPICS'] = 'Options topics';\n$lang['TEXT_BUTTONS'] = 'Enable styling buttons';\n$lang['SHOW_BOT_NICK'] = 'Show offline bot topics';\n$lang['EMAILER_DISABLED'] = 'Enable e-mail';\n$lang['EXT_LINK_NEW_WIN'] = 'Open external links in new windows';\n$lang['PARSE_ED2K_LINKS'] = 'Make a clickable link';\n$lang['TOPIC_NOTIFY_ENABLED'] = 'Include notification of new posts in topics';\n$lang['PM_NOTIFY_ENABLED'] = 'Include notification of personal messages';\n$lang['GROUPCP_SEND_EMAIL'] = 'Enable warning for';\n$lang['INVALID_LOGINS'] = 'Number of incorrect password attempts before writing checks captcha';\n$lang['PREVENT_MULTIPOSTING'] = 'Flood';\n$lang['SEO'] = 'SEO Link';\n$lang['TERMS_AND_CONDITIONS_URL'] = 'Reference to the rules (in the main)';\n$lang['SHOW_POSTER_JOINED'] = 'Show experience in topics';\n$lang['SHOW_POSTER_POSTS'] = 'Show the number of messages in topics';\n$lang['SHOW_POSTER_FROM'] = 'Show your fellow \"Occupation\"';\n$lang['FIRST_LOGON_REDIRECT_URL'] = 'The first input of the user, on which page it will send';\n$lang['SHOW_RANK_TEXT'] = 'Show title text';\n$lang['SHOW_RANK_IMAGE'] = 'Show title picture';\n$lang['SHOW_QUICK_REPLY'] = 'Show Icon Reply';\n$lang['MAX_SMILIES'] = 'The maximum number of smileys in a post';\n$lang['USER_NOT_ACTIVE_DAYS_KEEP'] = 'РЎРєРѕР»СЊРєРѕ РґРЅРµР№ Р¶РёРІРµС‚ Р°РєРєР°СѓРЅС‚ Р±РµР· Р°РєС‚РёРІРЅРѕСЃС‚Рё';\n$lang['USER_NOT_ACTIVATED_DAYS_KEEP'] = 'How many days of live account inactivity';\n$lang['FAQ_URL'] = 'Link to FAQ';\n$lang['COLOR_NICK'] = 'Enable color nicknames';\n$lang['NEW_USER_REG_DISABLED'] = 'Disable registration of new users';\n$lang['UNIQUE_IP'] = 'Refuse to register multiple accounts with the same IP';\n$lang['NEW_USER_REG_RESTRICTED'] = 'Register for a specific time';\n\n\n\n---------language/lang_english/lang_main.php---------\n\nв конец файла добавить\n//\n// Torrent stats (Торрент-статистика)\n//\n$lang['USER_STATS_SP_DL'] = 'Download';\n$lang['USER_STATS_SP_UP'] = 'Output';\n$lang['USER_STATS_LOADING'] = '<img src=\"./templates/default/images/stats_load.gif\">';\n$lang['USER_STATS_TORRENT'] = 'Torrent stats';\n$lang['USER_STATS_VIEW'] = 'View Torrent stats';\n\n----------language/lang_russian/lang_admin.php---------\n\nнайти\n$lang['CONFIGURATION'] = 'Конфигурация';\n\n\nпосле добавить\n$lang['GLOBAL'] = 'Техническая конфигурация';\n\n\nнайти\n$lang['CLICK_RETURN_CONFIG'] = '%sВернуться к общим настройкам%s';\n$lang['CLICK_RETURN_CONFIG_MODS'] = '%sВернуться к настройкам модификаций%s';\n\n\nзаменить на\n$lang['CONFIG_SUPER_MODS'] = 'Настройки глобальных модификаций';\n$lang['SUPER_MODS_EXPLAIN'] = 'Эта форма позволит вам изменить глобальные модификаций.<br /> <h6 class=\"gensmall\">Она доступна только Супер Администратору (super_admins)</h6>';\n\n$lang['CLICK_RETURN_CONFIG'] = '%sВернуться к общим настройкам%s';\n$lang['CLICK_RETURN_CONFIG_MODS'] = '%sВернуться к настройкам модификаций%s';\n$lang['CLICK_RETURN_CONFIG_SUPER_MODS'] = '%sВернуться к глобальным настройкам%s';\n\n\nнайти\n$lang['PREMOD_HELP'] = '<h4><span class=\"tor-icon tor-dup\">&#8719;</span> Премодерация</h4> <h6>Если у релизера нет раздач со статусом <span class=\"tor-icon tor-approved\">&radic;</span>, <span class=\"tor-icon tor-approved\">#</span> или <span class=\"tor-icon tor-dup\">T</span> в текущем разделе, включая подразделы, то раздача автоматически получает данный статус</h6>';\n\n\nпосле добавить\n$lang['USER_STATS'] = 'Торрент-статистика';\n\n\nв конец файла добавить\n//\n// Super Admin\n//\n$lang['USER'] = 'Настройки пользователя';\n$lang['REGISTR'] = 'Настройка для новых пользователей';\n$lang['EMAIL'] = 'Настройка отправки сообщение на Email';\n$lang['POSTING'] = 'Настрока постинга';\n$lang['TOPICS'] = 'Настрокий в темах';\n$lang['TEXT_BUTTONS'] = 'Включить оформление кнопок';\n$lang['SHOW_BOT_NICK'] = 'Показывать ник бота в темах';\n$lang['EMAILER_DISABLED'] = 'Включить e-mail';\n$lang['EXT_LINK_NEW_WIN'] = 'Открывать внешние ссылки в новых окнах';\n$lang['PARSE_ED2K_LINKS'] = 'Сделать ссылки кликабельными';\n$lang['TOPIC_NOTIFY_ENABLED'] = 'Включить оповещение об новых сообщениях в темах';\n$lang['PM_NOTIFY_ENABLED'] = 'Включить оповещение об личных сообщениях';\n$lang['GROUPCP_SEND_EMAIL'] = 'Включить оповещения для групп';\n$lang['INVALID_LOGINS'] = 'Кол-во неверных попыток ввода пароля, перед выводом проверки капчи';\n$lang['PREVENT_MULTIPOSTING'] = 'Флуд';\n$lang['SEO'] = 'SEO Link';\n$lang['TERMS_AND_CONDITIONS_URL'] = 'Ссылка на правила (на главной)';\n$lang['SHOW_POSTER_JOINED'] = 'Показывать в топиках стаж';\n$lang['SHOW_POSTER_POSTS'] = 'Показывать в топиках количество сообщение';\n$lang['SHOW_POSTER_FROM'] = 'Показывать в топиках \"Откуда\"';\n$lang['FIRST_LOGON_REDIRECT_URL'] = 'Первый вход пользователя, на какую старницу его отправим';\n$lang['SHOW_RANK_TEXT'] = 'Показать звание текстом';\n$lang['SHOW_RANK_IMAGE'] = 'Показать звание картинкой';\n$lang['SHOW_QUICK_REPLY'] = 'Показывать форму быстрого ответа';\n$lang['MAX_SMILIES'] = 'Максимальное количество смайлов в одном сообщение';\n$lang['USER_NOT_ACTIVE_DAYS_KEEP'] = 'Сколько дней живет аккаунт без активности';\n$lang['USER_NOT_ACTIVATED_DAYS_KEEP'] = 'Сколько будет жить неактивированный аккаунт';\n$lang['FAQ_URL'] = 'Ссылка на FAQ';\n$lang['COLOR_NICK'] = 'Включить окраску ников';\n$lang['NEW_USER_REG_DISABLED'] = 'Отключить регистрацию новых пользователей';\n$lang['UNIQUE_IP'] = 'Отказать в регистрации нескольких учетных записей с одинаковым IP';\n$lang['NEW_USER_REG_RESTRICTED'] = 'Регистрация по определенному времени';\n\n\n------language/lang_russian/lang_main.php---------\n\nнайти\n$lang['RECORD_ONLINE_USERS'] = 'Больше всего посетителей (<b>%s</b>) здесь было %s'; // first %s = number of users, second %s is the date.\n\n\nзаменить на\n$lang['RECORD_ONLINE_USERS'] = '<dd><b>%s</b></dd>'; // first %s = number of users, second %s is the date.\n\n\nнайти\n//\n// Stats block text\n//\n$lang['POSTED_TOPICS_TOTAL'] = 'Наши пользователи создали тем: <b>%s</b>'; // Number of topics\n$lang['POSTED_ARTICLES_ZERO_TOTAL'] = 'Наши пользователи не оставили ни одного сообщения'; // Number of posts\n$lang['POSTED_ARTICLES_TOTAL'] = 'Наши пользователи оставили сообщений: <b>%s</b>'; // Number of posts\n$lang['REGISTERED_USERS_ZERO_TOTAL'] = 'У нас нет зарегистрированных пользователей'; // # registered users\n$lang['REGISTERED_USERS_TOTAL'] = 'Всего зарегистрированных пользователей: <b>%s</b>'; // # registered users\n$lang['USERS_TOTAL_GENDER'] = 'Парней: <b>%d</b>, Девушек: <b>%d</b>, Не указан: <b>%d</b>';\n$lang['NEWEST_USER'] = 'Последний зарегистрированный пользователь: <b>%s</b>'; // username\n\n// Tracker stats\n$lang['TORRENTS_STAT'] = 'Раздач: <b style=\"color: blue;\">%s</b>,&nbsp; Общий размер: <b>%s</b>'; // first %s = number of torrents, second %s is the total size.\n$lang['PEERS_STAT'] = 'Пиров: <b>%s</b>,&nbsp; Сидов: <b class=\"seedmed\">%s</b>,&nbsp; Личеров: <b class=\"leechmed\">%s</b>'; // first %s = number of peers, second %s = number of seeders,  third %s = number of leechers.\n$lang['SPEED_STAT'] = 'Скорость обмена: <b>%s</b>&nbsp;'; // %s = total speed.\n\n\nзаменить на\n//\n// Stats block text\n//\n$lang['POSTED_TOPICS_TOTAL'] = '%s'; // Number of topics\n$lang['POSTED_ARTICLES_ZERO_TOTAL'] = 'Наши пользователи не оставили ни одного сообщения'; // Number of posts\n$lang['POSTED_ARTICLES_TOTAL'] = '%s'; // Number of posts\n$lang['REGISTERED_USERS_ZERO_TOTAL'] = 'У нас нет зарегистрированных пользователей'; // # registered users\n$lang['REGISTERED_USERS_TOTAL'] = '%s'; // # registered users\n$lang['USERS_TOTAL_GENDER'] = 'Парней: <dd>%d</dd><br> <dt>Девушек:</dt> <dd>%d</dd><br> <dt>Не указан:</dt> <dd>%d</dd>';\n$lang['NEWEST_USER'] = '<b>%s</b>'; // username\n// Tracker stats\n$lang['TORRENTS_STAT'] = '<dt>Раздач:</dt> <dd><b style=\"color: blue;\">%s</b></dd> <br> <dt>Общий размер:</dt> <dd><b>%s</b></dd>'; // first %s = number of torrents, second %s is the total size.\n$lang['PEERS_STAT'] = '<dt>Пиров:</dt> <dd><b>%s</b></dd> <br> <dt>Сидов:</dt> <dd><b class=\"seedmed\">%s</b></dd> <br> <dt>Личеров:</dt> <dd><b class=\"leechmed\">%s</b></dd>'; // first %s = number of peers, second %s = number of seeders,  third %s = number of leechers.\n$lang['SPEED_STAT'] = '<dt>Скорость обмена:</dt> <dd><b>%s</b><dd>'; // %s = total speed.\n\nв конец файла добавить\n//\n// Torrent stats (Торрент-статистика)\n//\n$lang['USER_STATS_SP_DL'] = 'Загрузка';\n$lang['USER_STATS_SP_UP'] = 'Отдача';\n$lang['USER_STATS_LOADING'] = '<img src=\"./templates/default/images/stats_load.gif\">';\n$lang['USER_STATS_TORRENT'] = '<img src=\"./templates/default/images/tor_stats.gif\">';\n$lang['USER_STATS_VIEW'] = 'Посмотреть Торрент-статистику';\n\n\n\n----------misc/js/main.js-----------\n\nв конец файла добавить\n$(document).ready(function($){\n\n    $(\".nav_background\").click(function(){\n        $(\"#toggle_background\").slideToggle();\n    });\n   \n    $(\"#custom_background span\").click(function(){\n        $.cookie('custom_url',null,{ expires: -5, path: '/'});\n        var bgid = $(this).attr(\"id\");\n        $.cookie('custombg',bgid,{ expires: 365, path: '/'});\n        $(\"body\").removeClass().addClass(bgid);\n    });\n   \n    $(\"#custom_submit\").click(function(){\n        $.cookie('custombg',\"bg_custom\",{ expires: 365, path: '/'});\n        var customurl = $(\"#custom_input\").val();\n        $.cookie('custom_url',customurl,{ expires: 365, path: '/'});\n        $(\"<style type='text/css'>body.bg_custom{ background-image: url(\" + customurl + \")}</style>\").appendTo(\"head\");\n        $(\"body\").removeClass().addClass(\"bg_custom\");\n    });\n       \n    if ( ($.cookie('custombg') != null))    {\n        $(\"body\").addClass($.cookie('custombg'));\n    }\n    else{\n        $(\"body\").addClass(\"bg0\");\n    }\n   \n    if ( ($.cookie('custom_url') != null))    {\n        $(\"<style type='text/css'>body.bg_custom{ background-image: url(\" + $.cookie('custom_url') + \")}</style>\").appendTo(\"head\");\n        $(\"body\").addClass(\"bg_custom\");\n    }\n   \n});\n\n$(document).ready(function($){\n    var customElements = \"#main-nav, .categorytitle, .nodeIcon, .footer .pageContent, a.callToAction span\";\n    $('.xf_colorpicker').ColorPicker({\n        onSubmit: function(hsb, hex, rgb, el) {\n        $(el).val(hex);\n        $(el).ColorPickerHide();\n        $(el).css(\"backgroundColor\", \"#\" + hex);\n        $(customElements).css(\"background-color\", \"#\" + hex);\n        $.cookie('customcolor',hex,{ expires: 365, path: '/'});\n        },\n        onBeforeShow: function () {\n        $(this).ColorPickerSetColor(this.value);\n        },\n        onChange: function (hsb, hex, rgb) {\n        $(customElements).css(\"background-color\", \"#\" + hex);\n        $.cookie('customcolor',hex,{ expires: 365, path: '/'});\n        }\n    })\n    .bind('keyup', function(){\n        $(this).ColorPickerSetColor(this.value);\n    });\n\n    if ( ($.cookie('customcolor') != null))    {\n        $(customElements).css(\"background-color\", \"#\" + $.cookie('customcolor'));\n        $(\".xf_colorpicker\").val($.cookie('customcolor'));\n    }\n    else{\n        $(customElements).css(\"background-color\",\"#727272\");\n    }\n\n});\n\n\n\n------сделать SQL запрос---------\n---------------------------------\n\nINSERT INTO `bb_config` VALUES ('user_stats', '1');\nINSERT INTO `bb_config` VALUES ('seo_link_home_page', '0');\nINSERT INTO `bb_config` VALUES ('first_logon_redirect_url', 'index.php');\nINSERT INTO `bb_config` VALUES ('faq_url', 'faq.php');\nINSERT INTO `bb_config` VALUES ('terms_and_conditions_url', 'index.php');\nINSERT INTO `bb_config` VALUES ('color_nick', '1');\nINSERT INTO `bb_config` VALUES ('user_not_activated_days_keep', '7');\nINSERT INTO `bb_config` VALUES ('user_not_active_days_keep', '180');\nINSERT INTO `bb_config` VALUES ('prevent_multiposting', '1');\nINSERT INTO `bb_config` VALUES ('max_smilies', '10');\nINSERT INTO `bb_config` VALUES ('show_quick_reply', '1');\nINSERT INTO `bb_config` VALUES ('show_rank_text', '0');\nINSERT INTO `bb_config` VALUES ('show_rank_image', '1');\nINSERT INTO `bb_config` VALUES ('show_poster_joined', '1');\nINSERT INTO `bb_config` VALUES ('show_poster_posts', '1');\nINSERT INTO `bb_config` VALUES ('show_poster_from', '1');\nINSERT INTO `bb_config` VALUES ('show_bot_nick', '0');\nINSERT INTO `bb_config` VALUES ('text_buttons', '0');\nINSERT INTO `bb_config` VALUES ('parse_ed2k_links', '1');\nINSERT INTO `bb_config` VALUES ('ext_link_new_win', '1');\nINSERT INTO `bb_config` VALUES ('emailer_disabled', '0');\nINSERT INTO `bb_config` VALUES ('topic_notify_enabled', '1');\nINSERT INTO `bb_config` VALUES ('pm_notify_enabled', '1');\nINSERT INTO `bb_config` VALUES ('groupcp_send_email', '1');\nINSERT INTO `bb_config` VALUES ('invalid_logins', '5');\nINSERT INTO `bb_config` VALUES ('new_user_reg_disabled', '0');\nINSERT INTO `bb_config` VALUES ('unique_ip', '0');\nINSERT INTO `bb_config` VALUES ('new_user_reg_restricted', '0');\n\n\nmisc/html/sidebar1.html заменить на мой файл\nmisc/html/sidebar2.html заменить на мой файл\n\nполностью заменить папку default[/CODE]\n[/SPOILER]",
+    "owner": "makar",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1429567467,
+      "file_size": 6920,
+      "filename": "3c449fa4dcdaeba9f8a820652f3af75c.webp",
+      "height": 116,
+      "id": 3625,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/3c449fa4dcdaeba9f8a820652f3af75c-webp.3625/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3629-ec1e26d30ad767548de6c2491e1e5f83.jpg?hash=JZ-Vm-C6TT",
+      "width": 500
+    },
+    {
+      "attach_date": 1429567468,
+      "file_size": 120216,
+      "filename": "445fb7772d7a184917c870bae598cb9b.webp",
+      "height": 997,
+      "id": 3626,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/445fb7772d7a184917c870bae598cb9b-webp.3626/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3630-cbddff7d4b7db790ac9ce8e476597a81.jpg?hash=wGaqXQt0BC",
+      "width": 1349
+    },
+    {
+      "attach_date": 1429567468,
+      "file_size": 2354,
+      "filename": "1867a01902b355de523ecd613fbfa253.webp",
+      "height": 175,
+      "id": 3627,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/1867a01902b355de523ecd613fbfa253-webp.3627/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3631-594f7bd3c048fa20d195be34e8583beb.jpg?hash=Xy19Kvk52K",
+      "width": 542
+    },
+    {
+      "attach_date": 1429567469,
+      "file_size": 116908,
+      "filename": "28958874b8e40ef144e8bc3687da475b.webp",
+      "height": 995,
+      "id": 3628,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/28958874b8e40ef144e8bc3687da475b-webp.3628/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3632-27a54f22943a3a99747abf2a7621245e.jpg?hash=r-PFUT5ERx",
+      "width": 1349
+    },
+    {
+      "attach_date": 1429567471,
+      "file_size": 433558,
+      "filename": "52273031d5dbc7672ace6ccacd036913.webp",
+      "height": 3910,
+      "id": 3629,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/52273031d5dbc7672ace6ccacd036913-webp.3629/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3633-7dc2d3fae44b4ce32b8248f219a5e9de.jpg?hash=FxY0tme4_u",
+      "width": 1349
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> шаблон, современный с возможностью смены цветов оформления.<br />\n<br />\n[GALLERY=media, 23]Шаблон «Infinite» от Exile опубликован 21 апр 2015 в 01:03[/GALLERY]",
+  "download_count": 451,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/217.jpg?1429567668",
+  "id": 217,
+  "is_fileless": null,
+  "last_update": 1429817092,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1429567661,
+  "resource_state": "visible",
+  "slug": "sablon-infinite",
+  "tag_line": "Шаблон, современный с возможностью смены цветов оформления.",
+  "tags": [],
+  "title": "Шаблон «Infinite»",
+  "url_path": "/resources/sablon-infinite.217/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 361,
+      "files": [
+        {
+          "filename": "Шаблон Infinite R494.zip",
+          "id": 3688,
+          "local_path": null,
+          "r2_key": null,
+          "size": 297573,
+          "src_url": "https://torrentpier.com/api/resource-versions/304/download?file=3688"
+        }
+      ],
+      "id": 304,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1429817092,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/sablon-infinite.217/version/304/"
+    },
+    {
+      "download_count": 96,
+      "files": [
+        {
+          "filename": "Шаблон Infinite R494.zip",
+          "id": 3630,
+          "local_path": null,
+          "r2_key": null,
+          "size": 56950,
+          "src_url": "https://torrentpier.com/api/resource-versions/285/download?file=3630"
+        }
+      ],
+      "id": 285,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1429567661,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/sablon-infinite.217/version/285/"
+    }
+  ],
+  "view_count": 1095
+}

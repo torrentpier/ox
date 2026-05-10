@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 62348,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 26149,
+  "last_post_date": 1410095780,
+  "node_id": 111,
+  "post_date": 1409524145,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62348,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1698773378,
+      "message_parsed": "<b>Ссылка: </b><a href=\"https://github.com/torrentpier/torrentpier/archive/refs/tags/v2.1.0.zip\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Прямая загрузка</a><br />\n <br />\n<b>Описание:</b><br />\n <br />\nВерсия 2.1 (R600)<br />\n<br />\nНовая стабильная версия, рекомендуемая для обновления и перехода. Обсуждение релиза - на форуме: <a href=\"http://torrentpier.com/threads/vyshla-stabilnaja-versija-2-1-r600.26148/\" class=\"link link--internal\">http://torrentpier.com/threads/vyshla-stabilnaja-versija-2-1-r600.26148/</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1409524145,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62349,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Обсуждение в основной теме: <a href=\"http://torrentpier.com/threads/vyshla-stabilnaja-versija-2-1-r600.26148/\" class=\"link link--internal\">http://torrentpier.com/threads/vyshla-stabilnaja-versija-2-1-r600.26148/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1409524194,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62368,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Обнаружили небольшой недочет - если на форуме нет групп вообще, то в tracker.php вылазит нотис. Ситуация достаточно необычная, поэтому исправление ошибки без поднятия версии. Но все же требуется внести следующие изменения: https://github.com/torrentpier/torrentpier/commit/85e2cb66d11327d56681937b859f843d93102c87<br />\n <br />\nАрхив в центре загрузки обновлен, можете просто tracker.php из нового архива взять: <a href=\"http://get.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://get.torrentpier.com/</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1409566313,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62595,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Вышел небольшой багфикс (некорректно обрабатывались https-ссылки). Для обновления требуется внести пару небольших правок: https://github.com/torrentpier/torr...69d09ba26bd0fb70ca7265be92fa08c662?diff=split<br />\n <br />\nАрхив в <a href=\"http://get.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">центре загрузки</a> обновлен, поэтому в принципе можете скачать оттуда сами и только файл bbcode.php заменить. Но правка в 1 строку.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1410095780,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "r600-stabil-naa-versia-rekomenduemaa-dla-obnovlenia-i-perehoda",
+  "sticky": false,
+  "tags": [],
+  "title": "R600: Стабильная версия, рекомендуемая для обновления и перехода",
+  "url_path": "/threads/r600-stabil-naa-versia-rekomenduemaa-dla-obnovlenia-i-perehoda.26149/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 2749
+}

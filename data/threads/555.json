@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 7083,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 555,
+  "last_post_date": 1323609052,
+  "node_id": 57,
+  "post_date": 1323598884,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 7083,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет. <br />\nИмеется торрент трекер в локальной сетке.<br />\nработает на torrentpier.<br />\nСегодня с дуру почисти кеш шаблона, чего не когда не делал, в итоге нестало ни админки ни самого трекера....<br />\n<br />\nна любой странице выводится только такое:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">[ Execution time: 0,021 sec | MySQL: 0,005 sec (22%) in 4 queries | GZIP ON | Mem: 167,99 KB / 1,65 MB / 1,61 MB | Load: 0,3 0,2 0,3 ]</blockquote><br />\nкто встречался с такой проблемой? что можете посоветовать?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1323598884,
+      "user_id": 608,
+      "user_title": "User",
+      "username": "dr.alex"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 7089,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "а что в логах?<br />\nТут поддержка torrentpier запрещена",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1323601296,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 7099,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"DarkMod\">а что в логах?<br />\nТут поддержка torrentpier запрещена</blockquote>Думаю что ты неверно выразил свою мысль. <br />\nПоддержка тут запрещена версий кроме Torrentpier II.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1323609052,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "belye-stranicy-posle-cistki-kesa",
+  "sticky": false,
+  "tags": [],
+  "title": "Белые страницы после чистки кэша",
+  "url_path": "/threads/belye-stranicy-posle-cistki-kesa.555/",
+  "user_id": 608,
+  "username": "dr.alex",
+  "view_count": 1264
+}

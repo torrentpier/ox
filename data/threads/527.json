@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 6617,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 527,
+  "last_post_date": 1323095669,
+  "node_id": 57,
+  "post_date": 1323087289,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 6617,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Хочу адаптировать мод панель для торент пир 2 и никак не могу понять как происходит смена статуса<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\">switch($status)\n            {\n                case 0:\n                    $status_text = &#039;&lt;span class=&quot;tor-not-approved&quot;&gt;&#039;. $lang[&#039;TOR_STATUS_NOT_CHECKED&#039;] .&#039;&lt;/span&gt;&#039;;\n                  break;\n                case 1:\n                    $status_text = &#039;&lt;span class=&quot;tor-closed&quot;&gt;&#039;. $lang[&#039;TOR_STATUS_CLOSED&#039;] .&#039;&lt;/span&gt;&#039;;\n                  break;\n                case 2:\n                    $status_text = &#039;&lt;span class=&quot;tor-approved&quot;&gt;&#039;. $lang[&#039;TOR_STATUS_CHECKED&#039;] .&#039;&lt;/span&gt;&#039;;\n                  break;\n                case 3:\n                    $status_text = &#039;&lt;span class=&quot;tor-dup&quot;&gt;&#039;. $lang[&#039;TOR_STATUS_D&#039;] .&#039;&lt;/span&gt;&#039;;\n                  break;\n                case 4:\n                    $status_text = &#039;&lt;span class=&quot;tor-no-desc&quot;&gt;&#039;. $lang[&#039;TOR_STATUS_NOT_PERFECT&#039;] .&#039;&lt;/span&gt;&#039;;\n                  break;\n                case 5:\n                    $status_text = &#039;&lt;span class=&quot;tor-need-edit&quot;&gt;&#039;. $lang[&#039;TOR_STATUS_PART_PERFECT&#039;] .&#039;&lt;/span&gt;&#039;;\n                  break;\n                case 6:\n                    $status_text = &#039;&lt;span class=&quot;tor-consumed&quot;&gt;&#039;. $lang[&#039;TOR_STATUS_FISHILY&#039;] .&#039;&lt;/span&gt;&#039;;\n                  break;\n                case 7:\n                    $status_text = &#039;&lt;span class=&quot;tor-closed-cp&quot;&gt;&#039;. $lang[&#039;TOR_STATUS_COPY&#039;] .&#039;&lt;/span&gt;&#039;;\n                  break;\n\n            }</pre><br />\nнадо изменить вот это и еще вопрос<br />\nраньше было<br />\nраньше  когда было<br />\n  <pre class=\"xfBb-code\" data-lang=\"\">  $lang[&#039;TOR_  New&#039;]   = &#039;новий&#039;\n и общался к нему  $lang[&#039;TOR_  New&#039;]</pre> как обращаться к лангаам который имеет вид<br />\n   <pre class=\"xfBb-code\" data-lang=\"\">    $lang[&#039;TOR_STATUS_NAME] = array(\n TOR_New =&gt; &#039;новый&#039;</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1323087289,
+      "user_id": 578,
+      "user_title": "",
+      "username": "Ice"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 6621,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Ice</b>, модераторская панель уже встроена в двиг.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1323090773,
+      "user_id": 30,
+      "user_title": "User",
+      "username": "krumax"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 6623,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Тоесть? что то я не находил",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1323093558,
+      "user_id": 578,
+      "user_title": "",
+      "username": "Ice"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 6624,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "По втрому вопросу $lang[&#039;TOR_STATUS_NAME][&#039;TOR_New&#039;], на будущее.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1323095669,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "kak-v-tp-ii-proishodit-smena-statusa",
+  "sticky": false,
+  "tags": [],
+  "title": "как в TP II происходит смена статуса?",
+  "url_path": "/threads/kak-v-tp-ii-proishodit-smena-statusa.527/",
+  "user_id": 578,
+  "username": "Ice",
+  "view_count": 1455
+}

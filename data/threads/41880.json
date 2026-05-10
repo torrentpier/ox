@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 92700,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 41880,
+  "last_post_date": 1519202909,
+  "node_id": 3,
+  "post_date": 1519163747,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92700,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте!<br />\nТакая проблема, оформляю на своем трекере крупно габаритный релиз, множество 66 кодов и спойлеров, жму предосмотрр, выходит вся тема, а когда отправляю, то тема появляется не вся, а только его часть, пробывал на чужом трекере, там все как мо маслу, подскажите что делать.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1519163747,
+      "user_id": 8306,
+      "user_title": "User",
+      "username": "Rtuty"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92701,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "причин может быть несколько , <a href=\"https://torrentpier.com/forum/threads/oshibka-pri-sozdanii-reliza-s-bolshim-oformleniem.41663/#post-90234\" class=\"link link--internal\">багом не является - Ошибка при создании релиза, с большим оформлением</a><br />\nлибо ограничение на стороне сервера",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1519165287,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92702,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1519189135,
+      "message_parsed": "в таблице bb_posts_text изменить тип колонки post_text с text на mediumtext или longtext, тоже проделать с bb_posts_html, не помню название колонки. если ошибка останется пишите. Связано с ограничением на кол-во символов в полях базы данных.<br />\n<br />\nVARCHAR Может хранить не более 255 символов.<br />\nTINYTEXT Может хранить не более 255 символов.<br />\nTEXT Может хранить не более 65 535 символов.<br />\nMEDIUMTEXT Может хранить не более 16 777 215 символов.<br />\nLONGTEXT Может хранить не более 4 294 967 295 символов",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1519188989,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92703,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">в таблице bb_posts_text изменить тип колонки post_text с text на mediumtext или longtext, тоже проделать с bb_posts_html, не помню название колонки. если ошибка останется пишите. Связано с ограничением на кол-во символов в полях базы данных.<br />\n<br />\nVARCHAR Может хранить не более 255 символов.<br />\nTINYTEXT Может хранить не более 255 символов.<br />\nTEXT Может хранить не более 65 535 символов.<br />\nMEDIUMTEXT Может хранить не более 16 777 215 символов.<br />\nLONGTEXT Может хранить не более 4 294 967 295 символов</blockquote>Спасибо, помогло",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1519202909,
+      "user_id": 8306,
+      "user_title": "User",
+      "username": "Rtuty"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "ogranicenie-na-oformlenie-reliza",
+  "sticky": false,
+  "tags": [],
+  "title": "Ограничение на оформление релиза",
+  "url_path": "/threads/ogranicenie-na-oformlenie-reliza.41880/",
+  "user_id": 8306,
+  "username": "Rtuty",
+  "view_count": 1125
+}

@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 63644,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 26671,
+  "last_post_date": 1412588945,
+  "node_id": 57,
+  "post_date": 1412566389,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63644,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1412566486,
+      "message_parsed": "Например: Есть на сайте 200 пользователи и 150 пользователи добавил в mysql.sql<br />\nС перво правильно показывает 350 Но некоторый время который добавил(150 пользователи) исчезает в статистике Всего зарегистрированных пользователей: 200 и все<br />\nНе подскажете где исправить?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1412566389,
+      "user_id": 322,
+      "user_title": "User",
+      "username": "botyk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63649,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"botyk\">Например: Есть на сайте 200 пользователи и 150 пользователи добавил в mysql.sql<br />\nС перво правильно показывает 350 Но некоторый время который добавил(150 пользователи) исчезает в статистике Всего зарегистрированных пользователей: 200 и все<br />\nНе подскажете где исправить?</blockquote>За это отвечает cron-задача Prune inactive users. Удаляет неактивных пользователей. Отключи задачу.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1412572190,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63774,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Begemot,</b><br />\nСпасибо!",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1412588945,
+      "user_id": 322,
+      "user_title": "User",
+      "username": "botyk"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "dobavil-user-v-mysql-sql",
+  "sticky": false,
+  "tags": [],
+  "title": "Добавил user в mysql.sql",
+  "url_path": "/threads/dobavil-user-v-mysql-sql.26671/",
+  "user_id": 322,
+  "username": "botyk",
+  "view_count": 1065
+}

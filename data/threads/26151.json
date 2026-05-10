@@ -1,0 +1,113 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 62359,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 26151,
+  "last_post_date": 1409566700,
+  "node_id": 80,
+  "post_date": 1409564257,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1409563971,
+          "file_size": 15888,
+          "filename": "undefined.webp",
+          "height": 175,
+          "id": 2621,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/undefined-webp.2621/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2626-a430571f570114da602882656222d320.jpg?hash=Y0XZVLTEbJ",
+          "width": 1487
+        }
+      ],
+      "id": 62359,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Установил новый мод на VPS.<br />\nВсё Ок. Установка прав - всё ок на все папки. База залита, конфиг подправлен(домен, база, пользователь, пароль - всё норм.)<br />\nНо вот незадача появилась.Захожу на сайт(<a href=\"http://torrentorg.ru\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://torrentorg.ru</a>)<br />\nНажимаю(кликаю) меню / Трекер, и вот что мне в ответ на экран<br />\nЧто это может быть.<br />\nОчередной БАГ?или руки кривые?<br />\n <br />\nВ браузер Яндекс нормально всё показывает без ошибки",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1409564257,
+      "user_id": 4803,
+      "user_title": "User",
+      "username": "BigSerg"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62362,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "У вас нет групп на форуме, в обычной ситуации это, наверное, не вполне нормально. Нотис - соответствующий недочет. Создайте хотя бы одну группу. Нотис поправим.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1409564692,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62367,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Внесите следующие изменения: https://github.com/torrentpier/torrentpier/commit/85e2cb66d11327d56681937b859f843d93102c87<br />\n <br />\nАрхив в центре загрузки обновлен, можете просто tracker.php из нового архива взять: <a href=\"http://get.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://get.torrentpier.com/</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1409566180,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62370,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо.<br />\nНо это только в google chrome ошибка. В других браузерах(MF, Яндекс, Опера) такого нет(тестил только что)",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1409566700,
+      "user_id": 4803,
+      "user_title": "User",
+      "username": "BigSerg"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 3,
+  "slug": "osibka-v-tracker-php-esli-net-grupp-na-forume",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка в tracker.php если нет групп на форуме",
+  "url_path": "/threads/osibka-v-tracker-php-esli-net-grupp-na-forume.26151/",
+  "user_id": 4803,
+  "username": "BigSerg",
+  "view_count": 1326
+}

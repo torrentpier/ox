@@ -1,0 +1,75 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94935,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 42134,
+  "last_post_date": 1685724927,
+  "node_id": 111,
+  "post_date": 1685724927,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1685724927,
+          "file_size": 6648,
+          "filename": "logos-hexagon-green&blue@0,5x.webp",
+          "height": 343,
+          "id": 5430,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/logos-hexagon-green-blue-0-5x-webp.5430/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5434-921e5090a4f5bf87db249c0cb261be23.jpg?hash=jFIp-r3dyo",
+          "width": 302
+        }
+      ],
+      "id": 94935,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier Cattle. Версия 2.4.0-alpha3</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/5430/\" alt=\"logos-hexagon-green&amp;blue@0,5x.webp\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/releases/tag/v2.4.0-alpha3\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.4.0-alpha3 · torrentpier/torrentpier</a><br />\n<br />\n<b>Чейнджлог:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/compare/v2.4.0-alpha2...v2.4.0-alpha3\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Comparing v2.4.0-alpha2...v2.4.0-alpha3 · torrentpier/torrentpier</a><br />\n<br />\n<b>Основные изменения:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Maked jumpbox optional <a href=\"https://github.com/torrentpier/torrentpier/pull/727\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#727</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Code Inspection: Ternary expression can be replaced with condition <a href=\"https://github.com/torrentpier/torrentpier/pull/728\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#728</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Fixed: [Deprecated] number_format(): Passing null to parameter <a href=\"https://github.com/torrentpier/torrentpier/pull/729\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#729</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Replaced prn_r() function with dump() <a href=\"https://github.com/torrentpier/torrentpier/pull/730\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#730</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Replaced bb_exit() with native <a href=\"https://github.com/torrentpier/torrentpier/pull/731\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#731</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Added exception if .env not found <a href=\"https://github.com/torrentpier/torrentpier/pull/734\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#734</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Fixed broken file_write() function <a href=\"https://github.com/torrentpier/torrentpier/pull/737\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#737</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Fixed broken $replace_content <a href=\"https://github.com/torrentpier/torrentpier/pull/738\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#738</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Moved poll functions to Poll class <a href=\"https://github.com/torrentpier/torrentpier/pull/739\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#739</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Replaced bb_realpath() with native <a href=\"https://github.com/torrentpier/torrentpier/pull/740\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#740</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Fixed methods types in Admin/Cron.php <a href=\"https://github.com/torrentpier/torrentpier/pull/743\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#743</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Fixed empty $_SERVER[&#039;SERVER_PROTOCOL&#039;] in cron <a href=\"https://github.com/torrentpier/torrentpier/pull/744\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#744</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Moved $bb_cfg[&#039;show_board_start_date&#039;] to admin panel <a href=\"https://github.com/torrentpier/torrentpier/pull/745\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#745</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Added sup &amp; sub tags in BBCode <a href=\"https://github.com/torrentpier/torrentpier/pull/746\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#746</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Unified checkForm() JS <a href=\"https://github.com/torrentpier/torrentpier/pull/747\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#747</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">[TEMP] Removed Http class <a href=\"https://github.com/torrentpier/torrentpier/pull/748\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#748</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Added reset button in posting editor <a href=\"https://github.com/torrentpier/torrentpier/pull/749\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#749</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Fixed: Automatic conversion of false to array is deprecated <a href=\"https://github.com/torrentpier/torrentpier/pull/750\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#750</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Reformated JS <a href=\"https://github.com/torrentpier/torrentpier/pull/753\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#753</a>, <a href=\"https://github.com/torrentpier/torrentpier/pull/754\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#754</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">New Crowdin updates <a href=\"https://github.com/torrentpier/torrentpier/pull/700\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#700</a> (<a href=\"https://github.com/Exileum\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Exileum</a>)</li>\n<li data-xf-list-type=\"ul\">Minor improvements <a href=\"https://github.com/torrentpier/torrentpier/pull/732\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#732</a>, <a href=\"https://github.com/torrentpier/torrentpier/pull/735\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#735</a>, <a href=\"https://github.com/torrentpier/torrentpier/pull/741\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#741</a>, <a href=\"https://github.com/torrentpier/torrentpier/pull/742\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#742</a>, <a href=\"https://github.com/torrentpier/torrentpier/pull/751\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#751</a>, <a href=\"https://github.com/torrentpier/torrentpier/pull/752\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#752</a>, <a href=\"https://github.com/torrentpier/torrentpier/pull/755\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#755</a>, <a href=\"https://github.com/torrentpier/torrentpier/pull/756\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#756</a>, <a href=\"https://github.com/torrentpier/torrentpier/pull/757\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#757</a>, <a href=\"https://github.com/torrentpier/torrentpier/pull/761\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#761</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Updated deps <a href=\"https://github.com/torrentpier/torrentpier/pull/733\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#733</a>, <a href=\"https://github.com/torrentpier/torrentpier/pull/758\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#758</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n</ul>Для обновления на версию необходимо выполнить следующие запросы к базе данных:<br />\n<pre class=\"xfBb-code\" data-lang=\"sql\">INSERT INTO bb_config VALUES (&#039;show_board_start_index&#039;, &#039;1&#039;);</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1685724927,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-cattle-versia-2-4-0-alpha3-dolphin",
+  "sticky": false,
+  "tags": [
+    "cattle",
+    "новая версия",
+    "релиз",
+    "ченжлог"
+  ],
+  "title": "TorrentPier Cattle. Версия 2.4.0-alpha3 🐬",
+  "url_path": "/threads/torrentpier-cattle-versia-2-4-0-alpha3-dolphin.42134/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 637
+}

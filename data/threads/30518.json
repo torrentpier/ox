@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 68375,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 30518,
+  "last_post_date": 1417452435,
+  "node_id": 57,
+  "post_date": 1417341175,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 68375,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В какой то из ревизий, добавили возможность, выносить требуемые данные, из config.php в отдельный свой конфиг, который не будет обновляться типа, поделитесь как правильно сделать ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1417341175,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 68378,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Смотрим сюда https://github.com/torrentpier/torrentpier/blob/master/library/config.php#L644<br />\nЕсли рядом с конфигом лежит файл config.local.php, то он подключается и перетирает настройки из базового.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1417347419,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 68406,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Пример для демо-версии нашей. Рядом с config.php лежит файл config.local.php, в котором прописано следующее:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;?php\n\n$bb_cfg[&#039;db&#039;] = array(\n    &#039;db1&#039; =&gt; array(&#039;localhost&#039;, &#039;beta&#039;, &#039;beta&#039;, &#039;*******&#039;, $charset, $pconnect),\n);\n\n$bb_cfg[&#039;cache&#039;][&#039;prefix&#039;]   = &#039;beta_&#039;;\n\n// Available cache types: memcache, sqlite, redis, apc, xcache (default of filecache)\n# name =&gt; array( (string) type, (array) cfg )\n$bb_cfg[&#039;cache&#039;][&#039;engines&#039;] = array(\n    &#039;bb_cache&#039;      =&gt; array(&#039;memcache&#039;, array()),\n    &#039;bb_config&#039;     =&gt; array(&#039;filecache&#039;, array()),\n    &#039;tr_cache&#039;      =&gt; array(&#039;memcache&#039;, array()),\n    &#039;session_cache&#039; =&gt; array(&#039;memcache&#039;, array()),\n    &#039;bb_cap_sid&#039;    =&gt; array(&#039;memcache&#039;, array()),\n    &#039;bb_login_err&#039;  =&gt; array(&#039;memcache&#039;, array()),\n    &#039;bb_poll_data&#039;  =&gt; array(&#039;memcache&#039;, array()),\n);\n// Datastore\n// Available datastore types: memcache, sqlite, redis, apc, xcache  (default filecache)\n$bb_cfg[&#039;datastore_type&#039;] = &#039;memcache&#039;;</pre>Минимально необходимые параметры в общем.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1417380337,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 68422,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Т.е. если я правильно понял, все что указано в config.local.php будет браться из него, остальное из базового конфига ?",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1417414121,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 68501,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/896/\">@Dr_Brown</a> да. Значения из базового конфига будут перезаписаны.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1417452435,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "konfig-config-local-php",
+  "sticky": false,
+  "tags": [],
+  "title": "Конфиг config.local.php",
+  "url_path": "/threads/konfig-config-local-php.30518/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1376
+}

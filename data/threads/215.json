@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 2263,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 215,
+  "last_post_date": 1314727826,
+  "node_id": 57,
+  "post_date": 1314727152,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 2263,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте!!! Такой вопрос - какую задачу Крон необходимо отключить чтоб в раздаче в которой нет не сидов не пиров через некоторое время не разрегистрировался торрент файл? В новых трекерах данная функция просто не к чему...",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1314727152,
+      "user_id": 213,
+      "user_title": "User",
+      "username": "Artem"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 2264,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "в config.php поставь так<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">// Days to keep torrent registered, if:\n$bb_cfg[&#039;seeder_last_seen_days_keep&#039;]  = 0;\n$bb_cfg[&#039;seeder_never_seen_days_keep&#039;] = 0;</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1314727826,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "registracia-torrenta",
+  "sticky": false,
+  "tags": [],
+  "title": "Регистрация торрента",
+  "url_path": "/threads/registracia-torrenta.215/",
+  "user_id": 213,
+  "username": "Artem",
+  "view_count": 1808
+}

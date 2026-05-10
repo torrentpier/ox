@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 19462,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 1477,
+  "last_post_date": 1343897954,
+  "node_id": 90,
+  "post_date": 1343893540,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 19462,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Csync2<br />\nЯ не скрываю что мягко говоря недолюбливаю Debian.<br />\nНо вот пути неисповедимы как говорится. Достался по наследству парк серверов, выведенные в отдельную сетку и все как на зло на Debian. Задачу поставили довольно таки простую нужно синхронизировать и управлять конфигурациями на этих серверах, так как серверов всего на всего 12 штук решил не использовать Puppet хотя он реально хорош и предельно понятен .<br />\nКак говорится в рекламе не вопрос Коленька.<br />\nПорылся я в их репах, нашел софтинку csync2, полез на их сайт <a href=\"http://oss.linbit.com/csync2/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://oss.linbit.com/csync2/</a><br />\nПочитал в принципе все что нужно умеет и не надо заморачиваться с ruby<br />\nЧто умеет:<br />\n•Синхронизировать парк машин<br />\n•Выполнять скрипты и команды на удаленных машинах<br />\n•Есть встроенная база данных<br />\n•Предельно прост в настройки, развернул я все это дело за 10-15 минут.<br />\nИ так Debian и csync.<br />\nСтандартные команды:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">apt-get update &amp;&amp; apt-get upgrade &amp;&amp; apt-get install csync2 –y</pre>В процессе установки вытащит еще sqllite.<br />\nДалее начинаем варить сертификаты.<br />\n<pre class=\"xfBb-code\" data-lang=\"\">openssl genrsa -out /etc/csync2_ssl_key.pem 1024\nopenssl req -new -key /etc/csync2_ssl_key.pem -out /etc/csync2_ssl_cert.csr\nopenssl x509 -req -days 600 -in /etc/csync2_ssl_cert.csr -signkey /etc/csync2_ssl_key.pem -out /etc/csync2_ssl_cert.pem</pre>Это нужно сделать на всех нодах.<br />\nДалее нужно создать сертификаты для самого csync и разложить на серверах<br />\n<pre class=\"xfBb-code\" data-lang=\"\">csync2 -k /etc/csync2.key</pre>Процесс долгий можно сходить налить кофейку…….<br />\nПосле завершения нужно скопировать сертификат на все сервера, я копировал с помощью <b>mussh</b>, если серверов 2-4  то есть не много можно и<b> scp</b> скопировать.<br />\nТак вроде все, теперь начинаем конфигурацию, я конечно же не буду приводить реальный конфигурационный файл со своих серверов, он сугубо личный и с рядом нюансов.<br />\nОткрываем файл конфигурации<br />\nvi /etc/csync2.cfg<br />\nНачнем с описание общей для всех серверов синхронизации.<br />\n<pre class=\"xfBb-code\" data-lang=\"\">group all {\n        host node1 node2 node3; #здесь идет список серверов их хостнеймы\n         key /etc/csync2.key;#ключ\n         include /etc/csync2.cfg; синхронизируем конфигурационный файл\nК примеру вы хотите синхронизировать пользователей и папки между всеми нодами.\n         include /etc/passwd;\n         include /etc/group;\n         include /etc/gshadow;\n         include /etc/shadow;\n         include /home/*;\n         include /root/*;\n         auto younger; последнее что указываем то что надо разрешать конфликты.\n}</pre>Вот и все конфигурационный файл есть, простенький который разложит пользователей и папки.<br />\nУсложним. К примеру надо есть 6 серверов<br />\n<b>n1,n2,n3,n4,n5,n6 </b><br />\nНа всех нужно синхронизировать csync2.cfg  hosts<br />\nНа <b>n1,n2,n3</b> надо синхронизировать пользователей, домашние папки<br />\nНа<b> n4,n5</b> надо синхронизировать nginx точнее его конфигурационные файлы и корневые папки сайтов.<br />\nНа <b>n6</b> нужно просто копировать бекап.<br />\nВот примерный конфигурационный файл<br />\n<pre class=\"xfBb-code\" data-lang=\"\">group all {\n        host n1 n2 n3 n4 n5 n6; \n         key /etc/csync2.key;\n         include /etc/csync2.cfg; синхронизируем конфигурационный файл\n         include /etc/hosts;\n         auto younger; последнее что указываем то что надо разрешать конфликты.\n}\ngroup home\n{\nhost n1 n2 n3; \n         key /etc/csync2.key\n         include /etc/passwd;\n         include /etc/group;\n         include /etc/gshadow;\n         include /etc/shadow;\n         include /home/*;\n         include /root/*;\n         auto younger; \n}\n \ngroup web\n{\nhost n1 n2 n3; \n         key /etc/csync2.key\ninclude /etc/nginx;  \ninclude /var/www/*\naction {\npattern /etc/nginx/*;  \nexec &quot;/etc/init.d/nginx reload&quot;;  \nlogfile &quot;/var/log/csync2.actions.log&quot;;  \ndo-local;  \n}\nauto younger; \n}\ngroup home\n{\nhost n6; \n         key /etc/csync2.key\n          include /usr/back/*;\n         auto younger; \n}</pre>Стоит ответить что Ip-адреса программа не понимает в ноды надо указывать хостнеймы, то есть писать так как выводит команда<b> uname -n</b><br />\nВсе сохраняемся и запускаем синханихзацию<br />\n<b>csync2 –x</b><br />\nЖдем окончания и радуемся 🙂<br />\nНу последний шаг это добавить все в крон<br />\nЯ сделал так <br />\n<pre class=\"xfBb-code\" data-lang=\"\">#!/bin/sh\npid_file=/tmp/csync.pid\numask 333\n(echo $$ &gt; &quot;$pid_file&quot;) 2&gt;/dev/null\nif [ $? -ne 0 ]\nthen\n        umask 22\n        echo &quot;Already started :(&quot;\n        exit 1\nfi\numask 22\n/usr/sbin/csync2 -x\nrm -f &quot;$pid_file&quot;</pre>Чтобы исключить повторное выполнение, сохраняем допустим в <b>/etc/lock.sh</b> делаем исполняемым и добавляем в крон <b>crontab –e</b> <br />\n<pre class=\"xfBb-code\" data-lang=\"\">*/5 *   *  *    *   /etc/lock.sh</pre>Для теста можете создать папку или файл и подождать 5 минут.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1343893540,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 19463,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "мне, человеку отдаленному от администрирования, интересно почитать такие статейки, чтобы немного абстрагироваться от своей рутины и посмотреть, чем народ живет...хотя бы в чтении пары строк кода. лайкаю",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1343897954,
+      "user_id": 630,
+      "user_title": "User",
+      "username": "notebug"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "a-klaster-razvedu-rukami-upravlaem-parkom-serverov",
+  "sticky": false,
+  "tags": [],
+  "title": "Я кластер разведу руками, управляем парком серверов",
+  "url_path": "/threads/a-klaster-razvedu-rukami-upravlaem-parkom-serverov.1477/",
+  "user_id": 0,
+  "username": "kenny",
+  "view_count": 4010
+}

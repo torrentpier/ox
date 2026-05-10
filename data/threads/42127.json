@@ -1,0 +1,70 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94894,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 88,
+    "title": "Search Engine Optimization (SEO)"
+  },
+  "id": 42127,
+  "last_post_date": 1713465372,
+  "node_id": 88,
+  "post_date": 1683311720,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94894,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Яша, выдал недавно фильтр Мимикрия, подозреваю что за парсеры.<br />\nПисал в подержку, сказали что я маскируюсь под популярный сайт, вот интересно под какой, если рутор и рутрекер забаны в рф.<br />\nКтото сталкивался?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1683311720,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96100,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Я сталкивался. Это было связано с названием домена и схожим оформлением. Пример site.net (популярный сайт) site.ru.net - мой сайт. Снятие фильтра решилось через поддержку, объяснил, что весь контент ручной, авторский",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1713465372,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "fil-tr-mimikria",
+  "sticky": false,
+  "tags": [
+    "мимикрия",
+    "фильтр",
+    "яндекс"
+  ],
+  "title": "Фильтр Мимикрия",
+  "url_path": "/threads/fil-tr-mimikria.42127/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 6494
+}

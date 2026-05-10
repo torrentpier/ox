@@ -1,0 +1,90 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 86809,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41391,
+  "last_post_date": 1453748561,
+  "node_id": 57,
+  "post_date": 1453726275,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86809,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет. Никто еще не прикручивал push&#039;и на трекер (например, при создании релизов)? Что-то я не могу найти толковый вариант,  зато рекламы кучи сервисов везде полно, а хочется чтобы свой код был и не зависеть от стороних сайтов.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1453726275,
+      "user_id": 61,
+      "user_title": "User",
+      "username": "druid"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86810,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/61/\">@druid</a>, интересная тема. Гуглил, смотрел, пробовал, в конечно итоге понял, что для подобной системы нужно использовать либо NodeJS (+ Socket.IO), либо же MeteorJS. Какой из них лучше, понятия не имею. Meteor, по заявлениям разработчиков достаточно прост в освоении, но чёто мне так не показалось. С NodeJS та же песня. Эти две штуковины оградят вас от использования сторонних сайтов и прочей ереси, но придётся осваиваться в среде Node программирования🙂",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1453732357,
+      "user_id": 2684,
+      "user_title": "User",
+      "username": "dredd"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86811,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1453748629,
+      "message_parsed": "Создаем сервак <b>websocket</b>, при входе на сайт инициализируем подключение, далее передаем данные посредством <b>JsonRPC.</b><br />\nТаким образом, мы дали знать серваку, что мы зашли на сайт. Если уведомление появляется JsonRPC перекинет в одностороннем порядке.<br />\nПри закрытие вкладки браузера, соединение автоматически отвалится!<br />\nВсе имеется в js!!!",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1453748561,
+      "user_id": 2789,
+      "user_title": "User",
+      "username": "Sprinx"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "push-uvedomlenia-na-trekere",
+  "sticky": false,
+  "tags": [
+    "push",
+    "уведомления"
+  ],
+  "title": "Push-уведомления на трекере",
+  "url_path": "/threads/push-uvedomlenia-na-trekere.41391/",
+  "user_id": 61,
+  "username": "druid",
+  "view_count": 1192
+}

@@ -1,0 +1,157 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 96602,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 42298,
+  "last_post_date": 1723367863,
+  "node_id": 110,
+  "post_date": 1723019280,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1723019268,
+          "file_size": 3371539,
+          "filename": "phpstorm64_i2mSywr43j.mp4",
+          "height": 0,
+          "id": 6142,
+          "is_audio": false,
+          "is_video": true,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/data/video/6/6146-4efc714f69a4d1dbabfe56a773e3036c.mp4",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 96602,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<div style=\"text-align: center\"><span style=\"font-size: 18px\">Начиная с версии v2.4.5 в движке будет интегрирован автоматический установщик</span>&#8203;</div><hr />Что он умеет:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Скачивает и устанавливает Composer и зависимости для него (локально)</li>\n<li data-xf-list-type=\"ul\">Позволяет настроить подключение к базе данных</li>\n<li data-xf-list-type=\"ul\">Создает базу данных и извлекает SQL-дамп</li>\n</ul>Демонстрация:<br />\n<video controls><source src=\"https://torrentpier.com/data/video/6/6146-4efc714f69a4d1dbabfe56a773e3036c.mp4\" /></video>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1723019280,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96605,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1723030942,
+      "message_parsed": "Во разошелся! Версии шпарит одна за другой! В форуме &quot;Новости ресурса&quot; и &quot;Архив&quot;. Новых версий почти не видать. А тут за одно только лето - вон их сколько вышло!<br />\nНа до бы ему как то подсказать, что бы интегрировал автоматический сбор пожертвований проекту torrentpier.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1723030784,
+      "user_id": 10922,
+      "user_title": "User",
+      "username": "TorSav"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96606,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"torsav.com\">Во разошелся! Версии шпарит одна за другой! В форуме &quot;Новости ресурса&quot; и &quot;Архив&quot;. Новых версий почти не видать. А тут за одно только лето - вон их сколько вышло!<br />\nНа до бы ему как то подсказать, что бы интегрировал автоматический сбор пожертвований проекту torrentpier.</blockquote>Чтобы довести всё до ума, надо в день минимум пул-реквестов 10-15 делать)) На текущий момент всё что я могу себе позволить, это по паре пул реквестов за день) Хотя, зависит от фичи, если фича большая, то один пул-реквест может растянутся на дни, недели, месяцы... Ну а если речь о мелких улучшениях, то в день спокойно можно по 5 пул-реквестов делать).<br />\nКаждый новый релиз в себе содержит в среднем 50-70 пуллов (что собственно можно увидеть посчитав циферки в списке изменений).<br />\n<br />\nПроект не коммерческий, и никогда таким не будет. Поэтому принуждать никогда не будем)",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1723032387,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96607,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Реально полезная фича. Я конечно не спец в пхп, но убрал бы жопу этот компосер, даже с манулами что на винде на на линуксе с бубном его запускаешь вечно 😂",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1723067777,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96608,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Lange\">Реально полезная фича. Я конечно не спец в пхп, но убрал бы жопу этот компосер, даже с манулами что на винде на на линуксе с бубном его запускаешь вечно 😂</blockquote>Сейчас без бубнов) он сам его скачивает и сам запускает) то есть для его использования не нужно ничего предварительно ставить)",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1723068019,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96628,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"belomaxorka\">Сейчас без бубнов) он сам его скачивает и сам запускает) то есть для его использования не нужно ничего предварительно ставить)</blockquote>Ладно дядь, ты донат свой заслуженно заработал)",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1723367863,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "novyj-ustanovsik",
+  "sticky": false,
+  "tags": [
+    "cli",
+    "cli installer",
+    "cli установщик",
+    "torrentpier installer",
+    "автоматическая установка",
+    "установщик"
+  ],
+  "title": "Новый установщик!",
+  "url_path": "/threads/novyj-ustanovsik.42298/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 1145
+}

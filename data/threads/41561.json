@@ -1,0 +1,102 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 88834,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41561,
+  "last_post_date": 1484603924,
+  "node_id": 57,
+  "post_date": 1478652266,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1478651860,
+          "file_size": 350938,
+          "filename": "Безымян34ный.webp",
+          "height": 768,
+          "id": 4521,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bezyman34nyj-webp.4521/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4525-fd09b885364f1563f1fe32fa57d4ea4c.jpg?hash=9wuBVn7deI",
+          "width": 1366
+        }
+      ],
+      "id": 88834,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "кто нибудь встречал такую фигню? 😕 я просто вырубил активакцию $bb_cfg[&#039;reg_email_activation&#039;]    = false; на true и результат. обратно поставил false тоже так<br />\n<br />\n<img src=\"https://torrentpier.com/attachments/4521/\" alt=\"Безымян34ный.webp\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1478652266,
+      "user_id": 7546,
+      "user_title": "User",
+      "username": "Rexto"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88866,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/7546/\">Rexto</a> <br />\n1) установку делали в точности по инструкции?  <a href=\"https://faq.torrentpier.com/#installation\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Инструкция TorrentPier II</a> <br />\n2) кодировку php-файлов движка проверяли? (Должна быть utf-8 без BOOM)",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1478892441,
+      "user_id": 1478,
+      "user_title": "User",
+      "username": "Nikolay90"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89519,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Nikolay90\">кодировку php-файлов движка проверяли? (Должна быть utf-8 без BOOM)</blockquote>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1484603924,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "config",
+  "sticky": false,
+  "tags": [],
+  "title": "config",
+  "url_path": "/threads/config.41561/",
+  "user_id": 7546,
+  "username": "Rexto",
+  "view_count": 1285
+}

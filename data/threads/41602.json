@@ -1,0 +1,84 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 89242,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 41602,
+  "last_post_date": 1483046461,
+  "node_id": 3,
+  "post_date": 1482947612,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89242,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Кто нибудь пробовал писать парсер для lostfilm?<br />\nИнтересует как у них генерируется хеш ссылка для скачивания.<br />\nМожет быть есть альтернативный способ скачки торрентов.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1482947612,
+      "user_id": 97,
+      "user_title": "User",
+      "username": "Zenden"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89252,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Пробовал разбираться для бота Telegram. Все ссылки ведут на трактор, как генерируется этот хеш - не понятно, единственное что, там есть скрипт (вроде c.php) который при указании номера сезона, серии и названия сериала прям текстом выдает список его торрентов, но ссылки на скачивание самих файлов опять же скрыты под неизвестным хешем. В голове идей кроме прямого парсинга ссылок на скачивание идей не было.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1483002097,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89255,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1483046907,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/1/\">Exile</a> получилось вытащить ссылку с хешем",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1483046461,
+      "user_id": 97,
+      "user_title": "User",
+      "username": "Zenden"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "generacia-hesa-lostfilm",
+  "sticky": false,
+  "tags": [
+    "lostfilm"
+  ],
+  "title": "Генерация хеша lostfilm",
+  "url_path": "/threads/generacia-hesa-lostfilm.41602/",
+  "user_id": 97,
+  "username": "Zenden",
+  "view_count": 1155
+}

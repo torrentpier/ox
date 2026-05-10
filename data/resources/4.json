@@ -1,0 +1,132 @@
+{
+  "category": {
+    "description": "Section with all templates for TorrentPier.",
+    "id": 5,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Templates",
+    "view_url": "https://torrentpier.com/resources/categories/templates.5/"
+  },
+  "current_files": [
+    {
+      "filename": "Parabox.zip",
+      "id": 3637,
+      "local_path": null,
+      "r2_key": null,
+      "size": 72419,
+      "src_url": "https://torrentpier.com/api/resource-versions/289/download?file=3637"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "adapt",
+    "installation": "[SPOILER=\"Инструкция\"]Загрузить файлы на сервер.[/SPOILER]",
+    "owner": "BooMen, vlad1908",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1429569373,
+      "file_size": 116930,
+      "filename": "dda38661520fcd905ae4b30017bcf274.webp",
+      "height": 992,
+      "id": 3634,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/dda38661520fcd905ae4b30017bcf274-webp.3634/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3638-6f2adf7bc4419a5ed88ac7c33f25456a.jpg?hash=fII4T32fgH",
+      "width": 1264
+    },
+    {
+      "attach_date": 1429569373,
+      "file_size": 88020,
+      "filename": "de59e92c4fb7b6fe6e4ee35786d7fdce.webp",
+      "height": 992,
+      "id": 3635,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/de59e92c4fb7b6fe6e4ee35786d7fdce-webp.3635/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3639-c57175e896bc7e8e408c23da462e3a23.jpg?hash=WVdFdVPwc6",
+      "width": 1264
+    },
+    {
+      "attach_date": 1429569374,
+      "file_size": 111640,
+      "filename": "f22554795f976f00440f0cb8188486aa.webp",
+      "height": 992,
+      "id": 3636,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/f22554795f976f00440f0cb8188486aa-webp.3636/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3640-71dca45aeffe14a6a8c79b4943c468d9.jpg?hash=XXhy1fOpsc",
+      "width": 1264
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> шаблон, рип с трекера ParaBox.",
+  "download_count": 415,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/4.jpg?1429569489",
+  "id": 4,
+  "is_fileless": null,
+  "last_update": 1429569519,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1369072857,
+  "resource_state": "visible",
+  "slug": "sablon-parabox-smile",
+  "tag_line": "Шаблон, рип с трекера ParaBox.",
+  "tags": [],
+  "title": "Шаблон «Parabox Smile»",
+  "url_path": "/resources/sablon-parabox-smile.4/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 270,
+      "files": [
+        {
+          "filename": "Parabox.zip",
+          "id": 3637,
+          "local_path": null,
+          "r2_key": null,
+          "size": 72419,
+          "src_url": "https://torrentpier.com/api/resource-versions/289/download?file=3637"
+        }
+      ],
+      "id": 289,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1429569519,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/sablon-parabox-smile.4/version/289/"
+    },
+    {
+      "download_count": 146,
+      "files": [
+        {
+          "filename": "Parabox (Шаблон).rar",
+          "id": 1965,
+          "local_path": null,
+          "r2_key": null,
+          "size": 72142,
+          "src_url": "https://torrentpier.com/api/resource-versions/4/download?file=1965"
+        }
+      ],
+      "id": 4,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1369072857,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/sablon-parabox-smile.4/version/4/"
+    }
+  ],
+  "view_count": 719
+}

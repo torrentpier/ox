@@ -1,0 +1,118 @@
+{
+  "custom_fields": {
+    "torrentpier": "2302"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94712,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42107,
+  "last_post_date": 1677417868,
+  "node_id": 57,
+  "post_date": 1677340780,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1677340767,
+          "file_size": 70926,
+          "filename": "5FE244EC-3ADA-4F33-B9BE-6D977A18D9B7.webp",
+          "height": 1792,
+          "id": 5354,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/5fe244ec-3ada-4f33-b9be-6d977a18d9b7-webp.5354/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5358-5ad843526fe72e9b0602fe7c04fbcb08.jpg?hash=fBtTbO5_yD",
+          "width": 828
+        },
+        {
+          "attach_date": 1677340768,
+          "file_size": 65728,
+          "filename": "79A251B4-6C9D-4A00-B41E-C8F33F91F835.webp",
+          "height": 1792,
+          "id": 5355,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/79a251b4-6c9d-4a00-b41e-c8f33f91f835-webp.5355/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5359-753eee020dadecfc2e82d2e2cb077260.jpg?hash=KxBTF-c0Lg",
+          "width": 828
+        }
+      ],
+      "id": 94712,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Добрый вечер! Сайт выбивает ошибку с отсылкой на MySQL. Как можно исправить?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1677340780,
+      "user_id": 7972,
+      "user_title": "User",
+      "username": "T3G1NG"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94713,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Добрый день. Понизьте версию MySQL до 7 хотя-бы, ошибка должна уйти. Ну лично у меня используется форк MariaDB 10.8.4 версии. С марией никогда проблем не было.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1677411411,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94714,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"belomaxorka\">Добрый день. Понизьте версию MySQL до 7 хотя-бы, ошибка должна уйти. Ну лично у меня используется форк MariaDB 10.8.4 версии. С марией никогда проблем не было.</blockquote>Thank’s",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1677417868,
+      "user_id": 7972,
+      "user_title": "User",
+      "username": "T3G1NG"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "rugaetsa-na-mysql",
+  "sticky": false,
+  "tags": [],
+  "title": "Ругается на MySQL",
+  "url_path": "/threads/rugaetsa-na-mysql.42107/",
+  "user_id": 7972,
+  "username": "T3G1NG",
+  "view_count": 732
+}

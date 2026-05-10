@@ -1,0 +1,97 @@
+{
+  "category": {
+    "description": "Section with all paid modifications for TorrentPier.",
+    "id": 2,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Paid",
+    "view_url": "https://torrentpier.com/resources/categories/paid.2/"
+  },
+  "current_files": [],
+  "custom_fields": {},
+  "description_attachments": [
+    {
+      "attach_date": 1395384750,
+      "file_size": 158420,
+      "filename": "2014-03-21 10-40-07 TorrentPier II - Torrent Tracker - Nightly.webp",
+      "height": 976,
+      "id": 2470,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2014-03-21-10-40-07-torrentpier-ii-torrent-tracker-nightly-webp.2470/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2475-6017308f1731c5d1928f30892e702a9a.jpg?hash=AEEKDFUkfk",
+      "width": 1679
+    },
+    {
+      "attach_date": 1395384751,
+      "file_size": 91882,
+      "filename": "2014-03-21 10-43-00 EmEditor_sl2_111231_09-53.7z - Добавить новый торрент.webp",
+      "height": 1003,
+      "id": 2471,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2014-03-21-10-43-00-emeditor_sl2_111231_09-53-7z-dobavit-novyj-torrent-webp.2471/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2476-2250c419c7cc759c725866ba3bfa1436.jpg?hash=avxBUu-EUY",
+      "width": 1676
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Универсальная RSS лента для TorrentPier II, с поддержкой utorrent<br />\n<b>ICQ:</b> 590-700-200<br />\n<b>Цена: </b>1500.<br />\n<ul>\n<li data-xf-list-type=\"ul\">Фильтрация по форумам</li>\n<li data-xf-list-type=\"ul\">Поддержка utorrent</li>\n<li data-xf-list-type=\"ul\">Кеширование</li>\n<li data-xf-list-type=\"ul\">Поддержка сессий для сторонних клиентов</li>\n</ul><a href=\"https://torrentpier.com/attachments/2471/\"><img src=\"https://torrentpier.com/data/attachments/2/2476-2250c419c7cc759c725866ba3bfa1436.jpg?hash=avxBUu-EUY\" alt=\"2014-03-21 10-43-00 EmEditor_sl2_111231_09-53.7z - Добавить новый торрент.webp\" /></a><a href=\"https://torrentpier.com/attachments/2470/\"><img src=\"https://torrentpier.com/data/attachments/2/2475-6017308f1731c5d1928f30892e702a9a.jpg?hash=AEEKDFUkfk\" alt=\"2014-03-21 10-40-07 TorrentPier II - Torrent Tracker - Nightly.webp\" /></a>",
+  "download_count": 0,
+  "external_url": null,
+  "icon_url": null,
+  "id": 94,
+  "is_fileless": null,
+  "last_update": 1398235050,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1395384770,
+  "resource_state": "visible",
+  "slug": "rss-lenta-dla-torrentpier-ii",
+  "tag_line": "Универсальная RSS лента для TorrentPier II, с поддержкой utorrent",
+  "tags": [],
+  "title": "RSS лента для TorrentPier II",
+  "url_path": "/resources/rss-lenta-dla-torrentpier-ii.94/",
+  "user_id": 97,
+  "username": "Zenden",
+  "version": "1.3",
+  "versions": [
+    {
+      "download_count": 0,
+      "files": [],
+      "id": 109,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1398235050,
+      "version_state": "visible",
+      "version_string": "1.3",
+      "view_url": "https://torrentpier.com/resources/rss-lenta-dla-torrentpier-ii.94/version/109/"
+    },
+    {
+      "download_count": 0,
+      "files": [],
+      "id": 104,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1396427664,
+      "version_state": "visible",
+      "version_string": "2014-04-02",
+      "view_url": "https://torrentpier.com/resources/rss-lenta-dla-torrentpier-ii.94/version/104/"
+    },
+    {
+      "download_count": 0,
+      "files": [],
+      "id": 100,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1395384770,
+      "version_state": "visible",
+      "version_string": "2014-03-21",
+      "view_url": "https://torrentpier.com/resources/rss-lenta-dla-torrentpier-ii.94/version/100/"
+    }
+  ],
+  "view_count": 553
+}

@@ -1,0 +1,91 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 91765,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 41772,
+  "last_post_date": 1498168366,
+  "node_id": 111,
+  "post_date": 1498167622,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1498167598,
+          "file_size": 4758,
+          "filename": "logos-hexagon-black&white@0,5x.webp",
+          "height": 343,
+          "id": 4867,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/logos-hexagon-black-white-0-5x-webp.4867/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4871-79e3c4809773946e222e672acd1a1081.jpg?hash=14dHMwALUa",
+          "width": 302
+        }
+      ],
+      "id": 91765,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier Aurochs. Версия 2.2.2</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/4867/\" alt=\"logos-hexagon-black&amp;white@0,5x.webp\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/releases/tag/v2.2.2\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.2.2 · torrentpier/torrentpier · GitHub</a><br />\n<br />\n<b>Чейнджлог:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/compare/v2.2.1...v2.2.2\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Comparing v2.2.1...v2.2.2 · torrentpier/torrentpier · GitHub</a><br />\n<br />\n<b>Основные изменения:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Release preparation Crowdin language pack update <a href=\"https://github.com/torrentpier/torrentpier/pull/409\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#409</a> (<a href=\"https://github.com/Exile37\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Exile37</a>)</li>\n<li data-xf-list-type=\"ul\">Display source language if no user language variable <a href=\"https://github.com/torrentpier/torrentpier/pull/408\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#408</a> (<a href=\"https://github.com/Exile37\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Exile37</a>)</li>\n<li data-xf-list-type=\"ul\">Disable Bugsnag by default <a href=\"https://github.com/torrentpier/torrentpier/pull/407\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#407</a> (<a href=\"https://github.com/Exile37\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Exile37</a>)</li>\n<li data-xf-list-type=\"ul\">Fix empty birthday list <a href=\"https://github.com/torrentpier/torrentpier/pull/406\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#406</a> (<a href=\"https://github.com/Exile37\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Exile37</a>)</li>\n<li data-xf-list-type=\"ul\">Remove unused ranks functionality <a href=\"https://github.com/torrentpier/torrentpier/pull/405\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#405</a> (<a href=\"https://github.com/Exile37\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Exile37</a>)</li>\n<li data-xf-list-type=\"ul\">Complete renewal of the Ukrainian language from our toloka.to friends <a href=\"https://github.com/torrentpier/torrentpier/pull/404\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#404</a> (<a href=\"https://github.com/Exile37\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Exile37</a>)</li>\n<li data-xf-list-type=\"ul\">Some fixes, auto language removal (so buggy) and replenishable status <a href=\"https://github.com/torrentpier/torrentpier/pull/403\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#403</a> (<a href=\"https://github.com/Exile37\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Exile37</a>)</li>\n</ul>Для обновления на версию необходимо выполнить следующие запросы к базе данных:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">ALTER TABLE `bb_ranks` DROP `rank_min`;\nALTER TABLE `bb_ranks` DROP `rank_special`;</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1498167622,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91767,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Для тех кто понимает что такое composer - установка через него. <br />\nДля всех остальных традиционно <a href=\"https://get.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">в нашем центре загрузки</a> вас ждет новая версия.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1498168366,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "torrentpier-aurochs-versia-2-2-2",
+  "sticky": false,
+  "tags": [
+    "aurochs",
+    "новая версия",
+    "релиз",
+    "чейнджлог"
+  ],
+  "title": "TorrentPier Aurochs. Версия 2.2.2",
+  "url_path": "/threads/torrentpier-aurochs-versia-2-2-2.41772/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 1891
+}

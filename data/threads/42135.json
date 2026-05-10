@@ -1,0 +1,152 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94936,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 109,
+    "title": "LTS version archive"
+  },
+  "id": 42135,
+  "last_post_date": 1686315273,
+  "node_id": 109,
+  "post_date": 1685861710,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1685861691,
+          "file_size": 12342,
+          "filename": "12006d8a-1811-11e4-8a21-ace42af9db9e.webp",
+          "height": 100,
+          "id": 5431,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/12006d8a-1811-11e4-8a21-ace42af9db9e-webp.5431/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5435-833c6d5c69163ad819911ac32e7a993a.jpg?hash=8VrPBjbU8j",
+          "width": 300
+        }
+      ],
+      "id": 94936,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1686644949,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier LTS. Версия 2.1.5-2023.05</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/5431/\" alt=\"12006d8a-1811-11e4-8a21-ace42af9db9e.png\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier-lts/releases/tag/v2.1.5-2023.05\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.1.5-2023.05 · torrentpier/torrentpier-lts</a><br />\n<br />\n<b>Основные изменения:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Release v2.1.5-2023.05 🎉</li>\n<li data-xf-list-type=\"ul\">Minor improvements <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/167\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#167</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/168\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#168</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/169\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#169</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/170\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#170</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n</ul>Для обновления на версию не нужно выполнять дополнительные запросы к базе данных.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1685861710,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1685875596,
+          "file_size": 116342,
+          "filename": "Image 003.webp",
+          "height": 950,
+          "id": 5432,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/image-003-webp.5432/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5436-345d0426065069fd5c81badd6e53fbe7.jpg?hash=rS1e24BfqA",
+          "width": 1897
+        },
+        {
+          "attach_date": 1685875596,
+          "file_size": 193276,
+          "filename": "Image 004.webp",
+          "height": 951,
+          "id": 5433,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/image-004-webp.5433/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5437-e8c9f435321ef2931c295551cd435ce6.jpg?hash=b4geCQSUFH",
+          "width": 1889
+        }
+      ],
+      "id": 94937,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Поставил, все хорошо, ошибок нет, супер<br />\n<br />\n<a href=\"https://torrentpier.com/attachments/5432/\"><img src=\"https://torrentpier.com/data/attachments/5/5436-345d0426065069fd5c81badd6e53fbe7.jpg?hash=rS1e24BfqA\" alt=\"Image 003.webp\" /></a><a href=\"https://torrentpier.com/attachments/5433/\"><img src=\"https://torrentpier.com/data/attachments/5/5437-e8c9f435321ef2931c295551cd435ce6.jpg?hash=b4geCQSUFH\" alt=\"Image 004.webp\" /></a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1685875602,
+      "user_id": 1338,
+      "user_title": "User",
+      "username": "Alex39"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1686315268,
+          "file_size": 147082,
+          "filename": "Image 001.webp",
+          "height": 953,
+          "id": 5438,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/image-001-webp.5438/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5442-6dad7203548c6250e5c0e54bbae8463e.jpg?hash=W2Jirgsj5_",
+          "width": 1890
+        }
+      ],
+      "id": 94939,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Прикрутил шаблон, ошибок нет, все работает<br />\n<br />\n<a href=\"https://torrentpier.com/attachments/5438/\"><img src=\"https://torrentpier.com/data/attachments/5/5442-6dad7203548c6250e5c0e54bbae8463e.jpg?hash=W2Jirgsj5_\" alt=\"Image 001.webp\" /></a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1686315273,
+      "user_id": 1338,
+      "user_title": "User",
+      "username": "Alex39"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "torrentpier-lts-versia-2-1-5-2023-05",
+  "sticky": false,
+  "tags": [
+    "lts",
+    "torrentpier-lts",
+    "новая версия",
+    "релиз",
+    "ченжлог"
+  ],
+  "title": "TorrentPier LTS. Версия 2.1.5-2023.05",
+  "url_path": "/threads/torrentpier-lts-versia-2-1-5-2023-05.42135/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 938
+}

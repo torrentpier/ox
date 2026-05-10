@@ -1,0 +1,101 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94893,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42126,
+  "last_post_date": 1727704984,
+  "node_id": 47,
+  "post_date": 1683311068,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94893,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1683311287,
+      "message_parsed": "Можно забрать с моей репы:<br />\n<br />\n<a href=\"https://github.com/DrBrown777/parser3dnews\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Забрать</a><br />\n<br />\nМод парсер новостей с сайта 3dnews для TorrentPier-II версия 2.1.5 альфа Возможна повторная загрузка картинок на ваш хостинг картинок, поддерживает только Chevereto.<br />\n<br />\nСистемные Требования: python3 и выше с установленными библиотеками BeautifulSoup и PyMySQL",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1683311068,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94899,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">Можно забрать с моей репы:<br />\n<br />\n<a href=\"https://github.com/DrBrown777/parser3dnews\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Забрать</a><br />\n<br />\nМод парсер новостей с сайта 3dnews для TorrentPier-II версия 2.1.5 альфа Возможна повторная загрузка картинок на ваш хостинг картинок, поддерживает только Chevereto.<br />\n<br />\nСистемные Требования: python3 и выше с установленными библиотеками BeautifulSoup и PyMySQL</blockquote>О, спасибо) + звездочка в реп)  😉",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1683472794,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95174,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1693182051,
+      "message_parsed": "Всё работает) Спасибо",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1693167746,
+      "user_id": 10615,
+      "user_title": "User",
+      "username": "Barbarossa178"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96756,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Прикрутил к нему ChatGPT(openAPI). Что бы статьи переписывал)",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1727704984,
+      "user_id": 10615,
+      "user_title": "User",
+      "username": "Barbarossa178"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "parser-novostej-s-3d-news-na-python",
+  "sticky": false,
+  "tags": [
+    "3dnews",
+    "парсер"
+  ],
+  "title": "Парсер новостей с 3D news (на python)",
+  "url_path": "/threads/parser-novostej-s-3d-news-na-python.42126/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1202
+}

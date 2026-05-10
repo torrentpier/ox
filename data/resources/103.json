@@ -1,0 +1,91 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "проверка_подписей.zip",
+      "id": 3203,
+      "local_path": null,
+      "r2_key": null,
+      "size": 1329,
+      "src_url": "https://torrentpier.com/api/resource-versions/227/download?file=3203"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "allow_url_fopen",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\nOPEN\n\n[QUOTE] /includes/ucp/usercp_register.php[/QUOTE]\n\nAFTER\n\n[QUOTE]$cur_pass_valid = $adm_edit;[/QUOTE]\n\nADD\n\n[QUOTE]function checkSignature( $line = NULL )\n{\n\n$width = 300; //(integer) Max width in pixels\n$height = 100; //(integer) Max height in pixels\n$size = 250 * 1024; //(integer) Max image size in bytes\n$size_for_each = FALSE; //(boolean) Check size of each image, or check the sum\n$count = 3; //(integer) Max images count\n\n$totalsize = NULL;\n\n$line = str_replace(\" \",\"\", $line);\npreg_match_all('/\\[img\\]+(.+)\\[\\/img\\]/Ui', $line, $images);\n\nif( count( $images[1] ) > $count ) return 1;\n\nforeach( $images[1] as $img)\n{\n\n$headers = get_headers( $img, true );\n$imagedata = getimagesize( $img );\n\nif( $headers[0] == 'HTTP/1.1 200 OK' )\n{\nif ( $headers['Content-Length'] > $size AND $size_for_each ) return 3;\nif ( $imagedata[0] > $width or $imagedata[1] > $height ) return 2;\n\n$totalsize = $totalsize + $headers['Content-Length'];\n}\n\n}\n\nif( !$size_for_each AND $totalsize > $size ) return 3;\n\nreturn 'success';\n\n}[/QUOTE]\n\nAFTER\n\n[QUOTE]else if (preg_match('#<(a|b|i|u|table|tr|td|img) #i', $sig) || preg_match('#(href|src|target|title)=#i', $sig))\n{\n$errors[] = $lang['SIGNATURE_ERROR_HTML'];\n}\n[/QUOTE]\n\nADD\n\n[QUOTE]else if( checkSignature( $sig ) != 'success' )\n{\nswitch( checkSignature( $sig ) )\n{\ncase 1: $errors[] = $lang['SIGNATURE_ERROR_IMG_COUNT']; break;\ncase 2: $errors[] = $lang['SIGNATURE_ERROR_IMG_RESOLUTION']; break;\ncase 3: $errors[] = $lang['SIGNATURE_ERROR_IMG_SIZE']; break;\n}\n}[/QUOTE]\n\n======LANGS=======\n\nOPEN\n\n[QUOTE]/language/en/main.php[/QUOTE]\n\nAFTER\n\n[QUOTE]$lang['SIGNATURE_ERROR_HTML'] = 'The signature can contain only BBCode';[/QUOTE]\n\nADD\n\n[QUOTE]$lang['SIGNATURE_ERROR_IMG_SIZE'] = 'Current images size is not allowed in the signature';\n$lang['SIGNATURE_ERROR_IMG_RESOLUTION'] = 'Current images resolution is not allowed in the signature';\n$lang['SIGNATURE_ERROR_IMG_COUNT'] = 'Current images count is not allowed in the signature';[/QUOTE]\n\nOPEN\n\n[QUOTE]/language/ru/main.php[/QUOTE]\n\nAFTER\n\n[QUOTE]$lang['SIGNATURE_ERROR_HTML'] = 'Подпись может содержать только BBCode';[/QUOTE]\n\nADD\n\n[QUOTE]$lang['SIGNATURE_ERROR_IMG_SIZE'] = 'Преувеличен размер изображений в подписи';\n$lang['SIGNATURE_ERROR_IMG_RESOLUTION'] = 'Недопустимое разрешение изображений в подписи';\n$lang['SIGNATURE_ERROR_IMG_COUNT'] = 'Превышено максимально доступное количество изображений в подписи';[/QUOTE]\n\nOPEN\n\n[QUOTE]/language/ua/main.php[/QUOTE]\n\nAFTER\n\n[QUOTE]$lang['SIGNATURE_ERROR_HTML'] = 'Підпис може містити тільки BBCode';[/QUOTE]\n\nADD\n\n[QUOTE]$lang['SIGNATURE_ERROR_IMG_SIZE'] = 'Превищення максимального розміру зображень підпису';\n$lang['SIGNATURE_ERROR_IMG_RESOLUTION'] = 'Превищення максимально дозволенної роздільної здатності зображень підпису';\n$lang['SIGNATURE_ERROR_IMG_COUNT'] = 'Превищення максимальної кількості зображень підпису';[/QUOTE]\n[/SPOILER]",
+    "owner": "Alex Kur",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание:</b> добавляет возможность автоматической проверки изображений в подписи на соответствие условиям.<br />\n<br />\nНастройка:<br />\n<ul>\n<li data-xf-list-type=\"ul\"><b>$width</b> - максимально допустимый размер по ширине</li>\n<li data-xf-list-type=\"ul\"><b>$height</b> - максимально допустимый размер по высоте</li>\n<li data-xf-list-type=\"ul\"><b>$size</b> - максимальный размер изображений в байтах</li>\n<li data-xf-list-type=\"ul\"><b>$size_for_each</b> - &#039;FALSE&#039; - проверка суммарного веса изображений, &#039;TRUE&#039; - проверка веса каждой картинки.</li>\n<li data-xf-list-type=\"ul\"><b>$count</b> - максимально допустимое количество изображений в подписи</li>\n</ul>",
+  "download_count": 319,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/103.jpg?1425332908",
+  "id": 103,
+  "is_fileless": null,
+  "last_update": 1425332991,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1404514342,
+  "resource_state": "visible",
+  "slug": "proverka-izobrazenij-v-podpisi",
+  "tag_line": "Добавляет возможность автоматической проверки изображений в подписи на соответствие условиям.",
+  "tags": [],
+  "title": "Проверка изображений в подписи",
+  "url_path": "/resources/proverka-izobrazenij-v-podpisi.103/",
+  "user_id": 4510,
+  "username": "Alex Kur",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 237,
+      "files": [
+        {
+          "filename": "проверка_подписей.zip",
+          "id": 3203,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1329,
+          "src_url": "https://torrentpier.com/api/resource-versions/227/download?file=3203"
+        }
+      ],
+      "id": 227,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425332991,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/proverka-izobrazenij-v-podpisi.103/version/227/"
+    },
+    {
+      "download_count": 82,
+      "files": [
+        {
+          "filename": "Screenshot_4.webp",
+          "id": 2549,
+          "local_path": null,
+          "r2_key": null,
+          "size": 3708,
+          "src_url": "https://torrentpier.com/api/resource-versions/114/download?file=2549"
+        }
+      ],
+      "id": 114,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1404514342,
+      "version_state": "visible",
+      "version_string": "1.0",
+      "view_url": "https://torrentpier.com/resources/proverka-izobrazenij-v-podpisi.103/version/114/"
+    }
+  ],
+  "view_count": 525
+}

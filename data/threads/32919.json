@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 71595,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 11,
+    "title": "Questions about styles for TorrentPier"
+  },
+  "id": 32919,
+  "last_post_date": 1420895078,
+  "node_id": 11,
+  "post_date": 1420865152,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71595,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1420865233,
+      "message_parsed": "прошу прощения если есть темы подобные,но не нашел ничего на форуме.<br />\nгде можно узнать информацию о файлах,какой за что отвечает. и описание к функциям php какая за что отвечает и что подключает.так как в php не сильно селен. <br />\nдайте ссылки на информацию. если есть такая.<br />\nспасибо.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1420865152,
+      "user_id": 5790,
+      "user_title": "User",
+      "username": "NickFrost"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71608,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"NickFrost\">описание к функциям php какая за что отвечает и что подключает</blockquote><a href=\"http://www.php.su/functions/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://www.php.su/functions/</a><br />\n<blockquote class=\"xfBb-quote\" data-name=\"NickFrost\">где можно узнать информацию о файлах,какой за что отвечает.</blockquote>Вообще понятно из названия, но можете спрашивать тут.<br />\n<br />\nИ я не совсем понял, как связана верстка шаблона и &quot;функции php&quot;.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1420885571,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71622,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\">И я не совсем понял, как связана верстка шаблона и &quot;функции php&quot;.</blockquote>Как как? Видно же, что в лучших традициях tbdev",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1420895078,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    }
+  ],
+  "prefix_id": 19,
+  "reply_count": 2,
+  "slug": "pravka-verstka-svoego-sablona",
+  "sticky": false,
+  "tags": [],
+  "title": "Правка, верстка своего шаблона",
+  "url_path": "/threads/pravka-verstka-svoego-sablona.32919/",
+  "user_id": 5790,
+  "username": "NickFrost",
+  "view_count": 1934
+}

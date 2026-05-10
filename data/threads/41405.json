@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 86935,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41405,
+  "last_post_date": 1455696721,
+  "node_id": 57,
+  "post_date": 1455602625,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86935,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Привет ... Подскажите запрос в базу для деактивации пользователей с рейтингом меньше 0.3 .",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1455602625,
+      "user_id": 6126,
+      "user_title": "User",
+      "username": "kiryandr"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86948,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "UPDATE bb_users SET user_active = 0 WHERE user_id IN (SELECT user_id FROM `bb_bt_users` WHERE u_down_total&gt;10*1024*1024*1024 and (u_up_total/u_down_total)&lt;0.3)",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1455696721,
+      "user_id": 61,
+      "user_title": "User",
+      "username": "druid"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "deaktivacia-pol-zovatelej",
+  "sticky": false,
+  "tags": [],
+  "title": "Деактивация пользователей",
+  "url_path": "/threads/deaktivacia-pol-zovatelej.41405/",
+  "user_id": 6126,
+  "username": "kiryandr",
+  "view_count": 924
+}

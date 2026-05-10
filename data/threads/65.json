@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 614,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 65,
+  "last_post_date": 1311210977,
+  "node_id": 3,
+  "post_date": 1311133103,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 614,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Уважаемая администрация и просто грамотные и активные пользователи форума. На форуме очень не хватает наполнения раздела готовых Хаков.<br />\nЯ понимаю что меня можно отправить на другой форум , типо &quot;тот форум давно существует и там все есть, какой смысл переносить все сюда&quot; но в том то и дело что во первых прыгать от форума к форуму неудобно, во вторых как только у меня начинаются работы на трекере обязательно на torrentpier.com происходит или переезд или откат ( я тут не причем). 🙄<br />\nНайти простые обкатанные хаки вроде &quot;спасибок&quot; или замены названия торента на числовой код становится просто затруднительно.<br />\n<br />\nООООчень прошу имеющих готовые проверенные хаки уделить время и заполнить раздел форума.<br />\nВсем заранее огромное спасибо!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1311133103,
+      "user_id": 99,
+      "user_title": "User",
+      "username": "Fatum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 619,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Пиши что тебя интересует, если будет время - буду адаптировать под TPII",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1311170353,
+      "user_id": 61,
+      "user_title": "User",
+      "username": "druid"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 625,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Оооо.... Вот это дело!😀<br />\nСписок хаков которые нужны:<br />\n1. &quot;Спасибо&quot; (без всяких оценок, просто список тех кто поблагодарил)<br />\n2. Последнее сообщение<br />\n3. Кнопка &quot;позвать скачавших&quot;<br />\n4. Поиск золотых и серебряных раздач<br />\n5. Расширение bb кодов, вплоть до возможности вставки видео.<br />\n6. Персоналии (знаю что есть хак позволяющий добавлять персоналии с Кинопоиска и привязывать их к раздачам с автоматическим заполнением персоналии данными с Кинопоиска.) У меня такой нечто подобное стоит на другом движке, кому интересно могу дать ссылку на просмотр того что это такое.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1311199494,
+      "user_id": 99,
+      "user_title": "User",
+      "username": "Fatum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 627,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Fatum</b>, если бы ты еще ссылки прислал на неадаптированные моды - было бы вообще замечательно, ибо сам писать соотв.моды не собираюсь<br />\n<br />\nПоиск золота/серебра обещали приделать в SVN",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1311210977,
+      "user_id": 61,
+      "user_title": "User",
+      "username": "druid"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "haki-na-forume",
+  "sticky": false,
+  "tags": [],
+  "title": "Хаки на форуме",
+  "url_path": "/threads/haki-na-forume.65/",
+  "user_id": 99,
+  "username": "Fatum",
+  "view_count": 1693
+}

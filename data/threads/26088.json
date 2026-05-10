@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61844,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 26088,
+  "last_post_date": 1407698205,
+  "node_id": 80,
+  "post_date": 1407678910,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61844,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Не давно заметил что имеется баг, заключается он вот в чем. <br />\nЯ стою на единственной раздачи. В настройках сидбонусов стоит настройка. с одной раздачи 0,25 в час. Соответственно в мою статистику должны пойти данные, но они не пойдут, т.к. в крон задаче имеются ошибки. <br />\nИмеется вот что. <br />\n<pre class=\"xfBb-code\" data-lang=\"php\"> DB()-&gt;query(&quot;\n            UPDATE &quot;. BB_USERS .&quot; u, &quot;. BB_BT_USERS .&quot; bu, tmp_bonus b\n            SET\n                u.user_points      = u.user_points + $user_points,\n                bu.points_today    = bu.points_today + $user_points,\n                b.user_id          = 0\n            WHERE\n                b.user_id          =  u.user_id\n                AND bu.user_id      =  u.user_id\n                AND b.release_count &lt;= $release\n                AND u.user_regdate  &lt;  $user_regdate\n                AND u.user_active  =  1\n                AND u.user_id      not IN(&quot;. EXCLUDED_USERS_CSV .&quot;)\n        &quot;);</pre>Найти <pre class=\"xfBb-code\" data-lang=\"php\">u.user_points       = u.user_points + $user_points,\nbu.points_today     = bu.points_today + $user_points,</pre> <br />\nзаменить <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">u.user_points       = u.user_points + &#039;$user_points&#039;,\nbu.points_today     = bu.points_today + &#039;$user_points&#039;,</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1407678910,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61845,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"drew\">+ &#039;$user_points&#039;</blockquote> <br />\n<blockquote class=\"xfBb-quote\" data-name=\"drew\">+ &#039;$user_points&#039;</blockquote>Что реально работает так? То есть к числам добавляем строку...<br />\nНе засчитывается из-за десятичного разделителя судя по всему<br />\n <br />\nЗа сообщением спасибо, будем проверять",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1407683260,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61847,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Тогда уже<br />\nu.user_points + &quot;&#039;&quot; . $user_points . &quot;&#039;&quot;",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1407683864,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61848,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Данный баг был известен и все необходимые меры для его исправления были внесены в ревизиях 593, 593b. Проблема была в том, что дробные сидбонусы записывались с запятой, а для того, чтобы в запросе не было ошибки - надо было с точкой. Таким образом, для правки надо просто пересохранить настройки сидбонусов, чтобы автоматом были подкорректированы на формат с точкой.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1407698205,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 25,
+  "reply_count": 3,
+  "slug": "seed-bonus",
+  "sticky": false,
+  "tags": [],
+  "title": "Seed bonus",
+  "url_path": "/threads/seed-bonus.26088/",
+  "user_id": 3170,
+  "username": "drew",
+  "view_count": 1243
+}

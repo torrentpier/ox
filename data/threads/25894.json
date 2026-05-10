@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 60288,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 25894,
+  "last_post_date": 1400013101,
+  "node_id": 3,
+  "post_date": 1397637337,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60288,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Поставил сфинкса из репы, деба, вроде все ок, но вот есть такой варнинг, при индексации постов:<br />\n <br />\nWARNING: duplicate document ids found<br />\nсоответственно, посты индексит на 99,8 %<br />\nшо ему не так ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1397637337,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60763,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Ну он же написал что нашел дублирующиеся записи в таблице и их не проиндексировал. Вопрос в том откуда вязлись они в таблице с постами, где id поста по-умолчанию уникален.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1400013101,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "vopros-po-sphinx",
+  "sticky": false,
+  "tags": [],
+  "title": "Вопрос по Sphinx",
+  "url_path": "/threads/vopros-po-sphinx.25894/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1046
+}

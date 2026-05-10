@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 4987,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 414,
+  "last_post_date": 1320487159,
+  "node_id": 57,
+  "post_date": 1320484428,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 4987,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "приветствую<br />\nпочему-то ник модераторов в группе синий а не зеленый ( у группы модераторские права) объясните пожалуйста, где поменять что бы цвет модераторской группы был приоритетным зеленым, а не синим<br />\nспасибо",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1320484428,
+      "user_id": 236,
+      "user_title": "User",
+      "username": "starfolk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 4993,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"starfolk\">приветствую<br />\nпочему-то ник модераторов в группе синий а не зеленый ( у группы модераторские права) объясните пожалуйста, где поменять что бы цвет модераторской группы был приоритетным зеленым, а не синим<br />\nспасибо</blockquote>&quot;цвет&quot; пользователя теперь выставляется посредством званий через админку (или бд).<br />\nв main.css классы:<br />\n.colorAdmin, a.colorAdmin, a.colorAdmin:visited { color: #A00 !important; }<br />\n.colorSuperMod, a.colorSuperMod, a.colorSuperMod:visited { color: #0080FF !important; }<br />\n.colorMod,   a.colorMod,   a.colorMod:visited   { color: #009900 !important; }<br />\n.colorGroup, a.colorGroup, a.colorGroup:visited { color: #476996 !important; }<br />\n.colorCPH,   a.colorCPH,   a.colorCPH:visited   { color: #0080FF !important; }",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1320487159,
+      "user_id": 0,
+      "user_title": "",
+      "username": "frank"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "cveta-imen-pol-zovatelej",
+  "sticky": false,
+  "tags": [],
+  "title": "Цвета имен пользователей",
+  "url_path": "/threads/cveta-imen-pol-zovatelej.414/",
+  "user_id": 236,
+  "username": "starfolk",
+  "view_count": 1695
+}

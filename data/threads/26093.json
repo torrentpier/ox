@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61873,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 26093,
+  "last_post_date": 1408032310,
+  "node_id": 57,
+  "post_date": 1408031287,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61873,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Привет разрабы.<br />\nНу просто не терпится, когда выйдет 600 ревизия?<br />\nВсе понимают... терпение,терпение и только терпение.<br />\nУж больно заинтриговано.<br />\nИ конкурс был и демо крутили аж до 594b ревизии.<br />\nЖдем с нетерпением.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1408031287,
+      "user_id": 4803,
+      "user_title": "User",
+      "username": "BigSerg"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61874,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ебанный стыд, народ, не ну вы вообще уже... Тут нет бабушки Ванги, откуда разработчики могут знать когда именно появится r600 ? <br />\n <br />\nА по сабжу, после r599",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1408032054,
+      "user_id": 4447,
+      "user_title": "User",
+      "username": "DreamHD"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61875,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "По планам - до 31 августа релиз выйдет.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1408032310,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "600-revizia",
+  "sticky": false,
+  "tags": [],
+  "title": "600 ревизия",
+  "url_path": "/threads/600-revizia.26093/",
+  "user_id": 4803,
+  "username": "BigSerg",
+  "view_count": 1109
+}

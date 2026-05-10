@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 7220,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 52,
+    "title": "Bug tracker archive"
+  },
+  "id": 568,
+  "last_post_date": 1323712936,
+  "node_id": 52,
+  "post_date": 1323712692,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 7220,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "после переезда с хостинга на другой перестали отображатся названия тем. <a href=\"http://fastpic.ru/view/29/2011/1212/e213edd9e6a41c792c4b07cedbd8547b.png.html\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"http://i29.fastpic.ru/thumb/2011/1212/7b/e213edd9e6a41c792c4b07cedbd8547b.jpeg\" alt=\"\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1323712692,
+      "user_id": 588,
+      "user_title": "User",
+      "username": "Сергей"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 7221,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "mbstring.internal_encoding = UTF-8, читать readme.txt надо",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1323712936,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "ne-otobrazaetsa-nazvanie-temy",
+  "sticky": false,
+  "tags": [],
+  "title": "Не отображается название темы",
+  "url_path": "/threads/ne-otobrazaetsa-nazvanie-temy.568/",
+  "user_id": 588,
+  "username": "Сергей",
+  "view_count": 1598
+}

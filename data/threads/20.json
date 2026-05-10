@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 147,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 52,
+    "title": "Bug tracker archive"
+  },
+  "id": 20,
+  "last_post_date": 1309369136,
+  "node_id": 52,
+  "post_date": 1309368338,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 147,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "При попытке изменить статус раздачи, <b>после запроса ввода пароля (проверки прав админа)</b> выскакивает вот чего<br />\nFatal error: Call to undefined method ajax_common: prompt_for_confirm() in \\includes\\change_tor_status.php on line 70<br />\nСтрока: $this-&gt;prompt_for_confirm($msg);<br />\nСоответственно статус не меняется. Когда ввод пароля не запрашивает - все нормально. И действительно нигде более упоминания о методе <b>prompt_for_confirm() </b>я не нашел.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1309368338,
+      "user_id": 13,
+      "user_title": "User",
+      "username": "Co®sar"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 150,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"http://code.google.com/p/torrentpier2/source/detail?r=46\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://code.google.com/p/torrentpier2/source/detail?r=46</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1309369051,
+      "user_id": 2,
+      "user_title": "User",
+      "username": "_Xz_"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 151,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Угу. Спасибо.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1309369136,
+      "user_id": 13,
+      "user_title": "User",
+      "username": "Co®sar"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "change_tor_status-php",
+  "sticky": false,
+  "tags": [],
+  "title": "change_tor_status.php",
+  "url_path": "/threads/change_tor_status-php.20/",
+  "user_id": 13,
+  "username": "Co®sar",
+  "view_count": 1393
+}

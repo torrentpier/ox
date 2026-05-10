@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 13555,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 19,
+    "title": "Adaptation of modifications to TorrentPier"
+  },
+  "id": 1109,
+  "last_post_date": 1331711667,
+  "node_id": 19,
+  "post_date": 1331704953,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13555,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В TP II присутствует кодировщик базы:<br />\n <br />\nTBDev Yuna Scatari Edition pre6 to TorrentPier 1.0.x converter.<br />\n<br />\nQuick guide:<br />\n1. Install and configure TorrentPier 1.0.0 or higher.<br />\n2. Import your TBDevYSE database into TorrentPier database (concretely &#039;comments&#039;, &#039;categories&#039;, &#039;torrents&#039; and &#039;users&#039; tables).<br />\n3. Put the contents of folder &#039;root&#039; into your TorrentPier root.<br />\n4. Configure &#039;converter/settings.php&#039; for optimal settings.<br />\n5. Run convert.php.<br />\n6. See &#039;converter/passwords.php&#039; for new password to login under admin account.<br />\n7. Resychronize statistics using admin panel.<br />\n8. Make your new tracker popular!<br />\n----<br />\n9. If you need to notify users for new passwords (which are needed to login in TorrentPier) via TBDevYSE PM system,<br />\n   copy two files: automatically generated &#039;converter/passwords.php&#039; and &#039;for_tbdev/pass.php&#039; to your TBDevYSE root and run pass.php<br />\n   (Don&#039;t forget to remove these files after completion).<br />\n   You allow to change message text, see $msg in pass.php for this.<br />\n10. If you want to redirect peers from older announce to new announce everytime, replace original TBDev&#039;s announce.php with  <br />\n    &#039;for_tbdev/announce.php&#039;<br />\n<br />\nCheers, RoadTrain.<br />\nhttp://torrentpier.com/<br />\n<br />\n<br />\nКраткое руководство:<br />\n1. Установите и сконфигурируйте TorrentPier 1.0.0 или выше.<br />\n2. Импортируйте свою базу данных TBDevYSE в базу данных TorrentPier (конкретно &#039;комментарии, &#039;категории&#039;, потоки&#039; и &#039;пользовательские&#039; таблицы).<br />\n3. Поместите содержание папки &#039;корень&#039; в Ваш корень TorrentPier.<br />\n4. Сконфигурируйте &#039;converter/settings.php&#039; для оптимальных настроек.<br />\n5. Выполненный convert.php.<br />\n6. См. &#039;converter/passwords.php&#039; для нового пароля, чтобы войти в систему в соответствии с администраторской учетной записью.<br />\n7. Статистика Resychronize, используя панель администрации.<br />\n8. Сделайте свое новое средство отслеживания популярным!<br />\n----<br />\n9. Если Вы должны уведомить пользователей для новых паролей (которые необходимы, чтобы войти в систему в TorrentPier) через систему PM TBDevYSE,<br />\n   скопируйте два файла: автоматически сгенерированный &#039;converter/passwords.php&#039; и &#039;for_tbdev/pass.php&#039; к Вашему TBDevYSE базируются и выполненный pass.php<br />\n   (Не забывайте удалять эти файлы после завершения).<br />\n   Вы позволяете изменять текст сообщения, видеть $msg в pass.php для этого.<br />\n10. Если Вы хотите перенаправить коллеги от более старого, объявляют новому, объявляют каждый раз, заменяют announce.php исходного ТБДЕВА  <br />\n &#039;for_tbdev/announce.php&#039;<br />\n <br />\nТак вот при запуске convert.php выдается ошибка <b>Fatal error</b>: Call to a member function query() on a non-object in <b>Z:\\home\\test1.ru\\www\\converter\\functions.php</b> on line <b>67</b><br />\n <br />\n<b>67 строка: $db-&gt;query(&#039;DELETE FROM &#039;. USERS_TABLE .&#039; WHERE user_id NOT IN(&#039;. EXCLUDED_USERS_CSV .&#039;)&#039;);</b><br />\n <br />\nВопрос: Кто-нибудь вообще проделывал данную процедуру?<br />\nХочу перейти с <b>TBDEV на Torrentpier II </b>и не хочется начинать жизнь трекера с нуля 🙂",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1331704953,
+      "user_id": 1006,
+      "user_title": "User",
+      "username": "Oblom"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13558,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Oblom</b>, ещё во времена первого Torrentpier переехал с тбдева с помощью этого конвертера.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1331708635,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13563,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Oblom</b>, надо переделывать конвертер под TPII.<br />\nВ TPII нет $db а есть DB()<br />\nUSERS_TABLE прописывается как BB_USERS и т.д...<br />\nP.S.<br />\nПеревод инструкции ужасен (",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1331711667,
+      "user_id": 30,
+      "user_title": "User",
+      "username": "krumax"
+    }
+  ],
+  "prefix_id": 45,
+  "reply_count": 2,
+  "slug": "pereezd-s-tbdev-na-torrentpier-ii-r300",
+  "sticky": false,
+  "tags": [],
+  "title": "Переезд с TBDEV на Torrentpier II R300",
+  "url_path": "/threads/pereezd-s-tbdev-na-torrentpier-ii-r300.1109/",
+  "user_id": 1006,
+  "username": "Oblom",
+  "view_count": 3118
+}

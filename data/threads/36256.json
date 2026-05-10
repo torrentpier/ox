@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 76290,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 36256,
+  "last_post_date": 1424709615,
+  "node_id": 57,
+  "post_date": 1424709375,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 76290,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вопрос, таблица:<br />\n<br />\nbuf_last_seeder<br />\n<br />\nне захотела импортироваться, после переноса на другой хостинг, ничего что я её исключил из бекапа, и просто создал новую в базе после импорта ?<br />\n<br />\nЧто она вообще содержит, время когда сидер был последний раз ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1424709375,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 76291,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "это таблицы из серии tmp, для перерасчетов",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1424709615,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "vopros-po-strukture-bazy",
+  "sticky": false,
+  "tags": [],
+  "title": "Вопрос по структуре базы",
+  "url_path": "/threads/vopros-po-strukture-bazy.36256/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 747
+}

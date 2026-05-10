@@ -1,0 +1,98 @@
+{
+  "category": {
+    "description": "Section with all templates for TorrentPier.",
+    "id": 5,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Templates",
+    "view_url": "https://torrentpier.com/resources/categories/templates.5/"
+  },
+  "current_files": [
+    {
+      "filename": "Шаблон - XenForo infinite_4.zip",
+      "id": 3351,
+      "local_path": null,
+      "r2_key": null,
+      "size": 418317,
+      "src_url": "https://torrentpier.com/api/resource-versions/272/download?file=3351"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "adapt",
+    "installation": "[SPOILER=\"Инструкция\"]1) Загрузить файлы на сервер\n2) Открываем[B] config.php[/B]\nИщем:[PHP]$bb_cfg['text_buttons']       = false;[/PHP]\nЗаменяем на:[PHP]$bb_cfg['text_buttons']       = true;[/PHP]\nИщем:[PHP]$bb_cfg['user_signature_start'] = '<div class=\"signature\"><br />_________________<br />';[/PHP]\nЗаменяем на:[PHP]$bb_cfg['user_signature_start'] = '<div class=\"signature\">';[/PHP]\nИщем:\n[PHP]$bb_cfg['show_rank_text']     = false;\n$bb_cfg['show_rank_image']    = true;[/PHP]\nЗаменяем на:\n[PHP]$bb_cfg['show_rank_text']     = true;\n$bb_cfg['show_rank_image']    = false;[/PHP]\n3) Открываем[B] viewforum.php[/B]\nИщем:[PHP]'DL_CLASS'         => isset($topic['dl_status']) ? $dl_link_css[$topic['dl_status']] : '',[/PHP]\nПосле добавляем:\n[PHP]'TOPIC_TIME'       => bb_date($topic['topic_time'], 'd M Y'),\n'TOPIC_AVATAR'     => get_avatar($topic['first_user_avatar'], $topic['first_user_avatar_type'], !bf($topic['first_user_opt'], 'user_opt', 'allow_avatar'), 36, 36),[/PHP]\nИщем:[PHP]u1.user_rank as first_user_rank,[/PHP]\nПосле добавляем:\n[PHP]u1.user_avatar AS first_user_avatar, u1.user_avatar_type AS first_user_avatar_type,\nu1.user_opt AS first_user_opt,[/PHP]\n4) Открываем [B]templates/default/page_header.tpl[/B]\nИщем:[PHP]<script type=\"text/javascript\" src=\"{#BB_ROOT}misc/js/main.js?v={$bb_cfg['js_ver']}\"></script>[/PHP]\nПосле добавляем:\n[PHP]<script type=\"text/javascript\" src=\"{#BB_ROOT}misc/js/xenforo.js?v={$bb_cfg['js_ver']}\"></script>\n<script type=\"text/javascript\" src=\"{#BB_ROOT}misc/js/discussion_list.js?v={$bb_cfg['js_ver']}\"></script>[/PHP]\n5) Открываем [B]includes/functions.php[/B]\nИщем:\n[PHP]function generate_pagination($base_url, $num_items, $per_page, $start_item, $add_prevnext_text = TRUE)\n{\n    global $lang, $template;\n\n// Pagination Mod\n    $begin_end = 3;\n    $from_middle = 1;\n/*\n    By default, $begin_end is 3, and $from_middle is 1, so on page 6 in a 12 page view, it will look like this:\n\n    a, d = $begin_end = 3\n    b, c = $from_middle = 1\n\n\"begin\"        \"middle\"           \"end\"\n    |              |                 |\n    |     a     b  |  c     d        |\n    |     |     |  |  |     |        |\n    v     v     v  v  v     v        v\n    1, 2, 3 ... 5, 6, 7 ... 10, 11, 12\n\n    Change $begin_end and $from_middle to suit your needs appropriately\n*/\n\n    $total_pages = ceil($num_items/$per_page);\n\n    if ( $total_pages == 1 || $num_items == 0 )\n    {\n        return '';\n    }\n\n    $on_page = floor($start_item / $per_page) + 1;\n\n    $page_string = '';\n    if ( $total_pages > ((2*($begin_end + $from_middle)) + 2) )\n    {\n        $init_page_max = ( $total_pages > $begin_end ) ? $begin_end : $total_pages;\n        for($i = 1; $i < $init_page_max + 1; $i++)\n        {\n            $page_string .= ( $i == $on_page ) ? '<b>' . $i . '</b>' : '<a href=\"' . $base_url . \"&amp;start=\" . ( ( $i - 1 ) * $per_page ) . '\">' . $i . '</a>';\n            if ( $i <  $init_page_max )\n            {\n                $page_string .= \", \";\n            }\n        }\n        if ( $total_pages > $begin_end )\n        {\n            if ( $on_page > 1  && $on_page < $total_pages )\n            {\n                $page_string .= ( $on_page > ($begin_end + $from_middle + 1) ) ? ' ... ' : ', ';\n\n                $init_page_min = ( $on_page > ($begin_end + $from_middle) ) ? $on_page : ($begin_end + $from_middle + 1);\n\n                $init_page_max = ( $on_page < $total_pages - ($begin_end + $from_middle) ) ? $on_page : $total_pages - ($begin_end + $from_middle);\n\n                for($i = $init_page_min - $from_middle; $i < $init_page_max + ($from_middle + 1); $i++)\n                {\n                    $page_string .= ($i == $on_page) ? '<b>' . $i . '</b>' : '<a href=\"' . $base_url . \"&amp;start=\" . ( ( $i - 1 ) * $per_page ) . '\">' . $i . '</a>';\n                    if ( $i <  $init_page_max + $from_middle )\n                    {\n                        $page_string .= ', ';\n                    }\n                }\n                $page_string .= ( $on_page < $total_pages - ($begin_end + $from_middle) ) ? ' ... ' : ', ';\n            }\n            else\n            {\n                $page_string .= '&nbsp;...&nbsp;';\n            }\n            for($i = $total_pages - ($begin_end - 1); $i < $total_pages + 1; $i++)\n            {\n                $page_string .= ( $i == $on_page ) ? '<b>' . $i . '</b>'  : '<a href=\"' . $base_url . \"&amp;start=\" . ( ( $i - 1 ) * $per_page ) . '\">' . $i . '</a>';\n                if( $i <  $total_pages )\n                {\n                    $page_string .= \", \";\n                }\n            }\n        }\n    }\n    else\n    {\n        for($i = 1; $i < $total_pages + 1; $i++)\n        {\n            $page_string .= ( $i == $on_page ) ? '<b>' . $i . '</b>' : '<a href=\"' . $base_url . \"&amp;start=\" . ( ( $i - 1 ) * $per_page ) . '\">' . $i . '</a>';\n            if ( $i <  $total_pages )\n            {\n                $page_string .= ', ';\n            }\n        }\n    }\n\n    if ( $add_prevnext_text )\n    {\n        if ( $on_page > 1 )\n        {\n            $page_string = ' <a href=\"' . $base_url . \"&amp;start=\" . ( ( $on_page - 2 ) * $per_page ) . '\">' . $lang['PREVIOUS'] . '</a>&nbsp;&nbsp;' . $page_string;\n        }\n\n        if ( $on_page < $total_pages )\n        {\n            $page_string .= '&nbsp;&nbsp;<a href=\"' . $base_url . \"&amp;start=\" . ( $on_page * $per_page ) . '\">' . $lang['NEXT'] . '</a>';\n        }\n\n    }\n\n    $pagination = ($page_string) ? '<a class=\"menu-root\" href=\"#pg-jump\">'. $lang['GOTO_PAGE'] .'</a> :&nbsp;&nbsp;'. $page_string : '';\n    $pagination = str_replace('&amp;start=0', '', $pagination);\n\n    $template->assign_vars(array(\n        'PAGINATION'   => $pagination,\n        'PAGE_NUMBER'  => sprintf($lang['PAGE_OF'], ( floor($start_item/$per_page) + 1 ), ceil( $num_items / $per_page )),\n        'PG_BASE_URL'  => $base_url,\n        'PG_PER_PAGE'  => $per_page,\n    ));\n\n    return $pagination;\n}[/PHP]\nМеняем на:\n[PHP]function generate_pagination($base_url, $num_items, $per_page, $start_item, $add_prevnext_text = TRUE)\n{\n    global $lang, $template;\n\n// Pagination Mod\n    $begin_end = 3;\n    $from_middle = 1;\n/*\n    By default, $begin_end is 3, and $from_middle is 1, so on page 6 in a 12 page view, it will look like this:\n\n    a, d = $begin_end = 3\n    b, c = $from_middle = 1\n\n\"begin\"        \"middle\"           \"end\"\n    |              |                 |\n    |     a     b  |  c     d        |\n    |     |     |  |  |     |        |\n    v     v     v  v  v     v        v\n    1, 2, 3 ... 5, 6, 7 ... 10, 11, 12\n\n    Change $begin_end and $from_middle to suit your needs appropriately\n*/\n\n    $total_pages = ceil($num_items/$per_page);\n\n    if ( $total_pages == 1 || $num_items == 0 )\n    {\n        return '';\n    }\n\n    $on_page = floor($start_item / $per_page) + 1;\n\n    $page_string = '';\n    if ( $total_pages > ((2*($begin_end + $from_middle)) + 2) )\n    {\n        $init_page_max = ( $total_pages > $begin_end ) ? $begin_end : $total_pages;\n        for($i = 1; $i < $init_page_max + 1; $i++)\n        {\n            $page_string .= ( $i == $on_page ) ? '<b>' . $i . '</b>' : '<a href=\"' . $base_url . \"&amp;start=\" . ( ( $i - 1 ) * $per_page ) . '\">' . $i . '</a>';\n            if ( $i <  $init_page_max )\n            {\n                $page_string .= \" \";\n            }\n        }\n        if ( $total_pages > $begin_end )\n        {\n            if ( $on_page > 1  && $on_page < $total_pages )\n            {\n                $page_string .= ( $on_page > ($begin_end + $from_middle + 1) ) ? ' ... ' : ', ';\n\n                $init_page_min = ( $on_page > ($begin_end + $from_middle) ) ? $on_page : ($begin_end + $from_middle + 1);\n\n                $init_page_max = ( $on_page < $total_pages - ($begin_end + $from_middle) ) ? $on_page : $total_pages - ($begin_end + $from_middle);\n\n                for($i = $init_page_min - $from_middle; $i < $init_page_max + ($from_middle + 1); $i++)\n                {\n                    $page_string .= ($i == $on_page) ? '<b>' . $i . '</b>' : '<a href=\"' . $base_url . \"&amp;start=\" . ( ( $i - 1 ) * $per_page ) . '\">' . $i . '</a>';\n                    if ( $i <  $init_page_max + $from_middle )\n                    {\n                        $page_string .= ' ';\n                    }\n                }\n                $page_string .= ( $on_page < $total_pages - ($begin_end + $from_middle) ) ? ' ... ' : ', ';\n            }\n            else\n            {\n                $page_string .= '&nbsp;...&nbsp;';\n            }\n            for($i = $total_pages - ($begin_end - 1); $i < $total_pages + 1; $i++)\n            {\n                $page_string .= ( $i == $on_page ) ? '<b>' . $i . '</b>'  : '<a href=\"' . $base_url . \"&amp;start=\" . ( ( $i - 1 ) * $per_page ) . '\">' . $i . '</a>';\n                if( $i <  $total_pages )\n                {\n                    $page_string .= \" \";\n                }\n            }\n        }\n    }\n    else\n    {\n        for($i = 1; $i < $total_pages + 1; $i++)\n        {\n            $page_string .= ( $i == $on_page ) ? '<b>' . $i . '</b>' : '<a href=\"' . $base_url . \"&amp;start=\" . ( ( $i - 1 ) * $per_page ) . '\">' . $i . '</a>';\n            if ( $i <  $total_pages )\n            {\n                $page_string .= ' ';\n            }\n        }\n    }\n\n    if ( $add_prevnext_text )\n    {\n        if ( $on_page > 1 )\n        {\n            $page_string = ' <a href=\"' . $base_url . \"&amp;start=\" . ( ( $on_page - 2 ) * $per_page ) . '\">' . $lang['PREVIOUS'] . '</a>&nbsp;&nbsp;' . $page_string;\n        }\n\n        if ( $on_page < $total_pages )\n        {\n            $page_string .= '&nbsp;&nbsp;<a href=\"' . $base_url . \"&amp;start=\" . ( $on_page * $per_page ) . '\">' . $lang['NEXT'] . '</a>';\n        }\n\n    }\n\n    $pagination = ($page_string) ? '<a class=\"menu-root\" href=\"#pg-jump\">'. $lang['GOTO_PAGE'] .'</a> :&nbsp;&nbsp;'. $page_string : '';\n    $pagination = str_replace('&amp;start=0', '', $pagination);\n\n    $template->assign_vars(array(\n        'PAGINATION'   => $pagination,\n        'PAGE_NUMBER'  => sprintf($lang['PAGE_OF'], ( floor($start_item/$per_page) + 1 ), ceil( $num_items / $per_page )),\n        'PG_BASE_URL'  => $base_url,\n        'PG_PER_PAGE'  => $per_page,\n    ));\n\n    return $pagination;\n}[/PHP][/SPOILER]",
+    "owner": "ChihPyh, DarkMod",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425590910,
+      "file_size": 89838,
+      "filename": "1.webp",
+      "height": 912,
+      "id": 3352,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/1-webp.3352/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3356-034319fe44f64754fe001b4e47df852f.jpg?hash=AeuGr3OCkZ",
+      "width": 1261
+    },
+    {
+      "attach_date": 1425590911,
+      "file_size": 100554,
+      "filename": "Снимок.webp",
+      "height": 897,
+      "id": 3353,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/snimok-webp.3353/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3357-81a2ae8527e77de986ee334e350e4e01.jpg?hash=N3pZtYMjnM",
+      "width": 1337
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> шаблон, являющийся аналогом стандартного шаблона XenForo (белый стиль).",
+  "download_count": 333,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/212.jpg?1425590934",
+  "id": 212,
+  "is_fileless": null,
+  "last_update": 1425590926,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1425590926,
+  "resource_state": "visible",
+  "slug": "sablon-xenforo-white",
+  "tag_line": "Шаблон, являющийся аналогом стандартного шаблона XenForo (белый стиль).",
+  "tags": [],
+  "title": "Шаблон «XenForo White»",
+  "url_path": "/resources/sablon-xenforo-white.212/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 333,
+      "files": [
+        {
+          "filename": "Шаблон - XenForo infinite_4.zip",
+          "id": 3351,
+          "local_path": null,
+          "r2_key": null,
+          "size": 418317,
+          "src_url": "https://torrentpier.com/api/resource-versions/272/download?file=3351"
+        }
+      ],
+      "id": 272,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425590926,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/sablon-xenforo-white.212/version/272/"
+    }
+  ],
+  "view_count": 902
+}

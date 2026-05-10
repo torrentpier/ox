@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 10691,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 844,
+  "last_post_date": 1327923281,
+  "node_id": 57,
+  "post_date": 1327921141,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10691,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Добрый день.<br />\nВдвоем тестируем трекер (r300), один раздает, другой качает. Суть в том, что при закачке, скорость периодически падает до 0, после этого либо сразу возобновляется, либо спустя очень длительное время (теряет и находит сида). На самом форуме в раздаче отображаются и сид и пир. Кто знает возможные причины, подскажите, а то даже не знаем в какую сторону копать. Уже протестировали с третьи участником, и на разных хостингах, с отключенным кроном, все тоже самое.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1327921141,
+      "user_id": 837,
+      "user_title": "User",
+      "username": "anabol1k"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10692,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"http://rutracker.org/forum/viewtopic.php?t=1396816\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://rutracker.org/forum/viewtopic.php?t=1396816</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1327923281,
+      "user_id": 619,
+      "user_title": "User",
+      "username": "volkodav2000"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "postoanno-obryvaetsa-razdaca",
+  "sticky": false,
+  "tags": [],
+  "title": "Постоянно обрывается раздача",
+  "url_path": "/threads/postoanno-obryvaetsa-razdaca.844/",
+  "user_id": 837,
+  "username": "anabol1k",
+  "view_count": 1529
+}

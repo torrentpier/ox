@@ -1,0 +1,104 @@
+{
+  "category": {
+    "description": "Section with all templates for TorrentPier.",
+    "id": 5,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Templates",
+    "view_url": "https://torrentpier.com/resources/categories/templates.5/"
+  },
+  "current_files": [
+    {
+      "filename": "Exclusive.zip",
+      "id": 3633,
+      "local_path": null,
+      "r2_key": null,
+      "size": 94732,
+      "src_url": "https://torrentpier.com/api/resource-versions/288/download?file=3633"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "adapt",
+    "installation": "[SPOILER=\"Инструкция\"]Загрузить файлы на сервер.[/SPOILER]",
+    "owner": "Fate",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1369073501,
+      "file_size": 165382,
+      "filename": "1.webp",
+      "height": 1417,
+      "id": 1979,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/1-webp.1979/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/1/1984-b469d48dca7e9bcddd590578a568e76a.jpg?hash=z8AbgZTUWj",
+      "width": 1437
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> шаблон, рип с трекера UnionPeer.",
+  "download_count": 455,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/9.jpg?1429569204",
+  "id": 9,
+  "is_fileless": null,
+  "last_update": 1429569237,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1369073504,
+  "resource_state": "visible",
+  "slug": "sablon-exclusive",
+  "tag_line": "Шаблон, рип с трекера UnionPeer.",
+  "tags": [],
+  "title": "Шаблон «Exclusive»",
+  "url_path": "/resources/sablon-exclusive.9/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 312,
+      "files": [
+        {
+          "filename": "Exclusive.zip",
+          "id": 3633,
+          "local_path": null,
+          "r2_key": null,
+          "size": 94732,
+          "src_url": "https://torrentpier.com/api/resource-versions/288/download?file=3633"
+        }
+      ],
+      "id": 288,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1429569237,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/sablon-exclusive.9/version/288/"
+    },
+    {
+      "download_count": 145,
+      "files": [
+        {
+          "filename": "Exclusive.rar",
+          "id": 1978,
+          "local_path": null,
+          "r2_key": null,
+          "size": 89540,
+          "src_url": "https://torrentpier.com/api/resource-versions/9/download?file=1978"
+        }
+      ],
+      "id": 9,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1369073504,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/sablon-exclusive.9/version/9/"
+    }
+  ],
+  "view_count": 599
+}

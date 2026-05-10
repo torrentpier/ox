@@ -1,0 +1,110 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] CS 1.6 Server Statistics by DimaUZB2001.zip",
+      "id": 6727,
+      "local_path": null,
+      "r2_key": null,
+      "size": 28816,
+      "src_url": "https://torrentpier.com/api/resource-versions/669/download?file=6727"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом.",
+    "owner": "DimaUZB2001",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1772908248,
+      "file_size": 39034,
+      "filename": "photo_2026-03-05_23-02-59 (2).webp",
+      "height": 640,
+      "id": 6728,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2026-03-05_23-02-59-2-webp.6728/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6732-9256732554618f4663425c6baa2f16e1.jpg?hash=mGCRBbWSOq",
+      "width": 1280
+    },
+    {
+      "attach_date": 1772908248,
+      "file_size": 62988,
+      "filename": "photo_2026-03-05_23-02-59.webp",
+      "height": 646,
+      "id": 6729,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2026-03-05_23-02-59-webp.6729/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6733-368a1a41b48acdf344cdb8c42e7f55a2.jpg?hash=bmcUVvJSQm",
+      "width": 1280
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Мод для отображения статистики Counter-Strike 1.6 серверов в реальном времени.<br />\nИспользует протокол A2S (UDP) для запроса серверов.<br />\n<br />\n<b>Требования:</b><br />\n- TorrentPier 2.4.x<br />\n- PHP 8.0+ (рекомендуется 8.3) с расширением `sockets`<br />\n- MySQL / MariaDB",
+  "download_count": 63,
+  "external_url": null,
+  "icon_url": null,
+  "id": 334,
+  "is_fileless": null,
+  "last_update": 1772908253,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1772908253,
+  "resource_state": "visible",
+  "slug": "cs-1-6-server-statistics",
+  "tag_line": "Мод для отображения статистики Counter-Strike 1.6 серверов в реальном времени.",
+  "tags": [
+    "counter strike",
+    "cs 1.6",
+    "кс 1.6",
+    "кс сервер",
+    "кс статистика",
+    "мод",
+    "моды",
+    "мониторинг",
+    "статистика для сервера"
+  ],
+  "title": "CS 1.6 Server Statistics",
+  "url_path": "/resources/cs-1-6-server-statistics.334/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.0",
+  "versions": [
+    {
+      "download_count": 63,
+      "files": [
+        {
+          "filename": "[FULL] CS 1.6 Server Statistics by DimaUZB2001.zip",
+          "id": 6727,
+          "local_path": null,
+          "r2_key": null,
+          "size": 28816,
+          "src_url": "https://torrentpier.com/api/resource-versions/669/download?file=6727"
+        }
+      ],
+      "id": 669,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1772908253,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/cs-1-6-server-statistics.334/version/669/"
+    }
+  ],
+  "view_count": 662
+}

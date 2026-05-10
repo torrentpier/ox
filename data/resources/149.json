@@ -1,0 +1,120 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Мультитрекер.zip",
+      "id": 3108,
+      "local_path": null,
+      "r2_key": null,
+      "size": 67002,
+      "src_url": "https://torrentpier.com/api/resource-versions/202/download?file=3108"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "msqli.so, curl.so, серверный крон",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"][PHP]#\n#--[SQL]----------------------------------------\n#\n\nALTER TABLE `bb_bt_torrents` ADD `tor_time` INT( 11 ) NOT NULL , ADD `tor_seeders` MEDIUMINT( 8 ) DEFAULT '0' NOT NULL , ADD `tor_leechers` MEDIUMINT( 8 ) DEFAULT '0' NOT NULL , ADD `tor_announcers` TEXT NOT NULL ;\n\n\nconfig.php\n// Мультитрекер\n$bb_cfg['multitracker'] = array(\n    'max_trackers'  => 1,\n    'bad_trackers'    => array(\n        $bb_cfg['server_name'],\n        //'retracker.local',\n        'bt.torrents.by',\n    ),\n    'search'  => array('udp://bt.rutor.org:2710'),\n    'replace' => array('http://bt.rutor.org:2710/announce'),\n);\n\nfunctions_torrent.php\n\nнайти и заменить\n\n    $reg_time = TIMENOW;\n    $size = sprintf('%.0f', (float) $totallen);\n\n    $tor_announcers = tor_announcers($tor);\n    $tor_announcers = ($tor_announcers) ? serialize($tor_announcers) : '';\n\n    $columns = ' info_hash,       post_id,  poster_id,  topic_id,  forum_id,  attach_id,    size,  reg_time,  tor_status,   tor_announcers';\n    $values = \"'$info_hash_sql', $post_id, $poster_id, $topic_id, $forum_id, $attach_id, '$size', $reg_time, $tor_status, '$tor_announcers'\";\n\nнайти\n\n    if($tr_cfg['tor_topic_up'])\n    {\n        DB()->query(\"UPDATE \". BB_TOPICS .\" SET topic_last_post_time = GREATEST(topic_last_post_time, \". (TIMENOW - 3*86400) .\") WHERE topic_id = $topic_id LIMIT 1\");\n    }\nпосле добавить\n\n\n    $tor_seeders = $tor_leechers = $tor_peers = 0;\n    multitracker(array('tor_announcers' => $tor_announcers, 'info_hash' => $info_hash_sql, 'size' => $size),$tor_seeders, $tor_leechers, $tor_peers);\n    $tor_time = TIMENOW + 900;\n    if($tor_seeders) $last_seeder = ', seeder_last_seen = '. TIMENOW;\n    else $last_seeder = '';\n    DB()->query(\"UPDATE \". BB_BT_TORRENTS .\" SET tor_seeders = '$tor_seeders', tor_leechers = '$tor_leechers', tor_time = '$tor_time' $last_seeder WHERE topic_id = $topic_id LIMIT 1\");\n\n\nвставить в конец\n\nfunction tor_announcers($tor)\n{\n    global $bb_cfg;\n\n    $tracker = array();\n    if (array_key_exists('announce-list', $tor))\n    {\n        foreach ($tor['announce-list'] as $announcer)\n        {\n            if (preg_match('#rutracker.org#is', $announcer[0]))\n            {\n                if(!$tracker) $tracker[] = $tor['publisher-url'];\n            }\n            else if (!preg_match('#('. implode('|', $bb_cfg['multitracker']['bad_trackers']) .')#is', $announcer[0]))\n            {\n                $tracker[] = str_replace($bb_cfg['multitracker']['search'], $bb_cfg['multitracker']['replace'], $announcer[0]);\n            }\n        }\n    }\n    elseif (@$tor['announce'])\n    {\n        if (!preg_match('#('. implode('|', $bb_cfg['multitracker']['bad_trackers']) .')#is', $tor['announce']))\n        {\n            $tracker[] = str_replace($bb_cfg['multitracker']['search'], $bb_cfg['multitracker']['replace'], $tor['announce']);\n        }\n    }\n\n    $announcers = array();\n    if (count($tracker))\n    {\n        foreach ($tracker as $key => $url)\n        {\n            if($key < $bb_cfg['multitracker']['max_trackers'])\n            {\n                $announcers[] = $url;\n            }\n        }\n    }\n    return (count($announcers)) ? $announcers : '';\n}\n\nfunction multitracker($data, &$tor_seeders, &$tor_leechers, &$tor_peers, $left=false)\n{\n    global $bb_cfg;\n\n    if($data['tor_announcers'])\n    {\n        require_once(INC_DIR .'class.snoopy.php');\n\n        $snoopy = new Snoopy;\n\n        if(preg_match('#rutracker.org/forum#is', $data['tor_announcers']))\n        {\n            $snoopy->proxy_host = '190.214.5.18';\n            $snoopy->proxy_port = '8080';\n            $snoopy->host = \"rutracker.org\";\n            $snoopy->agent = \"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)\";\n            $snoopy->rawheaders[\"Pragma\"] = \"no-cache\";\n\n            $snoopy->cookies = array (\n                'bb_data'  => '1-25846714-UU8CcMRwWpVfHlhuuei1-2994434152-1329935147-1329935147-1744992048-0',\n            );\n\n            $snoopy->_httpmethod = \"GET\";\n            $tor_seeders = $tor_leechers = '';\n\n            $tracker = array();\n            foreach (unserialize($data['tor_announcers']) as $url)\n            {\n                if(preg_match('#rutracker.org/forum#is', $url)) $tracker[] = $url;\n            }\n\n            foreach ($tracker as $url)\n            {\n                $snoopy->fetch($url);\n                if(!$snoopy->timed_out)\n                {\n                    $content = $snoopy->results;\n\n                    preg_match_all('#<div class=\"mrg_4 pad_4\">.*?<b>(.*?)</b>.*?<b>(.*?)</b>#is', $content, $tor, PREG_SET_ORDER);\n\n                    @$tor_seeders += (int) $tor[0][1];\n                    @$tor_leechers += (int) $tor[0][2];\n                }\n            }\n        }\n        else\n        {\n            $snoopy->agent = \"uTorrent/3000(25583)\";\n            $snoopy->_httpmethod = \"GET\";\n\n            $size = ($left) ? $data['size'] : '0';\n            $announce = \"info_hash=\". urlencode($data['info_hash']) .\"&peer_id=-UT3000-8H%17%94%08%ef%8c%0f%bd%0c%8d%3a&port=52085&uploaded=0&downloaded=0&left=\". $size .\"&corrupt=0&key=1F64382C&event=started&numwant=200&compact=1&no_peer_id=1\";\n            $tor_seeders = $tor_leechers = $tor_peers = '';\n\n            $tracker = array();\n            foreach (unserialize($data['tor_announcers']) as $url)\n            {\n                $ann = (preg_match(\"/\\?/\", $url)) ? '&' : '?';\n                $tracker[] = str_replace($bb_cfg['multitracker']['search'], $bb_cfg['multitracker']['replace'], $url) . $ann;\n            }\n\n            foreach ($tracker as $url)\n            {\n                $snoopy->fetch($url . $announce);\n                if(!$snoopy->timed_out)\n                {\n                    $tor = bdecode($snoopy->results);\n                    @$tor_seeders += (int) $tor['complete'];\n                    @$tor_leechers += (int) $tor['incomplete'];\n                    @$tor_peers .= $tor['peers'];\n                }\n            }\n        }\n    }\n}\n\najax.php\n\nнайти\n\ncase 'view_post':\n        require(INC_DIR .'bbcode.php');\n    break;\n\nвставить\n\ncase 'multitracker':\n        require(INC_DIR .'functions_torrent.php');\n    break;\n\nнайти\n\n'view_post'         => array('guest'),\n\nдобавить\n\n'multitracker'      => array('mod'),\n\nперед последней скобкой вставить\n\n    function multitracker()\n    {\n        global $lang;\n\n        $attach_id = (int) $this->request['attach_id'];\n        $tor = DB()->fetch_row(\"SELECT * FROM \". BB_BT_TORRENTS .\" WHERE attach_id = $attach_id\");\n  \n        if($tor['tor_announcers'])\n        {\n            $tor_seeders = $tor_leechers = $peers = '';\n      \n            multitracker($tor, $tor_seeders, $tor_leechers, $tor_peers, true);\n            $tor_time = TIMENOW + 900;\n            if (!($seeders + $tor_seeders) > 0) $last_seeder = ', seeder_last_seen = '. TIMENOW;\n            else $last_seeder = '';\n            DB()->query(\"UPDATE \". BB_BT_TORRENTS .\" SET tor_seeders = '$tor_seeders', tor_leechers = '$tor_leechers', tor_time = '$tor_time' $last_seeder WHERE attach_id = '\". $tor['attach_id'] .\"' LIMIT 1\");\n\n            $html = '<div class=\"mrg_4 pad_4\">';\n            $html .= '<span class=\"seed\">'. $lang['SEEDERS'] .':&nbsp; <b>'. $tor_seeders .'</b> &nbsp;[&nbsp; 0 KB/s &nbsp;]</span> &nbsp;';\n            $html .= '<span class=\"leech\">'. $lang['LEECHERS'] .':&nbsp; <b>'. $tor_leechers .'</b> &nbsp;[&nbsp; 0 KB/s &nbsp;]</span> &nbsp;';\n            $html .= '<a href=\"'. TOPIC_URL . $tor['topic_id'] .'&spmode=full#seeders\">'. $lang['SPMODE_FULL'] .'</a>';\n            $html .= '</div>';\n\n            $this->response['html']    = $html;\n        }\n        else $this->ajax_die('false');\n    }\n\ndisplaying_torrent.php\n\nнайти и заменить\n\n$peers_cnt = $seed_count = $leech_count = 0;\n\nнайти и заменить\n\n// SQL for each mode\n        if ($s_mode == 'count')\n        {\n            $sql = \"SELECT sn.seeders, sn.leechers, sn.speed_up, sn.speed_down,\n                    tor.tor_seeders, tor.tor_leechers\n                FROM \". BB_BT_TORRENTS .\" tor\n                    LEFT JOIN \". BB_BT_TRACKER_SNAP .\" sn ON(sn.topic_id = tor.topic_id)\n                WHERE tor.topic_id = $tor_id\n                LIMIT 1\";\n        }\n        else if ($s_mode == 'names')\n        {\n            $sql = \"SELECT tr.user_id, tr.ip, tr.port, tr.remain, tr.seeder, u.username, u.user_rank,\n                    tor.tor_seeders, tor.tor_leechers\n                FROM \". BB_BT_TORRENTS .\" tor\n                    LEFT JOIN \". BB_BT_TRACKER .\" tr ON(tr.topic_id = tor.topic_id)\n                    LEFT JOIN \". BB_USERS .\" u ON(u.user_id = tr.user_id)\n                WHERE tor.topic_id = $tor_id\n                GROUP BY tr.ip, tr.user_id, tr.port, tr.seeder\n                ORDER BY u.username\n                LIMIT $show_peers_limit\";\n        }\n        else\n        {\n            $sql = \"SELECT\n                    tr.user_id, tr.ip, tr.port, tr.uploaded, tr.downloaded, tr.remain,\n                    tr.seeder, tr.releaser, tr.speed_up, tr.speed_down, tr.update_time,\n                    u.username, u.user_rank,\n                    tor.tor_seeders, tor.tor_leechers\n                FROM \". BB_BT_TORRENTS .\" tor\n                    LEFT JOIN \". BB_BT_TRACKER .\" tr ON(tr.topic_id = tor.topic_id)\n                    LEFT JOIN \". BB_USERS .\" u ON (u.user_id = tr.user_id)\n                WHERE tor.topic_id = $tor_id\n                    AND tr.topic_id = tor.topic_id\n                GROUP BY tr.ip, tr.user_id, tr.port, tr.seeder\n                ORDER BY $full_mode_order $full_mode_sort_dir\n                LIMIT $show_peers_limit\";\n        }\n\nнайти и заменить\n\nif ($s_mode != 'full' && $seeders)\n            {\n                $seeders[strlen($seeders)-9] = ' ';\n                $template->assign_vars(array(\n                    'SEED_LIST'  => $seeders,\n                    'SEED_COUNT' => ($seed_count) ? $seed_count : '',\n                ));\n            }\n            if ($s_mode != 'full' && $leechers)\n            {\n                $leechers[strlen($leechers)-9] = ' ';\n                $template->assign_vars(array(\n                    'LEECH_LIST'  => $leechers,\n                    'LEECH_COUNT' => ($leech_count) ? $leech_count : '',\n                ));\n            }\n\n\nнайти и заменить\n\n$tmp[0]['username'] = (int) @$peers[0]['leechers'] + @$peers[0]['tor_leechers'];\n                $tmp[1]['username'] = (int) @$peers[0]['seeders'] + @$peers[0]['tor_seeders'];\n          \nнайти и заменить\n\nif ($bb_cfg['bt_allow_spmode_change'] && $s_mode != 'full' && $seed_count || $leech_count)          \n\n\nviewtopic_attach.tpl\n\nнайти\n\n<!-- ELSEIF TOR_HELP_LINKS -->\n\nзаменить\n\n<!-- IF IS_AM -->\n        <script type=\"text/javascript\">\n        ajax.callback.multitracker = function(data) {\n            $('#peers').html(data.html);\n        };\n        </script>\n        <a class=\"txtb\" href=\"#peers\" onclick=\"ajax.exec({action : 'multitracker', attach_id: '{postrow.attach.tor_reged.ATTACH_ID}'});\"><input type=\"submit\" value=\"Обновить пиров\" class=\"liteoption\" /></a>\n        <!-- ENDIF -->\n        <!-- ELSEIF TOR_HELP_LINKS -->\n\nviewtopic_torrent.tpl\n\nнайти и заменить\n\n<td id=\"peers\" colspan=\"2\" class=\"<!-- IF SHOW_DL_LIST -->row2<!-- ELSE -->row1<!-- ENDIF --> pad_2\">\n                <a name=\"peers\"></a>\n\n\nannounce.php\n\nнайти\n\n$seeders  = $row['seeders'];\n        $leechers = $row['leechers'];\n    }\n\nдобавить\n\n    $tor_seeders = $tor_leechers = $tor_peers = '';\n    if (!$seeder)  // Выдём пиров только, если пользователь качает раздачу\n    {\n        $info_hash_sql = rtrim(DB()->escape($info_hash), ' ');\n        $tor = DB()->fetch_row(\"SELECT * FROM \". BB_BT_TORRENTS .\" WHERE info_hash = '$info_hash_sql' LIMIT 1\");\n\n        if($tor['tor_announcers'])\n        {\n            define('IN_PHPBB', true);\n            require(INC_DIR .'functions_torrent.php');\n            $tor_seeders = $tor_leechers = $tor_peers = '';\n            multitracker($tor, $tor_seeders, $tor_leechers, $tor_peers, true);\n            if (!($seeders + $tor_seeders) > 0) $last_seeder = ', seeder_last_seen = '. TIMENOW;\n            else $last_seeder = '';\n            $tor_time = TIMENOW + 900;   // это интервал между запросами\n            DB()->query(\"UPDATE \". BB_BT_TORRENTS .\" SET tor_seeders = '$tor_seeders', tor_leechers = '$tor_leechers', tor_time = '$tor_time' $last_seeder WHERE attach_id = '\". $tor['attach_id'] .\"' LIMIT 1\");\n        }\n    }\n\n    $output = array(\n        'interval'     => (int) $announce_interval,\n        'min interval' => (int) $announce_interval,\n        'peers'        => $peers . $tor_peers,\n        'complete'     => (int) $seeders + $tor_seeders,\n        'incomplete'   => (int) $leechers + $tor_leechers,\n    );\n\nviewforum.php\n\nнайти\n\nsn.seeders, sn.leechers\n\nдобавить\n\n, tor.tor_seeders, tor.tor_leechers\n\nнайти и заменить\n\n'SEEDERS'    => (int) $topic['seeders'] + $topic['tor_seeders'],\n            'LEECHERS'   => (int) $topic['leechers'] + $topic['tor_leechers'],\n      \ntracker.php\n\nнайти\n\nsn.seeders, sn.leechers\n\nдобавить\n\n, tor.tor_seeders, tor.tor_leechers\n\nнайти и заменить\n\n$seeds  = $tor['seeders'] + $tor['tor_seeders'];\n            $leechs = $tor['leechers'] + $tor['tor_leechers'];\n\n\nbuild_stats.php\n      \nнайти и заменить\n\n// peers stat\n$row = DB()->fetch_row(\"SELECT SUM(seeders) AS seeders, SUM(leechers) AS leechers, ((SUM(speed_up) + SUM(speed_down))/2) AS speed FROM \". BB_BT_TRACKER_SNAP);\n$row2 = DB()->fetch_row(\"SELECT SUM(tor_seeders) AS seeders, SUM(tor_leechers) AS leechers FROM \". BB_BT_TORRENTS);\n$data['seeders']  = number_format($row['seeders'] + $row2['seeders']);\n$data['leechers'] = number_format($row['leechers'] + $row2['leechers']);\n$data['peers']    = number_format($row['seeders'] + $row['leechers'] + $row2['seeders'] + $row2['leechers']);\n$data['speed']    = $row['speed'];\n\ntorrent_userprofile.php\n\nнайти\n\n, sn.seeders, sn.leechers\n\nвставить\n\n, tor_seeders, tor_leechers\n\nнайти и заменить\n\n'TOPIC_SEEDERS' => $releasing[$i]['seeders'] + $releasing[$i]['tor_seeders'],\n            'TOPIC_LEECHERS' => $releasing[$i]['leechers'] + $releasing[$i]['tor_leechers'],\n      \nнайти и заменить\n\n'TOPIC_SEEDERS' => $seeding[$i]['seeders'] + $seeding[$i]['tor_seeders'],\n            'TOPIC_LEECHERS' => $seeding[$i]['leechers'] + $seeding[$i]['tor_leechers'],\n\nнайти и заменить\n\n'TOPIC_SEEDERS' => $leeching[$i]['seeders'] + $leeching[$i]['tor_seeders'],\n            'TOPIC_LEECHERS' => $leeching[$i]['leechers'] + $leeching[$i]['tor_leechers'],  \n            [/PHP]\n[/SPOILER]",
+    "owner": "_Xz_",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425298116,
+      "file_size": 12096,
+      "filename": "2015-03-02 15-05-53 Скриншот экрана.webp",
+      "height": 128,
+      "id": 3133,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2015-03-02-15-05-53-skrinsot-ekrana-webp.3133/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3137-315088e80ffdb664ec5b4c62b5acc5a6.jpg?hash=R64X96rZe_",
+      "width": 562
+    },
+    {
+      "attach_date": 1425298116,
+      "file_size": 6294,
+      "filename": "2015-03-02 15-05-19 Скриншот экрана.webp",
+      "height": 54,
+      "id": 3134,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2015-03-02-15-05-19-skrinsot-ekrana-webp.3134/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3138-fa1d54c842cf9a17e783662eaaa1b40a.jpg?hash=bqsliSwtLQ",
+      "width": 362
+    }
+  ],
+  "description_parsed": "<b>Описание: </b>возможность организации мультитрекерных раздач с подгрузкой пиров с других ресурсов.<br />\n<br />\nФактически добавляет пиров с других ресурсов. При скачивании они будут сразу же переданы пользователю в общем списке пиров.",
+  "download_count": 481,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/149.jpg?1425252913",
+  "id": 149,
+  "is_fileless": null,
+  "last_update": 1425252937,
+  "rating_avg": 5,
+  "rating_count": 1,
+  "resource_date": 1425202621,
+  "resource_state": "visible",
+  "slug": "mul-titreker-podgruzka-vnesnih-pirov",
+  "tag_line": "Добавляет возможность организации мультитрекерных раздач с подгрузкой пиров с других ресурсов.",
+  "tags": [],
+  "title": "Мультитрекер (подгрузка внешних пиров)",
+  "url_path": "/resources/mul-titreker-podgruzka-vnesnih-pirov.149/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 374,
+      "files": [
+        {
+          "filename": "[FULL] Мультитрекер.zip",
+          "id": 3108,
+          "local_path": null,
+          "r2_key": null,
+          "size": 67002,
+          "src_url": "https://torrentpier.com/api/resource-versions/202/download?file=3108"
+        }
+      ],
+      "id": 202,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1425252937,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/mul-titreker-podgruzka-vnesnih-pirov.149/version/202/"
+    },
+    {
+      "download_count": 111,
+      "files": [
+        {
+          "filename": "[FULL] Мультитрекер.zip",
+          "id": 3014,
+          "local_path": null,
+          "r2_key": null,
+          "size": 67002,
+          "src_url": "https://torrentpier.com/api/resource-versions/166/download?file=3014"
+        }
+      ],
+      "id": 166,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425202621,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/mul-titreker-podgruzka-vnesnih-pirov.149/version/166/"
+    }
+  ],
+  "view_count": 1019
+}

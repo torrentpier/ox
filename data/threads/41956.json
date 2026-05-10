@@ -1,0 +1,70 @@
+{
+  "custom_fields": {
+    "torrentpier": "223"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 93538,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 41956,
+  "last_post_date": 1771155238,
+  "node_id": 80,
+  "post_date": 1535924244,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93538,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Имеет некие сходства с пред. багом -&gt; <a href=\"https://torrentpier.com/threads/nelzja-otpravit-ls-polzovatelju-s-nikom-imejuschim-simvoly.41853/\" class=\"link link--internal\">исправлено - Нельзя отправить ЛС пользователю с ником, имеющим символы &gt;&amp;&lt;</a><br />\nВ базе данных никнейм вида &quot;&lt;&lt;blabla&gt;&gt;&quot; сохраняется с заменой как  &amp;lt;&amp;lt;blabla&amp;gt;&amp;gt;<br />\nВ файле &quot;<a href=\"https://github.com/torrentpier/torrentpier/blob/master/viewforum.php#L466\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><b>viewforum.php</b></a>&quot; выполняется урезание ника до 15 символов, но в функцию <b>str_short</b> передается ник без преобразования обратно в символы. Т.е. ник &lt;&lt;blabla&gt;&gt; по сути 10 символов, но &amp;lt;&amp;lt;blabla&amp;gt;&amp;gt; уже 22 символа.<br />\n<br />\nПроверялось на версии 2.2.3, но скорее всего баг есть и  в ветке 2.3",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1535924244,
+      "user_id": 8136,
+      "user_title": "User",
+      "username": "alexTil"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98408,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено.<br />\n<br />\n\n\t\n\n\t<div data-template-name=\"public:bb_code_tag_url_unfurl\" class=\"bbCodeBlock bbCodeBlock--unfurl    js-unfurl fauxBlockLink\"\n\t\tdata-unfurl=\"true\" data-result-id=\"10450\" data-url=\"https://github.com/torrentpier/torrentpier/pull/2335\" data-host=\"github.com\" data-pending=\"false\">\n\t\t<div class=\"contentRow\">\n\t\t\t\n\t\t\t\t<div class=\"contentRow-figure contentRow-figure--fixedSmall js-unfurl-figure\">\n\t\t\t\t\t\n\t\t\t\t\t\t<img src=\"https://opengraph.githubassets.com/493010ebaa6cb02ec6db968c63c2ee40f14c8adff3439adc530718f14b1a01d3/torrentpier/torrentpier/pull/2335\" loading=\"lazy\" alt=\"github.com\" class=\"bbCodeBlockUnfurl-image\" data-onerror=\"hide-parent\"/>\n\t\t\t\t\t\n\t\t\t\t</div>\n\t\t\t\n\t\t\t<div class=\"contentRow-main\">\n\t\t\t\t<h3 class=\"contentRow-header js-unfurl-title\">\n\t\t\t\t\t<a href=\"https://github.com/torrentpier/torrentpier/pull/2335\"\n\t\t\t\t\t\tclass=\"link link--external fauxBlockLink-blockLink\"\n\t\t\t\t\t\ttarget=\"_blank\"\n\t\t\t\t\t\trel=\"nofollow ugc noopener\"\n\t\t\t\t\t\tdata-proxy-href=\"\">\n\t\t\t\t\t\tfix: handle HTML entities in str_short truncation by exileum · Pull Request #2335 · torrentpier/torrentpier\n\t\t\t\t\t</a>\n\t\t\t\t</h3>\n\n\t\t\t\t<div class=\"contentRow-snippet js-unfurl-desc\">Summary  str_short() now correctly handles HTML-encoded strings. Usernames with special characters (e.g. &lt;&lt;blabla&gt;&gt; stored as &lt;&lt;blabla&gt;&gt;) were being truncate...</div>\n\n\t\t\t\t<div class=\"contentRow-minor contentRow-minor--hideLinks\">\n\t\t\t\t\t<span class=\"js-unfurl-favicon\">\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t<img src=\"https://github.githubassets.com/favicons/favicon.svg\" loading=\"lazy\" alt=\"github.com\" class=\"bbCodeBlockUnfurl-icon\"\n\t\t\t\t\t\t\t\tdata-onerror=\"hide-parent\"/>\n\t\t\t\t\t\t\n\t\t\t\t\t</span>\n\t\t\t\t\tgithub.com\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1771155238,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 1,
+  "slug": "urezanie-niknejma-pri-prosmotre-razdela",
+  "sticky": false,
+  "tags": [
+    "урезание ника"
+  ],
+  "title": "Урезание никнейма при просмотре раздела",
+  "url_path": "/threads/urezanie-niknejma-pri-prosmotre-razdela.41956/",
+  "user_id": 8136,
+  "username": "alexTil",
+  "view_count": 1020
+}

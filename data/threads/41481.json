@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 87876,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41481,
+  "last_post_date": 1468745986,
+  "node_id": 57,
+  "post_date": 1466583226,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87876,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В логах постоянно появляются записи MySQL server has gone away.<br />\n<br />\n<div>Spoiler content hidden.</div>Насколько я понимаю, это говорит о том, что сервер закрывает соединение в результате долго таймаута. Но как видно с логов это происходит только с ботами поисковиков, неужели боты столь долгое время ни чего не делают, что сервер прерывает ихние сессии? Хотелось бы избавиться от этих записей в логах, но при этом увеличивать в конфиге время wait_timeout из за ботов желания тоже нет.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1466583226,
+      "user_id": 6729,
+      "user_title": "User",
+      "username": "WinWoolF"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88012,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/6729/\">WinWoolF</a>, боты просто запускают крон-задачу, вот из-за нее сервер и уходит в оффлайн. Попробуйте запустить все крон-задачи поочередно, чтобы понять, какая убивает сервер.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1468616122,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88030,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Attach maintenance и  Board maintenance  вот эти две стали вешать при каждом запуске после того как на трекере стало более 270к раздач и я их отрубил в админке, все остальные работают без нареканий даже по несколько сразу.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1468699256,
+      "user_id": 6729,
+      "user_title": "User",
+      "username": "WinWoolF"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88032,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/6729/\">WinWoolF</a>, ну я так и думал собственно. В новой версии обработки аттачей вообще нет, а общая задача сильно упрощена будет. Так что сейчас пока что отключить - не самый плохой вариант, особо критичного там ничего нет.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1468745986,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "logi-servera",
+  "sticky": false,
+  "tags": [],
+  "title": "Логи сервера",
+  "url_path": "/threads/logi-servera.41481/",
+  "user_id": 6729,
+  "username": "WinWoolF",
+  "view_count": 1113
+}

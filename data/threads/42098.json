@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94659,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42098,
+  "last_post_date": 1604226210,
+  "node_id": 47,
+  "post_date": 1604226210,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94659,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Кто сможет небесплатно адаптировать мод RSS лента <a href=\"https://torrentpier.com/threads/rss.37181/\" class=\"link link--internal\">RSS</a> под Бизон",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1604226210,
+      "user_id": 9244,
+      "user_title": "User",
+      "username": "sbudennogo"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "adaptacia-modula-rss-lenta",
+  "sticky": false,
+  "tags": [],
+  "title": "Адаптация модуля RSS лента",
+  "url_path": "/threads/adaptacia-modula-rss-lenta.42098/",
+  "user_id": 9244,
+  "username": "sbudennogo",
+  "view_count": 907
+}

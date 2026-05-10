@@ -1,0 +1,83 @@
+{
+  "category": {
+    "description": "Icons, smileys, and other graphic elements for design.",
+    "id": 6,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Graphics and styles",
+    "view_url": "https://torrentpier.com/resources/categories/graphics-and-styles.6/"
+  },
+  "current_files": [
+    {
+      "filename": "снег.rar",
+      "id": 5030,
+      "local_path": null,
+      "r2_key": null,
+      "size": 2194,
+      "src_url": "https://torrentpier.com/api/resource-versions/384/download?file=5030"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "yes",
+    "installation": "В  архиве",
+    "owner": ""
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1512999326,
+      "file_size": 158314,
+      "filename": "localhost_viewtopic.php_t=1.webp",
+      "height": 1536,
+      "id": 5031,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/localhost_viewtopic-php_t-1-webp.5031/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5035-a488444344bc2767ce3435ac042f01db.jpg?hash=dFMqqNT37e",
+      "width": 2732
+    }
+  ],
+  "description_parsed": "Лёгкий скрипт снега для сайта<br />\n<br />\n<a href=\"https://torrentpier.com/attachments/5031/\"><img src=\"https://torrentpier.com/data/attachments/5/5035-a488444344bc2767ce3435ac042f01db.jpg?hash=dFMqqNT37e\" alt=\"localhost_viewtopic.php_t=1.webp\" /></a>",
+  "download_count": 258,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/264.jpg?1512999433",
+  "id": 264,
+  "is_fileless": null,
+  "last_update": 1512999355,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1512999355,
+  "resource_state": "visible",
+  "slug": "sneg",
+  "tag_line": "Снег для сайта",
+  "tags": [],
+  "title": "Снег",
+  "url_path": "/resources/sneg.264/",
+  "user_id": 7319,
+  "username": "ilyadimid",
+  "version": "2017-12-11",
+  "versions": [
+    {
+      "download_count": 258,
+      "files": [
+        {
+          "filename": "снег.rar",
+          "id": 5030,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2194,
+          "src_url": "https://torrentpier.com/api/resource-versions/384/download?file=5030"
+        }
+      ],
+      "id": 384,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1512999355,
+      "version_state": "visible",
+      "version_string": "2017-12-11",
+      "view_url": "https://torrentpier.com/resources/sneg.264/version/384/"
+    }
+  ],
+  "view_count": 1838
+}

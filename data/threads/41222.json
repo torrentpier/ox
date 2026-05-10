@@ -1,0 +1,69 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 84615,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 19,
+    "title": "Adaptation of modifications to TorrentPier"
+  },
+  "id": 41222,
+  "last_post_date": 1438454765,
+  "node_id": 19,
+  "post_date": 1438454765,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1438454591,
+          "file_size": 79745,
+          "filename": "LotteryCoupons.rar",
+          "height": 0,
+          "id": 4001,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/lotterycoupons-rar.4001/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 84615,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "У кого есть желание адаптировать лотерею купонов под TP  то пожалуйста  сам плагин для WP<br />\n<b>возможности</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">настройка выдачи купонов и призов(как главных так и дополнительных)</li>\n<li data-xf-list-type=\"ul\">сколько купонов выдавать в час</li>\n<li data-xf-list-type=\"ul\">автоматический розыгрыш билетов</li>\n</ul>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1438454765,
+      "user_id": 6346,
+      "user_title": "User",
+      "username": "redzhet"
+    }
+  ],
+  "prefix_id": 48,
+  "reply_count": 0,
+  "slug": "organizacia-loterei",
+  "sticky": false,
+  "tags": [
+    "wordpress",
+    "адаптация",
+    "лотерея"
+  ],
+  "title": "Организация лотереи",
+  "url_path": "/threads/organizacia-loterei.41222/",
+  "user_id": 6346,
+  "username": "redzhet",
+  "view_count": 1392
+}

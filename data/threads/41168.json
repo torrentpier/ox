@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 84013,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 86,
+    "title": "Questions about PHP"
+  },
+  "id": 41168,
+  "last_post_date": 1431890514,
+  "node_id": 86,
+  "post_date": 1431879214,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84013,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "И снова я) в общем опять проблема, даже не знаю как описать) только не давно начал втягиваться в PHP и много вопросов) вообщем дело в том  что на главной странице есть надпись&quot;Наименования товара, цена&quot;:<br />\n<br />\n<img src=\"http://pic.lg.ua/x/16/f0e8e2/7dafbe6f.png\" alt=\"\" /> <br />\n<br />\nКогда я нажимаю на товар и перехожу на страницу непосредственно покупки и описания эта надпись должна исчезать.<br />\n<br />\nНо она у меня остается. Как ее скрыть чтобы ее небыло на странице описания.<br />\n<br />\n<div>Spoiler content hidden.</div><br />\nЗаранее благодарен.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1431879214,
+      "user_id": 5886,
+      "user_title": "User",
+      "username": "founder"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84014,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Это не совсем касается php и так как тем более не относится к движку torrentpier, то советую найти более тематический форум",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1431881971,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84015,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5886/\">@founder</a> ну вообще нужно добавить переменную, которая будет иметь некое значение на странице покупки (например из ссылки какой-нибудь $_POST-параметр берите. И когда параметр равен чему-то - присваивайте style hidden или просто не выводите.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1431890514,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "kak-skryt-detal-na-sajte",
+  "sticky": false,
+  "tags": [],
+  "title": "Как скрыть деталь на сайте",
+  "url_path": "/threads/kak-skryt-detal-na-sajte.41168/",
+  "user_id": 5886,
+  "username": "founder",
+  "view_count": 1718
+}

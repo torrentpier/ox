@@ -1,0 +1,91 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 88047,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41494,
+  "last_post_date": 1469668530,
+  "node_id": 57,
+  "post_date": 1469081380,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88047,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Такой вопрос. Как сделать так, чтобы картинка загруженная как обложка релиза в таблице bb_topics и поле topic_image соответствовала оригиналу из bb_posts_text -&gt; post_text -&gt; [img=right]***[/img]?<br />\n<br />\nПри создании нового релиза в поле *обложка* указываю урл картинки загруженной в галерею трекера далее она и отображается в bb_posts_text, но в bb_topics -&gt; topic_image уже другое по названию файла изображение и сжатое до jpg (у обложек с прозрачным бэкграундом появляется темный фон)",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1469081380,
+      "user_id": 2759,
+      "user_title": "User",
+      "username": "alexsin"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88071,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Ну так у вас дополнение установлено которое туда пишет это. Лента какая-то, как понимаю. В чистом движке такого поведения нет. ЧТо за аддон ставили?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1469655869,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88078,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Стоит портал адаптированный от старого движка (не ТР2). Да ладно, разобрался уже. Вытягиваю оригиналы прег_матчем из бб_пост_текст",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1469668530,
+      "user_id": 2759,
+      "user_title": "User",
+      "username": "alexsin"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "oblozki-relizov",
+  "sticky": false,
+  "tags": [
+    "не стыковка",
+    "обложка",
+    "сжатие"
+  ],
+  "title": "Обложки релизов",
+  "url_path": "/threads/oblozki-relizov.41494/",
+  "user_id": 2759,
+  "username": "alexsin",
+  "view_count": 1227
+}

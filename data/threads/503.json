@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 6176,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 503,
+  "last_post_date": 1322637020,
+  "node_id": 57,
+  "post_date": 1322466506,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 6176,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\">Есть функция, после её выполнения выходит сообщение с текстом: Показ мониторинга включен. Нажимаем &quot;Ок&quot; Окно закрывается и все.... Нужно что бы после нажатия &quot;Ок&quot; пользователь перенаправлялся на страницу. Как это реализовать? Вот сама функция:</span></span></span><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">    function change_show_lgsl(){\n        global $userdata;\n        $val = $this-&gt;request[&#039;value&#039;];\n        DB()-&gt;query(&quot;UPDATE `bb_users` SET `show_lgsl` = &#039;{$val}&#039; WHERE `user_id` ={$userdata[&#039;user_id&#039;]};&quot;);\n        cache_rm_user_sessions($userdata[&#039;user_id&#039;]);\n        $messa = ($val) ? &#039;Показ мониторинга включен&#039; : &#039;Показ мониторинга выключен&#039;;\n        $this-&gt;ajax_die($messa);\n    }</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1322466506,
+      "user_id": 152,
+      "user_title": "User",
+      "username": "levantuev"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 6287,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"php\">header(&quot;location: куда тебе надо&quot;);</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1322601050,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 6316,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"DarkMod\"><pre class=\"xfBb-code\" data-lang=\"php\">header(&quot;location: куда тебе надо&quot;);</pre></blockquote>не, как это сделать с помощью заголовка?<br />\nему нужно после закрытия алерта. у меня даже идей нету.<br />\nтут на js чё то нужно мудрить.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1322636837,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 6317,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вот так решил проблему<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">            &lt;input type=&quot;radio&quot; name=&quot;chat&quot; onclick=&quot;ajax.exec({ action: &#039;change_show_chat&#039;, value: &#039;0&#039;}); setTimeout(&#039;window.location.reload();&#039;, 500); chat_yes();&quot; &lt;!-- IF SHOW_CHAT --&gt;checked=&quot;checked&quot;&lt;!-- ENDIF --&gt;/&gt; Да\n            &lt;input type=&quot;radio&quot; name=&quot;chat&quot; onclick=&quot;ajax.exec({ action: &#039;change_show_chat&#039;, value: &#039;1&#039;}); setTimeout(&#039;window.location.reload();&#039;, 500); chat_no();&quot; &lt;!-- IF not SHOW_CHAT --&gt;checked=&quot;checked&quot;&lt;!-- ENDIF --&gt;/&gt; Нет</pre>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1322637020,
+      "user_id": 152,
+      "user_title": "User",
+      "username": "levantuev"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "perenapravlenie-posle-vypolnenia-funkcii",
+  "sticky": false,
+  "tags": [],
+  "title": "Перенаправление после выполнения функции",
+  "url_path": "/threads/perenapravlenie-posle-vypolnenia-funkcii.503/",
+  "user_id": 152,
+  "username": "levantuev",
+  "view_count": 1476
+}

@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 95542,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42223,
+  "last_post_date": 1712990756,
+  "node_id": 47,
+  "post_date": 1704900914,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95542,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/sortirovka-po-roljam-v-spiske-polzovatelej.281/\" class=\"link link--internal\">Сортировка по ролям в списке пользователей</a> - Добавляет сортировку по ролям (Администратор, Модератор) в список пользователей.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> Добавляет сортировку по ролям (Администратор, Модератор) в список пользователей.</blockquote><br />\n<a href=\"https://torrentpier.com/resources/sortirovka-po-roljam-v-spiske-polzovatelej.281/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1704900914,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96098,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/sortirovka-po-roljam-v-spiske-polzovatelej.281/\" class=\"link link--internal\">Сортировка по ролям в списке пользователей</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/sortirovka-po-roljam-v-spiske-polzovatelej.281/update/512/\" class=\"link link--internal\">Обновление v2.0.0</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Полностью переписан и улучшен код</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/sortirovka-po-roljam-v-spiske-polzovatelej.281/update/512/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1712990756,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "sortirovka-po-rolam-v-spiske-pol-zovatelej",
+  "sticky": false,
+  "tags": [],
+  "title": "Сортировка по ролям в списке пользователей",
+  "url_path": "/threads/sortirovka-po-rolam-v-spiske-pol-zovatelej.42223/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 1021
+}

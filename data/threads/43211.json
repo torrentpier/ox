@@ -1,0 +1,76 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 98262,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 43211,
+  "last_post_date": 1760507839,
+  "node_id": 111,
+  "post_date": 1760507839,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1760507827,
+          "file_size": 6648,
+          "filename": "Cattle.webp",
+          "height": 343,
+          "id": 6589,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/cattle-webp.6589/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6593-07ed368b804a5e0db90108551037f92e.jpg?hash=jFIp-r3dyo",
+          "width": 302
+        }
+      ],
+      "id": 98262,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier Cattle. Версия 2.4.11</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/6589/\" alt=\"Cattle.webp\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/releases/tag/v2.4.11\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.4.11 · torrentpier/torrentpier</a><br />\n<br />\n<b>Чейнджлог:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/compare/v2.4.10...v2.4.11\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Comparing v2.4.10...v2.4.11 · torrentpier/torrentpier</a><br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-rocket-features\"></a>🚀 Features&#8203;<a class=\"hoverLink\" href=\"#-rocket-features\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(log action)</i> Show torrent delete action (<a href=\"https://github.com/torrentpier/torrentpier/pull/2061\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2061</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/f80cad0c6f8606ae3314e6dc4962f027f12798a3\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">f80cad0</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(log action)</i> Show torrent register action (<a href=\"https://github.com/torrentpier/torrentpier/pull/2060\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2060</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/66c01a591f8618e911fd042cc23bf36902de8a38\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">66c01a5</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(view_torrent.php)</i> Added checking auth to download (<a href=\"https://github.com/torrentpier/torrentpier/pull/2067\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2067</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/7e38c5b63cacaec4c974a423fd1a6c0352529fd6\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">7e38c5b</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(vote topic)</i> Improved functionality &amp; implemented caching (<a href=\"https://github.com/torrentpier/torrentpier/pull/2063\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2063</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/e1337ef5bc9cd7741d40cd645059019b5b5b576a\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">e1337ef</a>)</li>\n<li data-xf-list-type=\"ul\">Add clear button for file upload input in posting_attach.tpl (<a href=\"https://github.com/torrentpier/torrentpier/pull/2072\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2072</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/7c6ab0eed4691fa0f1bd29f9e19f956fdb16b43e\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">7c6ab0e</a>)</li>\n<li data-xf-list-type=\"ul\">Prevent robots indexing for private topics (<a href=\"https://github.com/torrentpier/torrentpier/pull/2071\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2071</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/eecfe1a9515034d263a49f84210d3d32430253be\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">eecfe1a</a>)</li>\n<li data-xf-list-type=\"ul\">Added check for frozen torrent in playback_m3u.php (<a href=\"https://github.com/torrentpier/torrentpier/pull/2065\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2065</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/57a9f3f7c67ca5c8db2218269a465bfc2d4644b4\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">57a9f3f</a>)</li>\n<li data-xf-list-type=\"ul\">Add option to use original torrent filenames for downloads (<a href=\"https://github.com/torrentpier/torrentpier/pull/2064\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2064</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/07399fc00df214d1ad863e8a893495ace26ff7fa\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">07399fc</a>)</li>\n<li data-xf-list-type=\"ul\">Added check for demo-mode in admin_robots.php and admin_sitemap.php (<a href=\"https://github.com/torrentpier/torrentpier/pull/2046\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2046</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/dd64236da12f7d76e0b548601c86f38164a71725\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">dd64236</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-bug-bug-fixes\"></a>🐛 Bug Fixes&#8203;<a class=\"hoverLink\" href=\"#-bug-bug-fixes\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(ACP)</i> A non-numeric value encountered for stats (<a href=\"https://github.com/torrentpier/torrentpier/pull/2073\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2073</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/d690447cdbdf7f07de9a539ef752dab69a205390\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">d690447</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(Attach.php)</i> Trying to access array offset on value of type null (<a href=\"https://github.com/torrentpier/torrentpier/pull/2075\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2075</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/abb2b242b75d1acc41e2d901f8b558e90a3b35d7\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">abb2b24</a>)</li>\n<li data-xf-list-type=\"ul\">Prevent showing meta description if defined HAS_DIED (<a href=\"https://github.com/torrentpier/torrentpier/pull/2070\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2070</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/3eba11f26b3432ef7446de5bc938cbcbfa4932f5\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">3eba11f</a>)</li>\n<li data-xf-list-type=\"ul\">Make Ajax::$action property nullable to handle missing POST parameter (<a href=\"https://github.com/torrentpier/torrentpier/pull/2066\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2066</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/efd85eef4ad69e5b53be3f3d0ea75d267d0b664c\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">efd85ee</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-package-dependencies\"></a>📦 Dependencies&#8203;<a class=\"hoverLink\" href=\"#-package-dependencies\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\">Replace belomaxorka/captcha with gregwar/captcha (<a href=\"https://github.com/torrentpier/torrentpier/pull/2069\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2069</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/d12e6ba922d38c5c24380c58c037d405af5c38c9\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">d12e6ba</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-tractor-refactor\"></a>🚜 Refactor&#8203;<a class=\"hoverLink\" href=\"#-tractor-refactor\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(admin)</i> Remove redundant dir and lang attributes from html tag (<a href=\"https://github.com/torrentpier/torrentpier/pull/2051\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2051</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/bb992fd81b0fede511ab566fdc7bf4d25b924ae2\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">bb992fd</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-gear-miscellaneous\"></a>⚙️ Miscellaneous&#8203;<a class=\"hoverLink\" href=\"#-gear-miscellaneous\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\">Some minor improvements (<a href=\"https://github.com/torrentpier/torrentpier/pull/2076\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2076</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/5ff296f83be87a0cc5607fd352d62321819b0e03\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">5ff296f</a>)</li>\n<li data-xf-list-type=\"ul\">Some minor improvements (<a href=\"https://github.com/torrentpier/torrentpier/pull/2068\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2068</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/e3eb22e2d8d7b3bd2413cfcb1badfbd81ee9dc54\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">e3eb22e</a>)</li>\n<li data-xf-list-type=\"ul\">Added pull request template &amp; updated workflow (<a href=\"https://github.com/torrentpier/torrentpier/pull/2052\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2052</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/a863a619419881e831a6556fa5e77dae746ff031\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">a863a61</a>)</li>\n</ul>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1760507839,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-cattle-versia-2-4-11",
+  "sticky": false,
+  "tags": [
+    "cattle",
+    "v2.4",
+    "новая версия",
+    "релиз",
+    "ченжлог"
+  ],
+  "title": "TorrentPier Cattle. Версия 2.4.11",
+  "url_path": "/threads/torrentpier-cattle-versia-2-4-11.43211/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 305
+}

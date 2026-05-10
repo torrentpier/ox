@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 71942,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 33185,
+  "last_post_date": 1421207916,
+  "node_id": 57,
+  "post_date": 1421200210,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71942,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "подскажите torrentpier 2 если ставить делать торрент надо какойто парсер-граббер-анонсер искать или встроенный есть?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1421200210,
+      "user_id": 5900,
+      "user_title": "User",
+      "username": "Vervolfer"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71943,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 1421208018,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Vervolfer\">подскажите torrentpier 2 если ставить делать торрент надо какойто парсер-граббер-анонсер искать или встроенный есть?</blockquote>Чтобы сделать торрент, а точнее создать его нужно любой торрент-клиент, сам файл, немного терпения и вуа-ля. Не путайте понятия, торрент это формат файла<br />\n<br />\nА по делу, насколько я понял вопрос, нет, в движке нет встроенных парсеров, граберов<br />\nАннонсер есть",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1421207916,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "est-li-vstroennyj-parser",
+  "sticky": false,
+  "tags": [],
+  "title": "Есть ли встроенный парсер",
+  "url_path": "/threads/est-li-vstroennyj-parser.33185/",
+  "user_id": 5900,
+  "username": "Vervolfer",
+  "view_count": 1202
+}

@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 45367,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 15530,
+  "last_post_date": 1380167376,
+  "node_id": 57,
+  "post_date": 1379951793,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 45367,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ищю переменную &quot;THIS_AVATAR&quot;, подскажите где записывается её значение?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1379951793,
+      "user_id": 4615,
+      "user_title": "User",
+      "username": "\"8bit\""
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 45374,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Где она вызывается то?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1379956498,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 45375,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"dimka3210\">Где она вызывается то?</blockquote> <br />\nВ &#039;page_header.tpl&#039;<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;!-- IF SHOW_BT_USERDATA --&gt;\n&lt;div class=&quot;slide-out-div&quot; style=&quot;margin:-21px -18px 0 0;&quot;&gt;\n  &lt;a class=&quot;handle&quot; href=&quot;#&quot; title=&quot;Панель пользователя&quot;&gt;&lt;/a&gt;\n&lt;div style=&quot;margin:10px 0 0 0;&quot;&gt;\n    &lt;table&gt;\n        &lt;div style=&quot;margin:-16px -22px 0 0;padding:32px 38px 0 23px&quot; class=&quot;text-center floatL&quot;&gt;{THIS_AVATAR}&lt;/div&gt;\n        &lt;tr&gt;&lt;td&gt;{L_USER_RATIO}&lt;/td&gt;&lt;td&gt;&lt;!-- IF DOWN_TOTAL_BYTES gt MIN_DL_BYTES --&gt;&lt;b&gt;{USER_RATIO}&lt;/b&gt;&lt;!-- ELSE --&gt;&lt;b&gt;{L_NONE}&lt;/b&gt; (DL &lt; {MIN_DL_FOR_RATIO})&lt;!-- ENDIF --&gt;&lt;/td&gt;&lt;/tr&gt;\n        &lt;tr&gt;&lt;td&gt;{L_DOWNLOADED}&lt;/td&gt;&lt;td class=&quot;leechmed&quot;&gt;&lt;b&gt;{DOWN_TOTAL}&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\n        &lt;tr&gt;&lt;td&gt;{L_UPLOADED}&lt;/td&gt;&lt;td class=&quot;seedmed&quot;&gt;&lt;b&gt;{UP_TOTAL}&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;\n        &lt;tr&gt;&lt;td&gt;{L_RELEASED}&lt;/td&gt;&lt;td class=&quot;seedmed&quot;&gt;{RELEASED}&lt;/td&gt;&lt;/tr&gt;\n        &lt;tr&gt;&lt;td&gt;{L_BONUS}&lt;/td&gt;&lt;td class=&quot;seedmed&quot;&gt;{UP_BONUS}&lt;/td&gt;&lt;/tr&gt;\n        &lt;tr&gt;&lt;td&gt;{L_SEED_BONUS}&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;profile.php?mode=bonus&quot;&gt;&lt;span class=&quot;points bold&quot;&gt;{POINTS}&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\n    &lt;/table&gt;\n&lt;/div&gt;\n&lt;/div&gt;\n&lt;!-- ENDIF --&gt;</pre>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1379956718,
+      "user_id": 4615,
+      "user_title": "User",
+      "username": "\"8bit\""
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 45380,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "/includes/page_header.php<br />\nСтрока ~225<br />\n    &#039;THIS_AVATAR&#039;                   =&gt; get_avatar($userdata[&#039;user_avatar&#039;], $userdata[&#039;user_avatar_type&#039;], !bf($userdata[&#039;user_opt&#039;], &#039;user_opt&#039;, &#039;allow_avatar&#039;)),",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1379961203,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 45724,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>&quot;8bit&quot;</b>, а что глобальный поиск отменили по файлам?",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1380167376,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "gde-ob-avlautsa-peremennye",
+  "sticky": false,
+  "tags": [],
+  "title": "Где объявляются переменные ?",
+  "url_path": "/threads/gde-ob-avlautsa-peremennye.15530/",
+  "user_id": 4615,
+  "username": "\"8bit\"",
+  "view_count": 1250
+}

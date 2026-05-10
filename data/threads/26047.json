@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61628,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 26047,
+  "last_post_date": 1406277237,
+  "node_id": 57,
+  "post_date": 1406272420,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61628,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет. Раньше ничем подобным не занимался, поэтому вопросы могут показаться вам странными, уж простите. Форум, ридми и вот это всё я почитал.<br />\n <br />\nВ порядке эксперимента поставил (TorrentPier version: 2.6 (RC) [R591]) локально на XP (NimpCP 2.4). Конфиг изменил, права на файлы назначил. MySql работает, под админом на форум заходит.<br />\n <br />\nСтолкнулся вот с чем:<br />\n1. При создании нового аккаунта ( через админку или регистрацию) ругается на MySql. Немного поковырял, понял что проблема в полях &quot;user_sig&quot; и &quot;avatar_ext_id&quot;. Если им разрешить NULL то проблема снимается, и регистрация проходит. Собтвенно вопрос: это нормально или неправильно прошла инсталляция?<br />\n2. Независимо от пункта 1, не создаются новые посты. Ни из под предустановленного admin&#039;a, ни из под нового юзера. Если попробовать ответить на &quot;дефолтный&quot; пост, то выдаёт &quot;Темы, которую вы запросили, не существует.&quot; Если создать новый топик, то сам топик создаётся, а текст - нет. С ошибкой &quot;Error in posting&quot;.<br />\n <br />\nСразу уточню: крон не трогал, в админке посмотрел - работает. Tidy не установлен (и отключил в конфиге). Это же не может быть причной таких ошибок или я ошибаюсь?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1406272420,
+      "user_id": 5477,
+      "user_title": "User",
+      "username": "wartex"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61629,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "1. если говорить в целом, то это неправильно, если смотреть на структуру базы данных и Ваш конфиг, то работает правильно, как бы странно это не звучало. о проблеме вкурсе. до R600 постараюсь переделать структуру дампа<br />\n<br />\nрешение:<br />\nв конфиге MySQL удалите следующую запись и рестартаните NIMP<br />\n<pre class=\"xfBb-code\" data-lang=\"\">STRICT_TRANS_TABLES,</pre>со вторым пунктом проблема должна решиться сама собой после внесения изменений в конфиг MySQL",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1406275528,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61630,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо, помогло.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1406277237,
+      "user_id": 5477,
+      "user_title": "User",
+      "username": "wartex"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "ustanovka-s-nula-problemy",
+  "sticky": false,
+  "tags": [],
+  "title": "Установка с нуля. Проблемы.",
+  "url_path": "/threads/ustanovka-s-nula-problemy.26047/",
+  "user_id": 5477,
+  "username": "wartex",
+  "view_count": 1232
+}

@@ -1,0 +1,125 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 93303,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 41920,
+  "last_post_date": 1530010088,
+  "node_id": 110,
+  "post_date": 1529869080,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1529867915,
+          "file_size": 6046,
+          "filename": "1529867914670.webp",
+          "height": 343,
+          "id": 5153,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1529867914670-webp.5153/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5157-2bcb3ae4c17dedad22655842ac524756.jpg?hash=aVVJ-TSyuU",
+          "width": 302
+        }
+      ],
+      "id": 93303,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\n<br />\n26 июня 2018 года состоится релиз новой ветки движка 2.3 с кодовым названием <b>TorrentPier Bison</b>. Как и было обещано <a href=\"https://torrentpier.com/forum/threads/reliz-torrentpier-aurochs-versija-2-2-0.41745/\" class=\"link link--internal\">во время релиза TorrentPier Aurochs</a> - это первая версия, в которой мы поддерживаем только несколько последних актуальных версий PHP. В данном случае - 7.1 / 7.2 / 7.3. На прочих устаревших версиях PHP движок работать больше не будет. Это то решение, которое позволит нам развивать проект в разрезе ускорения его работы не смотря на устаревшую кодовую часть. Большая часть хостингов уже предлагает актуальные версии PHP - настало время обновиться для тех, кто этого еще не сделал.<br />\n<br />\nВ версии, которая выйдет 26 июня (2.3.0), большая часть изменений будет направлена на увеличение стабильности и закрытие практически всех багов, которые описаны на форуме в соответствующем разделе. Начиная с 2.3.1 начнется переделка каждого структурного компонента, добавление новых возможностей, интеграция популярных модов. Версия 2.x будет продолжать независимо развиваться, будучи базированной на текущей версии движка без прямого использования фреймворка. Параллельно с ней уже около года идет разработка принципиально новой версии движка на Laravel, так называемой версии 3.x. Различия будут так велики, что у данной версии будет собственный репозиторий, собственный логотип и собственное название.<br />\n<br />\nТаким образом, мы приходим к следующему разделению:<br />\n<ul>\n<li data-xf-list-type=\"ul\"><b>TorrentPier (версии 2.x)</b> - классический торрент-движок с большим упором в форумную часть, примерно похожий на то, что есть сейчас, но постепенно обновляемый с целью достижения стабильной и быстрой работы.</li>\n<li data-xf-list-type=\"ul\"><b>Неанонсированный проект (версии 3.x)</b> - современный торрент-движок с большим упором в социальную и мультимедийную часть, написанный с нуля на Laravel, где мы попробуем реализовать все самые смелые задумки.</li>\n</ul>Какой из двух проектов окажется более жизнеспособен - покажет время. Дата релиза проекта на Laravel - конец 4 квартала 2018 года.<br />\n<br />\nНовая цветовая версия нашего логотипа для TorrentPier Bison - ниже:<br />\n<br />\n<div style=\"text-align: center\"><img src=\"https://torrentpier.com/attachments/5153/\" alt=\"1529867914670.webp\" />&#8203;</div>Спасибо за внимание.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1529869080,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93304,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Это просто замечательно! Умницы и умники! Я вдохновлён действиями <a href=\"https://torrentpier.com/members/1/\">Exile</a>! Какой же он молодчина! Столько лет и находит в себе силы объединять, создавать, поддерживать! Отлично!👍👍👍",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1529874378,
+      "user_id": 532,
+      "user_title": "User",
+      "username": "resonansER"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93312,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вот это уже по взрослому, ждем",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1530008941,
+      "user_id": 1338,
+      "user_title": "User",
+      "username": "Alex39"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93313,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Если я правильно понял на этом инструменте? <br />\n<a href=\"https://laravel.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Laravel</a> тогда это будет супер трекер или форум.<br />\nРебята вам много предстоит труда.<br />\nНо это будет очень круто, остальные PHP,PHPBB3<br />\nКурят в сторонке далеко, вы супер ГУРУ.<br />\n👍👍👍😎",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1530010088,
+      "user_id": 8410,
+      "user_title": "User",
+      "username": "Gaus111"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "torrentpier-bison-i-data-reliza-novyj-proekt-na-laravel",
+  "sticky": false,
+  "tags": [
+    "bison",
+    "laravel",
+    "дата релиза",
+    "кодовые названия",
+    "новая версия",
+    "релиз"
+  ],
+  "title": "TorrentPier Bison и дата релиза. Новый проект на Laravel",
+  "url_path": "/threads/torrentpier-bison-i-data-reliza-novyj-proekt-na-laravel.41920/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 2486
+}

@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 57955,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25646,
+  "last_post_date": 1390082218,
+  "node_id": 111,
+  "post_date": 1390081957,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57955,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Ссылка</b>:<br />\n<a href=\"http://code.google.com/p/torrentpier2/source/detail?r=561\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"> http://code.google.com/p/torrentpier2/source/detail?r=561</a><br />\n<br />\n<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 561: Фикс критичного бага с обновлением времени сообщений из r506 (спасибо PheRum); ф</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">glix08</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/install/sql/mysql.sql \n    Modify    /trunk/upload/admin/admin_disallow.php \n    Modify    /trunk/upload/admin/admin_forums.php \n    Modify    /trunk/upload/admin/admin_groups.php \n    Modify    /trunk/upload/admin/admin_mass_email.php \n    Modify    /trunk/upload/admin/admin_ranks.php \n    Modify    /trunk/upload/admin/admin_smilies.php \n    Modify    /trunk/upload/admin/admin_topic_templates.php \n    Modify    /trunk/upload/admin/admin_ug_auth.php \n    Modify    /trunk/upload/admin/admin_words.php \n    Modify    /trunk/upload/admin/index.php \n    Modify    /trunk/upload/admin/pagestart.php \n    Modify    /trunk/upload/admin/xs_cache.php \n    Modify    /trunk/upload/admin/xs_config.php \n    Modify    /trunk/upload/admin/xs_frameset.php \n    Modify    /trunk/upload/admin/xs_index.php \n    Modify    /trunk/upload/ajax/change_tor_status.php \n    Modify    /trunk/upload/ajax/index_data.php \n    Modify    /trunk/upload/ajax/manage_user.php \n    Modify    /trunk/upload/ajax/mod_action.php \n    Modify    /trunk/upload/ajax/posts.php \n    Modify    /trunk/upload/ajax/topic_tpl.php \n    Modify    /trunk/upload/ajax/user_register.php \n    Modify    /trunk/upload/ajax/view_profile.php \n    Modify    /trunk/upload/ajax/view_torrent.php \n    Modify    /trunk/upload/bt/includes/init_tr.php \n    Modify    /trunk/upload/config.php \n    Modify    /trunk/upload/develop/benchmark/timer.php \n    Modify    /trunk/upload/develop/dbg_config.php \n    Modify    /trunk/upload/develop/error_handler.php \n    Modify    /trunk/upload/develop/functions_debug.php \n    Modify    /trunk/upload/develop/init_debug.php \n    Modify    /trunk/upload/develop/profiler/profiler.css \n    Modify    /trunk/upload/develop/profiler/profiler.php \n    Modify    /trunk/upload/develop/profiler/profiler_dbg.php \n    Modify    /trunk/upload/includes/captcha/captcha.php \n    Modify    /trunk/upload/includes/cron/jobs/bb_maintenance.php \n    Modify    /trunk/upload/includes/cron/jobs/cache_gc.php \n    Modify    /trunk/upload/includes/cron/jobs/db_backup.php \n    Modify    /trunk/upload/includes/cron/jobs/prune_inactive_users.php \n    Modify    /trunk/upload/includes/cron/jobs/tr_cleanup_and_dlstat.php \n    Modify    /trunk/upload/includes/cron/jobs/tr_complete_count.php \n    Modify    /trunk/upload/includes/cron/jobs/tr_maintenance.php \n    Modify    /trunk/upload/includes/cron/jobs/tr_make_snapshot.php \n    Modify    /trunk/upload/includes/cron/jobs/tr_update_seeder_last_seen.php \n    Modify    /trunk/upload/includes/datastore/build_attach_extensions.php \n    Modify    /trunk/upload/includes/datastore/build_cat_forums.php \n    Modify    /trunk/upload/includes/datastore/build_ranks.php \n    Modify    /trunk/upload/includes/datastore/build_smilies.php \n    Modify    /trunk/upload/includes/functions.php \n    Modify    /trunk/upload/includes/functions_post.php \n    Modify    /trunk/upload/includes/functions_selects.php \n    Modify    /trunk/upload/includes/functions_validate.php \n    Modify    /trunk/upload/includes/init_bb.php \n    Modify    /trunk/upload/includes/online_userlist.php \n    Modify    /trunk/upload/includes/page_footer.php \n    Modify    /trunk/upload/includes/page_header.php \n    Modify    /trunk/upload/includes/posting_tpl.php \n    Modify    /trunk/upload/includes/sphinxapi.php \n    Modify    /trunk/upload/includes/topic_templates/video_guide.php \n    Modify    /trunk/upload/includes/ucp/usercp_attachcp.php \n    Modify    /trunk/upload/includes/ucp/usercp_bonus.php \n    Modify    /trunk/upload/includes/ucp/usercp_email.php \n    Modify    /trunk/upload/includes/ucp/usercp_sendpasswd.php \n    Modify    /trunk/upload/index.php \n    Modify    /trunk/upload/language/lang_english/lang_admin.php \n    Modify    /trunk/upload/language/lang_english/lang_callseed.php \n    Modify    /trunk/upload/language/lang_russian/lang_admin.php \n    Modify    /trunk/upload/language/lang_russian/lang_admin_cron.php \n    Modify    /trunk/upload/language/lang_russian/lang_callseed.php \n    Modify    /trunk/upload/language/lang_russian/lang_faq_attach.php \n    Modify    /trunk/upload/login.php \n    Modify    /trunk/upload/memberlist.php \n    Modify    /trunk/upload/misc.php \n    Modify    /trunk/upload/misc/html/copyright_holders.html \n    Modify    /trunk/upload/misc/html/not_found.html \n    Modify    /trunk/upload/misc/html/user_agreement.html \n    Modify    /trunk/upload/privmsg.php \n    Modify    /trunk/upload/search.php \n    Modify    /trunk/upload/stats/tracker.php \n    Modify    /trunk/upload/templates/default/page_header.tpl \n    Modify    /trunk/upload/viewforum.php \n    Modify    /trunk/upload/viewonline.php \n\nФикс критичного бага с обновлением времени сообщений из r506 (спасибо PheRum); фикс ненулевого числа сообщений у гостя в пустой базе; фикс вывода блока с новостями трекера, в случае если они отключены (спасибо greencell); удаление пустых строк в конце всех .php-файлов; пара мелочей на будущие релизы.</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1390081957,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57957,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Тестирование всячески приветствуется. Ревизия размещена на нашей демо-версии: <a href=\"http://demo.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://demo.torrentpier.com/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1390082218,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "revision-561-fiks-kriticnogo-baga-s-obnovleniem-vremeni-soobsenij-iz-r506-spasibo-pherum-f",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 561: Фикс критичного бага с обновлением времени сообщений из r506 (спасибо PheRum); ф",
+  "url_path": "/threads/revision-561-fiks-kriticnogo-baga-s-obnovleniem-vremeni-soobsenij-iz-r506-spasibo-pherum-f.25646/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 1042
+}

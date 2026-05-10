@@ -1,0 +1,129 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 38150,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 24,
+    "title": "Video tutorials on TorrentPier"
+  },
+  "id": 10293,
+  "last_post_date": 1542509727,
+  "node_id": 24,
+  "post_date": 1374917933,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 38150,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "[GALLERY=media, 7]Шаблонизатор TorrentPier от Exile опубликован 15 янв 2015 в 12:32[/GALLERY]",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1374917933,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 38153,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "За навального +1 🙂<br />\nPS Дим, можешь исходники дать которые писал?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1374921790,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1374992941,
+          "file_size": 970,
+          "filename": "team.zip",
+          "height": 0,
+          "id": 2154,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/team-zip.2154/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 38236,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Вот, держи.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1374992954,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 38256,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"dimka3210\">Вот, держи.</blockquote> <br />\nБольшое спасибо!",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1375004984,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93774,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте.Видео не доступно по ссылке!Не могли бы Вы перезалить его заново,либо подробнее написать как ввести новые блоки,которых нет в стандартных пунктах шаблонизатора и добавить их в вновь создаваемый шаблон!",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1542509727,
+      "user_id": 7918,
+      "user_title": "User",
+      "username": "IVAN@190282"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "video-faq-uslovia-i-bloki-v-sablonah",
+  "sticky": false,
+  "tags": [],
+  "title": "Видео FAQ - Условия и блоки в шаблонах",
+  "url_path": "/threads/video-faq-uslovia-i-bloki-v-sablonah.10293/",
+  "user_id": 19,
+  "username": "dimka3210",
+  "view_count": 2635
+}

@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 3380,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 310,
+  "last_post_date": 1317290297,
+  "node_id": 57,
+  "post_date": 1317290297,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 3380,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В реализации UNIX-сокетов во всех поддерживаемых версиях FreeBSD (7.x, 8.x и 9.x) найдена серьезная уязвимость, позволяющая локальному пользователю поднять свои привилегии в системе (запустить код с правами root), выйти за пределы изолированного Jail-окружения и обойти различные механизмы ограничения доступа. Обходных путей блокирования уязвимостей не существует. Для устранения уязвимости требуется установка бинарных обновлений или применение <a href=\"http://security.freebsd.org/patches/SA-11:05/unix.patch\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">патча</a> с последующей пересборкой ядра (патч подходит и для уже не поддерживаемой ветки FreeBSD 6.x, которая также подвержена уязвимости).<br />\nПроблема присутствует в реализации Unix-сокетов, которые используют единые с сетевыми сокетами системные вызовы, но используют в качестве аргумента путь к локальному файлу, вместо IP-адреса и номера порта. Проблема вызвана тем, что при прикреплении Unix-сокета к определённой точке файловой системы с использованием системного вызова bind, не производится проверка размера файлового пути. В дальнейшем, при возвращении созданного адреса через другие системные вызовы, он копируется в буфер фиксированной длины. Манипулируя специально сформированным файловым путём при создании Unix-сокета, злоумышленник может инициировать переполнение буфера и выполнить собственный код на уровне ядра системы.<br />\nКроме того, во FreeBSD одновременно устранены две менее опасные уязвимости:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Возможность бесконечного зацикливания или выполнения кода при распаковке командами compress и gzip специально оформленных поврежденных архивов. Проблема проявляется во всех поддерживаемых версиях FreeBSD и решается только наложением патча. Дополнение: корни проблемы тянутся ещё со времен 4.3BSD (1980-е годы), судя по всему уязвимость затрагивает не только gzip, но и многие другие продукты, в которых используется LZW-сжатие. Например, проблема уже устранена в ncompress, libarchive, OpenBSD compress, freetype, libXfont, busybox, mailx. Проблема также присутствовала в коде декодирования изображений GIF из состава Tk, gd, gdk-pixbuf, CUPS, GIMP, XPCE и других проектов;</li>\n<li data-xf-list-type=\"ul\">Удаленный вызов отказа в обслуживании для DNS-сервера, работающего на базе программы named (BIND 9) из базовой поставки. Отправив специальный запрос, атакующий может инициировать крах серверного процесса. Проблема проявляется только в ветке 8.2-STABLE, начиная с 28 мая 2011 года. Данная проблема была исправлена в BIND 9.6.x, 9.7.x и 9.8.x ещё 5 июля.</li>\n</ul> <br />\nИсточник: <a href=\"http://www.opennet.ru/opennews/art.shtml?num=31887\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://www.opennet.ru/opennews/art.shtml?num=31887</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1317290297,
+      "user_id": 82,
+      "user_title": "User",
+      "username": "vanechek"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "ser-eznaa-lokal-naa-uazvimost-vo-freebsd",
+  "sticky": false,
+  "tags": [],
+  "title": "Серьезная локальная уязвимость во FreeBSD",
+  "url_path": "/threads/ser-eznaa-lokal-naa-uazvimost-vo-freebsd.310/",
+  "user_id": 82,
+  "username": "vanechek",
+  "view_count": 1450
+}

@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 57992,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25653,
+  "last_post_date": 1390167354,
+  "node_id": 111,
+  "post_date": 1390167354,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57992,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Ссылка</b>:<br />\n<a href=\"http://code.google.com/p/torrentpier2/source/detail?r=563\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"> http://code.google.com/p/torrentpier2/source/detail?r=563</a><br />\n<br />\n<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 563: Перенос оставшихся пользовательских функций из ajax.php в отдельные .php-файлы.</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">glix08</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/upload/ajax.php \n    Add    /trunk/upload/ajax/change_user_opt.php \n    Add    /trunk/upload/ajax/change_user_rank.php \n    Add    /trunk/upload/ajax/gen_passkey.php \n    Add    /trunk/upload/ajax/group_membership.php \n    Add    /trunk/upload/ajax/post_mod_comment.php \n    Modify    /trunk/upload/config.php \n\nПеренос оставшихся пользовательских функций из ajax.php в отдельные .php-файлы.</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1390167354,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "revision-563-perenos-ostavsihsa-pol-zovatel-skih-funkcij-iz-ajax-php-v-otdel-nye-php-fajly",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 563: Перенос оставшихся пользовательских функций из ajax.php в отдельные .php-файлы.",
+  "url_path": "/threads/revision-563-perenos-ostavsihsa-pol-zovatel-skih-funkcij-iz-ajax-php-v-otdel-nye-php-fajly.25653/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 934
+}

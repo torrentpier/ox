@@ -1,0 +1,111 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "Thumbnail Image.zip",
+      "id": 5495,
+      "local_path": null,
+      "r2_key": null,
+      "size": 27044,
+      "src_url": "https://torrentpier.com/api/resource-versions/394/download?file=5495"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=Инструкция]\n[PHP]\n----------[ ЗАГРУЗИТЬ ]--------------------------------------------------------------------------\n\nПапку library\n\n----------[ ОТКРЫТЬ ]----------------------------------------------------------------------------\n\nlibrary/includes/bbcode.php\n\n----------[ НАЙТИ ]------------------------------------------------------------------------------\n\n// Image\n\n----------[ ВСТАВИТЬ ДО ]------------------------------------------------------------------------\n\n// Thumb\n$bbcode_tpl['thumb'] = <<<HTML\n    <a href=\"\\\\1\" data-rel=\"lightcase:myCollection:slideshow\"><img src=\"\\\\1\" class=\"light_img\" title=\"Клик для увеличения\"></a>\nHTML;\n\n----------[ НАЙТИ ]------------------------------------------------------------------------------\n\n            '#\\[font=\"([\\w\\- \\']+)\"\\]#isu'                           => '<span style=\"font-family: $1;\">',\n\n----------[ ВСТАВИТЬ ПОСЛЕ ]---------------------------------------------------------------------\n\n            \"#\\[thumb\\]($img_exp)\\[/thumb\\]\\s*#i\"                      => $tpl['thumb'],\n            \n----------[ ОТКРЫТЬ ]----------------------------------------------------------------------------\n\nstyles/templates/default/posting_editor.tpl\n\n----------[ НАЙТИ ]------------------------------------------------------------------------------\n\n<input type=\"button\" value=\"{L_SPOILER}\" name=\"codeSpoiler\" title=\"{L_SPOILER}\" style=\"width: 65px;\" />\n\n----------[ ВСТАВИТЬ ПОСЛЕ ]---------------------------------------------------------------------\n\n<input type=\"button\" value=\"{L_THUMB}\" name=\"codeThumb\" title=\"{L_THUMB_TITLE}\" />\n\n----------[ НАЙТИ ]------------------------------------------------------------------------------\n\nbbcode.addTag(\"codeSpoiler\", \"spoiler\", null, \"\",  ctrl);\n\n----------[ ВСТАВИТЬ ПОСЛЕ ]---------------------------------------------------------------------\n\nbbcode.addTag(\"codeThumb\", \"thumb\", null, \"\", ctrl);    \n\n----------[ ОТКРЫТЬ ]----------------------------------------------------------------------------\n\nlibrary/language/ru/main.php\n\n----------[ НАЙТИ ]------------------------------------------------------------------------------\n\n$lang['URL_TITLE'] = 'Ссылка (Ctrl+W)';\n\n----------[ ВСТАВИТЬ ПОСЛЕ ]---------------------------------------------------------------------\n\n$lang['THUMB'] = 'Миниатюра';\n$lang['THUMB_TITLE'] = 'Миниатюра: [thumb]http://image_url[/thumb]';\n\n----------[ ОТКРЫТЬ ]----------------------------------------------------------------------------\n\nlibrary/language/en/main.php\n\n----------[ НАЙТИ ]------------------------------------------------------------------------------\n\n$lang['URL_TITLE'] = 'Insert URL: [url]http://url[/url] or [url=http://url]URL text[/url] (Ctrl+W)';\n\n----------[ ВСТАВИТЬ ПОСЛЕ ]---------------------------------------------------------------------\n\n$lang['THUMB'] = 'Thumb';\n$lang['THUMB_TITLE'] = 'Thumbnail image: [thumb]http://image_url[/thumb]';\n\n----------[ ОТКРЫТЬ ]----------------------------------------------------------------------------\n\nstyles/templates/default/page_header.tpl\n\n----------[ НАЙТИ ]------------------------------------------------------------------------------\n\n<!-- IF INCLUDE_BBCODE_JS -->\n\n----------[ ВСТАВИТЬ ДО ]------------------------------------------------------------------------\n\n<link rel=\"stylesheet\" type=\"text/css\" href=\"{SITE_URL}library/lightcase/css/lightcase.css\" /> \n<script type=\"text/javascript\" src=\"{SITE_URL}library/lightcase/js/lightcase.js\"></script> \n<script type=\"text/javascript\">\n    jQuery(document).ready(function($) {\n        $('a[data-rel^=lightcase]').lightcase();\n    });\n</script>\n\n----------[ ОТКРЫТЬ ]----------------------------------------------------------------------------\n\nstyles/templates/default/css/main.css\n\n----------[ В КОНЕЦ ВСТАВИТЬ ]-------------------------------------------------------------------\n\n[class*=\"lightcase-icon-\"]::before\n{\n  text-decoration: none;\n}\n.light_img\n{\n  max-width: 200px;\n  max-height: 100px;\n  margin: 5px;\n}\n----------[ СОХРАНИТЬ ВСЕ ]-----------------------------------------------------------------------\n[/PHP]\n[/SPOILER]",
+    "owner": "Skaiman",
+    "sql": "no",
+    "was_paid": "yes"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание: </b>добавляет BB-код уменьшенного изображения, при клике по которому открывается просмотр  в режиме слайдшоу с затемнением.<br />\nДля реализации использован <a href=\"https://www.jqueryscript.net/lightbox/Versatile-Responsive-jQuery-LightBox-Plugin-lightcase-js.html\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">jQuery Lightbox Plugin</a>.<br />\n<br />\n<b>Пример использования:</b> <pre class=\"xfBb-code\" data-lang=\"\">[thumb]http://i6.5cm.ru/i/hQX1.jpg[/thumb]</pre>",
+  "download_count": 955,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/238.jpg?1434291894",
+  "id": 238,
+  "is_fileless": null,
+  "last_update": 1692120841,
+  "rating_avg": 5,
+  "rating_count": 3,
+  "resource_date": 1434280142,
+  "resource_state": "visible",
+  "slug": "bb-kod-thumbnail-image",
+  "tag_line": "Добавление слайдшоу для изображений.",
+  "tags": [],
+  "title": "BB-код: Thumbnail Image",
+  "url_path": "/resources/bb-kod-thumbnail-image.238/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "1.0.2",
+  "versions": [
+    {
+      "download_count": 475,
+      "files": [
+        {
+          "filename": "Thumbnail Image.zip",
+          "id": 5495,
+          "local_path": null,
+          "r2_key": null,
+          "size": 27044,
+          "src_url": "https://torrentpier.com/api/resource-versions/394/download?file=5495"
+        }
+      ],
+      "id": 394,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1692120841,
+      "version_state": "visible",
+      "version_string": "1.0.2",
+      "view_url": "https://torrentpier.com/resources/bb-kod-thumbnail-image.238/version/394/"
+    },
+    {
+      "download_count": 288,
+      "files": [
+        {
+          "filename": "Thumbnail image 1.0.0 fix.zip",
+          "id": 3964,
+          "local_path": null,
+          "r2_key": null,
+          "size": 31687,
+          "src_url": "https://torrentpier.com/api/resource-versions/347/download?file=3964"
+        }
+      ],
+      "id": 347,
+      "rating_avg": 5,
+      "rating_count": 3,
+      "release_date": 1434363280,
+      "version_state": "visible",
+      "version_string": "1.0.1",
+      "view_url": "https://torrentpier.com/resources/bb-kod-thumbnail-image.238/version/347/"
+    },
+    {
+      "download_count": 200,
+      "files": [
+        {
+          "filename": "Thumbnail image 1.0.0.zip",
+          "id": 3951,
+          "local_path": null,
+          "r2_key": null,
+          "size": 31682,
+          "src_url": "https://torrentpier.com/api/resource-versions/346/download?file=3951"
+        }
+      ],
+      "id": 346,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1434280142,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/bb-kod-thumbnail-image.238/version/346/"
+    }
+  ],
+  "view_count": 3517
+}

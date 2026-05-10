@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 62018,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 26111,
+  "last_post_date": 1408626641,
+  "node_id": 57,
+  "post_date": 1408623142,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62018,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ошибка ERR_CONTENT_DECODING_FAILED <br />\nВсе сделал по инструкции что не так не понимаю не куда не заходит везде страница не доступна.<br />\nБазу залил данные настроил <br />\nЧто делать ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1408623142,
+      "user_id": 5519,
+      "user_title": "User",
+      "username": "Angarsk3"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62019,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Вот эту строку https://github.com/torrentpier/torrentpier/blob/master/upload/config.php#L153 приведите к такому виду: <pre class=\"xfBb-code\" data-lang=\"php\">$bb_cfg[&#039;gzip_compress&#039;] = false;</pre>А вообще, у вас хостер бесплатный что ли?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1408624078,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62021,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Да нет VDS может в PHP что то исправить или модуля не хватает ? <br />\nЭто получается <span style=\"font-size: 13px\"><span style=\"font-family: 'monospace'\"><span style=\"color: #dd0000\">gzip отключил . </span></span></span>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1408624895,
+      "user_id": 5519,
+      "user_title": "User",
+      "username": "Angarsk3"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62023,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Да, отключите его. Без него работает?",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1408626641,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "osibka-err_content_decoding_failed",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка ERR_CONTENT_DECODING_FAILED",
+  "url_path": "/threads/osibka-err_content_decoding_failed.26111/",
+  "user_id": 5519,
+  "username": "Angarsk3",
+  "view_count": 2873
+}

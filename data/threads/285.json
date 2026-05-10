@@ -1,0 +1,118 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 3085,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 47,
+        "title": "Modifications for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 43,
+    "title": "Modifications for TorrentPier (archive)"
+  },
+  "id": 285,
+  "last_post_date": 1338464229,
+  "node_id": 43,
+  "post_date": 1316584997,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1316584753,
+          "file_size": 1091,
+          "filename": "archive.7z",
+          "height": 0,
+          "id": 115,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/archive-7z.115/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 3085,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Автор: Zenden<br />\nОписание: Выводит список пользователей имеющих запреты<br />\nУстановка: admin_warning.tpl скопировать в папку templates/admin/ admin_warning.php скопировать в папку admin/<br />\nUPD: Добавлен фильтр, теперь отображаются только запреты.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1316584997,
+      "user_id": 97,
+      "user_title": "User",
+      "username": "Zenden"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 3287,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "UPD: Добавлен фильтр, теперь отображаются только запреты.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1316971840,
+      "user_id": 97,
+      "user_title": "User",
+      "username": "Zenden"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13891,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В список попадают даже те, у кого не запретов.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1332101441,
+      "user_id": 435,
+      "user_title": "User",
+      "username": "S.T.@.L.K.E.R."
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 17817,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>S.T.@.L.K.E.R.</b>, согласен.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1338464229,
+      "user_id": 1006,
+      "user_title": "User",
+      "username": "Oblom"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "vyvod-pol-zovatelej-imeusih-zaprety",
+  "sticky": false,
+  "tags": [],
+  "title": "Вывод пользователей имеющих запреты",
+  "url_path": "/threads/vyvod-pol-zovatelej-imeusih-zaprety.285/",
+  "user_id": 97,
+  "username": "Zenden",
+  "view_count": 2374
+}

@@ -1,0 +1,69 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 98402,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      }
+    ],
+    "id": 2,
+    "title": "Resource news"
+  },
+  "id": 43248,
+  "last_post_date": 1771106601,
+  "node_id": 2,
+  "post_date": 1771106601,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1771106593,
+          "file_size": 221174,
+          "filename": "1771106530204.webp",
+          "height": 1366,
+          "id": 6708,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1771106530204-webp.6708/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6712-8484671a76f9434798d7d4dedbf6b65c.jpg?hash=4euCNMU86r",
+          "width": 2570
+        }
+      ],
+      "id": 98402,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Привет.<br />\n<br />\nПродолжаем серию статей о том, что появится в новой мажорной версии проекта.<br />\n<br />\nСегодня поговорим о давно назревшей теме – защите от спама. Раньше с ботами и спамерами каждый администратор разбирался сам: ставил капчу, банил вручную, чистил базу. В версии 3.0 мы встроили в движок полноценную подключаемую систему проверки пользователей и контента с поддержкой нескольких внешних провайдеров.<br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-cto-bylo\"></a>Что было&#8203;<a class=\"hoverLink\" href=\"#-cto-bylo\" title=\"Permanent link\"></a></h3>Никакой встроенной защиты от спама в TorrentPier не было. Максимум – капча при регистрации и ручная модерация. Если бот проходил регистрацию, он мог свободно постить спам, рассылать личные сообщения, а администратор узнавал об этом постфактум, когда форум уже был засорен.<br />\n<br />\nТипичный сценарий: спамер регистрируется через Tor или прокси, создает с десяток тем с SEO-ссылками, рассылает ЛС другим пользователям – и все это за пару минут. Пока администратор заметит и забанит – вред уже нанесен.<br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-cto-stalo\"></a>Что стало&#8203;<a class=\"hoverLink\" href=\"#-cto-stalo\" title=\"Permanent link\"></a></h3>В версии 3.0 появилась подключаемая система проверки спама с шестью провайдерами, двумя уровнями решений и четырьмя точками интеграции. Проверки выполняются автоматически, без участия пользователя.<br />\n<br />\n<h4 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-provajdery\"></a>Провайдеры&#8203;<a class=\"hoverLink\" href=\"#-provajdery\" title=\"Permanent link\"></a></h4>Провайдеры – это источники данных для принятия решений. Каждый отвечает за свою область. Можно включить один, можно все сразу – результаты агрегируются, побеждает самый строгий вердикт.<br />\n<ul>\n<li data-xf-list-type=\"ul\"><b>BannedUsers</b> – проверяет IP и email по локальной бан-листе. Работает без внешних запросов, мгновенно.</li>\n<li data-xf-list-type=\"ul\"><b>SpamPhrases</b> – ищет стоп-слова в тексте сообщений. Поддерживает точное совпадение по границам слов и регулярные выражения. Удобно для блокировки типичных спам-паттернов вроде ссылок на казино, криптобиржи и прочий мусор.</li>\n<li data-xf-list-type=\"ul\"><b>StopForumSpam</b> – один из крупнейших спам-реестров в интернете. Проверяет IP, email и username по базе данных известных спамеров. Поддерживает два порога: <code class=\"xfBb-icode\">moderate_threshold</code> (отправить на модерацию) и <code class=\"xfBb-icode\">deny_threshold</code> (заблокировать полностью).</li>\n<li data-xf-list-type=\"ul\"><b>Project Honey Pot</b> – DNS-проверка угроз по базе httpBL. Определяет тип угрозы (harvester, comment spammer, подозрительный IP) и уровень опасности. Работает только с IPv4.</li>\n<li data-xf-list-type=\"ul\"><b>DNS Blacklist</b> – проверка IP по настраиваемым DNSBL-зонам. Можно подключить любые публичные или приватные блеклисты.</li>\n<li data-xf-list-type=\"ul\"><b>Akismet</b> – API от создателей WordPress, заточенный под определение спама в тексте. Проверяет не только IP и email, но и сам контент сообщения. Хорошо работает для постов и личных сообщений.</li>\n</ul><h4 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-dva-urovna-resenij\"></a>Два уровня решений&#8203;<a class=\"hoverLink\" href=\"#-dva-urovna-resenij\" title=\"Permanent link\"></a></h4>Каждая проверка возвращает одно из трех решений: Allow, Moderate или Deny.<br />\n<ul>\n<li data-xf-list-type=\"ul\"><code class=\"xfBb-icode\">Allow</code> – все чисто, пропускаем.</li>\n<li data-xf-list-type=\"ul\"><code class=\"xfBb-icode\">Moderate</code> – подозрительно, но не критично. При регистрации – принудительная активация по email (даже если в настройках отключена). При отправке поста – запись в лог для ручной проверки.</li>\n<li data-xf-list-type=\"ul\"><code class=\"xfBb-icode\">Deny</code> – спамер. При регистрации – блокировка. При отправке поста – ошибка. При отправке ЛС – блокировка.</li>\n</ul>Результаты всех провайдеров агрегируются автоматически. Если один провайдер вернул <code class=\"xfBb-icode\">Allow</code>, а другой <code class=\"xfBb-icode\">Deny</code> – финальное решение будет <code class=\"xfBb-icode\">Deny</code>. Всегда побеждает самый строгий вердикт.<br />\n<br />\n<h4 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-tocki-integracii\"></a>Точки интеграции&#8203;<a class=\"hoverLink\" href=\"#-tocki-integracii\" title=\"Permanent link\"></a></h4>Система проверяет четыре действия:<br />\n<ul>\n<li data-xf-list-type=\"ul\"><b>Регистрация</b>. Проверяется IP, email и username нового пользователя через <code class=\"xfBb-icode\">UserChecker</code>. Если решение <code class=\"xfBb-icode\">Deny</code> – регистрация отклоняется. Если <code class=\"xfBb-icode\">Moderate</code> – регистрация проходит, но активация по email становится обязательной, независимо от настроек трекера.</li>\n<li data-xf-list-type=\"ul\"><b>Создание поста</b>. Проверяется текст сообщения через <code class=\"xfBb-icode\">ContentChecker</code>. Если <code class=\"xfBb-icode\">Deny</code> – пост не публикуется, пользователь видит ошибку. Если <code class=\"xfBb-icode\">Moderate</code> – пост публикуется, но записывается в спам-лог.</li>\n<li data-xf-list-type=\"ul\"><b>Быстрый ответ</b>. Та же логика, что и для обычных постов.</li>\n<li data-xf-list-type=\"ul\"><b>Личные сообщения</b>. Если <code class=\"xfBb-icode\">Deny</code> – сообщение блокируется.</li>\n</ul><h4 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-cto-s-administratorami\"></a>Что с администраторами&#8203;<a class=\"hoverLink\" href=\"#-cto-s-administratorami\" title=\"Permanent link\"></a></h4>По умолчанию проверки выполняются даже для администраторов. Это сделано намеренно – если аккаунт администратора скомпрометирован, система все равно поймает подозрительную активность. Но если это мешает – можно отключить.<br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-spam-log\"></a>Спам-лог&#8203;<a class=\"hoverLink\" href=\"#-spam-log\" title=\"Permanent link\"></a></h3>В административную панель добавлена новая страница «Спам лог» в разделе «Пользователи». Там видно:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Все проверки с результатами (разрешено / на модерации / заблокировано)</li>\n<li data-xf-list-type=\"ul\">IP-адрес, email, имя пользователя</li>\n<li data-xf-list-type=\"ul\">Какой провайдер вынес решение и почему</li>\n<li data-xf-list-type=\"ul\">Ссылки на профили пользователей (с цветами рангов) и посты</li>\n<li data-xf-list-type=\"ul\">Подробности в формате JSON для каждой записи (раскрываются по клику)</li>\n<li data-xf-list-type=\"ul\">Фильтрация по решению, типу проверки, провайдеру и IP-адресу</li>\n<li data-xf-list-type=\"ul\">Пагинация и сводная статистика</li>\n</ul><img src=\"https://torrentpier.com/attachments/6708/\" alt=\"1771106530204.webp\" /><br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-minimal-naa-nastrojka\"></a>Минимальная настройка&#8203;<a class=\"hoverLink\" href=\"#-minimal-naa-nastrojka\" title=\"Permanent link\"></a></h3>Если не хочется разбираться во всех провайдерах – можно начать с минимума. Включить StopForumSpam (бесплатный, без API-ключа) и SpamPhrases:<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">// config/spam.php\nreturn [\n    &#039;check_admins&#039; =&gt; true,\n\n    &#039;providers&#039; =&gt; [\n        &#039;stop_forum_spam&#039; =&gt; [\n            &#039;enabled&#039; =&gt; true,\n            &#039;moderate_threshold&#039; =&gt; 50,\n            &#039;deny_threshold&#039; =&gt; 90,\n        ],\n        &#039;spam_phrases&#039; =&gt; [\n            &#039;enabled&#039; =&gt; true,\n            &#039;phrases&#039; =&gt; [\n                &#039;casino&#039;, &#039;viagra&#039;, &#039;crypto airdrop&#039;,\n            ],\n        ],\n        // Остальные провайдеры – по умолчанию отключены\n    ],\n];</pre>Этого достаточно, чтобы отсечь большинство типового спама. Akismet и Project Honey Pot подключаются при необходимости через API-ключи.<br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-cto-eto-daet\"></a>Что это дает&#8203;<a class=\"hoverLink\" href=\"#-cto-eto-daet\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><b>Автоматическая защита.</b> Спамеры отсекаются до того, как нанесут вред – на этапе регистрации и отправки сообщений</li>\n<li data-xf-list-type=\"ul\"><b>Гибкость.</b> Шесть провайдеров, два уровня решений, четыре точки проверки. Включаете только то, что нужно</li>\n<li data-xf-list-type=\"ul\"><b>Прозрачность.</b> Спам-лог показывает кто, когда, откуда и почему был заблокирован</li>\n<li data-xf-list-type=\"ul\"><b>Расширяемость.</b> Добавить новый провайдер – один класс и пара строк конфига</li>\n<li data-xf-list-type=\"ul\"><b>Надежность.</b> Полное покрытие тестами, кеширование внешних запросов, graceful degradation при недоступности провайдеров</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-cto-dal-se\"></a>Что дальше&#8203;<a class=\"hoverLink\" href=\"#-cto-dal-se\" title=\"Permanent link\"></a></h3>Защита от спама – одно из ключевых нововведений версии 3.0. В следующих статьях расскажем о других изменениях.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1771106601,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-3-0-vstroennaa-zasita-ot-spama",
+  "sticky": false,
+  "tags": [
+    "3.0",
+    "antispam",
+    "spam"
+  ],
+  "title": "TorrentPier 3.0: встроенная защита от спама",
+  "url_path": "/threads/torrentpier-3-0-vstroennaa-zasita-ot-spama.43248/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 224
+}

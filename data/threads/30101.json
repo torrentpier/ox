@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 67863,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 30101,
+  "last_post_date": 1416841912,
+  "node_id": 57,
+  "post_date": 1416836811,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 67863,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте. Подскажите пожалуйста, какой код нужно прописать в отдельной php странице, чтобы находящиеся юзеры находящиеся на этой странице, учитывались в Сейчас на форуме",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1416836811,
+      "user_id": 5535,
+      "user_title": "User",
+      "username": "миг"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 67870,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 1416842027,
+      "message_parsed": "Открыть сессию<br />\n<br />\n$user-&gt;session_start();<br />\n<br />\nЕсли страница доступна только зарегистрированным пользователям, тогда <br />\n<br />\n$user-&gt;session_start(array(&#039;req_login&#039; =&gt; true));",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1416841912,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "sejcas-na-forume",
+  "sticky": false,
+  "tags": [],
+  "title": "Сейчас на форуме",
+  "url_path": "/threads/sejcas-na-forume.30101/",
+  "user_id": 5535,
+  "username": "миг",
+  "view_count": 895
+}

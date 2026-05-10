@@ -1,0 +1,160 @@
+{
+  "category": {
+    "description": "Section with all templates for TorrentPier.",
+    "id": 5,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Templates",
+    "view_url": "https://torrentpier.com/resources/categories/templates.5/"
+  },
+  "current_files": [
+    {
+      "filename": "Snapshot 2.1.5.zip",
+      "id": 3624,
+      "local_path": null,
+      "r2_key": null,
+      "size": 1881865,
+      "src_url": "https://torrentpier.com/api/resource-versions/284/download?file=3624"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]Загрузить файлы на сервер.[/SPOILER]",
+    "owner": "makar",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1429567005,
+      "file_size": 168666,
+      "filename": "33e8ed812c8ccebe98d86c2ed70ada20.webp",
+      "height": 1021,
+      "id": 3619,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/33e8ed812c8ccebe98d86c2ed70ada20-webp.3619/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3623-1022ddde0cfe39e6798592ac8b05b306.jpg?hash=m0YgPlTYuJ",
+      "width": 1349
+    },
+    {
+      "attach_date": 1429567006,
+      "file_size": 196020,
+      "filename": "36f5133f240ae4bd9f6940b0fb470301.webp",
+      "height": 1174,
+      "id": 3620,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/36f5133f240ae4bd9f6940b0fb470301-webp.3620/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3624-dbdd9d2dc5531ca0d1a0e06e73893c8d.jpg?hash=FqQGPHwAmU",
+      "width": 1349
+    },
+    {
+      "attach_date": 1429567006,
+      "file_size": 52838,
+      "filename": "95b77313fbcc653484a0dadee48a704a.webp",
+      "height": 531,
+      "id": 3621,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/95b77313fbcc653484a0dadee48a704a-webp.3621/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3625-b6754026f37287632399b84c0ee1bd72.jpg?hash=S-JBheBJa6",
+      "width": 1289
+    },
+    {
+      "attach_date": 1429567007,
+      "file_size": 178878,
+      "filename": "70547ba878adcc2b634ace47f260674d.webp",
+      "height": 1650,
+      "id": 3622,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/70547ba878adcc2b634ace47f260674d-webp.3622/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3626-b1a0e50a13b1592cc2e387cd6e00dfca.jpg?hash=twIHRgVO1D",
+      "width": 1349
+    },
+    {
+      "attach_date": 1429567008,
+      "file_size": 484074,
+      "filename": "e999eda4a67cd704d9fab63e6a7d6ddc.webp",
+      "height": 5482,
+      "id": 3623,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/e999eda4a67cd704d9fab63e6a7d6ddc-webp.3623/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3627-70698f64c20b66060fba8abefe0d8a23.jpg?hash=8oahZIDpOX",
+      "width": 1349
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> шаблон, светлый, с эффектами прозрачности и смены фона.<br />\n<br />\n[GALLERY=media, 22]Шаблон «Snapshot» от Exile опубликован 21 апр 2015 в 00:53[/GALLERY]",
+  "download_count": 589,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/216.jpg?1429567021",
+  "id": 216,
+  "is_fileless": null,
+  "last_update": 1429567115,
+  "rating_avg": 5,
+  "rating_count": 3,
+  "resource_date": 1429567014,
+  "resource_state": "visible",
+  "slug": "sablon-snapshot",
+  "tag_line": "Шаблон, светлый, с эффектами прозрачности и смены фона.",
+  "tags": [],
+  "title": "Шаблон «Snapshot»",
+  "url_path": "/resources/sablon-snapshot.216/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 484,
+      "files": [
+        {
+          "filename": "Snapshot 2.1.5.zip",
+          "id": 3624,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1881865,
+          "src_url": "https://torrentpier.com/api/resource-versions/284/download?file=3624"
+        }
+      ],
+      "id": 284,
+      "rating_avg": 5,
+      "rating_count": 3,
+      "release_date": 1429567115,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/sablon-snapshot.216/version/284/"
+    },
+    {
+      "download_count": 109,
+      "files": [
+        {
+          "filename": "Шаблон Snapshot r553.zip",
+          "id": 3618,
+          "local_path": null,
+          "r2_key": null,
+          "size": 197531,
+          "src_url": "https://torrentpier.com/api/resource-versions/283/download?file=3618"
+        }
+      ],
+      "id": 283,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1429567014,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/sablon-snapshot.216/version/283/"
+    }
+  ],
+  "view_count": 4009
+}

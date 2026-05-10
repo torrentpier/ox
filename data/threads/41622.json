@@ -1,0 +1,124 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 89521,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 41622,
+  "last_post_date": 1484942493,
+  "node_id": 110,
+  "post_date": 1484604389,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89521,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\n<br />\nДостаточно давно произошел раскол в сообществе разработчиков движка после того, как была убрана поддержка альтернативного анонсера XBT. С тех пор утекло много воды и благодаря <a href=\"https://torrentpier.com/members/5319/\">Softwarez</a> движок получил новый альтернативный анонсер, Ocelot. Но время от времени возникает вопрос - не осталось ли среди пользователей тех, кто еще использует XBT, пытается его поддерживать и т.п.?<br />\n<br />\nПотому что если подумать, то кодовую базу XBT можно поднять искусственно до последней версии 2012 года, на которой его развитие остановилось. После этого обновления, в принципе, возможно реализовать и обратную интеграцию XBT с проектом. Но вот востребовано ли это? Разумеется, сейчас все силы брошены на развитие основного проекта с классическим php-анонсером, но учитывая то, что &quot;сложность&quot; интеграции с проектом в принципе низкая, после выходов новых версий - имеет ли смысл вернуть поддержку альтернативного анонсера XBT? Опрос приложен.<br />\n<br />\nСпасибо за внимание.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1484604389,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89522,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "До обновления php до 5.6 использовал хобот, но на php 5.6 не смог его переустановить (возможно из-за устаревшего кода). Сейчас юзаю php-анонсер.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1484605056,
+      "user_id": 93,
+      "user_title": "User",
+      "username": "Ragnar"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89615,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Не нужен xbt, лишняя трата времени и ресурсов. Раз начали делать упор на оцелос и пхп, значит надо на них давить. Вопрос к разработчикам, можно ли выжать ещё что то с пхп аннонсера в плане производительности, или уже максимум доступен?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1484932792,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89616,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "хобот проще, просто с ослом такие качели по инсталу.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1484936501,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89618,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/55/\">Lange</a>, можно, php7 открывает ряд возможностей. Закончим с ядром - будем думать над ним.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1484942493,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "al-ternativnye-anonsery-ocelot-i-xbt",
+  "sticky": false,
+  "tags": [
+    "ocelot",
+    "php",
+    "xbt",
+    "анонсер"
+  ],
+  "title": "Альтернативные анонсеры: Ocelot и XBT",
+  "url_path": "/threads/al-ternativnye-anonsery-ocelot-i-xbt.41622/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 3177
+}

@@ -1,0 +1,143 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 86162,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 41355,
+  "last_post_date": 1451086917,
+  "node_id": 3,
+  "post_date": 1450439223,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1450439082,
+          "file_size": 9686,
+          "filename": "Снимок.webp",
+          "height": 142,
+          "id": 4216,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-webp.4216/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4220-2add2bd87c15f11d58ed06cbe933e906.jpg?hash=8N8FHrdadQ",
+          "width": 678
+        },
+        {
+          "attach_date": 1450439130,
+          "file_size": 11428,
+          "filename": "Снимок1.webp",
+          "height": 51,
+          "id": 4217,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok1-webp.4217/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4221-d146c618cf8dbe7d47e8022839ec66ac.jpg?hash=wUaK0jrTrb",
+          "width": 1160
+        }
+      ],
+      "id": 86162,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток! Не могу ответить в <a href=\"https://torrentpier.com/threads/multitreker-podgruzka-vneshnix-pirov.36734/\" class=\"link link--internal\">этой</a> теме появляется сообщение об ошибке:<br />\n<img src=\"https://torrentpier.com/attachments/4216/\" alt=\"Снимок.webp\" /><br />\n<br />\nА при попытке перейти на 2-ю страницу темы вот это:<br />\n<img src=\"https://torrentpier.com/attachments/4217/\" alt=\"Снимок1.webp\" /> <br />\nВ чем проблема (обновление страницы не помогает)?<br />\n<br />\nP.S. Ошибки появились после того, как я хотел скинуть лог sql. Создав спойлер и разместив в нем код PHP.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1450439223,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86168,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5704/\">@ExPlayer</a> сломал форум",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1450453270,
+      "user_id": 2684,
+      "user_title": "User",
+      "username": "dredd"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86181,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"dredd\"><a href=\"https://torrentpier.com/members/5704/\">@ExPlayer</a> сломал форум</blockquote>:/ Как это?))",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1450513169,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86184,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Fatal error</b>: Cannot use &#039;String&#039; as class name as it is reserved in <b>/var/www/torrentpier/data/www/get.torrentpier.com/lib/Dwoo/Template/String.php</b> on line <b>23</b><br />\n<b><br />\nСдается мне что torrentpier умирает потихоньку</b>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1450558109,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86214,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5704/\">@ExPlayer</a>, php 7 на сервере, даже у разработчиков XenForo есть баги. Исправлено.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1451086917,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "osibka-pri-otvete-v-teme",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка при ответе в теме",
+  "url_path": "/threads/osibka-pri-otvete-v-teme.41355/",
+  "user_id": 5704,
+  "username": "ExPlayer",
+  "view_count": 1526
+}

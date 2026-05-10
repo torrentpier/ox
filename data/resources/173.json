@@ -1,0 +1,240 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Мультитрекер by Exile.zip",
+      "id": 6030,
+      "local_path": null,
+      "r2_key": null,
+      "size": 18621,
+      "src_url": "https://torrentpier.com/api/resource-versions/510/download?file=6030"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "msqli.so, curl.so, серверный крон",
+    "compability_check": "yes",
+    "installation": "Находится в папке с модом",
+    "owner": "Wertos",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425298137,
+      "file_size": 6294,
+      "filename": "2015-03-02 15-05-19 Скриншот экрана.webp",
+      "height": 54,
+      "id": 3135,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2015-03-02-15-05-19-skrinsot-ekrana-webp.3135/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3139-fa1d54c842cf9a17e783662eaaa1b40a.jpg?hash=bqsliSwtLQ",
+      "width": 362
+    },
+    {
+      "attach_date": 1425298137,
+      "file_size": 12096,
+      "filename": "2015-03-02 15-05-53 Скриншот экрана.webp",
+      "height": 128,
+      "id": 3136,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2015-03-02-15-05-53-skrinsot-ekrana-webp.3136/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3140-315088e80ffdb664ec5b4c62b5acc5a6.jpg?hash=R64X96rZe_",
+      "width": 562
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет возможность парсить число пиров с других ресурсов.<br />\n<br />\nФактически не добавляет пиров в таблицы движка, лишь увеличивает число отображаемых на самом форуме. При скачивании, пиры будут искаться через обмен пирами и DHT.",
+  "download_count": 2282,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/173.jpg?1425298225",
+  "id": 173,
+  "is_fileless": null,
+  "last_update": 1720344957,
+  "rating_avg": 5,
+  "rating_count": 2,
+  "resource_date": 1425298216,
+  "resource_state": "visible",
+  "slug": "mul-titreker-parser-cisla-vnesnih-pirov",
+  "tag_line": "Добавляет возможность парсить число пиров с других ресурсов.",
+  "tags": [],
+  "title": "Мультитрекер (парсер числа внешних пиров)",
+  "url_path": "/resources/mul-titreker-parser-cisla-vnesnih-pirov.173/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v2.2.1",
+  "versions": [
+    {
+      "download_count": 557,
+      "files": [
+        {
+          "filename": "[FULL] Мультитрекер by Exile.zip",
+          "id": 6030,
+          "local_path": null,
+          "r2_key": null,
+          "size": 18621,
+          "src_url": "https://torrentpier.com/api/resource-versions/510/download?file=6030"
+        }
+      ],
+      "id": 510,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1720344957,
+      "version_state": "visible",
+      "version_string": "v2.2.1",
+      "view_url": "https://torrentpier.com/resources/mul-titreker-parser-cisla-vnesnih-pirov.173/version/510/"
+    },
+    {
+      "download_count": 230,
+      "files": [
+        {
+          "filename": "[FULL] Мультитрекер by Exile.zip",
+          "id": 6029,
+          "local_path": null,
+          "r2_key": null,
+          "size": 18524,
+          "src_url": "https://torrentpier.com/api/resource-versions/509/download?file=6029"
+        }
+      ],
+      "id": 509,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1720343225,
+      "version_state": "visible",
+      "version_string": "v2.2.0",
+      "view_url": "https://torrentpier.com/resources/mul-titreker-parser-cisla-vnesnih-pirov.173/version/509/"
+    },
+    {
+      "download_count": 230,
+      "files": [
+        {
+          "filename": "[FULL] Мультитрекер by Exile.zip",
+          "id": 5752,
+          "local_path": null,
+          "r2_key": null,
+          "size": 17390,
+          "src_url": "https://torrentpier.com/api/resource-versions/439/download?file=5752"
+        }
+      ],
+      "id": 439,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1705854832,
+      "version_state": "visible",
+      "version_string": "v2.1.0",
+      "view_url": "https://torrentpier.com/resources/mul-titreker-parser-cisla-vnesnih-pirov.173/version/439/"
+    },
+    {
+      "download_count": 232,
+      "files": [
+        {
+          "filename": "[FULL] Мультитрекер by Exile.zip",
+          "id": 5744,
+          "local_path": null,
+          "r2_key": null,
+          "size": 17602,
+          "src_url": "https://torrentpier.com/api/resource-versions/438/download?file=5744"
+        }
+      ],
+      "id": 438,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1705845003,
+      "version_state": "visible",
+      "version_string": "v2.0.0",
+      "view_url": "https://torrentpier.com/resources/mul-titreker-parser-cisla-vnesnih-pirov.173/version/438/"
+    },
+    {
+      "download_count": 222,
+      "files": [
+        {
+          "filename": "[FULL] Мультитрекер by Exile.zip",
+          "id": 5736,
+          "local_path": null,
+          "r2_key": null,
+          "size": 24179,
+          "src_url": "https://torrentpier.com/api/resource-versions/437/download?file=5736"
+        }
+      ],
+      "id": 437,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1705745100,
+      "version_state": "visible",
+      "version_string": "v1.2.1",
+      "view_url": "https://torrentpier.com/resources/mul-titreker-parser-cisla-vnesnih-pirov.173/version/437/"
+    },
+    {
+      "download_count": 224,
+      "files": [
+        {
+          "filename": "[FULL] Мультитрекер by Exile.zip",
+          "id": 5735,
+          "local_path": null,
+          "r2_key": null,
+          "size": 24136,
+          "src_url": "https://torrentpier.com/api/resource-versions/436/download?file=5735"
+        }
+      ],
+      "id": 436,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1705743449,
+      "version_state": "visible",
+      "version_string": "v1.2.0",
+      "view_url": "https://torrentpier.com/resources/mul-titreker-parser-cisla-vnesnih-pirov.173/version/436/"
+    },
+    {
+      "download_count": 218,
+      "files": [
+        {
+          "filename": "[FULL] Мультитрекер by Exile.zip",
+          "id": 5733,
+          "local_path": null,
+          "r2_key": null,
+          "size": 17800,
+          "src_url": "https://torrentpier.com/api/resource-versions/435/download?file=5733"
+        }
+      ],
+      "id": 435,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1705663597,
+      "version_state": "visible",
+      "version_string": "v1.1.0",
+      "view_url": "https://torrentpier.com/resources/mul-titreker-parser-cisla-vnesnih-pirov.173/version/435/"
+    },
+    {
+      "download_count": 405,
+      "files": [
+        {
+          "filename": "FULL MULT OPEN SHARE.zip",
+          "id": 3137,
+          "local_path": null,
+          "r2_key": null,
+          "size": 17197,
+          "src_url": "https://torrentpier.com/api/resource-versions/207/download?file=3137"
+        }
+      ],
+      "id": 207,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1425298216,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/mul-titreker-parser-cisla-vnesnih-pirov.173/version/207/"
+    }
+  ],
+  "view_count": 3230
+}

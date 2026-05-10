@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 59531,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25821,
+  "last_post_date": 1394510547,
+  "node_id": 57,
+  "post_date": 1394508836,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59531,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Извините за тупой вопрос, но где править подвал и шапку сайта ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1394508836,
+      "user_id": 5172,
+      "user_title": "User",
+      "username": "Матвей Маршинин"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59532,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b><b>templates\\default\\</b><b><b>page_footer.tpl</b></b> и <b>page_header.tpl</b> соответственно</b><br />\nпоиск видимо для лохов придумали",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1394510547,
+      "user_id": 4452,
+      "user_title": "User",
+      "username": "Kof"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "sapka-i-podval",
+  "sticky": false,
+  "tags": [],
+  "title": "Шапка и подвал",
+  "url_path": "/threads/sapka-i-podval.25821/",
+  "user_id": 5172,
+  "username": "Матвей Маршинин",
+  "view_count": 1024
+}

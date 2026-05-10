@@ -1,0 +1,65 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94940,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42137,
+  "last_post_date": 1687431050,
+  "node_id": 47,
+  "post_date": 1687431050,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1687431035,
+          "file_size": 102676,
+          "filename": "Снимок.webp",
+          "height": 601,
+          "id": 5440,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-webp.5440/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5444-466033ab6a61a3797c35e5b62b362aa3.jpg?hash=gJ6E0MLW6I",
+          "width": 1123
+        }
+      ],
+      "id": 94940,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вывод постеров при наведение (картинок из топиков в форум ).<br />\nВнимание : работать будет только у тех у кого установлена лента постеров !!!<br />\nВерсия TP - любая<br />\nИзменение BD - нет<br />\nУстановка - лекго<br />\nАвтор - Kryl<br />\n<div>Spoiler content hidden.</div><br />\nЕсли есть какие то ошибки буду признателен если исправите, а так на версии bison 2.3.0.1 работает",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1687431050,
+      "user_id": 10662,
+      "user_title": "User",
+      "username": "LAV"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "vyvod-posterov-pri-navedenie-na-forume",
+  "sticky": false,
+  "tags": [],
+  "title": "Вывод постеров при наведение на форуме",
+  "url_path": "/threads/vyvod-posterov-pri-navedenie-na-forume.42137/",
+  "user_id": 10662,
+  "username": "LAV",
+  "view_count": 579
+}

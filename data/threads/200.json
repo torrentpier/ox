@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 2095,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 47,
+        "title": "Modifications for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 43,
+    "title": "Modifications for TorrentPier (archive)"
+  },
+  "id": 200,
+  "last_post_date": 1321569360,
+  "node_id": 43,
+  "post_date": 1314433906,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 2095,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "не забудьте выставить для констант соответствующие им значения user_rank&#039;а<br />\nну и свой текст для отправки в ЛС<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">define(&#039;S_MOD&#039;, 3);\ndefine(&#039;VIP&#039;, 4);\ndefine(&#039;S_UPLOADER&#039;, 5);\ndefine(&#039;UPLOADER&#039;, 6);\ndefine(&#039;S_USER&#039;, 7);\ndefine(&#039;P_USER&#039;, 8);\ndefine(&#039;LEECHER&#039;, 9);\n\n$sql = DB()-&gt;fetch_rowset(&quot;\nSELECT u.*, bt.*,\nCOUNT(tor.topic_id) as releases\nFROM bb_users u\nLEFT JOIN bb_bt_torrents tor ON ( tor.poster_id = u.user_id )\nLEFT JOIN bb_bt_users bt ON ( bt.user_id = u.user_id )\nWHERE u.user_active = 1\nAND u.user_rank not IN(&quot;. ADMIN .&quot;, &quot;. MOD .&quot;)\nAND u.user_level not IN(&quot;. ADMIN .&quot;, &quot;. MOD .&quot;)\nGROUP BY u.user_id\n&quot;);\n\nforeach ($sql as $key =&gt; $row)\n{\n$ratio = ($row[&#039;u_down_total&#039;]) ? ($row[&#039;u_up_total&#039;] + $row[&#039;u_up_release&#039;] + $row[&#039;u_up_bonus&#039;]) / $row[&#039;u_down_total&#039;] : &#039;0&#039;;\n\nif($row[&#039;releases&#039;])\n{\nif(($row[&#039;releases&#039;] &gt;= 20) &amp;&amp; ($row[&#039;user_regdate&#039;] &lt; (TIMENOW - 86400*30*3)))\n{\n// Super Uploader\n$SuperUploader[] = $row[&#039;user_id&#039;];\npm_rank($row[&#039;user_id&#039;], $row[&#039;user_rank&#039;], S_UPLOADER);\n}\nelse\n{\n// Uploader\n$Uploader[] = $row[&#039;user_id&#039;];\npm_rank($row[&#039;user_id&#039;], $row[&#039;user_rank&#039;], UPLOADER);\n}\n// false\n}\nelse\n{\nif($row[&#039;user_regdate&#039;] &lt; (TIMENOW - 86400*30*3))\n{\nif(($ratio &gt;= 2) &amp;&amp; ($row[&#039;u_up_total&#039;] &gt; 53687091200))\n{\n// Super User\n$SuperUser[] = $row[&#039;user_id&#039;];\npm_rank($row[&#039;user_id&#039;], $row[&#039;user_rank&#039;], S_USER);\n}\nelseif (($ratio &gt;= 1) &amp;&amp; ($row[&#039;u_down_total&#039;] &gt; 10737418240))\n{\n// Power User\n$PowerUser[] = $row[&#039;user_id&#039;];\npm_rank($row[&#039;user_id&#039;], $row[&#039;user_rank&#039;], P_USER);\n}\nelseif (($ratio &lt; 1) &amp;&amp; ($row[&#039;u_up_total&#039;] &gt; 5368709120))\n{\n// Leecher\n$Leecher[] = $row[&#039;user_id&#039;];\npm_rank($row[&#039;user_id&#039;], $row[&#039;user_rank&#039;], LEECHER);\n}\nelse\n{\n// User\n$User[] = $row[&#039;user_id&#039;];\npm_rank($row[&#039;user_id&#039;], $row[&#039;user_rank&#039;], USER);\n}\n// false\n}\nelseif($row[&#039;user_regdate&#039;] &lt; (TIMENOW - 2592000))\n{\nif (($ratio &gt;= 1) &amp;&amp; ($row[&#039;u_down_total&#039;] &gt; 10737418240))\n{\n// Power User\n$PowerUser[] = $row[&#039;user_id&#039;];\npm_rank($row[&#039;user_id&#039;], $row[&#039;user_rank&#039;], P_USER);\n}\nelseif (($ratio &lt; 1) &amp;&amp; ($row[&#039;u_up_total&#039;] &gt; 5368709120))\n{\n// Leecher\n$Leecher[] = $row[&#039;user_id&#039;];\npm_rank($row[&#039;user_id&#039;], $row[&#039;user_rank&#039;], LEECHER);\n}\nelse\n{\n// User\n$User[] = $row[&#039;user_id&#039;];\npm_rank($row[&#039;user_id&#039;], $row[&#039;user_rank&#039;], USER);\n}\n// false\n}\nelse\n{\nif($ratio &lt; 1)\n{\nif($row[&#039;u_up_total&#039;] &gt; 5368709120)\n{\n// Leecher\n$Leecher[] = $row[&#039;user_id&#039;];\npm_rank($row[&#039;user_id&#039;], $row[&#039;user_rank&#039;], LEECHER);\n}\nelse\n{\n// User\n$User[] = $row[&#039;user_id&#039;];\npm_rank($row[&#039;user_id&#039;], $row[&#039;user_rank&#039;], USER);\n}\n}\nelse\n{\nif($row[&#039;u_down_total&#039;] &gt; 10737418240)\n{\n// Power User\n$PowerUser[] = $row[&#039;user_id&#039;];\npm_rank($row[&#039;user_id&#039;], $row[&#039;user_rank&#039;], P_USER);\n}\nelse\n{\n// User\n$User[] = $row[&#039;user_id&#039;];\npm_rank($row[&#039;user_id&#039;], $row[&#039;user_rank&#039;], USER);\n}\n}\n// false\n}\n}\n}\n\nDB()-&gt;query(&quot;UPDATE bb_users SET user_rank = &quot;. USER .&quot; WHERE user_id IN(&quot;. implode(&#039;, &#039;, array_diff($User, array(&#039;&#039;))) .&quot;)&quot;);\nDB()-&gt;query(&quot;UPDATE bb_users SET user_rank = &quot;. S_UPLOADER .&quot; WHERE user_id IN(&quot;. implode(&#039;, &#039;, array_diff($SuperUploader, array(&#039;&#039;))) .&quot;)&quot;);\nDB()-&gt;query(&quot;UPDATE bb_users SET user_rank = &quot;. UPLOADER .&quot; WHERE user_id IN(&quot;. implode(&#039;, &#039;, array_diff($Uploader, array(&#039;&#039;))) .&quot;)&quot;);\nDB()-&gt;query(&quot;UPDATE bb_users SET user_rank = &quot;. S_USER .&quot; WHERE user_id IN(&quot;. implode(&#039;, &#039;, array_diff($SuperUser, array(&#039;&#039;))) .&quot;)&quot;);\nDB()-&gt;query(&quot;UPDATE bb_users SET user_rank = &quot;. P_USER .&quot; WHERE user_id IN(&quot;. implode(&#039;, &#039;, array_diff($PowerUser, array(&#039;&#039;))) .&quot;)&quot;);\nDB()-&gt;query(&quot;UPDATE bb_users SET user_rank = &quot;. LEECHER .&quot; WHERE user_id IN(&quot;. implode(&#039;, &#039;, array_diff($Leecher, array(&#039;&#039;))) .&quot;)&quot;);\n\nfunction pm_rank($user_id, $user_rank, $new_rank)\n{\nif($user_rank &gt; $new_rank)\n{\n//Понижение\n//send_pm($user_id, $subject, $message, BOT_UID)\n}\nelse if($user_rank &lt; $new_rank)\n{\n//Повышение\n//send_pm($user_id, $subject, $message, BOT_UID)\n}\n}</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1314433906,
+      "user_id": 2,
+      "user_title": "User",
+      "username": "_Xz_"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 2121,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "это в common.php ?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1314533062,
+      "user_id": 209,
+      "user_title": "User",
+      "username": "max"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 2140,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"\">это в common.php ?</blockquote><br />\nда, если хочешь положить сервер на лопатки<br />\n<br />\n---------------<br />\n<br />\nапдейты наверно лучше-таки в проверку на пустой массив засунуть, нет?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1314556785,
+      "user_id": 61,
+      "user_title": "User",
+      "username": "druid"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5665,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "в каком файле вообще производится манипуляция? это единым кодом идёт? не могу вникнуть в туториал",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1321568043,
+      "user_id": 232,
+      "user_title": "",
+      "username": "christopher"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5667,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "init_bb.php крон задача, functions.php",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1321569360,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "avtomaticeskoe-povysenie-ponizenie-po-rangu-s-opoveseniem-v-ls",
+  "sticky": false,
+  "tags": [],
+  "title": "Автоматическое повышение/понижение по рангу с оповещением в ЛС",
+  "url_path": "/threads/avtomaticeskoe-povysenie-ponizenie-po-rangu-s-opoveseniem-v-ls.200/",
+  "user_id": 2,
+  "username": "_Xz_",
+  "view_count": 3360
+}

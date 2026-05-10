@@ -1,0 +1,89 @@
+{
+  "category": {
+    "description": "Section with all paid modifications for TorrentPier.",
+    "id": 2,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Paid",
+    "view_url": "https://torrentpier.com/resources/categories/paid.2/"
+  },
+  "current_files": [],
+  "custom_fields": {},
+  "description_attachments": [
+    {
+      "attach_date": 1371107959,
+      "file_size": 5060,
+      "filename": "Снимок.webp",
+      "height": 150,
+      "id": 2046,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/snimok-webp.2046/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2051-53e84d7fd4c425aeba18764173cf4e30.jpg?hash=lLEbuIdhMY",
+      "width": 633
+    },
+    {
+      "attach_date": 1371107965,
+      "file_size": 5408,
+      "filename": "Снимок1.webp",
+      "height": 121,
+      "id": 2047,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/snimok1-webp.2047/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2052-b14514ea4a50f3c01c63f129f3261694.jpg?hash=89KqHxTGzQ",
+      "width": 597
+    },
+    {
+      "attach_date": 1371107968,
+      "file_size": 16844,
+      "filename": "Снимок2.webp",
+      "height": 189,
+      "id": 2048,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/snimok2-webp.2048/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2053-9d1108a0322b7f53865ea13af2a636f9.jpg?hash=lcdENTaicV",
+      "width": 1477
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Позолотить раздачу за очки сидирования<br />\n<b>ICQ:</b> 590-700-200<br />\n<b>Цена: 5</b>00.<br />\n<ul>\n<li data-xf-list-type=\"ul\">Ajax технология</li>\n</ul>",
+  "download_count": 0,
+  "external_url": null,
+  "icon_url": null,
+  "id": 37,
+  "is_fileless": null,
+  "last_update": 1371108133,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1371108133,
+  "resource_state": "visible",
+  "slug": "pozolotit-razdacu",
+  "tag_line": "Позолотить раздачу за очки сидирования",
+  "tags": [],
+  "title": "Позолотить раздачу",
+  "url_path": "/resources/pozolotit-razdacu.37/",
+  "user_id": 97,
+  "username": "Zenden",
+  "version": "1.01",
+  "versions": [
+    {
+      "download_count": 0,
+      "files": [],
+      "id": 37,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1371108133,
+      "version_state": "visible",
+      "version_string": "1.01",
+      "view_url": "https://torrentpier.com/resources/pozolotit-razdacu.37/version/37/"
+    }
+  ],
+  "view_count": 739
+}

@@ -1,0 +1,111 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Спасибо за раздачу и оценка релиза by RoadTrain.zip",
+      "id": 6548,
+      "local_path": null,
+      "r2_key": null,
+      "size": 19984,
+      "src_url": "https://torrentpier.com/api/resource-versions/654/download?file=6548"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: install.txt.",
+    "owner": "RoadTrain, PheRum, DimaUZB2001, belomaxorka",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1758874526,
+      "file_size": 25812,
+      "filename": "[torrentpier.com]rate.webp",
+      "height": 211,
+      "id": 6547,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/torrentpier-com-rate-webp.6547/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6551-4d7a602a3e512155c1aef228b3d99442.jpg?hash=WrvsmlxXIg",
+      "width": 998
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Мод позволяет ставить спасибы торрентам и оценивать их.<br />\n<b>Совместимость:</b> v2.2, v2.3, и Cattle.<br />\n<b>Адаптация</b>: <a href=\"https://torrentpier.com/members/7621/\">DimaUZB2001</a>, <a href=\"https://torrentpier.com/members/10614/\">belomaxorka</a>.<br />\n<b>Оригинальная тема:</b> <a href=\"https://torrentpier.com/threads/spasibo-za-razdacu-i-ocenka-reliza.40/\" class=\"link link--internal\">https://torrentpier.com/threads/spasibo-za-razdacu-i-ocenka-reliza.40/</a>",
+  "download_count": 235,
+  "external_url": null,
+  "icon_url": null,
+  "id": 328,
+  "is_fileless": null,
+  "last_update": 1758880388,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1758874580,
+  "resource_state": "visible",
+  "slug": "spasibo-za-razdacu-i-ocenka-reliza",
+  "tag_line": "Мод позволяет ставить спасибы торрентам и оценивать их.",
+  "tags": [
+    "мод спасибо",
+    "оценка звездами",
+    "оценка релиза",
+    "спасибы"
+  ],
+  "title": "Спасибо за раздачу и оценка релиза",
+  "url_path": "/resources/spasibo-za-razdacu-i-ocenka-reliza.328/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.1",
+  "versions": [
+    {
+      "download_count": 174,
+      "files": [
+        {
+          "filename": "[FULL] Спасибо за раздачу и оценка релиза by RoadTrain.zip",
+          "id": 6548,
+          "local_path": null,
+          "r2_key": null,
+          "size": 19984,
+          "src_url": "https://torrentpier.com/api/resource-versions/654/download?file=6548"
+        }
+      ],
+      "id": 654,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1758880388,
+      "version_state": "visible",
+      "version_string": "v1.0.1",
+      "view_url": "https://torrentpier.com/resources/spasibo-za-razdacu-i-ocenka-reliza.328/version/654/"
+    },
+    {
+      "download_count": 63,
+      "files": [
+        {
+          "filename": "[FULL] Спасибо за раздачу и оценка релиза by RoadTrain.zip",
+          "id": 6546,
+          "local_path": null,
+          "r2_key": null,
+          "size": 20127,
+          "src_url": "https://torrentpier.com/api/resource-versions/653/download?file=6546"
+        }
+      ],
+      "id": 653,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1758874580,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/spasibo-za-razdacu-i-ocenka-reliza.328/version/653/"
+    }
+  ],
+  "view_count": 2136
+}

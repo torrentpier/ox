@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 63295,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 58,
+    "title": "Suggestions for improving TorrentPier"
+  },
+  "id": 26508,
+  "last_post_date": 1411663370,
+  "node_id": 58,
+  "post_date": 1411632827,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63295,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Зачастую, бывает так, что  у автора раздачи нет времени постоянно быть в теме, обновлять саму раздачу и пр. причины. В итоге, раздача медленно помирает, создаются новые дублирующие или дополненные незначительно раздачи, что приводит к замусориванию трекера практически одним и тем же.<br />\n Например, на рутрекере  после создания этой темы <a href=\"http://rutracker.org/forum/viewtopic.php?t=3562772\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://rutracker.org/forum/viewtopic.php?t=3562772</a> нашлось два человека, которые &quot;горели&quot; желанием обновлять и дополнять торрент в 100 раз сильнее меня. Как выход : пришлось просить администраторов трекера о создании специального аккаунта, пароль которого был поделен между нами троими. Тоесть редактировать её мы могли втроём.<br />\n<br />\nМожно ли подобное, без создания новых аккаунтов, реализовать в движке торрентпира ?<br />\nЧто бы релизер, мог дать права редактирования описания раздачи и перезаливки торрента  некоторым выбранным им пользователям ? В самом описании раздачи где-нибудь в углу автоматом выводился список этих юзеров.<br />\n В иоге :<br />\n1. Качество раздач будет лучше<br />\n2. Выживаемость раздач дольше<br />\n3. Дублей (типа тоже самое но с дополнительными сериями) меньше",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1411632827,
+      "user_id": 5013,
+      "user_title": "User",
+      "username": "grey_rat"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63297,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Реализовать - просто. Вопрос в логировании изменений в сообщении (подобный функционал запланирован, конечно, и все же).",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1411633654,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63298,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ну, как-нибудь так : кто последний тему редактировал - того и упомянуть  &quot;последнее редактирование <b>grey_rat </b>07-Май-12 20:06 &quot;<br />\nЧто-бы модератор и сам топик-стартер знали с кого спрашивать, если что-то не так будет после редактирования.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1411634127,
+      "user_id": 5013,
+      "user_title": "User",
+      "username": "grey_rat"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63307,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Идея хорошая.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1411663370,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    }
+  ],
+  "prefix_id": 32,
+  "reply_count": 3,
+  "slug": "redaktirovanie-razdaci-neskol-kimi-pol-zovatelami",
+  "sticky": false,
+  "tags": [],
+  "title": "Редактирование раздачи несколькими пользователями",
+  "url_path": "/threads/redaktirovanie-razdaci-neskol-kimi-pol-zovatelami.26508/",
+  "user_id": 5013,
+  "username": "grey_rat",
+  "view_count": 1162
+}

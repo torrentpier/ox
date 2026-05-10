@@ -1,0 +1,108 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Редактор robots.txt by belomaxorka.zip",
+      "id": 6450,
+      "local_path": null,
+      "r2_key": null,
+      "size": 4651,
+      "src_url": "https://torrentpier.com/api/resource-versions/630/download?file=6450"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1748678343,
+      "file_size": 24028,
+      "filename": "firefox_nVr5r5deBh.webp",
+      "height": 463,
+      "id": 6451,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_nvr5r5debh-webp.6451/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6455-a57b3c184e4697a15fd47c9e3dc8009a.jpg?hash=ot5sG13iRz",
+      "width": 1143
+    },
+    {
+      "attach_date": 1748678348,
+      "file_size": 13324,
+      "filename": "firefox_9FyTmy5YLp.webp",
+      "height": 353,
+      "id": 6452,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_9fytmy5ylp-webp.6452/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6456-1a84475c24593b630cb66eb6b71a5aa3.jpg?hash=1KTy13zsoO",
+      "width": 1139
+    }
+  ],
+  "description_parsed": "<div style=\"text-align: center\"><span style=\"color: rgb(226, 80, 65)\">Начиная с версии движка v2.4.6 добавлен по умолчанию</span>&#8203;</div><hr /><b>Описание:</b> Добавляет в админ-панель раздел с редактированием содержимого файла robots.txt.<br />\n<b>Совместимость:</b> v2.1.5, LTS, v2.2.*, v2.3.*, v2.4.*.",
+  "download_count": 190,
+  "external_url": null,
+  "icon_url": null,
+  "id": 324,
+  "is_fileless": null,
+  "last_update": 1748678351,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1748678351,
+  "resource_state": "visible",
+  "slug": "redaktor-robots-txt",
+  "tag_line": "Добавляет в админ-панель раздел с редактированием содержимого файла robots.txt.",
+  "tags": [
+    "editor",
+    "robots",
+    "robots txt editor",
+    "новый функционал",
+    "редактор robots txt",
+    "улучшение",
+    "улучшение админ панели"
+  ],
+  "title": "Редактор robots.txt",
+  "url_path": "/resources/redaktor-robots-txt.324/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.0",
+  "versions": [
+    {
+      "download_count": 190,
+      "files": [
+        {
+          "filename": "[FULL] Редактор robots.txt by belomaxorka.zip",
+          "id": 6450,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4651,
+          "src_url": "https://torrentpier.com/api/resource-versions/630/download?file=6450"
+        }
+      ],
+      "id": 630,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1748678351,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/redaktor-robots-txt.324/version/630/"
+    }
+  ],
+  "view_count": 2218
+}
