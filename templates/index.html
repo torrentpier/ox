@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}{{ site_name }}{% endblock %}
+{% block content %}
+<h1>{{ site_name }}</h1>
+<p class="lede">
+  Snapshot of {{ thread_count }} threads. This is the first build slice — categories,
+  pagination and search land in subsequent commits.
+</p>
+<h2>Forums</h2>
+<ul class="forum-list">
+{% for forum in forums %}
+  <li>
+    <strong>{{ forum.title }}</strong>
+    {% if forum.description %}<span class="muted">— {{ forum.description }}</span>{% endif %}
+  </li>
+{% endfor %}
+</ul>
+{% endblock %}
