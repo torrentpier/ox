@@ -12,8 +12,12 @@ of the deliverable, not a side note.
 | Item                                | State                                  |
 |-------------------------------------|----------------------------------------|
 | Branch                              | `feat/archive`                         |
-| Repo skeleton (dirs + meta files)   | Done (commit `c12ba69`)                |
-| API smoke-test                      | Done — see "API surface" below         |
+| Repo skeleton (dirs + meta files)   | Done (`c12ba69`)                       |
+| Plan + decisions doc                | Done (`2265934`)                       |
+| API smoke + endpoint verification   | Done — see "API surface" below         |
+| Resource binary size estimate       | Done — 62.83 MiB across 511 files      |
+| Wrangler installed (Homebrew)       | Done — 4.90.0                          |
+| Cloudflare auth (`wrangler login`)  | Pending — must be run interactively by user |
 | Exporter (`exporter/`)              | Not started                            |
 | Attachment mirror to R2             | Not started — R2 bucket not provisioned|
 | Static builder (`builder/`)         | Not started                            |
@@ -26,86 +30,95 @@ of the deliverable, not a side note.
 - URL: `https://torrentpier.com`
 - Engine: XenForo 2 (with Resource Manager)
 - Currently in read-only / maintenance mode (good — snapshot is consistent)
-- Volume: 3,304 threads, 45,473 posts, 5,194 members, 231 resources, 1–5 GB attachments
+- Volume: 3,304 threads, 45,473 posts, 5,194 members, 230 resources, 1–5 GB attachments
+
+## Target hosts
+
+- Site: `ox.torrentpier.com` (CNAME → GitHub Pages)
+- Files: `files-ox.torrentpier.com` (Cloudflare R2 custom domain)
+  - Hyphenated, not `files.ox.torrentpier.com`, because Cloudflare's universal
+    SSL doesn't cover 4th-level subdomains.
 
 ## Decisions log
 
-Decisions made up to this point. Reasoning lives here so future-you can tell
-which decisions are load-bearing and which are merely "current best guess".
+| #  | Decision                                                                                          | Reasoning                                                                                                  |
+|----|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| 1  | Intermediate format = JSON (one file per thread / resource), checked into git                     | Source of truth, diffable, trivially editable, easy GDPR-style deletes                                     |
+| 2  | Final format = pre-rendered HTML on GitHub Pages                                                  | Longevity, $0 cost, archive is read-only forever                                                           |
+| 3  | Files (attachments, avatars, inline images) on Cloudflare R2 with custom domain                   | GitHub Pages 1 GB repo limit; R2 has 10 GB free tier and zero-egress pricing                               |
+| 4  | Search = Cloudflare Worker + D1 (SQLite FTS5), not Pagefind                                       | FTS5 + Russian lemmatisation gives meaningful search; Pagefind gives literal-only match for Russian        |
+| 5  | Exporter / builder language = Python (3.11+)                                                      | Faster iteration on JSON munging + Jinja2 + BS4                                                            |
+| 6  | URL scheme = identical to XenForo (`/threads/{slug}.{id}/page-N/`)                                | Old links from search engines / chats keep working without redirect rules                                  |
+| 7  | Don't carry: deleted/hidden posts, private conversations, reactions                               | Per user                                                                                                   |
+| 8  | Carry: text + attachments + avatars + per-post username/title/group + resources                   | Per user                                                                                                   |
+| 9  | API auth via super-user key + dotenv (`XF_API_KEY`, `XF_API_USER`)                                | Forum is being shut down; key will be revoked post-export                                                  |
+| 10 | Subdomain via CNAME, redirects from old hostname handled via Cloudflare (out of scope for repo)   | Per user                                                                                                   |
+| 11 | Hostnames: `ox.torrentpier.com` for site, `files-ox.torrentpier.com` for R2                       | Cloudflare universal SSL doesn't cover 4th-level (`files.ox.torrentpier.com` would need a paid cert)       |
+| 12 | Carry resource binaries: **all versions of all 230 resources**                                    | Total size measured at 62.83 MiB — negligible relative to forum attachments                                |
+| 13 | Pagination cannot be sped up: `per_page` is hard-capped at 20 server-side on every listing endpoint | Confirmed against `/api/forums/{id}/threads` and `/api/resources` with `per_page=100` and `per_page=200` — both returned 20 |
+| 14 | R2 provisioning via `wrangler` from this machine; `wrangler login` runs interactively by the user | Avoids handling a Cloudflare API token in the repo or in dotenv                                            |
 
-| # | Decision                                                                                          | Reasoning                                                                                                  |
-|---|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| 1 | Intermediate format = JSON (one file per thread / resource), checked into git                     | Source of truth, diffable, trivially editable, easy GDPR-style deletes                                     |
-| 2 | Final format = pre-rendered HTML on GitHub Pages                                                  | Longevity, $0 cost, archive is read-only forever                                                           |
-| 3 | Files (attachments, avatars, inline images) on Cloudflare R2 with custom domain                   | GitHub Pages 1 GB repo limit; R2 has 10 GB free tier and zero-egress pricing                               |
-| 4 | Search = Cloudflare Worker + D1 (SQLite FTS5), not Pagefind                                       | FTS5 + Russian lemmatisation gives meaningful search; Pagefind gives literal-only match for Russian        |
-| 5 | Exporter / builder language = Python (3.11+)                                                      | Faster iteration on JSON munging + Jinja2 + BS4; Go was considered, no decisive win for one-off scripts    |
-| 6 | URL scheme = identical to XenForo (`/threads/{slug}.{id}/page-N/`)                                | Old links from search engines / chats keep working without redirect rules                                  |
-| 7 | Don't carry: deleted/hidden posts, private conversations, reactions                               | Per user                                                                                                   |
-| 8 | Carry: text + attachments + avatars + per-post username/title/group + resources                   | Per user                                                                                                   |
-| 9 | API auth via super-user key + dotenv (`XF_API_KEY`, `XF_API_USER`)                                | Forum is being shut down; key will be revoked post-export                                                  |
-| 10| Subdomain via CNAME, redirects from old hostname handled via Cloudflare (out of scope for repo)   | Per user                                                                                                   |
+## API surface (verified against torrentpier.com on 2026-05-11)
 
-## API surface (verified against torrentpier.com)
+Probed with a super-user key. Endpoints not listed were not checked.
 
-Probed with a super-user key on 2026-05-11. Endpoints not listed were not
-checked.
+| Endpoint                                                | Status | Notes                                                                                                  |
+|---------------------------------------------------------|--------|--------------------------------------------------------------------------------------------------------|
+| `GET /api/`                                             | 200    | Returns `version_id`, `site_title`, key info                                                           |
+| `GET /api/me`                                           | 200    | Acting user                                                                                            |
+| `GET /api/nodes`                                        | 200    | **Categories + forums + pages + links** — full tree via `tree_map` + flat `nodes[]` array              |
+| `GET /api/nodes/flattened`                              | 200    | Alternative flat form                                                                                  |
+| `GET /api/forums/{node_id}`                             | 200    | Single forum incl. breadcrumbs and `view_url` with slug                                                |
+| `GET /api/forums/{node_id}/threads?page=N`              | 200    | Threads in forum, paginated. **`per_page` hard-capped at 20.**                                         |
+| `GET /api/threads/{id}/?with_posts=1&page=N`            | 200    | Thread + embedded `Forum` + posts (20/page). One call per thread page                                  |
+| `GET /api/threads/{id}/posts?page=N`                    | 200    | Posts-only listing if needed                                                                           |
+| `GET /api/users/{id}`                                   | 200    | Full user object incl. `avatar_urls`, `user_title`, `is_admin/moderator/staff`                         |
+| `GET /api/resources?page=N`                             | 200    | Resource Manager content with embedded `Category` per resource. **`per_page` hard-capped at 20.**      |
+| `GET /api/resources/{id}`                               | 200    | Single resource detail; includes `current_files[]` (latest version files) and `Category`               |
+| `GET /api/resources/{id}/versions`                      | 200    | All versions; each has `files[]` with `id`, `filename`, `size` (bytes), `download_url`                 |
+| `GET /api/attachments/{id}`                             | 404 page | Endpoint exists ("requested_page_not_found" for missing id, vs "endpoint_not_found" for bad route)   |
+| `GET /api/attachments/{id}/data`                        | TBD    | Not yet probed with a real attachment id; download URL is in the embedded `attachments[]` of a post   |
+| `GET /api/categories`                                   | 404    | Categories live under `/api/nodes`, not here                                                           |
+| `GET /api/forums` (collection)                          | 404    | Use `/api/nodes`                                                                                       |
+| `GET /api/tags`                                         | 404    | No bulk tag listing; tags appear inline on threads                                                     |
+| `GET /api/rm`, `/api/rm/*`                              | 404    | Resource Manager API root is `/api/resources`, not `/api/rm`                                           |
+| `GET /api/resources/categories`                         | 404    | Categories only appear embedded inside resource objects                                                |
+| `GET /api/resources/categories/{id}`                    | 404    | Same                                                                                                   |
+| `GET /api/resources/{id}/icon`                          | 404    | Icon URL lives on the `resource` object, not a separate endpoint                                       |
+| `GET /api/resources/{id}/files`                         | 404    | Files are inside `versions[].files[]`                                                                  |
 
-| Endpoint                                            | Status | Notes                                                                                          |
-|-----------------------------------------------------|--------|------------------------------------------------------------------------------------------------|
-| `GET /api/`                                         | 200    | Returns `version_id`, `site_title`, key info                                                   |
-| `GET /api/me`                                       | 200    | Acting user                                                                                    |
-| `GET /api/nodes`                                    | 200    | **Categories + forums + pages + links** — full tree via `tree_map` + flat `nodes[]` array      |
-| `GET /api/nodes/flattened`                          | 200    | Alternative flat form                                                                          |
-| `GET /api/forums/{node_id}`                         | 200    | Single forum incl. breadcrumbs and `view_url` with slug                                        |
-| `GET /api/forums/{node_id}/threads?per_page=20&page=N` | 200 | Threads in forum, paginated. **`per_page` clamps; default = 20, max appears to be 20.**        |
-| `GET /api/threads/{id}/?with_posts=1&page=N`        | 200    | Thread + embedded `Forum` + posts on that page (20/page). Single call gets you everything      |
-| `GET /api/threads/{id}/posts?per_page=N`            | 200    | Posts-only listing if needed                                                                   |
-| `GET /api/users/{id}`                               | 200    | Full user object incl. `avatar_urls`, `user_title`, `is_admin/moderator/staff`                 |
-| `GET /api/resources?per_page=20&page=N`             | 200    | Resource Manager content with embedded `Category` per resource, paginated                      |
-| `GET /api/categories`                               | 404    | Categories live under `/api/nodes`, not here                                                   |
-| `GET /api/forums` (collection)                      | 404    | Same — use `/api/nodes`                                                                        |
-| `GET /api/tags`                                     | 404    | No bulk tag listing; tags appear inline on threads                                             |
-| `GET /api/rm`, `/api/rm/*`                          | 404    | Resource Manager API root is `/api/resources`, not `/api/rm`                                   |
-| `GET /api/resources/categories`                     | 404    | Categories embedded inside resource objects; bulk listing not available                        |
+### Endpoints still to verify before writing the exporter
 
-### Key schema notes (from real responses)
+- [ ] `GET /api/attachments/{id}/data` — fetch a real attachment id from a post payload and confirm it returns binary content with proper `Content-Type`. (Several sample threads probed had no attachments at all — XF attachments are sparse on this forum. Will discover real ids during the first exporter run.)
+- [ ] Behaviour of `include_deleted=1` on post listings — confirm it's a no-op without elevated permissions or that it indeed exposes soft-deleted posts (we drop them per decision #7 either way).
 
-**Node tree** (`/api/nodes`):
-- `tree_map: {parent_id: [child_ids]}` plus `nodes[]` with `node_id`, `node_type_id` (`Category`/`Forum`/`Page`/`Link`), `parent_node_id`, `title`, `description`, `node_name` (URL slug fragment, can be null).
+### Key schema notes
+
+**Node tree** (`/api/nodes`): `tree_map: {parent_id: [child_ids]}` plus `nodes[]` with `node_id`, `node_type_id` (`Category` / `Forum` / `Page` / `Link`), `parent_node_id`, `title`, `description`, `node_name`.
 
 **Thread** (`/api/threads/{id}/?with_posts=1`):
-- Top-level fields: `thread_id`, `title`, `view_url` (e.g. `/threads/otkrytie-foruma.2/` — slug + id baked in), `discussion_state`, `discussion_open`, `view_count`, `reply_count`, `post_date`, `first_post_id`, `username`, `user_id`, `custom_fields`, `tags` (array, can be empty).
-- Embedded `Forum` object with `breadcrumbs[]` chain (Category → Forum → ...).
+- Top-level: `thread_id`, `title`, `view_url` (e.g. `/threads/otkrytie-foruma.2/` — slug + id baked in), `discussion_state`, `discussion_open`, `view_count`, `reply_count`, `post_date`, `first_post_id`, `username`, `user_id`, `custom_fields`, `tags`.
+- Embedded `Forum` object with `breadcrumbs[]`.
 - Embedded `posts[]` for the requested page.
 
-**Post**:
-- `post_id`, `position`, `post_date`, `user_id`, `username`, `message_parsed` (rendered HTML — **use this, never re-parse BBCode**), `attachments[]`, plus moderation flags. Reaction details available via separate endpoint (skipped per decision #7).
+**Post**: `post_id`, `position`, `post_date`, `user_id`, `username`, `message_parsed` (rendered HTML — **never re-parse BBCode**), `attachments[]`, moderation flags. Reaction details available via separate endpoint (skipped per decision #7).
 
-**User**:
-- `user_id`, `username`, `user_title` (e.g. `Administrator`, custom titles like `Разработчик`), `user_group_id`, `secondary_group_ids[]`, `is_admin`, `is_moderator`, `is_staff`, `avatar_urls.{o,h,l,m,s}` (sized variants), `view_url`. We need username + title + avatar URL + staff flag. Everything else is dropped.
+**User**: `user_id`, `username`, `user_title` (e.g. `Administrator`, custom titles like `Разработчик`), `user_group_id`, `secondary_group_ids[]`, `is_admin`, `is_moderator`, `is_staff`, `avatar_urls.{o,h,l,m,s}`, `view_url`. We need username + title + avatar URL + staff flag. Everything else is dropped.
 
-**Resource**:
-- `resource_id`, `title`, `view_url` (`/resources/{slug}.{id}/`), `version`, `view_count`, `description` (HTML), `Category` embedded, `user_id`, `username`. Versions / files separate endpoints (TBD).
+**Resource**: `resource_id`, `title`, `view_url` (`/resources/{slug}.{id}/`), `version`, `view_count`, `description` (HTML), `Category` embedded, `user_id`, `username`, `current_files[]`. Versions and per-version files available at `/versions`.
+
+**Resource version**: `resource_version_id`, `version_string`, `release_date`, `download_count`, `version_state`, `files[]` with `id`, `filename`, `size` (bytes), `download_url`.
 
 **Pagination envelope** (used on listing endpoints):
 ```
 "pagination": {
     "current_page": 1,
     "last_page": 12,
-    "per_page": 20,
+    "per_page": 20,        // hard-capped server-side, can't be raised
     "shown": 20,
     "total": 231
 }
 ```
-
-### Endpoints still to verify before writing the exporter
-
-- [ ] `GET /api/threads/{id}/posts?include_deleted=1` — does it return soft-deleted? (We drop them per decision #7, but need to confirm they're filtered by default.)
-- [ ] `GET /api/posts/{id}/attachments` vs attachments embedded in post — which has the download URL?
-- [ ] `GET /api/attachments/{id}/data` — actual file bytes, content-type
-- [ ] `GET /api/resources/{id}/versions` and `GET /api/resources/{id}/icon` — for full resource archival
-- [ ] Behaviour of `per_page` on `/api/forums/{id}/threads` — first probe was ignored, confirm if `per_page=100` works or 20 is hard cap
 
 ## Pipeline overview
 
@@ -115,9 +128,10 @@ XenForo REST API
         v
   [1] exporter/    --> data/threads/*.json
                        data/resources/*.json
-                       data/meta.json (nodes, users)
+                       data/users/*.json
+                       data/meta.json (nodes)
         |
-        +----> [2] mirror/        --> Cloudflare R2 (attachments, avatars, inline images)
+        +----> [2] mirror/        --> Cloudflare R2 (attachments, avatars, inline images, resource files)
         |
         v
   [3] builder/     --> dist/  (HTML + CSS + JS, sitemap, canonical URLs)
@@ -125,8 +139,19 @@ XenForo REST API
         +----> [4] search/        --> Cloudflare D1 (FTS5 over lemmatised post bodies)
         |                            + Worker exposing /search?q=...
         v
-  [5] deploy via GitHub Actions --> GitHub Pages --> archive.<domain>
+  [5] deploy via GitHub Actions --> GitHub Pages --> ox.torrentpier.com
 ```
+
+Estimated request budget for the exporter against the live API:
+- Nodes: 1 call.
+- Threads listings: 3304 / 20 ≈ 166 calls (sum across all forums).
+- Thread detail pages: ~3304 calls minimum, more for threads with many posts.
+  Conservative upper bound assuming 45473 / 20 ≈ 2275 distinct page fetches.
+- Users: 5194 calls (one per unique user).
+- Resources: 12 listing calls + 230 detail calls + 230 `/versions` calls.
+
+Total ≈ 8200 calls. At a polite 3 rps, that's ~45 minutes for a clean run.
+At 1 rps, ~2.5 hours. The forum is read-only so a long run is fine.
 
 ## Stage 1 — Exporter
 
@@ -137,7 +162,7 @@ re-runnable and resumable.
 
 ```
 data/
-├── meta.json              # nodes (categories+forums) + lookup tables
+├── meta.json              # nodes (categories+forums) + lookup tables + export stats
 ├── users/                 # one file per user encountered
 │   ├── 1.json
 │   └── ...
@@ -145,7 +170,7 @@ data/
 │   ├── 2.json             # one file per thread, all posts inline
 │   └── ...
 └── resources/
-    ├── 1.json
+    ├── 1.json             # one file per resource, includes its versions+files
     └── ...
 ```
 
@@ -159,8 +184,8 @@ write from multiple workers.
   "exported_at": "2026-05-11T...",
   "site_title": "TorrentPier support forum",
   "nodes": [ /* /api/nodes payload, normalised */ ],
-  "user_groups": { "2": "Administrator", "3": "Разработчик", ... }, // derived
-  "stats": { "threads": 3304, "posts": 45473, "users": 5194, "resources": 231 }
+  "user_groups": { "2": "Administrator", "3": "Разработчик", ... },
+  "stats": { "threads": 3304, "posts": 45473, "users": 5194, "resources": 230 }
 }
 ```
 
@@ -210,14 +235,14 @@ write from multiple workers.
 
 ### Implementation tasks
 
-- [ ] `exporter/http.py`: `httpx.Client` wrapper with auth headers, `tenacity` retry (exponential backoff, retry on 5xx/429/transport), per-request rate limit (token bucket, default 1 rps, configurable).
+- [ ] `exporter/http.py`: `httpx.Client` wrapper with auth headers (`XF-Api-Key`, `XF-Api-User`), `tenacity` retry (exponential backoff, retry on 5xx/429/transport), per-request rate limit (token bucket, default 3 rps, configurable via `--rps`).
 - [ ] `exporter/nodes.py`: `GET /api/nodes` → write `data/meta.json` skeleton, return list of forum node ids to crawl.
 - [ ] `exporter/threads.py`: for each forum: paginate `/api/forums/{id}/threads`, for each thread: paginate `/api/threads/{id}/?with_posts=1&page=N`, merge pages into one `data/threads/{id}.json`. Skip if file already exists unless `--force`.
-- [ ] `exporter/users.py`: collect every `user_id` referenced from threads/posts/resources; fetch unique users; write `data/users/{id}.json`. Two-pass approach: first pass records ids, second pass fetches the missing ones.
-- [ ] `exporter/resources.py`: paginate `/api/resources`, write `data/resources/{id}.json`. Need to confirm versions/files endpoints.
+- [ ] `exporter/users.py`: collect every `user_id` referenced from threads/posts/resources; fetch unique users; write `data/users/{id}.json`.
+- [ ] `exporter/resources.py`: paginate `/api/resources`, for each resource fetch `/api/resources/{id}/versions`, write merged `data/resources/{id}.json`.
 - [ ] `exporter/main.py`: orchestration (CLI flags `--stage nodes|threads|users|resources|all`, `--force`, `--rps`, `--from-thread`, `--only-thread`).
-- [ ] Logging: structured (one line per HTTP call), default level INFO, `--verbose` for DEBUG.
-- [ ] Resumability: presence of output file = "done" marker. No separate state file unless we discover XF returns paginated content with cursors that benefit from snapshotting.
+- [ ] Logging: structured (one line per HTTP call), default INFO, `--verbose` for DEBUG.
+- [ ] Resumability: presence of output file = "done" marker. Failure mid-thread leaves partial-state risk; use atomic write (`tmp` + `rename`) for each `data/*.json`.
 - [ ] Tests: golden-file tests for normalisation logic with response fixtures saved under `exporter/tests/fixtures/`.
 
 ### Out of scope for stage 1
@@ -229,31 +254,41 @@ write from multiple workers.
 ## Stage 2 — Mirror to Cloudflare R2
 
 Goal: every binary referenced in `data/` lives in R2 with a stable, deduped key,
-and `data/threads/*.json` carries `r2_key` for each attachment / avatar /
-inline image.
+and `data/threads/*.json` (and `data/resources/*.json`) carries `r2_key` for
+each attachment / avatar / inline image / resource file.
 
 ### Bucket layout
 
 ```
 attachments/{attachment_id}/{original_filename}     # XF native attachments
-avatars/{user_id}.jpg                               # whichever size we standardise on (probably "l")
+avatars/{user_id}.jpg                               # standardised on size "l"
 inline/{sha256[:2]}/{sha256}{ext}                   # external <img src> hot-linked in posts (deduped)
-resources/{resource_id}/icon{ext}                   # resource icons
-resources/{resource_id}/v/{version_id}/{filename}   # resource version files
+resources/{resource_id}/v/{version_id}/{filename}   # resource version files (62.83 MiB total)
 ```
+
+Resource icons: pulled directly from the resource object's `icon_url` and stored
+under `resources/{resource_id}/icon{ext}` if present.
+
+### Provisioning via wrangler
+
+Pre-condition: `wrangler` is installed (✓ Homebrew 4.90.0 on this host) and
+the user has run `wrangler login` interactively.
+
+- [ ] `wrangler r2 bucket create torrentpier-archive`
+- [ ] In Cloudflare dashboard: bind `files-ox.torrentpier.com` to the bucket as a custom domain (Workers/Pages → R2 → Settings → Custom Domains).
+- [ ] Create an R2 access key + secret for use by the Python mirror script (Cloudflare dashboard → R2 → Manage R2 API Tokens). Store in `.env` as `R2_ACCESS_KEY_ID` / `R2_SECRET_ACCESS_KEY`.
 
 ### Implementation tasks
 
-- [ ] Provision R2 bucket (`torrentpier-archive`) and a custom domain (e.g. `files.archive.<domain>`). **Open question — see below.**
-- [ ] `mirror/main.py`: walks `data/`, for each unmirrored asset downloads from origin and uploads to R2 via `boto3` (S3-compatible). Concurrency via `asyncio` or `concurrent.futures` (4–8 workers).
-- [ ] In-memory dedupe by sha256 for inline images (same image referenced from multiple posts → one R2 object).
+- [ ] `mirror/main.py`: walks `data/`, for each unmirrored asset downloads from origin and uploads to R2 via `boto3` (S3-compatible). Concurrency via `concurrent.futures` (4–8 workers).
+- [ ] In-memory dedupe by sha256 for inline images.
 - [ ] Idempotent: skip R2 keys that already exist (HEAD probe or local index `mirror/state.json`).
 - [ ] After upload, write `r2_key` (and remove `src_url`?) into the corresponding JSON. Pretty-print for clean diffs.
 - [ ] Sanity check at the end: every `r2_key` in `data/` resolves on R2.
 
 ### Out of scope for stage 2
 
-- Rewriting the in-post HTML (`message_parsed`) to use R2 URLs — that happens at build time so we can change the public R2 URL without touching `data/`.
+- Rewriting in-post HTML (`message_parsed`) to use R2 URLs — that happens at build time so we can change the public R2 URL without rewriting `data/`.
 
 ## Stage 3 — Static builder
 
@@ -269,7 +304,7 @@ Goal: deterministic `dist/` ready for GitHub Pages.
 | `/threads/{slug}.{id}/page-{N}/`         | `thread.html`  | Posts (20/page) with `<article id="post-{id}">` anchors |
 | `/posts/{id}/`                           | `post-redirect.html` | `<meta http-equiv="refresh">` to thread anchor — preserves XF deep-link compatibility |
 | `/resources/categories/{slug}.{id}/`     | `rcategory.html`| Resources in category                     |
-| `/resources/{slug}.{id}/`                | `resource.html`| Resource detail                            |
+| `/resources/{slug}.{id}/`                | `resource.html`| Resource detail with version download list |
 | `/members/{slug}.{id}/`                  | `member.html`  | Minimal: avatar, name, title, post count   |
 | `/sitemap.xml`                           | (script)       | All canonical URLs                         |
 | `/robots.txt`                            | static         | Allow all                                  |
@@ -282,7 +317,7 @@ Each post body runs through a sanitisation + rewriting pass with BeautifulSoup:
 1. Replace `<img src=...>` and `<a href=...>` pointing at hosted attachments / avatars with their public R2 URLs (via lookup table).
 2. Replace external `<img>` (lookup against the inline-image dedupe table) with R2.
 3. Rewrite XF internal links (`/threads/...`, `/forums/...`, `/posts/...`, `/members/...`, `/resources/...`) to be **same-origin** (URL scheme already matches → typically just strip the `https://torrentpier.com` prefix).
-4. Strip `<script>`, all `on*` attributes, and `<iframe>` whose `src` host is not in an allowlist (YouTube only, probably).
+4. Strip `<script>`, all `on*` attributes, and `<iframe>` whose `src` host is not in an allowlist (YouTube only).
 5. Add `loading="lazy"` to all `<img>`.
 6. Add `rel="noopener nofollow"` to external `<a>`.
 
@@ -293,7 +328,7 @@ Each post body runs through a sanitisation + rewriting pass with BeautifulSoup:
 - [ ] `builder/rewrite.py` — `message_parsed` rewriter.
 - [ ] `builder/sitemap.py`.
 - [ ] `templates/` + `static/`: minimal, readable, dark-mode via `prefers-color-scheme`. No XF CSS.
-- [ ] Determinism: same `data/` → byte-identical `dist/` (sorted file iteration, frozen timestamps).
+- [ ] Determinism: same `data/` → byte-identical `dist/` (sorted iteration, frozen timestamps).
 
 ## Stage 4 — Search worker + D1
 
@@ -321,8 +356,8 @@ CREATE TABLE posts (
 
 CREATE VIRTUAL TABLE posts_fts USING fts5(
     body,                   -- lemmatised plain text of the post
-    title,                  -- denormalised thread title (boosted in queries)
-    content='',             -- contentless table; we store originals only in posts/threads
+    title,                  -- denormalised thread title
+    content='',
     tokenize='unicode61 remove_diacritics 2'
 );
 ```
@@ -330,35 +365,31 @@ CREATE VIRTUAL TABLE posts_fts USING fts5(
 ### Indexer (Python, run once locally)
 
 - [ ] `search/index.py`: walks `data/threads/`, for each post: BeautifulSoup→`get_text()`, normalise whitespace, lemmatise via `pymorphy3` (cache per token), emit `INSERT` statements.
-- [ ] Output a `search/seed.sql` that's fed to D1 via `wrangler d1 execute --file=...` in batches of ~5000 statements (D1 import limit).
+- [ ] Output `search/seed.sql` fed to D1 via `wrangler d1 execute --file=...` in batches of ~5000 statements.
 
 ### Worker (TypeScript, ~80 lines)
 
 - [ ] `search-worker/src/index.ts`: `/search?q=...` endpoint, escapes FTS5 query syntax, returns top-30 results with `<mark>`-highlighted snippets, `Cache-Control: public, max-age=3600`.
-- [ ] `search-worker/wrangler.toml`: D1 binding, custom domain route `search.archive.<domain>/*`.
+- [ ] `search-worker/wrangler.toml`: D1 binding, custom domain route `search-ox.torrentpier.com/*`.
 - [ ] Lemmatise the user query the same way as the index. Two viable options:
   - Lemmatise on the client (small JS lemmatiser bundle) before calling the worker — keeps the worker stateless.
-  - Lemmatise inside the worker using a pure-JS port of pymorphy3 dictionaries — bigger bundle, simpler frontend.
-  Decide during stage 4.
+  - Lemmatise inside the worker using a pure-JS port of pymorphy3 dictionaries.
 
 ### Frontend search page
 
-- [ ] `static/js/search.js` — submits to `https://search.archive.<domain>/search?q=...`, renders results as links with breadcrumbs and snippet, debounce 200ms.
+- [ ] `static/js/search.js` — submits to `https://search-ox.torrentpier.com/search?q=...`, renders results as links with breadcrumbs and snippet, debounce 200ms.
 
 ## Stage 5 — Deploy
 
 - [ ] `.github/workflows/build.yml`: on push to `main` touching `data/`, `templates/`, `static/`, `builder/`: install deps, run `python -m builder.main`, upload `dist/` as Pages artifact, deploy.
-- [ ] CNAME file in `static/CNAME` with the archive subdomain.
-- [ ] Cloudflare side: CNAME → `<user>.github.io`, plus Bulk Redirect List from old hostname → `archive.<domain>` (URL paths are preserved by design).
+- [ ] CNAME file in `static/CNAME` with `ox.torrentpier.com`.
+- [ ] Cloudflare side: CNAME `ox.torrentpier.com` → `<user>.github.io`, plus Bulk Redirect List from old hostname (`torrentpier.com`) → `ox.torrentpier.com` (URL paths preserved by design).
 
-## Open questions / decisions still owed
+## Open questions
 
-- [ ] **R2 provisioning route.** Either user issues a Cloudflare API token (`Account → R2 Storage → Edit`, plus `Workers Scripts → Edit` and `D1 → Edit` for stage 4) and we provision via `wrangler` from the repo, or user creates the bucket manually and hands over an R2 access key + secret + endpoint + bucket name. Decide before stage 2.
-- [ ] **R2 public URL.** Is `files.archive.<domain>` the wanted hostname? What is `<domain>`?
-- [ ] **Archive subdomain.** Is `archive.<domain>` the wanted hostname?
-- [ ] **Resources file content.** Are the actual resource downloads (binary mods/scripts) part of the archive, or just the description pages?
+- [ ] Server-side size of the forum's actual attachments (not resource files). User's estimate is 1–5 GB; well within the R2 free tier of 10 GB. Will be measured precisely during stage 1 by summing `attachments[].file_size` across all posts.
+- [ ] `/api/attachments/{id}/data` actual response — needs probing once we hit a real attachment id during the first exporter run.
 - [ ] **YouTube iframes.** Keep as iframes (relies on YouTube staying online) or downgrade to text links during HTML rewrite? Decide during stage 3.
-- [ ] **Per-page count.** Confirm `per_page=100` is allowed on listing endpoints, otherwise 3304 threads = 165 paginated calls per stage instead of ~33.
 
 ## How to resume
 
