@@ -25,7 +25,8 @@ of the deliverable, not a side note.
 | Exporter — `threads` stage (code)   | Done — smoke-tested on thread 2 (50 posts, 5 pages → 32 KB JSON) |
 | Exporter — `threads` full run       | In progress / pending                  |
 | Exporter — `users` stage            | Captured incidentally during `threads` (27 users from thread 2 smoke run) |
-| Exporter — `resources` stage        | Not started                            |
+| Exporter — `resources` stage (code) | Done                                   |
+| Exporter — `resources` full run     | Pending — kicks off after threads run completes |
 | Attachment mirror to R2             | Not started — R2 bucket not provisioned|
 | Static builder (`builder/`)         | Not started                            |
 | Search worker + D1                  | Not started                            |
@@ -284,7 +285,7 @@ write from multiple workers.
 - [x] `exporter/threads.py`: for each forum: paginate `/api/forums/{id}/threads` (page envelope at top level), for each thread: paginate `/api/threads/{id}/?with_posts=1&page=N` until `current_page == last_page`. Posts are at top-level `posts[]`, not nested in `thread`. Captures `post.User` into a shared `UserCache`. Merges pages into one `data/threads/{id}.json`. Skips existing files unless `--force`. CLI flags: `--forum N` (repeatable), `--only-thread N`, `--force`.
 - [x] `exporter/users.py`: `UserCache` flushes `data/users/{id}.json` from the side-effect cache populated by the thread pass.
 - [ ] Optional second user pass: scan `message_parsed` for `[USER=N]`/`<a data-user-id=N>` references and fetch any users that weren't seen as authors.
-- [ ] `exporter/resources.py`: paginate `/api/resources`, for each resource fetch `/api/resources/{id}/versions`, write merged `data/resources/{id}.json`.
+- [x] `exporter/resources.py`: paginate `/api/resources`, for each resource fetch `/api/resources/{id}` (full detail with embedded `Category`) plus `/api/resources/{id}/versions`, merge into `data/resources/{id}.json`. Captures resource-author `User` into the shared cache.
 - [ ] `exporter/main.py`: orchestration (CLI flags `--stage nodes|threads|users|resources|all`, `--force`, `--rps`, `--from-thread`, `--only-thread`).
 - [ ] Logging: structured (one line per HTTP call), default INFO, `--verbose` for DEBUG.
 - [ ] Resumability: presence of output file = "done" marker. Failure mid-thread leaves partial-state risk; use atomic write (`tmp` + `rename`) for each `data/*.json`.

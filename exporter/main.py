@@ -6,7 +6,7 @@ import argparse
 import logging
 from pathlib import Path
 
-from . import api, nodes, threads
+from . import api, nodes, resources, threads
 
 
 def cmd_nodes(args: argparse.Namespace) -> None:
@@ -21,6 +21,16 @@ def cmd_threads(args: argparse.Namespace) -> None:
             Path(args.data),
             forum_ids=args.forum or None,
             only_thread=args.only_thread,
+            force=args.force,
+        )
+
+
+def cmd_resources(args: argparse.Namespace) -> None:
+    with api.from_env() as client:
+        resources.export_resources(
+            client,
+            Path(args.data),
+            only_resource=args.only_resource,
             force=args.force,
         )
 
@@ -54,6 +64,21 @@ def build_parser() -> argparse.ArgumentParser:
         help="Re-export threads even if their JSON already exists",
     )
     p_threads.set_defaults(func=cmd_threads)
+
+    p_resources = sub.add_parser(
+        "resources", help="Export resources + versions to data/resources/"
+    )
+    p_resources.add_argument(
+        "--only-resource",
+        type=int,
+        help="Export a single resource by id (debug)",
+    )
+    p_resources.add_argument(
+        "--force",
+        action="store_true",
+        help="Re-export resources even if their JSON already exists",
+    )
+    p_resources.set_defaults(func=cmd_resources)
     return p
 
 
