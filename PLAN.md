@@ -22,8 +22,9 @@ of the deliverable, not a side note.
 | Exporter — http client (`api.py`)   | Done                                   |
 | Exporter — atomic JSON writer       | Done                                   |
 | Exporter — `nodes` stage            | Done — first end-to-end run wrote `data/meta.json` (34 nodes, 27 forums) |
-| Exporter — `threads` stage          | Not started                            |
-| Exporter — `users` stage            | Not started                            |
+| Exporter — `threads` stage (code)   | Done — smoke-tested on thread 2 (50 posts, 5 pages → 32 KB JSON) |
+| Exporter — `threads` full run       | In progress / pending                  |
+| Exporter — `users` stage            | Captured incidentally during `threads` (27 users from thread 2 smoke run) |
 | Exporter — `resources` stage        | Not started                            |
 | Attachment mirror to R2             | Not started — R2 bucket not provisioned|
 | Static builder (`builder/`)         | Not started                            |
@@ -280,8 +281,9 @@ write from multiple workers.
 - [x] `exporter/api.py`: `httpx.Client` wrapper with auth headers (`XF-Api-Key`, `XF-Api-User`), `tenacity` retry (exponential backoff, retry on 5xx/429/transport), per-request rate limit (token bucket, default 3 rps, configurable via `XF_API_RPS` env var).
 - [x] `exporter/io.py`: atomic JSON writer (tempfile + `os.replace`).
 - [x] `exporter/nodes.py`: `GET /api/nodes` → write `data/meta.json` with `tree_map`, full `nodes[]`, `by_type` index and `forum_ids` shortcut.
-- [ ] `exporter/threads.py`: for each forum: paginate `/api/forums/{id}/threads` (page envelope at top level), for each thread: paginate `/api/threads/{id}/?with_posts=1&page=N` until `current_page == last_page`. **Posts are at top-level `posts[]`, not nested in `thread`.** Capture `User` objects embedded in each post into a per-export user cache. Merge pages into one `data/threads/{id}.json`. Skip if file already exists unless `--force`.
-- [ ] `exporter/users.py`: write `data/users/{id}.json` from the in-memory cache populated by the thread pass. Optional second pass: scan `message_parsed` for `[USER=N]`/`<a data-user-id=N>` references and fetch any users that weren't seen as authors.
+- [x] `exporter/threads.py`: for each forum: paginate `/api/forums/{id}/threads` (page envelope at top level), for each thread: paginate `/api/threads/{id}/?with_posts=1&page=N` until `current_page == last_page`. Posts are at top-level `posts[]`, not nested in `thread`. Captures `post.User` into a shared `UserCache`. Merges pages into one `data/threads/{id}.json`. Skips existing files unless `--force`. CLI flags: `--forum N` (repeatable), `--only-thread N`, `--force`.
+- [x] `exporter/users.py`: `UserCache` flushes `data/users/{id}.json` from the side-effect cache populated by the thread pass.
+- [ ] Optional second user pass: scan `message_parsed` for `[USER=N]`/`<a data-user-id=N>` references and fetch any users that weren't seen as authors.
 - [ ] `exporter/resources.py`: paginate `/api/resources`, for each resource fetch `/api/resources/{id}/versions`, write merged `data/resources/{id}.json`.
 - [ ] `exporter/main.py`: orchestration (CLI flags `--stage nodes|threads|users|resources|all`, `--force`, `--rps`, `--from-thread`, `--only-thread`).
 - [ ] Logging: structured (one line per HTTP call), default INFO, `--verbose` for DEBUG.
