@@ -1,18 +1,22 @@
 """Render the static site from `data/` into `dist/`.
 
-This first slice is intentionally minimal:
-- /index.html with a flat list of forums (categories will follow)
-- /threads/{slug}.{id}/index.html for every exported thread (no pagination yet)
-- copies static/ as-is to the output root
+Current scope:
+- /index.html — top-level categories with their child forums
+- /categories/{slug?}.{id}/ — single category page
+- /forums/{slug?}.{id}/ — single forum page with all its threads
+- /threads/{slug}.{id}/ — single thread, all posts on one page (no pagination)
+- /resources/categories/{slug?}.{id}/ — list resources in a category
+- /resources/{slug}.{id}/ — resource detail page
+- copies static/ as-is
 
-Pagination, forum listings, resources, member pages and the `message_parsed`
-rewrite pass are TODO — see PLAN.md.
+TODO: pagination, message_parsed rewrite, member pages, search, sitemap.
 """
 
 from __future__ import annotations
 
 import json
 import logging
+import re
 import shutil
 from pathlib import Path
 from typing import Any
@@ -20,6 +24,15 @@ from typing import Any
 from .render import context_globals, make_env
 
 log = logging.getLogger(__name__)
+
+
+SLUG_FALLBACK_RE = re.compile(r"[^a-z0-9]+")
+
+
+def _slugify(text: str) -> str:
+    """Used only when a node has no slug-bearing view_url."""
+    s = SLUG_FALLBACK_RE.sub("-", (text or "").lower()).strip("-")
+    return s or "node"
 
 
 def _read_json(path: Path) -> Any:
@@ -40,6 +53,16 @@ def load_threads(data_dir: Path) -> list[dict[str, Any]]:
     return sorted(
         (_read_json(p) for p in threads_dir.glob("*.json")),
         key=lambda t: t["id"],
+    )
+
+
+def load_resources(data_dir: Path) -> list[dict[str, Any]]:
+    res_dir = data_dir / "resources"
+    if not res_dir.exists():
+        return []
+    return sorted(
+        (_read_json(p) for p in res_dir.glob("*.json")),
+        key=lambda r: r["id"],
     )
 
 
@@ -68,12 +91,54 @@ def _copy_static(static_dir: Path, out_dir: Path) -> int:
     return n
 
 
-def _index_forums(meta: dict[str, Any]) -> list[dict[str, Any]]:
-    """Flat list of forums sorted by display_order then title."""
-    return sorted(
-        (n for n in meta.get("nodes", []) if n.get("node_type_id") == "Forum"),
-        key=lambda n: (n.get("display_order", 0), n.get("title") or ""),
-    )
+def node_url(node: dict[str, Any]) -> str:
+    """Build the canonical URL path for a category or forum node.
+
+    XF view_urls (e.g. `/forums/general.5/`) keep the slug. We reconstruct
+    the same shape from `node_name` if available, falling back to slugified
+    title, then to the bare id.
+    """
+    nid = node["node_id"]
+    slug = node.get("node_name") or _slugify(node.get("title", ""))
+    type_path = "categories" if node.get("node_type_id") == "Category" else "forums"
+    return f"/{type_path}/{slug}.{nid}/"
+
+
+def _write(out: Path, html: str) -> None:
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(html, encoding="utf-8")
+
+
+def _build_indexes(meta: dict[str, Any], threads: list[dict[str, Any]], resources: list[dict[str, Any]]) -> dict[str, Any]:
+    nodes_by_id: dict[int, dict[str, Any]] = {n["node_id"]: n for n in meta.get("nodes", [])}
+    forums = [n for n in nodes_by_id.values() if n.get("node_type_id") == "Forum"]
+    categories = [n for n in nodes_by_id.values() if n.get("node_type_id") == "Category"]
+    tree_map = {int(k): list(v) for k, v in (meta.get("tree_map") or {}).items()}
+
+    threads_by_forum: dict[int, list[dict[str, Any]]] = {}
+    for t in threads:
+        fid = (t.get("forum") or {}).get("id") or t.get("node_id")
+        if fid:
+            threads_by_forum.setdefault(int(fid), []).append(t)
+    for ts in threads_by_forum.values():
+        ts.sort(key=lambda t: -(t.get("last_post_date") or t.get("post_date") or 0))
+
+    resources_by_cat: dict[int, list[dict[str, Any]]] = {}
+    for r in resources:
+        cid = (r.get("category") or {}).get("id")
+        if cid:
+            resources_by_cat.setdefault(int(cid), []).append(r)
+    for rs in resources_by_cat.values():
+        rs.sort(key=lambda r: -(r.get("last_update") or r.get("resource_date") or 0))
+
+    return {
+        "nodes_by_id": nodes_by_id,
+        "forums": sorted(forums, key=lambda n: (n.get("display_order", 0), n.get("title") or "")),
+        "categories": sorted(categories, key=lambda n: (n.get("display_order", 0), n.get("title") or "")),
+        "tree_map": tree_map,
+        "threads_by_forum": threads_by_forum,
+        "resources_by_cat": resources_by_cat,
+    }
 
 
 def build(data_dir: Path, out_dir: Path) -> None:
@@ -86,13 +151,17 @@ def build(data_dir: Path, out_dir: Path) -> None:
 
     meta = load_meta(data_dir)
     threads = load_threads(data_dir)
+    resources = load_resources(data_dir)
     users = load_users(data_dir)
     log.info(
-        "Loaded data: %d nodes, %d threads, %d users",
+        "Loaded data: %d nodes, %d threads, %d resources, %d users",
         len(meta.get("nodes", [])),
         len(threads),
+        len(resources),
         len(users),
     )
+
+    idx = _build_indexes(meta, threads, resources)
 
     if out_dir.exists():
         shutil.rmtree(out_dir)
@@ -101,21 +170,86 @@ def build(data_dir: Path, out_dir: Path) -> None:
     n_static = _copy_static(static_dir, out_dir)
     log.info("Copied %d static files", n_static)
 
+    # Helpers exposed to all templates
+    env.globals["node_url"] = node_url
+    env.globals["users"] = users
+    env.globals["nodes_by_id"] = idx["nodes_by_id"]
+
+    # /
     index_tmpl = env.get_template("index.html")
-    (out_dir / "index.html").write_text(
-        index_tmpl.render(meta=meta, forums=_index_forums(meta), thread_count=len(threads)),
-        encoding="utf-8",
+    _write(
+        out_dir / "index.html",
+        index_tmpl.render(
+            categories=idx["categories"],
+            forums=idx["forums"],
+            tree_map=idx["tree_map"],
+            threads_by_forum=idx["threads_by_forum"],
+            thread_count=len(threads),
+            resource_count=len(resources),
+        ),
     )
 
+    # /categories/{slug}.{id}/
+    cat_tmpl = env.get_template("category.html")
+    for cat in idx["categories"]:
+        child_ids = idx["tree_map"].get(cat["node_id"], [])
+        child_forums = [
+            idx["nodes_by_id"][cid]
+            for cid in child_ids
+            if cid in idx["nodes_by_id"] and idx["nodes_by_id"][cid].get("node_type_id") == "Forum"
+        ]
+        path = (out_dir / node_url(cat).lstrip("/") / "index.html")
+        _write(path, cat_tmpl.render(category=cat, forums=child_forums, threads_by_forum=idx["threads_by_forum"]))
+
+    # /forums/{slug}.{id}/
+    forum_tmpl = env.get_template("forum.html")
+    for forum in idx["forums"]:
+        path = (out_dir / node_url(forum).lstrip("/") / "index.html")
+        _write(
+            path,
+            forum_tmpl.render(
+                forum=forum,
+                threads=idx["threads_by_forum"].get(forum["node_id"], []),
+            ),
+        )
+
+    # /threads/{slug}.{id}/
     thread_tmpl = env.get_template("thread.html")
-    rendered = 0
     for thread in threads:
         url_path = thread.get("url_path") or f"/threads/thread-{thread['id']}/"
-        out_path = out_dir / url_path.lstrip("/") / "index.html"
-        out_path.parent.mkdir(parents=True, exist_ok=True)
-        out_path.write_text(
-            thread_tmpl.render(thread=thread, users=users, meta=meta),
-            encoding="utf-8",
+        path = out_dir / url_path.lstrip("/") / "index.html"
+        _write(path, thread_tmpl.render(thread=thread))
+    log.info("Rendered %d thread pages", len(threads))
+
+    # /resources/{slug}.{id}/
+    resource_tmpl = env.get_template("resource.html")
+    for resource in resources:
+        url_path = resource.get("url_path") or f"/resources/resource-{resource['id']}/"
+        path = out_dir / url_path.lstrip("/") / "index.html"
+        _write(path, resource_tmpl.render(resource=resource))
+    log.info("Rendered %d resource pages", len(resources))
+
+    # /resources/categories/{slug?}.{id}/
+    rcat_tmpl = env.get_template("rcategory.html")
+    seen_cats: dict[int, dict[str, Any]] = {}
+    for r in resources:
+        cat = r.get("category") or {}
+        cid = cat.get("id")
+        if cid and cid not in seen_cats:
+            seen_cats[cid] = cat
+    for cid, cat in seen_cats.items():
+        url = cat.get("view_url") or ""
+        # extract path part if absolute URL
+        from urllib.parse import urlparse
+
+        url_path = urlparse(url).path or f"/resources/categories/cat-{cid}/"
+        path = out_dir / url_path.lstrip("/") / "index.html"
+        _write(
+            path,
+            rcat_tmpl.render(
+                category=cat,
+                resources=idx["resources_by_cat"].get(cid, []),
+            ),
         )
-        rendered += 1
-    log.info("Rendered %d thread pages", rendered)
+
+    log.info("Build complete: %s", out_dir)

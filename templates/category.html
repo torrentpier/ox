@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}{{ category.title }} — {{ site_name }}{% endblock %}
+{% block content %}
+<nav class="breadcrumbs">
+  <a href="/">Home</a>
+  / <span class="current">{{ category.title }}</span>
+</nav>
+<h1>{{ category.title }}</h1>
+{% if category.description %}<p class="muted">{{ category.description }}</p>{% endif %}
+<ul class="forum-list">
+{% for forum in forums %}
+  <li>
+    <a class="forum-link" href="{{ node_url(forum) }}">{{ forum.title }}</a>
+    {% set tlist = threads_by_forum.get(forum.node_id, []) %}
+    <span class="muted">— {{ tlist | length }} threads</span>
+    {% if forum.description %}<div class="muted">{{ forum.description }}</div>{% endif %}
+  </li>
+{% endfor %}
+</ul>
+{% endblock %}

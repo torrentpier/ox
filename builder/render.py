@@ -5,6 +5,7 @@ from __future__ import annotations
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlparse
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
@@ -36,6 +37,7 @@ def make_env(template_dir: Path) -> Environment:
     )
     env.filters["timestamp"] = _format_timestamp
     env.filters["filesize"] = _format_size
+    env.filters["urlpath"] = lambda u: urlparse(u or "").path or "/"
     return env
 
 

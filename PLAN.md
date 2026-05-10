@@ -27,10 +27,10 @@ of the deliverable, not a side note.
 | Exporter — `users` stage            | Captured incidentally during `threads` (27 users from thread 2 smoke run) |
 | Exporter — `resources` stage (code) | Done                                   |
 | Exporter — `resources` full run     | Done — 230 resources, 2.2 MB on disk   |
-| Builder — minimal slice             | Done — `index` + per-thread pages, dark-mode CSS, ~1612 pages rendered mid-export-run |
-| Builder — forum listings + pagination | Not started                          |
+| Builder — minimal slice             | Done — `index`, category, forum, thread, resource and resource-category pages; dark-mode CSS |
+| Builder — pagination (forum + thread) | Not started — every thread/forum is one HTML page |
 | Builder — `message_parsed` rewrite (URLs, sandboxing) | Not started          |
-| Builder — resource pages            | Not started                            |
+| Builder — sitemap, robots.txt       | Not started                            |
 | Attachment mirror to R2             | Not started — R2 bucket not provisioned|
 | Static builder (`builder/`)         | Not started                            |
 | Search worker + D1                  | Not started                            |
@@ -444,7 +444,7 @@ CREATE VIRTUAL TABLE posts_fts USING fts5(
 ## Open questions
 
 - [ ] Server-side size of the forum's actual attachments (not resource files). User's estimate is 1–5 GB; well within the R2 free tier of 10 GB. Will be measured precisely during stage 1 by summing `attachments[].file_size` across all posts.
-- [ ] `/api/attachments/{id}/data` actual response — needs probing once we hit a real attachment id during the first exporter run.
+- [ ] **Resource version downloads require API auth.** `download_url` in `/api/resources/{id}/versions[].files[]` is `https://torrentpier.com/api/resource-versions/{vid}/download?file={fid}` — fetching it without `XF-Api-Key` returns 403. Must download every file via the API during the mirror stage and rehost on R2; the rendered resource page must point at R2 URLs, not the API endpoint.
 - [ ] **YouTube iframes.** Keep as iframes (relies on YouTube staying online) or downgrade to text links during HTML rewrite? Decide during stage 3.
 
 ## How to resume

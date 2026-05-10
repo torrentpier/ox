@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %}{{ resource.title }} — {{ site_name }}{% endblock %}
+{% block content %}
+<nav class="breadcrumbs">
+  <a href="/">Home</a>
+  / <a href="/resources/">Resources</a>
+  {% if resource.category and resource.category.view_url %}
+  / <a href="{{ resource.category.view_url | urlpath }}">{{ resource.category.title }}</a>
+  {% endif %}
+  / <span class="current">{{ resource.title }}</span>
+</nav>
+
+<h1>{{ resource.title }}</h1>
+{% if resource.tag_line %}<p class="lede">{{ resource.tag_line }}</p>{% endif %}
+
+<p class="thread-meta muted">
+  By <strong>{{ resource.username }}</strong>
+  {% if resource.resource_date %}— posted {{ resource.resource_date | timestamp }}{% endif %}
+  {% if resource.last_update and resource.last_update != resource.resource_date %}— updated {{ resource.last_update | timestamp }}{% endif %}
+  {% if resource.version %}— version <strong>{{ resource.version }}</strong>{% endif %}
+  — {{ resource.view_count }} views, {{ resource.download_count }} downloads
+</p>
+
+{% if resource.description_parsed %}
+<section class="post">
+  <div class="post-body">{{ resource.description_parsed | safe }}</div>
+</section>
+{% endif %}
+
+{% if resource.versions %}
+<h2>Versions</h2>
+<table class="version-table">
+  <thead>
+    <tr><th>Version</th><th>Released</th><th class="num">Downloads</th><th>Files</th></tr>
+  </thead>
+  <tbody>
+  {% for v in resource.versions %}
+    <tr>
+      <td><strong>{{ v.version_string }}</strong></td>
+      <td class="muted">{{ v.release_date | timestamp }}</td>
+      <td class="num">{{ v.download_count }}</td>
+      <td>
+        {% for f in v.files %}
+          <a href="{{ f.src_url }}">{{ f.filename }}</a>
+          <span class="muted">({{ f.size | filesize }})</span>{% if not loop.last %}<br>{% endif %}
+        {% endfor %}
+      </td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% elif resource.current_files %}
+<h2>Files</h2>
+<ul>
+{% for f in resource.current_files %}
+  <li>
+    <a href="{{ f.src_url }}">{{ f.filename }}</a>
+    <span class="muted">({{ f.size | filesize }})</span>
+  </li>
+{% endfor %}
+</ul>
+{% elif resource.external_url %}
+<p>
+  External link: <a href="{{ resource.external_url }}" rel="noopener nofollow">{{ resource.external_url }}</a>
+</p>
+{% endif %}
+{% endblock %}

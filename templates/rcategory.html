@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}{{ category.title }} — Resources — {{ site_name }}{% endblock %}
+{% block content %}
+<nav class="breadcrumbs">
+  <a href="/">Home</a>
+  / <a href="/resources/">Resources</a>
+  / <span class="current">{{ category.title }}</span>
+</nav>
+<h1>{{ category.title }}</h1>
+{% if category.description %}<p class="muted">{{ category.description }}</p>{% endif %}
+<ul class="resource-list">
+{% for r in resources %}
+  <li>
+    <a href="{{ r.url_path }}"><strong>{{ r.title }}</strong></a>
+    {% if r.version %}<span class="muted">v{{ r.version }}</span>{% endif %}
+    {% if r.tag_line %}<div class="muted">{{ r.tag_line }}</div>{% endif %}
+  </li>
+{% endfor %}
+</ul>
+{% endblock %}
