@@ -22,6 +22,7 @@ from pathlib import Path
 from typing import Any
 
 from .render import context_globals, make_env
+from .rewrite import rewrite_html
 
 log = logging.getLogger(__name__)
 
@@ -163,6 +164,13 @@ def build(data_dir: Path, out_dir: Path) -> None:
 
     idx = _build_indexes(meta, threads, resources)
 
+    thread_url_map: dict[int, str] = {
+        int(t["id"]): t["url_path"] for t in threads if t.get("url_path")
+    }
+    forum_url_map: dict[int, str] = {
+        int(f["node_id"]): node_url(f) for f in idx["forums"]
+    }
+
     if out_dir.exists():
         shutil.rmtree(out_dir)
     out_dir.mkdir(parents=True)
@@ -216,6 +224,12 @@ def build(data_dir: Path, out_dir: Path) -> None:
     # /threads/{slug}.{id}/
     thread_tmpl = env.get_template("thread.html")
     for thread in threads:
+        for post in thread.get("posts", []):
+            post["message_parsed"] = rewrite_html(
+                post.get("message_parsed"),
+                thread_url_map=thread_url_map,
+                forum_url_map=forum_url_map,
+            )
         url_path = thread.get("url_path") or f"/threads/thread-{thread['id']}/"
         path = out_dir / url_path.lstrip("/") / "index.html"
         _write(path, thread_tmpl.render(thread=thread))
@@ -224,6 +238,11 @@ def build(data_dir: Path, out_dir: Path) -> None:
     # /resources/{slug}.{id}/
     resource_tmpl = env.get_template("resource.html")
     for resource in resources:
+        resource["description_parsed"] = rewrite_html(
+            resource.get("description_parsed"),
+            thread_url_map=thread_url_map,
+            forum_url_map=forum_url_map,
+        )
         url_path = resource.get("url_path") or f"/resources/resource-{resource['id']}/"
         path = out_dir / url_path.lstrip("/") / "index.html"
         _write(path, resource_tmpl.render(resource=resource))
