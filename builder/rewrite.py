@@ -23,8 +23,6 @@ from bs4 import BeautifulSoup
 # the export.
 _THREAD_PATH_RE = re.compile(r"^/threads/[^/]+\.(\d+)(/.*)?$")
 _FORUM_PATH_RE = re.compile(r"^/forums/[^/]+\.(\d+)(/.*)?$")
-# Collapse XF's page-N until builder pagination lands.
-_PAGE_SUFFIX_RE = re.compile(r"^/page-\d+(/?$|/)")
 
 INTERNAL_HOSTS = {"torrentpier.com", "www.torrentpier.com"}
 IFRAME_ALLOWED_HOSTS = {
@@ -53,11 +51,7 @@ def _canonicalise_thread_path(
     canonical = thread_url_map.get(int(m.group(1)))
     if not canonical:
         return path
-    suffix = m.group(2) or "/"
-    page_m = _PAGE_SUFFIX_RE.match(suffix)
-    if page_m:
-        suffix = "/" if page_m.group(1) in ("", "/", None) else "/"
-    return canonical.rstrip("/") + suffix
+    return canonical.rstrip("/") + (m.group(2) or "/")
 
 
 def _canonicalise_forum_path(
@@ -71,11 +65,7 @@ def _canonicalise_forum_path(
     canonical = forum_url_map.get(int(m.group(1)))
     if not canonical:
         return path
-    suffix = m.group(2) or "/"
-    page_m = _PAGE_SUFFIX_RE.match(suffix)
-    if page_m:
-        suffix = "/"
-    return canonical.rstrip("/") + suffix
+    return canonical.rstrip("/") + (m.group(2) or "/")
 
 
 def _to_relative_if_internal(
