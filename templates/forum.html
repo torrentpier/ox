@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}{{ forum.title }} — {{ site_name }}{% endblock %}
+{% block content %}
+<nav class="breadcrumbs">
+  <a href="/">Home</a>
+{% for crumb in forum.breadcrumbs %}
+  / <span>{{ crumb.title }}</span>
+{% endfor %}
+  / <span class="current">{{ forum.title }}</span>
+</nav>
+<h1>{{ forum.title }}</h1>
+{% if forum.description %}<p class="muted">{{ forum.description }}</p>{% endif %}
+<table class="thread-table">
+  <thead>
+    <tr>
+      <th>Thread</th>
+      <th>Author</th>
+      <th class="num">Replies</th>
+      <th class="num">Views</th>
+      <th>Last post</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for t in threads %}
+    <tr>
+      <td>
+        <a href="{{ t.url_path }}">{{ t.title }}</a>
+        {% if not t.discussion_open %}<span class="badge badge-closed">closed</span>{% endif %}
+        {% if t.sticky %}<span class="badge badge-sticky">sticky</span>{% endif %}
+      </td>
+      <td class="muted">{{ t.username }}</td>
+      <td class="num">{{ t.reply_count }}</td>
+      <td class="num">{{ t.view_count }}</td>
+      <td class="muted">{{ t.last_post_date | timestamp }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

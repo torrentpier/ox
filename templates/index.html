@@ -3,16 +3,26 @@
 {% block content %}
 <h1>{{ site_name }}</h1>
 <p class="lede">
-  Snapshot of {{ thread_count }} threads. This is the first build slice — categories,
-  pagination and search land in subsequent commits.
+  Snapshot of {{ thread_count }} threads and {{ resource_count }} resources.
 </p>
-<h2>Forums</h2>
-<ul class="forum-list">
-{% for forum in forums %}
-  <li>
-    <strong>{{ forum.title }}</strong>
-    {% if forum.description %}<span class="muted">— {{ forum.description }}</span>{% endif %}
-  </li>
+
+{% for cat in categories %}
+<section class="category">
+  <h2><a href="{{ node_url(cat) }}">{{ cat.title }}</a></h2>
+  {% if cat.description %}<p class="muted">{{ cat.description }}</p>{% endif %}
+  <ul class="forum-list">
+  {% for fid in tree_map.get(cat.node_id, []) %}
+    {% set forum = nodes_by_id.get(fid) %}
+    {% if forum and forum.node_type_id == 'Forum' %}
+    <li>
+      <a class="forum-link" href="{{ node_url(forum) }}">{{ forum.title }}</a>
+      {% set tlist = threads_by_forum.get(forum.node_id, []) %}
+      <span class="muted">— {{ tlist | length }} threads</span>
+      {% if forum.description %}<div class="muted">{{ forum.description }}</div>{% endif %}
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</section>
 {% endfor %}
-</ul>
 {% endblock %}
