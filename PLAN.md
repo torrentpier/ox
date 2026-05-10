@@ -67,6 +67,8 @@ of the deliverable, not a side note.
 | 14 | R2 provisioning via `wrangler` from this machine; `wrangler login` runs interactively by the user | Avoids handling a Cloudflare API token in the repo or in dotenv                                            |
 | 15 | In `/api/threads/{id}/?with_posts=1`: `posts` and `pagination` are top-level keys; attachments are named `Attachments` (capital A). | Verified against thread 37048; embedded resource conventions in XF API |
 | 16 | `User` object is embedded in every post under `post.User` — bulk `/api/users/{id}` calls are unnecessary in the common case | Saves ~5,000 requests; only fetch `/api/users/{id}` for users referenced via `[USER=N]` mentions / quotes who never authored a post |
+| 17 | `/api/resources/{id}/versions` may return `400 xfrm_this_resource_is_not_versioned` for single-file or fileless resources living in a versioned category. Treat as zero versions and rely on `current_files` from the detail call. | Discovered against resource 254 ("Мод noindex,nofollow"); silently skipping kept the run going. |
+| 18 | Resource description: store `description_parsed` (rendered HTML) alongside `DescriptionAttachments` so the builder can render it the same way as posts. | Mirrors the post schema (`message_parsed` + `Attachments`); avoids re-parsing BBCode. |
 
 ## API surface (verified against torrentpier.com on 2026-05-11)
 
