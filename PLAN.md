@@ -55,8 +55,10 @@ of the deliverable, not a side note.
 | 10 | Subdomain via CNAME, redirects from old hostname handled via Cloudflare (out of scope for repo)   | Per user                                                                                                   |
 | 11 | Hostnames: `ox.torrentpier.com` for site, `files-ox.torrentpier.com` for R2                       | Cloudflare universal SSL doesn't cover 4th-level (`files.ox.torrentpier.com` would need a paid cert)       |
 | 12 | Carry resource binaries: **all versions of all 230 resources**                                    | Total size measured at 62.83 MiB — negligible relative to forum attachments                                |
-| 13 | Pagination cannot be sped up: `per_page` is hard-capped at 20 server-side on every listing endpoint | Confirmed against `/api/forums/{id}/threads` and `/api/resources` with `per_page=100` and `per_page=200` — both returned 20 |
+| 13 | Pagination is server-side fixed and per-endpoint: `per_page=30` for `/api/forums/{id}/threads` and `/api/resources`, `per_page=10` for `/api/threads/{id}/?with_posts=1`. The `per_page` query param is ignored. | Confirmed by probing `per_page=20/30/50/100/200` against forum 17 (47 threads) — server always returned 30 — and observing `pagination.per_page` in thread 37048 detail page. |
 | 14 | R2 provisioning via `wrangler` from this machine; `wrangler login` runs interactively by the user | Avoids handling a Cloudflare API token in the repo or in dotenv                                            |
+| 15 | In `/api/threads/{id}/?with_posts=1`: `posts` and `pagination` are top-level keys; attachments are named `Attachments` (capital A). | Verified against thread 37048; embedded resource conventions in XF API |
+| 16 | `User` object is embedded in every post under `post.User` — bulk `/api/users/{id}` calls are unnecessary in the common case | Saves ~5,000 requests; only fetch `/api/users/{id}` for users referenced via `[USER=N]` mentions / quotes who never authored a post |
 
 ## API surface (verified against torrentpier.com on 2026-05-11)
 
@@ -69,11 +71,11 @@ Probed with a super-user key. Endpoints not listed were not checked.
 | `GET /api/nodes`                                        | 200    | **Categories + forums + pages + links** — full tree via `tree_map` + flat `nodes[]` array              |
 | `GET /api/nodes/flattened`                              | 200    | Alternative flat form                                                                                  |
 | `GET /api/forums/{node_id}`                             | 200    | Single forum incl. breadcrumbs and `view_url` with slug                                                |
-| `GET /api/forums/{node_id}/threads?page=N`              | 200    | Threads in forum, paginated. **`per_page` hard-capped at 20.**                                         |
-| `GET /api/threads/{id}/?with_posts=1&page=N`            | 200    | Thread + embedded `Forum` + posts (20/page). One call per thread page                                  |
+| `GET /api/forums/{node_id}/threads?page=N`              | 200    | Threads in forum, paginated. **Server-fixed `per_page=30`** (query param ignored).                     |
+| `GET /api/threads/{id}/?with_posts=1&page=N`            | 200    | Returns `{thread, posts, pagination}` at top level. **Server-fixed `per_page=10` for posts.** Each post has `User` embedded |
 | `GET /api/threads/{id}/posts?page=N`                    | 200    | Posts-only listing if needed                                                                           |
-| `GET /api/users/{id}`                                   | 200    | Full user object incl. `avatar_urls`, `user_title`, `is_admin/moderator/staff`                         |
-| `GET /api/resources?page=N`                             | 200    | Resource Manager content with embedded `Category` per resource. **`per_page` hard-capped at 20.**      |
+| `GET /api/users/{id}`                                   | 200    | Full user object incl. `avatar_urls`, `user_title`, `is_admin/moderator/staff`. Rarely needed — most users come embedded in posts |
+| `GET /api/resources?page=N`                             | 200    | Resource Manager content with embedded `Category` per resource. **Server-fixed `per_page=30`.**        |
 | `GET /api/resources/{id}`                               | 200    | Single resource detail; includes `current_files[]` (latest version files) and `Category`               |
 | `GET /api/resources/{id}/versions`                      | 200    | All versions; each has `files[]` with `id`, `filename`, `size` (bytes), `download_url`                 |
 | `GET /api/attachments/{id}`                             | 404 page | Endpoint exists ("requested_page_not_found" for missing id, vs "endpoint_not_found" for bad route)   |
@@ -89,21 +91,50 @@ Probed with a super-user key. Endpoints not listed were not checked.
 
 ### Endpoints still to verify before writing the exporter
 
-- [ ] `GET /api/attachments/{id}/data` — fetch a real attachment id from a post payload and confirm it returns binary content with proper `Content-Type`. (Several sample threads probed had no attachments at all — XF attachments are sparse on this forum. Will discover real ids during the first exporter run.)
+- [x] **Attachment download URL** — every attachment object carries a `direct_url` (e.g. `https://torrentpier.com/attachments/123-webp.508/`). No need for `/api/attachments/{id}/data`. Verified against post 9435 in thread 37048.
 - [ ] Behaviour of `include_deleted=1` on post listings — confirm it's a no-op without elevated permissions or that it indeed exposes soft-deleted posts (we drop them per decision #7 either way).
 
 ### Key schema notes
 
 **Node tree** (`/api/nodes`): `tree_map: {parent_id: [child_ids]}` plus `nodes[]` with `node_id`, `node_type_id` (`Category` / `Forum` / `Page` / `Link`), `parent_node_id`, `title`, `description`, `node_name`.
 
-**Thread** (`/api/threads/{id}/?with_posts=1`):
-- Top-level: `thread_id`, `title`, `view_url` (e.g. `/threads/otkrytie-foruma.2/` — slug + id baked in), `discussion_state`, `discussion_open`, `view_count`, `reply_count`, `post_date`, `first_post_id`, `username`, `user_id`, `custom_fields`, `tags`.
-- Embedded `Forum` object with `breadcrumbs[]`.
-- Embedded `posts[]` for the requested page.
+**Thread response envelope** (`/api/threads/{id}/?with_posts=1&page=N`):
+```jsonc
+{
+  "thread":     { /* thread metadata, see below */ },
+  "posts":      [ /* this page's posts, max 10 */ ],
+  "pagination": {"current_page": N, "last_page": M, "per_page": 10, "shown": 10, "total": 198}
+}
+```
+The `thread` object has its own `Forum` (with `breadcrumbs[]`) embedded.
 
-**Post**: `post_id`, `position`, `post_date`, `user_id`, `username`, `message_parsed` (rendered HTML — **never re-parse BBCode**), `attachments[]`, moderation flags. Reaction details available via separate endpoint (skipped per decision #7).
+**Thread metadata** (`thread.*`): `thread_id`, `title`, `view_url` (e.g. `/threads/otkrytie-foruma.2/` — slug + id baked in), `discussion_state`, `discussion_open`, `view_count`, `reply_count`, `post_date`, `first_post_id`, `username`, `user_id`, `custom_fields`, `tags`, `node_id`, `prefix_id`, `sticky`, `is_first_post_pinned`, `highlighted_post_ids`, `last_post_*`.
 
-**User**: `user_id`, `username`, `user_title` (e.g. `Administrator`, custom titles like `Разработчик`), `user_group_id`, `secondary_group_ids[]`, `is_admin`, `is_moderator`, `is_staff`, `avatar_urls.{o,h,l,m,s}`, `view_url`. We need username + title + avatar URL + staff flag. Everything else is dropped.
+**Post** (each item in top-level `posts[]`):
+- Identity: `post_id`, `position`, `thread_id`
+- Body: `message` (raw BBCode, can be discarded), `message_parsed` (rendered HTML — **always use this**), `message_state`, `last_edit_date`
+- Author: `user_id`, `username`, plus a fully-embedded `User` object with the same shape as `/api/users/{id}` (covered below)
+- Attachments: `Attachments` (note the **capital A**) — array of attachment objects. Sample shape:
+  ```jsonc
+  {
+    "attachment_id": 508,
+    "content_id": 9435,           // post_id
+    "content_type": "post",
+    "filename": "123.webp",
+    "file_size": 8614,
+    "width": 416, "height": 160,
+    "is_audio": false, "is_video": false,
+    "attach_date": 1326481417,
+    "view_count": 1091,
+    "direct_url": "https://torrentpier.com/attachments/123-webp.508/",     // download from here
+    "thumbnail_url": "https://torrentpier.com/data/attachments/0/508-...jpg?hash=..."
+  }
+  ```
+  Also `attach_count` int on the post itself.
+- Misc we drop: `can_*` (viewer-dependent), `is_first_post`/`is_last_post` (computable), `is_reacted_to`, `is_unread`, `reaction_score` (per decision #7), `view_url` (computable), `warning_message`.
+
+**User** (full object — same as `/api/users/{id}` — embedded in each post under `User`):
+`user_id`, `username`, `user_title` (e.g. `Administrator`, custom titles like `Разработчик`), `user_group_id`, `secondary_group_ids[]`, `is_admin`, `is_moderator`, `is_staff`, `avatar_urls.{o,h,l,m,s}`, `view_url`, `register_date`, `message_count`, `last_activity`. We keep username + title + avatar URL + staff flags + register_date + message_count.
 
 **Resource**: `resource_id`, `title`, `view_url` (`/resources/{slug}.{id}/`), `version`, `view_count`, `description` (HTML), `Category` embedded, `user_id`, `username`, `current_files[]`. Versions and per-version files available at `/versions`.
 
@@ -142,16 +173,17 @@ XenForo REST API
   [5] deploy via GitHub Actions --> GitHub Pages --> ox.torrentpier.com
 ```
 
-Estimated request budget for the exporter against the live API:
-- Nodes: 1 call.
-- Threads listings: 3304 / 20 ≈ 166 calls (sum across all forums).
-- Thread detail pages: ~3304 calls minimum, more for threads with many posts.
-  Conservative upper bound assuming 45473 / 20 ≈ 2275 distinct page fetches.
-- Users: 5194 calls (one per unique user).
-- Resources: 12 listing calls + 230 detail calls + 230 `/versions` calls.
+Estimated request budget for the exporter against the live API
+(updated for verified per-endpoint `per_page`):
 
-Total ≈ 8200 calls. At a polite 3 rps, that's ~45 minutes for a clean run.
-At 1 rps, ~2.5 hours. The forum is read-only so a long run is fine.
+- Nodes: 1 call.
+- Threads listings: 3304 / 30 ≈ 110 calls (sum across all forums).
+- Thread detail pages: 45473 / 10 ≈ **4548 calls** (each page returns up to 10 posts).
+- Users: ~0 in the common case — every post embeds its `User`. Only a fallback pass for usernames mentioned in `[USER=N]` / quotes who never authored a post. Budget ~200 calls.
+- Resources: 8 listing calls + 230 detail calls + 230 `/versions` calls = 468 calls.
+
+Total ≈ **5325 calls**. At a polite 3 rps, ~30 minutes for a clean run. At 1 rps,
+~1.5 hours. The forum is read-only so a long run is fine.
 
 ## Stage 1 — Exporter
 
@@ -219,13 +251,17 @@ write from multiple workers.
       "message_parsed": "<p>...</p>",
       "attachments": [
         {
-          "id": 123,
-          "filename": "screen.png",
-          "width": 1920,
-          "height": 1080,
-          "src_url": "https://torrentpier.com/attachments/screen-png.123/",
-          "local_path": "attachments/123/screen.png",  // filled by mirror stage
-          "r2_key": null                                // filled by mirror stage
+          "id": 508,
+          "filename": "123.webp",
+          "file_size": 8614,
+          "width": 416,
+          "height": 160,
+          "is_video": false,
+          "is_audio": false,
+          "src_url": "https://torrentpier.com/attachments/123-webp.508/",  // from API direct_url
+          "thumbnail_url": "https://torrentpier.com/data/attachments/...",
+          "local_path": "attachments/508/123.webp",     // filled by mirror stage
+          "r2_key": null                                 // filled by mirror stage
         }
       ]
     }
@@ -237,8 +273,8 @@ write from multiple workers.
 
 - [ ] `exporter/http.py`: `httpx.Client` wrapper with auth headers (`XF-Api-Key`, `XF-Api-User`), `tenacity` retry (exponential backoff, retry on 5xx/429/transport), per-request rate limit (token bucket, default 3 rps, configurable via `--rps`).
 - [ ] `exporter/nodes.py`: `GET /api/nodes` → write `data/meta.json` skeleton, return list of forum node ids to crawl.
-- [ ] `exporter/threads.py`: for each forum: paginate `/api/forums/{id}/threads`, for each thread: paginate `/api/threads/{id}/?with_posts=1&page=N`, merge pages into one `data/threads/{id}.json`. Skip if file already exists unless `--force`.
-- [ ] `exporter/users.py`: collect every `user_id` referenced from threads/posts/resources; fetch unique users; write `data/users/{id}.json`.
+- [ ] `exporter/threads.py`: for each forum: paginate `/api/forums/{id}/threads` (page envelope at top level), for each thread: paginate `/api/threads/{id}/?with_posts=1&page=N` until `current_page == last_page`. **Posts are at top-level `posts[]`, not nested in `thread`.** Capture `User` objects embedded in each post into a per-export user cache. Merge pages into one `data/threads/{id}.json`. Skip if file already exists unless `--force`.
+- [ ] `exporter/users.py`: write `data/users/{id}.json` from the in-memory cache populated by the thread pass. Optional second pass: scan `message_parsed` for `[USER=N]`/`<a data-user-id=N>` references and fetch any users that weren't seen as authors.
 - [ ] `exporter/resources.py`: paginate `/api/resources`, for each resource fetch `/api/resources/{id}/versions`, write merged `data/resources/{id}.json`.
 - [ ] `exporter/main.py`: orchestration (CLI flags `--stage nodes|threads|users|resources|all`, `--force`, `--rps`, `--from-thread`, `--only-thread`).
 - [ ] Logging: structured (one line per HTTP call), default INFO, `--verbose` for DEBUG.
