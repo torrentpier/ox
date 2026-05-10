@@ -18,7 +18,13 @@ of the deliverable, not a side note.
 | Resource binary size estimate       | Done — 62.83 MiB across 511 files      |
 | Wrangler installed (Homebrew)       | Done — 4.90.0                          |
 | Cloudflare auth (`wrangler login`)  | Pending — must be run interactively by user |
-| Exporter (`exporter/`)              | Not started                            |
+| Python venv (`.venv/`, py3.13)      | Done via `uv` — `uv pip install -e .`  |
+| Exporter — http client (`api.py`)   | Done                                   |
+| Exporter — atomic JSON writer       | Done                                   |
+| Exporter — `nodes` stage            | Done — first end-to-end run wrote `data/meta.json` (34 nodes, 27 forums) |
+| Exporter — `threads` stage          | Not started                            |
+| Exporter — `users` stage            | Not started                            |
+| Exporter — `resources` stage        | Not started                            |
 | Attachment mirror to R2             | Not started — R2 bucket not provisioned|
 | Static builder (`builder/`)         | Not started                            |
 | Search worker + D1                  | Not started                            |
@@ -271,8 +277,9 @@ write from multiple workers.
 
 ### Implementation tasks
 
-- [ ] `exporter/http.py`: `httpx.Client` wrapper with auth headers (`XF-Api-Key`, `XF-Api-User`), `tenacity` retry (exponential backoff, retry on 5xx/429/transport), per-request rate limit (token bucket, default 3 rps, configurable via `--rps`).
-- [ ] `exporter/nodes.py`: `GET /api/nodes` → write `data/meta.json` skeleton, return list of forum node ids to crawl.
+- [x] `exporter/api.py`: `httpx.Client` wrapper with auth headers (`XF-Api-Key`, `XF-Api-User`), `tenacity` retry (exponential backoff, retry on 5xx/429/transport), per-request rate limit (token bucket, default 3 rps, configurable via `XF_API_RPS` env var).
+- [x] `exporter/io.py`: atomic JSON writer (tempfile + `os.replace`).
+- [x] `exporter/nodes.py`: `GET /api/nodes` → write `data/meta.json` with `tree_map`, full `nodes[]`, `by_type` index and `forum_ids` shortcut.
 - [ ] `exporter/threads.py`: for each forum: paginate `/api/forums/{id}/threads` (page envelope at top level), for each thread: paginate `/api/threads/{id}/?with_posts=1&page=N` until `current_page == last_page`. **Posts are at top-level `posts[]`, not nested in `thread`.** Capture `User` objects embedded in each post into a per-export user cache. Merge pages into one `data/threads/{id}.json`. Skip if file already exists unless `--force`.
 - [ ] `exporter/users.py`: write `data/users/{id}.json` from the in-memory cache populated by the thread pass. Optional second pass: scan `message_parsed` for `[USER=N]`/`<a data-user-id=N>` references and fetch any users that weren't seen as authors.
 - [ ] `exporter/resources.py`: paginate `/api/resources`, for each resource fetch `/api/resources/{id}/versions`, write merged `data/resources/{id}.json`.
