@@ -252,4 +252,74 @@ def build(data_dir: Path, out_dir: Path) -> None:
             ),
         )
 
+    # /resources/ — listing of resource categories
+    resources_index_tmpl = env.get_template("resources_index.html")
+    _write(
+        out_dir / "resources" / "index.html",
+        resources_index_tmpl.render(
+            categories=sorted(seen_cats.values(), key=lambda c: c.get("display_order") or 0),
+            resources_by_cat=idx["resources_by_cat"],
+            resource_count=len(resources),
+        ),
+    )
+
+    # /search/ — placeholder until the Cloudflare Worker is wired up
+    search_tmpl = env.get_template("search.html")
+    _write(out_dir / "search" / "index.html", search_tmpl.render())
+
+    # /robots.txt
+    _write(
+        out_dir / "robots.txt",
+        "User-agent: *\nAllow: /\nSitemap: https://ox.torrentpier.com/sitemap.xml\n",
+    )
+
+    # /sitemap.xml
+    _write(out_dir / "sitemap.xml", _render_sitemap(threads, resources, idx))
+
     log.info("Build complete: %s", out_dir)
+
+
+def _render_sitemap(
+    threads: list[dict[str, Any]],
+    resources: list[dict[str, Any]],
+    idx: dict[str, Any],
+) -> str:
+    base = "https://ox.torrentpier.com"
+    parts: list[str] = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    ]
+
+    def _entry(path: str, lastmod_ts: int | None = None) -> str:
+        loc = f"{base}{path}"
+        if lastmod_ts:
+            from datetime import datetime, timezone
+            iso = datetime.fromtimestamp(int(lastmod_ts), tz=timezone.utc).date().isoformat()
+            return f"  <url><loc>{loc}</loc><lastmod>{iso}</lastmod></url>"
+        return f"  <url><loc>{loc}</loc></url>"
+
+    parts.append(_entry("/"))
+    for cat in idx["categories"]:
+        parts.append(_entry(node_url(cat)))
+    for forum in idx["forums"]:
+        threads_in_forum = idx["threads_by_forum"].get(forum["node_id"], [])
+        lastmod = (
+            threads_in_forum[0].get("last_post_date") if threads_in_forum else None
+        )
+        parts.append(_entry(node_url(forum), lastmod))
+    for t in threads:
+        parts.append(
+            _entry(
+                t.get("url_path") or f"/threads/thread-{t['id']}/",
+                t.get("last_post_date") or t.get("post_date"),
+            )
+        )
+    for r in resources:
+        parts.append(
+            _entry(
+                r.get("url_path") or f"/resources/resource-{r['id']}/",
+                r.get("last_update") or r.get("resource_date"),
+            )
+        )
+    parts.append("</urlset>")
+    return "\n".join(parts) + "\n"

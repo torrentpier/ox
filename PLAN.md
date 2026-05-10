@@ -30,7 +30,8 @@ of the deliverable, not a side note.
 | Builder — minimal slice             | Done — `index`, category, forum, thread, resource and resource-category pages; dark-mode CSS |
 | Builder — pagination (forum + thread) | Not started — every thread/forum is one HTML page |
 | Builder — `message_parsed` rewrite (URLs, sandboxing) | Not started          |
-| Builder — sitemap, robots.txt       | Not started                            |
+| Builder — sitemap, robots.txt       | Done — `sitemap.xml` lists all categories, forums, threads, resources with lastmod where available |
+| Builder — `/resources/` index, `/search/` placeholder | Done                 |
 | Attachment mirror to R2             | Not started — R2 bucket not provisioned|
 | Static builder (`builder/`)         | Not started                            |
 | Search worker + D1                  | Not started                            |
