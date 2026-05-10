@@ -27,7 +27,30 @@ from .rewrite import rewrite_html
 log = logging.getLogger(__name__)
 
 
+POSTS_PER_PAGE = 10  # XF default for this forum
+THREADS_PER_PAGE = 30  # XF default for this forum
+
+
 SLUG_FALLBACK_RE = re.compile(r"[^a-z0-9]+")
+
+
+def _paginate(items: list[Any], per_page: int) -> list[tuple[int, list[Any], str, int]]:
+    """Return list of (page_no, page_items, url_suffix, total_pages).
+
+    `url_suffix` is "" for page 1 (so the canonical URL is the bare base path)
+    and "page-N/" for further pages — matching XF.
+    """
+    if not items:
+        return [(1, [], "", 1)]
+    total = (len(items) + per_page - 1) // per_page
+    out: list[tuple[int, list[Any], str, int]] = []
+    for i in range(total):
+        start = i * per_page
+        end = start + per_page
+        page_no = i + 1
+        suffix = "" if page_no == 1 else f"page-{page_no}/"
+        out.append((page_no, items[start:end], suffix, total))
+    return out
 
 
 def _slugify(text: str) -> str:
@@ -209,31 +232,56 @@ def build(data_dir: Path, out_dir: Path) -> None:
         path = (out_dir / node_url(cat).lstrip("/") / "index.html")
         _write(path, cat_tmpl.render(category=cat, forums=child_forums, threads_by_forum=idx["threads_by_forum"]))
 
-    # /forums/{slug}.{id}/
+    # /forums/{slug}.{id}/page-N/
     forum_tmpl = env.get_template("forum.html")
+    forum_pages = 0
     for forum in idx["forums"]:
-        path = (out_dir / node_url(forum).lstrip("/") / "index.html")
-        _write(
-            path,
-            forum_tmpl.render(
-                forum=forum,
-                threads=idx["threads_by_forum"].get(forum["node_id"], []),
-            ),
-        )
+        base_url = node_url(forum)
+        threads_in_forum = idx["threads_by_forum"].get(forum["node_id"], [])
+        for page_no, page_threads, suffix, total_pages in _paginate(threads_in_forum, THREADS_PER_PAGE):
+            page_url = f"{base_url}{suffix}"
+            path = out_dir / page_url.lstrip("/") / "index.html"
+            _write(
+                path,
+                forum_tmpl.render(
+                    forum=forum,
+                    threads=page_threads,
+                    page_no=page_no,
+                    total_pages=total_pages,
+                    base_url=base_url,
+                ),
+            )
+            forum_pages += 1
+    log.info("Rendered %d forum pages", forum_pages)
 
-    # /threads/{slug}.{id}/
+    # /threads/{slug}.{id}/page-N/
     thread_tmpl = env.get_template("thread.html")
+    thread_pages = 0
     for thread in threads:
+        # Sanitise once before pagination — same content on every page
         for post in thread.get("posts", []):
             post["message_parsed"] = rewrite_html(
                 post.get("message_parsed"),
                 thread_url_map=thread_url_map,
                 forum_url_map=forum_url_map,
             )
-        url_path = thread.get("url_path") or f"/threads/thread-{thread['id']}/"
-        path = out_dir / url_path.lstrip("/") / "index.html"
-        _write(path, thread_tmpl.render(thread=thread))
-    log.info("Rendered %d thread pages", len(threads))
+        base_url = thread.get("url_path") or f"/threads/thread-{thread['id']}/"
+        posts_list = thread.get("posts", [])
+        for page_no, page_posts, suffix, total_pages in _paginate(posts_list, POSTS_PER_PAGE):
+            page_url = f"{base_url}{suffix}"
+            path = out_dir / page_url.lstrip("/") / "index.html"
+            _write(
+                path,
+                thread_tmpl.render(
+                    thread=thread,
+                    page_posts=page_posts,
+                    page_no=page_no,
+                    total_pages=total_pages,
+                    base_url=base_url,
+                ),
+            )
+            thread_pages += 1
+    log.info("Rendered %d thread pages (across %d threads)", thread_pages, len(threads))
 
     # /resources/{slug}.{id}/
     resource_tmpl = env.get_template("resource.html")

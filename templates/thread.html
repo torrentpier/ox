@@ -20,7 +20,7 @@
   {{ thread.reply_count }} replies, {{ thread.view_count }} views
 </p>
 
-{% for post in thread.posts %}
+{% for post in page_posts %}
 <article id="post-{{ post.id }}" class="post">
   <header class="post-author">
     {% set user = users.get(post.user_id) %}
@@ -49,4 +49,16 @@
   {% endif %}
 </article>
 {% endfor %}
+
+{% if total_pages > 1 %}
+<nav class="pagination" aria-label="Thread pages">
+  {% if page_no > 1 %}
+    <a class="page-prev" href="{{ base_url }}{% if page_no - 1 > 1 %}page-{{ page_no - 1 }}/{% endif %}">‹ prev</a>
+  {% endif %}
+  <span class="page-current">page {{ page_no }} of {{ total_pages }}</span>
+  {% if page_no < total_pages %}
+    <a class="page-next" href="{{ base_url }}page-{{ page_no + 1 }}/">next ›</a>
+  {% endif %}
+</nav>
+{% endif %}
 {% endblock %}

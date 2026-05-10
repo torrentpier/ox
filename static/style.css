@@ -162,3 +162,15 @@ a:hover { text-decoration: underline; }
 .version-table td.num, .version-table th.num { text-align: right; font-variant-numeric: tabular-nums; }
 .resource-list { list-style: none; padding: 0; }
 .resource-list li { padding: 0.6rem 0.8rem; border-bottom: 1px solid var(--border); }
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0 0;
+  font-size: 0.95rem;
+}
+.pagination .page-current { color: var(--muted); }
+.pagination a { padding: 0.3rem 0.7rem; border: 1px solid var(--border); border-radius: 4px; }
+.pagination a:hover { background: var(--post-bg); text-decoration: none; }
