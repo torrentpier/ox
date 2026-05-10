@@ -26,7 +26,11 @@ of the deliverable, not a side note.
 | Exporter — `threads` full run       | In progress / pending                  |
 | Exporter — `users` stage            | Captured incidentally during `threads` (27 users from thread 2 smoke run) |
 | Exporter — `resources` stage (code) | Done                                   |
-| Exporter — `resources` full run     | Pending — kicks off after threads run completes |
+| Exporter — `resources` full run     | Done — 230 resources, 2.2 MB on disk   |
+| Builder — minimal slice             | Done — `index` + per-thread pages, dark-mode CSS, ~1612 pages rendered mid-export-run |
+| Builder — forum listings + pagination | Not started                          |
+| Builder — `message_parsed` rewrite (URLs, sandboxing) | Not started          |
+| Builder — resource pages            | Not started                            |
 | Attachment mirror to R2             | Not started — R2 bucket not provisioned|
 | Static builder (`builder/`)         | Not started                            |
 | Search worker + D1                  | Not started                            |
@@ -371,11 +375,15 @@ Each post body runs through a sanitisation + rewriting pass with BeautifulSoup:
 
 ### Implementation tasks
 
-- [ ] `builder/main.py` — orchestration (`--data data/ --out dist/`).
-- [ ] `builder/render.py` — Jinja2 environment, helpers for date formatting, URL building.
-- [ ] `builder/rewrite.py` — `message_parsed` rewriter.
+- [x] `builder/main.py` — CLI orchestration (`build --data data --out dist`).
+- [x] `builder/render.py` — Jinja2 environment, `timestamp` and `filesize` filters.
+- [x] `builder/site.py` — load `data/`, render `index.html` + one HTML per thread under `/threads/{slug}.{id}/index.html`. No pagination yet (one page per thread).
+- [x] Minimal `templates/{base,index,thread}.html` and `static/style.css` with dark-mode via `prefers-color-scheme`.
+- [ ] `builder/forum.py` — render `/forums/{slug}.{id}/page-N/` listings.
+- [ ] Pagination inside threads (currently one HTML page per thread carries all posts).
+- [ ] `builder/rewrite.py` — `message_parsed` rewriter (R2 URLs, internal-link normalisation, script/iframe sandboxing).
 - [ ] `builder/sitemap.py`.
-- [ ] `templates/` + `static/`: minimal, readable, dark-mode via `prefers-color-scheme`. No XF CSS.
+- [ ] Resource pages.
 - [ ] Determinism: same `data/` → byte-identical `dist/` (sorted iteration, frozen timestamps).
 
 ## Stage 4 — Search worker + D1

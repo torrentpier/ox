@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}{{ thread.title }} — {{ site_name }}{% endblock %}
+{% block content %}
+<nav class="breadcrumbs">
+  <a href="/">Home</a>
+{% for crumb in thread.forum.breadcrumbs %}
+  / <span>{{ crumb.title }}</span>
+{% endfor %}
+  / <span class="current">{{ thread.title }}</span>
+</nav>
+
+<h1 class="thread-title">
+  {{ thread.title }}
+  {% if not thread.discussion_open %}<span class="badge badge-closed">closed</span>{% endif %}
+  {% if thread.sticky %}<span class="badge badge-sticky">sticky</span>{% endif %}
+</h1>
+<p class="thread-meta muted">
+  Started by <strong>{{ thread.username }}</strong>
+  on {{ thread.post_date | timestamp }} —
+  {{ thread.reply_count }} replies, {{ thread.view_count }} views
+</p>
+
+{% for post in thread.posts %}
+<article id="post-{{ post.id }}" class="post">
+  <header class="post-author">
+    {% set user = users.get(post.user_id) %}
+    {% if user and user.avatar_urls.get('m') %}
+      <img class="avatar" src="{{ user.avatar_urls.m }}" alt="" loading="lazy" width="48" height="48">
+    {% endif %}
+    <div class="post-author-text">
+      <strong>{{ post.username }}</strong>
+      {% if post.is_admin %}<span class="badge badge-admin">Admin</span>
+      {% elif post.is_moderator %}<span class="badge badge-mod">Mod</span>
+      {% elif post.is_staff %}<span class="badge badge-staff">Staff</span>{% endif %}
+      {% if post.user_title %}<span class="user-title">{{ post.user_title }}</span>{% endif %}
+    </div>
+    <time class="post-date" datetime="{{ post.post_date }}">{{ post.post_date | timestamp }}</time>
+  </header>
+  <div class="post-body">{{ post.message_parsed | safe }}</div>
+  {% if post.attachments %}
+  <ul class="attachments">
+    {% for a in post.attachments %}
+    <li>
+      <a href="{{ a.src_url }}">{{ a.filename }}</a>
+      <span class="muted">({{ a.file_size | filesize }})</span>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</article>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ site_name }}{% endblock %}</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="brand">{{ site_name }}</a>
+  </header>
+  <main>
+{% block content %}{% endblock %}
+  </main>
+  <footer class="site-footer">
+    Read-only archive of <a href="https://torrentpier.com">torrentpier.com</a>.
+    Built {{ build_time }}.
+  </footer>
+</body>
+</html>
