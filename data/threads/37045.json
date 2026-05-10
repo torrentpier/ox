@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 77785,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 37045,
+  "last_post_date": 1679823177,
+  "node_id": 47,
+  "post_date": 1425421472,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 77785,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Пользователь Exile разместил новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/varianty-vstavki-izobrazhenij.189/\" class=\"link link--internal\">Варианты вставки изображений</a> - Добавляет в редактор несколько вариантов вставки изображений.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> добавляет в редактор несколько вариантов вставки изображений.</blockquote><br />\n<a href=\"https://torrentpier.com/resources/varianty-vstavki-izobrazhenij.189/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1425421472,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94845,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "По центру не выравнивает",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1679823177,
+      "user_id": 10615,
+      "user_title": "User",
+      "username": "Barbarossa178"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "bb-kod-varianty-vstavki-izobrazenij",
+  "sticky": false,
+  "tags": [],
+  "title": "BB-код: варианты вставки изображений",
+  "url_path": "/threads/bb-kod-varianty-vstavki-izobrazenij.37045/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 1557
+}

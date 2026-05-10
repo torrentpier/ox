@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 91125,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41708,
+  "last_post_date": 1494093366,
+  "node_id": 57,
+  "post_date": 1494090566,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91125,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Поставил фолсы в конфиге. Кеш почистил, панель пропала только при авторизации, если с акка выхожу опять появляется.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1494090566,
+      "user_id": 7835,
+      "user_title": "User",
+      "username": "sasha55555"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91133,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "кеш шаблона очисти",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1494093366,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "bokovaa-panel",
+  "sticky": false,
+  "tags": [],
+  "title": "Боковая панель",
+  "url_path": "/threads/bokovaa-panel.41708/",
+  "user_id": 7835,
+  "username": "sasha55555",
+  "view_count": 887
+}

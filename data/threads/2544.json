@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 27895,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 2544,
+  "last_post_date": 1362416598,
+  "node_id": 57,
+  "post_date": 1362410138,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27895,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подскажите, что должно показывать  в статистике, количество пиров и сидов только на данном трекере или должно показывать количество сидов и пиров всех, которые раздают и качают .. Просто увидел на некоторых трекерах вот такую картинку <br />\n<div>Spoiler content hidden.</div>трекеру пару дней..<br />\nА у меня вот так <br />\n<div>Spoiler content hidden.</div> т.е отображает количество пиров и сидов только тех, что у меня на раздачах. Торренты с открытым DHT.. Как правильно должно быть и можно-ли сделать, чтоб показывало всех, как на первом скрине??",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1362410138,
+      "user_id": 3861,
+      "user_title": "User",
+      "username": "dimsat1"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27906,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "На первом скриншоте трекер с установленным мультитрекером, а на втором без",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1362411038,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27907,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо, понял вроди.. Подсоветуйте какой мультитрекер прикрутить🙂<br />\nА ещё вопрос, как поправить, допустим на трекере никого нету, скачало пару человек и остались на раздаче.. А в статистике отображается например Сидов:5 Пиров:5, а должно поидее быть Сидов:5 Пиров:0 ??",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1362411234,
+      "user_id": 3861,
+      "user_title": "User",
+      "username": "dimsat1"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27923,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "по мультитрекерах выбор вовсе не велик, прочитав про каждый вывод напросится сам.<br />\nэто уже задержка/проблема отработки крон-задач",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1362414642,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27928,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо, пошёл я в тему про мультитрекер..🙂",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1362416598,
+      "user_id": 3861,
+      "user_title": "User",
+      "username": "dimsat1"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "kolicestvo-pirov-i-sidov",
+  "sticky": false,
+  "tags": [],
+  "title": "Количество пиров и сидов",
+  "url_path": "/threads/kolicestvo-pirov-i-sidov.2544/",
+  "user_id": 3861,
+  "username": "dimsat1",
+  "view_count": 1294
+}

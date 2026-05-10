@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 30594,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 48,
+    "title": "Paid modifications for TorrentPier"
+  },
+  "id": 4766,
+  "last_post_date": 1369292629,
+  "node_id": 48,
+  "post_date": 1369234965,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 30594,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Пользователь Zenden разместил новый ресурс:<br />\n<br />\n<a href=\"http://torrentpier.com/resources/%D0%A0%D0%B5%D0%B9%D1%82%D0%B8%D0%BD%D0%B3-%D0%BF%D0%BE-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B8-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9.11/\" class=\"link link--internal\">Рейтинг по версии пользователей</a> (версия 1) - Рейтинг по версии пользователей<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Рейтинг по версии пользователей <br />\n<ul>\n<li data-xf-list-type=\"ul\">90% аякс технология</li>\n<li data-xf-list-type=\"ul\">поиск по базе</li>\n<li data-xf-list-type=\"ul\">поиск похожих раздач на трекере</li>\n<li data-xf-list-type=\"ul\">&quot;тонкая&quot; фильтрация</li>\n</ul><a href=\"https://torrentpier.com/attachments/1989/\">View attachment 1989</a><a href=\"https://torrentpier.com/attachments/1990/\">View attachment 1990</a></blockquote><br />\n<a href=\"http://torrentpier.com/resources/%D0%A0%D0%B5%D0%B9%D1%82%D0%B8%D0%BD%D0%B3-%D0%BF%D0%BE-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B8-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9.11/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1369234965,
+      "user_id": 97,
+      "user_title": "User",
+      "username": "Zenden"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 30635,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Забыл упомянуть что поиск:</b><br />\n1. По жанру<br />\n2. По году выпуска<br />\n3. По названию темы (игры, фильма и прочего)<br />\n <br />\n<b>От себя добавлю:</b><br />\nОчень хорошая модификация. Спасибо!",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1369292629,
+      "user_id": 2825,
+      "user_title": "User",
+      "username": "FineRider"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "rejting-po-versii-pol-zovatelej-platnyj",
+  "sticky": false,
+  "tags": [],
+  "title": "Рейтинг по версии пользователей [платный]",
+  "url_path": "/threads/rejting-po-versii-pol-zovatelej-platnyj.4766/",
+  "user_id": 97,
+  "username": "Zenden",
+  "view_count": 1994
+}

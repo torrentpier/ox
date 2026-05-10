@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 36819,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 47,
+        "title": "Modifications for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 43,
+    "title": "Modifications for TorrentPier (archive)"
+  },
+  "id": 9289,
+  "last_post_date": 1373944010,
+  "node_id": 43,
+  "post_date": 1373921314,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 36819,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"php\">ALTER TABLE `bb_users` ADD `user_profile_views` mediumint(8) NOT NULL;\n \nОткрываем usercp_viewprofile.php\n \nНаходим\n \nif (empty($_GET[POST_USERS_URL]) || $_GET[POST_USERS_URL] == ANONYMOUS)\n{\n    bb_die($lang[&#039;NO_USER_ID_SPECIFIED&#039;]);\n}\nif (!$profiledata = get_userdata($_GET[POST_USERS_URL]))\n{\n    bb_die($lang[&#039;NO_USER_ID_SPECIFIED&#039;]);\n}\n \n \nНиже добавляем\n \n$sql = &quot;UPDATE &quot; . BB_USERS . &quot;\n  SET user_profile_views = user_profile_views + 1\n  WHERE user_id = &quot; . $profiledata[&#039;user_id&#039;];\nif ( !($result = DB()-&gt;sql_query($sql)) )\n{\n  message_die(GENERAL_ERROR, &#039;Could not update profile views&#039;, &#039;&#039;, __LINE__, __FILE__, $sql);\n}\n \n$sql = &quot;SELECT user_profile_views\n  FROM &quot; . BB_USERS . &quot;\n  WHERE user_id = &quot; . $profiledata[&#039;user_id&#039;];\nif ( !($result = DB()-&gt;sql_query($sql)) )\n{\n  message_die(GENERAL_ERROR, &#039;Could not retreive profile views&#039;, &#039;&#039;, __LINE__, __FILE__, $sql);\n}\n$row = DB()-&gt;sql_fetchrow($result);\n$total_profile_views =  ( $row[&#039;user_profile_views&#039;] ) ? $row[&#039;user_profile_views&#039;] : 0;\nDB()-&gt;sql_freeresult($result);\n \n \nНаходим\n \n&#039;AVATAR_IMG&#039; =&gt; get_avatar($profiledata[&#039;user_avatar&#039;], $profiledata[&#039;user_avatar_type&#039;], !bf($profiledata[&#039;user_opt&#039;], &#039;user_opt&#039;, &#039;allow_avatar&#039;)),\n \nНиже добавляем\n \n&#039;L_PROFILE_VIEWS&#039; =&gt; $lang[&#039;PROFILE_VIEWS&#039;],\n&#039;PROFILE_VIEWS&#039; =&gt; $total_profile_views,\n \n \nОткрываем lang_main.php\n \nВ самый низ добавляем\n \n$lang[&#039;PROFILE_VIEWS&#039;] = &#039;Просмотров профиля&#039;;\n \nОткрываем usercp_viewprofile.tpl\n \nНаходим\n \n      &lt;tr&gt;\n&lt;th&gt;{L_TOTAL_POSTS}:&lt;/th&gt;\n&lt;td&gt;\n&lt;p&gt;\n&lt;b&gt;{POSTS}&lt;/b&gt;&amp;nbsp;\n[ &lt;a href=&quot;{U_SEARCH_USER}&quot; class=&quot;med&quot;&gt;{L_SEARCH_USER_POSTS}&lt;/a&gt; ]\n[ &lt;a href=&quot;{U_SEARCH_TOPICS}&quot; class=&quot;med&quot;&gt;{L_SEARCH_USER_TOPICS}&lt;/a&gt; ]\n[ &lt;a class=&quot;med&quot; href=&quot;{U_SEARCH_RELEASES}&quot;&gt;{L_SEARCH_RELEASES}&lt;/a&gt; ]\n&lt;!-- IF PROFILE_USER --&gt;[ &lt;a class=&quot;med&quot; href=&quot;{U_WATCHED_TOPICS}&quot;&gt;{L_WATCHED_TOPICS}&lt;/a&gt; ]&lt;!-- ENDIF --&gt;\n&lt;/p&gt;\n&lt;/td&gt;\n&lt;/tr&gt;\n \n \nНиже добавляем\n \n \n    &lt;tr&gt;\n&lt;th&gt;{L_PROFILE_VIEWS}:&lt;/th&gt;\n&lt;td&gt;{PROFILE_VIEWS}&lt;/td&gt;\n&lt;/tr&gt;\n \n \nВсё готово!</pre> <br />\n<a href=\"http://fastpic.ru/view/47/2013/0716/008e335ef4b27badc69b2095b925f590.png.html\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"http://i47.fastpic.ru/thumb/2013/0716/90/008e335ef4b27badc69b2095b925f590.jpeg\" alt=\"\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1373921314,
+      "user_id": 1290,
+      "user_title": "User",
+      "username": "REM"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 36842,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>REM</b>, зачем изобретать велосипед3, если он уже есть. <br />\nВот и весь код. А добавлять ещё один запрос в профиль не есть гуд.<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$sql = &quot;UPDATE &quot; . BB_USERS . &quot;\n  SET user_profile_views = user_profile_views + 1\n  WHERE user_id = &quot; . $profiledata[&#039;user_id&#039;];\nif ( !($result = DB()-&gt;sql_query($sql)) )\n{\n  message_die(GENERAL_ERROR, &#039;Could not update profile views&#039;, &#039;&#039;, __LINE__, __FILE__, $sql);\n}</pre> <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&#039;PROFILE_VIEWS&#039; =&gt; ($profiledata[&#039;user_profile_views&#039;] ) ? $profiledata[&#039;user_profile_views&#039;] : 0,</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1373944010,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "kolicestvo-pokazov-profila",
+  "sticky": false,
+  "tags": [],
+  "title": "Количество показов профиля",
+  "url_path": "/threads/kolicestvo-pokazov-profila.9289/",
+  "user_id": 1290,
+  "username": "REM",
+  "view_count": 1561
+}

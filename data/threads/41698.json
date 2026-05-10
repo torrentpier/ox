@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 91007,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41698,
+  "last_post_date": 1493283269,
+  "node_id": 57,
+  "post_date": 1493132684,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91007,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подготовил nginx+php70.<br />\nСклонировал репозиторий.<br />\nНе запускается: пытается прочесть из дирки vendor, а она пустая.<br />\nПоискал howto, не нашёл. Разобрался, поставил composer, поставил им необходимые пакеты. <br />\nОК, про vendor не ругается. Выкидывает 404 (на самом деле 50x, не найден /home/www/torrentpier/50x.html)<br />\n<b><br />\n017/04/25 08:45:56 [error] 14507#14507: *31853 FastCGI sent in stderr: &quot;PHP message: PHP Error:  Call to undefined function DB() in /home/www/torrentpier/library/includes/sessions.php on line 117<br />\nPHP message: PHP Stack trace:<br />\nPHP message: PHP   1. {main}() /home/www/torrentpier/index.php:0<br />\nPHP message: PHP   2. user_common-&gt;session_start($cfg = *uninitialized*) /home/www/torrentpier/index.php:59<br />\nPHP message: PHP Fatal error:  Uncaught Error: Call to undefined function DB() in /home/www/torrentpier/library/includes/sessions.php:117<br />\nStack trace:<br />\n#0 /home/www/torrentpier/index.php(59): user_common-&gt;session_start()<br />\n#1 {main}<br />\n  thrown in /home/www/torrentpier/library/includes/sessions.php on line 117&quot; while reading response header from upstream, client: X.X.X.X, server: Z.Z.Z.Z, request: &quot;GET / HTTP/1.1&quot;, upstream: &quot;fastcgi://unix:/run/php-fpm/php-fpm.socket:&quot;, host: &quot;Z.Z.Z.Z&quot;<br />\n2017/04/25 08:45:56 [error] 14507#14507: *31853 open() &quot;/home/www/torrentpier/50x.html&quot; failed (2: No such file or directory), client: X.X.X.X, server: Z.Z.Z.Z, request: &quot;GET / HTTP/1.1&quot;, upstream: &quot;fastcgi://unix:/run/php-fpm/php-fpm.socket&quot;, host: &quot;Z.Z.Z.Z&quot;</b><br />\n<br />\nчто не так-то?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1493132684,
+      "user_id": 7811,
+      "user_title": "User",
+      "username": "Warden"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91010,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Ставь версию tp 2.1.5 и php 5.4 или выше, для php 7 версии движок не готов ещё",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1493139341,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91011,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"drew\">Ставь версию tp 2.1.5 и php 5.4 или выше, для php 7 версии движок не готов ещё</blockquote>Ну почему не готов .<br />\nесли 2.1.5 обновить с этого коммита , то на php 7.0 всё работает 🙂<br />\n<a href=\"https://torrentpier.com/forum/threads/vneplanovyj-reliz-torrentpier-2-1-6-i-podderzhivaemye-versii-php.41620/#post-89459\" class=\"link link--internal\">https://torrentpier.com/forum/threa...-podderzhivaemye-versii-php.41620/#post-89459</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1493141273,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91014,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "свитчнулся на 2.1.6. ОМГ! заработало 🙂",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1493283269,
+      "user_id": 7811,
+      "user_title": "User",
+      "username": "Warden"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "ustanovka-s-nula",
+  "sticky": false,
+  "tags": [],
+  "title": "Установка \"с нуля\"",
+  "url_path": "/threads/ustanovka-s-nula.41698/",
+  "user_id": 7811,
+  "username": "Warden",
+  "view_count": 1295
+}

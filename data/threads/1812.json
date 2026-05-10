@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 24139,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1812,
+  "last_post_date": 1355439407,
+  "node_id": 57,
+  "post_date": 1355439407,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24139,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "При переезде со старой версии Torrentpier <span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\"><span style=\"font-size: 12px\">1.0.2 (SVN r534) на TorrentpierII (R400) не отображаются форумы с forum_id больше 107, точнее пишет, что </span></span></span><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\"><span style=\"font-size: 12px\">Форума, который вы выбрали, не существует.</span></span></span><br />\n<span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\"><span style=\"font-size: 12px\">То же самое с чистой базой.</span></span></span><br />\n<span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\"><span style=\"font-size: 12px\">Помогите плз</span></span></span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1355439407,
+      "user_id": 3103,
+      "user_title": "User",
+      "username": "huk"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "foruma-kotoryj-vy-vybrali-ne-susestvuet",
+  "sticky": false,
+  "tags": [],
+  "title": "Форума, который вы выбрали, не существует",
+  "url_path": "/threads/foruma-kotoryj-vy-vybrali-ne-susestvuet.1812/",
+  "user_id": 3103,
+  "username": "huk",
+  "view_count": 1144
+}

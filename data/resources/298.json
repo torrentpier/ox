@@ -1,0 +1,180 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Сброс рейтинга by belomaxorka.zip",
+      "id": 6442,
+      "local_path": null,
+      "r2_key": null,
+      "size": 2628,
+      "src_url": "https://torrentpier.com/api/resource-versions/627/download?file=6442"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1721365941,
+      "file_size": 4788,
+      "filename": "firefox_OTIal7SHag.webp",
+      "height": 39,
+      "id": 6068,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_otial7shag-webp.6068/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6072-a4c76be0579ce3bc66c5744b83f55e28.jpg?hash=anYPOU107H",
+      "width": 433
+    },
+    {
+      "attach_date": 1721365975,
+      "file_size": 4554,
+      "filename": "firefox_p7tRjbBFJ0.webp",
+      "height": 185,
+      "id": 6070,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_p7trjbbfj0-webp.6070/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6074-d7bbe1272e66a8c4f077da11be54ae90.jpg?hash=kXcgzRfuvp",
+      "width": 440
+    },
+    {
+      "attach_date": 1721365990,
+      "file_size": 4968,
+      "filename": "firefox_cobYX74zfi.webp",
+      "height": 191,
+      "id": 6071,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_cobyx74zfi-webp.6071/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6075-9f22b3ec3c2eddf8f9eda724d1b7eeda.jpg?hash=RBPE4icjOB",
+      "width": 441
+    }
+  ],
+  "description_parsed": "<div style=\"text-align: center\"><span style=\"color: rgb(226, 80, 65)\">Данный мод интегрирован по-умолчанию начиная с версии v2.4.5</span>&#8203;</div><hr /><b>Описание:</b> Добавляет возможность пользователю сбросить свой рейтинг один раз. Работает на AJAX. Администраторы могут неограниченное количество раз сбрасывать рейтинг себе и другим пользователям.<br />\n<b>Совместимость:</b> практически все версии.",
+  "download_count": 471,
+  "external_url": null,
+  "icon_url": null,
+  "id": 298,
+  "is_fileless": null,
+  "last_update": 1746257677,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1721365993,
+  "resource_state": "visible",
+  "slug": "sbros-rejtinga",
+  "tag_line": "Добавляет возможность пользователю сбросить свой рейтинг один раз.",
+  "tags": [
+    "null ratio",
+    "мод",
+    "моды",
+    "обнуление рейтинга",
+    "сброс рейтинга"
+  ],
+  "title": "Сброс рейтинга",
+  "url_path": "/resources/sbros-rejtinga.298/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.3",
+  "versions": [
+    {
+      "download_count": 172,
+      "files": [
+        {
+          "filename": "[FULL] Сброс рейтинга by belomaxorka.zip",
+          "id": 6442,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2628,
+          "src_url": "https://torrentpier.com/api/resource-versions/627/download?file=6442"
+        }
+      ],
+      "id": 627,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1746257677,
+      "version_state": "visible",
+      "version_string": "v1.0.3",
+      "view_url": "https://torrentpier.com/resources/sbros-rejtinga.298/version/627/"
+    },
+    {
+      "download_count": 129,
+      "files": [
+        {
+          "filename": "[FULL] Сброс рейтинга by belomaxorka.zip",
+          "id": 6203,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2585,
+          "src_url": "https://torrentpier.com/api/resource-versions/554/download?file=6203"
+        }
+      ],
+      "id": 554,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1731085860,
+      "version_state": "visible",
+      "version_string": "v1.0.2",
+      "view_url": "https://torrentpier.com/resources/sbros-rejtinga.298/version/554/"
+    },
+    {
+      "download_count": 82,
+      "files": [
+        {
+          "filename": "[FULL] Сброс рейтинга by belomaxorka.zip",
+          "id": 6136,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2388,
+          "src_url": "https://torrentpier.com/api/resource-versions/538/download?file=6136"
+        }
+      ],
+      "id": 538,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1722691945,
+      "version_state": "visible",
+      "version_string": "v1.0.1",
+      "view_url": "https://torrentpier.com/resources/sbros-rejtinga.298/version/538/"
+    },
+    {
+      "download_count": 91,
+      "files": [
+        {
+          "filename": "[FULL] Сброс рейтинга by belomaxorka.zip",
+          "id": 6067,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2356,
+          "src_url": "https://torrentpier.com/api/resource-versions/524/download?file=6067"
+        }
+      ],
+      "id": 524,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1721365993,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/sbros-rejtinga.298/version/524/"
+    }
+  ],
+  "view_count": 1431
+}

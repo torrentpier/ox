@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 35302,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 8184,
+  "last_post_date": 1372744526,
+  "node_id": 57,
+  "post_date": 1372679304,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 35302,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "ребята, подскажите пожалуйcто, как вывести аву на главную где форумы как у крумакс",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1372679304,
+      "user_id": 0,
+      "user_title": "",
+      "username": "VIP"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 35338,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"php\">&#039;POSTER_AVATAR&#039;            =&gt; get_avatar_small($f[&#039;user_avatar&#039;], $f[&#039;user_avatar_type&#039;], !bf($f[&#039;user_opt&#039;], &#039;user_opt&#039;, &#039;allow_avatar&#039;, 15, 15)),</pre> <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">{c.f.last.POSTER_AVATAR}</pre>Остальное добавишь сам.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1372689735,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 35388,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"drew\">{c.f.last.POSTER_AVATAR}</blockquote>это в тпл?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1372744526,
+      "user_id": 0,
+      "user_title": "",
+      "username": "VIP"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "dobrogo-vremeni",
+  "sticky": false,
+  "tags": [],
+  "title": "доброго времени",
+  "url_path": "/threads/dobrogo-vremeni.8184/",
+  "user_id": 0,
+  "username": "VIP",
+  "view_count": 1034
+}

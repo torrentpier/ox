@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 26586,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 52,
+    "title": "Bug tracker archive"
+  },
+  "id": 2176,
+  "last_post_date": 1360102137,
+  "node_id": 52,
+  "post_date": 1360075319,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26586,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброе время суток, ребята помогите исправить проблему. Установил движок R400, сайт открывается, но не могу заходить под своим профилем.Ничего не меняется...",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1360075319,
+      "user_id": 5861,
+      "user_title": "User",
+      "username": "bestmd"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26587,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>bestmd</b>, логи сюда дай.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1360077540,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26603,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "да какие логи...<br />\nCookies!",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1360085481,
+      "user_id": 30,
+      "user_title": "User",
+      "username": "krumax"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26638,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Все проверил все работает как должно, в первые так глючит..",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1360102137,
+      "user_id": 5861,
+      "user_title": "User",
+      "username": "bestmd"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "bag-v-torrentpier-r400-stable",
+  "sticky": false,
+  "tags": [],
+  "title": "Баг в TorrentPier R400 (Stable)",
+  "url_path": "/threads/bag-v-torrentpier-r400-stable.2176/",
+  "user_id": 5861,
+  "username": "bestmd",
+  "view_count": 2028
+}

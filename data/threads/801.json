@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 10174,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 801,
+  "last_post_date": 1327167405,
+  "node_id": 57,
+  "post_date": 1327160557,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10174,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Кто то взломал или сделал специально не не знаю точно... Короче удалил все что есть у меня на сайте. Как восстановить БД? у меня есть сохраненный БД.sql файл. Импортировал но показывает вот такую ошибку<br />\n<pre class=\"xfBb-code\" data-lang=\"\">Ошибка\n \nSQL-запрос:\n \n-- -- Дамп данных таблицы `bb_attachments_config` -- INSERT INTO `bb_attachments_config` (`config_name`, `config_value`) VALUES (&#039;upload_dir&#039;, &#039;files&#039;), (&#039;upload_img&#039;, &#039;images/icon_clip.gif&#039;), (&#039;topic_icon&#039;, &#039;images/icon_clip.gif&#039;), (&#039;display_order&#039;, &#039;0&#039;), (&#039;max_filesize&#039;, &#039;524288&#039;), (&#039;attachment_quota&#039;, &#039;52428800&#039;), (&#039;max_filesize_pm&#039;, &#039;262144&#039;), (&#039;max_attachments&#039;, &#039;1&#039;), (&#039;max_attachments_pm&#039;, &#039;1&#039;), (&#039;disable_mod&#039;, &#039;0&#039;), (&#039;allow_pm_attach&#039;, &#039;1&#039;), (&#039;allow_ftp_upload&#039;, &#039;0&#039;), (&#039;attach_version&#039;, &#039;2.3.14&#039;), (&#039;default_upload_quota&#039;, &#039;0&#039;), (&#039;default_pm_quota&#039;, &#039;0&#039;), (&#039;ftp_server&#039;, &#039;&#039;), (&#039;ftp_path&#039;, &#039;&#039;), (&#039;download_path&#039;, &#039;&#039;), (&#039;ftp_user&#039;, &#039;&#039;), (&#039;ftp_pass&#039;, &#039;&#039;), (&#039;ftp_pasv_mode&#039;, &#039;1&#039;), (&#039;img_display_inlined&#039;, &#039;1&#039;), (&#039;img_max_width&#039;, &#039;200&#039;), (&#039;img_max_height&#039;, &#039;200&#039;), (&#039;img_link_width&#039;, &#039;0&#039;), (&#039;img_link_height&#039;, &#039;0&#039;), (&#039;img_create_thumbnail&#039;, &#039;0&#039;), (&#039;img_min_thumb_filesize&#039;, &#039;12000&#039;), (&#039;img_imagick&#039;, &#039;/usr/bin/convert&#039;), (&#039;use_gd2&#039;, &#039;1&#039;), (&#039;wma_autoplay&#039;, &#039;0&#039;), (&#039;flash_aut[...]\n \nОтвет MySQL:\n#1062 - Duplicate entry &#039;upload_dir&#039; for key &#039;PRIMARY&#039;</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1327160557,
+      "user_id": 668,
+      "user_title": "",
+      "username": "fariyeld"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10175,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Удалить сначала все таблицы из базы, а затем делать импорт",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1327161135,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10177,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Все же та ошибка. Еще какие варианты?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1327165042,
+      "user_id": 668,
+      "user_title": "",
+      "username": "fariyeld"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10181,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>fariyeld</b>, если таблицы все удалены -такой ошибка банально быть не может.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1327167405,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "kak-vosstanovit-bd",
+  "sticky": false,
+  "tags": [],
+  "title": "Как восстановить БД?",
+  "url_path": "/threads/kak-vosstanovit-bd.801/",
+  "user_id": 668,
+  "username": "fariyeld",
+  "view_count": 1475
+}

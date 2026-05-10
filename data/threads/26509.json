@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 63300,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 26509,
+  "last_post_date": 1411673863,
+  "node_id": 57,
+  "post_date": 1411645678,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63300,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ребята, существуют ли плагины для удобного размещения рекламы на трекере?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1411645678,
+      "user_id": 565,
+      "user_title": "User",
+      "username": "Vitaliy Fedorov"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63302,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"http://torrentpier.com/threads/mod-upravlenija-reklamnymi-materialami.496/\" class=\"link link--internal\">http://torrentpier.com/threads/mod-upravlenija-reklamnymi-materialami.496/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1411646589,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63311,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Поиск на форуме для кого сделан?!",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1411673863,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "plagin-dla-udobnogo-razmesenia-reklamy",
+  "sticky": false,
+  "tags": [],
+  "title": "Плагин для удобного размещения рекламы",
+  "url_path": "/threads/plagin-dla-udobnogo-razmesenia-reklamy.26509/",
+  "user_id": 565,
+  "username": "Vitaliy Fedorov",
+  "view_count": 1059
+}

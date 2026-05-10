@@ -1,0 +1,93 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 98280,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 50,
+    "title": "Graphics and styles for TorrentPier"
+  },
+  "id": 43226,
+  "last_post_date": 1760920151,
+  "node_id": 50,
+  "post_date": 1760920151,
+  "posts": [
+    {
+      "attach_count": 3,
+      "attachments": [
+        {
+          "attach_date": 1760920150,
+          "file_size": 20710,
+          "filename": "Youtube.zip",
+          "height": 0,
+          "id": 6608,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/youtube-zip.6608/",
+          "thumbnail_url": null,
+          "width": 0
+        },
+        {
+          "attach_date": 1760920150,
+          "file_size": 8446,
+          "filename": "Снимок экрана 2025-10-20 051458.webp",
+          "height": 88,
+          "id": 6609,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-ekrana-2025-10-20-051458-webp.6609/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6613-99c2b93630c82fed4641c4a795c8414d.jpg?hash=sgM2414hvw",
+          "width": 428
+        },
+        {
+          "attach_date": 1760920150,
+          "file_size": 100556,
+          "filename": "Снимок экрана 2025-10-20 051635.webp",
+          "height": 599,
+          "id": 6610,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-ekrana-2025-10-20-051635-webp.6610/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6614-eba91c336deb8311fe835f4c3fdcb405.jpg?hash=FZcpfyZm00",
+          "width": 1000
+        }
+      ],
+      "id": 98280,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<div style=\"text-align: center\"><b><span style=\"color: rgb(184, 49, 47)\"><span style=\"font-size: 22px\">ModernYoutube</span></span></b>&#8203;</div><hr /><div style=\"text-align: center\"><a href=\"https://torrentpier.com/attachments/6609/\"><img src=\"https://torrentpier.com/data/attachments/6/6613-99c2b93630c82fed4641c4a795c8414d.jpg?hash=sgM2414hvw\" alt=\"Снимок экрана 2025-10-20 051458.webp\" /></a><a href=\"https://torrentpier.com/attachments/6610/\"><img src=\"https://torrentpier.com/data/attachments/6/6614-eba91c336deb8311fe835f4c3fdcb405.jpg?hash=FZcpfyZm00\" alt=\"Снимок экрана 2025-10-20 051635.webp\" /></a>&#8203;</div><hr />Работают только TorrentPier 2.4 и 2.8<br />\n<b>Установка:</b> Просто заменить файлы",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1760920151,
+      "user_id": 7621,
+      "user_title": "User",
+      "username": "DimaUZB2001"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "modernyoutube",
+  "sticky": false,
+  "tags": [],
+  "title": "ModernYoutube",
+  "url_path": "/threads/modernyoutube.43226/",
+  "user_id": 7621,
+  "username": "DimaUZB2001",
+  "view_count": 1087
+}

@@ -1,0 +1,86 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 91860,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41787,
+  "last_post_date": 1498983812,
+  "node_id": 57,
+  "post_date": 1498983256,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1498983219,
+          "file_size": 137880,
+          "filename": "2017-07-02.webp",
+          "height": 900,
+          "id": 4875,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2017-07-02-webp.4875/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4879-d1a540f8845215275b3c98f311f80ab9.jpg?hash=lVn3rIKEYf",
+          "width": 1440
+        }
+      ],
+      "id": 91860,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как то у меня странно кирилица в атоме выводится:<br />\n<br />\n<a href=\"https://torrentpier.com/attachments/4875/\"><img src=\"https://torrentpier.com/data/attachments/4/4879-d1a540f8845215275b3c98f311f80ab9.jpg?hash=lVn3rIKEYf\" alt=\"2017-07-02.webp\" /></a> <br />\n<br />\nгде писали про эту ошибку, не смог найти, не знаете где поправить:",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1498983256,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91861,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Лента не предназначена для просмотра в браузерах. Или rss/atom-ридер или установленный плагин в браузер на основе Chrome или Firefox, в котором поддержка из коробки.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1498983812,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "kodirovka-v-atom-lente",
+  "sticky": false,
+  "tags": [],
+  "title": "Кодировка в atom ленте",
+  "url_path": "/threads/kodirovka-v-atom-lente.41787/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1084
+}

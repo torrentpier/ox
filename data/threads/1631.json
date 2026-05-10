@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 21937,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1631,
+  "last_post_date": 1361155894,
+  "node_id": 57,
+  "post_date": 1351503615,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 21937,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Все доброго дня.<br />\nДолго парился с кроном.... но сделал 🙂<br />\nТеперь вопрос:<br />\n1. Как быстро создать шаблон для оформления релиза?<br />\n2. Что такое конструктор и как им пользоваться?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1351503615,
+      "user_id": 275,
+      "user_title": "User",
+      "username": "and_luk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23736,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "может подскажете как работает конструктор? а то я понять не могу как все должно работать",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1354656773,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Alekseev"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27050,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Можно ли, создать шаблон через конструктор и потом его экспортировать?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1361132341,
+      "user_id": 275,
+      "user_title": "User",
+      "username": "and_luk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27052,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Работает легко. Только вот, туда бы еще подразделения сделать<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">--зарубежные фильмы\nназвания\nоригинальное название\n....\n....\n--сериалы\nназвание\n...\n...\nсерий\nсезон</pre>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1361155894,
+      "user_id": 275,
+      "user_title": "User",
+      "username": "and_luk"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "sablony-oformleni-reliza",
+  "sticky": false,
+  "tags": [],
+  "title": "Шаблоны оформлени релиза.",
+  "url_path": "/threads/sablony-oformleni-reliza.1631/",
+  "user_id": 275,
+  "username": "and_luk",
+  "view_count": 1668
+}

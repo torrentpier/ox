@@ -1,0 +1,132 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 89868,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 41633,
+  "last_post_date": 1485697354,
+  "node_id": 90,
+  "post_date": 1485627912,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89868,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Поделюсь с вами своим дешевым и сердитым способом резерирования данных.<br />\n<br />\nСуть в том, что мы монтируем пространство Яндекс диска как папку в нашей linux системе. Ну и в ISP Manager создаем обычное резервное копирование в локальную папку.<br />\nВ моем случае свободного пространства на диске нет и поэтому все напрямую копируется командой через крон так<br />\n<pre class=\"xfBb-code\" data-lang=\"\">/bin/cp -r -p -u /var/www/myuser/data/www /var/www/myuser/data/backup</pre>С помощью флагов -r -p -u мы задаем полное копирование файлов со всеми атрибутами и без перезаписи (на деле не проверял еще) в дальнейшем идентичных файлов<br />\n<br />\nИтак, для монтирования нам понадобится davfs<br />\nСистема Centos 7 x64<br />\n<pre class=\"xfBb-code\" data-lang=\"\">yum install davfs2</pre>и libproxy<br />\n<pre class=\"xfBb-code\" data-lang=\"\">yum install libproxy.x86_64 pakchois-devel neon</pre><br />\nЧтобы не светить паролем Яндекса, создаем ключ доступа по ссылке<br />\n<a href=\"https://passport.yandex.ru/profile/access\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://passport.yandex.ru/profile/access</a><br />\n<br />\nи прописываем его в файле <b>/etc/davfs2/secrets</b><br />\n<pre class=\"xfBb-code\" data-lang=\"\">https://webdav.yandex.ru        [yandex user]    [password OR secret key]</pre><br />\nМонтируем наш диск в папку для бэкапов<br />\n<pre class=\"xfBb-code\" data-lang=\"\">mount.davfs https://webdav.yandex.ru /var/www/myuser/data/backup</pre><br />\nПроверяем норм ли всё<br />\n<pre class=\"xfBb-code\" data-lang=\"\">df -h /var/www/myuser/data/backup</pre><br />\nНу и создаем в ISP Manager задание на резервное копирование в локальную папку, либо создаем крон задачу как писал выше.<br />\n<br />\nНе забываем выставить права на папку backup повыше.<br />\n<br />\nТакже можно установить десктопную утилиту Яндекс.Диска к себе на комп, и все файлы будут дублироваться еще и к вам на диск<br />\n<br />\nДо этого хотел прикупить Amazon S3, но испугался большого количества полей при регистрации. А каким способом пользуютесь вы?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1485627912,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89876,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Точно не буду утверждать, но у яндекс вроде было ограничение на размер одного файла. Как альтернативу я использую backup-manager (доп рез. копирования).<br />\nP.S. помоему, isp только нагружает сервер.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1485633763,
+      "user_id": 97,
+      "user_title": "User",
+      "username": "Zenden"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89877,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Про резерв на Яндекс давно слышал, но придерживаюсь стандартных функционалов ISP.<br />\n<br />\nДержу тут бекап диск, за смешные деньги <a href=\"https://thehost.ua/services/backup\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Личный бекап-диск | FTP хостинг - Хостинг провайдер TheHost</a> туда все сваливаю.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1485634801,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89882,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Ну вообще в 5 версии панель и на Яндекс.Диск из коробки бэкапить умеет.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1485686643,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89883,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\">Ну вообще в 5 версии панель и на Яндекс.Диск из коробки бэкапить умеет.</blockquote>Ну да, но у меня есть и ISP 4. В 5 версии он разбивает бэкап на части по 100мб, как по мне иметь 300 архивов не очень удобно",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1485697090,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89884,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "бекаплюсь напрямую на я.диск используя API",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1485697354,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "rezervnoe-kopirovanie-isp-manager-andeks-disk",
+  "sticky": false,
+  "tags": [
+    "webdav"
+  ],
+  "title": "Резервное копирование ISP Manager + Яндекс.Диск",
+  "url_path": "/threads/rezervnoe-kopirovanie-isp-manager-andeks-disk.41633/",
+  "user_id": 6370,
+  "username": "sхс",
+  "view_count": 3797
+}

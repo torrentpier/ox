@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 62035,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 26113,
+  "last_post_date": 1408691078,
+  "node_id": 57,
+  "post_date": 1408687206,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62035,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "ну что есть решения проблемы или нет <br />\nпоставил TorrentPier_II_R596  при скачивании торрента пишет что закодирован что делать та ?<br />\nЯ так внятного решения и не нашел",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1408687206,
+      "user_id": 5519,
+      "user_title": "User",
+      "username": "Angarsk3"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62036,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Angarsk3</b>, может потому что и не искали? Когда файлы редактируете, кодировка должна быть UTF-8 без BOM. Так что смотрите все файлы которые редактировали и пересохраняйте в нужный формат.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1408688479,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62037,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Особое внимание на кодировку файла functions_torrent.php обратите.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1408688612,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62038,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Да 1 файл был config.php  исправил",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1408691078,
+      "user_id": 5519,
+      "user_title": "User",
+      "username": "Angarsk3"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "torrent-neverno-zakodirovan",
+  "sticky": false,
+  "tags": [],
+  "title": "Торрент неверно закодирован",
+  "url_path": "/threads/torrent-neverno-zakodirovan.26113/",
+  "user_id": 5519,
+  "username": "Angarsk3",
+  "view_count": 3837
+}

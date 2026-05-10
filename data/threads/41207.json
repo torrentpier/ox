@@ -1,0 +1,202 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 84446,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41207,
+  "last_post_date": 1436542377,
+  "node_id": 57,
+  "post_date": 1436372688,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1436372599,
+          "file_size": 8870,
+          "filename": "ratio.webp",
+          "height": 107,
+          "id": 3980,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/ratio-webp.3980/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/3/3984-f594e97e932a658e76fd44360875e800.jpg?hash=fzh04HXoW1",
+          "width": 477
+        }
+      ],
+      "id": 84446,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток. <br />\nРешил у себя на трекере полностью отключить рейтинг и упоминания о нем как о таковом) Сам рейтинг оключил в config.php, а вот табличку в профиле пользователя не нашел как удалить/скрыть.<br />\nИзвиняюсь, если такая тема уже была-я не нашел.<br />\nЗараннее спасибо.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1436372688,
+      "user_id": 6221,
+      "user_title": "User",
+      "username": "the_chosen_one"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84449,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "как вариант .<br />\n<br />\nОткрыть usercp_viewprofile.tpl<br />\nнайти (начало)<br />\n<b>&lt;!-- IF IS_ADMIN --&gt;</b><br />\n&lt;td colspan=&quot;2&quot; class=&quot;pad_4&quot;&gt;<br />\n&lt;table id=&quot;traf-stats-tbl&quot; &lt;!-- IF TRAF_STATS --&gt;style=&quot;display: none;&quot;&lt;!-- ENDIF --&gt; class=&quot;bCenter borderless&quot; cellspacing=&quot;1&quot;&gt;<br />\n<br />\n(конец)<br />\n<b>&lt;!-- ENDIF --&gt;</b><br />\n&lt;/table&gt;<br />\n &lt;!--/user_details--&gt;<br />\n<br />\nобернуть в теги для админа (выделено черным)<br />\nТаблицу будет видеть только админ ..",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1436375845,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84451,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Kryl\">как вариант .</blockquote><br />\nСпасибо за оперативный ответ, если я Вас правильно понял, то мне надо найти строчку (она у меня на строке 445):<br />\n&lt;td colspan=&quot;2&quot; class=&quot;pad_4&quot;&gt;<br />\n<br />\nпотом выше найти <b>&lt;!-- IF IS_ADMIN --&gt; </b>(всего в файле их 5 штук - на 1, 191, 214, 310, 318 строчках ), тогда беру эту запись с 318 строчки, убираю теги комментариев <b><b>&lt;!----&gt;,  </b></b>потом нахожу участок:<br />\n<b>&lt;!-- ENDIF --&gt;</b><br />\n&lt;/table&gt;<br />\n&lt;!--/user_details--&gt;<br />\n<br />\nУ себя нашел только похожий участок на 418 сткоке (всего их 46 штук по всему файлу):<br />\n&lt;!-- IF $bb_cfg[&#039;seed_bonus_enabled&#039;] --&gt;&lt;td colspan=&quot;1&quot;&gt;&lt;!-- IF PROFILE_USER --&gt;&lt;a href=&quot;profile.php?mode=bonus&quot;&gt;{L_EXCHANGE}&lt;/a&gt;&lt;!-- ENDIF --&gt;&lt;/td&gt;<b>&lt;!-- ENDIF --&gt;</b><br />\n                        &lt;/tr&gt;<br />\n                    &lt;/table&gt;<br />\n                &lt;/td&gt;<br />\n            &lt;/tr&gt;<br />\n       <b> &lt;/table&gt;<br />\n        &lt;!--/user_details--&gt;</b><br />\nи тогда тоже убираю с последнего <b>&lt;!-- ENDIF --&gt; </b>теги коментариев.<br />\nТолько недавно начал осваивать движок и разбиратся в коде (сам я не программист))), если то что я описал неправильно, буду благодарен, если разъясните.<br />\nСпасибо.<br />\n<br />",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1436386326,
+      "user_id": 6221,
+      "user_title": "User",
+      "username": "the_chosen_one"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84452,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "нет не правильно поняли ..<br />\nперед &lt;td colspan=&quot;2&quot; class=&quot;pad_4&quot;&gt;<br />\nвставить <b>&lt;!-- IF IS_ADMIN --&gt; </b><br />\n<br />\nперед<br />\n&lt;/table&gt;<br />\n&lt;!--/user_details--&gt;<br />\n<br />\nвставить<b> <b>&lt;!-- ENDIF --&gt;</b></b>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1436386831,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84459,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Kryl\">нет не правильно поняли ..</blockquote>Спасибо огромное, все получилось)",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1436467835,
+      "user_id": 6221,
+      "user_title": "User",
+      "username": "the_chosen_one"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1436470337,
+          "file_size": 8800,
+          "filename": "photo.webp",
+          "height": 69,
+          "id": 3983,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/photo-webp.3983/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/3/3987-d9f3121751772151b1e3b16daec1ca42.jpg?hash=V4XpyW0mdT",
+          "width": 512
+        }
+      ],
+      "id": 84460,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ну и еще один вопрос 👎: хочу скрыть/отключить следующие вещи:<br />\n<b>Рейтинг:    Нет (DL &lt; 0 B) [ Passkey: Показать ] </b>- в профиле пользователя<br />\n<b>Подробная статистика пиров </b>- в раздаче (просто чтоб эта строка не показывалась теме с раздачей)<br />\nну и статистику <b>Скачан: х раз </b>тоже бы хотелось отключить.<br />\nНе хочу напартачить, потому спрашиваю у Вас.<br />\nЕще раз спасибо.",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1436470217,
+      "user_id": 6221,
+      "user_title": "User",
+      "username": "the_chosen_one"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84465,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "по первому вопросу :<br />\nоткрыть <br />\nusercp_viewprofile.tpl<br />\nнайти<br />\n&lt;tr id=&quot;bt_user_ratio&quot; &lt;!-- IF TRAF_STATS --&gt;style=&quot;display: none;&quot;&lt;!-- ENDIF --&gt;&gt;<br />\nперед вставить<br />\n&lt;!-- IF IS_ADMIN --&gt;<br />\n<br />\nнайти:<br />\n     &lt;a href=&quot;#&quot; onclick=&quot;ajax.exec({ action: &#039;gen_passkey&#039;, user_id  : {PROFILE_USER_ID} }); return false;&quot;&gt;{L_BT_GEN_PASSKEY}&lt;/a&gt;<br />\n                    &lt;/span&gt; ]<br />\n                    &lt;!-- ENDIF --&gt;<br />\n               &lt;/td&gt;<br />\n           &lt;/tr&gt;<br />\n<br />\nпосле вставить<br />\n&lt;!-- ENDIF --&gt;<br />\n<br />\nпо второму вопросу:<br />\nоткрыть  viewtopic_torrent.tpl<br />\nнайти <br />\n{L_COMPLETED}:&amp;nbsp; &lt;b&gt;{TOR_COMPLETED} <br />\nобернуть в теги для админа , или удалить .<br />\n<br />\nнайти <br />\n&lt;a href=&quot;{SPMODE_FULL_HREF}&quot; class=&quot;gen&quot;&gt;{L_SPMODE_FULL}&lt;/a&gt;<br />\nобернуть в теги для админа , или удалить .",
+      "message_state": "visible",
+      "position": 6,
+      "post_date": 1436508606,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84475,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5626/\">@Kryl</a><br />\nОгромное Вам человеческое спасибо! <br />\nВсе получилось и с первым и со вторым воспросом)",
+      "message_state": "visible",
+      "position": 7,
+      "post_date": 1436542377,
+      "user_id": 6221,
+      "user_title": "User",
+      "username": "the_chosen_one"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 7,
+  "slug": "kak-otklucit-blok-rejtinga-v-profile-pol-zovatelej",
+  "sticky": false,
+  "tags": [
+    "профиль",
+    "рейтинг",
+    "условия в шаблонах",
+    "шаблонизатор"
+  ],
+  "title": "Как отключить блок рейтинга в профиле пользователей?",
+  "url_path": "/threads/kak-otklucit-blok-rejtinga-v-profile-pol-zovatelej.41207/",
+  "user_id": 6221,
+  "username": "the_chosen_one",
+  "view_count": 2184
+}

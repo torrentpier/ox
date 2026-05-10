@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 13171,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 52,
+    "title": "Bug tracker archive"
+  },
+  "id": 1073,
+  "last_post_date": 1331118852,
+  "node_id": 52,
+  "post_date": 1331065974,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13171,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В админке увидел, что есть возможность дать гостям доступ к трекеру, но не могу понять где ее включить. То, что в конфиге понятно, но какая именно переменная?<br />\nАдминка - Настройки трекера - Разрешить &quot;гостям&quot; (неавторизованным юзерам) доступ к трекеру<br />\n <br />\nВ шабе прописано так:<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">&lt;td&gt;&lt;h4&gt;{L_ALLOW_GUEST_DL}&lt;/h4&gt;&lt;!-- IF L_ALLOW_GUEST_DL_EXPL --&gt;&lt;h6&gt;{L_ALLOW_GUEST_DL_EXPL}&lt;/h6&gt;&lt;!-- ENDIF --&gt;&lt;/td&gt;\n    &lt;td&gt;&lt;span class=&quot;gen&quot;&gt;&amp;nbsp; {L_NO}&lt;/td&gt;</pre> <br />\nЕсть ли возможность дать доступ гостя на данный момент и зачем нужна эта строчка в админке, если она статика?<br />\n <br />\nп.с. если я чего-то не вьехал, обьясните плз, буду благодарен 🙂",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1331065974,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13181,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Список прав доступа</b> даёт возможность гостям.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1331092997,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13215,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Basilevs</b>, спасибо. я подумал может есть какая еще фишка помимо стандартной выдачи прав",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1331118852,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "razresit-gostam-dostup-k-trekeru",
+  "sticky": false,
+  "tags": [],
+  "title": "Разрешить гостям доступ к трекеру",
+  "url_path": "/threads/razresit-gostam-dostup-k-trekeru.1073/",
+  "user_id": 0,
+  "username": "Gemini_13",
+  "view_count": 2199
+}

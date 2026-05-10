@@ -1,0 +1,150 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 86870,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41395,
+  "last_post_date": 1454586848,
+  "node_id": 57,
+  "post_date": 1454509758,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1454509795,
+          "file_size": 38018,
+          "filename": "torrent-mmmm.webp",
+          "height": 597,
+          "id": 4284,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/torrent-mmmm-webp.4284/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4288-4c7ddd0cb0f4b7481dce708441658dee.jpg?hash=kV6cXhNqux",
+          "width": 1016
+        }
+      ],
+      "id": 86870,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Я не давно начал, и не могу настроит или вроде. Я создаю тему, добавляю торрент и всё как в инструкции, делаю раздачу но в программе uTorrent, показывает<br />\n<img src=\"http://img.uz/d/2016/02/56b20e2cd3f2c.jpg\" alt=\"\" /><br />\nпару секунд зелёным и показывает красным, это так и должно быть или?<br />\nИ на треккере пишет &quot;Полного источника не было: <b>Никогда&quot; </b><br />\nНе личеров не сидеров. В чем может быть проблема, как исправить? Заранее спасибо",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1454509758,
+      "user_id": 6849,
+      "user_title": "User",
+      "username": "BlackFenix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86871,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/6849/\">@BlackFenix</a> а что говорит торрент-клиент ?  в ошибках трекера",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1454512372,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86873,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"drew\"><a href=\"https://torrentpier.com/members/6849/\">@BlackFenix</a> а что говорит торрент-клиент ?  в ошибках трекера</blockquote>Там вроде ошибки нету никакой. Если у кого нибудь есть возможность напишите мне в агенте - <a href=\"mailto:blackfenixuzb@inbox.ru\">blackfenixuzb@inbox.ru</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1454517227,
+      "user_id": 6849,
+      "user_title": "User",
+      "username": "BlackFenix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86874,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"drew\"><a href=\"https://torrentpier.com/members/6849/\">@BlackFenix</a> а что говорит торрент-клиент ?  в ошибках трекера</blockquote><br />\nМожет он в обще не исправил url до анонсера.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"BlackFenix\">Я не давно начал, и не могу настроит или вроде. Я создаю тему, добавляю торрент и всё как в инструкции, делаю раздачу но в программе uTorrent, показывает<br />\n<img src=\"http://img.uz/d/2016/02/56b20e2cd3f2c.jpg\" alt=\"\" /><br />\nпару секунд зелёным и показывает красным, это так и должно быть или?<br />\nИ на треккере пишет &quot;Полного источника не было: <b>Никогда&quot; </b><br />\nНе личеров не сидеров. В чем может быть проблема, как исправить? Заранее спасибо</blockquote><br />\nurl до анонсера исправлял на свой? права на папки все выставлены? что в логах трекера?",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1454518493,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86877,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Virtuoz\">Может он в обще не исправил url до анонсера.<br />\n<br />\n<br />\n<br />\nurl до анонсера исправлял на свой? права на папки все выставлены? что в логах трекера?</blockquote>Внутри &quot;Настройки форумов&quot; есть <br />\n<span style=\"font-size: 12px\"><b>Announce url </b>Я его сменил на свой, но ничего не изменяется. Какие права именно?</span>",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1454585736,
+      "user_id": 6849,
+      "user_title": "User",
+      "username": "BlackFenix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86878,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "в каталоге data/ на все папки должны быть права 777",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1454586848,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "torrenty-ne-razdautsa",
+  "sticky": false,
+  "tags": [],
+  "title": "Торренты не раздаются",
+  "url_path": "/threads/torrenty-ne-razdautsa.41395/",
+  "user_id": 6849,
+  "username": "BlackFenix",
+  "view_count": 1679
+}

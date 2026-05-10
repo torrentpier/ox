@@ -1,0 +1,134 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 88890,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41569,
+  "last_post_date": 1479364344,
+  "node_id": 57,
+  "post_date": 1479277859,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88890,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "У меня на сайте не работают вообще все BB-коды, которые должны в по-умолчанию работать.<br />\nМожет кто знает как это исправить?<br />\n<br />\nЕсли можно пишите по подробнее, я новичок в этом деле.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1479277859,
+      "user_id": 7136,
+      "user_title": "User",
+      "username": "Terminator"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88894,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Понять для начала что сделал ) в хроме ошибки смотри",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1479313129,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1479355644,
+          "file_size": 201143,
+          "filename": "default.rar",
+          "height": 0,
+          "id": 4531,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/default-rar.4531/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 88899,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1479355757,
+      "message_parsed": "Я взял шаблон для Версия Torrentpier r775 и поставил его на Torrentpier 2.1.5 . Шаблон работает на Torrentpier 2.1.5, только не работают bb коды.<br />\n<br />\nПрилагаю этот шаблон, если кто сумеет его адаптировать для Torrentpier 2.1.5 , буду очень благодарен.<br />\nУ меня просто нет никакого опыта и я не знаю, чего там не хватает.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1479355648,
+      "user_id": 7136,
+      "user_title": "User",
+      "username": "Terminator"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88900,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Просто взять и поставить шаблон от старой версии нельзя, надо смотреть все и сравнивать. <br />\nP.S. А я взял себе кузов от ваз 2101 и поставил на bmw x5m, стоит то стоит, но вот торпеда не подходит",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1479358170,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88902,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Там ничего сложного нет, нужно только перекрасить основный шаблон Torrentpier 2.1.5 в цвета шаблона от  Torrentpier r775, который я выложил.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1479364344,
+      "user_id": 7136,
+      "user_title": "User",
+      "username": "Terminator"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "ne-rabotaut-bb-kody",
+  "sticky": false,
+  "tags": [],
+  "title": "Не работают BB-коды",
+  "url_path": "/threads/ne-rabotaut-bb-kody.41569/",
+  "user_id": 7136,
+  "username": "Terminator",
+  "view_count": 1053
+}

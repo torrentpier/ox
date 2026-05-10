@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 16675,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1300,
+  "last_post_date": 1336021124,
+  "node_id": 57,
+  "post_date": 1336020390,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 16675,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет. Никто не хочет взяться за написание парсера релизов?<br />\nЕстественно данную работу оплачу. Отпишитесь в ЛС мне пожалуйста, кто может его написать под мои требования, более подробно расскажу, что мне именно нужно в нём.<br />\nPS Не знал где ещё можно создать тему, написал тут, админы перенесите в соответствующий раздел.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1336020390,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 16676,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Логу бы написал)",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1336021124,
+      "user_id": 10,
+      "user_title": "User",
+      "username": "Mafiozi"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "parser",
+  "sticky": false,
+  "tags": [],
+  "title": "Парсер",
+  "url_path": "/threads/parser.1300/",
+  "user_id": 55,
+  "username": "Lange",
+  "view_count": 1422
+}

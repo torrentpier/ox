@@ -1,0 +1,112 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Запрет редактирования релиза с определенным статусом by belomaxorka.zip",
+      "id": 5715,
+      "local_path": null,
+      "r2_key": null,
+      "size": 1687,
+      "src_url": "https://torrentpier.com/api/resource-versions/430/download?file=5715"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1703923370,
+      "file_size": 7446,
+      "filename": "Screenshot 2023-12-30 150228.webp",
+      "height": 208,
+      "id": 5714,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot-2023-12-30-150228-webp.5714/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5718-3c9ae24c51b3484630ebd62c4d990dbb.jpg?hash=8hkaWY3dOK",
+      "width": 1342
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Мод добавляет возможность запретить редактирование релизов с определенным статусом. Статусы можно легко настроить под себя. Редактировать релиз могут только администраторы или модераторы.<br />\n<br />\n<div style=\"text-align: center\"><span style=\"color: rgb(226, 80, 65)\">Примечание: Данный мод по умолчанию включен в v2.4.0-stable и в последних LTS версиях.</span>&#8203;</div>",
+  "download_count": 301,
+  "external_url": null,
+  "icon_url": null,
+  "id": 279,
+  "is_fileless": null,
+  "last_update": 1703923794,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1703922985,
+  "resource_state": "visible",
+  "slug": "zapret-redaktirovania-reliza-s-opredelennym-statusom",
+  "tag_line": "Данный мод позволяет запретить редактировать релизы с определенным статусом.",
+  "tags": [
+    "запрет на редактирование релиза",
+    "запрет редактирования по статусам",
+    "запрет редактирования релиза",
+    "мод",
+    "моды"
+  ],
+  "title": "Запрет редактирования релиза с определенным статусом",
+  "url_path": "/resources/zapret-redaktirovania-reliza-s-opredelennym-statusom.279/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.1",
+  "versions": [
+    {
+      "download_count": 225,
+      "files": [
+        {
+          "filename": "[FULL] Запрет редактирования релиза с определенным статусом by belomaxorka.zip",
+          "id": 5715,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1687,
+          "src_url": "https://torrentpier.com/api/resource-versions/430/download?file=5715"
+        }
+      ],
+      "id": 430,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1703923794,
+      "version_state": "visible",
+      "version_string": "v1.0.1",
+      "view_url": "https://torrentpier.com/resources/zapret-redaktirovania-reliza-s-opredelennym-statusom.279/version/430/"
+    },
+    {
+      "download_count": 77,
+      "files": [
+        {
+          "filename": "[FULL] Запрет редактирования релиза с определенным статусом by belomaxorka.zip",
+          "id": 5713,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1676,
+          "src_url": "https://torrentpier.com/api/resource-versions/429/download?file=5713"
+        }
+      ],
+      "id": 429,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1703922985,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/zapret-redaktirovania-reliza-s-opredelennym-statusom.279/version/429/"
+    }
+  ],
+  "view_count": 2825
+}

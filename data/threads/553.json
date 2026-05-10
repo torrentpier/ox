@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 7006,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 553,
+  "last_post_date": 1323508848,
+  "node_id": 57,
+  "post_date": 1323496989,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 7006,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Не учитывает Скорость. Трекер находится во внутренней зоне провайдера, средняя скорость отдачи и скачивания 5-7мбит.с, в профиле у пользователей почти у всех &quot;<span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\">-</span></span></span><span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\"> / </span></span></span><span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\">-&quot;, у некоторых 25 кбит.с. Куда смотреть? И как вообще скорость учитывается?</span></span></span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1323496989,
+      "user_id": 152,
+      "user_title": "User",
+      "username": "levantuev"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 7008,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>levantuev</b>, крон !",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1323497586,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Bustra"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 7012,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Bustra\"><b>levantuev</b>, крон !</blockquote>с чего бы?!",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1323508848,
+      "user_id": 152,
+      "user_title": "User",
+      "username": "levantuev"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "ne-ucityvaet-skorost",
+  "sticky": false,
+  "tags": [],
+  "title": "Не учитывает Скорость",
+  "url_path": "/threads/ne-ucityvaet-skorost.553/",
+  "user_id": 152,
+  "username": "levantuev",
+  "view_count": 1237
+}

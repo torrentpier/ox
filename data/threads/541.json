@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 6813,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 541,
+  "last_post_date": 1323299399,
+  "node_id": 57,
+  "post_date": 1323274816,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 6813,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Увидил такой вопрос, на другом форуме поддержки ТП и тоже очень сильно зайнтересовало, может кто подскажет как сделать что бы запоминало автологин по умолчанию????<br />\n<br />\n<img src=\"http://i28.fastpic.ru/big/2011/1207/fa/c83b8f189c8b9f6da0d38b43fb6b2efa.jpg\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1323274816,
+      "user_id": 261,
+      "user_title": "",
+      "username": "ryt"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 6814,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "checked=&quot;checked&quot;<br />\n<br />\nне помогает?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1323276797,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 6815,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>PheRum</b>, спасибо большое, очень помог 🙂",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1323277567,
+      "user_id": 261,
+      "user_title": "",
+      "username": "ryt"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 6818,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Лучше попробовать сделать как на рутрекере, запоминало автоматом, а сделать чекбокс не запоминать 🙂 Все равно большинство запоминает так то...",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1323278561,
+      "user_id": 33,
+      "user_title": "User",
+      "username": "yamaha"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 6853,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>yamaha</b>, я против",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1323299399,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "avtologin-po-umolcaniu",
+  "sticky": false,
+  "tags": [],
+  "title": "Автологин по-умолчанию",
+  "url_path": "/threads/avtologin-po-umolcaniu.541/",
+  "user_id": 261,
+  "username": "ryt",
+  "view_count": 1427
+}

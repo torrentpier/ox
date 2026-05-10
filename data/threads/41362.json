@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 86274,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 88,
+    "title": "Search Engine Optimization (SEO)"
+  },
+  "id": 41362,
+  "last_post_date": 1451317275,
+  "node_id": 88,
+  "post_date": 1451287661,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86274,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Проблемка в следующем. В page_header.tpl присутствует  - <br />\n{META}.<br />\n<br />\nНо на ее месте на главной ничего не выводится. Что дела ? Так должно быть? Куда смотреть где править ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1451287661,
+      "user_id": 6580,
+      "user_title": "User",
+      "username": "CrazyBoss"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86297,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Просто кому-то в свое время пришла идея назвать переменную так, хотя никакой логики это не несло.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1451317275,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "meta-title-meta-keywords",
+  "sticky": false,
+  "tags": [],
+  "title": "Meta title & meta keywords",
+  "url_path": "/threads/meta-title-meta-keywords.41362/",
+  "user_id": 6580,
+  "username": "CrazyBoss",
+  "view_count": 1333
+}

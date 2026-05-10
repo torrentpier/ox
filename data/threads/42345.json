@@ -1,0 +1,72 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 97015,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      }
+    ],
+    "id": 2,
+    "title": "Resource news"
+  },
+  "id": 42345,
+  "last_post_date": 1738549089,
+  "node_id": 2,
+  "post_date": 1736353129,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97015,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1736354740,
+      "message_parsed": "С этого дня любой желающий может скачать ночную сборку TorrentPier.<br />\n<br />\nЧто такое ночные сборки? Они содержат все актуальные изменения, при этом не являются стабильными релизами.<br />\nНочные сборки TorrentPier из коробки укомплектованы Composer зависимостями, что упрощает их развёртывание. Такие сборки собираются автоматически, при любом новом изменении в репозитории на GitHub. Для загрузки доступна всегда актуальная версия на данный момент времени.<br />\n<br />\nСсылка на загрузку ночной сборки: <a href=\"https://nightly.link/torrentpier/torrentpier/workflows/ci/master/TorrentPier-master\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">nightly.link | Repository torrentpier/torrentpier | Workflow ci.yml | Branch master | Artifact TorrentPier-master</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1736353129,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97056,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "С этого дня, последние изменения из репозитория выгружаются на TorrentPier Demo автоматически, это значит что демка теперь всегда в актуальном состоянии! 🙂",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1738549089,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "nocnye-sborki-torrentpier",
+  "sticky": false,
+  "tags": [
+    "nightly",
+    "автоматическая сборка",
+    "новости",
+    "ночная сборка",
+    "ночные сборки"
+  ],
+  "title": "Ночные сборки TorrentPier",
+  "url_path": "/threads/nocnye-sborki-torrentpier.42345/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 1019
+}

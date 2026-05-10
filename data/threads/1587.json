@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 21100,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 11,
+    "title": "Questions about styles for TorrentPier"
+  },
+  "id": 1587,
+  "last_post_date": 1349458600,
+  "node_id": 11,
+  "post_date": 1349454437,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 21100,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вопрос такой делаю свой шаблон в мозиле отображается нормально а в других цвета пропадают!Что с этим можно сделать?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1349454437,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Artem2012"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 21101,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Artem2012\">Что с этим можно сделать?</blockquote>изучать кроссбраузерную вёрстку",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1349457548,
+      "user_id": 30,
+      "user_title": "User",
+      "username": "krumax"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 21102,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"\">изучать кроссбраузерную вёрстку</blockquote>А где её можно изучить",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1349458134,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Artem2012"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 21103,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Artem2012\">А где её можно изучить</blockquote><b><a href=\"http://bit.ly/PYjaQr\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Здесь</a></b>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1349458600,
+      "user_id": 30,
+      "user_title": "User",
+      "username": "krumax"
+    }
+  ],
+  "prefix_id": 19,
+  "reply_count": 3,
+  "slug": "propadaut-cveta-vo-vseh-brauzerah-krome-mozilla",
+  "sticky": false,
+  "tags": [],
+  "title": "Пропадают цвета во всех браузерах кроме Mozilla",
+  "url_path": "/threads/propadaut-cveta-vo-vseh-brauzerah-krome-mozilla.1587/",
+  "user_id": 0,
+  "username": "Artem2012",
+  "view_count": 2580
+}

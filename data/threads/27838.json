@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 65021,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 27838,
+  "last_post_date": 1417819843,
+  "node_id": 80,
+  "post_date": 1413805129,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 65021,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Есть проблемы при работе с https, логин, генерация ссылок, редиректы после логина.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1413805129,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 68929,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено в новой ревизии.<br />\nhttps://github.com/torrentpier/torr...cfabdd7a24e649a1f049b336e7b0487ebb?diff=split<br />\n<br />\nСкачать 2.1.4 можно в центре загрузки: <a href=\"https://get.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://get.torrentpier.com/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1417819843,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 1,
+  "slug": "podderzka-https",
+  "sticky": false,
+  "tags": [],
+  "title": "Поддержка https",
+  "url_path": "/threads/podderzka-https.27838/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 1086
+}

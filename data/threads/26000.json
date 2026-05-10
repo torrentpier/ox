@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61363,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 26000,
+  "last_post_date": 1405106850,
+  "node_id": 3,
+  "post_date": 1404921790,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61363,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Что случилось с ресурсом freeisland.org уважаемого fly_indiz, уже более недели недоступен его трекер. Может кто вкурсях что случилось?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1404921790,
+      "user_id": 5395,
+      "user_title": "User",
+      "username": "alfa"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61372,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Домен не продлили, скорее всего.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1405106850,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "cto-slucilos-s-resursom-freeisland-org",
+  "sticky": false,
+  "tags": [],
+  "title": "Что случилось с ресурсом freeisland.org",
+  "url_path": "/threads/cto-slucilos-s-resursom-freeisland-org.26000/",
+  "user_id": 5395,
+  "username": "alfa",
+  "view_count": 5184
+}

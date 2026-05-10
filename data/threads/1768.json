@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 23466,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1768,
+  "last_post_date": 1354451870,
+  "node_id": 57,
+  "post_date": 1354245157,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23466,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<span style=\"font-size: 15px\"><span style=\"font-family: 'times new roman'\">Здравствуйте, подскажите, как правильно настроить русскоязычную почту на трекере.</span></span><br />\n<span style=\"font-size: 15px\"><span style=\"font-family: 'times new roman'\">ставлю Подтверждение регистрации по майлу. ввожу адрес почты в настройках admin@</span><span style=\"color: #222222\">xn--80aswg.xn--p1ai . Пробывал вводить admin@сайт.рф. Но письма не приходят. Через интерфейс </span><u><span style=\"color: #165596\"><a href=\"https://62.109.17.153/webmail/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><span style=\"font-family: 'times new roman'\">WebMail</span></a></span></u> </span><span style=\"font-family: 'times new roman'\"><span style=\"font-size: 15px\"><span style=\"color: #222222\">почта активна. отправляются и доставляются сообщения. Значит проблема в настройке. Вот только как правильно настроить?</span></span></span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1354245157,
+      "user_id": 3099,
+      "user_title": "User",
+      "username": "godtor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23480,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>godtor</b>, punycode более логичный вариант. А если в админке указываешь <a href=\"mailto:admin@site.ru\">admin@site.ru</a> письмы уходят?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1354283237,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23481,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"dimka3210\"><b>godtor</b>, punycode более логичный вариант. А если в админке указываешь <a href=\"mailto:admin@site.ru\">admin@site.ru</a> письмы уходят?</blockquote>да. почта уходит. но с рф домена нехочет как не крути🙁",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1354284361,
+      "user_id": 3099,
+      "user_title": "User",
+      "username": "godtor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23573,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Перепробывал все варианты, нехочет, как не крути( видимо капаться нужно в движке.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1354429895,
+      "user_id": 3099,
+      "user_title": "User",
+      "username": "godtor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23620,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<span style=\"font-family: 'times new roman'\"><span style=\"font-size: 15px\">На сервере настроен <span style=\"color: #000000\">exim4-4.72-6+squeeze3. Функция mail () работает на ура. Кто подскажет проблему?</span></span></span>",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1354451870,
+      "user_id": 3099,
+      "user_title": "User",
+      "username": "godtor"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "russkoazycnaa-pocta",
+  "sticky": false,
+  "tags": [],
+  "title": "русскоязычная почта",
+  "url_path": "/threads/russkoazycnaa-pocta.1768/",
+  "user_id": 3099,
+  "username": "godtor",
+  "view_count": 1471
+}

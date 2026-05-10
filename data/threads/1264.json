@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 15854,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 52,
+    "title": "Bug tracker archive"
+  },
+  "id": 1264,
+  "last_post_date": 1334987639,
+  "node_id": 52,
+  "post_date": 1334987639,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15854,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Короче, вот какая проблема, когда захожу на форум то в форумах и подфорумах есть новые сообщения, колокольчики горят и сами подфорумы подсвечиваются, а как только зайду в админку или в какой то форум то новые сообщения тут же слетают, или через некоторое время.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1334987639,
+      "user_id": 737,
+      "user_title": "User",
+      "username": "Dream"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "novye-soobsenia-na-glavnoj",
+  "sticky": false,
+  "tags": [],
+  "title": "Новые сообщения на главной",
+  "url_path": "/threads/novye-soobsenia-na-glavnoj.1264/",
+  "user_id": 737,
+  "username": "Dream",
+  "view_count": 1881
+}

@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 87054,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41415,
+  "last_post_date": 1457005202,
+  "node_id": 57,
+  "post_date": 1456956858,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87054,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Сегодня скорость обмена поднялась до 60MBite/s в то время как канал сервера на 100Мbit/s<br />\nСтало интересно глянуть на запрос<br />\n$row = DB()-&gt;fetch_row(&quot;SELECT SUM(seeders) AS seeders, SUM(leechers) AS leechers, ((SUM(speed_up) + SUM(speed_down))/2) AS speed FROM &quot;. BB_BT_TRACKER_SNAP);<br />\n<br />\nНе пойму зачем делим на 2.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1456956858,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87060,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "среднее арифметическое. И скорость обмена у пользователей может быть намного выше чем канал у вашего хостинга, это разные вещи.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1457005202,
+      "user_id": 5765,
+      "user_title": "User",
+      "username": "Diolektor"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "skorost-obmena",
+  "sticky": false,
+  "tags": [],
+  "title": "Скорость обмена",
+  "url_path": "/threads/skorost-obmena.41415/",
+  "user_id": 6370,
+  "username": "sхс",
+  "view_count": 956
+}

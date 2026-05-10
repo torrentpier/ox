@@ -1,0 +1,163 @@
+{
+  "custom_fields": {
+    "torrentpier": "223"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 92771,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 41890,
+  "last_post_date": 1529867625,
+  "node_id": 80,
+  "post_date": 1521307301,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1521307278,
+          "file_size": 45308,
+          "filename": "Screenshot_3.webp",
+          "height": 588,
+          "id": 5096,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot_3-webp.5096/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5100-0ffc1fc29734e068d2b2fd603e410fc5.jpg?hash=KmFzBG2lOs",
+          "width": 1142
+        }
+      ],
+      "id": 92771,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ну вот собственно скрин, в файле <b>/internal_data/log/php_err.log </b>нет упоминаний о ошибке крона <br />\n<a href=\"https://torrentpier.com/attachments/5096/\"><img src=\"https://torrentpier.com/data/attachments/5/5100-0ffc1fc29734e068d2b2fd603e410fc5.jpg?hash=KmFzBG2lOs\" alt=\"Screenshot_3.webp\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1521307301,
+      "user_id": 7828,
+      "user_title": "User",
+      "username": "weber_u"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92772,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Я за это писау уже на <a href=\"https://github.com/torrentpier/torrentpier/issues/451\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Notice при добавлении новой задачи в cron · Issue #451 · torrentpier/torrentpier</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1521307725,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92773,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1521308547,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Protektor\">Я за это писау уже на <a href=\"https://github.com/torrentpier/torrentpier/issues/451\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Notice при добавлении новой задачи в cron · Issue #451 · torrentpier/torrentpier</a></blockquote>А как исправить ошибку?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1521308463,
+      "user_id": 7828,
+      "user_title": "User",
+      "username": "weber_u"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92774,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "не занимался этим, через базу данных скопируйте какую ни будь раздачу а потом в админке отредактируйте, при редактировании нотисов нет",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1521309792,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92825,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено в следующей версии.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1521832052,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93262,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "открыть styles/templates/admin/admin_cron.tpl<br />\nнайти<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">&lt;h1&gt;{L_CRON_EDIT_HEAD}&lt;/h1&gt;</pre>заменить<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">&lt;h1&gt;{L_CRON_EDIT_HEAD_EDIT}&lt;/h1&gt;</pre>найти<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">&lt;th colspan=&quot;2&quot;&gt;{L_CRON_EDIT_HEAD}&lt;/th&gt;</pre>заменить<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">&lt;th colspan=&quot;2&quot;&gt;{L_CRON_EDIT_HEAD_EDIT}&lt;/th&gt;</pre>",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1528058229,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93291,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено в версии 2.3.0 (TorrentPier Bison). Релиз 26 числа.",
+      "message_state": "visible",
+      "position": 6,
+      "post_date": 1529867625,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 6,
+  "slug": "osibka-pri-dobavlenii-zadac-v-planirovsike",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка при добавлении задач в планировщике",
+  "url_path": "/threads/osibka-pri-dobavlenii-zadac-v-planirovsike.41890/",
+  "user_id": 7828,
+  "username": "weber_u",
+  "view_count": 1591
+}

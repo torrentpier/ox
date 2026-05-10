@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 40910,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 12222,
+  "last_post_date": 1377086025,
+  "node_id": 57,
+  "post_date": 1376810774,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 40910,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте.<br />\nПодскажите как лечить ??<br />\n<img src=\"http://vittrack.ru/pictures/ae946ea61eebcd904b6d4ec3c7a3312d.png\" alt=\"\" /><br />\nБыл правильный вывод - не давно заметил что теперь криво выводит.<br />\nГде копать ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1376810774,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 40916,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>vitalix</b>, регулярка.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1376817630,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 40923,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Lange</b>, лучше промолчать.<br />\nДекодировать в html обратно надо вывод.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1376820161,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 40939,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Nightmare\">Декодировать в html обратно надо вывод.</blockquote>можно по подробней. в каком файле что изменилось ??",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1376845330,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 41259,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Это контакт и типа расшарить ссылку? То никак тут не декодируешь, можешь только на стороне сервера как то подчищать. И то проще забить и не париться.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1377086025,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "vyvod-tem",
+  "sticky": false,
+  "tags": [],
+  "title": "Вывод тем",
+  "url_path": "/threads/vyvod-tem.12222/",
+  "user_id": 4163,
+  "username": "vitalix",
+  "view_count": 1110
+}

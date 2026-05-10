@@ -1,0 +1,113 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 73851,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 34487,
+  "last_post_date": 1422652459,
+  "node_id": 90,
+  "post_date": 1422630634,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 73851,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вот что выдает mysql tuner<br />\n<pre class=\"xfBb-code\" data-lang=\"\"># perl mysqltuner.pl\n\n&gt;&gt;  MySQLTuner 1.3.0 - Major Hayden &lt;major@mhtx.net&gt;\n&gt;&gt;  Bug reports, feature requests, and downloads at http://mysqltuner.com/\n&gt;&gt;  Run with &#039;--help&#039; for additional options and output filtering\nPlease enter your MySQL administrative login: root\nPlease enter your MySQL administrative password:\n[OK] Currently running supported MySQL version 5.5.38-log\n[OK] Operating on 32-bit architecture with less than 2GB RAM\n\n-------- Storage Engine Statistics -------------------------------------------\n[--] Status: +ARCHIVE +BLACKHOLE +CSV -FEDERATED -InnoDB +MRG_MYISAM\n[--] Data in MyISAM tables: 80M (Tables: 602)\n[--] Data in MRG_MYISAM tables: 868K (Tables: 1)\n[--] Data in PERFORMANCE_SCHEMA tables: 0B (Tables: 17)\n[!!] Total fragmented tables: 39\n\n-------- Security Recommendations  -------------------------------------------\n[OK] All database users have passwords assigned\n\n-------- Performance Metrics -------------------------------------------------\n[--] Up for: 8d 0h 44m 22s (24M q [35.481 qps], 3M conn, TX: 16B, RX: 2B)\n[--] Reads / Writes: 52% / 48%\n[--] Total buffers: 640.0M global + 1.3M per thread (500 max threads)\n[OK] Maximum possible memory usage: 1.3G (68% of installed RAM)\n[OK] Slow queries: 0% (355/24M)\n[OK] Highest usage of available connections: 42% (214/500)\n[OK] Key buffer size / total MyISAM indexes: 128.0M/30.4M\n[OK] Key buffer hit rate: 100.0% (844M cached / 41K reads)\n[OK] Query cache efficiency: 40.3% (2M cached / 6M selects)\n[OK] Query cache prunes per day: 0\n[OK] Sorts requiring temporary tables: 5% (68K temp sorts / 1M sorts)\n[!!] Joins performed without indexes: 8149\n[OK] Temporary tables created on disk: 18% (288K on disk / 1M total)\n[OK] Thread cache hit rate: 99% (346 created / 3M connections)\n[!!] Table cache hit rate: 2% (1K open / 62K opened)\n[OK] Open file limit used: 42% (1K/4K)\n[OK] Table locks acquired immediately: 98% (10M immediate / 10M locks)\n\n-------- Recommendations -----------------------------------------------------\nGeneral recommendations:\n    Run OPTIMIZE TABLE to defragment tables for better performance\n    Adjust your join queries to always utilize indexes\n    Increase table_cache gradually to avoid file descriptor limits\n    Read this before increasing table_cache over 64: http://bit.ly/1mi7c4C\nVariables to adjust:\n    join_buffer_size (&gt; 640.0K, or always use indexes with joins)\n    table_cache (&gt; 2048)</pre><br />\n1. Просветите как узнать для каких полей нужны индексы в базе?<br />\n2. И будет ли базе плохо если я для всех полей сделаю индексы?<br />\n3. Кто хорошо знаком с базой, подскажите в каких полях индексы обязательны, а где вовсе не нужны",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1422630634,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 73852,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вот что в логах mysql-slow-query. Что не так с запросами?<br />\n<pre class=\"xfBb-code\" data-lang=\"\"># Query_time: 21.978230  Lock_time: 0.000172 Rows_sent: 0  Rows_examined: 18317238\nuse mytracker;\nSET timestamp=1421393797;\nINSERT INTO tmp_sync_topics\n                SELECT\n                    t.topic_id,\n                    COUNT(p.post_id) AS total_posts,\n                    MIN(p.post_id) AS topic_first_post_id,\n                    MAX(p.post_id) AS topic_last_post_id,\n                    MAX(p.post_time) AS topic_last_post_time,\n                    IF(MAX(a.attach_id), 1, 0) AS topic_attachment\n                FROM      bb_topics t\n                LEFT JOIN bb_posts p ON(p.topic_id = t.topic_id)\n                LEFT JOIN bb_attachments a ON(a.post_id = p.post_id)\n                WHERE t.topic_status != 2\n                   \n                GROUP BY t.topic_id;\n# Time: 150116 12:12:26\n\n# Query_time: 10.002995  Lock_time: 0.000195 Rows_sent: 5  Rows_examined: 106810\nSET timestamp=1421395946;\nSELECT t.user_id, u.username, u.user_rank, SUM( t.u_up_total ) sum\n        FROM bb_bt_users t\n        LEFT JOIN bb_users u ON ( t.user_id = u.user_id )\n        GROUP BY t.user_id\n        ORDER BY sum DESC\n        LIMIT 0 ,5;\n# Time: 150117  3:43:16\n\n# Query_time: 18.079576  Lock_time: 0.000236 Rows_sent: 0  Rows_examined: 18338883\nSET timestamp=1421456429;\nINSERT INTO tmp_sync_topics\n                SELECT\n                    t.topic_id,\n                    COUNT(p.post_id) AS total_posts,\n                    MIN(p.post_id) AS topic_first_post_id,\n                    MAX(p.post_id) AS topic_last_post_id,\n                    MAX(p.post_time) AS topic_last_post_time,\n                    IF(MAX(a.attach_id), 1, 0) AS topic_attachment\n                FROM      bb_topics t\n                LEFT JOIN bb_posts p ON(p.topic_id = t.topic_id)\n                LEFT JOIN bb_attachments a ON(a.post_id = p.post_id)\n                WHERE t.topic_status != 2\n                   \n                GROUP BY t.topic_id;\n# Time: 150117  6:48:27\n\n=======================================================================================\n# Query_time: 11.523787  Lock_time: 0.000358 Rows_sent: 27  Rows_examined: 32535\nSET timestamp=1421932987;\nselect ct.id,\n(select count(*) from ii_post ps where (ps.category REGEXP concat( &#039;^(&#039; ,ct.id, &#039;,)&#039; ) or ps.category REGEXP concat( &#039;(,&#039; ,ct.id, &#039;,)&#039; ) or ps.category REGEXP\n\nconcat( &#039;(,&#039; ,ct.id, &#039;)$&#039; ) or ps.category=ct.id) AND (DATE_FORMAT(date, &#039;%Y%m%d&#039;)=CURDATE()) AND approve = &#039;1&#039;) as new_,\n(select count(*) from ii_post ps where (ps.category REGEXP concat( &#039;^(&#039; ,ct.id, &#039;,)&#039; ) or ps.category REGEXP concat( &#039;(,&#039; ,ct.id, &#039;,)&#039; ) or ps.category REGEXP\n\nconcat( &#039;(,&#039; ,ct.id, &#039;)$&#039; ) or ps.category=ct.id) AND approve = &#039;1&#039;) as allnews_\nfrom ii_category ct;</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1422631476,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 73861,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/2685/\">@ler</a> судя по тексту ошибок - в некоторых из стандартных таблиц движка нет индексов. Советовал бы дампы для начала сравнить в отношении индексов полей. ii_post - и в этой таблице явно индексов нет.<blockquote class=\"xfBb-quote\" data-name=\"\">[!!] Total fragmented tables: 39</blockquote>Оптимизацию всех таблиц еще сделать надо.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1422642343,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1422652453,
+          "file_size": 27586,
+          "filename": "30-01-2015 18-42-28.webp",
+          "height": 160,
+          "id": 2929,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/30-01-2015-18-42-28-webp.2929/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2933-9648ea0a97c30a4163bd8c6d1bcf2037.jpg?hash=DyXCFYqDh3",
+          "width": 1341
+        }
+      ],
+      "id": 73877,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "таблица  ii_post не с торрентпира, она не интересна.<br />\n<br />\nВот еще кое-что<br />\n<a href=\"https://torrentpier.com/attachments/2929/\"><img src=\"https://torrentpier.com/data/attachments/2/2933-9648ea0a97c30a4163bd8c6d1bcf2037.jpg?hash=DyXCFYqDh3\" alt=\"30-01-2015 18-42-28.webp\" /></a><br />\nВыборка 20 комментариев. 0.3сек многовато",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1422652459,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "too-much-joins-performed-without-indexes-mysql",
+  "sticky": false,
+  "tags": [],
+  "title": "Too much Joins performed without indexes MySQL",
+  "url_path": "/threads/too-much-joins-performed-without-indexes-mysql.34487/",
+  "user_id": 0,
+  "username": "ler",
+  "view_count": 2513
+}

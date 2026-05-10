@@ -1,0 +1,99 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95010,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 42148,
+  "last_post_date": 1771153104,
+  "node_id": 80,
+  "post_date": 1689445593,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1689445588,
+          "file_size": 1186,
+          "filename": "Screenshot_1.webp",
+          "height": 31,
+          "id": 5469,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot_1-webp.5469/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5473-751778b2df3e59e97879631a468a6014.jpg?hash=TIRAtP-e6M",
+          "width": 319
+        }
+      ],
+      "id": 95010,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "При указании в профиле пользователя допустим 27 лет, выдает как 27 года, ну а дальше по аналогии.<img src=\"https://torrentpier.com/attachments/5469/\" alt=\"Screenshot_1.webp\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1689445593,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95016,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Lange\">При указании в профиле пользователя допустим 27 лет, выдает как 27 года, ну а дальше по аналогии.<a href=\"https://torrentpier.com/attachments/5469/\">View attachment 5469</a></blockquote>Спасибо за баг-репорт. О данной проблеме знаю, в последующих версиях перепишем функционал который отвечает за склонения.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1689494375,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98407,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено.<br />\n<br />\n\n\t\n\n\t<div data-template-name=\"public:bb_code_tag_url_unfurl\" class=\"bbCodeBlock bbCodeBlock--unfurl    js-unfurl fauxBlockLink\"\n\t\tdata-unfurl=\"true\" data-result-id=\"10449\" data-url=\"https://github.com/torrentpier/torrentpier/pull/2334\" data-host=\"github.com\" data-pending=\"false\">\n\t\t<div class=\"contentRow\">\n\t\t\t\n\t\t\t\t<div class=\"contentRow-figure contentRow-figure--fixedSmall js-unfurl-figure\">\n\t\t\t\t\t\n\t\t\t\t\t\t<img src=\"https://opengraph.githubassets.com/fba1b2799dc140a430f6174af245dce7d48ce47c58ccd282c1e1a143d31cd213/torrentpier/torrentpier/pull/2334\" loading=\"lazy\" alt=\"github.com\" class=\"bbCodeBlockUnfurl-image\" data-onerror=\"hide-parent\"/>\n\t\t\t\t\t\n\t\t\t\t</div>\n\t\t\t\n\t\t\t<div class=\"contentRow-main\">\n\t\t\t\t<h3 class=\"contentRow-header js-unfurl-title\">\n\t\t\t\t\t<a href=\"https://github.com/torrentpier/torrentpier/pull/2334\"\n\t\t\t\t\t\tclass=\"link link--external fauxBlockLink-blockLink\"\n\t\t\t\t\t\ttarget=\"_blank\"\n\t\t\t\t\t\trel=\"nofollow ugc noopener\"\n\t\t\t\t\t\tdata-proxy-href=\"\">\n\t\t\t\t\t\tfix(profile): correct birthday/age display and inline edit value binding by exileum · Pull Request #2334 · torrentpier/torrentpier\n\t\t\t\t\t</a>\n\t\t\t\t</h3>\n\n\t\t\t\t<div class=\"contentRow-snippet js-unfurl-desc\">Summary  Birthday date was rendered as raw ISO 8601 (2010-02-28T00:00:00.000000Z) due to Eloquent date cast serialization via toArray() — now formatted with bb_date() Age showed &quot;15 years ago&amp;...</div>\n\n\t\t\t\t<div class=\"contentRow-minor contentRow-minor--hideLinks\">\n\t\t\t\t\t<span class=\"js-unfurl-favicon\">\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t<img src=\"https://github.githubassets.com/favicons/favicon.svg\" loading=\"lazy\" alt=\"github.com\" class=\"bbCodeBlockUnfurl-icon\"\n\t\t\t\t\t\t\t\tdata-onerror=\"hide-parent\"/>\n\t\t\t\t\t\t\n\t\t\t\t\t</span>\n\t\t\t\t\tgithub.com\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1771153104,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 2,
+  "slug": "vozrast-pol-zovatela",
+  "sticky": false,
+  "tags": [],
+  "title": "Возраст пользователя",
+  "url_path": "/threads/vozrast-pol-zovatela.42148/",
+  "user_id": 55,
+  "username": "Lange",
+  "view_count": 795
+}

@@ -1,0 +1,57 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 93856,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42029,
+  "last_post_date": 1544637202,
+  "node_id": 47,
+  "post_date": 1544637202,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93856,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ещё один мод, который, думаю, будет особенно полезным при создании релизов музыки. Для работы добавляем элемент &quot;Drag and Drop файл-лист&quot; после TXT[] и можно обычным перетягиванием загружать список файлов в textarea. Список при этом сортируется по алфавиту и от имени файлов &quot;отрезается&quot; расширение.<br />\nДля установки добавьте в конце <b>styles\\templates\\posting_tpl.tpl</b>:<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">&lt;!--drag_drop_filelist--&gt;\n&lt;style&gt;\n    textarea.drag-over {\n        border: dashed;\n        border-radius: 5px;\n    }\n&lt;/style&gt;\n&lt;script&gt;\n    TPL.el_id = Object.assign({drag_drop_filelist: &#039;Drag and Drop файл-лист&#039;}, TPL.el_id);\n    $(&#039;body&#039;)\n        .on(&#039;drop&#039;, &#039;textarea&#039;, e =&gt; {\n            if ($(e.target).parent().has(&#039;.drag_drop_filelist&#039;).length) {\n                e.preventDefault();\n                let files = e.originalEvent.target.files || e.originalEvent.dataTransfer.files;\n                $(e.target).val($.map(files, (file)=&gt;{return file.name.replace(/\\.[^/.]+$/, &quot;&quot;)}).sort().join(&#039;\\r\\n&#039;));\n            }\n            $(e.target).removeClass(&#039;drag-over&#039;);\n        })\n        .on(&#039;dragover&#039;, &#039;textarea&#039;, e =&gt; {\n            if ($(e.target).parent().has(&#039;.drag_drop_filelist&#039;).length) {\n                e.preventDefault();\n                $(e.target).addClass(&#039;drag-over&#039;);\n            }\n        })\n        .on(&#039;dragleave&#039;, &#039;textarea&#039;, e =&gt; {\n            $(e.target).removeClass(&#039;drag-over&#039;);\n        });\n&lt;/script&gt;\n&lt;div id=&quot;drag_drop_filelist&quot; style=&quot;display: none&quot;&gt;\n    &lt;div class=&quot;drag_drop_filelist&quot;&gt;&lt;/div&gt;\n&lt;/div&gt;\n&lt;!--/drag_drop_filelist--&gt;</pre>Пример работы:<br />\n<div data-template-name=\"public:_media_site_embed_youtube\" class=\"bbMediaWrapper\" data-media-site-id=\"youtube\" data-media-key=\"hrqXXkkL8qw\">\n\t<div class=\"bbMediaWrapper-inner\">\n\t\t<iframe src=\"https://www.youtube.com/embed/hrqXXkkL8qw?wmode=opaque\"\n\t\t\t\tloading=\"lazy\"\n\t\t\t\twidth=\"560\" height=\"315\"\n\t\t\t\tframeborder=\"0\" allowfullscreen=\"true\"></iframe>\n\t</div>\n</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1544637202,
+      "user_id": 8750,
+      "user_title": "User",
+      "username": "lufton"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "drag-and-drop-fajl-list-trek-list",
+  "sticky": false,
+  "tags": [
+    "drag",
+    "drop",
+    "filelist",
+    "tracklist",
+    "трек-лист",
+    "треклист"
+  ],
+  "title": "Drag and Drop файл-лист (трек-лист)",
+  "url_path": "/threads/drag-and-drop-fajl-list-trek-list.42029/",
+  "user_id": 8750,
+  "username": "lufton",
+  "view_count": 708
+}

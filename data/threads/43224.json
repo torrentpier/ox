@@ -1,0 +1,124 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 98276,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 43224,
+  "last_post_date": 1762187125,
+  "node_id": 111,
+  "post_date": 1760542547,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1760542543,
+          "file_size": 6648,
+          "filename": "Cattle.webp",
+          "height": 343,
+          "id": 6607,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/cattle-webp.6607/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6611-412de44165771cb6484d700b37ccc52d.jpg?hash=jFIp-r3dyo",
+          "width": 302
+        }
+      ],
+      "id": 98276,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier Cattle. v2.8.7</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/6607/\" alt=\"Cattle.webp\" /><br />\n<br />\n<b>Download link:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/releases/tag/v2.8.7\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.8.7 · torrentpier/torrentpier</a><br />\n<br />\n<b>Changelog:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/compare/v2.8.6...v2.8.7\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Comparing v2.8.6...v2.8.7 · torrentpier/torrentpier</a><br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-bug-bug-fixes\"></a>🐛 Bug Fixes&#8203;<a class=\"hoverLink\" href=\"#-bug-bug-fixes\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(updater)</i> Add fallback to zipball_url when no assets available (<a href=\"https://github.com/torrentpier/torrentpier/pull/2175\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2175</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/8338ab1f0cac7241edd05bef042c7c2df1f5d5d3\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">8338ab1</a>)</li>\n<li data-xf-list-type=\"ul\">Undefined humn_size() in EnhancedPrettyPageHandler.php (<a href=\"https://github.com/torrentpier/torrentpier/pull/2174\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2174</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/8349c118f162032ab305d43c815578921a22870c\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">8349c11</a>)</li>\n</ul>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1760542547,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98290,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Желательно обновиться до <a href=\"https://github.com/torrentpier/torrentpier/releases/tag/v2.8.8\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">2.8.8</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1761622305,
+      "user_id": 117,
+      "user_title": "User",
+      "username": "Didier"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98294,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Что конкретно нужно сделать со старой базой для переезда с 2.3.0?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1762172580,
+      "user_id": 10618,
+      "user_title": "User",
+      "username": "nexo"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98295,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Можна адаптированый manticore.conf посмотреть?",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1762187125,
+      "user_id": 10618,
+      "user_title": "User",
+      "username": "nexo"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "torrentpier-cattle-v2-8-7",
+  "sticky": false,
+  "tags": [
+    "cattle",
+    "changelog",
+    "new version",
+    "release",
+    "update"
+  ],
+  "title": "TorrentPier Cattle. v2.8.7",
+  "url_path": "/threads/torrentpier-cattle-v2-8-7.43224/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 2078
+}

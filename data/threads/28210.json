@@ -1,0 +1,89 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 65455,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 28210,
+  "last_post_date": 1414398257,
+  "node_id": 110,
+  "post_date": 1414232104,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 65455,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\n<br />\n1 июля 2014 года Госдума приняла Закон, который вводит в России с 2 часов 00 минут 26 октября 2014 года 11 часовых зон:<br />\n<div>Spoiler content hidden.</div>Большинство жителей России 26 октября 2014 года переведут стрелки часов на час назад. Не будут переводить стрелки жители Самарской области, Удмуртии, Кемеровской области, Камчатского края и Чукотского автономного округа. Жители Забайкальского края и Магаданской области, напротив, переведут стрелки на два часа назад.<br />\n<br />\nВ связи с данными изменениями, администраторам торрент-трекеров, нацеленных на Россию, следует внести следующие изменения в файл локализации: https://github.com/torrentpier/torrentpier/commit/d4c77489c746db97621577cede3f4015db60e140 - а также поменять часовой пояс в основных настройках трекера. Для изменения часового пояса у пользователей, следует попросить их зайти в настройки профиля после того, как у них будет изменено время на компьютере и просто сохранить пустые изменения. Также можно сделать запрос в базу данных (для Московского времени, например): <pre class=\"xfBb-code\" data-lang=\"php\">UPDATE `bb_users` SET `user_timezone` = &#039;3.00&#039; WHERE `user_timezone` = &#039;4.00&#039;;</pre>Для разъяснения деталей пользователям, можете воспользоваться ссылкой на следующую статью: <a href=\"https://meduza.io/cards/kak-mne-perevesti-chasy\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://meduza.io/cards/kak-mne-perevesti-chasy</a><br />\n<br />\nСпасибо за внимание.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1414232104,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 65464,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "О..., эта безумная страна.🙁",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1414253855,
+      "user_id": 5384,
+      "user_title": "User",
+      "username": "vasilich619"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 65521,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Для смены времени на форуме - поменяйте себе часовой пояс тут: <a href=\"https://torrentpier.com/account/preferences\" class=\"link link--internal\">https://torrentpier.com/account/preferences</a> - Калининград нужен для жителей Москвы, например.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1414398257,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "smena-casovyh-poasov-v-rossii",
+  "sticky": false,
+  "tags": [
+    "новости"
+  ],
+  "title": "Смена часовых поясов в России",
+  "url_path": "/threads/smena-casovyh-poasov-v-rossii.28210/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 2312
+}

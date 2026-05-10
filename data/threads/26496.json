@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 63193,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 26496,
+  "last_post_date": 1411314059,
+  "node_id": 80,
+  "post_date": 1411306091,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63193,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ошибка:<br />\n<b>Notice</b>: tidy_repair_string(): Unknown Tidy Configuration Option &#039;merge-spans&#039; in <b>/home/usermast/user-master.org/www/includes/bbcode.php</b> on line <b>821</b><br />\n<br />\nПоявляется на чистой установке ТоррентПира из под админа при переходе на <b>Правила </b>(terms.php)<b>.</b> Два раза. Также появляется из под админа при создании новой темы форума и редактировании. Из под обычного зарегистрированного пользователя ошибка не появляется.<br />\n<br />\nСтрочка <b>821</b> в <b>bbcode.php</b>:<br />\n    $text = tidy_repair_string($text, $this-&gt;tidy_cfg, &#039;utf8&#039;);<br />\n<br />\nКусок кода:<br />\n<br />\n/**<br />\n   * tidy<br />\n   */<br />\n   function tidy ($text)<br />\n   {<br />\n     $text = tidy_repair_string($text, $this-&gt;tidy_cfg, &#039;utf8&#039;);<br />\n     return $text;<br />\n   }<br />\n}<br />\n<br />\nВерсия TorrentPier II: <b>2.1 (STABLE) [R600]</b><br />\n<br />\nИнформация из php info :<br />\n<span style=\"font-size: 18px\"><b>tidy</b></span><br />\nTidy support enabled<br />\nlibTidy Release  14 June 2007<br />\nExtension Version  2.0 ($Id: 14aff36094bdd63f1d0adee006215e5e553294ea $)<br />\n<br />\nDirective Local Value Master Value<br />\ntidy.clean_output<i> no value no value</i><br />\ntidy.default_config<i> no value no value</i><br />\n<br />\n<span style=\"font-size: 18px\">Как исправить?<br />\nЗаранее спасибо.</span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1411306091,
+      "user_id": 5212,
+      "user_title": "User",
+      "username": "arnoldovich"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63201,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Найдите строку <pre class=\"xfBb-code\" data-lang=\"php\">                &#039;merge-divs&#039;        =&gt; false,</pre>И удалите ее. В чистой ревизии это 456 строка. Tidy старой версии у вас просто.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1411312656,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63208,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Закомментировал две строки в bbcode.php<br />\n&#039;merge-divs&#039;  =&gt; false,<br />\n&#039;merge-spans&#039;  =&gt; false,<br />\n<br />\nСпасибо, помогло.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1411314059,
+      "user_id": 5212,
+      "user_title": "User",
+      "username": "arnoldovich"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 2,
+  "slug": "i-snova-osibka-notice-tidy_repair_string",
+  "sticky": false,
+  "tags": [],
+  "title": "И снова ошибка Notice: tidy_repair_string",
+  "url_path": "/threads/i-snova-osibka-notice-tidy_repair_string.26496/",
+  "user_id": 5212,
+  "username": "arnoldovich",
+  "view_count": 1833
+}

@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 76881,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 36659,
+  "last_post_date": 1425107499,
+  "node_id": 80,
+  "post_date": 1425064446,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 76881,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1425064523,
+      "message_parsed": "Автоцензор срезает название топика, и титл страницы:<br />\n<br />\n<img src=\"http://i57.fastpic.ru/big/2015/0227/8a/a797ecc34f2b980a8000f578e32ec38a.png\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1425064446,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 76893,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">Автоцензор срезает название топика, и титл страницы:</blockquote>Ну так работает же",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1425107499,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 1,
+  "slug": "avtocenzor",
+  "sticky": false,
+  "tags": [],
+  "title": "Автоцензор",
+  "url_path": "/threads/avtocenzor.36659/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1007
+}

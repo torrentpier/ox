@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 1151,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 119,
+  "last_post_date": 1312448989,
+  "node_id": 90,
+  "post_date": 1312448989,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 1151,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Удалено Временно<br />\nЗы увеличите символы",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1312448989,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "freebsd-postgresql-tuning-servera-bd",
+  "sticky": false,
+  "tags": [],
+  "title": "FreeBSD + PostgreSQL: тюнинг сервера БД",
+  "url_path": "/threads/freebsd-postgresql-tuning-servera-bd.119/",
+  "user_id": 22,
+  "username": "DarkMod",
+  "view_count": 1533
+}

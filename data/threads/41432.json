@@ -1,0 +1,81 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 87295,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 96,
+    "title": "Modifications archive"
+  },
+  "id": 41432,
+  "last_post_date": 1458507852,
+  "node_id": 96,
+  "post_date": 1458495022,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1458494716,
+          "file_size": 35939,
+          "filename": "чат.rar",
+          "height": 0,
+          "id": 4324,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/cat-rar.4324/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 87295,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1458495167,
+      "message_parsed": "<div>Spoiler content hidden.</div><div>Spoiler content hidden.</div><br />\nНужна адаптация",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1458495022,
+      "user_id": 6106,
+      "user_title": "User",
+      "username": "veliant9"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87302,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Ну так адаптируйте. А чатов готовых миллион и больше.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1458507852,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "mnogopol-zovatel-skij-ajax-cat-v-jquery-i-php",
+  "sticky": false,
+  "tags": [],
+  "title": "многопользовательский AJAX чат в jQuery и PHP",
+  "url_path": "/threads/mnogopol-zovatel-skij-ajax-cat-v-jquery-i-php.41432/",
+  "user_id": 6106,
+  "username": "veliant9",
+  "view_count": 2130
+}

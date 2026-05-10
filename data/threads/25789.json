@@ -1,0 +1,95 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 59223,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 25789,
+  "last_post_date": 1393142708,
+  "node_id": 80,
+  "post_date": 1392809854,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1392809799,
+          "file_size": 38946,
+          "filename": "Список файлов 1.webp",
+          "height": 541,
+          "id": 2457,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/spisok-fajlov-1-webp.2457/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2462-889cd015a0be8179e54b4f23c00426b9.jpg?hash=Tdt7cYC4Vd",
+          "width": 1127
+        },
+        {
+          "attach_date": 1392809800,
+          "file_size": 124400,
+          "filename": "Список файлов 2.webp",
+          "height": 539,
+          "id": 2458,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/spisok-fajlov-2-webp.2458/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2463-d83dab702f404cfccec71bc9c946464e.jpg?hash=VMqXCbqSaT",
+          "width": 1033
+        }
+      ],
+      "id": 59223,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "При открытии списка файлов в раздаче показываются ошибочные данные размеров файлов...",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1392809854,
+      "user_id": 225,
+      "user_title": "User",
+      "username": "Bullit"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59289,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"http://torrentpier.com/threads/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2-%D0%B2-%D1%80%D0%B0%D0%B7%D0%B4%D0%B0%D1%87%D0%B5.9439/\" class=\"link link--internal\">http://torrentpier.com/threads/Список-файлов-в-раздаче.9439/</a> относится к этому. Повтор.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1393142708,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 26,
+  "reply_count": 1,
+  "slug": "spisok-fajlov",
+  "sticky": false,
+  "tags": [],
+  "title": "Список файлов",
+  "url_path": "/threads/spisok-fajlov.25789/",
+  "user_id": 225,
+  "username": "Bullit",
+  "view_count": 1318
+}

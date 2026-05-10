@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 85612,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41307,
+  "last_post_date": 1446884138,
+  "node_id": 57,
+  "post_date": 1446880132,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85612,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте.<br />\nВозникла проблема с движком R400.<br />\nПри попытке загрузить в галерею изображение весом более 2 МБ, появляется сообщение <br />\n<b>Загрузка потерпела неудачу. Повторите.<br />\n</b><br />\nВ логах:<br />\n<b>Warning</b>: md5_file(): Filename cannot be empty in <b>gallery.php</b> on line <b>119</b><br />\n<b>Warning</b>: copy(): Filename cannot be empty in <b>gallery.php</b> on line <b>132</b><br />\n<br />\nМаксимально допустимый размер выставлен не более 5 МБ<br />\n<br />\nЭта ошибка начала появляться после того как на сервере была обновлена версия PHP c 5.3 на 5.4<br />\n<br />\nКто-нибудь с этим сталкивался?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1446880132,
+      "user_id": 1066,
+      "user_title": "User",
+      "username": "shukur"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85613,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Да было дело ...<br />\nНадо в /etc/apache2/apache2.conf:<br />\nдобавить строчку <br />\nFcgidMaxRequestLen 100000000 <br />\nэто на 100mb <br />\nИ посмотрите в /etc/php5/cgi/php.ini<br />\nВот эту строчку <br />\nupload_max_filesize = 2M",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1446882679,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85614,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Kryl</b>, спасибо вам. Проблема была в php.ini",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1446884138,
+      "user_id": 1066,
+      "user_title": "User",
+      "username": "shukur"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "zagruzka-izobrazenij-v-galereu",
+  "sticky": false,
+  "tags": [],
+  "title": "Загрузка изображений в галерею",
+  "url_path": "/threads/zagruzka-izobrazenij-v-galereu.41307/",
+  "user_id": 1066,
+  "username": "shukur",
+  "view_count": 1176
+}

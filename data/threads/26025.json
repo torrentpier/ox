@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61572,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 26025,
+  "last_post_date": 1407428107,
+  "node_id": 80,
+  "post_date": 1406068969,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61572,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Разбираясь в логике работы Конструктора шаблонов (сейчас использую R591), обратил внимание, что файл <i>posting_tpl.tpl</i> сейчас привязан к дефолтному шаблону, т.е. находится: <b>upload/templates/default</b>.<br />\nНапример, если админ настроил этот файл для дефолтного шаблона, а на трекере используется более одного шаблона, то все эти настройки (код) надо вручную переносить и в другие шаблоны. Я полагаю, что это неудобно с точки зрения настройки движка &quot;под себя&quot;.<br />\nК тому же, мне кажется странным, чтобы в разных шаблонах движка (у кого они вообще есть), по-разному бы настраивался Конструктор шаблонов.<br />\nПредлагаю найти для файла <i>posting_tpl.tpl</i> другое место в движке, чтобы его можно было использовать из любого шаблона (не только дефолтного). Например, перенести его на уровень вверх, <b>upload/templates</b>.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1406068969,
+      "user_id": 1478,
+      "user_title": "User",
+      "username": "Nikolay90"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61573,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Поправим в новой ревизии, спасибо.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1406071378,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61814,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено в новой ревизии. Спасибо за багрепорты.<br />\nhttps://github.com/torrentpier/torrentpier/commit/b7d59873f31e8cc83fcfce0017552a1ff6bea921<br />\n<br />\nСкачать r594 можно в центре загрузки: <a href=\"http://get.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://get.torrentpier.com/</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1407428107,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 2,
+  "slug": "ne-privazyvat-fajl-posting_tpl-tpl-k-sablonu",
+  "sticky": false,
+  "tags": [],
+  "title": "Не привязывать файл posting_tpl.tpl к шаблону",
+  "url_path": "/threads/ne-privazyvat-fajl-posting_tpl-tpl-k-sablonu.26025/",
+  "user_id": 1478,
+  "username": "Nikolay90",
+  "view_count": 1089
+}

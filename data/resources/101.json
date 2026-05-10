@@ -1,0 +1,66 @@
+{
+  "category": {
+    "description": "Section with all paid modifications for TorrentPier.",
+    "id": 2,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Paid",
+    "view_url": "https://torrentpier.com/resources/categories/paid.2/"
+  },
+  "current_files": [],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "owner": "",
+    "sql": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1398248817,
+      "file_size": 3772,
+      "filename": "2014-04-23 14-20-42.webp",
+      "height": 144,
+      "id": 2516,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2014-04-23-14-20-42-webp.2516/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2521-6b53023ebf3b1db26de5bcb2d7226c77.jpg?hash=OD4i2WZuy8",
+      "width": 284
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Вывод количества новых личных сообщений &#039;на табло&#039; в Яндекс браузере<br />\n<b>ICQ:</b> 590-700-200<br />\n<b>Цена: </b>300.",
+  "download_count": 21,
+  "external_url": null,
+  "icon_url": null,
+  "id": 101,
+  "is_fileless": null,
+  "last_update": 1398248852,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1398248852,
+  "resource_state": "visible",
+  "slug": "novye-licnye-soobsenia-tablo-andeks-brauzer",
+  "tag_line": "Новые личные сообщения (табло Яндекс браузер)",
+  "tags": [],
+  "title": "Новые личные сообщения (табло Яндекс браузер)",
+  "url_path": "/resources/novye-licnye-soobsenia-tablo-andeks-brauzer.101/",
+  "user_id": 97,
+  "username": "Zenden",
+  "version": "1.0",
+  "versions": [
+    {
+      "download_count": 21,
+      "files": [],
+      "id": 110,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1398248852,
+      "version_state": "visible",
+      "version_string": "1.0",
+      "view_url": "https://torrentpier.com/resources/novye-licnye-soobsenia-tablo-andeks-brauzer.101/version/110/"
+    }
+  ],
+  "view_count": 627
+}

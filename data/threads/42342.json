@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 96988,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 24,
+    "title": "Video tutorials on TorrentPier"
+  },
+  "id": 42342,
+  "last_post_date": 1735916377,
+  "node_id": 24,
+  "post_date": 1735869458,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96988,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Привет,<br />\n<br />\n<br />\nЕсть ли актуальная документация по созданию шаблонов?<br />\n<br />\n<br />\nВсе ссылки на этом сайте не работают.<br />\n<br />\n<br />\nБыло бы неплохо иметь хоть какую-то документацию по продукту.<br />\n<br />\n<br />\nСпасибо",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1735869458,
+      "user_id": 10975,
+      "user_title": "User",
+      "username": "Stacker"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96989,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Stacker\">Привет,<br />\n<br />\n<br />\nЕсть ли актуальная документация по созданию шаблонов?<br />\n<br />\n<br />\nВсе ссылки на этом сайте не работают.<br />\n<br />\n<br />\nБыло бы неплохо иметь хоть какую-то документацию по продукту.<br />\n<br />\n<br />\nСпасибо</blockquote>Здравствуйте.<br />\n<br />\nК сожалению, на данный момент документации нету.<br />\n<br />\nМы - свободный проект с открытым исходным кодом, поддержка которого ведётся по большей части одним человеком. Успеть всё банально не получается, к сожалению.<br />\n<br />\nПо поводу шаблонов, всё также как с большинством шаблонизаторов. Шаблоны находятся в папке <b>styles/templates/название шаблона</b>. Внутри, файлы шаблона имеют расширение tpl. Для разработки шаблона, в качестве каркаса лучше использовать оригинальный шаблон (default) чтобы брать из него переменные, условия и прочее. Ну а далее просто меняете разметку (html) как вам надо, а стили пишете в папке <b>css</b>, которая находится в папке с шаблоном. Если у вас уже есть опыт написания шаблонов, то вам будет не сложно.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1735878738,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96990,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Большое спасибо!",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1735916377,
+      "user_id": 10975,
+      "user_title": "User",
+      "username": "Stacker"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "ucebnoe-posobie-po-sablonam",
+  "sticky": false,
+  "tags": [],
+  "title": "Учебное пособие по шаблонам",
+  "url_path": "/threads/ucebnoe-posobie-po-sablonam.42342/",
+  "user_id": 10975,
+  "username": "Stacker",
+  "view_count": 3333
+}

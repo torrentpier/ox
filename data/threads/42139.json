@@ -1,0 +1,118 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94945,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 42139,
+  "last_post_date": 1687794934,
+  "node_id": 90,
+  "post_date": 1687701817,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94945,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-vsem-privet\"></a>Всем привет .&#8203;<a class=\"hoverLink\" href=\"#-vsem-privet\" title=\"Permanent link\"></a></h3>В админке есть массовая рассылка почты, при большом количестве пользователей, выскакивает ошибка <br />\n<div>Spoiler content hidden.</div><br />\nЕсли письма отправлять небольшому количеству пользователей, то все нормально..<br />\nПонятно что то на сервере надо подкрутить.<br />\nЕсли кто в курсе, ткните носом что именно 🙄🙄🙄",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1687701817,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94946,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Время выполнения скрипта увеличьте. Либо сократите выборку в SQL запросе например LIMIT 0,100<br />\nПотом LIMIT 100,200 итд.<br />\n<br />\nЯ бы сделал это как крон задачу, сохранял бы id последнего пользователя кому отправлен email и продолжал бы с него при следующем запуске задачи",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1687703053,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94947,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"zxc\">Время выполнения скрипта увеличьте. Либо сократите выборку в SQL запросе например LIMIT 0,100<br />\nПотом LIMIT 100,200 итд.<br />\n<br />\nЯ бы сделал это как крон задачу, сохранял бы id последнего пользователя кому отправлен email и продолжал бы с него при следующем запуске задачи</blockquote>Время скрипта 300 секунд, по факту ошибка вылетает секунд через двадцать ...",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1687704181,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94948,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "щас это не так просто сделать.<br />\n<br />\nраньше этим сервисом пользовался<br />\n<br />\nsendpulse.ua/ru<br />\n<br />\nсливаешь с базы, мыла юзеров, ну или настраиваешь с ними синхронизацию и вперед.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1687717827,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94951,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">щас это не так просто сделать.<br />\n<br />\nраньше этим сервисом пользовался<br />\n<br />\nsendpulse.ua/ru<br />\n<br />\nсливаешь с базы, мыла юзеров, ну или настраиваешь с ними синхронизацию и вперед.</blockquote>ну как то так там )))<br />\n0.4рубля * 60600 пользователей = 25040 рублей ...",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1687794934,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "massovaa-rassylka-pocty-iz-adminki",
+  "sticky": false,
+  "tags": [
+    "500 internal",
+    "internal",
+    "server error"
+  ],
+  "title": "Массовая рассылка почты из админки",
+  "url_path": "/threads/massovaa-rassylka-pocty-iz-adminki.42139/",
+  "user_id": 5626,
+  "username": "Kryl",
+  "view_count": 1283
+}

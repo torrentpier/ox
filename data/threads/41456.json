@@ -1,0 +1,134 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 87535,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41456,
+  "last_post_date": 1484602355,
+  "node_id": 57,
+  "post_date": 1461603270,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1461603225,
+          "file_size": 13694,
+          "filename": "jpg.webp",
+          "height": 125,
+          "id": 4367,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/jpg-webp.4367/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4371-c8f5552166cc1d9791dbc5b5fa5a3720.jpg?hash=fNfvpLHMVe",
+          "width": 1032
+        }
+      ],
+      "id": 87535,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Помогите пожалуйста с проблемой. Ставлю чистый двиг 2.1.5 на сервер, в торренте пишет ошибку:<br />\n<span style=\"font-size: 15px\">Подключение не установлено т.к конечный компьютер отверг запрос на подключени. Думал фаервол блочит, выключил его, открыл порты, безрезультатно. Поставил на комп на denwer, то же самое. Бывает на денвере срабатывает на 20 раздаче. </span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1461603270,
+      "user_id": 7132,
+      "user_title": "User",
+      "username": "Crow"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87536,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Версия R600 работает, 2.1.5 не работает",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1461613781,
+      "user_id": 7132,
+      "user_title": "User",
+      "username": "Crow"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88017,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/7132/\">Crow</a>, откройте ссылку в браузере, что напишет?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1468616910,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88858,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Я, конечно, понимаю, что тема старая, но может кому-то и поможет. Решил этот вопрос следующим образом. Зашел в админку, далее TorrentPier II - Настройки форумов. И в первом поле &quot;Announce url&quot; нужно прописать http, а не http<b><span style=\"color: #ff0000\">s.</span></b><br />\n<span style=\"color: #000000\">После этого все успешно заработало.</span>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1478767437,
+      "user_id": 7509,
+      "user_title": "User",
+      "username": "lennytz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89504,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"lennytz\">Я, конечно, понимаю, что тема старая, но может кому-то и поможет. Решил этот вопрос следующим образом. Зашел в админку, далее TorrentPier II - Настройки форумов. И в первом поле &quot;Announce url&quot; нужно прописать http, а не http<b><span style=\"color: #ff0000\">s.</span></b><br />\n<span style=\"color: #000000\">После этого все успешно заработало.</span></blockquote>Просто надо внимательно свой адрес трекера прописывать.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1484602355,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "problema-s-announce-php",
+  "sticky": false,
+  "tags": [],
+  "title": "Проблема с announce.php",
+  "url_path": "/threads/problema-s-announce-php.41456/",
+  "user_id": 7132,
+  "username": "Crow",
+  "view_count": 1606
+}

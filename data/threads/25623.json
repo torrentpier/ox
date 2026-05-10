@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 57864,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25623,
+  "last_post_date": 1389874501,
+  "node_id": 111,
+  "post_date": 1389874501,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57864,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 551: Отказ от поддержки XBT Tracker. Подробности на форуме: http://torrentpier.com/thr</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">glix08</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/install/sql/mysql.sql \n    Delete    /trunk/install/xbt \n    Modify    /trunk/upload/ajax/view_profile.php \n    Modify    /trunk/upload/attach_mod/displaying_torrent.php \n    Modify    /trunk/upload/attach_mod/includes/functions_delete.php \n    Modify    /trunk/upload/bt/announce.php \n    Modify    /trunk/upload/bt/scrape.php \n    Modify    /trunk/upload/config.php \n    Modify    /trunk/upload/dl_list.php \n    Modify    /trunk/upload/includes/cron/jobs/clean_dlstat.php \n    Modify    /trunk/upload/includes/cron/jobs/tr_cleanup_and_dlstat.php \n    Modify    /trunk/upload/includes/cron/jobs/tr_make_snapshot.php \n    Modify    /trunk/upload/includes/functions.php \n    Modify    /trunk/upload/includes/functions_torrent.php \n\nОтказ от поддержки XBT Tracker. Подробности на форуме: http://torrentpier.com/threads/13574/</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1389874501,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "revision-551-otkaz-ot-podderzki-xbt-tracker-podrobnosti-na-forume-http-torrentpier-com-thr",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 551: Отказ от поддержки XBT Tracker. Подробности на форуме: http://torrentpier.me/thr",
+  "url_path": "/threads/revision-551-otkaz-ot-podderzki-xbt-tracker-podrobnosti-na-forume-http-torrentpier-com-thr.25623/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 935
+}

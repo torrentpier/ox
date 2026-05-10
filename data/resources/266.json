@@ -1,0 +1,79 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "autocomplete.zip",
+      "id": 5235,
+      "local_path": null,
+      "r2_key": null,
+      "size": 16469,
+      "src_url": "https://torrentpier.com/api/resource-versions/386/download?file=5235"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[LIST=1]\n[*]В корневой папке сайта создать папку [B]mods[/B] (если не создана).\n[*]Скопировать содержимое архива в папку папку [B]mods[/B].\n[*]Отредактировать [B]config.php[/B] в папке мода в соответствии с вашими предпочтениями.\n[*]В конце файла [B]\\styles\\templates\\posting_tpl.tpl[/B] добавить строчку (если ещё не подключали [URL='https://torrentpier.com/resources/authors/lufton.8750/']мои моды[/URL]):\n[CODE=php]<?php foreach (glob(BB_ROOT . '/mods/*' , GLOB_ONLYDIR) as $dir) require $dir . '/index.php'; ?>[/CODE]\n[*]Пользоваться с удовольствием.\n[/LIST]\nДемонстрация работы, установка, настройка рассмотрена в следующем видео:\n[MEDIA=youtube]dPNHVIqGSW4[/MEDIA]",
+    "owner": "lufton",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [],
+  "description_parsed": "Мод поля с автодополнением. Позволяет пользователю выбрать элемент из списка или ввести свой текст. Поддерживает множественный выбор и фильтрацию элементов по введённому тексту.",
+  "download_count": 210,
+  "external_url": null,
+  "icon_url": null,
+  "id": 266,
+  "is_fileless": null,
+  "last_update": 1544813412,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1544813412,
+  "resource_state": "visible",
+  "slug": "autocomplete",
+  "tag_line": "Поле автодополнения текста с возможностью множественного выбора",
+  "tags": [
+    "autocomplete",
+    "автодопол",
+    "выбор",
+    "множественн",
+    "поле",
+    "список",
+    "текст"
+  ],
+  "title": "Autocomplete",
+  "url_path": "/resources/autocomplete.266/",
+  "user_id": 8750,
+  "username": "lufton",
+  "version": "1.0",
+  "versions": [
+    {
+      "download_count": 210,
+      "files": [
+        {
+          "filename": "autocomplete.zip",
+          "id": 5235,
+          "local_path": null,
+          "r2_key": null,
+          "size": 16469,
+          "src_url": "https://torrentpier.com/api/resource-versions/386/download?file=5235"
+        }
+      ],
+      "id": 386,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1544813412,
+      "version_state": "visible",
+      "version_string": "1.0",
+      "view_url": "https://torrentpier.com/resources/autocomplete.266/version/386/"
+    }
+  ],
+  "view_count": 796
+}

@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 62295,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 26144,
+  "last_post_date": 1409409552,
+  "node_id": 80,
+  "post_date": 1409394010,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62295,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Обновился с r597 до r598<br />\nПроблема: При переходе в панель управления группой<br />\nВход в редактор - от admina, id2<br />\nАдресная строка - <a href=\"http://torrent-hub.com/group_config.php?g=14\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://torrent-hub.com/group_config.php?g=14</a><br />\nВ браузере -<br />\n<span style=\"font-size: 12px\">Forbidden</span><br />\nYou don&#039;t have permission to access /group_config.php on this server.<br />\nApache/2.2.22 (Ubuntu) Server at torrent-hub.com Port 80<br />\n <br />\n<span style=\"font-family: 'andale mono'\">Необходимые файлы - на месте</span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1409394010,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62296,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>vitalix</b>, данная проблема уже обсуждалась, требуется переименовать файл group_edit",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1409395001,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62297,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>drew</b>,<br />\nАга, спасибо - нашёл",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1409395328,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62302,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Последняя ревизия - 599, а не 598. Неактуально.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1409409552,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 25,
+  "reply_count": 3,
+  "slug": "gruppy",
+  "sticky": false,
+  "tags": [],
+  "title": "Группы",
+  "url_path": "/threads/gruppy.26144/",
+  "user_id": 4163,
+  "username": "vitalix",
+  "view_count": 1046
+}

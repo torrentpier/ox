@@ -1,0 +1,114 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL][$][TP2] Ajax search.zip",
+      "id": 3292,
+      "local_path": null,
+      "r2_key": null,
+      "size": 79872,
+      "src_url": "https://torrentpier.com/api/resource-versions/259/download?file=3292"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]Автор мода: frost444\n####[ВЫПОЛНИТЬ]-----SQL\n\nCREATE TABLE IF NOT EXISTS `bb_queries` (\n  `query` varchar(250) NOT NULL,\n  `hit` int(11) NOT NULL,\n  UNIQUE KEY `hint` (`query`)\n) ENGINE=MyISAM DEFAULT CHARSET=utf8;\n\n####[КОНЕЦ]-----SQL\n\n####[ОТКРЫТЬ]----- config.php\n-----[в конец]-----\n$bb_cfg['search_type'] = 'Topic'; //Поле может принимать 2 значения Topic или Queries для отключения напишите что либо другое))\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- init_bb.php\n-----[найти]-----\n\ndefine('BB_PRIVMSGS_TEXT',        'bb_privmsgs_text');\n\n-----[добавить ниже]-----\n\n//AJAX SEARCH MODE\ndefine('BB_QUERIES',              'bb_queries');\n//AJAX SEARCH MODE\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- init_bb.php\n-----[найти]-----\n\ndefine('BB_PRIVMSGS_TEXT',        'bb_privmsgs_text');\n\n-----[добавить ниже]-----\n\n//AJAX SEARCH MODE\ndefine('BB_QUERIES',              'bb_queries');\n//AJAX SEARCH MODE\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- ajax.php\n-----[найти]-----\n\n        'index_data'        => array('guest'),\n\n-----[добавить ниже]-----\n\n        'QuickSearch'        => array('user'),\n       \n-----[найти последнюю скобку и перед ней добавить]-----\n\n    function QuickSearch()\n    {\n        require(AJAX_DIR .'QuickSearch.php');\n    }\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- functions.php\n-----[в конец]-----\n\nfunction limit_words ($string, $word_limit)\n{\n    $words = explode(\" \",$string);\n    return implode(\" \",array_splice($words,0,$word_limit));\n}\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- tracker.php\n-----[найти]-----\n\n$template->assign_vars(array(\n\n-----[добавить выше]-----\n\nif (!empty($_REQUEST['nm']) && !empty($results))\n{\n    DB()->sql_query(\"INSERT INTO \".BB_QUERIES.\" (query, hit) VALUES ('\".DB()->escape($_REQUEST['nm']).\"', 1) ON DUPLICATE KEY UPDATE hit = hit + 1\");\n}\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- lang_main.php\n-----[в конец]-----\n\n//AJAX SEARCH MODE\n$lang['AJAX_SEARCH_NO_USER'] = 'Вы не ввели имя пользователя';\n$lang['AJAX_SEARCH_NULL_RESULT'] = 'Поиск не дал результатов';\n$lang['AJAX_SEARCH_NO_NAME'] = 'Вы не ввели текст для поиска';\n$lang['AJAX_SEARCH_RESULT'] = 'Результат поиска';\n//AJAX SEARCH MODE\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- page_header.php\n-----[найти]-----\n\n$template->assign_vars(array(\n\n-----[добавить ниже]-----\n\n    'SEARCH_TYPE'                  => $bb_cfg['search_type'],\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- page_header.tpl\n-----[найти]-----\n\n<script type=\"text/javascript\" src=\"{SITE_URL}misc/js/main.js?v={$bb_cfg['js_ver']}\"></script>\n\n-----[добавить ниже]-----\n\n<script type=\"text/javascript\" src=\"{SITE_URL}misc/js/opt.js?v={$bb_cfg['js_ver']}\"></script>\n<script type=\"text/javascript\" src=\"{SITE_URL}misc/js/jquery-ui.min.js\"></script>\n<script type=\"text/javascript\" src=\"{SITE_URL}misc/js/tag-it.js\"></script>\n<link rel=\"stylesheet\" href=\"{TPL_DIR}/jquery-ui.min.css?v={$bb_cfg['css_ver']}\" type=\"text/css\">\n<link rel=\"stylesheet\" href=\"{TPL_DIR}/tag-it.css?v={$bb_cfg['css_ver']}\" type=\"text/css\">\n\n-----[найти]-----\n\n            <form id=\"quick-search\" action=\"\" method=\"post\" onsubmit=\"$(this).attr('action', $('#search-action').val());\">\n                <input type=\"hidden\" name=\"max\" value=\"1\" />\n                <input type=\"hidden\" name=\"to\" value=\"1\" />\n                <input id=\"search-text\" type=\"text\" name=\"nm\" class=\"hint\" placeholder=\"{L_SEARCH_S}\" required />\n                <select id=\"search-action\">\n                    <option value=\"tracker.php#results\" selected=\"selected\"> {L_TRACKER_S} </option>\n                    <option value=\"search.php\"> {L_FORUM_S} </option>\n                </select>\n                <input type=\"submit\" class=\"med\" value=\"{L_SEARCH}\" style=\"width: 55px;\" />\n            </form>\n\n-----[заменить]-----\n\n            <form id=\"quick-search\" action=\"\" method=\"post\" onsubmit=\"$(this).attr('action', $('#search-action').val());\">\n                <input type=\"hidden\" name=\"max\" value=\"1\" />\n                <input type=\"hidden\" name=\"to\" value=\"1\" />\n                <table><tr>\n                <td style=\"width: 350px;\"><input class=\"QuickSearch\" type=\"text\" name=\"nm\" data-type=\"{SEARCH_TYPE}\" placeholder=\"{L_SEARCH_S}\" required /></td>\n                <td><select id=\"search-action\">\n                    <option value=\"tracker.php#results\" selected=\"selected\"> {L_TRACKER_S} </option>\n                    <option value=\"search.php\"> {L_FORUM_S} </option>\n                </select>\n                <input type=\"submit\" class=\"med\" value=\"{L_SEARCH}\" style=\"width: 55px;\" /></td>\n                </tr></table>\n            </form>\n            <table class=\"searchQuick\"><tr id=\"QuickSearchResult{SEARCH_TYPE}\" style=\"display: none;\"><td></td></tr></table>\n           \n####[СОХРАНИТЬ_ФАЙЛ]####[/PHP]\n[/SPOILER]",
+    "owner": "frost444",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425490848,
+      "file_size": 1964,
+      "filename": "1.webp",
+      "height": 39,
+      "id": 3289,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/1-webp.3289/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3293-f0c383cf79ca568abec5e2bc576276ec.jpg?hash=7PtGnoolWu",
+      "width": 529
+    },
+    {
+      "attach_date": 1425490848,
+      "file_size": 2902,
+      "filename": "2.webp",
+      "height": 40,
+      "id": 3290,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2-webp.3290/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3294-b71090ab31214b11cbee4b3b34c208b6.jpg?hash=EVWxQTBSzp",
+      "width": 526
+    },
+    {
+      "attach_date": 1425490848,
+      "file_size": 22198,
+      "filename": "search.webp",
+      "height": 485,
+      "id": 3291,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/search-webp.3291/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3295-9eaaf5c0b13af014b0a3b78f0bd4f590.jpg?hash=FdIlp9C_mu",
+      "width": 362
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет возможность быстрого поиска на AJAX.<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Быстрый поиск по форуму или трекеру</li>\n<li data-xf-list-type=\"ul\">Подсвечивает найденные совпадения</li>\n<li data-xf-list-type=\"ul\">Текст ищется при введении его в поиске, с таймаутом, после определенного количества символов (интервал задается в конфиге)</li>\n<li data-xf-list-type=\"ul\">Навигация по найденным результатам</li>\n<li data-xf-list-type=\"ul\">Поиск пользователей</li>\n<li data-xf-list-type=\"ul\">Возможность переключения между поиском по темам и подсказкой популярных запросов</li>\n</ul>",
+  "download_count": 228,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/202.jpg?1425491004",
+  "id": 202,
+  "is_fileless": null,
+  "last_update": 1425490998,
+  "rating_avg": 1,
+  "rating_count": 1,
+  "resource_date": 1425490998,
+  "resource_state": "visible",
+  "slug": "bystryj-poisk",
+  "tag_line": "Добавляет возможность быстрого поиска на AJAX.",
+  "tags": [],
+  "title": "Быстрый поиск",
+  "url_path": "/resources/bystryj-poisk.202/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 228,
+      "files": [
+        {
+          "filename": "[FULL][$][TP2] Ajax search.zip",
+          "id": 3292,
+          "local_path": null,
+          "r2_key": null,
+          "size": 79872,
+          "src_url": "https://torrentpier.com/api/resource-versions/259/download?file=3292"
+        }
+      ],
+      "id": 259,
+      "rating_avg": 1,
+      "rating_count": 1,
+      "release_date": 1425490998,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/bystryj-poisk.202/version/259/"
+    }
+  ],
+  "view_count": 471
+}

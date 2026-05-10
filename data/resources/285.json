@@ -1,0 +1,120 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Дополнительные права групп by fly_indiz.zip",
+      "id": 5805,
+      "local_path": null,
+      "r2_key": null,
+      "size": 6472,
+      "src_url": "https://torrentpier.com/api/resource-versions/457/download?file=5805"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "https://torrentpier.com/resources/lokalnaja-galereja.147/",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "fly_indiz",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание:</b> Данный мод добавляет дополнительные права для групп.<br />\n<b>Совместимость:</b> v2.1.5, LTS.<br />\n<br />\n<a href=\"https://torrentpier.com/threads/dopolnitelnye-prava-grupp.1667/\" class=\"link link--internal\">Оригинальная тема</a><br />\n<hr /><span style=\"color: rgb(235, 107, 86)\">P.S</span>. В моде пока неоптимально реализовано право безлимитной скачки. в анонсер добавляется 1 запрос и подключается лишний большой файл. для анонсера это критично. если второе ещё можно убрать, то от первого буду думать как уйти.<br />\n<br />\n<span style=\"color: rgb(235, 107, 86)\">P.P.S</span> Поскольку в v2.1.5 и выше нету локальной галереи из коробки, была добавлена поддержка сторонней галереи от Zenden. Скачать её можно <a href=\"https://torrentpier.com/resources/lokalnaja-galereja.147/\" class=\"link link--internal\">тут</a>.<br />\n<br />\nВроде на этом минусы кончаются.. теперь краткое описание мода.<br />\n<ul>\n<li data-xf-list-type=\"ul\">Каждая группа имеет набор прав в виде (да/нет)</li>\n<li data-xf-list-type=\"ul\">Юзер получает сводный набор прав в зависимости от того в каких группах состоит</li>\n</ul><hr />Для внедрения нового права, которого нет в моде нет ничего проще.<br />\nПраво делится на объявление и реализацию.<br />\n<br />\nЧтоб объявить право - придумывается для него новое короткое название (например &#039;pravo&#039;) и прописывается в блок <span style=\"color: rgb(44, 130, 201)\">$bf[&#039;group_opt&#039;]</span> в файле <span style=\"color: rgb(44, 130, 201)\">functions.php</span> и описание в <span style=\"color: rgb(44, 130, 201)\">ru/main.php</span> в виде <span style=\"color: rgb(44, 130, 201)\">$lang[&#039;GROUP_OPT_PRAVO&#039;]</span>.<br />\n<br />\nЧтобы реализовать право - найти тот(/те) участок(/ки) кода, на которые должно влиять право и воспользоваться конструкцией <span style=\"color: rgb(44, 130, 201)\">bf($userdata[&#039;group_opt&#039;], &#039;group_opt&#039;, &#039;pravo&#039;)</span>. Она возвращает <b>true</b> если право есть и <b>false</b> если нету.",
+  "download_count": 917,
+  "external_url": null,
+  "icon_url": null,
+  "id": 285,
+  "is_fileless": null,
+  "last_update": 1707242447,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1707134171,
+  "resource_state": "visible",
+  "slug": "dopolnitel-nye-prava-grupp",
+  "tag_line": "Данный мод добавляет дополнительные права для групп.",
+  "tags": [
+    "vip",
+    "вип",
+    "вип мод",
+    "вип права",
+    "дополнительные права",
+    "дополнительные права групп",
+    "права групп",
+    "права у групп"
+  ],
+  "title": "Дополнительные права групп",
+  "url_path": "/resources/dopolnitel-nye-prava-grupp.285/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.2",
+  "versions": [
+    {
+      "download_count": 490,
+      "files": [
+        {
+          "filename": "[FULL] Дополнительные права групп by fly_indiz.zip",
+          "id": 5805,
+          "local_path": null,
+          "r2_key": null,
+          "size": 6472,
+          "src_url": "https://torrentpier.com/api/resource-versions/457/download?file=5805"
+        }
+      ],
+      "id": 457,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1707242447,
+      "version_state": "visible",
+      "version_string": "v1.0.2",
+      "view_url": "https://torrentpier.com/resources/dopolnitel-nye-prava-grupp.285/version/457/"
+    },
+    {
+      "download_count": 223,
+      "files": [
+        {
+          "filename": "[FULL] Дополнительные права групп by fly_indiz.zip",
+          "id": 5803,
+          "local_path": null,
+          "r2_key": null,
+          "size": 6469,
+          "src_url": "https://torrentpier.com/api/resource-versions/455/download?file=5803"
+        }
+      ],
+      "id": 455,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1707210159,
+      "version_state": "visible",
+      "version_string": "v1.0.1",
+      "view_url": "https://torrentpier.com/resources/dopolnitel-nye-prava-grupp.285/version/455/"
+    },
+    {
+      "download_count": 204,
+      "files": [
+        {
+          "filename": "[FULL] Дополнительные права групп by fly_indiz.zip",
+          "id": 5798,
+          "local_path": null,
+          "r2_key": null,
+          "size": 12365,
+          "src_url": "https://torrentpier.com/api/resource-versions/452/download?file=5798"
+        }
+      ],
+      "id": 452,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1707134171,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/dopolnitel-nye-prava-grupp.285/version/452/"
+    }
+  ],
+  "view_count": 3119
+}

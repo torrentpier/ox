@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 60423,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 25904,
+  "last_post_date": 1397889724,
+  "node_id": 3,
+  "post_date": 1397880017,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60423,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Создаю раздачу, скачиваю торент-файл.<br />\nuTorrent пишет, что &quot;Подключение к пирам 0.0%&quot;.<br />\n <br />\nКогда создаю точно такую же раздачу в  uTorrent (с отмеченной галочкой &quot;начать раздачу&quot;) то в графе &quot;Состояние&quot; светится &quot;Раздаётся&quot;.<br />\n <br />\nПочему в первом случае такая аномалия?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1397880017,
+      "user_id": 5270,
+      "user_title": "Blocked",
+      "username": "Econaft"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60427,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "а ты правильно ли указываешь путь к файлам?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1397889724,
+      "user_id": 0,
+      "user_title": "",
+      "username": "sockrat"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "podklucenie-k-piram-0-0-pocemu",
+  "sticky": false,
+  "tags": [],
+  "title": "Подключение к пирам 0.0% почему?",
+  "url_path": "/threads/podklucenie-k-piram-0-0-pocemu.25904/",
+  "user_id": 5270,
+  "username": "Econaft",
+  "view_count": 11094
+}

@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 27152,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 2235,
+  "last_post_date": 1361528038,
+  "node_id": 57,
+  "post_date": 1361441247,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27152,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<div style=\"margin-left: 20px\">Помогите разобраться с конфликтом отвязки и мода:<br />\nИмеем: TorrentPierII последней SVN версии.<br />\nУстановлен мод для ограничения по IP&#8203;</div> <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">    $acess_prov = array(\n    //&quot;10.0.0.1&quot;,\n    //&quot;127.0.0.1&quot;,\n    &quot;31.24.24.0/21&quot;,\n    &quot;31.31.168.0/21&quot;,\n    &quot;31.184.230.0/23&quot;,\n \n \n    );\n \n    function net_match ( $networks , $ip )\n    {\n    foreach ($networks as $network)\n    {\n    $ip_arr = explode ( &#039;/&#039; , $network );\n    $network_long = ip2long ( $ip_arr [ 0 ]);\n    $hexmask = 0xFFFFFFFF;\n \n    $x = ip2long ( $ip_arr [ 1 ]);\n    $mask = long2ip($x) == $ip_arr[1] ? $x : 0xffffffff &lt;&lt; (32 - $ip_arr[1]);\n    $ip_long = ip2long ( $ip );\n \n    if (($ip_long &amp; $mask) == ($network_long &amp; $mask))\n    {\n    return true;\n    break;\n    }\n    }\n    return false;\n    }\n    $email = &quot;xxxx@gmail.com&quot;;\n    if (!net_match($acess_prov, $_SERVER[&quot;REMOTE_ADDR&quot;]))\n    {\n    die(&quot;&lt;html&gt;\n    &lt;body&gt;\n    &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;\n    &lt;center&gt;&lt;h2&gt;Access to your network is prohibited.&lt;/2&gt;\n    &lt;br /&gt;\n    &lt;h3&gt;If you were located in the XXXX region write administrator.\n    &lt;br /&gt;E-Mail: xxxxxx@gmail.com\n    &lt;br /&gt; In a letter to include your IP address, your ISP.&lt;/h3&gt;&lt;/center&gt;\n    &lt;/body&gt;&lt;/html&gt;&quot;);\n    }\n    unset($acess_prov, $email);</pre>отвязал крон:<br />\nв кронтабе: */5 * * * * /usr/bin/php -f /var/www/tor/cron.php<br />\n<br />\nБез мода все работает, каждые 5 минут выполняется команда, короче все ок<br />\n<br />\nпосле запуска мода, команда не запускается,<br />\nесли команду запустить вручную в консоли получаем:<br />\nroot@mx1:~# /usr/bin/php -f /var/www/tor/cron.php<br />\n&lt;html&gt;<br />\n&lt;body&gt;<br />\n&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;<br />\n&lt;center&gt;&lt;h2&gt;Access to your network is prohibited.&lt;/2&gt;<br />\n&lt;br /&gt;<br />\n&lt;h3&gt;If you were located in the XXXX region write administrator.<br />\n&lt;br /&gt;E-Mail: <a href=\"mailto:xxxxx@gmail.com\">xxxxx@gmail.com</a><br />\n&lt;br /&gt; In a letter to include your IP address, your ISP.&lt;/h3&gt;&lt;/center&gt;<br />\n&lt;/body&gt;&lt;/html&gt;root@mx1:~#<br />\n)))))<br />\n<br />\nесли в перечень разрешенных сетей прописываем &quot;127.0.0.1&quot;, крон работает, мод не работает!<br />\n<br />\nПосоветуйте как сделать чтобы и то и другое работало ))).",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1361441247,
+      "user_id": 4078,
+      "user_title": "User",
+      "username": "Psholty"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27153,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Cорри, я тут человек новый перенесите плз тему в вопросы по TorrentRierII",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1361441782,
+      "user_id": 4078,
+      "user_title": "User",
+      "username": "Psholty"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27210,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Все, вопрос снимаю, проблему решил, (вывел ограничение по IP в фазу получения доступа по логину/паролю) если кому интересно, напишу...",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1361528038,
+      "user_id": 4078,
+      "user_title": "User",
+      "username": "Psholty"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "mod-ne-druzit-s-otvazkoj-krona",
+  "sticky": false,
+  "tags": [],
+  "title": "Мод не дружит с отвязкой крона",
+  "url_path": "/threads/mod-ne-druzit-s-otvazkoj-krona.2235/",
+  "user_id": 4078,
+  "username": "Psholty",
+  "view_count": 951
+}

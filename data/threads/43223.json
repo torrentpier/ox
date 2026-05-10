@@ -1,0 +1,75 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 98275,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 43223,
+  "last_post_date": 1760542241,
+  "node_id": 111,
+  "post_date": 1760542241,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1760542233,
+          "file_size": 6648,
+          "filename": "Cattle.webp",
+          "height": 343,
+          "id": 6606,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/cattle-webp.6606/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6610-7e8e5c3856acb1f612e5d609480ae56f.jpg?hash=jFIp-r3dyo",
+          "width": 302
+        }
+      ],
+      "id": 98275,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier Cattle. Версия 2.8.6</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/6606/\" alt=\"Cattle.webp\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/releases/tag/v2.8.6\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.8.6 · torrentpier/torrentpier</a><br />\n<br />\n<b>Чейнджлог:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/compare/v2.8.5...v2.8.6\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Comparing v2.8.5...v2.8.6 · torrentpier/torrentpier</a><br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-rocket-features\"></a>🚀 Features&#8203;<a class=\"hoverLink\" href=\"#-rocket-features\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\">Added Manticore search engine support 🔎 (<a href=\"https://github.com/torrentpier/torrentpier/pull/2158\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2158</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/101192896618518368f558bd397c2dddfd0f7065\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">1011928</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-bug-bug-fixes\"></a>🐛 Bug Fixes&#8203;<a class=\"hoverLink\" href=\"#-bug-bug-fixes\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(docker)</i> Move database migrations from build to runtime (<a href=\"https://github.com/torrentpier/torrentpier/pull/2172\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2172</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/118d3490c30381d40c8ca783ca8988b882e743c5\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">118d349</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(docker)</i> Correct entrypoint and migration handling (<a href=\"https://github.com/torrentpier/torrentpier/pull/2144\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2144</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/1822c907ebd7bdaff996f1a8fcc8d64a88ec8888\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">1822c90</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(manticore)</i> Implement correct partial field updates with UPDATE/REPLACE strategy (<a href=\"https://github.com/torrentpier/torrentpier/pull/2173\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2173</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/968da3751d8c455387edc75f819deaf259b7f4d3\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">968da37</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-japanese-vacancy-button-new-translations\"></a>🈳 New translations&#8203;<a class=\"hoverLink\" href=\"#-japanese-vacancy-button-new-translations\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\">New Crowdin updates (<a href=\"https://github.com/torrentpier/torrentpier/pull/2154\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2154</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/bf9be510ce7e2e38ccb2ead9c000c85b89f06a63\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">bf9be51</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-wastebasket-removed\"></a>🗑️ Removed&#8203;<a class=\"hoverLink\" href=\"#-wastebasket-removed\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\">Legacy Sphinx API support (<a href=\"https://github.com/torrentpier/torrentpier/pull/2153\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2153</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/4ba315db37144a6f38dcd3fa5437dd346df990d2\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">4ba315d</a>)</li>\n<li data-xf-list-type=\"ul\">Deploy pipeline (<a href=\"https://github.com/torrentpier/torrentpier/pull/2145\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2145</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/7cca19d11d94d200f681da0e12dbb9638761a9fb\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">7cca19d</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-tractor-refactor\"></a>🚜 Refactor&#8203;<a class=\"hoverLink\" href=\"#-tractor-refactor\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\">IsHelper class renamed to HttpHelper (<a href=\"https://github.com/torrentpier/torrentpier/pull/2160\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2160</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/c97dd8e0dcefd37346e09c1796c3c87d334fca8f\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">c97dd8e</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-gear-miscellaneous\"></a>⚙️ Miscellaneous&#8203;<a class=\"hoverLink\" href=\"#-gear-miscellaneous\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\">Updated README (<a href=\"https://github.com/torrentpier/torrentpier/pull/2157\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2157</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/6d152e81c32c3c514d4a496bcbef4edc77b1a45a\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">6d152e8</a>)</li>\n<li data-xf-list-type=\"ul\">Moved scripts into scripts folder (<a href=\"https://github.com/torrentpier/torrentpier/pull/2156\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2156</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/f11947db3517ac95f5a0799d591b5b9847216a8b\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">f11947d</a>)</li>\n<li data-xf-list-type=\"ul\">Force production environment if entered incorrect environment name (<a href=\"https://github.com/torrentpier/torrentpier/pull/2152\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2152</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/048186c3564426dc033d789c8cdd48965e0d8176\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">048186c</a>)</li>\n<li data-xf-list-type=\"ul\">Added EXCLUDED_USERS_CSV alias for EXCLUDED_USERS (<a href=\"https://github.com/torrentpier/torrentpier/pull/2151\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2151</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/ff45ef4e953aab46b2e9db708b1c089f9a848c98\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">ff45ef4</a>)</li>\n<li data-xf-list-type=\"ul\">Add PHP 8.2–8.4 test matrix with Pest (<a href=\"https://github.com/torrentpier/torrentpier/pull/2150\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2150</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/881b277ae8dc0feca8bfb05cef8081a1cd5dde64\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">881b277</a>)</li>\n<li data-xf-list-type=\"ul\">Minor improvements (<a href=\"https://github.com/torrentpier/torrentpier/pull/2149\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2149</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/9ab089ca469d7a09dd609243466b5570e5f66bd3\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">9ab089c</a>)</li>\n</ul>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1760542241,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-cattle-versia-2-8-6",
+  "sticky": false,
+  "tags": [
+    "cattle",
+    "новая версия",
+    "релиз",
+    "ченжлог"
+  ],
+  "title": "TorrentPier Cattle. Версия 2.8.6",
+  "url_path": "/threads/torrentpier-cattle-versia-2-8-6.43223/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 351
+}

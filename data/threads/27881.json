@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 65079,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 27881,
+  "last_post_date": 1414166823,
+  "node_id": 80,
+  "post_date": 1413869998,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 65079,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Поправить пути в админке в &quot;званиях&quot; к картинкам<br />\nВ admin/admin_cron.php в пути к &lt;img src=&quot;images/icon_....&quot;&gt; добавить&quot;styles/&quot;",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1413869998,
+      "user_id": 61,
+      "user_title": "User",
+      "username": "druid"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 65080,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1413871023,
+      "message_parsed": "В functions.php в is_gold() и topic_attachment_image() к &lt;img src...&gt; добавить &quot;styles/&quot;<br />\nВ viewtopic_attach.tpl в строках 345,346 отредактировка url()",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1413870811,
+      "user_id": 61,
+      "user_title": "User",
+      "username": "druid"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 65142,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо, в новом ALPHA-билде будет.<br />\n<br />\nА пока тут: https://github.com/torrentpier/torrentpier/commit/d3b80490065cae77a9209eff90cb64f6f4574e08",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1413898919,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 65429,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено в новой ревизии.<br />\nhttps://github.com/torrentpier/torr...893a1ff65d2b0da5fd109647b33777a0ee?diff=split<br />\n<br />\nСкачать 2.1.3 можно в центре загрузки: <a href=\"https://get.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://get.torrentpier.com/</a>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1414166823,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 3,
+  "slug": "starye-puti-k-izobrazeniam-alpha-2",
+  "sticky": false,
+  "tags": [],
+  "title": "Старые пути к изображениям (ALPHA-2)",
+  "url_path": "/threads/starye-puti-k-izobrazeniam-alpha-2.27881/",
+  "user_id": 61,
+  "username": "druid",
+  "view_count": 1066
+}

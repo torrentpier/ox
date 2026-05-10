@@ -1,0 +1,106 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "недавние_темы.zip",
+      "id": 3217,
+      "local_path": null,
+      "r2_key": null,
+      "size": 11668,
+      "src_url": "https://torrentpier.com/api/resource-versions/232/download?file=3217"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\nОткрыть viewtopic.php. Перед\n[QUOTE]print_page('viewtopic.tpl');[/QUOTE]\nвставить:\n[QUOTE]//LAST_VIEW_MODULE\nsession_name(\"bb_extra\");\nsession_start();\n$max_arr_count= 5; //Количество выводимых топиков//\npreg_match_all('#<var class=\"postImg postImgAligned img-(.*?)\" title=\"(.*?)\">(.*?)</var>#', $message, $image);\n$_SESSION['last_release'][$topic_id]= array(\n'time' => time(),\n'title' => wbr($topic_title),\n'forum_name' => htmlCHR($forum_name),\n'url' => $pg_url,\n'img' => @$image[2][0] ? @$image[2][0] : '/images/no_poster.png',\n);\n\nfunction sort_p($alpha, $betta) { return strcmp($betta[\"time\"], $alpha[\"time\"]); } uasort($_SESSION['last_release'], \"sort_p\");\nif (count($_SESSION['last_release'])>$max_arr_count) {\n$delete_arr_id= array_search(min($_SESSION['last_release']),$_SESSION['last_release']);\nunset($_SESSION['last_release'][$delete_arr_id]);\n}\nforeach ($_SESSION['last_release'] as $key => $value) {\n$template->assign_block_vars('last_viewed_release', array(\n'TITLE' => $_SESSION['last_release'][$key]['title'],\n'POSTER' => $_SESSION['last_release'][$key]['img'],\n'URL' => $_SESSION['last_release'][$key]['url'],\n'FORUM' => $_SESSION['last_release'][$key]['forum_name'],\n'TIME' => $_SESSION['last_release'][$key]['time'],\n));\n}\n\n//END__OF__LAST_VIEW_MODULE[/QUOTE]\nОткрыть templates/default/viewtopic.tpl.\nПосле\n[QUOTE]<!-- IF TOPIC_HAS_POLL --><!-- INCLUDE viewtopic_poll.tpl --><!-- ENDIF -->[/QUOTE] вставить:\n\n[QUOTE]<!-- BEGIN last_viewed_release -->\n<!-- IF last_viewed_release.TITLE -->\n<div style=\"float: left\">\n<table>\n<tr>\n<td>\n<img src=\"{last_viewed_release.POSTER}\" class=\"lvp_poster\">\n</td>\n</tr>\n<tr>\n<td>\n<div class=\"lvp_title\"><a href=\"{last_viewed_release.URL}\">{last_viewed_release.TITLE}</a></div>\n</td>\n</tr>\n<tr>\n<td>\n<div class=\"lvp_forum\">{last_viewed_release.FORUM}</div>\n</td>\n</tr>\n</table>\n</div>\n<!-- ENDIF -->\n<!-- END last_viewed_release -->[/QUOTE]\n\n\nОткрыть templates/default/css/main.css.\nВ конец добавить:\n\n[QUOTE] /* ================================================================ *\nLAST VIEWED TOPICS\n* ================================================================ */\n.lvp_poster {\nheight: 162px;\nwidth: 115px;\nborder-radius: 3px;\n}\n.lvp_title {\ncolor: #000;\noverflow: hidden;\ntext-align: left;\ntext-overflow: ellipsis;\nwhite-space: nowrap;\nwidth: 118px;\nfont-family: 'Arial', sans-serif;\nfont-size: 15px;\nfont-weight: bold;\npadding: 7px 0 0 0;\n}\n.lvp_forum {\ncolor: #B4B4B4;\noverflow: hidden;\ntext-align: left;\ntext-overflow: ellipsis;\nwhite-space: nowrap;\nwidth: 118px;\nfont-family: 'Arial', sans-serif;\nfont-size: 13px;\n}[/QUOTE]\n\nКартинка no_poster.png приложена.[/SPOILER]",
+    "owner": "Alex Kur",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425406579,
+      "file_size": 41602,
+      "filename": "himYgDq.webp",
+      "height": 226,
+      "id": 3214,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/himygdq-webp.3214/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3218-53683b7972c280d016b51ed6f7544abe.jpg?hash=R7EGwU-SuP",
+      "width": 623
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет вывод недавно просмотренных пользователем тем (в виде постеров).",
+  "download_count": 321,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/57.jpg?1425506476",
+  "id": 57,
+  "is_fileless": null,
+  "last_update": 1425406932,
+  "rating_avg": 5,
+  "rating_count": 1,
+  "resource_date": 1385923564,
+  "resource_state": "visible",
+  "slug": "nedavno-prosmotrennye-temy",
+  "tag_line": "Добавляет вывод недавно просмотренных пользователем тем (в виде постеров).",
+  "tags": [],
+  "title": "Недавно просмотренные темы",
+  "url_path": "/resources/nedavno-prosmotrennye-temy.57/",
+  "user_id": 4510,
+  "username": "Alex Kur",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 242,
+      "files": [
+        {
+          "filename": "недавние_темы.zip",
+          "id": 3217,
+          "local_path": null,
+          "r2_key": null,
+          "size": 11668,
+          "src_url": "https://torrentpier.com/api/resource-versions/232/download?file=3217"
+        }
+      ],
+      "id": 232,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1425406932,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/nedavno-prosmotrennye-temy.57/version/232/"
+    },
+    {
+      "download_count": 80,
+      "files": [
+        {
+          "filename": "недавние_темы.zip",
+          "id": 3216,
+          "local_path": null,
+          "r2_key": null,
+          "size": 11668,
+          "src_url": "https://torrentpier.com/api/resource-versions/61/download?file=3216"
+        }
+      ],
+      "id": 61,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1385923564,
+      "version_state": "visible",
+      "version_string": "2013-12-01",
+      "view_url": "https://torrentpier.com/resources/nedavno-prosmotrennye-temy.57/version/61/"
+    }
+  ],
+  "view_count": 499
+}

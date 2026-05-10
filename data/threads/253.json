@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 2694,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 253,
+  "last_post_date": 1315578545,
+  "node_id": 3,
+  "post_date": 1315578545,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 2694,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Сегодня 9 сентября отмечают свой день, те кто каждый день стоят на страже, отлавливая баги и внося огромный вклад в разработку какого-либо проекта. Поздравляем от имени всей команды наших Бета Тестеров. Меньше вам багов. С Праздником!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1315578545,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "09-09-den-testera",
+  "sticky": false,
+  "tags": [],
+  "title": "[09.09] День тестера",
+  "url_path": "/threads/09-09-den-testera.253/",
+  "user_id": 68,
+  "username": "Nightmare",
+  "view_count": 1286
+}

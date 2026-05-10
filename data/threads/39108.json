@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 80634,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 39108,
+  "last_post_date": 1427490856,
+  "node_id": 57,
+  "post_date": 1427488448,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 80634,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как получить доступ к к соединению с БД.<br />\nПояснение: Например я создал в корне каталог с файликом  /usersmodules/test.php , как мне получить в этом test.php объект соединения с базой ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1427488448,
+      "user_id": 5524,
+      "user_title": "User",
+      "username": "laughingman"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 80636,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "путь до файла common.php правильный нужно указать и можно использоваться доступные методы для работы с базой",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1427488661,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 80637,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1427660845,
+      "message_parsed": "я написал вот так,<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">require(&#039;common.php&#039;);$sql = &#039;SELECT `username` FROM &#039; . BB_USERS .&#039;WHERE user_id = 5&#039;;print_r(DB()-&gt;fetch_row($sql));</pre>а где посмотреть другие методы работы с базой, инсёрт делит и т.д?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1427488908,
+      "user_id": 5524,
+      "user_title": "User",
+      "username": "laughingman"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 80638,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Разобрался.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1427490856,
+      "user_id": 5524,
+      "user_title": "User",
+      "username": "laughingman"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "dostup-k-ob-ektu-soedinenia-s-bazoj-dannyh",
+  "sticky": false,
+  "tags": [],
+  "title": "Доступ к объекту соединения с базой данных",
+  "url_path": "/threads/dostup-k-ob-ektu-soedinenia-s-bazoj-dannyh.39108/",
+  "user_id": 5524,
+  "username": "laughingman",
+  "view_count": 913
+}

@@ -1,0 +1,297 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Локальная галерея TPII by Zenden.zip",
+      "id": 6010,
+      "local_path": null,
+      "r2_key": null,
+      "size": 7046,
+      "src_url": "https://torrentpier.com/api/resource-versions/505/download?file=6010"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "gd модуль",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом.",
+    "owner": "Zenden",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1421588941,
+      "file_size": 142048,
+      "filename": "2015-01-18 16-47-51 AlexFilm – Yandex.webp",
+      "height": 906,
+      "id": 2883,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2015-01-18-16-47-51-alexfilm-yandex-webp.2883/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2887-090735a15b91d0f96c392908dd5366ba.jpg?hash=ANi4UO16fN",
+      "width": 1367
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет локальную галерею для загрузки изображений.<br />\n<br />\nВ связи с появлением в движке функции безопасной загрузки, решил привести галерею к стандарту TorrentPier.<br />\n<ul>\n<li data-xf-list-type=\"ul\">мультизагрузка изображений</li>\n<li data-xf-list-type=\"ul\">удаление картинки с использованием AJAX</li>\n<li data-xf-list-type=\"ul\">индивидуальный вывод готовых ссылок для публикаций</li>\n<li data-xf-list-type=\"ul\">комплексный вывод готовых ссылок для публикаций</li>\n<li data-xf-list-type=\"ul\">создание миниатюр</li>\n<li data-xf-list-type=\"ul\">при удалении топика или поста, удаление &quot;связанных&quot; картинок</li>\n<li data-xf-list-type=\"ul\">просмотр пользователем загруженных им ранее картинок</li>\n<li data-xf-list-type=\"ul\">размер и дата загрузки изображения</li>\n<li data-xf-list-type=\"ul\">вывод количество и размер загруженных пользователем картинок</li>\n<li data-xf-list-type=\"ul\">возможность добавить водяной знак</li>\n</ul>Если вам понравился мод, вы можете отблагодарить автора:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Яндекс деньги: <b>410011534461433</b></li>\n<li data-xf-list-type=\"ul\">WMR-кошелёк: <b>R381249575716</b></li>\n<li data-xf-list-type=\"ul\">WMZ-кошелёк: <b>Z159805086668</b></li>\n<li data-xf-list-type=\"ul\">WME-кошелёк: <b>E317694362397</b></li>\n</ul>",
+  "download_count": 3061,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/147.jpg?1425420329",
+  "id": 147,
+  "is_fileless": null,
+  "last_update": 1718550831,
+  "rating_avg": 5,
+  "rating_count": 10,
+  "resource_date": 1421589000,
+  "resource_state": "visible",
+  "slug": "lokal-naa-galerea",
+  "tag_line": "Добавляет локальную галерею для загрузки изображений.",
+  "tags": [],
+  "title": "Локальная галерея",
+  "url_path": "/resources/lokal-naa-galerea.147/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.5.3",
+  "versions": [
+    {
+      "download_count": 515,
+      "files": [
+        {
+          "filename": "[FULL] Локальная галерея TPII by Zenden.zip",
+          "id": 6010,
+          "local_path": null,
+          "r2_key": null,
+          "size": 7046,
+          "src_url": "https://torrentpier.com/api/resource-versions/505/download?file=6010"
+        }
+      ],
+      "id": 505,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1718550831,
+      "version_state": "visible",
+      "version_string": "v1.5.3",
+      "view_url": "https://torrentpier.com/resources/lokal-naa-galerea.147/version/505/"
+    },
+    {
+      "download_count": 225,
+      "files": [
+        {
+          "filename": "[FULL] Локальная галерея TPII by Zenden.zip",
+          "id": 6007,
+          "local_path": null,
+          "r2_key": null,
+          "size": 7020,
+          "src_url": "https://torrentpier.com/api/resource-versions/502/download?file=6007"
+        }
+      ],
+      "id": 502,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1718537050,
+      "version_state": "visible",
+      "version_string": "v1.5.2",
+      "view_url": "https://torrentpier.com/resources/lokal-naa-galerea.147/version/502/"
+    },
+    {
+      "download_count": 210,
+      "files": [
+        {
+          "filename": "[FULL] Локальная галерея TPII by Zenden.zip",
+          "id": 5838,
+          "local_path": null,
+          "r2_key": null,
+          "size": 6996,
+          "src_url": "https://torrentpier.com/api/resource-versions/471/download?file=5838"
+        }
+      ],
+      "id": 471,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1708276476,
+      "version_state": "visible",
+      "version_string": "v1.5.1",
+      "view_url": "https://torrentpier.com/resources/lokal-naa-galerea.147/version/471/"
+    },
+    {
+      "download_count": 218,
+      "files": [
+        {
+          "filename": "[FULL] Локальная галерея TPII by Zenden.zip",
+          "id": 5837,
+          "local_path": null,
+          "r2_key": null,
+          "size": 6960,
+          "src_url": "https://torrentpier.com/api/resource-versions/470/download?file=5837"
+        }
+      ],
+      "id": 470,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1708274305,
+      "version_state": "visible",
+      "version_string": "v1.5.0",
+      "view_url": "https://torrentpier.com/resources/lokal-naa-galerea.147/version/470/"
+    },
+    {
+      "download_count": 216,
+      "files": [
+        {
+          "filename": "[FULL] Локальная галерея TPII by Zenden.zip",
+          "id": 5704,
+          "local_path": null,
+          "r2_key": null,
+          "size": 6689,
+          "src_url": "https://torrentpier.com/api/resource-versions/426/download?file=5704"
+        }
+      ],
+      "id": 426,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1703327692,
+      "version_state": "visible",
+      "version_string": "v1.4.0",
+      "view_url": "https://torrentpier.com/resources/lokal-naa-galerea.147/version/426/"
+    },
+    {
+      "download_count": 223,
+      "files": [
+        {
+          "filename": "[FULL] Локальная галерея TPII by Zenden.zip",
+          "id": 5664,
+          "local_path": null,
+          "r2_key": null,
+          "size": 6567,
+          "src_url": "https://torrentpier.com/api/resource-versions/414/download?file=5664"
+        }
+      ],
+      "id": 414,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1702463406,
+      "version_state": "visible",
+      "version_string": "v1.3.0",
+      "view_url": "https://torrentpier.com/resources/lokal-naa-galerea.147/version/414/"
+    },
+    {
+      "download_count": 327,
+      "files": [
+        {
+          "filename": "галерея.zip",
+          "id": 3426,
+          "local_path": null,
+          "r2_key": null,
+          "size": 6401,
+          "src_url": "https://torrentpier.com/api/resource-versions/239/download?file=3426"
+        }
+      ],
+      "id": 239,
+      "rating_avg": 5,
+      "rating_count": 5,
+      "release_date": 1425420374,
+      "version_state": "visible",
+      "version_string": "1.2.0",
+      "view_url": "https://torrentpier.com/resources/lokal-naa-galerea.147/version/239/"
+    },
+    {
+      "download_count": 251,
+      "files": [
+        {
+          "filename": "галерея.7z",
+          "id": 2916,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4649,
+          "src_url": "https://torrentpier.com/api/resource-versions/164/download?file=2916"
+        }
+      ],
+      "id": 164,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1422273759,
+      "version_state": "visible",
+      "version_string": "1.2.0",
+      "view_url": "https://torrentpier.com/resources/lokal-naa-galerea.147/version/164/"
+    },
+    {
+      "download_count": 234,
+      "files": [
+        {
+          "filename": "галерея.7z",
+          "id": 2913,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4089,
+          "src_url": "https://torrentpier.com/api/resource-versions/163/download?file=2913"
+        }
+      ],
+      "id": 163,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1422214791,
+      "version_state": "visible",
+      "version_string": "1.1.1",
+      "view_url": "https://torrentpier.com/resources/lokal-naa-galerea.147/version/163/"
+    },
+    {
+      "download_count": 230,
+      "files": [
+        {
+          "filename": "галерея.7z",
+          "id": 2889,
+          "local_path": null,
+          "r2_key": null,
+          "size": 3629,
+          "src_url": "https://torrentpier.com/api/resource-versions/162/download?file=2889"
+        }
+      ],
+      "id": 162,
+      "rating_avg": 5,
+      "rating_count": 2,
+      "release_date": 1421745631,
+      "version_state": "visible",
+      "version_string": "1.1",
+      "view_url": "https://torrentpier.com/resources/lokal-naa-galerea.147/version/162/"
+    },
+    {
+      "download_count": 239,
+      "files": [
+        {
+          "filename": "галерея.7z",
+          "id": 2884,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2472,
+          "src_url": "https://torrentpier.com/api/resource-versions/161/download?file=2884"
+        }
+      ],
+      "id": 161,
+      "rating_avg": 5,
+      "rating_count": 2,
+      "release_date": 1421589392,
+      "version_state": "visible",
+      "version_string": "1.0",
+      "view_url": "https://torrentpier.com/resources/lokal-naa-galerea.147/version/161/"
+    },
+    {
+      "download_count": 267,
+      "files": [],
+      "id": 160,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1421589000,
+      "version_state": "visible",
+      "version_string": "2015-01-18",
+      "view_url": "https://torrentpier.com/resources/lokal-naa-galerea.147/version/160/"
+    }
+  ],
+  "view_count": 3838
+}

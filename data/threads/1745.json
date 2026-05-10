@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 23152,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1745,
+  "last_post_date": 1353600156,
+  "node_id": 57,
+  "post_date": 1353582580,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23152,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте, подскажите пожалуйста, как правильно сравнить значения поля post_time таблицы bb_posts. непойму в каком оно формате, и нужно вывести, скажем за последние 10 минут, получаю такое<pre class=\"xfBb-code\" data-lang=\"\">where post_time =&gt; (now() - interval 10 minute)</pre> но вот как будет верно?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1353582580,
+      "user_id": 3099,
+      "user_title": "User",
+      "username": "godtor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23153,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "аналогично поле topic_time таблицы bb_topics",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1353584508,
+      "user_id": 3099,
+      "user_title": "User",
+      "username": "godtor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23158,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "или даже так будет правильнее, где сравнить и выбрать за вчера?<br />\n<pre class=\"xfBb-code\" data-lang=\"\">WHERE topic_time &gt;= (CURDATE()-1) AND topic_time &lt; CURDATE()</pre>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1353590574,
+      "user_id": 3099,
+      "user_title": "User",
+      "username": "godtor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23163,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Создавать темы в нормальных разделах религия не позволяет? В очередной раз переношу.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1353594952,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23166,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"godtor\">непойму в каком оно формате,</blockquote>В обычном формате Unix timestamp. Это страшное число, которые вы видите всего навсего кол-во секунд, прошедших с 1 января 1970 года. функции для работы time() и date()",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1353600156,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "pole-post_time",
+  "sticky": false,
+  "tags": [],
+  "title": "Поле post_time",
+  "url_path": "/threads/pole-post_time.1745/",
+  "user_id": 3099,
+  "username": "godtor",
+  "view_count": 1159
+}

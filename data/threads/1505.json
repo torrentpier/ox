@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 20053,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1505,
+  "last_post_date": 1351615185,
+  "node_id": 57,
+  "post_date": 1346664225,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20053,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Не могу войти<br />\nРевизия: r446-r448<br />\nИмя: admin ?<br />\nПороль: admin ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1346664225,
+      "user_id": 322,
+      "user_title": "User",
+      "username": "botyk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20061,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "куки",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1346672548,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20062,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ой все зделал но не работает!<br />\n1)браузере очистил куки<br />\n2)включил куки<br />\n <br />\nмне помогло вот этот<br />\n<pre class=\"xfBb-code\" data-lang=\"\">// Cookie\n$bb_cfg[&#039;cookie_domain&#039;] = (!empty($_SERVER[&#039;SERVER_NAME&#039;])) ? $_SERVER[&#039;SERVER_NAME&#039;] : &#039;.мойдомен.ru&#039;;  # &#039;.yourdomain.com&#039;</pre>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1346677690,
+      "user_id": 322,
+      "user_title": "User",
+      "username": "botyk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20063,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "а ты шутник",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1346695604,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 21995,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"botyk\">Не могу войти Ревизия: r446-r448 Имя: admin ? Пороль: admin ?</blockquote>см.здесь <a href=\"http://torrentpier.com/posts/21990/\" class=\"link link--internal\">http://torrentpier.com/posts/21990/</a>",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1351615185,
+      "user_id": 2816,
+      "user_title": "User",
+      "username": "Silverado"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "login-r446-r448",
+  "sticky": false,
+  "tags": [],
+  "title": "Логин r446-r448",
+  "url_path": "/threads/login-r446-r448.1505/",
+  "user_id": 322,
+  "username": "botyk",
+  "view_count": 1281
+}

@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 44298,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 14721,
+  "last_post_date": 1379100470,
+  "node_id": 57,
+  "post_date": 1379096525,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 44298,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Например админ  делает рассылку (все пользователи) через<b> &quot;Массовая рассылка почты&quot;</b><br />\nно некоторый пользователи не хочет получать новости и хочет отписаться как разобраться?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1379096525,
+      "user_id": 322,
+      "user_title": "User",
+      "username": "botyk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 44300,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>botyk</b>, сделать условие при котором пользователи получали письма. Пример . <br />\nSelect какая-то строка из бд from bb_users where этаже строка = 1 <br />\nДальше надо сделать условие <br />\nif($row[&#039;это строка&#039;])<br />\n{<br />\n    код отправки; <br />\n}",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1379100470,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "kak-sdelat-ctoby-pol-zovateli-mogli-otpisat-sa",
+  "sticky": false,
+  "tags": [],
+  "title": "Как сделать чтобы пользователи могли отписаться",
+  "url_path": "/threads/kak-sdelat-ctoby-pol-zovateli-mogli-otpisat-sa.14721/",
+  "user_id": 322,
+  "username": "botyk",
+  "view_count": 912
+}

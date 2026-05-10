@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 84434,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 86,
+    "title": "Questions about PHP"
+  },
+  "id": 41206,
+  "last_post_date": 1436069017,
+  "node_id": 86,
+  "post_date": 1435944799,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84434,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подскажите по скрытию блоков на страницах.<br />\n<br />\nнадо скрыть с управлением через админ панель. В админке все работает, в tpl тоже все обернул, как подключить php?<br />\n<br />\nСкажите, какой код  скинуть, выложу.<br />\n<br />\nДелал по чуйке по примеру новостей))",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1435944799,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84435,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "ну показывай как делал",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1435952936,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84443,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Собственно, делаю страницу помощи сайту, которую вырезали из движка. Вроде  называлась donate.php<br />\n<div>Spoiler content hidden.</div><br />\nНе знаю, правильно ли оформил tpl, но с php вообще разобраться не могу",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1436068255,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84444,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "P.S.<br />\nНу, и не могу сообразить, как sidebar`ы к странице прикрепить",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1436069017,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "skrytie-blokov-v-torrentpier",
+  "sticky": false,
+  "tags": [],
+  "title": "Скрытие блоков в TorrentPier",
+  "url_path": "/threads/skrytie-blokov-v-torrentpier.41206/",
+  "user_id": 1514,
+  "username": "Begemot",
+  "view_count": 1676
+}

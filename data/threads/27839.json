@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 65022,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 27839,
+  "last_post_date": 1413805215,
+  "node_id": 80,
+  "post_date": 1413805215,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 65022,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Если форум в директории - скриптом генерируются некорректные ссылки из-за относительности. Необходима переделка абсолютно всех функций вывода ссылок на make_url(). Проблема косвенно соотносится с поддержкой https (порт 443 выдающийся в ссылках и т.п.).",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1413805215,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 0,
+  "slug": "otnositel-nye-ssylki",
+  "sticky": false,
+  "tags": [],
+  "title": "Относительные ссылки",
+  "url_path": "/threads/otnositel-nye-ssylki.27839/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 781
+}

@@ -1,0 +1,128 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL][$][TP2] Admin dostup.zip",
+      "id": 3286,
+      "local_path": null,
+      "r2_key": null,
+      "size": 8091,
+      "src_url": "https://torrentpier.com/api/resource-versions/257/download?file=3286"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]Автор мода: frost444\n####[ВЫПОЛНИТЬ]-----SQL\n\nALTER TABLE `bb_users` ADD `user_dost` varchar(4) DEFAULT '0' NOT NULL AFTER `user_level`;\n\n####[КОНЕЦ]-----SQL\n\n####[ОТКРЫТЬ]----- common.php\n-----[найти]-----\n\nrequire(BB_ROOT .'config.php');\n\n-----[добавить ниже]-----\n\nrequire(BB_ROOT .'admin/config_admin.php');\n\n####[ОТКРЫТЬ]----- lang_admin.php\n-----[в конец]-----\n\n$lang['NOT_ADMIN_THIS_DIR'] = 'Увас нет доступа к танной категории';\n$lang['DOSTUP'] = 'Доступы';\n$lang['CONFIG_DOST'] = 'Настройка';\n$lang['DOSTUP_LIST'] = 'Список страниц';\n$lang['DOSTUP_LIST_USER'] = 'Уникальные Доступы';\n$lang['DOSTUP_ADMINS'] = 'Список админов';\n$lang['DOSTUP_ADMINS_LIST'] = 'Список Админов с доступом';\n$lang['USER'] = 'Пользователь';\n\n####[ОТКРЫТЬ]----- pagestart.php\n-----[найти]-----\n\n$user->session_start();\n\nif (!IS_ADMIN)\n{\n    message_die(GENERAL_MESSAGE, $lang['NOT_ADMIN']);\n}\n\n-----[добавить ниже]-----\n\n$vowels = array($bb_cfg_adm['cat_del'],\".php\",\"/\");\n$this_page = str_replace($vowels, \"\", $_SERVER['PHP_SELF']);\nif(array_key_exists($this_page, $bb_cfg_adm['dost']))\n{\n$page_dost = $bb_cfg_adm['dost'][$this_page];\n$page_dost_user = $bb_cfg_adm['dost_user'][$userdata['user_id']][$this_page];\nif ($userdata['user_dost'] <= $page_dost)\n{\n     message_die(GENERAL_MESSAGE, $lang['NOT_ADMIN_THIS_DIR']);\n}\nif ($userdata['user_dost'] <= $page_dost_user)\n{\n     message_die(GENERAL_MESSAGE, $lang['NOT_ADMIN_THIS_DIR']);\n}\n}else{\nmessage_die(GENERAL_MESSAGE, 'Страница не доступна т.к. администратор забыл добавить ей права!<br/> Если у вас есть доступ к FTP, то добавьте странице доступ.');\n}[/PHP]\n[/SPOILER]",
+    "owner": "frost444",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425489410,
+      "file_size": 6834,
+      "filename": "1.webp",
+      "height": 144,
+      "id": 3282,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/1-webp.3282/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3286-779e907884f907c03b1d7b69566a467f.jpg?hash=3z5SYb7x00",
+      "width": 987
+    },
+    {
+      "attach_date": 1425489411,
+      "file_size": 7740,
+      "filename": "2.webp",
+      "height": 160,
+      "id": 3283,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2-webp.3283/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3287-088cc2fcb9c25c13b07f755a10284f85.jpg?hash=SGqaZR1xPK",
+      "width": 987
+    },
+    {
+      "attach_date": 1425489411,
+      "file_size": 49058,
+      "filename": "3.webp",
+      "height": 891,
+      "id": 3284,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/3-webp.3284/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3288-72264085c452915b73618675ef0196f5.jpg?hash=GymJx9UcM3",
+      "width": 441
+    },
+    {
+      "attach_date": 1425489411,
+      "file_size": 3972,
+      "filename": "4.webp",
+      "height": 108,
+      "id": 3285,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/4-webp.3285/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3289-848f140c797255e0c5c852cb1544ab6a.jpg?hash=Z87JDQiQc7",
+      "width": 989
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет возможность ограничить доступ других администраторов к элементам панели управления.<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Извещение о странице, к который не был добавлен приоритет</li>\n<li data-xf-list-type=\"ul\">Настройка и ротация уникальных доступов</li>\n<li data-xf-list-type=\"ul\">Запрет доступа к страницам</li>\n</ul>",
+  "download_count": 277,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/200.jpg?1425489983",
+  "id": 200,
+  "is_fileless": null,
+  "last_update": 1425489973,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1425489973,
+  "resource_state": "visible",
+  "slug": "ogranicenie-dostupa-administratorov",
+  "tag_line": "Добавляет возможность ограничить доступ других администраторов к элементам панели управления.",
+  "tags": [],
+  "title": "Ограничение доступа администраторов",
+  "url_path": "/resources/ogranicenie-dostupa-administratorov.200/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 277,
+      "files": [
+        {
+          "filename": "[FULL][$][TP2] Admin dostup.zip",
+          "id": 3286,
+          "local_path": null,
+          "r2_key": null,
+          "size": 8091,
+          "src_url": "https://torrentpier.com/api/resource-versions/257/download?file=3286"
+        }
+      ],
+      "id": 257,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425489973,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/ogranicenie-dostupa-administratorov.200/version/257/"
+    }
+  ],
+  "view_count": 632
+}

@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61607,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 26041,
+  "last_post_date": 1406137392,
+  "node_id": 57,
+  "post_date": 1406134098,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61607,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет!<br />\nКак создать нового пользователя и дать ему права администратора?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1406134098,
+      "user_id": 5469,
+      "user_title": "User",
+      "username": "Sarman"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61609,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "это так банально...<br />\nзайти в админку посмотреть вверх, нажать &quot;<b><a href=\"http://bittracker.org.ua/profile.php?mode=register&amp;admin=1\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #55728b\">Создать аккаунт</span></span></span></a></b>&quot;  ввести что требуют, потом посмотреть в админке ниже нажать &quot;<b><span style=\"font-family: 'Verdana'\"><span style=\"color: #006699\"><span style=\"font-size: 11px\">Права доступа</span></span></span></b>&quot;<br />\nвыбрать того пользака что создал, а потом посмотришь и догадаешься...",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1406135435,
+      "user_id": 737,
+      "user_title": "User",
+      "username": "Dream"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61616,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Dream</b>, Спасибо",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1406137392,
+      "user_id": 5469,
+      "user_title": "User",
+      "username": "Sarman"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "nastrojka-pol-zovatelej",
+  "sticky": false,
+  "tags": [],
+  "title": "Настройка пользователей",
+  "url_path": "/threads/nastrojka-pol-zovatelej.26041/",
+  "user_id": 5469,
+  "username": "Sarman",
+  "view_count": 1166
+}

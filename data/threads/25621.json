@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 57862,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25621,
+  "last_post_date": 1389874501,
+  "node_id": 111,
+  "post_date": 1389874501,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57862,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 549: Deleted wiki page TorrentPier through web user interface.</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">glix08</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Delete    /wiki/TorrentPier.wiki \n\nDeleted wiki page TorrentPier through web user interface.</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1389874501,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "revision-549-deleted-wiki-page-torrentpier-through-web-user-interface",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 549: Deleted wiki page TorrentPier through web user interface.",
+  "url_path": "/threads/revision-549-deleted-wiki-page-torrentpier-through-web-user-interface.25621/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 953
+}

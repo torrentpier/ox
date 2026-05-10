@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 66267,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 28809,
+  "last_post_date": 1415177520,
+  "node_id": 80,
+  "post_date": 1415150669,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66267,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Члены релиз группы получают возможность прикреплять подпись группы к абсолютно любому посту на форуме (в расширенном режиме, через &quot;Предв. просмотр&quot;).<br />\n<br />\nНужно ограничить вывод подписи (только если пост первый и торрент зарегистрирован), или возможность ее прикрепить при ответе в топике.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1415150669,
+      "user_id": 5037,
+      "user_title": "User",
+      "username": "Vlasov"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66294,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5037/\">@Vlasov</a> задумка была в том, что кто-то может размещать эту самую подпись релиз-группы вторым сообщением в теме. Ну или вообще в любом месте в теме, если надо показать кем был создан релиз. Также расчет на то, что участник релиз-группы не идиот и просто так прикреплять эту самую подпись к любому сообщению не станет. Есть идеи как учесть эти два условия и ваше пожелание вместе?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1415177520,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 1,
+  "slug": "dobavlenie-podpisi-reliz-gruppy",
+  "sticky": false,
+  "tags": [],
+  "title": "Добавление подписи релиз группы",
+  "url_path": "/threads/dobavlenie-podpisi-reliz-gruppy.28809/",
+  "user_id": 5037,
+  "username": "Vlasov",
+  "view_count": 972
+}

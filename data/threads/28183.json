@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 65424,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 28183,
+  "last_post_date": 1414180414,
+  "node_id": 111,
+  "post_date": 1414164410,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 65424,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1698748911,
+      "message_parsed": "<b>Ссылка: </b><a href=\"https://github.com/torrentpier/torrentpier/archive/refs/tags/v2.1.3.zip\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Прямая загрузка</a><br />\n<br />\n<b>Описание:</b><br />\n<br />\nТретий ALPHA-билд.<br />\n<br />\nОсновные изменения:<br />\n<br />\n- нативная поддержка альтернативного компилируемого анонсера Ocelot;<br />\n- поддержка SSL-шифрования у внешнего SMTP-сервера (Яндекс.Почта и т.п.);<br />\n- удалена система транслитерации из движка (пользователям следует посоветовать использование сайтов наподобие <a href=\"http://translit.net/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">ÐÐµÑÐ¿Ð»Ð°ÑÐ½ÑÐ¹ ÑÑÐ°Ð½ÑÐ»Ð¸Ñ, ÐºÐ¾Ð½Ð²ÐµÑÑÐµÑ ÑÐµÐºÑÑÐ° Ð¸Ð· Ð»Ð°ÑÐ¸Ð½Ð¸ÑÑ Ð¸ Ð² Ð»Ð°ÑÐ¸Ð½Ð¸ÑÑ. ÐÑÐ»Ð¸ Ñ Ð²Ð°Ñ Ð½ÐµÑ ÑÑÑÑÐºÐ¾Ð¹ ÐºÐ»Ð°Ð²Ð¸Ð°ÑÑÑÑ.</a> для этой цели);<br />\n- исправлена ошибка с прописыванием ретрекера у гостей;<br />\n- исправлена ошибка с выводом списка релиз-групп;<br />\n- исправления путей к изображениям.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1414164410,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 65425,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Скачать версию можно в центре загрузки: <a href=\"https://get.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://get.torrentpier.com/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1414164427,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 65436,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Почему бы под кошельками не оставить ссылку <a href=\"https://get.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">get.torrentpier.com</a>? Постоянно приходится вручную вбивать",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1414180073,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 65438,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/2685/\">@ler</a> блок с ссылками на главной включил.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1414180414,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "versia-2-1-3-alpha-3-dobavlena-nativnaa-podderzka-ocelot",
+  "sticky": false,
+  "tags": [],
+  "title": "Версия 2.1.3 ALPHA-3: добавлена нативная поддержка Ocelot...",
+  "url_path": "/threads/versia-2-1-3-alpha-3-dobavlena-nativnaa-podderzka-ocelot.28183/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 3632
+}

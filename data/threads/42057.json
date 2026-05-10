@@ -1,0 +1,73 @@
+{
+  "custom_fields": {
+    "torrentpier": "223"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94198,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42057,
+  "last_post_date": 1556389342,
+  "node_id": 57,
+  "post_date": 1556388464,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94198,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Версия движка 2.2.3, версия php 7.3. Ребята, столкнулся с проблемой Sitemap, создаю в админке Sitemap, ajax, показывает ошибку 500, если запускаю через крон,  то пишет filter_var(): explicit use of FILTER_FLAG_SCHEME_REQUIRED and FILTER_FLAG_HOST_REQUIRED is deprecated. В нете нашёл : Флаги FILTER_FLAG_SCHEME_REQUIRED и FILTER_FLAG_HOST_REQUIRED при использовании FILTER_VALIDATE_URL объявлены устаревшими... Подскажите пожалуйста, есть ли решение?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1556388464,
+      "user_id": 4854,
+      "user_title": "User",
+      "username": "sergey67"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94199,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Удалил флаг, карта создалась. Но я не знаю, правильное ли это решение...",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1556389342,
+      "user_id": 4854,
+      "user_title": "User",
+      "username": "sergey67"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "sitemap",
+  "sticky": false,
+  "tags": [],
+  "title": "Sitemap",
+  "url_path": "/threads/sitemap.42057/",
+  "user_id": 4854,
+  "username": "sergey67",
+  "view_count": 1011
+}

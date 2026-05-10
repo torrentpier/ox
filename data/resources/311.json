@@ -1,0 +1,154 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Расширенное логирование действий by belomaxorka.zip",
+      "id": 6675,
+      "local_path": null,
+      "r2_key": null,
+      "size": 3921,
+      "src_url": "https://torrentpier.com/api/resource-versions/661/download?file=6675"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1733040581,
+      "file_size": 25688,
+      "filename": "firefox_8oXzatpz2s.webp",
+      "height": 262,
+      "id": 6234,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_8oxzatpz2s-webp.6234/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6238-f5e6582a1b367d7b4db0b6f84b4ddd0a.jpg?hash=dIOHfomVei",
+      "width": 722
+    }
+  ],
+  "description_parsed": "<div style=\"text-align: center\"><span style=\"color: rgb(226, 80, 65)\">Мод интегрирован по умолчанию начиная с версий движка v2.4.0 и LTS v2.1.5-2023.08 и выше</span>&#8203;</div><hr /><b>Описание:</b> Добавляет в лог действий новые действия.<br />\nСписок новых действий:<br />\n- Закрепление / открепление темы<br />\n- Смена статуса темы на скачивание разрешено / запрещено<br />\n- Переименование темы<br />\n- Изменение статуса торрента<br />\n- Изменение типа торрента (серебро / золото)<br />\n- Разрегистрация торрента<br />\n- Регистрация торрента<br />\n- Удаление торрента<br />\n- Опрос начат<br />\n- Опрос завершен<br />\n- Опрос удален<br />\n- Опрос создан<br />\n- Опрос отредактирован<br />\n<b>Совместимость: </b>версии начиная с которых появился логер действий.",
+  "download_count": 547,
+  "external_url": null,
+  "icon_url": null,
+  "id": 311,
+  "is_fileless": null,
+  "last_update": 1767259779,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1733040585,
+  "resource_state": "visible",
+  "slug": "rassirennoe-logirovanie-dejstvij",
+  "tag_line": "Добавляет в лог действий новые действия.",
+  "tags": [
+    "actions log",
+    "log actions",
+    "дополнение",
+    "мод",
+    "моды",
+    "расширение функционала",
+    "улучшенный логер действий"
+  ],
+  "title": "Расширенное логирование действий",
+  "url_path": "/resources/rassirennoe-logirovanie-dejstvij.311/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.3.0",
+  "versions": [
+    {
+      "download_count": 99,
+      "files": [
+        {
+          "filename": "[FULL] Расширенное логирование действий by belomaxorka.zip",
+          "id": 6675,
+          "local_path": null,
+          "r2_key": null,
+          "size": 3921,
+          "src_url": "https://torrentpier.com/api/resource-versions/661/download?file=6675"
+        }
+      ],
+      "id": 661,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1767259779,
+      "version_state": "visible",
+      "version_string": "v1.3.0",
+      "view_url": "https://torrentpier.com/resources/rassirennoe-logirovanie-dejstvij.311/version/661/"
+    },
+    {
+      "download_count": 262,
+      "files": [
+        {
+          "filename": "[FULL] Расширенное логирование действий by belomaxorka.zip",
+          "id": 6239,
+          "local_path": null,
+          "r2_key": null,
+          "size": 3528,
+          "src_url": "https://torrentpier.com/api/resource-versions/570/download?file=6239"
+        }
+      ],
+      "id": 570,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1733141370,
+      "version_state": "visible",
+      "version_string": "v1.2.0",
+      "view_url": "https://torrentpier.com/resources/rassirennoe-logirovanie-dejstvij.311/version/570/"
+    },
+    {
+      "download_count": 91,
+      "files": [
+        {
+          "filename": "[FULL] Расширенное логирование действий by belomaxorka.zip",
+          "id": 6238,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2914,
+          "src_url": "https://torrentpier.com/api/resource-versions/569/download?file=6238"
+        }
+      ],
+      "id": 569,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1733068409,
+      "version_state": "visible",
+      "version_string": "v1.1.0",
+      "view_url": "https://torrentpier.com/resources/rassirennoe-logirovanie-dejstvij.311/version/569/"
+    },
+    {
+      "download_count": 98,
+      "files": [
+        {
+          "filename": "[FULL] Расширенное логирование действий by belomaxorka.zip",
+          "id": 6233,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2093,
+          "src_url": "https://torrentpier.com/api/resource-versions/568/download?file=6233"
+        }
+      ],
+      "id": 568,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1733040585,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/rassirennoe-logirovanie-dejstvij.311/version/568/"
+    }
+  ],
+  "view_count": 1771
+}

@@ -1,0 +1,134 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 14374,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1154,
+  "last_post_date": 1332760462,
+  "node_id": 57,
+  "post_date": 1332751882,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14374,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как убрать регистрацию в torrentpier? Чтобы можно было скачивать без регистрации.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1332751882,
+      "user_id": 722,
+      "user_title": "User",
+      "username": "Азат"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14375,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Азат</b>, права доступа в разделы... 😡",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1332752059,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Bustra"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1332752615,
+          "file_size": 17982,
+          "filename": "Снимок.webp",
+          "height": 464,
+          "id": 938,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-webp.938/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/0/939-cb051b586f7be4500248999709b98bb6.jpg?hash=vb7DJvpgiK",
+          "width": 377
+        }
+      ],
+      "id": 14377,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<img src=\"https://torrentpier.com/attachments/938/\" alt=\"Снимок.webp\" />",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1332752637,
+      "user_id": 30,
+      "user_title": "User",
+      "username": "krumax"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14383,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всё понял. Спсибо))",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1332756845,
+      "user_id": 722,
+      "user_title": "User",
+      "username": "Азат"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14388,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "UPDATE bb_forums SET auth_download = 0",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1332760462,
+      "user_id": 21,
+      "user_title": "User",
+      "username": "RomM1"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "kak-ubrat-registraciu-v-torrentpier",
+  "sticky": false,
+  "tags": [],
+  "title": "Как убрать регистрацию в torrentpier?",
+  "url_path": "/threads/kak-ubrat-registraciu-v-torrentpier.1154/",
+  "user_id": 722,
+  "username": "Азат",
+  "view_count": 2029
+}

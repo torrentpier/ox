@@ -1,0 +1,147 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94995,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42145,
+  "last_post_date": 1689419151,
+  "node_id": 47,
+  "post_date": 1689087741,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1689087676,
+          "file_size": 70580,
+          "filename": "Безымянный.webp",
+          "height": 960,
+          "id": 5467,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bezymannyj-webp.5467/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5471-ecf9b015f36d6ab7a23766196e6e7672.jpg?hash=7UXcQdq-c3",
+          "width": 500
+        }
+      ],
+      "id": 94995,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Забрать можно из моей репы:<br />\n<br />\n<a href=\"https://github.com/DrBrown777/TelebotPost\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Забрать</a><br />\n<br />\nМод позволяет брать из базы последние посты, заголовок, постер, описание, ссылку и постить в Ваш telegram канал.<br />\n<br />\nЕсть два режима работы:<br />\n1. Постинг релизов добавленых за последние 30 минут (настраивается по усмотрению, крон должен быть синхронизирован с интервалом установленным в переменной)<br />\n2. Рамдомно выбирает из базы, 10 постов, и постит в Telegram, по крон, интервал на Ваше усмотрение (внимание, это очень тяжелый запрос, не рекомендуется)<br />\n<br />\nСистемные требования:<br />\n1. Python 3.7 и выше<br />\n2. BeautifulSoup and PyMySQL libraries installed<br />\n3. Требуется битовое поле в таблице bb_bt_torents которое хранит 0 или 1, у меня оно назвывается pic_replase, можете назвать по своему.<br />\n<br />\nБота нужно создать в BotPhather, и добавить как админа, в ваш канал. Также требуется вписать ваш токен который вам выдаст BotPhather.<br />\n<br />\n/*** Задача Cron запускается каждые 30 минут (режим 1) или интервал по пожеланию (режим 2)  ***/<br />\n<br />\n/usr/bin/python3 /home/main.py<br />\n<br />\nфайл main.py должен находиться в домашней папке или в любом удобном месте<br />\n<br />\nсмотри комментарии в коде., пример на картинке<br />\n<br />\nПримечание:<br />\nсильно хитрожопые оформления не берет. <br />\nТакже не удалось взорвать imageban",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1689087741,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1689241958,
+          "file_size": 15510,
+          "filename": "1689241502706.webp",
+          "height": 148,
+          "id": 5468,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1689241502706-webp.5468/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5472-9ae29c1d57dbb88d8d2174ac0ec7d759.jpg?hash=wS_poDZ1XM",
+          "width": 453
+        }
+      ],
+      "id": 95005,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подобное реализовавал, также помощью python, но без захода в БД, а просто парсинг tracker.php, по времени. <br />\n<br />\nНебольшой кусок кода: <br />\n<div>Spoiler content hidden.</div><br />\nПарсим данные в .json, и потом проверяем его, если есть что то новое отправляем в telegram. Опять же, это лишь кусок кода, как удалось парсить данные и собирать в json.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1689241982,
+      "user_id": 4602,
+      "user_title": "User",
+      "username": "vladios13"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95006,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"vladios13\">Подобное реализовавал, также помощью python, но без захода в БД, а просто парсинг tracker.php, по времени.<br />\n<br />\nНебольшой кусок кода:<br />\n<div>Spoiler content hidden.</div><br />\nПарсим данные в .json, и потом проверяем его, если есть что то новое отправляем в telegram. Опять же, это лишь кусок кода, как удалось парсить данные и собирать в json.</blockquote>Спасибо большое за модификацию, это большой вклад в сообщество. 😉🙂",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1689266946,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95008,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"vladios13\">Подобное реализовавал, также помощью python, но без захода в БД, а просто парсинг tracker.php, по времени.<br />\n<br />\nНебольшой кусок кода:<br />\n<div>Spoiler content hidden.</div><br />\nПарсим данные в .json, и потом проверяем его, если есть что то новое отправляем в telegram. Опять же, это лишь кусок кода, как удалось парсить данные и собирать в json.</blockquote>а картинки.. описание...",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1689395716,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95009,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">а картинки.. описание...</blockquote>Делал под себя, в этом не нуждался. Но можно и картинки забирать, ведь мы парсим список, по этому списку проходится забирать как описание так и картинки.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1689419151,
+      "user_id": 4602,
+      "user_title": "User",
+      "username": "vladios13"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "avtoposting-poslednih-relizov-v-vas-telegram-kanal",
+  "sticky": false,
+  "tags": [
+    "bot",
+    "telegram"
+  ],
+  "title": "Автопостинг последних релизов в ваш Telegram канал",
+  "url_path": "/threads/avtoposting-poslednih-relizov-v-vas-telegram-kanal.42145/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1026
+}

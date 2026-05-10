@@ -1,0 +1,118 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 11381,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 908,
+  "last_post_date": 1328726835,
+  "node_id": 57,
+  "post_date": 1328724781,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1328724818,
+          "file_size": 308,
+          "filename": "cron_gen_patch.rar",
+          "height": 0,
+          "id": 642,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/cron_gen_patch-rar.642/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 11381,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Тут родилась идея создать скрипт, который бы выводил строку на экран браузера, которую нужно было бы тупо скопировать в процес cron. Выставляем время и всё, крон отвязан.<br />\nУ меня на ubuntu это выглядит вот так.<br />\n<a href=\"http://fastpic.ru/view/28/2012/0208/c32a672207c3dbaa1e479d813d48c837.jpg.html\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"http://i28.fastpic.ru/thumb/2012/0208/37/c32a672207c3dbaa1e479d813d48c837.jpeg\" alt=\"\" /></a><br />\nБольшая просьба к бета тестерам, заюзайте.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1328724781,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 11383,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "тогда доп предложение написать лок скрипт дабы обезапасить повторное выполнение",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1328725535,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 11384,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "нее. тут тупо exec для whereis php.<br />\nон ничего сам не делает, только выводит на экран<br />\nнужно его универсализировать и всё.<br />\nа потом уже подумать над решением авто настройки.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1328725832,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 11386,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "я имел ввиду дополнительный скрипт, который будет не давать повторно запускаться, пока не отрабает",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1328726835,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "skript-puti-otvazki-krona",
+  "sticky": false,
+  "tags": [],
+  "title": "Скрипт пути отвязки крона.",
+  "url_path": "/threads/skript-puti-otvazki-krona.908/",
+  "user_id": 19,
+  "username": "dimka3210",
+  "view_count": 2505
+}

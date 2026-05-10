@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 77331,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 36798,
+  "last_post_date": 1426701709,
+  "node_id": 47,
+  "post_date": 1425254698,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 77331,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Пользователь Exile разместил новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/blogi.172/\" class=\"link link--internal\">Блоги</a> - Добавляет пользователям возможность вести блоги.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> добавляет пользователям возможность вести блоги.<br />\n<br />\nОсновные возможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Добавление комментариев</li>\n<li data-xf-list-type=\"ul\">Переключение капчи, recaptcha или стандартная</li>\n<li data-xf-list-type=\"ul\">Поиск как по комментариям так и по статьям</li>\n<li data-xf-list-type=\"ul\">Облако тегов генерируется из тех которые есть в блогах</li>\n<li data-xf-list-type=\"ul\">Гибкая настройка</li>\n<li data-xf-list-type=\"ul\">Возможность добавить быструю запись в блог, при создании темы или раздачи( с редиректом в форум)</li>\n<li data-xf-list-type=\"ul\">Отдельная система доступа к категориям и новостям</li>\n<li data-xf-list-type=\"ul\">Нагрузка сведена к минимуму</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/blogi.172/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1425254698,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 79640,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вроде все поставил правильно , пути поменял для последней ревизии .. , сам блок открывается , категории создаются , но при отправке сообщения в блоге<br />\nвыдает ошибку :<br />\n<b>Fatal error</b>: bf_bit2dec: bitfield &#039;allow_topic&#039; not found in <b>E:\\OpenServer\\OpenServer\\domains\\60fps.ru\\library\\includes\\functions.php</b> on line <b>313</b><br />\nссылается на эту строчку :<br />\ntrigger_error(__FUNCTION__ .&quot;: bitfield &#039;$key&#039; not found&quot;, E_USER_ERROR);",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1426634331,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 79725,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5626/\">@Kryl</a> однотипные ошибки по всему форуму. Замените allow_topic на dis_topic в коде дополнения (поиском по файлам), в движке (строка которая ругается) ничего менять не надо.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1426693835,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 79747,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "да , я уже пробовал ... <br />\nтам сразу куча ошибок посыпалась , подумал , что не правильно заменил ... <br />\nбуду дальше тогда смотреть ...",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1426701709,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "blogi",
+  "sticky": false,
+  "tags": [],
+  "title": "Блоги",
+  "url_path": "/threads/blogi.36798/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 1670
+}

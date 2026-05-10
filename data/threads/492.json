@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 5992,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 52,
+    "title": "Bug tracker archive"
+  },
+  "id": 492,
+  "last_post_date": 1322600940,
+  "node_id": 52,
+  "post_date": 1322146876,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5992,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "когда включаю nginx + php-fpm в IE перестают работать редактирования сообщений и быстрый просмотр на ajax. В остальных браузерах вроде норм. Подскажите куда глянуть, чтоб поправить?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1322146876,
+      "user_id": 36,
+      "user_title": "User",
+      "username": "inedgul"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 6003,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "убить осла",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1322151771,
+      "user_id": 2,
+      "user_title": "User",
+      "username": "_Xz_"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 6283,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>inedgul</b>, Извините как это связано <b>nginx + php-fpm</b> с <b>IE</b> ? Жду ответа<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">В остальных браузерах вроде норм</blockquote>Вот видешь сам себе ответ нашел, так что IE отстой. Если Вы фанат IE, то Ваше право",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1322600124,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 6286,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Я думал, может там настроить нужно что-то... И у всех ли так?",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1322600940,
+      "user_id": 36,
+      "user_title": "User",
+      "username": "inedgul"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "redaktirovanie-soobsenij-na-ajax",
+  "sticky": false,
+  "tags": [],
+  "title": "Редактирование сообщений на ajax",
+  "url_path": "/threads/redaktirovanie-soobsenij-na-ajax.492/",
+  "user_id": 36,
+  "username": "inedgul",
+  "view_count": 1888
+}

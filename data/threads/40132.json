@@ -1,0 +1,150 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 81974,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 40132,
+  "last_post_date": 1428962745,
+  "node_id": 110,
+  "post_date": 1428525068,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1428519311,
+          "file_size": 18128,
+          "filename": "2015-04-08 21-52-24 Скриншот экрана.webp",
+          "height": 481,
+          "id": 3531,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2015-04-08-21-52-24-skrinsot-ekrana-webp.3531/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/3/3535-ed28579171841e0a2381bbc9d11768ea.jpg?hash=JvuNkKiGvd",
+          "width": 187
+        },
+        {
+          "attach_date": 1428521624,
+          "file_size": 54412,
+          "filename": "2015-04-08 22-22-14 Центр загрузки TorrentPier - Mozilla Firefox.webp",
+          "height": 974,
+          "id": 3532,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2015-04-08-22-22-14-centr-zagruzki-torrentpier-mozilla-firefox-webp.3532/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/3/3536-8f8f868a5e4ee972067b3578c5979d39.jpg?hash=RSUrDvoOsT",
+          "width": 1443
+        }
+      ],
+      "id": 81974,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\n<br />\nСегодня на форуме были окончательно настроены внешние способы авторизации через социальные сети. Вы можете <a href=\"https://torrentpier.com/account/external-accounts\" class=\"link link--internal\">связать свои профили со следующим списком социальных сетей</a> и в дальнейшем с их помощью входить на форум:<br />\n<br />\n<a href=\"https://torrentpier.com/attachments/3531/\"><img src=\"https://torrentpier.com/data/attachments/3/3535-ed28579171841e0a2381bbc9d11768ea.jpg?hash=JvuNkKiGvd\" alt=\"2015-04-08 21-52-24 Скриншот экрана.webp\" /></a><br />\n<br />\nТакже в планах по нашему развитию есть создание единого центра авторизации для всех ресурсов на базе TorrentPier. Поясню, что это значит: в одной из будущих версий движка появится кнопка, которая даст возможность пользователю в одно нажатие войти на ваш трекер при условии наличия у него аккаунта на этом форуме. Торрент-статистика и прочие персональные данные на вашем ресурсе будут свои, а регистрационная информация и персональные данные пользователя (вроде аватара) будут подгружаться с этого форума. Таким образом, пользователю будет достаточно зарегистрироваться всего один раз - здесь, чтобы потом войти на любой из трекеров на базе TorrentPier не тратя время на регистрацию и подтверждение аккаунта.<br />\n<br />\nПреимущества единой авторизации для пользователя:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Не нужно тратить время на регистрацию аккаунтов на каждом отдельно взятом трекере</li>\n<li data-xf-list-type=\"ul\">Не нужно загружать аватарки и прочие персональные данные для каждого отдельного трекера</li>\n<li data-xf-list-type=\"ul\">Безопасность регистрации: https в центре авторизации, единая защищенная база</li>\n</ul>Преимущества для администраторов трекеров:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Решенная проблема с доставкой почты: у большинства ресурсов большие проблемы с доставкой почты и в частности писем активации из-за отсутствующих настроек почтовых серверов, у нас же все эти проблемы решены.</li>\n<li data-xf-list-type=\"ul\">Решенная проблема со спамерами: борьба со спамом на этом форуме осуществляется в результате контроля трех независимых систем, на TorrenPier это всего лишь одна капча, хоть и современная и неплохая.</li>\n<li data-xf-list-type=\"ul\">Прирост пользовательской аудитории: большое число способов регистрации на этом форуме и большое число трекеров на базе TorrentPier позволят получить большую аудиторию, которая в результате одного клика мышью зайдет на ваш трекер и начнет пользоваться им.</li>\n</ul>Разумеется, поддержка единого центра авторизации будет далеко не обязательной и отключаемой, но я думаю, что многие из вас оценят его преимущества для потенциального увеличения числа своей аудитории и будут активно его преимуществами пользоваться.<br />\n<br />\nПомимо единого центра авторизации ведется работа над интеграцией всех наших проектов (FAQ, центр загрузки, единый центр авторизации, публичный API этого форума (еще один проект, который готовится к запуску)) в единый сайт, содержащий исчерпывающую информацию по TorrentPier как для новичков, так и для опытных пользователей. Первый взгляд на него:<br />\n<br />\n<a href=\"https://torrentpier.com/attachments/3532/\"><img src=\"https://torrentpier.com/data/attachments/3/3536-8f8f868a5e4ee972067b3578c5979d39.jpg?hash=RSUrDvoOsT\" alt=\"2015-04-08 22-22-14 Центр загрузки TorrentPier - Mozilla Firefox.webp\" /></a><br />\n<br />\nСпасибо за внимание.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1428525068,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 82254,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "скажу честно - хотя такая модификация(а точнее её задумка) мне и нравится - подозрительность, лично у меня, вызывает реализация....<br />\nПы.Сы. может где-то на просторах того-же гит-хаба и лежит нужный коммит, который ждёт того, чтоб я его прочитал - но я ещё туда не ходил и не читал....",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1428871397,
+      "user_id": 5497,
+      "user_title": "User",
+      "username": "killserver"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 82259,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5497/\">@killserver</a> код будет открытый со стороны движка естественно. Какие-либо привилегии через систему получить будет нельзя, т.е. некоего универсального админского аккаунта не будет.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1428882313,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 82353,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/1/\">@Exile</a> что то типо api ?",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1428949360,
+      "user_id": 97,
+      "user_title": "User",
+      "username": "Zenden"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 82367,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/97/\">@Zenden</a> да. На этом форуме будет автоматически присвоен для каждого трекера на движке ключ для доступа к API, при регистрации если пользователь выберет пункт упрощенной регистрации - запрос подписанный ключ поступает к нашему API, в ответ оно отсылает некоторые данные по пользователю: имя, адрес электронной почты, пол, прочие профильные данные (откуда, интересы и т.п.), хеш пользователя, а уже со стороны вашего движка используя готовые данные идет привязка к новому аккаунту с нужными правами. В последующем, если пользователь нажимает кнопку упрощенного входа и аккаунт с этим хешем уже зарегистрирован - происходит автоматический вход. В противном случае проброс на регистрацию",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1428962745,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "edinyj-centr-avtorizacii-i-procie-novosti-proekta",
+  "sticky": false,
+  "tags": [
+    "новости"
+  ],
+  "title": "Единый центр авторизации и прочие новости проекта",
+  "url_path": "/threads/edinyj-centr-avtorizacii-i-procie-novosti-proekta.40132/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 2684
+}

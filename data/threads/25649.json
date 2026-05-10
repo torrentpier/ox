@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 57976,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25649,
+  "last_post_date": 1390161488,
+  "node_id": 57,
+  "post_date": 1390160938,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57976,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подскажите что за файлы в движке в корне.<br />\nopensearch_desc.xml<br />\nopensearch_desc_bt.xml<br />\n <br />\nИ какую роль они выполняют ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1390160938,
+      "user_id": 2839,
+      "user_title": "User",
+      "username": "deemon"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57981,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Добавление пользовательского поиска. В FireFox, например, если в строке поиска нажать на стрелочку - будет пункт добавления поисковых движков, первый по форуму, второй - по трекеру. <a href=\"http://ru.wikipedia.org/wiki/OpenSearch\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://ru.wikipedia.org/wiki/OpenSearch</a> - немного дополнительных подробностей тут. В общем при добавлении данных поисковых дополнений в свой браузер, пользователь сможет искать посты/раздачи прямо из него, непосредственно предварительно на трекер не заходя.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1390161488,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "cto-takoe-opensearch",
+  "sticky": false,
+  "tags": [],
+  "title": "Что такое opensearch?",
+  "url_path": "/threads/cto-takoe-opensearch.25649/",
+  "user_id": 2839,
+  "username": "deemon",
+  "view_count": 1338
+}

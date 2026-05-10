@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 20604,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1554,
+  "last_post_date": 1348578400,
+  "node_id": 57,
+  "post_date": 1348566948,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20604,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Очень нужно вывести запрет на регистрацию для несовершеннолетних.<br />\nВ движке мод даты рождения есть,  в admin_board.php и лангах этот ограничитель предусмотрен, но я не смог вывести его в регистрационные файлы. В TPII они полностью переписаны, много чего вынесено на ajax. <br />\nПрошу помощи, один не справлюсь.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1348566948,
+      "user_id": 79,
+      "user_title": "User",
+      "username": "Lynx"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20605,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Смысл? Сделают новую регу с нужным значением.<br />\n <br />\nТак надо закрывать открытую регу, делать обязательный выбор даты, запрет на посл. ред. даты - тогда эффект будет.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1348575357,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20606,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Basilevs\">Так надо закрывать открытую регу</blockquote>Ну, мод инвайтов можно поставить. Я его здесь где-то видел.<br />\n<blockquote class=\"xfBb-quote\" data-name=\"Basilevs\">делать обязательный выбор даты</blockquote>Вот это я и пытался сегодня сделать, проводя эксперименты над файлами usercp_register.php,  usercp_register.tpl и user_register.php, но не справился. <br />\nВ TPII usercp_register.php и  usercp_register.tpl очень сильно изменились по сравнению с SVN.<br />\n<blockquote class=\"xfBb-quote\" data-name=\"Basilevs\">запрет на посл. ред. даты</blockquote>Да, был бы эффект, но не представляю, как это реализовать.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1348578400,
+      "user_id": 79,
+      "user_title": "User",
+      "username": "Lynx"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "zapret-na-registraciu-do-18-let",
+  "sticky": false,
+  "tags": [],
+  "title": "Запрет на регистрацию до 18 лет",
+  "url_path": "/threads/zapret-na-registraciu-do-18-let.1554/",
+  "user_id": 79,
+  "username": "Lynx",
+  "view_count": 1114
+}

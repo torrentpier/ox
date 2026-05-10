@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 16793,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 86,
+    "title": "Questions about PHP"
+  },
+  "id": 1310,
+  "last_post_date": 1336292753,
+  "node_id": 86,
+  "post_date": 1336288152,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 16793,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "доброго времени суток<br />\n <br />\nподскажите, можно ли в никсах изменить время создания файла? желательно средствами пхп.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1336288152,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 16804,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"http://ru.php.net/manual/ru/function.touch.php\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://ru.php.net/manual/ru/function.touch.php</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1336292712,
+      "user_id": 882,
+      "user_title": "",
+      "username": "Boltik"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 16805,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Boltik</b>, благодарю 🙂",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1336292753,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "izmenit-vrema-sozdania-fajla",
+  "sticky": false,
+  "tags": [],
+  "title": "Изменить время создания файла",
+  "url_path": "/threads/izmenit-vrema-sozdania-fajla.1310/",
+  "user_id": 0,
+  "username": "Gemini_13",
+  "view_count": 1599
+}

@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 59138,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 58,
+        "title": "Suggestions for improving TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 112,
+    "title": "Reviewed & processed suggestions"
+  },
+  "id": 25782,
+  "last_post_date": 1408007862,
+  "node_id": 112,
+  "post_date": 1392552308,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59138,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "1. Страницы будут грузиться чуть быстрее.<br />\n2. Код будет читабельней.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1392552308,
+      "user_id": 2789,
+      "user_title": "User",
+      "username": "Sprinx"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61864,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "В одной из предыдущих ревизий было реализовано.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1407962652,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61869,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "а можно еще как-нибудь js в конце страницы грузить и асинхронно?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1408007862,
+      "user_id": 5319,
+      "user_title": "User",
+      "username": "Softwarez"
+    }
+  ],
+  "prefix_id": 33,
+  "reply_count": 2,
+  "slug": "ubrat-ves-lisnij-js-iz-tpl-fajlov-v-main-js",
+  "sticky": false,
+  "tags": [],
+  "title": "Убрать весь лишний js из tpl файлов в main.js",
+  "url_path": "/threads/ubrat-ves-lisnij-js-iz-tpl-fajlov-v-main-js.25782/",
+  "user_id": 2789,
+  "username": "Sprinx",
+  "view_count": 1343
+}

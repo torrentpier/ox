@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 57872,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25631,
+  "last_post_date": 1389876901,
+  "node_id": 111,
+  "post_date": 1389876901,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57872,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 539: Приведение имени константы ANONYMOUS к GUEST_UID, по аналогии с именем константы</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">glix08</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/other/converter/TBDevYSE_pre6/root/converter/constants.php \n    Modify    /trunk/other/recover/converter/constants.php \n    Modify    /trunk/upload/admin/admin_ug_auth.php \n    Modify    /trunk/upload/admin/admin_user_ban.php \n    Modify    /trunk/upload/admin/admin_user_search.php \n    Modify    /trunk/upload/admin/index.php \n    Modify    /trunk/upload/attach_mod/displaying_torrent.php \n    Modify    /trunk/upload/common.php \n    Modify    /trunk/upload/config.php \n    Modify    /trunk/upload/includes/cron/jobs/prune_inactive_users.php \n    Modify    /trunk/upload/includes/cron/jobs/sessions_cleanup.php \n    Modify    /trunk/upload/includes/cron/jobs/tr_make_snapshot.php \n    Modify    /trunk/upload/includes/functions.php \n    Modify    /trunk/upload/includes/functions_admin.php \n    Modify    /trunk/upload/includes/functions_post.php \n    Modify    /trunk/upload/includes/init_bb.php \n    Modify    /trunk/upload/includes/report_module.php \n    Modify    /trunk/upload/includes/sessions.php \n    Modify    /trunk/upload/includes/torrent_show_dl_list.php \n    Modify    /trunk/upload/includes/ucp/usercp_register.php \n    Modify    /trunk/upload/includes/ucp/usercp_viewdraft.php \n    Modify    /trunk/upload/includes/ucp/usercp_viewprofile.php \n    Modify    /trunk/upload/index.php \n    Modify    /trunk/upload/modcp.php \n    Modify    /trunk/upload/posting.php \n    Modify    /trunk/upload/privmsg.php \n    Modify    /trunk/upload/search.php \n    Modify    /trunk/upload/tracker.php \n    Modify    /trunk/upload/viewforum.php \n    Modify    /trunk/upload/viewtopic.php \n\nПриведение имени константы ANONYMOUS к GUEST_UID, по аналогии с именем константы BOT_UID.</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1389876901,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "revision-539-privedenie-imeni-konstanty-anonymous-k-guest_uid-po-analogii-s-imenem-konstanty",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 539: Приведение имени константы ANONYMOUS к GUEST_UID, по аналогии с именем константы",
+  "url_path": "/threads/revision-539-privedenie-imeni-konstanty-anonymous-k-guest_uid-po-analogii-s-imenem-konstanty.25631/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 959
+}

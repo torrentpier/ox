@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 62285,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 26142,
+  "last_post_date": 1409440082,
+  "node_id": 111,
+  "post_date": 1409346822,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62285,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1698749200,
+      "message_parsed": "<b>Ссылка: </b><a href=\"https://github.com/torrentpier/torrentpier/archive/refs/tags/v2.0.599.zip\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Прямая загрузка</a><br />\n <br />\n<b>Описание:</b><br />\n <br />\nR599<br />\n<br />\nПодготовка к релизу. Функциональные изменения в движок более не вносятся.<br />\n<br />\nОсновные изменения в данной ревизии:<br />\n<br />\n- добавлена поддержка подключения локального файла конфигурации (подробнее в README.md);<br />\n- исправлена ошибка с недоступностью страницы настройки групп на веб-сервере Apache;<br />\n- исправлена ошибка при цитировании выделенного текста в форме быстрого ответа;<br />\n- чистка в языковых файлах, в шаблоне, мелкие исправления верстки шаблона в профиле;<br />\n- исправление ошибки при отправке личных сообщений, вызванных ревизией 598;<br />\n- исправление ошибки с невозможностью отключения показа подписи релиз-групы;<br />\n- переименование файла groupcp.php в group.php.<br />\n<br />\nТакже был добавлен небольшой бонус - летняя версия логотипа TorrentPier II.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1409346822,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62286,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Следующая ревизия - финальная. Возможно будут выходить некоторые промежуточные (599a, 599b, 599c) завтра на протяжении дня. Функциональных изменений, добавлений больше как таковых не будет. Теперь все внимание на фиксы багов, доработку локализации и подготовку конвертера.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1409347052,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62311,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Забыли про одну достаточно важную вещь, которую хотелось бы видеть в стабильной ревизии, поэтому внеплановая ревизия 599b.<br />\n <br />\n<b>Ссылка:</b><br />\nhttps://github.com/torrentpier/torrentpier/commit/2d865de5a1ad4c515707f4e907f7548eb115b873<br />\n <br />\n<b>Описание:</b><br />\n <br />\nДополнение к предыдущей ревизии. Добавлена страница с правилами ресурса, которую администратор может настроить в администраторской панели. Текст правил вводится как обычное сообщение и поддерживает бб-коды. Также был вынесен кеш конфига в отдельную сущность, дабы при его обновлениях не скидывался кеш всего форума в целом. Мелкие правки по шаблону.<br />\n <br />\nДля обновления на ревизию требуется выполнить запрос к базе: <pre class=\"xfBb-code\" data-lang=\"php\">INSERT INTO `bb_config` VALUES (&#039;terms&#039;, &#039;&#039;);</pre>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1409440082,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "r599-podgotovka-k-relizu-funkcional-nye-izmenenia-v-dvizok-bolee-ne-vnosatsa",
+  "sticky": false,
+  "tags": [],
+  "title": "R599: Подготовка к релизу. Функциональные изменения в движок более не вносятся",
+  "url_path": "/threads/r599-podgotovka-k-relizu-funkcional-nye-izmenenia-v-dvizok-bolee-ne-vnosatsa.26142/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 2334
+}

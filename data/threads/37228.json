@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 78021,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 37228,
+  "last_post_date": 1425554768,
+  "node_id": 57,
+  "post_date": 1425515766,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 78021,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Где менять корень сайта чтоб было типа: <a href=\"http://localhost/site/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://localhost/site/</a><br />\nА то тема не грузится.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1425515766,
+      "user_id": 6016,
+      "user_title": "User",
+      "username": "CEHA"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 78041,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"CEHA\">Где менять корень сайта чтоб было типа: <a href=\"http://localhost/site/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://localhost/site/</a><br />\nА то тема не грузится.</blockquote>config.php<br />\n<br />\n$bb_cfg[&#039;script_path&#039;] = &#039;/&#039;;",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1425540902,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 78068,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Virtuoz\">config.php<br />\n<br />\n$bb_cfg[&#039;script_path&#039;] = &#039;/&#039;;</blockquote>Спасибо всё как надо, как-то просмотрел эту опцию.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1425554768,
+      "user_id": 6016,
+      "user_title": "User",
+      "username": "CEHA"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "ustanovka-v-podpapku",
+  "sticky": false,
+  "tags": [],
+  "title": "Установка в подпапку",
+  "url_path": "/threads/ustanovka-v-podpapku.37228/",
+  "user_id": 6016,
+  "username": "CEHA",
+  "view_count": 909
+}

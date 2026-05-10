@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 33291,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 47,
+        "title": "Modifications for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 43,
+    "title": "Modifications for TorrentPier (archive)"
+  },
+  "id": 6834,
+  "last_post_date": 1371269155,
+  "node_id": 43,
+  "post_date": 1371252265,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 33291,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Мод для редиректа по ссылке указанной в админке, т.е., форум выглядит как обычный форум но по клику уходишь куда указано... как то так )))<br />\n <br />\n<img src=\"http://gyazo.com/1090d0fccb65031c2f31dc17748ad970.png\" alt=\"\" /><br />\n <br />\n<img src=\"http://gyazo.com/6aa0bd73b1e37325f44d87a5abd98ca4.png\" alt=\"\" /> <br />\nМод для SVN, но не думаю что там разница большая",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1371252265,
+      "user_id": 729,
+      "user_title": "User",
+      "username": "Wertos"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 33293,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "гуд, но где-то уже было 🙂",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1371255862,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 33294,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "вот тут это было <a href=\"http://torrentpier.com/threads/%D0%A4%D0%BE%D1%80%D1%83%D0%BC-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0.205/page-2\" class=\"link link--internal\">http://torrentpier.com/threads/Форум-ссылка.205/page-2</a>   <br />\n<br />\nно должен заметить, что лучше переделать под это дело &quot;описание&quot;, т.е. описание выводится/ссылка редиректит",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1371258128,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 33295,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Basilevs\">но должен заметить, что лучше переделать под это дело &quot;описание&quot;, т.е. описание выводится/ссылка редиректит</blockquote>А я вот должен заметить, что именно так и нужно ! Ибо у меня сделано для рекламы...<br />\nа я не нашёл ) похерьте топик плз",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1371269155,
+      "user_id": 729,
+      "user_title": "User",
+      "username": "Wertos"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "svn-dev-forum-redirect-url",
+  "sticky": false,
+  "tags": [],
+  "title": "[SVN DEV] Forum redirect URL",
+  "url_path": "/threads/svn-dev-forum-redirect-url.6834/",
+  "user_id": 729,
+  "username": "Wertos",
+  "view_count": 1658
+}

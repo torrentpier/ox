@@ -1,0 +1,102 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 42465,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 47,
+        "title": "Modifications for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 43,
+    "title": "Modifications for TorrentPier (archive)"
+  },
+  "id": 13361,
+  "last_post_date": 1377895175,
+  "node_id": 43,
+  "post_date": 1377892009,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1377892006,
+          "file_size": 6637,
+          "filename": "phpBBadmin.7z",
+          "height": 0,
+          "id": 2228,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/phpbbadmin-7z.2228/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 42465,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"\">/***************************************************************************\n*                              admin_phpbbmyadmin.php\n*                            -------------------\n*  copyright            : (C) 2003, 2004 Armin Altorffer\n*  email                : aaltorffer@hotmail.com\n*\n***************************************************************************/\n \n/***************************************************************************\n*\n*  Copyright:      phpBBMyAdmin v0.3.4 й 2003, 2004 by Armin Altorffer\n*  This product is released under the GPL License.\n*  This product can be freely used and distributed in its current, unmodified\n*  form without permission.\n*  Intellectual Property is retained by the hack author(s) listed above.\n*\n***************************************************************************/</pre>Прикольный мод... типа phpMyAdmin, но в админке ТП<br />\n<div>Spoiler content hidden.</div> <br />\n<b>Сложно установки</b>: Высокая ~35мин.<br />\n<b>Установка</b>:<br />\n<div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1377892009,
+      "user_id": 729,
+      "user_title": "User",
+      "username": "Wertos"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 42466,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "И сразу пофиксим )<br />\n<b>Удалить</b><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$phpbb_root_path = &quot;./../&quot;;</pre><b>Заменить</b><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">include(BB_ROOT . &#039;language/lang_&#039; . $bb_cfg[&#039;default_lang&#039;] . &#039;/lang_phpbbmyadmin.php&#039;);</pre><b>Удалить </b><pre class=\"xfBb-code\" data-lang=\"php\">$file = append_sid(basename(__FILE__));</pre><b> <b>Заменить </b></b><pre class=\"xfBb-code\" data-lang=\"php\">$module[&#039;General&#039;][&#039;phpBBMyAdmin&#039;] = basename(__FILE__);</pre>P.s. Сорри Wetos, то что бросилось сразу в глаза )",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1377893578,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 42468,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>drew</b>, да что смог дак это $db на DB() заменить 😀",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1377895175,
+      "user_id": 729,
+      "user_title": "User",
+      "username": "Wertos"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "phpbbadmin",
+  "sticky": false,
+  "tags": [],
+  "title": "phpBBadmin",
+  "url_path": "/threads/phpbbadmin.13361/",
+  "user_id": 729,
+  "username": "Wertos",
+  "view_count": 1687
+}

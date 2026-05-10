@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 25080,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1900,
+  "last_post_date": 1357232917,
+  "node_id": 57,
+  "post_date": 1357228043,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25080,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Поставив трекер на сервер с Debian не могу авторизироваться. (с любого браузера)<br />\nПодобный вопрос уже рассматривался в <a href=\"http://torrentpier.com/threads/%D0%9D%D0%B5-%D0%B2%D1%85%D0%BE%D0%B4%D0%B8%D1%82-%D0%BD%D0%B0-%D1%82%D1%80%D0%B5%D0%BA%D0%B5%D1%80.611/\" class=\"link link--internal\">этой теме</a>, но к сожалению его решение мне не помогло.<br />\nКак оказалось  magic_quotes_gpc в php.ini на моём сервере был отключен по умолчанию. <br />\nУповаю на ваши ответы.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1357228043,
+      "user_id": 887,
+      "user_title": "User",
+      "username": "r3vizor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25088,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "так мейджик и не нужен, нужно прописать куки правильно и практически все, ну и выставить права на папки",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1357231384,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25093,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>r3vizor</b>, Проверяйте конфиг проблема внем",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1357232917,
+      "user_id": 1186,
+      "user_title": "User",
+      "username": "macfleg"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "ne-loginitsa-na-trekere",
+  "sticky": false,
+  "tags": [],
+  "title": "Не логинится на трекере",
+  "url_path": "/threads/ne-loginitsa-na-trekere.1900/",
+  "user_id": 887,
+  "username": "r3vizor",
+  "view_count": 1184
+}

@@ -1,0 +1,163 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95402,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 42205,
+  "last_post_date": 1704047732,
+  "node_id": 110,
+  "post_date": 1702142066,
+  "posts": [
+    {
+      "attach_count": 5,
+      "attachments": [
+        {
+          "attach_date": 1702142049,
+          "file_size": 7782,
+          "filename": "2023-11-12_213858.webp",
+          "height": 103,
+          "id": 5651,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2023-11-12_213858-webp.5651/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5655-d07dda05a82e1d387df81dfbcc53f465.jpg?hash=OQpwxrRtPC",
+          "width": 860
+        },
+        {
+          "attach_date": 1702142049,
+          "file_size": 2016,
+          "filename": "2023-11-12_214306.webp",
+          "height": 48,
+          "id": 5652,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2023-11-12_214306-webp.5652/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5656-1f0d3f948151265142a3c57c3fb56483.jpg?hash=8HRjPAcZC5",
+          "width": 805
+        },
+        {
+          "attach_date": 1702142049,
+          "file_size": 28186,
+          "filename": "2023-11-12_215724.webp",
+          "height": 455,
+          "id": 5653,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2023-11-12_215724-webp.5653/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5657-e1eab8dd2027fd1ad413154a7e3cd956.jpg?hash=aXS5sB4xIC",
+          "width": 961
+        },
+        {
+          "attach_date": 1702230717,
+          "file_size": 68030,
+          "filename": "2023-12-10_215106.webp",
+          "height": 686,
+          "id": 5655,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2023-12-10_215106-webp.5655/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5659-0b3015cd7702b2f456c123827707d45b.jpg?hash=XSDq0VN1Vg",
+          "width": 1366
+        },
+        {
+          "attach_date": 1704087786,
+          "file_size": 35190,
+          "filename": "94cbf89d182f42fc4ba2823420b7e9ea copy.webp",
+          "height": 387,
+          "id": 5725,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/94cbf89d182f42fc4ba2823420b7e9ea-copy-webp.5725/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5729-45d19b8c0f8ea884c06432131872cab2.jpg?hash=1jMY_SUDJj",
+          "width": 1338
+        }
+      ],
+      "id": 95402,
+      "is_admin": false,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://habr.com/ru/articles/717820/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><b><span style=\"color: rgb(65, 168, 95)\">BitTorrent v2</span></b></a> это следующая версия протокола BitTorrent, которая имеет ряд улучшений:<br />\n<br />\n- Так как хеш каждого файла вшит в торрент файл, клиенты не тратят трафик на скачивание дубликатов.<br />\n<br />\n- Хеш дерево Меркля и вложенность структуры папок, позволяет сократить размер торрент файлов.<br />\n<br />\n- Благодаря хеш дереву, для проверки на битость части файла, необходимо скачать лишь 16Кб листа, раньше приходилось скачивать вcю часть.<br />\n<br />\n- За счёт выравнивания частей (BEP-47), данные каждого файла начинаются на новой части, таким образом при скачивании отдельных файлов, пользователям не приходится скачивать и хранить часть других файлов.<br />\n<br />\n- Можно скачивать раздачу без дубликатов файлов (станет возможно на следующей версии торрент-библиотеки libtorrent).<br />\n<br />\nВ движке реализована отдельная страница для показа информации о содержимом v2 поддерживаемых торрент файлов, таких как клиент, дата создания, имена файлов, их хеши.<br />\n<br />\nПо идее это позволит поисковикам кешировать эту информацию, как в DHT индексаторах, что поможет вашим пользователям находить отдельные файлы по их хешу, имени файла, направляясь на ваш ресурс.<br />\n<br />\n<div>Spoiler content hidden.</div><br />\nФункция отключается для незарегистрированных пользователей, при условии:<br />\n<br />\n1) Ваш трекер приватный, вы отключили поддержку DHT.<br />\n<br />\n2) Создатель включил приватность торрента в клиенте.<br />\n<br />\n<span style=\"font-size: 18px\">Из улучшений анонсера (да-да, мы и над ним поработали, спустя несколько лет):</span><br />\n<br />\n- Поддержка IPv6 (по стандарту BEP 7), форум его тоже теперь поддерживает.<br />\n<br />\n- Переработанная система кеша (анонсер+скрейп), для значительного снижения нагрузки на трекер.<br />\n<br />\n- Multi-scrape (BEP 48), позволяет торрент-клиентам узнавать количество раздающих/скачивающих без обращения к анонсеру.<br />\n<br />\n    Скрейп не затратен как анонсер, так как не записывает в базу данные и даёт возможность торрент-клиентам показывать реальную статистику, помогать в раздаче, если соотношение раздающих/скачивающих требует этого.<br />\n<br />\n- Показ полных скачиваний (сколько раз этот торрент скачали, со всеми файлами).<br />\n<br />\n- Показ торрент-клиентов пользователей на статистиках раздач. <div>Spoiler content hidden.</div><br />\n- Показ последнего раздающего бывшего на раздаче. <div>Spoiler content hidden.</div><br />\n- Показ числа торрент-клиентов в статистике трекера администраторской панели, также возможность гибкой корелляции версий этих клиентов. <div>Spoiler content hidden.</div><br />\n- В анонсере список пиров сортируется с приоритетом на скачивающих, что позволяет улучшить связность роя.<br />\n<br />\n<span style=\"font-size: 18px\">Другие улучшения</span>:<br />\n<br />\n- Движок перешёл на PHP 8.1, что даёт кратное ускорение благодаря компиляции JIT, не забудьте включить его в php.ini.<br />\n<br />\n<div>Spoiler content hidden.</div><br />\n- Закрыты две критические уязвимости.<br />\n- Инвайт коды по событиям.<br />\n- Кнопка &quot;Спасибо&quot;.<br />\n- Поддержка .webp изображений.<br />\n- Поддержка IDN доменов.<br />\n- Бан торрент-клиентов или их версий.<br />\n- Увеличена длина passkey (предыдущие будут работать).<br />\n- Раздачи можно просматривать и скачивать напрямую с Atom (настраиваемо в config.php).<br />\n- Инфо-хеши замороженных раздач теперь не показываются, их нельзя скачать, даже через dl.php.<br />\n- Показ информации о бан статусе пользователя в теме и профиле.<br />\n- Флаги стран в профиле.<br />\nИ многое другое.<br />\n<br />\n<hr /><br />\nTorrentPier — <span style=\"color: rgb(184, 49, 47)\"><b>первый</b></span> торрент-движок, который поддерживает BitTorrent v2 из коробки. Мы не пошли по общему методу &quot;и так работает&quot;.<br />\nЯ также надеюсь, что эти несколько месяцев баг фиксов и улучшений кода будут полезны администраторам ресурсов.<br />\n<br />\nНынешняя стадия движка — RC1.<br />\n~ 15-го числа релиз RC2.<br />\nНа Новый Год планируем выпустить стабильную версию, так что ещё раз попрошу пользователей начать <span style=\"color: rgb(85, 57, 130)\">мигрировать</span>.<br />\n<br />\nСпасибо, что с нами.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1702142066,
+      "user_id": 10699,
+      "user_title": "Developer (ex)",
+      "username": "kovalensky"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95522,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Проводилось ли исследование, сколько пользователей торентов используют клиенты с поддержкой второй версии? Как совместить использование загруженого торрент-файла v2 с тем что его никто не сможет скачать?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1704039606,
+      "user_id": 10787,
+      "user_title": "User",
+      "username": "Pole"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95524,
+      "is_admin": false,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/10787/\">Pole</a> <br />\nИсследования не было, потому что нет единой статистики, кто каким клиентом пользуется.<br />\n<br />\nЕсли есть опасения совместимости, то пользователи свободны создавать гибридный формат (опция hybrid в клиенте), который совмещает в себе оба протокола (v1 + v2).<br />\nВы можете запретить загрузку v2-only торрентов в config.php.<br />\n<br />\nСкачать v2-only торрент, смогут пользователи с клиентами, которые его поддерживают, на данный момент из популярных на слуху qBittorrent, BiglyBT, PicoTorrent, Tixati и т.д.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1704047732,
+      "user_id": 10699,
+      "user_title": "Developer (ex)",
+      "username": "kovalensky"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "pro-bittorrent-v2-ulucsenia-anonsera-i-mnogoe-drugoe-torrentpier-2-4-0",
+  "sticky": false,
+  "tags": [
+    "bep-47",
+    "bep-48",
+    "bep-7",
+    "bittorrent v2"
+  ],
+  "title": "Про BitTorrent v2, улучшения анонсера и многое другое — TorrentPier 2.4.0.",
+  "url_path": "/threads/pro-bittorrent-v2-ulucsenia-anonsera-i-mnogoe-drugoe-torrentpier-2-4-0.42205/",
+  "user_id": 10699,
+  "username": "kovalensky",
+  "view_count": 1636
+}

@@ -1,0 +1,53 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 98322,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      }
+    ],
+    "id": 2,
+    "title": "Resource news"
+  },
+  "id": 43232,
+  "last_post_date": 1764544496,
+  "node_id": 2,
+  "post_date": 1764544496,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98322,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Привет.<br />\n<br />\nЭто первая статья из обещанной сервии, в рамках которой мы будем рассказывать о том, что появится в новой мажорной версии проекта. <br />\n<br />\nСегодня поговорим об одном из главных изменений - мы полностью переработали систему шаблонов.<br />\n<h4 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-cto-bylo\"></a>Что было&#8203;<a class=\"hoverLink\" href=\"#-cto-bylo\" title=\"Permanent link\"></a></h4>Если вы когда-нибудь заглядывали в шаблоны TorrentPier, то наверняка видели такой синтаксис:<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">    &lt;!-- IF TERMS_HTML --&gt;\n    &lt;tr&gt;\n        &lt;td class=&quot;row1&quot;&gt;\n            &lt;div class=&quot;post_wrap&quot;&gt;\n                {TERMS_HTML}\n            &lt;/div&gt;\n        &lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;!-- ENDIF --&gt;\n    &lt;!-- IF IS_ADMIN --&gt;\n    &lt;tr&gt;\n        &lt;td class=&quot;row1&quot;&gt;\n            {TERMS_EDIT}\n        &lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;!-- ENDIF --&gt;</pre>Это наследие phpBB2 и его шаблонизатора eXtreme Styles. Старый шаблонизатор верой и правдой служил проекту много лет, но у него есть одна большая проблема - документации по нему практически нет. Не так давно <a href=\"https://torrentpier.com/threads/dokumentacia-po-sisteme-sablonov-torrentpier-v2-4-v2-8.42472/\" class=\"link link--internal\">появилась</a>, но мы ее делали как раз в рамках ресерча для переписывания. Если вы хотели что-то изменить в существующем или написать свой шаблон, приходилось разбираться методом проб и ошибок или искать древние статьи с форумов phpBB.<br />\n<br />\n<h4 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-cto-stalo\"></a>Что стало&#8203;<a class=\"hoverLink\" href=\"#-cto-stalo\" title=\"Permanent link\"></a></h4>В версии 3.0 мы заменили этот движок на <b>Twig</b> - современный шаблонизатор от создателей Symfony. Это один из самых популярных инструментов в мире PHP, используется в тысячах проектов, и по нему есть море материалов на любом языке.<br />\n<br />\nТеперь тот же код можно написать так:<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">    {% if TERMS_HTML %}\n    &lt;tr&gt;\n        &lt;td class=&quot;row1&quot;&gt;\n            &lt;div class=&quot;post_wrap&quot;&gt;\n                {{ TERMS_HTML|raw }}\n            &lt;/div&gt;\n        &lt;/td&gt;\n    &lt;/tr&gt;\n    {% endif %}\n    {% if IS_ADMIN %}\n    &lt;tr&gt;\n        &lt;td class=&quot;row1&quot;&gt;\n            {{ TERMS_EDIT|raw }}\n        &lt;/td&gt;\n    &lt;/tr&gt;\n    {% endif %}</pre>Вы можете сказать, что изменения невелики, но это один из самых простых примеров, есть куда более сложные, где можно выкинуть огромное количество логики на бэкенде, например легко формируя большие блоки сразу в шаблоне. Для вас же основное отличие в том, что шаблоны на Twig поддерживаются во множестве IDE, и у вас уже &quot;из коробки&quot; есть огромное количество различных модификаторов чтобы какие-то изменения можно было делать автоматически в шаблонах, а не в PHP-коде.<br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-glavnoe-obratnaa-sovmestimost\"></a>Главное - обратная совместимость&#8203;<a class=\"hoverLink\" href=\"#-glavnoe-obratnaa-sovmestimost\" title=\"Permanent link\"></a></h3><b>Ваши старые шаблоны продолжат работать как раньше.</b> Мы написали конвертер, который автоматически преобразует старый синтаксис в Twig прямо на лету. Ничего переписывать не нужно - просто обновитесь, и все заработает. Ну или закиньте старый шаблон и он тоже будет работать.<br />\n<br />\nПри этом, у вас появляется появляется выбор:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Оставить старые шаблоны как есть</li>\n<li data-xf-list-type=\"ul\">Постепенно переписывать на Twig при доработках</li>\n<li data-xf-list-type=\"ul\">Писать новые шаблоны сразу на Twig</li>\n</ul>Можно даже миксовать - в одном файле использовать сразу оба синтаксиса.<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-cto-eto-daet\"></a>Что это дает&#8203;<a class=\"hoverLink\" href=\"#-cto-eto-daet\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><b>Документация.</b> Все есть на <a href=\"https://twig.symfony.com/doc/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">twig.symfony.com</a>, плюс туториалы и примеры на любом другом языке</li>\n<li data-xf-list-type=\"ul\"><b>Современные возможности.</b> Наследование шаблонов, макросы, фильтры - все из коробки</li>\n<li data-xf-list-type=\"ul\"><b>Кеширование.</b> Скомпилированные шаблоны умно кешируются, повторный парсинг не нужен</li>\n<li data-xf-list-type=\"ul\"><b>Отладка.</b> В режиме разработчика появится debug-панель с информацией о загруженных шаблонах</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-cto-dal-se\"></a>Что дальше&#8203;<a class=\"hoverLink\" href=\"#-cto-dal-se\" title=\"Permanent link\"></a></h3>Мы планируем переписать стандартный шаблон на Twig и визуально его обновить. Мы об этом еще расскажем в одной из следующих статей про изменения в версии 3.0. Пока что у нас просто появилась возможность делать это удобно, с кучей новых возможностей и с надеждой на то, что теперь на форуме не будут задавать вопросы по тому, что синтаксис шаблонизатора не понятен.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1764544496,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-3-0-perehod-na-novyj-sablonizator-twig",
+  "sticky": false,
+  "tags": [
+    "3.0",
+    "twig"
+  ],
+  "title": "TorrentPier 3.0: переход на новый шаблонизатор Twig",
+  "url_path": "/threads/torrentpier-3-0-perehod-na-novyj-sablonizator-twig.43232/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 745
+}

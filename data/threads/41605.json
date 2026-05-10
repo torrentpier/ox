@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 89257,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41605,
+  "last_post_date": 1483109912,
+  "node_id": 57,
+  "post_date": 1483096454,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89257,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Добрый день.<br />\nПочему-то не идет подсчет количества скачавших и не показывает сидов, просто нули, хотя уже и качали и сидируют. Подскажите, пожалуйста, где этот момент можно откорректировать.<br />\nЗаранее благодарен.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1483096454,
+      "user_id": 7601,
+      "user_title": "User",
+      "username": "Falcon"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89258,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Воспользоваться поиском, тема уже заезженная",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1483109912,
+      "user_id": 6554,
+      "user_title": "User",
+      "username": "Fakt_37"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "podscet-sidov",
+  "sticky": false,
+  "tags": [],
+  "title": "Подсчет сидов",
+  "url_path": "/threads/podscet-sidov.41605/",
+  "user_id": 7601,
+  "username": "Falcon",
+  "view_count": 827
+}

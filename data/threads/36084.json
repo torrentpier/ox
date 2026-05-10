@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 75953,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 86,
+    "title": "Questions about PHP"
+  },
+  "id": 36084,
+  "last_post_date": 1424392867,
+  "node_id": 86,
+  "post_date": 1424376939,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 75953,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5893/\">@Lektor</a> расскажи как это работает<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">#&lt;div class=\\&quot;((?:[^&gt;]*?))\\&quot;&gt;((?:(?!&lt;div ).)*?)&lt;\\/div&gt;#</pre>Особо непонятно это <b>?:</b>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1424376939,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 75972,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"ler\"><a href=\"https://torrentpier.com/members/5893/\">@Lektor</a> расскажи как это работает<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">#&lt;div class=\\&quot;((?:[^&gt;]*?))\\&quot;&gt;((?:(?!&lt;div ).)*?)&lt;\\/div&gt;#</pre>Особо непонятно это <b>?:</b></blockquote><br />\nСовпадения шаблонам в регулярках, как правило, группируются скобками (), эти группы вызываются в зависимости от того как группы расположены по порядку ($1, $2 или \\\\1, \\\\2). Иногда требуется группировка, которая не будет в последующем вызываться, таким образом. Если сказать еще проще, то просто совпадение такой подгруппы не запоминается, для этого в скобках ставится ?:",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1424392867,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "regularki-dla-parsinga",
+  "sticky": false,
+  "tags": [],
+  "title": "Регулярки для парсинга",
+  "url_path": "/threads/regularki-dla-parsinga.36084/",
+  "user_id": 0,
+  "username": "ler",
+  "view_count": 1235
+}

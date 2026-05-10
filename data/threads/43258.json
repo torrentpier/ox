@@ -1,0 +1,93 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 98466,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 43258,
+  "last_post_date": 1776487724,
+  "node_id": 47,
+  "post_date": 1776487724,
+  "posts": [
+    {
+      "attach_count": 3,
+      "attachments": [
+        {
+          "attach_date": 1776487693,
+          "file_size": 24416,
+          "filename": "bandicam 2026-04-18 09-44-17-449.webp",
+          "height": 128,
+          "id": 6761,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bandicam-2026-04-18-09-44-17-449-webp.6761/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6765-8ba6957b447ac2742ab4e5857a078ecb.jpg?hash=6TLcvp9Dtw",
+          "width": 1125
+        },
+        {
+          "attach_date": 1776487693,
+          "file_size": 143764,
+          "filename": "bandicam 2026-04-18 09-44-32-279.webp",
+          "height": 955,
+          "id": 6762,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bandicam-2026-04-18-09-44-32-279-webp.6762/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6766-344c6fd7b99389d5f10cc87c46378512.jpg?hash=h8bt4x_iri",
+          "width": 1898
+        },
+        {
+          "attach_date": 1776487693,
+          "file_size": 6968,
+          "filename": "BB-код ModernThumb.zip",
+          "height": 0,
+          "id": 6763,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bb-kod-modernthumb-zip.6763/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 98466,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<div style=\"text-align: center\"><b><span style=\"font-size: 18px\">BB-код: ModernThumb 1.0 By DimaUZB2001</span></b>&#8203;</div><hr /><a href=\"https://torrentpier.com/attachments/6761/\"><img src=\"https://torrentpier.com/data/attachments/6/6765-8ba6957b447ac2742ab4e5857a078ecb.jpg?hash=6TLcvp9Dtw\" alt=\"bandicam 2026-04-18 09-44-17-449.webp\" /></a><a href=\"https://torrentpier.com/attachments/6762/\"><img src=\"https://torrentpier.com/data/attachments/6/6766-344c6fd7b99389d5f10cc87c46378512.jpg?hash=h8bt4x_iri\" alt=\"bandicam 2026-04-18 09-44-32-279.webp\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1776487724,
+      "user_id": 7621,
+      "user_title": "User",
+      "username": "DimaUZB2001"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "bb-kod-modernthumb",
+  "sticky": false,
+  "tags": [],
+  "title": "BB-код: ModernThumb",
+  "url_path": "/threads/bb-kod-modernthumb.43258/",
+  "user_id": 7621,
+  "username": "DimaUZB2001",
+  "view_count": 240
+}

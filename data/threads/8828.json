@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 36176,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 8828,
+  "last_post_date": 1373380675,
+  "node_id": 57,
+  "post_date": 1373380291,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 36176,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<div style=\"text-align: left\">Помогите решить такую проблему, создаешь топик, например в новостях сети или трекера, да вообще не важно где...все ок....разлогиниваешся, через некоторое время залогиниваешся снова и тебе же твои сообщения показывает как не прочитанные или новые, хотя ты сам их автор..Я при обновлении наверное где то накосячил, подскажите хоть какие файлы сверить с svn....🙁&#8203;</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1373380291,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 36177,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Dr_Brown</b>, об этом уже говорилось, у меня так же...",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1373380619,
+      "user_id": 1069,
+      "user_title": "Blocked",
+      "username": "makar"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 36178,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>makar</b>, круто...😕",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1373380675,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "problema",
+  "sticky": false,
+  "tags": [],
+  "title": "Проблема....",
+  "url_path": "/threads/problema.8828/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 971
+}

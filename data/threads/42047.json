@@ -1,0 +1,136 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94098,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42047,
+  "last_post_date": 1551099887,
+  "node_id": 57,
+  "post_date": 1550936526,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1550936372,
+          "file_size": 12376,
+          "filename": "Безымянный.webp",
+          "height": 247,
+          "id": 5259,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bezymannyj-webp.5259/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5263-d71ce70907620ce83b2c21b2072f3410.jpg?hash=le3SlNDFQP",
+          "width": 1128
+        }
+      ],
+      "id": 94098,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Перебрался на Cloudflare, и при включении реврайтов:<br />\n<br />\n<img src=\"https://torrentpier.com/attachments/5259/\" alt=\"Безымянный.webp\" /><br />\nполучаю переадресацию, на наш форум, что снят копирайт, к ссылке в копирайте на torrentpier.com добавляется https, и получается что копирайт снят, как решить? Версия 2.1.5",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1550936526,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94099,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Прописать прослушку 80 и 443 портов одновременно. В ссылке копирайта http в версии 2.1.5.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1550946774,
+      "user_id": 93,
+      "user_title": "User",
+      "username": "Ragnar"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94101,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1550948643,
+      "message_parsed": "ссылка копирайта, закодирована в лангах, где идет проверка не знаю<br />\nи еще, не реврайтятся ссылки на аякс, соответственно аякс передается по http",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1550948504,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94102,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">ссылка копирайта, закодирована в лангах, где идет проверка не знаю<br />\nи еще, не реврайтятся ссылки на аякс, соответственно аякс передается по http</blockquote>копирайт в common.php + языковые пакеты + скрипт ...",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1550994060,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94119,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "проблема решена, не правильно был выбран тип сертификата в настройка cloud.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1551099887,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "cloudflare-i-ssl",
+  "sticky": false,
+  "tags": [],
+  "title": "Cloudflare и SSL",
+  "url_path": "/threads/cloudflare-i-ssl.42047/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 2180
+}

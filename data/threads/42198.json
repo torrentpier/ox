@@ -1,0 +1,125 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95351,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 109,
+    "title": "LTS version archive"
+  },
+  "id": 42198,
+  "last_post_date": 1703962395,
+  "node_id": 109,
+  "post_date": 1700489106,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1700489071,
+          "file_size": 12342,
+          "filename": "LTS.webp",
+          "height": 100,
+          "id": 5618,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/lts-webp.5618/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5622-833c6d5c69163ad819911ac32e7a993a.jpg?hash=8VrPBjbU8j",
+          "width": 300
+        }
+      ],
+      "id": 95351,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier LTS. Версия 2.1.5-2023.10-HotFix [Final]</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/5618/\" alt=\"LTS.png\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier-lts/releases/tag/v2.1.5-2023.10-HotFix\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.1.5-2023.10-HotFix · torrentpier/torrentpier-lts</a><br />\n<br />\n<b>Основные изменения:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Release v2.1.5-2023.10-HotFix 🎉</li>\n<li data-xf-list-type=\"ul\">Fixed announce-list indexes ordering <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/339\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#339</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Fixed $bb_cfg[&#039;file_id_ext&#039;] ordering <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/338\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#338</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Normalizing announce-list <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/337\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#337</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Fixed announcer-list issue <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/335\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#335</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/336\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#336</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Don&#039;t create empty announce-list dict, if ann_urls are empty <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/334\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#334</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>, <a href=\"https://github.com/kovalensky\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">kovalensky</a>)</li>\n<li data-xf-list-type=\"ul\">Improve code for retracker addition <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/333\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#333</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>, <a href=\"https://github.com/kovalensky\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">kovalensky</a>)</li>\n<li data-xf-list-type=\"ul\">Don&#039;t use main announce url inside announce-list <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/332\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#332</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>, <a href=\"https://github.com/kovalensky\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">kovalensky</a>)</li>\n<li data-xf-list-type=\"ul\">Don&#039;t check for announce-list while adding new urls <a href=\"https://github.com/torrentpier/torrentpier-lts/commit/9db45170674b1971203527218826fdc4cbbd72c5\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">9db4517</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>, <a href=\"https://github.com/kovalensky\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">kovalensky</a>)</li>\n<li data-xf-list-type=\"ul\">Security measures <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/330\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#330</a>, <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/331\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#331</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>, <a href=\"https://github.com/kovalensky\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">kovalensky</a>)</li>\n<li data-xf-list-type=\"ul\">Fix for html entities being displayed in magnet links <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/329\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#329</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>, <a href=\"https://github.com/kovalensky\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">kovalensky</a>)</li>\n<li data-xf-list-type=\"ul\">Fixed a bug causing inability to view file contents for some torrents <a href=\"https://github.com/torrentpier/torrentpier-lts/pull/328\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#328</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>, <a href=\"https://github.com/kovalensky\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">kovalensky</a>)</li>\n<li data-xf-list-type=\"ul\">Updated UTF8 class up to v2.3.1 <a href=\"https://github.com/torrentpier/torrentpier-lts/commit/ed2220e6f37e7bf98ab17c46c7ec4422a36ad387\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">ed2220e</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Block uploading more than one torrent file <a href=\"https://github.com/torrentpier/torrentpier-lts/commit/33bb006965cb22350624c6e89c4d5b39fd93c087\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">33bb006</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Fixed: Moderators can&#039;t see self IP addresses <a href=\"https://github.com/torrentpier/torrentpier-lts/commit/39d4b14f7a118223b952a98eecf7fe1625fc20b2\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">39d4b14</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Fixed undefined tpl variable SHOW_GROUP_MEMBERSHIP <a href=\"https://github.com/torrentpier/torrentpier-lts/commit/8e9664822c0a4daa514192cdaefa361425d86b29\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">8e96648</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Fixed broken avatar ajax action for users <a href=\"https://github.com/torrentpier/torrentpier-lts/commit/48ea82e4ce706026dc4fd63e8f9153da21d38071\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">48ea82e</a> (<a href=\"https://github.com/belomaxorka\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">belomaxorka</a>)</li>\n<li data-xf-list-type=\"ul\">Unset debug cookies if SQL_DEBUG disabled</li>\n<li data-xf-list-type=\"ul\">Unset debug cookie if user not in dbg_users array</li>\n<li data-xf-list-type=\"ul\">Updated translations</li>\n<li data-xf-list-type=\"ul\">Added missing translations</li>\n<li data-xf-list-type=\"ul\">Some other changes / improvements</li>\n</ul>Для обновления на версию не нужно выполнять дополнительные запросы к базе данных.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1700489106,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95515,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Исправление ошибки, при загрузке новой версии торрент файла (обновление торрента).<br />\n<div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1703962237,
+      "user_id": 8746,
+      "user_title": "User",
+      "username": "rgadguard2"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95516,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"rgadguard2\">Исправление ошибки, при загрузке новой версии торрент файла (обновление торрента).<br />\n<div>Spoiler content hidden.</div></blockquote>Здравствуйте, вы прям мысли мои читаете)) <a href=\"https://github.com/torrentpier/torrentpier-lts/commit/ddc44a6933ee1754d852e8b8c43469d47f97844f\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Коммит</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1703962304,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95517,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"rgadguard2\">Исправление ошибки, при загрузке новой версии торрент файла (обновление торрента).<br />\n<div>Spoiler content hidden.</div></blockquote>За правки спасибо, кому-то точно пригодится. По поводу новой LTS версии, выйдет скоро.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1703962395,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "torrentpier-lts-versia-2-1-5-2023-10-hotfix-final",
+  "sticky": false,
+  "tags": [
+    "lts",
+    "lts-final",
+    "torrentpier-lts",
+    "новая версия",
+    "релиз",
+    "ченжлог"
+  ],
+  "title": "TorrentPier LTS. Версия 2.1.5-2023.10-HotFix [Final]",
+  "url_path": "/threads/torrentpier-lts-versia-2-1-5-2023-10-hotfix-final.42198/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 1069
+}

@@ -1,0 +1,75 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 97381,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 42477,
+  "last_post_date": 1750844660,
+  "node_id": 111,
+  "post_date": 1750844660,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1750844656,
+          "file_size": 6648,
+          "filename": "logos-hexagon-green&blue@0,5x.webp",
+          "height": 343,
+          "id": 6475,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/logos-hexagon-green-blue-0-5x-webp.6475/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6479-921e5090a4f5bf87db249c0cb261be23.jpg?hash=jFIp-r3dyo",
+          "width": 302
+        }
+      ],
+      "id": 97381,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier Cattle. Версия 2.5.0</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/6475/\" alt=\"logos-hexagon-green&amp;blue@0,5x.webp\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/releases/tag/v2.5.0\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.5.0 · torrentpier/torrentpier</a><br />\n<br />\n<b>Чейнджлог:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/compare/v2.4.6-alpha.4...v2.5.0\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Comparing v2.4.6-alpha.4...v2.5.0 · torrentpier/torrentpier</a><br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-rocket-features\"></a>🚀 Features&#8203;<a class=\"hoverLink\" href=\"#-rocket-features\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\">[<b>breaking</b>] Implement centralized Config class to replace global $bb_cfg array (<a href=\"https://github.com/torrentpier/torrentpier/pull/1953\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1953</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/bf9100fbfa74768edb01c62636198a44739d9923\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">bf9100f</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-bug-bug-fixes\"></a>🐛 Bug Fixes&#8203;<a class=\"hoverLink\" href=\"#-bug-bug-fixes\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(installer)</i> Strip protocol from TP_HOST to keep only hostname (<a href=\"https://github.com/torrentpier/torrentpier/pull/1952\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1952</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/81bf67c2be85d49e988b7802ca7e9738ff580031\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">81bf67c</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(sql)</i> Resolve only_full_group_by compatibility issues in tracker cleanup (<a href=\"https://github.com/torrentpier/torrentpier/pull/1951\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1951</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/37a0675adfb02014e7068f4aa82301e29f39eab6\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">37a0675</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-package-dependencies\"></a>📦 Dependencies&#8203;<a class=\"hoverLink\" href=\"#-package-dependencies\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(deps)</i> Bump filp/whoops from 2.18.2 to 2.18.3 (<a href=\"https://github.com/torrentpier/torrentpier/pull/1948\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1948</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/b4776804a408217229caa327c79849cf13ce2aa5\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">b477680</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-tractor-refactor\"></a>🚜 Refactor&#8203;<a class=\"hoverLink\" href=\"#-tractor-refactor\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(censor)</i> [<b>breaking</b>] Migrate Censor class to singleton pattern (<a href=\"https://github.com/torrentpier/torrentpier/pull/1954\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1954</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/74a564d7954c6f8745ebcffdcd9c8997e371d47a\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">74a564d</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(config)</i> [<b>breaking</b>] Encapsulate global $bb_cfg array in Config class (<a href=\"https://github.com/torrentpier/torrentpier/pull/1950\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1950</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/5842994782dfa62788f8427c55045abdbfb5b8e9\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">5842994</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-books-documentation\"></a>📚 Documentation&#8203;<a class=\"hoverLink\" href=\"#-books-documentation\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\">Add Select class migration guide (<a href=\"https://github.com/torrentpier/torrentpier/pull/1960\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1960</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/86abafb11469d14a746d12725b15cf6b7015ec44\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">86abafb</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-gear-miscellaneous\"></a>⚙️ Miscellaneous&#8203;<a class=\"hoverLink\" href=\"#-gear-miscellaneous\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(_release.php)</i> Finally! Removed some useless params (<a href=\"https://github.com/torrentpier/torrentpier/pull/1947\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1947</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/9c7d270598c0153fb82f4b7ad96f5b59399b2159\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">9c7d270</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(cliff)</i> Add conventional commit prefix to changelog message (<a href=\"https://github.com/torrentpier/torrentpier/pull/1957\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1957</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/b1b26187579f6981165d85c316a3c5b7199ce2ee\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">b1b2618</a>)</li>\n</ul>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1750844660,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-cattle-versia-2-5-0",
+  "sticky": false,
+  "tags": [
+    "cattle",
+    "новый релиз",
+    "релиз",
+    "ченжлог"
+  ],
+  "title": "TorrentPier Cattle. Версия 2.5.0",
+  "url_path": "/threads/torrentpier-cattle-versia-2-5-0.42477/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 312
+}

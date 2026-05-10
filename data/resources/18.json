@@ -1,0 +1,435 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Лента новинок новых раздач TPII by PheRum.zip",
+      "id": 6486,
+      "local_path": null,
+      "r2_key": null,
+      "size": 170718,
+      "src_url": "https://torrentpier.com/api/resource-versions/641/download?file=6486"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "gd",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция по установке\"]\nНаходится в архиве с модом. Файл install.txt.\n[/SPOILER]",
+    "owner": "PheRum",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1692545806,
+      "file_size": 25332,
+      "filename": "Снимок экрана 2023-08-20 183513.webp",
+      "height": 528,
+      "id": 5509,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/snimok-ekrana-2023-08-20-183513-webp.5509/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5513-fe45ff8bd58bdfbb1e8fd2452b5d5d4f.jpg?hash=g7uLXZs3By",
+      "width": 479
+    },
+    {
+      "attach_date": 1692545812,
+      "file_size": 55746,
+      "filename": "Снимок экрана 2023-08-20 183544.webp",
+      "height": 186,
+      "id": 5510,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/snimok-ekrana-2023-08-20-183544-webp.5510/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5514-0541141894b688f3f452aa89f2f43cad.jpg?hash=rvJ3wztiAX",
+      "width": 1835
+    }
+  ],
+  "description_parsed": "<b>Poster mod / Лента новинок новых раздач</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Полностью переписанный код ленты мини постеров новых раздач</li>\n<li data-xf-list-type=\"ul\">Возможность отключать ненужные разделы из ленты новинок и отключить всю ленту не используя дополнительных полей в БД</li>\n<li data-xf-list-type=\"ul\">Возможность добавить определенные форумы в исключение через админ-панель</li>\n<li data-xf-list-type=\"ul\">Кеширование в зависимости от настроек пользователя</li>\n<li data-xf-list-type=\"ul\">Имеется возможность менять стиль самих мини постеров (квадратные - закругленные)</li>\n<li data-xf-list-type=\"ul\">Очистка неиспользуемых мини постеров на сервере</li>\n<li data-xf-list-type=\"ul\">Работает со всеми графическими тегами: img, poster, gposter</li>\n</ul>",
+  "download_count": 7751,
+  "external_url": null,
+  "icon_url": null,
+  "id": 18,
+  "is_fileless": null,
+  "last_update": 1752508128,
+  "rating_avg": 4.5,
+  "rating_count": 2,
+  "resource_date": 1369571636,
+  "resource_state": "visible",
+  "slug": "lenta-novinok-novyh-razdac",
+  "tag_line": "Вывод новых раздач на главную страницу с постерами",
+  "tags": [
+    "poster mod",
+    "лента",
+    "лента новинок",
+    "лента новинок новых раздач",
+    "лента новых раздач",
+    "лента раздач"
+  ],
+  "title": "Лента новинок новых раздач",
+  "url_path": "/resources/lenta-novinok-novyh-razdac.18/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.3.0",
+  "versions": [
+    {
+      "download_count": 860,
+      "files": [
+        {
+          "filename": "[FULL] Лента новинок новых раздач TPII by PheRum.zip",
+          "id": 6486,
+          "local_path": null,
+          "r2_key": null,
+          "size": 170718,
+          "src_url": "https://torrentpier.com/api/resource-versions/641/download?file=6486"
+        }
+      ],
+      "id": 641,
+      "rating_avg": 4,
+      "rating_count": 1,
+      "release_date": 1752508128,
+      "version_state": "visible",
+      "version_string": "v1.3.0",
+      "view_url": "https://torrentpier.com/resources/lenta-novinok-novyh-razdac.18/version/641/"
+    },
+    {
+      "download_count": 437,
+      "files": [
+        {
+          "filename": "[FULL] Лента новинок новых раздач TPII by PheRum.zip",
+          "id": 6418,
+          "local_path": null,
+          "r2_key": null,
+          "size": 170013,
+          "src_url": "https://torrentpier.com/api/resource-versions/614/download?file=6418"
+        }
+      ],
+      "id": 614,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1742814120,
+      "version_state": "visible",
+      "version_string": "v1.2.4",
+      "view_url": "https://torrentpier.com/resources/lenta-novinok-novyh-razdac.18/version/614/"
+    },
+    {
+      "download_count": 432,
+      "files": [
+        {
+          "filename": "[FULL] Лента новинок новых раздач TPII by PheRum.zip",
+          "id": 6380,
+          "local_path": null,
+          "r2_key": null,
+          "size": 168612,
+          "src_url": "https://torrentpier.com/api/resource-versions/599/download?file=6380"
+        }
+      ],
+      "id": 599,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1741175880,
+      "version_state": "visible",
+      "version_string": "v1.2.3",
+      "view_url": "https://torrentpier.com/resources/lenta-novinok-novyh-razdac.18/version/599/"
+    },
+    {
+      "download_count": 342,
+      "files": [
+        {
+          "filename": "[FULL] Лента новинок новых раздач TPII by PheRum.zip",
+          "id": 6224,
+          "local_path": null,
+          "r2_key": null,
+          "size": 168593,
+          "src_url": "https://torrentpier.com/api/resource-versions/564/download?file=6224"
+        },
+        {
+          "filename": "[FULL] Лента новинок новых раздач TPII by PheRum.zip",
+          "id": 6225,
+          "local_path": null,
+          "r2_key": null,
+          "size": 168593,
+          "src_url": "https://torrentpier.com/api/resource-versions/564/download?file=6225"
+        }
+      ],
+      "id": 564,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1732728652,
+      "version_state": "visible",
+      "version_string": "v1.2.2",
+      "view_url": "https://torrentpier.com/resources/lenta-novinok-novyh-razdac.18/version/564/"
+    },
+    {
+      "download_count": 438,
+      "files": [
+        {
+          "filename": "[FULL] Лента новинок новых раздач TPII by PheRum.zip",
+          "id": 6217,
+          "local_path": null,
+          "r2_key": null,
+          "size": 168467,
+          "src_url": "https://torrentpier.com/api/resource-versions/563/download?file=6217"
+        }
+      ],
+      "id": 563,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1732535321,
+      "version_state": "visible",
+      "version_string": "v1.2.1",
+      "view_url": "https://torrentpier.com/resources/lenta-novinok-novyh-razdac.18/version/563/"
+    },
+    {
+      "download_count": 434,
+      "files": [
+        {
+          "filename": "[FULL] Лента новинок новых раздач TPII by PheRum.zip",
+          "id": 5830,
+          "local_path": null,
+          "r2_key": null,
+          "size": 159921,
+          "src_url": "https://torrentpier.com/api/resource-versions/466/download?file=5830"
+        }
+      ],
+      "id": 466,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1708158317,
+      "version_state": "visible",
+      "version_string": "v1.2.0",
+      "view_url": "https://torrentpier.com/resources/lenta-novinok-novyh-razdac.18/version/466/"
+    },
+    {
+      "download_count": 423,
+      "files": [
+        {
+          "filename": "[FULL] Лента новинок новых раздач TPII by PheRum.zip",
+          "id": 5828,
+          "local_path": null,
+          "r2_key": null,
+          "size": 159951,
+          "src_url": "https://torrentpier.com/api/resource-versions/464/download?file=5828"
+        }
+      ],
+      "id": 464,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1707987455,
+      "version_state": "visible",
+      "version_string": "v1.1.9",
+      "view_url": "https://torrentpier.com/resources/lenta-novinok-novyh-razdac.18/version/464/"
+    },
+    {
+      "download_count": 431,
+      "files": [
+        {
+          "filename": "[FULL] Лента новинок новых раздач TPII by PheRum.zip",
+          "id": 5815,
+          "local_path": null,
+          "r2_key": null,
+          "size": 159925,
+          "src_url": "https://torrentpier.com/api/resource-versions/461/download?file=5815"
+        }
+      ],
+      "id": 461,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1707828264,
+      "version_state": "visible",
+      "version_string": "v1.1.8",
+      "view_url": "https://torrentpier.com/resources/lenta-novinok-novyh-razdac.18/version/461/"
+    },
+    {
+      "download_count": 438,
+      "files": [
+        {
+          "filename": "[FULL] Лента новинок новых раздач TPII by PheRum.zip",
+          "id": 5775,
+          "local_path": null,
+          "r2_key": null,
+          "size": 159736,
+          "src_url": "https://torrentpier.com/api/resource-versions/445/download?file=5775"
+        }
+      ],
+      "id": 445,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1706119523,
+      "version_state": "visible",
+      "version_string": "v1.1.7",
+      "view_url": "https://torrentpier.com/resources/lenta-novinok-novyh-razdac.18/version/445/"
+    },
+    {
+      "download_count": 419,
+      "files": [
+        {
+          "filename": "[FULL] Лента новинок новых раздач TPII by PheRum.zip",
+          "id": 5759,
+          "local_path": null,
+          "r2_key": null,
+          "size": 159719,
+          "src_url": "https://torrentpier.com/api/resource-versions/442/download?file=5759"
+        }
+      ],
+      "id": 442,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1705937268,
+      "version_state": "visible",
+      "version_string": "v1.1.6",
+      "view_url": "https://torrentpier.com/resources/lenta-novinok-novyh-razdac.18/version/442/"
+    },
+    {
+      "download_count": 431,
+      "files": [
+        {
+          "filename": "[FULL] Лента новинок новых раздач TPII by PheRum.zip",
+          "id": 5756,
+          "local_path": null,
+          "r2_key": null,
+          "size": 159657,
+          "src_url": "https://torrentpier.com/api/resource-versions/441/download?file=5756"
+        }
+      ],
+      "id": 441,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1705935416,
+      "version_state": "visible",
+      "version_string": "v1.1.5",
+      "view_url": "https://torrentpier.com/resources/lenta-novinok-novyh-razdac.18/version/441/"
+    },
+    {
+      "download_count": 424,
+      "files": [
+        {
+          "filename": "[FULL] Лента новинок новых раздач TPII by PheRum.zip",
+          "id": 5755,
+          "local_path": null,
+          "r2_key": null,
+          "size": 159626,
+          "src_url": "https://torrentpier.com/api/resource-versions/440/download?file=5755"
+        }
+      ],
+      "id": 440,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1705934422,
+      "version_state": "visible",
+      "version_string": "v1.1.4",
+      "view_url": "https://torrentpier.com/resources/lenta-novinok-novyh-razdac.18/version/440/"
+    },
+    {
+      "download_count": 444,
+      "files": [
+        {
+          "filename": "[FULL] Лента новинок новых раздач TPII by PheRum.zip",
+          "id": 5705,
+          "local_path": null,
+          "r2_key": null,
+          "size": 159766,
+          "src_url": "https://torrentpier.com/api/resource-versions/427/download?file=5705"
+        }
+      ],
+      "id": 427,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1703692234,
+      "version_state": "visible",
+      "version_string": "v1.1.3",
+      "view_url": "https://torrentpier.com/resources/lenta-novinok-novyh-razdac.18/version/427/"
+    },
+    {
+      "download_count": 423,
+      "files": [
+        {
+          "filename": "[FULL] Лента новинок новых раздач TPII by PheRum.zip",
+          "id": 5685,
+          "local_path": null,
+          "r2_key": null,
+          "size": 159706,
+          "src_url": "https://torrentpier.com/api/resource-versions/421/download?file=5685"
+        }
+      ],
+      "id": 421,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1702873316,
+      "version_state": "visible",
+      "version_string": "v1.1.2",
+      "view_url": "https://torrentpier.com/resources/lenta-novinok-novyh-razdac.18/version/421/"
+    },
+    {
+      "download_count": 420,
+      "files": [
+        {
+          "filename": "[FULL] Лента новинок новых раздач TPII by PheRum.zip",
+          "id": 5663,
+          "local_path": null,
+          "r2_key": null,
+          "size": 158872,
+          "src_url": "https://torrentpier.com/api/resource-versions/413/download?file=5663"
+        }
+      ],
+      "id": 413,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1702463226,
+      "version_state": "visible",
+      "version_string": "v1.1.1",
+      "view_url": "https://torrentpier.com/resources/lenta-novinok-novyh-razdac.18/version/413/"
+    },
+    {
+      "download_count": 500,
+      "files": [
+        {
+          "filename": "[FULL] Лента новинок новых раздач TPII by PheRum.zip",
+          "id": 5662,
+          "local_path": null,
+          "r2_key": null,
+          "size": 158853,
+          "src_url": "https://torrentpier.com/api/resource-versions/412/download?file=5662"
+        }
+      ],
+      "id": 412,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1702403670,
+      "version_state": "visible",
+      "version_string": "v1.1.0",
+      "view_url": "https://torrentpier.com/resources/lenta-novinok-novyh-razdac.18/version/412/"
+    },
+    {
+      "download_count": 514,
+      "files": [
+        {
+          "filename": "[torrentpier.com][FULL] Постеры раздач TPII by PheRum_1 обновленная.zip",
+          "id": 5661,
+          "local_path": null,
+          "r2_key": null,
+          "size": 155388,
+          "src_url": "https://torrentpier.com/api/resource-versions/411/download?file=5661"
+        }
+      ],
+      "id": 411,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1702398018,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/lenta-novinok-novyh-razdac.18/version/411/"
+    }
+  ],
+  "view_count": 3961
+}

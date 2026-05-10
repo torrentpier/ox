@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 57861,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25620,
+  "last_post_date": 1389874501,
+  "node_id": 111,
+  "post_date": 1389874501,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57861,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 548: Fix Конфигурация форумов</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">GTDarkNightmare</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/upload/config.php \n    Modify    /trunk/upload/templates/admin/admin_forums.tpl \n\nFix Конфигурация форумов</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1389874501,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "revision-548-fix-konfiguracia-forumov",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 548: Fix Конфигурация форумов",
+  "url_path": "/threads/revision-548-fix-konfiguracia-forumov.25620/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 833
+}

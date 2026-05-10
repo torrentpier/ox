@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 8299,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 47,
+        "title": "Modifications for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 43,
+    "title": "Modifications for TorrentPier (archive)"
+  },
+  "id": 646,
+  "last_post_date": 1326467570,
+  "node_id": 43,
+  "post_date": 1325247104,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 8299,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Всем доброго времени суток. Помогите пожалуйста с адаптацией memcache чата от Exile&#039;a.<br />\nВ общем вроде основное сменил всё, <b>выскакивает ошибка в окне чата:</b><br />\nWarning: Invalid argument supplied for foreach() in C:\\nimp\\htdocs\\tracker.org\\shoutbox_view.php on line 20 ﻿<br />\nЛиния: foreach ($shout_cached as $shout_row)<br />\n<b>После отправления сообщения</b>:<br />\nFatal error: Call to undefined function make_clickable() in C:\\nimp\\htdocs\\tracker.org\\shoutbox.php on line 39<br />\nЛиния: $message = make_clickable($message);<br />\n-------------------------------------------<br />\n<b>shoutbox_view.php:</b><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;?php\n\ndefine(&#039;IN_PHPBB&#039;, true);\ndefine(&#039;BB_SCRIPT&#039;, &#039;shoutbox_view&#039;);\ndefine(&#039;BB_ROOT&#039;, &#039;./&#039;);\ninclude(BB_ROOT . &#039;common.php&#039;);\ninclude(BB_ROOT . &#039;includes/bbcode.php&#039;);\n\n$memcache = new Memcache;\n$memcache-&gt;connect(&#039;localhost&#039;, 11211);\n\n$user-&gt;session_start();\n\nif(!$userdata[&#039;user_active&#039;]) die();\n\n$shout_cached = $memcache-&gt;get(&#039;shout&#039;);\nif($shout_cached) echo&quot;&lt;!-- from_cache --&gt;\\r\\n&quot;;\n\n$i = 0;\nforeach ($shout_cached as $shout_row)\n{\n$i++;\n$row_class = !($i % 2) ? &#039;row1&#039; : &#039;row2&#039;;\n$shout = str_replace(&quot;\\n&quot;, &quot;\\n&lt;br /&gt;\\n&quot;, smilies_pass($shout_row[&#039;shout_text&#039;]));\n\n$template-&gt;assign_block_vars(&#039;shoutrow&#039;, array(\n&#039;ROW_CLASS&#039; =&gt; $row_class,\n&#039;SHOUT&#039; =&gt; $shout,\n&#039;TIME&#039; =&gt; create_date(&#039;H:i:s&#039;, $shout_row[&#039;shout_time&#039;], $userdata[&#039;user_timezone&#039;]),\n&#039;USERNAME&#039; =&gt; &#039;&lt;b&gt;&#039;.$shout_row[&#039;username&#039;].&#039;&lt;/b&gt;&#039;,\n&#039;USERNAME_JS&#039; =&gt; addslashes($shout_row[&#039;username&#039;]),\n&#039;SHOUT_ID&#039; =&gt; &#039;id=&quot;shout_&#039;.$shout_row[&#039;shout_id&#039;].&#039;&quot;&#039;,\n&#039;SHOUT_DEL_IMG&#039; =&gt; ($userdata[&#039;user_level&#039;] == 1 || $userdata[&#039;user_level&#039;] == 2) ? &#039;&lt;img src=&quot;images/shout_del.png&quot; title=&quot;Удалить&quot; alt=&quot;Удалить&quot; class=&quot;clickable&quot; onclick=&quot;ajax.shout_del(&#039;.$shout_row[&#039;shout_id&#039;].&#039;); return false;&quot; align=&quot;absmiddle&quot;&gt;&amp;nbsp;&#039; : &#039;&#039;,\n&#039;SHOUT_PROFILE_LINK&#039; =&gt; &#039;&lt;a href=&quot;profile.php?mode=viewprofile&amp;u=&#039;.$shout_row[&#039;shout_user_id&#039;].&#039;&quot; target=&quot;_blank&quot;&gt;&lt;img title=&quot;Ссылка на профиль&quot; alt=&quot;Ссылка на профиль&quot; align=&quot;absmiddle&quot; src=&quot;images/icon_external.png&quot; /&gt;&lt;/a&gt;&#039;,\n));\n}\n\n$template-&gt;set_filenames(array(&#039;body&#039; =&gt; &#039;shoutbox_view_body.tpl&#039;));\n$template-&gt;pparse(&#039;body&#039;);\n?&gt;</pre><b>shoutbox.php:</b><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;?php\n\ndefine(&#039;IN_PHPBB&#039;, true);\ndefine(&#039;BB_SCRIPT&#039;, &#039;shoutbox&#039;);\ndefine(&#039;BB_ROOT&#039;, &#039;./&#039;);\ninclude(BB_ROOT . &#039;common.php&#039;);\ninclude(BB_ROOT . &#039;includes/bbcode.php&#039;);\ninclude(BB_ROOT . &#039;includes/functions_post.php&#039;);\n\n$memcache = new Memcache;\n$memcache-&gt;connect(&#039;localhost&#039;, 11211);\n\n$user-&gt;session_start();\ngenerate_smilies(&#039;inline&#039;);\n\nif(!$userdata[&#039;user_active&#039;]) die();\n\n$refresh = (isset($_POST[&#039;auto_refresh&#039;]) || isset($_POST[&#039;refresh&#039;])) ? 1 : 0;\n$submit = (isset($_POST[&#039;shout&#039;]) &amp;&amp; isset($_POST[&#039;message&#039;])) ? 1 : 0;\n\nif ($refresh)\n{\n$message = ( !empty($_POST[&#039;message&#039;]) ) ? htmlspecialchars(trim(stripslashes($_POST[&#039;message&#039;]))) : &#039;&#039;;\nif (!empty($message))\n{\n$template-&gt;assign_var(&#039;MESSAGE&#039;,$message);\n}\n} else\nif ($submit || isset($_POST[&#039;message&#039;]))\n{\n$message = (isset($_POST[&#039;message&#039;])) ? trim($_POST[&#039;message&#039;]) : &#039;&#039;;\nif (!empty($message))\n{\n$html_entities_match = array(&#039;#&amp;(?!(\\#[0-9]+;))#&#039;, &#039;#&lt;#&#039;, &#039;#&gt;#&#039;, &#039;#&quot;#&#039;);\n$html_entities_replace = array(&#039;&amp;amp;&#039;, &#039;&amp;lt;&#039;, &#039;&amp;gt;&#039;, &#039;&amp;quot;&#039;);\n$message = str_replace(&quot;\\r&quot;, &#039;&#039;, trim($message));\n$message = preg_replace(&quot;#\\n{3,}#&quot;, &quot;\\n\\n&quot;, $message);\n$message = preg_replace($html_entities_match, $html_entities_replace, $message);\n$message = make_clickable($message);\n$message = smilies_pass($message);\n$message = nl2br($message);\n$sql = &quot;INSERT INTO &quot;.SHOUTBOX_TABLE.&quot; (shout_id, shout_text, shout_time, shout_user_id, shout_username) VALUES (null, &#039;&quot;.DB()-&gt;escape($message).&quot;&#039;, &#039;&quot;.time().&quot;&#039;, &#039;&quot;.$userdata[&#039;user_id&#039;].&quot;&#039;, &#039;&quot;.DB()-&gt;escape($userdata[&#039;username&#039;]).&quot;&#039;)&quot;;\nif ( !(DB()-&gt;sql_query($sql)) )\n{\nmessage_die(GENERAL_ERROR, &#039;Could not post shoutbox information&#039;, &#039;&#039;, __LINE__, __FILE__, $sql);\n}\n$sql_memcache = &quot;SELECT s.*, u.username FROM &quot; . SHOUTBOX_TABLE . &quot; s, &quot;.USERS_TABLE.&quot; u WHERE s.shout_user_id = u.user_id ORDER BY s.shout_time DESC LIMIT 0, 25&quot;;\n$result = DB()-&gt;sql_query($sql_memcache);\nwhile ($shout_row = DB()-&gt;sql_fetchrow($result))\n{\n$to_memcache[]=$shout_row;\n}\n$memcache-&gt;set(&#039;shout&#039;,$to_memcache,false,43200);\n}\n}\n\n$template-&gt;assign_vars(array(\n&#039;U_SHOUTBOX&#039; =&gt; append_sid(&quot;shoutbox.php&quot;),\n&#039;U_SHOUTBOX_VIEW&#039; =&gt; append_sid(&quot;shoutbox_view.php&quot;),\n));\n\n$template-&gt;set_filenames(array(&#039;body&#039; =&gt; &#039;shoutbox_body.tpl&#039;));\n$template-&gt;pparse(&#039;body&#039;);\n?&gt;</pre>Буду очень признателен кто поможет полностью его адаптировать.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1325247104,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 8362,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"\">Invalid argument supplied for foreach()</pre>До foreach вставь проверку на <span style=\"color: #0000ff\"><b>is_array()</b></span>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1325300297,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9413,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Ой, удалите уже этот чат отовсюду. Я сам-то не использую его уже год как, а вы все пытаетесь труп реанимировать прямыми вливаниями свежей крови. Дано перешел на решение от _Xz_, которое после и дорабатывал до приемлемого для себя функционала и производитльности.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1326467570,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "memcached-cat",
+  "sticky": false,
+  "tags": [],
+  "title": "Memcached чат",
+  "url_path": "/threads/memcached-cat.646/",
+  "user_id": 55,
+  "username": "Lange",
+  "view_count": 2962
+}

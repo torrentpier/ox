@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 29453,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 3703,
+  "last_post_date": 1363635036,
+  "node_id": 90,
+  "post_date": 1363634963,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 29453,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>TmpFS</b> - это быстрая и эффективная файловая система в ОЗУ, а не на ПЗУ, как прочие ФС. Предназначена для временного хранения файлов с оптимальным расходом памяти и скоростными характеристиками. Обычно используется при монтировании в каталог /tmp, в котором много постоянно меняющихся временных мелких файлов, поэтому может быть целесообразно размещать их в памяти.<br />\n <br />\n<b>TmpFS</b> очень подобна RAM-диску, тем что данные находятся в оперативной памяти. При работе используется виртуальную память (virtual memory, VM), т.е. RAM и SWAP (при потребности подключается пространство подкачки).<br />\n <br />\n<b>TmpFS</b> может динамически использовать свободную память.<br />\n<b>TmpFS</b> наиболее быстрая и соответственно производительная из RAM-based файловых систем на текущий момент времени. TmpFS была перенесена с NetBSD в FreeBSD 7-Release и на текущий момент для FreeBSD 9.0 реализация ее в ядре рассматривается как экспериментальная возможность. Она должна использоваться на системах с не критическими задачами.<br />\n <br />\n <br />\nДля включения в ядро данной возможности нужно перед компиляцией добавить следующую строку:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">options TMPFS</pre>Если не хотим собирать ядро<br />\n<pre class=\"xfBb-code\" data-lang=\"\">kldload tmpfs</pre>либо при загрузке системы подгрузить как модуль, дописав в /boot/loader.conf строку:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">tmpfs_load=&quot;YES&quot;</pre>и для автоматического монтирования в нужный каталог добавить соответствующую запись в /etc/fstab, например, для объема ФС в 1G:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">tmpfs /tmp tmpfs rw,mode=01777,size=1073741824 0 0</pre> <br />\nпри ручном монтировании будет достаточно команды:<br />\n<pre class=\"xfBb-code\" data-lang=\"\"> mount -t tmpfs -o mode=01777,size=1073741824 tmpfs /tmp</pre> <br />\n<b>При монтировании tmpfs доступны следующие опции:</b><br />\n <br />\ngid — задает ID группы для корневой inode ФС (по умолчанию будет GID точки монтирования);<br />\nuid — задает ID пользователя (по умолчанию — UID точки монтирования);<br />\nmode — права доступа в числовой нотации (по умолчанию — как выставлены на точке монтирования);<br />\ninodes — максимальное кол-во нод, доступных для ФС. Если не задано, то выбирается соответствующее максимальное значение для размера, который был задан в опции size;<br />\nsize — общий объем ФС в байтах. По умолчанию равняется нулю. Если 0 или значение больше чем SIZE_MAX — PAGE_SIZE, то будет использоваться доступное кол-во памяти, включая основную память и пространство подкачки (SWAP);<br />\nmaxfilesize — максимальный объем файла в байтах. По умолчанию — максимально возможный.<br />\n <br />\nПосле монтирования можно встретить в /var/log/messages сообщение:<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">kernel: WARNING: TMPFS is considered to be a highly experimental feature\nin FreeBSD</pre> <br />\nупоминание об экспериментальном состоянии поддержки ядром данного функционала, о чем не следует забывать при намерении использовать ее на серьезных проектах.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1363634963,
+      "user_id": 37,
+      "user_title": "User",
+      "username": "Varius"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 29454,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Лично я использую для хранения кеша трекера +кеш Mysql...",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1363635036,
+      "user_id": 37,
+      "user_title": "User",
+      "username": "Varius"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "tmpfs-v-freebsd",
+  "sticky": false,
+  "tags": [],
+  "title": "TmpFS в FreeBSD",
+  "url_path": "/threads/tmpfs-v-freebsd.3703/",
+  "user_id": 37,
+  "username": "Varius",
+  "view_count": 2013
+}

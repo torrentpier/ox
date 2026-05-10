@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 98364,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 43240,
+  "last_post_date": 1768219367,
+  "node_id": 47,
+  "post_date": 1768219367,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98364,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka submitted a new resource:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/vrema-vypolnenia-kron-zadac.331/\" class=\"link link--internal\">Время выполнения крон задач</a> - Добавляет в админ-панели отображение времени выполнения крон задач.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> Добавляет в админ-панели отображение времени выполнения крон задач.<br />\n<b>Совместимость:</b> все версии.</blockquote><br />\n<a href=\"https://torrentpier.com/resources/vrema-vypolnenia-kron-zadac.331/\" class=\"link link--internal\">Read more about this resource...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1768219367,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "vrema-vypolnenia-kron-zadac",
+  "sticky": false,
+  "tags": [],
+  "title": "Время выполнения крон задач",
+  "url_path": "/threads/vrema-vypolnenia-kron-zadac.43240/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 184
+}

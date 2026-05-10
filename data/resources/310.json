@@ -1,0 +1,178 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Смена ника за сид-бонусы by belomaxorka.zip",
+      "id": 6267,
+      "local_path": null,
+      "r2_key": null,
+      "size": 3847,
+      "src_url": "https://torrentpier.com/api/resource-versions/581/download?file=6267"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1732958564,
+      "file_size": 9870,
+      "filename": "firefox_gewUrf9eqC.webp",
+      "height": 268,
+      "id": 6228,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_gewurf9eqc-webp.6228/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6232-a0906ac1ab3b01e97c74177f160c04e6.jpg?hash=7da4yobSt-",
+      "width": 425
+    },
+    {
+      "attach_date": 1732958564,
+      "file_size": 13370,
+      "filename": "firefox_Og7FoVGlzX.webp",
+      "height": 118,
+      "id": 6229,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_og7fovglzx-webp.6229/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6233-4acfc9b579e1b5c921aed73767e7218e.jpg?hash=G9OQ62OhTr",
+      "width": 1334
+    },
+    {
+      "attach_date": 1732958564,
+      "file_size": 9658,
+      "filename": "firefox_TEmmpzw37t.webp",
+      "height": 133,
+      "id": 6230,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_temmpzw37t-webp.6230/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6234-8a40cbc1e2c23d20f59b73ba0579dc51.jpg?hash=Tu65WV2_MA",
+      "width": 452
+    },
+    {
+      "attach_date": 1732983460,
+      "file_size": 9344,
+      "filename": "photo_2024-11-30_22-42-22.webp",
+      "height": 80,
+      "id": 6232,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2024-11-30_22-42-22-webp.6232/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6236-2d95c52f080f6e3622a4c0203ca213af.jpg?hash=1LhpuHPJHo",
+      "width": 835
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Добавляет возможность пользователю изменить свой ник за сид-бонусы. Смена возможна ограниченное количество раз (указывается в настройках). Мод работает только в том случае, если в настройках форума отключена возможность смены ника пользователями <i>($bb_cfg[&#039;allow_namechange&#039;])</i>.<br />\nСамый первый ник пользователя (ник который указан при регистрации) сохраняется в базу данных (мало-ли понадобиться найти пользователя по старому нику).<br />\n<b>Совместимость:</b> v2.1.5, LTS.",
+  "download_count": 432,
+  "external_url": null,
+  "icon_url": null,
+  "id": 310,
+  "is_fileless": null,
+  "last_update": 1734279190,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1732958570,
+  "resource_state": "visible",
+  "slug": "smena-nika-za-sid-bonusy",
+  "tag_line": "Добавляет возможность пользователю изменить свой ник за сид-бонусы.",
+  "tags": [
+    "мод",
+    "моды",
+    "ник",
+    "ники",
+    "сид",
+    "сидбонус",
+    "сидбонусы",
+    "смена ника",
+    "смена ника за сидбонусы"
+  ],
+  "title": "Смена ника за сид-бонусы",
+  "url_path": "/resources/smena-nika-za-sid-bonusy.310/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.1.1",
+  "versions": [
+    {
+      "download_count": 224,
+      "files": [
+        {
+          "filename": "[FULL] Смена ника за сид-бонусы by belomaxorka.zip",
+          "id": 6267,
+          "local_path": null,
+          "r2_key": null,
+          "size": 3847,
+          "src_url": "https://torrentpier.com/api/resource-versions/581/download?file=6267"
+        }
+      ],
+      "id": 581,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1734279190,
+      "version_state": "visible",
+      "version_string": "v1.1.1",
+      "view_url": "https://torrentpier.com/resources/smena-nika-za-sid-bonusy.310/version/581/"
+    },
+    {
+      "download_count": 115,
+      "files": [
+        {
+          "filename": "[FULL] Смена ника за сид-бонусы by belomaxorka.zip",
+          "id": 6231,
+          "local_path": null,
+          "r2_key": null,
+          "size": 3821,
+          "src_url": "https://torrentpier.com/api/resource-versions/567/download?file=6231"
+        }
+      ],
+      "id": 567,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1732983433,
+      "version_state": "visible",
+      "version_string": "v1.1.0",
+      "view_url": "https://torrentpier.com/resources/smena-nika-za-sid-bonusy.310/version/567/"
+    },
+    {
+      "download_count": 95,
+      "files": [
+        {
+          "filename": "[FULL] Смена ника за сид-бонусы by belomaxorka.zip",
+          "id": 6227,
+          "local_path": null,
+          "r2_key": null,
+          "size": 3257,
+          "src_url": "https://torrentpier.com/api/resource-versions/566/download?file=6227"
+        }
+      ],
+      "id": 566,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1732958570,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/smena-nika-za-sid-bonusy.310/version/566/"
+    }
+  ],
+  "view_count": 503
+}

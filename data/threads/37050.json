@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 77792,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 37050,
+  "last_post_date": 1425423750,
+  "node_id": 47,
+  "post_date": 1425423750,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 77792,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Пользователь Exile разместил новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/bb-kod-tekst-v-verxnem-i-nizhnem-indekse.193/\" class=\"link link--internal\">BB-код: текст в верхнем и нижнем индексе</a> - Добавляет BB-код текста в верхнем и нижнем индексе.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> добавляет BB-код текста в верхнем и нижнем индексе.</blockquote><br />\n<a href=\"https://torrentpier.com/resources/bb-kod-tekst-v-verxnem-i-nizhnem-indekse.193/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1425423750,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "bb-kod-tekst-v-verhnem-i-niznem-indekse",
+  "sticky": false,
+  "tags": [],
+  "title": "BB-код: текст в верхнем и нижнем индексе",
+  "url_path": "/threads/bb-kod-tekst-v-verhnem-i-niznem-indekse.37050/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 1052
+}

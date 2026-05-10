@@ -1,0 +1,106 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "orders.zip",
+      "id": 3219,
+      "local_path": null,
+      "r2_key": null,
+      "size": 7834,
+      "src_url": "https://torrentpier.com/api/resource-versions/233/download?file=3219"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]----------- SQL ---------------------\nCREATE TABLE IF NOT EXISTS `bb_order` (\n  `order_id` int(10) unsigned NOT NULL auto_increment,\n  `order_forum_id` smallint(5) NOT NULL default '0',\n  `order_name` text,\n  `order_desc` text,\n  `order_time` int(11) NOT NULL,\n  `order_user_performed_id` int(1) NOT NULL default '0',\n  `order_topic_id` mediumint(8) NOT NULL default '0',\n  `order_yes` int(1) NOT NULL default '0',\n  `order_user_id` int(10) NOT NULL default '0',\n  `order_vote` int(10) NOT NULL default '0',\n  PRIMARY KEY  (`order_id`)\n) ENGINE=MyISAM  DEFAULT CHARSET=utf8;\n\nCREATE TABLE IF NOT EXISTS `bb_order_comment` (\n  `comment_id` int(10) unsigned NOT NULL auto_increment,\n  `order_id` int(10) unsigned NOT NULL,\n  `comment` text,\n  `comment_time` int(11) NOT NULL,\n  `comment_user_id` int(10) NOT NULL default '0',\n  PRIMARY KEY  (`comment_id`)\n) ENGINE=MyISAM  DEFAULT CHARSET=utf8;\n--------------- ajax.php ---------------\nНайти\n'view_profile'      => array('user'),\nНиже вставить\n'order'              => array('user'),\n\nНайти\nfunction view_profile()\n    {\n        require(AJAX_DIR . 'view_profile.php');\n    }\nНиже вставить\nfunction order()\n    {\n        require(AJAX_DIR . 'order.php');\n    }\n\n----------------- init_bb.php -------------\nНайти\ndefine('BB_LOG',                  'bb_log');\nНиже вставить\ndefine('BB_ORDER',                'bb_order');   \n   \n----------------------- lang_main.php ----------------\n\n// Start order mod\n$lang['ORDER_SECTION'] = 'Секция запросов';\n$lang['ORDER'] = 'Запрос';\n$lang['ORDER_ADDED'] = 'Добавлен';\n$lang['USER_ORDERED_ADD'] = 'Запросил';\n$lang['ORDER_YES'] = 'Выполнен ?';\n$lang['USER_ORDER_PERFORMED'] = 'Выполнил';\n$lang['ORDER_VOTE'] = 'Голосов';\n$lang['ORDER_ADD'] = 'Сделать запрос';\n$lang['ORDER_MY'] = 'Мои запросы';\n$lang['ORDER_ALL'] = 'Все запросы';\n$lang['ORDER_HIDE_YES'] = 'Спрятать выполненные';\n$lang['INPUT_ORDER_HEAD'] = 'Введите заголовок запроса';\n$lang['INPUT_ORDER_DESC'] = 'Введите краткое описание';\n$lang['ORDER_ARE_VOTE'] = 'Извините, но Вы уже голосовали за данный запрос сегодня !\\n Голосовать можно раз в сутки !';\n$lang['SET_ORDER_TOPIC_ID'] = 'В этом поле укажите ID топика';\n$lang['ORDER_TOPIC_ID_NOT_SET'] = 'ID топика не указан !!!';\n$lang['ORDER_ABUSE'] = 'Нарушение';\n$lang['ORDER_SHOW_ABUSE'] = 'C нарушениями';\n$lang['SELECT_ORDER_FORUM'] = '<b>Выберите форум.</b><br />В котором, по Вашему мнению должна располагаться раздача';\n// End order mod[/PHP]\n[/SPOILER]",
+    "owner": "Wertos",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1391751386,
+      "file_size": 33178,
+      "filename": "t87v.webp",
+      "height": 363,
+      "id": 2415,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/t87v-webp.2415/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2420-ce5c4d306b1ab4acd680eae6bad74619.jpg?hash=0pX51bgkjs",
+      "width": 1257
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет возможность пользователям делать заказы на раздачи, которые они хотели бы видеть.",
+  "download_count": 372,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/88.jpg?1430245866",
+  "id": 88,
+  "is_fileless": null,
+  "last_update": 1425407204,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1391751391,
+  "resource_state": "visible",
+  "slug": "stol-zakazov",
+  "tag_line": "Добавляет возможность пользователям делать заказы на раздачи, которые они хотели бы видеть.",
+  "tags": [],
+  "title": "Стол заказов",
+  "url_path": "/resources/stol-zakazov.88/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 252,
+      "files": [
+        {
+          "filename": "orders.zip",
+          "id": 3219,
+          "local_path": null,
+          "r2_key": null,
+          "size": 7834,
+          "src_url": "https://torrentpier.com/api/resource-versions/233/download?file=3219"
+        }
+      ],
+      "id": 233,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425407204,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/stol-zakazov.88/version/233/"
+    },
+    {
+      "download_count": 126,
+      "files": [
+        {
+          "filename": "Orders_TP_II.rar",
+          "id": 2420,
+          "local_path": null,
+          "r2_key": null,
+          "size": 7309,
+          "src_url": "https://torrentpier.com/api/resource-versions/94/download?file=2420"
+        }
+      ],
+      "id": 94,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1391756429,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/stol-zakazov.88/version/94/"
+    }
+  ],
+  "view_count": 566
+}

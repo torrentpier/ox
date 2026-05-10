@@ -1,0 +1,65 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95245,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 42182,
+  "last_post_date": 1696870914,
+  "node_id": 3,
+  "post_date": 1696870914,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1696870910,
+          "file_size": 7125651,
+          "filename": "TorrentPier_II_R400_modified_.zip",
+          "height": 0,
+          "id": 5553,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/torrentpier_ii_r400_modified_-zip.5553/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 95245,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Год выпуска: </b>13-04-2012<br />\n<b>Разработчик:</b> TorrentPier<br />\n<br />\nСистемные требования:<br />\nPHP 5.3.4 и выше<br />\nMySQL 5.1 и выше (либо его форк, например, Maria)<br />\nApache 2.2 и выше (либо другой веб-сервер с аналогичными характеристиками, например, nginx)<br />\nДоступ к серверному крону (желательно)<br />\n<br />\n- золотые дни<br />\n- Мультитрекер<br />\n- [Last added post] + addon<br />\n- +4 шаблона на выбор",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1696870914,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-r400-modified-dla-oznakomlenia",
+  "sticky": false,
+  "tags": [],
+  "title": "TorrentPier R400 Modified (для ознакомления)",
+  "url_path": "/threads/torrentpier-r400-modified-dla-oznakomlenia.42182/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 622
+}

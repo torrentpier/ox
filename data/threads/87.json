@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 795,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 87,
+  "last_post_date": 1311758848,
+  "node_id": 57,
+  "post_date": 1311693973,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 795,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Было гдето 900 зарегестрированых торрент файлов и осталось толька 42 вс остальные постепенно разрегистрировались, вчом проблема может быть ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1311693973,
+      "user_id": 35,
+      "user_title": "User",
+      "username": "AnSan"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 796,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"AnSan\">Было гдето 900 зарегестрированых торрент файлов и осталось толька 42 вс остальные постепенно разрегистрировались, вчом проблема может быть ?</blockquote>Крон.<br />\n// Days to keep torrent registered, if:<br />\n$bb_cfg[&#039;seeder_last_seen_days_keep&#039;]  = 20;<br />\n$bb_cfg[&#039;seeder_never_seen_days_keep&#039;] = 5;",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1311697990,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 797,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Locer</b>, нужно везде нули поставить?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1311699147,
+      "user_id": 127,
+      "user_title": "User",
+      "username": "kpacaBa"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 814,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"kpacaBa\"><b>Locer</b>, нужно везде нули поставить?</blockquote>Да. Попробуй перед тем как с базой старой соединять",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1311758848,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "razregistracia-torentov",
+  "sticky": false,
+  "tags": [],
+  "title": "Разрегистрация торентов",
+  "url_path": "/threads/razregistracia-torentov.87/",
+  "user_id": 35,
+  "username": "AnSan",
+  "view_count": 1896
+}

@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 77780,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 37042,
+  "last_post_date": 1451089355,
+  "node_id": 47,
+  "post_date": 1425419995,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 77780,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Пользователь Exile разместил новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/radio.187/\" class=\"link link--internal\">Радио</a> - Добавляет возможность пользователем прослушивать радио со сторонних сервисов или своего IceCast.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> добавляет возможность пользователем прослушивать радио со сторонних сервисов или своего IceCast.<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Вывод списка радиостанций на сервере</li>\n<li data-xf-list-type=\"ul\">Возможность смены станции без перезагрузки страницы (AJAX)</li>\n<li data-xf-list-type=\"ul\">Плеер на HTML5</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/radio.187/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1425419995,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85634,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "инстал не полный",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1447231779,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85639,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "фрост рулит)))",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1447261902,
+      "user_id": 6554,
+      "user_title": "User",
+      "username": "Fakt_37"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86238,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5626/\">@Kryl</a>, чего не хватает понять удалось?",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1451089355,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "radio",
+  "sticky": false,
+  "tags": [],
+  "title": "Радио",
+  "url_path": "/threads/radio.37042/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 1586
+}

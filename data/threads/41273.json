@@ -1,0 +1,89 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 85061,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41273,
+  "last_post_date": 1443813964,
+  "node_id": 57,
+  "post_date": 1443563418,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1443563351,
+          "file_size": 45548,
+          "filename": "30-09-2015 0-47-57.webp",
+          "height": 491,
+          "id": 4093,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/30-09-2015-0-47-57-webp.4093/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4097-eb4f957a124f1edbd2e558c9fa91d31c.jpg?hash=4pZ5IdAShI",
+          "width": 765
+        }
+      ],
+      "id": 85061,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "В базе есть поле, а анонсер его не апдейтит. Из каких соображений убрали?<br />\nМожно было бы выводить клиенты юзеров<br />\n<a href=\"https://torrentpier.com/attachments/4093/\"><img src=\"https://torrentpier.com/data/attachments/4/4097-eb4f957a124f1edbd2e558c9fa91d31c.jpg?hash=4pZ5IdAShI\" alt=\"30-09-2015 0-47-57.webp\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1443563418,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85092,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/6370/\">@zxc</a> убрано из-за соображений что поддержание всего этого зоопарка клиентов задача крайне затратная? На примере того же нонейма, с которого сделали скриншот, как понимаю, там далеко не все торрент-клиенты корректно распознаются. Тут не все так очевидно как с браузерами, к сожалению. На форуме модификация есть такая, поиском воспользуйтесь.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1443813964,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "bb_bt_tracker-peer_id",
+  "sticky": false,
+  "tags": [
+    "анонсер",
+    "торрент-клиент"
+  ],
+  "title": "bb_bt_tracker.peer_id",
+  "url_path": "/threads/bb_bt_tracker-peer_id.41273/",
+  "user_id": 6370,
+  "username": "sхс",
+  "view_count": 1117
+}

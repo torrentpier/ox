@@ -1,0 +1,97 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 96635,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42302,
+  "last_post_date": 1724912762,
+  "node_id": 47,
+  "post_date": 1723624384,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96635,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/uluchshenie-indeksacii-stranic.304/\" class=\"link link--internal\">Улучшение индексации страниц</a> - Добавляет мега-тэг robots на страницы, что позволяет улучшить индексацию сайта<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><div style=\"text-align: center\"><span style=\"color: rgb(226, 80, 65)\">Начиная с версии v2.4.5 данный мод будет по-умолчанию</span>&#8203;</div><hr /><b>Описание:</b> Добавляет мега-тэг robots на страницы, что позволяет улучшить индексацию сайта.<br />\n<b>Совместимость:</b> все версии.<br />\n<br />\n<b>Использование:</b><br />\nПосле установки, на всех страницах будет разрешена индексация по-умолчанию. На конкретной из страниц её можно отключить, добавив код на необходимую страницу (например: <span style=\"color: rgb(41, 105, 176)\">memberlist.php</span>)...</blockquote><br />\n<a href=\"https://torrentpier.com/resources/uluchshenie-indeksacii-stranic.304/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1723624384,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1724912549,
+          "file_size": 10626,
+          "filename": "2024-08-29_09-22-13.webp",
+          "height": 267,
+          "id": 6156,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2024-08-29_09-22-13-webp.6156/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6160-86386593532e628d2cad674a0e470d15.jpg?hash=Xk6BB7AePE",
+          "width": 451
+        }
+      ],
+      "id": 96678,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<img src=\"https://torrentpier.com/attachments/6156/\" alt=\"2024-08-29_09-22-13.webp\" />",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1724912558,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96679,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"zxc\"><a href=\"https://torrentpier.com/attachments/6156/\">View attachment 6156</a></blockquote>Да, именно вашей идеей я вдохновился)",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1724912762,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "ulucsenie-indeksacii-stranic",
+  "sticky": false,
+  "tags": [],
+  "title": "Улучшение индексации страниц",
+  "url_path": "/threads/ulucsenie-indeksacii-stranic.42302/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 555
+}

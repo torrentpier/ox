@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 42807,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 13566,
+  "last_post_date": 1378148132,
+  "node_id": 3,
+  "post_date": 1378147703,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 42807,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Может кто выложит оптимальные комбинации цветов user rank, что то меня кумарит цвет админа участника групп и пользователей. Вот модера нормальный цвет.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1378147703,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 42817,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">Может кто выложит оптимальные комбинации цветов user rank, что то меня кумарит цвет админа участника групп и пользователей. Вот модера нормальный цвет.</blockquote>а почему бы не поиграть с палитрой цветов ?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1378148132,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "cveta-grupp-pol-zovatelej",
+  "sticky": false,
+  "tags": [],
+  "title": "Цвета групп пользователей",
+  "url_path": "/threads/cveta-grupp-pol-zovatelej.13566/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1340
+}

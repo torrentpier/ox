@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 97379,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42475,
+  "last_post_date": 1750842469,
+  "node_id": 47,
+  "post_date": 1750842469,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97379,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/podpischiki.326/\" class=\"link link--internal\">Подписчики</a> - Добавляет возможность подписаться на пользователя.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> Добавляет возможность подписаться на пользователя.<br />\n<b>Совместимость:</b> v2.1.5 / LTS<br />\n<hr />Изменения:<br />\n- Адаптирован под v2.1.5 и LTS<br />\n- Исправлено множество багов<br />\n- Добавлены стили с XenForo шаблона</blockquote><br />\n<a href=\"https://torrentpier.com/resources/podpischiki.326/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1750842469,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "podpisciki",
+  "sticky": false,
+  "tags": [],
+  "title": "Подписчики",
+  "url_path": "/threads/podpisciki.42475/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 384
+}

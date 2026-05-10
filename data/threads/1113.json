@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 13610,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1113,
+  "last_post_date": 1331806625,
+  "node_id": 57,
+  "post_date": 1331805885,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13610,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброе время суток.<br />\nКакой тег нужен чтобы админ мог для себя закрыть что-нибудь.<br />\nПробую этот <pre class=\"xfBb-code\" data-lang=\"\">&lt;!-- IF SHOW_ADMIN_OPTIONS --&gt;&lt;!-- ENDIF --&gt;</pre>Но не получается. Пропадает то, что закрываю в этот тег.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1331805885,
+      "user_id": 0,
+      "user_title": "",
+      "username": "blackjack"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13611,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "&lt;!-- IF IS_AM --&gt;&lt;!-- ENDIF --&gt;",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1331806026,
+      "user_id": 69,
+      "user_title": "User",
+      "username": "iFlooder"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13612,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"php\">&lt;!-- IF IS_ADMIN --&gt;\n&lt;!-- ENDIF --&gt;</pre>или<br />\n<pre class=\"xfBb-code\" data-lang=\"php\"> &lt;!-- IF SHOW_ADMIN_LINK --&gt;\n&lt;!-- ENDIF --&gt;</pre> <br />\n<b>iFlooder</b>, это для модераторов и администраторов",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1331806495,
+      "user_id": 435,
+      "user_title": "User",
+      "username": "S.T.@.L.K.E.R."
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13613,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>S.T.@.L.K.E.R.</b>,<br />\nСпасибо!)",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1331806625,
+      "user_id": 0,
+      "user_title": "",
+      "username": "blackjack"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "teg-dla-ogranicennogo-prosmotra-tol-ko-dla-admina",
+  "sticky": false,
+  "tags": [],
+  "title": "Тег для ограниченного просмотра (только для админа)",
+  "url_path": "/threads/teg-dla-ogranicennogo-prosmotra-tol-ko-dla-admina.1113/",
+  "user_id": 0,
+  "username": "blackjack",
+  "view_count": 1333
+}

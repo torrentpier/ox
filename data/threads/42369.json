@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 97237,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42369,
+  "last_post_date": 1748678351,
+  "node_id": 47,
+  "post_date": 1748678351,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97237,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/redaktor-robots-txt.324/\" class=\"link link--internal\">Редактор robots.txt</a> - Добавляет в админ-панель раздел с редактированием содержимого файла robots.txt.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><div style=\"text-align: center\"><span style=\"color: rgb(226, 80, 65)\">Начиная с версии движка v2.4.6 добавлен по умолчанию</span>&#8203;</div><hr /><b>Описание:</b> Добавляет в админ-панель раздел с редактированием содержимого файла robots.txt.<br />\n<b>Совместимость:</b> v2.1.5, LTS, v2.2.*, v2.3.*, v2.4.*.</blockquote><br />\n<a href=\"https://torrentpier.com/resources/redaktor-robots-txt.324/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1748678351,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "redaktor-robots-txt",
+  "sticky": false,
+  "tags": [],
+  "title": "Редактор robots.txt",
+  "url_path": "/threads/redaktor-robots-txt.42369/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 343
+}

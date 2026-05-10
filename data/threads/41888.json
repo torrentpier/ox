@@ -1,0 +1,75 @@
+{
+  "custom_fields": {
+    "torrentpier": "223"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 92765,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41888,
+  "last_post_date": 1521239680,
+  "node_id": 57,
+  "post_date": 1521235704,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92765,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Может обсуждалось, но ответа я не нашел, где в файлах писать <a href=\"https://мойсайт.ру\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://мойсайт.ру</a> ? Например в DLE админке есть графа домен с https или без, переадрисация или нет, а как заставить torrentpier движок работать по https если он установлен на простой хостинг?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1521235704,
+      "user_id": 7828,
+      "user_title": "User",
+      "username": "weber_u"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92767,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1521239928,
+      "message_parsed": "Получаете сертификат для домена удобным для вас способом, в конфиге правите строчку<br />\n<a href=\"https://github.com/torrentpier/torrentpier/blob/master/library/config.php#L32\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">torrentpier/torrentpier</a><br />\nпрописать true<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">если он установлен на простой хостинг?</blockquote>простой хостинг не желателен , может возникнуть много голвной боли, берите хотя бы vds",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1521239680,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "kak-podklucit-ssl-k-torrentpier",
+  "sticky": false,
+  "tags": [
+    "https"
+  ],
+  "title": "Как подключить SSL к TorrentPier",
+  "url_path": "/threads/kak-podklucit-ssl-k-torrentpier.41888/",
+  "user_id": 7828,
+  "username": "weber_u",
+  "view_count": 1179
+}

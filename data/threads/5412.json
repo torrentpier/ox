@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 31432,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 5412,
+  "last_post_date": 1369861859,
+  "node_id": 57,
+  "post_date": 1369861035,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 31432,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "1) до сих пор не смог <a href=\"http://torrentpier.com/threads/%D0%9E%D1%82-%D1%87%D0%B5%D0%B3%D0%BE-%D0%BD%D0%B5-%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D1%8B%D0%B2%D0%B0%D0%B5%D1%82-%D0%A0%D0%B5%D0%B9%D1%82%D0%B8%D0%BD%D0%B3-%D1%80%D0%B0%D1%82%D0%B8%D0%BE.5019/page-2#post-31079\" class=\"link link--internal\">Рейтинг\\ратио</a> исправить хоть чистую движку поставил заного но увы.<br />\n2) Массовая рассылка почты не отправляет почту &quot;Failed sending email :: PHP ::&quot; хоть настройл почту gmail от google<br />\n3) Не нашел установку xbt на Centos 5.9<br />\n4)Есть ли такой хостинг который все там адаптировано для torrentpie?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1369861035,
+      "user_id": 322,
+      "user_title": "User",
+      "username": "botyk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 31434,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"botyk\">2) Массовая рассылка почты не отправляет почту &quot;Failed sending email :: PHP ::&quot; хоть настройл почту gmail от google</blockquote>А причём тут гугл вообще ? Почту ты со своего SMTP сервера должен отправлять !<br />\n<blockquote class=\"xfBb-quote\" data-name=\"botyk\">3) Не нашел установку xbt на Centos 5.9</blockquote><a href=\"http://xbtt.sourceforge.net/tracker/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://xbtt.sourceforge.net/tracker/</a>  тут описано ! Единственное что BOOST надо новый собирать... я не нашёл в репах подходящей версии !<br />\n<blockquote class=\"xfBb-quote\" data-name=\"botyk\">4)Есть ли такой хостинг который все там адаптировано для torrentpie?</blockquote>нет, не было и не будет !",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1369861859,
+      "user_id": 729,
+      "user_title": "User",
+      "username": "Wertos"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "vse-voprosy-moi",
+  "sticky": false,
+  "tags": [],
+  "title": "Все вопросы мои",
+  "url_path": "/threads/vse-voprosy-moi.5412/",
+  "user_id": 322,
+  "username": "botyk",
+  "view_count": 1187
+}

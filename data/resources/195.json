@@ -1,0 +1,86 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "предупреждения.zip",
+      "id": 3251,
+      "local_path": null,
+      "r2_key": null,
+      "size": 805,
+      "src_url": "https://torrentpier.com/api/resource-versions/249/download?file=3251"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]\nОткрыть bbcode.php\n\nНайти:\n\n[code]\n// Quote\n$bbcode_tpl['quote_open'] = <<<HTML\n  <div class=\"q-wrap\">\n  <div class=\"q\">\n[/code]\n\nДобавить до:\n\n[code]\n// Admin\n$bbcode_tpl['adm_open'] = <<<HTML\n<br />\n<table cellspacing=\"0\" style=\"width: 95%; border: 1px solid #DBDBCE\">\n<tr>\n  <td style=\"padding: 10px; font-size: 35px; font-weight: bold; font-family: Garamond,'Times New Roman',serif; color: #BB0000; background-color: #FFFFFF; vertical-align: middle; width: 5%\">A</td>\n  <td style=\"padding: 10px; color: #AA0000; background-color: #EBEADD;\"\nHTML;\n\n$bbcode_tpl['adm_close'] = <<<HTML\n</td>\n</tr>\n</table>\n<br />\nHTML;\n\n//Moder\n$bbcode_tpl['mod_open'] = <<<HTML\n<br />\n<table cellspacing=\"0\" style=\"width: 95%; border: 1px solid #DBDBCE\">\n<tr>\n  <td style=\"padding: 10px; font-size: 35px; font-weight: bold; font-family: Garamond,'Times New Roman',serif; color: #BB0000; background-color: #FFFFFF; vertical-align: middle; width: 5%\">M</td>\n  <td style=\"padding: 10px; color: #AA0000; background-color: #EBEADD;\">\nHTML;\n\n$bbcode_tpl['mod_close'] = <<<HTML\n</td>\n</tr>\n</table>\n<br />\nHTML;\n[/code]\n\nНайти:\n\n[code]\n'[quote]'  => $tpl['quote_open'],\n[/code]\n\nДобавить до:\n\n[code]\n  '[adm]'  => $tpl['adm_open'],\n  '[/adm]'  => $tpl['adm_close'],\n  '[mod]'  => $tpl['mod_open'],\n  '[/mod]'  => $tpl['mod_close'],\n[/code]\n\nОткрыть posting_editor.tpl\n\nНайти:\n\n[code]\n<input type=\"button\" value=\"{L_QUOTE}\" name=\"codeQuote\" title=\"{L_QUOTE_TITLE}\" style=\"width: 57px;\" />\n[/code]\n\nДобавить после:\n\n[code]\n<input type=\"button\" value=\"{L_ADM}\" name=\"codeAdm\" title=\"{L_ADM_TITLE}\" style=\"width: 57px;\" />\n<input type=\"button\" value=\"{L_MOD}\" name=\"codeMod\" title=\"{L_MOD_TITLE}\" style=\"width: 57px;\" />\n[/code]\n\nНайти:\n\n[code]\nbbcode.addTag(\"codeQuote\", \"quote\", null, \"Q\", ctrl);\n[/code]\n\nДобавить до:\n\n[code]\nbbcode.addTag(\"codeAdm\", \"adm\", null, \"Q\", ctrl);\nbbcode.addTag(\"codeMod\", \"mod\", null, \"Q\", ctrl);\n[/code]\n[/SPOILER]",
+    "owner": "Begemot",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425423171,
+      "file_size": 36126,
+      "filename": "admmod.webp",
+      "height": 464,
+      "id": 3247,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/admmod-webp.3247/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3251-dfb11aca7c371cba9123d0623a8997eb.jpg?hash=YdppMT-_ho",
+      "width": 1308
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет BB-код предупреждений от администрации.",
+  "download_count": 282,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/195.jpg?1425423776",
+  "id": 195,
+  "is_fileless": null,
+  "last_update": 1425423756,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1425423756,
+  "resource_state": "visible",
+  "slug": "bb-kod-preduprezdenia-ot-administracii",
+  "tag_line": "Добавляет BB-код предупреждений от администрации.",
+  "tags": [],
+  "title": "BB-код: предупреждения от администрации",
+  "url_path": "/resources/bb-kod-preduprezdenia-ot-administracii.195/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 282,
+      "files": [
+        {
+          "filename": "предупреждения.zip",
+          "id": 3251,
+          "local_path": null,
+          "r2_key": null,
+          "size": 805,
+          "src_url": "https://torrentpier.com/api/resource-versions/249/download?file=3251"
+        }
+      ],
+      "id": 249,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425423756,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/bb-kod-preduprezdenia-ot-administracii.195/version/249/"
+    }
+  ],
+  "view_count": 607
+}

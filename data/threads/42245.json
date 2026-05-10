@@ -1,0 +1,164 @@
+{
+  "custom_fields": {
+    "torrentpier": "241"
+  },
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95834,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42245,
+  "last_post_date": 1709213536,
+  "node_id": 57,
+  "post_date": 1709209069,
+  "posts": [
+    {
+      "attach_count": 3,
+      "attachments": [
+        {
+          "attach_date": 1709209067,
+          "file_size": 82430,
+          "filename": "Снимок экрана 2024-02-29 194523.webp",
+          "height": 800,
+          "id": 5856,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-ekrana-2024-02-29-194523-webp.5856/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5860-a43e3ca12017893086820b9e855c27eb.jpg?hash=5CC1ClXs-M",
+          "width": 1908
+        },
+        {
+          "attach_date": 1709209067,
+          "file_size": 79492,
+          "filename": "Снимок экрана 2024-02-29 194633.webp",
+          "height": 772,
+          "id": 5857,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-ekrana-2024-02-29-194633-webp.5857/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5861-9759e69ede61fbace5eb5420889307db.jpg?hash=86NfKkKDzF",
+          "width": 1867
+        },
+        {
+          "attach_date": 1709209067,
+          "file_size": 24162,
+          "filename": "Снимок экрана 2024-02-29 195658.webp",
+          "height": 482,
+          "id": 5858,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-ekrana-2024-02-29-195658-webp.5858/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5862-538b51c3bc95d73920f39eb789189d16.jpg?hash=qIA-i5w1uF",
+          "width": 465
+        }
+      ],
+      "id": 95834,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1709209185,
+      "message_parsed": "Установил чистый TorrentPier Cattle. Версия 2.4.1 и не могу создать ни одной темы. Также не получается сделать предпросмотр набранного ответа в первой теме чистого движка.<br />\n<pre class=\"xfBb-code\" data-lang=\"\">Creation of dynamic property TorrentPier\\Legacy\\AttachPosting::$attachment_id_list is deprecated</pre>Скриншоты и конфиг севера во вложении. Как исправить возникающие ошибки?<br />\nПрошу помощи у разработчиков.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1709209069,
+      "user_id": 10845,
+      "user_title": "User",
+      "username": "Nikolay"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95835,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте. В системных требованиях движка не заявлена поддержка PHP 8.3. Используйте лучше 8.1, так точно проблем не возникнет.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1709210266,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95836,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Из рекомендаций могу ещё сказать, используйте лучше MariaDB, любых версий можно, последняя предпочтительнее.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1709210442,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95837,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо, попробую сделать по вашим рекомендациям.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1709210779,
+      "user_id": 10845,
+      "user_title": "User",
+      "username": "Nikolay"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95838,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1709213602,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"belomaxorka\">Здравствуйте. В системных требованиях движка не заявлена поддержка PHP 8.3. Используйте лучше 8.1, так точно проблем не возникнет.</blockquote><blockquote class=\"xfBb-quote\" data-name=\"belomaxorka\">Из рекомендаций могу ещё сказать, используйте лучше MariaDB, любых версий можно, последняя предпочтительнее.</blockquote>Всё сделал по рекомендации и ошибки исчезли. Спасибо большое  за помощь!",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1709213536,
+      "user_id": 10845,
+      "user_title": "User",
+      "username": "Nikolay"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "nevozmozno-sozdat-temu-na-torrentpier-cattle-versia-2-4-1",
+  "sticky": false,
+  "tags": [],
+  "title": "невозможно создать тему на TorrentPier Cattle. Версия 2.4.1",
+  "url_path": "/threads/nevozmozno-sozdat-temu-na-torrentpier-cattle-versia-2-4-1.42245/",
+  "user_id": 10845,
+  "username": "Nikolay",
+  "view_count": 1068
+}

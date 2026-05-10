@@ -1,0 +1,57 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 98213,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 43207,
+  "last_post_date": 1756770990,
+  "node_id": 57,
+  "post_date": 1756770990,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98213,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Hi, I&#039;m using TorrentPier 2.4.13 and cannot figure out how to make invite codes have a 1 time use before expiring. In config.php I see the following:<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">// Syntax: &#039;invite_code&#039; =&gt; &#039;validity_period&#039;<br />\n        // The &#039;validity_period&#039; value is based on strtotime() function: <a href=\"https://www.php.net/manual/en/function.strtotime.php\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">PHP: strtotime - Manual</a><br />\n        // You can also create a permanent invite, set &#039;permanent&#039; value for &#039;validity_period&#039;</blockquote>But I see no way to make invite codes only last 1 use. If this is possible, please let me know! Thanks 🙂",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1756770990,
+      "user_id": 11063,
+      "user_title": "User",
+      "username": "Fakewad"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "make-1-time-invite-code",
+  "sticky": false,
+  "tags": [],
+  "title": "Make 1 Time Invite Code",
+  "url_path": "/threads/make-1-time-invite-code.43207/",
+  "user_id": 11063,
+  "username": "Fakewad",
+  "view_count": 365
+}

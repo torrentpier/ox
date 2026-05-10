@@ -1,0 +1,86 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "viewdouble.zip",
+      "id": 3212,
+      "local_path": null,
+      "r2_key": null,
+      "size": 2011,
+      "src_url": "https://torrentpier.com/api/resource-versions/231/download?file=3212"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"][CODE]Распаковать файлы из приложенного архива.[/CODE][/SPOILER]",
+    "owner": "druid",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425406323,
+      "file_size": 20838,
+      "filename": "340ed92b14d73cbbcf658a77c7b30e2c.webp",
+      "height": 395,
+      "id": 3213,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/340ed92b14d73cbbcf658a77c7b30e2c-webp.3213/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3217-88775be0ab9a234af019ba34565dae95.jpg?hash=XGoVqNrMPE",
+      "width": 1512
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет администрации возможность поиска пользователей с одинаковым IP. Поиск как по IP регистрации, так и по IP последнего входа.",
+  "download_count": 345,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/184.jpg?1425406386",
+  "id": 184,
+  "is_fileless": null,
+  "last_update": 1425406367,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1425406367,
+  "resource_state": "visible",
+  "slug": "poisk-pol-zovatelej-dublikatov-po-ip",
+  "tag_line": "Добавляет администрации возможность поиска пользователей с одинаковым IP.",
+  "tags": [],
+  "title": "Поиск пользователей-дубликатов по IP",
+  "url_path": "/resources/poisk-pol-zovatelej-dublikatov-po-ip.184/",
+  "user_id": 61,
+  "username": "druid",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 345,
+      "files": [
+        {
+          "filename": "viewdouble.zip",
+          "id": 3212,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2011,
+          "src_url": "https://torrentpier.com/api/resource-versions/231/download?file=3212"
+        }
+      ],
+      "id": 231,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425406367,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/poisk-pol-zovatelej-dublikatov-po-ip.184/version/231/"
+    }
+  ],
+  "view_count": 540
+}

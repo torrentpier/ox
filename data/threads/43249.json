@@ -1,0 +1,70 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 98417,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      }
+    ],
+    "id": 2,
+    "title": "Resource news"
+  },
+  "id": 43249,
+  "last_post_date": 1771181921,
+  "node_id": 2,
+  "post_date": 1771181921,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1771181902,
+          "file_size": 271732,
+          "filename": "1771181829540.webp",
+          "height": 1532,
+          "id": 6712,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1771181829540-webp.6712/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6716-dc87472fa84cb612bbb10a8742494bee.jpg?hash=hIzozU13HK",
+          "width": 3012
+        }
+      ],
+      "id": 98417,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Привет.<br />\n<br />\nПродолжаем серию статей о том, что появится в новой мажорной версии проекта.<br />\n<br />\nСегодня расскажем о новой странице в административной панели - маркетплейсе модификаций. Это каталог всех ресурсов с официального форума TorrentPier, доступный прямо из админки вашего трекера.<br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-cto-bylo\"></a>Что было&#8203;<a class=\"hoverLink\" href=\"#-cto-bylo\" title=\"Permanent link\"></a></h3>Раньше, чтобы найти модификацию или стиль для TorrentPier, нужно было идти на этот форум, искать нужный раздел, листать темы, сравнивать версии. Никакой интеграции между движком и форумом не существовало - администратор был сам по себе.<br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-cto-stalo\"></a>Что стало&#8203;<a class=\"hoverLink\" href=\"#-cto-stalo\" title=\"Permanent link\"></a></h3>В версии 3.0 в административной панели появился раздел «Маркетплейс» с подразделом «Модификации». Это полноценный каталог ресурсов, подтягиваемый с официального форума через REST API.<br />\n<br />\n<h4 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-cto-vidit-administrator\"></a>Что видит администратор&#8203;<a class=\"hoverLink\" href=\"#-cto-vidit-administrator\" title=\"Permanent link\"></a></h4>Страница показывает список всех доступных модификаций с подробной информацией по каждой:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Название, описание и автор</li>\n<li data-xf-list-type=\"ul\">Версия (бейдж с номером текущей версии)</li>\n<li data-xf-list-type=\"ul\">Категория (графика и стили, модификации и т.д.)</li>\n<li data-xf-list-type=\"ul\">Рейтинг звездами и количество отзывов</li>\n<li data-xf-list-type=\"ul\">Бесплатная или платная модификация</li>\n</ul>Есть фильтрация по категориям через выпадающий список - можно быстро отсеять, например, только графику и стили.<br />\n<br />\n<img src=\"https://torrentpier.com/attachments/6712/\" alt=\"1771181829540.webp\" /><br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-ustanovka-modifikacij\"></a>Установка модификаций&#8203;<a class=\"hoverLink\" href=\"#-ustanovka-modifikacij\" title=\"Permanent link\"></a></h3>Около каждого ресурса есть кнопка «Установить». Сейчас она неактивна, но полноценная установка модификаций в один клик появится ближе к релизу версии 3.0. Мы работаем над тем, чтобы администратор мог установить модификацию прямо из маркетплейса, без ручного копирования файлов.<br />\n<br />\nПока что страница выполняет роль удобного каталога - можно посмотреть что доступно, перейти на страницу ресурса на форуме и скачать вручную.<br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-cto-eto-daet\"></a>Что это дает&#8203;<a class=\"hoverLink\" href=\"#-cto-eto-daet\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><b>Удобство.</b> Весь каталог модификаций доступен из админки, не нужно переключаться между сайтами</li>\n<li data-xf-list-type=\"ul\"><b>Актуальность.</b> Данные подтягиваются с официального форума через API - всегда свежий список</li>\n<li data-xf-list-type=\"ul\"><b>Скорость.</b> Кеширование обеспечивает быструю работу без лишних запросов к API</li>\n<li data-xf-list-type=\"ul\"><b>Фундамент.</b> Страница станет основой для будущей системы установки модификаций в один клик</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-cto-dal-se\"></a>Что дальше&#8203;<a class=\"hoverLink\" href=\"#-cto-dal-se\" title=\"Permanent link\"></a></h3>Маркетплейс модификаций - один из кирпичиков в экосистеме TorrentPier 3.0. В следующих статьях расскажем о других нововведениях.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1771181921,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-3-0-marketplejs-modifikacij",
+  "sticky": false,
+  "tags": [
+    "3.0",
+    "addons",
+    "marketplace",
+    "модификации"
+  ],
+  "title": "TorrentPier 3.0: маркетплейс модификаций",
+  "url_path": "/threads/torrentpier-3-0-marketplejs-modifikacij.43249/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 453
+}

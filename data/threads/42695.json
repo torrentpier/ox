@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 97679,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 42695,
+  "last_post_date": 1756135791,
+  "node_id": 3,
+  "post_date": 1755624401,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97679,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Блин, что-то я озадачился... А вообще infohash обязательно хранить в binary ? Почем не varchar например ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1755624401,
+      "user_id": 729,
+      "user_title": "User",
+      "username": "Wertos"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97693,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Wertos\">Блин, что-то я озадачился... А вообще infohash обязательно хранить в binary ? Почем не varchar например ?</blockquote>Грубо говоря varchar нужен для хранения строковых данных в utf-8 например. <br />\ninfohash это набор байтов, туда могут входить символы вне utf-8, непечатаемые символы, невидимые символы итд.<br />\n<br />\nМожно конечно хранить в varchar, но бинарную строку все равно придется переводить в hex",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1756126043,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97700,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"sхс\">Можно конечно хранить в varchar, но бинарную строку все равно придется переводить в hex</blockquote>Вот об этом и речь. Я просто проблемы имею с PostgreSQL, там поле bytea, и другая обработка хеша нужна, с varchar эта проблема отпадёт !",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1756135791,
+      "user_id": 729,
+      "user_title": "User",
+      "username": "Wertos"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "mysli-v-sluh-infohash",
+  "sticky": false,
+  "tags": [],
+  "title": "Мысли в слух... infohash",
+  "url_path": "/threads/mysli-v-sluh-infohash.42695/",
+  "user_id": 729,
+  "username": "Wertos",
+  "view_count": 476
+}

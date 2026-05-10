@@ -1,0 +1,97 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95512,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 50,
+    "title": "Graphics and styles for TorrentPier"
+  },
+  "id": 42218,
+  "last_post_date": 1703955173,
+  "node_id": 50,
+  "post_date": 1703954552,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1703954514,
+          "file_size": 17934,
+          "filename": "2023-12-30_19-32-57.webp",
+          "height": 84,
+          "id": 5717,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2023-12-30_19-32-57-webp.5717/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5721-a4e9ef6be18706214247e15eaf7a7533.jpg?hash=K-otTCMFuM",
+          "width": 1860
+        },
+        {
+          "attach_date": 1703954603,
+          "file_size": 123915,
+          "filename": "xmas.zip",
+          "height": 0,
+          "id": 5718,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/xmas-zip.5718/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 95512,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Всех с Новым Годом ☃️<br />\n<br />\n<img src=\"https://torrentpier.com/attachments/5717/\" alt=\"2023-12-30_19-32-57.jpg\" /><br />\n<br />\nПапку xmas закинуть в /images<br />\n<br />\nДобавить в конец page_footer.tpl<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;!-- IF LET_IT_SNOW --&gt;\n&lt;style&gt;\n    #xmas{\n        width: 100%;\n        bottom: 0px;\n        position: fixed;\n        z-index: 9;\n        background: url(/images/xmas/bg0.png);\n        background-repeat: repeat-x;\n        background-position-y: bottom;\n    }\n&lt;/style&gt;\n&lt;marquee id=&quot;xmas&quot; behavior=&quot;scroll&quot; direction=&quot;left&quot;&gt; &lt;a title=&quot;Happy New Year!&quot; href=&quot;#&quot;&gt;&lt;img height=&quot;60&quot;  src=&quot;/images/xmas/santa1.gif&quot; /&gt;&lt;/a&gt;&lt;/marquee&gt;\n&lt;!-- ENDIF --&gt;</pre><br />\nв page_header.php после<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&#039;SITENAME&#039; =&gt; $bb_cfg[&#039;sitename&#039;],</pre>добавить (где забег дедушки начинается 21 дек и заканчивается 10 января)<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&#039;LET_IT_SNOW&#039; =&gt; ((date(&#039;n&#039;)==12 AND date(&#039;j&#039;)&gt;21) OR (date(&#039;n&#039;)==1 AND date(&#039;j&#039;)&lt;10))?true:false,</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1703954552,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95513,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо за мод. С наступающим! 🥳",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1703955173,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "ded-moroz-na-sankah-mcitsa",
+  "sticky": false,
+  "tags": [
+    "новый год"
+  ],
+  "title": "Дед мороз на санках мчится",
+  "url_path": "/threads/ded-moroz-na-sankah-mcitsa.42218/",
+  "user_id": 6370,
+  "username": "sхс",
+  "view_count": 1006
+}

@@ -1,0 +1,118 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 62546,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 26164,
+  "last_post_date": 1410063380,
+  "node_id": 57,
+  "post_date": 1410004648,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1410004560,
+          "file_size": 87168,
+          "filename": "Снимок.webp",
+          "height": 385,
+          "id": 2631,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-webp.2631/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2636-29c95a4048c6af2d4fcbff671369a68f.jpg?hash=y1H0J4daHy",
+          "width": 994
+        }
+      ],
+      "id": 62546,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Есть вот такая форма в название забил всё правильно,но когда нажимаешь кнопку продолжить, в название поста остаётся только Название сериал, не каких тебе серии и сезона в название не могу затянуть!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1410004648,
+      "user_id": 5172,
+      "user_title": "User",
+      "username": "Матвей Маршинин"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62559,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как в название Формы релиза, добавить текст ?<br />",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1410024891,
+      "user_id": 5172,
+      "user_title": "User",
+      "username": "Матвей Маршинин"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62561,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Опишите проблему более развернуто.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1410025769,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62575,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "При создание шаблона для релизов, в строке &quot;название&quot; хочу добавить текст, так как это сделано на rutracer&#039;e, то есть добавить текст к переменным, например &lt;-{Название} {Оригинальное название} `Текст`-&gt;/     - возможно ли это ?",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1410063380,
+      "user_id": 5172,
+      "user_title": "User",
+      "username": "Матвей Маршинин"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "nazvanie-formy-reliza",
+  "sticky": false,
+  "tags": [],
+  "title": "Название формы релиза",
+  "url_path": "/threads/nazvanie-formy-reliza.26164/",
+  "user_id": 5172,
+  "username": "Матвей Маршинин",
+  "view_count": 1114
+}

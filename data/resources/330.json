@@ -1,0 +1,137 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Смена логотипа через админку by belomaxorka.zip",
+      "id": 6672,
+      "local_path": null,
+      "r2_key": null,
+      "size": 7241,
+      "src_url": "https://torrentpier.com/api/resource-versions/660/download?file=6672"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1764150028,
+      "file_size": 18136,
+      "filename": "firefox_GphbVLzk21.webp",
+      "height": 354,
+      "id": 6657,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_gphbvlzk21-webp.6657/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6661-3313968ee9de11b20b21ea29930c6014.jpg?hash=07LbkJ-pDn",
+      "width": 1140
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Добавляет возможность удобной смены логотипа форума через админку.<br />\n<b>Совместимость:</b> v2.1.5, LTS, v2.2.*, v2.3.*, v2.4.*.",
+  "download_count": 234,
+  "external_url": null,
+  "icon_url": null,
+  "id": 330,
+  "is_fileless": null,
+  "last_update": 1767189471,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1764149944,
+  "resource_state": "visible",
+  "slug": "smena-logotipa-cerez-adminku",
+  "tag_line": "Добавляет возможность удобной смены логотипа форума через админку.",
+  "tags": [
+    "logo",
+    "logo change",
+    "администрирование",
+    "админка",
+    "мод",
+    "моды",
+    "новый логотип",
+    "смена логотипа",
+    "удобная смена лого",
+    "улучшение"
+  ],
+  "title": "Смена логотипа через админку",
+  "url_path": "/resources/smena-logotipa-cerez-adminku.330/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.1.1",
+  "versions": [
+    {
+      "download_count": 95,
+      "files": [
+        {
+          "filename": "[FULL] Смена логотипа через админку by belomaxorka.zip",
+          "id": 6672,
+          "local_path": null,
+          "r2_key": null,
+          "size": 7241,
+          "src_url": "https://torrentpier.com/api/resource-versions/660/download?file=6672"
+        }
+      ],
+      "id": 660,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1767189471,
+      "version_state": "visible",
+      "version_string": "v1.1.1",
+      "view_url": "https://torrentpier.com/resources/smena-logotipa-cerez-adminku.330/version/660/"
+    },
+    {
+      "download_count": 71,
+      "files": [
+        {
+          "filename": "[FULL] Смена логотипа через админку by belomaxorka.zip",
+          "id": 6658,
+          "local_path": null,
+          "r2_key": null,
+          "size": 6722,
+          "src_url": "https://torrentpier.com/api/resource-versions/658/download?file=6658"
+        }
+      ],
+      "id": 658,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1764672928,
+      "version_state": "visible",
+      "version_string": "v1.1.0",
+      "view_url": "https://torrentpier.com/resources/smena-logotipa-cerez-adminku.330/version/658/"
+    },
+    {
+      "download_count": 70,
+      "files": [
+        {
+          "filename": "[FULL] Смена логотипа через админку by belomaxorka.zip",
+          "id": 6656,
+          "local_path": null,
+          "r2_key": null,
+          "size": 6705,
+          "src_url": "https://torrentpier.com/api/resource-versions/657/download?file=6656"
+        }
+      ],
+      "id": 657,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1764149944,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/smena-logotipa-cerez-adminku.330/version/657/"
+    }
+  ],
+  "view_count": 1612
+}

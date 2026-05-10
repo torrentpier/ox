@@ -1,0 +1,106 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 89913,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41634,
+  "last_post_date": 1486032225,
+  "node_id": 57,
+  "post_date": 1485844600,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1485844576,
+          "file_size": 51246,
+          "filename": "Снимок.webp",
+          "height": 654,
+          "id": 4600,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-webp.4600/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4604-06a51dc440c7ab8b37ded97079812bdb.jpg?hash=OPi3fGb1iQ",
+          "width": 835
+        }
+      ],
+      "id": 89913,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1485844700,
+      "message_parsed": "Доброго времени суток! Сегодня обновил ОгнеЛиса (FireFox) до версии <b>51.0.1 </b>после чего при создании раздачи исчезли цвета в названии цветов шрифта (см. скриншот), попробовал создать раздачу под IE - всё нормально. Может кто подсказать, где в настройках браузера надо что-то изменить, что бы всё стало нормально.<br />\n<br />\n<a href=\"https://torrentpier.com/attachments/4600/\"><img src=\"https://torrentpier.com/data/attachments/4/4604-06a51dc440c7ab8b37ded97079812bdb.jpg?hash=OPi3fGb1iQ\" alt=\"Снимок.webp\" /></a><br />\n<br />\nP.S. извиняюсь, если не в том форуме создал  тему.<br />\nP.P.S. переходить на другой браузер - не вариант, привык к FireFox&#039;у",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1485844600,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89924,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5704/\">ExPlayer</a>, а никак. В селекторах больше нельзя указывать цветовые выделения, это было не по стандарту. Вот и из FireFox выпилили наконец.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1485968106,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89928,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\"><a href=\"https://torrentpier.com/members/5704/\">ExPlayer</a>, а никак. В селекторах больше нельзя указывать цветовые выделения, это было не по стандарту. Вот и из FireFox выпилили наконец.</blockquote>Спасибо за информацию 🙂",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1486032225,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "cvet-pri-sozdanii-razdaci",
+  "sticky": false,
+  "tags": [
+    "firefox",
+    "браузер",
+    "цвета"
+  ],
+  "title": "Цвет при создании раздачи",
+  "url_path": "/threads/cvet-pri-sozdanii-razdaci.41634/",
+  "user_id": 5704,
+  "username": "ExPlayer",
+  "view_count": 1129
+}

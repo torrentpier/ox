@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 26280,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 2149,
+  "last_post_date": 1359638217,
+  "node_id": 57,
+  "post_date": 1359623910,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26280,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\n <br />\nКамрады, а возможно ли добавлять / апдейтить торренты, обращаясь  с удаленной машины  curl&#039;ом к трекеру? Если да, то мб кто-нибудь подскажет полный url с параметрами🙂<br />\n <br />\nЗаранее спасибо.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1359623910,
+      "user_id": 4014,
+      "user_title": "User",
+      "username": "Dewil"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26284,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "конечно возможно,курл умеет логинится и дергать ссылки<br />\n на сколько помню <span style=\"font-size: 14px\"><span style=\"font-family: 'arial'\"><span style=\"color: #000000\">-u username😛asswd</span></span></span>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1359630687,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26289,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "С авторизацией, думаю, как-нибудь слажу, а вот параметры, которые передавать в POST-запросе через posting.php не ясны.<br />\nСамому разобрать коннект/постинг не получается🙁",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1359638217,
+      "user_id": 4014,
+      "user_title": "User",
+      "username": "Dewil"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "curl-torrents",
+  "sticky": false,
+  "tags": [],
+  "title": "Curl / torrents",
+  "url_path": "/threads/curl-torrents.2149/",
+  "user_id": 4014,
+  "username": "Dewil",
+  "view_count": 927
+}

@@ -1,0 +1,216 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "freeleech.zip",
+      "id": 3914,
+      "local_path": null,
+      "r2_key": null,
+      "size": 4795,
+      "src_url": "https://torrentpier.com/api/resource-versions/338/download?file=3914"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция по установке\"]-- выполнить запросы\n[PHP]\nCREATE TABLE IF NOT EXISTS `bb_freeleech` (\n  `id` int(10) NOT NULL AUTO_INCREMENT,\n  `user_id` mediumint(8) NOT NULL,\n  `made` float(16,2) NOT NULL,\n  `date` int(11) NOT NULL,\n  PRIMARY KEY (`id`),\n  KEY `id` (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;\n\nINSERT INTO `bb_config` (`config_name`, `config_value`) VALUES\n('freeleech_enabled', '1'),\n('freeleech_cost', '500000.00'),\n('freeleech_time_end', '0000-00-00 00:00');\n[/PHP]\n-- ajax.php\n- найти\n[PHP]\n'manage_group'      => array('user'),\n[/PHP]\n- после добавить\n[PHP]\n'freeleech'         => array('user'),\n[/PHP]\n- найти\n[PHP]\nfunction sitemap()\n{\n    require(AJAX_DIR .'sitemap.php');\n}\n[/PHP]\n- после добавить\n[PHP]\n    function freeleech()\n    {\n        global $bb_cfg, $userdata, $lang;\n\n        if($bb_cfg['freeleech_enabled'] && (strtotime($bb_cfg['freeleech_time_end'], TIMENOW) > TIMENOW)) $this->ajax_die('На трекере уже идёт фрилич!');\n\n        $points = (float) $this->request['points'];\n        $user_id = $userdata['user_id'];\n\n        if($points > $userdata['user_points'])\n        {\n            $this->ajax_die($lang['BONUS_NOT_SUCCES']);\n        }\n        else\n        {\n            DB()->query(\"INSERT INTO bb_freeleech(id, user_id, made, date) VALUES('', '\" . $user_id . \"', '\" . $points . \"', '\" . TIMENOW . \"')\");\n            DB()->query(\"UPDATE bb_users SET user_points = user_points - $points WHERE user_id = $user_id\");\n            cache_rm_user_sessions($user_id);\n\n            $freel = DB()->fetch_row(\"SELECT SUM(made) AS mades FROM bb_freeleech\");\n            if($freel['mades'] >= $bb_cfg['freeleech_cost'])\n            {\n                bb_update_config(array('freeleech_enabled' => 1, 'freeleech_time_end' => bb_date(TIMENOW + 2592000)));\n                DB()->query(\"TRUNCATE bb_freeleech\");\n                $message = 'Сумма для активации фрилича собрана! Фрилич активирован до ' . bb_date(TIMENOW + 2592000) . '';\n            }\n            else\n            {\n                $message = 'Вы успешно перевели средства для фрилича.';\n            }\n            $this->ajax_die($message);\n        }\n    }\n    [/PHP]\n-- tr_cleanup_and_dlstat.php\n- найти\n[PHP]\n            // Update TOTAL user's dlstat\n            DB()->query(\"\n                UPDATE\n                    \". BB_BT_USERS             .\" u,\n                    \". NEW_BB_BT_LAST_USERSTAT .\" ub\n                SET\n                    u.u_up_total   = u.u_up_total   + ub.up_add,\n                    u.u_down_total = u.u_down_total + ub.down_add,\n                    u.u_up_release = u.u_up_release + ub.release_add,\n                    u.u_up_bonus   = u.u_up_bonus   + ub.bonus_add,\n                    u.up_today         = u.up_today         + ub.up_add,\n                    u.down_today       = u.down_today       + ub.down_add,\n                    u.up_release_today = u.up_release_today + ub.release_add,\n                    u.up_bonus_today   = u.up_bonus_today   + ub.bonus_add\n                WHERE u.user_id = ub.user_id\n            \");\n[/PHP]\n- заменить на\n[PHP]\n    if($bb_cfg['freeleech_enabled'] && (strtotime($bb_cfg['freeleech_time_end'], TIMENOW) < TIMENOW))\n    {\n        bb_update_config(array('freeleech_enabled'  => 0));\n    }\n    // Update TOTAL user's dlstat\n    if ($bb_cfg['freeleech_enabled'] && (strtotime($bb_cfg['freeleech_time_end'], TIMENOW) > TIMENOW))\n    {\n        DB()->query(\"\n                UPDATE\n                    \". BB_BT_USERS             .\" u,\n                    \". NEW_BB_BT_LAST_USERSTAT .\" ub\n                SET\n                    u.u_up_total   = u.u_up_total   + ub.up_add,\n                    u.u_down_total = u.u_down_total,\n                    u.u_up_release = u.u_up_release + ub.release_add,\n                    u.u_up_bonus   = u.u_up_bonus   + ub.bonus_add,\n                    u.up_today         = u.up_today         + ub.up_add,\n                    u.down_today       = u.down_today       + ub.down_add,\n                    u.up_release_today = u.up_release_today + ub.release_add,\n                    u.up_bonus_today   = u.up_bonus_today   + ub.bonus_add\n                WHERE u.user_id = ub.user_id\n            \");\n    }\n    else\n    {\n        DB()->query(\"\n                UPDATE\n                    \". BB_BT_USERS             .\" u,\n                    \". NEW_BB_BT_LAST_USERSTAT .\" ub\n                SET\n                    u.u_up_total   = u.u_up_total   + ub.up_add,\n                    u.u_down_total = u.u_down_total + ub.down_add,\n                    u.u_up_release = u.u_up_release + ub.release_add,\n                    u.u_up_bonus   = u.u_up_bonus   + ub.bonus_add,\n                    u.up_today         = u.up_today         + ub.up_add,\n                    u.down_today       = u.down_today       + ub.down_add,\n                    u.up_release_today = u.up_release_today + ub.release_add,\n                    u.up_bonus_today   = u.up_bonus_today   + ub.bonus_add\n                WHERE u.user_id = ub.user_id\n            \");\n    }\n[/PHP]\n-- bonus.php\n- найти\n[PHP]\nelse\n{\n    $template->assign_vars(array(\n        'U_USER_PROFILE'  => PROFILE_URL . $user_id,\n   \n[/PHP]\n- перед добавить\n[PHP]\n//Freeleech START\nelseif(isset($_POST['submit']) && isset($_POST['points_fr']))\n{\n    if($bb_cfg['freeleech_enabled'] && (strtotime($bb_cfg['freeleech_time_end'], TIMENOW) > TIMENOW))\n    {\n        $message = 'На трекере уже идёт фрилич!<br /><br /><a href=\"'. BONUS_URL .'\">'. $lang['BONUS_RETURN'] .'</a><br /><br /><a href=\"'. PROFILE_URL . $userdata['user_id'] .'\">'. $lang['RETURN_PROFILE'] .'</a><br /><br />';\n        bb_die($message);\n    }\n    else\n    {\n        $points_fr = (int) $_POST['points_fr'];\n\n        if($points_fr > $userdata['user_points'])\n        {\n            meta_refresh('index.php', 5);\n\n            $message = $lang['BONUS_NOT_SUCCES'] .'<br /><br /><a href=\"'. BONUS_URL .'\">'. $lang['BONUS_RETURN'] .'</a><br /><br /><a href=\"'. PROFILE_URL . $userdata['user_id'] .'\">'. $lang['RETURN_PROFILE'] .'</a><br /><br />'. sprintf($lang['CLICK_RETURN_INDEX'],  '<a href=\"index.php\">', '</a>');\n\n            bb_die($message);\n        }\n        else\n        {\n            DB()->query(\"INSERT INTO bb_freeleech(id, user_id, made, date) VALUES('', '\" . $user_id . \"', '\" . $points_fr . \"', '\" . TIMENOW . \"')\");\n            DB()->query(\"UPDATE bb_users SET user_points = user_points - $points_fr WHERE user_id = $user_id\");\n            cache_rm_user_sessions($user_id);\n\n            $freel = DB()->fetch_row(\"SELECT SUM(made) AS mades FROM bb_freeleech\");\n            if($freel['mades'] >= $bb_cfg['freeleech_cost'])\n            {\n                bb_update_config(array('freeleech_enabled' => 1, 'freeleech_time_end' => bb_date(TIMENOW + 2592000)));\n                DB()->query(\"TRUNCATE bb_freeleech\");\n                $message = 'Сумма для активации фрилича собрана! Фрилич активирован до ' . bb_date(TIMENOW + 2592000) . ' <br /><br /><a href=\"'. BONUS_URL .'\">'. $lang['BONUS_RETURN'] .'</a><br /><a href=\"'. PROFILE_URL . $userdata['user_id'] .'\">'. $lang['RETURN_PROFILE'] .'</a><br /><br />';\n            }\n            else\n            {\n                $message = 'Вы успешно перевели средства для фрилича.<br /><br /><a href=\"'. BONUS_URL .'\">'. $lang['BONUS_RETURN'] .'</a><br /><a href=\"'. PROFILE_URL . $userdata['user_id'] .'\">'. $lang['RETURN_PROFILE'] .'</a><br /><br />';\n            }\n            bb_die($message);\n        }\n    }\n}\n//Freeleech END\n[/PHP]\n- найти\n[PHP]\nelse\n{\n\n    $template->assign_vars(array(\n        'U_USER_PROFILE'  => PROFILE_URL . $user_id,\n        'S_MODE_ACTION'     => 'profile.php?mode=bonus',\n        'PAGE_TITLE'     => $lang['EXCHANGE_BONUS'],\n        'MY_BONUS'        => sprintf($lang['MY_BONUS'], $user_points),\n    ));\n    [/PHP]\n- заменить на\n[PHP]\nelse\n{\n    $freel = DB()->fetch_row(\"SELECT SUM(made) AS mades FROM bb_freeleech\");\n\n    $template->assign_vars(array(\n        'U_USER_PROFILE'  => PROFILE_URL . $user_id,\n        'S_MODE_ACTION'     => 'profile.php?mode=bonus',\n        'PAGE_TITLE'     => $lang['EXCHANGE_BONUS'],\n        'MY_BONUS'        => sprintf($lang['MY_BONUS'], $user_points),\n        //Freeleech START\n        'FREELEECH'       => $bb_cfg['freeleech_enabled'] && (strtotime($bb_cfg['freeleech_time_end'], TIMENOW) > TIMENOW),\n        'MADE'            => ($freel['mades'] == 0) ? 0 : $freel['mades'],\n        'COST_FREE'       => $bb_cfg['freeleech_cost'],\n        //Freeleech END\n    ));\n    [/PHP]\n-- admin_board.php\n- найти\n[PHP]\n'SEED_BONUS_USER_REGDATE' => $new['seed_bonus_user_regdate'],\n[/PHP]\n- после вставить\n[PHP]\n//Freeleech START\n'FREELEECH_ENABLED'       => $new['freeleech_enabled'],\n'FREELEECH_COST'          => $new['freeleech_cost'],\n'FREELEECH_TIME_END'      => $new['freeleech_time_end'],\n//Freeleech END\n[/PHP]\n-- admin_board.tpl\n- найти\n[HTML]\n<!-- END bonus -->\n<tr class=\"row3 med\"><td colspan=\"2\"></td></tr>\n<tr id=\"bonus_upload\">\n    <td><h4>{L_SEED_BONUS_ROPORTION}</h4><h6></h6></td>\n    <td>\n        <input class=\"post\" type=\"text\" size=\"5\" name=\"bonus_upload[]\" value=\"\" />&nbsp;{L_GB} <br />\n        <input class=\"post\" type=\"text\" size=\"5\" name=\"bonus_upload_price[]\" value=\"\" />&nbsp;{L_PRICE}\n        <input onclick=\"$('#bonus_upload').clone().appendTo('.bonus_upload');\" class=\"post\" type=\"button\" size=\"2\" value=\"+\" />\n        <input onclick=\"$('#bonus_upload').remove();\" class=\"post\" type=\"button\" size=\"2\" value=\"-\" />\n    </td>\n</tr>\n<tbody class=\"bonus_upload\"></tbody>\n[/HTML]\n- после вставить\n[HTML]\n<tr class=\"row3 med\">\n    <td class=\"bold tCenter\" colspan=\"2\">Настройки фрилича</td>\n</tr>\n<tr>\n    <td><h4>Включить/отключить фрилич</h4></td>\n    <td>\n        <label><input type=\"radio\" name=\"freeleech_enabled\" value=\"1\" <!-- IF FREELEECH_ENABLED -->checked=\"checked\"<!-- ENDIF --> />{L_ENABLED}</label>&nbsp;&nbsp;\n        <label><input type=\"radio\" name=\"freeleech_enabled\" value=\"0\" <!-- IF not FREELEECH_ENABLED -->checked=\"checked\"<!-- ENDIF --> />{L_DISABLED}</label>\n    </td>\n</tr>\n<tr>\n    <td><h4>Стоимость фрилича</h4></td>\n    <td><input class=\"post\" type=\"text\" size=\"25\" maxlength=\"100\" name=\"freeleech_cost\" value=\"{FREELEECH_COST}\" /></td>\n</tr>\n<!-- IF FREELEECH_ENABLED -->\n<tr>\n    <td><h4>Дата окончания фрилича</h4></td>\n    <td><input class=\"post\" type=\"text\" size=\"25\" maxlength=\"100\" name=\"freeleech_time_end\" value=\"{FREELEECH_TIME_END}\" /></td>\n</tr>\n<!-- ENDIF -->\n[/HTML]\n-- usercp_bonus.tpl\n- найти\n\n<!-- END bonus_upload -->\n\n- после вставить\n[HTML]\n<!-- IF not FREELEECH -->\n<tr class=\"sectionFooter med\">\n    <td class=\"bold tCenter\">{L_DESCRIPTION}</td>\n    <td class=\"bold tCenter\">{L_PRICE}</td>\n    <td class=\"bold tCenter\">Уже внесено</td>\n</tr>\n<tr class=\"row2 med\">\n    <td class=\"tLeft\">\n        Хотите скачивать раздачи не думая о рейтинге? Вы можете пожертвовать свои очки сидирования для всеобщего фрилича.\n        <input type=\"text\" name=\"points_fr\" placeholder=\"Введите количество сид-бонусов для пожертвования\" value=\"\">\n    </td>\n    <td>{COST_FREE}</td>\n    <td>{MADE}</td>\n</tr>\n<!-- ENDIF -->\n[/HTML]\n-- page_header.tpl\n- найти\n[HTML]<!--logo-->[/HTML]\n- перед вставить\n[HTML]\n<script type=\"text/javascript\">\n    ajax.freeleech = function() {\n        ajax.exec({\n            action  : 'freeleech',\n            points  : 100.00,\n        });\n    };\n    ajax.callback.freeleech = function(data) {};\n</script>\n[/HTML]\n- найти\n[HTML]<a href=\"{U_INDEX}\"><img src=\"styles/images/logo/logo.png\" alt=\"{SITENAME}\" /></a>[/HTML]\n- после вставить\n[HTML]<span title=\"Добавить 100 очков в копилку для фрилича\" style=\"margin: 56px 867px 10px -25px\" class=\"UserOnline\" onclick=\"ajax.freeleech();\"><span></span>+100</span>[/HTML]\n-- main.css\n- вставить\n[HTML]\n.UserOnline, .UserOnlineInvisible {\n    background: url(\"../images/category-23px-light.png\") repeat-x scroll center top #6CB2E4;\n    border: 1px solid #6CB2E5;\n    border-radius: 3px 0 3px 3px;\n    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);\n    color: #FCFCFF;\n    display: block;\n    float: right;\n    font-size: 9px;\n    margin: -15px -5px 5px -25px;\n    padding: 3px 4px;\n    position: relative;\n}\n.UserOnline span, .UserOnlineInvisible span {\n    background-color: #6CB2E4;\n    border-top-right-radius: 3px;\n    height: 4px;\n    position: absolute;\n    right: -1px;\n    top: -4px;\n    width: 5px;\n}\n.UserOnline {\n    background: url(\"../images/category-23px-light.png\") repeat-x scroll center top #62A641;\n    border: 1px solid #5FA23E;\n}\n.UserOnline span {  background-color: #5FA23E; }\n[/HTML]\n[/SPOILER]",
+    "owner": "dredd",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1432235542,
+      "file_size": 119480,
+      "filename": "1.webp",
+      "height": 923,
+      "id": 3879,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/1-webp.3879/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3883-01c62a65f4e41e6332ee2fab4a9c784e.jpg?hash=iavhpYypum",
+      "width": 1280
+    },
+    {
+      "attach_date": 1432235547,
+      "file_size": 131734,
+      "filename": "2.webp",
+      "height": 984,
+      "id": 3880,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2-webp.3880/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3884-048dde3caca4863b14d358d4e924f0f7.jpg?hash=IZI_M-2ms2",
+      "width": 1280
+    },
+    {
+      "attach_date": 1432235549,
+      "file_size": 86828,
+      "filename": "3.webp",
+      "height": 923,
+      "id": 3881,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/3-webp.3881/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3885-61b1d91d8642acc0cb94a4c2e7650dac.jpg?hash=fj_An_izKI",
+      "width": 1280
+    },
+    {
+      "attach_date": 1432235551,
+      "file_size": 46522,
+      "filename": "4.webp",
+      "height": 923,
+      "id": 3882,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/4-webp.3882/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3886-ee487557a1b0a59f66221bed827b5627.jpg?hash=CqrnhzJsez",
+      "width": 1280
+    },
+    {
+      "attach_date": 1432235552,
+      "file_size": 47668,
+      "filename": "5.webp",
+      "height": 923,
+      "id": 3883,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/5-webp.3883/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3887-4b01521491cd1d070b57d67bdfc18358.jpg?hash=zyoI-fOcSK",
+      "width": 1280
+    },
+    {
+      "attach_date": 1432235554,
+      "file_size": 120172,
+      "filename": "6.webp",
+      "height": 923,
+      "id": 3884,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/6-webp.3884/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3888-bc100a88667570c1f25554a9e52930da.jpg?hash=EmYbmQz4Vt",
+      "width": 1280
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет пользователям возможность скидываться на всеобщий фрилич (на месяц).<br />\n<br />\nПеречислять можно как с главной страницы, так и со страницы обмена сид-бонуса. Фрилич на месяц (пока не опционально).",
+  "download_count": 664,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/232.jpg?1432583720",
+  "id": 232,
+  "is_fileless": null,
+  "last_update": 1433264868,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1432235690,
+  "resource_state": "visible",
+  "slug": "frilic-za-sid-bonus",
+  "tag_line": "Добавляет пользователям возможность скидываться на всеобщий фрилич (на месяц).",
+  "tags": [],
+  "title": "Фрилич за сид-бонус",
+  "url_path": "/resources/frilic-za-sid-bonus.232/",
+  "user_id": 2684,
+  "username": "dredd",
+  "version": "1.0.1",
+  "versions": [
+    {
+      "download_count": 291,
+      "files": [
+        {
+          "filename": "freeleech.zip",
+          "id": 3914,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4795,
+          "src_url": "https://torrentpier.com/api/resource-versions/338/download?file=3914"
+        }
+      ],
+      "id": 338,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1433264868,
+      "version_state": "visible",
+      "version_string": "1.0.1",
+      "view_url": "https://torrentpier.com/resources/frilic-za-sid-bonus.232/version/338/"
+    },
+    {
+      "download_count": 125,
+      "files": [
+        {
+          "filename": "freeleech.zip",
+          "id": 3893,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4576,
+          "src_url": "https://torrentpier.com/api/resource-versions/334/download?file=3893"
+        }
+      ],
+      "id": 334,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1432583830,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/frilic-za-sid-bonus.232/version/334/"
+    },
+    {
+      "download_count": 133,
+      "files": [
+        {
+          "filename": "freeleech.zip",
+          "id": 3887,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4825,
+          "src_url": "https://torrentpier.com/api/resource-versions/332/download?file=3887"
+        }
+      ],
+      "id": 332,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1432266338,
+      "version_state": "visible",
+      "version_string": "0.2",
+      "view_url": "https://torrentpier.com/resources/frilic-za-sid-bonus.232/version/332/"
+    },
+    {
+      "download_count": 128,
+      "files": [
+        {
+          "filename": "freeleech.zip",
+          "id": 3886,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4825,
+          "src_url": "https://torrentpier.com/api/resource-versions/331/download?file=3886"
+        }
+      ],
+      "id": 331,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1432235690,
+      "version_state": "visible",
+      "version_string": "0.1",
+      "view_url": "https://torrentpier.com/resources/frilic-za-sid-bonus.232/version/331/"
+    }
+  ],
+  "view_count": 933
+}

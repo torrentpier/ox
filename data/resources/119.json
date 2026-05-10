@@ -1,0 +1,280 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Закладки by drew.zip",
+      "id": 6711,
+      "local_path": null,
+      "r2_key": null,
+      "size": 11500,
+      "src_url": "https://torrentpier.com/api/resource-versions/667/download?file=6711"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "drew",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание:</b> Добавляет пользователю возможность добавления нужной темы в закладки.",
+  "download_count": 1230,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/119.jpg?1425405500",
+  "id": 119,
+  "is_fileless": null,
+  "last_update": 1771169753,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1407221325,
+  "resource_state": "visible",
+  "slug": "zakladki",
+  "tag_line": "Добавляет пользователю возможность добавления нужной темы в закладки.",
+  "tags": [
+    "добавить в закладки",
+    "закладки",
+    "мод",
+    "моды",
+    "пост в закладки",
+    "тема в закладики",
+    "темы",
+    "топик в закладки"
+  ],
+  "title": "Закладки",
+  "url_path": "/resources/zakladki.119/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.4.0",
+  "versions": [
+    {
+      "download_count": 66,
+      "files": [
+        {
+          "filename": "[FULL] Закладки by drew.zip",
+          "id": 6711,
+          "local_path": null,
+          "r2_key": null,
+          "size": 11500,
+          "src_url": "https://torrentpier.com/api/resource-versions/667/download?file=6711"
+        }
+      ],
+      "id": 667,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1771169753,
+      "version_state": "visible",
+      "version_string": "v1.4.0",
+      "view_url": "https://torrentpier.com/resources/zakladki.119/version/667/"
+    },
+    {
+      "download_count": 218,
+      "files": [
+        {
+          "filename": "[FULL] Закладки by drew.zip",
+          "id": 6082,
+          "local_path": null,
+          "r2_key": null,
+          "size": 9476,
+          "src_url": "https://torrentpier.com/api/resource-versions/527/download?file=6082"
+        }
+      ],
+      "id": 527,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1721502574,
+      "version_state": "visible",
+      "version_string": "v1.3.0",
+      "view_url": "https://torrentpier.com/resources/zakladki.119/version/527/"
+    },
+    {
+      "download_count": 101,
+      "files": [
+        {
+          "filename": "[FULL] Закладки by drew.zip",
+          "id": 6061,
+          "local_path": null,
+          "r2_key": null,
+          "size": 8317,
+          "src_url": "https://torrentpier.com/api/resource-versions/521/download?file=6061"
+        }
+      ],
+      "id": 521,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1720888736,
+      "version_state": "visible",
+      "version_string": "v1.2.6",
+      "view_url": "https://torrentpier.com/resources/zakladki.119/version/521/"
+    },
+    {
+      "download_count": 99,
+      "files": [
+        {
+          "filename": "[FULL] Закладки by drew.zip",
+          "id": 6009,
+          "local_path": null,
+          "r2_key": null,
+          "size": 8067,
+          "src_url": "https://torrentpier.com/api/resource-versions/504/download?file=6009"
+        }
+      ],
+      "id": 504,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1718537376,
+      "version_state": "visible",
+      "version_string": "v1.2.5",
+      "view_url": "https://torrentpier.com/resources/zakladki.119/version/504/"
+    },
+    {
+      "download_count": 108,
+      "files": [
+        {
+          "filename": "[FULL] Закладки by drew.zip",
+          "id": 5954,
+          "local_path": null,
+          "r2_key": null,
+          "size": 8014,
+          "src_url": "https://torrentpier.com/api/resource-versions/488/download?file=5954"
+        }
+      ],
+      "id": 488,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1712573339,
+      "version_state": "visible",
+      "version_string": "v1.2.4",
+      "view_url": "https://torrentpier.com/resources/zakladki.119/version/488/"
+    },
+    {
+      "download_count": 103,
+      "files": [
+        {
+          "filename": "[FULL] Закладки by drew.zip",
+          "id": 5852,
+          "local_path": null,
+          "r2_key": null,
+          "size": 7931,
+          "src_url": "https://torrentpier.com/api/resource-versions/472/download?file=5852"
+        }
+      ],
+      "id": 472,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1709098546,
+      "version_state": "visible",
+      "version_string": "v1.2.3",
+      "view_url": "https://torrentpier.com/resources/zakladki.119/version/472/"
+    },
+    {
+      "download_count": 103,
+      "files": [
+        {
+          "filename": "[FULL] Закладки by drew.zip",
+          "id": 5813,
+          "local_path": null,
+          "r2_key": null,
+          "size": 7801,
+          "src_url": "https://torrentpier.com/api/resource-versions/459/download?file=5813"
+        }
+      ],
+      "id": 459,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1707822503,
+      "version_state": "visible",
+      "version_string": "v1.2.2",
+      "view_url": "https://torrentpier.com/resources/zakladki.119/version/459/"
+    },
+    {
+      "download_count": 104,
+      "files": [
+        {
+          "filename": "[FULL] Закладки by drew.zip",
+          "id": 5801,
+          "local_path": null,
+          "r2_key": null,
+          "size": 7621,
+          "src_url": "https://torrentpier.com/api/resource-versions/453/download?file=5801"
+        }
+      ],
+      "id": 453,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1707156526,
+      "version_state": "visible",
+      "version_string": "v1.2.1",
+      "view_url": "https://torrentpier.com/resources/zakladki.119/version/453/"
+    },
+    {
+      "download_count": 101,
+      "files": [
+        {
+          "filename": "[FULL] Закладки by drew.zip",
+          "id": 5791,
+          "local_path": null,
+          "r2_key": null,
+          "size": 7272,
+          "src_url": "https://torrentpier.com/api/resource-versions/450/download?file=5791"
+        }
+      ],
+      "id": 450,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1707036162,
+      "version_state": "visible",
+      "version_string": "v1.2.0",
+      "view_url": "https://torrentpier.com/resources/zakladki.119/version/450/"
+    },
+    {
+      "download_count": 141,
+      "files": [
+        {
+          "filename": "book.zip",
+          "id": 3211,
+          "local_path": null,
+          "r2_key": null,
+          "size": 3254,
+          "src_url": "https://torrentpier.com/api/resource-versions/230/download?file=3211"
+        }
+      ],
+      "id": 230,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425405573,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/zakladki.119/version/230/"
+    },
+    {
+      "download_count": 126,
+      "files": [
+        {
+          "filename": "book.rar",
+          "id": 2586,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2816,
+          "src_url": "https://torrentpier.com/api/resource-versions/130/download?file=2586"
+        }
+      ],
+      "id": 130,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1407221325,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/zakladki.119/version/130/"
+    }
+  ],
+  "view_count": 5533
+}

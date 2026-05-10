@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 87496,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41455,
+  "last_post_date": 1473403487,
+  "node_id": 57,
+  "post_date": 1461083109,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87496,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "А давайте тут собирать id всех торрент клиентов. Я вот например вывожу клиента в профиле пользователя. Вот что удалось собрать<br />\n<br />\n<div>Spoiler content hidden.</div><br />\nНеизвестные peer_id<br />\n<pre class=\"xfBb-code\" data-lang=\"\">-TM2900-rC7E2guxCUis\nR20------M.NoIHeQyFl</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1461083109,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87995,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/6370/\">zxc</a>, второй скорее всего rtorrent серверный.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1468613831,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88381,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Вот еще несколько новых<br />\n<br />\n-FD51E<br />\n-BZ1011-<br />\n-TX1118-<br />\n<br />\nКто знает?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1473403487,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "peer_id-list",
+  "sticky": false,
+  "tags": [],
+  "title": "peer_id list",
+  "url_path": "/threads/peer_id-list.41455/",
+  "user_id": 6370,
+  "username": "sхс",
+  "view_count": 1416
+}

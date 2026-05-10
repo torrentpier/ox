@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 62553,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 58,
+    "title": "Suggestions for improving TorrentPier"
+  },
+  "id": 26166,
+  "last_post_date": 1410037437,
+  "node_id": 58,
+  "post_date": 1410015402,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62553,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Можно ли реализовать в движке трекера такую фичу ?<br />\n<div>Spoiler content hidden.</div>Что бы работало примерно так:<br />\nЮзер открывает страницу раздачи на движке торрентпира, при этом с трекера загружается код страницы в которой есть обращение браузера пользователя к <a href=\"http://retracker.local/announce\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://retracker.local/announce</a>, тоесть к локальному ретрекеру. Браузер по коду загруженному с торрент-трекера просит ретрекер отдать список пиров (количество сидов и личеров). После получения этих данных с ретрекера, на странице раздачи юзера появляются соответсвующие данные статистики, примерно как на скриншоте выше.<br />\n <br />\nТаким образом для админов не очень популярных, только раскручиваемых торрент-трекеров, торрент-файлы которые были перекачаны с других популярных трекеров, будет возможность привлечь пользователей за счёт дополнительной статистики пиров.<br />\nПользователи же, увидев на раздаче пиров со своей сети, скорее всего скачают эту раздачу, так как она будет загружаться на большой (локальной) скорости.<br />\n <br />\nПримерно подобный вопрос ранее задавал на рутрекере <a href=\"http://rutracker.org/forum/viewtopic.php?p=64639473#64639473\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://rutracker.org/forum/viewtopic.php?p=64639473#64639473</a><br />\nВроде как можно. Даже, думаю, если попросить <a href=\"http://rutracker.org/forum/viewtopic.php?t=2234744&amp;start=960#\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><span style=\"color: #005a88\"><span style=\"font-family: 'Verdana'\"><b><span style=\"font-size: 13px\">hardhouse</span></b></span></span></a> с рутрекера помочь, если что, думаю он согласится.<br />\n <br />\nНу и ещё один повод этой фичи - это частичная децентрализация самого сайта с раздачами. Тоесть статистику пиров юзеры будут брать не только с самого торрент-трекера.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1410015402,
+      "user_id": 5013,
+      "user_title": "User",
+      "username": "grey_rat"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62567,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Ничья помочь в разборе спецификации протокола не нужна, но все описанное выше относится скорее к имплементации возможностей мультитрекера в движок - можно будет добавить не только статистику по ретрекеру, а еще и по некоторым другим крупным внешним трекерам. Запланирован мультитрекер ближе к октябрю, следовательно тогда же что-то похожее на ваш скриншот и будет реализовано.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1410026492,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62571,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "С крупными внешними трекерами всё понятно, сам трекер может хранить у себя статистику пиров по торрентам с этих трекеров.<br />\nА вот с ретрекером так не получится, адрес хоть и общий для всех retracker.local , а вот сами ретрекеры у юзеров могут быть разными (разные провайдеры, с разных городов). <br />\nТоесть, у одного юзера статистика по ретрекеру может быть 5 сидов и 10 личей, а у другого 1 сид и 2 лича (совсем другая статистика, с другого места)<br />\n <br />\nЕсли трекер ограничен в доступности другим юзерам (внутрилокальный), и ретрекер у всех пользователей один на всех - то статистика по ретрекеру будет у всех одинаковая. Трекер будет собирать статистику retracker.local с ретрекера того провайдера где он хостится. И с этим случаем проблем нет, фича многим очень даже пригодится!<br />\n <br />\nА в случае открытого интернет-трекера, браузер юзера каким-то образом должен обращаться к конкретно своему ретрекеру retracker.local который находится у его провайдера. Имеется ввиду, браузер будет общаться с ретрекером на языке торрент-клиента по http протоколу, и отданные ретрекером данные будут так же обработаны браузером юзера. Статистика пиров в этом случае не хранится на сайте трекера, а берётся на прямую с ретрекера.<br />\n <br />\nP.S. <br />\nЕсли я в своих фантазиях зашёл слишком далеко и откровенно пишу бред, не стесняйтесь мне об этом говорить 🙂<br />\nЗнаний у меня по технической стороне реализации этой идеи - ноль. По этому я могу писать всякую ахинею.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1410035091,
+      "user_id": 5013,
+      "user_title": "User",
+      "username": "grey_rat"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62572,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Это может прокатить только с локальными трекерами. И то нужно что бы на сервере и у клиентов один DNS был прописан. С каждого клиента без стороннего софта этого скорее всего не вытянуть.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1410037437,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    }
+  ],
+  "prefix_id": 32,
+  "reply_count": 3,
+  "slug": "statistika-pirov-http-retracker-local-announce-na-stranice-razdaci",
+  "sticky": false,
+  "tags": [],
+  "title": "Статистика пиров http://retracker.local/announce на странице раздачи",
+  "url_path": "/threads/statistika-pirov-http-retracker-local-announce-na-stranice-razdaci.26166/",
+  "user_id": 5013,
+  "username": "grey_rat",
+  "view_count": 2516
+}

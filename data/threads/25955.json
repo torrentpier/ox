@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 60961,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25955,
+  "last_post_date": 1402956493,
+  "node_id": 57,
+  "post_date": 1401483734,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60961,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Добрые сутки такая проблема установил движок в вожу логин и пароль admin admin  и просто тупо высвечиваеться белый экран как решить  кто знает?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1401483734,
+      "user_id": 5363,
+      "user_title": "User",
+      "username": "amstel sam"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60962,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"http://домен/admin/index.php\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://домен/admin/index.php</a><br />\nКэш.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1401514264,
+      "user_id": 4923,
+      "user_title": "User",
+      "username": "Russs"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60963,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Russs\"><a href=\"http://домен/admin/index.php\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://домен/admin/index.php</a><br />\nКэш.</blockquote> <br />\nНе помогает",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1401518872,
+      "user_id": 5363,
+      "user_title": "User",
+      "username": "amstel sam"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60964,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>amstel sam</b>, файл config.php вернуть в кодировку UTF-8 без BOM",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1401523383,
+      "user_id": 5166,
+      "user_title": "User",
+      "username": "RYT."
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61140,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Или просто открыть папку log, и посмотреть что там есть, для начала.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1402956493,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "ne-mogu-vojti-v-adminku",
+  "sticky": false,
+  "tags": [],
+  "title": "Не могу войти в админку",
+  "url_path": "/threads/ne-mogu-vojti-v-adminku.25955/",
+  "user_id": 5363,
+  "username": "amstel sam",
+  "view_count": 1435
+}

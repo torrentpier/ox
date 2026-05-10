@@ -1,0 +1,134 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 59181,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25786,
+  "last_post_date": 1392706531,
+  "node_id": 57,
+  "post_date": 1392665996,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1392665846,
+          "file_size": 102352,
+          "filename": "Screenshot_1.webp",
+          "height": 506,
+          "id": 2455,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot_1-webp.2455/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2460-97bf12502cefa6aa851decac08410584.jpg?hash=urWaQXDeWL",
+          "width": 1008
+        }
+      ],
+      "id": 59181,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Привет сообществу! Столкнулся со следующей проблемой<br />\nПри входе в административную панель наблюдаю следующую картину (скрин прикреплён)<br />\n <br />\nDebian 7 stable / nginx / php5-fpm<br />\nВсё остальное кажется работает.<br />\n--up<br />\nСообщение об ошибках убрать не проблема, главный вопрос: Где сама панель?)",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1392665996,
+      "user_id": 4792,
+      "user_title": "User",
+      "username": "1 2"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59182,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "У php нет доступа к изменению таймзоны? Слишком сильно в настройках безопасности накручено. Сервер свой?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1392667867,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59183,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>1 2</b>, в php.ini укажи таймзону.<br />\n <br />\n<b>Exile</b>,<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Debian 7 stable / nginx / php5-fpm</blockquote>Логично же что не хостинг.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1392668860,
+      "user_id": 5056,
+      "user_title": "User",
+      "username": "andry"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59189,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Мне вот больше интересно, люди совсем не хотят пользоваться поиском или проще еще одну тему создать надо но только свою? Обсуждалось ни раз!",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1392699226,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59190,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В ошибке все же и написано.<br />\n <br />\n1. Открыть php.ini (скорее всего лежит здесь /etc/php5/fpm/php.ini)<br />\n2. Найти строку:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">;date.timezone =</pre>3. Раскомментировать и установить значение часового пояся<br />\n<pre class=\"xfBb-code\" data-lang=\"\">date.timezone = &quot;Europe/Moscow&quot;</pre>4. Перезапустить php5-fpm<br />\n<pre class=\"xfBb-code\" data-lang=\"\">/etc/init.d/php5-fpm reload</pre>",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1392706531,
+      "user_id": 821,
+      "user_title": "User",
+      "username": "brain"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "problema-v-admin-paneli",
+  "sticky": false,
+  "tags": [],
+  "title": "Проблема в админ-панели",
+  "url_path": "/threads/problema-v-admin-paneli.25786/",
+  "user_id": 4792,
+  "username": "1 2",
+  "view_count": 1525
+}

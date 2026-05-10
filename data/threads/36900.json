@@ -1,0 +1,97 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 77510,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 36900,
+  "last_post_date": 1425320400,
+  "node_id": 80,
+  "post_date": 1425316794,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1425316651,
+          "file_size": 34496,
+          "filename": "Скрин.webp",
+          "height": 423,
+          "id": 3176,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/skrin-webp.3176/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/3/3180-fb582ec05efd878b69f1c58807fd6052.jpg?hash=umbik7BT3_",
+          "width": 645
+        }
+      ],
+      "id": 77510,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "При использовании встроенного функционала Запретов из профиля юзера, появляется вплывающее окно с ошибкой (см. скриншот).<br />\nВерсия ТП: 2.1.5<br />\n<br />\nЛоги чистые.<br />\nРазобраться самому в чём дело не удалось.<br />\nМожет быть есть что-то, что я могу проверить самостоятельно?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1425316794,
+      "user_id": 1478,
+      "user_title": "User",
+      "username": "Nikolay90"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 77518,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/1478/\">@gerhanovn</a> какие-нибудь модификации установлены? <a href=\"https://github.com/torrentpier/torrentpier/commit/f8d0238f5b31a744a0939d230ddf6095d6a8fb5e\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://github.com/torrentpier/torrentpier/commit/f8d0238f5b31a744a0939d230ddf6095d6a8fb5e</a> - вот эти строки посмотрите, там все так?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1425317706,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 77531,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\"><a href=\"https://github.com/torrentpier/torrentpier/commit/f8d0238f5b31a744a0939d230ddf6095d6a8fb5e\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://github.com/torrentpier/torrentpier/commit/f8d0238f5b31a744a0939d230ddf6095d6a8fb5e</a> - вот эти строки посмотрите, там все так?</blockquote>Exile, спасибо.<br />\nЭто был мой косяк, неудачно обновился до 2.1.5<br />\nВ файле library/includes/sessions.php у меня всё было верно:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$opt_js = Zend\\Json\\Json::decode($_COOKIE[&#039;opt_js&#039;], Zend\\Json\\Json::TYPE_ARRAY);</pre>а вот в файле library/ajax/change_user_opt.php у меня было неправильно:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$new_opt = Zend\\Json\\Json::decode($this-&gt;request[&#039;user_opt&#039;]);</pre>правильно:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$new_opt = Zend\\Json\\Json::decode($this-&gt;request[&#039;user_opt&#039;], Zend\\Json\\Json::TYPE_ARRAY);</pre>Теперь всё работает корректно.<br />\n<br />\nСпасибо!",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1425320400,
+      "user_id": 1478,
+      "user_title": "User",
+      "username": "Nikolay90"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 2,
+  "slug": "osibka-vstroennogo-funkcionala-zapretov",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка встроенного функционала запретов",
+  "url_path": "/threads/osibka-vstroennogo-funkcionala-zapretov.36900/",
+  "user_id": 1478,
+  "username": "Nikolay90",
+  "view_count": 1231
+}

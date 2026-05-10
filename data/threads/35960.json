@@ -1,0 +1,57 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 75782,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 35960,
+  "last_post_date": 1424270292,
+  "node_id": 110,
+  "post_date": 1424270292,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 75782,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\n<br />\nСегодня, <a href=\"https://torrentpier.com/threads/uvedomlenie-o-skoroj-smene-servera.35334/\" class=\"link link--internal\">как и было обещано ранее</a>, состоялся переезд на новый хостинг (<a href=\"https://torrentpier.com/link-forums/oblachnyj-xosting-dlja-trekera.66/\" class=\"link link--internal\">DigitalOcean</a>) и соответственно новый сервер. Мощность сервера увеличена в два раза (CPU, RAM), поэтому ожидается увеличение общей скорости его работы. Но поскольку страна размещения у нового хостинга Нидерланды (ранее была Украина), большая просьба принять участие в опросе, размещенном в этой теме о том, увеличилась ли у вас скорость загрузки и работы ресурса.<br />\n<br />\nВ настоящий момент не работают бета- и демо-версии TorrentPier, их работоспособность будет восстановлена позднее. Обо всех обнаруженных после переезда ошибках просьба сообщать в этой теме. Активные сессии у всех пользователей сброшены, поэтому войти на форум вам понадобится заново.<br />\n<br />\nСпасибо за внимание.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1424270292,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "sostoalsa-pereezd-na-novyj-hosting",
+  "sticky": false,
+  "tags": [
+    "новости"
+  ],
+  "title": "Состоялся переезд на новый хостинг",
+  "url_path": "/threads/sostoalsa-pereezd-na-novyj-hosting.35960/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 1619
+}

@@ -1,0 +1,165 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 20920,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1572,
+  "last_post_date": 1349233803,
+  "node_id": 57,
+  "post_date": 1349229916,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1349229905,
+          "file_size": 12846,
+          "filename": "1.webp",
+          "height": 108,
+          "id": 1472,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1-webp.1472/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1473-5e932c6087cf39a8ca56a8b6486f8a40.jpg?hash=IPrQTvgDmG",
+          "width": 395
+        }
+      ],
+      "id": 20920,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "У меня есть вопрос о группах пользователей. Например, я хочу сделать несколько пользователей модераторами, но я вижу только администратор и простые группы пользователей. Как добавить модератора или любой другой группы?<br />\n <br />\n<img src=\"https://torrentpier.com/attachments/1472/\" alt=\"1.webp\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1349229916,
+      "user_id": 2695,
+      "user_title": "User",
+      "username": "Romka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20921,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Romka</b>, создать группу, и в правах группы указать на какие разделы хочешь поставить их.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1349230481,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Bustra"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20925,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Bustra\"><b>Romka</b>, создать группу, и в правах группы указать на какие разделы хочешь поставить их.</blockquote>Да, но как назначить пользователей в новую группу?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1349233603,
+      "user_id": 2695,
+      "user_title": "User",
+      "username": "Romka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20926,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Romka</b>, зайти в группу /groupcp.php и добавить данного пользователя в группу.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1349233664,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Bustra"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1349233752,
+          "file_size": 63722,
+          "filename": "Снимок.webp",
+          "height": 706,
+          "id": 1473,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-webp.1473/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1474-999925976ca8952555f59d764c88eceb.jpg?hash=B_uQ-1RGoi",
+          "width": 1031
+        }
+      ],
+      "id": 20927,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Romka\">Да, но как назначить пользователей в новую группу?</blockquote><a href=\"https://torrentpier.com/attachments/1473/\"><img src=\"https://torrentpier.com/data/attachments/1/1474-999925976ca8952555f59d764c88eceb.jpg?hash=B_uQ-1RGoi\" alt=\"Снимок.webp\" /></a>",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1349233757,
+      "user_id": 30,
+      "user_title": "User",
+      "username": "krumax"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20928,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Bustra\"><b>Romka</b>, зайти в группу /groupcp.php и добавить данного пользователя в группу.</blockquote>Хорошо, теперь я вижу, спасибо.",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1349233803,
+      "user_id": 2695,
+      "user_title": "User",
+      "username": "Romka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "o-gruppah-pol-zovatelej",
+  "sticky": false,
+  "tags": [],
+  "title": "О группах пользователей",
+  "url_path": "/threads/o-gruppah-pol-zovatelej.1572/",
+  "user_id": 2695,
+  "username": "Romka",
+  "view_count": 1860
+}

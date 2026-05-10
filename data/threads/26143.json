@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 62288,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 58,
+    "title": "Suggestions for improving TorrentPier"
+  },
+  "id": 26143,
+  "last_post_date": 1409428173,
+  "node_id": 58,
+  "post_date": 1409357687,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62288,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Поле Релиз-группы добавили. Но очень не хватает возможности поиска по &quot;Жанру фильма&quot; , &quot;Год выпуска&quot; и &quot;Формат видео&quot;.<br />\nЭто можно как-то реализовать?<br />\nВот пример кинозала<br />\n <br />\n<img src=\"http://i64.fastpic.ru/big/2014/0830/d0/fc9a9ba9db7afe90814c9b0d4d5790d0.jpg\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1409357687,
+      "user_id": 2634,
+      "user_title": "User",
+      "username": "sasha20072007"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62290,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>sasha20072007</b>, реализовать можно все, что душе угодно",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1409374878,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62293,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "По моему это нужно очень многим. Написали бы, что подобная доработка будет стоить столько ко то и столько. Юзеры охотнее переводили бы деньги на развитие проекта. Сейчас же процветают только барыги. которые это все криво . конечно. могут реализовать за деньги  и добавив одно - портят что-то другое",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1409383603,
+      "user_id": 2634,
+      "user_title": "User",
+      "username": "sasha20072007"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62309,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "как вы жанр хотите фильтровать? а формат видео?<br />\nне нужно<br />\nдоработка стоит 5к рублей",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1409428173,
+      "user_id": 43,
+      "user_title": "User",
+      "username": "JDVU"
+    }
+  ],
+  "prefix_id": 41,
+  "reply_count": 3,
+  "slug": "dobavlenie-poiskovyh-polej",
+  "sticky": false,
+  "tags": [],
+  "title": "Добавление поисковых полей",
+  "url_path": "/threads/dobavlenie-poiskovyh-polej.26143/",
+  "user_id": 2634,
+  "username": "sasha20072007",
+  "view_count": 1111
+}

@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 67446,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 29751,
+  "last_post_date": 1416374673,
+  "node_id": 57,
+  "post_date": 1416342664,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 67446,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подскажите пожалуйста что можно предпринять для решения этого вопроса. <br />\n<br />\n<img src=\"http://i64.fastpic.ru/big/2014/1118/df/8a42d3474b598d79b334944111ec7ddf.png\" alt=\"\" /> <br />\nЭто в панели вебмастера гугл. Ростут ошибки 404 <br />\nСтраница с указанным адресом отсутствует, а сервер не возвращает код ошибки 404 (файл не найден).<br />\n<br />\nФорума, который вы выбрали, не существует.<br />\nТемы, которую вы запросили, не существует.<br />\n<br />\nИнтересует редирект на главную стр. сайта с задержкой. Для корректной обработки ошибки.  На сервере настроены модули для редиректов.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1416342664,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 67457,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"vitalix\">Подскажите пожалуйста что можно предпринять для решения этого вопроса.<br />\n<br />\n<img src=\"http://i64.fastpic.ru/big/2014/1118/df/8a42d3474b598d79b334944111ec7ddf.png\" alt=\"\" /><br />\nЭто в панели вебмастера гугл. Ростут ошибки 404<br />\nСтраница с указанным адресом отсутствует, а сервер не возвращает код ошибки 404 (файл не найден).<br />\n<br />\nФорума, который вы выбрали, не существует.<br />\nТемы, которую вы запросили, не существует.<br />\n<br />\nИнтересует редирект на главную стр. сайта с задержкой. Для корректной обработки ошибки.  На сервере настроены модули для редиректов.</blockquote>Нужно просто отдавать 404, и перенаправлять по 301.<br />\nА такого щас нету.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1416374673,
+      "user_id": 2789,
+      "user_title": "User",
+      "username": "Sprinx"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "osibka-404",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка 404",
+  "url_path": "/threads/osibka-404.29751/",
+  "user_id": 4163,
+  "username": "vitalix",
+  "view_count": 1932
+}

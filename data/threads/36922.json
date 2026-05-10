@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 77565,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 36922,
+  "last_post_date": 1425325151,
+  "node_id": 47,
+  "post_date": 1425325151,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 77565,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Пользователь Exile разместил новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/ogranichenie-novyx-polzovatelej.182/\" class=\"link link--internal\">Ограничение новых пользователей</a> - Добавляет возможность ограничивать новым пользователям возможность написания сообщений.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> добавляет возможность ограничивать новым пользователям возможность написания сообщений. Временной период ограничения настраивается в config.php.</blockquote><br />\n<a href=\"https://torrentpier.com/resources/ogranichenie-novyx-polzovatelej.182/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1425325151,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "ogranicenie-novyh-pol-zovatelej",
+  "sticky": false,
+  "tags": [],
+  "title": "Ограничение новых пользователей",
+  "url_path": "/threads/ogranicenie-novyh-pol-zovatelej.36922/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 1422
+}

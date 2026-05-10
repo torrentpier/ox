@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 26824,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 2196,
+  "last_post_date": 1360443182,
+  "node_id": 57,
+  "post_date": 1360431410,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26824,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "внезапно вылез нотис <pre class=\"xfBb-code\" data-lang=\"\">Warning: Illegal offset type in isset or empty in \\home\\***\\www\\tracker.php on line 341</pre> <br />\nhttp://s019.*******.host/i640/1302/56/b236c87c6d64.png<br />\n <br />\n<s>на работу не влияет, но хотелось бы поправить</s><br />\n <br />\nне могу редактировать форумы в админке, сразу открыта первая категория, и другие нельзя открыть.<br />\nподскажите пожалуйста, как это поправить?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1360431410,
+      "user_id": 258,
+      "user_title": "User",
+      "username": "ChazychaZ"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26834,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>ChazychaZ</b>, какие моды ставил? Логи sql есть?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1360439241,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26835,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "ничего нового не ставил,  в логах sql старая ошибка, она у меня уже очень давно <br />\n<pre class=\"xfBb-code\" data-lang=\"\">#001064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &#039;123&#039; at line 2\n \nSHOW TABLE STATUS FROM 123\n \nSource  : admin\\index.php(137) :: db1.123</pre>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1360439741,
+      "user_id": 258,
+      "user_title": "User",
+      "username": "ChazychaZ"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26838,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "удалил 2 последние раздачи, всё стало на место...странно как то, скажите что это могло быть? на будущее",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1360443182,
+      "user_id": 258,
+      "user_title": "User",
+      "username": "ChazychaZ"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "notis-v-tracker-php",
+  "sticky": false,
+  "tags": [],
+  "title": "Нотис в tracker.php",
+  "url_path": "/threads/notis-v-tracker-php.2196/",
+  "user_id": 258,
+  "username": "ChazychaZ",
+  "view_count": 1075
+}

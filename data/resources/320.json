@@ -1,0 +1,152 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Быстрое создание раздачи & топика by belomaxorka.zip",
+      "id": 6710,
+      "local_path": null,
+      "r2_key": null,
+      "size": 2115,
+      "src_url": "https://torrentpier.com/api/resource-versions/666/download?file=6710"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1738757034,
+      "file_size": 12262,
+      "filename": "firefox_tbyKHH7Ezu.webp",
+      "height": 174,
+      "id": 6362,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_tbykhh7ezu-webp.6362/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6366-62e458ea443fb22fd69317ed09f08e22.jpg?hash=5nFkDFeUdp",
+      "width": 556
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Данный мод позволяет ускорить процесс создания раздач. Кнопка (плюсик) для создания новой темы, появляется рядом с названием форума в списке категорий на главной.<br />\n<b>Совместимость:</b> все версии.",
+  "download_count": 464,
+  "external_url": null,
+  "icon_url": null,
+  "id": 320,
+  "is_fileless": null,
+  "last_update": 1771168142,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1738757036,
+  "resource_state": "visible",
+  "slug": "bystroe-sozdanie-razdaci-topika",
+  "tag_line": "Данный мод позволяет ускорить процесс создания раздач.",
+  "tags": [
+    "быстрое создание релиза",
+    "быстрое создание темы",
+    "быстрое создания",
+    "мод",
+    "моды"
+  ],
+  "title": "Быстрое создание раздачи & топика",
+  "url_path": "/resources/bystroe-sozdanie-razdaci-topika.320/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.2.0",
+  "versions": [
+    {
+      "download_count": 62,
+      "files": [
+        {
+          "filename": "[FULL] Быстрое создание раздачи & топика by belomaxorka.zip",
+          "id": 6710,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2115,
+          "src_url": "https://torrentpier.com/api/resource-versions/666/download?file=6710"
+        }
+      ],
+      "id": 666,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1771168142,
+      "version_state": "visible",
+      "version_string": "v1.2.0",
+      "view_url": "https://torrentpier.com/resources/bystroe-sozdanie-razdaci-topika.320/version/666/"
+    },
+    {
+      "download_count": 162,
+      "files": [
+        {
+          "filename": "[FULL] Быстрое создание раздачи & топика by belomaxorka.zip",
+          "id": 6480,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2050,
+          "src_url": "https://torrentpier.com/api/resource-versions/637/download?file=6480"
+        }
+      ],
+      "id": 637,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1751906514,
+      "version_state": "visible",
+      "version_string": "v1.1.0",
+      "view_url": "https://torrentpier.com/resources/bystroe-sozdanie-razdaci-topika.320/version/637/"
+    },
+    {
+      "download_count": 112,
+      "files": [
+        {
+          "filename": "[FULL] Быстрое создание раздачи & топика by belomaxorka.zip",
+          "id": 6421,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1995,
+          "src_url": "https://torrentpier.com/api/resource-versions/616/download?file=6421"
+        }
+      ],
+      "id": 616,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1743313189,
+      "version_state": "visible",
+      "version_string": "v1.0.1",
+      "view_url": "https://torrentpier.com/resources/bystroe-sozdanie-razdaci-topika.320/version/616/"
+    },
+    {
+      "download_count": 132,
+      "files": [
+        {
+          "filename": "[FULL] Быстрое создание раздачи & топика by belomaxorka.zip",
+          "id": 6361,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1964,
+          "src_url": "https://torrentpier.com/api/resource-versions/598/download?file=6361"
+        }
+      ],
+      "id": 598,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1738757036,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/bystroe-sozdanie-razdaci-topika.320/version/598/"
+    }
+  ],
+  "view_count": 3012
+}

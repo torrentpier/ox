@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 13466,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1102,
+  "last_post_date": 1331497341,
+  "node_id": 57,
+  "post_date": 1331497341,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13466,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Кароче проблема такая, как и у многих новичков, тоесть, вся статистика тупо стоит на месте по нулям. перечитал весь форум в доль и поперек а стат всеравно на месте стоит. использую LanServer который выложен на данном форуме, движок TP2 r300 stable , xbt и Memcache работают исправно в логах все нормально. Крон отвязан! Помогите кто настроить!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1331497341,
+      "user_id": 947,
+      "user_title": "User",
+      "username": "Adddiii"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "cto-netak",
+  "sticky": false,
+  "tags": [],
+  "title": "Что нетак?",
+  "url_path": "/threads/cto-netak.1102/",
+  "user_id": 947,
+  "username": "Adddiii",
+  "view_count": 1009
+}

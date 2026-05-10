@@ -1,0 +1,65 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95230,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 42180,
+  "last_post_date": 1696244550,
+  "node_id": 3,
+  "post_date": 1696244550,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1696244536,
+          "file_size": 2882195,
+          "filename": "retolife.ru.zip",
+          "height": 0,
+          "id": 5542,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/retolife-ru-zip.5542/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 95230,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Дамп retolife.ru",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1696244550,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "damp-retolife-ru-dla-oznakomlenia",
+  "sticky": false,
+  "tags": [],
+  "title": "Дамп retolife.ru (для ознакомления)",
+  "url_path": "/threads/damp-retolife-ru-dla-oznakomlenia.42180/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 635
+}

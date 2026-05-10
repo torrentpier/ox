@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 10781,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 854,
+  "last_post_date": 1328176452,
+  "node_id": 57,
+  "post_date": 1328045728,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10781,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "господа, пытаюсь включить активизацию учётных записей администратором, но ничего не получается.<br />\nПисьмо от пользователя или чего там незнаю, так и не приходит ни куда.<br />\n <br />\nКак в общем включить или настроить  активизацию учётных записей администратором на трекере ? объясните подробно дураку )<br />\nспасибо.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1328045728,
+      "user_id": 846,
+      "user_title": "User",
+      "username": "*Jonathan*"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10782,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "первое нужно удостоверится что авторизация на smtp сервер происходит",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1328046436,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10880,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>*Jonathan*</b>,<br />\nа у вас прописано мыло администратора?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1328176452,
+      "user_id": 782,
+      "user_title": "User",
+      "username": "qaqra"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "aktivizacia-ucetnyh-zapisej-pomogite",
+  "sticky": false,
+  "tags": [],
+  "title": "активизация учётных записей - Помогите.",
+  "url_path": "/threads/aktivizacia-ucetnyh-zapisej-pomogite.854/",
+  "user_id": 846,
+  "username": "*Jonathan*",
+  "view_count": 1257
+}

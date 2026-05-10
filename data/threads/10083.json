@@ -1,0 +1,196 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 37834,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 10083,
+  "last_post_date": 1374699911,
+  "node_id": 57,
+  "post_date": 1374697036,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1374697127,
+          "file_size": 9322,
+          "filename": "Снимок экрана 2013-07-24 в 23.14.32.webp",
+          "height": 84,
+          "id": 2131,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-ekrana-2013-07-24-v-23-14-32-webp.2131/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2136-9662461922e7f85d6a7e0476a8ebe9b0.jpg?hash=MP_CVP_B5A",
+          "width": 316
+        }
+      ],
+      "id": 37834,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте, помогите исправить:<br />\n <br />\n<a href=\"https://torrentpier.com/attachments/2131/\"><img src=\"https://torrentpier.com/data/attachments/2/2136-9662461922e7f85d6a7e0476a8ebe9b0.jpg?hash=MP_CVP_B5A\" alt=\"Снимок экрана 2013-07-24 в 23.14.32.webp\" /></a><br />\n <br />\nЗаранее спасибо ....",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1374697036,
+      "user_id": 2636,
+      "user_title": "User",
+      "username": "fail"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 37835,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Это значит что уже существует  раздача с идентичным  торрент файлом на вашем торрент трекере",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1374697498,
+      "user_id": 1126,
+      "user_title": "User",
+      "username": "fiks44"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 37836,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>fiks44</b>, ето понятно, но во сплывающим окне вид не тот! (все в коде)..<br />\n <br />\nЕто у всех ТАК?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1374697636,
+      "user_id": 2636,
+      "user_title": "User",
+      "username": "fail"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1374698584,
+          "file_size": 56792,
+          "filename": "Снимок экрана 2013-07-24 в 23.41.45.webp",
+          "height": 376,
+          "id": 2132,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-ekrana-2013-07-24-v-23-41-45-webp.2132/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2137-06bb6c81357cf7a0da603890ccc1830a.jpg?hash=dS6vAgCHx4",
+          "width": 1352
+        }
+      ],
+      "id": 37837,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Такая же ошибка и в последней версии TP<br />\n <br />\n<a href=\"https://torrentpier.com/attachments/2132/\"><img src=\"https://torrentpier.com/data/attachments/2/2137-06bb6c81357cf7a0da603890ccc1830a.jpg?hash=dS6vAgCHx4\" alt=\"Снимок экрана 2013-07-24 в 23.41.45.webp\" /></a>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1374698587,
+      "user_id": 2636,
+      "user_title": "User",
+      "username": "fail"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 37840,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"fail\"><b>fiks44</b>, ето понятно, но во сплывающим окне вид не тот! (все в коде)..<br />\n <br />\nЕто у всех ТАК?</blockquote>Нет, r-495 всё гуд<br />\n<div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1374699561,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1374699673,
+          "file_size": 11082,
+          "filename": "Снимок экрана 2013-07-25 в 00.01.04.webp",
+          "height": 252,
+          "id": 2133,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-ekrana-2013-07-25-v-00-01-04-webp.2133/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2138-824fb59aa677ece5edc53246543d7e5c.jpg?hash=Wnys9fUYqs",
+          "width": 471
+        }
+      ],
+      "id": 37841,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>vitalix</b>, а с темы попробуйте зарегать ?<br />\n <br />\n<a href=\"https://torrentpier.com/attachments/2133/\"><img src=\"https://torrentpier.com/data/attachments/2/2138-824fb59aa677ece5edc53246543d7e5c.jpg?hash=Wnys9fUYqs\" alt=\"Снимок экрана 2013-07-25 в 00.01.04.webp\" /></a>",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1374699676,
+      "user_id": 2636,
+      "user_title": "User",
+      "username": "fail"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 37842,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"fail\"><b>vitalix</b>, а с темы попробуйте зарегать ?<br />\n <br />\n<a href=\"https://torrentpier.com/attachments/2133/\">View attachment 2133</a></blockquote>хмм. точно есть баг. не замечал ранее ))",
+      "message_state": "visible",
+      "position": 6,
+      "post_date": 1374699911,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 6,
+  "slug": "osibka",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка",
+  "url_path": "/threads/osibka.10083/",
+  "user_id": 2636,
+  "username": "fail",
+  "view_count": 1716
+}

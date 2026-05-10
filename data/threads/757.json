@@ -1,0 +1,121 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 9701,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 757,
+  "last_post_date": 1326852516,
+  "node_id": 110,
+  "post_date": 1326713491,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9701,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\n <br />\nСегодня форум был обновлен с допотопной версии XenForo 1.0.2, до последней версии 1.1.1. Изменений множество, большинство из которых можно найти на русском сайте поддержки движка (ищущий да найдет ссылку). В целом - движок будет работать более стабильно и появятся новые удобные функции.<br />\n <br />\nВ настоящий момент форум находится в состоянии почти что чистой установки, в результате чего, кое-какие вещи, ставшие уже привычными (статусы присутствия на форуме, например) пропали. Последующие несколько часов потрачу на переустановку и настройку всех старых модификаций, которые у нас были установлены, а также добавлю несколько новых, необходимость в которых давно назрела. <br />\n <br />\nОбо всех крупных изменениях буду оповещать через новости ресурса. Спасибо за внимание.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1326713491,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9702,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Если нашли какие-то критические ошибки - пишите сюда.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1326713513,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9703,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Exile</b>, самое главное логотип вернуть. Поздравляю нас всех с обновлением",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1326713996,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9704,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Nightmare\"><b>Exile</b>, самое главное логотип вернуть. Поздравляю нас всех с обновлением</blockquote>Главное моды переустановить, чем сейчас и занимаюсь. А то за мультиаккаунты меня <b>Nikolaich </b>вздернет 🙂",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1326714118,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9866,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\">А то за мультиаккаунты меня Nikolaich вздернет</blockquote>Это точно, я могу! 🙂",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1326852516,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Nikolaich"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "obnovlenie-foruma",
+  "sticky": false,
+  "tags": [
+    "новости"
+  ],
+  "title": "Обновление форума",
+  "url_path": "/threads/obnovlenie-foruma.757/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 2687
+}

@@ -1,0 +1,95 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 27148,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 48,
+    "title": "Paid modifications for TorrentPier"
+  },
+  "id": 2234,
+  "last_post_date": 1361546714,
+  "node_id": 48,
+  "post_date": 1361433537,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1361546579,
+          "file_size": 8802,
+          "filename": "Снимок.webp",
+          "height": 300,
+          "id": 1895,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-webp.1895/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1896-b305e7aa4a3945a881e0b8281a030692.jpg?hash=zdpf6LhPEM",
+          "width": 253
+        },
+        {
+          "attach_date": 1361546658,
+          "file_size": 35306,
+          "filename": "Снимок.webp",
+          "height": 180,
+          "id": 1896,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-webp.1896/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1897-9e58cad009d3de4a0d3435ad2717c3f7.jpg?hash=2-KBUt2M3v",
+          "width": 1647
+        }
+      ],
+      "id": 27148,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Автор:</b> Zenden<br />\n<b>ICQ:</b> 590-700-200<br />\n<b>Описание первого мода:</b> Кеширование статистки пользователя, отображающейся на главной странице.<br />\n<b>Описание второго мода:</b> Кеширование количества релизов, сидируемых и скачиваемых<br />\nраздач пользователя.<br />\nВсе это можно прикрутить к выводу статистики в шапке (аля тапочки), дабы убрать постоянные запросы.<br />\n<b>Цена:</b> 550р за два мода<br />\n<a href=\"https://torrentpier.com/attachments/1895/\"><img src=\"https://torrentpier.com/data/attachments/1/1896-b305e7aa4a3945a881e0b8281a030692.jpg?hash=zdpf6LhPEM\" alt=\"Снимок.webp\" /></a><a href=\"https://torrentpier.com/attachments/1896/\"><img src=\"https://torrentpier.com/data/attachments/1/1897-9e58cad009d3de4a0d3435ad2717c3f7.jpg?hash=2-KBUt2M3v\" alt=\"Снимок.webp\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1361433537,
+      "user_id": 97,
+      "user_title": "User",
+      "username": "Zenden"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27228,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Приложил скриншоты.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1361546714,
+      "user_id": 97,
+      "user_title": "User",
+      "username": "Zenden"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "kesirovanie-statistiki-pol-zovatela-platnyj",
+  "sticky": false,
+  "tags": [],
+  "title": "Кеширование статистики пользователя [платный]",
+  "url_path": "/threads/kesirovanie-statistiki-pol-zovatela-platnyj.2234/",
+  "user_id": 97,
+  "username": "Zenden",
+  "view_count": 1825
+}

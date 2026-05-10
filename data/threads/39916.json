@@ -1,0 +1,73 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 81751,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 39916,
+  "last_post_date": 1428430710,
+  "node_id": 110,
+  "post_date": 1428358481,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 81751,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\n<br />\nВ связи с тем, что в ходе весенних школьных каникул ресурс оккупировали не совсем адекватные личности, <a href=\"https://torrentpier.com/terms/\" class=\"link link--internal\">пункт правил 1.2</a> начинает пристально контролироваться. Завели ли вы несколько аккаунтов чтобы поднять свои вопросы, попытались ли обойти с их помощью какие-то ограничения (отключенный чат за технические вопросы в нем) или решили кого-то обмануть или попиарить свой проект-однодневку - исход будет один: перманентный бан без каких-либо альтернатив. Не можете соблюдать простейшие правила ресурса - ваша проблема. Зато у других останется время на ответы на адекватные вопросы добропорядочных пользователей, без потребности разгребать ваш мусор.<br />\n<br />\nСпасибо за внимание.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1428358481,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 81861,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Давно пора)))",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1428430710,
+      "user_id": 5981,
+      "user_title": "User",
+      "username": "serega"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "bor-ba-s-mul-tiakkauntami",
+  "sticky": false,
+  "tags": [
+    "новости"
+  ],
+  "title": "Борьба с мультиаккаунтами",
+  "url_path": "/threads/bor-ba-s-mul-tiakkauntami.39916/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 2290
+}

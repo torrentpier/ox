@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 14701,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1179,
+  "last_post_date": 1334169295,
+  "node_id": 57,
+  "post_date": 1333369185,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14701,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Требуется мод защиты от &quot;пылесосов&quot;<br />\nИдея мода такова:<br />\nНа трекере реализована функция по которой новые зарегистрированные пользователи имеют карт бланш по скачиванию релизов до установленного объема....скажем 10 гигов.  Весь этот период их рейтинг не учитывается, то есть равен нулю.<br />\nДля того чтобы пользователи после завершения льготного периода не перерегистрировались для получения нового льготного периода требуется ввести ограничение на возможность скачивания &quot;свежих&quot; раздач...скажем за последние три месяца, для пользователей без рейтинга.<br />\nПри этом нужно чтобы они могли скачивать свои торренты и желательно &quot;золотые&quot; раздачи.<br />\nФинансирование возможно, но ограничено.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1333369185,
+      "user_id": 99,
+      "user_title": "User",
+      "username": "Fatum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15127,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Fatum</b>, Скажу тебе по секрету, Твоим делом не кто не займется. пиши лучше Xz или PheRum",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1334165644,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15130,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Fatum</b>, тоже интересует данный мод, могу войти в долю",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1334168736,
+      "user_id": 1006,
+      "user_title": "User",
+      "username": "Oblom"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15132,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В принципе хак готов и я за него уже заплатил. (неделю пользую)<br />\nЕсли хочешь войти в долю давай договоримся с исполнителем, что он за отдельную плату (с твоей стороны) прикрутит настройки к Админке",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1334169295,
+      "user_id": 99,
+      "user_title": "User",
+      "username": "Fatum"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "isu-ispolnitela-po-napisaniu-moda",
+  "sticky": false,
+  "tags": [],
+  "title": "Ищу исполнителя по написанию мода",
+  "url_path": "/threads/isu-ispolnitela-po-napisaniu-moda.1179/",
+  "user_id": 99,
+  "username": "Fatum",
+  "view_count": 1399
+}

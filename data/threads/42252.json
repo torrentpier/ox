@@ -1,0 +1,136 @@
+{
+  "custom_fields": {
+    "torrentpier": "242"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95953,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42252,
+  "last_post_date": 1710530348,
+  "node_id": 57,
+  "post_date": 1710456669,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1710456741,
+          "file_size": 725344,
+          "filename": "tperror.webp",
+          "height": 1659,
+          "id": 5899,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/tperror-webp.5899/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5903-19dd9bfa4d4388452540131dbb62656d.jpg?hash=3GQKB0Bnwr",
+          "width": 3838
+        }
+      ],
+      "id": 95953,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1710456744,
+      "message_parsed": "hye i have a webserver setup, with domain, my problem is when i try to install torrentpier in var/www/mydomain.com/public_html/torrentpier it give me error after i successfuly install it with <a href=\"https://getcomposer.org/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Composer</a>, if i install it at other place i don&#039;t know how can i view torrentpier, im using webserver to easily view it.<br />\n<br />\nmy question is how can i correctly install torrentpier in webserver? is there an option to install like that ?? please help<br />\n<br />\n<img src=\"https://torrentpier.com/attachments/5899/\" alt=\"tperror.webp\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1710456669,
+      "user_id": 10864,
+      "user_title": "User",
+      "username": "Belon"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95954,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Hi. You need grant RW (Read/Write) rights for directories. Read more <a href=\"https://github.com/torrentpier/torrentpier?tab=readme-ov-file#-access-rights-on-folders-and-files\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">here</a>.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1710473555,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95955,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "And use MySQL 5 or MariaDB instead of MySQL 8",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1710473679,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95956,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1710496209,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"belomaxorka\">And use MySQL 5 or MariaDB instead of MySQL 8</blockquote><br />\nyes i follow all the instruction there, and already change the $reserved_name and $reserved_port to mydomain.com/torrentpier port : 443 , is this correct setting?  the default permission is 0755 for all the folders, what am i doing wrong?<br />\n<br />\ncan&#039;t work with mysql 8? i have other website that running latest mysql and php 8.2 , this is the spec :<br />\n<br />\n<ul>\n<li data-xf-list-type=\"ul\">Server: Localhost via UNIX socket</li>\n<li data-xf-list-type=\"ul\">Server type: MySQL</li>\n<li data-xf-list-type=\"ul\">Server connection: SSL is not being used <a href=\"https://bajubesi.org/phpmyadmin/doc/html/setup.html#ssl\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"https://bajubesi.org/phpmyadmin/themes/dot.gif\" alt=\"Documentation\" /></a></li>\n<li data-xf-list-type=\"ul\">Server version: 8.0.36-0ubuntu0.22.04.1 - (Ubuntu)</li>\n<li data-xf-list-type=\"ul\">Protocol version: 10</li>\n<li data-xf-list-type=\"ul\">Server charset: UTF-8 Unicode (utf8mb4)</li>\n<li data-xf-list-type=\"ul\">Apache/2.4.58 (Ubuntu)</li>\n<li data-xf-list-type=\"ul\">Database client version: libmysql - mysqlnd 8.2.16</li>\n<li data-xf-list-type=\"ul\">PHP extension: mysqli <a href=\"https://bajubesi.org/phpmyadmin/url.php?url=https%3A%2F%2Fwww.php.net%2Fmanual%2Fen%2Fbook.mysqli.php\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"https://bajubesi.org/phpmyadmin/themes/dot.gif\" alt=\"Documentation\" /></a> curl <a href=\"https://bajubesi.org/phpmyadmin/url.php?url=https%3A%2F%2Fwww.php.net%2Fmanual%2Fen%2Fbook.curl.php\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"https://bajubesi.org/phpmyadmin/themes/dot.gif\" alt=\"Documentation\" /></a> mbstring <a href=\"https://bajubesi.org/phpmyadmin/url.php?url=https%3A%2F%2Fwww.php.net%2Fmanual%2Fen%2Fbook.mbstring.php\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"https://bajubesi.org/phpmyadmin/themes/dot.gif\" alt=\"Documentation\" /></a></li>\n<li data-xf-list-type=\"ul\">PHP version: 8.2.16</li>\n</ul>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1710495931,
+      "user_id": 10864,
+      "user_title": "User",
+      "username": "Belon"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95966,
+      "is_admin": false,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/10864/\">Belon</a> <br />\nUse PHP 8.1; compatibility with the PHP 8.2 is still ongoing development.<br />\nInstall MariaDB (compatible with MySQL queries but faster and open-source).<br />\nIf the issue will persist, would be glad to hear it.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1710530348,
+      "user_id": 10699,
+      "user_title": "Developer (ex)",
+      "username": "kovalensky"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "installing-torrentpier-on-webserver",
+  "sticky": false,
+  "tags": [],
+  "title": "Installing torrentpier on Webserver?",
+  "url_path": "/threads/installing-torrentpier-on-webserver.42252/",
+  "user_id": 10864,
+  "username": "Belon",
+  "view_count": 853
+}

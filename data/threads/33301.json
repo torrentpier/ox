@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 72199,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 33301,
+  "last_post_date": 1421337497,
+  "node_id": 57,
+  "post_date": 1421332634,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 72199,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Есть у меня один пост длиной 100к символов<br />\nИз-за него менял тип поля на mediumtext в mysql<br />\n<br />\nНо именно сегодня отказывается пересохраняться и после таймаута выдает ошибку<br />\n<pre class=\"xfBb-code\" data-lang=\"\">#002006 MySQL server has gone away\n\nDELETE FROM bb_posts_search WHERE post_id = 850\n\nSource  : includes/bbcode.php(449) ::</pre><br />\nВот что на 449 строке<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\">DB()-&gt;query(&quot;DELETE FROM &quot;. BB_POSTS_SEARCH .&quot; WHERE post_id = $post_id&quot;);</pre><br />\nЗашел в админку и нажал перечесть индексы поиска. На 7% все заглохло с ошибкой<br />\nFatal error: DB Error [admin/admin_rebuild_search.php(213)]<br />\n<br />\nТаблицы<br />\n<pre class=\"xfBb-code\" data-lang=\"\">    bb_posts_html        Записей 7,699    MyISAM    utf8_general_ci    19.2 МБ    507.8КБ\n    bb_posts_search        Записей 7,201    MyISAM    utf8_general_ci    6.1 МБ    228Байт\n    bb_posts_text        Записей 8,123    MyISAM    utf8_general_ci    17.3 МБ</pre><br />\n<br />\nЧто это за BB_POSTS_SEARCH<br />\nМогу я просто очистить эту таблицу вручную?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1421332634,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 72200,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "И кстати в bb_posts_search нет записи с post_id 850<br />\nЭтот пост почти полностью состоит из ссылок, bb тегов и картинок",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1421332846,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 72221,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/2685/\">@ler</a> судя по тексту ошибки - все куда банальнее - в момент выполнения задачи почему-то перезагрузился (отключился) mysql-сервер.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1421337497,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "002006-mysql-server-has-gone-away",
+  "sticky": false,
+  "tags": [],
+  "title": "#002006 MySQL server has gone away",
+  "url_path": "/threads/002006-mysql-server-has-gone-away.33301/",
+  "user_id": 0,
+  "username": "ler",
+  "view_count": 1076
+}

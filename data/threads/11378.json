@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 39702,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 11378,
+  "last_post_date": 1375996733,
+  "node_id": 80,
+  "post_date": 1375942015,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 39702,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Чтобы магниты работали для xbt в functions.php меняем create_magnet на<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">function create_magnet($infohash, $auth_key, $logged_in)\n{\n    global $bb_cfg, $userdata, $images;\n        $passkey = substr(&#039;00000000&#039;. dechex($userdata[&#039;user_id&#039;]), -8) . substr(sha1($bb_cfg[&#039;torrent_pass_private_key&#039;] .&#039; &#039;. $auth_key .&#039; &#039;. $userdata[&#039;user_id&#039;] .&#039; &#039;. $infohash), 0, 24);\n        $announce = $bb_cfg[&#039;announce_xbt&#039;] .&#039;/&#039;. $passkey .&#039;/announce&#039;;\n    return &#039;&lt;a href=&quot;magnet:?xt=urn:btih:&#039;. bin2hex($infohash) .&#039;&amp;tr=&#039;. urlencode($announce) .&#039;&quot;&gt;&lt;img src=&quot;&#039;. $images[&#039;icon_magnet&#039;] .&#039;&quot; width=&quot;12&quot; height=&quot;12&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&#039;;\n}</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1375942015,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Matt Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 39817,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://code.google.com/p/torrentpier2/source/detail?r=543\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://code.google.com/p/torrentpier2/source/detail?r=543</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1375996733,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 1,
+  "slug": "magnet-ne-rabotaut-s-xbt",
+  "sticky": false,
+  "tags": [],
+  "title": "Magnet не работают с xbt",
+  "url_path": "/threads/magnet-ne-rabotaut-s-xbt.11378/",
+  "user_id": 0,
+  "username": "Matt Brown",
+  "view_count": 1194
+}

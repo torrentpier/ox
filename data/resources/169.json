@@ -1,0 +1,86 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "Смена автора на аяксе.zip",
+      "id": 3109,
+      "local_path": null,
+      "r2_key": null,
+      "size": 1790,
+      "src_url": "https://torrentpier.com/api/resource-versions/203/download?file=3109"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]*** Открыть ajax.php и найти ****************************************\n\n//\n// Ajax\n//\nclass ajax_common\n{\n    var $request  = array();\n    var $response = array();\n\n    var $valid_actions = array(\n    //   ACTION NAME             AJAX_AUTH\n        'edit_user_profile' => array('admin'),\n        'change_user_rank'  => array('admin'),\n        'change_user_opt'   => array('admin'),\n        'manage_user'       => array('admin'),\n\n*** Добавить ниже ******************************************************\n\n'admin_change_poster'    => array('admin'),\n'admin_change_topic'    => array('admin'),\n\n*** Перед последней скобкой вставить **************************************\n\nfunction admin_change_topic()\n    {\n  global $userdata, $lang;\n\n  $mode = (string) $this->request['mode'];\n\n  switch($mode)\n  {\n   case 'change_topic_id':\n          $topic_id = (int) $this->request['topic_id'];\n          $new_id   = (int) $this->request['new_id'];\n\n          if(!$new_id || !$topic_id) bb_die('false id');\n\n          if(DB()->fetch_rowset(\"SELECT topic_id FROM \". BB_TOPICS .\" WHERE topic_id = $new_id\", 'topic_id')) bb_die('Такой топик уже имеется в базе');\n\n          DB()->query(\"UPDATE \". BB_TOPICS .\" SET topic_id = $new_id WHERE topic_id = $topic_id\");\n          DB()->query(\"UPDATE \". BB_TOPICS_WATCH .\" SET topic_id = $new_id WHERE topic_id = $topic_id\");\n          DB()->query(\"UPDATE \". BB_POSTS .\" SET topic_id = $new_id WHERE topic_id = $topic_id\");\n          DB()->query(\"UPDATE \". BB_BT_TORRENTS .\" SET topic_id = $new_id WHERE topic_id = $topic_id\");\n                DB()->query(\"UPDATE \". BB_BT_TRACKER .\" SET topic_id = $new_id WHERE topic_id = $topic_id\");\n                DB()->query(\"UPDATE \". BB_BT_TRACKER_SNAP .\" SET topic_id = $new_id WHERE topic_id = $topic_id\");\n                DB()->query(\"UPDATE \". BB_TOPICS_WATCH .\" SET topic_id = $new_id WHERE topic_id = $topic_id\");\n                DB()->query(\"UPDATE \". BB_BT_TORSTAT .\" SET topic_id = $new_id WHERE topic_id = $topic_id\");\n\n          bb_die('Готово!');\n   break;\n\n        }\n    }\n\n\n    function admin_change_poster()\n    {\n  global $userdata, $lang;\n\n  $mode = (string) $this->request['mode'];\n\n  switch($mode)\n  {\n\n   case 'change_poster_id':\n          require(INC_DIR .'functions_admin.php');\n\n          $new_user = (string) $this->request['user'];\n          $post_id  = (int) $this->request['post_id'];\n\n                if(!$post_id || !$new_user) bb_die('false id');\n    if(!$new = get_userdata($new_user)) bb_die($lang['NO_USER_ID_SPECIFIED']);\n\n                $old_user = DB()->fetch_rowset(\"SELECT poster_id FROM \". BB_POSTS .\" WHERE post_id = $post_id\", 'poster_id');\n\n          DB()->query(\"UPDATE \". BB_TOPICS .\" SET topic_poster = {$new['user_id']} WHERE topic_first_post_id = $post_id\");\n          DB()->query(\"UPDATE \". BB_POSTS .\" SET poster_id = {$new['user_id']} WHERE post_id = $post_id\");\n          DB()->query(\"UPDATE \". BB_BT_TORRENTS .\" SET poster_id = {$new['user_id']} WHERE post_id = $post_id\");\n\n                sync('user_posts', $old_user);\n                sync('user_posts', $new['user_id']);\n\n          bb_die('Готово!');\n   break;\n        }\n    }\n\n*** Открыть viewtopic.tpl и найти ***********************************\n\n<a class=\"small bold\" href=\"{PIN_HREF}\">{PIN_TITLE}</a>\n        </td>\n        <!-- IF SELECT_PPP -->\n\n*** Заменить *********************************\n\n<a class=\"small bold\" href=\"{PIN_HREF}\">{PIN_TITLE}</a>\n     \n                <!-- IS_SUPER_ADMIN -->     \n        <script type=\"text/javascript\">\n            ajax.admin_change_topic = function(mode) {\n                url = prompt(\"Введите будущий ID-темы\", \"\");\n                if(url)    {\n                    ajax.exec({\n                        action   : 'admin_change_topic',\n                        mode     : mode,\n                        topic_id : {TOPIC_ID},\n                        new_id   : url,\n                    });\n                }\n            }\n            </script>          \n            &nbsp;<span style=\"color:#CDCDCD;\">|</span>&nbsp;\n            <a class=\"small bold\" onclick=\"ajax.admin_change_topic('change_topic_id'); return false;\" href=\"#\">Сменить ID-темы</a>\n        <!-- ENDIF --> \n\n        <!-- IF IS_ADMIN -->\n        &nbsp;<span style=\"color:#CDCDCD;\">|</span>&nbsp;\n            <a class=\"small bold\" onclick=\"ajax.admin_change_poster('change_poster_id'); return false;\" href=\"#\">Сменить автора</a>\n         \n            <!-- ENDIF --> \n     \n        </td>\n        <!-- IF SELECT_PPP -->\n\n*** Найти ***********************************\n\n<!-- BEGIN postrow -->\n<tbody id=\"post_{postrow.POST_ID}\" class=\"{postrow.ROW_CLASS}\">\n\n*** Заменить *********************************\n\n<!-- BEGIN postrow -->\n\n<script type=\"text/javascript\">\n                ajax.admin_change_poster = function(mode) {\n                    user = prompt(\"Введите user_id или username\", \"Tracker\");\n                    if(user)    {\n                        ajax.exec({\n                            action   : 'admin_change_poster',\n                            mode     : mode,\n                            post_id  : {postrow.POST_ID},\n                            user     : user,\n                        });\n                    }\n                }\n            </script>\n\n<tbody id=\"post_{postrow.POST_ID}\" class=\"{postrow.ROW_CLASS}\">\n\n*** Сохранить *************************************[/PHP]\n[/SPOILER]",
+    "owner": "krumax",
+    "sql": "no",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425253351,
+      "file_size": 43258,
+      "filename": "2a54481329a5.webp",
+      "height": 404,
+      "id": 3110,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2a54481329a5-webp.3110/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3114-427986589bb21aa6e1aace0ac682e4bf.jpg?hash=GDgp_xFBm3",
+      "width": 1246
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет возможность менять автора сообщения / id темы. Используется AJAX.",
+  "download_count": 320,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/169.jpg?1425253238",
+  "id": 169,
+  "is_fileless": null,
+  "last_update": 1425253224,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1425253224,
+  "resource_state": "visible",
+  "slug": "smena-avtora-soobsenia-id-temy",
+  "tag_line": "Добавляет возможность менять автора сообщения / id темы.",
+  "tags": [],
+  "title": "Смена автора сообщения / id темы",
+  "url_path": "/resources/smena-avtora-soobsenia-id-temy.169/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 320,
+      "files": [
+        {
+          "filename": "Смена автора на аяксе.zip",
+          "id": 3109,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1790,
+          "src_url": "https://torrentpier.com/api/resource-versions/203/download?file=3109"
+        }
+      ],
+      "id": 203,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425253224,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/smena-avtora-soobsenia-id-temy.169/version/203/"
+    }
+  ],
+  "view_count": 847
+}

@@ -1,0 +1,170 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] BBCode - Фильм по ID by belomaxorka.zip",
+      "id": 6740,
+      "local_path": null,
+      "r2_key": null,
+      "size": 4412,
+      "src_url": "https://torrentpier.com/api/resource-versions/671/download?file=6740"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1721821771,
+      "file_size": 14348,
+      "filename": "firefox_YISQJwWjoK.webp",
+      "height": 424,
+      "id": 6096,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_yisqjwwjok-webp.6096/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6100-acc931e3ebfb4640c08e003aefa91afa.jpg?hash=F66HE-WO34",
+      "width": 737
+    },
+    {
+      "attach_date": 1721821783,
+      "file_size": 6296,
+      "filename": "firefox_eLTr0WKLLb.webp",
+      "height": 120,
+      "id": 6097,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_eltr0wkllb-webp.6097/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6101-7ca9d90b44080773cf3caeaaeb2ac594.jpg?hash=-Bxn4J3nyh",
+      "width": 270
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Добавляет видео-плеер для просмотра фильмов с балансеров. Имеется реклама, от самих балансеров (в самом плеере, в начале фильма).<br />\n<b>Совместимость:</b> все версии.<br />\n<br />\n<b>Доступные методы вставки:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">По Кинопоиск ID</li>\n<li data-xf-list-type=\"ul\">По IMDb ID</li>\n</ul>",
+  "download_count": 425,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/302.jpg?1721821856",
+  "id": 302,
+  "is_fileless": null,
+  "last_update": 1773939579,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1721821787,
+  "resource_state": "visible",
+  "slug": "bbcode-fil-m-po-id",
+  "tag_line": "Добавляет видео-плеер для просмотра фильмов с балансеров.",
+  "tags": [
+    "imdb",
+    "tmdb",
+    "балансеры",
+    "видео",
+    "видео балансеры",
+    "вставка балансера",
+    "кинопоиск",
+    "мод",
+    "моды"
+  ],
+  "title": "BBCode: Фильм по ID",
+  "url_path": "/resources/bbcode-fil-m-po-id.302/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.1.1",
+  "versions": [
+    {
+      "download_count": 42,
+      "files": [
+        {
+          "filename": "[FULL] BBCode - Фильм по ID by belomaxorka.zip",
+          "id": 6740,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4412,
+          "src_url": "https://torrentpier.com/api/resource-versions/671/download?file=6740"
+        }
+      ],
+      "id": 671,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1773939579,
+      "version_state": "visible",
+      "version_string": "v1.1.1",
+      "view_url": "https://torrentpier.com/resources/bbcode-fil-m-po-id.302/version/671/"
+    },
+    {
+      "download_count": 17,
+      "files": [
+        {
+          "filename": "[FULL] BBCode - Фильм по ID by belomaxorka.zip",
+          "id": 6739,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4248,
+          "src_url": "https://torrentpier.com/api/resource-versions/670/download?file=6739"
+        }
+      ],
+      "id": 670,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1773938563,
+      "version_state": "visible",
+      "version_string": "v1.1.0",
+      "view_url": "https://torrentpier.com/resources/bbcode-fil-m-po-id.302/version/670/"
+    },
+    {
+      "download_count": 272,
+      "files": [
+        {
+          "filename": "[FULL] BBCode - Фильм по ID by belomaxorka.zip",
+          "id": 6107,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1312,
+          "src_url": "https://torrentpier.com/api/resource-versions/533/download?file=6107"
+        }
+      ],
+      "id": 533,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1722152117,
+      "version_state": "visible",
+      "version_string": "v1.0.1",
+      "view_url": "https://torrentpier.com/resources/bbcode-fil-m-po-id.302/version/533/"
+    },
+    {
+      "download_count": 98,
+      "files": [
+        {
+          "filename": "[FULL] BBCode - Фильм по ID by belomaxorka.zip",
+          "id": 6095,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1288,
+          "src_url": "https://torrentpier.com/api/resource-versions/530/download?file=6095"
+        }
+      ],
+      "id": 530,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1721821787,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/bbcode-fil-m-po-id.302/version/530/"
+    }
+  ],
+  "view_count": 1663
+}

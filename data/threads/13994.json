@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 43396,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 13994,
+  "last_post_date": 1378462737,
+  "node_id": 80,
+  "post_date": 1378453430,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 43396,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Когда с подробной статистики раздачи пытаться перейти в чей то профиль выдает<br />\nUndefined index: announce_type in /var/www/megatrack/data/www/mysuite.org/includes/ucp/torrent_userprofile.php on line 185 <br />\n<br />\nДанная строчка указывает на <br />\nif($bb_cfg[&#039;announce_type&#039;] == &#039;xbt&#039;)",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1378453430,
+      "user_id": 4282,
+      "user_title": "User",
+      "username": "Yagd"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 43397,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Yagd</b>, возьми и удали это условие и все.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1378453876,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 43407,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Yagd то удалит это условие, но недоработка есть недоработка, ее нужно исправлять... в следующих ревизиях...",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1378455936,
+      "user_id": 4282,
+      "user_title": "User",
+      "username": "Yagd"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 43424,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "удали этот блок с условием целиком. это не недоработка тп2, ибо этого файла уже давно нет",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1378462737,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 3,
+  "slug": "551-revizia-announce_type-torrent_userprofile-php",
+  "sticky": false,
+  "tags": [],
+  "title": "551 ревизия announce_type (torrent_userprofile.php)",
+  "url_path": "/threads/551-revizia-announce_type-torrent_userprofile-php.13994/",
+  "user_id": 4282,
+  "username": "Yagd",
+  "view_count": 1222
+}

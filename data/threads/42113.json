@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94750,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 86,
+    "title": "Questions about PHP"
+  },
+  "id": 42113,
+  "last_post_date": 1678427608,
+  "node_id": 86,
+  "post_date": 1678362199,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94750,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет<br />\nПереехали на новый сервак<br />\nТеперь проблема с торрент файлами,<br />\nпри заливке обрезает русские буквы .<br />\nкто подскажет в чем дело :",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1678362199,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94765,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1678421151,
+      "message_parsed": "Надо настройки php.ini смотреть. Может какое-то расширение не включено.<br />\n<ul>\n<li data-xf-list-type=\"ul\">PHP Extensions: bcmath, intl, tidy (optional), xml, xmlwriter</li>\n</ul>Проверьте включены ли эти экстеншены. А лучше, по возможности скопируйте параметры выборочно из php.ini с старого сервера, в php.ini на новый.<br />\n<br />\nПодозреваемых больше нет",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1678420961,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94769,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"belomaxorka\">Надо настройки php.ini смотреть. Может какое-то расширение не включено.<br />\n<ul>\n<li data-xf-list-type=\"ul\">PHP Extensions: bcmath, intl, tidy (optional), xml, xmlwriter</li>\n</ul>Проверьте включены ли эти экстеншены. А лучше, по возможности скопируйте параметры выборочно из php.ini с старого сервера, в php.ini на новый.<br />\n<br />\nПодозреваемых больше нет</blockquote>Так вопрос в том что латиница не обрезается , обрезается именно кириллица самого торрент файла.<br />\nв таблицу <a href=\"https://5.45.94.192/phpmyadmin/index.php?route=/sql&amp;db=fps&amp;table=bb_attachments_desc&amp;pos=0\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">bb_attachments_desc</a><br />\nв поле real_filename записывается обрезанное название торрент файла если оно русское .<br />\nможете скинуть php.штш для сравнения <br />\n<div class='xfBb-table'>\n<table style='width: 100%'><tr><th></th></tr></table>\n</div>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1678427608,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "kirilica-v-nazvanii-torrent-fajla",
+  "sticky": false,
+  "tags": [],
+  "title": "Кирилица в названии торрент файла",
+  "url_path": "/threads/kirilica-v-nazvanii-torrent-fajla.42113/",
+  "user_id": 5626,
+  "username": "Kryl",
+  "view_count": 883
+}

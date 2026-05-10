@@ -1,0 +1,63 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 96936,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42333,
+  "last_post_date": 1734611201,
+  "node_id": 57,
+  "post_date": 1734611201,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96936,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1734611429,
+      "message_parsed": "Думаю многим знакома проблема, когда после установки модов, у половины пользователей не работает новый функционал. Да, понятно дело что если пользователь бывалый, то догадается прожать Ctrl + F5 чтобы очистить закэшированные скрипты / стили, на крайняк можно опубликовать пост у себя на ресурсе, мол прожмите такую-то комбинацию и будет вам счастье!<br />\n<br />\nНо один вопрос, зачем всё это? Зачем публиковать лишние посты и оставлять часть не опытных пользователей с старой версией сайта? На этот случай есть одно очень простое решение, о котором многие пользователи TP не догадываются.<br />\n<br />\nДумаю многие в файле config.php замечали такую хитрую строчку в самом верху:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">// Increase number after changing js or css\n$bb_cfg[&#039;js_ver&#039;] = $bb_cfg[&#039;css_ver&#039;] = 1;</pre><br />\nКак раз таки она и отвечает за то, чтобы избавить пользователей от нужды прожимать Ctrl + F5. <span style=\"color: rgb(226, 80, 65)\">1</span> - это номер версии файла main.js и main.css. Этот самый номер версии подставляется пользователю, и в кэше файлы стилей и скриптов тоже содержит цифру версии.<br />\nВыглядит это примерно вот так в инспекторе:<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://torrentpier.duckdns.org/styles/templates/default/css/main.css?v=1&quot; type=&quot;text/css&quot;&gt;</pre> параметр на конце <span style=\"color: rgb(226, 80, 65)\">?v=1 </span><span style=\"color: rgb(0, 0, 0)\">как не сложно догадаться соответствует версии прописаной в конфиге.<br />\n<br />\nСледователь,</span> <span style=\"color: rgb(0, 0, 0)\">если у пользователя закэширован ваш сайт ранее, то версия у него будет например <b>?v=1</b>, после того как вы обновите версию (например на <b>2</b>), то пользователю браузер подрузит файл уже не <b>main.css?v=1</b> а <span style=\"color: rgb(0, 0, 0)\"><b>main.css?v=2</b>, а это по мнению браузера два разных файла, следовательно подрузить надо тот что с номером <span style=\"color: rgb(0, 0, 0)\"><b>?v=2 </b>(ибо ранее файла с таким номером версии не было), и тем самым пользователь получит актуальные файлы без необходимости чистить кэш браузера каждый раз.</span></span></span><br />\n<br />\nПоэтому, возьмите за правило, что после каждой установки нового / новых модов (разом), надо обновлять циферку в переменной. Это облегчит жизнь вам и вашим пользователям.<br />\n<br />\nВсем успехов!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1734611201,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "kak-pravil-no-ustanavlivat-mody-ili-kak-pol-zovatelam-oblegcit-zizn",
+  "sticky": false,
+  "tags": [
+    "faq",
+    "как поставить мод",
+    "правильная установка модов",
+    "разбор функционала",
+    "скрытые функции",
+    "советы",
+    "установка модов"
+  ],
+  "title": "Как правильно устанавливать моды (или как пользователям облегчить жизнь)",
+  "url_path": "/threads/kak-pravil-no-ustanavlivat-mody-ili-kak-pol-zovatelam-oblegcit-zizn.42333/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 1006
+}

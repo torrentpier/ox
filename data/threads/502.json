@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 6166,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 502,
+  "last_post_date": 1322455009,
+  "node_id": 57,
+  "post_date": 1322449892,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 6166,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "И так начну сначала.<br />\nЯ сделал торрент на движке TorrentPier и оформил его, но когда попробывал выложить игру нажал &quot;Новая тема&quot;, а он меня перекинул на обычное создание темы(т.е название темы и описание).<br />\nКак сделать что бы когда нажимаешь новая тема, перекидывало на страничку где нужно вводить имя фильма, игры, год, жанр и.т.д",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1322449892,
+      "user_id": 556,
+      "user_title": "User",
+      "username": "Utochka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 6169,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Админка----&gt;TorrentPier----&gt;Шаблоны для релизов",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1322455009,
+      "user_id": 6,
+      "user_title": "User",
+      "username": "frost444"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "stranicka-zagruzki-torrent-fajla",
+  "sticky": false,
+  "tags": [],
+  "title": "Страничка загрузки торрент файла",
+  "url_path": "/threads/stranicka-zagruzki-torrent-fajla.502/",
+  "user_id": 556,
+  "username": "Utochka",
+  "view_count": 1283
+}

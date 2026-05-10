@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 77257,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 36772,
+  "last_post_date": 1731222793,
+  "node_id": 47,
+  "post_date": 1425227007,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 77257,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Пользователь Exile разместил новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/poisk-po-statusu-razdachi.161/\" class=\"link link--internal\">Поиск по статусу раздачи</a> - Добавляет поиск раздачи по ее статусу проверки модератором.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> добавляет поиск раздачи по ее статусу проверки модератором.<br />\n<br />\nДобавляет для модераторов и админов на странице трекера возможность поиска раздач с определенными статусами. Статусы выбираются чекбоксами. Можно создавать свой список статусов для поиска.</blockquote><br />\n<a href=\"https://torrentpier.com/resources/poisk-po-statusu-razdachi.161/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1425227007,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96101,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/poisk-po-statusu-razdachi.161/\" class=\"link link--internal\">Поиск по статусу раздачи</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/poisk-po-statusu-razdachi.161/update/513/\" class=\"link link--internal\">Обновление v2.0.0</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Полностью переписан код</li>\n<li data-xf-list-type=\"ul\">Совместимость со всеми версиями</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/poisk-po-statusu-razdachi.161/update/513/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1714024344,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96813,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/poisk-po-statusu-razdachi.161/\" class=\"link link--internal\">Поиск по статусу раздачи</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/poisk-po-statusu-razdachi.161/update/577/\" class=\"link link--internal\">Обновление v2.1.0</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Обновлен / улучшен код</li>\n<li data-xf-list-type=\"ul\">Название статуса рядом с чекбоксом теперь кликабельно (для удобства)</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/poisk-po-statusu-razdachi.161/update/577/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1731222793,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "poisk-po-statusu-razdaci",
+  "sticky": false,
+  "tags": [],
+  "title": "Поиск по статусу раздачи",
+  "url_path": "/threads/poisk-po-statusu-razdaci.36772/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 2465
+}

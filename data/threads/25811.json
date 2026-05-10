@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 59431,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25811,
+  "last_post_date": 1394124571,
+  "node_id": 57,
+  "post_date": 1394103815,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59431,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "установил версию <span style=\"font-size: 14px\"><span style=\"font-family: 'Helvetica Neue'\"><span style=\"color: #333333\">TorrentPier_II_R400, в торрент клиенте utorrent раздачи коричневые (хотя по локалке качаются), и в движке пишется у раздач что полного источника не было никогда.</span></span></span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1394103815,
+      "user_id": 4906,
+      "user_title": "User",
+      "username": "Alexandrovich"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59432,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "крон отвязан?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1394104127,
+      "user_id": 0,
+      "user_title": "",
+      "username": "sockrat"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59433,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"sockrat\">крон отвязан?</blockquote> <br />\nВроде как да, крон задание на сервере выполняется,  в админке стоит крон не включен.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1394104212,
+      "user_id": 4906,
+      "user_title": "User",
+      "username": "Alexandrovich"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59446,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Alexandrovich</b>, анонсер прописал в админке настройки форумов announce url ?<br />\nПохоже что трекер не видит тебя на раздаче, а качается через dht.<br />\nСудя по аве убиваетесь вы там не кисло.😀",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1394124571,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "ne-vidit-polnogo-istocnika",
+  "sticky": false,
+  "tags": [],
+  "title": "Не видит полного источника",
+  "url_path": "/threads/ne-vidit-polnogo-istocnika.25811/",
+  "user_id": 4906,
+  "username": "Alexandrovich",
+  "view_count": 1348
+}

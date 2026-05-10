@@ -1,0 +1,76 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Политические взгляды by belomaxorka.zip",
+      "id": 5802,
+      "local_path": null,
+      "r2_key": null,
+      "size": 2131,
+      "src_url": "https://torrentpier.com/api/resource-versions/454/download?file=5802"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в папке с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание:</b> Добавляет возможность пользователю указать свои политические взгляды. Имеется поддержка AJAX редактирования.<br />\n<br />\nДоступные варианты:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Не выбраны</li>\n<li data-xf-list-type=\"ul\">Индифферентные</li>\n<li data-xf-list-type=\"ul\">Коммунистические</li>\n<li data-xf-list-type=\"ul\">Социалистические</li>\n<li data-xf-list-type=\"ul\">Умеренные</li>\n<li data-xf-list-type=\"ul\">Либеральные</li>\n<li data-xf-list-type=\"ul\">Консервативные</li>\n<li data-xf-list-type=\"ul\">Монархические</li>\n<li data-xf-list-type=\"ul\">Ультраконсервативные</li>\n</ul>",
+  "download_count": 266,
+  "external_url": null,
+  "icon_url": null,
+  "id": 286,
+  "is_fileless": null,
+  "last_update": 1707206162,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1707206162,
+  "resource_state": "visible",
+  "slug": "politiceskie-vzglady",
+  "tag_line": "Добавляет возможность пользователю указать свои политические взгляды.",
+  "tags": [
+    "взгляды политические",
+    "мод",
+    "моды",
+    "политические взгляды"
+  ],
+  "title": "Политические взгляды",
+  "url_path": "/resources/politiceskie-vzglady.286/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.0",
+  "versions": [
+    {
+      "download_count": 266,
+      "files": [
+        {
+          "filename": "[FULL] Политические взгляды by belomaxorka.zip",
+          "id": 5802,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2131,
+          "src_url": "https://torrentpier.com/api/resource-versions/454/download?file=5802"
+        }
+      ],
+      "id": 454,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1707206162,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/politiceskie-vzglady.286/version/454/"
+    }
+  ],
+  "view_count": 721
+}

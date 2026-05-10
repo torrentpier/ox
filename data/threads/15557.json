@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 45402,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 15557,
+  "last_post_date": 1379973629,
+  "node_id": 57,
+  "post_date": 1379973180,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 45402,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ткните плз на строчку, которая удаляет аву (по запросу юзера).<br />\nЗнаю, что в &quot;usercp_avatar.php&quot;, но не могу найти",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1379973180,
+      "user_id": 4615,
+      "user_title": "User",
+      "username": "\"8bit\""
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 45403,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "да нет... usercp_register.php<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$avatar = user_avatar_delete($pr_data[&#039;user_avatar_type&#039;], $pr_data[&#039;user_avatar&#039;]);</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1379973629,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "kod-udalenia-avy",
+  "sticky": false,
+  "tags": [],
+  "title": "Код удаления авы",
+  "url_path": "/threads/kod-udalenia-avy.15557/",
+  "user_id": 4615,
+  "username": "\"8bit\"",
+  "view_count": 1210
+}

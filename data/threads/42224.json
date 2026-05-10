@@ -1,0 +1,152 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95545,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42224,
+  "last_post_date": 1725274888,
+  "node_id": 57,
+  "post_date": 1705445269,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95545,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 1725274558,
+      "message_parsed": "Кто нибудь уже настраивал? Как оно? Давайте делиться мыслями<br />\n<br />\nНапишу пару ньюансов для новичков<br />\n0. Чтобы все заработало достаточно поменять свои NS на предложенные в панели хостинга и у регистратора<br />\n1. Если у вас на сервере уже установлен сертификат для сайта (от letsencript например) то выбираем SSL/TLS encryption mode: Full (strict)<br />\n2. В разделе Securty WAF нужно добавить правила для страниц чтоб не заблочить своих сидов и свои скрипты<br />\n/bt/announce.php<br />\n/bt/scrape.php<br />\n/cron.php<br />\n/telegram/bot.php<br />\nПример правила: IF (http.request.uri.path eq &quot;/bt/announce.php&quot;) or (http.request.uri.path eq &quot;/bt/scrape.php&quot;) Then Skip All<br />\n3. Speed-&gt;Optimization-&gt;Auto Minify оставлять только HTML и CSS т.к. включение JS может сломать ваши некоторые кривые скрипты<br />\n4. Speed-&gt;Optimization-&gt;Rocket Loader отключаем по той же причине<br />\n5. Security-&gt;Settings:<br />\n- Security Level: HIGH (но как показала практика от злостных ботов помогает только Under AttacK)<br />\n- Challenge Passage: 1 day<br />\n- Browser Integrity Check: YES<br />\n6. Не намудрите с правилами HTTPS редиректов, а то получите бесконечную переадресацию анонсера и отвал всех сидов. Проверять ответ сервера важных страниц можно тут например <a href=\"https://agency.sape.ru/instrumenty-seo/checkstatus/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Проверить ответ ответа сервера - пакетная проверка кодов ответа онлайн</a><br />\n7. После правки статических файлов на вашем сайте, не забывайте чистить кэш Caching-&gt;Configuration-&gt;Purge Everything чтоб отобразились изменения<br />\n<br />\nЧто поменялось? Отвалилось много ботов дорвейщиков и читалок которые парсили rss и tracker.php<br />\nОбнаружил что у яндекса есть неизвестный мне бот с юзерагентом Python-urllib/2.7 <a href=\"https://ipinfo.io/141.8.142.44\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">141.8.142.44 IP Address Details  - IPInfo.io</a> который не умеет обходить защиту cloudflare",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1705445269,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95548,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Я уже давно пользуюсь этим сервисом, но WAF  не использовал никогда. Добавил просто в исключения 2 скрипта для обмена пирами в разделе Page rules",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1705485006,
+      "user_id": 8184,
+      "user_title": "User",
+      "username": "ivangord"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95550,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "У меня раньше были боты на сайте и особо не парился об этом. Но когда изучил откуда ноги растут.... понял, что это дорвейщики парсят контент массово. Просто чума какая-то, я думал доры умерли еще лет 20 назад. Причем основная масса обратных ссылок идет от них и видимо поэтому я отхватил бан в яндексе",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1705490090,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1725274327,
+          "file_size": 30460,
+          "filename": "2024-09-02_13-51-00.webp",
+          "height": 423,
+          "id": 6167,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2024-09-02_13-51-00-webp.6167/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6171-160fff6de8dbb45656fc2193a7126327.jpg?hash=XHeCflyi2Q",
+          "width": 677
+        }
+      ],
+      "id": 96712,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Так выглядит график после отключеня cloudflare//<br />\n<img src=\"https://torrentpier.com/attachments/6167/\" alt=\"2024-09-02_13-51-00.webp\" />",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1725274331,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96713,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "А до того как? Что изменилось?",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1725274728,
+      "user_id": 10914,
+      "user_title": "User",
+      "username": "Павло"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96714,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 1725518296,
+      "message_parsed": "До того все стабильно. Видишь пик? Это наплыв ботов (в основном дорвейщики и ИИ) после отключения cloudflare... они воруют текст и, в основном, их сайты индексируются быстрее и ты остаешься в жепе со своим уникальным конентом..<br />\nЕсть боты которые умеют авторизоваться и воровать торрент хэши.<br />\n<br />\nНо если вы парсите другие трекеры - не парьтесь по этому поводу. Просто будет лишняя нагрузка на сервер",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1725274888,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "cloudflare-torrentpier-nastrojka",
+  "sticky": false,
+  "tags": [],
+  "title": "Cloudflare Torrentpier настройка",
+  "url_path": "/threads/cloudflare-torrentpier-nastrojka.42224/",
+  "user_id": 6370,
+  "username": "sхс",
+  "view_count": 1442
+}

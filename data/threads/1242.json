@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 15484,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1242,
+  "last_post_date": 1334640597,
+  "node_id": 57,
+  "post_date": 1334597406,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15484,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "При нажатии на название темы, ссылка становится чёрной! <a href=\"http://i37.fastpic.ru/big/2012/0417/1d/b874a34d6f151d11fc166d28cfbd801d.png\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://i37.fastpic.ru/big/2012/0417/1d/b874a34d6f151d11fc166d28cfbd801d.png</a>    когда просматриваешь в viewforum.php   и в   search.php   а так везде всё ок!   В main.css всё нормально вроде! В чём может быть проблема?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1334597406,
+      "user_id": 129,
+      "user_title": "",
+      "username": "SHADOW"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15486,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"php\">a.topictitle:visited,a.torTopic:visited,a.tLink:visited {\ncolor: #444444;\n}</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1334598071,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15502,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"DarkMod\"><b>Faben</b>, тебе светит личка тролль 😀</blockquote>не скажи, не скажи... в большинстве его высказываний я с ним согласен.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1334625383,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15513,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>DarkMod</b>, Спасибо! Только не  #444444     а      #44444    И кстати, может кому пригодится, когда входишь в &quot;Мои сообщения&quot; и нажимаешь на тему, там тоже отображает, только не чёрным цветом а серым! По умолчанию в main.css стоит:       .opened { /* Clicked link color */<br />\ncolor: #71869F;<br />\n}        заменить тоже на  #44444    и всё будет ок!",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1334640597,
+      "user_id": 129,
+      "user_title": "",
+      "username": "SHADOW"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "cvet-nazvania-tem",
+  "sticky": false,
+  "tags": [],
+  "title": "цвет названия тем",
+  "url_path": "/threads/cvet-nazvania-tem.1242/",
+  "user_id": 129,
+  "username": "SHADOW",
+  "view_count": 1144
+}

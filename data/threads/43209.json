@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 98223,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 43209,
+  "last_post_date": 1758880388,
+  "node_id": 47,
+  "post_date": 1758874580,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98223,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka submitted a new resource:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/spasibo-za-razdacu-i-ocenka-reliza.328/\" class=\"link link--internal\">Спасибо за раздачу и оценка релиза</a> - Мод позволяет ставить спасибы торрентам и оценивать их.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> Мод позволяет ставить спасибы торрентам и оценивать их.<br />\n<b>Совместимость:</b> v2.2, v2.3, и Cattle.<br />\n<b>Адаптация</b>: <a href=\"https://torrentpier.com/members/7621/\">DimaUZB2001</a>, <a href=\"https://torrentpier.com/members/10614/\">belomaxorka</a>.<br />\n<b>Оригинальная тема:</b> <a href=\"https://torrentpier.com/threads/spasibo-za-razdacu-i-ocenka-reliza.40/\" class=\"link link--internal\">https://torrentpier.com/threads/spasibo-za-razdacu-i-ocenka-reliza.40/</a></blockquote><br />\n<a href=\"https://torrentpier.com/resources/spasibo-za-razdacu-i-ocenka-reliza.328/\" class=\"link link--internal\">Read more about this resource...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1758874580,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98225,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka updated <a href=\"https://torrentpier.com/resources/spasibo-za-razdacu-i-ocenka-reliza.328/\" class=\"link link--internal\">Спасибо за раздачу и оценка релиза</a> with a new update entry:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/spasibo-za-razdacu-i-ocenka-reliza.328/update/675/\" class=\"link link--internal\">Обновление v1.0.1</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Исправлено несколько багов</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/spasibo-za-razdacu-i-ocenka-reliza.328/update/675/\" class=\"link link--internal\">Read the rest of this update entry...</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1758880388,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "spasibo-za-razdacu-i-ocenka-reliza",
+  "sticky": false,
+  "tags": [],
+  "title": "Спасибо за раздачу и оценка релиза",
+  "url_path": "/threads/spasibo-za-razdacu-i-ocenka-reliza.43209/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 297
+}

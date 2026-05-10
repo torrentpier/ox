@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 63258,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 26503,
+  "last_post_date": 1411739674,
+  "node_id": 57,
+  "post_date": 1411455612,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63258,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Нужна капча на все формы создания топиков <b>/posting.php?mode=newtopic</b> и комментариев для всех юзеров, у которых меньше 10 сообщений. Подскажите как реализовать. Спасибо!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1411455612,
+      "user_id": 5600,
+      "user_title": "User",
+      "username": "Kolomiichenko Andrii"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63266,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Посмотреть как выводится капча для гостей в файле posting.php и дописать в условие if ($userdata[&#039;user_posts&#039;] &gt; 10).",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1411497717,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63321,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1411731747,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\">Посмотреть как выводится капча для гостей в файле posting.php и дописать в условие if ($userdata[&#039;user_posts&#039;] &gt; 10).</blockquote>Спасибо за подсказку. Заменил:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&#039;CAPTCHA_HTML&#039; =&gt; (IS_GUEST) ? CAPTCHA()-&gt;get_html() : &#039;&#039;,</pre>на:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&#039;CAPTCHA_HTML&#039; =&gt; (IS_GUEST) ? CAPTCHA()-&gt;get_html() : (($userdata[&#039;user_posts&#039;] &lt; 10) ? CAPTCHA()-&gt;get_html() : &#039;&#039;),</pre>Однако капчи нет. Возможно ее нужно включить где-то в админке? Перерыл все, и ничего не нашел =(",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1411731656,
+      "user_id": 5600,
+      "user_title": "User",
+      "username": "Kolomiichenko Andrii"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63322,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Изменил bool значение на false в <a href=\"http://torrentpier.com/sftp://traflab@vs06.traflab.ru/srv/www/torrents3d.ru/htdocs/config.php:524\" class=\"link link--internal\">c</a>onfig.php<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">// Captcha\n$bb_cfg[&#039;captcha&#039;] = array(\n    &#039;disabled&#039; =&gt; false,\n    &#039;secret_key&#039; =&gt; &#039;secret_key&#039;,\n    &#039;img_url&#039;    =&gt; &#039;./images/captcha/&#039;,           # without &#039;/&#039;\n    &#039;img_path&#039;   =&gt; BB_PATH .&#039;/images/captcha/&#039;,   # without &#039;/&#039;\n);</pre>Капча для новых постов появилась, однако для коментариев - ее нет.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1411733458,
+      "user_id": 5600,
+      "user_title": "User",
+      "username": "Kolomiichenko Andrii"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63323,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Комментарии на аяксе сделаны, в папке ajax в файле posts.php тоже правка нужна.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1411739674,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "kak-ustanovit-spam-fil-tr-dla-posterov",
+  "sticky": false,
+  "tags": [],
+  "title": "Как установить спам фильтр для постеров",
+  "url_path": "/threads/kak-ustanovit-spam-fil-tr-dla-posterov.26503/",
+  "user_id": 5600,
+  "username": "Kolomiichenko Andrii",
+  "view_count": 1243
+}

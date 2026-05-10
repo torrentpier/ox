@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 87017,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41410,
+  "last_post_date": 1456149522,
+  "node_id": 57,
+  "post_date": 1456124543,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87017,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "На главной странице в админке есть пункты:<br />\n<ul>\n<li data-xf-list-type=\"ul\"><b>Очистить кеш:</b> Datastore, Весь кеш, Шаблона</li>\n<li data-xf-list-type=\"ul\"><b>Обновить:</b> Уровни и права пользователей</li>\n<li data-xf-list-type=\"ul\"><b>Синхронизировать:</b> Темы, Количество сообщений пользователей</li>\n</ul>Я предполагаю что все эти задачи так или иначе выполняются php скриптами, отсюда вопрос, что это за скрипты (названия)?<br />\nПроисходит следующее, человек создает раздачу, но на трекере ее невидно достаточно долгое время или пока в админке не используешь функции из синхронизации. <br />\nТак же и с регистрацией пользователей, новый пользователь не сразу. <br />\nКакие задачи крона отвечают за эти пункты в админке? может кто подсказать.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1456124543,
+      "user_id": 6907,
+      "user_title": "User",
+      "username": "Aksim"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87019,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Тестовым методом разобрался сам",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1456149522,
+      "user_id": 6907,
+      "user_title": "User",
+      "username": "Aksim"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "vopros-po-zadacam-adminki",
+  "sticky": false,
+  "tags": [],
+  "title": "Вопрос по задачам админки",
+  "url_path": "/threads/vopros-po-zadacam-adminki.41410/",
+  "user_id": 6907,
+  "username": "Aksim",
+  "view_count": 838
+}

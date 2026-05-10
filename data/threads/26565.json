@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 63388,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 26565,
+  "last_post_date": 1411877852,
+  "node_id": 80,
+  "post_date": 1411853343,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63388,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Захожу на demo.torrentpier.com<br />\nЖму сразу же на index.php ссылку &quot;Последние раздачи&quot;<br />\nПолучаю 404 ошибку, т.к. нет файла &quot;<a href=\"http://demo.torrentpier.com/atom/f/0.atom\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://demo.torrentpier.com/atom/f/0.atom</a>&quot;<br />\n<br />\nИли крон его не создает, или ссылка должна быть другой???",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1411853343,
+      "user_id": 61,
+      "user_title": "User",
+      "username": "druid"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63389,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Или просто на демке нет раздач, чтобы крон ее создавал. У себя проверять не пробовали?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1411858578,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63392,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ага, видимо из-за этого. Спасибо.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1411877852,
+      "user_id": 61,
+      "user_title": "User",
+      "username": "druid"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 2,
+  "slug": "atom-v-index-php",
+  "sticky": false,
+  "tags": [],
+  "title": "atom в index.php",
+  "url_path": "/threads/atom-v-index-php.26565/",
+  "user_id": 61,
+  "username": "druid",
+  "view_count": 1087
+}

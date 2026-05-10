@@ -1,0 +1,120 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Семейное положение by belomaxorka.zip",
+      "id": 5794,
+      "local_path": null,
+      "r2_key": null,
+      "size": 2127,
+      "src_url": "https://torrentpier.com/api/resource-versions/451/download?file=5794"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1707121171,
+      "file_size": 6238,
+      "filename": "Screenshot 2024-02-05 151337.webp",
+      "height": 111,
+      "id": 5795,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot-2024-02-05-151337-webp.5795/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5799-c02fe58d119b4c38f2357eeed3e38098.jpg?hash=NzpkcWSNWo",
+      "width": 499
+    },
+    {
+      "attach_date": 1707121171,
+      "file_size": 8562,
+      "filename": "Screenshot 2024-02-05 151509.webp",
+      "height": 139,
+      "id": 5796,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot-2024-02-05-151509-webp.5796/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5800-5780b6257819638c06b77bbd930b66f9.jpg?hash=6cu8jVVsjd",
+      "width": 616
+    },
+    {
+      "attach_date": 1707121172,
+      "file_size": 6086,
+      "filename": "Screenshot 2024-02-05 151529.webp",
+      "height": 96,
+      "id": 5797,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot-2024-02-05-151529-webp.5797/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5801-c6ac7531632b571bc047e5763d5a9454.jpg?hash=nTbWg-36Yr",
+      "width": 709
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Добавляет возможность пользователю указать своё семейное положение. Имеется поддержка AJAX редактирования.<br />\n<br />\n<b>Доступные варианты:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Не выбрано</li>\n<li data-xf-list-type=\"ul\">Не женат / Не замужем</li>\n<li data-xf-list-type=\"ul\">Встречаюсь</li>\n<li data-xf-list-type=\"ul\">Помолвлен(a)</li>\n<li data-xf-list-type=\"ul\">Женат / Замужем</li>\n<li data-xf-list-type=\"ul\">В гражданском браке</li>\n<li data-xf-list-type=\"ul\">Влюблён / Влюблена</li>\n<li data-xf-list-type=\"ul\">Всё сложно</li>\n<li data-xf-list-type=\"ul\">В активном поиске</li>\n</ul>",
+  "download_count": 257,
+  "external_url": null,
+  "icon_url": null,
+  "id": 284,
+  "is_fileless": null,
+  "last_update": 1707121175,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1707121175,
+  "resource_state": "visible",
+  "slug": "semejnoe-polozenie",
+  "tag_line": "Добавляет возможность пользователю указать своё семейное положение.",
+  "tags": [
+    "мод",
+    "мод на сп",
+    "моды",
+    "семейное положение",
+    "указать семейное положение"
+  ],
+  "title": "Семейное положение",
+  "url_path": "/resources/semejnoe-polozenie.284/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.0",
+  "versions": [
+    {
+      "download_count": 257,
+      "files": [
+        {
+          "filename": "[FULL] Семейное положение by belomaxorka.zip",
+          "id": 5794,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2127,
+          "src_url": "https://torrentpier.com/api/resource-versions/451/download?file=5794"
+        }
+      ],
+      "id": 451,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1707121175,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/semejnoe-polozenie.284/version/451/"
+    }
+  ],
+  "view_count": 656
+}

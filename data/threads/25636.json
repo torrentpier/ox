@@ -1,0 +1,113 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 57877,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 25636,
+  "last_post_date": 1721553798,
+  "node_id": 47,
+  "post_date": 1389885781,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57877,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Пользователь Exile разместил новый ресурс:<br />\n<br />\n<a href=\"http://torrentpier.com/resources/%D0%A7%D0%B5%D1%80%D0%BD%D0%BE%D0%B2%D0%B8%D0%BA%D0%B8.82/\" class=\"link link--internal\">Черновики</a> - Возможность создания тем-черновиков<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание</b>:<br />\n <br />\nМодификация, ранее включенная в основной дистрибутив движка. Возможность создания тем-черновиков, которые не видит никто, кроме создавшего их пользователя или администратора, до момента их публикации. <br />\n <br />\n<b>Инструкция по установке (временная)</b>:<br />\n <br />\n1) Выполнить запрос к базе данных: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">ALTER TABLE `bb_topics` ADD COLUMN `is_draft` TINYINT(1) UNSIGNED NOT NULL\nDEFAULT &#039;0&#039; AFTER `topic_show_first_post`;</pre>2) Открыв приложенный файл-patch (TurtoiseSVN или аналогичные...</blockquote><br />\n<a href=\"http://torrentpier.com/resources/%D0%A7%D0%B5%D1%80%D0%BD%D0%BE%D0%B2%D0%B8%D0%BA%D0%B8.82/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1389885781,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58579,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "К инструкции по установке мода (адаптация к R561):<br />\n <br />\n<b>functions_post.php</b>:<br />\n <br />\nнайти:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">if ($mode == &#039;newtopic&#039; || ($mode == &#039;editpost&#039; &amp;&amp; $post_data[&#039;first_post&#039;]))</pre>заменить:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">if ($mode == &#039;newtopic&#039; || ($mode == &#039;editpost&#039; &amp;&amp; $post_data[&#039;first_post&#039;]) || (!$to_draft &amp;&amp; $to_draft != $post_data[&#039;is_draft&#039;]))</pre> <br />\nнайти:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&quot; . BB_TOPICS . &quot; (topic_title, topic_poster, topic_time, forum_id, topic_status, topic_type, topic_dl_type</pre>после, на линии вставить:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">, is_draft</pre><br />\nнайти:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">VALUES\n                                (&#039;$post_subject&#039;, &quot; . $userdata[&#039;user_id&#039;] . &quot;, $current_time, $forum_id, &quot; . TOPIC_UNLOCKED . &quot;, $topic_type, $topic_dl_type</pre>после, на линии вставить:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">, $to_draft</pre> <br />\nнайти:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$sql_update = &quot;\n                        UPDATE\n                                &quot; . BB_TOPICS . &quot;\n                        SET\n                                topic_title = &#039;$post_subject&#039;,\n                                topic_type = $topic_type,\n                                topic_dl_type = $topic_dl_type</pre>после вставить:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">, is_draft = $to_draft</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1391551047,
+      "user_id": 79,
+      "user_title": "User",
+      "username": "Lynx"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 77229,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Пользователь Exile обновил ресурс <a href=\"https://torrentpier.com/resources/chernoviki.82/\" class=\"link link--internal\">Черновики</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/chernoviki.82/update?update=205\" class=\"link link--internal\">Обновление 1.1.0</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Обновлено описание ресурса</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/chernoviki.82/update?update=205\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1425220968,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1721553781,
+          "file_size": 1024,
+          "filename": "draft.zip",
+          "height": 0,
+          "id": 6086,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/draft-zip.6086/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 96481,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1732946760,
+      "message_parsed": "Недостающая иконка <span style=\"color: rgb(226, 80, 65)\">draft.gif</span><br />\n<span style=\"color: rgb(0, 0, 0)\">Путь: templates/default/images/draft.gif</span>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1721553798,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "cernoviki",
+  "sticky": false,
+  "tags": [],
+  "title": "Черновики",
+  "url_path": "/threads/cernoviki.25636/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 2043
+}

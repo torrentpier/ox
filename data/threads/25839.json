@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 59664,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25839,
+  "last_post_date": 1395104166,
+  "node_id": 57,
+  "post_date": 1395093728,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59664,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ситуация такая: для незарегистрированных пользователей трекер отображает появление новых раздач, тем и так далее верно, но для зарегистрированных как бы все зависло на определенном дне.<br />\nНикак не  могу понять какая функция слетела, что где искать и править....😕<br />\n <br />\nПарни, поделитесь соображениями.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1395093728,
+      "user_id": 99,
+      "user_title": "User",
+      "username": "Fatum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59666,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "1. Отображает неверно где? В таблице с форумами на главной?<br />\n2. Какая система кеширования?<br />\n3. Помогает очистка кеша из админки?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1395103868,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59667,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Да, на главной там есть лента новинок, вывод последних тем, кто последний зарегистрирован и.т.д",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1395104166,
+      "user_id": 99,
+      "user_title": "User",
+      "username": "Fatum"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "zaputalsa-s-kesirovaniem",
+  "sticky": false,
+  "tags": [],
+  "title": "Запутался с кешированием",
+  "url_path": "/threads/zaputalsa-s-kesirovaniem.25839/",
+  "user_id": 99,
+  "username": "Fatum",
+  "view_count": 1095
+}

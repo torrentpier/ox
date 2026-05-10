@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 65322,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 28109,
+  "last_post_date": 1414164159,
+  "node_id": 80,
+  "post_date": 1414070993,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 65322,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Гостю не прописывается ретрекер, если скачивание для него разрешено и ретрекер включен для всех.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1414070993,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 65423,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено в новой ревизии.<br />\nhttps://github.com/torrentpier/torr...893a1ff65d2b0da5fd109647b33777a0ee?diff=split<br />\n<br />\nСкачать 2.1.3 можно в центре загрузки: <a href=\"https://get.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://get.torrentpier.com/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1414164159,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 1,
+  "slug": "retreker-dla-gosta",
+  "sticky": false,
+  "tags": [],
+  "title": "Ретрекер для гостя",
+  "url_path": "/threads/retreker-dla-gosta.28109/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 1091
+}

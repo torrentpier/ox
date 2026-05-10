@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 95697,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42234,
+  "last_post_date": 1707242447,
+  "node_id": 47,
+  "post_date": 1707134172,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95697,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/dopolnitelnye-prava-grupp.285/\" class=\"link link--internal\">Дополнительные права групп</a> - Данный мод добавляет дополнительные права для групп.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> Данный мод добавляет дополнительные права для групп.<br />\n<b>Совместимость:</b> v2.1.5, LTS.<br />\n<hr />P.S. В моде пока неоптимально реализовано право безлимитной скачки. в анонсер добавляется 1 запрос и подключается лишний большой файл. для анонсера это критично. если второе ещё можно убрать, то от первого буду думать как уйти.<br />\n<br />\nВроде на этом минусы кончаются.. теперь краткое описание мода.<br />\n<ul>\n<li data-xf-list-type=\"ul\">Каждая группа имеет набор прав в виде (да/нет)</li>\n<li data-xf-list-type=\"ul\">Юзер получает сводный набор...</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/dopolnitelnye-prava-grupp.285/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1707134172,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95707,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/dopolnitelnye-prava-grupp.285/\" class=\"link link--internal\">Дополнительные права групп</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/dopolnitelnye-prava-grupp.285/update/478/\" class=\"link link--internal\">Обновление v1.0.1</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Обновлен под новые LTS версии</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/dopolnitelnye-prava-grupp.285/update/478/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1707210159,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95709,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/dopolnitelnye-prava-grupp.285/\" class=\"link link--internal\">Дополнительные права групп</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/dopolnitelnye-prava-grupp.285/update/480/\" class=\"link link--internal\">Обновление v1.0.2</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Исправлена опечатка в инструкции</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/dopolnitelnye-prava-grupp.285/update/480/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1707242447,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "dopolnitel-nye-prava-grupp",
+  "sticky": false,
+  "tags": [],
+  "title": "Дополнительные права групп",
+  "url_path": "/threads/dopolnitel-nye-prava-grupp.42234/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 1620
+}

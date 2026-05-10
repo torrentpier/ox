@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58543,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25717,
+  "last_post_date": 1391464859,
+  "node_id": 111,
+  "post_date": 1391464859,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58543,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Ссылка</b>:<br />\n<a href=\"http://code.google.com/p/torrentpier2/source/detail?r=581\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"> http://code.google.com/p/torrentpier2/source/detail?r=581</a><br />\n<br />\n<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 581: Фикс прав на удаление постов аяксом (спасибо Phoenix); фикс ошибок из-за пустых</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">glix08</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/upload/ajax/posts.php \n    Modify    /trunk/upload/ajax/view_torrent.php \n    Modify    /trunk/upload/common.php \n    Modify    /trunk/upload/config.php \n    Add    /trunk/upload/images/logo/logo_me.png \n    Modify    /trunk/upload/includes/init_bb.php \n    Modify    /trunk/upload/language/lang_english/lang_main.php \n    Modify    /trunk/upload/language/lang_russian/lang_main.php \n    Modify    /trunk/upload/privmsg.php \n    Modify    /trunk/upload/templates/admin/index.tpl \n    Modify    /trunk/upload/templates/default/page_header.tpl \n\nФикс прав на удаление постов аяксом (спасибо Phoenix); фикс ошибок из-за пустых системных заголовков; пара мелочей, вроде нового логотипа. Движок переводится в стадию RC - начинается подготовка к релизу, в частности отлов всех багов, которые на данный момент в статусе критичных + исправление мелких недочетов.</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1391464859,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "revision-581-fiks-prav-na-udalenie-postov-aaksom-spasibo-phoenix-fiks-osibok-iz-za-pustyh",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 581: Фикс прав на удаление постов аяксом (спасибо Phoenix); фикс ошибок из-за пустых",
+  "url_path": "/threads/revision-581-fiks-prav-na-udalenie-postov-aaksom-spasibo-phoenix-fiks-osibok-iz-za-pustyh.25717/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 1518
+}

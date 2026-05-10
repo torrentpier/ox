@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 59478,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 58,
+    "title": "Suggestions for improving TorrentPier"
+  },
+  "id": 25816,
+  "last_post_date": 1394307619,
+  "node_id": 58,
+  "post_date": 1394307619,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59478,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "давайте повысим валидность движка, ибо многовато ошибок <br />\n<a href=\"http://validator.w3.org/check?uri=http%3A%2F%2Fdemo.torrentpier.com%2F&amp;charset=%28detect+automatically%29&amp;doctype=Inline&amp;group=0\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://validator.w3.org/check?uri=h...(detect+automatically)&amp;doctype=Inline&amp;group=0</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1394307619,
+      "user_id": 0,
+      "user_title": "",
+      "username": "sockrat"
+    }
+  ],
+  "prefix_id": 32,
+  "reply_count": 0,
+  "slug": "validnost",
+  "sticky": false,
+  "tags": [],
+  "title": "Валидность",
+  "url_path": "/threads/validnost.25816/",
+  "user_id": 0,
+  "username": "sockrat",
+  "view_count": 1144
+}

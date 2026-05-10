@@ -1,0 +1,101 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 21387,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 50,
+        "title": "Graphics and styles for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 17,
+    "title": "Graphics and styles for TorrentPier (archive)"
+  },
+  "id": 1602,
+  "last_post_date": 1351210415,
+  "node_id": 17,
+  "post_date": 1350135491,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1350135485,
+          "file_size": 1678,
+          "filename": "reflection.rar",
+          "height": 0,
+          "id": 1506,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/reflection-rar.1506/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 21387,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Заливаем файл reflection.js в папку /misc/js<br />\n <br />\n<br />\nОткрываем includes/functions.php<br />\n <br />\nНаходим:<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">case USER_AVATAR_UPLOAD:\n                $user_avatar = ( $bb_cfg[&#039;allow_avatar_upload&#039;] ) ? &#039;&lt;img src=&quot;&#039;. $bb_cfg[&#039;avatar_path&#039;] .&#039;/&#039;. $avatar .&#039;&quot; alt=&quot;&quot; border=&quot;0&quot; &#039;. $height .&#039; &#039;. $width .&#039;/&gt;&#039; : &#039;&#039;;\n                break;</pre>меняем на:<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">case USER_AVATAR_UPLOAD:\n                $user_avatar = ( $bb_cfg[&#039;allow_avatar_upload&#039;] ) ? &#039;&lt;img src=&quot;&#039;. $bb_cfg[&#039;avatar_path&#039;] .&#039;/&#039;. $avatar .&#039;&quot; alt=&quot;&quot; border=&quot;0&quot;class=&quot;reflect rheight40 ropacity25&quot;  &#039;. $height .&#039; &#039;. $width .&#039;/&gt;&#039; : &#039;&#039;;\n                break;</pre> <br />\nНаходим:<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">case USER_AVATAR_REMOTE:\n$user_avatar = ( $bb_cfg[&#039;allow_avatar_remote&#039;] ) ? &#039;&lt;img src=&quot;&#039;. $avatar .&#039;&quot; alt=&quot;&quot; border=&quot;0&quot; onload=&quot;imgFit(this, 100);&quot; onClick=&quot;return imgFit(this, 100);&quot; /&gt;&#039; : &#039;&#039;;\nbreak;</pre> <br />\nменяем на:<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">case USER_AVATAR_REMOTE:\n$user_avatar = ( $bb_cfg[&#039;allow_avatar_remote&#039;] ) ? &#039;&lt;img src=&quot;&#039;. $avatar .&#039;&quot; alt=&quot;&quot; border=&quot;0&quot; class=&quot;reflect rheight40 ropacity25&quot; onload=&quot;imgFit(this, 100);&quot; onClick=&quot;return imgFit(this, 100);&quot; /&gt;&#039; : &#039;&#039;;\nbreak;</pre> <br />\nНаходим:<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\">case USER_AVATAR_GALLERY:\n                $user_avatar = ( $bb_cfg[&#039;allow_avatar_local&#039;] ) ? &#039;&lt;img src=&quot;&#039;. $bb_cfg[&#039;avatar_gallery_path&#039;] .&#039;/&#039;. $avatar .&#039;&quot; alt=&quot;&quot; border=&quot;0&quot; &#039;. $height .&#039; &#039;. $width .&#039;/&gt;&#039; : &#039;&#039;;\n                break;</pre> <br />\nменяем на:<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\">case USER_AVATAR_GALLERY:\n                $user_avatar = ( $bb_cfg[&#039;allow_avatar_local&#039;] ) ? &#039;&lt;img src=&quot;&#039;. $bb_cfg[&#039;avatar_gallery_path&#039;] .&#039;/&#039;. $avatar .&#039;&quot; alt=&quot;&quot; border=&quot;0&quot;class=&quot;reflect rheight40 ropacity25&quot;  &#039;. $height .&#039; &#039;. $width .&#039;/&gt;&#039; : &#039;&#039;;\n                break;</pre><br />\nОткрываем /templates/default/viewtopic.tplвначале вставляем<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;script type=&quot;text/javascript&quot; src=&quot;/misc/js/reflection.js&quot;&gt;&lt;/script&gt;</pre><br />\nОткрываем /templates/default/css/main.css<br />\n <br />\nНаходим:<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">.poster_info .avatar { margin: 5px 0 4px; max-width: 100px; max-height: 100px; overflow: hidden; }</pre> <br />\nменяем на:<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">.poster_info .avatar { margin: 5px 0 4px; max-width: 100px; max-height: 140px; overflow: hidden; }</pre> <br />\nТак же Вы можете регулировать размер и прозрачность отражения.<br />\nrheight - размер отображения;<br />\nropacity - прозрачность отражения;<br />\nпри этом не забывайте в main.css увеличивать max-height: на размер отображения.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1350135491,
+      "user_id": 2668,
+      "user_title": "User",
+      "username": "ГРИГОРИЙ ЛЕПС"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1351210499,
+          "file_size": 108822,
+          "filename": "Безымянный.webp",
+          "height": 720,
+          "id": 1539,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bezymannyj-webp.1539/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1540-38fabe91e78d16ac1666d86db718ea9f.jpg?hash=E1Eds4WiKk",
+          "width": 1280
+        }
+      ],
+      "id": 21804,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "помогите выровнять тень <a href=\"https://torrentpier.com/attachments/1539/\"><img src=\"https://torrentpier.com/data/attachments/1/1540-38fabe91e78d16ac1666d86db718ea9f.jpg?hash=E1Eds4WiKk\" alt=\"Безымянный.webp\" /></a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1351210415,
+      "user_id": 2668,
+      "user_title": "User",
+      "username": "ГРИГОРИЙ ЛЕПС"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "otrazenie-avatara-a-la-rustorka-v-topikah",
+  "sticky": false,
+  "tags": [],
+  "title": "Отражение аватара а-ля русторка в топиках",
+  "url_path": "/threads/otrazenie-avatara-a-la-rustorka-v-topikah.1602/",
+  "user_id": 2668,
+  "username": "ГРИГОРИЙ ЛЕПС",
+  "view_count": 3399
+}

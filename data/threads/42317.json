@@ -1,0 +1,89 @@
+{
+  "custom_fields": {
+    "torrentpier": "242"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 96790,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42317,
+  "last_post_date": 1729355147,
+  "node_id": 57,
+  "post_date": 1729083861,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96790,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Система Freebsd 14<br />\nTorrentPier 2_4_2<br />\n<br />\nИзначально работало всё нормально , но в какой то из дней ( не помню какой ) при входе как админ стал выдавать ошибку:<br />\n<br />\n Whoops \\Exception \\ ErrorException(E_WARNING)  Undefined variable $filecache<br />\n<br />\nWebmin изначально в логах показывал ошибку ;<br />\n<br />\n[Sun Sep 29 20:21:02.483894 2024] [php:error] [pid 36044] [client 173.249.14.67:41428] script &#039;/root/torrentpier/wp-login.php&#039; not found or unable to stat<br />\n[Sun Sep 29 21:09:04.965780 2024] [php:error] [pid 36045] [client 105.66.134.126:23096] script &#039;/root/torrentpier/.env.php&#039; not found or unable to stat<br />\n[Sun Sep 29 21:09:46.530752 2024] [php:error] [pid 36044] [client 105.66.134.126:12006] script &#039;/root/torrentpier/phpinfo.php&#039; not found or unable to stat<br />\n[Sun Sep 29 21:12:39.800996 2024] [php:error] [pid 38004] [client 105.66.134.126:15907] script &#039;/root/torrentpier/.env.php&#039; not found or unable to stat<br />\n[Sun Sep 29 21:13:06.109491 2024] [php:error] [pid 36044] [client 105.66.134.126:9139] script &#039;/root/torrentpier/phpinfo.php&#039; not found or unable to stat<br />\n[Sun Sep 29 22:24:56.055760 2024] [core:error] [pid 38671] [client 176.124.207.132:40010] AH10244: invalid URI path (/cgi-bin/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/bin/sh)<br />\n[Sun Sep 29 22:24:56.144507 2024] [core:error] [pid 38004] [client 176.124.207.132:40024] AH10244: invalid URI path (/cgi-bin/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/bin/sh)<br />\n<br />\nЧто можно сделать ? Не хочется всё переустановлять !",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1729083861,
+      "user_id": 4854,
+      "user_title": "User",
+      "username": "sergey67"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96791,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Судя по логам - бред какой-то. Откуда файлы вордпресса взялись, а также phpinfo.php и .env.php.<br />\n<br />\nОчень похоже на какую-то попытку взлома, или же банально установка движка поверх другого движка... Тут уже вопросы к вам.<br />\n<br />\nПо поводу решения - только переустановка, с полным удалением содержимого директории сервера",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1729163925,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96792,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 1729355395,
+      "message_parsed": "Эти логи не имеют отношения к проблеме. У меня полно такого, очередной бот прощупывает уязвимости  в скриптах. Быть может изменяли тип кэша или нет разрешения на папку с кэшем",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1729355147,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "pri-vhode-kak-admin-vydaet-osibku",
+  "sticky": false,
+  "tags": [],
+  "title": "При входе как админ выдаёт ошибку",
+  "url_path": "/threads/pri-vhode-kak-admin-vydaet-osibku.42317/",
+  "user_id": 4854,
+  "username": "sergey67",
+  "view_count": 833
+}

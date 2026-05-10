@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 87625,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 41468,
+  "last_post_date": 1468614763,
+  "node_id": 80,
+  "post_date": 1463387761,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87625,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Привет .. После сбоя на сервере , пришлось востанавливаться из бэкапа . Теперь в раздачах в которых есть сиды , присутствует кнопка позвать скачавших . В логах чисто .. Как решить этот косяк с кнопкой ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1463387761,
+      "user_id": 6126,
+      "user_title": "User",
+      "username": "kiryandr"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88009,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Запустить принудительно все крон-задачи.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1468614763,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 1,
+  "slug": "glucit-knopka-pozvat-skacavsih",
+  "sticky": false,
+  "tags": [],
+  "title": "Глючит кнопка \"Позвать скачавших\"",
+  "url_path": "/threads/glucit-knopka-pozvat-skacavsih.41468/",
+  "user_id": 6126,
+  "username": "kiryandr",
+  "view_count": 1037
+}

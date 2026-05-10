@@ -1,0 +1,75 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 91458,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41736,
+  "last_post_date": 1496781554,
+  "node_id": 57,
+  "post_date": 1496781463,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91458,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Сабж, ниже код логина на трекер, при входе пользователем на трекер, хаотично спустя 30-60 минут разлогинивает любого пользователя и приходится заново входить, кто сталкивался?<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;div class=&quot;login mrg_16&quot; style=&quot;top: 17%; left: 36.5%; display: block; position: fixed; margin: 0 auto; font-family: &#039;Montserrat&#039;, sans-serif;!important;&quot;&gt;\n  &lt;h2 class=&quot;active&quot; style=&quot;margin: 55px 0; cursor: pointer;&quot; onclick=&quot;javascript:location.href=&#039;{SITE_URL}login.php&#039;&quot;&gt; sign in&lt;/h2&gt;\n &lt;h3 style=&quot;font-size: 9px; top: 150px; position: absolute; opacity: 0.7;&quot;&gt; beta&lt;/h3&gt;\n&lt;h2 class=&quot;nonactive&quot; href=&quot;{U_REGISTER}&quot; onclick=&quot;javascript:location.href=&#039;{U_REGISTER}&#039;&quot; style=&quot;cursor: pointer;&quot;&gt; sign up &lt;/h2&gt;\n  &lt;form action=&quot;{S_LOGIN_ACTION}&quot; method=&quot;post&quot;&gt;\n    &lt;input type=&quot;hidden&quot; name=&quot;redirect&quot; value=&quot;{REDIRECT_URL}&quot; /&gt;\n&lt;!-- IF ADMIN_LOGIN --&gt;&lt;input type=&quot;hidden&quot; name=&quot;admin&quot; value=&quot;1&quot; /&gt;&lt;!-- ENDIF --&gt;\n&lt;!-- IF ADMIN_LOGIN --&gt;\n  &lt;h4 class=&quot;tCenter mrg_16&quot; style=&quot;display: none;&quot;&gt;{L_ADMIN_REAUTHENTICATE}&lt;/h4&gt;\n  &lt;!-- ELSE --&gt;\n  &lt;h4 class=&quot;tCenter mrg_16&quot; style=&quot;display: none;&quot;&gt;{L_ENTER_PASSWORD}&lt;/h4&gt;\n  &lt;!-- ENDIF --&gt;\n   &lt;input type=&quot;text&quot; class=&quot;post&quot; name=&quot;login_username&quot; size=&quot;25&quot; maxlength=&quot;16&quot; value=&quot;{LOGIN_USERNAME}&quot; tabindex=&quot;101&quot;&lt;!-- IF ADMIN_LOGIN --&gt; readonly=&quot;readonly&quot; style=&quot;color: gray&quot;&lt;!-- ENDIF --&gt; /&gt;\n     &lt;span style=&quot;margin: 5px;&quot;&gt;username&lt;/span&gt;\n    &lt;br&gt;\n    &lt;br&gt;\n    &lt;input type=&quot;password&quot; class=&quot;post&quot; name=&quot;login_password&quot; value=&quot;{LOGIN_PASSWORD}&quot; tabindex=&quot;102&quot; size=&quot;25&quot; maxlength=&quot;32&quot; /&gt;\n    &lt;span style=&quot;margin: 5px;&quot;&gt;password&lt;/span&gt;\n    &lt;br&gt;\n    &lt;input style=&quot;display: none;&quot; type=&quot;checkbox&quot; id=&quot;checkbox-1-1&quot; class=&quot;custom-checkbox&quot; tabindex=&quot;103&quot; &lt;!-- IF ADMIN_LOGIN || AUTOLOGIN_DISABLED --&gt; disabled=&quot;disabled&quot;&lt;!-- ELSE --&gt;checked=&quot;checked&quot;&lt;!-- ENDIF --&gt; /&gt;\n    &lt;label style=&quot;display: none;&quot; for=&quot;checkbox-1-1&quot;&gt;Keep me Signed in&lt;/label&gt;\n    &lt;!-- IF CAPTCHA_HTML --&gt;\n  &lt;tr&gt;\n    &lt;td class=&quot;tRight nowrap&quot;&gt;{L_CAPTCHA}:&lt;/td&gt;\n    &lt;td&gt;{CAPTCHA_HTML}&lt;/td&gt;\n  &lt;/tr&gt;\n  &lt;!-- ENDIF --&gt;\n    &lt;button class=&quot;signin bold long&quot; type=&quot;submit&quot; name=&quot;login&quot; value=&quot;{L_LOGIN}&quot;&gt;\n      Sign In\n    &lt;/button&gt;\n    &lt;hr&gt;\n    &lt;a href=&quot;{U_SEND_PASSWORD}&quot;&gt;Forgot your password?&lt;/a&gt;\n    &lt;a href=&quot;{U_REGISTER}&quot;&gt;Create account&lt;/a&gt;\n  &lt;/form&gt;\n&lt;/div&gt;</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1496781463,
+      "user_id": 7867,
+      "user_title": "Blocked",
+      "username": "themacdev"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91459,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "знаю нехватает из исходника этого, можно ли сделать по дефолту автологин enabled? а сам код если и вставить в логин, то скрыть тем-же display: none;<br />\n<pre class=\"xfBb-code\" data-lang=\"\">    &lt;tr&gt;\n        &lt;td colspan=&quot;2&quot; class=&quot;tCenter nowrap&quot;&gt;{L_AUTO_LOGIN}: &lt;input type=&quot;checkbox&quot; name=&quot;autologin&quot; tabindex=&quot;103&quot;&lt;!-- IF ADMIN_LOGIN || AUTOLOGIN_DISABLED --&gt; disabled=&quot;disabled&quot;&lt;!-- ELSE --&gt;checked=&quot;checked&quot;&lt;!-- ENDIF --&gt; /&gt;&lt;/td&gt;\n    &lt;/tr&gt;</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1496781554,
+      "user_id": 7867,
+      "user_title": "Blocked",
+      "username": "themacdev"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "bystryj-razlogin-sessij",
+  "sticky": false,
+  "tags": [
+    "логин",
+    "разлогин",
+    "форма"
+  ],
+  "title": "Быстрый разлогин сессий",
+  "url_path": "/threads/bystryj-razlogin-sessij.41736/",
+  "user_id": 7867,
+  "username": "themacdev",
+  "view_count": 957
+}

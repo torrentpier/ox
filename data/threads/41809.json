@@ -1,0 +1,116 @@
+{
+  "custom_fields": {
+    "torrentpier": "223"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 92117,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 41809,
+  "last_post_date": 1529867646,
+  "node_id": 80,
+  "post_date": 1502380631,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92117,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет! С шаблонами всё такая-же проблема, про которую я писал ранее. На версии 2.1.5 всё создаётся нормально. После 2.1.5 при установке новых версий, появилась эта проблема!<br />\n<img src=\"http://i92.fastpic.ru/big/2017/0810/73/bfd78b788fd7ddf510cee86c81b5e173.png\" alt=\"\" /> <br />\n<img src=\"http://i91.fastpic.ru/big/2017/0810/27/5a4d4fa78fcecea88c6a3df72f5a3d27.png\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1502380631,
+      "user_id": 1290,
+      "user_title": "User",
+      "username": "REM"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92143,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Действительно, есть данная проблема , на демке проверял.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1502640271,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92144,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Надо вернуть всё, имеется ввиду (Шаблоны), как было в <b>2.1.5</b><br />\nВсё было там замечательно, всё отлично создавалось и база с готовыми шаблонами переносилась, а на эти ревизии нельзя перенести, ошибка вылазит! У меня около <b>130</b> шаблонов готовых, а заново влом создавать!🙂",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1502704603,
+      "user_id": 1290,
+      "user_title": "User",
+      "username": "REM"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92145,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/1290/\">REM</a>, ну так все в твоих руках, закидывай файл posting_tpl.tpl с 2.1.5 на сервер с заменой если он у тебя был рабочий то и тут работать будет , а всех нас можешь порадовать  своими готовыми шаблонами👍<br />\nметод рабочий , проверил на голом движке 223<br />\n<a href=\"http://fastpic.ru/view/93/2017/0814/55e57cf71356c2a86c54f3f07409995b.png.html\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"http://i93.fastpic.ru/thumb/2017/0814/5b/55e57cf71356c2a86c54f3f07409995b.jpeg\" alt=\"\" /></a><br />\nА так нужно js ковырять <br />\nUncaught TypeError: Cannot read property &#039;length&#039; of undefined<br />\nUncaught TypeError: Cannot read property &#039;1&#039; of undefined",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1502728592,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93296,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено в версии 2.3.0 (TorrentPier Bison). Релиз 26 числа.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1529867646,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 4,
+  "slug": "sozdanie-sablonov-v-novyh-reviziah",
+  "sticky": false,
+  "tags": [],
+  "title": "Создание шаблонов в новых ревизиях",
+  "url_path": "/threads/sozdanie-sablonov-v-novyh-reviziah.41809/",
+  "user_id": 1290,
+  "username": "REM",
+  "view_count": 1708
+}

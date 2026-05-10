@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 13777,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1123,
+  "last_post_date": 1331997609,
+  "node_id": 57,
+  "post_date": 1331989317,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13777,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "У меня возникла проблема. Пытался сделать склеивание постов одного пользователя, которые написаны подряд. И вдруг у меня пропадает возможность отправить объемный текст. Помогите найти проблему и исправить ошибку.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1331989317,
+      "user_id": 958,
+      "user_title": "User",
+      "username": "Mikhalich"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13784,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "И что никого нету? Всем безразлично? Тогда зачем создан такой форум? Да я не специалист, но и вы тоже когда то были такими же. Если вам тяжело ответить или помочь.......",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1331996432,
+      "user_id": 958,
+      "user_title": "User",
+      "username": "Mikhalich"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13786,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Mikhalich</b>, вы что думаете тут всегда сидит дежурный прогер на случай прихода новичка и он как бросится ему помогать делать то ему бедолаге не чего....У всех своя жизнь а это хобби...либо ждите терпеливо, либо вопросы хоть научитесь задавть корректно..а то типа сидел себе телик смарел в ухе отверткой ковырялся и тут бах и звук пропал....",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1331997258,
+      "user_id": 782,
+      "user_title": "User",
+      "username": "qaqra"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13787,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Mikhalich\">Тогда зачем создан такой форум?</blockquote>форум экстрасенсов имеет другой адрес",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1331997609,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "ne-otpravlautsa-soobsenia",
+  "sticky": false,
+  "tags": [],
+  "title": "Не отправляются сообщения!",
+  "url_path": "/threads/ne-otpravlautsa-soobsenia.1123/",
+  "user_id": 958,
+  "username": "Mikhalich",
+  "view_count": 1634
+}

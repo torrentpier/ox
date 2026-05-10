@@ -1,0 +1,132 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95959,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 42254,
+  "last_post_date": 1771159240,
+  "node_id": 80,
+  "post_date": 1710527409,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95959,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 1710563138,
+      "message_parsed": "Вот это очень злая штука в announce.php. Зачем нам экранировать хэш? Нам надо сохранить строку в таком виде какая она есть. И что это за история с обрезанием пробела в конце инфо хэша?<br />\n<br />\nЯ бы не придирался к этому, но однажды я не смог зарегистрировать торрент, по причине того, что такой уже существует на трекере, хотя раздаваемые файлы были абсолютно разные и это случилось из-за DB()-&gt;escape() и наличии последоветельности \\&#039; в info_hash еще до экранирования<br />\n<br />\nЕсли я заблуждаюсь по этому поводу, дайте знать<br />\n<br />\nпока в announce.php стоит так<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">    $info_hash_sql = bin2hex($info_hash);\n \n    $info_hash_sql2 = bin2hex(rtrim($info_hash, &#039; &#039;)); // старые торренты отвалилисиь пришлось вернуть этот костыль\n    $info_hash_sql3 = bin2hex(rtrim(DB()-&gt;escape($info_hash), &#039; &#039;));// старые торренты отвалилисиь пришлось вернуть этот костыль\n \n    $passkey_sql   = DB()-&gt;escape($passkey);\n\n    // OR HEX(tor.info_hash2) LIKE &#039;$info_hash_sql%&#039; - непонятный экспромт qbittorent разрабов, режут 32битный хэш до 20bit для совместимости\n    $sql = &quot;\n        SELECT tor.topic_id, tor.poster_id, tor.tor_type, u.*, tor.complete_count\n        FROM &quot;. BB_BT_TORRENTS .&quot; tor\n        LEFT JOIN &quot;. BB_BT_USERS .&quot; u ON u.auth_key = &#039;$passkey_sql&#039;\n        LEFT JOIN bb_users u1 ON u1.user_id = u.user_id\n        WHERE HEX(tor.info_hash) = &#039;$info_hash_sql&#039;\n            OR HEX(tor.info_hash) = &#039;$info_hash_sql2&#039;\n            OR HEX(tor.info_hash) = &#039;$info_hash_sql3&#039;\n            OR HEX(tor.info_hash2) = &#039;$info_hash_sql&#039;\n            OR HEX(tor.info_hash2) LIKE &#039;$info_hash_sql%&#039;\n        LIMIT 1\n    &quot;;</pre><br />\nв function tracker_register(<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">    $info_hash     = pack(&#039;H*&#039;, sha1(bencode($info)));\n    $info_hash2    = pack(&#039;H*&#039;, hash(&#039;sha256&#039;, bencode($info)));\n    //$info_hash_sql = rtrim(DB()-&gt;escape($info_hash), &#039; &#039;);\n    $info_hash_sql = bin2hex($info_hash);\n    $info_hash2_sql= bin2hex($info_hash2);\n    $info_hash_md5 = md5($info_hash);\n\n    $sql = &quot;SELECT topic_id\n        FROM &quot;. BB_BT_TORRENTS .&quot;\n        WHERE HEX(info_hash) = &#039;$info_hash_sql&#039; OR HEX(info_hash2) = &#039;$info_hash2_sql&#039;\n        LIMIT 1&quot;;\n\n        .....\n    $columns = &#039; info_hash, info_hash2,    post_id,  poster_id,  topic_id,  forum_id,  attach_id,    size,  reg_time,  tor_status&#039;;\n    $values = &quot;x&#039;$info_hash_sql&#039;, x&#039;$info_hash2_sql&#039;, $post_id, $poster_id, $topic_id, $forum_id, $attach_id, &#039;$size&#039;, $reg_time, $tor_status&quot;;</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1710527409,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95962,
+      "is_admin": false,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "rtrim() стоял в целях совместимости, можете избавиться.<br />\nescape() же должен присутствовать, иначе sql инъекция, проблем связанных с ним я не встречал.<br />\n<br />\nДа, бинарная строка экранируется, но это не мешает поиску.<br />\nНо если у вас наблюдается что-то, то можно поступить без экранирования:<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">// $info_hash_sql3 = bin2hex(rtrim(DB()-&gt;escape($info_hash), &#039; &#039;));\nif (!ctype_xdigit(bin2hex($info_hash))) {\n    msg_die(&quot;Invalid info hash&quot;);\n}</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1710528894,
+      "user_id": 10699,
+      "user_title": "Developer (ex)",
+      "username": "kovalensky"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95964,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Так а если у меня info_hash тип varbinary(20) и я туда отправляю bin2hex($info_hash) это тоже грозит инъекцией?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1710529217,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95965,
+      "is_admin": false,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "ctype_xdigit() я предложил только для проверки в анонсере, если хотите избавиться от этапа экранирования строки (работоспособность в запросе я не проверял).<br />\n<br />\nЯ не могу никак понять вашу цель, боюсь возникнет путаница, если продолжу писать.<br />\nПочему здесь столько sql запросов на info_hash:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">        WHERE HEX(tor.info_hash) = &#039;$info_hash_sql&#039;\n            OR HEX(tor.info_hash) = &#039;$info_hash_sql2&#039;\n            OR HEX(tor.info_hash) = &#039;$info_hash_sql3&#039;\n            OR HEX(tor.info_hash2) = &#039;$info_hash_sql&#039;\n            OR HEX(tor.info_hash2) LIKE &#039;$info_hash_sql%&#039;</pre>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1710529852,
+      "user_id": 10699,
+      "user_title": "Developer (ex)",
+      "username": "kovalensky"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95968,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Логика следующая (если опираться на мой код):<br />\n-Я словил дубль в базе для разных торрентов в поле info_hash из-за DB()-&gt;escape() (к сожалению это было несколько лет назад, но помню что это было связано с торрентом у которого в info_hash была последовательность \\\\&#039;, \\\\&quot;&quot;, \\\\&quot; или что-то подобное)<br />\n-Я отказался от экранирования и заменил на rtrim($info_hash, &#039; &#039;)<br />\n-Позже отказался и от rtrim<br />\n<br />\nПоэтому вот такой велосипед из трех проверок для совместимости<br />\n<br />\nчетверкая проверка<br />\nOR HEX(tor.info_hash2) LIKE &#039;$info_hash_sql%&#039;<br />\nРасчитана на то, чтобы проверить является ли хэш обрезаной версией v2 32 битного хэша, либо полной версией<br />\n<br />\nВ коде движка это реализовано как SUBSTRING(tor.info_hash_v2, 1, 20)<br />\n<br />\nЕсли этого не указать в анонсере - отваливаются старые торренты, т.к. в function tracker_register( было указано  $info_hash_sql = rtrim(DB()-&gt;escape($info_hash), &#039; &#039;);<br />\n<br />\nЭто все делалось на рабочем проекте и наблюдалось",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1710536917,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98411,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<span style=\"font-size: 15px\"><b>Статус: Подтверждено, исправлено</b></span><br />\n<br />\nБаг валидный. Проблема действительно существовала в движке.<br />\n<br />\n<span style=\"font-size: 15px\"><b>Что было не так</b></span><br />\n<br />\nКонструкция <code class=\"xfBb-icode\">rtrim(DB()-&gt;escape($info_hash), &#039; &#039;)</code> содержала сразу две проблемы при работе с бинарными данными info_hash:<br />\n<br />\n<ol>\n<li data-xf-list-type=\"ol\"><b><code class=\"xfBb-icode\">DB()-&gt;escape()</code> использует <code class=\"xfBb-icode\">PDO::quote()</code></b>, который предназначен для текстовых строк, а не для бинарных данных. Если в 20-байтовом SHA-1 хэше встречались байты <code class=\"xfBb-icode\">0x27</code> (одинарная кавычка) или <code class=\"xfBb-icode\">0x5c</code> (обратный слэш), они экранировались — что меняло сами байты при сравнении с VARBINARY-колонкой. Например, байт <code class=\"xfBb-icode\">\\x27</code> превращался в <code class=\"xfBb-icode\">\\x5c\\x27</code> — два байта вместо одного.</li>\n<li data-xf-list-type=\"ol\"><b><code class=\"xfBb-icode\">rtrim($str, &#039; &#039;)</code> обрезает trailing <code class=\"xfBb-icode\">0x20</code>-байты</b> (пробел). Если последний байт SHA-1 хэша оказывался равен <code class=\"xfBb-icode\">0x20</code>, он удалялся, и WHERE-условие не находило торрент. Вероятность этого — примерно 1/256 для каждого хэша, что при достаточном количестве торрентов гарантированно вызовет проблемы.</li>\n</ol><br />\n<span style=\"font-size: 15px\"><b>Как исправлено</b></span><br />\n<br />\nВо всех местах, где info_hash использовался в raw SQL-запросах, мы заменили <code class=\"xfBb-icode\">rtrim(DB()-&gt;escape($info_hash), &#039; &#039;)</code> на подход с <code class=\"xfBb-icode\">UNHEX(bin2hex())</code>:<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">// Было:\n$info_hash_sql = rtrim(DB()-&gt;escape($info_hash), &#039; &#039;);\n$where = &quot;WHERE info_hash = &#039;{$info_hash_sql}&#039;&quot;;\n\n// Стало:\n$info_hash_hex = bin2hex($info_hash);\n$where = &quot;WHERE info_hash = UNHEX(&#039;{$info_hash_hex}&#039;)&quot;;</pre><br />\nПочему это безопасно и корректно:<br />\n<ul>\n<li data-xf-list-type=\"ul\"><code class=\"xfBb-icode\">bin2hex()</code> преобразует бинарные данные в hex-строку, содержащую только символы <code class=\"xfBb-icode\">[0-9a-f]</code> — никакого экранирования не требуется</li>\n<li data-xf-list-type=\"ul\"><code class=\"xfBb-icode\">UNHEX()</code> на стороне MySQL/MariaDB преобразует hex обратно в бинарные данные для побайтового сравнения с VARBINARY-колонкой</li>\n<li data-xf-list-type=\"ul\"><code class=\"xfBb-icode\">UNHEX()</code> — стандартная функция MySQL (с версии 4.1) и MariaDB, не является специфичной для какой-либо СУБД</li>\n<li data-xf-list-type=\"ul\">Никакие байты не теряются и не модифицируются</li>\n</ul><br />\n<span style=\"font-size: 15px\"><b>Затронутые файлы</b></span><br />\n<br />\n<ul>\n<li data-xf-list-type=\"ul\"><code class=\"xfBb-icode\">app/Http/Controllers/Tracker/AnnounceController.php</code> — поиск торрента при announce</li>\n<li data-xf-list-type=\"ul\"><code class=\"xfBb-icode\">app/Http/Controllers/Tracker/ScrapeController.php</code> — поиск при scrape (IN-clause)</li>\n<li data-xf-list-type=\"ul\"><code class=\"xfBb-icode\">src/Torrent/Registry.php</code> — проверка дубликатов при регистрации торрента</li>\n<li data-xf-list-type=\"ul\"><code class=\"xfBb-icode\">library/includes/functions.php</code> — поиск по info_hash из админки</li>\n</ul><br />\nТакже добавлен индекс на колонку <code class=\"xfBb-icode\">info_hash</code> в таблице <code class=\"xfBb-icode\">bb_bt_torrents</code> для ускорения поиска.<br />\n<br />\n<span style=\"font-size: 15px\"><b>Тесты</b></span><br />\n<br />\nНаписаны интеграционные тесты (24 теста), которые проверяют корректность на реальной MySQL-базе, включая все edge-case байты: <code class=\"xfBb-icode\">0x00</code>, <code class=\"xfBb-icode\">0x20</code>, <code class=\"xfBb-icode\">0x27</code>, <code class=\"xfBb-icode\">0x5c</code>, полностью нулевые хэши, полностью пробельные хэши, а также последовательность <code class=\"xfBb-icode\">\\x5c\\x27</code> (backslash + quote).<br />\n<br />\nОдин из тестов подтверждает, что старый подход с <code class=\"xfBb-icode\">rtrim</code> действительно <b>не находит</b> торрент, у которого хэш заканчивается на <code class=\"xfBb-icode\">0x20</code>.<br />\n<br />\n<b>PR:</b> <a href=\"https://github.com/torrentpier/torrentpier/pull/2338\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">fix(tracker): replace rtrim(escape()) with UNHEX(bin2hex()) for binary info_hash queries by exileum · Pull Request #2338 · torrentpier/torrentpier</a>",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1771159240,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 5,
+  "slug": "rtrim-db-escape-info_hash",
+  "sticky": false,
+  "tags": [],
+  "title": "rtrim(DB()->escape($info_hash), ' ')",
+  "url_path": "/threads/rtrim-db-escape-info_hash.42254/",
+  "user_id": 6370,
+  "username": "sхс",
+  "view_count": 972
+}

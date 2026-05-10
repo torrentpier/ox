@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 14819,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 1192,
+  "last_post_date": 1333527999,
+  "node_id": 3,
+  "post_date": 1333527631,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14819,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всех веб-разрабов с профессиональным праздником 4.04)<br />\n<img src=\"http://img-fotki.yandex.ru/get/3212/h404.9/0_2a1b8_e127826f_M.png\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1333527631,
+      "user_id": 887,
+      "user_title": "User",
+      "username": "r3vizor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14820,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "есть повод",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1333527999,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Explosive"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "s-dnem-veb-razrabotcika",
+  "sticky": false,
+  "tags": [],
+  "title": "С днём веб-разработчика!",
+  "url_path": "/threads/s-dnem-veb-razrabotcika.1192/",
+  "user_id": 887,
+  "username": "r3vizor",
+  "view_count": 1525
+}

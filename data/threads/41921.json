@@ -1,0 +1,132 @@
+{
+  "custom_fields": {
+    "torrentpier": "223"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 90188,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 41921,
+  "last_post_date": 1771156463,
+  "node_id": 80,
+  "post_date": 1487713674,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90188,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Хочу добавить <b><span style=\"font-size: 12px\">Поиск на украинском языке</span></b><br />\nДобавил правила в <i>charset_table</i> для украинских букв в секцию <i>index</i> конфига <span style=\"font-size: 15px\"><b>Sphinx</b></span><br />\n<pre class=\"xfBb-code\" data-lang=\"\">U+404-&gt;U+454, U+454,     Є = є\nU+406-&gt;U+456, U+456,     І = і\nU+407-&gt;U+457, U+457,     Ї = ї\nU+490-&gt;U+491, U+491,     Ґ = ґ</pre><pre class=\"xfBb-code\" data-lang=\"php\">charset_table = 0..9, _, A..Z-&gt;a..z, a..z, U+410..U+42F-&gt;U+430..U+44F, U+430..U+44F, U+404-&gt;U+454, U+454, U+406-&gt;U+456, U+456, U+407-&gt;U+457, U+457, U+490-&gt;U+491, U+491, U+401-&gt;U+435, U+451-&gt;U+435, U+002D</pre>После внесения изменений перезапустил сервис и сделал --rotate индекса:<br />\n<pre class=\"xfBb-code\" data-lang=\"\"># service sphinxsearch restart\n# indexer --rotate --all</pre>В итоге не ищет с украинскими буквами: і, ї... Русский, английский все Ок.<br />\nМоже кто подскажет, что не так?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1487713674,
+      "user_id": 395,
+      "user_title": "User",
+      "username": "dexer7"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90987,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/395/\">dexer7</a>, включите логирование в сфинксе, поисковые запросы до него нормальные доходят или уже резанные?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1493067760,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91013,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/1/\">Exile</a>, Резаные.<br />\n<pre class=\"xfBb-code\" data-lang=\"\">гвард я - украинским\nгвардия - русским норм.</pre>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1493236245,
+      "user_id": 395,
+      "user_title": "User",
+      "username": "dexer7"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91187,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/395/\">dexer7</a>, перенес в баги.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1494264020,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91192,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Обновился до последнего релиза Sphinx 2.2.11-id64-release<br />\nС конфига разработчики убрали:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">sql_query_info, charset_type (в index-е), enable_star и max_matches</pre>Временно вышел из положения с поиском на украинском <pre class=\"xfBb-code\" data-lang=\"php\">charset_table = 0..9, _, A..Z-&gt;a..z, a..z, U+0410..U+042F-&gt;U+0430..U+044F, U+0430..U+044F, U+0404-&gt;U+0454, U+0454, U+00CC-&gt;U+00EC, U+00EC, U+00CF-&gt;U+00EF, U+00EF, U+0490-&gt;U+0491, U+0491, U+0401-&gt;U+0435, U+0451-&gt;U+0435, U+002D</pre>Пока только добавил это с латиницы, с кирилицы не пашет.<br />\n<pre class=\"xfBb-code\" data-lang=\"\">U+00CC-&gt;U+00EC, U+00EC,     І = і\nU+00CF-&gt;U+00EF, U+00EF,     Ї = ї</pre>Ищет с буквами &quot;<b>і</b>&quot; и &quot;<b>ї</b>&quot;, но в логах по прежнему режет их.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1494279721,
+      "user_id": 395,
+      "user_title": "User",
+      "username": "dexer7"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98409,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено, в целом было несколько мест где поддержка украинского стала лучше.<br />\n<br />\n\n\t\n\n\t<div data-template-name=\"public:bb_code_tag_url_unfurl\" class=\"bbCodeBlock bbCodeBlock--unfurl    js-unfurl fauxBlockLink\"\n\t\tdata-unfurl=\"true\" data-result-id=\"10451\" data-url=\"https://github.com/torrentpier/torrentpier/pull/2336\" data-host=\"github.com\" data-pending=\"false\">\n\t\t<div class=\"contentRow\">\n\t\t\t\n\t\t\t\t<div class=\"contentRow-figure contentRow-figure--fixedSmall js-unfurl-figure\">\n\t\t\t\t\t\n\t\t\t\t\t\t<img src=\"https://opengraph.githubassets.com/48d511b3083f7ad29dc15373d272f6e320c3f490896ea6306ee86b08766fa5b8/torrentpier/torrentpier/pull/2336\" loading=\"lazy\" alt=\"github.com\" class=\"bbCodeBlockUnfurl-image\" data-onerror=\"hide-parent\"/>\n\t\t\t\t\t\n\t\t\t\t</div>\n\t\t\t\n\t\t\t<div class=\"contentRow-main\">\n\t\t\t\t<h3 class=\"contentRow-header js-unfurl-title\">\n\t\t\t\t\t<a href=\"https://github.com/torrentpier/torrentpier/pull/2336\"\n\t\t\t\t\t\tclass=\"link link--external fauxBlockLink-blockLink\"\n\t\t\t\t\t\ttarget=\"_blank\"\n\t\t\t\t\t\trel=\"nofollow ugc noopener\"\n\t\t\t\t\t\tdata-proxy-href=\"\">\n\t\t\t\t\t\tfix(i18n): add full Cyrillic support for Ukrainian and other Slavic languages by exileum · Pull Request #2336 · torrentpier/torrentpier\n\t\t\t\t\t</a>\n\t\t\t\t</h3>\n\n\t\t\t\t<div class=\"contentRow-snippet js-unfurl-desc\">Summary  Manticore Search: Add charset_table with Ukrainian (є, і, ї, ґ), Belarusian (ў), and Serbian Cyrillic character mappings to RT index creation. Without this, these characters are treated as...</div>\n\n\t\t\t\t<div class=\"contentRow-minor contentRow-minor--hideLinks\">\n\t\t\t\t\t<span class=\"js-unfurl-favicon\">\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t<img src=\"https://github.githubassets.com/favicons/favicon.svg\" loading=\"lazy\" alt=\"github.com\" class=\"bbCodeBlockUnfurl-icon\"\n\t\t\t\t\t\t\t\tdata-onerror=\"hide-parent\"/>\n\t\t\t\t\t\t\n\t\t\t\t\t</span>\n\t\t\t\t\tgithub.com\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1771156463,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 5,
+  "slug": "ukrainskij-azyk-v-sphinx",
+  "sticky": false,
+  "tags": [],
+  "title": "Украинский язык в Sphinx",
+  "url_path": "/threads/ukrainskij-azyk-v-sphinx.41921/",
+  "user_id": 395,
+  "username": "dexer7",
+  "view_count": 1612
+}

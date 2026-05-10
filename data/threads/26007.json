@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61416,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 26007,
+  "last_post_date": 1405248048,
+  "node_id": 111,
+  "post_date": 1405247914,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61416,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Ссылка</b>:<br />\n<a href=\"http://code.google.com/p/torrentpier2/source/detail?r=591\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"> http://code.google.com/p/torrentpier2/source/detail?r=591</a><br />\n<br />\n<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 591: Новая система локализации шаблонов боковых панелей, пользовательских соглашений</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">glix08</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/contributors.txt \n    Modify    /trunk/install/php-fpm+nginx/fastcgi_params \n    Modify    /trunk/install/php-fpm+nginx/nginx.conf \n    Modify    /trunk/install/sphinx/sphinx.conf \n    Modify    /trunk/readme.txt \n    Add    /trunk/upgrade/r600-stable.php \n    Modify    /trunk/upload/admin/admin_board.php \n    Modify    /trunk/upload/ajax/html/jumpbox_guest.html \n    Modify    /trunk/upload/ajax/html/jumpbox_user.html \n    Modify    /trunk/upload/ajax/index_data.php \n    Modify    /trunk/upload/ajax/post_mod_comment.php \n    Modify    /trunk/upload/ajax/view_torrent.php \n    Modify    /trunk/upload/config.php \n    Modify    /trunk/upload/develop/error_report.php \n    Modify    /trunk/upload/groupcp.php \n    Modify    /trunk/upload/includes/datastore/build_stats.php \n    Modify    /trunk/upload/includes/db/mysql.php \n    Modify    /trunk/upload/includes/functions.php \n    Modify    /trunk/upload/includes/functions_selects.php \n    Modify    /trunk/upload/includes/init_bb.php \n    Modify    /trunk/upload/includes/online_userlist.php \n    Modify    /trunk/upload/includes/page_footer.php \n    Modify    /trunk/upload/includes/page_footer_dev.php \n    Modify    /trunk/upload/includes/page_header.php \n    Add    /trunk/upload/includes/ucp/activate.php \n    Add    /trunk/upload/includes/ucp/bonus.php \n    Add    /trunk/upload/includes/ucp/email.php \n    Add    /trunk/upload/includes/ucp/register.php \n    Add    /trunk/upload/includes/ucp/sendpasswd.php \n    Add    /trunk/upload/includes/ucp/topic_watch.php \n    Delete    /trunk/upload/includes/ucp/usercp_activate.php \n    Delete    /trunk/upload/includes/ucp/usercp_bonus.php \n    Delete    /trunk/upload/includes/ucp/usercp_email.php \n    Delete    /trunk/upload/includes/ucp/usercp_register.php \n    Delete    /trunk/upload/includes/ucp/usercp_sendpasswd.php \n    Delete    /trunk/upload/includes/ucp/usercp_topic_watch.php \n    Delete    /trunk/upload/includes/ucp/usercp_viewprofile.php \n    Delete    /trunk/upload/includes/ucp/usercp_viewtorrent.php \n    Add    /trunk/upload/includes/ucp/viewprofile.php \n    Add    /trunk/upload/includes/ucp/viewtorrent.php \n    Add    /trunk/upload/language/en/html \n    Add    /trunk/upload/language/en/html/.htaccess \n    Add    /trunk/upload/language/en/html/advert.html \n    Add    /trunk/upload/language/en/html/copyright_holders.html \n    Add    /trunk/upload/language/en/html/not_found.html \n    Add    /trunk/upload/language/en/html/sidebar1.html \n    Add    /trunk/upload/language/en/html/sidebar2.html \n    Add    /trunk/upload/language/en/html/user_agreement.html \n    Modify    /trunk/upload/language/en/main.php \n    Add    /trunk/upload/language/ru/html \n    Add    /trunk/upload/language/ru/html/.htaccess \n    Add    /trunk/upload/language/ru/html/advert.html \n    Add    /trunk/upload/language/ru/html/copyright_holders.html \n    Add    /trunk/upload/language/ru/html/not_found.html \n    Add    /trunk/upload/language/ru/html/sidebar1.html \n    Add    /trunk/upload/language/ru/html/sidebar2.html \n    Add    /trunk/upload/language/ru/html/user_agreement.html \n    Modify    /trunk/upload/language/ru/main.php \n    Add    /trunk/upload/language/ua/html \n    Add    /trunk/upload/language/ua/html/.htaccess \n    Add    /trunk/upload/language/ua/html/advert.html \n    Add    /trunk/upload/language/ua/html/copyright_holders.html \n    Add    /trunk/upload/language/ua/html/not_found.html \n    Add    /trunk/upload/language/ua/html/sidebar1.html \n    Add    /trunk/upload/language/ua/html/sidebar2.html \n    Add    /trunk/upload/language/ua/html/user_agreement.html \n    Modify    /trunk/upload/language/ua/main.php \n    Modify    /trunk/upload/language/ua/translit_table.php \n    Modify    /trunk/upload/memberlist.php \n    Modify    /trunk/upload/misc.php \n    Delete    /trunk/upload/misc/html \n    Modify    /trunk/upload/misc/js/bbcode.js \n    Modify    /trunk/upload/opensearch_desc.xml \n    Modify    /trunk/upload/opensearch_desc_bt.xml \n    Modify    /trunk/upload/profile.php \n    Modify    /trunk/upload/templates/admin/admin_attachments.tpl \n    Modify    /trunk/upload/templates/admin/admin_board.tpl \n    Modify    /trunk/upload/templates/admin/admin_cron.tpl \n    Modify    /trunk/upload/templates/admin/admin_forums.tpl \n    Modify    /trunk/upload/templates/admin/admin_log.tpl \n    Modify    /trunk/upload/templates/admin/admin_rebuild_search.tpl \n    Modify    /trunk/upload/templates/admin/admin_ug_auth.tpl \n    Modify    /trunk/upload/templates/admin/index.tpl \n    Delete    /trunk/upload/templates/default/agreement.tpl \n    Modify    /trunk/upload/templates/default/css/main.css \n    Modify    /trunk/upload/templates/default/modcp_split.tpl \n    Modify    /trunk/upload/templates/default/page_footer.tpl \n    Modify    /trunk/upload/templates/default/page_header.tpl \n    Modify    /trunk/upload/templates/default/posting_editor.tpl \n    Modify    /trunk/upload/templates/default/posting_tpl.tpl \n    Modify    /trunk/upload/templates/default/usercp_register.tpl \n    Modify    /trunk/upload/templates/default/usercp_viewprofile.tpl \n    Modify    /trunk/upload/templates/default/viewforum.tpl \n    Modify    /trunk/upload/templates/default/viewtopic.tpl \n    Modify    /trunk/upload/templates/default/viewtopic_poll.tpl \n    Modify    /trunk/upload/templates/default/viewtopic_torrent.tpl \n    Modify    /trunk/upload/templates/topic_tpl_overall_header.html \n\nНовая система локализации шаблонов боковых панелей, пользовательских соглашений и т.д. Добавлены локализации оных на английский и украинский языки. Исправления ошибок и прочие изменения: - вторая боковая панель включена по-умолчанию; - включена панель отладки в администраторской панели; - исправление ошибки с сохранением кеша для разных языков; - исправление ошибки с выбором стандартного языка для форума; - исправление ошибки с генерацией списка текущих дней рождения; - исправление ошибки с иногда некорректной генерацией списка файлов в раздаче; - исправление ошибки с возможностью парсинга базы данных пользовательских email- адресов; - исправление ошибки с редиректом страниц на некоторых конфигурациях серверов (IIS); - исправление ошибки с выводом информации о текущем выбранном шаблоне/языке, если на форуме он всего один; - исправление кодировки кастомного поиска для браузера; - множественные правки в css, js, языковых переменных. Также были переименованы все файлы в папке /includes/ucp, для предотвращения дублирования текста в названии оных. Изменения в сами файлы не вносились.</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1405247914,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61417,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Новая система локализации шаблонов боковых панелей, пользовательских соглашений и т.д. Добавлены локализации оных на английский и украинский языки.<br />\n<br />\nИсправления ошибок и прочие изменения:<br />\n- вторая боковая панель включена по-умолчанию;<br />\n- включена панель отладки в администраторской панели;<br />\n- исправление ошибки с сохранением кеша для разных языков;<br />\n- исправление ошибки с выбором стандартного языка для форума;<br />\n- исправление ошибки с генерацией списка текущих дней рождения;<br />\n- исправление ошибки с иногда некорректной генерацией списка файлов в раздаче;<br />\n- исправление ошибки с возможностью парсинга базы данных пользовательских email-адресов;<br />\n- исправление ошибки с редиректом страниц на некоторых конфигурациях серверов (IIS);<br />\n- исправление ошибки с выводом информации о текущем выбранном шаблоне/языке, если на форуме он всего один;<br />\n- исправление кодировки кастомного поиска для браузера;<br />\n- множественные правки в css, js, языковых переменных.<br />\n<br />\nТакже были переименованы все файлы в папке /includes/ucp, для предотвращения дублирования текста в названии оных. Изменения в сами файлы не вносились.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1405248048,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "revision-591-novaa-sistema-lokalizacii-sablonov-bokovyh-panelej-pol-zovatel-skih-soglasenij",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 591: Новая система локализации шаблонов боковых панелей, пользовательских соглашений",
+  "url_path": "/threads/revision-591-novaa-sistema-lokalizacii-sablonov-bokovyh-panelej-pol-zovatel-skih-soglasenij.26007/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 3611
+}

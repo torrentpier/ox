@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 57769,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 25545,
+  "last_post_date": 1390080390,
+  "node_id": 80,
+  "post_date": 1389826310,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57769,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "R557<br />\nОписывать что это и как назвать, т.к. багом не назовешь точно, мне кажется смысла нет.<br />\npage_header.tpl<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">            &lt;td width=&quot;50%&quot;&gt;\n                &lt;!-- IF SHOW_LATEST_NEWS --&gt;\n                &lt;h3&gt;{L_LATEST_NEWS}&lt;/h3&gt;\n                    &lt;table cellpadding=&quot;0&quot;&gt;\n                    &lt;!-- BEGIN news --&gt;\n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;div class=&quot;news_date&quot;&gt;{news.NEWS_TIME}&lt;/div&gt;&lt;/td&gt;\n                        &lt;td width=&quot;100%&quot;&gt;\n                            &lt;div class=&quot;news_title&lt;!-- IF news.NEWS_IS_NEW --&gt; new&lt;!-- ENDIF --&gt;&quot;&gt;&lt;a href=&quot;{TOPIC_URL}{news.NEWS_TOPIC_ID}&quot;&gt;{news.NEWS_TITLE}&lt;/a&gt;&lt;/div&gt;\n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                    &lt;!-- END news --&gt;\n                    &lt;/table&gt;\n                    &lt;!-- ENDIF --&gt;\n            &lt;/td&gt;</pre>меняем на<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">            &lt;!-- IF SHOW_LATEST_NEWS --&gt;\n            &lt;td width=&quot;50%&quot;&gt;\n                &lt;h3&gt;{L_LATEST_NEWS}&lt;/h3&gt;\n                &lt;table cellpadding=&quot;0&quot;&gt;\n                    &lt;!-- BEGIN news --&gt;\n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;div class=&quot;news_date&quot;&gt;{news.NEWS_TIME}&lt;/div&gt;&lt;/td&gt;\n                        &lt;td width=&quot;100%&quot;&gt;\n                            &lt;div class=&quot;news_title&lt;!-- IF news.NEWS_IS_NEW --&gt; new&lt;!-- ENDIF --&gt;&quot;&gt;&lt;a href=&quot;{TOPIC_URL}{news.NEWS_TOPIC_ID}&quot;&gt;{news.NEWS_TITLE}&lt;/a&gt;&lt;/div&gt;\n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                    &lt;!-- END news --&gt;\n                &lt;/table&gt;\n            &lt;/td&gt;\n            &lt;!-- ENDIF --&gt;</pre> <br />\nВот так мне кажется более правильно, хотя если я не прав то тему можно удалить.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1389826310,
+      "user_id": 4646,
+      "user_title": "User",
+      "username": "greencell"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57954,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено в новой ревизии: <a href=\"https://code.google.com/p/torrentpier2/source/detail?r=561\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://code.google.com/p/torrentpier2/source/detail?r=561</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1390080390,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 1,
+  "slug": "novosti-trekera",
+  "sticky": false,
+  "tags": [],
+  "title": "Новости трекера",
+  "url_path": "/threads/novosti-trekera.25545/",
+  "user_id": 4646,
+  "username": "greencell",
+  "view_count": 1096
+}

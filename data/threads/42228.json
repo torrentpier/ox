@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 95654,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42228,
+  "last_post_date": 1758826994,
+  "node_id": 47,
+  "post_date": 1706108343,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95654,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/ajax-polzovateli-za-24-chasa.282/\" class=\"link link--internal\">[AJAX] Пользователи за 24 часа</a> - В статистике форума отображает пользователей посетивших ресурс за последние 24 часа.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> В статистике форума отображает пользователей посетивших ресурс за последние 24 часа. Если пользователь скрыл свой онлайн, то он в списке не будет появляться (Будет показан только админам).</blockquote><br />\n<a href=\"https://torrentpier.com/resources/ajax-polzovateli-za-24-chasa.282/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1706108343,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96298,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/ajax-polzovateli-za-24-chasa.282/\" class=\"link link--internal\">[AJAX] Пользователи за 24 часа</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/ajax-polzovateli-za-24-chasa.282/update/533/\" class=\"link link--internal\">Обновление v1.1.0</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Добавлен перевод на Украинский язык</li>\n<li data-xf-list-type=\"ul\">Используется иная формула подсчёта $day</li>\n<li data-xf-list-type=\"ul\">Добавлено ограничение на отображение 150 пользователей (списком), при этом счётчик пользователей будет отображать фактическое число пользователей.</li>\n<li data-xf-list-type=\"ul\">Список формируется случайным образом, то-есть каждый раз будут отображаться случайные 150 пользователей, дабы компенсировать ограничение. Ограничение можно увеличить, но не рекомендуется.</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/ajax-polzovateli-za-24-chasa.282/update/533/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1720592747,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96299,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/ajax-polzovateli-za-24-chasa.282/\" class=\"link link--internal\">[AJAX] Пользователи за 24 часа</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/ajax-polzovateli-za-24-chasa.282/update/534/\" class=\"link link--internal\">Обновление v1.1.1</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Небольшая оптимизация кода</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/ajax-polzovateli-za-24-chasa.282/update/534/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1720593444,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98219,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka updated <a href=\"https://torrentpier.com/resources/ajax-pol-zovateli-za-24-casa.282/\" class=\"link link--internal\">[AJAX] Пользователи за 24 часа</a> with a new update entry:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/ajax-pol-zovateli-za-24-casa.282/update/672/\" class=\"link link--internal\">Обновление v1.1.2</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Мод адаптирован под v2.2.*, v2.3.*, v2.4.*, 2.8.*</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/ajax-pol-zovateli-za-24-casa.282/update/672/\" class=\"link link--internal\">Read the rest of this update entry...</a>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1758826994,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "ajax-pol-zovateli-za-24-casa",
+  "sticky": false,
+  "tags": [],
+  "title": "[AJAX] Пользователи за 24 часа",
+  "url_path": "/threads/ajax-pol-zovateli-za-24-casa.42228/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 1154
+}

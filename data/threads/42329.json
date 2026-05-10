@@ -1,0 +1,125 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 96922,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 50,
+    "title": "Graphics and styles for TorrentPier"
+  },
+  "id": 42329,
+  "last_post_date": 1735324014,
+  "node_id": 50,
+  "post_date": 1734368035,
+  "posts": [
+    {
+      "attach_count": 3,
+      "attachments": [
+        {
+          "attach_date": 1734367923,
+          "file_size": 7088,
+          "filename": "nick.webp",
+          "height": 22,
+          "id": 6270,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/nick-webp.6270/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6274-8e459b0206c9716eaa3662251ba55bd8.jpg?hash=J-HMaSImYK",
+          "width": 890
+        },
+        {
+          "attach_date": 1734367923,
+          "file_size": 7866,
+          "filename": "1.webp",
+          "height": 25,
+          "id": 6271,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1-webp.6271/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6275-093871b316b05e4ac00d5ffb7484cebd.jpg?hash=RgPdcNLdC3",
+          "width": 890
+        },
+        {
+          "attach_date": 1734367978,
+          "file_size": 513661,
+          "filename": "Nick-Icon.zip",
+          "height": 0,
+          "id": 6272,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/nick-icon-zip.6272/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 96922,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<div style=\"text-align: center\"><b><span style=\"font-size: 26px\"><span style=\"color: rgb(85, 57, 130)\">Анимация ники </span>+ <span style=\"color: rgb(65, 168, 95)\">Иконки<br />\n<img src=\"https://torrentpier.com/attachments/6270/\" alt=\"nick.webp\" /><img src=\"https://torrentpier.com/attachments/6271/\" alt=\"1.webp\" /></span></span></b>&#8203;</div><pre class=\"xfBb-code\" data-lang=\"css\">----------------------- Открыть main.css и найти для TP 2.1.5 и LTS -----------------------\n----------------------- Открыть globals.css и найти для TP 2.4.x -----------------------\n\n.colorAdmin, a.colorAdmin, a.colorAdmin:visited {\n  color: #A00 !important;\n}\n\n.colorSuperMod, a.colorSuperMod, a.colorSuperMod:visited {\n  color: #0080FF !important;\n}\n\n.colorMod, a.colorMod, a.colorMod:visited {\n  color: #009900 !important;\n}\n\n.colorGroup, a.colorGroup, a.colorGroup:visited {\n  color: #476996 !important;\n}\n\n---------------------------------- Заменить на -----------------------------------------------\n\n.colorAdmin, a.colorAdmin, a.colorAdmin:visited {\n  color: #DE0000 !important;\n  font-weight: bold;\n  text-shadow: 0px 0px 7px;\n  background: url(../images/Nick/AdminEffect.gif),\n  url(../images/Nick/adminicon.png) no-repeat ;   \n   padding-left: 18px;\n   padding-top: 1px;\n}\n\n.colorTech, a.colorTech, a.colorTech:visited {\n  color: #000 !important;\n  font-weight: bold;\n  text-shadow: 0px 0px 7px #000;\n  background: url(../images/Nick/TechEffect.gif),\n  url(../images/Nick/techicon.png) no-repeat ;   \n   padding-left: 18px;\n   padding-top: 1px;\n}\n\n.colorSupp, a.colorSupp, a.colorSupp:visited {\n  color: #000 !important;\n  font-weight: bold;\n  text-shadow: 0px 0px 7px #000;\n}\n\n.colorSuperMod, a.colorSuperMod, a.colorSuperMod:visited {\n  color: #006400 !important;\n  font-weight: bold;\n  text-shadow: 0px 0px 7px;\n  background: url(../images/Nick/supermod.gif),\n  url(../images/Nick/sumodericon.png) no-repeat;\n  padding-left: 18px;\n  padding-top: 1px;\n }\n\n.colorMod, a.colorMod, a.colorMod:visited {\n  color: #009900 !important;\n  font-weight: bold;\n  text-shadow: 0px 0px 7px;\n  background: url(../images/Nick/ModerEffect.gif),\n  url(../images/Nick/modericon.png) no-repeat;\n  padding-left: 18px;\n  padding-top: 1px;\n}\n\n.colorVip, a.colorVip, a.colorVip:visited {\n  color: #ff7800 !important;\n  font-weight: bold;\n  text-shadow: 0px 0px 7px #ff7800;\n  background: url(../images/Nick/VIPEffect.gif),\n  url(../images/Nick/vipicon.gif) no-repeat ;   \n   padding-left: 18px;\n   padding-top: 1px;\n}\n\n.colorGirl, a.colorGirl, a.colorGirl:visited {\n  color: #ff00d8 !important;\n  font-weight: bold;\n  text-shadow: 0px 0px 7px #ff00d8;\n  background: url(../images/Nick/GirlEffect.gif),\n  url(../images/Nick/girlicon.png) no-repeat ;   \n   padding-left: 18px;\n   padding-top: 1px;\n}\n\n.colorGroup, a.colorGroup, a.colorGroup:visited {\n  color: #6700B3;\n  font-weight: bold;\n  text-shadow: 0px 0px 7px !important;\n}\n\n----------------------------------------------------------------------------------------\nСохранить и очистить кеш ТП и нажав CTRL + F5</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1734368035,
+      "user_id": 7621,
+      "user_title": "User",
+      "username": "DimaUZB2001"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96956,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1735323507,
+      "message_parsed": "Сразу говорю, есть конфликт с модом<br />\n<a href=\"https://torrentpier.com/threads/podsvetka-nikov-po-zvaniju.42327/\" class=\"link link--internal\">Подсветка ников по званию</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1735323372,
+      "user_id": 6316,
+      "user_title": "User",
+      "username": "KUDS"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96957,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"KUDS\">Сразу говорю, есть конфликт с модом<br />\n<a href=\"https://torrentpier.com/threads/podsvetka-nikov-po-zvaniju.42327/\" class=\"link link--internal\">Подсветка ников по званию</a></blockquote>Хм скачай Nikck-lcon.zip этот файл там внутри есть установка наверное исправленный код",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1735324014,
+      "user_id": 7621,
+      "user_title": "User",
+      "username": "DimaUZB2001"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "full-animacia-niki-ikonki",
+  "sticky": false,
+  "tags": [],
+  "title": "[FULL] Анимация ники + Иконки",
+  "url_path": "/threads/full-animacia-niki-ikonki.42329/",
+  "user_id": 7621,
+  "username": "DimaUZB2001",
+  "view_count": 761
+}

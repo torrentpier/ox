@@ -1,0 +1,54 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 97018,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 58,
+    "title": "Suggestions for improving TorrentPier"
+  },
+  "id": 42346,
+  "last_post_date": 1736529331,
+  "node_id": 58,
+  "post_date": 1736529331,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97018,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Why are older versions being installed instead of the latest ones?<br />\n<br />\nnginx ((1.18.0) <br />\njquery (jquery-1.12.4.min.js) <br />\nphpMyAdmin (5.1.1)<br />\n<br />\nI upgraded all of these using apt and once I resolved a couple config issues, they work fine with the tracker. Are there plans to include the newest versions by default?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1736529331,
+      "user_id": 10989,
+      "user_title": "User",
+      "username": "Tzuriel25"
+    }
+  ],
+  "prefix_id": 34,
+  "reply_count": 0,
+  "slug": "include-most-recent-versions-of-software",
+  "sticky": false,
+  "tags": [
+    "software",
+    "upgrade",
+    "versions"
+  ],
+  "title": "Include most recent versions of software",
+  "url_path": "/threads/include-most-recent-versions-of-software.42346/",
+  "user_id": 10989,
+  "username": "Tzuriel25",
+  "view_count": 785
+}

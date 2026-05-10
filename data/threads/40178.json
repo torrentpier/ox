@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 82022,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 40178,
+  "last_post_date": 1428765003,
+  "node_id": 57,
+  "post_date": 1428576940,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 82022,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1428577204,
+      "message_parsed": "Всем доброго времени суток!<br />\ntp 2.1.5<br />\nПри попытке прикрепить торрент к посту выдаёт: &quot;Не указан режим сообщения&quot;.<br />\nВ ветке разрешено прикреплять. Права на папки 777.<br />\nВ чём может быть проблема?<br />\nПриму во внимание любые догадки!<br />\n<div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1428576940,
+      "user_id": 6122,
+      "user_title": "User",
+      "username": "slava"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 82030,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/6122/\">@slava</a> видео снять можете? Потому что ощущение что вы скачали 2.1.6.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1428578660,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 82036,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1428581871,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\"><a href=\"https://torrentpier.com/members/6122/\">@slava</a> видео снять можете? Потому что ощущение что вы скачали 2.1.6.</blockquote>Версия TorrentPier II: <b>2.1.5 [ALPHA]</b><br />\nДата выпуска: <b>06-12-2014</b><br />\nВерсия Zend Framework: <b>2.3.3</b><br />\n<br />\n2.1.6 не нашёл в репозитории<br />\n<br />\nВидео могу снять, но позже<b>. </b>Может в настройках nginx где-нибудь допустил ошибку?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1428581663,
+      "user_id": 6122,
+      "user_title": "User",
+      "username": "slava"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 82045,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Час потратил на поиск проблемы...<br />\nВот она (лишняя строка) fastcgi_param REQUEST_BODY_FILE $request_body_file;<br />\nУбираем и вуаля! Всё прекрасно грузит. Тему можно закрыть/удалить",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1428585941,
+      "user_id": 6122,
+      "user_title": "User",
+      "username": "slava"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 82203,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Будет прекрасно ещё в движке покапать почему так получилось.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1428765003,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "ne-ukazan-rezim-soobsenia-pri-prikreplenii-torrenta",
+  "sticky": false,
+  "tags": [],
+  "title": "\"Не указан режим сообщения\" при прикреплении торрента",
+  "url_path": "/threads/ne-ukazan-rezim-soobsenia-pri-prikreplenii-torrenta.40178/",
+  "user_id": 6122,
+  "username": "slava",
+  "view_count": 2922
+}

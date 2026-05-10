@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58460,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25707,
+  "last_post_date": 1391377581,
+  "node_id": 57,
+  "post_date": 1391377385,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58460,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Почему Torrent Pier ll выдаёт ошибку при  отправки  темы   выходит  такая  ошибка (see $bb_cfg[&#039;tidy_post&#039;] in config.php)<br />\n<img src=\"http://file-up.net/big_da8a41e8c73c53944920140202224201.jpg\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1391377385,
+      "user_id": 5061,
+      "user_title": "User",
+      "username": "bat-man"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58461,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Откройте файл config.php и значению $bb_cfg[&#039;tidy_post&#039;] поставьте false.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1391377581,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "pocemu-torrentpier-ll-vydaet-osibku",
+  "sticky": false,
+  "tags": [],
+  "title": "Почему TorrentPier ll  выдает  ошибку",
+  "url_path": "/threads/pocemu-torrentpier-ll-vydaet-osibku.25707/",
+  "user_id": 5061,
+  "username": "bat-man",
+  "view_count": 1133
+}

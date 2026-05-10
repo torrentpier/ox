@@ -1,0 +1,152 @@
+{
+  "category": {
+    "description": "Section with all templates for TorrentPier.",
+    "id": 5,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Templates",
+    "view_url": "https://torrentpier.com/resources/categories/templates.5/"
+  },
+  "current_files": [
+    {
+      "filename": "Green_600.zip",
+      "id": 3642,
+      "local_path": null,
+      "r2_key": null,
+      "size": 256537,
+      "src_url": "https://torrentpier.com/api/resource-versions/291/download?file=3642"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "adapt",
+    "installation": "[SPOILER=\"Инструкция\"]Загрузить файлы на сервер.[/SPOILER]",
+    "owner": "ChihPyh",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1429569803,
+      "file_size": 89632,
+      "filename": "2015-03-08_175022.webp",
+      "height": 768,
+      "id": 3639,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2015-03-08_175022-webp.3639/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3643-a7db1da9e14da3761bde3e37acdbbe03.jpg?hash=eUcnJYXXTY",
+      "width": 1304
+    },
+    {
+      "attach_date": 1429569804,
+      "file_size": 125018,
+      "filename": "2015-03-08_175131.webp",
+      "height": 768,
+      "id": 3640,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2015-03-08_175131-webp.3640/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3644-567d524d7672cba97977e14d1df9c220.jpg?hash=6x3ZB80FQZ",
+      "width": 1304
+    },
+    {
+      "attach_date": 1429569804,
+      "file_size": 111240,
+      "filename": "2015-03-08_175147.webp",
+      "height": 768,
+      "id": 3641,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2015-03-08_175147-webp.3641/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3645-e35337d901402edbefc1a2ad0dfbb307.jpg?hash=STVrWYvE4q",
+      "width": 1304
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> шаблон, простой в темно-зеленых оттенках.",
+  "download_count": 525,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/7.jpg?1429569704",
+  "id": 7,
+  "is_fileless": null,
+  "last_update": 1429569869,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1369073246,
+  "resource_state": "visible",
+  "slug": "sablon-green",
+  "tag_line": "Шаблон, простой в темно-зеленых оттенках.",
+  "tags": [],
+  "title": "Шаблон «Green»",
+  "url_path": "/resources/sablon-green.7/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.2.0",
+  "versions": [
+    {
+      "download_count": 319,
+      "files": [
+        {
+          "filename": "Green_600.zip",
+          "id": 3642,
+          "local_path": null,
+          "r2_key": null,
+          "size": 256537,
+          "src_url": "https://torrentpier.com/api/resource-versions/291/download?file=3642"
+        }
+      ],
+      "id": 291,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1429569869,
+      "version_state": "visible",
+      "version_string": "1.2.0",
+      "view_url": "https://torrentpier.com/resources/sablon-green.7/version/291/"
+    },
+    {
+      "download_count": 96,
+      "files": [
+        {
+          "filename": "tp2r375.zip",
+          "id": 3638,
+          "local_path": null,
+          "r2_key": null,
+          "size": 128097,
+          "src_url": "https://torrentpier.com/api/resource-versions/290/download?file=3638"
+        }
+      ],
+      "id": 290,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1429569734,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/sablon-green.7/version/290/"
+    },
+    {
+      "download_count": 117,
+      "files": [
+        {
+          "filename": "tp2r375Green.rar",
+          "id": 1974,
+          "local_path": null,
+          "r2_key": null,
+          "size": 124088,
+          "src_url": "https://torrentpier.com/api/resource-versions/7/download?file=1974"
+        }
+      ],
+      "id": 7,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1369073246,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/sablon-green.7/version/7/"
+    }
+  ],
+  "view_count": 628
+}

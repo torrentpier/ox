@@ -1,0 +1,205 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Прогресс заполнения профиля by belomaxorka.zip",
+      "id": 6485,
+      "local_path": null,
+      "r2_key": null,
+      "size": 3534,
+      "src_url": "https://torrentpier.com/api/resource-versions/640/download?file=6485"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1735317612,
+      "file_size": 9170,
+      "filename": "photo_2024-12-27_23-35-08.webp",
+      "height": 231,
+      "id": 6284,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2024-12-27_23-35-08-webp.6284/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6288-8427a1424d3f25878a9bc6e6237159ac.jpg?hash=m3QER4DXRz",
+      "width": 401
+    },
+    {
+      "attach_date": 1735317612,
+      "file_size": 8698,
+      "filename": "photo_2024-12-27_23-35-10.webp",
+      "height": 233,
+      "id": 6285,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2024-12-27_23-35-10-webp.6285/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6289-5b21c2285642de9fe30e93544f05a258.jpg?hash=bTVoMpllGE",
+      "width": 397
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Прогресс бар, показывает уровень заполнения профиля пользователя. При заполнении профиля на 100%, пользователю в качестве бонуса начисляются поинты (настраивается). Также мод можно легко расширить, путем добавления своих полей (profile fields). Данный мод создан с нуля, идея была взята с <a href=\"https://torrentpier.com/resources/progress-bar-zapolnenija-profilja-polzovatelja-so-skidkami-pri-obmena-sidpointov.102/\" class=\"link link--internal\">этого платного мода</a>.<br />\n<b>Совместимость</b>: v2.1.5, LTS, v2.2.*, v2.3.*, v2.4.*.",
+  "download_count": 780,
+  "external_url": null,
+  "icon_url": null,
+  "id": 314,
+  "is_fileless": null,
+  "last_update": 1752402080,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1735317618,
+  "resource_state": "visible",
+  "slug": "progress-zapolnenia-profila",
+  "tag_line": "Прогресс бар, показывает уровень заполнения профиля пользователя.",
+  "tags": [
+    "мод",
+    "моды",
+    "прогресс",
+    "прогресс заполнения профиля"
+  ],
+  "title": "Прогресс заполнения профиля",
+  "url_path": "/resources/progress-zapolnenia-profila.314/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.2.1",
+  "versions": [
+    {
+      "download_count": 217,
+      "files": [
+        {
+          "filename": "[FULL] Прогресс заполнения профиля by belomaxorka.zip",
+          "id": 6485,
+          "local_path": null,
+          "r2_key": null,
+          "size": 3534,
+          "src_url": "https://torrentpier.com/api/resource-versions/640/download?file=6485"
+        }
+      ],
+      "id": 640,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1752402080,
+      "version_state": "visible",
+      "version_string": "v1.2.1",
+      "view_url": "https://torrentpier.com/resources/progress-zapolnenia-profila.314/version/640/"
+    },
+    {
+      "download_count": 67,
+      "files": [
+        {
+          "filename": "[FULL] Прогресс заполнения профиля by belomaxorka.zip",
+          "id": 6484,
+          "local_path": null,
+          "r2_key": null,
+          "size": 3535,
+          "src_url": "https://torrentpier.com/api/resource-versions/639/download?file=6484"
+        }
+      ],
+      "id": 639,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1752401822,
+      "version_state": "visible",
+      "version_string": "v1.2.0",
+      "view_url": "https://torrentpier.com/resources/progress-zapolnenia-profila.314/version/639/"
+    },
+    {
+      "download_count": 148,
+      "files": [
+        {
+          "filename": "[FULL] Прогресс заполнения профиля by belomaxorka.zip",
+          "id": 6289,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2795,
+          "src_url": "https://torrentpier.com/api/resource-versions/586/download?file=6289"
+        }
+      ],
+      "id": 586,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1735394104,
+      "version_state": "visible",
+      "version_string": "v1.1.1",
+      "view_url": "https://torrentpier.com/resources/progress-zapolnenia-profila.314/version/586/"
+    },
+    {
+      "download_count": 117,
+      "files": [
+        {
+          "filename": "[FULL] Прогресс заполнения профиля by belomaxorka.zip",
+          "id": 6288,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2645,
+          "src_url": "https://torrentpier.com/api/resource-versions/585/download?file=6288"
+        }
+      ],
+      "id": 585,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1735375875,
+      "version_state": "visible",
+      "version_string": "v1.1.0",
+      "view_url": "https://torrentpier.com/resources/progress-zapolnenia-profila.314/version/585/"
+    },
+    {
+      "download_count": 106,
+      "files": [
+        {
+          "filename": "[FULL] Прогресс заполнения профиля by belomaxorka.zip",
+          "id": 6287,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2535,
+          "src_url": "https://torrentpier.com/api/resource-versions/584/download?file=6287"
+        }
+      ],
+      "id": 584,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1735352849,
+      "version_state": "visible",
+      "version_string": "v1.0.1",
+      "view_url": "https://torrentpier.com/resources/progress-zapolnenia-profila.314/version/584/"
+    },
+    {
+      "download_count": 130,
+      "files": [
+        {
+          "filename": "[FULL] Прогресс заполнения профиля by belomaxorka.zip",
+          "id": 6286,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2497,
+          "src_url": "https://torrentpier.com/api/resource-versions/583/download?file=6286"
+        }
+      ],
+      "id": 583,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1735317618,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/progress-zapolnenia-profila.314/version/583/"
+    }
+  ],
+  "view_count": 2607
+}

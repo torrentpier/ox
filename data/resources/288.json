@@ -1,0 +1,210 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Просмотр кода топика by belomaxorka.zip",
+      "id": 6382,
+      "local_path": null,
+      "r2_key": null,
+      "size": 13757,
+      "src_url": "https://torrentpier.com/api/resource-versions/601/download?file=6382"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в папке с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1707832778,
+      "file_size": 2288,
+      "filename": "Screenshot 2024-02-13 205402.webp",
+      "height": 67,
+      "id": 5817,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot-2024-02-13-205402-webp.5817/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5821-3db52bd2e486d5737392534df4cda00f.jpg?hash=YqBwR0G-6D",
+      "width": 334
+    },
+    {
+      "attach_date": 1707832778,
+      "file_size": 41032,
+      "filename": "Screenshot 2024-02-13 205415.webp",
+      "height": 261,
+      "id": 5818,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot-2024-02-13-205415-webp.5818/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5822-4a7d158f7b071984cca7e684dea55ecb.jpg?hash=9kDtxk6ARY",
+      "width": 1173
+    }
+  ],
+  "description_parsed": "<div style=\"text-align: center\"><span style=\"color: rgb(235, 107, 86)\">Мод включен по умолчанию начиная с v2.4.2</span>&#8203;</div><hr /><b>Описание</b>: Добавляет возможность всем желающим просматривать код (текст + BBCode) топика. Реализовано на AJAX. Фактически полная копия реализации что используется на рутрекере.",
+  "download_count": 699,
+  "external_url": null,
+  "icon_url": null,
+  "id": 288,
+  "is_fileless": null,
+  "last_update": 1741673522,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1707832782,
+  "resource_state": "visible",
+  "slug": "prosmotr-koda-topika",
+  "tag_line": "Данный мод добавляет возможность посмотреть код (текст + BBCode) не редактируя пост.",
+  "tags": [
+    "bbcode",
+    "bbcode топика",
+    "код раздачи",
+    "код сообщения",
+    "код топика",
+    "мод",
+    "моды",
+    "просмотр текста топика",
+    "просмотр топика"
+  ],
+  "title": "Просмотр кода топика",
+  "url_path": "/resources/prosmotr-koda-topika.288/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.5",
+  "versions": [
+    {
+      "download_count": 215,
+      "files": [
+        {
+          "filename": "[FULL] Просмотр кода топика by belomaxorka.zip",
+          "id": 6382,
+          "local_path": null,
+          "r2_key": null,
+          "size": 13757,
+          "src_url": "https://torrentpier.com/api/resource-versions/601/download?file=6382"
+        }
+      ],
+      "id": 601,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1741673522,
+      "version_state": "visible",
+      "version_string": "v1.0.5",
+      "view_url": "https://torrentpier.com/resources/prosmotr-koda-topika.288/version/601/"
+    },
+    {
+      "download_count": 127,
+      "files": [
+        {
+          "filename": "[FULL] Просмотр кода топика by belomaxorka.zip",
+          "id": 6211,
+          "local_path": null,
+          "r2_key": null,
+          "size": 13692,
+          "src_url": "https://torrentpier.com/api/resource-versions/557/download?file=6211"
+        }
+      ],
+      "id": 557,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1732374477,
+      "version_state": "visible",
+      "version_string": "v1.0.4",
+      "view_url": "https://torrentpier.com/resources/prosmotr-koda-topika.288/version/557/"
+    },
+    {
+      "download_count": 91,
+      "files": [
+        {
+          "filename": "[FULL] Просмотр кода топика by belomaxorka.zip",
+          "id": 5962,
+          "local_path": null,
+          "r2_key": null,
+          "size": 10398,
+          "src_url": "https://torrentpier.com/api/resource-versions/489/download?file=5962"
+        }
+      ],
+      "id": 489,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1712927129,
+      "version_state": "visible",
+      "version_string": "v1.0.3",
+      "view_url": "https://torrentpier.com/resources/prosmotr-koda-topika.288/version/489/"
+    },
+    {
+      "download_count": 93,
+      "files": [
+        {
+          "filename": "[FULL] Просмотр кода топика by belomaxorka.zip",
+          "id": 5829,
+          "local_path": null,
+          "r2_key": null,
+          "size": 10388,
+          "src_url": "https://torrentpier.com/api/resource-versions/465/download?file=5829"
+        }
+      ],
+      "id": 465,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1707995931,
+      "version_state": "visible",
+      "version_string": "v1.0.2",
+      "view_url": "https://torrentpier.com/resources/prosmotr-koda-topika.288/version/465/"
+    },
+    {
+      "download_count": 97,
+      "files": [
+        {
+          "filename": "[FULL] Просмотр кода топика by belomaxorka.zip",
+          "id": 5823,
+          "local_path": null,
+          "r2_key": null,
+          "size": 10435,
+          "src_url": "https://torrentpier.com/api/resource-versions/463/download?file=5823"
+        }
+      ],
+      "id": 463,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1707891200,
+      "version_state": "visible",
+      "version_string": "v1.0.1",
+      "view_url": "https://torrentpier.com/resources/prosmotr-koda-topika.288/version/463/"
+    },
+    {
+      "download_count": 90,
+      "files": [
+        {
+          "filename": "[FULL] Просмотр кода топика by belomaxorka.zip",
+          "id": 5816,
+          "local_path": null,
+          "r2_key": null,
+          "size": 10460,
+          "src_url": "https://torrentpier.com/api/resource-versions/462/download?file=5816"
+        }
+      ],
+      "id": 462,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1707832782,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/prosmotr-koda-topika.288/version/462/"
+    }
+  ],
+  "view_count": 967
+}

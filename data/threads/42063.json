@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94236,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 42063,
+  "last_post_date": 1565637116,
+  "node_id": 3,
+  "post_date": 1561628268,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94236,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет, задался целью установить мод: <a href=\"https://antibot.cloud/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://antibot.cloud/</a> на движок нашего торрент трекера, кто нибудь осуществлял задуманное мной? Есть еще варианты как боротся с правообладателями(идея обмана РКН), но нужен нормальный кодер, если кому интересно жду предложений.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1561628268,
+      "user_id": 5670,
+      "user_title": "User",
+      "username": "titann"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94237,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Идея хорошая, но мало соображаю в пхп",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1561637454,
+      "user_id": 4854,
+      "user_title": "User",
+      "username": "sergey67"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94246,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "этот мод не решит ни чего, правики парся выдачу и не заходят на трекер, если в выдаче их бот находит нужный ключевик который ведет на домен без &quot;протекции&quot; то прилетает бан в гугл, гугл шлет предупреждение, несколько сотен таких придупреждений и домен в &quot;баню&quot; выдача падает раз в 10-20 посещалка соответственно тоже, на адалт трекерах можно продержаться по дольше так как названия раздач не обязательно писать так как на сайте оригинала, смысл не поменяется особо. Что бы ркн на доставал можно скачивание из рф закрыть посещалка практически не падает 3-6% у меня так было. Главная проблема что нет переходов из поисковиков. домен за год улетает в баню и все по новой потом, посещалка 2-3 к в сутки это копейки, больше времени тратишь чем имееш. Если конечно есть вложения что бы трекер распиарить то заниматься можно. но на голом интузиазме с 50к рублей не ухать далеко. лучше найти какой то контент &quot;окололегальный&quot; хотя бы, так может и прокатит с трекерами.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1565637116,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "ustanovka-antibot-cloud-na-treker",
+  "sticky": false,
+  "tags": [],
+  "title": "Установка antibot.cloud на трекер",
+  "url_path": "/threads/ustanovka-antibot-cloud-na-treker.42063/",
+  "user_id": 5670,
+  "username": "titann",
+  "view_count": 889
+}

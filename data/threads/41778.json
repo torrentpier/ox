@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 91802,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41778,
+  "last_post_date": 1498473822,
+  "node_id": 57,
+  "post_date": 1498472499,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91802,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как часто нужно делать:<br />\n<br />\nTRUNCATE TABLE `bb_posts_html`;<br />\n<br />\nи нужно ли вообще? <br />\nКак известно она много места в базе занимает. <br />\n<br />\nИли достаточно просто OPTIMIZE выполнять для bb_posts_html и bb_posts_text?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1498472499,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91803,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Можете чистить как угодно. В новой версии не будет все равно. Не особо она нужна, бб-коды не настолько сильно нагружают ее.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1498473822,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "bb_posts_html-nuzno-li-cistit",
+  "sticky": false,
+  "tags": [],
+  "title": "bb_posts_html - нужно ли чистить?",
+  "url_path": "/threads/bb_posts_html-nuzno-li-cistit.41778/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 980
+}

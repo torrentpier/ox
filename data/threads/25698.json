@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58382,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25698,
+  "last_post_date": 1391204665,
+  "node_id": 111,
+  "post_date": 1391204665,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58382,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Ссылка</b>:<br />\n<a href=\"http://code.google.com/p/torrentpier2/source/detail?r=577\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"> http://code.google.com/p/torrentpier2/source/detail?r=577</a><br />\n<br />\n<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 577: Фиксы части косяков новых голосований; забытые папки для файлкеша (cmod 0777); у</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">glix08</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/ReadMe.txt \n    Add    /trunk/upload/cache/filecache/bb_cap_sid \n    Add    /trunk/upload/cache/filecache/bb_login_err \n    Add    /trunk/upload/cache/filecache/bb_poll_data \n    Modify    /trunk/upload/config.php \n    Modify    /trunk/upload/includes/functions.php \n    Modify    /trunk/upload/includes/topic_templates.php \n    Modify    /trunk/upload/language/lang_english/lang_main.php \n    Modify    /trunk/upload/language/lang_russian/lang_main.php \n    Modify    /trunk/upload/poll.php \n    Modify    /trunk/upload/templates/default/topic_templates/audiobooks.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/books.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/games.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/games_ps.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/games_psp.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/games_xbox.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/music.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/progs.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/progs_mac.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/sport.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/video.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/video_home.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/video_lesson.tpl \n    Modify    /trunk/upload/templates/default/topic_templates/video_simple.tpl \n    Modify    /trunk/upload/viewtopic.php \n\nФиксы части косяков новых голосований; забытые папки для файлкеша (cmod 0777); удаление проверки на имя домена в имени торрента (неактуально, файлу при скачивании присваивается имя домена автоматически).</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1391204665,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "revision-577-fiksy-casti-kosakov-novyh-golosovanij-zabytye-papki-dla-fajlkesa-cmod-0777-u",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 577: Фиксы части косяков новых голосований; забытые папки для файлкеша (cmod 0777); у",
+  "url_path": "/threads/revision-577-fiksy-casti-kosakov-novyh-golosovanij-zabytye-papki-dla-fajlkesa-cmod-0777-u.25698/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 1113
+}

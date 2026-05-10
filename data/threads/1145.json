@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 14223,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1145,
+  "last_post_date": 1332528344,
+  "node_id": 57,
+  "post_date": 1332526781,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14223,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Fatal error: Call to undefined function append_sid() in /var/www/sergey/data/www/gipertor.org/includes/bbcode.php on line 171<br />\n <br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">$template-&gt;assign_vars(array(<br />\n<span style=\"color: #ff0000\">&#039;U_MORE_SMILIES&#039; =&gt; append_sid(&quot;posting.php?mode=smilies&quot;))</span><br />\n);</blockquote>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1332526781,
+      "user_id": 1098,
+      "user_title": "User",
+      "username": "Elymas"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14224,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Вы от болды обновляетесь ?<br />\n <br />\n<a href=\"http://code.google.com/p/torrentpier2/source/browse/trunk/upload/includes/bbcode.php#171\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://code.google.com/p/torrentpier2/source/browse/trunk/upload/includes/bbcode.php#171</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1332528344,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "ne-rabotaet-pravka-postov",
+  "sticky": false,
+  "tags": [],
+  "title": "Не работает правка постов",
+  "url_path": "/threads/ne-rabotaet-pravka-postov.1145/",
+  "user_id": 1098,
+  "username": "Elymas",
+  "view_count": 1056
+}

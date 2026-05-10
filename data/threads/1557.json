@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 20621,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1557,
+  "last_post_date": 1348627927,
+  "node_id": 57,
+  "post_date": 1348626788,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20621,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подскажите не могу добавить столбцы в базе <b>Revision:</b> <b><span style=\"font-family: 'monospace'\">r461</span></b><br />\n<b>INSERT INTO `bb_posts` VALUES (1, 1, 1, 2, 1309421220, &#039;&#039;, &#039;&#039;, 0, 0, 0, 0, 1);</b><br />\n<b>INSERT INTO `bb_posts` VALUES (1, 1, 1, 2, 1309421220, &#039;&#039;, &#039;&#039;, 0, 0, 0, 0, 1</b><b>, &#039;&#039;, 0, 0, &#039;&#039;</b><b>);</b>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1348626788,
+      "user_id": 128,
+      "user_title": "User",
+      "username": "vulkan3"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20624,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "все сделал ))) sorry",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1348627927,
+      "user_id": 128,
+      "user_title": "User",
+      "username": "vulkan3"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "revision-r461-dobavit-stolbcy",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision: r461 (добавить столбцы)",
+  "url_path": "/threads/revision-r461-dobavit-stolbcy.1557/",
+  "user_id": 128,
+  "username": "vulkan3",
+  "view_count": 1196
+}

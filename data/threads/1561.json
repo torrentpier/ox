@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 20712,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1561,
+  "last_post_date": 1348811227,
+  "node_id": 57,
+  "post_date": 1348809723,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20712,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Приветствую всех.<br />\nЗнаю что не там где нужно создал тему, но в разделе для новичков у меня почему то закрыты права на создание темы. И так хотел бы задать несколько, относительно, вопросов касающихся VDS.<br />\nБудет ли заметная разница между хостом и VDS, если оперативка 128мб и на хосте и на VDS? (ну конечно процессора на хосте нету)<br />\nКакую ОС лучше выбирать?<br />\nНужна ли одна из панелей ISP manager Lite или ISP manager Pro, или же достаточно пользоваться стандартной ISP Lite?<br />\n <br />\nОстальные по мере их поступления.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1348809723,
+      "user_id": 364,
+      "user_title": "",
+      "username": "Saint"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20715,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Разница есть и большая на VDS вы сам барин и что хотите делаете установка по настройка, и т.д.<br />\nНа хостинге вам просто делают акк с уже настроенными универсальными настройками .",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1348810463,
+      "user_id": 37,
+      "user_title": "User",
+      "username": "Varius"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20716,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Varius</b>, я просто раньше vds не пользовался. А про панель? Т.к. мне с хоста одного сказали что нужна панель минимум ISP manager Lite чтоб закинуть сайт на ftp и чтоб работал сервер ftp. Это действительно нужно все покупать идли это полная чушь?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1348810926,
+      "user_id": 364,
+      "user_title": "",
+      "username": "Saint"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20717,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Все зависит от знания linux систем. если вы новичок лучше конечно купить . Пишите в личку может сервер продам %)",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1348811227,
+      "user_id": 37,
+      "user_title": "User",
+      "username": "Varius"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "vds-dla-nacinausih",
+  "sticky": false,
+  "tags": [],
+  "title": "VDS для начинающих",
+  "url_path": "/threads/vds-dla-nacinausih.1561/",
+  "user_id": 364,
+  "username": "Saint",
+  "view_count": 1480
+}

@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 9231,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 711,
+  "last_post_date": 1326304708,
+  "node_id": 57,
+  "post_date": 1326283142,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9231,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Видимо что то с базой, не отображается форма быстрого ответа, и не нажимается на ник, менял на чистый движок, но с той же базой, проблема осталась",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1326283142,
+      "user_id": 69,
+      "user_title": "User",
+      "username": "iFlooder"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9248,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "нашел, проблема была в строчке show_quick_reply в конфиге, стояло false",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1326304708,
+      "user_id": 69,
+      "user_title": "User",
+      "username": "iFlooder"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "problema-s-bazoj",
+  "sticky": false,
+  "tags": [],
+  "title": "Проблема с базой",
+  "url_path": "/threads/problema-s-bazoj.711/",
+  "user_id": 69,
+  "username": "iFlooder",
+  "view_count": 907
+}

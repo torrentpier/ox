@@ -1,0 +1,113 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Новогодний режим by belomaxorka.zip",
+      "id": 6491,
+      "local_path": null,
+      "r2_key": null,
+      "size": 148267,
+      "src_url": "https://torrentpier.com/api/resource-versions/644/download?file=6491"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1751972692,
+      "file_size": 15190,
+      "filename": "firefox_Ca17ncUcLG.webp",
+      "height": 498,
+      "id": 6483,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_ca17ncuclg-webp.6483/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6487-c2efa2e003ea379840e78fbc824846a2.jpg?hash=MtaZUHOCEA",
+      "width": 536
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Добавляет новогодний режим с возможностью автоматической активации (с 20 декабря по 15 января). Новогодний логотип и аватар (картинки) не включены вместе с модом, используйте свои личные. Пути для них прописаны в конфиге.<br />\n<b>Совместимость:</b> v2.1.5, LTS, v2.2.*, v2.3.*, v2.4.*.<br />\n<b>Возможности:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Снегопад на сайте (очень хорошо настраивается)</li>\n<li data-xf-list-type=\"ul\">Новогоднее лого сайта</li>\n<li data-xf-list-type=\"ul\">Новогодний аватар (в качестве аватара по-умолчанию)</li>\n<li data-xf-list-type=\"ul\">Шапка Санта-Клауса около аватарки</li>\n<li data-xf-list-type=\"ul\">Глобальный фрилич</li>\n<li data-xf-list-type=\"ul\">Дед мороз на санках мчится</li>\n</ul>",
+  "download_count": 325,
+  "external_url": null,
+  "icon_url": null,
+  "id": 327,
+  "is_fileless": null,
+  "last_update": 1752742224,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1751972456,
+  "resource_state": "visible",
+  "slug": "novogodnij-rezim",
+  "tag_line": "Добавляет новогодний режим с возможностью автоматической активации",
+  "tags": [
+    "мод",
+    "мод новогодний",
+    "мод новый год",
+    "моды",
+    "новогодний мод",
+    "новый год"
+  ],
+  "title": "Новогодний режим",
+  "url_path": "/resources/novogodnij-rezim.327/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.1.0",
+  "versions": [
+    {
+      "download_count": 240,
+      "files": [
+        {
+          "filename": "[FULL] Новогодний режим by belomaxorka.zip",
+          "id": 6491,
+          "local_path": null,
+          "r2_key": null,
+          "size": 148267,
+          "src_url": "https://torrentpier.com/api/resource-versions/644/download?file=6491"
+        }
+      ],
+      "id": 644,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1752742224,
+      "version_state": "visible",
+      "version_string": "v1.1.0",
+      "view_url": "https://torrentpier.com/resources/novogodnij-rezim.327/version/644/"
+    },
+    {
+      "download_count": 87,
+      "files": [
+        {
+          "filename": "[FULL] Новогодний режим by belomaxorka.zip",
+          "id": 6481,
+          "local_path": null,
+          "r2_key": null,
+          "size": 21556,
+          "src_url": "https://torrentpier.com/api/resource-versions/638/download?file=6481"
+        }
+      ],
+      "id": 638,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1751972456,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/novogodnij-rezim.327/version/638/"
+    }
+  ],
+  "view_count": 2658
+}

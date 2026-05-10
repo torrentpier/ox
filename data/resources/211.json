@@ -1,0 +1,154 @@
+{
+  "category": {
+    "description": "Section with all templates for TorrentPier.",
+    "id": 5,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Templates",
+    "view_url": "https://torrentpier.com/resources/categories/templates.5/"
+  },
+  "current_files": [
+    {
+      "filename": "XenForo2_2.zip",
+      "id": 3350,
+      "local_path": null,
+      "r2_key": null,
+      "size": 359527,
+      "src_url": "https://torrentpier.com/api/resource-versions/271/download?file=3350"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "adapt",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]Автор репака: DarkMod [torrentpier.me]\n\nШаблон не принадлежит распространению\n\n\n-------------------------[ открыть memberlist.php ]-----------------------------\n\n-------------------------[ найти  ]-----------------------------\n\nuser_email,\n\n-------------------------[ после вставить ]-----------------------------\n\nuser_avatar, user_avatar_type\n\n-------------------------[ найти ]-----------------------------\n\n'WWW'           => $www,\n\n-------------------------[ после вставить ]-----------------------------\n\n'AVATAR'     => get_avatar($row['user_avatar'], $row['user_avatar_type'], !bf($row['user_opt'], 'user_opt', 'allow_avatar')),\n\n\n-------------------------[ открыть viewforum.php ]-----------------------------\n\n-------------------------[ найти ]-----------------------------\n\nf.forum_topics,\n\n-------------------------[ после вставить ]-----------------------------\n\nf.forum_desc,\n\n-------------------------[ найти  ]-----------------------------\n\nu1.user_rank as first_user_rank,\n\n-------------------------[ ниже вставить ]-----------------------------\n\nu1.user_avatar AS first_user_avatar, u1.user_avatar_type AS first_user_avatar_type,\nu1.user_opt AS first_user_opt,\n\n-------------------------[ найти ]-----------------------------\n\n'FORUM_NAME'          => htmlCHR($forum_data['forum_name']),\n\n-------------------------[ после вставить ]-----------------------------\n\n'FORUM_DESC'          => $forum_data['forum_desc'],\n\n-------------------------[ найти ]-----------------------------\n\n'DL_CLASS'         => isset($topic['dl_status']) ? $dl_link_css[$topic['dl_status']] : '',\n\n-------------------------[ после вставить ]-----------------------------\n\n'TOPIC_AVATAR'     => get_avatar($topic['first_user_avatar'], $topic['first_user_avatar_type'], !bf($topic['first_user_opt'], 'user_opt', 'allow_avatar')),\n\n-------------------------[ открыть viewonline.php ]-----------------------------\n\n-------------------------[ найти ]-----------------------------\n\nu.user_rank,\n\n-------------------------[ после вставить ]-----------------------------\n\nu.user_avatar, u.user_avatar_type,\n\n-------------------------[ найти\n\n$username = '<i>' . $username . '</i>';\n\n-------------------------[ заменить (это на усторение) ]-----------------------------\n\n$username = $username;\n\n-------------------------[ найти ]-----------------------------\n\n'USER'       => $username,\n\n-------------------------[ после вставить ]-----------------------------\n\n'AVATAR'     => get_avatar($row['user_avatar'], $row['user_avatar_type'], !bf($row['user_opt'], 'user_opt', 'allow_avatar')),\n\nСохраняем и Компилировать все[/PHP]\n[/SPOILER]",
+    "owner": "ChihPyh, DarkMod",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425589909,
+      "file_size": 84894,
+      "filename": "Ваш первый форум    TorrentPier II   Torrent Tracker2.webp",
+      "height": 1230,
+      "id": 3344,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/vas-pervyj-forum-torrentpier-ii-torrent-tracker2-webp.3344/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3348-6e4b3bc4321e980fc063d392f2257645.jpg?hash=nN8o4VAy9Q",
+      "width": 1263
+    },
+    {
+      "attach_date": 1425589909,
+      "file_size": 68920,
+      "filename": "Главная    TorrentPier II   Torrent Tracker.webp",
+      "height": 1016,
+      "id": 3345,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/glavnaa-torrentpier-ii-torrent-tracker-webp.3345/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3349-70bd83f2e91f6c0dde3722756e3f44dd.jpg?hash=CsUZf5NvMe",
+      "width": 1263
+    },
+    {
+      "attach_date": 1425589910,
+      "file_size": 119604,
+      "filename": "Добро пожаловать в TorrentPier II    TorrentPier II   Torrent Tracker.webp",
+      "height": 1438,
+      "id": 3346,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/dobro-pozalovat-v-torrentpier-ii-torrentpier-ii-torrent-tracker-webp.3346/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3350-b6b734d5a836535548fc91ed06e0e21b.jpg?hash=EnR2ZFRQF8",
+      "width": 1263
+    },
+    {
+      "attach_date": 1425589910,
+      "file_size": 112472,
+      "filename": "Проверка тегов    TorrentPier II   Torrent Tracker.webp",
+      "height": 2306,
+      "id": 3347,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/proverka-tegov-torrentpier-ii-torrent-tracker-webp.3347/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3351-a04c62f4b91605f9824ee17b10cc99b1.jpg?hash=nQh7JYfqz5",
+      "width": 1263
+    },
+    {
+      "attach_date": 1425589910,
+      "file_size": 77112,
+      "filename": "Профиль пользователя admin    TorrentPier II   Torrent Tracker.webp",
+      "height": 1207,
+      "id": 3348,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/profil-pol-zovatela-admin-torrentpier-ii-torrent-tracker-webp.3348/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3352-dd1f4422a9ddc3e84fb8bad55e353a46.jpg?hash=4r9O1uBFrh",
+      "width": 1263
+    },
+    {
+      "attach_date": 1425589911,
+      "file_size": 75146,
+      "filename": "Трекер    TorrentPier II   Torrent Tracker.webp",
+      "height": 916,
+      "id": 3349,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/treker-torrentpier-ii-torrent-tracker-webp.3349/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3353-12cfef687dee320691a2202a443bb03c.jpg?hash=Vx-1CNtcqZ",
+      "width": 1263
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> шаблон, являющийся аналогом стандартного шаблона XenForo (серый стиль).",
+  "download_count": 322,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/211.jpg?1425589969",
+  "id": 211,
+  "is_fileless": null,
+  "last_update": 1425589956,
+  "rating_avg": 5,
+  "rating_count": 1,
+  "resource_date": 1425589956,
+  "resource_state": "visible",
+  "slug": "sablon-xenforo-grey",
+  "tag_line": "Шаблон, являющийся аналогом стандартного шаблона XenForo (серый стиль).",
+  "tags": [],
+  "title": "Шаблон «XenForo Grey»",
+  "url_path": "/resources/sablon-xenforo-grey.211/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 322,
+      "files": [
+        {
+          "filename": "XenForo2_2.zip",
+          "id": 3350,
+          "local_path": null,
+          "r2_key": null,
+          "size": 359527,
+          "src_url": "https://torrentpier.com/api/resource-versions/271/download?file=3350"
+        }
+      ],
+      "id": 271,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1425589956,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/sablon-xenforo-grey.211/version/271/"
+    }
+  ],
+  "view_count": 861
+}

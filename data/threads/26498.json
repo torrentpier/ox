@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 63219,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 26498,
+  "last_post_date": 1411364578,
+  "node_id": 80,
+  "post_date": 1411361845,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63219,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В html коде страниц ТоррентПира обнаружил тэг br такого вида:<br />\n<br />\n&lt;/br&gt;<br />\n<br />\nМне казалось, что тэг br должен быть записан так:<br />\n<br />\n&lt;br /&gt;<br />\n<br />\nИли я ошибаюсь?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1411361845,
+      "user_id": 5212,
+      "user_title": "User",
+      "username": "arnoldovich"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63222,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Это уже исправлено в альфа-билде.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1411363976,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63225,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Понятно. Спасибо за ответ.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1411364578,
+      "user_id": 5212,
+      "user_title": "User",
+      "username": "arnoldovich"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 2,
+  "slug": "nepravil-nye-br",
+  "sticky": false,
+  "tags": [],
+  "title": "Неправильные br",
+  "url_path": "/threads/nepravil-nye-br.26498/",
+  "user_id": 5212,
+  "username": "arnoldovich",
+  "view_count": 987
+}

@@ -1,0 +1,148 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 19981,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 47,
+        "title": "Modifications for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 43,
+    "title": "Modifications for TorrentPier (archive)"
+  },
+  "id": 1500,
+  "last_post_date": 1355388062,
+  "node_id": 43,
+  "post_date": 1346146408,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1346146377,
+          "file_size": 18889,
+          "filename": "spoiler 1.rar",
+          "height": 0,
+          "id": 1355,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/spoiler-1-rar.1355/",
+          "thumbnail_url": null,
+          "width": 0
+        },
+        {
+          "attach_date": 1346146384,
+          "file_size": 107108,
+          "filename": "spoiler 2.rar",
+          "height": 0,
+          "id": 1356,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/spoiler-2-rar.1356/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 19981,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спойлер для организации FAQ (в стиле rutracker.org)<br />\nФормат: html, css, js, gif<br />\nДемо 1: <a href=\"http://www.interraz.ru/misc\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Перейти</a><br />\nДемо 2: копия rutracker.org",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1346146408,
+      "user_id": 322,
+      "user_title": "User",
+      "username": "botyk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 19982,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "эм, а разве спойлера нет в тп2?))",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1346146778,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 19983,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Есть знаю! это просто для FAQ<br />\nМожет кому то пригодится например для dle, phpbb3, torrentpier.<br />\nНу например кто то хочет изменить стиль или для html страничку пригодится",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1346147215,
+      "user_id": 322,
+      "user_title": "User",
+      "username": "botyk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 19992,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ничего не понял...<br />\nЗачем это нужно, если в движке tp2 уже есть спойлер?<br />\nЭто к tp2 не имеет никакого отношения.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1346162031,
+      "user_id": 30,
+      "user_title": "User",
+      "username": "krumax"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24087,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо огромное, долго искал именно такие спойлеры. Незаменимая вещь для нормальной подачи большого объема информации в статье. А главное, в отличие от стандартного друпаловского collapse они не дергают экран при раскрытии.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1355388062,
+      "user_id": 3256,
+      "user_title": "User",
+      "username": "Leslie"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "spojler-dla-organizacii-faq-v-stile-rutracker-org",
+  "sticky": false,
+  "tags": [],
+  "title": "Спойлер для организации FAQ (в стиле rutracker.org)",
+  "url_path": "/threads/spojler-dla-organizacii-faq-v-stile-rutracker-org.1500/",
+  "user_id": 322,
+  "username": "botyk",
+  "view_count": 2747
+}

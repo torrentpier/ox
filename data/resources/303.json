@@ -1,0 +1,465 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "torrentpier-parser-1.8.0.zip",
+      "id": 6743,
+      "local_path": null,
+      "r2_key": null,
+      "size": 80714,
+      "src_url": "https://torrentpier.com/api/resource-versions/672/download?file=6743"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "dom-ext, curl-ext, mbstring, iconv",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом.",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1722249169,
+      "file_size": 59172,
+      "filename": "photo_2024-07-29_17-17-19.webp",
+      "height": 485,
+      "id": 6122,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2024-07-29_17-17-19-webp.6122/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6126-5eee37c99936243a96500f2e57c9b7df.jpg?hash=K-M8g_vpSJ",
+      "width": 1176
+    },
+    {
+      "attach_date": 1733549472,
+      "file_size": 13146,
+      "filename": "firefox_HoEuXXuySG.webp",
+      "height": 169,
+      "id": 6248,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_hoeuxxuysg-webp.6248/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6252-63825dcabd9043a69478779ab23e348b.jpg?hash=8Mhw3yeKNF",
+      "width": 565
+    },
+    {
+      "attach_date": 1733549477,
+      "file_size": 11662,
+      "filename": "firefox_YMJcjPyp69.webp",
+      "height": 186,
+      "id": 6249,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_ymjcjpyp69-webp.6249/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6253-81e3da1771eebe727a1ba9f20ade5b61.jpg?hash=Pu0dZ89z_I",
+      "width": 697
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Парсер раздач по ссылке. Код парсера написан очень хорошо и добавление новых парсеров делается очень просто.<br />\n<b>Совместимость:</b> все версии движка. <a href=\"https://torrentpier.com/threads/nextgen-parser-razdach.42297/post-96551\" class=\"link link--internal\">См. для v2.4.0</a><br />\n<b>Документация:</b> файл DOCS.md<br />\n<br />\n<b>Достоинства:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Имеется поддержка трекеров с авторизацией</li>\n<li data-xf-list-type=\"ul\">Имеется система прав доступа к парсеру (см. конфиг)</li>\n<li data-xf-list-type=\"ul\">Имеется встроенная поддержка плеера <a href=\"https://torrentpier.com/resources/bbcode-film-po-id.302/\" class=\"link link--internal\">BBCode: Фильм по ID</a></li>\n<li data-xf-list-type=\"ul\">Легко расширяется новым функционалом</li>\n<li data-xf-list-type=\"ul\">Динамичный User-Agent (позволяет избежать бана)</li>\n<li data-xf-list-type=\"ul\">Поддержка редиректов (если трекер сменил свой адресс на новый, то при указании старого адресса будет происходить переадрессация на новый)</li>\n<li data-xf-list-type=\"ul\">Реализация с помощью Curl</li>\n<li data-xf-list-type=\"ul\">Расширеная система проверок вводимых данных</li>\n<li data-xf-list-type=\"ul\">Проверка авторизации на корректность</li>\n</ul><b>Список поддерживаемых трекеров:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">xxxtorrents.pro</li>\n<li data-xf-list-type=\"ul\">rintor.org</li>\n<li data-xf-list-type=\"ul\">rutor.info</li>\n<li data-xf-list-type=\"ul\">xxxtor.com</li>\n<li data-xf-list-type=\"ul\">rutracker.org</li>\n<li data-xf-list-type=\"ul\">z-torrents.ru</li>\n<li data-xf-list-type=\"ul\">booktracker.org</li>\n<li data-xf-list-type=\"ul\">kinozal.tv</li>\n<li data-xf-list-type=\"ul\">ddgroupclub.win</li>\n<li data-xf-list-type=\"ul\">megapeer.vip</li>\n</ul><b>Необходимые дополнительные моды:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\"><a href=\"https://torrentpier.com/resources/bb-kod-thumbnail-image.238/\" class=\"link link--internal\">BB-код: Thumbnail Image</a></li>\n<li data-xf-list-type=\"ul\"><a href=\"https://torrentpier.com/threads/bbcode-ten.374/\" class=\"link link--internal\">BBCode: Тень</a></li>\n<li data-xf-list-type=\"ul\"><a href=\"https://torrentpier.com/resources/nabor-bbcode-tegov-s-rutrekera.283/\" class=\"link link--internal\">Набор BBCode тегов с рутрекера</a></li>\n<li data-xf-list-type=\"ul\"><a href=\"https://torrentpier.com/threads/bbcode-dla-torrentpier.33146/\" class=\"link link--internal\">BBCode: Scroll</a></li>\n</ul><b>Используемые библиотеки:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\"><a href=\"https://github.com/dinke/curl_http_client\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">CurlHttpClient</a></li>\n<li data-xf-list-type=\"ul\"><a href=\"https://github.com/joecampo/random-user-agent\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">random-user-agent</a></li>\n</ul><b>Авторство:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Участники <a href=\"https://torrentpier.com/\" class=\"link link--internal\">torrentpier.com</a></li>\n<li data-xf-list-type=\"ul\">Некоторые части кода принадлежат ivangord</li>\n<li data-xf-list-type=\"ul\">Код для парсера рутора взят <a href=\"https://torrentpier.com/resources/avtomaticheskij-parser-razdach-s-rutor-info.253/\" class=\"link link--internal\">отсюда</a></li>\n</ul>",
+  "download_count": 4548,
+  "external_url": null,
+  "icon_url": null,
+  "id": 303,
+  "is_fileless": null,
+  "last_update": 1774165863,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1722249217,
+  "resource_state": "visible",
+  "slug": "nextgen-parser-razdac",
+  "tag_line": "Многофункциональный парсер раздач по ссылке.",
+  "tags": [
+    "parser",
+    "rutor",
+    "rutor грабер",
+    "rutracker",
+    "мод",
+    "моды",
+    "новый парсер",
+    "парсер",
+    "парсер раздач",
+    "рутрекер"
+  ],
+  "title": "NextGen Парсер раздач",
+  "url_path": "/resources/nextgen-parser-razdac.303/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.8.0",
+  "versions": [
+    {
+      "download_count": 69,
+      "files": [
+        {
+          "filename": "torrentpier-parser-1.8.0.zip",
+          "id": 6743,
+          "local_path": null,
+          "r2_key": null,
+          "size": 80714,
+          "src_url": "https://torrentpier.com/api/resource-versions/672/download?file=6743"
+        }
+      ],
+      "id": 672,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1774165863,
+      "version_state": "visible",
+      "version_string": "v1.8.0",
+      "view_url": "https://torrentpier.com/resources/nextgen-parser-razdac.303/version/672/"
+    },
+    {
+      "download_count": 595,
+      "files": [
+        {
+          "filename": "torrentpier-parser-1.7.3.zip",
+          "id": 6360,
+          "local_path": null,
+          "r2_key": null,
+          "size": 71398,
+          "src_url": "https://torrentpier.com/api/resource-versions/597/download?file=6360"
+        }
+      ],
+      "id": 597,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1738754886,
+      "version_state": "visible",
+      "version_string": "v1.7.3",
+      "view_url": "https://torrentpier.com/resources/nextgen-parser-razdac.303/version/597/"
+    },
+    {
+      "download_count": 244,
+      "files": [
+        {
+          "filename": "parser-1.7.2.zip",
+          "id": 6358,
+          "local_path": null,
+          "r2_key": null,
+          "size": 69961,
+          "src_url": "https://torrentpier.com/api/resource-versions/596/download?file=6358"
+        }
+      ],
+      "id": 596,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1738685204,
+      "version_state": "visible",
+      "version_string": "v1.7.2",
+      "view_url": "https://torrentpier.com/resources/nextgen-parser-razdac.303/version/596/"
+    },
+    {
+      "download_count": 241,
+      "files": [
+        {
+          "filename": "parser-1.7.1.zip",
+          "id": 6350,
+          "local_path": null,
+          "r2_key": null,
+          "size": 69961,
+          "src_url": "https://torrentpier.com/api/resource-versions/595/download?file=6350"
+        }
+      ],
+      "id": 595,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1738323546,
+      "version_state": "visible",
+      "version_string": "v1.7.1",
+      "view_url": "https://torrentpier.com/resources/nextgen-parser-razdac.303/version/595/"
+    },
+    {
+      "download_count": 270,
+      "files": [
+        {
+          "filename": "parser-1.7.0.zip",
+          "id": 6261,
+          "local_path": null,
+          "r2_key": null,
+          "size": 80802,
+          "src_url": "https://torrentpier.com/api/resource-versions/578/download?file=6261"
+        }
+      ],
+      "id": 578,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1734199013,
+      "version_state": "visible",
+      "version_string": "v1.7.0",
+      "view_url": "https://torrentpier.com/resources/nextgen-parser-razdac.303/version/578/"
+    },
+    {
+      "download_count": 278,
+      "files": [
+        {
+          "filename": "parser-1.6.2.zip",
+          "id": 6253,
+          "local_path": null,
+          "r2_key": null,
+          "size": 49706,
+          "src_url": "https://torrentpier.com/api/resource-versions/575/download?file=6253"
+        }
+      ],
+      "id": 575,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1733763731,
+      "version_state": "visible",
+      "version_string": "v1.6.2",
+      "view_url": "https://torrentpier.com/resources/nextgen-parser-razdac.303/version/575/"
+    },
+    {
+      "download_count": 247,
+      "files": [
+        {
+          "filename": "parser-1.6.1.zip",
+          "id": 6251,
+          "local_path": null,
+          "r2_key": null,
+          "size": 49433,
+          "src_url": "https://torrentpier.com/api/resource-versions/574/download?file=6251"
+        }
+      ],
+      "id": 574,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1733653126,
+      "version_state": "visible",
+      "version_string": "v1.6.1",
+      "view_url": "https://torrentpier.com/resources/nextgen-parser-razdac.303/version/574/"
+    },
+    {
+      "download_count": 247,
+      "files": [
+        {
+          "filename": "parser-1.6.0.zip",
+          "id": 6250,
+          "local_path": null,
+          "r2_key": null,
+          "size": 49343,
+          "src_url": "https://torrentpier.com/api/resource-versions/573/download?file=6250"
+        }
+      ],
+      "id": 573,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1733645619,
+      "version_state": "visible",
+      "version_string": "v1.6.0",
+      "view_url": "https://torrentpier.com/resources/nextgen-parser-razdac.303/version/573/"
+    },
+    {
+      "download_count": 242,
+      "files": [
+        {
+          "filename": "parser-1.5.2.zip",
+          "id": 6246,
+          "local_path": null,
+          "r2_key": null,
+          "size": 45512,
+          "src_url": "https://torrentpier.com/api/resource-versions/572/download?file=6246"
+        }
+      ],
+      "id": 572,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1733504372,
+      "version_state": "visible",
+      "version_string": "v1.5.2",
+      "view_url": "https://torrentpier.com/resources/nextgen-parser-razdac.303/version/572/"
+    },
+    {
+      "download_count": 251,
+      "files": [
+        {
+          "filename": "parser-1.5.1.zip",
+          "id": 6245,
+          "local_path": null,
+          "r2_key": null,
+          "size": 45495,
+          "src_url": "https://torrentpier.com/api/resource-versions/571/download?file=6245"
+        }
+      ],
+      "id": 571,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1733497920,
+      "version_state": "visible",
+      "version_string": "v1.5.1",
+      "view_url": "https://torrentpier.com/resources/nextgen-parser-razdac.303/version/571/"
+    },
+    {
+      "download_count": 254,
+      "files": [
+        {
+          "filename": "parser-1.5.0.zip",
+          "id": 6216,
+          "local_path": null,
+          "r2_key": null,
+          "size": 45133,
+          "src_url": "https://torrentpier.com/api/resource-versions/562/download?file=6216"
+        }
+      ],
+      "id": 562,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1732460749,
+      "version_state": "visible",
+      "version_string": "v1.5.0",
+      "view_url": "https://torrentpier.com/resources/nextgen-parser-razdac.303/version/562/"
+    },
+    {
+      "download_count": 231,
+      "files": [
+        {
+          "filename": "parser-1.4.0.zip",
+          "id": 6215,
+          "local_path": null,
+          "r2_key": null,
+          "size": 42135,
+          "src_url": "https://torrentpier.com/api/resource-versions/561/download?file=6215"
+        }
+      ],
+      "id": 561,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1732455768,
+      "version_state": "visible",
+      "version_string": "v1.4.0",
+      "view_url": "https://torrentpier.com/resources/nextgen-parser-razdac.303/version/561/"
+    },
+    {
+      "download_count": 240,
+      "files": [
+        {
+          "filename": "parser-1.3.0.zip",
+          "id": 6214,
+          "local_path": null,
+          "r2_key": null,
+          "size": 39056,
+          "src_url": "https://torrentpier.com/api/resource-versions/560/download?file=6214"
+        }
+      ],
+      "id": 560,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1732451703,
+      "version_state": "visible",
+      "version_string": "v1.3.0",
+      "view_url": "https://torrentpier.com/resources/nextgen-parser-razdac.303/version/560/"
+    },
+    {
+      "download_count": 236,
+      "files": [
+        {
+          "filename": "parser-1.2.0.zip",
+          "id": 6213,
+          "local_path": null,
+          "r2_key": null,
+          "size": 35900,
+          "src_url": "https://torrentpier.com/api/resource-versions/559/download?file=6213"
+        }
+      ],
+      "id": 559,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1732444376,
+      "version_state": "visible",
+      "version_string": "v1.2.0",
+      "view_url": "https://torrentpier.com/resources/nextgen-parser-razdac.303/version/559/"
+    },
+    {
+      "download_count": 243,
+      "files": [
+        {
+          "filename": "parser-1.1.2.zip",
+          "id": 6212,
+          "local_path": null,
+          "r2_key": null,
+          "size": 31872,
+          "src_url": "https://torrentpier.com/api/resource-versions/558/download?file=6212"
+        }
+      ],
+      "id": 558,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1732439249,
+      "version_state": "visible",
+      "version_string": "v1.1.2",
+      "view_url": "https://torrentpier.com/resources/nextgen-parser-razdac.303/version/558/"
+    },
+    {
+      "download_count": 270,
+      "files": [
+        {
+          "filename": "parser-1.1.1.zip",
+          "id": 6133,
+          "local_path": null,
+          "r2_key": null,
+          "size": 28402,
+          "src_url": "https://torrentpier.com/api/resource-versions/537/download?file=6133"
+        }
+      ],
+      "id": 537,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1722334397,
+      "version_state": "visible",
+      "version_string": "v1.1.1",
+      "view_url": "https://torrentpier.com/resources/nextgen-parser-razdac.303/version/537/"
+    },
+    {
+      "download_count": 237,
+      "files": [
+        {
+          "filename": "parser-1.1.0.zip",
+          "id": 6123,
+          "local_path": null,
+          "r2_key": null,
+          "size": 28312,
+          "src_url": "https://torrentpier.com/api/resource-versions/536/download?file=6123"
+        }
+      ],
+      "id": 536,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1722263549,
+      "version_state": "visible",
+      "version_string": "v1.1.0",
+      "view_url": "https://torrentpier.com/resources/nextgen-parser-razdac.303/version/536/"
+    },
+    {
+      "download_count": 229,
+      "files": [
+        {
+          "filename": "parser.zip",
+          "id": 6116,
+          "local_path": null,
+          "r2_key": null,
+          "size": 21924,
+          "src_url": "https://torrentpier.com/api/resource-versions/535/download?file=6116"
+        }
+      ],
+      "id": 535,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1722249217,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/nextgen-parser-razdac.303/version/535/"
+    }
+  ],
+  "view_count": 10207
+}

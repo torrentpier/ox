@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 97025,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42348,
+  "last_post_date": 1743787637,
+  "node_id": 47,
+  "post_date": 1737468195,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97025,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/uluchshennaja-kapcha.319/\" class=\"link link--internal\">Улучшенная капча</a> - Добавляет большое количество новых сервисов капчи<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> Добавляет большое количество новых сервисов капчи.<br />\n<b>Совместимость</b>: все версии выше v2.1.4.<br />\n<b>Список поддерживаемых:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">ReCaptcha v2</li>\n<li data-xf-list-type=\"ul\">ReCaptcha v3</li>\n<li data-xf-list-type=\"ul\">hCaptcha</li>\n<li data-xf-list-type=\"ul\">Yandex Smart Captcha <span style=\"color: rgb(226, 80, 65)\">(экспериментально!)</span></li>\n<li data-xf-list-type=\"ul\">Cloudflare Turnstile <span style=\"color: rgb(226, 80, 65)\">(экспериментально!)</span></li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/uluchshennaja-kapcha.319/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1737468195,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97026,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/uluchshennaja-kapcha.319/\" class=\"link link--internal\">Улучшенная капча</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/uluchshennaja-kapcha.319/update/614/\" class=\"link link--internal\">Обновление v1.1.0</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Добавлена поддержка версий движка v2.2.0 и выше</li>\n<li data-xf-list-type=\"ul\">Исправлены ошибки</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/uluchshennaja-kapcha.319/update/614/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1737471419,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97027,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/uluchshennaja-kapcha.319/\" class=\"link link--internal\">Улучшенная капча</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/uluchshennaja-kapcha.319/update/615/\" class=\"link link--internal\">Обновление v1.1.1</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Уменьшена ширина блока Yandex Smart Captcha</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/uluchshennaja-kapcha.319/update/615/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1737794723,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97202,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/uluchshennaja-kapcha.319/\" class=\"link link--internal\">Улучшенная капча</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/uluchshennaja-kapcha.319/update/642/\" class=\"link link--internal\">Обновление v1.2.0 [Stable]</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Мелкие улучшения</li>\n<li data-xf-list-type=\"ul\">Теперь сервисы капчи работают на том же языке что и трекер</li>\n<li data-xf-list-type=\"ul\">Добавлена возможность настройки темы (светлая / темная) для <b>CloudFlare</b>, <b>HCaptcha</b></li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/uluchshennaja-kapcha.319/update/642/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1743787637,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "ulucsennaa-kapca",
+  "sticky": false,
+  "tags": [],
+  "title": "Улучшенная капча",
+  "url_path": "/threads/ulucsennaa-kapca.42348/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 748
+}

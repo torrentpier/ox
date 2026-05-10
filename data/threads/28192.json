@@ -1,0 +1,57 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 65430,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 28192,
+  "last_post_date": 1414167180,
+  "node_id": 110,
+  "post_date": 1414167180,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 65430,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\n<br />\nСегодня <a href=\"https://torrentpier.com/threads/versija-2-1-3-alpha-3-dobavlena-nativnaja-podderzhka-ocelot.28183/\" class=\"link link--internal\">был выпущен третий ALPHA-билд</a>, основным изменением которого стала интеграция с давно обещанной заменой XBTT - новым альтернативно компилируемым анонсером Ocelot. Ocelot значительно более производительное решение, чем стандартный встроенный php-анонсер (который в скором времени тоже ждут изменения). Это разработка одного из крупнейших музыкальных трекеров what.cd, который согласно утверждениям авторов без особых проблем может &quot;обслуживать&quot; 5 миллионов пиров.<br />\n<br />\nВ отличие от XBTT, поддержка которого была нами прекращена в прошлом году, у Ocelot значительно более новая кодовая база и больший уровень адаптации под TorrentPier II - им некоторое время уже пользуются некоторые крупные трекеры и каких-либо проблем с ним обнаружено не было. Но поскольку версия билда у нас пока всего лишь ALPHA, ничего гарантировать не можем. Анонсер написан на C++ - соответственно он имеет большой уровень вхождения и ставить его всем подряд не нужно - он пригодится лишь достаточно крупным трекерам, которые к тому же работают на выделенных серверах.<br />\n<br />\nУстановка достаточно простая, вся настройка производится в файле <b>library/config.php</b>:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">// Ocelot\n$bb_cfg[&#039;ocelot&#039;] = array(\n    &#039;enabled&#039; =&gt; false,\n    &#039;host&#039;    =&gt; $domain_name,\n    &#039;port&#039;    =&gt; 34000,\n    &#039;url&#039;     =&gt; &quot;http://$domain_name:34000/&quot;, // with &#039;/&#039;\n    &#039;secret&#039;  =&gt; &#039;some_10_chars&#039;,              // 10 chars\n    &#039;stats&#039;   =&gt; &#039;some_10_chars&#039;,              // 10 chars\n);</pre>Сам анонсер находится в репозитории <a href=\"https://github.com/torrentpier/ocelot\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://github.com/torrentpier/ocelot</a>, а инструкция по его сборке <a href=\"https://torrentpier.com/threads/sborka-ocelot-pod-debian-7-1.26078/\" class=\"link link--internal\">приведена на нашем форуме</a>. Для работы анонсера также требуется замена двух таблиц в базе данных - дамп вы можете найти в файле: <b>install/sql/ocelot.sql</b>.<br />\n<br />\nДля оказания поддержки по Ocelot был создан отдельный раздел на нашем форуме - все ваши <a href=\"https://torrentpier.com/forums/programmnye-bagi-ocelot.75/\" class=\"link link--internal\">багрепорты</a>, <a href=\"https://torrentpier.com/forums/pozhelanija-po-uluchsheniju-ocelot.76/\" class=\"link link--internal\">предложения по улучшению</a> и <a href=\"https://torrentpier.com/forums/osnovnye-voprosy-po-ocelot.74/\" class=\"link link--internal\">вопросы по анонсеру</a>, большая просьба размещать в нем. С вопросами по установке Ocelot на ваши сервера обращайтесь в раздел <a href=\"https://torrentpier.com/forums/est-rabota-ischu-specialista.34/\" class=\"link link--internal\">Есть работа. Ищу специалиста</a> или посмотрите на уже имеющиеся предложения в разделе <a href=\"https://torrentpier.com/forums/ischu-rabotu-predlagaju-svoi-uslugi.35/\" class=\"link link--internal\">Ищу работу. Предлагаю свои услуги</a>.<br />\n<br />\nСпасибо за внимание.<br />\n<br />\nPS. Внедрение анонсера было осуществлено перед обещанной заменой системы вложений намеренно, для упрощения процесса обновления в дальнейшем.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1414167180,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "al-ternativnyj-anonser-ocelot",
+  "sticky": false,
+  "tags": [
+    "новости"
+  ],
+  "title": "Альтернативный анонсер Ocelot",
+  "url_path": "/threads/al-ternativnyj-anonser-ocelot.28192/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 3762
+}

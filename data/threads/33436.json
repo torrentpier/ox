@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 72459,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 58,
+    "title": "Suggestions for improving TorrentPier"
+  },
+  "id": 33436,
+  "last_post_date": 1421570362,
+  "node_id": 58,
+  "post_date": 1421565220,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 72459,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Мне на самом деле достаточно давно пофиг, в разработке/тестировании/использовании движка не принимаю участия, но суть предложения такая, почему бы не вести роадмап, с указанием что запланировано, примерная дата реализации, одобренные предложения по внедрению в движок, отклоненные итд.<br />\nЗачем это надо: освободит от разработки адаптирования модов которые будут в движке, от поддержки модов под новые ревизии.<br />\nДа и просто любопытно.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1421565220,
+      "user_id": 4,
+      "user_title": "User",
+      "username": "diden05"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 72460,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://github.com/torrentpier/torrentpier/issues\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://github.com/torrentpier/torrentpier/issues</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1421568374,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 72461,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"drew\"><a href=\"https://github.com/torrentpier/torrentpier/issues\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://github.com/torrentpier/torrentpier/issues</a></blockquote>+ <a href=\"https://torrentpier.com/forums/pozhelanija-po-uluchsheniju-torrentpier.58/\" class=\"link link--internal\">https://torrentpier.com/forums/pozhelanija-po-uluchsheniju-torrentpier.58/</a><br />\n<br />\nВозможно на гитхабе пока не самый актуальный список, приведено в соответствие будет после пары вещей.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1421570362,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 51,
+  "reply_count": 2,
+  "slug": "roadmap",
+  "sticky": false,
+  "tags": [],
+  "title": "Roadmap",
+  "url_path": "/threads/roadmap.33436/",
+  "user_id": 4,
+  "username": "diden05",
+  "view_count": 1309
+}

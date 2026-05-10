@@ -1,0 +1,68 @@
+{
+  "custom_fields": {
+    "torrentpier": "2301"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94558,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 42094,
+  "last_post_date": 1679032223,
+  "node_id": 80,
+  "post_date": 1593598819,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94558,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет. Как исправить баг в движке. Если у диактивированого пользователя править профиль, то при отправки ошибка<br />\nUndefined variable: subject",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1593598819,
+      "user_id": 4854,
+      "user_title": "User",
+      "username": "sergey67"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94820,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1679032384,
+      "message_parsed": "Данная проблема решена. Исправление выйдет в рамках 2.3.1-rc2.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1679032223,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 1,
+  "slug": "undefined-variable-subject",
+  "sticky": false,
+  "tags": [],
+  "title": "Undefined variable: subject",
+  "url_path": "/threads/undefined-variable-subject.42094/",
+  "user_id": 4854,
+  "username": "sergey67",
+  "view_count": 2555
+}

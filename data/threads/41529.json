@@ -1,0 +1,121 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 88508,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41529,
+  "last_post_date": 1475701554,
+  "node_id": 57,
+  "post_date": 1475406753,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88508,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1475406815,
+      "message_parsed": "Доброго времени суток всем форумчанам!<br />\nЕсть один вопрос, кто может подсказать как реализовать примерно такое.<br />\n$free_from_3GB = 1; // ставим золото раздачам выше 3 гигов весом<br />\nТ.е. файл 3гб и &gt; золотится автоматически. Ревизия <b>2.1.5</b>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1475406753,
+      "user_id": 6734,
+      "user_title": "User",
+      "username": "zip"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88518,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Так поставь условие при заливке торрента внутри условия функция для золото/серебра",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1475425885,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88520,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо Я бы и не спрашивал если бы знал куда и как поставить.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1475426175,
+      "user_id": 6734,
+      "user_title": "User",
+      "username": "zip"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88525,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"zip\">Спасибо Я бы и не спрашивал если бы знал куда и как поставить.</blockquote>так в чем проблема если ты знаешь? <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">if($size &gt; (1024*1024*3)) change_tor_type($attach_id, TOR_TYPE_GOLD);</pre>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1475498600,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88547,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"drew\">так в чем проблема если ты знаешь?<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">if($size &gt; (1024*1024*3)) change_tor_type($attach_id, TOR_TYPE_GOLD);</pre></blockquote>В дополнение к этому - ставить после функции регистрации торрент-файла.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1475701554,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "avtomaticeskoe-zoloto",
+  "sticky": false,
+  "tags": [
+    "золото"
+  ],
+  "title": "Автоматическое золото",
+  "url_path": "/threads/avtomaticeskoe-zoloto.41529/",
+  "user_id": 6734,
+  "username": "zip",
+  "view_count": 1454
+}

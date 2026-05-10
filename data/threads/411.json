@@ -1,0 +1,118 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 4953,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 411,
+  "last_post_date": 1320437777,
+  "node_id": 57,
+  "post_date": 1320414337,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 4953,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Почти адаптировал мод редактирования прав форума от rustek-a, форумы выводятся, но не сохраняются изменения...<br />\nНи ошибок, ни логов, ничего<br />\nКто возьмется адаптировать до конца?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1320414337,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Dark Knight"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 4955,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dark Knight\">Почти адаптировал мод редактирования прав форума от rustek-a, форумы выводятся, но не сохраняются изменения...<br />\nНи ошибок, ни логов, ничего<br />\nКто возьмется адаптировать до конца?</blockquote>сюда выкладывай!",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1320417298,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1320422463,
+          "file_size": 2760,
+          "filename": "prava.zip",
+          "height": 0,
+          "id": 177,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/prava-zip.177/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 4957,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Пожалуйста 🙂",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1320422479,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Dark Knight"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 4971,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "у себя недавно сделал, довольно-таки удобная вещица, но ждать 10 секунд - не круто. надо как-нибудь взаимодействовать с аяксом или даже js, чтобы оправлялись только изменённые параметры, а не все сразу.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1320437777,
+      "user_id": 0,
+      "user_title": "",
+      "username": "frank"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "prava-dostupa-k-forumam",
+  "sticky": false,
+  "tags": [],
+  "title": "Права доступа к форумам",
+  "url_path": "/threads/prava-dostupa-k-forumam.411/",
+  "user_id": 0,
+  "username": "Dark Knight",
+  "view_count": 1441
+}

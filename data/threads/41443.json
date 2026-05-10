@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 87346,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41443,
+  "last_post_date": 1459376518,
+  "node_id": 57,
+  "post_date": 1459357848,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87346,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Возможно ли изменить title ? мне нужно чтобы было так - Скачать торрент &quot;название новости&quot;, а то смотрю на всех сайтах вот такое чудо - название новости и :: Torrents-Club.org,",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1459357848,
+      "user_id": 7142,
+      "user_title": "User",
+      "username": "1vanoff"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87348,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Возможно, взял и поменял )",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1459361272,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87350,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "В шаблонах посмотрите. page_header.tpl.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1459376518,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "title",
+  "sticky": false,
+  "tags": [],
+  "title": "title",
+  "url_path": "/threads/title.41443/",
+  "user_id": 7142,
+  "username": "1vanoff",
+  "view_count": 920
+}

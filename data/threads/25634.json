@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 57875,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25634,
+  "last_post_date": 1389876901,
+  "node_id": 111,
+  "post_date": 1389876901,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57875,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 542: Частичный откат r541 из-за текущей невозможности полноценной реализации задуманн</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">glix08</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/upload/callseed.php \n    Modify    /trunk/upload/config.php \n    Modify    /trunk/upload/includes/functions.php \n    Modify    /trunk/upload/includes/sessions.php \n\nЧастичный откат r541 из-за текущей невозможности полноценной реализации задуманного (новый механизм работы с сессиями будет позднее). Фикс отправки личных сообщений с просьбой о скачивании гостю.</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1389876901,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "revision-542-casticnyj-otkat-r541-iz-za-tekusej-nevozmoznosti-polnocennoj-realizacii-zadumann",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 542: Частичный откат r541 из-за текущей невозможности полноценной реализации задуманн",
+  "url_path": "/threads/revision-542-casticnyj-otkat-r541-iz-za-tekusej-nevozmoznosti-polnocennoj-realizacii-zadumann.25634/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 882
+}

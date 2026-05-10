@@ -1,0 +1,181 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 7754,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 47,
+        "title": "Modifications for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 43,
+    "title": "Modifications for TorrentPier (archive)"
+  },
+  "id": 613,
+  "last_post_date": 1448926878,
+  "node_id": 43,
+  "post_date": 1324532028,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1324531588,
+          "file_size": 16149,
+          "filename": "Donate_new.rar",
+          "height": 0,
+          "id": 356,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/donate_new-rar.356/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 7754,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "########################################################<br />\n## Mod Title: Donations for the tracker (Yandex, Webmoney) - Пожертвования для трекера (Yandex, Webmoney)<br />\n## MOD Adaptation and reconstruction for TorrentPier: RomM1 &lt; <a href=\"mailto:torufanet@yandex.ru\">torufanet@yandex.ru</a> &gt;  torrentpier.com<br />\n## MOD Description: This mod adds a button for donations on your Yandex, Webmoney account.<br />\n##<br />\n## Mod Version: 0.1<br />\n##<br />\n## Installation Level: Light<br />\n## Installation Time: 2 Minutes<br />\n##<br />\n## Files To Edit: 2<br />\n##  templates/default/css/main.css<br />\n##  templates/default/viewtopic_attach.tpl<br />\n##<br />\n## Included Files: 3<br />\n##  /images/hs_down.png<br />\n##  /images/hs_up.png<br />\n##  /images/money.png<br />\n########################################################<br />\n<span style=\"color: rgb(204,204,204)\"><span style=\"font-size: 10px\">--- добавлено: Dec 22, 2011 5:33 AM ---</span></span><br />\n<img src=\"http://gamesbits.net/pictures/00d9cfff0a1abbc2c8b58a5380f93584.png\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1324532028,
+      "user_id": 21,
+      "user_title": "User",
+      "username": "RomM1"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 8493,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Dobriu</b>,<br />\nэто только ваш косяк<br />\nтут же нет файлов<br />\nпроверьте кодировку файла",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1325503622,
+      "user_id": 14,
+      "user_title": "User",
+      "username": "Chumaster59"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 8498,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dobriu\">У меня заместо русских букв пишет ирогливы</blockquote><b>viewtopic_attach.tpl</b> перекодировать в UTF8 без ВОМ.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1325506343,
+      "user_id": 30,
+      "user_title": "User",
+      "username": "krumax"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85955,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Сделал тоже самое только немного перепилил и вставил в правую колонку на главной. Все работает !!!!",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1448902846,
+      "user_id": 6580,
+      "user_title": "User",
+      "username": "CrazyBoss"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85956,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/6580/\">@CrazyBoss</a> выложи если не сложно",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1448914094,
+      "user_id": 6554,
+      "user_title": "User",
+      "username": "Fakt_37"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1448926564,
+          "file_size": 34370,
+          "filename": "Hekpsite.zip",
+          "height": 0,
+          "id": 4198,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/hekpsite-zip.4198/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 85958,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Я для себя делал. Вышло кривовато, но ведь я и не кодер и фотошопер))",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1448926606,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85959,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Два ланга лишние<br />\n$lang[&#039;SHOW_W&#039;] = &#039;Блок WebMoney&#039;;<br />\n$lang[&#039;SHOW_Y&#039;] = &#039;Блок YandexMoney&#039;;<br />\n<br />\nНезнание не позволило реализовать скрытие",
+      "message_state": "visible",
+      "position": 6,
+      "post_date": 1448926878,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 6,
+  "slug": "pozertvovania-dla-trekera-yandex-webmoney",
+  "sticky": false,
+  "tags": [],
+  "title": "Пожертвования для трекера (Yandex, WebMoney)",
+  "url_path": "/threads/pozertvovania-dla-trekera-yandex-webmoney.613/",
+  "user_id": 21,
+  "username": "RomM1",
+  "view_count": 2878
+}

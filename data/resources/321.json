@@ -1,0 +1,297 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Система тегов by belomaxorka.zip",
+      "id": 6420,
+      "local_path": null,
+      "r2_key": null,
+      "size": 36897,
+      "src_url": "https://torrentpier.com/api/resource-versions/615/download?file=6420"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1741969098,
+      "file_size": 5010,
+      "filename": "firefox_FtzoSqcjtE.webp",
+      "height": 106,
+      "id": 6392,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_ftzosqcjte-webp.6392/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6396-d5549d0fa7276802dae2e6f5009173f3.jpg?hash=AM6f3EJtre",
+      "width": 1345
+    },
+    {
+      "attach_date": 1741969098,
+      "file_size": 6448,
+      "filename": "firefox_0iC4o1n2Q3.webp",
+      "height": 122,
+      "id": 6393,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_0ic4o1n2q3-webp.6393/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6397-df91ab92fb99b03a5bc19c011b2fa1c6.jpg?hash=XPHwhUrrp_",
+      "width": 420
+    },
+    {
+      "attach_date": 1742054239,
+      "file_size": 7798,
+      "filename": "photo_2025-03-15_18-32-46.webp",
+      "height": 138,
+      "id": 6396,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2025-03-15_18-32-46-webp.6396/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6400-13077cdfdc06b34655c4abd9e16b69f5.jpg?hash=_nqKu8gAgM",
+      "width": 245
+    },
+    {
+      "attach_date": 1742121655,
+      "file_size": 8278,
+      "filename": "photo_2025-03-16_13-40-37.webp",
+      "height": 99,
+      "id": 6398,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2025-03-16_13-40-37-webp.6398/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6402-dd72d183907ad4315f780b2a360fdb6c.jpg?hash=04Av_Yylka",
+      "width": 678
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Добавляет возможность устанавливать теги темам. Также имеется поиск тем по тегам (при клике на тег).<br />\n<b>Совместимость: </b>v2.1.5, LTS, v2.2.*, v2.3.*, v2.4.*.",
+  "download_count": 1975,
+  "external_url": null,
+  "icon_url": null,
+  "id": 321,
+  "is_fileless": null,
+  "last_update": 1743254655,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1741969099,
+  "resource_state": "visible",
+  "slug": "sistema-tegov",
+  "tag_line": "Добавляет возможность устанавливать теги темам.",
+  "tags": [
+    "tags",
+    "tags system",
+    "мод",
+    "моды",
+    "новые теги",
+    "система тегов",
+    "теги",
+    "тэги"
+  ],
+  "title": "Система тегов",
+  "url_path": "/resources/sistema-tegov.321/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.4.2",
+  "versions": [
+    {
+      "download_count": 445,
+      "files": [
+        {
+          "filename": "[FULL] Система тегов by belomaxorka.zip",
+          "id": 6420,
+          "local_path": null,
+          "r2_key": null,
+          "size": 36897,
+          "src_url": "https://torrentpier.com/api/resource-versions/615/download?file=6420"
+        }
+      ],
+      "id": 615,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1743254655,
+      "version_state": "visible",
+      "version_string": "v1.4.2",
+      "view_url": "https://torrentpier.com/resources/sistema-tegov.321/version/615/"
+    },
+    {
+      "download_count": 191,
+      "files": [
+        {
+          "filename": "[FULL] Система тегов by belomaxorka.zip",
+          "id": 6405,
+          "local_path": null,
+          "r2_key": null,
+          "size": 36866,
+          "src_url": "https://torrentpier.com/api/resource-versions/611/download?file=6405"
+        }
+      ],
+      "id": 611,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1742713607,
+      "version_state": "visible",
+      "version_string": "v1.4.1",
+      "view_url": "https://torrentpier.com/resources/sistema-tegov.321/version/611/"
+    },
+    {
+      "download_count": 179,
+      "files": [
+        {
+          "filename": "[FULL] Система тегов by belomaxorka.zip",
+          "id": 6403,
+          "local_path": null,
+          "r2_key": null,
+          "size": 36860,
+          "src_url": "https://torrentpier.com/api/resource-versions/609/download?file=6403"
+        }
+      ],
+      "id": 609,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1742625145,
+      "version_state": "visible",
+      "version_string": "v1.4.0",
+      "view_url": "https://torrentpier.com/resources/sistema-tegov.321/version/609/"
+    },
+    {
+      "download_count": 194,
+      "files": [
+        {
+          "filename": "[FULL] Система тегов by belomaxorka.zip",
+          "id": 6402,
+          "local_path": null,
+          "r2_key": null,
+          "size": 31551,
+          "src_url": "https://torrentpier.com/api/resource-versions/608/download?file=6402"
+        }
+      ],
+      "id": 608,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1742553341,
+      "version_state": "visible",
+      "version_string": "v1.3.0",
+      "view_url": "https://torrentpier.com/resources/sistema-tegov.321/version/608/"
+    },
+    {
+      "download_count": 200,
+      "files": [
+        {
+          "filename": "[FULL] Система тегов by belomaxorka.zip",
+          "id": 6399,
+          "local_path": null,
+          "r2_key": null,
+          "size": 31464,
+          "src_url": "https://torrentpier.com/api/resource-versions/607/download?file=6399"
+        }
+      ],
+      "id": 607,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1742123100,
+      "version_state": "visible",
+      "version_string": "v1.2.1",
+      "view_url": "https://torrentpier.com/resources/sistema-tegov.321/version/607/"
+    },
+    {
+      "download_count": 181,
+      "files": [
+        {
+          "filename": "[FULL] Система тегов by belomaxorka.zip",
+          "id": 6397,
+          "local_path": null,
+          "r2_key": null,
+          "size": 31450,
+          "src_url": "https://torrentpier.com/api/resource-versions/606/download?file=6397"
+        }
+      ],
+      "id": 606,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1742121612,
+      "version_state": "visible",
+      "version_string": "v1.2.0",
+      "view_url": "https://torrentpier.com/resources/sistema-tegov.321/version/606/"
+    },
+    {
+      "download_count": 196,
+      "files": [
+        {
+          "filename": "[FULL] Система тегов by belomaxorka.zip",
+          "id": 6395,
+          "local_path": null,
+          "r2_key": null,
+          "size": 28568,
+          "src_url": "https://torrentpier.com/api/resource-versions/605/download?file=6395"
+        }
+      ],
+      "id": 605,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1742054216,
+      "version_state": "visible",
+      "version_string": "v1.1.0",
+      "view_url": "https://torrentpier.com/resources/sistema-tegov.321/version/605/"
+    },
+    {
+      "download_count": 199,
+      "files": [
+        {
+          "filename": "[FULL] Система тегов by belomaxorka.zip",
+          "id": 6394,
+          "local_path": null,
+          "r2_key": null,
+          "size": 28100,
+          "src_url": "https://torrentpier.com/api/resource-versions/604/download?file=6394"
+        }
+      ],
+      "id": 604,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1741969685,
+      "version_state": "visible",
+      "version_string": "v1.0.1",
+      "view_url": "https://torrentpier.com/resources/sistema-tegov.321/version/604/"
+    },
+    {
+      "download_count": 203,
+      "files": [
+        {
+          "filename": "[FULL] Система тегов by belomaxorka.zip",
+          "id": 6391,
+          "local_path": null,
+          "r2_key": null,
+          "size": 27957,
+          "src_url": "https://torrentpier.com/api/resource-versions/603/download?file=6391"
+        }
+      ],
+      "id": 603,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1741969099,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/sistema-tegov.321/version/603/"
+    }
+  ],
+  "view_count": 2793
+}

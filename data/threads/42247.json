@@ -1,0 +1,81 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95849,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42247,
+  "last_post_date": 1709566866,
+  "node_id": 47,
+  "post_date": 1709553307,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1709553285,
+          "file_size": 34664,
+          "filename": "Снимок.webp",
+          "height": 730,
+          "id": 5861,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-webp.5861/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5865-c8feb4cc48c78f022dadc532fdf4d277.jpg?hash=nR7b-AAqlv",
+          "width": 1188
+        }
+      ],
+      "id": 95849,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "##############################################################<br />\n## Название: Tooltip BBcode Mod<br />\n## Адаптировал: LAV<br />\n## Описание: Мод для вставки Tooltip<br />\n## Проверял на версии 2.3.1 (bison)<br />\n## Installation Level: Easy<br />\n## Installation Time: 2 Minutes<br />\n## Необходимо: Для установки мода необходима устанвока Tooltip<br />\n##############################################################<br />\n<br />\n#################[ ОТКРЫТЬ ]#################<br />\n/styles/templates/default/posting_editor.tpl<br />\n#################[ НАЙТИ ]#################<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;input type=&quot;button&quot; value=&quot;{L_LIST}&quot; name=&quot;codeList&quot; title=&quot;{L_LIST_TITLE}&quot;/&gt;</pre>#################[ Вставить ]#################<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;input type=&quot;button&quot; value=&quot;Tooltip&quot; name=&quot;codeTooltip&quot; title=&quot;Tooltip&quot;/&gt;</pre>#################[ ОТКРЫТЬ ]#################<br />\n/src/Legacy/BBCode.php<br />\n#################[ НАЙТИ ]#################<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&#039;#\\[list=(a|A|i|I|1)\\]#isu&#039;  =&gt; &#039;&lt;ul type=&quot;$1&quot;&gt;&#039;,</pre>#################[ Вставить ]#################<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&#039;#\\[tooltip=&quot;(.+?)&quot;\\]#isu&#039;   =&gt; $tpl[&#039;tooltip_title_open&#039;],</pre>#################[ ОТКРЫТЬ ]#################<br />\n/library/includes/bbcode.php<br />\n#################[ НАЙТИ ]#################<br />\n<pre class=\"xfBb-code\" data-lang=\"\">// Code\n    $bbcode_tpl[&#039;code_open&#039;] = &lt;&lt;&lt;HTML\n    &lt;div class=&quot;c-wrap&quot;&gt;\n        &lt;div class=&quot;c-body&quot;&gt;\nHTML;\n\n    $bbcode_tpl[&#039;code_close&#039;] = &lt;&lt;&lt;HTML\n        &lt;/div&gt;\n    &lt;/div&gt;\nHTML;</pre>#################[ Вставить ]#################<br />\n<pre class=\"xfBb-code\" data-lang=\"\">//tooltip\n$bbcode_tpl[&#039;tooltip_open&#039;] = &lt;&lt;&lt;HTML\n    &lt;span data-bs-toggle=&quot;tooltip&quot; data-bs-original-title=&quot;Tooltip&quot;&gt;\nHTML;\n$bbcode_tpl[&#039;tooltip_title_open&#039;] = &lt;&lt;&lt;HTML\n    &lt;span aria-hidden=&quot;true&quot; data-bs-toggle=&quot;tooltip&quot; title=&quot;\\\\1&quot;&gt;\nHTML;\n    $bbcode_tpl[&#039;tooltip_close&#039;] = &lt;&lt;&lt;HTML\n    &lt;/span&gt;\nHTML;</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1709553307,
+      "user_id": 10662,
+      "user_title": "User",
+      "username": "LAV"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95853,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"color: rgb(235, 107, 86)\">Примечание:</span></b> При установке этого мода учитывай, что используются нестандартные классы и атрибуты. Данный мод совместим с <a href=\"https://torrentpier.com/resources/shablon-homer.258/\" class=\"link link--internal\">этим</a> шаблоном. Если вы используете стандартный шаблон, то лучше всего использовать <a href=\"https://torrentpier.com/resources/bbcode-akronim.289/\" class=\"link link--internal\">эту</a> модификацию.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1709566866,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "vsplyvausaa-podskazka-tooltip-bbcode",
+  "sticky": false,
+  "tags": [],
+  "title": "Всплывающая подсказка | Tooltip BBcode",
+  "url_path": "/threads/vsplyvausaa-podskazka-tooltip-bbcode.42247/",
+  "user_id": 10662,
+  "username": "LAV",
+  "view_count": 632
+}

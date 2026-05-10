@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 62379,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 26152,
+  "last_post_date": 1409587737,
+  "node_id": 57,
+  "post_date": 1409587103,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62379,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Я изменил путь к логотипу в файле page_header.tpl<br />\nКогда пользователь авторизован он есть, когда не авторизован, он стандартный.<br />\nГде прописан этот стандартный когда пользователь не авторизован??? <br />\nЯ весь движок отсканировал на слово logo.png. <br />\nНашёл его только в этом файле и ещё одном, но тот файл не имеет к нему отношение.<br />\nКуда вы его заныкали?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1409587103,
+      "user_id": 5549,
+      "user_title": "User",
+      "username": "seisros"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62380,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "это кеш скорее всего",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1409587623,
+      "user_id": 43,
+      "user_title": "User",
+      "username": "JDVU"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62381,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "На главной странице администраторского раздела очистите кеш шаблона и весь кеш.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1409587737,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "logotip",
+  "sticky": false,
+  "tags": [],
+  "title": "Логотип",
+  "url_path": "/threads/logotip.26152/",
+  "user_id": 5549,
+  "username": "seisros",
+  "view_count": 1132
+}

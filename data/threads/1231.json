@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 15344,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 1231,
+  "last_post_date": 1334450273,
+  "node_id": 3,
+  "post_date": 1334445395,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15344,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<span style=\"color: #ff0000\"><b>Уважаемые пользователи и руководство ресурса, Христос воскрес! </b></span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1334445395,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Faben"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15347,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<i>Воистину воскрес</i>!",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1334450273,
+      "user_id": 435,
+      "user_title": "User",
+      "username": "S.T.@.L.K.E.R."
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "s-pashoj-dorogie-pol-zovateli",
+  "sticky": false,
+  "tags": [],
+  "title": "С Пасхой, дорогие пользователи!",
+  "url_path": "/threads/s-pashoj-dorogie-pol-zovateli.1231/",
+  "user_id": 0,
+  "username": "Faben",
+  "view_count": 1390
+}

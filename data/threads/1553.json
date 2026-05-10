@@ -1,0 +1,102 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 20601,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1553,
+  "last_post_date": 1348562066,
+  "node_id": 57,
+  "post_date": 1348546889,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1348546814,
+          "file_size": 114690,
+          "filename": "Безымянный.webp",
+          "height": 720,
+          "id": 1440,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bezymannyj-webp.1440/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1441-8aafddae470ecd9420a46ddec48c3801.jpg?hash=gcEIUGUpJ-",
+          "width": 1280
+        }
+      ],
+      "id": 20601,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "как исправить баг, захожу в viewforum.php, если торрент не зареган и возле топика стоит замок, то при переходе в топик ссылка топика выглядит так - <a href=\"http://%D1%81%D0%B0%D0%B9%D1%82.ru/407004\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://сайт.ru/407004</a> и соответственно Страница не найдена<br />\n <br />\n<a href=\"https://torrentpier.com/attachments/1440/\"><img src=\"https://torrentpier.com/data/attachments/1/1441-8aafddae470ecd9420a46ddec48c3801.jpg?hash=gcEIUGUpJ-\" alt=\"Безымянный.webp\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1348546889,
+      "user_id": 2671,
+      "user_title": "",
+      "username": "Александрович"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20602,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Никак.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1348556420,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20603,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Lange\">Никак.</blockquote>мдя...",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1348562066,
+      "user_id": 2671,
+      "user_title": "",
+      "username": "Александрович"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "kak-ispravit-bag",
+  "sticky": false,
+  "tags": [],
+  "title": "как исправить баг",
+  "url_path": "/threads/kak-ispravit-bag.1553/",
+  "user_id": 2671,
+  "username": "Александрович",
+  "view_count": 917
+}

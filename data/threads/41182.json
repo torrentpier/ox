@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 84161,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41182,
+  "last_post_date": 1433016733,
+  "node_id": 57,
+  "post_date": 1432932516,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84161,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В общем вопрос в том - почему база не изменилась в объёме.<br />\nБыло - Общий размер: <b>256,068 TB</b><br />\nСтало - Общий размер: <b>163,068 TB </b><br />\nНо база весит - Объем БД: <b>845 MB </b>- немного ниже чем при объёме сайта <b>256 </b>тв.<br />\nКак можно привести в номинальный вид - то есть удалить лишний вес базы. ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1432932516,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84163,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "bb_posts_html, bb_search и т.п. посмотрите.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1432942587,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84188,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"vitalix\">В общем вопрос в том - почему база не изменилась в объёме.</blockquote><br />\nПотому что см. надо не общий объём шары, а кол-во тем и сообщений в моменте было/стало. Если они такие как и &quot;общий объём&quot; (было/стало), то всё верно.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"vitalix\">Как можно привести в номинальный вид - то есть удалить лишний вес базы. ?</blockquote><br />\nПочистить темы и посты с анрегнутыми торрентами.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1433016733,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "baza-sajta",
+  "sticky": false,
+  "tags": [],
+  "title": "База сайта",
+  "url_path": "/threads/baza-sajta.41182/",
+  "user_id": 4163,
+  "username": "vitalix",
+  "view_count": 990
+}

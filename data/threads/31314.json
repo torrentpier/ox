@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 69350,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 31314,
+  "last_post_date": 1420973865,
+  "node_id": 57,
+  "post_date": 1418259666,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 69350,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1418259884,
+      "message_parsed": "в rss.php перед &lt;rss version=\\&quot;2.0\\&quot;&gt;<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;?xml-stylesheet type=\\&quot;text/xsl\\&quot; href=\\&quot;/rss.xsl\\&quot;?&gt;</pre>в корне (или кому как удобно) создаем 2 файла с содержимым<br />\n<div>Spoiler content hidden.</div><div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1418259666,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 69352,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "нет такого файла <b>rss.php</b>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1418276484,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 69411,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Стили для rss? Что то новенькое. Где же оно пригодится?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1418311255,
+      "user_id": 5765,
+      "user_title": "User",
+      "username": "Diolektor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71672,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Ну вообще стили должны подключать сами браузеры или читалки. Подключать только для Хрома смысла нет. Да и RSS в движке нет, атомы одни.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1420973865,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "podklucaem-stil-dla-rss-xml",
+  "sticky": false,
+  "tags": [],
+  "title": "Подключаем стиль для rss.xml",
+  "url_path": "/threads/podklucaem-stil-dla-rss-xml.31314/",
+  "user_id": 0,
+  "username": "ler",
+  "view_count": 1250
+}

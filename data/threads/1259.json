@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 15749,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1259,
+  "last_post_date": 1334855295,
+  "node_id": 57,
+  "post_date": 1334853232,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15749,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток! Друзья хотелось сделаь так: после домена создать папку  /forum/. Точнее вот так: <a href=\"http://domain.org/forum/index.php\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://domain.org/forum/index.php</a> .  Че то не получается. Кто знает поделитель пожалуйста опытом...",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1334853232,
+      "user_id": 668,
+      "user_title": "",
+      "username": "fariyeld"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15751,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "$bb_cfg[&#039;script_path&#039;] = &#039;/forum/&#039;; <br />\n$bb_cfg[&#039;cookie_path&#039;] = &#039;/forum/&#039;;",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1334853401,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15753,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "не забудь аннонсер поправить в админке",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1334854322,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15754,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Аха спасибо вам!",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1334855295,
+      "user_id": 668,
+      "user_title": "",
+      "username": "fariyeld"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "kak-sdelat-tak-http-domain-org-forum-index-php",
+  "sticky": false,
+  "tags": [],
+  "title": "Как сделать так http://domain.org/forum/index.php",
+  "url_path": "/threads/kak-sdelat-tak-http-domain-org-forum-index-php.1259/",
+  "user_id": 668,
+  "username": "fariyeld",
+  "view_count": 1290
+}

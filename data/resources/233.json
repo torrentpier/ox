@@ -1,0 +1,244 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "Пожертвование сидбонусов на золото-серебро by RYT.zip",
+      "id": 5514,
+      "local_path": null,
+      "r2_key": null,
+      "size": 5465,
+      "src_url": "https://torrentpier.com/api/resource-versions/399/download?file=5514"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]\n[CODE]\n=====Выполнить SQL запрос======\n\nDROP TABLE IF EXISTS `bb_bt_tor_bonus`;\nCREATE TABLE `bb_bt_tor_bonus`\n(\n    `id`               int(11)               NOT NULL auto_increment,\n    `attach_id`        mediumint(8) unsigned NOT NULL default '0',\n    `user_id`          int(11)               NOT NULL default '0',\n    `time`             int(11)               NOT NULL default '0',\n    `tor_bonus_silver` float(16, 2)          NOT NULL default '0.00',\n    `tor_bonus_gold`   float(16, 2)          NOT NULL default '0.00',\n    PRIMARY KEY (`id`)\n) ENGINE = MyISAM\n  DEFAULT CHARSET = utf8;\n\n=====config.php в самый конец======\n\n// Пожертвование сидбонусов\n$bb_cfg['tor_bonus'] = true; // Вкл/выкл\n$bb_cfg['tor_bonus_silver'] = '1000'; // Стоимость серебра\n$bb_cfg['tor_bonus_gold'] = '2000'; // Стоимость золота\n\n=====language/ru/main.php в самый конец======\n\n// Пожертвование сидбонусов\n$lang['ERRORS_TOR_TYPE_GOLD'] = 'Раздача уже имеет статус золота';\n$lang['ERRORS_TOR_TYPE_TEXT'] = 'Введены не корректные данные';\n$lang['ERRORS_NO_BONUS_USER'] = 'У Вас нет столько СидБонусов';\n$lang['ERRORS_TOR_TYPE_BONUS'] = 'С данной раздачи снято серебро/золото';\n$lang['ERRORS_NOUSERS_TOR_BONUS'] = 'Нет пожертвований';\n$lang['ERRORS_TOR_TUPE_BONUS'] = 'С данной раздачи снято серебро/золото';\n$lang['ERRORS_MAX_TOR_BONUS'] = 'Раздача уже имее максимальное кол-во СидБонусов';\n$lang['SEED_BONUS_PRESENT'] = 'Уже набрано: <b class=\"seed\">%s</b>';\n$lang['SEED_BONUS_REMAINING'] = 'Осталось набрать: <b class=\"leech\">%s</b>';\n$lang['SEED_BONUS_ME'] = 'У Вас: <b class=\"points\">%s</b>';\n$lang['TOR_BONUS_SILVER'] = 'Спасибо за Ваше пожертвование на серебро';\n$lang['TOR_BONUS_SILVER_TO'] = 'Спасибо, Вы установили серебро';\n$lang['TOR_BONUS_GOLD'] = 'Спасибо за Ваше пожертвование на золото';\n$lang['TOR_BONUS_GOLD_TO'] = 'Спасибо, Вы установили золото';\n$lang['TOR_BONUS_NUMBER'] = 'Сколько отдать';\n$lang['TOR_BONUS_TYPE_SILVER'] = 'Добавить СидБонусы на серебро';\n$lang['TOR_BONUS_TYPE_GOLD'] = 'Добавить СидБонусы на золото';\n$lang['TOR_BONUS_USERS_WHO'] = 'Кем добавлено';\n$lang['TOR_BONUS_USERS_HOW'] = 'Сколько добавлено';\n$lang['TOR_BONUS_USERS_WHAT'] = 'Добавлено на';\n$lang['TOR_BONUS_USERS_TIME'] = 'Дата добавления';\n$lang['BUTONS_USERS'] = 'Кто добавил на серебро/золото';\n$lang['RELEASER_BONUS_ADD'] = 'Отблагодарить за Релиз СидБонусами';\n$lang['POINTS_MESSAGE'] = 'Пользователь %s подарил Вам СидБонус в размере [b]%s[/b].[br][br][align=right][i]Сообщение сгенерировано автоматически.[/i][/align]';\n$lang['POINTS_SUBJECT'] = 'Вам отправили СидБонус за %s';\n$lang['RELEASER_BONUS'] = 'Вы отправили СидБонусамы за релиз';\n\n=====library/attach_mod/displaying_torrent.php======\n\n== Найти:\n\nglobal $bb_cfg,\n\n== Добавить после:\n\n$tr_cfg,\n\n== Найти (второй раз):\n\n$template->assign_block_vars('postrow.attach.tor_reged', array(\n\n== Добавить перед:\n\n// Пожертвование сидбонусов\nif ($tor_info['tor_type'] == 0)\n{\n    $tor_bonus_type = '<input class=\"liteoption\" onclick=\"ajax.tor_bonus(\\'tor_bonus_info\\'); return false;\" type=\"submit\" value=\"'.$lang['TOR_BONUS_TYPE_SILVER'].'\" />';\n}\nelseif ($tor_info['tor_type'] == 2)\n{\n    $tor_bonus_type = '<input class=\"liteoption\" onclick=\"ajax.tor_bonus(\\'tor_bonus_info\\'); return false;\" type=\"submit\" value=\"'.$lang['TOR_BONUS_TYPE_GOLD'].'\" />';\n}\nelseif ($tor_info['tor_type'] == 1)\n{\n    $tor_bonus_type = '';\n}\n\n== Найти:\n\n'TOR_SILVER_GOLD' => $tor_type,\n\n== Добавить после:\n\n// Пожертвование сидбонусов\n'TOR_BONUS_ACTIVE' => $bb_cfg['tor_bonus'] && $tr_cfg['gold_silver_enabled'],\n'TOR_BONUS_TYPE' => $tor_bonus_type,\n'TOR_BONUS_WHO' => '<input class=\"liteoption\" onclick=\"ajax.tor_bonus(\\'list\\'); return false;\" type=\"submit\" value=\"'.$lang['BUTONS_USERS'].'\" />',\n'REL_ADD_BONUS' => '<input class=\"liteoption\" onclick=\"ajax.tor_bonus(\\'release_add_list\\'); return false;\" type=\"submit\" value=\"'.$lang['RELEASER_BONUS_ADD'].'\" />',\n\n=====viewtopic_attach.tpl======\n\n== Найти:\n\n<td>{postrow.attach.tor_reged.TORRENT_SIZE}\n\n== Добавить после:\n\n<!-- IF postrow.attach.tor_reged.TOR_BONUS_ACTIVE -->&nbsp;{postrow.attach.tor_reged.TOR_BONUS_TYPE}&nbsp;{postrow.attach.tor_reged.TOR_BONUS_WHO}&nbsp;{postrow.attach.tor_reged.REL_ADD_BONUS}<!-- ENDIF -->\n\n== Найти:\n\n<table class=\"attach bordered med\">\n    <tr class=\"row3\">\n        <th colspan=\"3\" class=\"{postrow.attach.tor_reged.DL_LINK_CLASS}\">\n\n== Добавить перед:\n\n<!-- IF postrow.attach.tor_reged.TOR_BONUS_ACTIVE -->\n<script type=\"text/javascript\">\n    ajax.tor_bonus = function(mode) {\n        ajax.exec({\n            action : 'tor_bonus',\n            mode   : mode,\n            bonus  : $('#bonus').val(),\n            bonus_transfer : $('#bonus_transfer').val(),\n            attach_id : {postrow.attach.tor_reged.ATTACH_ID}\n        });\n    };\n    ajax.callback.tor_bonus = function(data) {\n        $('#'+data.mode).toggle().html(data.html);\n        if(data.title) alert(data.title);\n        if(data.url) document.location.href = data.url;\n    };\n</script>\n<!-- ENDIF -->\n\n== Найти:\n\n<script type=\"text/javascript\">\nfunction humn_size (size) {\n    var i = 0;\n    var units = [\"B\", \"KB\", \"MB\", \"GB\", \"TB\", \"PB\", \"EB\", \"ZB\", \"YB\"];\n    while ((size/1024) >= 1) {\n        size = size/1024;\n\n== Добавить перед:\n\n<!-- IF postrow.attach.tor_reged.TOR_BONUS_ACTIVE -->\n<div id=\"tor_bonus_info\" style=\"display:none;\"></div>\n<div id=\"list\" style=\"display:none;\"></div>\n<div id=\"release_add_list\" style=\"display:none;\"></div>\n<!-- ENDIF -->\n\n=====ajax.php======\n\n== Найти:\n\n'avatar'            => array('user'),\n\n== Добавить после:\n\n'tor_bonus'         => array('user'),\n\n== Найти:\n\nfunction sitemap()\n{\n    require(AJAX_DIR .'sitemap.php');\n}\n\n== Добавить после:\n\nfunction tor_bonus()\n{\n    require(AJAX_DIR .'tor_bonus.php');\n}\n\n=====Сохранить все файлы======\n[/CODE]\n[/SPOILER]",
+    "owner": "RYT.",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1692432421,
+      "file_size": 49452,
+      "filename": "1.webp",
+      "height": 543,
+      "id": 5499,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/1-webp.5499/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5503-1cbcd78b6141ba99d017dc19096da4bd.jpg?hash=WKcSMeZBdb",
+      "width": 1586
+    },
+    {
+      "attach_date": 1692432421,
+      "file_size": 29982,
+      "filename": "2.webp",
+      "height": 259,
+      "id": 5500,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2-webp.5500/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5504-3678722442eae45f4310d464c312a367.jpg?hash=e7JE5wnJhx",
+      "width": 1366
+    },
+    {
+      "attach_date": 1692432421,
+      "file_size": 30422,
+      "filename": "3.webp",
+      "height": 259,
+      "id": 5501,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/3-webp.5501/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5505-b68eef227df27d14281aee3344bfcf24.jpg?hash=hJQ8-Jfj1i",
+      "width": 1352
+    },
+    {
+      "attach_date": 1692432422,
+      "file_size": 38854,
+      "filename": "4.webp",
+      "height": 309,
+      "id": 5502,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/4-webp.5502/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5506-0cf3f6bf3e762b9b50974fd15449d963.jpg?hash=52tWdkfJ8p",
+      "width": 1345
+    },
+    {
+      "attach_date": 1692432423,
+      "file_size": 42446,
+      "filename": "5.webp",
+      "height": 367,
+      "id": 5503,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/5-webp.5503/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5507-e9c8468d9539e09076985474d902076c.jpg?hash=3sQ3r3gC0U",
+      "width": 1354
+    },
+    {
+      "attach_date": 1692432424,
+      "file_size": 36764,
+      "filename": "6.webp",
+      "height": 348,
+      "id": 5504,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/6-webp.5504/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5508-7efb19b92a854a69397f268e0324aeed.jpg?hash=jQmnuVLKGH",
+      "width": 1348
+    },
+    {
+      "attach_date": 1692432425,
+      "file_size": 26362,
+      "filename": "7.webp",
+      "height": 206,
+      "id": 5505,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/7-webp.5505/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5509-9e27dcce55a3f0cd4fe2d05a881a9111.jpg?hash=uE0QQUiND6",
+      "width": 1347
+    },
+    {
+      "attach_date": 1692432426,
+      "file_size": 15230,
+      "filename": "8.webp",
+      "height": 237,
+      "id": 5506,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/8-webp.5506/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5510-155cde8203944d152713866193aa8676.jpg?hash=hsvEUU0Kzt",
+      "width": 1567
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет пользователям возможность &quot;скинуться&quot; на статус золото/серебро для раздачи. Так же добавляет возможность пожертвовать (передать) бонусы автору раздачи.",
+  "download_count": 1120,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/233.jpg?1432741182",
+  "id": 233,
+  "is_fileless": null,
+  "last_update": 1692547677,
+  "rating_avg": 4,
+  "rating_count": 1,
+  "resource_date": 1432740874,
+  "resource_state": "visible",
+  "slug": "pozertvovanie-sidbonusov-na-zoloto-serebro",
+  "tag_line": "Добавляет пользователям возможность \"скинуться\" на статус золото/серебро для раздачи.",
+  "tags": [],
+  "title": "Пожертвование сидбонусов на золото/серебро",
+  "url_path": "/resources/pozertvovanie-sidbonusov-na-zoloto-serebro.233/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "1.1.2",
+  "versions": [
+    {
+      "download_count": 460,
+      "files": [
+        {
+          "filename": "Пожертвование сидбонусов на золото-серебро by RYT.zip",
+          "id": 5514,
+          "local_path": null,
+          "r2_key": null,
+          "size": 5465,
+          "src_url": "https://torrentpier.com/api/resource-versions/399/download?file=5514"
+        }
+      ],
+      "id": 399,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1692547677,
+      "version_state": "visible",
+      "version_string": "1.1.2",
+      "view_url": "https://torrentpier.com/resources/pozertvovanie-sidbonusov-na-zoloto-serebro.233/version/399/"
+    },
+    {
+      "download_count": 202,
+      "files": [
+        {
+          "filename": "Пожертвование сидбонусов на золото-серебро by RYT.zip",
+          "id": 5507,
+          "local_path": null,
+          "r2_key": null,
+          "size": 5425,
+          "src_url": "https://torrentpier.com/api/resource-versions/396/download?file=5507"
+        }
+      ],
+      "id": 396,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1692543009,
+      "version_state": "visible",
+      "version_string": "1.1.1",
+      "view_url": "https://torrentpier.com/resources/pozertvovanie-sidbonusov-na-zoloto-serebro.233/version/396/"
+    },
+    {
+      "download_count": 205,
+      "files": [
+        {
+          "filename": "Пожертвование сидбонусов на золото-серебро by RYT.zip",
+          "id": 5498,
+          "local_path": null,
+          "r2_key": null,
+          "size": 5532,
+          "src_url": "https://torrentpier.com/api/resource-versions/395/download?file=5498"
+        }
+      ],
+      "id": 395,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1692431361,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/pozertvovanie-sidbonusov-na-zoloto-serebro.233/version/395/"
+    },
+    {
+      "download_count": 260,
+      "files": [
+        {
+          "filename": "Пожертвование сидбонусов.zip",
+          "id": 3904,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4669,
+          "src_url": "https://torrentpier.com/api/resource-versions/335/download?file=3904"
+        }
+      ],
+      "id": 335,
+      "rating_avg": 4,
+      "rating_count": 1,
+      "release_date": 1432740874,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/pozertvovanie-sidbonusov-na-zoloto-serebro.233/version/335/"
+    }
+  ],
+  "view_count": 3026
+}

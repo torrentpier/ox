@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 5008,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 418,
+  "last_post_date": 1320866426,
+  "node_id": 57,
+  "post_date": 1320495973,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5008,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как сделать чтоб, при отключении форума в настройках админки (Общие настройки-Конфигурация-Отключить форумы=Да) форум для админа не отключался?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1320495973,
+      "user_id": 213,
+      "user_title": "User",
+      "username": "Artem"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5088,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Artem</b>, как ты думаешь, зачем это вообще сделано? Если ответишь себе на этот вопрос - поймешь, что отключение должно быть для всех.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1320591389,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Nikolaich"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5298,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Nikolaich\"><b>Artem</b>, как ты думаешь, зачем это вообще сделано? Если ответишь себе на этот вопрос - поймешь, что отключение должно быть для всех.</blockquote>Убейте меня но я не могу понять зачем форум отключать для админа...?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1320847487,
+      "user_id": 213,
+      "user_title": "User",
+      "username": "Artem"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5314,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Artem\">Убейте меня</blockquote>Как скажешь - сам напросился…<br />\nПользователь <b>Artem</b> заблокирован<span style=\"color: #c0c0c0\"><span style=\"font-size: 9px\"> до 11.11.11</span></span>.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1320866426,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Nikolaich"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "otklucenie-foruma",
+  "sticky": false,
+  "tags": [],
+  "title": "Отключение форума",
+  "url_path": "/threads/otklucenie-foruma.418/",
+  "user_id": 213,
+  "username": "Artem",
+  "view_count": 1648
+}

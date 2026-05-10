@@ -1,0 +1,134 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 66924,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 29325,
+  "last_post_date": 1415825786,
+  "node_id": 57,
+  "post_date": 1415802883,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1415802620,
+          "file_size": 18362,
+          "filename": "retracker_local.webp",
+          "height": 155,
+          "id": 2731,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/retracker_local-webp.2731/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2735-0eb3733eef1df089f385ba8ef3cbd7b4.jpg?hash=61si-WiGYb",
+          "width": 789
+        }
+      ],
+      "id": 66924,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "retracker.local не работает в uTorrent<br />\nНи чего понять не могу. Все форумы излазил, нет инфы. А если есть то по провайдерам.<br />\nФайл раздаётся, статистика по крону отрабатывается. Всё работает нормально, кроме retracker.local/anonce.<br />\nВот такая картина в uTorrent&#039;e <br />\nТипа имя хоста не найдена<br />\nу кого была такая трабла, ткните носом,где  какая нибудь есть инфа  по это проблеме.<br />\nЗаранее спасибо.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1415802883,
+      "user_id": 4803,
+      "user_title": "User",
+      "username": "BigSerg"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66925,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Или настройки клиент, или провайдер виноват.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1415804331,
+      "user_id": 2789,
+      "user_title": "User",
+      "username": "Sprinx"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66931,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Sprinx\">Или настройки клиент, или провайдер виноват.</blockquote>Объёмно!  👍<br />\nА главное, я тоже знаю<br />\nНо где копать в клиенте ХЗ",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1415805327,
+      "user_id": 4803,
+      "user_title": "User",
+      "username": "BigSerg"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66945,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Ретрекер - это петля вашей локальной сети. Провайдеры ретрекеры поднимают что бы в пределах города снизить нагрузку с магистральных каналов. Ваш провайдер этим не озаботился. Вот и все.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1415819994,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66949,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Не у всех провайдеров поддержка ретрекеров есть, как <a href=\"https://torrentpier.com/members/19/\">@dimka3210</a> выше написал. В движке базовая возможность его дописывания есть - остальная забота на плечах провайдера.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1415825786,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "retracker-local-ne-rabotaet",
+  "sticky": false,
+  "tags": [],
+  "title": "retracker.local не работает...",
+  "url_path": "/threads/retracker-local-ne-rabotaet.29325/",
+  "user_id": 4803,
+  "username": "BigSerg",
+  "view_count": 5299
+}

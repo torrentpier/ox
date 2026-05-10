@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 12185,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 983,
+  "last_post_date": 1329665047,
+  "node_id": 57,
+  "post_date": 1329665047,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 12185,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте.<br />\n <br />\nПеренес свой торрент трейкер на новый хостинг, после переноса возникла пару проблема хотелось бы совета, и так:<br />\n1. При входе в тему не чего не отображается, это после регистрации и входа на сайт а если без регистрации попробовать то все нормально.<br />\n2.Все торренты не зарегистрированы на сайте.<br />\n <br />\nЕсли кто то уже проходил через это то прошу помочь.<br />\n <br />\nСпасибо.<br />\n <br />\nЗ.Ы. Права на папки дал кэш очистил не помогло.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1329665047,
+      "user_id": 946,
+      "user_title": "User",
+      "username": "Komil"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "ne-otobrazautsa-temy",
+  "sticky": false,
+  "tags": [],
+  "title": "Не отображаются темы",
+  "url_path": "/threads/ne-otobrazautsa-temy.983/",
+  "user_id": 946,
+  "username": "Komil",
+  "view_count": 1100
+}

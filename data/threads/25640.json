@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 57887,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25640,
+  "last_post_date": 1392550976,
+  "node_id": 111,
+  "post_date": 1389969516,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57887,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 560: Проверка на остаточные записи об уже удаленных топиках</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">glix08</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/upload/config.php \n    Modify    /trunk/upload/includes/functions_admin.php \n\nПроверка на остаточные записи об уже удаленных топиках</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1389969516,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59134,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Если взглянуть на изменение ревизии, то можно увидеть серьезный недочет, ибо включенный запрос в синхронизацию топиков, который удаляет из таблицы bb_topics записи, у которых значение topic_first_post_id не входит в существующие id постов, то при разделении темы это будет являться необратимым критическим багом, т.к. новый топик в который переносятся выделенные сообщения не будет иметь id первого сообщения в topic_first_post_id до выполнения синхронизации, т.е. потеря топика будет неизбежной.<br />\n <br />\nК слову...<div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1392550976,
+      "user_id": 4363,
+      "user_title": "User",
+      "username": "Phoenix"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "revision-560-proverka-na-ostatocnye-zapisi-ob-uze-udalennyh-topikah",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 560: Проверка на остаточные записи об уже удаленных топиках",
+  "url_path": "/threads/revision-560-proverka-na-ostatocnye-zapisi-ob-uze-udalennyh-topikah.25640/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 1826
+}

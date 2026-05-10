@@ -1,0 +1,106 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "Cat_Description_By_Nightmare_v0.1.zip",
+      "id": 3097,
+      "local_path": null,
+      "r2_key": null,
+      "size": 1145,
+      "src_url": "https://torrentpier.com/api/resource-versions/193/download?file=3097"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]# Мод :: Cat Description\n# Версия :: 0.1\n# Автор :: Nightmare (http://torrentpier.me)\n# Описание :: Мод добавляет уникальный текст для категории на странице viewforum.php,\n#              При грамотном использовании повышает SEO\n#              Опционально включается в config.php\n#              $bb_cfg['cat_description']\n# Дополнительно ::\n#\n\n=================================================================\nconfig.php\nВСТАВИТЬ В КОНЦЕ || INSERT IN THE END OF FILE\n=================================================================\n\n// Cat Description By Nightmare\n$bb_cfg['cat_description'] = true;\n\n=================================================================\nviewforum.php\nНАЙТИ || FIND\n=================================================================\n\n// User authorisation levels output\n$u_auth = array();\n\n=================================================================\nВСТАВИТЬ ПЕРЕД || INSERT BEFORE\n=================================================================\n\n// Cat Description By Nightmare\nif ($bb_cfg['cat_description'] == true)\n{\n    $cat_desc = isset($lang['CAT_DESCRIPTION'][$forum_data['cat_id']]) ? $lang['CAT_DESCRIPTION'][$forum_data['cat_id']] : '';\n}\n// Cat Description By Nightmare\n\n=================================================================\nviewforum.php\nНАЙТИ || FIND\n=================================================================\n\n'FORUM_NAME'          => htmlCHR($forum_data['forum_name']),\n\n=================================================================\nВСТАВИТЬ ПОСЛЕ || INSERT AFTER\n=================================================================\n\n'CAT_DESC'              => (isset($cat_desc) && !empty($cat_desc)) ? $cat_desc : '', // Cat Description By Nightmare\n\n=================================================================\ntemplates/default/viewforum.tpl\nНАЙТИ || FIND\n=================================================================\n\n<h1 class=\"maintitle\"><a href=\"{U_VIEW_FORUM}\">{FORUM_NAME}</a></h1>\n\n=================================================================\nВСТАВИТЬ ПОСЛЕ || INSERT AFTER\n=================================================================\n\n<!-- IF CAT_DESC --><div style=\"padding:5px;color:#888;\">{CAT_DESC}</div><!-- ENDIF -->\n\n=================================================================\nlanguage/ru/main.php\nВСТАВИТЬ В КОНЦЕ || INSERT IN THE END OF FILE\n=================================================================\n\n// Cat Description By Nightmare\n$lang['CAT_DESCRIPTION'] = array(\n    // cat_id  => 'cat description'\n    1     => 'Описание категории 1 на русском',\n);\n\n=================================================================\nlanguage/en/main.php\nВСТАВИТЬ В КОНЦЕ || INSERT IN THE END OF FILE\n=================================================================\n\n// Cat Description By Nightmare\n$lang['CAT_DESCRIPTION'] = array(\n    // cat_id  => 'cat description'\n    1     => 'First category description in english',\n);\n\n=================================================================\nlanguage/uk/main.php\nВСТАВИТЬ В КОНЦЕ || INSERT IN THE END OF FILE\n=================================================================\n\n// Cat Description By Nightmare\n$lang['CAT_DESCRIPTION'] = array(\n    // cat_id  => 'cat description'\n    1     => 'Опис першої категорії на українському', // google translate\n);\n\n=================================================================\nTHE END\n=================================================================[/PHP]\n[/SPOILER]",
+    "owner": "Nightmare",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1409680518,
+      "file_size": 19458,
+      "filename": "Без-имени-1.webp",
+      "height": 140,
+      "id": 2627,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/bez-imeni-1-webp.2627/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2632-632868be05deceb49ab56f5f8e9ea184.jpg?hash=P2u0AOrjTI",
+      "width": 1302
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет описание категории на страницу просмотра форума. <br />\n<br />\nМодификация добавляет уникальный текст для всех форумов категории на странице viewforum.php. При грамотном использовании полезен для SEO.<br />\n<br />\nОписание заполняется в language/(ru|en|uk)/main.php как <i>id категории =&gt; описание.</i> Опционально включается в config.php ($bb_cfg[&#039;cat_description&#039;]).",
+  "download_count": 355,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/120.jpg?1425233896",
+  "id": 120,
+  "is_fileless": null,
+  "last_update": 1425234212,
+  "rating_avg": 5,
+  "rating_count": 1,
+  "resource_date": 1409681247,
+  "resource_state": "visible",
+  "slug": "opisanie-kategorij",
+  "tag_line": "Добавляет описание категории на страницу просмотра форума.",
+  "tags": [],
+  "title": "Описание категорий",
+  "url_path": "/resources/opisanie-kategorij.120/",
+  "user_id": 68,
+  "username": "Nightmare",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 259,
+      "files": [
+        {
+          "filename": "Cat_Description_By_Nightmare_v0.1.zip",
+          "id": 3097,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1145,
+          "src_url": "https://torrentpier.com/api/resource-versions/193/download?file=3097"
+        }
+      ],
+      "id": 193,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425234212,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/opisanie-kategorij.120/version/193/"
+    },
+    {
+      "download_count": 102,
+      "files": [
+        {
+          "filename": "Cat_Description_By_Nightmare_v0.1.rar",
+          "id": 2628,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1090,
+          "src_url": "https://torrentpier.com/api/resource-versions/131/download?file=2628"
+        }
+      ],
+      "id": 131,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1409681247,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/opisanie-kategorij.120/version/131/"
+    }
+  ],
+  "view_count": 571
+}

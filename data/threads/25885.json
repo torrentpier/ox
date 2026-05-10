@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 60216,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25885,
+  "last_post_date": 1397365853,
+  "node_id": 57,
+  "post_date": 1397330443,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60216,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В R584 включаю в конфигурации модификаций конструктор, а его всё равно нема) подскажите)",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1397330443,
+      "user_id": 5258,
+      "user_title": "User",
+      "username": "InTeamLife"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60220,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "не нема, а нет...........🙂<br />\n <br />\n<a href=\"http://torrentpier.com/threads/%D0%92%D0%B8%D0%B4%D0%B5%D0%BE-faq-%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D0%BE%D1%80%D0%BE%D0%BC-%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D0%BE%D0%B2-%D1%87-1.25844/\" class=\"link link--internal\">http://torrentpier.com/threads/Видео-faq-Работа-с-конструктором-шаблонов-ч-1.25844/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1397365853,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "konstruktor-sablonov",
+  "sticky": false,
+  "tags": [],
+  "title": "Конструктор шаблонов",
+  "url_path": "/threads/konstruktor-sablonov.25885/",
+  "user_id": 5258,
+  "username": "InTeamLife",
+  "view_count": 1077
+}

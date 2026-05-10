@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 5142,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 429,
+  "last_post_date": 1320688086,
+  "node_id": 57,
+  "post_date": 1320655740,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5142,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Помогите сделать так, чтобы можно было создавать темы с оглавлением в виде гиперссылок на пункты, находящиеся на этой же странице. По типу как сделано в FAQ.php. Только чтоб можно было это использовать при создании топика, например инструкции.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1320655740,
+      "user_id": 238,
+      "user_title": "User",
+      "username": "Kex"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5157,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Эм, и что это, и как пользоваться?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1320670075,
+      "user_id": 238,
+      "user_title": "User",
+      "username": "Kex"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5160,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"\">[name=0] Начало\n\n[URL=&#039;http://damain#1&#039;]Поехали[/URL]\n\n[name=1] Приехали</pre>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1320673667,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5174,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Во! <b>Basilevs большое спасибо!</b>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1320688086,
+      "user_id": 238,
+      "user_title": "User",
+      "username": "Kex"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "kak-sdelat-oglavlenie-v-vide-giperssylok",
+  "sticky": false,
+  "tags": [],
+  "title": "Как сделать оглавление в виде гиперссылок?",
+  "url_path": "/threads/kak-sdelat-oglavlenie-v-vide-giperssylok.429/",
+  "user_id": 238,
+  "username": "Kex",
+  "view_count": 1871
+}

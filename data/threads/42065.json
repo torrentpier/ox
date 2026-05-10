@@ -1,0 +1,77 @@
+{
+  "custom_fields": {
+    "torrentpier": "2301"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94242,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42065,
+  "last_post_date": 1572044260,
+  "node_id": 57,
+  "post_date": 1563187555,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94242,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В движке по умолчанию тысячи страниц с одинаковыми &lt;title&gt; которые ненавидит гугл. И изменить это никак нельзя, по крайней мере у меня ничего не получилось, что думаете на этот счет?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1563187555,
+      "user_id": 7853,
+      "user_title": "User",
+      "username": "andypanda"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94302,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Написать мод который исправит ситуацию?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1572044260,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "ser-eznaa-problema-s-seo",
+  "sticky": false,
+  "tags": [
+    "google",
+    "seo",
+    "title"
+  ],
+  "title": "Серьезная проблема с SEO",
+  "url_path": "/threads/ser-eznaa-problema-s-seo.42065/",
+  "user_id": 7853,
+  "username": "andypanda",
+  "view_count": 1793
+}

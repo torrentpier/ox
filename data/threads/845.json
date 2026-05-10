@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 10693,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 845,
+  "last_post_date": 1327933638,
+  "node_id": 57,
+  "post_date": 1327925763,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10693,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как добавить задачу в nnCron?<br />\nА именно вот эту:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">Time: */5  * * * * *\nAction:\nStartIn: &quot;C:\\путь до папки\\www\\cron\\&quot;\nSWHide  NormalPriority\nSTART-APP: C:\\путь до папки\\php5\\php.exe -f C:\\путь до папки\\www\\cron\\cron.php</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1327925763,
+      "user_id": 722,
+      "user_title": "User",
+      "username": "Азат"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10694,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "И ещё вопрос: а он вообще нужен? (nnCron)",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1327926008,
+      "user_id": 722,
+      "user_title": "User",
+      "username": "Азат"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10695,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Для красоты, а если серьезно юзаем поиск.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1327933638,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "kak-dobavit-zadacu-v-nncrom",
+  "sticky": false,
+  "tags": [],
+  "title": "Как добавить задачу в nnCrom?",
+  "url_path": "/threads/kak-dobavit-zadacu-v-nncrom.845/",
+  "user_id": 722,
+  "username": "Азат",
+  "view_count": 1325
+}

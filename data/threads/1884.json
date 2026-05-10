@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 24997,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1884,
+  "last_post_date": 1357152352,
+  "node_id": 57,
+  "post_date": 1357151218,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24997,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Хочу перевести стандартные шаблоны а так же добавить свои, где находятся, подскажите пожалуйста.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1357151218,
+      "user_id": 3266,
+      "user_title": "User",
+      "username": "extazys"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24998,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "/includes/topic_templates/<br />\n/templates/default/topic_templates/",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1357151364,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24999,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "language/lang_russian/lang_topic_templates.php<br />\nlanguage/lang_english/lang_topic_templates.php<br />\ntemplates/topic_tpl_overall_header.html<br />\ntemplates/topic_tpl_rules_video.html",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1357151980,
+      "user_id": 79,
+      "user_title": "User",
+      "username": "Lynx"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25000,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо!",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1357152352,
+      "user_id": 3266,
+      "user_title": "User",
+      "username": "extazys"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "gde-nahodatsa-sablony-dla-relizov",
+  "sticky": false,
+  "tags": [],
+  "title": "Где находятся шаблоны для релизов?",
+  "url_path": "/threads/gde-nahodatsa-sablony-dla-relizov.1884/",
+  "user_id": 3266,
+  "username": "extazys",
+  "view_count": 1415
+}

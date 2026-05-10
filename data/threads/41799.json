@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 92030,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41799,
+  "last_post_date": 1501614397,
+  "node_id": 57,
+  "post_date": 1501612815,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92030,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет, при попытке настроить трекеры через админку, вылезает окно с надписью:<br />\nИзменения недоступны (редактируйте <b>$bb_cfg[&#039;tracker&#039;]</b> в файле config.php)<br />\nЧто нужно сделать, что-бы можно было редактировать настройки через админ-панель?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1501612815,
+      "user_id": 7972,
+      "user_title": "User",
+      "username": "T3G1NG"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92031,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/7972/\">MClazo</a>, этот раздел в админке через саму панель отредактировать нельзя, откройте  config.php найдете <b>$bb_cfg[&#039;tracker&#039;] </b>там уже руками меняете нужные вам настройки.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1501614315,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92032,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Protektor\"><a href=\"https://torrentpier.com/members/7972/\">MClazo</a>, этот раздел в админке через саму панель отредактировать нельзя, откройте  config.php найдете <b>$bb_cfg[&#039;tracker&#039;] </b>там уже руками меняете нужные вам настройки.</blockquote>А я то думал, что у меня такая ошибка. Спасибо большое Вам.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1501614397,
+      "user_id": 7972,
+      "user_title": "User",
+      "username": "T3G1NG"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "nevozmozno-ispol-zovat-nastrojki-trekera-v-adminke",
+  "sticky": false,
+  "tags": [],
+  "title": "Невозможно использовать настройки трекера в админке",
+  "url_path": "/threads/nevozmozno-ispol-zovat-nastrojki-trekera-v-adminke.41799/",
+  "user_id": 7972,
+  "username": "T3G1NG",
+  "view_count": 990
+}

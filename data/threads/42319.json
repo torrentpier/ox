@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 96808,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42319,
+  "last_post_date": 1731084292,
+  "node_id": 47,
+  "post_date": 1731074563,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96808,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/registracija-po-invajtam.309/\" class=\"link link--internal\">Регистрация по инвайтам</a> - Добавляет возможность пользователям создавать персональные инвайты для приглашения новых участников.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> Добавляет возможность пользователям создавать персональные инвайты для приглашения новых участников. Имеется продвинутая система управления правилами выдачи инвайтов.<br />\n<b>Совместимость</b>: v2.1.5, LTS.</blockquote><br />\n<a href=\"https://torrentpier.com/resources/registracija-po-invajtam.309/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1731074563,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96809,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/registracija-po-invajtam.309/\" class=\"link link--internal\">Регистрация по инвайтам</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/registracija-po-invajtam.309/update/574/\" class=\"link link--internal\">Обновление v1.1.1</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Мелкие улучшения качества кода</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/registracija-po-invajtam.309/update/574/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1731084292,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "registracia-po-invajtam",
+  "sticky": false,
+  "tags": [],
+  "title": "Регистрация по инвайтам",
+  "url_path": "/threads/registracia-po-invajtam.42319/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 599
+}

@@ -1,0 +1,188 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] BBCode - Акроним by Conteo.zip",
+      "id": 6008,
+      "local_path": null,
+      "r2_key": null,
+      "size": 1422,
+      "src_url": "https://torrentpier.com/api/resource-versions/503/download?file=6008"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "Conteo",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1709566389,
+      "file_size": 26458,
+      "filename": "1.webp",
+      "height": 281,
+      "id": 5866,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/1-webp.5866/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5870-cd0bc4560dbe27fa46b51969e77b6d6c.jpg?hash=L4LnD9jEyg",
+      "width": 1166
+    },
+    {
+      "attach_date": 1709566389,
+      "file_size": 27180,
+      "filename": "2.webp",
+      "height": 276,
+      "id": 5867,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2-webp.5867/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5871-9374b204d84b0ad425e76c3e4a467fe7.jpg?hash=Bho8OqBO2Q",
+      "width": 986
+    }
+  ],
+  "description_parsed": "<div style=\"text-align: center\"><span style=\"color: rgb(226, 80, 65)\">Данный мод включен по умолчанию начиная с версии v2.4.2</span>&#8203;</div><hr /><b>Описание:</b> Мод добавляет BBCode тэг который позволяет добавлять акронимы (сокращения).",
+  "download_count": 607,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/289.jpg?1709566417",
+  "id": 289,
+  "is_fileless": null,
+  "last_update": 1718537166,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1709566417,
+  "resource_state": "visible",
+  "slug": "bbcode-akronim",
+  "tag_line": "Мод добавляет BBCode тэг который позволяет добавлять акронимы (сокращения).",
+  "tags": [
+    "bbcode",
+    "bbcode акроним",
+    "акроним",
+    "акроним для bbcode",
+    "мод",
+    "моды",
+    "улучшения редактора bbcode"
+  ],
+  "title": "BBCode: Акроним",
+  "url_path": "/resources/bbcode-akronim.289/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v2.0.2",
+  "versions": [
+    {
+      "download_count": 221,
+      "files": [
+        {
+          "filename": "[FULL] BBCode - Акроним by Conteo.zip",
+          "id": 6008,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1422,
+          "src_url": "https://torrentpier.com/api/resource-versions/503/download?file=6008"
+        }
+      ],
+      "id": 503,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1718537166,
+      "version_state": "visible",
+      "version_string": "v2.0.2",
+      "view_url": "https://torrentpier.com/resources/bbcode-akronim.289/version/503/"
+    },
+    {
+      "download_count": 113,
+      "files": [
+        {
+          "filename": "[FULL] BBCode - Акроним by Conteo.zip",
+          "id": 5889,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1412,
+          "src_url": "https://torrentpier.com/api/resource-versions/479/download?file=5889"
+        }
+      ],
+      "id": 479,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1710149955,
+      "version_state": "visible",
+      "version_string": "v2.0.1",
+      "view_url": "https://torrentpier.com/resources/bbcode-akronim.289/version/479/"
+    },
+    {
+      "download_count": 100,
+      "files": [
+        {
+          "filename": "[FULL] BBCode - Акроним by Conteo.zip",
+          "id": 5872,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1381,
+          "src_url": "https://torrentpier.com/api/resource-versions/475/download?file=5872"
+        }
+      ],
+      "id": 475,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1709829414,
+      "version_state": "visible",
+      "version_string": "v2.0.0",
+      "view_url": "https://torrentpier.com/resources/bbcode-akronim.289/version/475/"
+    },
+    {
+      "download_count": 82,
+      "files": [
+        {
+          "filename": "[FULL] BBCode - Акроним by Conteo.zip",
+          "id": 5868,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1367,
+          "src_url": "https://torrentpier.com/api/resource-versions/474/download?file=5868"
+        }
+      ],
+      "id": 474,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1709569763,
+      "version_state": "visible",
+      "version_string": "v1.0.1",
+      "view_url": "https://torrentpier.com/resources/bbcode-akronim.289/version/474/"
+    },
+    {
+      "download_count": 95,
+      "files": [
+        {
+          "filename": "[FULL] BBCode - Акроним by Conteo.zip",
+          "id": 5865,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1441,
+          "src_url": "https://torrentpier.com/api/resource-versions/473/download?file=5865"
+        }
+      ],
+      "id": 473,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1709566417,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/bbcode-akronim.289/version/473/"
+    }
+  ],
+  "view_count": 815
+}

@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 60637,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 25926,
+  "last_post_date": 1399240326,
+  "node_id": 3,
+  "post_date": 1399186204,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60637,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<div style=\"text-align: left\"><div data-template-name=\"public:_media_site_embed_youtube\" class=\"bbMediaWrapper\" data-media-site-id=\"youtube\" data-media-key=\"MfqsrKixUVw\">\n\t<div class=\"bbMediaWrapper-inner\">\n\t\t<iframe src=\"https://www.youtube.com/embed/MfqsrKixUVw?wmode=opaque\"\n\t\t\t\tloading=\"lazy\"\n\t\t\t\twidth=\"560\" height=\"315\"\n\t\t\t\tframeborder=\"0\" allowfullscreen=\"true\"></iframe>\n\t</div>\n</div></div> <br />\nРегулярка позволяет вырезать различные релиз группы из титла топика, и ссылки на их трекеры с поста топика, посредством замены на ваш текст или картинку, перед выгрузкой на сайт. Подходит для ручного или автоматического граберов с rutor...Также можете аналогичным образом прописать для граберов с других трекеров.<br />\n <br />\nОткрыть release.php....<br />\n <br />\nНайти в функции по rutor:<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">preg_match_all (&quot;#&lt;h1&gt;([\\s\\S]*?)&lt;/h1&gt;#&quot;, $text, $source, PREG_SET_ORDER);\n                $text = $source[0][1];</pre> <br />\nНиже добавить:<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">$text = preg_replace(&quot;/(FREEISLAND|HQCLUB|HQ-ViDEO|HELLYWOOD|ExKinoRay|NewStudio|LostFilm|RiperAM|Generalfilm|Files-x|NovaLan|Scarabey|New-Team|HD-NET|MediaClub|Baibako)/si&quot;,&quot;UNITAZ&quot;,$text);</pre> <br />\nНайти:<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">$text = preg_replace(&#039;/&lt;div class=&quot;hidewrap&quot;&gt;&lt;div class=&quot;hidehead&quot; onclick=&quot;hideshow.*?&quot;&gt;([\\s\\S]*?)&lt;\\/div&gt;&lt;div class=&quot;hidebody&quot;&gt;&lt;\\/div&gt;&lt;textarea class=&quot;hidearea&quot;&gt;([\\s\\S]*?)&lt;\\/textarea&gt;&lt;\\/div&gt;/&#039;, &quot;[spoiler=\\&quot;\\\\1\\&quot;]\\\\2[/spoiler]&quot;, $text);</pre> <br />\nНиже добавить:<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">//Регулярка пидоров начало\n                $text = str_replace(&#039;&lt;b&gt;HQ-ViDEO&lt;/b&gt;&#039;, &#039;&lt;b&gt;UNITAZ&lt;/b&gt;&#039;, $text);\n                $text = str_replace(&#039;HQCLUB&#039;, &#039;UNITAZ&#039;, $text);\n                $text = str_replace(&#039;FREEISLAND&#039;, &#039;UNITAZ&#039;, $text);\n         \n                $text = preg_replace(&#039;#&lt;a href=&quot;http://hellywood.ru/.*?&lt;/a&gt;#&#039;, &#039;[img]http://unitaz.org.ua/images/unitaz.jpg[/img]&#039;, $text);\n                $text = preg_replace(&#039;#&lt;a href=&quot;http://hq-video.org/.*?&lt;/a&gt;#&#039;, &#039;[img]http://unitaz.org.ua/images/unitaz.jpg[/img]&#039;, $text);\n                $text = preg_replace(&#039;#&lt;a href=&quot;http://hqclub.net/.*?&lt;/a&gt;#&#039;, &#039;[img]http://unitaz.org.ua/images/unitaz.jpg[/img]&#039;, $text);\n                $text = preg_replace(&#039;#&lt;a href=&quot;http://exkinoray.tv.*?&lt;/a&gt;#&#039;, &#039;[img]http://unitaz.org.ua/images/unitaz.jpg[/img]&#039;, $text);\n                $text = preg_replace(&#039;#&lt;img src=&quot;http://riper.am/riperam.gif.*?&gt;#&#039;, &#039;[img]http://unitaz.org.ua/images/unitaz.jpg[/img]&#039;, $text);\n                $text = preg_replace(&#039;#&lt;a href=&quot;http://riper.am/.*?&lt;/a&gt;#&#039;, &#039;[img]http://unitaz.org.ua/images/unitaz.jpg[/img]&#039;, $text);\n                $text = preg_replace(&#039;#&lt;a href=&quot;http://www.generalfilm.ws.*?&lt;/a&gt;#&#039;, &#039;[img]http://unitaz.org.ua/images/unitaz.jpg[/img]&#039;, $text);\n                $text = preg_replace(&#039;#&lt;a href=&quot;http://generalfilm.ws.*?&lt;/a&gt;#&#039;, &#039;[img]http://unitaz.org.ua/images/unitaz.jpg[/img]&#039;, $text);\n                $text = preg_replace(&#039;#&lt;img src=&quot;http://s019.*******.host/i603/1209/87/535dfd778010.gif&quot;.*?&gt;#&#039;, &#039;[img]http://unitaz.org.ua/images/unitaz.jpg[/img]&#039;, $text);\n                $text = preg_replace(&#039;#&amp;amp; &lt;img src=&quot;http://s017.*******.host/i412/1208/f2/bf3e5e3f51c8.gif.*?&gt;#&#039;, &#039; &#039;, $text);\n                $text = preg_replace(&#039;#&lt;img src=&quot;http://2.firepic.org/2/images/2012-03/07/tp2rxwtz8xl3.gif&quot;.*?&gt;#&#039;, &#039;[img]http://unitaz.org.ua/images/unitaz.jpg[/img]&#039;, $text);\n                $text = preg_replace(&#039;#&lt;img src=&quot;http://www.agrmusic.org/.*?&gt;#&#039;, &#039;[img]http://unitaz.org.ua/images/unitaz.jpg[/img]&#039;, $text);\n                $text = preg_replace(&#039;#&lt;a href=&quot;http://tracker.nova-lan.ru/.*?&lt;/a&gt;#&#039;, &#039;[img]http://unitaz.org.ua/images/unitaz.jpg[/img]&#039;, $text);\n                $text = preg_replace(&#039;#&lt;a href=&quot;http://nick-name.ru/.*?&lt;/a&gt;#&#039;, &#039; &#039;, $text);\n                $text = preg_replace(&#039;#&lt;img src=&quot;http://i50.fastpic.ru/big/2013/0803/58/6cd4a3d8ac226de81209cee3369dc458.gif.*?&gt;#&#039;, &#039; &#039;, $text);\n                $text = preg_replace(&#039;#&lt;img src=&quot;http://megarelizer.ru/.*?&gt;#&#039;, &#039;[img]http://unitaz.org.ua/images/unitaz.jpg[/img]&#039;, $text);\n                $text = preg_replace(&#039;#&lt;img src=&quot;http://i.imgur.com/1qnKU.gif.*?&gt;#&#039;, &#039;[img]http://unitaz.org.ua/images/unitaz.jpg[/img]&#039;, $text);\n                $text = preg_replace(&#039;#&lt;img src=&quot;http://www.freeisland.org/.*?&gt;#&#039;, &#039;[img]http://unitaz.org.ua/images/unitaz.jpg[/img]&#039;, $text);\n                $text = preg_replace(&#039;#&lt;a href=&quot;http://scarabey.org/.*?&lt;/a&gt;#&#039;, &#039;[img]http://unitaz.org.ua/images/unitaz.jpg[/img]&#039;, $text);\n                $text = preg_replace(&#039;#&lt;a href=&quot;http://new-team.org.*?&lt;/a&gt;#&#039;, &#039;[img]http://unitaz.org.ua/images/unitaz.jpg[/img]&#039;, $text);\n                $text = preg_replace(&#039;#&lt;img src=&quot;http://i57.fastpic.ru/big/2013/1128/8e/0f1951eab7c36987190091c1d058ae8e.jpg.*?&gt;#&#039;, &#039; &#039;, $text);\n                $text = preg_replace(&#039;#&lt;img src=&quot;http://s019.*******.host/i622/1306/32/980d60bc4416.gif&quot;.*?&lt;/a&gt;#&#039;, &#039;[img]http://unitaz.org.ua/images/unitaz.jpg[/img]&#039;, $text);\n                $text = preg_replace(&#039;#&amp;amp; &lt;a href=&quot;http://www.hd-net.org/.*?&lt;/a&gt;#&#039;, &#039;[img]http://unitaz.org.ua/images/unitaz.jpg[/img]&#039;, $text);\n                $text = preg_replace(&#039;#&lt;a href=&quot;http://mediaclub.tv.*?&lt;/a&gt;#&#039;, &#039;[img]http://unitaz.org.ua/images/unitaz.jpg[/img]&#039;, $text);\n                $text = preg_replace(&#039;#&lt;img src=&quot;http://i056.*******.host/1402/31/35cc79d56ba1.gif.*?&gt;#&#039;, &#039; &#039;, $text);\n                //Регулярка пидоров конец</pre> <br />\nЗаменить все что unitaz на ссылки своих картинок или текст.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1399186204,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60638,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "хахахах релиз от пи**доров?😀😀",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1399192889,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60646,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": ":facepalm:",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1399237835,
+      "user_id": 43,
+      "user_title": "User",
+      "username": "JDVU"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60647,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"DarkMod\">хахахах релиз от пи**доров?😀😀</blockquote> <br />\nпочему-то также прочитал 🙂",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1399240326,
+      "user_id": 41,
+      "user_title": "User",
+      "username": "XLex"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "regularka-ot-pi-ov-v-dopolnenie-k-parseru",
+  "sticky": false,
+  "tags": [],
+  "title": "Регулярка от пи....ов в дополнение к парсеру",
+  "url_path": "/threads/regularka-ot-pi-ov-v-dopolnenie-k-parseru.25926/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1897
+}

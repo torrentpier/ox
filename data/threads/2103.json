@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 25851,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 2103,
+  "last_post_date": 1358600550,
+  "node_id": 57,
+  "post_date": 1358600550,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25851,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<s>Как убрать отображение магнет-ссылки возле размера в любой категории?</s><br />\n<s>----</s><br />\n<s>Место того что бы отображалась магнет-ссылка и картинка возле названия торрента, хочу переместить в право, там же где и иконка скачать торрент, переношу вот так</s><br />\n<s><pre class=\"xfBb-code\" data-lang=\"\">&lt;!-- IF MAGNET_LINKS --&gt;{postrow.attach.tor_reged.MAGNET}&lt;!-- ENDIF --&gt;</pre></s><s>но сама иконка обрезается до 16х16</s><br />\n <br />\n<s>как пофиксить? помогите пожалуйста</s><br />\n <br />\nрешено...",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1358600550,
+      "user_id": 3266,
+      "user_title": "User",
+      "username": "extazys"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "melkie-fiksy-magnet-link",
+  "sticky": false,
+  "tags": [],
+  "title": "мелкие фиксы magnet-link",
+  "url_path": "/threads/melkie-fiksy-magnet-link.2103/",
+  "user_id": 3266,
+  "username": "extazys",
+  "view_count": 1120
+}

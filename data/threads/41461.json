@@ -1,0 +1,140 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 87594,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 41461,
+  "last_post_date": 1463060638,
+  "node_id": 110,
+  "post_date": 1463005636,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1463005058,
+          "file_size": 58588,
+          "filename": "Снимок экрана 2016-05-12 в 1.16.58.webp",
+          "height": 570,
+          "id": 4379,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-ekrana-2016-05-12-v-1-16-58-webp.4379/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4383-09e4a2ece683cc7a8aae19fb0943ac2b.jpg?hash=1fasCsi61f",
+          "width": 1216
+        }
+      ],
+      "id": 87594,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\n<br />\nНовостей о новой версии не было достаточно давно, но ее разработка активно идет. Сегодня хотелось бы поделиться и дать первый взгляд на одно из многих изменений, которые будут в новой версии, а именно показать конкретные примеры кода и дать некоторые объяснения по нашей новой системе кеширования.<br />\n<br />\nНовая система кеширования основана (как и большинство остальных вещей в новой версии движка) не на самодельном велосипеде, а на одной из популярных библиотек - Doctrine Cache. Используя ее, у нас есть возможность реализовать поддержку большего количества систем кеширования, чем это у нас было реализовано ранее (файловый кеш, APC, CacheCache, Couchbase, Memcache, Memcached, Redis, Riak, SQLite3, Void, XCache, ZendData и т.п.). Большое преимущество для разработчиков и тех пользователей, которые пишут моды - универсальность. Какой бы тип кеширования не был указан в конфигурации - использование кеша и его поведение будет всегда одинаковым.<br />\n<br />\nНу а теперь непосредственно к примерам. Для начала, мы подключаем компонент DI (Dependency Injection, который нужен нам для возможности подгрузки переписанных модулей движка) и само кеширование:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">/** @var \\TorrentPier\\Di $di */\n$di = \\TorrentPier\\Di::getInstance();\n\n/** @var \\TorrentPier\\Cache\\Adapter $cache */\n$cache = $di-&gt;cache;</pre>После этого, мы можем использовать сам кеш:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">if (!$cache-&gt;has(&#039;secret&#039;)) {\n  $data = &#039;some data&#039;;\n  $cache-&gt;set(&#039;secret&#039;, $data, 60);\n}\n\n$cached_data = $cache-&gt;get(&#039;secret&#039;);</pre>В данном примере мы проверяем наличие кеша <code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\">secret</code>, в случае если его нет - мы устанавливаем его со временем жизни в 60 секунд, ну а после этого присваиваем переменной значение кеша (попутно получая его). Синтаксис крайне простой и незамысловатый, а в случае использования IDE для написания кода, например PHPstorm от JetBrains, у вас будут еще и подсказки по возможным методам:<br />\n<br />\n<div style=\"text-align: center\"><a href=\"https://torrentpier.com/attachments/4379/\"><img src=\"https://torrentpier.com/data/attachments/4/4383-09e4a2ece683cc7a8aae19fb0943ac2b.jpg?hash=1fasCsi61f\" alt=\"Снимок экрана 2016-05-12 в 1.16.58.webp\" /></a>&#8203;</div><br />\nРазумеется это не все возможности новой системы кеширования. Она еще будет дополняться, например, появится возможность установки значения кеша с использованием callback-функции и т.п., а значит в приведенном синтаксисе возможен ряд изменений. Но некоторое представление об уровне изменений в движке вы можете получить. А кому интересно больше - вот коммит на замену старой системы кеширования на новую, с объемом изменений вы можете ознакомиться самостоятельно: <a href=\"https://github.com/torrentpier/torrentpier/pull/97/files\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Migration to the new cache subsystem by Exile37 · Pull Request #97 · torrentpier/torrentpier · GitHub</a><br />\n<br />\nЖивотрепещущий вопрос большинства - когда же выйдет новая версия? Тогда, когда будет завершен процесс переноса движка на &quot;новые рельсы&quot;. Очень надеемся, что это произойдет в ближайшее время. А пока что интересующиеся могут следить за ходом разработки <a href=\"https://github.com/torrentpier/torrentpier\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">в нашем репозитории на GitHub</a>.<br />\n<br />\nСпасибо за внимание.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1463005636,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87596,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Стоит ли сейчас уже кеш новый ставить на движок ?<br />\nИзменений сильно много , даже по одному кешу .<br />\nДальше еще больше будет . Так вот вопрос :<br />\nСможет ли простой пользователь сам переехать на новую ревизию или же придется обращаться за платными услугами ?<br />\nСам двиг поправить наверное проблем не будет , а вот моды 🙂",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1463025607,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87597,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Moroz\">Стоит ли сейчас уже кеш новый ставить на движок ?<br />\nИзменений сильно много , даже по одному кешу .<br />\nДальше еще больше будет . Так вот вопрос :<br />\nСможет ли простой пользователь сам переехать на новую ревизию или же придется обращаться за платными услугами ?<br />\nСам двиг поправить наверное проблем не будет , а вот моды 🙂</blockquote><br />\nЯ вот недавно решил сделать треккер. Посмотрел форум и решил ожидать выхода новой версии.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1463037813,
+      "user_id": 7181,
+      "user_title": "User",
+      "username": "Johanisce"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87598,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1463041582,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Moroz\">Сможет ли простой пользователь сам переехать на новую ревизию</blockquote>Обратную совместимость постараемся удержать. Но она скорее будет специфической. 😏<br />\n<blockquote class=\"xfBb-quote\" data-name=\"Moroz\">или же придется обращаться за платными услугами ?</blockquote>Таких целей точно никто не ставил. 🙂<br />\n<blockquote class=\"xfBb-quote\" data-name=\"Moroz\">Сам двиг поправить наверное проблем не будет , а вот моды 🙂</blockquote>А вот цель прекратить вносить изменения в код движка для внедрения модов была.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1463041208,
+      "user_id": 5765,
+      "user_title": "User",
+      "username": "Diolektor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87601,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Moroz\">Стоит ли сейчас уже кеш новый ставить на движок ?</blockquote>Нет, ставить отдельно не нужно, да у меня уже и большие сомнения в том что его сейчас реально &quot;поставить&quot;. Время, когда была возможность &quot;выдрать&quot; капчу и поставить на старые версии движка, прошло. Обновление на версию 2.2 как-нибудь предусмотрим, но все модификации к движку в дальнейшем не будут рассчитаны на ручное внесение изменений в файлы движка - это позволит обновлять движок без потери модификаций, простой заменой файлов.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1463060638,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "novosti-razrabotki-novaa-sistema-kesirovania",
+  "sticky": false,
+  "tags": [
+    "doctrine cache",
+    "новая версия",
+    "новости разработки",
+    "превью",
+    "система кеширования"
+  ],
+  "title": "Новости разработки. Новая система кеширования",
+  "url_path": "/threads/novosti-razrabotki-novaa-sistema-kesirovania.41461/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 12820
+}

@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 24420,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1840,
+  "last_post_date": 1432983802,
+  "node_id": 57,
+  "post_date": 1356065867,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24420,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Всем доброго времени суток, скажите пожалуйста, где изменить размер прикрепляемого торрент файла? Чёт в админке не могу найти. Если можно, то по подробнее разжуйте. Заранее благодарен!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1356065867,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24421,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Админка -&gt; Приложения -&gt; Управление",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1356066241,
+      "user_id": 2684,
+      "user_title": "User",
+      "username": "dredd"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24422,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В админке как мне помниться есть графа <b>Контроль Групп Расширений </b>но это еще не все в<b> php.ini </b>тоже нужно выставлять размер.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1356066386,
+      "user_id": 15,
+      "user_title": "User",
+      "username": "phpfox"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24424,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"phpfox\">В админке как мне помниться есть графа <b>Контроль Групп Расширений </b>но это еще не все в<b> php.ini </b>тоже нужно выставлять размер.</blockquote>То что нужно, спасибо большое <b>phpfox</b>!",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1356068457,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84174,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо большое",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1432983802,
+      "user_id": 6239,
+      "user_title": "Blocked",
+      "username": "kazakh"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "razmer-prikreplaemogo-vlozenia",
+  "sticky": false,
+  "tags": [],
+  "title": "Размер прикрепляемого вложения",
+  "url_path": "/threads/razmer-prikreplaemogo-vlozenia.1840/",
+  "user_id": 55,
+  "username": "Lange",
+  "view_count": 2291
+}

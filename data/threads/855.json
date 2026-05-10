@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 10784,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 855,
+  "last_post_date": 1328083458,
+  "node_id": 57,
+  "post_date": 1328079157,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10784,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<span style=\"font-size: 15px\"><span style=\"font-family: 'Times New Roman'\"><span style=\"color: #000000\">Fatal error: DB Error [includes/datastore/build_ranks.php(8)] in /home/gamer/toltor/includes/db/mysql.php on line 803</span></span></span><br />\n<span style=\"font-size: 15px\"><span style=\"font-family: 'Times New Roman'\"><span style=\"color: #000000\">помогите исправить эту ошибку, причём если закоментить строку в includes/datastore/build_ranks:</span></span></span><br />\nforeach (DB()-&gt;fetch_rowset($sql) as $row)<br />\nто ошибка пропадает, на трекер нормально заходит<br />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1328079157,
+      "user_id": 618,
+      "user_title": "User",
+      "username": "neomaster"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10785,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Надо раскинуть карты, посмотреть, что они нам расскажут, логи sql!",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1328083458,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "osibka-fatal-error-db-error-includes-datastore-build_ranks-php-8",
+  "sticky": false,
+  "tags": [],
+  "title": "ошибка Fatal error: DB Error [includes/datastore/build_ranks.php(8)]",
+  "url_path": "/threads/osibka-fatal-error-db-error-includes-datastore-build_ranks-php-8.855/",
+  "user_id": 618,
+  "username": "neomaster",
+  "view_count": 1410
+}

@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 75117,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 35434,
+  "last_post_date": 1439249189,
+  "node_id": 57,
+  "post_date": 1423688491,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 75117,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Не могу найти как добавить новости на главной.....где и как обьясните нубу)))?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1423688491,
+      "user_id": 5981,
+      "user_title": "User",
+      "username": "serega"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 75118,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "новости на главной выводятся из определенных форумов. из каких форумов выводить указывается в админке =&gt; модификации",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1423688941,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84667,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "А как можно изменить новости сети на другое?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1439246109,
+      "user_id": 6346,
+      "user_title": "User",
+      "username": "redzhet"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84668,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/6346/\">@redzhet</a> в языковом файле поправьте локализацию и все.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1439247622,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84669,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Благодарю",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1439249189,
+      "user_id": 6346,
+      "user_title": "User",
+      "username": "redzhet"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "kak-razmestit-novosti-novosti-sajta-novosti-seti",
+  "sticky": false,
+  "tags": [],
+  "title": "Как разместить новости (новости сайта / новости сети)",
+  "url_path": "/threads/kak-razmestit-novosti-novosti-sajta-novosti-seti.35434/",
+  "user_id": 5981,
+  "username": "serega",
+  "view_count": 1172
+}

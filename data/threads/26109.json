@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61991,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 26109,
+  "last_post_date": 1408566113,
+  "node_id": 111,
+  "post_date": 1408564509,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61991,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Ссылка:</b><br />\nhttps://github.com/torrentpier/torrentpier/commit/4090f9f9c312be3a01010fa060c94317ef554e8e<br />\n <br />\n<b>Описание:</b><br />\n <br />\nОсновные изменения в данной ревизии:<br />\n <br />\n- добавлен опциональный атрибут nofollow для внешних ссылок, размещаемых в сообщениях;<br />\n- добавлена поддержка добавления ретрекера в скачиваемые торренты (отключаемая глобально и непосредственно пользователем);<br />\n- добавлена генерация magnet-ссылок для DC++ хабов, в просмотре содержимого торрента;<br />\n <br />\n- переделано выделение форумов при их поиске в карте форума;<br />\n- переделан принцип генерации карты сайта (порядок тем);<br />\n- переделан принцип сортировки смайликов;<br />\n <br />\n- исправлена ошибка с отрицательными размерами файлов, в просмотре содержимого торрента;<br />\n- исправлена ошибка с несоответствием поля lastmod стандарту у карты сайта;<br />\n- исправлена ошибка в запросе подписки на тему;<br />\n- исправлено форматирование картинки bb-кодом по центру;<br />\n- исправление ошибки в украинской локализации (число скачиваний);<br />\n <br />\n- удалены заготовки для чата (чат будет добавлен после стабильной, 600 ревизии);<br />\n- удален несоответствующий базовому набору смайлик.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1408564509,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61999,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Немного оффтопа - еще у нас свой твиттер появился <a href=\"https://twitter.com/tp2team\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://twitter.com/tp2team</a> - пока что в нем дублирование некоторых важных новостей с форума, позднее может что-то более интересное с ним придумаем. Подписывайтесь.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1408566113,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "r596-dobavlen-atribut-nofollow-dla-vnesnih-ssylok-dobavlena-podderzka-dobavlenia-retrekera",
+  "sticky": false,
+  "tags": [],
+  "title": "R596: Добавлен атрибут nofollow для внешних ссылок; добавлена поддержка добавления ретрекера...",
+  "url_path": "/threads/r596-dobavlen-atribut-nofollow-dla-vnesnih-ssylok-dobavlena-podderzka-dobavlenia-retrekera.26109/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 2168
+}

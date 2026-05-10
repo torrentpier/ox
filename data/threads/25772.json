@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 59031,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25772,
+  "last_post_date": 1392367317,
+  "node_id": 57,
+  "post_date": 1392259602,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59031,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "как поправить формат дня раждения date? ставил так &#039;d F Y&#039;<br />\nвыгладит вот так <b>29 March 1988</b><br />\n<pre class=\"xfBb-code\" data-lang=\"\">    &#039;BIRTHDAY&#039;             =&gt; ($bb_cfg[&#039;birthday_enabled&#039;] &amp;&amp; $profiledata[&#039;user_birthday&#039;] != &#039;0000-00-00&#039;) ? date(&#039;Y-m-d&#039;, strtotime($profiledata[&#039;user_birthday&#039;])) : &#039;&#039;,</pre> <br />\nможет правильнее будет сделать по старому? чтобы использовать функцию bb_date",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1392259602,
+      "user_id": 4866,
+      "user_title": "User",
+      "username": "Bender"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59044,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Функция bb_date поддерживает указание предпочтительного формата для вывода даты. <pre class=\"xfBb-code\" data-lang=\"php\">function bb_date ($gmepoch, $format = false, $tz = null)</pre>То есть, для указанного вами &#039;d F Y&#039;, надо сделать так:<pre class=\"xfBb-code\" data-lang=\"php\">bb_date($profiledata[&#039;user_birthday&#039;], &#039;d F Y&#039;)</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1392286078,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59063,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "в общем получилась токая строка<br />\n($bb_cfg[&#039;birthday_enabled&#039;] &amp;&amp; $profiledata[&#039;user_birthday&#039;] != &#039;0000-00-00&#039;) ?  bb_date($profiledata[&#039;user_birthday&#039;], &#039;d F Y&#039;) : &#039;&#039;,<br />\n <br />\nвыводит <b>01 Январь 1970</b>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1392351742,
+      "user_id": 4866,
+      "user_title": "User",
+      "username": "Bender"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59066,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Так попробуй. Заменить на это.<br />\ndate( &quot;d F Y&quot;, $profiledata[&#039;user_birthday&#039;] )",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1392367317,
+      "user_id": 2789,
+      "user_title": "User",
+      "username": "Sprinx"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "kak-popravit-format-dna-rozdenia-date",
+  "sticky": false,
+  "tags": [],
+  "title": "Как поправить формат дня рождения date",
+  "url_path": "/threads/kak-popravit-format-dna-rozdenia-date.25772/",
+  "user_id": 4866,
+  "username": "Bender",
+  "view_count": 1218
+}

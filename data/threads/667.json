@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 8596,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 47,
+        "title": "Modifications for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 43,
+    "title": "Modifications for TorrentPier (archive)"
+  },
+  "id": 667,
+  "last_post_date": 1326661545,
+  "node_id": 43,
+  "post_date": 1325676691,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 8596,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "################################################## ############<br />\n## <b>MOD Title</b>: IP in topic<br />\n## <b>MOD Author</b>: R@ &lt; <a href=\"mailto:meos@mail.ru\">meos@mail.ru</a> &gt; (Kirill) <a href=\"http://osdev.ru\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://osdev.ru</a><br />\n## <b>MOD Author adaptation for TP II</b>: RomM1 -&gt; <a href=\"http://torrentpier.com\" class=\"link link--internal\">http://torrentpier.com</a><br />\n## <b>MOD Description</b>: Мод позволяет выводить IP под аватаркой (информация об IP через ip-whois.net). Видят модераторы и админы.<br />\n## <b>MOD Version</b>: 1.0.0<br />\n##################################################<br />\n<br />\nОткрываем <b>viewtopic.php</b> и ищем<br />\n<pre class=\"xfBb-code\" data-lang=\"\">$poster_from = ( $postrow[$i][&#039;user_from&#039;] &amp;&amp; $postrow[$i][&#039;user_id&#039;] != ANONYMOUS ) ? $postrow[$i][&#039;user_from&#039;] : &#039;&#039;;</pre>после вставляем<br />\n<pre class=\"xfBb-code\" data-lang=\"\">$poster_ip = ( $is_auth[&#039;auth_mod&#039;] ) ? decode_ip($postrow[$i][&#039;poster_ip&#039;]) : &#039;&#039;;</pre>ищем<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&#039;POSTER_FROM&#039;        =&gt; ($bb_cfg[&#039;show_poster_from&#039;]) ? wbr($poster_from) : &#039;&#039;,</pre>после вставляем<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&#039;POSTER_IP_URL&#039; =&gt; $bb_cfg[&#039;whois_info&#039;] . $poster_ip,\n&#039;POSTER_IP&#039; =&gt; $poster_ip,</pre><br />\nОткрываем <b>templates/default/viewtopic.tpl</b> и ищем<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;!-- IF postrow.POSTER_AVATAR --&gt;&lt;p class=&quot;avatar&quot;&gt;{postrow.POSTER_AVATAR}&lt;/p&gt;&lt;!-- ENDIF --&gt;</pre>после вставляем<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;!-- IF IS_AM --&gt;IP: &lt;a href=&quot;{postrow.POSTER_IP_URL}&quot; target=_blank&gt;{postrow.POSTER_IP}&lt;/a&gt;&lt;!-- ENDIF --&gt;</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1325676691,
+      "user_id": 21,
+      "user_title": "User",
+      "username": "RomM1"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9642,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>RomM1</b>, угу, палите-палите IP админов модераторам. И прочим юзерам, у которых неожиданно окажутся права модерирования.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1326661545,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "vyvod-ip-pod-avatarkoj",
+  "sticky": false,
+  "tags": [],
+  "title": "Вывод IP под аватаркой",
+  "url_path": "/threads/vyvod-ip-pod-avatarkoj.667/",
+  "user_id": 21,
+  "username": "RomM1",
+  "view_count": 1686
+}

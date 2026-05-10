@@ -1,0 +1,112 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 72600,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 50,
+    "title": "Graphics and styles for TorrentPier"
+  },
+  "id": 33545,
+  "last_post_date": 1421791463,
+  "node_id": 50,
+  "post_date": 1421713907,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1421713883,
+          "file_size": 12874,
+          "filename": "432543456.webp",
+          "height": 242,
+          "id": 2888,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/432543456-webp.2888/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2892-51c98cd11dc116a368284cbd1e968a56.jpg?hash=lG_3KYQzKe",
+          "width": 264
+        }
+      ],
+      "id": 72600,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "page_header.tpl<br />\nНайти<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;?php include($V[&#039;HTML_SIDEBAR_1&#039;]); ?&gt;</pre>Вставить перед<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;div id=&quot;stat&quot; class=&quot;med&quot;&gt;\n                &lt;h3&gt;Статистика раздач&lt;/h3&gt;\n                        &lt;p&gt;{TORRENTS_STAT_R}&lt;/p&gt;\n                        &lt;p&gt;{TORRENTS_STAT_S}&lt;/p&gt;\n                        &lt;p&gt;{PEERS_STAT_P}&lt;/p&gt;\n                        &lt;p&gt;{PEERS_STAT_S}&lt;/p&gt;\n                        &lt;p&gt;{PEERS_STAT_L}&lt;/p&gt;\n                        &lt;p&gt;{SPEED_STAT}&lt;/p&gt;\n&lt;/div&gt;\n\n&lt;div id=&quot;stat&quot; class=&quot;med&quot;&gt;\n                &lt;h3&gt;Статистика форума&lt;/h3&gt;\n                        &lt;p&gt;{TOTAL_TOPICS_T}&lt;/p&gt;\n                        &lt;p&gt;{TOTAL_POSTS_T}&lt;/p&gt;\n                        &lt;p&gt;{TOTAL_USERS_T}&lt;/p&gt;\n                        &lt;p&gt;{NEWEST_USER_T}&lt;/p&gt;\n                        &lt;p&gt;{RECORD_USERS_T}&lt;/p&gt;\n&lt;/div&gt;</pre>index.php<br />\nНайти<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&#039;SHOW_LAST_TOPIC&#039;       =&gt; $show_last_topic,</pre>Вставить после<br />\n<pre class=\"xfBb-code\" data-lang=\"\">    // Статистика в сайдбаре\n    &#039;TORRENTS_STAT_R&#039;         =&gt; ($bb_cfg[&#039;tor_stats&#039;]) ? sprintf($lang[&#039;TORRENTS_STAT_R&#039;], $stats[&#039;torrentcount&#039;]) : &#039;&#039;,\n    &#039;TORRENTS_STAT_S&#039;         =&gt; ($bb_cfg[&#039;tor_stats&#039;]) ? sprintf($lang[&#039;TORRENTS_STAT_S&#039;], humn_size($stats[&#039;size&#039;])) : &#039;&#039;,\n    &#039;PEERS_STAT_P&#039;            =&gt; ($bb_cfg[&#039;tor_stats&#039;]) ? sprintf($lang[&#039;PEERS_STAT_P&#039;], $stats[&#039;peers&#039;]) : &#039;&#039;,\n    &#039;PEERS_STAT_S&#039;            =&gt; ($bb_cfg[&#039;tor_stats&#039;]) ? sprintf($lang[&#039;PEERS_STAT_S&#039;], $stats[&#039;seeders&#039;]) : &#039;&#039;,\n    &#039;PEERS_STAT_L&#039;            =&gt; ($bb_cfg[&#039;tor_stats&#039;]) ? sprintf($lang[&#039;PEERS_STAT_L&#039;], $stats[&#039;leechers&#039;]) : &#039;&#039;,\n\n    &#039;TOTAL_TOPICS_T&#039;          =&gt; sprintf($lang[&#039;POSTED_TOPICS_TOTAL_T&#039;], $stats[&#039;topiccount&#039;]),\n    &#039;TOTAL_POSTS_T&#039;           =&gt; sprintf($lang[&#039;POSTED_ARTICLES_TOTAL_T&#039;], $stats[&#039;postcount&#039;]),\n    &#039;TOTAL_USERS_T&#039;           =&gt; sprintf($lang[&#039;REGISTERED_USERS_TOTAL_T&#039;], $stats[&#039;usercount&#039;]),\n    &#039;NEWEST_USER_T&#039;           =&gt; sprintf($lang[&#039;NEWEST_USER_T&#039;], profile_url($stats[&#039;newestuser&#039;])),\n    &#039;RECORD_USERS_T&#039;           =&gt; sprintf($lang[&#039;RECORD_ONLINE_USERS_T&#039;], $bb_cfg[&#039;record_online_users&#039;]),</pre>main.php<br />\nВставить в конец<br />\n<pre class=\"xfBb-code\" data-lang=\"\">// Статистика в сайдбаре\n$lang[&#039;TORRENTS_STAT_R&#039;] = &#039;Раздач: &lt;b style=&quot;color: blue;&quot;&gt;%s&lt;/b&gt;&#039;;\n$lang[&#039;TORRENTS_STAT_S&#039;] = &#039;Общий размер: &lt;b&gt;%s&lt;/b&gt;&#039;;\n$lang[&#039;PEERS_STAT_P&#039;] = &#039;Пиров: &lt;b&gt;%s&lt;/b&gt;&#039;;\n$lang[&#039;PEERS_STAT_S&#039;] = &#039;Сидов: &lt;b class=&quot;seedmed&quot;&gt;%s&lt;/b&gt;&#039;;\n$lang[&#039;PEERS_STAT_L&#039;] = &#039;Личеров: &lt;b class=&quot;leechmed&quot;&gt;%s&lt;/b&gt;&#039;;\n\n$lang[&#039;POSTED_TOPICS_TOTAL_T&#039;] = &#039;Тем: &lt;b&gt;%s&lt;/b&gt;&#039;;\n$lang[&#039;POSTED_ARTICLES_TOTAL_T&#039;] = &#039;Сообщений: &lt;b&gt;%s&lt;/b&gt;&#039;;\n$lang[&#039;REGISTERED_USERS_TOTAL_T&#039;] = &#039;Всего пользователей: &lt;b&gt;%s&lt;/b&gt;&#039;;\n$lang[&#039;NEWEST_USER_T&#039;] = &#039;Новый пользователь: &lt;b&gt;%s&lt;/b&gt;&#039;;\n$lang[&#039;RECORD_ONLINE_USERS_T&#039;] = &#039;Рекорд посетителей онлайн: &lt;b&gt;%s&lt;/b&gt;&#039;;</pre>main.css<br />\nВставить в конец<br />\n<pre class=\"xfBb-code\" data-lang=\"\">/*Статистика в сайдбаре*/\n#stat  { position: relative; border: 1px solid #d1d1d1; margin: 5px 1px; padding: 10px; border-radius: 6px; box-shadow:0px 0px 6px #c0c0c0; overflow: hidden; }\n/*Статистика в сайдбаре*/</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1421713907,
+      "user_id": 5452,
+      "user_title": "User",
+      "username": "Ress Kent"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 72676,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5452/\">@Ress Kent</a> снизу только удалить после этого не забыть.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1421766987,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1421791449,
+          "file_size": 11916,
+          "filename": "1.webp",
+          "height": 343,
+          "id": 2897,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1-webp.2897/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2901-ad9510bc7c9187fe996285f28b81af4d.jpg?hash=lSoj3pOOxJ",
+          "width": 227
+        }
+      ],
+      "id": 72715,
+      "is_admin": false,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Вот как то так)<br />\n<br />\n<a href=\"https://torrentpier.com/attachments/2897/\"><img src=\"https://torrentpier.com/data/attachments/2/2901-ad9510bc7c9187fe996285f28b81af4d.jpg?hash=lSoj3pOOxJ\" alt=\"1.webp\" /></a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1421791463,
+      "user_id": 1546,
+      "user_title": "Administrator",
+      "username": "Conteo"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "statistika-v-sajdbare",
+  "sticky": false,
+  "tags": [],
+  "title": "Статистика в сайдбаре",
+  "url_path": "/threads/statistika-v-sajdbare.33545/",
+  "user_id": 5452,
+  "username": "Ress Kent",
+  "view_count": 1976
+}

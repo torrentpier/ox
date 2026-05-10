@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 15605,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 52,
+    "title": "Bug tracker archive"
+  },
+  "id": 1254,
+  "last_post_date": 1334749466,
+  "node_id": 52,
+  "post_date": 1334746037,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15605,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Установил трекер и вылазит вот это not json_encode",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1334746037,
+      "user_id": 128,
+      "user_title": "User",
+      "username": "vulkan3"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15609,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>vulkan3</b>, <a href=\"http://torrentpier.com/threads/Люди-помогите-установить-двигатель.280/\" class=\"link link--internal\">http://torrentpier.com/threads/Люди-помогите-установить-двигатель.280/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1334749466,
+      "user_id": 30,
+      "user_title": "User",
+      "username": "krumax"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "not-json_encode",
+  "sticky": false,
+  "tags": [],
+  "title": "not json_encode",
+  "url_path": "/threads/not-json_encode.1254/",
+  "user_id": 128,
+  "username": "vulkan3",
+  "view_count": 2177
+}

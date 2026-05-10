@@ -1,0 +1,105 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 88203,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 41508,
+  "last_post_date": 1471377193,
+  "node_id": 90,
+  "post_date": 1471000535,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88203,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Вопрос не по torrentpier!<br />\n---<br />\nВсем привет. Есть сервак с debian на бору и панелькой веста. Веста сама всё установила и настроило. Всё работает. Сборка nginx + phpfpm. Собственно вопрос заключается в том, что нужно поднять облако owncloud, установил, но при заходе на главную страницу пишет 404, хотя установка автоматическая, нужно только зайти на сайт и вбить все необходимые данные. В чём может быть проблема и как это исправить?<br />\n---<br />\nНаписал сюда, т.к. считаю, что более адекватное комьюнити здесь сидит.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1471000535,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88204,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "адрес_сайта/owncloud/ должно помочь, хотя есть вероятность что owncloud не туда прописал конфиг",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1471006815,
+      "user_id": 4,
+      "user_title": "User",
+      "username": "diden05"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88205,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"diden05\">адрес_сайта/owncloud/ должно помочь, хотя есть вероятность что owncloud не туда прописал конфиг</blockquote>Я всегда в корень устанавливал. Всегда работало, в этот раз чёт не получилось у него🙁",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1471061546,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88227,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/55/\">Lange</a>, а в логах сервера /var/logs/nginx что-нибудь вменяемое найти удается?",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1471377193,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "nginx-php-fpm",
+  "sticky": false,
+  "tags": [
+    "debian",
+    "nginx",
+    "php",
+    "vesta",
+    "веста",
+    "линукс"
+  ],
+  "title": "nginx php-fpm",
+  "url_path": "/threads/nginx-php-fpm.41508/",
+  "user_id": 55,
+  "username": "Lange",
+  "view_count": 1764
+}

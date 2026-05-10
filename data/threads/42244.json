@@ -1,0 +1,90 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95832,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 109,
+    "title": "LTS version archive"
+  },
+  "id": 42244,
+  "last_post_date": 1708943154,
+  "node_id": 109,
+  "post_date": 1708943154,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1708943179,
+          "file_size": 12342,
+          "filename": "LTS.webp",
+          "height": 100,
+          "id": 5849,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/lts-webp.5849/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5853-833c6d5c69163ad819911ac32e7a993a.jpg?hash=8VrPBjbU8j",
+          "width": 300
+        },
+        {
+          "attach_date": 1708943394,
+          "file_size": 4923303,
+          "filename": "torrentpier-lts-2.1.5-2024.03.zip",
+          "height": 0,
+          "id": 5851,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/torrentpier-lts-2-1-5-2024-03-zip.5851/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 95832,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier LTS. Версия 2.1.5-2024.03 [Final v3]</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/5849/\" alt=\"LTS.png\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier-lts/releases/tag/v2.1.5-2024.03\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.1.5-2024.03 [Final v3] · torrentpier/torrentpier-lts</a><br />\n<br />\n<b>Основные изменения:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Release v2.1.5-2024.03 🎉</li>\n<li data-xf-list-type=\"ul\">Used new SSL check method</li>\n<li data-xf-list-type=\"ul\">Fixed issue with poll_users cleaning at every cron job startup</li>\n<li data-xf-list-type=\"ul\">Fixed PM quick reply issue</li>\n<li data-xf-list-type=\"ul\">Fixed negative integer seed bonus accrual</li>\n<li data-xf-list-type=\"ul\">Fixed broken user dl status</li>\n<li data-xf-list-type=\"ul\">Fixed download counter for torrent files</li>\n<li data-xf-list-type=\"ul\">Fixed admin_terms.php textarea reset in preview mode</li>\n<li data-xf-list-type=\"ul\">Hide feed button if feed file doesn&#039;t exist</li>\n<li data-xf-list-type=\"ul\">Some enhancements for topic_tpl</li>\n<li data-xf-list-type=\"ul\">Don&#039;t update download counter if attachment not exists</li>\n<li data-xf-list-type=\"ul\">Added support for rutracker font BBCode tag</li>\n<li data-xf-list-type=\"ul\">Added ability to view &quot;Watching topics&quot; of other people&#039;s (For admins only)</li>\n<li data-xf-list-type=\"ul\">Included all security patch up to 24.01.24</li>\n<li data-xf-list-type=\"ul\">Some other changes / improvements</li>\n<li data-xf-list-type=\"ul\">Updated translations</li>\n</ul>Для обновления на версию не нужно выполнять дополнительные запросы к базе данных.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1708943154,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-lts-versia-2-1-5-2024-03-final-v3",
+  "sticky": false,
+  "tags": [
+    "lts",
+    "torrentpier-lts",
+    "новая версия",
+    "релиз",
+    "ченжлог"
+  ],
+  "title": "TorrentPier LTS. Версия 2.1.5-2024.03 [Final v3]",
+  "url_path": "/threads/torrentpier-lts-versia-2-1-5-2024-03-final-v3.42244/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 858
+}

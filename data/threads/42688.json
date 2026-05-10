@@ -1,0 +1,75 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 97611,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 42688,
+  "last_post_date": 1752580549,
+  "node_id": 111,
+  "post_date": 1752580549,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1752580548,
+          "file_size": 6648,
+          "filename": "logos-hexagon-green&blue@0,5x.webp",
+          "height": 343,
+          "id": 6489,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/logos-hexagon-green-blue-0-5x-webp.6489/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6493-921e5090a4f5bf87db249c0cb261be23.jpg?hash=jFIp-r3dyo",
+          "width": 302
+        }
+      ],
+      "id": 97611,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier Cattle. Версия 2.4.10</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/6489/\" alt=\"logos-hexagon-green&amp;blue@0,5x.webp\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/releases/tag/v2.4.10\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.4.10 · torrentpier/torrentpier</a><br />\n<br />\n<b>Чейнджлог:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/compare/v2.4.9...v2.4.10\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Comparing v2.4.9...v2.4.10 · torrentpier/torrentpier</a><br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-rocket-features\"></a>🚀 Features&#8203;<a class=\"hoverLink\" href=\"#-rocket-features\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(lang)</i> Added RTL languages support (<a href=\"https://github.com/torrentpier/torrentpier/pull/2031\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2031</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/9024640d59428cc164fc6b10246ee40e333ec8e9\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">9024640</a>)</li>\n<li data-xf-list-type=\"ul\">Restore some deprecated code for backward compatibility (<a href=\"https://github.com/torrentpier/torrentpier/pull/2028\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2028</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/695864ef6995a3c7b16ade822036c23908fc3aaf\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">695864e</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-reverse-button-revert\"></a>◀️ Revert&#8203;<a class=\"hoverLink\" href=\"#-reverse-button-revert\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\">&quot;refactor: Moved Select class into Legacy\\Common (<a href=\"https://github.com/torrentpier/torrentpier/pull/1846\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1846</a>)&quot; - (<a href=\"https://github.com/torrentpier/torrentpier/commit/e6976721dc2f6cde6a09b6a55e2f37e5f43f5932\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">e697672</a>)</li>\n</ul>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1752580549,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-cattle-versia-2-4-10",
+  "sticky": false,
+  "tags": [
+    "cattle",
+    "новая версия",
+    "релиз",
+    "ченжлог"
+  ],
+  "title": "TorrentPier Cattle. Версия 2.4.10",
+  "url_path": "/threads/torrentpier-cattle-versia-2-4-10.42688/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 621
+}

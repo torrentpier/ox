@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 87351,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41444,
+  "last_post_date": 1459410505,
+  "node_id": 57,
+  "post_date": 1459392265,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87351,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Когда можно будет работать демо версия ? хочу посмотреть что и как там у вас, сколько стоить ваш движок ? сделайте у вас на сайте чат, чтобы темы не штамповать.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1459392265,
+      "user_id": 7142,
+      "user_title": "User",
+      "username": "1vanoff"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87352,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Вроде написано, как будет рабочая версия 2.2, тогда и включат, движок бесплатный",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1459399346,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87353,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1459410587,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"1vanoff\">Когда можно будет работать демо версия ?</blockquote>С окончанием рефакторинга крайней версии движка.<br />\n<blockquote class=\"xfBb-quote\" data-name=\"1vanoff\">хочу посмотреть что и как там у вас</blockquote>Ведется активная разработка и рефакторинг большой части движка. Следить <a href=\"https://github.com/torrentpier/torrentpier\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">тут</a>. Скоро появится интеграция с vagrant для быстрого развертывания на локальном компьютере.<br />\n<blockquote class=\"xfBb-quote\" data-name=\"1vanoff\">сколько стоить ваш движок ?</blockquote>Движок под распространяется под лицензий <a href=\"https://github.com/torrentpier/torrentpier/blob/develop/LICENSE\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">GNU GPL 3</a>. Коммерческой версии нет. Оказать пассивную помощь <a href=\"https://torrentpier.com/donate/\" class=\"link link--internal\">тут</a>. Оказать активную помощь <a href=\"https://github.com/torrentpier/torrentpier/issues\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">тут</a>, с вопросами <a href=\"https://gitter.im/torrentpier/torrentpier\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">сюда</a>.<br />\n<blockquote class=\"xfBb-quote\" data-name=\"1vanoff\">сделайте у вас на сайте чат, чтобы темы не штамповать.</blockquote>Смысл от чата? Вы все равно будете штамповать вопросы, так хоть ответы будут в одном месте.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1459410505,
+      "user_id": 5765,
+      "user_title": "User",
+      "username": "Diolektor"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "demo-versia",
+  "sticky": false,
+  "tags": [],
+  "title": "Демо версия",
+  "url_path": "/threads/demo-versia.41444/",
+  "user_id": 7142,
+  "username": "1vanoff",
+  "view_count": 1054
+}

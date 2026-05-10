@@ -1,0 +1,152 @@
+{
+  "category": {
+    "description": "Section with all templates for TorrentPier.",
+    "id": 5,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Templates",
+    "view_url": "https://torrentpier.com/resources/categories/templates.5/"
+  },
+  "current_files": [
+    {
+      "filename": "r600.zip",
+      "id": 3644,
+      "local_path": null,
+      "r2_key": null,
+      "size": 355464,
+      "src_url": "https://torrentpier.com/api/resource-versions/293/download?file=3644"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "adapt",
+    "installation": "[SPOILER=\"Инструкция\"]Загрузить файлы на сервер.[/SPOILER]",
+    "owner": "ChihPyh",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1369073119,
+      "file_size": 175892,
+      "filename": "9d8f4ab9a576074211c554362b77b742.webp",
+      "height": 1888,
+      "id": 1971,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/9d8f4ab9a576074211c554362b77b742-webp.1971/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/1/1976-0b9dde43a23aecb834fb8ad99ee719ad.jpg?hash=A4VQldzsVt",
+      "width": 1264
+    },
+    {
+      "attach_date": 1369073120,
+      "file_size": 152872,
+      "filename": "1171b2498865bd73b0d6250ea6b19685.webp",
+      "height": 1158,
+      "id": 1972,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/1171b2498865bd73b0d6250ea6b19685-webp.1972/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/1/1977-caad5c4410edb24e41ace46eaa30e9cd.jpg?hash=y9Clb35kSX",
+      "width": 1264
+    },
+    {
+      "attach_date": 1369073121,
+      "file_size": 255490,
+      "filename": "00726677b2e7ad84bfb2e8d3b0e95184.webp",
+      "height": 1699,
+      "id": 1973,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/00726677b2e7ad84bfb2e8d3b0e95184-webp.1973/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/1/1978-2827be74cd26b9721b6a95ce5b6ce4c4.jpg?hash=8n2R7epXsR",
+      "width": 1264
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> шаблон, простой в шоколадных оттенках.",
+  "download_count": 574,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/6.jpg?1429570410",
+  "id": 6,
+  "is_fileless": null,
+  "last_update": 1429570481,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1369073141,
+  "resource_state": "visible",
+  "slug": "sablon-sokolad",
+  "tag_line": "Шаблон, простой в шоколадных оттенках.",
+  "tags": [],
+  "title": "Шаблон «Шоколад»",
+  "url_path": "/resources/sablon-sokolad.6/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.2.0",
+  "versions": [
+    {
+      "download_count": 367,
+      "files": [
+        {
+          "filename": "r600.zip",
+          "id": 3644,
+          "local_path": null,
+          "r2_key": null,
+          "size": 355464,
+          "src_url": "https://torrentpier.com/api/resource-versions/293/download?file=3644"
+        }
+      ],
+      "id": 293,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1429570481,
+      "version_state": "visible",
+      "version_string": "1.2.0",
+      "view_url": "https://torrentpier.com/resources/sablon-sokolad.6/version/293/"
+    },
+    {
+      "download_count": 90,
+      "files": [
+        {
+          "filename": "tp2.R327.zip",
+          "id": 3643,
+          "local_path": null,
+          "r2_key": null,
+          "size": 116227,
+          "src_url": "https://torrentpier.com/api/resource-versions/292/download?file=3643"
+        }
+      ],
+      "id": 292,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1429570436,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/sablon-sokolad.6/version/292/"
+    },
+    {
+      "download_count": 125,
+      "files": [
+        {
+          "filename": "tp2.R327.rar",
+          "id": 1970,
+          "local_path": null,
+          "r2_key": null,
+          "size": 112314,
+          "src_url": "https://torrentpier.com/api/resource-versions/6/download?file=1970"
+        }
+      ],
+      "id": 6,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1369073141,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/sablon-sokolad.6/version/6/"
+    }
+  ],
+  "view_count": 616
+}

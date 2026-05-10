@@ -1,0 +1,105 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 93550,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41963,
+  "last_post_date": 1545816630,
+  "node_id": 57,
+  "post_date": 1536110802,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93550,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Перестал работать поиск по году. Когда просто вводишь название - поиск находит. Если к названию приписать год выпуска фильма - не находится ничего. Подскажите. какие файлы сверять с оригинальными. чтобы найти ошибку. <br />\nВерсия <b>2.1 (STABLE) [R600]</b><br />\n  <br />\nСпасибо.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1536110802,
+      "user_id": 2634,
+      "user_title": "User",
+      "username": "sasha20072007"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93553,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "вам нужно sphinx установить.<br />\n<br />\n<a href=\"https://torrentpier.com/threads/video-faq-ustanovka-sphinx-i-ego-nastrojka-dlja-torrentpier.10800/\" class=\"link link--internal\">Видео FAQ -  Установка Sphinx и его настройка для TorrentPier</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1536173076,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93567,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Раньше же как-то до этого работал поиск по году",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1536285597,
+      "user_id": 2634,
+      "user_title": "User",
+      "username": "sasha20072007"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93925,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Год полностью? Знаю что mysl меньше 4 символов не ищет",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1545816630,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "poisk-po-godu",
+  "sticky": false,
+  "tags": [],
+  "title": "Поиск по году",
+  "url_path": "/threads/poisk-po-godu.41963/",
+  "user_id": 2634,
+  "username": "sasha20072007",
+  "view_count": 2371
+}

@@ -1,0 +1,151 @@
+{
+  "custom_fields": {
+    "torrentpier": "2301"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 93665,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42019,
+  "last_post_date": 1544537357,
+  "node_id": 57,
+  "post_date": 1537715241,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93665,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Версия 2.3.0.1",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1537715241,
+      "user_id": 8600,
+      "user_title": "User",
+      "username": "Sergeiermur1"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93683,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "а админке",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1537808550,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1544519855,
+          "file_size": 105842,
+          "filename": "Screenshot_20181211-111511.webp",
+          "height": 1080,
+          "id": 5229,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot_20181211-111511-webp.5229/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5233-d5f01b0dd9d30f54a8c7a58e0d27db70.jpg?hash=W3tz0GPOVJ",
+          "width": 1920
+        }
+      ],
+      "id": 93837,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">а админке</blockquote>За ответ конечно спасибо, но не подскажите в каком именно пункте меню? Ибо по видео инструкции опция должна быть здесь:<div>Spoiler content hidden.</div>Но её почему-то нет.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1544520021,
+      "user_id": 8750,
+      "user_title": "User",
+      "username": "lufton"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1544536783,
+          "file_size": 11048,
+          "filename": "123.webp",
+          "height": 289,
+          "id": 5230,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/123-webp.5230/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5234-bc4836af7fa221d3a4046fd79a1b8442.jpg?hash=n_VdrhQKfX",
+          "width": 765
+        }
+      ],
+      "id": 93840,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"lufton\">За ответ конечно спасибо, но не подскажите в каком именно пункте меню? Ибо по видео инструкции опция должна быть здесь:<div>Spoiler content hidden.</div>Но её почему-то нет.</blockquote>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1544536812,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93841,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо большое. Прошу прощения за нубский вопрос. Первый раз работаю с TP.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1544537357,
+      "user_id": 8750,
+      "user_title": "User",
+      "username": "lufton"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "kak-vklucit-konstruktor-sablonov",
+  "sticky": false,
+  "tags": [],
+  "title": "Как включить конструктор шаблонов ?",
+  "url_path": "/threads/kak-vklucit-konstruktor-sablonov.42019/",
+  "user_id": 8600,
+  "username": "Sergeiermur1",
+  "view_count": 2277
+}

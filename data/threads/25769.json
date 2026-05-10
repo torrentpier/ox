@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 59019,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 25769,
+  "last_post_date": 1392221019,
+  "node_id": 80,
+  "post_date": 1392221019,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59019,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В общем обновился я до 583, вроде все ок, и аватарами, и моды подпилил, даже с помощью Beyound Compare (Pherum спс 🙂) сверил все файлы с репозитарием (нашел пара ошибок конечно, но не значительных) включая шаблоны....<br />\nНо остались все таки 2 траблы, описанные здесь:<br />\n1. <a href=\"http://torrentpier.com/threads/r-570.25684/\" class=\"link link--internal\">http://torrentpier.com/threads/r-570.25684/</a> <br />\nну не могу я победить строку 199 в posting.php <a href=\"https://code.google.com/p/torrentpier2/source/browse/trunk/upload/posting.php?spec=svn583&amp;r=583#199\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://code.google.com/p/torrentpier2/source/browse/trunk/upload/posting.php?spec=svn583&amp;r=583#199</a> <br />\nубираю все ок, оставляю как на видео.......<br />\nи здесь:<br />\n2. <a href=\"http://torrentpier.com/threads/Ошибки-с-опросами-в-r581.25750/\" class=\"link link--internal\">http://torrentpier.com/threads/Ошибки-с-опросами-в-r581.25750/</a><br />\nЭто так и не решилось....",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1392221019,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    }
+  ],
+  "prefix_id": 24,
+  "reply_count": 0,
+  "slug": "r-583",
+  "sticky": false,
+  "tags": [],
+  "title": "r. 583",
+  "url_path": "/threads/r-583.25769/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1034
+}

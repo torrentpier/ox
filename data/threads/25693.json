@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58355,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25693,
+  "last_post_date": 1391155021,
+  "node_id": 111,
+  "post_date": 1391119109,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58355,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Ссылка</b>:<br />\n<a href=\"http://code.google.com/p/torrentpier2/source/detail?r=576\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"> http://code.google.com/p/torrentpier2/source/detail?r=576</a><br />\n<br />\n<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 576: Правки в шаблонизаторе; включение tidy по-умолчанию; фиксы нотисов в админке; уд</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">glix08</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/upload/admin/admin_board.php \n    Modify    /trunk/upload/attach_mod/includes/functions_includes.php \n    Modify    /trunk/upload/config.php \n    Delete    /trunk/upload/faq.php \n    Modify    /trunk/upload/includes/page_header.php \n    Modify    /trunk/upload/includes/template.php \n    Delete    /trunk/upload/language/lang_english/lang_bbcode.php \n    Delete    /trunk/upload/language/lang_english/lang_faq.php \n    Delete    /trunk/upload/language/lang_english/lang_faq_attach.php \n    Modify    /trunk/upload/language/lang_english/lang_main.php \n    Delete    /trunk/upload/language/lang_russian/lang_bbcode.php \n    Delete    /trunk/upload/language/lang_russian/lang_faq.php \n    Delete    /trunk/upload/language/lang_russian/lang_faq_attach.php \n    Modify    /trunk/upload/language/lang_russian/lang_main.php \n    Modify    /trunk/upload/misc/html/sidebar1.html \n    Delete    /trunk/upload/templates/default/faq.tpl \n    Modify    /trunk/upload/templates/default/page_header.tpl \n\nПравки в шаблонизаторе; включение tidy по-умолчанию; фиксы нотисов в админке; удаление faq.php из-за полнейшей неактуальности; фиксы перестройки кеша.</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1391119109,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58358,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "template.php  найти global $lang, $bb_cfg, $user; и заменить global $lang, $bb_cfg, $user, $tr_cfg;",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1391154444,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58359,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>drew</b>, где ошибку выдает без tr_cfg?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1391154768,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58361,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "там где есть торрент файл",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1391155021,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "revision-576-pravki-v-sablonizatore-vklucenie-tidy-po-umolcaniu-fiksy-notisov-v-adminke-ud",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 576: Правки в шаблонизаторе; включение tidy по-умолчанию; фиксы нотисов в админке; уд",
+  "url_path": "/threads/revision-576-pravki-v-sablonizatore-vklucenie-tidy-po-umolcaniu-fiksy-notisov-v-adminke-ud.25693/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 1219
+}

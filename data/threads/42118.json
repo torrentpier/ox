@@ -1,0 +1,59 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94822,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 42118,
+  "last_post_date": 1679109170,
+  "node_id": 110,
+  "post_date": 1679109170,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94822,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет!<br />\n<br />\nНу вот и вышел долгожданный <i>(но это не точно)</i> релиз 2.3.1. На создание этого релиза ушло не так много времени, мы постарались исправить самые проблемные моменты движка обнаруженные в течении нескольких лет. Где-то баги пофиксили, где-то возможность настройки расширили, где-то обновили что-то. В общем, ничего супер глобального с точки зрения рефакторинга кода. Последующие версии будут развиваться немного в другом векторе, где упор будет именно на переписывание старого кода.<br />\n<br />\nНачиная с этого релиза есть поддержка PHP 7.4 и MySQL 8, пока что не полноценная, правильнее сказать &quot;без гарантии&quot;, поэтому тестируйте, сообщайте в случае проблем. Из особенностей, теперь крон отключается не через админ-панель, а в env файле.<br />\n<br />\nСледующий релиз планируется уже к концу марта, может в начале апреля. Ориентировочная дата <b>4 апреля</b> <i>(Да, да, прям на день рождения движка).</i>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1679109170,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "reliz-torrentpier-bison-versia-2-3-1",
+  "sticky": false,
+  "tags": [
+    "bison",
+    "новая версия",
+    "релиз"
+  ],
+  "title": "Релиз TorrentPier Bison. Версия 2.3.1",
+  "url_path": "/threads/reliz-torrentpier-bison-versia-2-3-1.42118/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 929
+}

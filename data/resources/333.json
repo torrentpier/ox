@@ -1,0 +1,108 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Скорость интернета пользователя by belomaxorka.zip",
+      "id": 6686,
+      "local_path": null,
+      "r2_key": null,
+      "size": 2278,
+      "src_url": "https://torrentpier.com/api/resource-versions/664/download?file=6686"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1769619279,
+      "file_size": 3678,
+      "filename": "firefox_CU5OrjO5tx.webp",
+      "height": 75,
+      "id": 6687,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_cu5orjo5tx-webp.6687/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6691-1ffbb633b84a1c198cfde4f729204b3a.jpg?hash=q1HsDKxQk6",
+      "width": 418
+    },
+    {
+      "attach_date": 1769619280,
+      "file_size": 7556,
+      "filename": "firefox_Xb9gKTIbqP.webp",
+      "height": 63,
+      "id": 6688,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_xb9gktibqp-webp.6688/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6692-b8169762f44ffc38f2f564da5d2d7b8b.jpg?hash=uhTz3jIerU",
+      "width": 468
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Добавляет в профиль вывод информации о пропускной способности канала пользователя.<br />\n<b>Совместимость:</b> все версии.",
+  "download_count": 95,
+  "external_url": null,
+  "icon_url": null,
+  "id": 333,
+  "is_fileless": null,
+  "last_update": 1769619282,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1769619282,
+  "resource_state": "visible",
+  "slug": "skorost-interneta-pol-zovatela",
+  "tag_line": "Добавляет в профиль вывод информации о пропускной способности канала пользователя.",
+  "tags": [
+    "internet speed",
+    "user internet speed",
+    "мод",
+    "моды",
+    "пропускная способность",
+    "скорость интернета",
+    "скорость интернета пользователя"
+  ],
+  "title": "Скорость интернета пользователя",
+  "url_path": "/resources/skorost-interneta-pol-zovatela.333/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.0",
+  "versions": [
+    {
+      "download_count": 95,
+      "files": [
+        {
+          "filename": "[FULL] Скорость интернета пользователя by belomaxorka.zip",
+          "id": 6686,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2278,
+          "src_url": "https://torrentpier.com/api/resource-versions/664/download?file=6686"
+        }
+      ],
+      "id": 664,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1769619282,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/skorost-interneta-pol-zovatela.333/version/664/"
+    }
+  ],
+  "view_count": 993
+}

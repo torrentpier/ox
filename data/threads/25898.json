@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 60324,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 25898,
+  "last_post_date": 1400016679,
+  "node_id": 80,
+  "post_date": 1397752486,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60324,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Когда заходим форум сверху выводит сообщения:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Notice: Undefined index: topic_tpl_id in C:\\Путь до сайта\\viewtopic.php on line <i>439</i></blockquote> <br />\nИсправления:<br />\n<span style=\"font-size: 9px\"><i>В </i></span><span style=\"font-size: 9px\">viewtopic.php строка </span><span style=\"font-size: 9px\"><i>439 найти и удалить</i></span><br />\n<pre class=\"xfBb-code\" data-lang=\"\">$new_topic_url .= ($t_data[&#039;topic_tpl_id&#039;]) ? &#039;&amp;tpl=1&#039; : &#039;&#039;;</pre>Нужно кнопку виде картинок &quot;Опрос&quot;<br />\n<img src=\"http://i33.fastpic.ru/big/2014/0417/59/258d2edd6a1e8c916cf3e6b52ca12f59.png\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1397752486,
+      "user_id": 322,
+      "user_title": "User",
+      "username": "botyk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60332,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Кнопку уже кто то выкладывал",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1397753654,
+      "user_id": 0,
+      "user_title": "",
+      "username": "sockrat"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60366,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Удали эту строчку, просто забыли ее удалить.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1397801380,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60779,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"http://torrentpier.com/threads/%D0%91%D0%B0%D0%B7%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.25832/\" class=\"link link--internal\">http://torrentpier.com/threads/База-данных.25832/</a>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1400016679,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 26,
+  "reply_count": 3,
+  "slug": "topic_tpl_id-i-knopka-opros",
+  "sticky": false,
+  "tags": [],
+  "title": "topic_tpl_id и кнопка Опрос",
+  "url_path": "/threads/topic_tpl_id-i-knopka-opros.25898/",
+  "user_id": 322,
+  "username": "botyk",
+  "view_count": 1165
+}

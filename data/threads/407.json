@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 4898,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 407,
+  "last_post_date": 1320589053,
+  "node_id": 57,
+  "post_date": 1320324513,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 4898,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Собственно сабж, как можно выдать модераторам право банить/деактивировать  пользователей. Либо подскажите рабочий плагин. Заранее благодарю.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1320324513,
+      "user_id": 455,
+      "user_title": "User",
+      "username": "Руслан"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 4900,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"http://torrentpier.com/threads/Проблемка.340/\" class=\"link link--internal\">http://torrentpier.com/threads/Проблемка.340/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1320325586,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 4906,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ну там ни слова нет почему модераторы не могут банить пользователей. Нету просто прав и все.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1320329030,
+      "user_id": 455,
+      "user_title": "User",
+      "username": "Руслан"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 4926,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Руслан</b>, в текущей ревизии движка данная возможность не предусмотрена.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1320348361,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5079,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Руслан</b>, бан пользователей находится в компетенции админа. Зачем наделять модераторов несвойственными им функциями? Их дело проверять раздачи и следить за порядком в форумах. Всё. Если нарушитель не воспринимает предупреждения от модератора - тогда модератор отписывает админу, тот принимает меры.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1320589053,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Nikolaich"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "kak-vydat-moderatoram-pravo-banit-pol-zovatelej",
+  "sticky": false,
+  "tags": [],
+  "title": "Как выдать модераторам право банить пользователей",
+  "url_path": "/threads/kak-vydat-moderatoram-pravo-banit-pol-zovatelej.407/",
+  "user_id": 455,
+  "username": "Руслан",
+  "view_count": 1927
+}

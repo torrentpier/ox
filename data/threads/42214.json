@@ -1,0 +1,110 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95481,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42214,
+  "last_post_date": 1703528651,
+  "node_id": 57,
+  "post_date": 1703418805,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95481,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Приветствую!<br />\n<br />\nПодскажите, как добавить в форму регистрации дополнительный вопрос(ы)?<br />\n<br />\nСпамеры уже надоели: пока инвайты включены - спамеры прорваться не могут, но стоит отключить инвайты - спамеров становится как грязи после дождя. ReCapcha от гугла не спасает (её уже научились обходить). <br />\n<br />\nВерсия TP: 2.1.4",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1703418805,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95482,
+      "is_admin": false,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Версия ReCaptcha какая?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1703434023,
+      "user_id": 10699,
+      "user_title": "Developer (ex)",
+      "username": "kovalensky"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95483,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"ExPlayer\">Приветствую!<br />\n<br />\nПодскажите, как добавить в форму регистрации дополнительный вопрос(ы)?<br />\n<br />\nСпамеры уже надоели: пока инвайты включены - спамеры прорваться не могут, но стоит отключить инвайты - спамеров становится как грязи после дождя. ReCapcha от гугла не спасает (её уже научились обходить).<br />\n<br />\nВерсия TP: 2.1.4</blockquote>Я недавно начал писать мод новый, который бы добавлял дополнительный вопрос / вопросы при регистрации. Сразу как закончу, выложу тут.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1703443349,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95489,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"kovalensky\">Версия ReCaptcha какая?</blockquote>Какая-то древняя... 2 вроде бы<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"belomaxorka\">Я недавно начал писать мод новый, который бы добавлял дополнительный вопрос / вопросы при регистрации. Сразу как закончу, выложу тут.</blockquote>Было бы замечательно 🙂",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1703528651,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "dopolnitel-nyj-vopros-pri-registracii",
+  "sticky": false,
+  "tags": [
+    "вопрос",
+    "регистрация",
+    "спам",
+    "спамеры"
+  ],
+  "title": "Дополнительный вопрос при регистрации",
+  "url_path": "/threads/dopolnitel-nyj-vopros-pri-registracii.42214/",
+  "user_id": 5704,
+  "username": "ExPlayer",
+  "view_count": 829
+}

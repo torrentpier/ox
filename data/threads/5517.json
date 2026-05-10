@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 31563,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 5517,
+  "last_post_date": 1369964677,
+  "node_id": 57,
+  "post_date": 1369934245,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 31563,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подскажите пожалуйста, где изменить название иконки форума?<br />\nХочу изменить<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">&lt;img class=&quot;forum_icon&quot; src=&quot;./templates/default/images/folder_big.gif&quot; alt=&quot;Прочит&quot;&gt;</pre>на<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">&lt;img class=&quot;forum_icon&quot; src=&quot;./templates/default/images/folder_big.png&quot; alt=&quot;Прочит&quot;&gt;</pre> <br />\nРазобраться не могу, где прописано это<br />\n{c.f.FORUM_FOLDER_IMG}",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1369934245,
+      "user_id": 0,
+      "user_title": "",
+      "username": "FoxBit"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 31566,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "templates/default/tpl_config.php<br />\nСтрока: <pre class=\"xfBb-code\" data-lang=\"php\">$images[&#039;forum&#039;]              = $_main .&#039;folder_big.gif&#039;;</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1369935442,
+      "user_id": 1069,
+      "user_title": "Blocked",
+      "username": "makar"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 31595,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"makar\">templates/default/tpl_config.php<br />\nСтрока: <pre class=\"xfBb-code\" data-lang=\"php\">$images[&#039;forum&#039;]              = $_main .&#039;folder_big.gif&#039;;</pre></blockquote> <br />\nСпасибо🙂",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1369964677,
+      "user_id": 0,
+      "user_title": "",
+      "username": "FoxBit"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "ikonki-forumov",
+  "sticky": false,
+  "tags": [],
+  "title": "Иконки форумов",
+  "url_path": "/threads/ikonki-forumov.5517/",
+  "user_id": 0,
+  "username": "FoxBit",
+  "view_count": 1024
+}

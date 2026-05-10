@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 60662,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25928,
+  "last_post_date": 1399391746,
+  "node_id": 57,
+  "post_date": 1399378949,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60662,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет.<br />\nТакой вопрос: есть ли какие-либо штатные средства для данной задачи?<br />\nТо есть хочу выводить все одобренные раздачи на главную страницу вместо списка тем и разделов, примерно как на funkysouls.com (с превью и кратким описанием).<br />\nВозможно кто сталкивался с подобной задачей хотелось бы получить совет...<br />\nЗаранее благодарю.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1399378949,
+      "user_id": 5198,
+      "user_title": "User",
+      "username": "Поднятие Целины"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60664,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Мод - портал.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1399391411,
+      "user_id": 4818,
+      "user_title": "User",
+      "username": "A-E"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60665,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"http://torrentpier.com/threads/%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB%D1%8B.1709/\" class=\"link link--internal\">http://torrentpier.com/threads/Порталы.1709/</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1399391746,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "vyvod-razdac-na-glavnuu",
+  "sticky": false,
+  "tags": [],
+  "title": "Вывод раздач на главную",
+  "url_path": "/threads/vyvod-razdac-na-glavnuu.25928/",
+  "user_id": 5198,
+  "username": "Поднятие Целины",
+  "view_count": 1218
+}

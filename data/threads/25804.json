@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 59370,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25804,
+  "last_post_date": 1393685981,
+  "node_id": 57,
+  "post_date": 1393676946,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59370,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Помогите пожалуйста ошибка при создания топики (тема). Torrent Pier II Stable<br />\n<a href=\"http://retracker.co/viewtopic.php?t=1\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">mytracker.test/viewtopic.php?t=1</a><br />\n<span style=\"font-size: 15px\"><span style=\"font-family: 'Times New Roman'\"><span style=\"color: #000000\">(see $bb_cfg[&#039;tidy_post&#039;] in config.php) </span></span></span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1393676946,
+      "user_id": 5141,
+      "user_title": "User",
+      "username": "Masster"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59371,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Masster</b>,<br />\nВ:<br />\n<span style=\"font-size: 15px\"><span style=\"font-family: 'Times New Roman'\"><span style=\"color: #000000\">config.php </span></span></span><br />\n<span style=\"font-size: 15px\"><span style=\"font-family: 'Times New Roman'\"><span style=\"color: #000000\">найти </span></span></span>:<br />\n<span style=\"font-size: 15px\"><span style=\"font-family: 'Times New Roman'\"><span style=\"color: #000000\">tidy_post</span></span></span><br />\n<span style=\"font-size: 15px\"><span style=\"font-family: 'Times New Roman'\"><span style=\"color: #000000\">и изменить:</span></span></span><br />\nc:<br />\n<span style=\"font-size: 15px\"><span style=\"font-family: 'Times New Roman'\"><span style=\"color: #000000\"> true</span></span></span><br />\n<span style=\"font-size: 15px\"><span style=\"font-family: 'Times New Roman'\"><span style=\"color: #000000\">на:</span></span></span><br />\n<span style=\"font-size: 15px\"><span style=\"font-family: 'Times New Roman'\"><span style=\"color: #000000\">false</span></span></span><br />\n<span style=\"font-size: 15px\"><span style=\"font-family: 'Times New Roman'\"><span style=\"color: #000000\">:banghead::banghead::banghead: </span></span></span>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1393678872,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59372,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>vitalix</b>, спасибо большое!",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1393685981,
+      "user_id": 5141,
+      "user_title": "User",
+      "username": "Masster"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "osibka-pri-sozdania-topiki-tema",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка при создания топики (тема)",
+  "url_path": "/threads/osibka-pri-sozdania-topiki-tema.25804/",
+  "user_id": 5141,
+  "username": "Masster",
+  "view_count": 987
+}

@@ -1,0 +1,148 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 10528,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 50,
+        "title": "Graphics and styles for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 17,
+    "title": "Graphics and styles for TorrentPier (archive)"
+  },
+  "id": 829,
+  "last_post_date": 1504356140,
+  "node_id": 17,
+  "post_date": 1327554594,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1327566375,
+          "file_size": 1170,
+          "filename": "fon.webp",
+          "height": 150,
+          "id": 592,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/fon-webp.592/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/0/592-341287e17a52749b6be3d2e820e6244b.jpg?hash=DkoVAulAen",
+          "width": 150
+        },
+        {
+          "attach_date": 1327566536,
+          "file_size": 3370,
+          "filename": "370B3B280329_175.webp",
+          "height": 260,
+          "id": 593,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/370b3b280329_175-webp.593/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/0/593-dfc85e5a92789db9921327893870ad01.jpg?hash=R4vSpk5gn4",
+          "width": 320
+        }
+      ],
+      "id": 10528,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Открываем main.css<br />\n <br />\nНаходим<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">#body_container { background: #E3E3E3; padding: 0 2px 4px; }\n#page_container {\nmargin: 0 auto;\nbackground: #FFFFFF; border: 1px solid #D1D7DC;</pre> <br />\nи заменяем на:<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">#body_container { background: #E3E3E3; padding: 0 2px 4px; }\n#page_container {\nmargin: 0 auto;\nbackground: #FFFFFF url(/templates/default/images/fon.gif) repeat; border: 1px solid #D1D7DC;</pre> <br />\nфоновые картинки должны быть безшовными.<br />\n <br />\nКидаем свою фоновую картинку &quot;fon.gif&quot; в: /templates/default/images/<br />\n <br />\n<a href=\"https://torrentpier.com/attachments/592/\"><img src=\"https://torrentpier.com/data/attachments/0/592-341287e17a52749b6be3d2e820e6244b.jpg?hash=DkoVAulAen\" alt=\"fon.webp\" /></a><a href=\"https://torrentpier.com/attachments/593/\"><img src=\"https://torrentpier.com/data/attachments/0/593-dfc85e5a92789db9921327893870ad01.jpg?hash=R4vSpk5gn4\" alt=\"370B3B280329_175.webp\" /></a><br />\n <br />\nПример: <a href=\"http://torrent.rus.ec/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://torrent.rus.ec/</a><br />\n <br />\nПолезные ссылки:<br />\n<span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\"><a href=\"http://patterncooler.com\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://patterncooler.com</a></span></span></span><br />\n<span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\"><a href=\"http://bgpatterns.com\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://bgpatterns.com</a></span></span></span><br />\n<span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\"><a href=\"http://colourlovers.com/patterns/add\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://colourlovers.com/patterns/add</a></span></span></span><br />\n<span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\"><a href=\"http://stripegenerator.com\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://stripegenerator.com</a></span></span></span><br />\n<span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\"><a href=\"http://stripemania.com\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://stripemania.com</a></span></span></span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1327554594,
+      "user_id": 380,
+      "user_title": "User",
+      "username": "MY-94"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10529,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "еще бы скриншот приложил того что получится<br />\nчто бы вопросов лишних не было🙂",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1327558156,
+      "user_id": 805,
+      "user_title": "User",
+      "username": "WereWolf"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15485,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>WereWolf</b>, Видишь все завист от верстки дизайна. А так фон наложишь и не красиво. Самому надо подбирать",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1334597513,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92190,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "несколько часов бился - способ не работает.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1503669519,
+      "user_id": 7993,
+      "user_title": "User",
+      "username": "JoeJim"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92226,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"JoeJim\">несколько часов бился - способ не работает.</blockquote>Проблема в руках.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1504356140,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "fonovaa-kartinka",
+  "sticky": false,
+  "tags": [],
+  "title": "Фоновая картинка",
+  "url_path": "/threads/fonovaa-kartinka.829/",
+  "user_id": 380,
+  "username": "MY-94",
+  "view_count": 4460
+}

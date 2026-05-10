@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 81421,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 58,
+    "title": "Suggestions for improving TorrentPier"
+  },
+  "id": 39732,
+  "last_post_date": 1428118251,
+  "node_id": 58,
+  "post_date": 1428091342,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 81421,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Не знаю, возможно ли это на TorrentPier, но была бы не лишней функция поиска не только по форуму и трекеру, но и по сообщениям, как, допустим, сделано в Xenforo.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1428091342,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 81429,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Begemot\">как, допустим, сделано в Xenforo.</blockquote>Конкретно на этом форуме это сделано дополнением. Из коробки там такого тоже нет.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1428101238,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 81434,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Не знал. С xenforo практически не общался.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1428118251,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    }
+  ],
+  "prefix_id": 41,
+  "reply_count": 2,
+  "slug": "poisk-po-soobseniam",
+  "sticky": false,
+  "tags": [],
+  "title": "Поиск по сообщениям",
+  "url_path": "/threads/poisk-po-soobseniam.39732/",
+  "user_id": 1514,
+  "username": "Begemot",
+  "view_count": 1451
+}

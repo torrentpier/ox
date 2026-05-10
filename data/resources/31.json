@@ -1,0 +1,61 @@
+{
+  "category": {
+    "description": "Section with all paid modifications for TorrentPier.",
+    "id": 2,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Paid",
+    "view_url": "https://torrentpier.com/resources/categories/paid.2/"
+  },
+  "current_files": [],
+  "custom_fields": {},
+  "description_attachments": [
+    {
+      "attach_date": 1369574818,
+      "file_size": 132952,
+      "filename": "Обмен сид бонусов    Брянский Биттрекер.webp",
+      "height": 936,
+      "id": 2017,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/obmen-sid-bonusov-branskij-bittreker-webp.2017/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2022-56cf3147b681c0fbb19e7802ae4d7dd5.jpg?hash=EP3sl00Q6f",
+      "width": 1663
+    }
+  ],
+  "description_parsed": "<b>Автор:</b> Zenden<br />\n<b>ICQ:</b> 590-700-200<br />\nЦена: 400 рублей<br />\nСмена фона за очки сидирования, аля одноклассники.",
+  "download_count": 0,
+  "external_url": null,
+  "icon_url": null,
+  "id": 31,
+  "is_fileless": null,
+  "last_update": 1369574825,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1369574825,
+  "resource_state": "visible",
+  "slug": "smena-fona-za-ocki-sidirovania",
+  "tag_line": "Возможность выбрать фон трекера каждому конкретному пользователю",
+  "tags": [],
+  "title": "Смена фона за очки сидирования",
+  "url_path": "/resources/smena-fona-za-ocki-sidirovania.31/",
+  "user_id": 97,
+  "username": "Zenden",
+  "version": "1.0",
+  "versions": [
+    {
+      "download_count": 0,
+      "files": [],
+      "id": 31,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1369574825,
+      "version_state": "visible",
+      "version_string": "1.0",
+      "view_url": "https://torrentpier.com/resources/smena-fona-za-ocki-sidirovania.31/version/31/"
+    }
+  ],
+  "view_count": 563
+}

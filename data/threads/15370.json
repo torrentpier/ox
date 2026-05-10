@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 45167,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 15370,
+  "last_post_date": 1379790135,
+  "node_id": 80,
+  "post_date": 1379782622,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 45167,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "При массовой рассылки почты юзверям, отправляется сообщение всем в том числе и Боту, на что получаем на системный адрес, уведомление в виде <span style=\"font-size: 19px\"><span style=\"font-family: 'Arial'\"><span style=\"color: #000000\">Mail delivery failed: returning message to sender:</span></span></span><br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"html\">This message was created automatically by mail delivery software.\n \nA message that you sent could not be delivered to one or more of its\nrecipients. This is a permanent error. The following address(es) failed:\n \n  bot@bot.bot\n    Unrouteable address\n \n------ This is a copy of the message, including all the headers. ------</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1379782622,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 45174,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Dr_Brown</b>, кинь бота и анонимуса в исключения рассылки) пфф, проблему нашел",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1379790135,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 1,
+  "slug": "massovaa-rassylka-e-mail",
+  "sticky": false,
+  "tags": [],
+  "title": "Массовая рассылка e-mail",
+  "url_path": "/threads/massovaa-rassylka-e-mail.15370/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1274
+}

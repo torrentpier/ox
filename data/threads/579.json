@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 7346,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 52,
+    "title": "Bug tracker archive"
+  },
+  "id": 579,
+  "last_post_date": 1323858110,
+  "node_id": 52,
+  "post_date": 1323858110,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 7346,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "При сортировке по статусу выводит не более 25 тем на страницу, и при переходе на следующую страницу сортировки уже нет (сбрасывает на все статусы)<br />\n<br />\nPS: не критично конечно, если будет у кого желание и время подправьте в следующих ревизиях",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1323858110,
+      "user_id": 0,
+      "user_title": "",
+      "username": "gaudi"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "moderatorskaa-panel",
+  "sticky": false,
+  "tags": [],
+  "title": "Модераторская панель",
+  "url_path": "/threads/moderatorskaa-panel.579/",
+  "user_id": 0,
+  "username": "gaudi",
+  "view_count": 1534
+}

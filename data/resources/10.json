@@ -1,0 +1,104 @@
+{
+  "category": {
+    "description": "Section with all templates for TorrentPier.",
+    "id": 5,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Templates",
+    "view_url": "https://torrentpier.com/resources/categories/templates.5/"
+  },
+  "current_files": [
+    {
+      "filename": "bluezeo.zip",
+      "id": 3632,
+      "local_path": null,
+      "r2_key": null,
+      "size": 188353,
+      "src_url": "https://torrentpier.com/api/resource-versions/287/download?file=3632"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "adapt",
+    "installation": "[SPOILER=\"Инструкция\"]Загрузить файлы на сервер.[/SPOILER]",
+    "owner": "Fate",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1369073598,
+      "file_size": 148778,
+      "filename": "1.webp",
+      "height": 1470,
+      "id": 1981,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/1-webp.1981/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/1/1986-b86135456035c54fedbf3d551218c515.jpg?hash=zuGip3g9W_",
+      "width": 1422
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> шаблон, аналог популярного шаблона для DLE.",
+  "download_count": 477,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/10.jpg?1429568812",
+  "id": 10,
+  "is_fileless": null,
+  "last_update": 1429568842,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1369073601,
+  "resource_state": "visible",
+  "slug": "sablon-bluezeo",
+  "tag_line": "Шаблон, аналог популярного шаблона для DLE.",
+  "tags": [],
+  "title": "Шаблон «Bluezeo»",
+  "url_path": "/resources/sablon-bluezeo.10/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 327,
+      "files": [
+        {
+          "filename": "bluezeo.zip",
+          "id": 3632,
+          "local_path": null,
+          "r2_key": null,
+          "size": 188353,
+          "src_url": "https://torrentpier.com/api/resource-versions/287/download?file=3632"
+        }
+      ],
+      "id": 287,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1429568842,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/sablon-bluezeo.10/version/287/"
+    },
+    {
+      "download_count": 152,
+      "files": [
+        {
+          "filename": "bluezeo.rar",
+          "id": 1980,
+          "local_path": null,
+          "r2_key": null,
+          "size": 182126,
+          "src_url": "https://torrentpier.com/api/resource-versions/10/download?file=1980"
+        }
+      ],
+      "id": 10,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1369073601,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/sablon-bluezeo.10/version/10/"
+    }
+  ],
+  "view_count": 699
+}

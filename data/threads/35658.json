@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 75414,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 35658,
+  "last_post_date": 1424009457,
+  "node_id": 57,
+  "post_date": 1424006673,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 75414,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Добрый день!!!Возник вопрос...как дать доступ к админ панели...я переделал звания пользователей есть директор и добавил админа.......вот как дать админу доступ(не супер юзера) к адм разделу???",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1424006673,
+      "user_id": 5981,
+      "user_title": "User",
+      "username": "serega"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 75415,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "в профиле =&gt; права доступа =&gt; администратор",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1424006780,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 75416,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"PheRum\">в профиле =&gt; права доступа =&gt; администратор</blockquote>да это понятно)) а вот как например модеру дать доступ к адм разделу или например ранг тех админ и чтоб имел он права на вход в админ раздел",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1424007151,
+      "user_id": 5981,
+      "user_title": "User",
+      "username": "serega"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 75419,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5951/\">@serega25</a> Там и выдается доступ, а звания уже делаешь свои какие хочешь.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1424008709,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 75420,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "А все разобрался..спасибо",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1424009457,
+      "user_id": 5981,
+      "user_title": "User",
+      "username": "serega"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "dostup-k-adminke",
+  "sticky": false,
+  "tags": [],
+  "title": "Доступ к админке",
+  "url_path": "/threads/dostup-k-adminke.35658/",
+  "user_id": 5981,
+  "username": "serega",
+  "view_count": 1435
+}

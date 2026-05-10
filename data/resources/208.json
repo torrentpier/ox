@@ -1,0 +1,86 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "Новости.zip",
+      "id": 3308,
+      "local_path": null,
+      "r2_key": null,
+      "size": 4222,
+      "src_url": "https://torrentpier.com/api/resource-versions/265/download?file=3308"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]Открыть ajax.php\nнайти:\n        'change_tor_status' => array('user'),\nпосле ставить:\n        'news'              => array('user'),\nв конец фуньку:\n\n    function news()\n    {\n        require(AJAX_DIR .'news.php');\n    }\n  \nпейдж хедер\nнайти\n            <!-- IF SHOW_NETWORK_NEWS -->\n            <td width=\"50%\">\nпотом поставить:\n\n                <script type=\"text/javascript\">\n                    function news() {\n                        var url = prompt(\"Поделиться интересной новостью с сайтов:\\n onliner.by, iguides.ru, habrahabr.ru, gameland.ru, allgamenews.net\", \"http://\");\n                        if (!url) return false;\n                        ajax.news(url);\n                        return false;\n                    }\n                    ajax.news = function(url) {\n                        $('#load').html('<img src=\"{SITE_URL}images/ajax-loader.gif\" align=\"right\" title=\"Ваша новость оформляется\" width=\"18px;\" height=\"18px;\" return false; />');\n                        ajax.exec({\n                            action  : 'news',\n                            url     : url,\n                        });\n                    };\n                    ajax.callback.news = function(data) {\n                        ajax.exec({action : 'index_data', mode: 'news_network', type: 0});\n                        ajax.exec({action : 'index_data', mode: 'new_post', type: 0});\n                        if(data.url) document.location.href = data.url;\n                    };\n                    ajax.callback.index_data = function(data) {\n                        $('#'+data.mode).html(data.html);\n                    };\n                </script>\n                <div id=\"news_network\">\n                <h3> <span onclick=\"news(); return false;\" style=\"cursor: pointer;\" title=\"Оформить новость\"><img src=\"{SITE_URL}templates/default/images/menu_open_1.gif\" class=\"menu-alt1\"> {L_NETWORK_NEWS}</span> <a id=\"submit_chat\" title=\"Следующие 5 новостей\" href=\"#\" onclick=\"ajax.exec({action : 'index_data', mode: 'news_network', type: 1}); return false;\">&raquo;</a><span id=\"load\"></span></h3>\n              \nоткрыть index_data.php\nнайти:\n\n        $html .= ' Новости сети <a id=\"submit_chat\" title=\"Следующие 10 новостей\" href=\"#\" onclick=\"ajax.exec({action : \\'index_data\\', mode: \\'news_network\\', type: '. ($type + 1) .'}); return false;\">&raquo;</a></h3>';\n      \nЗаменить на:\n        $html .= ' <span onclick=\"news(); return false;\" style=\"cursor: pointer;\" title=\"Оформить новость\"><img src=\"./templates/default/images/menu_open_1.gif\" class=\"menu-alt1\"> Новости в сети</span> <a id=\"submit_chat\" title=\"Следующие 5 новостей\" href=\"#\" onclick=\"ajax.exec({action : \\'index_data\\', mode: \\'news_network\\', type: '. ($type + 1) .'}); return false;\">&raquo;</a><span id=\"load\"></span></h3>';[/PHP]\n[/SPOILER]",
+    "owner": "Pherum",
+    "sql": "no",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425507828,
+      "file_size": 21532,
+      "filename": "2015-03-05 01-23-12 Скриншот экрана.webp",
+      "height": 245,
+      "id": 3307,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2015-03-05-01-23-12-skrinsot-ekrana-webp.3307/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3311-08525ba84019f4913deb9c2d6f4f7f32.jpg?hash=TmaOBsNHn9",
+      "width": 698
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет возможность пользователям самим публиковать интересные новости. <br />\n<br />\nНовость предлагается пользователем, а затем автоматически публикуется в разделе новостей в сети. Поддерживаются несколько сайтов (onliner.by, iguides.ru, habrahabr.ru, gameland.ru, allgamenews.net).",
+  "download_count": 230,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/208.jpg?1425507863",
+  "id": 208,
+  "is_fileless": null,
+  "last_update": 1425507841,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1425507841,
+  "resource_state": "visible",
+  "slug": "novosti",
+  "tag_line": "Добавляет возможность пользователям самим публиковать интересные новости.",
+  "tags": [],
+  "title": "Новости",
+  "url_path": "/resources/novosti.208/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 230,
+      "files": [
+        {
+          "filename": "Новости.zip",
+          "id": 3308,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4222,
+          "src_url": "https://torrentpier.com/api/resource-versions/265/download?file=3308"
+        }
+      ],
+      "id": 265,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425507841,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/novosti.208/version/265/"
+    }
+  ],
+  "view_count": 427
+}

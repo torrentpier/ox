@@ -1,0 +1,91 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 84758,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41239,
+  "last_post_date": 1440795806,
+  "node_id": 57,
+  "post_date": 1440167309,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84758,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Хранится такое в базе?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1440167309,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84760,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Могу ли я вытащить эти данные из таблицы `bb_bt_dlstatus_main`?<br />\n<br />\nИ что значит status 1 или -1",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1440180417,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84765,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/6370/\">@zxc</a> вот 1 - как раз завершенная закачка. Значения можно глянуть в списке констант в файле init_bb.php.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1440795806,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "kak-uznat-skol-ko-torrentov-skacal-pol-zovatel",
+  "sticky": false,
+  "tags": [
+    "база данных",
+    "завершенные закачки",
+    "статистика"
+  ],
+  "title": "Как узнать, сколько торрентов скачал пользователь?",
+  "url_path": "/threads/kak-uznat-skol-ko-torrentov-skacal-pol-zovatel.41239/",
+  "user_id": 6370,
+  "username": "sхс",
+  "view_count": 1419
+}

@@ -1,0 +1,75 @@
+{
+  "category": {
+    "description": "Section with all paid modifications for TorrentPier.",
+    "id": 2,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Paid",
+    "view_url": "https://torrentpier.com/resources/categories/paid.2/"
+  },
+  "current_files": [],
+  "custom_fields": {},
+  "description_attachments": [
+    {
+      "attach_date": 1369573469,
+      "file_size": 35306,
+      "filename": "Снимок (1).webp",
+      "height": 180,
+      "id": 2008,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/snimok-1-webp.2008/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2013-9e58cad009d3de4a0d3435ad2717c3f7.jpg?hash=2-KBUt2M3v",
+      "width": 1647
+    },
+    {
+      "attach_date": 1369573470,
+      "file_size": 8802,
+      "filename": "Снимок.webp",
+      "height": 300,
+      "id": 2009,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/snimok-webp.2009/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2014-b305e7aa4a3945a881e0b8281a030692.jpg?hash=zdpf6LhPEM",
+      "width": 253
+    }
+  ],
+  "description_parsed": "<b>Автор:</b> Zenden<br />\n<b>ICQ:</b> 590-700-200<br />\n<b>Описание первого мода:</b> Кеширование статистки пользователя, отображающейся на главной странице.<br />\n<b>Описание второго мода:</b> Кеширование количества релизов, сидируемых и скачиваемых<br />\nраздач пользователя.<br />\nВсе это можно прикрутить к выводу статистики в шапке (аля тапочки), дабы убрать постоянные запросы.<br />\n<b>Цена:</b> 550р за два мода",
+  "download_count": 0,
+  "external_url": null,
+  "icon_url": null,
+  "id": 26,
+  "is_fileless": null,
+  "last_update": 1369573478,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1369573478,
+  "resource_state": "visible",
+  "slug": "kesirovanie-statistiki-pol-zovatela",
+  "tag_line": "Больше информации - меньше запросов",
+  "tags": [],
+  "title": "Кеширование статистики пользователя",
+  "url_path": "/resources/kesirovanie-statistiki-pol-zovatela.26/",
+  "user_id": 97,
+  "username": "Zenden",
+  "version": "1.0",
+  "versions": [
+    {
+      "download_count": 0,
+      "files": [],
+      "id": 26,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1369573478,
+      "version_state": "visible",
+      "version_string": "1.0",
+      "view_url": "https://torrentpier.com/resources/kesirovanie-statistiki-pol-zovatela.26/version/26/"
+    }
+  ],
+  "view_count": 651
+}

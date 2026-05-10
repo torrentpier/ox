@@ -1,0 +1,178 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95007,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 42147,
+  "last_post_date": 1689528552,
+  "node_id": 80,
+  "post_date": 1689377313,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95007,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Пытаюсь выдать сид бонусы самому себе, выдает ошибку:<br />\n[2023-07-15T02:26:33.616741+03:00] TorrentPier.ERROR: Whoops\\Exception\\ErrorException: mysqli_query(): (01000/1265): Data truncated for column &#039;user_points&#039; at row 1 in file C:\\server\\domains\\test\\src\\Legacy\\SqlDb.php on line 137<br />\nStack trace:<br />\n  1. Whoops\\Exception\\ErrorException-&gt;() C:\\server\\domains\\test\\src\\Legacy\\SqlDb.php:137<br />\n  2. mysqli_query() C:\\server\\domains\\test\\src\\Legacy\\SqlDb.php:137<br />\n  3. TorrentPier\\Legacy\\SqlDb-&gt;sql_query() C:\\server\\domains\\test\\src\\Legacy\\SqlDb.php:161<br />\n  4. TorrentPier\\Legacy\\SqlDb-&gt;query() C:\\server\\domains\\test\\library\\ajax\\edit_user_profile.php:154<br />\n  5. require() C:\\server\\domains\\test\\src\\Ajax.php:272<br />\n  6. TorrentPier\\Ajax-&gt;edit_user_profile() C:\\server\\domains\\test\\src\\Ajax.php:130<br />\n  7. TorrentPier\\Ajax-&gt;exec() C:\\server\\domains\\test\\ajax.php:39<br />\n<br />\n<br />\nВерсия последняя, <a href=\"https://torrentpier.com/threads/torrentpier-cattle-versija-2-4-0-alpha4.42136/\" class=\"link link--internal\">TorrentPier Cattle. Версия 2.4.0-alpha4</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1689377313,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95017,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Lange\">Пытаюсь выдать сид бонусы самому себе, выдает ошибку:<br />\n[2023-07-15T02:26:33.616741+03:00] TorrentPier.ERROR: Whoops\\Exception\\ErrorException: mysqli_query(): (01000/1265): Data truncated for column &#039;user_points&#039; at row 1 in file C:\\server\\domains\\test\\src\\Legacy\\SqlDb.php on line 137<br />\nStack trace:<br />\n  1. Whoops\\Exception\\ErrorException-&gt;() C:\\server\\domains\\test\\src\\Legacy\\SqlDb.php:137<br />\n  2. mysqli_query() C:\\server\\domains\\test\\src\\Legacy\\SqlDb.php:137<br />\n  3. TorrentPier\\Legacy\\SqlDb-&gt;sql_query() C:\\server\\domains\\test\\src\\Legacy\\SqlDb.php:161<br />\n  4. TorrentPier\\Legacy\\SqlDb-&gt;query() C:\\server\\domains\\test\\library\\ajax\\edit_user_profile.php:154<br />\n  5. require() C:\\server\\domains\\test\\src\\Ajax.php:272<br />\n  6. TorrentPier\\Ajax-&gt;edit_user_profile() C:\\server\\domains\\test\\src\\Ajax.php:130<br />\n  7. TorrentPier\\Ajax-&gt;exec() C:\\server\\domains\\test\\ajax.php:39<br />\n<br />\n<br />\nВерсия последняя, <a href=\"https://torrentpier.com/threads/torrentpier-cattle-versija-2-4-0-alpha4.42136/\" class=\"link link--internal\">TorrentPier Cattle. Версия 2.4.0-alpha4</a></blockquote>Спасибо за баг-репорт. Можно узнать сколько поинтов вы себе начисляете? Просто если вы указываете число где больше 16 цифр, то появление ошибки в принципе неудевительно, ибо 16 символов это максимальное значение которое указано в sql дампе. Не подразумевается что будет выдано так много сидбонусов честным способом 😁<br />\n😁. В принципе проблемы нету в том, чтобы увеличить значение до 64 символов, но опять же, если вы укажете 65 символов и выше, то появиться опять ошибка).<br />\n<br />\nP.S - Я наверное повешаю ограничение на максимальное количество символов уже в самом коде, чтобы всё это дело в ошибку не выливалось",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1689494565,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1689527211,
+          "file_size": 46018,
+          "filename": "Screenshot_3.webp",
+          "height": 726,
+          "id": 5472,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot_3-webp.5472/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5476-a4fbe70be0ce82b846f2c48d59a6e3f6.jpg?hash=cRPdEbezKa",
+          "width": 1046
+        }
+      ],
+      "id": 95020,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"belomaxorka\">Спасибо за баг-репорт. Можно узнать сколько поинтов вы себе начисляете? Просто если вы указываете число где больше 16 цифр, то появление ошибки в принципе неудевительно, ибо 16 символов это максимальное значение которое указано в sql дампе. Не подразумевается что будет выдано так много сидбонусов честным способом 😁<br />\n😁. В принципе проблемы нету в том, чтобы увеличить значение до 64 символов, но опять же, если вы укажете 65 символов и выше, то появиться опять ошибка).<br />\n<br />\nP.S - Я наверное повешаю ограничение на максимальное количество символов уже в самом коде, чтобы всё это дело в ошибку не выливалось</blockquote>1000 бонусов",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1689526943,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95023,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Lange\">1000 бонусов</blockquote>Какой версии MySQL? Стоит ли строгая типизация?",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1689527404,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1689528213,
+          "file_size": 15196,
+          "filename": "Screenshot_4.webp",
+          "height": 207,
+          "id": 5473,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot_4-webp.5473/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5477-3514622adf169bb618b199a3d033d38d.jpg?hash=iGhAH6NPh8",
+          "width": 562
+        }
+      ],
+      "id": 95024,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"belomaxorka\">Какой версии MySQL? Стоит ли строгая типизация?</blockquote><img src=\"https://torrentpier.com/attachments/5473/\" alt=\"Screenshot_4.webp\" />",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1689528216,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95025,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Lange\"><a href=\"https://torrentpier.com/attachments/5473/\">View attachment 5473</a></blockquote>Всё как у меня... 😄",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1689528515,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95027,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Разберусь в проблеме и сделаю фикс. В релизу beta1 стоит ожидать",
+      "message_state": "visible",
+      "position": 6,
+      "post_date": 1689528552,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 6,
+  "slug": "sid-bonusy",
+  "sticky": false,
+  "tags": [],
+  "title": "Сид бонусы",
+  "url_path": "/threads/sid-bonusy.42147/",
+  "user_id": 55,
+  "username": "Lange",
+  "view_count": 1251
+}

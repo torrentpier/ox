@@ -1,0 +1,89 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 87245,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41427,
+  "last_post_date": 1458386995,
+  "node_id": 57,
+  "post_date": 1457923669,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87245,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ребят, помогите разобраться, сделал на трекере страничку не проверенных раздач и как на примере  мода <b><a href=\"https://torrentpier.com/threads/order-mod-stol-zakazov.185/\" class=\"link link--internal\">стола заказов</a></b> сделать на этой странички показ выбранной категории (на скриншоте &quot;Ваш первый форум&quot;) ?<br />\nИспользуется функция get_forum_select() <br />\n<br />\n<br />\n<img src=\"http://i26.fastpic.ru/big/2011/0822/0c/7024a1872d29f3afb1c7a9639f26f80c.png\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1457923669,
+      "user_id": 2759,
+      "user_title": "User",
+      "username": "alexsin"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87247,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "отбой, разобрался..",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1457942825,
+      "user_id": 2759,
+      "user_title": "User",
+      "username": "alexsin"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87280,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"alexsin\">отбой, разобрался..</blockquote>Для всех бы написали на будущее.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1458386995,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "spisok-kategorij-kak-v-order-mod",
+  "sticky": false,
+  "tags": [
+    "get_forum_select"
+  ],
+  "title": "Список категорий как в Order mod",
+  "url_path": "/threads/spisok-kategorij-kak-v-order-mod.41427/",
+  "user_id": 2759,
+  "username": "alexsin",
+  "view_count": 1180
+}

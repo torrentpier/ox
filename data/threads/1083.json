@@ -1,0 +1,232 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 13279,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 50,
+        "title": "Graphics and styles for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 17,
+    "title": "Graphics and styles for TorrentPier (archive)"
+  },
+  "id": 1083,
+  "last_post_date": 1331193505,
+  "node_id": 17,
+  "post_date": 1331155896,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1331155886,
+          "file_size": 12516,
+          "filename": "wwwwwwwwwww.webp",
+          "height": 268,
+          "id": 815,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/wwwwwwwwwww-webp.815/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/0/816-1c1cfe96e21e0d4fa5e2944b6f1d694f.jpg?hash=9fXLOeHN9N",
+          "width": 1643
+        },
+        {
+          "attach_date": 1331155926,
+          "file_size": 24838,
+          "filename": "Кнопки увеличить под сообщением.rar",
+          "height": 0,
+          "id": 816,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/knopki-uvelicit-pod-soobseniem-rar.816/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 13279,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Кнопки увеличить/уменьшения под сообщением<br />\n <br />\nОписания смысла писать нет смотрите <br />\n<span style=\"color: #000000\">Скриншот :</span><br />\n<img src=\"https://torrentpier.com/attachments/815/\" alt=\"wwwwwwwwwww.webp\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1331155896,
+      "user_id": 380,
+      "user_title": "User",
+      "username": "MY-94"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13289,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ну так есть же кнопки в правом углу [+][-] над textarea, или это какое то другое увеличение?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1331189889,
+      "user_id": 97,
+      "user_title": "User",
+      "username": "Zenden"
+    },
+    {
+      "attach_count": 3,
+      "attachments": [
+        {
+          "attach_date": 1331191653,
+          "file_size": 4885,
+          "filename": "Кнопочки2.zip",
+          "height": 0,
+          "id": 820,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/knopocki2-zip.820/",
+          "thumbnail_url": null,
+          "width": 0
+        },
+        {
+          "attach_date": 1331191702,
+          "file_size": 1028,
+          "filename": "icon_arrow_down_max.webp",
+          "height": 14,
+          "id": 821,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/icon_arrow_down_max-webp.821/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/0/822-ba854cf15d2e793cfc1684e03dbb0ddb.jpg?hash=bpgKGvsRWs",
+          "width": 14
+        },
+        {
+          "attach_date": 1331191707,
+          "file_size": 908,
+          "filename": "icon_arrow_down.webp",
+          "height": 14,
+          "id": 822,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/icon_arrow_down-webp.822/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/0/823-23f5398e3bb4cf05e09eba93029ccfd6.jpg?hash=pYioQe2G1r",
+          "width": 14
+        }
+      ],
+      "id": 13292,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Zenden</b>, ну это при предварительном просмотре...я у себя снес их и оставил эти кнопочки...кому нада удалите в posting_editor.tpl эти строчки-<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;div class=&quot;buttons floatR&quot;&gt;\n \n&lt;input type=&quot;button&quot; value=&quot;+&quot; onclick=&quot;$(&#039;#message&#039;).css({height: parseInt($(&#039;#message&#039;).css(&#039;height&#039;)) + 100}); return false;&quot;&gt;\n \n&lt;input type=&quot;button&quot; value=&quot;-&quot; onclick=&quot;$(&#039;#message&#039;).css({height: parseInt($(&#039;#message&#039;).css(&#039;height&#039;)) - 100}); return false;&quot;&gt;\n \n&lt;/div&gt;</pre> <br />\nв районе 76 строчки и этих <b>+ -</b> не будет....кнопок достаточно...робят и в предварительном и быстром...<br />\nможет кому понравятся мои кнопочки  😉 ...",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1331191408,
+      "user_id": 782,
+      "user_title": "User",
+      "username": "qaqra"
+    },
+    {
+      "attach_count": 4,
+      "attachments": [
+        {
+          "attach_date": 1331193803,
+          "file_size": 49372,
+          "filename": "9999999.webp",
+          "height": 362,
+          "id": 824,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/9999999-webp.824/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/0/825-d4d0b16701b412a58f283eff0383e78a.jpg?hash=rgyPmi31Ju",
+          "width": 1655
+        },
+        {
+          "attach_date": 1331194747,
+          "file_size": 9220,
+          "filename": "1.webp",
+          "height": 400,
+          "id": 825,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1-webp.825/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/0/826-a668c8b3030c59f90675d6a1b533a7c7.jpg?hash=HUTba5bj63",
+          "width": 1643
+        },
+        {
+          "attach_date": 1331194747,
+          "file_size": 26070,
+          "filename": "2.webp",
+          "height": 458,
+          "id": 826,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2-webp.826/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/0/827-65e21b0f63b9f4dafde08d5ef7b70fca.jpg?hash=drERTxOpfO",
+          "width": 1654
+        },
+        {
+          "attach_date": 1331194748,
+          "file_size": 34120,
+          "filename": "3.webp",
+          "height": 565,
+          "id": 827,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/3-webp.827/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/0/828-70bb3ffb5953d0b1fe74268aaedaf763.jpg?hash=5QU08Xeb65",
+          "width": 1680
+        }
+      ],
+      "id": 13295,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Zenden</b>,<br />\n <br />\nЭти кнопки на javascript и выглядят красивей, и всегда под рукой(мышкой)!<br />\n <br />\nРаботает везде кроме редактирования поста который на ajax<br />\n<img src=\"https://torrentpier.com/attachments/824/\" alt=\"9999999.webp\" /><br />\n <br />\n...робят и в предварительном и быстром... так же в Личных сообщениях.<br />\n <br />\n<a href=\"https://torrentpier.com/attachments/825/\"><img src=\"https://torrentpier.com/data/attachments/0/826-a668c8b3030c59f90675d6a1b533a7c7.jpg?hash=HUTba5bj63\" alt=\"1.webp\" /></a><a href=\"https://torrentpier.com/attachments/826/\"><img src=\"https://torrentpier.com/data/attachments/0/827-65e21b0f63b9f4dafde08d5ef7b70fca.jpg?hash=drERTxOpfO\" alt=\"2.webp\" /></a><a href=\"https://torrentpier.com/attachments/827/\"><img src=\"https://torrentpier.com/data/attachments/0/828-70bb3ffb5953d0b1fe74268aaedaf763.jpg?hash=5QU08Xeb65\" alt=\"3.webp\" /></a><a href=\"https://torrentpier.com/attachments/824/\"><img src=\"https://torrentpier.com/data/attachments/0/825-d4d0b16701b412a58f283eff0383e78a.jpg?hash=rgyPmi31Ju\" alt=\"9999999.webp\" /></a>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1331193505,
+      "user_id": 380,
+      "user_title": "User",
+      "username": "MY-94"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "knopki-uvelicit-umen-senia-pod-soobseniem",
+  "sticky": false,
+  "tags": [],
+  "title": "Кнопки увеличить/уменьшения под сообщением",
+  "url_path": "/threads/knopki-uvelicit-umen-senia-pod-soobseniem.1083/",
+  "user_id": 380,
+  "username": "MY-94",
+  "view_count": 2046
+}

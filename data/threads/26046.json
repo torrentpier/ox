@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61625,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 26046,
+  "last_post_date": 1406187761,
+  "node_id": 57,
+  "post_date": 1406174091,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61625,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "1) Я добавил 2 торрент но он мне показывает 1 что делать? <br />\n<div>Spoiler content hidden.</div>2) Как настроить статистику кто онлайн, а то показывает только гостей хотя я в сети<br />\n <br />\n<div>Spoiler content hidden.</div> <br />\n3) Как добавить еще звания и их настроить<br />\n <br />\n<div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1406174091,
+      "user_id": 5469,
+      "user_title": "User",
+      "username": "Sarman"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61626,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "1. Подождать пока обновится кэш.<br />\n2. Подождать пока обновится кэш.<br />\n <br />\nЕсли используется filecache выставить права на папку cache и вложенные папки CHMOD 777. Подробнее в файле readme.txt<br />\n <br />\n3. /templates/default/index.tpl<br />\nНайти<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">&lt;p id=&quot;online_explain&quot;&gt;\n                        [ &lt;span class=&quot;colorAdmin&quot;&gt;&lt;b&gt;{L_ONLINE_ADMIN}&lt;/b&gt;&lt;/span&gt; ]\n                        [ &lt;span class=&quot;colorMod&quot;&gt;&lt;b&gt;{L_ONLINE_MOD}&lt;/b&gt;&lt;/span&gt; ]\n                        [ &lt;span class=&quot;colorGroup&quot;&gt;&lt;b&gt;{L_ONLINE_GROUP_MEMBER}&lt;/b&gt;&lt;/span&gt; ]\n                    &lt;/p&gt;</pre>Добавить<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">                        [ &lt;span class=&quot;rgOnline&quot;&gt;&lt;b&gt;{L_ONLINE_RG}&lt;/b&gt;</pre> <br />\nДобавить в language/(ru/en/ua)/main.php<br />\n$lang[&#039;L_ONLINE_RG&#039;] = &#039;Необходимое название&#039;<br />\n <br />\nТак же звания можно создать в админ панели Пользователи -&gt; Звания<br />\nВ поле стиль звания необходимо написать класс CSS который будет использоваться для отображения звания, например: rgOnline<br />\n <br />\nВ main.css добавить класс<br />\n.rgOnline{ }<br />\n <br />\nВнутри {} добавить необходимые CSS параметры для отображения цвета, гарнитуры шрифта и прочего",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1406187761,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "pomos",
+  "sticky": false,
+  "tags": [],
+  "title": "Помощь",
+  "url_path": "/threads/pomos.26046/",
+  "user_id": 5469,
+  "username": "Sarman",
+  "view_count": 1106
+}

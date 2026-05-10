@@ -1,0 +1,134 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Стена пользователя _Xz_ (STABLE).zip",
+      "id": 3059,
+      "local_path": null,
+      "r2_key": null,
+      "size": 6680,
+      "src_url": "https://torrentpier.com/api/resource-versions/183/download?file=3059"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]\n/*********************************/\n\nconfig.php в конец добавить:\n\n$bb_cfg['chat_message'] = 25;\n\nв viewprofile.php найти:\n\n//\n// Generate page\n//\n\nпосле вставить:\n\nif (!$sql = CACHE('bb_cache')->get(\"user_comments_{$profiledata['user_id']}\"))\n{\n    $sql = DB()->fetch_rowset(\"SELECT c.*, u.username, u.user_rank, u.avatar_ext_id, u.user_opt\n        FROM bb_user_comments c\n        LEFT JOIN \". BB_USERS .\" u ON(u.user_id = c.user_id)\n        WHERE c.type_id = {$profiledata['user_id']}\n        ORDER BY c.id DESC\n        LIMIT {$bb_cfg['chat_message']}\");\n    CACHE('bb_cache')->set(\"user_comments_{$profiledata['user_id']}\", $sql);\n}\n\nif(!$sql)\n{\n    $message = '<div class=\"tCenter row2 chat-comment\"><span style=\"font-size: 11px;\">Никто ещё не оставил комментарий, может быть это сделаете вы?</span></div>';\n\n    $template->assign_block_vars('comments', array(\n        'TEXT'        => $message,\n    ));\n}\nelse\n{\n    foreach($sql as $row)\n    {\n        $message = '<div class=\"row2 chat-comment\" id=\"pp_'. $row['id'] .'\"><div style=\"min-height: 32px;\">';\n        $message .= ($row['user_id'] == GUEST_UID) ? '' : '<a href=\"'. make_url(PROFILE_URL . $row['user_id']) .'\">';\n        $message .= str_replace('<img', '<img align=\"left\" height=\"32\" width=\"32\" style=\"padding-right: 3px;\"', get_avatar($row['user_id'], $row['avatar_ext_id'], !bf($row['user_opt'], 'user_opt', 'dis_avatar')));\n        $message .= ($row['user_id'] == GUEST_UID) ? '' : '</a>';\n        if(IS_AM)\n        {\n            $message .= '<input onclick=\"set_hid_chbox('. $row['id'] .');\" class=\"floatR chat-post\" type=\"checkbox\" value=\"'. $row['id'] .'\" />';\n            $message .= '<span onclick=\"edit_comment('. $row['id'] .'); return false;\" class=\"txtb floatR\">[p]</span>';\n        }\n        $title_ip = (IS_ADMIN) ? decode_ip($row['ip']) : 'Ник в чат';\n        $message .= '<a href=\"#\" class=\"bold\" title=\"'. $title_ip .'\" onclick=\"add_nick(\\'[n]'. $row['username'] .'[/n]\\'); return false;\">'. str_replace('title=\"', 'data=\"', profile_url(array('username' => $row['username'], 'user_rank' => $row['user_rank']))) .'</a><div class=\"small\">'. bb_date($row['time']) .'</div></div>';\n        $message .= '<div class=\"spacer_2\"></div><span style=\"font-size: 11px;\">'. $row['text_html'] .'</span></div>';\n        $message .= (IS_AM) ? '<span id=\"pe_'. $row['id'] .'\"></span>' : '';\n\n        $template->assign_block_vars('comments', array(\n            'TEXT'        => $message,\n        ));\n    }\n}\n\n$template->assign_vars(array(\n    'COMMENT_ID'    => (int) @$sql[0]['id'],\n    'COUNT_COMMENT' => count($sql),\n));\n\nв usercp_viewprofile.tpl найти\n\n<!-- IF SHOW_SEARCH_DL -->\n<div class=\"tCenter\">\n    <a class=\"gen\" href=\"{U_SEARCH}?dlu={PROFILE_USER_ID}&dlw=1\">{L_SEARCH_DL_WILL_DOWNLOADS}</a> ::\n    <a class=\"gen\" href=\"{U_SEARCH}?dlu={PROFILE_USER_ID}&dlc=1\">{L_SEARCH_DL_COMPLETE_DOWNLOADS}</a>\n</div>\n<!-- ENDIF -->\n\nпосле вставить\n\n<script type=\"text/javascript\">\nvar comment_id = {COMMENT_ID};\najax.callback.comments = function(data) {\n    if(data.up) $('#chat').scrollTop(0);\n    if(data.clear) {\n        $('.chat_message').attr('value', '');\n        get_message_comments(1);\n    }\n    <!-- IF IS_AM -->\n    else if(data.del) {\n        for(i=0; i < data.del.length; i++) {\n            $('#pp_'+ data.del[i]).hide();\n        }\n    }else if(data.html){\n        $('#pp_'+ data.post_id).show().html(data.html);\n        initPostBBCode('#pp_'+ data.post_id);\n        $('#pe_'+ data.post_id).hide();\n        ajax.open = false;\n    } else if(data.text){\n        ajax.open = data.post_id;\n        $('#pe_'+ data.post_id).html(data.text);\n    }\n    <!-- ENDIF -->\n    else {\n        if(data.message) $('#chat').prepend(data.message);\n        initPostBBCode('#chat');\n    }\n\n    if(data.id) comment_id = data.id;\n};\nsetInterval(function(){ get_message_comments(0); }, 60000);\n\nfunction get_message_comments(up){\n    ajax.exec({action: 'comments', table: 'user', mode: 'select', id: comment_id, type_id: {PROFILE_USER_ID}, up: up});\n}\nfunction submit_click(e) {\n    e = e || window.event;\n    if (e.keyCode == 13 && e.ctrlKey) {\n        submit_chat();\n    };\n}\nfunction submit_chat(){\n    var message = $('.chat_message').val();\n    if (message.length < 3) {\n        alert('Вы должны ввести текст сообщения');\n        $('.chat_message').focus();\n        return false;\n    }\n    ajax.exec({action : 'comments', table: 'user', type_id: {PROFILE_USER_ID}, mode: 'insert', message: message});\n}\nfunction add_nick(text){\n    var message = $('.chat_message').val();\n    $('.chat_message').attr('value', message + text +' ');\n    $('.chat_message').focus();\n}\n</script>\n<!-- IF IS_AM -->\n<script type=\"text/javascript\">\najax.open = false;\nfunction edit_comment (post_id, text, type) {\n    if(ajax.open && ajax.open != post_id) {\n        alert('У вас уже открыто одно быстрое редактирование!');\n    } else{\n        if(ajax.open && !text){\n            $('#pp_'+ post_id).show();\n            $('#pe_'+ post_id).hide();\n        } else{\n            $('#pp_'+ post_id).hide();\n            $('#pe_'+ post_id).show();\n\n            ajax.exec({\n                action  : 'comments',\n                mode    : 'edit',\n                post_id : post_id,\n                text    : text,\n                type_id : {PROFILE_USER_ID},\n                table   : 'user',\n                type    : type\n            });\n        }\n        ajax.open = false;\n    }\n}\nfunction del_message_chat(){\n    if(!confirm('Вы уверены, что хотите удалить эти сообщения?')) return false;\n    var ids = 0;\n    $('input.chat-post:checked').each(function(){\n        ids += ','+ this.value;\n    });\n    if(!ids) alert('Вы не выбрали сообщения.');\n    else ajax.exec({action : 'comments', table: 'user', type_id: {PROFILE_USER_ID}, mode: 'delete', ids: ids});\n}\nfunction set_hid_chbox(id)\n{\n    $('#pp_'+ id).toggleClass('hl-selected-post');\n    return false;\n}\n</script>\n<!-- ENDIF -->\n<style type=\"text/css\">\n#chat { overflow: auto;<!-- IF COUNT_COMMENT > 3 --> height: 300px;<!-- ENDIF --> }\n.chat-comment {\n    margin: 3px;\n    padding: 4px;\n    border: solid 1px #b7c0c5;\n    border-radius: 5px;\n    -moz-border-radius: 5px;\n    -webkit-border-radius: 5px;\n}\ntextarea.chat_message {\n    height: 40px;\n    margin: 4px;\n    border-radius: 0px;\n    -moz-border-radius: 0px;\n    -webkit-border-radius: 0px;\n    font-size: 11px;\n}\n#submit_chat {\n    border: 1px solid #b7c0c5;\n    padding: 2px;\n    background-color: #EFEFEF;\n    font-size: 10px;\n    font-weight: bold;\n}\n#submit_chat:hover { color: #0080FF; }\n</style>\n    <div class=\"tCenter\">\n        <form class=\"menu\" name=\"post\">\n        <textarea class=\"chat_message w90\" id=\"message\" onkeydown=\"submit_click(event)\"></textarea>\n        <div class=\"floatR pad_4\">\n            <span title=\"Оправить (Ctrl+Enter)\" id=\"submit_chat\" onclick=\"submit_chat(); return false;\">Отправить</span>\n            <span title=\"Очистить\" id=\"submit_chat\" onclick=\"$('.chat_message').attr('value', ''); $('.chat_message').focus();\">&nbsp;X&nbsp;</span>\n            <span title=\"Смайлы\" id=\"submit_chat\" onclick=\"window.open('posting.php?mode=smilies', '_phpbbsmilies', 'height=540, resizable=yes, scrollbars=yes ,width=620, left=360, top=60'); return false;\">&nbsp;:)&nbsp;</span>\n            <!-- IF IS_AM --><span title=\"Удалялка\" id=\"submit_chat\" onclick=\"del_message_chat();\">&#8224;</span><!-- ENDIF -->\n            <img title=\"Обновить чат\" onclick=\"get_message_comments(1);\" src=\"/images/pic_loading.gif\">\n        </div>\n        <div class=\"clear\"></div>\n        <div class=\"spacer_2\"></div>\n        <div class=\"tLeft w100\" id=\"chat\">\n            <!-- BEGIN comments -->{comments.TEXT}<!-- END comments -->\n        </div>\n        </form>\n    </div>\n\n-- bbcode.php\n+ в самый конец\nfunction bbcode_chat ($text)\n{\n    global $bbcode;\n\n    if (!isset($bbcode))\n    {\n        $bbcode = new bbcode();\n    }\n    $text = $bbcode->new_line2html($text);\n    $text = $bbcode->make_clickable($text);\n    $text = $bbcode->smilies_pass($text);\n\n    return ($text);\n}\n\n-- sql\n\nCREATE TABLE IF NOT EXISTS `bb_user_comments` (\n  `id` int(11) NOT NULL AUTO_INCREMENT,\n  `type_id` int(11) NOT NULL DEFAULT '0',\n  `user_id` int(11) NOT NULL DEFAULT '0',\n  `time` int(11) NOT NULL DEFAULT '0',\n  `text` text NOT NULL,\n  `text_html` text NOT NULL,\n  `ip` char(32) NOT NULL,\n  PRIMARY KEY (`id`)\n) ENGINE=MyISAM  DEFAULT CHARSET=utf8 ;\n\n-- ajax.php\n- найти\n\nswitch ($ajax->action)\n{\n    case 'view_post':\n        require(INC_DIR .'bbcode.php');\n    break;\n   \n+ заменить на\n\nswitch ($ajax->action)\n{\n    case 'comments':\n    case 'view_post':\n        require(INC_DIR .'bbcode.php');\n    break;\n   \n- найти\n\n        'view_post'         => array('guest'),\n       \n+ после вставить\n\n        'comments'          => array('guest'),\n       \n- найти\n\n    function manage_user()\n    {\n        require(AJAX_DIR .'manage_user.php');\n    }\n   \n+ после вставить\n\n    function comments()\n    {\n        require(AJAX_DIR .'comments.php');\n    }\n\n-- comments.php  закинуть в папку library/ajax/[/PHP]\n[/SPOILER]",
+    "owner": "_Xz_",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425215506,
+      "file_size": 84612,
+      "filename": "1.webp",
+      "height": 923,
+      "id": 3065,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/1-webp.3065/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3069-ab6c5433adee677bb3d09feed33dbdd4.jpg?hash=GIzmkEmJSG",
+      "width": 1280
+    },
+    {
+      "attach_date": 1425215506,
+      "file_size": 83224,
+      "filename": "2.webp",
+      "height": 923,
+      "id": 3066,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2-webp.3066/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3070-a268e901ff339507542e2630c357f1d9.jpg?hash=3pEjhlqrpl",
+      "width": 1280
+    },
+    {
+      "attach_date": 1425215507,
+      "file_size": 74198,
+      "filename": "3.webp",
+      "height": 923,
+      "id": 3067,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/3-webp.3067/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3071-e24ab87b118a8926b31b6f05e10f3238.jpg?hash=eG3zqnyjWU",
+      "width": 1280
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет возможность оставлять записи в профиле пользователя.",
+  "download_count": 352,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/153.jpg?1425424465",
+  "id": 153,
+  "is_fileless": null,
+  "last_update": 1425215457,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1425203097,
+  "resource_state": "visible",
+  "slug": "stena-pol-zovatela",
+  "tag_line": "Добавляет возможность оставлять записи в профиле пользователя.",
+  "tags": [],
+  "title": "Стена пользователя",
+  "url_path": "/resources/stena-pol-zovatela.153/",
+  "user_id": 2684,
+  "username": "dredd",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 267,
+      "files": [
+        {
+          "filename": "[FULL] Стена пользователя _Xz_ (STABLE).zip",
+          "id": 3059,
+          "local_path": null,
+          "r2_key": null,
+          "size": 6680,
+          "src_url": "https://torrentpier.com/api/resource-versions/183/download?file=3059"
+        }
+      ],
+      "id": 183,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425215457,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/stena-pol-zovatela.153/version/183/"
+    },
+    {
+      "download_count": 85,
+      "files": [
+        {
+          "filename": "[FULL] Стена пользователя _Xz_.rar",
+          "id": 3017,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4790,
+          "src_url": "https://torrentpier.com/api/resource-versions/170/download?file=3017"
+        }
+      ],
+      "id": 170,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425203097,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/stena-pol-zovatela.153/version/170/"
+    }
+  ],
+  "view_count": 639
+}

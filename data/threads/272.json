@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 2904,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 272,
+  "last_post_date": 1316175452,
+  "node_id": 57,
+  "post_date": 1316174052,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 2904,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как показать простым пользователям эту статистику<br />\n<br />\nСейчас на форуме 2 посетителей: 2 зарегистрированных и 0 гостей  [ 1 · 0 · 0 · 0 · 1 · 0 ]<br />\nAdmin, user<br />\n<br />\nи эту<br />\n<br />\nданные за последние пять минут<br />\n<br />\n [ Администратор ] [ Модератор ] [ Участник групп ]<br />\n<br />\nПочему то только админ видет...<br />\nНе стал скрину делать думаю понятно.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1316174052,
+      "user_id": 149,
+      "user_title": "User",
+      "username": "demmon"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 2906,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Видят участники групп и выше, сделано это не просто так, а для оптимизации. Вам действительно надо открыть для всех?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1316174415,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 2907,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Для всех кроме гостей... пока народу мало что бы нагружать сервер, пусть видят что трекер не без людный.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1316174928,
+      "user_id": 149,
+      "user_title": "User",
+      "username": "demmon"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 2908,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "&gt;<b> page_header.php<br />\n<br />\n</b><pre class=\"xfBb-code\" data-lang=\"php\">if (defined(&#039;IS_GUEST&#039;) &amp;&amp; !(IS_GUEST || IS_USER))</pre><br />\n<b>заменить на:<br />\n<br />\n</b><pre class=\"xfBb-code\" data-lang=\"php\">if (defined(&#039;IS_GUEST&#039;) &amp;&amp; !(IS_GUEST))</pre><b><br />\n </b>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1316175452,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "pol-zovatelej-onlajn",
+  "sticky": false,
+  "tags": [],
+  "title": "Пользователей онлайн",
+  "url_path": "/threads/pol-zovatelej-onlajn.272/",
+  "user_id": 149,
+  "username": "demmon",
+  "view_count": 1539
+}

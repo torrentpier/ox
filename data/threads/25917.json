@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 60527,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 25917,
+  "last_post_date": 1400012793,
+  "node_id": 3,
+  "post_date": 1398537156,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60527,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<div data-template-name=\"public:_media_site_embed_youtube\" class=\"bbMediaWrapper\" data-media-site-id=\"youtube\" data-media-key=\"_cb99SX64EI\">\n\t<div class=\"bbMediaWrapper-inner\">\n\t\t<iframe src=\"https://www.youtube.com/embed/_cb99SX64EI?wmode=opaque\"\n\t\t\t\tloading=\"lazy\"\n\t\t\t\twidth=\"560\" height=\"315\"\n\t\t\t\tframeborder=\"0\" allowfullscreen=\"true\"></iframe>\n\t</div>\n</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1398537156,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60762,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Думаешь кто-то будет обсуждать тут музыку? :woot:",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1400012793,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "slim-loto",
+  "sticky": false,
+  "tags": [],
+  "title": "Slim - Лото",
+  "url_path": "/threads/slim-loto.25917/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1032
+}

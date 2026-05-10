@@ -1,0 +1,177 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 20470,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1541,
+  "last_post_date": 1380021961,
+  "node_id": 57,
+  "post_date": 1348140135,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1348139933,
+          "file_size": 2914,
+          "filename": "language.webp",
+          "height": 158,
+          "id": 1416,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/language-webp.1416/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1417-9c0394844be0fc1217318389843fc586.jpg?hash=DDOrokhlG_",
+          "width": 310
+        },
+        {
+          "attach_date": 1348139948,
+          "file_size": 2200,
+          "filename": "language2.webp",
+          "height": 94,
+          "id": 1417,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/language2-webp.1417/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1418-60d06afa654285c274416fd883aaee66.jpg?hash=rKpYMiFaOd",
+          "width": 275
+        }
+      ],
+      "id": 20470,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет.<br />\nПодскажите, как реализовать выбор языка сайта при нажатии на текст или иконку флажка.<br />\nНапример:<br />\n<img src=\"https://torrentpier.com/attachments/1416/\" alt=\"language.webp\" /><img src=\"https://torrentpier.com/attachments/1417/\" alt=\"language2.webp\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1348140135,
+      "user_id": 79,
+      "user_title": "User",
+      "username": "Lynx"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20472,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Lynx</b>, <a href=\"http://webucoz.com/allucoz/skripty-dlya-ucoz/203870-1-1-0-3870.html\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://webucoz.com/allucoz/skripty-dlya-ucoz/203870-1-1-0-3870.html</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1348140534,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1348143753,
+          "file_size": 7984,
+          "filename": "language3.webp",
+          "height": 245,
+          "id": 1418,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/language3-webp.1418/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1419-6c79e95b2bb234bcb438dac8404d298b.jpg?hash=z8oowtBweH",
+          "width": 263
+        },
+        {
+          "attach_date": 1348143764,
+          "file_size": 7132,
+          "filename": "language1.webp",
+          "height": 185,
+          "id": 1419,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/language1-webp.1419/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1420-ab473430c7052b9fe66446fad194281b.jpg?hash=AwPyk1yYAG",
+          "width": 318
+        }
+      ],
+      "id": 20474,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Lange</b>, спасибо, попробую.<br />\nЕсть ещё такой вариант:<br />\n<a href=\"https://torrentpier.com/attachments/1418/\"><img src=\"https://torrentpier.com/data/attachments/1/1419-6c79e95b2bb234bcb438dac8404d298b.jpg?hash=z8oowtBweH\" alt=\"language3.webp\" /></a><a href=\"https://torrentpier.com/attachments/1419/\"><img src=\"https://torrentpier.com/data/attachments/1/1420-ab473430c7052b9fe66446fad194281b.jpg?hash=AwPyk1yYAG\" alt=\"language1.webp\" /></a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1348143809,
+      "user_id": 79,
+      "user_title": "User",
+      "username": "Lynx"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20475,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Lynx</b>, я это ещё вспомнил с юкозовских сайтов 😀",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1348147200,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 45470,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"http://torrentpier.com/threads/%D0%A1%D0%BC%D0%B5%D0%BD%D0%B0-%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0-%D0%BD%D0%B0-%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B5.7872/\" class=\"link link--internal\">http://torrentpier.com/threads/Смена-языка-на-главной-странице.7872/</a>",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1380021961,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "vybor-azyka-sajta",
+  "sticky": false,
+  "tags": [],
+  "title": "Выбор языка сайта",
+  "url_path": "/threads/vybor-azyka-sajta.1541/",
+  "user_id": 79,
+  "username": "Lynx",
+  "view_count": 1693
+}

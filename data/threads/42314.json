@@ -1,0 +1,95 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 96762,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 50,
+    "title": "Graphics and styles for TorrentPier"
+  },
+  "id": 42314,
+  "last_post_date": 1728371768,
+  "node_id": 50,
+  "post_date": 1728362567,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1728362526,
+          "file_size": 9432,
+          "filename": "ModernRanks.webp",
+          "height": 127,
+          "id": 6184,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/modernranks-webp.6184/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6188-507cad30bbb9d089148a74e8a391d566.jpg?hash=CkuH3JrF1j",
+          "width": 832
+        },
+        {
+          "attach_date": 1728362527,
+          "file_size": 65822,
+          "filename": "ModernRanks.rar",
+          "height": 0,
+          "id": 6185,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/modernranks-rar.6185/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 96762,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<div style=\"text-align: center\"><b><span style=\"font-size: 26px\"><span style=\"color: rgb(84, 172, 210)\">Лычка ModernRanks<br />\n<img src=\"https://torrentpier.com/attachments/6184/\" alt=\"ModernRanks.webp\" /></span></span></b>&#8203;</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1728362567,
+      "user_id": 7621,
+      "user_title": "User",
+      "username": "DimaUZB2001"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96764,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо за мод, классные лычки!",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1728371768,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "lycka-modernranks",
+  "sticky": false,
+  "tags": [],
+  "title": "Лычка ModernRanks",
+  "url_path": "/threads/lycka-modernranks.42314/",
+  "user_id": 7621,
+  "username": "DimaUZB2001",
+  "view_count": 835
+}

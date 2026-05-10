@@ -1,0 +1,74 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 98265,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 43214,
+  "last_post_date": 1760509533,
+  "node_id": 111,
+  "post_date": 1760509533,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1760509564,
+          "file_size": 6648,
+          "filename": "Cattle.webp",
+          "height": 343,
+          "id": 6594,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/cattle-webp.6594/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6598-6da6b52a8361d0f0056672eb5a52892a.jpg?hash=jFIp-r3dyo",
+          "width": 302
+        }
+      ],
+      "id": 98265,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier Cattle. Версия 2.6.0</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/6594/\" alt=\"Cattle.webp\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/releases/tag/v2.6.0\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.6.0 · torrentpier/torrentpier</a><br />\n<br />\n<b>Чейнджлог:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/compare/v2.5.0...v2.6.0\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Comparing v2.5.0...v2.6.0 · torrentpier/torrentpier</a><br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-rocket-features\"></a>🚀 Features&#8203;<a class=\"hoverLink\" href=\"#-rocket-features\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\">[<b>breaking</b>] Implement unified cache system with Nette Caching (<a href=\"https://github.com/torrentpier/torrentpier/pull/1963\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1963</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/07a06a33cd97b37f68b533a87cdb5f7578f2c86f\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">07a06a3</a>)</li>\n<li data-xf-list-type=\"ul\">Replace legacy database layer with Nette Database implementation (<a href=\"https://github.com/torrentpier/torrentpier/pull/1961\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1961</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/f50b914cc18f777d92002baf2c812a635d5eed4b\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">f50b914</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-bug-bug-fixes\"></a>🐛 Bug Fixes&#8203;<a class=\"hoverLink\" href=\"#-bug-bug-fixes\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(User)</i> Add null and array checks before session data operations (<a href=\"https://github.com/torrentpier/torrentpier/pull/1962\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1962</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/e458109eefc54d86a78a1ddb3954581524852516\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">e458109</a>)</li>\n</ul>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1760509533,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-cattle-versia-2-6-0",
+  "sticky": false,
+  "tags": [
+    "cattle",
+    "релиз",
+    "ченжлог"
+  ],
+  "title": "TorrentPier Cattle. Версия 2.6.0",
+  "url_path": "/threads/torrentpier-cattle-versia-2-6-0.43214/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 316
+}

@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 85374,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 41294,
+  "last_post_date": 1445178429,
+  "node_id": 80,
+  "post_date": 1445115016,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85374,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В торрент клиенте, в поле состояния трекера, находится такое - HTTP Reply 404<br />\nОписываю &quot;историю&quot;. Трекер был создан, при этом состояние трекеров в торрент клиенте было как положено  - РАБОТАЕТ.  Спустя какое-то время трекер был перенесён на другой сервер. И уже на нём обнаружился данный косяк с HTTP Reply 404<br />\nКонечно имеется и резервная копия трекера, что был на старом трекере, но причина не ясна, таким образом, не ясна причина её устранения. Движок из новых - <b>2.1.5 [ALPHA]</b> Дата выпуска - <b>06-12-2014;  Версия Zend Framework: <b>2.3.3</b></b>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1445115016,
+      "user_id": 4635,
+      "user_title": "User",
+      "username": "wint1000"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85377,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Дополню, найденные проявления косяков после переезда с простого сервера на виртуальный. Обнаружил, что  <span style=\"font-size: 15px\"><b>Кто сейчас на форуме </b>находится в одном положении, в течении уже многих десятков минут и не изменяет свой статистики. Возможно такое, что виртуальный сервер вообще это вещь глючная в части управления КРОН-ом ? И вследствии чего через задницу выполняемые задачи могут приводить к самым разнообразным глюкам. Может на виртуальном сервере вообще по нормальному нельзя обеспечить работу КРОН-а и лучше переезжать обратно на обычный сервер? Там всё описанное работало.</span>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1445123559,
+      "user_id": 4635,
+      "user_title": "User",
+      "username": "wint1000"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85384,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Логи что говорят?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1445171596,
+      "user_id": 93,
+      "user_title": "User",
+      "username": "Ragnar"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85390,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "протакол не верный был.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1445178429,
+      "user_id": 97,
+      "user_title": "User",
+      "username": "Zenden"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 3,
+  "slug": "http-reply-404-v-pole-sostoania-trekera",
+  "sticky": false,
+  "tags": [],
+  "title": "HTTP Reply 404 - в поле состояния трекера",
+  "url_path": "/threads/http-reply-404-v-pole-sostoania-trekera.41294/",
+  "user_id": 4635,
+  "username": "wint1000",
+  "view_count": 1147
+}

@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 93861,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42032,
+  "last_post_date": 1544813412,
+  "node_id": 47,
+  "post_date": 1544813412,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93861,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "lufton добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/autocomplete.266/\" class=\"link link--internal\">Autocomplete</a> - Поле автодополнения текста с возможностью множественного выбора<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Мод поля с автодополнением. Позволяет пользователю выбрать элемент из списка или ввести свой текст. Поддерживает множественный выбор и фильтрацию элементов по введённому тексту.</blockquote><br />\n<a href=\"https://torrentpier.com/resources/autocomplete.266/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1544813412,
+      "user_id": 8750,
+      "user_title": "User",
+      "username": "lufton"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "autocomplete",
+  "sticky": false,
+  "tags": [],
+  "title": "Autocomplete",
+  "url_path": "/threads/autocomplete.42032/",
+  "user_id": 8750,
+  "username": "lufton",
+  "view_count": 851
+}

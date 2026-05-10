@@ -1,0 +1,73 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 97233,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42368,
+  "last_post_date": 1748026851,
+  "node_id": 57,
+  "post_date": 1747979700,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97233,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Видео по типу </b><a href=\"https://torrentpier.com/media/rabota-s-konstruktorom-shablonov.12/\" class=\"link link--internal\"><b>этого</b></a><b>, которые тут есть, недоступны!</b><br />\n<br />\nГде можно найти примеры Шаблонов для релизов (Поля форма, сообщение и название)?<br />\n<br />\n<i>Версия TP: Cattle (v2.4.5)</i>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1747979700,
+      "user_id": 10827,
+      "user_title": "User",
+      "username": "Nyako"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97234,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Вот готовый набор с уже настроенными шаблонами: <a href=\"https://torrentpier.com/threads/shablony-dlja-oformlenija-relizov-v-konstruktor-pack-no1.25867/\" class=\"link link--internal\">https://torrentpier.com/threads/shablony-dlja-oformlenija-relizov-v-konstruktor-pack-no1.25867/</a><br />\n<br />\nПо идее должен заработать на новой версии.<br />\n<br />\nНе знаю правда насколько сильно это по теме вопроса, ибо видео гайда по работе с шаблонами - нету, да и инструкции тоже... Но надеюсь готовый набор хоть как-то поможет",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1748026851,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "rabota-s-konstruktorom-sablonov",
+  "sticky": false,
+  "tags": [],
+  "title": "Работа с конструктором шаблонов?",
+  "url_path": "/threads/rabota-s-konstruktorom-sablonov.42368/",
+  "user_id": 10827,
+  "username": "Nyako",
+  "view_count": 536
+}

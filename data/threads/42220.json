@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 95525,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42220,
+  "last_post_date": 1714642385,
+  "node_id": 47,
+  "post_date": 1704084093,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95525,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/kontrolnye-summy-fajlov.280/\" class=\"link link--internal\">Контрольные суммы файлов</a> - Добавляет отображение контрольной суммы (MD5) в топике для каждого загруженного файла.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> Добавляет отображение контрольной суммы (MD5) в топике для каждого загруженного файла. Это относится к вложениям которые не являются торрент-файлами &amp; изображениями. То есть хэш будет отображаться для документов, архивов и прочих файлов. MD5-хэш вычисляется в процессе загрузки файла на сервер, а не на момент открытия темы.</blockquote><br />\n<a href=\"https://torrentpier.com/resources/kontrolnye-summy-fajlov.280/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1704084093,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95527,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/kontrolnye-summy-fajlov.280/\" class=\"link link--internal\">Контрольные суммы файлов</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/kontrolnye-summy-fajlov.280/update/455/\" class=\"link link--internal\">Обновление v1.1.0</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Исправлены ошибки в инструкции</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/kontrolnye-summy-fajlov.280/update/455/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1704101619,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96121,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/kontrolnye-summy-fajlov.280/\" class=\"link link--internal\">Контрольные суммы файлов</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/kontrolnye-summy-fajlov.280/update/514/\" class=\"link link--internal\">Обновление v1.2.0</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Исправлены мелкие ошибки</li>\n<li data-xf-list-type=\"ul\">Добавлен поиск файлов по MD5 хэшу в админке</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/kontrolnye-summy-fajlov.280/update/514/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1714642385,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "kontrol-nye-summy-fajlov",
+  "sticky": false,
+  "tags": [],
+  "title": "Контрольные суммы файлов",
+  "url_path": "/threads/kontrol-nye-summy-fajlov.42220/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 1019
+}

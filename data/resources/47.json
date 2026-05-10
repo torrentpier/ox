@@ -1,0 +1,103 @@
+{
+  "category": {
+    "description": "Icons, smileys, and other graphic elements for design.",
+    "id": 6,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Graphics and styles",
+    "view_url": "https://torrentpier.com/resources/categories/graphics-and-styles.6/"
+  },
+  "current_files": [
+    {
+      "filename": "NEW PM dialog for TorrenPier 2.zip",
+      "id": 3862,
+      "local_path": null,
+      "r2_key": null,
+      "size": 920331,
+      "src_url": "https://torrentpier.com/api/resource-versions/329/download?file=3862"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[CODE]##############################################################################################\n## MOD Title:         new pm dialog for jquery-ui\n## MOD Author:         Не известен\n## MOD Adapted:         REM\n## MOD Description:     Уведомление при получении ЛС на jQuery-UI for TorrentPier 2\n## MOD Version:     2.0\n##\n########################################################\n##\n##Установка:\n##скопировать содержимое архива себе на сервер.\n##\n##Настройка стиля в templates\\default\\css\\\n##Копировать все папки не обязательно, надо выбрать нужный стиль (папку)\n##В данной установке использовался стиль: black-tie\n##############################################################################\n\n#\n#-----[ OPEN ]------------------------------------------\n#\ntemplates/default/page_header.tpl\n\n#\n#-----[ FIND ]------------------------------------------\n#\n</head>\n\n#\n#-----[ BEFORE, ADD ]------------------------------------------\n#\n    <link type=\"text/css\" href=\"{SITE_URL}templates/default/css/black-tie/jquery-ui.custom.css\" rel=\"stylesheet\" /> \n    <script type=\"text/javascript\" src=\"{SITE_URL}misc/js/ui/jquery-ui.custom.min.js\"></script>\n    <script type=\"text/javascript\">\n    $(function(){\n      $(\"#dialog\").dialog({\n            autoOpen: true,\n            width: 500,\n            height: 200,\n            //modal: true,\n             show: \"slide\",\n            buttons: {\n                \"Ok\": function() {\n                    $(this).dialog(\"close\");\n                },\n                \"Close\": function() {\n                    $(this).dialog(\"close\");\n            }\n        }\n      });\n    });\n</script>\n\n############################################################################\n##\n## //black-tie - стиль\n## //modal: true - затемнение фона\n############################################################################\n#\n#-----[ FIND ]------------------------------------------\n#\n\n<body>\n\n#\n#-----[ AFTER, ADD ]------------------------------------------\n#\n\n<!-- IF HAVE_NEW_PM -->\n    <div id=\"dialog\" title=\"{L_LS_TITLE_DIALOG}\">\n      <p>{L_DEAR_DIALOG} {THIS_USERNAME},</br>{L_SL_TEXT_DIALOG}</br>\n      <a href=\"{U_READ_PM}\"><font>{PM_INFO}</font></a></p>\n    </div>\n<!-- ENDIF -->\n\n\n#\n#-----[ OPEN ]------------------------------------------\n#\n/language/lang_russian/lang_main.php\n\n#\n#-----[ FIND ]------------------------------------------\n#\n\n// copyright\n\n#\n#-----[ BEFORE, ADD ]------------------------------------------\n#\n\n// jquery-ui\n$lang['DEAR_DIALOG'] = 'Уважаемый(ая)';\n$lang['LS_TITLE_DIALOG'] = 'Получены персональные сообщения';\n$lang['SL_TEXT_DIALOG'] = 'с момента вашего отсутствия на сайте вам было прислано';\n\n#\n#-----[ SAVE/CLOSE ALL FILES ]------------------------------------------\n#\n#[/CODE]\n[/SPOILER]",
+    "owner": "REM"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1374869861,
+      "file_size": 88666,
+      "filename": "8299b4a67132ff359c343f09d9478f80.webp",
+      "height": 703,
+      "id": 2148,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/8299b4a67132ff359c343f09d9478f80-webp.2148/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2153-3b1fe0e185cf1c254a5cd6a8639977a6.jpg?hash=62dadBA6y2",
+      "width": 1434
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляем всплывающее уведомление при получении ЛС на jQuery UI.",
+  "download_count": 484,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/47.jpg?1431460039",
+  "id": 47,
+  "is_fileless": null,
+  "last_update": 1431460086,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1374869888,
+  "resource_state": "visible",
+  "slug": "vsplyvausee-okno-pri-polucenii-novogo-ls",
+  "tag_line": "Добавляем всплывающее уведомление при получении ЛС на jQuery UI.",
+  "tags": [],
+  "title": "Всплывающее окно при получении нового ЛС",
+  "url_path": "/resources/vsplyvausee-okno-pri-polucenii-novogo-ls.47/",
+  "user_id": 1290,
+  "username": "REM",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 354,
+      "files": [
+        {
+          "filename": "NEW PM dialog for TorrenPier 2.zip",
+          "id": 3862,
+          "local_path": null,
+          "r2_key": null,
+          "size": 920331,
+          "src_url": "https://torrentpier.com/api/resource-versions/329/download?file=3862"
+        }
+      ],
+      "id": 329,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1431460086,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/vsplyvausee-okno-pri-polucenii-novogo-ls.47/version/329/"
+    },
+    {
+      "download_count": 132,
+      "files": [
+        {
+          "filename": "NEW PM dialog for TorrenPier 2.zip",
+          "id": 2149,
+          "local_path": null,
+          "r2_key": null,
+          "size": 936779,
+          "src_url": "https://torrentpier.com/api/resource-versions/48/download?file=2149"
+        }
+      ],
+      "id": 48,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1374869888,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/vsplyvausee-okno-pri-polucenii-novogo-ls.47/version/48/"
+    }
+  ],
+  "view_count": 632
+}

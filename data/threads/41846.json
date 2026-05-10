@@ -1,0 +1,132 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 92405,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 41846,
+  "last_post_date": 1512222689,
+  "node_id": 80,
+  "post_date": 1512060606,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92405,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте. Я уставил TorrentPier II 2.5 (unstable) (R553), хотел сделать настройку трекера ,когда захожу в администрирование в раздел настройки трекера мне пишет Изменения недоступны (редактируйте <b>$tr_cfg</b> в файле config.php) .Пожалуйста объясни подробно как редактировать <b>$tr_cfg</b> ?что писать или что исправить надо.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1512060606,
+      "user_id": 8120,
+      "user_title": "User",
+      "username": "BGnext"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92406,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"BGnext\">Здравствуйте. Я уставил TorrentPier II 2.5 (unstable) (R553), хотел сделать настройку трекера ,когда захожу в администрирование в раздел настройки трекера мне пишет Изменения недоступны (редактируйте <b>$tr_cfg</b> в файле config.php) .Пожалуйста объясни подробно как редактировать <b>$tr_cfg</b> ?что писать или что исправить надо.</blockquote>Во первых бросить затею заводить трекер на 553 хотя бы возьми 2.1.5, во вторых в поиск за ответами, обсуждалось ни один раз",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1512064172,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92407,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Virtuoz\">Во первых бросить затею заводить трекер на 553 хотя бы возьми 2.1.5, во вторых в поиск за ответами, обсуждалось ни один раз</blockquote>Ссылку можно на 2.1.5 ?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1512066973,
+      "user_id": 8120,
+      "user_title": "User",
+      "username": "BGnext"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92408,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"BGnext\">Ссылку можно на 2.1.5 ?</blockquote><a href=\"https://github.com/torrentpier/torrentpier/tree/v2.1.5\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">GitHub - torrentpier/torrentpier at v2.1.5</a>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1512070971,
+      "user_id": 6187,
+      "user_title": "User",
+      "username": "Darkterror"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92409,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Darkterror\"><a href=\"https://github.com/torrentpier/torrentpier/tree/v2.1.5\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">GitHub - torrentpier/torrentpier at v2.1.5</a></blockquote>спасибо.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1512095988,
+      "user_id": 8120,
+      "user_title": "User",
+      "username": "BGnext"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92413,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Какой 2.1.5? Последняя версия 2.2.3, ни для каких других поддержки - нет.",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1512222689,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 5,
+  "slug": "redaktirovanie-tr_cfg",
+  "sticky": false,
+  "tags": [],
+  "title": "Редактирование $tr_cfg",
+  "url_path": "/threads/redaktirovanie-tr_cfg.41846/",
+  "user_id": 8120,
+  "username": "BGnext",
+  "view_count": 1426
+}

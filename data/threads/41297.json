@@ -1,0 +1,132 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 85435,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41297,
+  "last_post_date": 1468617002,
+  "node_id": 57,
+  "post_date": 1445395971,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1445395349,
+          "file_size": 4824,
+          "filename": "1ы.webp",
+          "height": 57,
+          "id": 4151,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1y-webp.4151/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4155-df153ec6408945e3f1c56fc516fbcd58.jpg?hash=WVq3ivK9mA",
+          "width": 828
+        },
+        {
+          "attach_date": 1445395577,
+          "file_size": 4592,
+          "filename": "2ы.webp",
+          "height": 49,
+          "id": 4152,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2y-webp.4152/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4156-d31dcd24f6ab11678b6879615b36343b.jpg?hash=8KUoBmbMlP",
+          "width": 944
+        }
+      ],
+      "id": 85435,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброе утро я долго не как не мог решить проблему, из-за этого обращаюсь к вам у меня проблемы с Ocelot.<br />\nПочему-то после ее включения все ip-шники в статистике отображается неверно. <b><u>Скриншот №1</u></b><br />\nИ у меня такой вопрос, можно ли включить стандартный анонсер, а ocelot использовать как ретрекер. Посмотрите на <b><u>Скриншот №2</u></b> на нескольких трекерах так же реализовано.<br />\n<br />\nЗаранее благодарю за помощь, очень нуждаюсь в ответах.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1445395971,
+      "user_id": 6340,
+      "user_title": "User",
+      "username": "baxa73"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86242,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Отображение из-за получение данных об ipv6, которые движок &quot;не умеет&quot;. А по второму вопросу - посмотрите как сейчас ретрекер прописан в 2.1.5 и по аналогии добавьте.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1451089850,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87600,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте.<br />\nСервер на Ubuntu<br />\nipv6 выключен.<br />\nНо все равно не корректное отображение адресов",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1463052429,
+      "user_id": 7158,
+      "user_title": "User",
+      "username": "DedMsk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88018,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/7158/\">DedMsk</a>, ожидаемый результат и по факту какие?",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1468617002,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "nekorrektnaa-rabota-ocelot",
+  "sticky": false,
+  "tags": [],
+  "title": "Некорректная работа Ocelot",
+  "url_path": "/threads/nekorrektnaa-rabota-ocelot.41297/",
+  "user_id": 6340,
+  "username": "baxa73",
+  "view_count": 1275
+}

@@ -1,0 +1,126 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] MonsterID аватар by belomaxorka.zip",
+      "id": 6081,
+      "local_path": null,
+      "r2_key": null,
+      "size": 64479,
+      "src_url": "https://torrentpier.com/api/resource-versions/526/download?file=6081"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "gd",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1721458004,
+      "file_size": 17980,
+      "filename": "firefox_quLHjeS8Gt.webp",
+      "height": 224,
+      "id": 6073,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_qulhjes8gt-webp.6073/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6077-376549b71cbd82a925b65dc4579f7b1d.jpg?hash=vn7Cb91DrA",
+      "width": 687
+    },
+    {
+      "attach_date": 1721458004,
+      "file_size": 6648,
+      "filename": "firefox_yPok5fY1R9.webp",
+      "height": 202,
+      "id": 6074,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_ypok5fy1r9-webp.6074/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6078-7618d4e224c37c5a5e76b224b9b07252.jpg?hash=O5ShfKo5JZ",
+      "width": 273
+    }
+  ],
+  "description_parsed": "<div style=\"text-align: center\"><span style=\"color: rgb(226, 80, 65)\">Данный мод по-умолчанию будет начиная с версии v2.4.4</span>&#8203;</div><hr /><b>Описание:</b> MonsterID — это метод создания уникального изображения монстра на основе определенного идентификатора (в нашем случае это адрес электронной почты). Более подробно можно почитать <a href=\"https://www.splitbrain.org/projects/monsterid\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">тут</a>.<br />\n<b>Совместимость: </b>LTS и более старые версии.",
+  "download_count": 348,
+  "external_url": null,
+  "icon_url": null,
+  "id": 299,
+  "is_fileless": null,
+  "last_update": 1721491447,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1721458008,
+  "resource_state": "visible",
+  "slug": "monsterid-avatar",
+  "tag_line": "Добавляет возможность пользователю создать MonsterID аватар.",
+  "tags": [
+    "monsterid",
+    "аватар monsterid",
+    "аватарки",
+    "мод",
+    "моды"
+  ],
+  "title": "MonsterID аватар",
+  "url_path": "/resources/monsterid-avatar.299/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.1",
+  "versions": [
+    {
+      "download_count": 259,
+      "files": [
+        {
+          "filename": "[FULL] MonsterID аватар by belomaxorka.zip",
+          "id": 6081,
+          "local_path": null,
+          "r2_key": null,
+          "size": 64479,
+          "src_url": "https://torrentpier.com/api/resource-versions/526/download?file=6081"
+        }
+      ],
+      "id": 526,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1721491447,
+      "version_state": "visible",
+      "version_string": "v1.0.1",
+      "view_url": "https://torrentpier.com/resources/monsterid-avatar.299/version/526/"
+    },
+    {
+      "download_count": 90,
+      "files": [
+        {
+          "filename": "[FULL] MonsterID аватар by belomaxorka.zip",
+          "id": 6072,
+          "local_path": null,
+          "r2_key": null,
+          "size": 64479,
+          "src_url": "https://torrentpier.com/api/resource-versions/525/download?file=6072"
+        }
+      ],
+      "id": 525,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1721458008,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/monsterid-avatar.299/version/525/"
+    }
+  ],
+  "view_count": 506
+}

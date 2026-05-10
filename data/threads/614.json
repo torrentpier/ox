@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 7800,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 614,
+  "last_post_date": 1324575974,
+  "node_id": 57,
+  "post_date": 1324570774,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 7800,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Что такое Download-топики и чем они отличаются от обычных раздач(релизов) ??<br />\nНикак понять не могу, что ставлю галочку что не ставлю никакого эффекта.  Спасибо!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1324570774,
+      "user_id": 597,
+      "user_title": "User",
+      "username": "leco"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 7812,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "добавляет надпись &quot;DL:&quot; в виевфоруме перед названием топика и позволяет изменять статус раздачи для пользователя (мои закачки). вещь бесполезная.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1324575562,
+      "user_id": 0,
+      "user_title": "",
+      "username": "frank"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 7816,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>frank</b>, в общем да, ты прав. достаточно определять по наличию зарегистрированного торрента",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1324575974,
+      "user_id": 8,
+      "user_title": "User",
+      "username": "fly_indiz"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "cto-takoe-download-topiki",
+  "sticky": false,
+  "tags": [],
+  "title": "Что такое Download-топики ??",
+  "url_path": "/threads/cto-takoe-download-topiki.614/",
+  "user_id": 597,
+  "username": "leco",
+  "view_count": 1729
+}

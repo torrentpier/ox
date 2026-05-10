@@ -1,0 +1,100 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "Лента.zip",
+      "id": 4192,
+      "local_path": null,
+      "r2_key": null,
+      "size": 66052,
+      "src_url": "https://torrentpier.com/api/resource-versions/362/download?file=4192"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Раскидать файлы по папкам\n\n[SPOILER=\"Инсталл\"]\n[PHP]запросы:\n\nALTER TABLE `bb_topics` ADD  `topic_image` VARCHAR( 255 ) NOT NULL DEFAULT  '';\nINSERT INTO `bb_config` (`config_name`, `config_value`) VALUES ('posters', '1');\nINSERT INTO `bb_config` (`config_name`, `config_value`) VALUES ('last_added_num', '20');\nINSERT INTO `bb_cron` VALUES ('', 1, 'Очистка устаревших постеров', 'clean_posters.php', 'weekly', '1', '05:00:00', 30, '0000-00-00 00:00:00', '0000-00-00 00:00:00', NULL, 0, '', 0, 0, 0);\n\nоткрыть common.php и найти:\n\n'network_news'           => 'build_cat_forums.php',\n\nпосле вставить:\n\n'last_added'             => 'build_cat_forums.php',\n\nоткрыть sessions.php и найти:\n\n'h_tsp'    => 0,     // show released title {...}\n\nпосле вставить:\n\n'h_poster' => 1,     // show posters\n\nоткрыть functions_torrent.php и найти:\n\nif ($reg_mode == 'request' || $reg_mode == 'newtopic')\n\nперед вставить:\n\nupdate_last_added();\n\nнайти:\n\nfunction send_torrent_with_passkey ($filename)\n\nперед вставить:\n\nfunction update_last_added()\n{\n    global $datastore;\n\n    $datastore->update('last_added');\n}\n\nоткрыть page_header.php и найти:\n\n'SIMPLE_HEADER'      => !empty($gen_simple_header),\n\nпосле вставить:\n\n'LAST_ADDED'         => ($bb_cfg['posters'] && BB_SCRIPT == 'index'),\n'LAST_ADDED_JS'      => $user->opt_js['h_poster'],\n\nоткрыть admin_board.php и найти:\n\n'SEED_BONUS_USER_REGDATE' => $new['seed_bonus_user_regdate'],\n\nпосле вставить:\n\n'POSTERS'                 => $new['posters'],\n'LAST_ADDED_NUM'          => $new['last_added_num'],\n\nоткрыть posting.php и найти:\n\nif (defined('TORRENT_ATTACH_ID') && $bb_cfg['bt_newtopic_auto_reg'] && !$error_msg)\n\nперед вставить:\n\nif(($mode == 'newtopic' || $mode == 'editpost') && defined('TORRENT_ATTACH_ID') && $bb_cfg['bt_newtopic_auto_reg'] && !$error_msg)\n        {\n            if($bb_cfg['posters'])\n            {\n                $row = DB()->fetch_row(\"SELECT post_text FROM \". BB_POSTS_TEXT .\" WHERE post_id = $post_id\");\n                preg_match_all('/\\[poster\\](.*?)\\[\\/poster\\]/i', $row['post_text'], $poster, PREG_SET_ORDER);\n                preg_match_all('/\\[img=right\\](.*?)\\[\\/img\\]/i', $row['post_text'], $poster2, PREG_SET_ORDER);\n                preg_match_all('/\\[img=left\\](.*?)\\[\\/img\\]/i', $row['post_text'], $poster3, PREG_SET_ORDER);\n                preg_match_all('/\\[img\\](.*?)\\[\\/img\\]/i', $row['post_text'], $poster4, PREG_SET_ORDER);\n                $url = '';\n                if(isset($poster[0][1])) $url = $poster[0][1];\n                elseif(isset($poster2[0][1])) $url = $poster2[0][1];\n                elseif(isset($poster3[0][1])) $url = $poster3[0][1];\n                elseif(isset($poster4[0][1])) $url = $poster4[0][1];\n                else $url = '/styles/images/no_poster.png';\n                DB()->query(\"UPDATE \". BB_TOPICS .\" SET topic_image = '$url' WHERE topic_id = '$topic_id'\");\n                $datastore->update('last_added');\n                $row = DB()->fetch_row(\"SELECT pt.post_text\n                    FROM \". BB_BT_TORRENTS .\" tr\n                    LEFT JOIN \". BB_TOPICS .\" t ON(tr.topic_id = t.topic_id)\n                    LEFT JOIN \". BB_POSTS_TEXT .\" pt ON(pt.post_id = tr.post_id)\n                WHERE t.topic_id  = $topic_id\");\n                CACHE('bb_cache')->set(\"lenta-$topic_id\", $row, 300);\n            }\n        }\n\nоткрыть index.php и найти:\n\n// Network news\nif ($bb_cfg['show_network_news'])\n\nперед вставить:\n\n// BEGIN last 10.\nif($bb_cfg['posters'])\n{\n\n    if (!$last_added = $datastore->get('last_added'))\n    {\n        $datastore->update('last_added');\n        $last_added = $datastore->get('last_added');\n    }\n\n    if(empty($last_added))\n    {\n        $template->assign_vars(array(\n            'EMPTY' => true,\n        ));\n    }\n    else\n    {\n        $template->assign_vars(array(\n            'EMPTY' => false,\n        ));\n\n        foreach ($last_added as $last_add)\n        {\n            $template->assign_block_vars('lastAdded', array(\n                'TITLE' => wbr(str_short($last_add['topic_title'], 50)),\n                'TOPIC_ID' => $last_add['topic_id'],\n                'FORUM' => $last_add['forum_name'],\n                'FORUM_ID' => $last_add['forum_id'],\n                'POSTER' => profile_url(array('username' => $last_add['username'], 'user_rank' => $last_add['user_rank'])),\n                'POSTER_ID' => $last_add['user_id'],\n                'TORRENT_TIME' => bb_date($last_add['reg_time'], 'd-M', 'false'),\n                'POSTER_FULL'  => $last_add['topic_image'],\n                'SIZE' => humn_size($last_add['size']),\n            )) ;\n        }\n    }\n}\n// END last 10\n\nоткрыть admin_board.tpl и найти:\n\n<tbody class=\"bonus_upload\"></tbody>\n\nпосле вставить:\n\n<tr class=\"row3 med\">\n    <td class=\"bold tCenter\" colspan=\"2\">Лента новинок</td>\n</tr>\n<tr>\n    <td><h4>Включить/отключить ленту</h4></td>\n    <td>\n        <label><input type=\"radio\" name=\"posters\" value=\"1\" <!-- IF POSTERS -->checked=\"checked\"<!-- ENDIF --> />{L_ENABLED}</label>&nbsp;&nbsp;\n        <label><input type=\"radio\" name=\"posters\" value=\"0\" <!-- IF not POSTERS -->checked=\"checked\"<!-- ENDIF --> />{L_DISABLED}</label>\n    </td>\n</tr>\n<tr>\n    <td><h4>Количество постеров в ленте</h4></td>\n    <td><input class=\"post\" type=\"text\" size=\"25\" maxlength=\"2\" name=\"last_added_num\" value=\"{LAST_ADDED_NUM}\" />&nbsp;</td>\n</tr>\n\nоткрыть index.tpl и найти:\n\n<a class=\"menu-root\" href=\"#only-new-options\">{L_DISPLAYING_OPTIONS}</a>\n\nперед вставить:\n\n<!-- IF LAST_ADDED --><a class=\"menu-root\" href=\"#hide-posters\">Лента новинок</a> &middot; <!-- ENDIF -->\n\nоткрыть page_header.tpl и найти:\n\nfunction post2url (url, params) {\n    params = params || {};\n    var f = document.createElement('form');\n    f.setAttribute('method', 'post');\n    f.setAttribute('action', url);\n    params['form_token'] = '{FORM_TOKEN}';\n    for (var k in params) {\n        var h = document.createElement('input');\n        h.setAttribute('type', 'hidden');\n        h.setAttribute('name', k);\n        h.setAttribute('value', params[k]);\n        f.appendChild(h);\n    }\n    document.body.appendChild(f);\n    f.submit();\n    return false;\n}\n\nпосле вставить:\n\nvar hidePostImg = false;\n\nfunction initPostImages(context)\n{\n    if (hidePostImg) return;\n    var $in_spoilers = $('div.sp-body var.postImg', context);\n    $('var.postImg', context).not($in_spoilers).each(function(){\n        var $v = $(this);\n        var src = $v.attr('title');\n        var $img = $('<img src=\"'+ src +'\" class=\"'+ $v.attr('class') +'\" alt=\"pic\" />');\n        $img = fixPostImage($img);\n        var maxW = ($v.hasClass('postImgAligned')) ? postImgAligned_MaxWidth : postImg_MaxWidth;\n        $img.bind('click', function(){ return imgFit(this, maxW); });\n        if (user.opt_js.i_aft_l) {\n            $('#preload').append($img);\n            var loading_icon = '<a href=\"'+ src +'\" target=\"_blank\"><img src=\"{SITE_URL}styles/images/pic_loading.gif\" alt=\"\" /></a>';\n            $v.html(loading_icon);\n            if ($.browser.msie) {\n                $v.after('<wbr>');\n            }\n            $img.one('load', function(){\n                imgFit(this, maxW);\n                $v.empty().append(this);\n            });\n        }\n        else {\n            $img.one('load', function(){ imgFit(this, maxW) });\n            $v.empty().append($img);\n            if ($.browser.msie) {\n                $v.after('<wbr>');\n            }\n        }\n    });\n    $('var.posterImg', context).each(function(){\n        var $v = $(this);\n        var src = $v.attr('title');\n        var $img = $('<img src=\"'+ src +'\" class=\"'+ $v.attr('class') +'\" width=\"260px;\" alt=\"Загружается...\" border=\"0\" />');\n        $img = fixPostImage($img);\n        $v.empty().append($img);\n        if ($.browser.msie) {\n            $v.after('<wbr>');\n        }\n    });\n}\n\nнайти:\n\n</div><!--/only-new-options-->\n<!-- ENDIF / SHOW_ONLY_NEW_MENU -->\n\nпосле вставить:\n\n<!-- IF LAST_ADDED -->\n<div class=\"menu-sub\" id=\"hide-posters\">\n    <table cellspacing=\"1\" cellpadding=\"4\">\n        <tr>\n            <th>Опции ленты новинок</th>\n        </tr>\n        <tr>\n            <td>\n                <fieldset id=\"ajax-topics\">\n                    <legend>Настройка ленты</legend>\n                    <div class=\"pad_4\">\n                        <label>\n                            <input type=\"checkbox\" <!-- IF LAST_ADDED_JS -->{CHECKED}<!-- ENDIF -->\n                            onclick=\"user.set('h_poster', this.checked ? 1 : 0);\"\n                            />Показывать ленту\n                        </label>\n                    </div>\n                </fieldset>\n            </td>\n        </tr>\n        <tr>\n            <td class=\"cat tCenter pad_4\"><input type=\"button\" value=\"{L_SUBMIT}\" onclick=\"window.location.reload();\" /></td>\n        </tr>\n    </table>\n</div>\n<!-- ENDIF -->\n\nнайти:\n\n<!--/menus-->\n\nпосле вставить:\n\n<!-- IF LAST_ADDED && LAST_ADDED_JS && not EMPTY -->\n<script type=\"text/javascript\" src=\"{SITE_URL}styles/js/jquery.cluetip.js\"></script>\n<script type=\"text/javascript\" src=\"{SITE_URL}styles/js/jquery.scrollable.js\"></script>\n<script type=\"text/javascript\" src=\"{SITE_URL}styles/js/jquery.mousewheel.js\"></script>\n<link type=\"text/css\" rel=\"stylesheet\" href=\"{SITE_URL}styles/templates/default/css/cluetip.css\"/>\n<script type=\"text/javascript\">\n    $(document).ready(function() {\n        $('div.load-local').cluetip({local:true, cursor: 'pointer',showTitle: true,arrows: true});\n        $(\"div.scrollable\").scrollable({size: 8, items: \"#thumbs\", hoverClass: \"hover\", keyboard: true, loop: false });\n    });\n</script>\n\n<table cellpadding=\"0\" cellspacing=\"0\" class=\"poster\">\n    <tr>\n        <td>\n            <!-- root element for scrollable -->\n            <div class=\"scrollable\">\n                <div id=\"thumbs\">\n                    <!-- BEGIN lastAdded -->\n                    <div class=\"load-local\" rel=\"#loadme_{lastAdded.TOPIC_ID}\" title=\"{lastAdded.TITLE}\" onclick=\"top.location.href='viewtopic.php?t={lastAdded.TOPIC_ID}';\" onmouseover=\"initPostImages($('#loadme_{lastAdded.TOPIC_ID}'));\">\n                        <a href=\"/viewtopic.php?t={lastAdded.TOPIC_ID}\"><img src=\"/thumb.php?t={lastAdded.TOPIC_ID}\" alt=\"\"></a>&nbsp;\n                        <div style=\"display:none;\" id=\"loadme_{lastAdded.TOPIC_ID}\" >\n                            <center><img src=\"{lastAdded.POSTER_FULL}\" width=\"260\" alt=\"\"></center>\n                            <br /> {L_FORUM}: <b>{lastAdded.FORUM}</b>\n                            <br /> {L_AUTHOR}: <b>{lastAdded.POSTER}</b>\n                            <br /> {L_DATE}: <b>{lastAdded.TORRENT_TIME}</b>\n                            <br /> {L_SIZE}: <b>{lastAdded.SIZE}</b>\n                        </div>\n                    </div>\n                    <!-- END lastAdded -->\n                </div>\n            </div>\n        </td>\n    </tr>\n</table>\n<!-- ENDIF -->\n\nоткрыть build_cat_forums.php и найти:\n\n//\n// Network_news\n//\n\nперед вставить:\n\n//Store LastAdded\nif($bb_cfg['posters'])\n{\n    $data = DB()->fetch_rowset(\"SELECT\n            tr.topic_id, tr.forum_id, tr.reg_time, tr.size,\n            t.topic_title, t.topic_image,\n            f.forum_name,\n            u.username, u.user_id, u.user_rank\n        FROM\n            \". BB_BT_TORRENTS .\" tr\n        LEFT JOIN \". BB_TOPICS .\" t ON tr.topic_id = t.topic_id\n        LEFT JOIN \". BB_FORUMS .\" f ON tr.forum_id = f.forum_id\n        LEFT JOIN \". BB_USERS .\" u  ON tr.poster_id = u.user_id\n        ORDER BY\n            tr.reg_time DESC\n        LIMIT 0,\" . $bb_cfg['last_added_num']);\n    $this->store('last_added', $data);\n}[/PHP]\n[/SPOILER]",
+    "owner": "Dredd",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1448725915,
+      "file_size": 173092,
+      "filename": "55000.webp",
+      "height": 758,
+      "id": 4193,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/55000-webp.4193/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4197-90ffb8035d330da6d50754178134f71e.jpg?hash=h0CIx8WuaY",
+      "width": 1452
+    },
+    {
+      "attach_date": 1448725919,
+      "file_size": 163346,
+      "filename": "55001.webp",
+      "height": 758,
+      "id": 4194,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/55001-webp.4194/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4198-6bcfbc1552b56b51a0baf182b47e0260.jpg?hash=wyMnMM87K1",
+      "width": 1452
+    }
+  ],
+  "description_parsed": "Вывод постеров в ленту.<br />\nВыбор количества постеров через админку<br />\nУдаление старых постеров через cron",
+  "download_count": 391,
+  "external_url": null,
+  "icon_url": null,
+  "id": 246,
+  "is_fileless": null,
+  "last_update": 1448725952,
+  "rating_avg": 4,
+  "rating_count": 4,
+  "resource_date": 1448725952,
+  "resource_state": "visible",
+  "slug": "lenta-posterov",
+  "tag_line": "Вывод постеров в ленту",
+  "tags": [],
+  "title": "Лента постеров",
+  "url_path": "/resources/lenta-posterov.246/",
+  "user_id": 5626,
+  "username": "Kryl",
+  "version": "2015-11-28",
+  "versions": [
+    {
+      "download_count": 391,
+      "files": [
+        {
+          "filename": "Лента.zip",
+          "id": 4192,
+          "local_path": null,
+          "r2_key": null,
+          "size": 66052,
+          "src_url": "https://torrentpier.com/api/resource-versions/362/download?file=4192"
+        }
+      ],
+      "id": 362,
+      "rating_avg": 4,
+      "rating_count": 4,
+      "release_date": 1448725952,
+      "version_state": "visible",
+      "version_string": "2015-11-28",
+      "view_url": "https://torrentpier.com/resources/lenta-posterov.246/version/362/"
+    }
+  ],
+  "view_count": 3511
+}

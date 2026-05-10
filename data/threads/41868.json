@@ -1,0 +1,75 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 92573,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41868,
+  "last_post_date": 1521832479,
+  "node_id": 57,
+  "post_date": 1516642716,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92573,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Есть идеи как это правильно реализовать в torrentpier? Подобно XenForo. Есть конечно кнопка &quot;следить за темой&quot;, но это не то",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1516642716,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92836,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Вообще модификации такого плана вроде бы как были.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1521832479,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "uvedomlenia-ob-otvete",
+  "sticky": false,
+  "tags": [
+    "reply"
+  ],
+  "title": "Уведомления об ответе",
+  "url_path": "/threads/uvedomlenia-ob-otvete.41868/",
+  "user_id": 6370,
+  "username": "sхс",
+  "view_count": 1293
+}

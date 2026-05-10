@@ -1,0 +1,132 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 96279,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 42276,
+  "last_post_date": 1771152509,
+  "node_id": 80,
+  "post_date": 1720118451,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96279,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 1720118530,
+      "message_parsed": "Если в момент сохранения файла <b>page_header.tpl</b> кто-то решит в этот же момент открыть сайт, то получаем ошибку<br />\nParse error: syntax error, unexpected end of file in <i>/var/www/site/data/www/site.ru/cache/tpl_default_page_header.tpl.php on line 362</i><br />\nИз-за того, что файл кэша формируется из частично сохраненого tpl<br />\nЛечится удалением <i>cache/tpl_default_page_header.tpl.php</i><br />\n<br />\nМожет есть у кого идеи как бороться с этим?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1720118451,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96281,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Часто сохраняете? Может следует применить нормальный кэш",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1720119392,
+      "user_id": 10893,
+      "user_title": "User",
+      "username": "tewk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96282,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 1720120028,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"tewk\">Часто сохраняете? Может следует применить нормальный кэш</blockquote>У меня в админке стоит memcache. Но он не относится к кэшу файлов шаблона.<br />\nСохраняю часто и такое случается только при сохранении файлов page_header.tpl или page_footer.tpl и при медленном интернете<br />\n<br />\nНадо бы добавить какую синтаксическую проверку кода",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1720119896,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96283,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"zxc\">У меня в админке стоит memcache. Но он не относится к кэшу файлов шаблона.<br />\nСохраняю часто и такое случается только при сохранении файлов page_header.tpl или page_footer.tpl и при медленном интернете<br />\n<br />\nНадо бы добавить какую синтаксическую проверку кода</blockquote>Комплексным решением было бы отказаться от текущего шаблонизатора в пользу чего-то более нормального, например Smarty. Касаемо ошибки, постараюсь что-нибудь придумать. Но скажу сразу, она у меня ни разу не воспроизводилась.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1720166032,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96284,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"zxc\">Может есть у кого идеи как бороться с этим?</blockquote>Можно в файле кэша записывать временную метку, которую после сравнивать с временной меткой последнего изменения файла кэша (функция <a href=\"https://www.php.net/manual/ru/function.filemtime.php\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">filemtime</a>). Тоесть если временная метка изменения файла - больше временной метки записанной внутри файла, то делать обновление кэша. Так мы точно будем знать что в файле были несанкционированные изменения.<br />\n<br />\nЗЫ<br />\nМне кажется это достаточно ресурсоемко, если такую проверку делать каждый раз при подгрузке шаблона из кэша. Можно было бы эту задачу переложить на крон например... Но тогда легче уж самому ручками кэш очистить, чем ждать условные 10-15 минут.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1720166687,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98406,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Внедрили новый шаблонизатор, там такого нет.",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1771152509,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 5,
+  "slug": "parse-error-syntax-error-unexpected-end-of-file",
+  "sticky": false,
+  "tags": [],
+  "title": "Parse error: syntax error, unexpected end of file...",
+  "url_path": "/threads/parse-error-syntax-error-unexpected-end-of-file.42276/",
+  "user_id": 6370,
+  "username": "sхс",
+  "view_count": 1052
+}

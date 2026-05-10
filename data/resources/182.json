@@ -1,0 +1,71 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "ограничить_новых.zip",
+      "id": 3188,
+      "local_path": null,
+      "r2_key": null,
+      "size": 724,
+      "src_url": "https://torrentpier.com/api/resource-versions/219/download?file=3188"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]# ---- [ Открыть ] -------------------\n\nconfig.php\n\n# ---- [ Вставить в конец ] -------------------\n\n$bb_cfg['reg_block'] = 7200; // seconds\n\n# ---- [ Открыть ] -------------------\n\nposting.php\n\n# ---- [ Найти ] -------------------\n\n    case 'newtopic':\n        if(bf($userdata['user_opt'], 'user_opt', 'allow_topic'))\n        {\n            bb_die($lang['RULES_POST_CANNOT']);\n        }\n\n# ---- [ Вставить после ] -------------------\n\n        if ($userdata['user_regdate'] + $bb_cfg['reg_block'] > TIMENOW)\n        {\n            $time_left = bb_date((($userdata['user_regdate'] + $bb_cfg['reg_block']) - TIMENOW), 'H:i:s', '0');\n            bb_die(sprintf($lang['REG_BLOCK'], $time_left));\n        }\n\n# ---- [ Найти ] -------------------\n\ncase 'reply':\n    case 'quote':\n        if(bf($userdata['user_opt'], 'user_opt', 'allow_post'))\n        {\n            bb_die($lang['RULES_REPLY_CANNOT']);\n        }\n        $is_auth_type = 'auth_reply';\n\n# ---- [ Вставить после ] -------------------\n\n        if ($userdata['user_regdate'] + $bb_cfg['reg_block'] > TIMENOW)\n        {\n            $time_left = bb_date((($userdata['user_regdate'] + $bb_cfg['reg_block']) - TIMENOW), 'H:i:s', '0');\n            bb_die(sprintf($lang['REG_BLOCK'], $time_left));\n        }\n\n# ---- [ Открыть ] -------------------\n\najax/posts.php\n\n# ---- [ Найти ] -------------------\n\n                    $this->ajax_die($lang['DOUBLE_POST_ERROR']);\n                }\n            }\n        }\n\n# ---- [ Вставить после ] -------------------\n\n        if ($userdata['user_regdate'] + $bb_cfg['reg_block'] > TIMENOW)\n        {\n            $time_left = bb_date((($userdata['user_regdate'] + $bb_cfg['reg_block']) - TIMENOW), 'H:i:s', '0');\n            $this->ajax_die(sprintf($lang['REG_BLOCK'], $time_left));\n        }\n\n# ---- [ Открыть ] -------------------\n\nlanguage/lang_russian/lang_main.php\n\n# ---- [ Вставить в конец ] -------------------\n\n$lang['REG_BLOCK'] = 'Внимание! Вы не можете создавать новые темы, отвечать и цитировать еще %s';\n\n# ---- [ Конец ] -------------------[/PHP]\n[/SPOILER]",
+    "owner": "Gemini_13",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание:</b> добавляет возможность ограничивать новым пользователям возможность написания сообщений. Временной период ограничения настраивается в config.php.",
+  "download_count": 256,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/182.jpg?1425325177",
+  "id": 182,
+  "is_fileless": null,
+  "last_update": 1425325151,
+  "rating_avg": 5,
+  "rating_count": 1,
+  "resource_date": 1425325151,
+  "resource_state": "visible",
+  "slug": "ogranicenie-novyh-pol-zovatelej",
+  "tag_line": "Добавляет возможность ограничивать новым пользователям возможность написания сообщений.",
+  "tags": [],
+  "title": "Ограничение новых пользователей",
+  "url_path": "/resources/ogranicenie-novyh-pol-zovatelej.182/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 256,
+      "files": [
+        {
+          "filename": "ограничить_новых.zip",
+          "id": 3188,
+          "local_path": null,
+          "r2_key": null,
+          "size": 724,
+          "src_url": "https://torrentpier.com/api/resource-versions/219/download?file=3188"
+        }
+      ],
+      "id": 219,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1425325151,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/ogranicenie-novyh-pol-zovatelej.182/version/219/"
+    }
+  ],
+  "view_count": 838
+}

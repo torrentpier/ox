@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 15065,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1210,
+  "last_post_date": 1334042246,
+  "node_id": 57,
+  "post_date": 1334041191,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15065,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Такая проблема: Не могу выставить цвет модератору, захожу в звания  пишу color Модератор но цвет не меняется, кто знает помогите плыз!!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1334041191,
+      "user_id": 1116,
+      "user_title": "User",
+      "username": "maksikys"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15066,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"\">Укажите class для окраски звания в нужный цвет. Например colorAdmin</blockquote>в css создаешь свой class или используешь стандартные<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">.colorAdmin, a.colorAdmin, a.colorAdmin:visited { color: #A00 !important; }\n.colorSuperMod, a.colorSuperMod, a.colorSuperMod:visited { color: #0080FF !important; }\n.colorMod,  a.colorMod,  a.colorMod:visited  { color: #009900 !important; }\n.colorGroup, a.colorGroup, a.colorGroup:visited { color: #476996 !important; }\n.colorUser, a.colorUser, a.colorUser:visited { color: #006699 !important; }\n.colorCPH,  a.colorCPH,  a.colorCPH:visited  { color: #0080FF !important; }</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1334042061,
+      "user_id": 235,
+      "user_title": "User",
+      "username": "Boec"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15067,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "большое спасибо!!!",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1334042246,
+      "user_id": 1116,
+      "user_title": "User",
+      "username": "maksikys"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "zvania",
+  "sticky": false,
+  "tags": [],
+  "title": "звания",
+  "url_path": "/threads/zvania.1210/",
+  "user_id": 1116,
+  "username": "maksikys",
+  "view_count": 2072
+}

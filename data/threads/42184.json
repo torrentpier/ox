@@ -1,0 +1,129 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95247,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 42184,
+  "last_post_date": 1697261557,
+  "node_id": 80,
+  "post_date": 1696934500,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95247,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Кто-то обращал внимание что при включенном adblock не отбражается в релизах строка дать убрать золото / серебро?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1696934500,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95257,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">Кто-то обращал внимание что при включенном adblock не отбражается в релизах строка дать убрать золото / серебро?</blockquote>Можно скриншот?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1697167563,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1697221684,
+          "file_size": 21258,
+          "filename": "1697221669313.webp",
+          "height": 280,
+          "id": 5557,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1697221669313-webp.5557/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5561-fc6c89bddeb2b4aa0dec9b6938a557aa.jpg?hash=eR2ix_i0iU",
+          "width": 1618
+        },
+        {
+          "attach_date": 1697221698,
+          "file_size": 22918,
+          "filename": "1697221696992.webp",
+          "height": 268,
+          "id": 5558,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1697221696992-webp.5558/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5562-ce8b29c2ca1ff70df337b36ee3b59192.jpg?hash=mlJeqXiqwy",
+          "width": 1629
+        }
+      ],
+      "id": 95262,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<img src=\"https://torrentpier.com/attachments/5557/\" alt=\"1697221669313.webp\" /><br />\n<br />\nбез adblock<br />\n<br />\n<img src=\"https://torrentpier.com/attachments/5558/\" alt=\"1697221696992.webp\" />",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1697221701,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95264,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1697261752,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\"><a href=\"https://torrentpier.com/attachments/5557/\">View attachment 5557</a><br />\n<br />\nбез adblock<br />\n<br />\n<a href=\"https://torrentpier.com/attachments/5558/\">View attachment 5558</a></blockquote>Проверил, проблема на чистом движке (на 2.1.5-LTS) не воспроизводится. Вероятнее всего в вашем шаблоне указан для этого элемента какой-то сторонний класс или атрибут который блокировщик рекламы считает рекламой и блокирует.<br />\n<br />\nМожете скинуть исходный код страницы (нижней части, которая пропадает) и уточнить какой именно блокировщик вы использовали (с ссылкой). Я перепробовал несколько самых разных. Может быть кстати у вас блокировщик настроен так, чтобы блокировать всё подряд, у меня настройки по умолчанию стояли при отлове бага.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1697261557,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 24,
+  "reply_count": 3,
+  "slug": "adblock-blokiruet-cast-ui",
+  "sticky": false,
+  "tags": [],
+  "title": "Adblock блокирует часть ui",
+  "url_path": "/threads/adblock-blokiruet-cast-ui.42184/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 942
+}

@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 57865,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25624,
+  "last_post_date": 1389874501,
+  "node_id": 111,
+  "post_date": 1389874501,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57865,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 552: Унификация работы с email, начатая в r545. Исправление недочетов названной ревиз</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">glix08</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/install/sql/mysql.sql \n    Modify    /trunk/upload/admin/admin_board.php \n    Modify    /trunk/upload/ajax/edit_user_profile.php \n    Modify    /trunk/upload/config.php \n    Modify    /trunk/upload/includes/emailer.class.php \n    Modify    /trunk/upload/language/lang_english/lang_admin.php \n    Modify    /trunk/upload/language/lang_russian/lang_admin.php \n    Modify    /trunk/upload/templates/admin/admin_board.tpl \n\nУнификация работы с email, начатая в r545. Исправление недочетов названной ревизии. Перенос настроек email в config.php.</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1389874501,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "revision-552-unifikacia-raboty-s-email-nacataa-v-r545-ispravlenie-nedocetov-nazvannoj-reviz",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 552: Унификация работы с email, начатая в r545. Исправление недочетов названной ревиз",
+  "url_path": "/threads/revision-552-unifikacia-raboty-s-email-nacataa-v-r545-ispravlenie-nedocetov-nazvannoj-reviz.25624/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 936
+}

@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 26310,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 2151,
+  "last_post_date": 1359735802,
+  "node_id": 57,
+  "post_date": 1359707709,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26310,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "подскажите<br />\nкак избавится от этого для одного ббкода<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">    function new_line2html ($text)\n    {\n        $text = preg_replace(&#039;#\\n{2,}#&#039;, &#039;&lt;span class=&quot;post-br&quot;&gt;&lt;br /&gt;&lt;/span&gt;&#039;, $text);\n        $text = str_replace(&quot;\\n&quot;, &#039;&lt;br /&gt;&#039;, $text);\n        return $text;\n    }</pre>а то чушь полную выводит<br />\nя ставлю SyntaxHighlighter version 2.1.382 (June 24 2010)alexgorbatchev.com)<br />\nЕсли этот код исключить то отображает так:<br />\n<img src=\"http://i54.fastpic.ru/big/2013/0201/90/954b3ced75a716916e001c60baa0b490.png\" alt=\"\" /><br />\nесли оставить то:<br />\n<img src=\"http://i52.fastpic.ru/big/2013/0201/1b/7c94efd5acd4486953ae41e1d2d3e71b.png\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1359707709,
+      "user_id": 24,
+      "user_title": "User",
+      "username": "WinsOk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26311,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "просто удалить тоже не вариант, т.к. пропадают все видимые переносы строк, придедся ббкодами их ставть",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1359707781,
+      "user_id": 24,
+      "user_title": "User",
+      "username": "WinsOk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26313,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>WinsOk</b>, как вариант в  <b>function bbcode2html</b> <br />\n<span style=\"font-family: 'mceinline'\">сделай проверку</span> на твой новый ббкод и обходи эту строку<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$text = $this-&gt;new_line2html($text);</pre>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1359711884,
+      "user_id": 30,
+      "user_title": "User",
+      "username": "krumax"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26314,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "ууф",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1359722123,
+      "user_id": 24,
+      "user_title": "User",
+      "username": "WinsOk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26317,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"WinsOk\">ууф</blockquote>не понял...",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1359735802,
+      "user_id": 30,
+      "user_title": "User",
+      "username": "krumax"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "zamena-bbkodov",
+  "sticky": false,
+  "tags": [],
+  "title": "Замена ббкодов",
+  "url_path": "/threads/zamena-bbkodov.2151/",
+  "user_id": 24,
+  "username": "WinsOk",
+  "view_count": 1141
+}

@@ -1,0 +1,114 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Подарки.zip",
+      "id": 3106,
+      "local_path": null,
+      "r2_key": null,
+      "size": 44038,
+      "src_url": "https://torrentpier.com/api/resource-versions/201/download?file=3106"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]##############################################################\n## Название мода: Подарки\n## Автор мода: _Xz_ http://torrentpier.me/members/_xz_.2/\n## Описание мода: Мод позволяет дарить подарки пользователям за очки сидирования\n##\n## Уровень инсталяции: простой\n## Время установки: 5 минут\n##############################################################\n\n\n#\n#--[SQL]--------------------------------\n#\n\nCREATE TABLE IF NOT EXISTS `bb_presents` (\n  `present_id` mediumint(8) unsigned NOT NULL auto_increment,\n  `present_name` varchar(255) default NULL,\n  `present_pic` varchar(255) default NULL,\n  `present_price` mediumint(8) NOT NULL default '0',\n  `present_active` tinyint(1) NOT NULL default '1',\n  `present_type` mediumint(8) default '0',\n  PRIMARY KEY  (`present_id`)\n) ENGINE=MyISAM  DEFAULT CHARSET=utf8;\n\nCREATE TABLE IF NOT EXISTS `bb_users_presents` (\n  `id` int(11) unsigned NOT NULL auto_increment,\n  `user_id` mediumint(8) default '0',\n  `present_id` mediumint(8) default '0',\n  `given_id` mediumint(8) NOT NULL default '0',\n  `time` int(11) NOT NULL default '0',\n  `given_hide` tinyint(1) NOT NULL default '0',\n  `comment` text NOT NULL,\n  PRIMARY KEY  (`id`)\n) ENGINE=MyISAM  DEFAULT CHARSET=utf8;\n\nINSERT INTO `bb_config` VALUES ('presents', '1');\n\n#\n#-----[ OPEN ]------------------------------------------\n#\n\ninit_bb.php\n\n#\n#-----[ FIND ]------------------------------------------\n#\n\ndefine('BB_WORDS',                'bb_words');\n\n#\n#-----[ BEFORE, ADD ]-----------------------------------\n#\n\ndefine('BB_PRESENTS',              'bb_presents');\ndefine('BB_USERS_PRESENTS',         'bb_users_presents');\n\n#\n#-----[ OPEN ]------------------------------------------\n#\n\nadmin_board.php\n\n#\n#-----[ FIND ]------------------------------------------\n#\n\n'SEED_BONUS_USER_REGDATE' => $new['seed_bonus_user_regdate'],\n\n#\n#-----[ AFTER, ADD ]-----------------------------------\n#\n\n'PRESENTS' => $new['presents'],\n\n#\n#-----[ OPEN ]------------------------------------------\n#\n\nadmin_board.tpl\n\n#\n#-----[ FIND ]------------------------------------------\n#\n\n<tr>\n    <td><h4>{L_SEED_BONUS}</h4></td>\n    <td>\n        <label><input type=\"radio\" name=\"seed_bonus_enabled\" value=\"1\" <!-- IF SEED_BONUS_ENABLED -->checked=\"checked\"<!-- ENDIF --> />{L_ENABLED}</label>&nbsp;&nbsp;\n        <label><input type=\"radio\" name=\"seed_bonus_enabled\" value=\"0\" <!-- IF not SEED_BONUS_ENABLED -->checked=\"checked\"<!-- ENDIF --> />{L_DISABLED}</label>\n    </td>\n</tr>\n\n#\n#-----[ AFTER, ADD ]-----------------------------------\n#\n\n<tr>\n    <td><h4>{L_PRESENTS}</h4></td>\n    <td>\n        <label><input type=\"radio\" name=\"presents\" value=\"1\" <!-- IF PRESENTS -->checked=\"checked\"<!-- ENDIF --> />{L_ENABLED}</label>&nbsp;&nbsp;\n        <label><input type=\"radio\" name=\"presents\" value=\"0\" <!-- IF not PRESENTS -->checked=\"checked\"<!-- ENDIF --> />{L_DISABLED}</label>\n    </td>\n</tr>\n\n#\n#-----[ OPEN ]------------------------------------------\n#\n\nusercp_viewprofile.php\n\n#\n#-----[ FIND ]------------------------------------------\n#\n\nprint_page('usercp_viewprofile.tpl');\n\n#\n#-----[ BEFORE, ADD ]-----------------------------------\n#\n\nif ($bb_cfg['seed_bonus_enabled'] && $bb_cfg['presents'])\n{\n    $count = DB()->fetch_row(\"SELECT COUNT(present_id) as present FROM \". BB_USERS_PRESENTS .\" WHERE user_id = {$profiledata['user_id']}\");\n\n    $start = isset($_REQUEST['start']) ? abs(intval($_REQUEST['start'])) : 0;\n\n    if($count['present'])\n    {\n        $sql = DB()->fetch_rowset(\"SELECT pre.*, p.*, u.username, u.user_rank FROM \". BB_USERS_PRESENTS .\" pre, \". BB_PRESENTS .\" p, \". BB_USERS .\" u WHERE pre.present_id = p.present_id AND pre.given_id = u.user_id AND pre.user_id = {$profiledata['user_id']} ORDER BY pre.time DESC LIMIT $start, 8\");\n\n        $presentrow = array();\n        foreach($sql as $row)\n        {\n            $presentrow[] = $row;\n        }\n\n        if (!$presentrow)\n        {\n            $template->assign_block_vars('not_present', array());\n        }\n\n        for ($j = 0; $j < count($presentrow); $j += 4)\n        {\n            $template->assign_block_vars('presentrow', array());\n\n            for ($i = $j; $i < ($j + 4); $i++)\n            {\n                if( $i >= count($presentrow) )\n                {\n                    $template->assign_block_vars('presentrow.not', array());\n                    continue;\n                }\n              \n                if ($presentrow[$i]['given_hide'] && !IS_ADMIN)\n                {\n                    $given_user = '<b>'. $lang['ANONYMOUS'] .'</b>';\n                }\n                elseif ($presentrow[$i]['given_hide'] && IS_ADMIN)\n                {\n                    $given_user = profile_url(array('username' => \"<b>[{$presentrow[$i]['username']}]</b>\", 'user_id' => $presentrow[$i]['given_id'], 'user_rank' => $presentrow[$i]['user_rank']));\n                }\n                else\n                {\n                    $given_user = profile_url(array('username' => \"<b>{$presentrow[$i]['username']}</b>\", 'user_id' => $presentrow[$i]['given_id'], 'user_rank' => $presentrow[$i]['user_rank']));\n                }\n\n                $template->assign_block_vars('presentrow.presentcol', array(\n                    'NAME'            => $presentrow[$i]['present_name'],\n                    'PIC'            => $presentrow[$i]['present_pic'],\n                    'PRICE'            => $presentrow[$i]['present_price'],\n                    'ID'            => $presentrow[$i]['present_id'],\n                    'GIVEN'            => $given_user\n                ));\n            }\n        }\n\n        generate_pagination(PROFILE_URL . $profiledata['user_id'], $count['present'], 8, $start, false, 'presents');\n    }\n}\n\n#\n#-----[ OPEN ]------------------------------------------\n#\n\nlang_main.php\n\n#\n#-----[ FIND ]---------------------------------------\n#\n\n$lang['BONUS_RETURN'] = 'Вернуться к обмену Сид бонусов';\n\n#\n#-----[ AFTER, ADD ]-------------------------------------------\n#\n\n// Presents\n$lang['PRESENTS'] = 'Подарки за СидБонус';\n$lang['PRESENTS_OFF'] = 'Мод отключен администратором';\n$lang['PRESENTS_CATALOG'] = 'Каталог подарков';\n$lang['BAY_PRESENT'] = 'Купить подарок';\n$lang['GIVE_PRESENT'] = 'Подарить подарок';\n$lang['ADD_PRESENT'] = 'Добавить подарок';\n$lang['CHANGING_PRESENT'] = 'Изменение подарка';\n$lang['PRESENT'] = 'Подарок';\n$lang['PRESENT_NAME'] = 'Название подарка';\n$lang['PRESENT_PRICE'] = 'Цена подарка';\n$lang['PRESENT_TYPE'] = 'Тип';\n$lang['PRESENT_ACTIVE'] = 'Активный';\n$lang['PRESENT_DESC'] = 'Описание подарка';\n$lang['PRESENT_ERROR_PIC'] = 'Картинка отсутствует';\n$lang['PRESENT_ERROR_NAME'] = 'Не указано название подарка';\n$lang['PRESENT_ERROR_PRICE'] = 'Не указано цена подарка';\n$lang['PRESENT_ERROR_TYPE'] = 'Не указан тип подарка';\n$lang['ANONYMOUS'] = 'Аноним';\n$lang['NAME'] = 'Название';\n$lang['GIVE'] = 'Подарить';\n$lang['ADD'] = 'Добавить';\n$lang['PRESENT_MAKE_ANONYMOUS'] = 'Сделать подарок анонимным';\n$lang['PRESENT_TO'] = 'Кому подарить';\n$lang['PRESENT_WISH'] = 'Пожелание';\n$lang['PRESENT_NOT_SELECT'] = 'Вы не выбрали подарок';\n$lang['PRESENT_NO'] = 'Такого подарка не существует';\n$lang['PRESENT_DELETE'] = 'Подарок удален';\n$lang['PRESENT_NOT_SELECT_USER'] = 'Вы не выбрали кому подарите подарок';\n$lang['PRESENT_NOT_FOUND_USER'] = 'Пользователь не найден';\n$lang['PRESENT_NOT_YOURSELF'] = 'Нельзя себе делать подарки';\n$lang['PRESENT_NOT_ANONYMOUS'] = 'Подарки можно дарить только пользователям';\n$lang['PRESENT_NOT_BOT'] = 'Нельзя делать подарки боту';\n$lang['PRESENT_TOO_HIGH'] = 'Этот подарок для вас слишком дорогой';\n$lang['PRESENT_GIFTED'] = 'Подарок подарен пользователю';\n$lang['PRESENT_NEW'] = 'У вас новый подарок';\n$lang['PRESENT_COMMENT'] = 'Так же вам оставил пожелаение';\n$lang['PRESENT_INCOGNITO'] = 'оставшийся неизвестным';\n$lang['PRESENT_PRICE_MESS'] = '(у вас в наличии <b>%s</b>)';\n$lang['PRESENT_MESSAGE'] = 'Пользователь %s подарил Вам подарок.%s[br][br]Вы его можете посмотреть в своём профиле перейдя по [url=%s]ссылке[/url].[br][br][align=right]Сообщение сгенерировано автоматически.[/align]';\n$lang['PRESENT_BONUS'] = 'Описание подарка';\n$lang['PRESENT_ADD'] = 'Подарок добавлен';\n$lang['PRESENT_NO_ADD'] = 'Подарок не добавлен';\n$lang['PRESENT_EDITED'] = 'Подарок изменен';\n$lang['WRONG_FORMAT'] = 'Нн верный формат файла';\n\n// Presents types\n$lang['PRESENT_SPECITY_TYPE'] = 'Укажите тип';\n$lang['PRESENT_TIMELESS'] = 'Вечные подарки';\n$lang['PRESENT_BALOONS'] = 'Воздушные шары';\n$lang['PRESENT_MASKS'] = 'Головные уборы и маски';\n$lang['PRESENT_FOR_LOVERS'] = 'Для влюбленных';\n$lang['PRESENT_FOR_GIRLS'] = 'Для девушек';\n$lang['PRESENT_FOR_MEN'] = 'Для мужчин';\n$lang['PRESENT_FOOD'] = 'Еда';\n$lang['PRESENT_ANIMALS'] = 'Животные';\n$lang['PRESENT_COMPUTERS'] = 'Компьютерная техника';\n$lang['PRESENT_SUMMER'] = 'Летние подарки';\n$lang['PRESENT_PRIVATE'] = 'Личный инструктор';\n$lang['PRESENT_STUFFED_TOYS'] = 'Мягкие игрушки';\n$lang['PRESENT_DRINKS'] = 'Напитки';\n$lang['PRESENT_KISSES'] = 'Поцелуи';\n$lang['PRESENT_OTHER'] = 'Разное';\n$lang['PRESENT_SUNGLASSES'] = 'Солнцезащитные очки';\n$lang['PRESENT_SPORT'] = 'Спорт';\n$lang['PRESENT_STATUES'] = 'Статуэтки';\n$lang['PRESENT_DECORATION'] = 'Украшения';\n$lang['PRESENT_HOBBY'] = 'Хобби';\n$lang['PRESENT_FLOWERS'] = 'Цветы';\n$lang['PRESENT_NEW_YEAR'] = 'Новогодние подарки';\n\n#\n#-----[ FIND ]---------------------------------------\n#\n\n$lang['DELETE_IMAGE'] = 'Удалить изображение';\n\n#\n#-----[ BEFORE, ADD ]-------------------------------------------\n#\n\n$lang['SELECT_IMAGE'] = 'Выберите изображение';\n\n#\n#-----[ OPEN ]------------------------------------------\n#\n\nfunctions.php\n\n#\n#-----[ FIND AND REPLACE ]---------------------------------------\n#\n\nfunction generate_pagination($base_url, $num_items, $per_page, $start_item, $add_prevnext_text = true, $style = false)\n{\n    global $lang, $template;\n\n// Pagination Mod\n    $begin_end = 3;\n    $from_middle = 1;\n/*\n    By default, $begin_end is 3, and $from_middle is 1, so on page 6 in a 12 page view, it will look like this:\n\n    a, d = $begin_end = 3\n    b, c = $from_middle = 1\n\n\"begin\"        \"middle\"           \"end\"\n    |              |                 |\n    |     a     b  |  c     d        |\n    |     |     |  |  |     |        |\n    v     v     v  v  v     v        v\n    1, 2, 3 ... 5, 6, 7 ... 10, 11, 12\n\n    Change $begin_end and $from_middle to suit your needs appropriately\n*/\n\n    $total_pages = ceil($num_items/$per_page);\n\n    if ( $total_pages == 1 || $num_items == 0 )\n    {\n        return '';\n    }\n\n    if($style) $style = \"#$style\";\n\n    $on_page = floor($start_item / $per_page) + 1;\n\n    $page_string = '';\n    if ( $total_pages > ((2*($begin_end + $from_middle)) + 2) )\n    {\n        $init_page_max = ( $total_pages > $begin_end ) ? $begin_end : $total_pages;\n        for($i = 1; $i < $init_page_max + 1; $i++)\n        {\n            $page_string .= ( $i == $on_page ) ? '<b>' . $i . '</b>' : '<a href=\"' . $base_url . \"&amp;start=\" . ( ( $i - 1 ) * $per_page ) . $style .'\">' . $i . '</a>';\n            if ( $i <  $init_page_max )\n            {\n                $page_string .= \", \";\n            }\n        }\n        if ( $total_pages > $begin_end )\n        {\n            if ( $on_page > 1  && $on_page < $total_pages )\n            {\n                $page_string .= ( $on_page > ($begin_end + $from_middle + 1) ) ? ' ... ' : ', ';\n\n                $init_page_min = ( $on_page > ($begin_end + $from_middle) ) ? $on_page : ($begin_end + $from_middle + 1);\n\n                $init_page_max = ( $on_page < $total_pages - ($begin_end + $from_middle) ) ? $on_page : $total_pages - ($begin_end + $from_middle);\n\n                for($i = $init_page_min - $from_middle; $i < $init_page_max + ($from_middle + 1); $i++)\n                {\n                    $page_string .= ($i == $on_page) ? '<b>' . $i . '</b>' : '<a href=\"' . $base_url . \"&amp;start=\" . ( ( $i - 1 ) * $per_page ) . $style .'\">' . $i . '</a>';\n                    if ( $i <  $init_page_max + $from_middle )\n                    {\n                        $page_string .= ', ';\n                    }\n                }\n                $page_string .= ( $on_page < $total_pages - ($begin_end + $from_middle) ) ? ' ... ' : ', ';\n            }\n            else\n            {\n                $page_string .= '&nbsp;...&nbsp;';\n            }\n            for($i = $total_pages - ($begin_end - 1); $i < $total_pages + 1; $i++)\n            {\n                $page_string .= ( $i == $on_page ) ? '<b>' . $i . '</b>'  : '<a href=\"' . $base_url . \"&amp;start=\" . ( ( $i - 1 ) * $per_page ) . $style .'\">' . $i . '</a>';\n                if( $i <  $total_pages )\n                {\n                    $page_string .= \", \";\n                }\n            }\n        }\n    }\n    else\n    {\n        for($i = 1; $i < $total_pages + 1; $i++)\n        {\n            $page_string .= ( $i == $on_page ) ? '<b>' . $i . '</b>' : '<a href=\"' . $base_url . \"&amp;start=\" . ( ( $i - 1 ) * $per_page ) . $style .'\">' . $i . '</a>';\n            if ( $i <  $total_pages )\n            {\n                $page_string .= ', ';\n            }\n        }\n    }\n\n    if ( $add_prevnext_text )\n    {\n        if ( $on_page > 1 )\n        {\n            $page_string = ' <a href=\"' . $base_url . \"&amp;start=\" . ( ( $on_page - 2 ) * $per_page ). $style .'\">' . $lang['PREVIOUS'] . '</a>&nbsp;&nbsp;' . $page_string;\n        }\n\n        if ( $on_page < $total_pages )\n        {\n            $page_string .= '&nbsp;&nbsp;<a href=\"' . $base_url . \"&amp;start=\" . ( $on_page * $per_page ) . $style .'\">' . $lang['NEXT'] . '</a>';\n        }\n\n    }\n\n    $pagination = ($page_string) ? '<a class=\"menu-root\" href=\"#pg-jump\">'. $lang['GOTO_PAGE'] .'</a> :&nbsp;&nbsp;'. $page_string : '';\n    $pagination = str_replace('&amp;start=0', '', $pagination);\n\n    $template->assign_vars(array(\n        'PAGINATION'   => $pagination,\n        'PAGE_NUMBER'  => sprintf($lang['PAGE_OF'], ( floor($start_item/$per_page) + 1 ), ceil( $num_items / $per_page )),\n        'PG_BASE_URL'  => $base_url,\n        'PG_PER_PAGE'  => $per_page,\n    ));\n\n    return $pagination;\n}\n\n#\n#-----[ OPEN ]------------------------------------------\n#\n\nmain.css\n\n#\n#-----[ ADD ]-------------------------------------------\n#\n\n#present {\n    height:150px; position: relative;\n    background:url(../images/gift_bg.png) repeat-x bottom;\n    border: 1px solid #ccc;\n}\n#present .lblock {\n    background:url(../images/left.png) no-repeat top right;\n    width:85px; height:32px;\n    line-height:35px; position:absolute;\n    top:135px; left:-7px;\n    color: #FFFFFF;\n}\n#present .rblock {\n    color:#FFF; background:url(../images/right.png) no-repeat top left;\n    font-weight: bold; width:72px; height:32px;\n    line-height:35px; position:absolute;\n    top:135px; right:-6px;\n}\n#present b { color: #FFFFFF; }\n#present b:hover { color: #FF8000;}\n#present b:active { color: #FF8000 !important; position: relative; top: 1px; }\n#present a:hover, #present a:active {\n    text-decoration: none !important;\n}1px; }\n#present a:hover, #present a:active {\n    text-decoration: none !important;\n}\n\n#\n#-----[ OPEN ]------------------------------------------\n#\n\nusercp_viewprofile.tpl\n\n#\n#-----[ FIND ]------------------------------------------\n#\n\n</table><!--/user_profile-->\n\n#\n#-----[ ADD ]-------------------------------------------\n#\n\n<!-- IF PAGINATION -->\n<p class=\"small\" style=\"padding: 1px 6px 5px;\"><b>{PAGINATION}</b></p>\n<!-- ENDIF -->\n<!-- IF SHOW_PRESENTS -->\n<table class=\"tCenter borderless\" width=\"100%\">\n    <tr><th class=\"cat border bw_TRBL\" colspan=\"4\"><a href=\"presents.php<!-- IF not EDIT_PROF -->?u={PROFILE_USER_ID}<!-- ENDIF -->\">{L_GIVE_PRESENT}</a></th></tr>\n    <!-- BEGIN presentrow -->\n    <tr>\n        <!-- BEGIN presentcol -->\n        <td class=\"row1 pad_10\" width=\"25%\">\n        <div id=\"present\" class=\"pad_10\">\n            <div style=\"color: #c80; font-size:14px;\">{presentrow.presentcol.NAME}</div>\n            <img src=\"images/presents/{presentrow.presentcol.PIC}\">\n            <div class=\"lblock tLeft nowrap\">&nbsp;&nbsp;{L_REPORT_BY}&nbsp;{presentrow.presentcol.GIVEN}</div>\n        </div>\n        </td>\n        <!-- END presentcol -->\n        <!-- BEGIN not -->\n        <td class=\"row1\" align=\"center\" width=\"25%\">&nbsp;</td>\n        <!-- END not -->\n    </tr>\n    <!-- END presentrow -->\n    <!-- BEGIN not_present -->\n    <tr>\n        <td colspan=\"3\" class=\"row1 tCenter pad_8\">{L_NONE}</td>\n    </tr>\n    <!-- END not_present -->\n</table>\n<!-- ENDIF -->\n\n#\n#-----[ SAVE/CLOSE ALL FILES ]--------------------------\n#[/PHP]\n[/SPOILER]",
+    "owner": "_Xz_",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425296650,
+      "file_size": 21084,
+      "filename": "3E6283D0.webp",
+      "height": 325,
+      "id": 3130,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/3e6283d0-webp.3130/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3134-cec588d5aaa42f1c0f656b2ac0464608.jpg?hash=vGXfcTXNDf",
+      "width": 1252
+    },
+    {
+      "attach_date": 1425296650,
+      "file_size": 24312,
+      "filename": "8a88e88b.webp",
+      "height": 374,
+      "id": 3131,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/8a88e88b-webp.3131/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3135-5e4f34c2325f397f4a9a005fded818b6.jpg?hash=FFwBERxcoj",
+      "width": 1248
+    },
+    {
+      "attach_date": 1425296651,
+      "file_size": 103876,
+      "filename": "D20b5de3.webp",
+      "height": 721,
+      "id": 3132,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/d20b5de3-webp.3132/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3136-b5edad82f2b35ef30e6cc0f26bd3926c.jpg?hash=mmmwW4Zq_P",
+      "width": 1250
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет систему обмена виртуальными подарками между пользователями. Некий аналог системы обмена подарками в социальных сетях. Подарки покупаются за сидбонусы. У администратора есть возможность добавления неограниченного числа категорий подарков и самих подарков.",
+  "download_count": 530,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/168.jpg?1425252141",
+  "id": 168,
+  "is_fileless": null,
+  "last_update": 1425252132,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1425252132,
+  "resource_state": "visible",
+  "slug": "podarki",
+  "tag_line": "Добавляет систему обмена виртуальными подарками между пользователями.",
+  "tags": [],
+  "title": "Подарки",
+  "url_path": "/resources/podarki.168/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 530,
+      "files": [
+        {
+          "filename": "[FULL] Подарки.zip",
+          "id": 3106,
+          "local_path": null,
+          "r2_key": null,
+          "size": 44038,
+          "src_url": "https://torrentpier.com/api/resource-versions/201/download?file=3106"
+        }
+      ],
+      "id": 201,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425252132,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/podarki.168/version/201/"
+    }
+  ],
+  "view_count": 3170
+}

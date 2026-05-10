@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58892,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25757,
+  "last_post_date": 1391898141,
+  "node_id": 111,
+  "post_date": 1391894590,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58892,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Ссылка</b>:<br />\n<a href=\"http://code.google.com/p/torrentpier2/source/detail?r=582\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"> http://code.google.com/p/torrentpier2/source/detail?r=582</a><br />\n<br />\n<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 582: Чистка голосовавших в оконченных закрытых старых опросах; перенос синхронизаций</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">glix08</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/install/sql/mysql.sql \n    Modify    /trunk/upload/admin/admin_rebuild_search.php \n    Modify    /trunk/upload/admin/admin_smilies.php \n    Modify    /trunk/upload/admin/index.php \n    Modify    /trunk/upload/ajax.php \n    Add    /trunk/upload/ajax/manage_admin.php \n    Modify    /trunk/upload/ajax/manage_user.php \n    Modify    /trunk/upload/attach_mod/includes/functions_includes.php \n    Modify    /trunk/upload/config.php \n    Add    /trunk/upload/includes/cron/jobs/attach_maintenance.php \n    Modify    /trunk/upload/includes/cron/jobs/bb_maintenance.php \n    Modify    /trunk/upload/includes/cron/jobs/cache_gc.php \n    Modify    /trunk/upload/includes/emailer.class.php \n    Modify    /trunk/upload/includes/functions.php \n    Modify    /trunk/upload/includes/functions_report_admin.php \n    Modify    /trunk/upload/includes/functions_selects.php \n    Modify    /trunk/upload/includes/page_footer.php \n    Modify    /trunk/upload/includes/sql_parse.php \n    Modify    /trunk/upload/includes/template.php \n    Modify    /trunk/upload/includes/ucp/usercp_avatar.php \n    Modify    /trunk/upload/includes/ucp/usercp_register.php \n    Modify    /trunk/upload/language/lang_english/lang_main.php \n    Modify    /trunk/upload/language/lang_russian/lang_main.php \n    Modify    /trunk/upload/misc/js/bbcode.js \n    Modify    /trunk/upload/templates/admin/admin_groups.tpl \n    Modify    /trunk/upload/templates/admin/admin_ug_auth.tpl \n    Modify    /trunk/upload/templates/admin/admin_user_ban.tpl \n    Modify    /trunk/upload/templates/admin/index.tpl \n    Modify    /trunk/upload/templates/default/groupcp.tpl \n    Modify    /trunk/upload/templates/default/posting.tpl \n    Modify    /trunk/upload/templates/default/search.tpl \n    Modify    /trunk/upload/templates/default/tracker.tpl \n\nЧистка голосовавших в оконченных закрытых старых опросах; перенос синхронизаций в админке на ajax; разделение крон-задач обслуживания аттачей от обслуживания форума; разделение ajax-модуля управления пользователями от модуля управлением синхронизацией и очистками кеша в админке; переименование части стандартных функций (отказ от упоминания phpbb); фикс критичной опечатки в ajax.php; фикс крон-задачи чистки кеша и ее логирования. При обновлении не забывайте о выполнении запроса: INSERT INTO `bb_cron` VALUES (22, 1, &#039;Attach maintenance&#039;, &#039;attach_maintenance.php&#039;, &#039;daily&#039;, NULL, &#039;05:00:00&#039;, 40, &#039;&#039;, &#039;&#039;, NULL, 1, &#039;&#039;, 0, 1, 0);</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1391894590,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58893,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "😱",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1391898141,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "revision-582-cistka-golosovavsih-v-okoncennyh-zakrytyh-staryh-oprosah-perenos-sinhronizacij",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 582: Чистка голосовавших в оконченных закрытых старых опросах; перенос синхронизаций",
+  "url_path": "/threads/revision-582-cistka-golosovavsih-v-okoncennyh-zakrytyh-staryh-oprosah-perenos-sinhronizacij.25757/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 1690
+}

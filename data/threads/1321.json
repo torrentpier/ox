@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 16992,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1321,
+  "last_post_date": 1338467744,
+  "node_id": 57,
+  "post_date": 1336545283,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 16992,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте.<br />\nПодскажите пожалуйста запрос, чтобы можно было весь трекер сделать публичным?<br />\nСпасибо.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1336545283,
+      "user_id": 0,
+      "user_title": "",
+      "username": "blackjack"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 16997,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"php\">UPDATE `bb_forums` SET `auth_post` = 0, `auth_reply` = 0, `auth_download` = 0</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1336547464,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Alpha"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 16998,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Alpha</b>,<br />\nспасибо!)",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1336547844,
+      "user_id": 0,
+      "user_title": "",
+      "username": "blackjack"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 17818,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "а чтобы сделать обратно запрос такой?<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">UPDATE `bb_forums` SET `auth_post` = 1, `auth_reply` = 1, `auth_download` = 1</pre>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1338464970,
+      "user_id": 0,
+      "user_title": "",
+      "username": "blackjack"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 17819,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>blackjack</b>, да",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1338467744,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "podskazite-zapros",
+  "sticky": false,
+  "tags": [],
+  "title": "Подскажите запрос.",
+  "url_path": "/threads/podskazite-zapros.1321/",
+  "user_id": 0,
+  "username": "blackjack",
+  "view_count": 1266
+}

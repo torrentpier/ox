@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 80105,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 38618,
+  "last_post_date": 1427114796,
+  "node_id": 80,
+  "post_date": 1427103575,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 80105,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Возможно является багом, при создании раздачи с большим количеством символов пропадает аттач.<br />\nПомогли запросы. Не помешало бы убрать ограничения изначально в ревизии.<br />\n<pre class=\"xfBb-code\" data-lang=\"\">ALTER TABLE `bb_posts_text` CHANGE `post_text` `post_text` LONGTEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;\nALTER TABLE `bb_posts_html` CHANGE `post_html` `post_html` LONGTEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1427103575,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 80113,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 1427114602,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Virtuoz\">Возможно является багом, при создании раздачи с большим количеством символов пропадает аттач.<br />\nПомогли запросы. Не помешало бы убрать ограничения изначально в ревизии.<br />\n<pre class=\"xfBb-code\" data-lang=\"\">ALTER TABLE `bb_posts_text` CHANGE `post_text` `post_text` LONGTEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;\nALTER TABLE `bb_posts_html` CHANGE `post_html` `post_html` LONGTEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;</pre></blockquote>Вообще не помешало бы убивать таких людей, которые символами за лимит заходят.<br />\nКак таковых никаких ограничений в движке нет. И нет смысла, что-то менять в ревизии, если у администратора есть базовые знания по MySQL (а администратор должен хотя бы знать, что это за странные буквы в аббривеатуре как минимум), то ему не составит труда в личных целях настроить БД как ему вздумается, поменяв тип данных определенных полей таблиц",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1427103976,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 80114,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Nightmare\">Вообще не помешало бы убивать таких людей, которые символами за лимит заходят.<br />\nКак таковых никаких ограничений в движке нет. И нет смысла, что-то менять в ревизии, если у администратора есть базовые знания по MySQL (а даминистратор должен хотя бы знать, что это за странные буквы в аббривеатуре как минимум), то ему не составит труда в личных целях настроить БД как ему вздумается, поменяв тип данных определенных полей таблиц</blockquote>Не каждый может догадаться в силу своего опыта или по каким то другим причинам.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1427105210,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 80147,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Virtuoz\">Не каждый может догадаться в силу своего опыта или по каким то другим причинам.</blockquote>В движке даются базовые параметры, конфигурация БД по вкусу и цвету дело сугубо индивидуальное. И тема как таковая к багам не относится",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1427114796,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 3,
+  "slug": "ogranicenia-v-kolicestve-simvolov",
+  "sticky": false,
+  "tags": [],
+  "title": "Ограничения в количестве символов",
+  "url_path": "/threads/ogranicenia-v-kolicestve-simvolov.38618/",
+  "user_id": 462,
+  "username": "Virtuoz",
+  "view_count": 1242
+}

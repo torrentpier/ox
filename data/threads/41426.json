@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 87221,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 86,
+    "title": "Questions about PHP"
+  },
+  "id": 41426,
+  "last_post_date": 1457876086,
+  "node_id": 86,
+  "post_date": 1457793510,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87221,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Решил я тут прикрутить <a href=\"https://github.com/PHPAuth/PHPAuth/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">класс авторизации</a> к своему самописному движку.<br />\nУстановил composer через ssh<br />\n<pre class=\"xfBb-code\" data-lang=\"\">cd /tmp \ncurl -sS https://getcomposer.org/installer | php \nmv composer.phar /usr/local/bin/composer</pre>И сам класс<br />\n<pre class=\"xfBb-code\" data-lang=\"\">composer require phpauth/phpauth</pre><br />\nКласс установился в /tmp<br />\nА мне надо его поставить в /var/www/zxc/data/www/site.ru/auth/<br />\n<br />\nСобсно как это сделать? Мне нужно что все лежало в папке сайта, потому что при переезде на новый сервер не охота парится с этим композитором снова",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1457793510,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87235,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\">cd /tmp</code> - дык в какой папке находитесь там и установится. Устанавливать надо находясь в папке <code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\">/var/www/zxc/data/www/site.ru/</code> в вашем случае.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1457876086,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "composer",
+  "sticky": false,
+  "tags": [],
+  "title": "composer",
+  "url_path": "/threads/composer.41426/",
+  "user_id": 6370,
+  "username": "sхс",
+  "view_count": 1364
+}

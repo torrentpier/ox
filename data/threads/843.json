@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 10677,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 843,
+  "last_post_date": 1328208433,
+  "node_id": 57,
+  "post_date": 1327842773,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10677,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Обясните смысл этих кнопок, пожалуиста<br />\nКак я понимаю<br />\nWill Download - это типа закладки<br />\nCancel - Удаление этой закладки<br />\n <br />\nА зачем нужны Downloading и Complete<br />\n <br />\nЕще не совсем понял этот код, если xbt<br />\nто вставляет и удаляет сразу это же поле<br />\ndl_list.php<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">    if($bb_cfg[&#039;announce_type&#039;] == &#039;xbt&#039;)\n    {\n        DB()-&gt;query(&quot;REPLACE INTO &quot;. BB_BT_DLSTATUS_MAIN .&quot; $new_dlstatus_sql&quot;);\n    }\n    else\n    {\n        DB()-&gt;query(&quot;REPLACE INTO &quot;. BB_BT_DLSTATUS_NEW .&quot; $new_dlstatus_sql&quot;);\n    }\n \n    DB()-&gt;query(&quot;\n        DELETE FROM &quot;. BB_BT_DLSTATUS_MAIN .&quot;\n        WHERE user_id = {$user-&gt;id}\n            AND topic_id IN(&quot;. join(&#039;,&#039;, $topics_ary) .&quot;)\n    &quot;);</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1327842773,
+      "user_id": 619,
+      "user_title": "User",
+      "username": "volkodav2000"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10894,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "кто-нибуть объяснит?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1328201765,
+      "user_id": 619,
+      "user_title": "User",
+      "username": "volkodav2000"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10896,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "это всё бред",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1328202719,
+      "user_id": 0,
+      "user_title": "",
+      "username": "frank"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10897,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"frank\">это всё бред</blockquote><br />\nЭто ошибочное мнение.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1328203735,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10905,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Basilevs\">Это ошибочное мнение.</blockquote>вместо dl-статусов можно сделать вывод скачанных тем и закладки.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1328208433,
+      "user_id": 0,
+      "user_title": "",
+      "username": "frank"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "will-download-complete-downloading-cancel",
+  "sticky": false,
+  "tags": [],
+  "title": "Will Download, Complete, Downloading, Cancel",
+  "url_path": "/threads/will-download-complete-downloading-cancel.843/",
+  "user_id": 619,
+  "username": "volkodav2000",
+  "view_count": 1523
+}

@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 63415,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 58,
+        "title": "Suggestions for improving TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 112,
+    "title": "Reviewed & processed suggestions"
+  },
+  "id": 26568,
+  "last_post_date": 1771105948,
+  "node_id": 112,
+  "post_date": 1412015133,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63415,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1412015196,
+      "message_parsed": "в functions_atom.php строку 13<br />\n&quot;if ($forum_id == 0) $forum_data[&#039;forum_name&#039;] = &#039;Общая по всем разделам&#039;;&quot;<br />\n<br />\nпредлагаю заменить на строку<br />\nif ($forum_id == 0) $forum_data[&#039;forum_name&#039;] = $bb_cfg[&#039;sitename&#039;];<br />\n<br />\nНу или хотя бы на что-то нейтральные, без привязки к русскому языку",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1412015133,
+      "user_id": 61,
+      "user_title": "User",
+      "username": "druid"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98400,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Была реализована поддержка локализации.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1771105948,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 33,
+  "reply_count": 1,
+  "slug": "nemnogo-ispravit-atom-lentu",
+  "sticky": false,
+  "tags": [],
+  "title": "Немного исправить atom-ленту",
+  "url_path": "/threads/nemnogo-ispravit-atom-lentu.26568/",
+  "user_id": 61,
+  "username": "druid",
+  "view_count": 1118
+}

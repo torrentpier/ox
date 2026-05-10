@@ -1,0 +1,168 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95011,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42149,
+  "last_post_date": 1689529652,
+  "node_id": 57,
+  "post_date": 1689445717,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1689445708,
+          "file_size": 15974,
+          "filename": "Screenshot_2.webp",
+          "height": 384,
+          "id": 5470,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot_2-webp.5470/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5474-7c6c6fa3689addc79c6e73b0c18ce435.jpg?hash=JdCb87xIYK",
+          "width": 1037
+        }
+      ],
+      "id": 95011,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "При создании групп в админке, есть чудесная кнопка &quot;Вернуть&quot;, которая не активна. Может ее вообще выпилить, либо сделать чтобы работала?<br />\n<img src=\"https://torrentpier.com/attachments/5470/\" alt=\"Screenshot_2.webp\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1689445717,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95014,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Lange\">При создании групп в админке, есть чудесная кнопка &quot;Вернуть&quot;, которая не активна. Может ее вообще выпилить, либо сделать чтобы работала?<br />\n<a href=\"https://torrentpier.com/attachments/5470/\">View attachment 5470</a></blockquote>Данная кнопка очищает все поля и сбрасывает указанные чекбоксы. Вы когда заполняете данные и нажимаете на кнопку сброса, то что происходит?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1689494180,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95026,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"belomaxorka\">Данная кнопка очищает все поля и сбрасывает указанные чекбоксы. Вы когда заполняете данные и нажимаете на кнопку сброса, то что происходит?</blockquote>Да, действительно. Стоит переименовать как очистить)",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1689528524,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95028,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Lange\">Да, действительно. Стоит переименовать как очистить)</blockquote>Ну кстати, если данные группы заполнены (из базы, режим редактирования) и вы их изменили, то при нажатии на кнопку будут отображены данные из базы. По сути как возврат в исходное состояние тоже работает, а не чистит в слепую.<br />\n<br />\nНасчёт переименования кнопка, да, лучше очистить будет наверное",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1689528669,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95030,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"belomaxorka\">Ну кстати, если данные группы заполнены (из базы, режим редактирования) и вы их изменили, то при нажатии на кнопку будут отображены данные из базы. По сути как возврат в исходное состояние тоже работает, а не чистит в слепую.<br />\n<br />\nНасчёт переименования кнопка, да, лучше очистить будет наверное</blockquote>Точно, проверил сейчас, и правда возвращает. Может в таком случае, при редактировании оставить вернуть, а при создании новой группы Очистить?",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1689528846,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95031,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Lange\">Точно, проверил сейчас, и правда возвращает. Может в таком случае, при редактировании оставить вернуть, а при создании новой группы Очистить?</blockquote>А мне нравится ваш ход мыслей... Пожалуй так и сделаю, в таком случае надо будет всю админку перелопатить, к релизу бетки уложусь",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1689528938,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95033,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"belomaxorka\">А мне нравится ваш ход мыслей... Пожалуй так и сделаю, в таком случае надо будет всю админку перелопатить, к релизу бетки уложусь</blockquote>🤔🤔🤔",
+      "message_state": "visible",
+      "position": 6,
+      "post_date": 1689529652,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 6,
+  "slug": "neaktivnaa-knopka-vernut",
+  "sticky": false,
+  "tags": [],
+  "title": "Неактивная кнопка \"Вернуть\"",
+  "url_path": "/threads/neaktivnaa-knopka-vernut.42149/",
+  "user_id": 55,
+  "username": "Lange",
+  "view_count": 879
+}

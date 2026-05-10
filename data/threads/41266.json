@@ -1,0 +1,160 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 85028,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 86,
+    "title": "Questions about PHP"
+  },
+  "id": 41266,
+  "last_post_date": 1457181912,
+  "node_id": 86,
+  "post_date": 1442994758,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85028,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 1442994946,
+      "message_parsed": "Нашел сегодня очень полезную функцию по генерации тегов, но код отказывался работать. Ошибку искал пол часа наверно. Дошло до того что начал экранировать все подряд. 😀<br />\nКто быстрее? Подсказок не даю<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">function seokeywords($contents,$symbol=5,$words=35){\n    $contents = @preg_replace(array(&quot;&#039;&lt;[\\/\\!]*?[^&lt;&gt;]*?&gt;&#039;si&quot;,&quot;&#039;([\\r\\n])[\\s]+&#039;si&quot;,&quot;&#039;&amp;[a-z0-9]{1,6};&#039;si&quot;,&quot;&#039;( +)&#039;si&quot;),\n    array(&quot;&quot;,&quot;\\\\1 &quot;,&quot; &quot;,&quot; &quot;),strip_tags($contents));\n    $rearray = array(&quot;~&quot;,&quot;!&quot;,&quot;@&quot;,&quot;#&quot;,&quot;$&quot;,&quot;%&quot;,&quot;^&quot;,&quot;&amp;&quot;,&quot;*&quot;,&quot;(&quot;,&quot;)&quot;,&quot;_&quot;,&quot;+&quot;,\n                         &quot;`&quot;,&#039;&quot;&#039;,&quot;№&quot;,&quot;;&quot;,&quot;:&quot;,&quot;?&quot;,&quot;-&quot;,&quot;=&quot;,&quot;|&quot;,&quot;\\&quot;&quot;,&quot;\\\\&quot;,&quot;/&quot;,\n                         &quot;[&quot;,&quot;]&quot;,&quot;{&quot;,&quot;}&quot;,&quot;&#039;&quot;,&quot;,&quot;,&quot;.&quot;,&quot;&lt;&quot;,&quot;&gt;&quot;,&quot;\\r\\n&quot;,&quot;\\n&quot;,&quot;\\t&quot;,&quot;«&quot;,&quot;»&quot;);\n\n    $adjectivearray = array(&quot;ые&quot;,&quot;ое&quot;,&quot;ие&quot;,&quot;ий&quot;,&quot;ая&quot;,&quot;ый&quot;,&quot;ой&quot;,&quot;ми&quot;,&quot;ых&quot;,&quot;ее&quot;,&quot;ую&quot;,&quot;их&quot;,&quot;ым&quot;,\n                                &quot;как&quot;,&quot;для&quot;,&quot;что&quot;,&quot;или&quot;,&quot;это&quot;,&quot;этих&quot;,\n                                &quot;всех&quot;,&quot;вас&quot;,&quot;они&quot;,&quot;оно&quot;,&quot;еще&quot;,&quot;когда&quot;,\n                                &quot;где&quot;,&quot;эта&quot;,&quot;лишь&quot;,&quot;уже&quot;,&quot;вам&quot;,&quot;нет&quot;,\n                                &quot;если&quot;,&quot;надо&quot;,&quot;все&quot;,&quot;так&quot;,&quot;его&quot;,&quot;чем&quot;,\n                                &quot;при&quot;,&quot;даже&quot;,&quot;мне&quot;,&quot;есть&quot;,&quot;только&quot;,&quot;очень&quot;,\n                                &quot;сейчас&quot;,&quot;точно&quot;,&quot;обычно&quot;\n                            );\n\n\n    $contents = @str_replace($rearray,&quot; &quot;,$contents);\n    $keywordcache = @explode(&quot; &quot;,$contents);\n    $rearray = array();\n\n    foreach($keywordcache as $word){\n        if(strlen($word)&gt;=$symbol &amp;&amp; !is_numeric($word)){\n            $adjective = substr($word,-2);\n            if(!in_array($adjective,$adjectivearray) &amp;&amp; !in_array($word,$adjectivearray)){\n                $rearray[$word] = (array_key_exists($word,$rearray)) ? ($rearray[$word] + 1) : 1;\n            }\n        }\n    }\n\n    @arsort($rearray);\n    $keywordcache = @array_slice($rearray,0,$words);\n    $keywords = &quot;&quot;;\n\n    foreach($keywordcache as $word=&gt;$count){\n        $keywords.= &quot;,&quot;.$word;\n    }\n\n    return substr($keywords,1);\n}</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1442994758,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85029,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Дайте права на редактирование, тут ошибка не воспроизведется",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1442996304,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85053,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Какие еще права на редактирование? Суть и место ошибки напишите что ли.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1443527637,
+      "user_id": 5765,
+      "user_title": "User",
+      "username": "Diolektor"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1443534174,
+          "file_size": 1008,
+          "filename": "1.zip",
+          "height": 0,
+          "id": 4092,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1-zip.4092/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 85055,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Diolektor\">Какие еще права на редактирование? Суть и место ошибки напишите что ли.</blockquote>Тут на форуме ошибка не воспроизводится. <br />\nПрикрепил текстовый файл. Ошибку сложно обнаружить через notepad++<br />\nСкачай и попробуй запусти на сервере",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1443534181,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1456959908,
+          "file_size": 6868,
+          "filename": "03-03-2016 2-03-27.webp",
+          "height": 121,
+          "id": 4309,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/03-03-2016-2-03-27-webp.4309/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4313-1d2048a2ecabccee77cc7c543c5892ec.jpg?hash=iBPGr6pnda",
+          "width": 275
+        }
+      ],
+      "id": 87056,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Ошибка в знаке доллара. Точнее в плюсике который внутри него. Есть идеи как такой плюсик поставить?<br />\n<img src=\"https://torrentpier.com/attachments/4309/\" alt=\"03-03-2016 2-03-27.webp\" />",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1456960069,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87093,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"zxc\">Есть идеи как такой плюсик поставить?</blockquote>Это какой-то юникод-символ. Таблицу надо смотреть.",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1457181912,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "najdes-osibku-v-kode",
+  "sticky": false,
+  "tags": [],
+  "title": "Найдешь ошибку в коде?",
+  "url_path": "/threads/najdes-osibku-v-kode.41266/",
+  "user_id": 6370,
+  "username": "sхс",
+  "view_count": 1951
+}

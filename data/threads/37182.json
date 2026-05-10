@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 78016,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 37182,
+  "last_post_date": 1425572628,
+  "node_id": 47,
+  "post_date": 1425507841,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 78016,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Пользователь Exile разместил новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/novosti.208/\" class=\"link link--internal\">Новости</a> - Добавляет возможность пользователям самим публиковать интересные новости.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> добавляет возможность пользователям самим публиковать интересные новости. Новость предлагается пользователем, а затем автоматически публикуется в разделе новостей в сети. Поддерживаются несколько сайтов (onliner.by, iguides.ru, habrahabr.ru, gameland.ru, allgamenews.net).</blockquote><br />\n<a href=\"https://torrentpier.com/resources/novosti.208/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1425507841,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 78139,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "allgamenews.net - китайский или корейский сайт. 😀",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1425572628,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "novosti",
+  "sticky": false,
+  "tags": [],
+  "title": "Новости",
+  "url_path": "/threads/novosti.37182/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 1523
+}

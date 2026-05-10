@@ -1,0 +1,74 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 85264,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41289,
+  "last_post_date": 1451090137,
+  "node_id": 57,
+  "post_date": 1444730613,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85264,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здраствуйте.<br />\nСкажите как можно сделать так, что бы при добавлении торрент файла с других трекеров он считывал число скачивания торрент файла?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1444730613,
+      "user_id": 6055,
+      "user_title": "User",
+      "username": "OfficialTrin"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86244,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Чужие? Никак. Тут люби борятся с тем, что из-за мультитрекерности свои-то не засчитывает, а вы вон чего хотите.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1451090137,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "torrent-skacan-s-mul-titrekera",
+  "sticky": false,
+  "tags": [
+    "мультитрекер",
+    "скачанное"
+  ],
+  "title": "Торрент скачан с мультитрекера",
+  "url_path": "/threads/torrent-skacan-s-mul-titrekera.41289/",
+  "user_id": 6055,
+  "username": "OfficialTrin",
+  "view_count": 1180
+}

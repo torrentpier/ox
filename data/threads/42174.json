@@ -1,0 +1,65 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95224,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 42174,
+  "last_post_date": 1696242367,
+  "node_id": 3,
+  "post_date": 1696242367,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1696242365,
+          "file_size": 4527613,
+          "filename": "tp.ks00000.rar",
+          "height": 0,
+          "id": 5527,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/tp-ks00000-rar.5527/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 95224,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Год выпуска: 7-дек-2014<br />\nРазработчик: torrentpier.com, Meithar, TorrentPier Team<br />\nЯзык интерфейса: английский, русский, украинский<br />\nОписание: TorrentPier - движок торрент-трекера, с форумом, аналогичный движку rutracker.org<br />\n<br />\nМоды:<br />\nКто просматривает тему<br />\nУниверсальный парсер 0.7.2<br />\nФрилич за сид-бонус 1.0.1<br />\nЗолотой день (копилка) 1.1.0<br />\nЗапреты и предупреждения 1.3.1<br />\nПохожие темы 1.1.0<br />\nПользователи за 24 часа на Ajax версия (1.1)<br />\nИнвайты<br />\nПожертвование сидбонусов на золото/серебро 1.0.0<br />\nLast added, top torrents, top users 0.1<br />\n<br />\nВозможности:<br />\nПоддержка нескольких методов кеширования<br />\nПоддержка различных форматов БД<br />\nУстойчивость к высоким нагрузкам<br />\nВыбор типа анонсера (php либо xbt)<br />\nВстроенный поиск (mysql, sphinx)<br />\nШирокие возможности для модификации<br />\nСистемные требования:<br />\nPHP 5.3.4 и выше<br />\nMySQL 5.1 и выше (либо его форк, например, Maria)<br />\nApache 2.2 и выше (либо другой веб-сервер с аналогичными характеристиками, например, nginx)<br />\nДоступ к серверному крону (желательно)<br />\nУстановленные библиотеки кеширования (memcache, sqlite, redis, eaccelerator, apc, xcache - на выбор)<br />\nОсобенности:<br />\nПеределан поиск по топикам с выбором типа [none, mysql, sphinx] (только в tracker.php)<br />\nУдалены bbcode_uid и переход на class.bbcode<br />\nИзменён метод и способ кеширования (memcache, sqlite, db_sqlite, redis, eaccelerator, apc, xcache, filecache)<br />\nИзменён способ подключения к БД и отказ от глобальной переменной $db<br />\nУлучшенный дебагер<br />\nПолностью переписан и упрощен файл регистрации<br />\nПереписана капча (в том числе при быстром ответе у гостя)<br />\nДобавлена возможность выбора типа анонсера (xbt или php)<br />\nУдаление файлов torrent.php и torstatus.php и перенос их функций в ajax<br />\nAjax цитирование, изменение, редактирование, удаление сообщений<br />\n<br />\n<div>Spoiler content hidden.</div><br />\n<a href=\"https://fastpic.ru/view/63/2014/0901/92aa07bf665f405056e855513be8a742.png.html\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"http://i63.fastpic.ru/thumb/2014/0901/42/92aa07bf665f405056e855513be8a742.jpeg?r=1\" alt=\"pic\" /></a> <a href=\"https://fastpic.ru/view/63/2014/0901/7c76de8b2169253f86a181131867c1f7.png.html\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"http://i63.fastpic.ru/thumb/2014/0901/f7/7c76de8b2169253f86a181131867c1f7.jpeg?r=1\" alt=\"pic\" /></a> <a href=\"https://fastpic.ru/view/63/2014/0901/0e13d26d3a304db8eb844e18ebbf067f.png.html\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"http://i63.fastpic.ru/thumb/2014/0901/7f/0e13d26d3a304db8eb844e18ebbf067f.jpeg?r=1\" alt=\"pic\" /></a> <a href=\"https://fastpic.ru/view/63/2014/0901/12a9881f349034adf5f2d8c45404f273.png.html\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"http://i63.fastpic.ru/thumb/2014/0901/73/12a9881f349034adf5f2d8c45404f273.jpeg?r=1\" alt=\"pic\" /></a> <a href=\"https://fastpic.ru/view/63/2014/0901/d63baddc0aa601cf153206e06b362064.png.html\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"http://i63.fastpic.ru/thumb/2014/0901/64/d63baddc0aa601cf153206e06b362064.jpeg?r=1\" alt=\"pic\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1696242367,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-v2-1-5-s-modami-dla-oznakomlenia",
+  "sticky": false,
+  "tags": [],
+  "title": "TorrentPier v2.1.5 С МОДАМИ (для ознакомления)",
+  "url_path": "/threads/torrentpier-v2-1-5-s-modami-dla-oznakomlenia.42174/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 574
+}

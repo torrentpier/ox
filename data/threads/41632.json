@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 89864,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 41632,
+  "last_post_date": 1485622692,
+  "node_id": 3,
+  "post_date": 1485618999,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89864,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ну в общем дело было так:надо было переехать на другой серв,переехали.Всё сделал,но вот беда кэш в админке перестал чиститься,пишет &quot;Ошибка в: <i><a href=\"http://site.ru:81/ajax.php\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://site.ru:81/ajax.php</a></i><br />\n<b>0 error&quot; .И что делать хз)Мб знает кто?<br />\n</b>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1485618999,
+      "user_id": 7391,
+      "user_title": "User",
+      "username": "_WolK_"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89866,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "глянуть логи, не?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1485622692,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "kes-v-adminke",
+  "sticky": false,
+  "tags": [],
+  "title": "Кэш в админке",
+  "url_path": "/threads/kes-v-adminke.41632/",
+  "user_id": 7391,
+  "username": "_WolK_",
+  "view_count": 902
+}

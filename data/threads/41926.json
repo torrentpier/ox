@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 93371,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41926,
+  "last_post_date": 1531435128,
+  "node_id": 57,
+  "post_date": 1531317215,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93371,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток. Нужен совет, создал шаблоны конструкторов и распределил по разделам. Как такого у пользователя есть выбор, или делать релиз по конструктору или же нажав на кнопку &quot;Создать обычную тему&quot; создают релиз на свой вкус. Вопрос, можно ли убрать эту кнопку и как это сделать, чтобы пользователи создавали релизы строго по конструктору? Спасибо!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1531317215,
+      "user_id": 8490,
+      "user_title": "User",
+      "username": "Max-1981"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93372,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Открыть posting.php и найти там то что отвечает за создание обычных тем и добавить условие, если в данном форуме включен конструктор то обычные темы нельзя создавать",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1531321905,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93381,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Ну или в ссылке <code class=\"xfBb-icode\">tpl=0</code> сделать или как там у нас параметр называется.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1531435128,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "knopka-sozdat-obycnuu-temu",
+  "sticky": false,
+  "tags": [],
+  "title": "Кнопка \"Создать обычную тему\"",
+  "url_path": "/threads/knopka-sozdat-obycnuu-temu.41926/",
+  "user_id": 8490,
+  "username": "Max-1981",
+  "view_count": 6266
+}

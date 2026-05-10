@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 59594,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25827,
+  "last_post_date": 1394888354,
+  "node_id": 57,
+  "post_date": 1394867260,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59594,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Привет всем.. такая проблема. Как адаптировать шаблон с 552 версии по самую новую<br />\n<img src=\"http://i.imgur.com/joLGU69.png\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1394867260,
+      "user_id": 1314,
+      "user_title": "User",
+      "username": "sergeantcss"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59595,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "начиная с 553 ревизии путем сравнения и внесения изменений до последней ревизии <a href=\"https://code.google.com/p/torrentpier2/source/list\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://code.google.com/p/torrentpier2/source/list</a> А еще лучше написать автору шаблона, пусть обновит до вашей ревизии.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1394870615,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59605,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Virtuoz можете помочь обновить?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1394888122,
+      "user_id": 1314,
+      "user_title": "User",
+      "username": "sergeantcss"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59607,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>sergeantcss</b>, могу пиши в лс",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1394888354,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "problema-s-sablonom",
+  "sticky": false,
+  "tags": [],
+  "title": "Проблема с шаблоном",
+  "url_path": "/threads/problema-s-sablonom.25827/",
+  "user_id": 1314,
+  "username": "sergeantcss",
+  "view_count": 1129
+}

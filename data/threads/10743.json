@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 38792,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 10743,
+  "last_post_date": 1375348299,
+  "node_id": 57,
+  "post_date": 1375348299,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 38792,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\"><span style=\"font-size: 18px\"><b><span style=\"font-family: 'Georgia'\"><span style=\"color: #444444\"><span style=\"font-size: 15px\">В общем пользователям не приходит письмо с логином и паролем, а приходят все письма мне с ошибкой. Службы POP3 и SMTP работают. Функция mail() тоже</span></span></span></b></span><br />\n<br />\n<br />\n<br />\n<span style=\"font-size: 18px\"><b><span style=\"font-family: 'Georgia'\"><span style=\"color: #444444\"><span style=\"font-size: 15px\">Undelivered Mail Returned to Sender‏</span></span></span></b></span><br />\n<br />\n<span style=\"font-size: 18px\"><b><span style=\"font-family: 'Georgia'\"><span style=\"color: #444444\"><span style=\"font-size: 15px\">Mail Delivery System (<a href=\"mailto:MAILER-DAEMON@hosted-by.leaseweb.com\">MAILER-DAEMON@hosted-by.leaseweb.com</a>)</span></span></span></b></span><br />\n<br />\n<br />\n<br />\n<span style=\"font-size: 18px\"><b><span style=\"font-size: 21px\"><span style=\"font-family: 'Segoe UI Light'\"><span style=\"color: #444444\"><span style=\"font-family: 'Georgia'\">This is the mail system at host hosted-by.leaseweb.com.</span></span></span></span></b></span></li>\n</ul><span style=\"color: #444444\"><br />\nI&#039;m sorry to have to inform you that your message could not<br />\nbe delivered to one or more recipients. It&#039;s attached below.<br />\n<br />\nFor further assistance, please send mail to postmaster.<br />\n<br />\nIf you do so, please include this problem report. You can<br />\ndelete your own text from the attached returned message.<br />\n<br />\nThe mail system<br />\n<br />\n&lt;почта_нового_юзера@mail.ru&gt;: host mxs.mail.ru[94.100.176.20] said: 550 Message was not<br />\naccepted -- it contains invalid headers. More specially, &#039;From:&#039; header<br />\nmust match user you are sending mail from. See<br />\n<a href=\"http://help.mail.ru/mail-help/mailer/popsmtp\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><span style=\"color: #0068cf\"><u>http://help.mail.ru/mail-help/mailer/popsmtp</u></span></a> for details. (in reply to end<br />\nof DATA command)</span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1375348299,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "undelivered-mail-returned-to-sender-pri-registracii-pol-zovatela",
+  "sticky": false,
+  "tags": [],
+  "title": "Undelivered Mail Returned to Sender‏ при регистрации пользователя",
+  "url_path": "/threads/undelivered-mail-returned-to-sender-pri-registracii-pol-zovatela.10743/",
+  "user_id": 0,
+  "username": "ler",
+  "view_count": 1432
+}

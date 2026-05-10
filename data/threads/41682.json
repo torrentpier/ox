@@ -1,0 +1,118 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 90670,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41682,
+  "last_post_date": 1490509253,
+  "node_id": 57,
+  "post_date": 1490310225,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1490309753,
+          "file_size": 118932,
+          "filename": "3d6ac976cdd805ba1002806a44f88ce0.webp",
+          "height": 515,
+          "id": 4770,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/3d6ac976cdd805ba1002806a44f88ce0-webp.4770/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4774-6b0a810d3b3e96c4d4952fdf26e5b2ce.jpg?hash=o44SdVYbBl",
+          "width": 1221
+        }
+      ],
+      "id": 90670,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "у меня третьи сутки трекер по нулям, общий обмен трекера колышется от 45 кб в секунду до максимум 1 мб, а личная статистика вообще полный ноль, прорывается пару раз за сутки по минут 10-15, за это время засчитывается отданные три или 6 гигов когда как повезет, и все, вот так я раздаю ежедневно по 40-50 гигабайтов именно на своих релизах и нашей релиз группы. а вижу вечные нули, статус трекера как видите на скриншоте работает нормально<br />\n<br />\nПодскажите нубу, что это не он сошел с ума, а это что то на трекере не так настроено<br />\nЯ просто имею лакмусовую бумажку  &quot;свой первый трекер&quot;, там все эти три дня трафф учитывался, ни потеряно ни байта было",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1490310225,
+      "user_id": 7566,
+      "user_title": "Blocked",
+      "username": "erzsebet4494"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90671,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Я уточнить хочу, привык что с русским у меня напряженка, я ручку лет 40 уже в руки не брал просто, в самих топиках статистика работает идеально без погрешностей хоть на каплю, она в профиля пользователей именно не идет, плюс по моему в общую статистику самого обмена трекера",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1490315785,
+      "user_id": 7566,
+      "user_title": "Blocked",
+      "username": "erzsebet4494"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90672,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Ну что вам сказать, надо отвязывать дядю Cron. На будущее, прежде чем создавать темы пользуйтесь поиском",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1490328704,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90708,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "я понял про Cron, спасибо, а мне тяжело у вас как то ориентироваться, извинения за создание лишней темы",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1490509253,
+      "user_id": 7566,
+      "user_title": "Blocked",
+      "username": "erzsebet4494"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "propala-statistika-i-ucet-traffika",
+  "sticky": false,
+  "tags": [],
+  "title": "Пропала статистика и учет траффика",
+  "url_path": "/threads/propala-statistika-i-ucet-traffika.41682/",
+  "user_id": 7566,
+  "username": "erzsebet4494",
+  "view_count": 1083
+}

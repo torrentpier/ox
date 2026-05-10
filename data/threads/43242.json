@@ -1,0 +1,110 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 98366,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 50,
+    "title": "Graphics and styles for TorrentPier"
+  },
+  "id": 43242,
+  "last_post_date": 1768549353,
+  "node_id": 50,
+  "post_date": 1768382911,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1768382892,
+          "file_size": 3421558,
+          "filename": "ModernSmiles.zip",
+          "height": 0,
+          "id": 6679,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/modernsmiles-zip.6679/",
+          "thumbnail_url": null,
+          "width": 0
+        },
+        {
+          "attach_date": 1768382892,
+          "file_size": 40684,
+          "filename": "Снимок.webp",
+          "height": 830,
+          "id": 6680,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-webp.6680/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6684-b469b06ee0325ee6351da72e4f470c0a.jpg?hash=_8D9Lj50Jr",
+          "width": 353
+        }
+      ],
+      "id": 98366,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"color: rgb(124, 112, 107)\">Набор <b>анимированный</b> современный смайликов</span><br />\nКоличество: <span style=\"color: rgb(0, 168, 133)\">144 штук</span></b><br />\n<hr /><b><span style=\"color: rgb(0, 0, 0)\">Установка:</span> <span style=\"color: rgb(41, 105, 176)\">Извлечь содержимое архива в папку***/styles/images/smiles<br />\nЧерез админку импортировать набор ModernSmiles.pak</span></b><br />\n<hr /><div style=\"text-align: center\"><img src=\"https://torrentpier.com/attachments/6680/\" alt=\"Снимок.webp\" />&#8203;</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1768382911,
+      "user_id": 7621,
+      "user_title": "User",
+      "username": "DimaUZB2001"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1768549348,
+          "file_size": 3339,
+          "filename": "ModernSmiles.zip",
+          "height": 0,
+          "id": 6681,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/modernsmiles-zip.6681/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 98367,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "- Исправлен шорт-код у одного смайлика<br />\n- Исправлены ошибки в названиях некоторых смайликов",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1768549353,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "nabor-sovremennyh-smajlikov-144-st-by-dimauzb2001",
+  "sticky": false,
+  "tags": [],
+  "title": "Набор современных смайликов 144 шт by DimaUZB2001",
+  "url_path": "/threads/nabor-sovremennyh-smajlikov-144-st-by-dimauzb2001.43242/",
+  "user_id": 7621,
+  "username": "DimaUZB2001",
+  "view_count": 299
+}

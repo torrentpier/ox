@@ -1,0 +1,71 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL][$][TP2] Tag.zip",
+      "id": 3305,
+      "local_path": null,
+      "r2_key": null,
+      "size": 2637,
+      "src_url": "https://torrentpier.com/api/resource-versions/263/download?file=3305"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]----в нужный файл к примеру index.php\nif ($bb_cfg['tags']['on'])\n{\n    if (!CACHE('bb_cache')->get('tags'))\n    {\n        $sql_t = DB()->fetch_rowset(\"SELECT t.topic_title\n            FROM   \".BB_BT_TORRENTS.\" AS tt, \".BB_TOPICS.\" AS t\n            WHERE t.topic_id = tt.topic_id\n            GROUP BY tt.reg_time DESC LIMIT 40\");\n\n        $sql_t['tag'] = tag_encode(r_implode(\" \", $sql_t));\n        $sql_t['tag'] = iconv(\"UTF-8\", \"CP1251//IGNORE\", $sql_t['tag']);\n        $sql_t['title'] = \"Кешированные теги\";\n\n        $row = array();\n        $row['tag'] = $sql_t['tag'];\n        $row['title'] = $sql_t['title'];\n        CACHE('bb_cache')->set('tags', $row, $bb_cfg['tags']['cache']*60*60, 'UTF-8');\n    }else{\n        $sql_t = CACHE('bb_cache')->get('tags');\n    }\n\n    @$tagi = iconv(\"CP1251\", \"UTF-8\", $sql_t['tag']);\n    $tags = explode(\" \", $tagi);\n    $mycloud   = new TagsCloud($tags);\n    $tags_list = $mycloud->get_cloud();\n\n    foreach ($tags_list as $tag)\n    {\n        $nbsp = $bb_cfg['tags_flash'] ? '' : ' ';\n        $template->assign_block_vars('tagrow', array(\n            'TAGS'     => $tag.$nbsp\n        ));\n    }\n}\n\n----в файл шаблона, к примеру index.tpl\n<!-- IF $bb_cfg['tags']['on'] -->\n<div class=\"post_body_m\">\n    <a class=\"footeri\"><u>Теги:</u></a>\n    <script type=\"text/javascript\">\n        $(document).ready(function(){\n            var f_color = '';\n            $(\"a.structure\").hover(function() {\n                f_color = this.style.color;\n                $(this).animate({ backgroundColor: \"#4f94d0\", color: \"#ffffff\" }, 700);\n            },function(){\n                $(this).animate({ backgroundColor: \"white\", color: \"#4b73d4\" }, 200);\n            });\n        });\n    </script>\n    <!-- BEGIN tagrow -->{tagrow.TAGS}<!-- END tagrow -->\n</div>\n<!-- ENDIF -->\n\n----в config.php\n$bb_cfg['tags'] = array(\n  'on'          => true,\n  'cache'       => 2, //кеш держится в часах\n);\n----functions.php\nfunction tag_encode($str)\n{\n    $str = mb_strtolower(trim($str), 'UTF-8');\n    $str = strip_tags($str);\n\n    $search  = array('#([\\ri\\n])[\\s]+#is','#[^a-zа-я\\/\\s]#ui','#\\s+#i','#[\\/]#','#_+#');\n    $replace = array(' ',' ',' ',' ',' ');\n\n    $str = preg_replace($search, $replace, $str);\n\n    $str = strtr($str, array(\"а\"=>\"а\",\"б\"=>\"б\",\"в\"=>\"в\",\"г\"=>\"г\",\"д\"=>\"д\",\"е\"=>\"е\",\"ё\"=>\"е\",\"ж\"=>\"ж\",\"з\"=>\"з\",\"и\"=>\"и\",\"й\"=>\"й\",\"к\"=>\"к\",\"л\"=>\"л\",\"м\"=>\"м\",\"н\"=>\"н\",\"о\"=>\"о\",\"п\"=>\"п\",\"р\"=>\"р\",\"с\"=>\"с\",\"т\"=>\"т\",\"у\"=>\"у\",\"ф\"=>\"ф\",\"х\"=>\"х\",\"ц\"=>\"ц\",\"ч\"=>\"ч\",\"ш\"=>\"ш\",\"щ\"=>\"щ\",\"ъ\"=>\"ъ\",\"ы\"=>\"ы\",\"ь\"=>\"ь\",\"э\"=>\"э\",\"ю\"=>\"ю\",\"я\"=>\"я\"));\n\n    $str = preg_replace(\"/[\\s]([^\\s]{1,5})[\\s]/\", \" \", str_replace(\" \", \"  \", \" \".$str.\" \"));\n    $str = preg_replace('/ +/',' ' , $str);\n\n    $str = trim($str, \" \");\n\n    return $str;\n}\nfunction r_implode( $glue, $pieces )\n{\n  foreach( $pieces as $r_pieces )\n  {\n    if( is_array( $r_pieces ) )\n    {\n\n      $retVal[] = r_implode( $glue, $r_pieces );\n    }\n    else\n    {\n      $retVal[] = $r_pieces;\n    }\n  }\n  return implode( $glue, $retVal );\n}[/PHP]\n[/SPOILER]",
+    "owner": "frost444",
+    "sql": "no",
+    "was_paid": "yes"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание:</b> добавляет возможность вывода облака поисковых тегов.",
+  "download_count": 224,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/206.jpg?1425496816",
+  "id": 206,
+  "is_fileless": null,
+  "last_update": 1425496809,
+  "rating_avg": 3,
+  "rating_count": 2,
+  "resource_date": 1425496809,
+  "resource_state": "visible",
+  "slug": "oblako-tegov",
+  "tag_line": "Добавляет возможность вывода облака поисковых тегов.",
+  "tags": [],
+  "title": "Облако тегов",
+  "url_path": "/resources/oblako-tegov.206/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 224,
+      "files": [
+        {
+          "filename": "[FULL][$][TP2] Tag.zip",
+          "id": 3305,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2637,
+          "src_url": "https://torrentpier.com/api/resource-versions/263/download?file=3305"
+        }
+      ],
+      "id": 263,
+      "rating_avg": 3,
+      "rating_count": 2,
+      "release_date": 1425496809,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/oblako-tegov.206/version/263/"
+    }
+  ],
+  "view_count": 542
+}

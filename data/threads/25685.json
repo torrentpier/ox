@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58315,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25685,
+  "last_post_date": 1391098585,
+  "node_id": 111,
+  "post_date": 1391036545,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58315,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Ссылка</b>:<br />\n<a href=\"http://code.google.com/p/torrentpier2/source/detail?r=573\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"> http://code.google.com/p/torrentpier2/source/detail?r=573</a><br />\n<br />\n<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 573: Перенос настроек личных сообщений в config.php; дефолтные алиасы для баз данных;</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">glix08</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/install/sql/mysql.sql \n    Modify    /trunk/upload/admin/admin_board.php \n    Modify    /trunk/upload/config.php \n    Modify    /trunk/upload/includes/functions.php \n    Modify    /trunk/upload/includes/init_bb.php \n    Modify    /trunk/upload/includes/page_footer.php \n    Modify    /trunk/upload/language/lang_english/lang_main.php \n    Modify    /trunk/upload/language/lang_russian/lang_main.php \n    Modify    /trunk/upload/templates/admin/admin_board.tpl \n\nПеренос настроек личных сообщений в config.php; дефолтные алиасы для баз данных; переделка функции возврата username списком; новые константы для личных сообщений; фиксы локализации.</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1391036545,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58333,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправьте, как бы нету таких таблиц в движке. BB_USER_SES, BB_USER_LASTVISIT",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1391098080,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58334,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"drew\">Исправьте, как бы нету таких таблиц в движке. BB_USER_SES, BB_USER_LASTVISIT</blockquote> <br />\nЭти временные вроде.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1391098585,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "revision-573-perenos-nastroek-licnyh-soobsenij-v-config-php-defoltnye-aliasy-dla-baz-dannyh",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 573: Перенос настроек личных сообщений в config.php; дефолтные алиасы для баз данных;",
+  "url_path": "/threads/revision-573-perenos-nastroek-licnyh-soobsenij-v-config-php-defoltnye-aliasy-dla-baz-dannyh.25685/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 1240
+}

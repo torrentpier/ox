@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 98448,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 43255,
+  "last_post_date": 1774181222,
+  "node_id": 47,
+  "post_date": 1774181124,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1774181070,
+          "file_size": 11282,
+          "filename": "calendar.webp",
+          "height": 358,
+          "id": 6746,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/calendar-webp.6746/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6750-6ec14d1aff6241208facc081de7b0ebf.jpg?hash=bXReUvyw-n",
+          "width": 229
+        }
+      ],
+      "id": 98448,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Это часы с календарем от TorrentBG . Перевел на русский язык.Просто замените старый фаил sidebar2.html с етого.<br />\nВ CSS-коде вы можете изменить цвета в соответствии со своим стилем.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1774181124,
+      "user_id": 10665,
+      "user_title": "User",
+      "username": "crowni"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1774181208,
+          "file_size": 2192,
+          "filename": "sidebar2.zip",
+          "height": 0,
+          "id": 6747,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/sidebar2-zip.6747/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 98449,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "файл",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1774181222,
+      "user_id": 10665,
+      "user_title": "User",
+      "username": "crowni"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "casy-i-kalendar",
+  "sticky": false,
+  "tags": [
+    "часы и календарь"
+  ],
+  "title": "Часы и календарь",
+  "url_path": "/threads/casy-i-kalendar.43255/",
+  "user_id": 10665,
+  "username": "crowni",
+  "view_count": 375
+}

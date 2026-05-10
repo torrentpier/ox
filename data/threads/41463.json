@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 87603,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41463,
+  "last_post_date": 1463081616,
+  "node_id": 57,
+  "post_date": 1463070604,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87603,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\nПодскажите пожалуйста как можно сделать чтобы при регистрации новых пользователей нужно было в обязательном порядке указать пол и дату рождения.?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1463070604,
+      "user_id": 6785,
+      "user_title": "Blocked",
+      "username": "Славный"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87606,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/forum/threads/dopolnitelnye-polja-pri-registracii.10269/\" class=\"link link--internal\">Дополнительные поля при регистрации.</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1463081616,
+      "user_id": 6554,
+      "user_title": "User",
+      "username": "Fakt_37"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "registracia",
+  "sticky": false,
+  "tags": [],
+  "title": "Регистрация",
+  "url_path": "/threads/registracia.41463/",
+  "user_id": 6785,
+  "username": "Славный",
+  "view_count": 1091
+}

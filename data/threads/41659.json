@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 90187,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 41659,
+  "last_post_date": 1487709744,
+  "node_id": 3,
+  "post_date": 1487709744,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90187,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет .<br />\nСегодня возникли проблемы с отправкой файла sitemap в ручном режиме .<br />\nСам файл обновляется , <br />\nно при отпраке ошибка 500 , это понятно почему ,<br />\nне понятно почему перестал отправлятся .<br />\nлоги движка пустые , а вот в логах сервака есть ошибки .<br />\nкуда копать ? (это не время в mod_fcgid)<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\">Premature end of script headers: ajax.php, referer: https://60-fps.org/admin/admin_sitemap.php\nFile does not exist: /var/www/user/data/www/60-fps.org/500.html, referer: https://60-fps.org/admin/admin_sitemap.php</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1487709744,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "problema-s-fajlom-sitemap",
+  "sticky": false,
+  "tags": [],
+  "title": "Проблема с файлом sitemap",
+  "url_path": "/threads/problema-s-fajlom-sitemap.41659/",
+  "user_id": 5626,
+  "username": "Kryl",
+  "view_count": 906
+}

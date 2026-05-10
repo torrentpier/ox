@@ -1,0 +1,118 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 16736,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1304,
+  "last_post_date": 1336391436,
+  "node_id": 57,
+  "post_date": 1336198286,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1336198232,
+          "file_size": 48046,
+          "filename": "bug25.webp",
+          "height": 756,
+          "id": 1116,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bug25-webp.1116/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1117-2418afdce14203918b5d2bfaf3391d1f.jpg?hash=34uvzouTQ4",
+          "width": 1195
+        }
+      ],
+      "id": 16736,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Появилась вот такая ошибка когда заходишь в релиз, подскажите из-за чего ? Заранее спасибо.<br />\n<a href=\"https://torrentpier.com/attachments/1116/\"><img src=\"https://torrentpier.com/data/attachments/1/1117-2418afdce14203918b5d2bfaf3391d1f.jpg?hash=34uvzouTQ4\" alt=\"bug25.webp\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1336198286,
+      "user_id": 1006,
+      "user_title": "User",
+      "username": "Oblom"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 16745,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Скорей всего несколько торрентов прикреплено к одной теме.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1336212588,
+      "user_id": 4,
+      "user_title": "User",
+      "username": "diden05"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 16872,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Сегодня такая ошибка появилось у одного из пользователей (он админ), но я когда захожу на данный релиз вижу нормальное описание. И нет двух торрентов в одной теме.<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">Multiple registered torrents in one topic\nfirst torrent found in post_id = 68800\ncurrent post_id = 68800\nattachments info:\nArray\n(\n    [0] =&gt; Array\n        (\n            [post_id] =&gt; 68800\n            [attach_id] =&gt; 68800\n            [physical_filename] =&gt; goBUwW_Big_space_travel[torrents.wlan].torrent\n            [real_filename] =&gt; Big_space_travel[torrents.wlan].torrent\n            [download_count] =&gt; 9\n            [comment] =&gt;\n            [extension] =&gt; torrent\n            [mimetype] =&gt; application/x-bittorrent\n            [filesize] =&gt; 11704\n            [filetime] =&gt; 1336386430\n            [thumbnail] =&gt; 0\n            [tracker_status] =&gt; 1\n            [thanks] =&gt; 1\n            [rating_sum] =&gt; 5\n            [rating_count] =&gt; 1\n            [thanked] =&gt; 0\n            [rating] =&gt; 5\n        )\n    [1] =&gt; Array\n        (\n            [post_id] =&gt; 68800\n            [attach_id] =&gt; 68800\n            [physical_filename] =&gt; goBUwW_Big_space_travel[torrents.wlan].torrent\n            [real_filename] =&gt; Big_space_travel[torrents.wlan].torrent\n            [download_count] =&gt; 9\n            [comment] =&gt;\n            [extension] =&gt; torrent\n            [mimetype] =&gt; application/x-bittorrent\n            [filesize] =&gt; 11704\n            [filetime] =&gt; 1336386430\n            [thumbnail] =&gt; 0\n            [tracker_status] =&gt; 1\n            [thanks] =&gt; 1\n            [rating_sum] =&gt; 5\n            [rating_count] =&gt; 1\n            [thanked] =&gt; 1\n            [rating] =&gt; 0\n        )\n)</pre>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1336383149,
+      "user_id": 1006,
+      "user_title": "User",
+      "username": "Oblom"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 16876,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<span style=\"font-size: 22px\"><span style=\"color: #ff0000\"><b>Multiple registered torrents in one topic</b></span></span>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1336391436,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "osibka-multiple-registered-torrents-in-one-topic",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка Multiple registered torrents in one topic",
+  "url_path": "/threads/osibka-multiple-registered-torrents-in-one-topic.1304/",
+  "user_id": 1006,
+  "username": "Oblom",
+  "view_count": 1576
+}

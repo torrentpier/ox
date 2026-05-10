@@ -1,0 +1,65 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 88509,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 50,
+    "title": "Graphics and styles for TorrentPier"
+  },
+  "id": 41530,
+  "last_post_date": 1475408220,
+  "node_id": 50,
+  "post_date": 1475408220,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1475408280,
+          "file_size": 89100,
+          "filename": "2016-10-02_161918.webp",
+          "height": 785,
+          "id": 4491,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2016-10-02_161918-webp.4491/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4495-098105490c616b12a1e3b1e013cbc9af.jpg?hash=CZmRxPeXsn",
+          "width": 1866
+        }
+      ],
+      "id": 88509,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1475408403,
+      "message_parsed": "Это для тех у кого установлен fancybox и тег [youtube]. Для просмотра трейлера выводит видео с youtube в модальном окне.<br />\n<pre class=\"xfBb-code\" data-lang=\"\"> &lt;a class=&quot;gallery&quot; href=&quot;#testube&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;картинка на усмотрение&quot; /&gt;или просто необходимый текст&lt;/a&gt;\n&lt;div style=&quot;display:none&quot; id=&quot;testube&quot;&gt;\n&lt;!-- HTML - код ролика --&gt;\n&lt;object width=&quot;425&quot; height=&quot;344&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/sh08XGBE8qc&amp;hl=ru&amp;fs=1&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot;&gt;&lt;/param&gt;&lt;embed src=&quot;http://www.youtube.com/v/sh08XGBE8qc&amp;hl=ru&amp;fs=1&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;344&quot;&gt;&lt;/embed&gt;&lt;/object&gt;\n&lt;!-- конец  HTML - кода ролика --&gt;\n&lt;/div&gt;</pre><div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1475408220,
+      "user_id": 6734,
+      "user_title": "User",
+      "username": "zip"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "video-s-youtube-com-v-modal-nom-okne",
+  "sticky": false,
+  "tags": [],
+  "title": "Видео с youtube.com в модальном окне",
+  "url_path": "/threads/video-s-youtube-com-v-modal-nom-okne.41530/",
+  "user_id": 6734,
+  "username": "zip",
+  "view_count": 1644
+}

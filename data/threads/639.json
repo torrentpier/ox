@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 8155,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 639,
+  "last_post_date": 1325160922,
+  "node_id": 57,
+  "post_date": 1325159337,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 8155,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "del",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1325159337,
+      "user_id": 380,
+      "user_title": "User",
+      "username": "MY-94"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 8157,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Потому что в TP 2 tpl файлы лежат в папке templates/admin/ . И не увидет он папку default с аргументом &quot;admin&quot; в print_page(). Опеределитесь уже с какой вы версией движка работаете",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1325159625,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 8159,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вот будет смешно, если кто-нибудь зайдет через Вашего &quot;admin&#039;a&quot; и дропнет БД - весело будет, особенно если ресурсу несколько лет.<br />\n<span style=\"color: rgb(204,204,204)\"><span style=\"font-size: 10px\">--- добавлено: Dec 29, 2011 12:03 PM ---</span></span><br />\nЕще с tp - этот моде не до оцениваю.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1325160224,
+      "user_id": 665,
+      "user_title": "",
+      "username": "gas"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 8160,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "del",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1325160922,
+      "user_id": 380,
+      "user_title": "User",
+      "username": "MY-94"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "full-delaem-zapros-v-bd-iz-adminki",
+  "sticky": false,
+  "tags": [],
+  "title": "[FULL] Делаем запрос в БД из админки",
+  "url_path": "/threads/full-delaem-zapros-v-bd-iz-adminki.639/",
+  "user_id": 380,
+  "username": "MY-94",
+  "view_count": 1177
+}

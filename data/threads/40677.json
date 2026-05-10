@@ -1,0 +1,137 @@
+{
+  "custom_fields": {
+    "torrentpier": ""
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 82597,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 40677,
+  "last_post_date": 1476823151,
+  "node_id": 57,
+  "post_date": 1429145190,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 82597,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Когда создаю тему не прикрепляя к ней торрент файлик, то появляется надпись<br />\n<br />\n<b>Notice</b>:Use of undefined constant TORRENT_ATTACH_ID - assumed &#039;TORRENT_ATTACH_ID&#039; ..... <b>posting.php</b> on line <b>436<br />\n</b><code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\">if (!DB()-&gt;fetch_row(&quot;SELECT attach_id FROM &quot;. BB_BT_TORRENTS .&quot; WHERE attach_id = &quot;. TORRENT_ATTACH_ID))</code><br />\n<br />\n<b>Fatal error</b>: DB Error [posting.php(436)] in ............ <b>library/includes/core/mysql.php</b> on line <b>804</b><br />\n<br />\n<code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\">trigger_error($msg, E_USER_ERROR);</code>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1429145190,
+      "user_id": 6127,
+      "user_title": "User",
+      "username": "WorkVladimir"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 82667,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"\">Версия TP: нет</blockquote>Не указана версия - нет поддержки. Что за версия?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1429188521,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 82668,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"XDA\">Когда импортировал базу, ошибки были?</blockquote>Спроси еще, когда компьютер включал, не было ли ошибок!?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1429188546,
+      "user_id": 2789,
+      "user_title": "User",
+      "username": "Sprinx"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88608,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/6127/\">WorkVladimir</a> <br />\nПоддерживаю, есть такая ошибка <br />\n<code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\"><b>Notice</b>: Use of undefined constant TORRENT_ATTACH_ID - assumed &#039;TORRENT_ATTACH_ID&#039; in <b>C:\\OpenServer\\domains\\torrent3\\posting.php</b> on line <b>432</b><br />\n</code><br />\nвот это при создании темы без торрент файла,<br />\nи такая же ошибка появляется при ответе на сообщение ( с цитатой ). Где определять эту константу?",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1476619379,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88609,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Нашел из за чего нотис, все из за того что когда ставил  <span style=\"font-size: 22px\">Мета-теги (расширенная версия) 1.1.0 </span><span style=\"font-size: 15px\">там в описании есть момент:<br />\n<div>Spoiler content hidden.</div><br />\nну я не посмотрел что делаю и вставил тупо после<br />\n<code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\">if (defined(&#039;TORRENT_ATTACH_ID&#039;) &amp;&amp; $bb_cfg[&#039;bt_newtopic_auto_reg&#039;] &amp;&amp; !$error_msg)</code></span><br />\nи все ))) а сей час посмотрел откуда ошибка и поправил ниже пример кому нужно берите<br />\n<div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1476624239,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88624,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Да, совсем забыл написать, если нужно что бы ссылка на картинку после создания темы ложилась в<br />\nmeta property=&quot;og:image&quot;<br />\nто тогда<br />\nОткрыть posting.php<br />\nнайти<br />\n<div>Spoiler content hidden.</div>заменить на<br />\n<div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1476823151,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "osibka-pri-sozdanii-temy-bez-torrent-vlozenia",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка при создании темы без торрент вложения",
+  "url_path": "/threads/osibka-pri-sozdanii-temy-bez-torrent-vlozenia.40677/",
+  "user_id": 6127,
+  "username": "WorkVladimir",
+  "view_count": 2218
+}

@@ -1,0 +1,114 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL][$][TP2] Grabber.zip",
+      "id": 3296,
+      "local_path": null,
+      "r2_key": null,
+      "size": 17838,
+      "src_url": "https://torrentpier.com/api/resource-versions/260/download?file=3296"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]Автор мода: frost444\n####[ВЫПОЛНИТЬ]-----SQL\n\nCREATE TABLE `bb_bash` (\n  `quote_id` int(11) NOT NULL DEFAULT '0',\n  `quote_cat` varchar(250) NOT NULL DEFAULT '',\n  `quote_time` int(11) NOT NULL DEFAULT '0',\n  `quote_text` text NOT NULL,\n  PRIMARY KEY (`quote_id`)\n) ENGINE=MyISAM DEFAULT CHARSET=utf8    ;\n\nCREATE TABLE `bb_abyss` (\n  `quote_id` int(11) NOT NULL DEFAULT '0',\n  `quote_cat` varchar(250) NOT NULL DEFAULT '',\n  `quote_time` int(11) NOT NULL DEFAULT '0',\n  `quote_text` text NOT NULL,\n  PRIMARY KEY (`quote_id`)\n) ENGINE=MyISAM DEFAULT CHARSET=utf8    ;\n\nCREATE TABLE `bb_igromania` (\n  `quote_id` int(11) NOT NULL DEFAULT '0',\n  `quote_cat` varchar(250) NOT NULL DEFAULT '',\n  `quote_title` varchar(250) NOT NULL DEFAULT '',\n  `quote_time` int(11) NOT NULL DEFAULT '0',\n  `quote_autor` varchar(250) NOT NULL DEFAULT '',\n  `quote_text` text NOT NULL,\n  PRIMARY KEY (`quote_id`)\n) ENGINE=MyISAM DEFAULT CHARSET=utf8    ;\n\nCREATE TABLE `bb_ithappens` (\n  `quote_id` int(11) NOT NULL DEFAULT '0',\n  `quote_cat` varchar(250) NOT NULL DEFAULT '',\n  `quote_title` varchar(250) NOT NULL DEFAULT '',\n  `quote_time` int(11) NOT NULL DEFAULT '0',\n  `quote_text` text NOT NULL,\n  PRIMARY KEY (`quote_id`)\n) ENGINE=MyISAM DEFAULT CHARSET=utf8    ;\n\nCREATE TABLE `bb_zadolbali` (\n  `quote_id` int(11) NOT NULL DEFAULT '0',\n  `quote_cat` varchar(250) NOT NULL DEFAULT '',\n  `quote_title` varchar(250) NOT NULL DEFAULT '',\n  `quote_time` int(11) NOT NULL DEFAULT '0',\n  `quote_text` text NOT NULL,\n  PRIMARY KEY (`quote_id`)\n) ENGINE=MyISAM DEFAULT CHARSET=utf8    ;\n\n\n####[КОНЕЦ]-----SQL\n\n####[ОТКРЫТЬ]----- config.php\n-----[в конец]-----\n$bb_cfg['quote'] = array(\n  'on'          => true,\n  'site'        => array('bb_bash','bb_abyss','bb_ithappens','bb_zadolbali'),\n  'cache'       => 2, //кеш держится в часах\n);\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- ajax.php\n-----[найти]-----\n\n        'index_data'        => array('guest'),\n\n-----[добавить ниже]-----\n\n        'quote'             => array('user'),\n       \n-----[найти последнюю скобку и перед ней добавить]-----\n\n    function quote()\n    {\n        require(AJAX_DIR .'quote.php');\n    }\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- lang_main.php\n-----[в конец]-----\n\n$lang['GRAB_SELECT'] = array(\n             'bash'  => \"Цитатки с Баша\",\n             'abyss' => \"Цитаты с бездны баша\",\n             'ithappens'  => \"Истории с IThappens\",\n             'zadolbali' => \"Истории с сайта ЗАДОЛБАЛИ!\",\n             'igromania' => \"Игровые новости с Игромания.ру\",\n);\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- index.php\n-----[найти]-----\n\n$user->session_start();\n\n-----[добавить ниже]-----\n\nif ($bb_cfg['quote']['on'])\n{\n    $template->assign_vars(array(\n        'QUOTE_START'    => $bb_cfg['quote']['on'],\n    ));\n    $base = $bb_cfg['quote']['site'];   \n    $rand_base = array_rand($base,1);\n   \n    if(!CACHE('bb_cache')->get('quotes['.$base[$rand_base].']'))\n    {      \n        $max = DB()->fetch_row(\"SELECT COUNT(quote_id) as max FROM \".$base[$rand_base].\" LIMIT 1\");\n        if ($max['max'] <= 0)\n        {\n            $template->assign_block_vars('not_quote', array());\n        }else{\n            $sql_q = DB()->fetch_rowset(\"SELECT * FROM \".$base[$rand_base].\" ORDER BY rand() LIMIT 26\");\n\n            CACHE('bb_cache')->set('quotes['.$base[$rand_base].']', $sql_q, $bb_cfg['quote']['cache']*60*60);   \n        }\n    }else{\n        $sql_q = CACHE('bb_cache')->get('quotes['.$base[$rand_base].']');\n    }\n    if(!empty($sql_q))\n    {\n        $rand_sql = array_rand($sql_q,1);\n        $r_sql = $sql_q[$rand_sql];\n\n        $url = 'quote.php?mode='.$r_sql['quote_cat'].'';\n        $template->assign_block_vars('quote',array(\n            'ID'        =>  $r_sql['quote_id'],\n            'TITLE'     =>  (isset($r_sql['quote_title'])) ? '<div class=\"small\"><h2>'.$r_sql['quote_title'].'</h2></div>' : '',\n            'AUTOR'     =>  (isset($r_sql['quote_autor'])) ? '<div class=\"small\">'.$r_sql['quote_autor'].'</div>' : '<div class=\"small\"><div class=\"floatR pad_4\">Автор: <b>guest</b></div></div><div class=\"clear hr1\"></div>',\n            'TEXT'      =>  $r_sql['quote_text'],\n            'DATE'      =>  bb_date($r_sql['quote_time']),\n            'U_QUOTE_ID'  => seo_url(''.$url.'&id='.$r_sql['quote_id'].'#'.$r_sql['quote_id'].'', false, true),\n        ));\n        $template->assign_vars(array(\n            'QUOTE_ON'    =>true,\n        ));\n    }   \n}\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- index.tpl\n-----[в любое место]-----\n\n<!-- IF QUOTE_START -->\n<div class=\"post_body_m\">\n    <a class=\"footeri\" ><u>Цитаты</u></a>\n   \n    <script type=\"text/javascript\">\n        ajax.callback.quote = function(data) {\n          $('#'+data.mode).html(data.html);\n        };\n    </script>\n   \n    <div align=\"center\" class=\"hrs\"></div>\n    <table width=\"100%\">\n        <tr>\n        <!-- IF QUOTE_ON -->\n            <td id=\"random\">\n                <!-- BEGIN quote -->\n                <div id=\"random_flow\" class=\"q_index\"><a name=\"{quote.ID}\">\n                    {quote.TITLE}\n                    <div class=\"small\">\n                        <p class=\"floatL pad_4\"><a href=\"{quote.U_QUOTE_ID}\">#{quote.ID}</a></p>\n                        <p class=\"floatR pad_4\"><i>{quote.DATE}</i></p>\n                    </div>\n                    <div class=\"clear hr1\"></div>\n                    <div class=\"mrg_6\">{quote.TEXT}</div>\n                    {quote.AUTOR}\n                </div>\n                <!-- END quote -->\n                <div class=\"spacer\">&nbsp;</div>\n                <table align=\"center\" cellspacing=\"0\" border=\"0\" width=\"100%\" class=\"tCenter cmh_mask_links\">\n                    <tr>\n                        <td class=\"wAuto\"><a title=\"Следующая цитата\" class=\"morebutton\" href=\"#\" onclick=\"ajax.exec({action : 'quote', mode: 'random', id: 0}); return false;\">Хочу еще!!!</a></td>\n                        <!-- IF IS_AM --><td class=\"wAuto\"><a title=\"Обновить\" class=\"morebutton\" href=\"#\" onclick=\"ajax.exec({action : 'quote', mode: 'update'}); return false;\">Update</a></td><!-- ENDIF -->\n                    </tr>\n                </table>\n            </td>\n            <!-- ENDIF -->\n            <td>\n                <!-- BEGIN not_quote -->\n                <div align=\"center\" class=\"notice\">Цитаты не были добавлены</div>\n                <!-- END not_quote -->\n            </td>       \n        </tr>\n    </table>\n</div>\n<!-- ENDIF -->\n           \n####[СОХРАНИТЬ_ФАЙЛ]####[/PHP]\n[/SPOILER]",
+    "owner": "frost444",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425491103,
+      "file_size": 8234,
+      "filename": "1232.webp",
+      "height": 137,
+      "id": 3293,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/1232-webp.3293/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3297-f3629f2f9456c5e0e69de3a1d4c3bff7.jpg?hash=71_JuHQqbf",
+      "width": 323
+    },
+    {
+      "attach_date": 1425491104,
+      "file_size": 65806,
+      "filename": "1233.webp",
+      "height": 501,
+      "id": 3294,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/1233-webp.3294/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3298-b1f9db67803c1e4808407b1972098b91.jpg?hash=l-RQX-yb2O",
+      "width": 1082
+    },
+    {
+      "attach_date": 1425491104,
+      "file_size": 18560,
+      "filename": "1234.webp",
+      "height": 414,
+      "id": 3295,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/1234-webp.3295/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3299-12bba4f53a994c2e51ecb127019f9d05.jpg?hash=kItuMyxHWW",
+      "width": 281
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет возможность вывода блока с цитатами с известных сайтов.<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Получение всех новостей или цитат с сайтов: Башорг (основной или бездна), IThappens, Задолбали, Игромания.ру</li>\n<li data-xf-list-type=\"ul\">Удобный вывод с навигацией, вывод рандомных цитат или новостей с AJAX-навигацией в удобное для вас место</li>\n</ul>",
+  "download_count": 241,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/203.jpg?1425491306",
+  "id": 203,
+  "is_fileless": null,
+  "last_update": 1425491286,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1425491286,
+  "resource_state": "visible",
+  "slug": "citatnik",
+  "tag_line": "Добавляет возможность вывода блока с цитатами с известных сайтов.",
+  "tags": [],
+  "title": "Цитатник",
+  "url_path": "/resources/citatnik.203/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 241,
+      "files": [
+        {
+          "filename": "[FULL][$][TP2] Grabber.zip",
+          "id": 3296,
+          "local_path": null,
+          "r2_key": null,
+          "size": 17838,
+          "src_url": "https://torrentpier.com/api/resource-versions/260/download?file=3296"
+        }
+      ],
+      "id": 260,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425491286,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/citatnik.203/version/260/"
+    }
+  ],
+  "view_count": 487
+}

@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58594,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 58,
+        "title": "Suggestions for improving TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 112,
+    "title": "Reviewed & processed suggestions"
+  },
+  "id": 25730,
+  "last_post_date": 1771104248,
+  "node_id": 112,
+  "post_date": 1391589540,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58594,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "1. Добавить сайтмап, который формировал бы карту на топики, чисто с адресом:<br />\nviewtopic.php?t=xxxx, без никакой остальной хрени, типа viewtopic.php?t=xxxx&amp;view=newest#newest. Ну и типа в карте должны быть ссылки на форумы, категории и остальные страницы сайта<br />\n2. Добавить артибут rel=&quot;canonical&quot; на все неправильные страницы типа  viewtopic.php?t=xxxx&amp;view=newest#newest и прочей быйды.<br />\n <br />\nТ.е. если в карте есть ссылка на страницу viewtopic.php?t=777, то на всех остальных страницах, которые в своем адресе содержат следующую структуру:<br />\n*mode=reply&amp;*<br />\n*&amp;spmode=full*<br />\n*&amp;dl=names&amp;spmode=full*<br />\n*newest*<br />\n*search*<br />\n*&amp;amp;dl=names&amp;amp;spmode=full*<br />\n*&amp;amp;spmode=full*<br />\n*viewtopic.php?p*<br />\n*viewtopic.php?f*<br />\n*&amp;amp;start=*<br />\n*tracker.php?f=*<br />\n*tracker.php?pid=*<br />\n <br />\nдолжен быть проставлен тег rel=&quot;canonical&quot;",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1391589540,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58596,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Поддерживаю!",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1391591693,
+      "user_id": 0,
+      "user_title": "",
+      "username": "sockrat"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58605,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "За карту.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1391594337,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61863,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Карту сайта в ревизии 593 добавили, про канонические ссылки вопрос в работе.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1407962617,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98393,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Канонические добавили: <a href=\"https://torrentpier.com/threads/torrentpier-3-0-routing-cpu-i-kanoniceskie-url.43234/\" class=\"link link--internal\">https://torrentpier.com/threads/torrentpier-3-0-routing-cpu-i-kanoniceskie-url.43234/</a>",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1771104248,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 33,
+  "reply_count": 4,
+  "slug": "sitemap-canonical",
+  "sticky": false,
+  "tags": [],
+  "title": "Sitemap + canonical",
+  "url_path": "/threads/sitemap-canonical.25730/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1565
+}

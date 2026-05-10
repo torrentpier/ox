@@ -1,0 +1,226 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Чтение личных сообщений пользователей by Exile.zip",
+      "id": 6726,
+      "local_path": null,
+      "r2_key": null,
+      "size": 8063,
+      "src_url": "https://torrentpier.com/api/resource-versions/668/download?file=6726"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]\n[LIST=1]\n[*]Файл [B]admin_ls.php[/B] копируем в папку [B]/admin[/B]\n[*]Файл [B]admin_ls.tpl[/B] копируем в папку [B]/styles/templates/admin [/B]([B]/templates/admin[/B] для старых ревизий)\n[*]На главной странице администраторского раздела удаляем весь кеш и обновляем страницу\n[/LIST]\nМодификация находится в разделе админки [B]Пользователи[/B] - [B]Личные сообщения[/B].[/SPOILER]",
+    "owner": "Exile",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1743429987,
+      "file_size": 15496,
+      "filename": "photo_2025-03-31_17-05-52.webp",
+      "height": 205,
+      "id": 6423,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2025-03-31_17-05-52-webp.6423/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6427-27f73e0c99c1be0a308405ea995aa93c.jpg?hash=ylomK05sfn",
+      "width": 1141
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> модификация, добавляющая возможность чтения личных сообщений пользователей через админку. Может пригодиться при поиске спамеров и прочих нехороших людей.<br />\n<br />\nЭтичность данного действия целиком и полностью остается на совести администратора, устанавливающего это дополнение. Если есть большое желание - прочитать личные сообщения администратор ресурса сможет напрямую через базу. Данная модификация лишь несколько упрощает этот процесс и сделана исключительно ради благих целей.",
+  "download_count": 960,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/145.jpg?1425506483",
+  "id": 145,
+  "is_fileless": null,
+  "last_update": 1772292854,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1421275721,
+  "resource_state": "visible",
+  "slug": "ctenie-licnyh-soobsenij-pol-zovatelej",
+  "tag_line": "Добавляет возможность чтения личных сообщений пользователей через админку.",
+  "tags": [],
+  "title": "Чтение личных сообщений пользователей",
+  "url_path": "/resources/ctenie-licnyh-soobsenij-pol-zovatelej.145/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v2.0.0",
+  "versions": [
+    {
+      "download_count": 60,
+      "files": [
+        {
+          "filename": "[FULL] Чтение личных сообщений пользователей by Exile.zip",
+          "id": 6726,
+          "local_path": null,
+          "r2_key": null,
+          "size": 8063,
+          "src_url": "https://torrentpier.com/api/resource-versions/668/download?file=6726"
+        }
+      ],
+      "id": 668,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1772292854,
+      "version_state": "visible",
+      "version_string": "v2.0.0",
+      "view_url": "https://torrentpier.com/resources/ctenie-licnyh-soobsenij-pol-zovatelej.145/version/668/"
+    },
+    {
+      "download_count": 173,
+      "files": [
+        {
+          "filename": "[FULL] Чтение личных сообщений пользователей by Exile.zip",
+          "id": 6449,
+          "local_path": null,
+          "r2_key": null,
+          "size": 6158,
+          "src_url": "https://torrentpier.com/api/resource-versions/629/download?file=6449"
+        }
+      ],
+      "id": 629,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1748677758,
+      "version_state": "visible",
+      "version_string": "v1.3.2",
+      "view_url": "https://torrentpier.com/resources/ctenie-licnyh-soobsenij-pol-zovatelej.145/version/629/"
+    },
+    {
+      "download_count": 103,
+      "files": [
+        {
+          "filename": "[FULL] Чтение личных сообщений пользователей by Exile.zip",
+          "id": 6433,
+          "local_path": null,
+          "r2_key": null,
+          "size": 6137,
+          "src_url": "https://torrentpier.com/api/resource-versions/622/download?file=6433"
+        }
+      ],
+      "id": 622,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1743875583,
+      "version_state": "visible",
+      "version_string": "v1.3.1",
+      "view_url": "https://torrentpier.com/resources/ctenie-licnyh-soobsenij-pol-zovatelej.145/version/622/"
+    },
+    {
+      "download_count": 98,
+      "files": [
+        {
+          "filename": "[FULL] Чтение личных сообщений пользователей by Exile.zip",
+          "id": 6432,
+          "local_path": null,
+          "r2_key": null,
+          "size": 5187,
+          "src_url": "https://torrentpier.com/api/resource-versions/621/download?file=6432"
+        }
+      ],
+      "id": 621,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1743788583,
+      "version_state": "visible",
+      "version_string": "v1.3.0",
+      "view_url": "https://torrentpier.com/resources/ctenie-licnyh-soobsenij-pol-zovatelej.145/version/621/"
+    },
+    {
+      "download_count": 93,
+      "files": [
+        {
+          "filename": "[FULL] Чтение личных сообщений пользователей by Exile.zip",
+          "id": 6425,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2506,
+          "src_url": "https://torrentpier.com/api/resource-versions/618/download?file=6425"
+        }
+      ],
+      "id": 618,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1743433182,
+      "version_state": "visible",
+      "version_string": "v1.2.1",
+      "view_url": "https://torrentpier.com/resources/ctenie-licnyh-soobsenij-pol-zovatelej.145/version/618/"
+    },
+    {
+      "download_count": 94,
+      "files": [
+        {
+          "filename": "[FULL] Чтение личных сообщений пользователей by Exile.zip",
+          "id": 6424,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2438,
+          "src_url": "https://torrentpier.com/api/resource-versions/617/download?file=6424"
+        }
+      ],
+      "id": 617,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1743430446,
+      "version_state": "visible",
+      "version_string": "v1.2.0",
+      "view_url": "https://torrentpier.com/resources/ctenie-licnyh-soobsenij-pol-zovatelej.145/version/617/"
+    },
+    {
+      "download_count": 226,
+      "files": [
+        {
+          "filename": "read_ls.zip",
+          "id": 3104,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1324,
+          "src_url": "https://torrentpier.com/api/resource-versions/199/download?file=3104"
+        }
+      ],
+      "id": 199,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425251442,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/ctenie-licnyh-soobsenij-pol-zovatelej.145/version/199/"
+    },
+    {
+      "download_count": 142,
+      "files": [
+        {
+          "filename": "read_ls.zip",
+          "id": 2872,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1324,
+          "src_url": "https://torrentpier.com/api/resource-versions/158/download?file=2872"
+        }
+      ],
+      "id": 158,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1421275721,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/ctenie-licnyh-soobsenij-pol-zovatelej.145/version/158/"
+    }
+  ],
+  "view_count": 2877
+}

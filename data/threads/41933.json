@@ -1,0 +1,81 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 93438,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 41933,
+  "last_post_date": 1533411329,
+  "node_id": 80,
+  "post_date": 1533411329,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1533411220,
+          "file_size": 185458,
+          "filename": "photo_2018-08-04_17-31-24.webp",
+          "height": 768,
+          "id": 5190,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/photo_2018-08-04_17-31-24-webp.5190/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5194-d8c5d2075588909a30672e9b19ce469b.jpg?hash=Pdo_NRfz4J",
+          "width": 1024
+        },
+        {
+          "attach_date": 1533411226,
+          "file_size": 180314,
+          "filename": "photo_2018-08-04_17-32-26.webp",
+          "height": 768,
+          "id": 5191,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/photo_2018-08-04_17-32-26-webp.5191/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5195-e797fee12c7666f8b8e6fd81429049f7.jpg?hash=lRLt1cfp-B",
+          "width": 1024
+        }
+      ],
+      "id": 93438,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1533411422,
+      "message_parsed": "Всем привет!<br />\nПроблема такова, после установки движка<br />\nВерсия TorrentPier II:<b>2.1.5 [ALPHA] </b>создал модераторов групп, все сделал правильно, выдал в админке Права доступа статус Модератор, было все нормально, но несколько дней назад у всех модераторов групп, послетали права, не могут проверять релизы. Зашел в админку / Группы / Права доступа, смотрю действительно не у кого нету прав, выдаю обратно, но почему то при клике Отправить, права не выдаются, хотя кликаю на все разделы по группам статус Модератор. Решил попробовать удалить одну из групп модераторов и создать снова, такая же беда, что делать и где копашится, я не знаю.<br />\nВот пример:<br />\n  На первом скриншоте я выдаю права, жму Отправить<br />\nНа втором возвращаюсь обратно в этот же раздел, прав нету",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1533411329,
+      "user_id": 8490,
+      "user_title": "User",
+      "username": "Max-1981"
+    }
+  ],
+  "prefix_id": 25,
+  "reply_count": 0,
+  "slug": "problema-po-vydaci-prav-na-proverki-relizov",
+  "sticky": false,
+  "tags": [],
+  "title": "Проблема по выдачи прав на проверки релизов",
+  "url_path": "/threads/problema-po-vydaci-prav-na-proverki-relizov.41933/",
+  "user_id": 8490,
+  "username": "Max-1981",
+  "view_count": 962
+}

@@ -1,0 +1,162 @@
+{
+  "category": {
+    "description": "Section with all templates for TorrentPier.",
+    "id": 5,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Templates",
+    "view_url": "https://torrentpier.com/resources/categories/templates.5/"
+  },
+  "current_files": [
+    {
+      "filename": "TorrentPier-Pixel-Template-2.1.0.zip",
+      "id": 6476,
+      "local_path": null,
+      "r2_key": null,
+      "size": 3437257,
+      "src_url": "https://torrentpier.com/api/resource-versions/636/download?file=6476"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "yes",
+    "installation": "В папке с шаблоном файл: Установка.txt.",
+    "owner": "",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1696871750,
+      "file_size": 133900,
+      "filename": "2.webp",
+      "height": 1350,
+      "id": 5555,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2-webp.5555/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5559-6e72fb521a7b54b15064b3c79775f583.jpg?hash=5jdtp9bIGf",
+      "width": 1903
+    },
+    {
+      "attach_date": 1696871750,
+      "file_size": 134098,
+      "filename": "4.webp",
+      "height": 1409,
+      "id": 5556,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/4-webp.5556/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5560-c64f79a6dfd02e508d9be2aa6f6023de.jpg?hash=2feYC4nHI3",
+      "width": 1903
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> шаблон, простой и современный с возможностью изменения цвета и оформления. Адаптивный.<br />\n<b>Совместимость:</b> последние версии LTS",
+  "download_count": 816,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/269.jpg?1696871755",
+  "id": 269,
+  "is_fileless": null,
+  "last_update": 1750951962,
+  "rating_avg": 5,
+  "rating_count": 1,
+  "resource_date": 1696871755,
+  "resource_state": "visible",
+  "slug": "sablon-pixel",
+  "tag_line": "Шаблон Pixel для TorrentPier",
+  "tags": [
+    "pixel",
+    "шаблон",
+    "шаблон под 2.1.5"
+  ],
+  "title": "Шаблон «Pixel»",
+  "url_path": "/resources/sablon-pixel.269/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v2.1.0",
+  "versions": [
+    {
+      "download_count": 355,
+      "files": [
+        {
+          "filename": "TorrentPier-Pixel-Template-2.1.0.zip",
+          "id": 6476,
+          "local_path": null,
+          "r2_key": null,
+          "size": 3437257,
+          "src_url": "https://torrentpier.com/api/resource-versions/636/download?file=6476"
+        }
+      ],
+      "id": 636,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1750951962,
+      "version_state": "visible",
+      "version_string": "v2.1.0",
+      "view_url": "https://torrentpier.com/resources/sablon-pixel.269/version/636/"
+    },
+    {
+      "download_count": 134,
+      "files": [
+        {
+          "filename": "TorrentPier-Pixel-Template-2.0.1.zip",
+          "id": 6448,
+          "local_path": null,
+          "r2_key": null,
+          "size": 3437228,
+          "src_url": "https://torrentpier.com/api/resource-versions/628/download?file=6448"
+        }
+      ],
+      "id": 628,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1747569990,
+      "version_state": "visible",
+      "version_string": "v2.0.1",
+      "view_url": "https://torrentpier.com/resources/sablon-pixel.269/version/628/"
+    },
+    {
+      "download_count": 136,
+      "files": [
+        {
+          "filename": "Шаблон Pixel.zip",
+          "id": 6434,
+          "local_path": null,
+          "r2_key": null,
+          "size": 3378039,
+          "src_url": "https://torrentpier.com/api/resource-versions/623/download?file=6434"
+        }
+      ],
+      "id": 623,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1743962532,
+      "version_state": "visible",
+      "version_string": "v2.0.0",
+      "view_url": "https://torrentpier.com/resources/sablon-pixel.269/version/623/"
+    },
+    {
+      "download_count": 200,
+      "files": [
+        {
+          "filename": "Шаблон Pixel 2.1.5.zip",
+          "id": 5554,
+          "local_path": null,
+          "r2_key": null,
+          "size": 4004007,
+          "src_url": "https://torrentpier.com/api/resource-versions/400/download?file=5554"
+        }
+      ],
+      "id": 400,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1696871755,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/sablon-pixel.269/version/400/"
+    }
+  ],
+  "view_count": 4011
+}

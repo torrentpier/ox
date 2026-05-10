@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 95695,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42233,
+  "last_post_date": 1707121175,
+  "node_id": 47,
+  "post_date": 1707121175,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95695,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/semejnoe-polozhenie.284/\" class=\"link link--internal\">Семейное положение</a> - Добавляет возможность пользователю указать своё семейное положение.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> Добавляет возможность пользователю указать своё семейное положение. Имеется поддержка AJAX редактирования.</blockquote><br />\n<a href=\"https://torrentpier.com/resources/semejnoe-polozhenie.284/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1707121175,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "semejnoe-polozenie",
+  "sticky": false,
+  "tags": [],
+  "title": "Семейное положение",
+  "url_path": "/threads/semejnoe-polozenie.42233/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 545
+}

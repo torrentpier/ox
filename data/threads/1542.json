@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 20471,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1542,
+  "last_post_date": 1348142412,
+  "node_id": 57,
+  "post_date": 1348140258,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20471,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"\">Notice: Undefined offset: 1 in /displaying_torrent.php on line 599</pre>на линии <pre class=\"xfBb-code\" data-lang=\"php\">    $client = $out[1];</pre> помогите плиз",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1348140258,
+      "user_id": 2671,
+      "user_title": "",
+      "username": "Александрович"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20473,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Александрович</b>, так почему бы не отписаться в <b><a href=\"http://torrentpier.com/threads/beta-v0-3-Клиент-версия-в-статистике-раздачи.1343/\" class=\"link link--internal\">этой</a></b> теме ?<br />\nИ там уже подобное обсуждалось.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1348142412,
+      "user_id": 30,
+      "user_title": "User",
+      "username": "krumax"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "notis-v-displaying_torrent-php",
+  "sticky": false,
+  "tags": [],
+  "title": "нотис в displaying_torrent.php",
+  "url_path": "/threads/notis-v-displaying_torrent-php.1542/",
+  "user_id": 2671,
+  "username": "Александрович",
+  "view_count": 1143
+}

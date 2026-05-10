@@ -1,0 +1,107 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 97628,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 50,
+    "title": "Graphics and styles for TorrentPier"
+  },
+  "id": 42690,
+  "last_post_date": 1753761483,
+  "node_id": 50,
+  "post_date": 1753761483,
+  "posts": [
+    {
+      "attach_count": 4,
+      "attachments": [
+        {
+          "attach_date": 1753761438,
+          "file_size": 80704,
+          "filename": "1.webp",
+          "height": 967,
+          "id": 6493,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1-webp.6493/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6497-6eb3021d3536b222baaed4e0bc44d4b7.jpg?hash=QtlVycFic2",
+          "width": 1881
+        },
+        {
+          "attach_date": 1753761438,
+          "file_size": 103094,
+          "filename": "2.webp",
+          "height": 981,
+          "id": 6494,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2-webp.6494/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6498-ab3274c1940d6788ee15b0679cce96f2.jpg?hash=dR9Md0dNF7",
+          "width": 1880
+        },
+        {
+          "attach_date": 1753761438,
+          "file_size": 142944,
+          "filename": "3.webp",
+          "height": 878,
+          "id": 6495,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/3-webp.6495/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6499-8f7821fb6b59258efb16724af6355497.jpg?hash=G5UTGGesNW",
+          "width": 1880
+        },
+        {
+          "attach_date": 1753761466,
+          "file_size": 5473820,
+          "filename": "smilesdima.zip",
+          "height": 0,
+          "id": 6496,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/smilesdima-zip.6496/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 97628,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1753761566,
+      "message_parsed": "<b><span style=\"font-size: 18px\"><span style=\"color: rgb(124, 112, 107)\">Набор смайликов и стикеров</span></span></b><br />\n<span style=\"font-size: 18px\"><b>Количество: <span style=\"color: rgb(85, 57, 130)\">428 штук</span></b></span><br />\n<hr /><span style=\"font-size: 18px\"><b>Установка: <span style=\"color: rgb(65, 168, 95)\">Извлечь содержимое архива в папку***/styles/images/smiles</span></b></span><br />\n<b><span style=\"font-size: 18px\"><span style=\"color: rgb(65, 168, 95)\">Через админку импортировать набор smiles.pak</span></span></b><br />\n<hr /><div style=\"text-align: center\"><a href=\"https://torrentpier.com/attachments/6493/\"><img src=\"https://torrentpier.com/data/attachments/6/6497-6eb3021d3536b222baaed4e0bc44d4b7.jpg?hash=QtlVycFic2\" alt=\"1.PNG\" /></a><a href=\"https://torrentpier.com/attachments/6494/\"><img src=\"https://torrentpier.com/data/attachments/6/6498-ab3274c1940d6788ee15b0679cce96f2.jpg?hash=dR9Md0dNF7\" alt=\"2.PNG\" /></a><a href=\"https://torrentpier.com/attachments/6495/\"><img src=\"https://torrentpier.com/data/attachments/6/6499-8f7821fb6b59258efb16724af6355497.jpg?hash=G5UTGGesNW\" alt=\"3.PNG\" /></a>&#8203;</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1753761483,
+      "user_id": 7621,
+      "user_title": "User",
+      "username": "DimaUZB2001"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "nabor-smajlikov-i-stikerov-428-st-by-dimauzb2001",
+  "sticky": false,
+  "tags": [],
+  "title": "Набор смайликов и стикеров 428 шт by DimaUZB2001",
+  "url_path": "/threads/nabor-smajlikov-i-stikerov-428-st-by-dimauzb2001.42690/",
+  "user_id": 7621,
+  "username": "DimaUZB2001",
+  "view_count": 522
+}

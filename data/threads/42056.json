@@ -1,0 +1,57 @@
+{
+  "custom_fields": {
+    "torrentpier": "223"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94185,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42056,
+  "last_post_date": 1555755571,
+  "node_id": 57,
+  "post_date": 1555755571,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94185,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте,подскажите пожалуйста,какой софт нужен на сервере,чтоб коректно открывались последние раздачи atom? В nginx использую правило:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">location ~  \\/internal_data/atom/{\nallow all;\n}</pre>Переход по ссылке есть,но проблема в том, что atom не обрабатывет php,т.к. он не знает расширение atom. Тупо идет скачивание файла самого. Если переименовать atom в xml,то открывается",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1555755571,
+      "user_id": 4854,
+      "user_title": "User",
+      "username": "sergey67"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "atom",
+  "sticky": false,
+  "tags": [],
+  "title": "Atom",
+  "url_path": "/threads/atom.42056/",
+  "user_id": 4854,
+  "username": "sergey67",
+  "view_count": 753
+}

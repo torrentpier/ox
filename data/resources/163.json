@@ -1,0 +1,71 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "парковка_лс.zip",
+      "id": 3099,
+      "local_path": null,
+      "r2_key": null,
+      "size": 658,
+      "src_url": "https://torrentpier.com/api/resource-versions/195/download?file=3099"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "модификация парковки аккаунта",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]# ---- [ Открыть ] -------------------\n\nprivmsg.php\n\n# ---- [ Найти ] -------------------\n\n$template->assign_var('POSTING_SUBJECT');\n\n# ---- [ Вставить до ] -------------------\n\nif ($userdata['user_park_profile'])\n{\n    $message = $lang['PARK_PROFILE_PM_DISALLOWED'] .'<br /><br /><a href=\"'. PROFILE_URL . $userdata['user_id'] .'\">'. $lang['RETURN_PROFILE'] .'</a><br /><br />'. sprintf($lang['CLICK_RETURN_INDEX'],  '<a href=\"index.php\">', '</a>');\n    message_die(GENERAL_MESSAGE, $message);\n}\n\n# ---- [ Открыть ] -------------------\n\nlanguage/lang_russian/lang_main.php\n\n# ---- [ Найти ] -------------------\n\n$lang['PARK_PROFILE_STATUS_WHOTE'] ='<h5>Что такое \"Парковка Аккаунта\"?</h5>';\n\n# ---- [ Вставить после ] -------------------\n\n$lang['PARK_PROFILE_PM_DISALLOWED'] ='Вы не сможете использовать Личные сообщения пока аккаунт припаркован';\n\n# ---- [ Конец ] -------------------[/PHP]\n[/SPOILER]",
+    "owner": "Gemini_13",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание:</b> дополнение к модификации парковки пользовательских аккаунтов. Отключение личных сообщений у припаркованных аккаунтов.",
+  "download_count": 268,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/163.jpg?1425240885",
+  "id": 163,
+  "is_fileless": null,
+  "last_update": 1425240878,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1425240878,
+  "resource_state": "visible",
+  "slug": "otklucenie-licnyh-soobsenij-u-priparkovannyh-akkauntov",
+  "tag_line": "Дополнение к модификации парковки пользовательских аккаунтов.",
+  "tags": [],
+  "title": "Отключение личных сообщений у припаркованных аккаунтов",
+  "url_path": "/resources/otklucenie-licnyh-soobsenij-u-priparkovannyh-akkauntov.163/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 268,
+      "files": [
+        {
+          "filename": "парковка_лс.zip",
+          "id": 3099,
+          "local_path": null,
+          "r2_key": null,
+          "size": 658,
+          "src_url": "https://torrentpier.com/api/resource-versions/195/download?file=3099"
+        }
+      ],
+      "id": 195,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425240878,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/otklucenie-licnyh-soobsenij-u-priparkovannyh-akkauntov.163/version/195/"
+    }
+  ],
+  "view_count": 480
+}

@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 13232,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1080,
+  "last_post_date": 1331128238,
+  "node_id": 57,
+  "post_date": 1331125044,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13232,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подскажите плиз как указать Ранкам свои цвета, и указать их права. <br />\nИли права только группам дать можно? и Группам тоже цвета можно выдавать?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1331125044,
+      "user_id": 0,
+      "user_title": "",
+      "username": "DIG"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13234,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Права группе даются, цвет менять в управлении званиями, а новый цвет можно добавить в main.css<br />\nпо аналогии <pre class=\"xfBb-code\" data-lang=\"php\">.colorAdmin, a.colorAdmin, a.colorAdmin:visited { color: #A00 !important; }</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1331126341,
+      "user_id": 435,
+      "user_title": "User",
+      "username": "S.T.@.L.K.E.R."
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13235,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "можно в фак закинуть, думаю новичкам пригодится",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1331128068,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13236,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо, помогли) Да, не нашёл было тему, поэтому эту создал. Надо бы в FAQ закинуть.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1331128238,
+      "user_id": 0,
+      "user_title": "",
+      "username": "DIG"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "vystavlenia-cveta-po-zvaniam",
+  "sticky": false,
+  "tags": [],
+  "title": "Выставления цвета по званиям",
+  "url_path": "/threads/vystavlenia-cveta-po-zvaniam.1080/",
+  "user_id": 0,
+  "username": "DIG",
+  "view_count": 1384
+}

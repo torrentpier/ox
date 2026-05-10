@@ -1,0 +1,118 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58269,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25681,
+  "last_post_date": 1390992862,
+  "node_id": 111,
+  "post_date": 1390936792,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58269,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Ссылка</b>:<br />\n<a href=\"http://code.google.com/p/torrentpier2/source/detail?r=571\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"> http://code.google.com/p/torrentpier2/source/detail?r=571</a><br />\n<br />\n<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 571: смена логики хранения информации dl листа</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">pherum83</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/install/sql/mysql.sql \n    Modify    /trunk/upload/config.php \n    Modify    /trunk/upload/dl_list.php \n    Modify    /trunk/upload/includes/cron/jobs/avatars_cleanup.php \n    Modify    /trunk/upload/includes/cron/jobs/bb_maintenance.php \n    Modify    /trunk/upload/includes/cron/jobs/cache_gc.php \n    Modify    /trunk/upload/includes/cron/jobs/clean_dlstat.php \n    Modify    /trunk/upload/includes/cron/jobs/clean_log.php \n    Modify    /trunk/upload/includes/cron/jobs/db_backup.php \n    Modify    /trunk/upload/includes/cron/jobs/prune_forums.php \n    Modify    /trunk/upload/includes/cron/jobs/prune_inactive_users.php \n    Modify    /trunk/upload/includes/cron/jobs/prune_topic_moved.php \n    Modify    /trunk/upload/includes/cron/jobs/sessions_cleanup.php \n    Modify    /trunk/upload/includes/cron/jobs/site_backup.php \n    Modify    /trunk/upload/includes/cron/jobs/tr_cleanup_and_dlstat.php \n    Modify    /trunk/upload/includes/cron/jobs/tr_maintenance.php \n    Modify    /trunk/upload/includes/cron/jobs/tr_make_snapshot.php \n    Modify    /trunk/upload/includes/functions_admin.php \n    Modify    /trunk/upload/includes/functions_dev.php \n    Modify    /trunk/upload/includes/init_bb.php \n    Modify    /trunk/upload/includes/page_footer.php \n    Modify    /trunk/upload/includes/ucp/usercp_attachcp.php \n    Modify    /trunk/upload/includes/ucp/usercp_register.php \n    Modify    /trunk/upload/language/lang_english/lang_main.php \n    Modify    /trunk/upload/language/lang_russian/lang_main.php \n    Modify    /trunk/upload/templates/admin/admin_cron.tpl \n    Modify    /trunk/upload/templates/admin/index.tpl \n    Modify    /trunk/upload/templates/default/memberlist.tpl \n    Modify    /trunk/upload/templates/default/page_header.tpl \n    Modify    /trunk/upload/templates/default/viewtopic_attach.tpl \n    Modify    /trunk/upload/viewtopic.php \n\nсмена логики хранения информации dl листа</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1390936792,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1390937108,
+          "file_size": 917,
+          "filename": "dl_upgrade.zip",
+          "height": 0,
+          "id": 2395,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/dl_upgrade-zip.2395/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 58270,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<span style=\"font-size: 18px\"><span style=\"color: #0000ff\"><b>Обновление базы:</b></span></span><br />\n <br />\n<b>1.</b> Обновить файлы трекера до 571 ревизии<br />\n<b>2.</b> Распаковать и запустить прикрепленный ниже файл на вашем сайте",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1390937111,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58289,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Тем кто ставит трекер с нуля это выполнять не нужно, правильно?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1390988067,
+      "user_id": 0,
+      "user_title": "",
+      "username": "sockrat"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58290,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "правильно",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1390992862,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "revision-571-smena-logiki-hranenia-informacii-dl-lista",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 571: смена логики хранения информации dl листа",
+  "url_path": "/threads/revision-571-smena-logiki-hranenia-informacii-dl-lista.25681/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 1691
+}

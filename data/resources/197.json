@@ -1,0 +1,245 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Портал by Zenden.zip",
+      "id": 6417,
+      "local_path": null,
+      "r2_key": null,
+      "size": 10766,
+      "src_url": "https://torrentpier.com/api/resource-versions/613/download?file=6417"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]Автор: Zenden\nICQ: 590-700-200\n////////////////////////////////////////////////////\nОткрыть config.php\nНайти\n'bb_login_err'   => array('filecache',   array()),\nНиже вставить\n'portal'         => array('filecache',   array()),\n\nНайти\n$page_cfg['show_sidebar1'] = array(\n#    BB_SCRIPT => true\n    'index'  => true,\nНиже вставить\n'portal' => true,\n\nНайти\n$page_cfg['show_sidebar2'] = array(\n#    BB_SCRIPT => true\n    'index'        => false,\nНиже вставить\n'portal' => true,\n\nВ самом низу вставить\n$bb_cfg['portal'] = array(\n    'portal_enabled'        => true,\n    'portal_releas_ignor'    => ''\n);\n\n////////////////////////////////////////////////////\nОткрыть language/ru/main.php\nВ самом низу вставить\n$lang['PORTAL'] = 'Портал';\n\n////////////////////////////////////////////////////\nОткрыть includes/function.php\nНайти\n    'user_retracker'     => 15, // Добавлять ретрекер к скачиваемым торрентам\nНиже вставить\n    'user_index_portal'     => 16, // Главная страница портала\n    'user_portal'         => 17, // Вид портала\n\n\nВ самом низу вставить\n\nfunction des_short($title_post, $max_length, $space = ' ')\n{\n    if ($max_length && mb_strlen($title_post, 'UTF-8') > $max_length)\n    {\n        $title_post = mb_substr($title_post, 0, $max_length, 'UTF-8');\n        if ($last_space_pos = $max_length - intval(strpos(strrev($title_post), $space)))\n        {\n            if ($last_space_pos > round($max_length * 3/4))\n            {\n                $last_space_pos--;\n                $title_post = mb_substr($title_post, 0, $last_space_pos, 'UTF-8');\n            }\n        }\n        $title_post .= '...';\n        $title_post = preg_replace('!&#?(\\w+)?;?(\\w{1,5})?\\.\\.\\.$!', '...', $title_post);\n    }\n    return $title_post;\n}\n////////////////////////////////////////////////////\nОткрыть includes/ucp/register.php\nНайти\n                'user_retracker'      => ($reg_mode) ? true  : true,\nНиже вставить\n                'user_index_portal'      => ($reg_mode) ? false : true,\n                'user_portal'          => ($reg_mode) ? false : true,\n\n////////////////////////////////////////////////////\nОткрыть includes/page_header.php\nНайти\n    'U_INDEX'                    => BB_ROOT .\"index.php\",\nЗаменить на\n    'U_INDEX'            => !bf($userdata['user_opt'], 'user_opt', 'user_index_portal') ? (BB_ROOT .\"index.php\") : (BB_ROOT .\"portal.php\"),\n    'U_PORTAL'             => !bf($userdata['user_opt'], 'user_opt', 'user_index_portal') ? '<a href=\"portal.php\">'.$lang['PORTAL'].'</a>' : '<a href=\"index.php\">Форум</a>',\n\n//////////////////////////////////////////////////////\nОткрыть modcp.php\nНайти\n            if (isset($net_forums[$forum_id]) && $bb_cfg['show_network_news'] && $result)\n            {\n                $datastore->enqueue('network_news');\n                $datastore->update('network_news');\n            }\nНиже вставить\n            if($bb_cfg['portal']['portal_enabled'])\n            {\n                CACHE('portal')->rm();\n            }\n\n/////////////////////////////////////////////////////\nОткрыть posting.php\nНайти\n        if ($mode == 'newtopic' || $mode == 'reply')\n        {\n            set_tracks(COOKIE_TOPIC, $tracking_topics, $topic_id);\n        }\nНиже вставить\n        if($bb_cfg['portal']['portal_enabled'])\n        {\n            CACHE('portal')->rm();\n        }\n\n////////////////////////////////////////////////////\nОткрыть functions_torrent.php\nНайти\n        bb_die($lang['BT_UNREGISTERED']);\n    }\nНиже вставить\n    if($bb_cfg['portal']['portal_enabled'])\n    {\n        CACHE('portal')->rm();\n    }\n\nНайти\n        bb_die($mess);\n    }\nНиже вставить\n    if($bb_cfg['portal']['portal_enabled'])\n    {\n        CACHE('portal')->rm();\n    }\n\n////////////////////////////////////////////////////\nОткрыть ajax.php\nНайти\n'manage_group'      => array('user'),\n\nНиже вставить\n'portal'            => array('user'),\n\nНайти\n    function sitemap()\n    {\n        require(AJAX_DIR .'sitemap.php');\n    }\nНиже вставить\n    function portal()\n    {\n        require(AJAX_DIR .'portal.php');\n    }\n\n////////////////////////////////////////////////////\nОткрыть page_header.tpl\nНайти\n<div id=\"sidebar1-wrap\">\nНиже вставить\nВнимание!!! {id} это ид ваших категорий\n    <!-- IF PORTAL -->\n    <h3>Категории</h3>\n    <span class=\"genmed bold\" style=\"line-height: 150%\">\n        <ul>\n            <li><a href=\"portal.php?mode=c&search=id\">Название категории</a></li>\n            <li><a href=\"portal.php?mode=c&search=id\">Название категории</a></li>\n            <li><a href=\"portal.php?mode=c&search=id\">Название категории</a></li>\n            <li><a href=\"portal.php?mode=c&search=id\">Название категории</a></li>\n            <li><a href=\"portal.php?mode=c&search=id\">Название категории</a></li>\n        </ul>\n    </span>\n    <div class=\"cat_separator\"/></div>\n    <!-- ENDIF / PORTAL -->\n\nНайти\n            <a href=\"{U_INDEX}\"><b>{L_HOME}</b></a><span style=\"color:#CDCDCD;\">|</span>\nНиже вставить\n            <b>{U_PORTAL}</b><span style=\"color:#CDCDCD;\">|</span>\n\n////////////////////////////////////////////////////\nОткрыть page_footer.tpl\nНайти\n                    <?php if (!empty($bb_cfg['sidebar2_static_content_path'])) include($bb_cfg['sidebar2_static_content_path']); ?>\nНиже вставить\n                <!-- IF PORTAL -->\n                <div id=\"latest_news\" class=\"med\">\n                <h3>Статистика раздач</h3>\n                    <span>\n                        <p>Раздач: {RELES}</p>\n                    </span>\n                    <span>\n                        <p>Общий размер: {ALL_SIZE}</p>\n                    </span>\n                    <span>\n                        <p>Пиров: {ALL_PEERS}</p>\n                    </span>\n                    <span>\n                        <p>Сидов: {ALL_SEEDERS}</<p>\n                        <p>Личеров: {ALL_LEECHERS}</p>\n                        <p>Скорость обмена: {SPEED}</p>\n                    </span>\n                </div>\n                <div id=\"latest_news\" class=\"med\">\n                <h3>Статистика форума</h3>\n                    <span>\n                        <p>{TORRENTS_STAT}</p>\n                    <span>\n                        <p>Сообщения: {TOTAL_POSTS}</p>\n                    </span>\n                    <span>\n                        <p>Пользователи: {TOTAL_USERS}</p>\n                    </span>\n                    <span>\n                        <p>Парней: {MALE}</p>\n\n                        <p>Девушек: {FEMALE}</p>\n                        <p>Не указан: {UNSELECT}</p>\n                    </span>\n                    <span>\n                        <p>Новый пользователь: {NEWEST_USER}</p>\n                    </span>\n                    <span>\n                        <p>Рекорд посетителей онлайн: {RECORD_USERS}</p>\n                    </span>\n                </div>\n                <!-- ENDIF -->\n\n////////////////////////////////////////////////////\nОктрыть usercp_register.tpl\nНайти\n<!-- IF SHOW_DATEFORMAT -->\n<tr>\n    <td>{L_DATE_FORMAT}:<h6>{L_DATE_FORMAT_EXPLAIN}</h6></td>\n    <td><input type=\"text\" name=\"dateformat\" value=\"{DATE_FORMAT}\" maxlength=\"14\" /></td>\n</tr>\n<!-- ENDIF -->\n<tr>\n    <td>Логотип ссылается на:</td>\n    <td>\n        <label><input type=\"radio\" name=\"user_index_portal\" value=\"1\" <!-- IF USER_INDEX_PORTAL -->checked=\"checked\"<!-- ENDIF --> />{L_PORTAL}</label>&nbsp;&nbsp;\n        <label><input type=\"radio\" name=\"user_index_portal\" value=\"0\" <!-- IF not USER_INDEX_PORTAL -->checked=\"checked\"<!-- ENDIF --> />Форум\n    </td>\n</tr>\n<tr>\n    <td>Вид портала:</td>\n    <td>\n        <label><input type=\"radio\" name=\"user_portal\" value=\"1\" <!-- IF USER_PORTAL -->checked=\"checked\"<!-- ENDIF --> />Вид №1</label>&nbsp;&nbsp;\n        <label><input type=\"radio\" name=\"user_portal\" value=\"0\" <!-- IF not USER_PORTAL -->checked=\"checked\"<!-- ENDIF --> />Вид №2</label>\n    </td>\n</tr>\n////////////////////////////////////////////////////[/PHP]\n[/SPOILER]",
+    "owner": "Zenden",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425487743,
+      "file_size": 209200,
+      "filename": "Screenshot_2.webp",
+      "height": 947,
+      "id": 3276,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot_2-webp.3276/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3280-2d8587d4977802118562d3e16e8134fd.jpg?hash=N8kZjJoiRY",
+      "width": 1679
+    },
+    {
+      "attach_date": 1425487744,
+      "file_size": 219214,
+      "filename": "Screenshot_3.webp",
+      "height": 949,
+      "id": 3277,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot_3-webp.3277/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3281-04fa4c3c5e6932cb8cd30d6033b94893.jpg?hash=SZfmoqIBxI",
+      "width": 1679
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет главную страницу-портал с новыми раздачами (в ленточном и плиточном варианте).<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Полный вывод релизов</li>\n<li data-xf-list-type=\"ul\">Возможность прикрепления темы</li>\n<li data-xf-list-type=\"ul\">Поддержка Sphinx-поиска</li>\n<li data-xf-list-type=\"ul\">Кнопки социальных сетей</li>\n</ul>Если вам понравился мод, вы можете отблагодарить автора:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Яндекс деньги: <b>410011534461433</b></li>\n<li data-xf-list-type=\"ul\">WMR-кошелёк: <b>R381249575716</b></li>\n<li data-xf-list-type=\"ul\">WMZ-кошелёк: <b>Z159805086668</b></li>\n<li data-xf-list-type=\"ul\">WME-кошелёк: <b>E317694362397</b></li>\n</ul>",
+  "download_count": 2162,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/197.jpg?1425487770",
+  "id": 197,
+  "is_fileless": null,
+  "last_update": 1742813575,
+  "rating_avg": 5,
+  "rating_count": 7,
+  "resource_date": 1425487761,
+  "resource_state": "visible",
+  "slug": "portal-lentocnyj-i-plitocnyj",
+  "tag_line": "Добавляет главную страницу-портал с новыми раздачами (в ленточном и плиточном варианте).",
+  "tags": [
+    "portal",
+    "ленточный портал",
+    "плиточный портал",
+    "портал"
+  ],
+  "title": "Портал (ленточный и плиточный)",
+  "url_path": "/resources/portal-lentocnyj-i-plitocnyj.197/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.4.3",
+  "versions": [
+    {
+      "download_count": 472,
+      "files": [
+        {
+          "filename": "[FULL] Портал by Zenden.zip",
+          "id": 6417,
+          "local_path": null,
+          "r2_key": null,
+          "size": 10766,
+          "src_url": "https://torrentpier.com/api/resource-versions/613/download?file=6417"
+        }
+      ],
+      "id": 613,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1742813575,
+      "version_state": "visible",
+      "version_string": "v1.4.3",
+      "view_url": "https://torrentpier.com/resources/portal-lentocnyj-i-plitocnyj.197/version/613/"
+    },
+    {
+      "download_count": 194,
+      "files": [
+        {
+          "filename": "[FULL] Портал by Zenden.zip",
+          "id": 6404,
+          "local_path": null,
+          "r2_key": null,
+          "size": 10636,
+          "src_url": "https://torrentpier.com/api/resource-versions/610/download?file=6404"
+        }
+      ],
+      "id": 610,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1742630901,
+      "version_state": "visible",
+      "version_string": "v1.4.2",
+      "view_url": "https://torrentpier.com/resources/portal-lentocnyj-i-plitocnyj.197/version/610/"
+    },
+    {
+      "download_count": 201,
+      "files": [
+        {
+          "filename": "[FULL] Портал by Zenden.zip",
+          "id": 6390,
+          "local_path": null,
+          "r2_key": null,
+          "size": 10667,
+          "src_url": "https://torrentpier.com/api/resource-versions/602/download?file=6390"
+        }
+      ],
+      "id": 602,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1741679309,
+      "version_state": "visible",
+      "version_string": "v1.4.1",
+      "view_url": "https://torrentpier.com/resources/portal-lentocnyj-i-plitocnyj.197/version/602/"
+    },
+    {
+      "download_count": 200,
+      "files": [
+        {
+          "filename": "[FULL] Портал by Zenden.zip",
+          "id": 6381,
+          "local_path": null,
+          "r2_key": null,
+          "size": 10688,
+          "src_url": "https://torrentpier.com/api/resource-versions/600/download?file=6381"
+        }
+      ],
+      "id": 600,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1741628171,
+      "version_state": "visible",
+      "version_string": "v1.4.0",
+      "view_url": "https://torrentpier.com/resources/portal-lentocnyj-i-plitocnyj.197/version/600/"
+    },
+    {
+      "download_count": 454,
+      "files": [
+        {
+          "filename": "Совместный портал.zip",
+          "id": 3335,
+          "local_path": null,
+          "r2_key": null,
+          "size": 8635,
+          "src_url": "https://torrentpier.com/api/resource-versions/268/download?file=3335"
+        }
+      ],
+      "id": 268,
+      "rating_avg": 5,
+      "rating_count": 7,
+      "release_date": 1425581986,
+      "version_state": "visible",
+      "version_string": "1.3.0",
+      "view_url": "https://torrentpier.com/resources/portal-lentocnyj-i-plitocnyj.197/version/268/"
+    },
+    {
+      "download_count": 225,
+      "files": [
+        {
+          "filename": "Совместный портал.zip",
+          "id": 3321,
+          "local_path": null,
+          "r2_key": null,
+          "size": 8518,
+          "src_url": "https://torrentpier.com/api/resource-versions/267/download?file=3321"
+        }
+      ],
+      "id": 267,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425572953,
+      "version_state": "visible",
+      "version_string": "1.2.0",
+      "view_url": "https://torrentpier.com/resources/portal-lentocnyj-i-plitocnyj.197/version/267/"
+    },
+    {
+      "download_count": 234,
+      "files": [
+        {
+          "filename": "Совместный портал(R600).zip",
+          "id": 3315,
+          "local_path": null,
+          "r2_key": null,
+          "size": 8790,
+          "src_url": "https://torrentpier.com/api/resource-versions/266/download?file=3315"
+        }
+      ],
+      "id": 266,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425557729,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/portal-lentocnyj-i-plitocnyj.197/version/266/"
+    },
+    {
+      "download_count": 232,
+      "files": [
+        {
+          "filename": "Совместный портал.zip",
+          "id": 3278,
+          "local_path": null,
+          "r2_key": null,
+          "size": 15041,
+          "src_url": "https://torrentpier.com/api/resource-versions/254/download?file=3278"
+        }
+      ],
+      "id": 254,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425487761,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/portal-lentocnyj-i-plitocnyj.197/version/254/"
+    }
+  ],
+  "view_count": 3622
+}

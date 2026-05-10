@@ -1,0 +1,137 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 63077,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 26480,
+  "last_post_date": 1439066138,
+  "node_id": 110,
+  "post_date": 1410689861,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63077,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\n<br />\nИспользуемый форумом движок был обновлен до последней версии. В результате обновления были удалены все имевшиеся модификации, в результате чего некоторые функции вы можете не найти на привычных местах. В настоящее время ведется восстановление имевшегося ранее функционала. Пользователи, ранее заходившие на форум через социальные сети, должны сбросить пароль по электронной почте, поскольку был изменен формат хранения данных. В случае возникновения проблем со входом, вам необходимо написать по адресу <a href=\"mailto:admin@torrentpier.com\">admin@torrentpier.com</a><br />\n<br />\nВ данной новости будет публиковаться вся дополнительно появляющаяся информация.<br />\n<br />\nСпасибо за внимание.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1410689861,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63078,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Учетные записи Twitter, Facebook, Google+ требуется перепривязать вот на этой странице: <a href=\"http://torrentpier.com/account/external-accounts\" class=\"link link--internal\">http://torrentpier.com/account/external-accounts</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1410691703,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63097,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "опечатка &quot;Новые модиЦикации&quot;",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1410719269,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63104,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Virtuoz\">опечатка &quot;Новые модиЦикации&quot;</blockquote>Поправил, спасибо.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1410728689,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84650,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Добрый день! У меня стоит движок v.2.1.1 ALFA как мне можно обновиться до 2.1.5. Есть ли readme по данному переходу?",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1439058529,
+      "user_id": 6341,
+      "user_title": "User",
+      "username": "Michaeloo"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84651,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Только пошагово согласно ссылкам в центре загрузки.",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1439066138,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "obnovlenie-foruma",
+  "sticky": false,
+  "tags": [
+    "новости"
+  ],
+  "title": "Обновление форума",
+  "url_path": "/threads/obnovlenie-foruma.26480/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 3002
+}

@@ -1,0 +1,73 @@
+{
+  "custom_fields": {
+    "torrentpier": "2301"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 93950,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42038,
+  "last_post_date": 1548597124,
+  "node_id": 57,
+  "post_date": 1548390743,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93950,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет. Мы еще живы ) Дело в том, что смайлики не работают после вставки, отображается только код смайлика. Также при наведении на окно редактора, происходит какое-то странное мерцание. Проблема в в модулях php?<br />\nTorrentPier 2.3.0.1<br />\nPHP7.1.26<br />\nMySQL 5.6",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1548390743,
+      "user_id": 4832,
+      "user_title": "User",
+      "username": "Screamer89"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93952,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Проблема была в <i>mbstring</i>.internal_encoding",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1548597124,
+      "user_id": 4832,
+      "user_title": "User",
+      "username": "Screamer89"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "ne-rabotaut-smajliki",
+  "sticky": false,
+  "tags": [],
+  "title": "Не работают смайлики",
+  "url_path": "/threads/ne-rabotaut-smajliki.42038/",
+  "user_id": 4832,
+  "username": "Screamer89",
+  "view_count": 1670
+}

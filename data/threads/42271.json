@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 96214,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42271,
+  "last_post_date": 1717767540,
+  "node_id": 47,
+  "post_date": 1717764161,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96214,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/bbcode-dvd-kejs.293/\" class=\"link link--internal\">BBCode: DVD Кейс</a> - Добавляет BBCode тэг который добавляет эффект кейса компакт диска на изображение<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> Добавляет BBCode тэг который добавляет эффект кейса компакт диска на изображение.<br />\n<b>Совместимость:</b> v2.1.5 (LTS), v2.4.2.</blockquote><br />\n<a href=\"https://torrentpier.com/resources/bbcode-dvd-kejs.293/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1717764161,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96215,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/bbcode-dvd-kejs.293/\" class=\"link link--internal\">BBCode: DVD Кейс</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/bbcode-dvd-kejs.293/update/520/\" class=\"link link--internal\">Обновление v1.1.0 [Stable]</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Исправлена работа кнопок left/right</li>\n<li data-xf-list-type=\"ul\">Теперь изображение постера растягивается на всю ширину коробки</li>\n<li data-xf-list-type=\"ul\">Исправлена (убрана) нерабочая кнопка из Quick edit</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/bbcode-dvd-kejs.293/update/520/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1717766093,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96216,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Очень нужная модификация. ДВД продаються еще?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1717767267,
+      "user_id": 10893,
+      "user_title": "User",
+      "username": "tewk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96217,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"tewk\">Очень нужная модификация. ДВД продаються еще?</blockquote>Видеокассеты продаются, более того) сам недавно купил пару нераспечатанных VHS кассет) а CompactDisk формат будет существовать ещё лет 20 минимум)<br />\n<br />\nНу а насчёт мода, наверное такое подойдет больше под кино трекер, либо под трекер который распространяет образы игр под консоли PS1 / PS2, поскольку там игры только в виде дисков шли. Вообще, при желании на кейсе через фото редактор можно название трекера сбоку написать, тоже красов выглядить будет",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1717767540,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "bbcode-dvd-kejs",
+  "sticky": false,
+  "tags": [],
+  "title": "BBCode: DVD Кейс",
+  "url_path": "/threads/bbcode-dvd-kejs.42271/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 759
+}

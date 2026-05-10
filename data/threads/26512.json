@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 63313,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 58,
+    "title": "Suggestions for improving TorrentPier"
+  },
+  "id": 26512,
+  "last_post_date": 1411718645,
+  "node_id": 58,
+  "post_date": 1411679368,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63313,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Собственно говоря, идея пришла после знакомства с одним из модов для phpbb3. Там в админке добавляется возможность добавлять дополнительные bb code, которые не включены в движок по умолчанию. Не плохо было бы увидеть такое и на TorrentPier. Если что, то ссылка на тот мод для phpbb3.<br />\n<br />\nЗдесь же, на форуме, создать тему по бб кодам.<br />\n<br />\n<div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1411679368,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63314,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Begemot\">Собственно говоря, идея пришла после знакомства с одним из модов для phpbb3. Там в админке добавляется возможность добавлять дополнительные bb code, которые не включены в движок по умолчанию. Не плохо было бы увидеть такое и на TorrentPier. Если что, то ссылка на тот мод для phpbb3.<br />\n<br />\nЗдесь же, на форуме, создать тему по бб кодам.<br />\n<br />\n<div>Spoiler content hidden.</div></blockquote>Не могу понять, а кто тебе мешает также добавлять дополнительные BBcode и тут только не через админку а ручками! И не вижу смысла делать это через админку.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1411701144,
+      "user_id": 5480,
+      "user_title": "User",
+      "username": "ВаленокPC"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63315,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Запланировано.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1411708001,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63317,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"ВаленокPC\">Не могу понять, а кто тебе мешает также добавлять дополнительные BBcode и тут только не через админку а ручками! И не вижу смысла делать это через админку.</blockquote><br />\nЭто вопрос здравого смысла. В последствии могут понадобится дополнительные BBcode, допустим, для удобства пользователей, ведь движок удобен не только, как трекер, но и, как форум. Прикажешь каждый раз лезть на сервер и изменять файлы? Такая же функция позволяет избежать этой необходимости. При этом появляется возможность в любой момент отредактировать, заменить лучшим вариантом, или удалить не нужное, не ползая по файлам.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1411718645,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    }
+  ],
+  "prefix_id": 32,
+  "reply_count": 3,
+  "slug": "bbcode",
+  "sticky": false,
+  "tags": [],
+  "title": "BBCode",
+  "url_path": "/threads/bbcode.26512/",
+  "user_id": 1514,
+  "username": "Begemot",
+  "view_count": 1380
+}

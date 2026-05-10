@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 59626,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25833,
+  "last_post_date": 1396240965,
+  "node_id": 57,
+  "post_date": 1395001252,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59626,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подскажите такой вопрос, в конфиге имеется настройка, для подключения, до 3-х баз данных, в каких случаях стоит подключать ещё одну базу, и какая структура её должна быть....? Может де мануал есть либо обсуждалось ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1395001252,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59979,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Как подключать вот тут обсуждалось: <a href=\"http://torrentpier.com/threads/%D0%91%D0%B0%D0%B7%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.25658/#post-58057\" class=\"link link--internal\">http://torrentpier.com/threads/База-данных.25658/#post-58057</a> - если что-то непонятно, могу дополнительно дать пояснения.<br />\n <br />\nА для чего это нужно - на самом деле вариантов много, начиная от реализации общих баз данных для нескольких сайтов, заканчивая хранением приватной информации о пользователях (ip, статистика раздач и т.п.) на отдельном сервере, где это легко может быть уничтожено, на случай каких-либо наездов со стороны правообладателей. В движке есть очень мощный инструмент для всего этого, а уж как его реализуют - дело за администратором.<br />\n <br />\nСтруктура должна быть аналогична стандартной, т.е. если таблица с пользователями в отдельно базе, просто полностью переносим табличку bb_users из нее.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1396218370,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59987,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как говорил, при подключении 2 бд есть баг.<br />\n<a href=\"http://torrentpier.com/threads/fatal-error-db-error-%D0%BF%D1%80%D0%B8-%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-2-%D0%B1%D0%B4.25734/\" class=\"link link--internal\">http://torrentpier.com/threads/fatal-error-db-error-при-подключение-2-бд.25734/</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1396240965,
+      "user_id": 2789,
+      "user_title": "User",
+      "username": "Sprinx"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "2-bd",
+  "sticky": false,
+  "tags": [],
+  "title": "2 БД",
+  "url_path": "/threads/2-bd.25833/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1053
+}

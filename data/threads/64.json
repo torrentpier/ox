@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 608,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 64,
+  "last_post_date": 1311065112,
+  "node_id": 57,
+  "post_date": 1311063832,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 608,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Сильно не ругайте , я как пользователь думаю неплохо выкладывать какие добавления входят в ревизии сборок , типа золото серебро итд....и другие думаю меня поддержат,",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1311063832,
+      "user_id": 56,
+      "user_title": "User",
+      "username": "eleon"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 609,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>eleon</b>,все изменения в ревизиях можно увидеть в SVN",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1311064229,
+      "user_id": 37,
+      "user_title": "User",
+      "username": "Varius"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 610,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"http://code.google.com/p/torrentpier2/source/list\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://code.google.com/p/torrentpier2/source/list</a> если это оно вопрос снят спасибо .",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1311065112,
+      "user_id": 56,
+      "user_title": "User",
+      "username": "eleon"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "revizii",
+  "sticky": false,
+  "tags": [],
+  "title": "Ревизии",
+  "url_path": "/threads/revizii.64/",
+  "user_id": 56,
+  "username": "eleon",
+  "view_count": 1542
+}

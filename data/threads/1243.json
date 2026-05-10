@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 15498,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1243,
+  "last_post_date": 1334646715,
+  "node_id": 57,
+  "post_date": 1334616323,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15498,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "У меня на SVN r553 стоял немного другой плагин сид бонусов, сами бонусы находились в bb_bt_users в поле seed_points, отсортировать по ид и бонусам понятно как, с этим проблем нету, переименовал как в t2 r400, но вот тут то и загвоздка как обновить значения по ид каждого пользователя что бы все бонусы встали на место.<br />\nПробовал<br />\n<pre class=\"xfBb-code\" data-lang=\"\">UPDATE bb_users SET user_id WHERE user_points VALUE\n(3, 0.00),\n(11, 0.00),\n(5, 51.63),\n(6, 73.17),\n(7, 2132.28),\n(2, 2490.60),\n(8, 85.92),\n(9, 53.63),\n(10, 10.43),\n(2301, 0.00),\n(13, 48.57),\n(2543, 0.00),\n(107, 1979........</pre>нужно что бы он вставлял каждому пользователю свой бонус, только сильно не пинайте я еще мало что понимаю в оператарах",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1334616323,
+      "user_id": 70,
+      "user_title": "User",
+      "username": "mantigor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15501,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "update bb_users u, bb_bt_users bu set u.user_points = u.user_points + bu.seed_points where bu.user_id = u.user_id",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1334625070,
+      "user_id": 2,
+      "user_title": "User",
+      "username": "_Xz_"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 15518,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "спасибо все прекрасно сработало бонусы начислились",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1334646715,
+      "user_id": 70,
+      "user_title": "User",
+      "username": "mantigor"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "perenos-sid-bonusov",
+  "sticky": false,
+  "tags": [],
+  "title": "Перенос сид бонусов.",
+  "url_path": "/threads/perenos-sid-bonusov.1243/",
+  "user_id": 70,
+  "username": "mantigor",
+  "view_count": 1239
+}

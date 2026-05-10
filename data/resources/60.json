@@ -1,0 +1,256 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "Last added, top torrents, top users Mod ajax 2.1.5.zip",
+      "id": 4106,
+      "local_path": null,
+      "r2_key": null,
+      "size": 25754,
+      "src_url": "https://torrentpier.com/api/resource-versions/354/download?file=4106"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]\n##############################################################\n## Название: Last added, top torrents, top users Mod\n## Автор: RoadTrain\n## Версия: 1.6.0\n## Переписал на ajax: Bender (Alekseev)\n## Описание: Статистика по торрентам и юзерам в боковой панели.\n## Сложность: Легко\n##\n##############################################################\n\n---------------------------------[ Открыть library/language/ru/main.php Вставить в самый конец ]------------------------\n\n$lang['LAST_ADDED'] = 'Новые релизы';\n$lang['TOP_DOWNLOADED'] = 'Самые скачиваемые';\n$lang['TOP_SEEDERS'] = \"Топ {$bb_cfg['t_top_uploaders']} сидеров\";\n$lang['TOP_LEECHERS'] = \"Топ {$bb_cfg['t_top_downloaders']} личеров\";\n$lang['NO_MATCHING'] = 'Нет подходящих кандидатов';\n$lang['NO_TOP_MATCH'] = 'Подходящих тем не найдено';\n$lang['CLICK_TO_VIEW'] = 'Нажмите для просмотра';\n\n---------------------------------[ Открыть library/config.php Вставить в самый конец ]------------------------\n\n$bb_cfg['t_last_added_num'] = 7;\n$bb_cfg['t_top_downloaded'] = 7;\n$bb_cfg['t_top_uploaders'] = 5;\n$bb_cfg['t_top_downloaders'] = 5;\n$bb_cfg['top_cache'] = '20';\n$bb_cfg['title_text'] = 30;\n\n---------------------------------[ Открыть ajax.php Найти ]------------------------\n\n     'manage_group'  => array('user'),\n\n---------------------------------[ После вставить ]---------------------------------\n\n     'releases'  => array('user'),\n\n---------------------------------[ Найти ]-----------------------------------------\n\n   function sitemap()\n   {\n     require(AJAX_DIR .'sitemap.php');\n   }\n\n---------------------------------[ После вставить ]---------------------------------   \n\n   function releases()\n   {\n     require(AJAX_DIR .'releases.php');\n   }\n\n---------------------------------[ Открыть styles/templates/default/page_header.tpl Найти ]------------------------\n\n<!-- IF HTML_SIDEBAR_1 -->\n\n---------------------------------[ Перед вставить ]---------------------------------\n\n<script type=\"text/javascript\">\n   ajax.releases = function(mode) {\n     ajax.exec({\n       action : 'releases',\n       mode  : mode,\n     });\n   };\n   ajax.callback.releases = function(data) {\n     $('#'+data.mode).toggle().html(data.html);\n   };\n</script>\n<div class=\"section visitorPanel\">\n   <div class=\"secondaryContent\">  \n   <ol>   \n     <div class=\"sidebarContent\">\n       <!-- IF $bb_cfg['t_last_added_num'] -->\n       <h3><a href=\"#\" id=\"load_last_added\" onclick=\"ajax.releases('last_added'); return false;\" title=\"{L_CLICK_TO_VIEW}\"><img src=\"styles/images/plus.png\" width=\"22px;\" height=\"22px;\" alt=\"\">{L_LAST_ADDED}</a></h3>\n       <span id=\"last_added\" style=\"display: none;\"></span>\n       <!-- ENDIF -->\n       <!-- IF $bb_cfg['t_top_downloaded'] -->\n       <h3><a href=\"#\" id=\"load_top_downloaded\" onclick=\"ajax.releases('top_downloaded'); return false;\" title=\"{L_CLICK_TO_VIEW}\"><img src=\"styles/images/plus.png\" width=\"22px;\" height=\"22px;\" alt=\"\">{L_TOP_DOWNLOADED}</a></h3>\n       <span id=\"top_downloaded\" style=\"display: none;\"></span>\n       <!-- ENDIF -->\n       <!-- IF $bb_cfg['t_top_uploaders'] -->\n       <h3><a href=\"#\" id=\"load_top_uploaders\" onclick=\"ajax.releases('top_uploaders'); return false;\" title=\"{L_CLICK_TO_VIEW}\"><img src=\"styles/images/plus.png\" width=\"22px;\" height=\"22px;\" alt=\"\">{L_TOP_SEEDERS}</</a></h3>\n       <span id=\"top_uploaders\" style=\"display: none;\"></span>\n       <!-- ENDIF -->\n       <!-- IF $bb_cfg['t_top_downloaders'] -->\n       <h3><a href=\"#\" id=\"load_top_downloaders\" onclick=\"ajax.releases('top_downloaders'); return false;\" title=\"{L_CLICK_TO_VIEW}\"><img src=\"styles/images/plus.png\" width=\"22px;\" height=\"22px;\" alt=\"\">{L_TOP_LEECHERS}</</a></h3>\n       <span id=\"top_downloaders\" style=\"display: none;\"></span>\n       <!-- ENDIF -->\n     </div>\n   </ol>\n   </div>\n</div>\n[/PHP]\n[/SPOILER]",
+    "owner": "PheRum",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1387523120,
+      "file_size": 10200,
+      "filename": "2013-12-20_170005.webp",
+      "height": 166,
+      "id": 2323,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2013-12-20_170005-webp.2323/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2328-5cfc05e6e87c3c3fc015f753a2449713.jpg?hash=w6JnFaRSS3",
+      "width": 255
+    },
+    {
+      "attach_date": 1387523146,
+      "file_size": 45260,
+      "filename": "2013-12-20_165905.webp",
+      "height": 598,
+      "id": 2325,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2013-12-20_165905-webp.2325/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2330-54b30452c5018aca5c572e4bc5ae3a5c.jpg?hash=BILjJ4Cl0w",
+      "width": 260
+    },
+    {
+      "attach_date": 1387523149,
+      "file_size": 12118,
+      "filename": "2013-12-20_165943.webp",
+      "height": 184,
+      "id": 2326,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2013-12-20_165943-webp.2326/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2331-97e608cf4fd05f1eb9d8c8738f2826b7.jpg?hash=v-Os7_ATam",
+      "width": 253
+    },
+    {
+      "attach_date": 1387523154,
+      "file_size": 11448,
+      "filename": "2013-12-20_165955.webp",
+      "height": 176,
+      "id": 2327,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2013-12-20_165955-webp.2327/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2332-7df52ce7e9f08ef956224b975a464b24.jpg?hash=uCTcRf8bNo",
+      "width": 254
+    },
+    {
+      "attach_date": 1444359817,
+      "file_size": 11780,
+      "filename": "2015-10-09_095616.webp",
+      "height": 283,
+      "id": 4107,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2015-10-09_095616-webp.4107/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4111-bd06313ebf4c5993097a24df57d92eeb.jpg?hash=PVhorNch2j",
+      "width": 205
+    },
+    {
+      "attach_date": 1444359826,
+      "file_size": 8482,
+      "filename": "2015-10-09_113437.webp",
+      "height": 241,
+      "id": 4108,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2015-10-09_113437-webp.4108/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4112-5f4a2fdf8edceee356f1d7e8e2709f07.jpg?hash=ckcIsLckgg",
+      "width": 199
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет информационные блоки в боковой панели (самые скачиваемые/новые раздачи, топ-пользователи).",
+  "download_count": 1647,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/60.jpg?1425421774",
+  "id": 60,
+  "is_fileless": null,
+  "last_update": 1444359471,
+  "rating_avg": 4.5,
+  "rating_count": 2,
+  "resource_date": 1387523642,
+  "resource_state": "visible",
+  "slug": "informacionnye-bloki-v-bokovoj-paneli-na-ajax",
+  "tag_line": "Добавляет информационные блоки в боковой панели (самые скачиваемые/новые раздачи, топ-пользователи).",
+  "tags": [],
+  "title": "Информационные блоки в боковой панели на AJAX",
+  "url_path": "/resources/informacionnye-bloki-v-bokovoj-paneli-na-ajax.60/",
+  "user_id": 4866,
+  "username": "Bender",
+  "version": "1.6.0",
+  "versions": [
+    {
+      "download_count": 563,
+      "files": [
+        {
+          "filename": "Last added, top torrents, top users Mod ajax 2.1.5.zip",
+          "id": 4106,
+          "local_path": null,
+          "r2_key": null,
+          "size": 25754,
+          "src_url": "https://torrentpier.com/api/resource-versions/354/download?file=4106"
+        }
+      ],
+      "id": 354,
+      "rating_avg": 4.5,
+      "rating_count": 2,
+      "release_date": 1444359471,
+      "version_state": "visible",
+      "version_string": "1.6.0",
+      "view_url": "https://torrentpier.com/resources/informacionnye-bloki-v-bokovoj-paneli-na-ajax.60/version/354/"
+    },
+    {
+      "download_count": 230,
+      "files": [
+        {
+          "filename": "Last added, top torrents, top users Mod ajax 2.1.5.zip",
+          "id": 3755,
+          "local_path": null,
+          "r2_key": null,
+          "size": 7847,
+          "src_url": "https://torrentpier.com/api/resource-versions/323/download?file=3755"
+        }
+      ],
+      "id": 323,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1430683564,
+      "version_state": "visible",
+      "version_string": "1.5.0",
+      "view_url": "https://torrentpier.com/resources/informacionnye-bloki-v-bokovoj-paneli-na-ajax.60/version/323/"
+    },
+    {
+      "download_count": 217,
+      "files": [
+        {
+          "filename": "Last added, top torrents, top users Mod ajax 2.1.5.zip",
+          "id": 3750,
+          "local_path": null,
+          "r2_key": null,
+          "size": 7527,
+          "src_url": "https://torrentpier.com/api/resource-versions/322/download?file=3750"
+        }
+      ],
+      "id": 322,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1430511777,
+      "version_state": "visible",
+      "version_string": "1.4.0",
+      "view_url": "https://torrentpier.com/resources/informacionnye-bloki-v-bokovoj-paneli-na-ajax.60/version/322/"
+    },
+    {
+      "download_count": 220,
+      "files": [
+        {
+          "filename": "[TP2][R553] Last added, top torrents, top users Mod ajax.zip",
+          "id": 3240,
+          "local_path": null,
+          "r2_key": null,
+          "size": 7025,
+          "src_url": "https://torrentpier.com/api/resource-versions/243/download?file=3240"
+        }
+      ],
+      "id": 243,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425421824,
+      "version_state": "visible",
+      "version_string": "1.3.0",
+      "view_url": "https://torrentpier.com/resources/informacionnye-bloki-v-bokovoj-paneli-na-ajax.60/version/243/"
+    },
+    {
+      "download_count": 271,
+      "files": [
+        {
+          "filename": "[TP2][R553] Last added, top torrents, top users Mod ajax.rar",
+          "id": 2338,
+          "local_path": null,
+          "r2_key": null,
+          "size": 117244,
+          "src_url": "https://torrentpier.com/api/resource-versions/66/download?file=2338"
+        }
+      ],
+      "id": 66,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1387938234,
+      "version_state": "visible",
+      "version_string": "1.2.0",
+      "view_url": "https://torrentpier.com/resources/informacionnye-bloki-v-bokovoj-paneli-na-ajax.60/version/66/"
+    },
+    {
+      "download_count": 216,
+      "files": [
+        {
+          "filename": "[TP2] Last added, top torrents, top users Mod ajax.rar",
+          "id": 2328,
+          "local_path": null,
+          "r2_key": null,
+          "size": 117438,
+          "src_url": "https://torrentpier.com/api/resource-versions/64/download?file=2328"
+        }
+      ],
+      "id": 64,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1387523642,
+      "version_state": "visible",
+      "version_string": "2013-12-20",
+      "view_url": "https://torrentpier.com/resources/informacionnye-bloki-v-bokovoj-paneli-na-ajax.60/version/64/"
+    }
+  ],
+  "view_count": 2642
+}

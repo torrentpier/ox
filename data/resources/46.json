@@ -1,0 +1,166 @@
+{
+  "category": {
+    "description": "Section with all templates for TorrentPier.",
+    "id": 5,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Templates",
+    "view_url": "https://torrentpier.com/resources/categories/templates.5/"
+  },
+  "current_files": [
+    {
+      "filename": "Шаблон Doctor [R590] (v3.2).zip",
+      "id": 3582,
+      "local_path": null,
+      "r2_key": null,
+      "size": 243661,
+      "src_url": "https://torrentpier.com/api/resource-versions/282/download?file=3582"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "adapt",
+    "installation": "[SPOILER=\"Инструкция\"]\n##############################################################\n## Название: Шаблон \"Doctor\"\n## Автор: ChihPyh\n## Переделка: botyk\n## Проверен в браузерах: IE, Opera, Mozilla, Google Chrome\n## Версия TorrentPieer: R590\n## Версия шаблона: v3.2\n## Валидация: HTML5\n##############################################################\n\nОписание: Шаблон \"Doctor\" - светло-синий шаблон для сайта любой тематики.\nКрасивый шаблон, подойдет любителям светло-синего цвета. Шаблон выполнен на HTML5 и CSS3. Ширина контента 760 пикселей.\n\n1) Все содержимое, заливаем в корень сайта кроме \"Установка.txt\".\n\n2) Заходим в админку (На Всяки случи очистить кэш браузера)\n  Очистить кеш: Datastore, Весь кеш, Шаблона\n\n3) Все шаблон готов к использованию!\n[/SPOILER]",
+    "owner": "ChihPyh, botyk",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1429379755,
+      "file_size": 158300,
+      "filename": "2f542fa0888521d27825350221db2e7a.webp",
+      "height": 801,
+      "id": 3577,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2f542fa0888521d27825350221db2e7a-webp.3577/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3581-f291a3502ccec467ab80cc939d54a52b.jpg?hash=CcNVO4xo_q",
+      "width": 1423
+    },
+    {
+      "attach_date": 1429379755,
+      "file_size": 99356,
+      "filename": "84e5a8dceee3411ab1fdbc9c5e523527.webp",
+      "height": 786,
+      "id": 3578,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/84e5a8dceee3411ab1fdbc9c5e523527-webp.3578/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3582-1b645d4b326347d0f5fd489782d95386.jpg?hash=G5HdjiBH4r",
+      "width": 1424
+    },
+    {
+      "attach_date": 1429379756,
+      "file_size": 160164,
+      "filename": "d7301c292398a2c904aaa505bbbe28b6.webp",
+      "height": 1466,
+      "id": 3579,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/d7301c292398a2c904aaa505bbbe28b6-webp.3579/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3583-f4e5cedf6c79fb8634dba40c1da2ddd7.jpg?hash=VdNZHSWMXB",
+      "width": 1423
+    },
+    {
+      "attach_date": 1429379757,
+      "file_size": 336666,
+      "filename": "f207af6382ace1f3185b9f46337b57d8.webp",
+      "height": 1711,
+      "id": 3580,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/f207af6382ace1f3185b9f46337b57d8-webp.3580/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3584-43917ee2b6ad8384fd4e719764fd8061.jpg?hash=dE4Yl6lONP",
+      "width": 1423
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> шаблон, простой и легкий в светло-синих тонах. Ширина контента 760 пикселей.",
+  "download_count": 695,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/46.jpg?1429379959",
+  "id": 46,
+  "is_fileless": null,
+  "last_update": 1429380211,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1374869718,
+  "resource_state": "visible",
+  "slug": "sablon-doctor",
+  "tag_line": "Шаблон, простой и легкий в светло-синих тонах.",
+  "tags": [],
+  "title": "Шаблон «Doctor»",
+  "url_path": "/resources/sablon-doctor.46/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 380,
+      "files": [
+        {
+          "filename": "Шаблон Doctor [R590] (v3.2).zip",
+          "id": 3582,
+          "local_path": null,
+          "r2_key": null,
+          "size": 243661,
+          "src_url": "https://torrentpier.com/api/resource-versions/282/download?file=3582"
+        }
+      ],
+      "id": 282,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1429380211,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/sablon-doctor.46/version/282/"
+    },
+    {
+      "download_count": 119,
+      "files": [
+        {
+          "filename": "Шаблон Doctor [R513] (v2.4).zip",
+          "id": 3581,
+          "local_path": null,
+          "r2_key": null,
+          "size": 250246,
+          "src_url": "https://torrentpier.com/api/resource-versions/281/download?file=3581"
+        }
+      ],
+      "id": 281,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1429380007,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/sablon-doctor.46/version/281/"
+    },
+    {
+      "download_count": 210,
+      "files": [
+        {
+          "filename": "Шаблон Doctor [R513] (v2.4).zip",
+          "id": 2146,
+          "local_path": null,
+          "r2_key": null,
+          "size": 250246,
+          "src_url": "https://torrentpier.com/api/resource-versions/47/download?file=2146"
+        }
+      ],
+      "id": 47,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1374869718,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/sablon-doctor.46/version/47/"
+    }
+  ],
+  "view_count": 927
+}

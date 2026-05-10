@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 96288,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42279,
+  "last_post_date": 1720287545,
+  "node_id": 47,
+  "post_date": 1720284423,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96288,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/ogranichenie-dostupa-k-opredelennym-kategorijam.296/\" class=\"link link--internal\">Ограничение доступа к определенным категориям</a> - Ограничивает доступ определенному пользователю к определенным категориям.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> Ограничивает доступ определенному пользователю к определенным категориям (форумам и топикам в них включительно). Можно указать неограниченное количество категорий. Имеется кэширование.<br />\n<b>Совместимость:</b> практически все версии. Проверялся на LTS.</blockquote><br />\n<a href=\"https://torrentpier.com/resources/ogranichenie-dostupa-k-opredelennym-kategorijam.296/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1720284423,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96289,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/ogranichenie-dostupa-k-opredelennym-kategorijam.296/\" class=\"link link--internal\">Ограничение доступа к определенным категориям</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/ogranichenie-dostupa-k-opredelennym-kategorijam.296/update/530/\" class=\"link link--internal\">Обновление v1.0.1</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Исправлена ошибка в SQL запросе (Спасибо <a href=\"https://torrentpier.com/members/5704/\">ExPlayer</a>)</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/ogranichenie-dostupa-k-opredelennym-kategorijam.296/update/530/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1720287545,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "ogranicenie-dostupa-k-opredelennym-kategoriam",
+  "sticky": false,
+  "tags": [],
+  "title": "Ограничение доступа к определенным категориям",
+  "url_path": "/threads/ogranicenie-dostupa-k-opredelennym-kategoriam.42279/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 573
+}

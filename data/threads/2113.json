@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 25929,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 2113,
+  "last_post_date": 1378570696,
+  "node_id": 90,
+  "post_date": 1358765925,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25929,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как говрится не им одним единым, говоря об Nginx  стоит заострить внимание на <b>FastCGI</b>.<br />\n <br />\n<b>FastCgi </b>– это унифицированный стандарт приложений значительно расширяющий интерфейс <b>CGI</b>.<br />\nУнификация заключается в описание интерфейса взаимодействия между <b>Fastcgi  </b>и веб сервером.<br />\nОсновные отличия между <b>FastCGI </b>и <b>CGI </b>, основной недостаток последних в том, что при каждом обращение скрипт должен быть перезапущен, тем самым снижается производительность. FastCGI осуществляет мультиплексность соединений, то есть обрабатывает новые соединения не путем создания новых процессов, а обрабатывает новые соединения существующими, что за собой влечет прирост в производительности и более высокую нагрузоустойчивость.<br />\nТак же fastcgi использует unix сокеты для обработки соединений или TCP/IP.<br />\nСоответственно fastcgi программы могут быть запущены не на одном сервере, а на нескольких независимых серверах.<br />\nЧто так же дает прирост.<br />\nСтартовые условия у <b>FastCGI</b>-процесса более жесткие, чем у <b>CGI</b>, тем самым <b>fastcgi </b>более безопасен.<br />\nОбщение между сервером и <b> fastcgi</b>-процессом происходит через один сокет(ну или tcp/ip) , fastcgi  ожидает входящие соединения от веб-сервера.<br />\nПосле приема соединения от web-сервера <b>FastCGI</b>-процесс обменивается данными с использованием простого протокола, решающего две задачи: организация двунаправленного обмена в рамках одного соединения (для эмуляции <b>STDIN</b>, <b>STDOUT</b>, <b>STDERR</b>) и организация нескольких независимых FastCGI-сессий в рамках одного соединения.<br />\nПосле всего прочтенного у нас есть необходимый тоеритический фундамент, для настройки nginx и  первых шагов в конфигурации.<br />\nСписок серверов, которые умеют работать с <b>FastCGI.</b><br />\nAbyss Web Server<br />\nApache HTTP-сервер (частично) в текущей реализации архитектуры полная поддержка невозможна.<br />\naXesW3<br />\nCherokee HTTP Server<br />\nHiawatha webserver <br />\nLighttpd<br />\nLiteSpeed Web Server<br />\nMicrosoft IIS <br />\nMyServer<br />\nnginx<br />\nOpen Market Web Server<br />\nRoxen webserver<br />\nSun Java System Web Server <br />\nWebSTAR<br />\nYaws<br />\nZeus<br />\nНо для этого будет отдельная тема.<br />\nСледите за эфиром",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1358765925,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25932,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Еще бы маны для настройки.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1358771090,
+      "user_id": 2789,
+      "user_title": "User",
+      "username": "Sprinx"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25933,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Sprinx</b>, вы видимо не внимательно читали))<br />\nКак раз как настраивать будет в следующий раз, без какой-либо базы мои настройки мало что скажут.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1358771400,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 43551,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "копия текста википедии, о протоколе, php-fpm, spawn-fcgi, fcgi-cgi мало?",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1378570696,
+      "user_id": 4062,
+      "user_title": "User",
+      "username": "Elder_FTO"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "ne-nginx-edinym",
+  "sticky": false,
+  "tags": [],
+  "title": "Не Nginx единым",
+  "url_path": "/threads/ne-nginx-edinym.2113/",
+  "user_id": 0,
+  "username": "kenny",
+  "view_count": 2034
+}

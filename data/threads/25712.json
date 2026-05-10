@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58517,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25712,
+  "last_post_date": 1391429604,
+  "node_id": 57,
+  "post_date": 1391428244,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58517,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "R552<br />\nСтатус темы - закрыто.<br />\nС правами админа не прогружает тему для редактирования.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1391428244,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58518,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>vitalix</b>, проверил на демо версии там все хорошо. Какой нито мод связанный с постами ставили ?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1391428925,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58519,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>drew</b>,<br />\nДа, ща тоже проверил на демки и на чистом двиге r552 - всё ровно.<br />\nМод с постами ? вроде не ставил. Вообще стараюсь не ставить лишних модов, хз.<br />\nНу не кретично в принципе для исправления, ждём стабилки для перехода.<br />\np.s.<br />\nРади интереса можно было бы проверить что мешает редактированию, для не повторения.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1391429604,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "redaktirovanie-tem",
+  "sticky": false,
+  "tags": [],
+  "title": "Редактирование тем",
+  "url_path": "/threads/redaktirovanie-tem.25712/",
+  "user_id": 4163,
+  "username": "vitalix",
+  "view_count": 1035
+}

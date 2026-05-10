@@ -1,0 +1,120 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "drafts.zip",
+      "id": 3076,
+      "local_path": null,
+      "r2_key": null,
+      "size": 9529,
+      "src_url": "https://torrentpier.com/api/resource-versions/187/download?file=3076"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n1) Выполнить запрос к базе данных:\n[PHP]ALTER TABLE `bb_topics` ADD COLUMN `is_draft` TINYINT(1) UNSIGNED NOT NULL\nDEFAULT '0' AFTER `topic_show_first_post`;[/PHP]\n2) Открыв приложенный файл-patch (TurtoiseSVN или аналогичные программы), внести выведенные изменения вручную или нажав правой кнопкой по файлу, выбрать пункт [B]TurtoiseSVN[/B] - [B]Apply patch[/B], после чего указать директорию с вашим трекером и нажать кнопку Patch all, для внесения изменений в автоматическом режиме.\n[/SPOILER]",
+    "owner": "dimka3210, Gemini13 и другие",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1389885737,
+      "file_size": 96790,
+      "filename": "2014-01-16_19-22-02.webp",
+      "height": 766,
+      "id": 2358,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2014-01-16_19-22-02-webp.2358/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2363-19a725ad2ff2809c393550e4887f4c6a.jpg?hash=3c2poJHy50",
+      "width": 1224
+    },
+    {
+      "attach_date": 1389885738,
+      "file_size": 21340,
+      "filename": "2014-01-16_19-22-43.webp",
+      "height": 503,
+      "id": 2359,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2014-01-16_19-22-43-webp.2359/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2364-197bb176ce73f65db615b63544a8013e.jpg?hash=qQcfbe4rGd",
+      "width": 395
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет возможность создания тем-черновиков.<br />\n<br />\nМодификация, ранее включенная в основной дистрибутив движка. Возможность создания тем-черновиков, которые не видит никто, кроме создавшего их пользователя или администратора, до момента их публикации.<br />\n<hr />- <a href=\"https://torrentpier.com/threads/chernoviki.25636/#post-96481\" class=\"link link--internal\">Иконка draft.gif</a><br />\n- <a href=\"https://torrentpier.com/threads/chernoviki.25636/#post-58579\" class=\"link link--internal\">Адаптация к R561</a>",
+  "download_count": 346,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/82.jpg?1425220509",
+  "id": 82,
+  "is_fileless": null,
+  "last_update": 1425220968,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1389885781,
+  "resource_state": "visible",
+  "slug": "cernoviki",
+  "tag_line": "Добавляет возможность создания тем-черновиков.",
+  "tags": [],
+  "title": "Черновики",
+  "url_path": "/resources/cernoviki.82/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 254,
+      "files": [
+        {
+          "filename": "drafts.zip",
+          "id": 3076,
+          "local_path": null,
+          "r2_key": null,
+          "size": 9529,
+          "src_url": "https://torrentpier.com/api/resource-versions/187/download?file=3076"
+        }
+      ],
+      "id": 187,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425220968,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/cernoviki.82/version/187/"
+    },
+    {
+      "download_count": 95,
+      "files": [
+        {
+          "filename": "drafts.patch",
+          "id": 2357,
+          "local_path": null,
+          "r2_key": null,
+          "size": 35045,
+          "src_url": "https://torrentpier.com/api/resource-versions/87/download?file=2357"
+        }
+      ],
+      "id": 87,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1389885781,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/cernoviki.82/version/87/"
+    }
+  ],
+  "view_count": 977
+}

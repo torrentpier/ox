@@ -1,0 +1,105 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_data"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 96949,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42336,
+  "last_post_date": 1735184632,
+  "node_id": 57,
+  "post_date": 1735154382,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96949,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Hello !<br />\nI have just successfully installed TorrentPier Cattle. Version 2.4.5-rc.1 and I am wondering how I can access the administration... I tried changing the password for the admin user in PHPMyadmin, but it doesn&#039;t work either. I am using PHP version 8.2<br />\nPlease answer. Thanks!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1735154382,
+      "user_id": 10987,
+      "user_title": "User",
+      "username": "slycrespo"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96950,
+      "is_admin": false,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Hello, and welcome.<br />\n<br />\nYou should be able to access it through the link at the bottom of homepage, or specifically going to <i><span style=\"color: rgb(65, 168, 95)\">your.site/admin</span></i>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1735158812,
+      "user_id": 10699,
+      "user_title": "Developer (ex)",
+      "username": "kovalensky"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96951,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Yes, but it shows:  The username you submitted is incorrect or invalid, or the password is invalid.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1735159501,
+      "user_id": 10987,
+      "user_title": "User",
+      "username": "slycrespo"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96952,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"slycrespo\">Hello !<br />\nI have just successfully installed TorrentPier Cattle. Version 2.4.5-rc.1 and I am wondering how I can access the administration... I tried changing the password for the admin user in PHPMyadmin, but it doesn&#039;t work either. I am using PHP version 8.2<br />\nPlease answer. Thanks!</blockquote>Changing password directly in the database was a bad idea. (Cuz it hashed with password_hash() algos using unique salt)<br />\n<br />\nTry extracting the DB dump again (to restore password) and logging in with the default credentials - admin/admin.<br />\n<br />\nAfter, in your profile settings, you can easily change your password.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1735184632,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "how-to-enter-administraton-after-setup",
+  "sticky": false,
+  "tags": [],
+  "title": "How to enter administraton after setup?",
+  "url_path": "/threads/how-to-enter-administraton-after-setup.42336/",
+  "user_id": 10987,
+  "username": "slycrespo",
+  "view_count": 511
+}

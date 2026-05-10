@@ -1,0 +1,75 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 93384,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 41928,
+  "last_post_date": 1531435522,
+  "node_id": 111,
+  "post_date": 1531435522,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1531435620,
+          "file_size": 6168,
+          "filename": "logos-hexagon-blue@0,5x.webp",
+          "height": 343,
+          "id": 5176,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/logos-hexagon-blue-0-5x-webp.5176/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5180-932c76a757e415468823a44c2d5b46ce.jpg?hash=ZWQVz4Xylz",
+          "width": 302
+        }
+      ],
+      "id": 93384,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier Bison. Версия 2.3.0</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/5176/\" alt=\"logos-hexagon-blue@0,5x.webp\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/releases/tag/v2.3.0\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.3.0 · torrentpier/torrentpier</a><br />\n<br />\n<b>Чейнджлог:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/compare/v2.2.3...v2.3.0\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Comparing v2.2.3...v2.3.0 · torrentpier/torrentpier</a><br />\n<br />\n<b>Основные изменения:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Release preparation. Crowdin language pack update <a href=\"https://github.com/torrentpier/torrentpier/pull/468\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#468</a> (<a href=\"https://github.com/Exileum\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Exileum</a>)</li>\n<li data-xf-list-type=\"ul\">PHP 7+ deprecations of old cache systems <a href=\"https://github.com/torrentpier/torrentpier/pull/467\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#467</a> (<a href=\"https://github.com/Exileum\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Exileum</a>)</li>\n<li data-xf-list-type=\"ul\">Fix global atom feed name <a href=\"https://github.com/torrentpier/torrentpier/pull/466\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#466</a> (<a href=\"https://github.com/Exileum\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Exileum</a>)</li>\n<li data-xf-list-type=\"ul\">Configurable download torrent url <a href=\"https://github.com/torrentpier/torrentpier/pull/465\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#465</a> (<a href=\"https://github.com/Exileum\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Exileum</a>)</li>\n<li data-xf-list-type=\"ul\">Fix some bugs with MySQL strict mode <a href=\"https://github.com/torrentpier/torrentpier/pull/464\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#464</a> (<a href=\"https://github.com/Exileum\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Exileum</a>)</li>\n<li data-xf-list-type=\"ul\">Fix release template editor <a href=\"https://github.com/torrentpier/torrentpier/pull/463\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#463</a> (<a href=\"https://github.com/Exileum\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Exileum</a>)</li>\n<li data-xf-list-type=\"ul\">Fix multiple variable cleanup in private messaging <a href=\"https://github.com/torrentpier/torrentpier/pull/462\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#462</a> (<a href=\"https://github.com/Exileum\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Exileum</a>)</li>\n<li data-xf-list-type=\"ul\">Fix magnet link passkey creation for new users <a href=\"https://github.com/torrentpier/torrentpier/pull/461\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#461</a> (<a href=\"https://github.com/Exileum\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Exileum</a>)</li>\n<li data-xf-list-type=\"ul\">Update required PHP version to 7.1.3 <a href=\"https://github.com/torrentpier/torrentpier/pull/460\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#460</a> (<a href=\"https://github.com/Exileum\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Exileum</a>)</li>\n<li data-xf-list-type=\"ul\">Split functions to the composer autoloading <a href=\"https://github.com/torrentpier/torrentpier/pull/459\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#459</a> (<a href=\"https://github.com/Exileum\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Exileum</a>)</li>\n<li data-xf-list-type=\"ul\">Update copyright to the short syntax <a href=\"https://github.com/torrentpier/torrentpier/pull/458\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#458</a> (<a href=\"https://github.com/Exileum\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Exileum</a>)</li>\n<li data-xf-list-type=\"ul\">Fix <a href=\"https://github.com/torrentpier/torrentpier/issues/451\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#451</a>. Undefined index: L_CRON_EDIT_HEAD <a href=\"https://github.com/torrentpier/torrentpier/pull/457\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#457</a> (<a href=\"https://github.com/Exileum\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Exileum</a>)</li>\n<li data-xf-list-type=\"ul\">Merge head branches <a href=\"https://github.com/torrentpier/torrentpier/pull/456\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#456</a> (<a href=\"https://github.com/Exileum\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Exileum</a>)</li>\n<li data-xf-list-type=\"ul\">Default value for user_birthday causes exception on user password change <a href=\"https://github.com/torrentpier/torrentpier/pull/449\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#449</a> (<a href=\"https://github.com/yukoff\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">yukoff</a>)</li>\n<li data-xf-list-type=\"ul\">Add back roave/security-advisories <a href=\"https://github.com/torrentpier/torrentpier/pull/446\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#446</a> (<a href=\"https://github.com/yukoff\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">yukoff</a>)</li>\n</ul>Для обновления на версию необходимо выполнить следующие запросы к базе данных:<br />\n<pre class=\"xfBb-code\" data-lang=\"sql\">ALTER TABLE `bb_cron` CHANGE `last_run` `last_run` DATETIME NOT NULL DEFAULT &#039;1900-01-01 00:00:00&#039;;\nALTER TABLE `bb_cron` CHANGE `next_run` `next_run` DATETIME NOT NULL DEFAULT &#039;1900-01-01 00:00:00&#039;;\nALTER TABLE `bb_users` CHANGE `user_birthday` `user_birthday` DATE NOT NULL DEFAULT &#039;1900-01-01&#039;;\nALTER TABLE `bb_posts` CHANGE `mc_comment` `mc_comment` TEXT NOT NULL DEFAULT &#039;&#039;;</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1531435522,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-bison-versia-2-3-0",
+  "sticky": false,
+  "tags": [
+    "bison",
+    "новая версия",
+    "релиз",
+    "чейнджлог"
+  ],
+  "title": "TorrentPier Bison. Версия 2.3.0",
+  "url_path": "/threads/torrentpier-bison-versia-2-3-0.41928/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 1711
+}

@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 66185,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 28743,
+  "last_post_date": 1415085331,
+  "node_id": 57,
+  "post_date": 1415041632,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66185,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Я создаю шаблон для игр для PC, соответственно там обязательно должно быть поле &quot;системные требования&quot; в конструкторе они есть, вот только под apple ios с выпадающим списком - apple_ios_sysreq SEL[apple_ios_sysreq]<br />\n<br />\nОбычное поле где писать текстом системные требования к игре я не нашел. Если я слепой тыкните носом пожалуйста, может называется это в конструкторе по-другому? Спасибо",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1415041632,
+      "user_id": 561,
+      "user_title": "User",
+      "username": "John Smith"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66204,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"John Smith\">Я создаю шаблон для игр для PC, соответственно там обязательно должно быть поле &quot;системные требования&quot; в конструкторе они есть, вот только под apple ios с выпадающим списком - apple_ios_sysreq SEL[apple_ios_sysreq]<br />\n<br />\nОбычное поле где писать текстом системные требования к игре я не нашел. Если я слепой тыкните носом пожалуйста, может называется это в конструкторе по-другому? Спасибо</blockquote><br />\nВ posting_tpl.tpl берешь любое поле, которое подходит тебе по параметрам, и копируешь.<br />\n<br />\nя сделал так. Скопировал поле отвечающее за описание:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">description: [&#039;TXT&#039;, &#039;Описание&#039;, &#039;6&#039;, &#039;BR&#039;],</pre><br />\nи превратил его в системные требования:<br />\n<br />\n <pre class=\"xfBb-code\" data-lang=\"\">sys_description: [&#039;TXT&#039;, &#039;Системные требования&#039;, &#039;6&#039;, &#039;BR&#039;],</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1415085331,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "kak-dobavit-v-konstruktor-sablonov-relizov-novoe-pole",
+  "sticky": false,
+  "tags": [],
+  "title": "Как добавить в конструктор шаблонов релизов новое поле",
+  "url_path": "/threads/kak-dobavit-v-konstruktor-sablonov-relizov-novoe-pole.28743/",
+  "user_id": 561,
+  "username": "John Smith",
+  "view_count": 1169
+}

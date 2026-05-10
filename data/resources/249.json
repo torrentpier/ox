@@ -1,0 +1,62 @@
+{
+  "category": {
+    "description": "Section with all templates for TorrentPier.",
+    "id": 5,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Templates",
+    "view_url": "https://torrentpier.com/resources/categories/templates.5/"
+  },
+  "current_files": [],
+  "custom_fields": {
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Установка\"]\n#######################################\nviewforum.php\n#######################################\nНайти\n$s_display_order = '&nbsp;'. $lang['SORT_BY'] .':&nbsp;'. $sort_list .'&nbsp;'. $order_list .'&nbsp;';\n\nЗаменить на\n\n$s_display_order = $sort_list;\n\n$s_display_order1 = $order_list;\n\nНайти\n\n'S_DISPLAY_ORDER'  => $s_display_order,\n\nНиже добавить\n\n'S_DISPLAY_ORDER1'  => $s_display_order1,\n\n#######################################\nfunctions.php\n#######################################\nнайти\n\nfunction set_die_append_msg ($forum_id = null, $topic_id = null, $group_id = null)\n{\nglobal $lang, $template;\n\n$msg = '';\n$msg .= ($topic_id) ? '<p class=\"mrg_10\"><a href=\"'. TOPIC_URL . $topic_id .'\">'. $lang['TOPIC_RETURN'] .'</a></p>' : '';\n$msg .= ($forum_id) ? '<p class=\"mrg_10\"><a href=\"'. FORUM_URL . $forum_id .'\">'. $lang['FORUM_RETURN'] .'</a></p>' : '';\n$msg .= ($group_id) ? '<p class=\"mrg_10\"><a href=\"'. GROUP_URL . $group_id .'\">'. $lang['GROUP_RETURN'] .'</a></p>' : '';\n$msg .= '<p class=\"mrg_10\"><a href=\"index.php\">'. $lang['INDEX_RETURN'] .'</a></p>';\n$template->assign_var('BB_DIE_APPEND_MSG', $msg);\n}\n\nзаменить на\n\nfunction set_die_append_msg ($forum_id = null, $topic_id = null, $group_id = null)\n{\nglobal $lang, $template;\n\n$msg = '';\n$msg .= ($topic_id) ? '<p class=\"mrg_10\"><a href=\"'. TOPIC_URL . $topic_id .'\"><span class=\"label label-success\">'. $lang['TOPIC_RETURN'] .'</span></a></p>' : '';\n$msg .= ($forum_id) ? '<p class=\"mrg_10\"><a href=\"'. FORUM_URL . $forum_id .'\"><span class=\"label label-success\">'. $lang['FORUM_RETURN'] .'</span></a></p>' : '';\n$msg .= ($group_id) ? '<p class=\"mrg_10\"><a href=\"'. GROUP_URL . $group_id .'\"><span class=\"label label-success\">'. $lang['GROUP_RETURN'] .'</span></a></p>' : '';\n$msg .= '<p class=\"mrg_10\"><a href=\"index.php\"><span class=\"label label-success\">'. $lang['INDEX_RETURN'] .'</span></a></p>';\n$template->assign_var('BB_DIE_APPEND_MSG', $msg);\n}\n\n#######################################\nmodcp.php\n#######################################\nНайти\n\n//\n// Functions\n//\nfunction return_msg_mcp ($status_msg)\n{\nglobal $topic_id, $req_topics, $forum_id, $lang, $mode;\n\nif (count($req_topics) == 1)\n{\n$topic_id = $req_topics[0];\n}\n\n$message = $status_msg;\n$message .= '<br /><br />';\n\nif ($topic_id && $mode != 'delete')\n{\n$message .= sprintf($lang['CLICK_RETURN_TOPIC'], '<a href=\"'. TOPIC_URL . $topic_id .'\">', '</a>');\n$message .= '<br /><br />';\n}\nelseif (count($req_topics) != 1)\n{\n$message .= sprintf($lang['CLICK_RETURN_MODCP'], '<a href=\"'. FORUM_URL .\"$forum_id&amp;mod=1\".'\">', '</a>');\n$message .= '<br /><br />';\n}\n\n$message .= sprintf($lang['CLICK_RETURN_FORUM'], '<a href=\"'. FORUM_URL . $forum_id .'\">', '</a>');\n\nreturn $message;\n}\n\nЗаменить на\n\n//\n// Functions\n//\nfunction return_msg_mcp ($status_msg)\n{\nglobal $topic_id, $req_topics, $forum_id, $lang, $mode;\n\nif (count($req_topics) == 1)\n{\n$topic_id = $req_topics[0];\n}\n\n$message = $status_msg;\n$message .= '<br /><br />';\n\nif ($topic_id && $mode != 'delete')\n{\n$message .= sprintf($lang['CLICK_RETURN_TOPIC'], '<a href=\"'. TOPIC_URL . $topic_id .'\"><span class=\"label label-success\">', '</span></a>');\n$message .= '<br /><br />';\n}\nelseif (count($req_topics) != 1)\n{\n$message .= sprintf($lang['CLICK_RETURN_MODCP'], '<a href=\"'. FORUM_URL .\"$forum_id&amp;mod=1\".'\"><span class=\"label label-success\">', '</span></a>');\n$message .= '<br /><br />';\n}\n\n$message .= sprintf($lang['CLICK_RETURN_FORUM'], '<a href=\"'. FORUM_URL . $forum_id .'\"><span class=\"label label-success\">', '</span></a>');\n\nreturn $message;\n}\n\n\n[/SPOILER]",
+    "owner": "Адаптация - AnSan",
+    "was_paid": "yes"
+  },
+  "description_attachments": [],
+  "description_parsed": "Шаблон Taurus для TorrentPier 2.1.5<br />\nОн не полный, по мере возможности буду адаптировать<br />\n<img src=\"http://i79.fastpic.ru/big/2016/0525/45/b0f533a209b463f60ebc51003ad34d45.jpg\" alt=\"\" /> <br />\n<img src=\"http://i80.fastpic.ru/big/2016/0525/ed/d5574941426955f2d3c2d48e29b59eed.jpg\" alt=\"\" />",
+  "download_count": 636,
+  "external_url": null,
+  "icon_url": null,
+  "id": 249,
+  "is_fileless": null,
+  "last_update": 1467028861,
+  "rating_avg": 3.5,
+  "rating_count": 4,
+  "resource_date": 1464201167,
+  "resource_state": "visible",
+  "slug": "sablon-taurus",
+  "tag_line": "Шаблон Taurus",
+  "tags": [],
+  "title": "Шаблон Taurus",
+  "url_path": "/resources/sablon-taurus.249/",
+  "user_id": 35,
+  "username": "AnSan",
+  "version": "1.1",
+  "versions": [
+    {
+      "download_count": 471,
+      "files": [],
+      "id": 369,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1467028861,
+      "version_state": "visible",
+      "version_string": "1.1",
+      "view_url": "https://torrentpier.com/resources/sablon-taurus.249/version/369/"
+    },
+    {
+      "download_count": 168,
+      "files": [],
+      "id": 367,
+      "rating_avg": 3,
+      "rating_count": 3,
+      "release_date": 1464201167,
+      "version_state": "visible",
+      "version_string": "пробная версия",
+      "view_url": "https://torrentpier.com/resources/sablon-taurus.249/version/367/"
+    }
+  ],
+  "view_count": 764
+}

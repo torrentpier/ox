@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 88526,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41532,
+  "last_post_date": 1475609315,
+  "node_id": 57,
+  "post_date": 1475511107,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88526,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток! Где-то часа 2 назад стала появляться ошибка из-за которой не открывается ни одна страница сайта:<b> <br />\n</b><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Parse error: syntax error, unexpected &#039;&#039;На трекере [b]стр&#039; (T_ENCAPSED_AND_WHITESPACE) in /var/www/admin/data/www/site/internal_data/cache/filecache/bb_config/tp_config_bb_config.php on line 92</pre><br />\nРугается на эту строчку:<b>  <br />\n</b><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">   &#039;terms&#039; =&gt; &#039;На трекере [b]строго запрещено[/b]:</pre><br />\n<br />\nЕсли этот файл удалить, то сайт начнет работать нормально (некоторое время ~минут 15, а потом снова эта ошибка появляется).<br />\n<br />\nЧто это за ошибка и как с ней бороться?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1475511107,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88531,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5704/\">ExPlayer</a>, кеш в админке почистите, такой проблемы в чистом движке не было.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1475609315,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "osibka-v-kese",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка в кеше?",
+  "url_path": "/threads/osibka-v-kese.41532/",
+  "user_id": 5704,
+  "username": "ExPlayer",
+  "view_count": 862
+}

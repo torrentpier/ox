@@ -1,0 +1,51 @@
+{
+  "category": {
+    "description": "Section with all paid modifications for TorrentPier.",
+    "id": 2,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Paid",
+    "view_url": "https://torrentpier.com/resources/categories/paid.2/"
+  },
+  "current_files": [],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "owner": "",
+    "sql": "yes"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание</b>: Данный мод предназначен для того чтобы поглядеть что пользователь изменил или поправил в своем релизе.<br />\n<b>Что умеет</b>:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Восстанавливать название темы.</li>\n<li data-xf-list-type=\"ul\">Восстанавливать описание темы.</li>\n<li data-xf-list-type=\"ul\">Очистка от старых топиков.</li>\n</ul><b>Цена:</b> 30$",
+  "download_count": 0,
+  "external_url": null,
+  "icon_url": null,
+  "id": 27,
+  "is_fileless": null,
+  "last_update": 1369573556,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1369573556,
+  "resource_state": "visible",
+  "slug": "rezervnoe-kopirovanie-temy",
+  "tag_line": "История правок внесенных пользователем в теме",
+  "tags": [],
+  "title": "Резервное копирование темы",
+  "url_path": "/resources/rezervnoe-kopirovanie-temy.27/",
+  "user_id": 3170,
+  "username": "drew",
+  "version": "2.0",
+  "versions": [
+    {
+      "download_count": 0,
+      "files": [],
+      "id": 27,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1369573556,
+      "version_state": "visible",
+      "version_string": "2.0",
+      "view_url": "https://torrentpier.com/resources/rezervnoe-kopirovanie-temy.27/version/27/"
+    }
+  ],
+  "view_count": 382
+}

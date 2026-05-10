@@ -1,0 +1,73 @@
+{
+  "custom_fields": {
+    "torrentpier": "240_beta2"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95296,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42190,
+  "last_post_date": 1699074443,
+  "node_id": 57,
+  "post_date": 1699042239,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95296,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1699042407,
+      "message_parsed": "Я хочу установить его на свой VPS с нуля. Есть ли у кого-нибудь полное видеоруководство и какая версия лучше всего, жду вашего любезного ответа по этому поводу?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1699042239,
+      "user_id": 10775,
+      "user_title": "User",
+      "username": "Yadro"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95297,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "тебе сюда <a href=\"https://torrentpier.com/forums/video-uroki-po-torrentpier.24/\" class=\"link link--internal\">https://torrentpier.com/forums/video-uroki-po-torrentpier.24/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1699074443,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "kak-ustanovit-torrent-pier-na-vps",
+  "sticky": false,
+  "tags": [],
+  "title": "Как установить Torrent Pier на VPS",
+  "url_path": "/threads/kak-ustanovit-torrent-pier-na-vps.42190/",
+  "user_id": 10775,
+  "username": "Yadro",
+  "view_count": 668
+}

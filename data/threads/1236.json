@@ -1,0 +1,70 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 15390,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 50,
+        "title": "Graphics and styles for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 17,
+    "title": "Graphics and styles for TorrentPier (archive)"
+  },
+  "id": 1236,
+  "last_post_date": 1334487466,
+  "node_id": 17,
+  "post_date": 1334487466,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1334487385,
+          "file_size": 14299,
+          "filename": "iconsm.rar",
+          "height": 0,
+          "id": 1032,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/iconsm-rar.1032/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 15390,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Видели там сбоку еще добавили менюшку картинками?<br />\nВот что-то сам доработал не без копипасты:<br />\nВ page_header перед &lt;div id=&quot;user_ratio&quot; &gt;<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">&lt;div style=&quot;position: absolute; top: 40px; right: 1px;&quot;&gt;\n&lt;span class=&quot;mprof&quot;&gt;\n&lt;!-- IF HAVE_NEW_PM || HAVE_UNREAD_PM --&gt;\n&lt;a style=&quot;text-decoration: none;&quot; href=&quot;{U_READ_PM}&quot; title=&quot;{PM_INFO}&quot;&gt;\n&lt;img style=&quot;margin-top: 5px; margin-left:12px;&quot; src=&quot;./templates/default/images/message.png&quot;/&gt;&lt;/a&gt;\n&lt;!-- ELSE --&gt;\n&lt;a style=&quot;text-decoration: none;&quot; href=&quot;{U_PRIVATEMSGS}&quot; title=&quot;{PM_INFO}&quot;&gt;\n&lt;img style=&quot;margin-top: 5px; margin-left:12px;&quot; src=&quot;./templates/default/images/message.png&quot;/&gt;&lt;/a&gt;             \n&lt;!-- ENDIF --&gt;\n&lt;a style=&quot;text-decoration: none;&quot; href=&quot;{U_OPTIONS}&quot; title=&quot;Редактировать профиль&quot;&gt;\n&lt;img style=&quot;margin-top:-5px;margin-left:12px;&quot; src=&quot;./templates/default/images/preferences.png&quot;/&gt;&lt;/a&gt;\n&lt;a style=&quot;text-decoration: none;&quot; href=&quot;{U_PROFILE}&quot; title=&quot;Профиль&quot;&gt;\n&lt;img style=&quot;margin-top:-5px;margin-left:12px;&quot; src=&quot;./templates/default/images/profile.png&quot;/&gt;&lt;/a&gt;\n&lt;/span&gt;</pre><br />\nв main.css<br />\n<pre class=\"xfBb-code\" data-lang=\"\">/*профиль*/\n.mprof{\nfloat: right;\nheight: 129px;\nmargin-top: 6px;\nwidth: 60px;\n}</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1334487466,
+      "user_id": 1168,
+      "user_title": "User",
+      "username": "ShineOfDark"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "statistika-v-sapke-kak-na-tapkah",
+  "sticky": false,
+  "tags": [],
+  "title": "Статистика в шапке как на тапках",
+  "url_path": "/threads/statistika-v-sapke-kak-na-tapkah.1236/",
+  "user_id": 1168,
+  "username": "ShineOfDark",
+  "view_count": 1744
+}

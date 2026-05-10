@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 4989,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 415,
+  "last_post_date": 1320486765,
+  "node_id": 57,
+  "post_date": 1320484566,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 4989,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "подскажите, где стоят ограничения на количество символов в открываемой теме?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1320484566,
+      "user_id": 236,
+      "user_title": "User",
+      "username": "starfolk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 4990,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "в полях, в которые пишутся сообщения из темы.<br />\nтаблица bb_posts_html и bb_posts_text, в полях post_html и post_text меняй тип на longtext.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1320486765,
+      "user_id": 0,
+      "user_title": "",
+      "username": "frank"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "kolicestvo-simvolov-v-soobsenii",
+  "sticky": false,
+  "tags": [],
+  "title": "Количество символов в сообщении",
+  "url_path": "/threads/kolicestvo-simvolov-v-soobsenii.415/",
+  "user_id": 236,
+  "username": "starfolk",
+  "view_count": 1744
+}

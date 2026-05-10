@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 9553,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 733,
+  "last_post_date": 1326590611,
+  "node_id": 57,
+  "post_date": 1326590611,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9553,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"\">Fatal error: DB Error [admin/admin_topic_templates.php(105)] in /home/dev/data/www/сайт.ру/includes/db/mysql.php on line 803</pre><br />\n<img src=\"http://i28.fastpic.ru/big/2012/0115/96/3cdb251a187f98092c622fa180a16a96.png\" alt=\"\" /><br />\n<br />\nВозникает при удалении шаблона в &quot;Шаблоны для релизов&quot;. Я создал шаблон, он удачно создался, потом попытался его удалить, и вот...",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1326590611,
+      "user_id": 752,
+      "user_title": "User",
+      "username": "Pacifik"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "fatal-error-db-error-admin-admin_topic_templates-php-105",
+  "sticky": false,
+  "tags": [],
+  "title": "Fatal error: DB Error [admin/admin_topic_templates.php(105)]",
+  "url_path": "/threads/fatal-error-db-error-admin-admin_topic_templates-php-105.733/",
+  "user_id": 752,
+  "username": "Pacifik",
+  "view_count": 1167
+}

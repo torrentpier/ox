@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 10590,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 834,
+  "last_post_date": 1327730478,
+  "node_id": 3,
+  "post_date": 1327724568,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10590,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Отписывайтесь только те кто реально работал с данной моделью и выводил сайт в сеть, если не сложно 🙂",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1327724568,
+      "user_id": 2,
+      "user_title": "User",
+      "username": "_Xz_"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10591,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "А в чем там трудность, у данного роутера есть портфорвардинг, и есть DMZ, если хочешь полностью выставить сервер в интернеты, используешь DMZ, если будешь юзать роутер еще и как файервол, открываешь только нужные тебе порты (80, 2710,22) короче по вкусу.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1327730478,
+      "user_id": 4,
+      "user_title": "User",
+      "username": "diden05"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "nastroka-lokal-nogo-sajta-cerez-router-dlink-dir-615",
+  "sticky": false,
+  "tags": [],
+  "title": "Настрока локального сайта через роутер dlink dir-615",
+  "url_path": "/threads/nastroka-lokal-nogo-sajta-cerez-router-dlink-dir-615.834/",
+  "user_id": 2,
+  "username": "_Xz_",
+  "view_count": 1620
+}

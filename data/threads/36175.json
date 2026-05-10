@@ -1,0 +1,129 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 76148,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 36175,
+  "last_post_date": 1424778223,
+  "node_id": 90,
+  "post_date": 1424544590,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 76148,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подскажите, периодически отваливается мемкеш, вот такие логи:<br />\n<br />\n[21-Feb-2015 20:58:19 Europe/Moscow] PHP Notice:  MemcachePool::get(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: Network timeout (0) in /var/www/dr_brown/data/www/................./common.php on line 1413<br />\n[21-Feb-2015 21:00:49 Europe/Moscow] PHP Notice:  MemcachePool::get(): Failed to uncompress data in /var/www/dr_brown/data/www/....................../common.php on line 1413<br />\n[21-Feb-2015 21:00:49 Europe/Moscow] PHP Notice:  MemcachePool::get(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: Malformed VALUE header (0) in /var/www/dr_brown/data/www/............../common.php on line 1413<br />\n<br />\nГде хоть посмотреть, как нагрузку проконтролировать, памяти ему не хватает или чего ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1424544590,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1424549898,
+          "file_size": 50205,
+          "filename": "phpMemcachedAdmin-1.2.2-r262.zip",
+          "height": 0,
+          "id": 2968,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/phpmemcachedadmin-1-2-2-r262-zip.2968/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 76149,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Вот админка мемкеша, можно глянуть не заполнен ли полностью для начала.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1424549916,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 76151,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "спс гляну",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1424550023,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 76341,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1424767489,
+      "message_parsed": "Вот тоже косяк появился с мемкешем. <br />\n<br />\n[23-Feb-2015 23:53:12 UTC] PHP Notice:  MemcachePool::set(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: Connection refused (111) in /var/www/***/data/www/***/library/includes/cache/memcache.php on line 73<br />\n<br />\n[23-Feb-2015 23:04:56 UTC] PHP Notice:  MemcachePool::get(): Server 127.0.0.1 (tcp 11211, udp 0) failed with: Connection refused (111) in /var/www/***/data/www/***/library/includes/datastore/memcache.php on line 95<br />\n<br />\nРугается на эту строку в обоих файлах <br />\n<br />\nreturn ($this-&gt;connected) ? $this-&gt;memcache-&gt;set($this-&gt;prefix . $name, $value, false, $ttl) : false;",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1424767050,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 76377,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"vitalix\">Connection refused</blockquote>Движок-то тут при чем? У вас memcache в момент возникновения ошибок недоступен.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1424778223,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "padaet-memkes",
+  "sticky": false,
+  "tags": [],
+  "title": "Падает мемкэш",
+  "url_path": "/threads/padaet-memkes.36175/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 2907
+}

@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61088,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25965,
+  "last_post_date": 1455049437,
+  "node_id": 57,
+  "post_date": 1402604084,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61088,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "При получении письма о том, что зарегался. При входящем сообшении на почте отображается заголовок нормально. Но при открытии его , там где тема письма, а оно название сайта и присутствуют рус буквы пишет иероглифами",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1402604084,
+      "user_id": 5400,
+      "user_title": "User",
+      "username": "snakes"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61089,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вроде так, точно не уверен. Нужно тестировать на разных почтовиках.<br />\nincludes/emailer.class.php<br />\n<pre class=\"xfBb-code\" data-lang=\"\">$this-&gt;vars = array_merge($this-&gt;vars, $vars);</pre>Заменить на<br />\n<pre class=\"xfBb-code\" data-lang=\"\">$this-&gt;vars = convert_cyr_string(array_merge($this-&gt;vars, $vars),u,k);</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1402607061,
+      "user_id": 2789,
+      "user_title": "User",
+      "username": "Sprinx"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 86909,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Sprinx\">Вроде так, точно не уверен. Нужно тестировать на разных почтовиках.<br />\nincludes/emailer.class.php<br />\n<pre class=\"xfBb-code\" data-lang=\"\">$this-&gt;vars = array_merge($this-&gt;vars, $vars);</pre>Заменить на<br />\n<pre class=\"xfBb-code\" data-lang=\"\">$this-&gt;vars = convert_cyr_string(array_merge($this-&gt;vars, $vars),u,k);</pre></blockquote>Сделал так, как написали, но не помогло. Имя отправителя все равно в иероглифах, но тема письма и само письмо отображается нормально. Что нужно заменить, что бы имя отправителя тоже читабельно было? <br />\nЗаранее спасибо за помощь.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1455049437,
+      "user_id": 6199,
+      "user_title": "User",
+      "username": "Vorezo"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "kodirovka-v-email",
+  "sticky": false,
+  "tags": [],
+  "title": "Кодировка в email",
+  "url_path": "/threads/kodirovka-v-email.25965/",
+  "user_id": 5400,
+  "username": "snakes",
+  "view_count": 1175
+}

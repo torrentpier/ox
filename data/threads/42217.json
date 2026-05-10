@@ -1,0 +1,58 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95507,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 42217,
+  "last_post_date": 1703930475,
+  "node_id": 110,
+  "post_date": 1703930475,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95507,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\n<br />\nУведомляю Вас о том, что с недавних пор можно загрузить TorrentPier с <a href=\"https://sourceforge.net/projects/torrentpier-engine/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">SourceForge</a>. Экспорт проекта на данный ресурс будет в качестве резервного места откуда вы можете загрузить движок. Загрузка даже проще чем с GitHub. Build-версии будут поставляться вместе с Composer в комплекте. Так же на SourceForge возможен просмотр исходного кода, написание отзывов и многое другое.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1703930475,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "eksport-proekta-na-sourceforge",
+  "sticky": false,
+  "tags": [
+    "source forge",
+    "экспорт прокета на source forge"
+  ],
+  "title": "Экспорт проекта на SourceForge",
+  "url_path": "/threads/eksport-proekta-na-sourceforge.42217/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 527
+}

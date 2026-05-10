@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 59612,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25829,
+  "last_post_date": 1394916873,
+  "node_id": 57,
+  "post_date": 1394911764,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59612,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ребята есть какое либо решение, что скрпиты подключаемые в шаблоне не лезли в админке ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1394911764,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59613,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Найти<br />\n&lt;!--******************--&gt;<br />\n&lt;!-- IF SIMPLE_HEADER --&gt;<br />\n&lt;!--==================--&gt;<br />\n<br />\n&lt;style type=&quot;text/css&quot;&gt;body { background: #E3E3E3; min-width: 10px; }&lt;/style&gt;<br />\n<br />\n&lt;!--=================--&gt;<br />\n&lt;!-- ELSEIF IN_ADMIN --&gt;<br />\n&lt;!--=================--&gt;<br />\n<br />\n&lt;!--======--&gt;<br />\n&lt;!-- ELSE --&gt;<br />\n&lt;!--======--&gt;<br />\n <br />\nИ ниже добавлять.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1394916873,
+      "user_id": 2789,
+      "user_title": "User",
+      "username": "Sprinx"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "skripty",
+  "sticky": false,
+  "tags": [],
+  "title": "Скрипты",
+  "url_path": "/threads/skripty.25829/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 963
+}

@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 59677,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25841,
+  "last_post_date": 1395234868,
+  "node_id": 57,
+  "post_date": 1395178002,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59677,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ошибка при заливке раздачи на трекер<br />\n500 Internal Server Error<br />\n <br />\n(размер торрента: 6 KБ)  Заливаю торрент раздач успешно (размер файла: 4,27 МБ)<br />\n(размер торрента: 282 KБ) Заливаю торрент раздач выдаёт ошибку (размер файла: 20,4 ГБ) 500 Internal Server Error<br />\n <br />\nв чем может быть причина ошибки?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1395178002,
+      "user_id": 322,
+      "user_title": "User",
+      "username": "botyk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59685,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>botyk</b>, в php измени значение на размер загружаемого файла.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1395234868,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "osibka-pri-zalivke-razdaci-na-treker",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка при заливке раздачи на трекер",
+  "url_path": "/threads/osibka-pri-zalivke-razdaci-na-treker.25841/",
+  "user_id": 322,
+  "username": "botyk",
+  "view_count": 1154
+}

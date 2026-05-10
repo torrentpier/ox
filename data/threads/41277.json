@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 85126,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 86,
+    "title": "Questions about PHP"
+  },
+  "id": 41277,
+  "last_post_date": 1443904721,
+  "node_id": 86,
+  "post_date": 1443900230,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85126,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Пытаюсь сделать простой вывод чата из mysql<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">if(DB()-&gt;fetch_rowset(&quot;SELECT id, time, nick, message FROM ptoka_chat ORDER BY time DESC LIMIT 50&quot;))\n{$ptoka = DB()-&gt;fetch_rowset(&quot;SELECT id, time, nick, message FROM ptoka_chat ORDER BY time DESC LIMIT 50&quot;);\nforeach ($ptoka AS $ptoka_chat)\n{\n    $chat .=&#039;\n    &lt;div class=&quot;chat-comment&quot; id=&quot;shout_&#039;.$ptoka_chat[&#039;id&#039;].&#039;&quot;&gt;\n    &lt;a class=&quot;bold&quot;&gt;&#039;.$ptoka_chat[&#039;nick&#039;].&#039; :&lt;/a&gt;\n    &lt;a style=&quot;float:right&quot; class=&quot;small&quot;&gt;&#039;.bb_date($ptoka_chat[&#039;time&#039;]).&#039;&amp;nbsp;&lt;/a&gt;\n    &lt;a style=&quot;font:11px tahoma;&quot;&gt;&#039;.$ptoka_chat[&#039;message&#039;].&#039;&lt;/a&gt;&lt;/div&gt;&#039;;\n}\n}</pre><br />\nВыводиться хорошо, только выскакивает нотис на переменную chat <br />\n<b>&quot;Notice</b>: Undefined variable: chat in&quot;<br />\nКак я понял это из-за того что она находиться в цикле<br />\nКак запустить ее в цикл правильно? Может кто сталкивался с такой проблемой помогите",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1443900230,
+      "user_id": 5452,
+      "user_title": "User",
+      "username": "Ress Kent"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85128,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"php\">$chat = &#039;&#039;;\n$ptoka = DB()-&gt;fetch_rowset(&quot;SELECT id, time, nick, message FROM ptoka_chat ORDER BY time DESC LIMIT 50&quot;);\nforeach ($ptoka AS $ptoka_chat)\n{\n    $chat .=&#039;\n    &lt;div class=&quot;chat-comment&quot; id=&quot;shout_&#039;.$ptoka_chat[&#039;id&#039;].&#039;&quot;&gt;\n    &lt;a class=&quot;bold&quot;&gt;&#039;.$ptoka_chat[&#039;nick&#039;].&#039; :&lt;/a&gt;\n    &lt;a  class=&quot;small floatR&quot;&gt;&#039;.bb_date($ptoka_chat[&#039;time&#039;]).&#039;&amp;nbsp;&lt;/a&gt;\n    &lt;a style=&quot;font:11px tahoma;&quot;&gt;&#039;.$ptoka_chat[&#039;message&#039;].&#039;&lt;/a&gt;&lt;/div&gt;&#039;;\n}</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1443902232,
+      "user_id": 97,
+      "user_title": "User",
+      "username": "Zenden"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85129,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/97/\">@Zenden</a> Заработало, спасибо!",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1443904721,
+      "user_id": 5452,
+      "user_title": "User",
+      "username": "Ress Kent"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "undefined-variable",
+  "sticky": false,
+  "tags": [],
+  "title": "Undefined variable",
+  "url_path": "/threads/undefined-variable.41277/",
+  "user_id": 5452,
+  "username": "Ress Kent",
+  "view_count": 1416
+}

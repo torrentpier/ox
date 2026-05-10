@@ -1,0 +1,101 @@
+{
+  "category": {
+    "description": "Icons, smileys, and other graphic elements for design.",
+    "id": 6,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Graphics and styles",
+    "view_url": "https://torrentpier.com/resources/categories/graphics-and-styles.6/"
+  },
+  "current_files": [
+    {
+      "filename": "444.zip",
+      "id": 4003,
+      "local_path": null,
+      "r2_key": null,
+      "size": 2393334,
+      "src_url": "https://torrentpier.com/api/resource-versions/349/download?file=4003"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]Файлы закинуть в корень сайта.\n[B]\nОткрыть:[/B]\n.htaccess\n[B]Прописать :[/B]\nErrorDocument 404 /404.html\n\n[B]Открыть:[/B]\n404.html\nВ строке 20 вставить ссылку на свой сайт.[/SPOILER]",
+    "owner": "Kryl"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1438610782,
+      "file_size": 153198,
+      "filename": "delorean_blue.webp",
+      "height": 789,
+      "id": 4002,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/delorean_blue-webp.4002/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4006-1b88d3535ae9e3e5e352993ae1ad1830.jpg?hash=Y9K2lDNCak",
+      "width": 1600
+    },
+    {
+      "attach_date": 1438610875,
+      "file_size": 103606,
+      "filename": "delorean_red_2_4.webp",
+      "height": 789,
+      "id": 4004,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/delorean_red_2_4-webp.4004/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4008-794317949edf4561d57c44f778c00872.jpg?hash=hcLuQ6oSvX",
+      "width": 1600
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> так как в движке отсутствуют страницы ошибок, то решил выложить одну 404. К странице подключены два скрипта и CSS.<br />\n<br />\nКак выглядит страница, можно посмотреть, перейдя по ссылке: <a href=\"http://60-fps.org/indx.php\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://60-fps.org/indx.php</a>",
+  "download_count": 330,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/240.jpg?1438610853",
+  "id": 240,
+  "is_fileless": null,
+  "last_update": 1438610800,
+  "rating_avg": 4.33333,
+  "rating_count": 3,
+  "resource_date": 1438610800,
+  "resource_state": "visible",
+  "slug": "stranica-osibki-404-s-effektom-parallaksa",
+  "tag_line": "Красивая страница ошибки 404.",
+  "tags": [
+    "404",
+    "параллакс",
+    "страница ошибки"
+  ],
+  "title": "Страница ошибки 404 с эффектом параллакса",
+  "url_path": "/resources/stranica-osibki-404-s-effektom-parallaksa.240/",
+  "user_id": 5626,
+  "username": "Kryl",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 330,
+      "files": [
+        {
+          "filename": "444.zip",
+          "id": 4003,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2393334,
+          "src_url": "https://torrentpier.com/api/resource-versions/349/download?file=4003"
+        }
+      ],
+      "id": 349,
+      "rating_avg": 4.333333333333333,
+      "rating_count": 3,
+      "release_date": 1438610800,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/stranica-osibki-404-s-effektom-parallaksa.240/version/349/"
+    }
+  ],
+  "view_count": 788
+}

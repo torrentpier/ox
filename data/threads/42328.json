@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 96909,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42328,
+  "last_post_date": 1734279264,
+  "node_id": 47,
+  "post_date": 1734251169,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96909,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/vybor-cveta-teksta-iz-politry.313/\" class=\"link link--internal\">Выбор цвета текста из политры</a> - Добавляет удобный выбор цвета для текста в редактор при публикации сообщения.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> Добавляет удобный выбор цвета для текста в редактор при публикации сообщения. При этом оригинальные цвета также доступны для выбора в палитре.<br />\n<br />\n<b>Совместимость:</b> v2.1.5, LTS, v2.2.*, v2.3.*, v2.4.*, прошлые версии.</blockquote><br />\n<a href=\"https://torrentpier.com/resources/vybor-cveta-teksta-iz-politry.313/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1734251169,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96921,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/vybor-cveta-teksta-iz-palitry.313/\" class=\"link link--internal\">Выбор цвета текста из палитры</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/vybor-cveta-teksta-iz-palitry.313/update/604/\" class=\"link link--internal\">Обновление v2.0.1</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Небольшие улучшения</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/vybor-cveta-teksta-iz-palitry.313/update/604/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1734279264,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "vybor-cveta-teksta-iz-palitry",
+  "sticky": false,
+  "tags": [],
+  "title": "Выбор цвета текста из палитры",
+  "url_path": "/threads/vybor-cveta-teksta-iz-palitry.42328/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 586
+}

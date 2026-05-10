@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 38459,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 10480,
+  "last_post_date": 1375121361,
+  "node_id": 80,
+  "post_date": 1375121142,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 38459,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Проверьте пожалуйста следующее, если удалить задачу в крон, а потом снова её добавить нарушается нумерация по id задач. т.е. было 17,18,19,20. Удаляешь задачу 18, нумерация становится 17,19,20. Добавляешь новую задачу, получается 17,19,20,21....",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1375121142,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 38460,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "правильно, ибо id присваивается автоматически. auto_increment",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1375121361,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 1,
+  "slug": "spisok-zadac-v-cron-adminke",
+  "sticky": false,
+  "tags": [],
+  "title": "Список задач в cron-админке",
+  "url_path": "/threads/spisok-zadac-v-cron-adminke.10480/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1189
+}

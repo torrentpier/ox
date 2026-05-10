@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 26167,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 2135,
+  "last_post_date": 1359220463,
+  "node_id": 57,
+  "post_date": 1359215499,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26167,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Есть ли возможность настройки автоматического удаления кэш, чтоб не делать это каждый раз вручную. Иначе последние новости просто не отображаются на сайте, пока не почистить кэш?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1359215499,
+      "user_id": 3930,
+      "user_title": "User",
+      "username": "soft67"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26169,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Крон",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1359216707,
+      "user_id": 93,
+      "user_title": "User",
+      "username": "Ragnar"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26170,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "То есть это должен делать крон или необходимо еще что-то сделать? Дело в том, что cron настроен и работает, а кэш приходится чистить руками постоянно. Я конечно ценю лаконичные высказывания людей, но хотелось бы подробнее. Спасибо.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1359217529,
+      "user_id": 3930,
+      "user_title": "User",
+      "username": "soft67"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26171,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "За обновление новостей отвечает крон задача DS update &#039;cat_forums&#039;.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1359218051,
+      "user_id": 93,
+      "user_title": "User",
+      "username": "Ragnar"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26175,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "эта задача включена и настроена с самого начала.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1359220463,
+      "user_id": 3930,
+      "user_title": "User",
+      "username": "soft67"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "udalenie-kes",
+  "sticky": false,
+  "tags": [],
+  "title": "Удаление кэш",
+  "url_path": "/threads/udalenie-kes.2135/",
+  "user_id": 3930,
+  "username": "soft67",
+  "view_count": 1096
+}

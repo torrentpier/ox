@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 63301,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 26510,
+  "last_post_date": 1411653320,
+  "node_id": 57,
+  "post_date": 1411645836,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63301,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Привет всем,поставила мод atom из 599 ревизии на свою 510, вроде так все работает,но при удалении поста в топике,появляется вот такая ошибка: Notice:  Undefined index: topic_id in /ajax/posts.php on line 63<br />\n подскажите пожалуйста,как ее победить?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1411645836,
+      "user_id": 5535,
+      "user_title": "User",
+      "username": "миг"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63303,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "сравните ваш viewtopic.tpl с репозиторием<br />\nПроверьте <br />\n&lt;!-- IF postrow.DELETE --&gt;&lt;a class=&quot;txtb&quot; href=&quot;&lt;!-- IF $bb_cfg[&#039;use_ajax_posts&#039;] --&gt;&quot; onclick=&quot;ajax.exec({ action: &#039;posts&#039;, post_id: {postrow.POST_ID}, topic_id : {TOPIC_ID}, type: &#039;delete&#039;}); return false;&lt;!-- ELSE --&gt;{DELETE_POST_URL}{postrow.POST_ID}&lt;!-- ENDIF --&gt;&quot;&gt;{DELETE_POST_IMG}&lt;/a&gt;{POST_BTN_SPACER}&lt;!-- ENDIF --&gt;<br />\nУ вас скорее всего отсутствует topic_id : {TOPIC_ID}",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1411652262,
+      "user_id": 97,
+      "user_title": "User",
+      "username": "Zenden"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63304,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Zenden\">сравните ваш viewtopic.tpl с репозиторием<br />\nПроверьте<br />\n&lt;!-- IF postrow.DELETE --&gt;&lt;a class=&quot;txtb&quot; href=&quot;&lt;!-- IF $bb_cfg[&#039;use_ajax_posts&#039;] --&gt;&quot; onclick=&quot;ajax.exec({ action: &#039;posts&#039;, post_id: {postrow.POST_ID}, topic_id : {TOPIC_ID}, type: &#039;delete&#039;}); return false;&lt;!-- ELSE --&gt;{DELETE_POST_URL}{postrow.POST_ID}&lt;!-- ENDIF --&gt;&quot;&gt;{DELETE_POST_IMG}&lt;/a&gt;{POST_BTN_SPACER}&lt;!-- ENDIF --&gt;<br />\nУ вас скорее всего отсутствует topic_id : {TOPIC_ID}</blockquote>большое спасибо, помогло🙂",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1411653320,
+      "user_id": 5535,
+      "user_title": "User",
+      "username": "миг"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "atom",
+  "sticky": false,
+  "tags": [],
+  "title": "Atom",
+  "url_path": "/threads/atom.26510/",
+  "user_id": 5535,
+  "username": "миг",
+  "view_count": 1143
+}

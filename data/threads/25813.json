@@ -1,0 +1,134 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 59464,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25813,
+  "last_post_date": 1398140405,
+  "node_id": 111,
+  "post_date": 1394224126,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59464,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Ссылка</b>:<br />\n<a href=\"http://code.google.com/p/torrentpier2/source/detail?r=584\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"> http://code.google.com/p/torrentpier2/source/detail?r=584</a><br />\n<br />\n<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 584: Удаление старой системы шаблонов. Просим пользоваться новой системой встроенного</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">glix08</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/install/sql/mysql.sql \n    Modify    /trunk/upload/admin/admin_forums.php \n    Delete    /trunk/upload/admin/admin_topic_templates.php \n    Modify    /trunk/upload/ajax.php \n    Modify    /trunk/upload/config.php \n    Modify    /trunk/upload/includes/functions.php \n    Modify    /trunk/upload/includes/functions_post.php \n    Modify    /trunk/upload/includes/functions_upload.php \n    Modify    /trunk/upload/includes/init_bb.php \n    Modify    /trunk/upload/includes/posting_tpl.php \n    Delete    /trunk/upload/includes/topic_templates \n    Delete    /trunk/upload/includes/topic_templates.php \n    Modify    /trunk/upload/index.php \n    Modify    /trunk/upload/language/lang_english/lang_main.php \n    Modify    /trunk/upload/language/lang_russian/lang_main.php \n    Modify    /trunk/upload/modcp.php \n    Modify    /trunk/upload/posting.php \n    Modify    /trunk/upload/robots.txt \n    Modify    /trunk/upload/templates/admin/admin_extensions.tpl \n    Delete    /trunk/upload/templates/admin/admin_topic_templates.tpl \n    Modify    /trunk/upload/templates/default/css/main.css \n    Modify    /trunk/upload/templates/default/posting_tpl.tpl \n    Delete    /trunk/upload/templates/default/topic_templates \n    Modify    /trunk/upload/templates/default/tpl_config.php \n\nУдаление старой системы шаблонов. Просим пользоваться новой системой встроенного конструктора шаблонов для их создания. В самое ближайшее время на форуме будет опубликована инструкция для администраторов о создании шаблонов в форумах, добавлении своих новых элементов в них и т.п. Исправление ошибки с циклической переадресацией страниц форума при его отключении; правки стандартного конфига аватаров; фикс рассылки уведомлений об ответах в теме заблокированным пользователям; фикс языковых переменных при ошибках загрузки аватаров; фикс нотиса на главной при отсутствии отфильтрованных тем для вывода; фикс разделения сообщений в отдельные темы; удаление устаревших атрибутов из robots.txt; правки в css (исправление ошибки с некорректным форматированием нумерованных списков и прочее); фикс ссылки на icq-профиль. Инсталлятор и мета-теги в связи с недостаточной проработанностью будут включены в одну из следующих ревизий до r600.</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1394224126,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60217,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "А где новую взять?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1397334865,
+      "user_id": 5258,
+      "user_title": "User",
+      "username": "InTeamLife"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60219,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>InTeamLife</b>, <a href=\"http://torrentpier.com/threads/%D0%92%D0%B8%D0%B4%D0%B5%D0%BE-faq-%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D0%BE%D1%80%D0%BE%D0%BC-%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D0%BE%D0%B2-%D1%87-1.25844/\" class=\"link link--internal\">http://torrentpier.com/threads/Видео-faq-Работа-с-конструктором-шаблонов-ч-1.25844/</a><br />\n <br />\n<a href=\"http://torrentpier.com/threads/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D1%8B-%D0%B4%D0%BB%D1%8F-%D0%BE%D1%84%D0%BE%D1%80%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D1%80%D0%B5%D0%BB%D0%B8%D0%B7%D0%BE%D0%B2-%D0%B2-%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D0%BE%D1%80-pack-%E2%84%961.25867/\" class=\"link link--internal\">http://torrentpier.com/threads/Шаблоны-для-оформления-релизов-в-конструктор-pack-№1.25867/</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1397365757,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1398121674,
+          "file_size": 49290,
+          "filename": "12.webp",
+          "height": 729,
+          "id": 2515,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/12-webp.2515/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2520-390f4c55a9d001cb7d9e196009491dd5.jpg?hash=7zEWUWzPeo",
+          "width": 1361
+        }
+      ],
+      "id": 60459,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Возникла проблема: скачал и установил движок на хостинг, все работает, но при создании торрентов выскакивает сообщение &quot;Не удалось зарегестрировать торрент на трекере&quot; (Прикрепил фото с ошибкой). В следствии чего не возможно скачать сам торрент файл с трекера. В настройках пролядел все, возможно что то упустил. Помогите как решить проблему. С зарания спасибо!",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1398121702,
+      "user_id": 5276,
+      "user_title": "User",
+      "username": "Дмитрий Бурцев"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60461,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Администрирование -&gt; Настройки форумов -&gt; Разрешена регистрация торрентов на трекере",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1398140405,
+      "user_id": 4866,
+      "user_title": "User",
+      "username": "Bender"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "revision-584-udalenie-staroj-sistemy-sablonov-prosim-pol-zovat-sa-novoj-sistemoj-vstroennogo",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 584: Удаление старой системы шаблонов. Просим пользоваться новой системой встроенного",
+  "url_path": "/threads/revision-584-udalenie-staroj-sistemy-sablonov-prosim-pol-zovat-sa-novoj-sistemoj-vstroennogo.25813/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 3470
+}

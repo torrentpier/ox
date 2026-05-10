@@ -1,0 +1,182 @@
+{
+  "custom_fields": {
+    "torrentpier": ""
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 97658,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42692,
+  "last_post_date": 1755024859,
+  "node_id": 57,
+  "post_date": 1754993561,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1754993549,
+          "file_size": 239896,
+          "filename": "Снимок экрана (588).webp",
+          "height": 1080,
+          "id": 6497,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-ekrana-588-webp.6497/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6501-b2164222b00199c6d4df0f0c1fd6d6a0.jpg?hash=Wdpom9bsLO",
+          "width": 1920
+        }
+      ],
+      "id": 97658,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<h4 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-forum-otklucen-na-tehniceskoe-obsluzivanie\"></a>Форум отключен на техническое обслуживание&#8203;<a class=\"hoverLink\" href=\"#-forum-otklucen-na-tehniceskoe-obsluzivanie\" title=\"Permanent link\"></a></h4><hr /><a href=\"https://ivtorrent.ru/admin/index.php?pane=right#\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Снять блокировку</a> (форум заблокирован триггером cron-заданий, вы можете снять блокировку в любое время)<br />\n<br />\n<br />\n<br />\nРебятки разобраться что то не могу ,подскажите пожалуйста , Cron блокирует форум . Что не так",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1754993561,
+      "user_id": 11055,
+      "user_title": "User",
+      "username": "HuliGan37"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1754994037,
+          "file_size": 197396,
+          "filename": "Снимок экрана (589).webp",
+          "height": 1080,
+          "id": 6498,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-ekrana-589-webp.6498/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6502-7d0b63d54796b9a765e9257a58e94c8e.jpg?hash=81VU6AMLF2",
+          "width": 1920
+        }
+      ],
+      "id": 97659,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вот опять",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1754994044,
+      "user_id": 11055,
+      "user_title": "User",
+      "username": "HuliGan37"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97660,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<div class='xfBb-table'>\n<table style='width: 100%'><tr><th><div style=\"text-align: left\">library/includes/datastore/build_cat_forums.php(40) [0,000s] <i>1 rows</i>&#8203;</div></th><th><div style=\"text-align: right\">[MySQL] db1.b238565_ivtorrent :: Query #1&#8203;</div></th></tr><tr><td><div class='xfBb-table'>\n<table style='width: 100%'><tr><td><div style=\"text-align: center\"><b>id</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>select_type</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>table</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>type</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>possible_keys</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>key</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>key_len</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>ref</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>rows</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>Extra</b>&#8203;</div></td></tr><tr><td>1</td><td>SIMPLE</td><td>bb_categories</td><td>system</td><td></td><td></td><td></td><td></td><td>1</td><td></td></tr></table>\n</div></td><td></td></tr></table>\n</div>SELECT * FROM bb_categories ORDER BY cat_order  <br />\n<div class='xfBb-table'>\n<table style='width: 100%'><tr><th><div style=\"text-align: left\">library/includes/datastore/build_cat_forums.php(53) [0,000s] <i>1 rows</i>&#8203;</div></th><th><div style=\"text-align: right\">[MySQL] db1.b238565_ivtorrent :: Query #2&#8203;</div></th></tr><tr><td><div class='xfBb-table'>\n<table style='width: 100%'><tr><td><div style=\"text-align: center\"><b>id</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>select_type</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>table</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>type</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>possible_keys</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>key</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>key_len</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>ref</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>rows</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>Extra</b>&#8203;</div></td></tr><tr><td>1</td><td>SIMPLE</td><td>f</td><td>system</td><td>cat_id</td><td></td><td></td><td></td><td>1</td><td></td></tr><tr><td>1</td><td>SIMPLE</td><td>c</td><td>system</td><td>PRIMARY</td><td></td><td></td><td></td><td>1</td><td></td></tr></table>\n</div></td><td></td></tr></table>\n</div>SELECT f.* FROM bb_forums f, bb_categories c WHERE f.cat_id = c.cat_id ORDER BY c.cat_order, f.forum_order  <br />\n<div class='xfBb-table'>\n<table style='width: 100%'><tr><th><div style=\"text-align: left\">library/includes/datastore/build_cat_forums.php(142) [0,000s] <i>1 rows</i>&#8203;</div></th><th><div style=\"text-align: right\">[MySQL] db1.b238565_ivtorrent :: Query #3&#8203;</div></th></tr><tr><td><div class='xfBb-table'>\n<table style='width: 100%'><tr><td><div style=\"text-align: center\"><b>id</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>select_type</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>table</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>type</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>possible_keys</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>key</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>key_len</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>ref</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>rows</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>Extra</b>&#8203;</div></td></tr><tr><td>1</td><td>SIMPLE</td><td>bb_topics</td><td>system</td><td>forum_id</td><td></td><td></td><td></td><td>1</td><td></td></tr></table>\n</div></td><td></td></tr></table>\n</div>SELECT topic_id, topic_time, topic_title, forum_id FROM bb_topics WHERE forum_id IN (1) AND topic_moved_id = 0 ORDER BY topic_time DESC LIMIT 5  <br />\n<div class='xfBb-table'>\n<table style='width: 100%'><tr><th><div style=\"text-align: left\">library/includes/datastore/build_cat_forums.php(161) [0,000s]&#8203;</div></th><th><div style=\"text-align: right\">[MySQL] db1.b238565_ivtorrent :: Query #4&#8203;</div></th></tr><tr><td><div class='xfBb-table'>\n<table style='width: 100%'><tr><td><div style=\"text-align: center\"><b>id</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>select_type</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>table</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>type</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>possible_keys</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>key</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>key_len</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>ref</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>rows</b>&#8203;</div></td><td><div style=\"text-align: center\"><b>Extra</b>&#8203;</div></td></tr><tr><td>1</td><td>SIMPLE</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>Impossible WHERE noticed after reading const tables</td></tr></table>\n</div></td><td></td></tr></table>\n</div>SELECT topic_id, topic_time, topic_title, forum_id FROM bb_topics WHERE forum_id IN (2) AND topic_moved_id = 0 ORDER BY topic_time DESC LIMIT 5  <br />\ndatabase: db1 [MySQL]<br />\n0,001s [44%] connect to: &#039;78.108.80.36:3306&#039; # library/includes/datastore/build_cat_forums.php(40)<br />\n0,000s [5%] select db: &#039;b238565_ivtorrent&#039; # library/includes/datastore/build_cat_forums.php(40)<br />\n0,000s [12%] SELECT * FROM bb_categories ORDER BY cat_order # 1 rows [library/includes/datastore/build_cat_forums.php(40)]<br />\n0,000s [14%] SELECT f.* FROM bb_forums f, bb_categories c WHERE f.cat_id = c.cat_id ORDER BY c.cat_order, f.forum_order # 1 rows [library/includes/datastore/build_cat_forums.php(53)]<br />\n0,000s [14%] SELECT topic_id, topic_time, topic_title, forum_id FROM bb_topics WHERE forum_id IN (1) AND topic_moved_id = 0 ORDER BY topic_time DESC LIMIT 5 # 1 rows [library/includes/datastore/build_cat_forums.php(142)]<br />\n0,000s [13%] SELECT topic_id, topic_time, topic_title, forum_id FROM bb_topics WHERE forum_id IN (2) AND topic_moved_id = 0 ORDER BY topic_time DESC LIMIT 5 # library/includes/datastore/build_cat_forums.php(161)<br />\ncache: bb_config [Filecache]<br />\n0,000s [100%] cache-&gt;get(&#039;config_bb_config&#039;) # library/includes/cache/file.php(24)<br />\ncache: bb_cache [Filecache]<br />\n0,000s [23%] cache-&gt;get(&#039;censored&#039;) # library/includes/cache/file.php(24)<br />\n0,000s [25%] cache-&gt;get(&#039;index_sql_dc343f5b9864f0e4a25b2d23a9486435&#039;) # library/includes/cache/file.php(24)<br />\n0,000s [23%] cache-&gt;get(&#039;btu_2&#039;) # library/includes/cache/file.php(24)<br />\n0,000s [28%] cache-&gt;get(&#039;online_short_ru&#039;) # library/includes/cache/file.php(24)<br />\ncache: session_cache [Filecache]<br />\n0,000s [100%] cache-&gt;get(&#039;NGaFoO2IkTLqC9MbqolF&#039;) # library/includes/cache/file.php(24)<br />\ncache: datastore [Filecache]<br />\n0,000s [14%] cache-&gt;get(&#039;cat_forums&#039;) # library/includes/datastore/file.php(74)<br />\n0,000s [8%] cache-&gt;get(&#039;stats&#039;) # library/includes/datastore/file.php(74)<br />\n0,000s [6%] cache-&gt;get(&#039;moderators&#039;) # library/includes/datastore/file.php(74)<br />\n0,000s [6%] cache-&gt;get(&#039;latest_news&#039;) # library/includes/datastore/file.php(74)<br />\n0,000s [5%] cache-&gt;get(&#039;network_news&#039;) # library/includes/datastore/file.php(74)<br />\n0,000s [7%] cache-&gt;get(&#039;ranks&#039;) # library/includes/datastore/file.php(74)<br />\n0,000s [17%] cache-&gt;set(&#039;cat_forums&#039;) # library/includes/datastore/file.php(21)<br />\n0,000s [9%] cache-&gt;set(&#039;jumpbox&#039;) # library/includes/datastore/file.php(21)<br />\n0,000s [9%] cache-&gt;set(&#039;viewtopic_forum_select&#039;) # library/includes/datastore/file.php(21)<br />\n0,000s [9%] cache-&gt;set(&#039;latest_news&#039;) # library/includes/datastore/file.php(21)<br />\n0,000s [8%] cache-&gt;set(&#039;network_news&#039;) # library/includes/datastore/file.php(21)",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1754995438,
+      "user_id": 11055,
+      "user_title": "User",
+      "username": "HuliGan37"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1754998779,
+          "file_size": 53710,
+          "filename": "Снимок.webp",
+          "height": 650,
+          "id": 6499,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-webp.6499/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6503-481a06a09534b2c8faa3a71923e82805.jpg?hash=L2BdZa8o9b",
+          "width": 1711
+        }
+      ],
+      "id": 97661,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/attachments/6499/\"><img src=\"https://torrentpier.com/data/attachments/6/6503-481a06a09534b2c8faa3a71923e82805.jpg?hash=L2BdZa8o9b\" alt=\"Снимок.webp\" /></a> не знаю каком задаче",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1754998790,
+      "user_id": 7621,
+      "user_title": "User",
+      "username": "DimaUZB2001"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97662,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Не знаю зачем установил устаревшая 2.1.5 есть же стабильная 2.4.11",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1754999538,
+      "user_id": 7621,
+      "user_title": "User",
+      "username": "DimaUZB2001"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97663,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Надо отключить крон в движке. И сделать выполнение крона через crontab.<br />\n<br />\nИными словами - отвязка крона. Поищите на форуме",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1755024859,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "forum-otklucen-na-tehniceskoe-obsluzivanie-kak-ispravit",
+  "sticky": false,
+  "tags": [],
+  "title": "Форум отключен на техническое обслуживание. Как исправить?",
+  "url_path": "/threads/forum-otklucen-na-tehniceskoe-obsluzivanie-kak-ispravit.42692/",
+  "user_id": 11055,
+  "username": "HuliGan37",
+  "view_count": 618
+}

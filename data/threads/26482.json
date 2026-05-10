@@ -1,0 +1,129 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 63094,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 26482,
+  "last_post_date": 1410796412,
+  "node_id": 80,
+  "post_date": 1410709307,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1410709213,
+          "file_size": 27152,
+          "filename": "00001.webp",
+          "height": 222,
+          "id": 2646,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/00001-webp.2646/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2651-e947306a5a7a3bd07898f051d1756d85.jpg?hash=Hdt3jSTY31",
+          "width": 547
+        }
+      ],
+      "id": 63094,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1410709755,
+      "message_parsed": "Нашол баг, но наверно не ошибка.<br />\nВ конструкторе/ выбор самого последнего элемента/ Тип<br />\nОшибка не считающююся багом/---&gt; Очепятка :brb: , наверно вместо Дорама нужно Драма<br />\nКак исправить  и сделать дополнения в элементы выбора в шаблоне конструктора? Плиз.<br />\nХМ! поехали дальше тестить.<br />\nСкриншот прилагается.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1410709307,
+      "user_id": 4803,
+      "user_title": "User",
+      "username": "BigSerg"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63095,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D1%80%D0%B0%D0%BC%D0%B0\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://ru.wikipedia.org/wiki/Дорама</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1410709735,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63096,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо, я этого не учёл.<br />\nДорама, ХМ.. :banghead: японамать!:banghead:<br />\nИ всё же, как дополнить элементы в конструкторе?<br />\nАвтора вставить и тд.<br />\n<br />\nНайду сам есествено, но это займёт время.<br />\nExile, плиз, помоги где копать код.<br />\n<br />\nСпасибо заранее.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1410715934,
+      "user_id": 4803,
+      "user_title": "User",
+      "username": "BigSerg"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63098,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"BigSerg\">Спасибо, я этого не учёл.<br />\nДорама, ХМ.. :banghead: японамать!:banghead:<br />\nИ всё же, как дополнить элементы в конструкторе?<br />\nАвтора вставить и тд.<br />\n<br />\nНайду сам есествено, но это займёт время.<br />\nExile, плиз, помоги где копать код.<br />\n<br />\nСпасибо заранее.</blockquote>В файле - <b>posting_tpl.tpl</b> в template",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1410723613,
+      "user_id": 225,
+      "user_title": "User",
+      "username": "Bullit"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63136,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Bullit, Большое спасибо.<br />\nМного не хватало элементов.<br />\nВсё что хотел добавил. OK!",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1410796412,
+      "user_id": 4803,
+      "user_title": "User",
+      "username": "BigSerg"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 4,
+  "slug": "opecatki-v-sablone",
+  "sticky": false,
+  "tags": [],
+  "title": "Опечатки в шаблоне",
+  "url_path": "/threads/opecatki-v-sablone.26482/",
+  "user_id": 4803,
+  "username": "BigSerg",
+  "view_count": 1210
+}

@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61129,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25973,
+  "last_post_date": 1402857483,
+  "node_id": 111,
+  "post_date": 1402857483,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61129,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Ссылка</b>:<br />\n<a href=\"http://code.google.com/p/torrentpier2/source/detail?r=587\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"> http://code.google.com/p/torrentpier2/source/detail?r=587</a><br />\n<br />\n<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 587: Добавления в список contributors.txt; временное удаление файла readme.txt (до сл</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">glix08</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Delete    /trunk/ReadMe.txt \n    Modify    /trunk/contributors.txt \n    Modify    /trunk/other/converter/TBDevYSE_pre6/root/convert.php \n    Modify    /trunk/upgrade/r575-poll_upgrade.php \n    Modify    /trunk/upload/admin/admin_forums.php \n    Modify    /trunk/upload/config.php \n    Modify    /trunk/upload/includes/functions_report.php \n    Modify    /trunk/upload/includes/functions_report_admin.php \n    Modify    /trunk/upload/includes/functions_selects.php \n    Modify    /trunk/upload/includes/report_hack/report_general.php \n    Modify    /trunk/upload/includes/report_hack/report_post.php \n    Modify    /trunk/upload/includes/report_hack/report_privmsg.php \n    Modify    /trunk/upload/includes/report_hack/report_topic.php \n    Modify    /trunk/upload/includes/report_hack/report_user.php \n    Add    /trunk/upload/misc/bootstrap \n    Add    /trunk/upload/misc/bootstrap/css \n    Add    /trunk/upload/misc/bootstrap/css/bootstrap-theme.css \n    Add    /trunk/upload/misc/bootstrap/css/bootstrap-theme.css.map \n    Add    /trunk/upload/misc/bootstrap/css/bootstrap-theme.min.css \n    Add    /trunk/upload/misc/bootstrap/css/bootstrap.css \n    Add    /trunk/upload/misc/bootstrap/css/bootstrap.css.map \n    Add    /trunk/upload/misc/bootstrap/css/bootstrap.min.css \n    Add    /trunk/upload/misc/bootstrap/fonts \n    Add    /trunk/upload/misc/bootstrap/fonts/glyphicons-halflings-regular.eot \n    Add    /trunk/upload/misc/bootstrap/fonts/glyphicons-halflings-regular.svg \n    Add    /trunk/upload/misc/bootstrap/fonts/glyphicons-halflings-regular.ttf \n    Add    /trunk/upload/misc/bootstrap/fonts/glyphicons-halflings-regular.woff \n    Add    /trunk/upload/misc/bootstrap/js \n    Add    /trunk/upload/misc/bootstrap/js/bootstrap.js \n    Add    /trunk/upload/misc/bootstrap/js/bootstrap.min.js \n    Modify    /trunk/upload/templates/admin/admin_forums.tpl \n    Modify    /trunk/upload/templates/default/memberlist.tpl \n    Modify    /trunk/upload/templates/default/page_header.tpl \n    Modify    /trunk/upload/templates/default/report_index_body.tpl \n    Modify    /trunk/upload/templates/default/report_open_body.tpl \n    Modify    /trunk/upload/templates/default/usercp_viewprofile.tpl \n    Modify    /trunk/upload/templates/default/viewtopic_attach.tpl \n\nДобавления в список contributors.txt; временное удаление файла readme.txt (до следующей ревизии). Добавление Bootstrap в основную поставку движка (задел на r600 и выше). Исправления ошибок по запросам тестеров. Исправлена ошибка с некорректным выбором опций отображения на главной странице; исправлена ошибка с некорректным обновлением кеша после изменений в структуру форумов (из-за этого регулярно возникали нотисы); исправлена ошибка со скриптом конвертации на новую систему голосований; прочие мелкие изменения и исправления опечаток.</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1402857483,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "revision-587-dobavlenia-v-spisok-contributors-txt-vremennoe-udalenie-fajla-readme-txt-do-sl",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 587: Добавления в список contributors.txt; временное удаление файла readme.txt (до сл",
+  "url_path": "/threads/revision-587-dobavlenia-v-spisok-contributors-txt-vremennoe-udalenie-fajla-readme-txt-do-sl.25973/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 2232
+}

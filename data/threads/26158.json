@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 62448,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 26158,
+  "last_post_date": 1410701333,
+  "node_id": 80,
+  "post_date": 1409685123,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62448,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "1) /profile.php?mode=sendpassword<br />\nКод подтверждения: <span style=\"color: #ff6600\"><b>*</b></span><br />\n <br />\n2) Поиск по трекеру, по форуму, локализация: <span style=\"color: #ff6600\"><span style=\"color: #ff6600\">по info_hash</span> -  </span><span style=\"color: #ff6600\">по инфо-хешу</span><br />\n <br />\n3) локализация: <span style=\"color: #ff6600\">temporarily disabled - </span><span style=\"color: #ff6600\">временно отключены</span><br />\n <br />\n4) Найти:<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">#search-text {\n    background: none repeat scroll 0 0 white;\n    border: 1px solid silver;\n    padding: 1px;\n    width: 300px;\n}</pre> <br />\n <br />\nЗаменить:<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">#search-text {\n    background: none repeat scroll 0 0 white;\n    border: 1px solid silver;\n    padding: 2px 0 3px 4px;\n    width: 300px;\n}</pre> <br />\n5) <a href=\"http://validator.w3.org/check?uri=http%3A%2F%2Fdemo.torrentpier.com%2Findex.php&amp;charset=%28detect+automatically%29&amp;doctype=Inline&amp;group=0\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://validator.w3.org/check?uri=http://demo.torrentpier.com/index.php&amp;charset=(detect automatically)&amp;doctype=Inline&amp;group=0</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1409685123,
+      "user_id": 322,
+      "user_title": "User",
+      "username": "botyk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63089,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Частично реализовано в альфа-билде. Спасибо.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1410701333,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 1,
+  "slug": "osibki-validacii",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибки валидации",
+  "url_path": "/threads/osibki-validacii.26158/",
+  "user_id": 322,
+  "username": "botyk",
+  "view_count": 1174
+}

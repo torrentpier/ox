@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 74851,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 35240,
+  "last_post_date": 1423559546,
+  "node_id": 90,
+  "post_date": 1423549113,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 74851,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Добрый день форумчане.<br />\nТрекер на ocean. Тариф: 1 ядро 1024 оперативы Панель isp5<br />\nБаза без поисковых таблиц 1,36 Гб<br />\nРелизов примерно: 90 000<br />\n<br />\nСтолкнулся с такой проблемой. Утром Attach maintenance выполняется 50  минут, а Board maintenance почти 1,5 часа, естно вешает весь сайт. График нагрузки сервера с ocean^<br />\n<br />\n<img src=\"http://i57.fastpic.ru/big/2015/0210/be/a3fb21b77f3703323d8e85e688382dbe.png\" alt=\"\" /><br />\nЯ так понимаю что все упирается в проц. Потому как мускулу я отдал памяти по максимуму, от сущ оперетивы. Мускл кушает примерно 150 - 160 Мб. Причем проц сильно не грузит.<br />\n<br />\nВопросы:<br />\n1. Почему хостер не отдает 100% процессора, т.е. по графику видно что 50% и все больше, упирается.<br />\n2. Даст ли эффект если таблицы bb_posts_text и bb_posts_html вынести в отдельную базу ?<br />\n3. Если даст эффект, то как это реализовать, создать ещё одну базу, и вынести туда эти таблицы, и прописть в в таблице db2 ?<br />\n<br />\nВ общем посоветуйте как быть, не хочется переходить на тариф выше.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1423549113,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 74879,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">Релизов примерно: 90 000</blockquote>Проблема в этом. Не самая оптимальная работа с синхронизацией тем. Есть простое решение, которое пару раз использовал на крупных проектах - допустимая деградация для сохранения производительности. Позднее изменим механизм работы с большими крон-задачами, а пока использовать его советую.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">Attach maintenance</blockquote>Отключить выполнение задачи. Оно не критично в 2.1+.<br />\n<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">Board maintenance</blockquote>Закомментировать вот эту <a href=\"https://github.com/torrentpier/torrentpier/blob/master/library/includes/cron/jobs/board_maintenance.php#L8\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://github.com/torrentpier/torr...y/includes/cron/jobs/board_maintenance.php#L8</a> и вот эту строки <a href=\"https://github.com/torrentpier/torrentpier/blob/master/library/includes/cron/jobs/board_maintenance.php#L10\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://github.com/torrentpier/torr.../includes/cron/jobs/board_maintenance.php#L10</a> - в 2.1+ уже нет особых проблем с битьем таблиц, поэтому задание синхронизации также избыточно.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1423559546,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "razdelenie-bazy-dannyh",
+  "sticky": false,
+  "tags": [],
+  "title": "Разделение базы данных",
+  "url_path": "/threads/razdelenie-bazy-dannyh.35240/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1929
+}

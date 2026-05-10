@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58886,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25756,
+  "last_post_date": 1391877978,
+  "node_id": 57,
+  "post_date": 1391873658,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58886,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Каким то образом возможно выдернуть магнет ссылку на релиз, в случае если magnet отключен в админке и недоступна скачка без реги ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1391873658,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58887,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "можно",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1391875675,
+      "user_id": 0,
+      "user_title": "",
+      "username": "rutrackerme"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58888,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Нужно знать хэш раздачи",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1391875938,
+      "user_id": 4452,
+      "user_title": "User",
+      "username": "Kof"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58889,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "+1 к вышеотписавшемуся, то есть нет, нельзя.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1391877978,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "magnet",
+  "sticky": false,
+  "tags": [],
+  "title": "Magnet",
+  "url_path": "/threads/magnet.25756/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1073
+}

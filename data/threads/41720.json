@@ -1,0 +1,74 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 91290,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 41720,
+  "last_post_date": 1494710772,
+  "node_id": 110,
+  "post_date": 1494710772,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1494710562,
+          "file_size": 56704,
+          "filename": "upload_2017-5-14_0-22-41.webp",
+          "height": 1386,
+          "id": 4830,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/upload_2017-5-14_0-22-41-webp.4830/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4834-542e0cdfb0e0841c7d4e1d6c64c3e03b.jpg?hash=7fuMRRlJg_",
+          "width": 2424
+        }
+      ],
+      "id": 91290,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\n<br />\nНи для кого не секрет, что в настоящее время в движке локализации три - английская, русская и украинская. Однако для успешного развития проекта так или иначе нужна аудитория и аудитория разная - поэтому языков мы хотим больше. Значительно больше. В связи с этим хотелось бы напомнить, что у нас есть проект коллективного перевода на Crowdin: <a href=\"https://crowdin.com/project/torrentpier\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">TorrentPier — Translation Project on Crowdin</a><br />\n<br />\nЧто нужно перед релизом 2.1.6? Проверить корректность перевода движка на <a href=\"https://crowdin.com/project/torrentpier/ru#\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">русский</a> и <a href=\"https://crowdin.com/project/torrentpier/uk#\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">украинский</a> язык, а в особенности на английский. Теперь основной язык движка для перевода - английский, поэтому появилась возможность на Crowdin <a href=\"https://crowdin.com/project/torrentpier/en#\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">править английскую локализацию</a>. Знаете, что какая-то фраза должна выглядеть иначе? Предлагайте перевод и он будет использоваться в английской локализации.<br />\n<br />\nОбратите внимание, что при переводе надо работать только с языковыми файлами master-ветки. Заходите на страницу проекта, выбираете язык, с которым хотите поработать, и в списке файлов выбираете тот, который требует перевода из папки master, как на скриншоте:<br />\n<div style=\"text-align: center\"><a href=\"https://torrentpier.com/attachments/4830/\"><img src=\"https://torrentpier.com/data/attachments/4/4834-542e0cdfb0e0841c7d4e1d6c64c3e03b.jpg?hash=7fuMRRlJg_\" alt=\"upload_2017-5-14_0-22-41.webp\" /></a>&#8203;</div>Дальнейшая работа с интерфейсом не должна составить особых проблем.<br />\n<br />\nВ версию 2.1.6 будут включены все языки, <a href=\"https://crowdin.com/project/torrentpier\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">представленные на странице перевода проекта</a>. Если какой-то язык будет не завершен полностью - не страшно, допереводить его будут уже живые пользователи, благо таковая возможность появится для не полностью завершенных языков.<br />\n<br />\nСпасибо за внимание и заранее спасибо за помощь.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1494710772,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "pomos-s-perevodom-proekta-na-crowdin",
+  "sticky": false,
+  "tags": [
+    "crowdin",
+    "локализация",
+    "перевод"
+  ],
+  "title": "Помощь с переводом проекта на Crowdin",
+  "url_path": "/threads/pomos-s-perevodom-proekta-na-crowdin.41720/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 1307
+}

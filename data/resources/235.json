@@ -1,0 +1,304 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Блэкджек by ВаленокPC.zip",
+      "id": 6226,
+      "local_path": null,
+      "r2_key": null,
+      "size": 83996,
+      "src_url": "https://torrentpier.com/api/resource-versions/565/download?file=6226"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в папке с модом. Файл: Установка.txt.",
+    "owner": "ВаленокPC",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1433461226,
+      "file_size": 28574,
+      "filename": "Image 1.webp",
+      "height": 223,
+      "id": 3923,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/image-1-webp.3923/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3927-1009f87283c2d5e03c66a72da25a3945.jpg?hash=suCdyOnrIR",
+      "width": 1882
+    },
+    {
+      "attach_date": 1433461226,
+      "file_size": 18058,
+      "filename": "Image 2.webp",
+      "height": 407,
+      "id": 3924,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/image-2-webp.3924/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3928-8bc802f4bc9f8345bd1bf0229e5512c3.jpg?hash=SpJRr-4f-r",
+      "width": 754
+    },
+    {
+      "attach_date": 1433461227,
+      "file_size": 16190,
+      "filename": "Image 3.webp",
+      "height": 422,
+      "id": 3925,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/image-3-webp.3925/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3929-48b906b5bbc0e613cc61eedfa6fad2b7.jpg?hash=JqpQXDZ1MO",
+      "width": 739
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Карточная игра Блэкджек (англ. Blackjack). Игра ведется на бонусы с другими игроками. Делаешь ставку и ждешь, пока ее кто-то примет.",
+  "download_count": 1388,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/235.jpg?1433576186",
+  "id": 235,
+  "is_fileless": null,
+  "last_update": 1732885490,
+  "rating_avg": 5,
+  "rating_count": 2,
+  "resource_date": 1433448167,
+  "resource_state": "visible",
+  "slug": "blekdzek",
+  "tag_line": "Карточная игра Блэкджек (англ. Blackjack).",
+  "tags": [
+    "блекджек",
+    "блэкджек",
+    "игра",
+    "игра blackjack",
+    "игра блек джек",
+    "игра блэкджек",
+    "карточная игра",
+    "карты",
+    "развлечения"
+  ],
+  "title": "Блэкджек",
+  "url_path": "/resources/blekdzek.235/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.4.3",
+  "versions": [
+    {
+      "download_count": 279,
+      "files": [
+        {
+          "filename": "[FULL] Блэкджек by ВаленокPC.zip",
+          "id": 6226,
+          "local_path": null,
+          "r2_key": null,
+          "size": 83996,
+          "src_url": "https://torrentpier.com/api/resource-versions/565/download?file=6226"
+        }
+      ],
+      "id": 565,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1732885490,
+      "version_state": "visible",
+      "version_string": "v1.4.3",
+      "view_url": "https://torrentpier.com/resources/blekdzek.235/version/565/"
+    },
+    {
+      "download_count": 109,
+      "files": [
+        {
+          "filename": "[FULL] Блэкджек by ВаленокPC.zip",
+          "id": 5831,
+          "local_path": null,
+          "r2_key": null,
+          "size": 69296,
+          "src_url": "https://torrentpier.com/api/resource-versions/467/download?file=5831"
+        }
+      ],
+      "id": 467,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1708158913,
+      "version_state": "visible",
+      "version_string": "v1.4.2",
+      "view_url": "https://torrentpier.com/resources/blekdzek.235/version/467/"
+    },
+    {
+      "download_count": 115,
+      "files": [
+        {
+          "filename": "[FULL] Блэкджек by ВаленокPC.zip",
+          "id": 5790,
+          "local_path": null,
+          "r2_key": null,
+          "size": 69308,
+          "src_url": "https://torrentpier.com/api/resource-versions/449/download?file=5790"
+        }
+      ],
+      "id": 449,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1707026119,
+      "version_state": "visible",
+      "version_string": "v1.4.1",
+      "view_url": "https://torrentpier.com/resources/blekdzek.235/version/449/"
+    },
+    {
+      "download_count": 127,
+      "files": [
+        {
+          "filename": "[FULL] Блэкджек by ВаленокPC.zip",
+          "id": 5789,
+          "local_path": null,
+          "r2_key": null,
+          "size": 68785,
+          "src_url": "https://torrentpier.com/api/resource-versions/448/download?file=5789"
+        }
+      ],
+      "id": 448,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1706988044,
+      "version_state": "visible",
+      "version_string": "v1.4.0",
+      "view_url": "https://torrentpier.com/resources/blekdzek.235/version/448/"
+    },
+    {
+      "download_count": 173,
+      "files": [
+        {
+          "filename": "Blackjack.zip",
+          "id": 4033,
+          "local_path": null,
+          "r2_key": null,
+          "size": 50829,
+          "src_url": "https://torrentpier.com/api/resource-versions/351/download?file=4033"
+        }
+      ],
+      "id": 351,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1439355017,
+      "version_state": "visible",
+      "version_string": "1.3.2",
+      "view_url": "https://torrentpier.com/resources/blekdzek.235/version/351/"
+    },
+    {
+      "download_count": 117,
+      "files": [
+        {
+          "filename": "Blackjack.zip",
+          "id": 3935,
+          "local_path": null,
+          "r2_key": null,
+          "size": 50965,
+          "src_url": "https://torrentpier.com/api/resource-versions/343/download?file=3935"
+        }
+      ],
+      "id": 343,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1433878986,
+      "version_state": "visible",
+      "version_string": "1.3.1",
+      "view_url": "https://torrentpier.com/resources/blekdzek.235/version/343/"
+    },
+    {
+      "download_count": 125,
+      "files": [
+        {
+          "filename": "Blackjack.zip",
+          "id": 3932,
+          "local_path": null,
+          "r2_key": null,
+          "size": 51258,
+          "src_url": "https://torrentpier.com/api/resource-versions/342/download?file=3932"
+        }
+      ],
+      "id": 342,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1433793017,
+      "version_state": "visible",
+      "version_string": "1.3.0",
+      "view_url": "https://torrentpier.com/resources/blekdzek.235/version/342/"
+    },
+    {
+      "download_count": 121,
+      "files": [
+        {
+          "filename": "Blackjack.zip",
+          "id": 3930,
+          "local_path": null,
+          "r2_key": null,
+          "size": 49110,
+          "src_url": "https://torrentpier.com/api/resource-versions/341/download?file=3930"
+        }
+      ],
+      "id": 341,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1433660547,
+      "version_state": "visible",
+      "version_string": "0.2.1",
+      "view_url": "https://torrentpier.com/resources/blekdzek.235/version/341/"
+    },
+    {
+      "download_count": 128,
+      "files": [
+        {
+          "filename": "Blackjack.zip",
+          "id": 3929,
+          "local_path": null,
+          "r2_key": null,
+          "size": 49103,
+          "src_url": "https://torrentpier.com/api/resource-versions/340/download?file=3929"
+        }
+      ],
+      "id": 340,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1433553581,
+      "version_state": "visible",
+      "version_string": "0.2.0",
+      "view_url": "https://torrentpier.com/resources/blekdzek.235/version/340/"
+    },
+    {
+      "download_count": 119,
+      "files": [
+        {
+          "filename": "Blackjack.zip",
+          "id": 3916,
+          "local_path": null,
+          "r2_key": null,
+          "size": 49287,
+          "src_url": "https://torrentpier.com/api/resource-versions/339/download?file=3916"
+        }
+      ],
+      "id": 339,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1433448167,
+      "version_state": "visible",
+      "version_string": "0.1 (beta)",
+      "view_url": "https://torrentpier.com/resources/blekdzek.235/version/339/"
+    }
+  ],
+  "view_count": 4114
+}

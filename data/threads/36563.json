@@ -1,0 +1,97 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 76737,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 96,
+    "title": "Modifications archive"
+  },
+  "id": 36563,
+  "last_post_date": 1425165749,
+  "node_id": 96,
+  "post_date": 1424966653,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1424966577,
+          "file_size": 24734,
+          "filename": "26-02-2015 19-02-40.webp",
+          "height": 233,
+          "id": 2989,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/26-02-2015-19-02-40-webp.2989/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2993-53265dce8ddd32fb0c82fe303600766a.jpg?hash=SaF40hnDVB",
+          "width": 744
+        }
+      ],
+      "id": 76737,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Очередной супермод<br />\n<a href=\"https://torrentpier.com/attachments/2989/\"><img src=\"https://torrentpier.com/data/attachments/2/2993-53265dce8ddd32fb0c82fe303600766a.jpg?hash=SaF40hnDVB\" alt=\"26-02-2015 19-02-40.webp\" /></a> <br />\nв конец functions.php<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">function rank_image_lang($rank_image,$ulang=&quot;english&quot;) \n{\n    global $bb_cfg;\n    if ($bb_cfg[&#039;multilang&#039;] AND mb_strstr($rank_image, &quot;||&quot;)){\n\n            if($ulang==&quot;russian&quot;){\n                $rank_image = explode(&quot;||&quot;,$rank_image);\n                $rank_image =$rank_image[0];\n                return $rank_image;\n            }\n            if($ulang==&quot;english&quot;){\n                $rank_image = explode(&quot;||&quot;,$rank_image);\n                $rank_image =$rank_image[1];\n                return $rank_image;\n            }\n    }\n    else {\n        return $rank_image;\n    }\n}</pre><br />\nadmin_ranks.php<br />\n<br />\nпримерно на 85 строке заменяем на<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">            &quot;IMAGE&quot; =&gt; !empty($rank_info[&#039;rank_image&#039;]) ? rank_image_lang($rank_info[&#039;rank_image&#039;],&quot;russian&quot;) : &quot;images/ranks/rank_image.png&quot;,\n            &quot;IMAGE_EN&quot; =&gt; !empty($rank_info[&#039;rank_image&#039;]) ? rank_image_lang($rank_info[&#039;rank_image&#039;],&quot;english&quot;) : &quot;images/ranks/rank_image.png&quot;,\n            &quot;STYLE&quot; =&gt; !empty($rank_info[&#039;rank_style&#039;]) ? $rank_info[&#039;rank_style&#039;] : &#039;&#039;,\n            &quot;IMAGE_DISPLAY&quot; =&gt; !empty($rank_info[&#039;rank_image&#039;]) ? &#039;&lt;img style=&quot;vertical-align: middle;&quot; src=&quot;../&#039; . rank_image_lang($rank_info[&#039;rank_image&#039;],&quot;russian&quot;) . &#039;&quot; /&gt;&#039; : &quot;&quot;,\n            &quot;IMAGE_DISPLAY_EN&quot; =&gt; !empty($rank_info[&#039;rank_image&#039;]) ? &#039;&lt;img style=&quot;vertical-align: middle;&quot; src=&quot;../&#039; . rank_image_lang($rank_info[&#039;rank_image&#039;],&quot;english&quot;) . &#039;&quot; /&gt;&#039; : &quot;&quot;,</pre><br />\nв самом конце<br />\n&quot;IMAGE_DISPLAY&quot; =&gt; .......,<br />\nзаменяем на<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&quot;IMAGE_DISPLAY&quot; =&gt; ($rank_rows[$i][&#039;rank_image&#039;]) ? &#039;&lt;img style=&quot;vertical-align: middle;&quot; src=&quot;../&#039; . rank_image_lang($rank_rows[$i][&#039;rank_image&#039;],$userdata[&quot;user_lang&quot;]) . &#039;&quot; /&gt;&#039; : &quot;&quot;,</pre><br />\nв admin_ranks.tpl<br />\n<br />\nпосле<br />\n&lt;tr&gt;<br />\n    &lt;td valign=&quot;top&quot;&gt;&lt;h4&gt;{L_RANK_IMAGE}:&lt;/h4&gt;&lt;br /&gt;<br />\n        &lt;h6&gt;{L_RANK_IMAGE_EXPLAIN}&lt;/h6&gt;&lt;/td&gt;<br />\n    &lt;td&gt;<br />\n<br />\nвставляем вместо 2х input<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">        RU {IMAGE_DISPLAY} &lt;input class=&quot;post&quot; type=&quot;text&quot; name=&quot;rank_image&quot; size=&quot;40&quot; maxlength=&quot;255&quot; value=&quot;{IMAGE}&quot; /&gt;&lt;br /&gt;&lt;br /&gt;\n        EN {IMAGE_DISPLAY_EN} &lt;input class=&quot;post&quot; type=&quot;text&quot; name=&quot;rank_image_en&quot; size=&quot;40&quot; maxlength=&quot;255&quot; value=&quot;{IMAGE_EN}&quot; /&gt;&lt;br /&gt;&lt;br /&gt;</pre><br />\nviewtopic.php <br />\nпосле<br />\nif (!$user-&gt;opt_js[&#039;h_rnk_i&#039;] and isset($ranks[$user_rank])) {<br />\n<br />\nвставляем вместо $rank_image = ..............;<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$rank_image = ($bb_cfg[&#039;show_rank_image&#039;] &amp;&amp; $ranks[$user_rank][&#039;rank_image&#039;]) ?\n            &#039;&lt;img src=&quot;&#039; . rank_image_lang($ranks[$user_rank][&#039;rank_image&#039;],$userdata[&quot;user_lang&quot;]) .&#039;&quot; alt=&quot;&#039;.$ranks[$user_rank][&#039;rank_title&#039;].&#039;&quot; title=&quot;&#039;.$ranks[$user_rank][&#039;rank_title&#039;].&#039;&quot;  /&gt;&#039; : &#039;&#039;;</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1424966653,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 76993,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Не будет работать если более 2х языков. т.к в поле хранится запись  вида <b>images/ranks/rank_image.png||images/ranks/rank_image_en.png</b><br />\nэто не очень то правильно",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1425154271,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 77006,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/2685/\">@ler</a> можно просто именовать изображения по другому и подставлять в конце код языка из переменной $bb_cfg[&#039;lang&#039;].",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1425165749,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "mul-tiazycnye-lycki",
+  "sticky": false,
+  "tags": [],
+  "title": "Мультиязычные лычки",
+  "url_path": "/threads/mul-tiazycnye-lycki.36563/",
+  "user_id": 0,
+  "username": "ler",
+  "view_count": 1366
+}

@@ -1,0 +1,79 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94100,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 50,
+    "title": "Graphics and styles for TorrentPier"
+  },
+  "id": 42048,
+  "last_post_date": 1550946873,
+  "node_id": 50,
+  "post_date": 1550946873,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1550945993,
+          "file_size": 23028,
+          "filename": "Снимок экрана (18).webp",
+          "height": 1080,
+          "id": 5260,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-ekrana-18-webp.5260/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5264-b02b863943c2b58a36d110d8d4ad55f7.jpg?hash=CysUsDcdRh",
+          "width": 1920
+        },
+        {
+          "attach_date": 1550946441,
+          "file_size": 2217,
+          "filename": "index.rar",
+          "height": 0,
+          "id": 5261,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/index-rar.5261/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 94100,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/attachments/5260/\"><img src=\"https://torrentpier.com/data/attachments/5/5264-b02b863943c2b58a36d110d8d4ad55f7.jpg?hash=CysUsDcdRh\" alt=\"Снимок экрана (18).webp\" /></a><br />\n<div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1550946873,
+      "user_id": 6106,
+      "user_title": "User",
+      "username": "veliant9"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "temnaa-forma-vhoda",
+  "sticky": false,
+  "tags": [],
+  "title": "Темная форма входа",
+  "url_path": "/threads/temnaa-forma-vhoda.42048/",
+  "user_id": 6106,
+  "username": "veliant9",
+  "view_count": 6920
+}

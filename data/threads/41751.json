@@ -1,0 +1,221 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 91562,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 41751,
+  "last_post_date": 1587885940,
+  "node_id": 47,
+  "post_date": 1497347019,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1497346539,
+          "file_size": 89982,
+          "filename": "Снимок1.webp",
+          "height": 733,
+          "id": 4857,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok1-webp.4857/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4861-1e95b6fae5466a29a82ec85cda40cb32.jpg?hash=Uc-E2P1jol",
+          "width": 1073
+        },
+        {
+          "attach_date": 1497346541,
+          "file_size": 48068,
+          "filename": "Снимок2.webp",
+          "height": 862,
+          "id": 4858,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok2-webp.4858/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4862-d0eb3954a5076e47005c98835ace627e.jpg?hash=jaoCkoyLWU",
+          "width": 1056
+        }
+      ],
+      "id": 91562,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем доброго времени суток! Решил добавить на свой сайт онлайн просмотр. Так как <a href=\"https://torrentpier.com/forum/threads/torrentstream.36733/\" class=\"link link--internal\">данный мод</a> уже не поддерживается современными браузерами, то нашел решение в использовании API от Moonwalk. Возможно, что кто-нибудь возьмется и доведет этот &quot;мод&quot; до ума. <br />\nСтоит так же отметить, что в моем варианте указано условие в каких именно топиках выводить плеер.<br />\n<br />\n<b>Минусы API:</b><br />\n1. Если плеера нет в базе Moonwalk - ничего не будет выведено;<br />\n2. Реклама<br />\n<br />\n<b>Плюсы API:</b><br />\n1. Легкая установка;<br />\n2. Нет запросов в базу;<br />\n3. Скрипт определяет по контенту страницы фильм/сериал, который нужно отобразить и выводит его на странице после этого.<br />\n<br />\n<b>Установка:</b><br />\n1. Открыть viewtopic_attach.tpl;<br />\n2. В самом верху (перед &lt;!-- BEGIN attach --&gt;) прописать:<br />\n2.1. с показом Трейлера фильма:<br />\n<code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\"><br />\n&lt;!-- MoonWalk --&gt;<br />\n&lt;script type=&quot;text/javascript&quot; async src=&quot;<a href=\"http://moonwalk.co/player_api?w=800&amp;h=600&amp;trailer=1&amp;trailer_width=800&amp;trailer_height=600\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://moonwalk.co/player_api?w=800&amp;h=600&amp;trailer=1&amp;trailer_width=800&amp;trailer_height=600</a>&quot;&gt;&lt;/script&gt;<br />\n&lt;!-- MoonWalk --&gt;<br />\n</code><br />\n2.2. без показа Трейлера фильма:<br />\n<code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\"><br />\n&lt;!-- MoonWalk --&gt;<br />\n&lt;script type=&quot;text/javascript&quot; async src=&quot;<a href=\"http://moonwalk.co/player_api?w=640&amp;h=480\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://moonwalk.co/player_api?w=640&amp;h=480</a>&quot;&gt;&lt;/script&gt;<br />\n&lt;!-- MoonWalk --&gt;<br />\n</code><br />\n3. В самый конец (перед &lt;!-- END attach --&gt;) прописать (ID топиков меняйте на свои или можете вообще удалить условие):<br />\n3.1. с показом трейлера фильма:<br />\n<code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\"><br />\n&lt;!-- Начало Онлайн просмотр --&gt;<br />\n       &lt;!-- IF FORUM_ID == 58 || FORUM_ID == 31 || FORUM_ID == 140 || FORUM_ID == 122 || FORUM_ID == 115 || FORUM_ID == 32 || FORUM_ID == 33 || FORUM_ID == 100 || FORUM_ID == 125 || FORUM_ID == 146 || FORUM_ID == 39 || FORUM_ID == 40 || FORUM_ID == 41 || FORUM_ID == 121 || FORUM_ID == 144 || FORUM_ID == 43 || FORUM_ID == 44 || FORUM_ID == 46 || FORUM_ID == 95 || FORUM_ID == 156 || FORUM_ID == 157 || FORUM_ID == 214 || FORUM_ID == 215 --&gt;<br />\n       &lt;!-- спойлер начало --&gt;<br />\n       &lt;center&gt;&lt;div class=&quot;spoil&quot;&gt;<br />\n       &lt;div class=&quot;smallfont&quot;&gt;&lt;input type=&quot;button&quot; value=&quot;Онлайн просмотр&quot;; class=&quot;input-button&quot; onclick=&quot;if (this.parentNode.parentNode.getElementsByTagName(&#039;div&#039;)[1].getElementsByTagName(&#039;div&#039;)[0].style.display != &#039;&#039;) { this.parentNode.parentNode.getElementsByTagName(&#039;div&#039;)[1].getElementsByTagName(&#039;div&#039;)[0].style.display = &#039;&#039;; this.innerText = &#039;&#039;; this.value = &#039;Свернуть&#039;; } else { this.parentNode.parentNode.getElementsByTagName(&#039;div&#039;)[1].getElementsByTagName(&#039;div&#039;)[0].style.display = &#039;none&#039;; this.innerText = &#039;&#039;; this.value = &#039;Онлайн просмотр&#039;; }&quot;/&gt;<br />\n       &lt;/div&gt;&lt;div class=&quot;alt2&quot;&gt;&lt;div style=&quot;display: none; text-align:center;&quot;&gt;           <br />\n       &lt;div id=&quot;moonwalkPlayer&quot;&gt;&lt;/div&gt; &lt;!-- Сюда будет выведен плеер !--&gt;<br />\n       &lt;div id=&quot;trailerDiv&quot;&gt;&lt;/div&gt; &lt;!-- Сюда будет выведен trailer !--&gt;<br />\n       &lt;/div&gt;<br />\n       &lt;/div&gt;<br />\n       &lt;/div&gt;<br />\n       &lt;/center&gt;<br />\n       &lt;!-- спойлер конец --&gt;<br />\n       &lt;!-- ENDIF --&gt;<br />\n&lt;!-- Конец онлайн просмотр --&gt;<br />\n</code><br />\n3.2. без показа трейлера фильма:<br />\n<code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\"><br />\n&lt;!-- Начало Онлайн просмотр --&gt;<br />\n       &lt;!-- IF FORUM_ID == 58 || FORUM_ID == 31 || FORUM_ID == 140 || FORUM_ID == 122 || FORUM_ID == 115 || FORUM_ID == 32 || FORUM_ID == 33 || FORUM_ID == 100 || FORUM_ID == 125 || FORUM_ID == 146 || FORUM_ID == 39 || FORUM_ID == 40 || FORUM_ID == 41 || FORUM_ID == 121 || FORUM_ID == 144 || FORUM_ID == 43 || FORUM_ID == 44 || FORUM_ID == 46 || FORUM_ID == 95 || FORUM_ID == 156 || FORUM_ID == 157 || FORUM_ID == 214 || FORUM_ID == 215 --&gt;<br />\n       &lt;!-- спойлер начало --&gt;<br />\n       &lt;center&gt;&lt;div class=&quot;spoil&quot;&gt;<br />\n       &lt;div class=&quot;smallfont&quot;&gt;&lt;input type=&quot;button&quot; value=&quot;Онлайн просмотр&quot;; class=&quot;input-button&quot; onclick=&quot;if (this.parentNode.parentNode.getElementsByTagName(&#039;div&#039;)[1].getElementsByTagName(&#039;div&#039;)[0].style.display != &#039;&#039;) { this.parentNode.parentNode.getElementsByTagName(&#039;div&#039;)[1].getElementsByTagName(&#039;div&#039;)[0].style.display = &#039;&#039;; this.innerText = &#039;&#039;; this.value = &#039;Свернуть&#039;; } else { this.parentNode.parentNode.getElementsByTagName(&#039;div&#039;)[1].getElementsByTagName(&#039;div&#039;)[0].style.display = &#039;none&#039;; this.innerText = &#039;&#039;; this.value = &#039;Онлайн просмотр&#039;; }&quot;/&gt;<br />\n       &lt;/div&gt;&lt;div class=&quot;alt2&quot;&gt;&lt;div style=&quot;display: none; text-align:center;&quot;&gt;           <br />\n       &lt;div id=&quot;moonwalkPlayer&quot;&gt;&lt;/div&gt; &lt;!-- Сюда будет выведен плеер !--&gt;<br />\n       &lt;/div&gt;<br />\n       &lt;/div&gt;<br />\n       &lt;/div&gt;<br />\n       &lt;/center&gt;<br />\n       &lt;!-- спойлер конец --&gt;<br />\n       &lt;!-- ENDIF --&gt;<br />\n&lt;!-- Конец онлайн просмотр --&gt;<br />\n</code><br />\n4. Сохранить изменения.<br />\n<br />\nP.S. Если в установке что-то не правильно, то прошу знатоков поправить 🙂<br />\nP.P.S. сильно тапками не кидайтесь, пожалуйста 🙂",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1497347019,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1502374084,
+          "file_size": 80588,
+          "filename": "2017-08-10_185939.webp",
+          "height": 1080,
+          "id": 4909,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2017-08-10_185939-webp.4909/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4913-634ebafd2eb700915f1dc97f595e0b75.jpg?hash=ORePLoTPl1",
+          "width": 1920
+        }
+      ],
+      "id": 92116,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1502381988,
+      "message_parsed": "Тема интересная Я сделал вывод в модальном окне. Скрипт плеера от Moonwalk после подключения сайта к базе.<br />\nОткрыть viewtopic_attach.tpl, найти<br />\n&lt;div class=&quot;spacer_12&quot;&gt;&lt;/div&gt;<br />\n&lt;!-- ENDIF --&gt;<br />\n примерно строка 146 строка и после вставляем этот код, он без трейлера, ID форумов естественно свои.<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;!-- Просмотр онлайн --&gt;\n&lt;!-- IF FORUM_ID == 363 || FORUM_ID == 362 || FORUM_ID == 365 || FORUM_ID == 366 || FORUM_ID == 6 || FORUM_ID == 7 || FORUM_ID == 8 || FORUM_ID == 11 || FORUM_ID == 12 || FORUM_ID == 13 || FORUM_ID == 9 || FORUM_ID == 10 || FORUM_ID == 19 || FORUM_ID == 21 || FORUM_ID == 20 || FORUM_ID == 271 || FORUM_ID == 22 || FORUM_ID == 23 || FORUM_ID == 387 || FORUM_ID == 266 || FORUM_ID == 267 || FORUM_ID == 27 || FORUM_ID == 26 || FORUM_ID == 386 || FORUM_ID == 25\n|| FORUM_ID == 415 || FORUM_ID == 24 || FORUM_ID == 424 || FORUM_ID == 425 || FORUM_ID == 99 || FORUM_ID == 100 || FORUM_ID == 101 --&gt;\n&lt;center&gt;\n\n&lt;a href=&quot;#win1&quot; class=&quot;button button-green&quot;&gt;&lt;img src=&quot;Ваша картинка&quot; title=&quot;Смотреть онлайн&quot;&gt;&lt;/a&gt;\n&lt;a href=&quot;#win1&quot; class=&quot;overlay&quot; id=&quot;win1&quot;&gt;Сейчас вы смотрите {TOPIC_TITLE},не забываем оставлять комментарии!&lt;/a&gt;\n   &lt;div class=&quot;popup&quot;&gt;\n  \n&lt;div id=&quot;visearch&quot;&gt;&lt;/div&gt;\n\n&lt;script type=&quot;text/javascript&quot;&gt;\n  var moon_params = {\n    width: 800,\n    height: 460,\n    on_dom_ready: true,\n  \n    replace_domains: [&#039;vk.com&#039;, &#039;moonwalk.co&#039;]\n  };\n\n  !function(e,n,t,r,a){r=e.createElement(n),a=e.getElementsByTagName(n)\n  [0],r.async=!0,r.src=t,a.parentNode.insertBefore(r,a)}\n  (document,&quot;script&quot;,&quot;//visearch.info/v2/find-player.min.js&quot;);\n&lt;/script&gt;\n  \n&lt;a class=&quot;close&quot;title=&quot;Закрыть&quot; href=&quot;#close&quot;&gt;&lt;/a&gt;\n    &lt;/div&gt; \n&lt;style&gt;\n/* Базовые стили слоя затемнения и модального окна  */\n.overlay {\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    z-index: 10;\n    display: none;\n/* фон затемнения */\n    background-color: rgba(0, 0, 0, 0.95);\n    position: fixed; /* фиксированное поцизионирование */\n    cursor: default; /* тип курсара */\n}\n/* активируем слой затемнения */\n.overlay:target {\n    display: block;\n}\n/* стили модального окна */\n.popup {\n    top: -100%;\n    right: 0;\n    left: 50%;\n    font-size: 14px;\n    z-index: 20;\n    margin: 0;\n    width: 85%;\n    min-width: 460px;\n    max-width: 800px;\n/* фиксированное позиционирование, окно стабильно при прокрутке */\n    position: fixed;\n    padding: 15px;\n    border: 1px solid #383838;\n    background: #fefefe;\n/* скругление углов */\n    -webkit-border-radius: 4px;\n    -moz-border-radius: 4px;\n    -ms-border-radius: 4px;\n    border-radius: 4px;\n    font: 14px/18px &#039;Tahoma&#039;, Arial, sans-serif;\n/* внешняя тень */\n    -webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);\n    -moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);\n    -ms-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);\n    box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);\n    -webkit-transform: translate(-50%, -500%);\n    -ms-transform: translate(-50%, -500%);\n    -o-transform: translate(-50%, -500%);\n    transform: translate(-50%, -500%);\n    -webkit-transition: -webkit-transform 0.6s ease-out;\n    -moz-transition: -moz-transform 0.6s ease-out;\n    -o-transition: -o-transform 0.6s ease-out;\n    transition: transform 0.6s ease-out;\n}\n/* активируем модальный блок */\n.overlay:target+.popup {\n    -webkit-transform: translate(-50%, 0);\n    -ms-transform: translate(-50%, 0);\n    -o-transform: translate(-50%, 0);\n    transform: translate(-50%, 0);\n    top: 20%;\n}\n/* формируем кнопку закрытия */\n.close {\n    top: -10px;\n    right: -10px;\n    width: 20px;\n    height: 20px;\n    position: absolute;\n    padding: 0;\n    border: 2px solid #ccc;\n    -webkit-border-radius: 15px;\n    -moz-border-radius: 15px;\n    -ms-border-radius: 15px;\n    -o-border-radius: 15px;\n    border-radius: 15px;\n    background-color: rgba(61, 61, 61, 0.8);\n    -webkit-box-shadow: 0px 0px 10px #000;\n    -moz-box-shadow: 0px 0px 10px #000;\n    box-shadow: 0px 0px 10px #000;\n    text-align: center;\n    text-decoration: none;\n    font: 13px/20px &#039;Tahoma&#039;, Arial, sans-serif;\n    font-weight: bold;\n    -webkit-transition: all ease .8s;\n    -moz-transition: all ease .8s;\n    -ms-transition: all ease .8s;\n    -o-transition: all ease .8s;\n    transition: all ease .8s;\n}\n.close:before {\n    color: rgba(255, 255, 255, 0.9);\n    content: &quot;X&quot;;\n    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);\n    font-size: 12px;\n}\n.close:hover {\n    background-color: rgba(252, 20, 0, 0.8);\n    -webkit-transform: rotate(360deg);\n    -moz-transform: rotate(360deg);\n    -ms-transform: rotate(360deg);\n    -o-transform: rotate(360deg);\n    transform: rotate(360deg);   \n}\n/* изображения внутри окна */\n.popup img {\n    width: 100%;\n    height: auto;\n}\n/* миниатюры слева/справа */\n.pic-left,\n.pic-right {\n    width: 25%;\n    height: auto;\n}\n.pic-left {\n    float: left;\n    margin: 5px 15px 5px 0;\n}\n.pic-right {\n    float: right;\n    margin: 5px 0 5px 15px;\n}\n/* элементы м-медиа, фреймы */\n.popup embed,\n.popup iframe {\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    display:block;\n    margin: auto;\n    min-width: 460px;\n    max-width: 800px;\n    width: 100%;\n}\n.popup h2 { /* заголовок 2 */\n    margin: 0;\n    color: #008000;\n    padding: 5px 0px 10px;\n    text-align: left;\n    text-shadow: 1px 1px 3px #adadad;\n    font-weight: 500;\n    font-size: 1.4em;\n    font-family: &#039;Tahoma&#039;, Arial, sans-serif;\n    line-height: 1.3;\n}\n/* параграфы */\n.popup p {margin: 0; padding: 5px 0}\n\n&lt;/style&gt;&lt;/center&gt;\n&lt;!-- ENDIF --&gt;\n&lt;!-- конец просмотр онлайн --&gt;</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1502374279,
+      "user_id": 6734,
+      "user_title": "User",
+      "username": "zip"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92121,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Волки рекламу свою гонят дофига, и кликандер рубит.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1502386280,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92132,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">Волки рекламу свою гонят дофига, и кликандер рубит.</blockquote>Можно написать им на мыло, возможно, что отключат рекламу на сайте.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1502447857,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    },
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1587727854,
+          "file_size": 88984,
+          "filename": "1587727949948.webp",
+          "height": 877,
+          "id": 5324,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1587727949948-webp.5324/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5328-6c65d5522d70e21c7a1e0062e1d47b6c.jpg?hash=dXzvmxEvaL",
+          "width": 1718
+        },
+        {
+          "attach_date": 1587727910,
+          "file_size": 3934,
+          "filename": "1587728006880.webp",
+          "height": 42,
+          "id": 5325,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1587728006880-webp.5325/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5329-26ae51ca0664dd6ee9e24a33aa7aafcd.jpg?hash=CzepCjMPNB",
+          "width": 378
+        }
+      ],
+      "id": 94528,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Добавил BB-код онлайн просмотра (возможно у кого-то получится переделать его, что бы плеер автоматически выводился, а не вручную прописывать для каждой раздачи с фильмом/сериалом и т.д., я лично не придумал как это сделать), в который вставляется только ID фильма с кинопоиска. При желании можно сделать вывод плеера в модальном окне (на примере кода от <a href=\"https://torrentpier.com/members/6734/\">zip</a> выше).<br />\n<br />\nЯ делал на версии 2.1.4 (кому надо, адаптирует под новые версии)<br />\n<br />\n<b>Установка: </b>легко<br />\n<b>Требования: </b>учетная запись у какого-нибудь видеобалансера (в примере ниже используется videocdn)<br />\n<b>Файлы к редактированию:</b><br />\nbbcode.php;<br />\nposting_editor.tpl;<br />\nmain.php<br />\n<br />\n<b>Установка:</b><br />\n<i>открыть <b>bbcode.php</b> и НАЙТИ:</i><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">// HR\n$bbcode_tpl[&#039;hr&#039;] = &lt;&lt;&lt;HTML\n    &lt;span class=&quot;post-hr&quot;&gt;-&lt;/span&gt;\nHTML;</pre><br />\n<i>ПОСЛЕ ВСТАВИТЬ:</i><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">// OnlineMovie\n$bbcode_tpl[&#039;WatchOnline&#039;] = &lt;&lt;&lt;HTML\n&lt;object width=&quot;640&quot; height=&quot;480&quot;&gt;    \n    &lt;iframe src=&quot;//&lt;ссылка из личного кабинета videocdn&gt;/&lt;здесь должен быть Ваш API ключ от videocdn&gt;?kp_id=\\\\1&quot; width=&quot;640&quot; height=&quot;480&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;\n&lt;/object&gt;\nHTML;</pre><br />\n<i>НАЙТИ:</i><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&quot;#\\[email\\]($email_exp)\\[/email\\]#isu&quot;                   =&gt; &#039;&lt;a href=&quot;mailto:$1&quot;&gt;$1&lt;/a&gt;&#039;,</pre><br />\n<i>ПОСЛЕ ВСТАВИТЬ:</i><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">//Кнопка ОнлайнПросмотр           \n            &quot;#\\[WatchOnline\\]([a-zA-Z0-9_]+)\\[/WatchOnline\\]#is&quot; =&gt; $tpl[&#039;WatchOnline&#039;],</pre><br />\n<i>открыть <b>posting_editor.tpl</b> и НАЙТИ:</i><br />\n<pre class=\"xfBb-code\" data-lang=\"html\">&lt;span class=&quot;buttons&quot;&gt;</pre><br />\n<i>ПОСЛЕ ВСТАВИТЬ:</i><br />\n<pre class=\"xfBb-code\" data-lang=\"html\">&lt;input type=&quot;button&quot; value=&quot;{L_WATCH_ONLINE}&quot; name=&quot;codeWatchOnline&quot; title=&quot;{L_WATCH_ONLINE_TITLE}&quot; style=&quot;width: 120px;&quot;/&gt; &lt;!-- онлайн просмотр --&gt;</pre><br />\n<i>НАЙТИ:<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">bbcode.addTag(&quot;codeSpoiler&quot;, function(e) { var v=e.value; e.selectedIndex=0; return &quot;spoiler=\\&quot;&quot;+v+&quot;\\&quot;&quot; }, &quot;/spoiler&quot;);</pre></i><br />\n<i>ПОСЛЕ ВСТАВИТЬ:<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">bbcode.addTag(&quot;codeWatchOnline&quot;, &quot;WatchOnline&quot;, &quot;/WatchOnline&quot;, &quot;O&quot;, ctrl);</pre></i><br />\n<i>открыть <b>main.php</b> и В КОНЕЦ ВСТАВИТЬ:</i><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">//WatchOnline\n$lang[&#039;WATCH_ONLINE&#039;] = &#039;Смотреть онлайн&#039;;\n$lang[&#039;WATCH_ONLINE_TITLE&#039;] = &#039;Вставить видео с видеобалансера (Ctrl+O)&#039;;</pre><br />\n<b>Сохранить все файлы.</b><br />\n<br />\n<b>Результат:</b><br />\n<a href=\"https://torrentpier.com/attachments/5324/\"><img src=\"https://torrentpier.com/data/attachments/5/5328-6c65d5522d70e21c7a1e0062e1d47b6c.jpg?hash=dXzvmxEvaL\" alt=\"1587727949948.webp\" /></a><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/5325/\" alt=\"1587728006880.webp\" />",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1587728300,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94529,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "По моему у них был скрипт который из титла страницы берет название, и подбирает нужный видеопоток.",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1587876647,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94530,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">По моему у них был скрипт который из титла страницы берет название, и подбирает нужный видеопоток.</blockquote>в коде фрейма есть параметр названия на русском и названия на английском, но это хорошо, когда в раздаче используется только русское или английское название, а не как у меня: &quot;&lt;Название на русском&gt; / &lt;Название на английском&gt; &lt;Качество&gt; &lt;год выпуска&gt; | &lt;перевод&gt;&quot;. <br />\nМожно конечно и через replace сделать, но у меня не получилось. <br />\nДолжно получится что-то вроде:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;iframe src=&quot;&lt;ссылка из профиля VideoCDN&gt;/&lt;Api ключ&gt;?name={TOPIC_TITLE}&quot; width=&quot;640&quot; height=&quot;480&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</pre>name=название на русском<br />\nname_eng=название на английском",
+      "message_state": "visible",
+      "position": 6,
+      "post_date": 1587885940,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 6,
+  "slug": "onlajn-prosmotr",
+  "sticky": false,
+  "tags": [
+    "онлайн просмотр"
+  ],
+  "title": "Онлайн просмотр",
+  "url_path": "/threads/onlajn-prosmotr.41751/",
+  "user_id": 5704,
+  "username": "ExPlayer",
+  "view_count": 2265
+}

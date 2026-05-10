@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61531,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 26019,
+  "last_post_date": 1405859665,
+  "node_id": 57,
+  "post_date": 1405853475,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61531,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет.<br />\nВот решил создать торрент-трекер, в качестве движка выбрал <b>torrentpier</b>, ведь не нравится простота и функционал этого движка.<br />\nУ меня много вопросов. Я почитал некоторые темы, FAQ, но не на все вопросы я нашел ответы. Поэтому , если вы считаете вопросы - нубскими - прошу не учить , мол кури FAQ, юзай поиск и тд. Если знаете ответ - помогите советом, или дайте ссылку. Если похожая тема есть на форуме  - дайте ссылку. Вот 🙂<br />\nСобственно вопросы:<br />\n1. Движок torrentpier полностью бесплатный, или условно-бесплатный.<br />\n2. Чтобы создать трекер нужно: VPS\\VDS. Но какие требования рекомендуемые. Кстати, на VPS\\VDS какая операционка должна быть: винда, или линукс. Ведь у кореша был один игровой сервер так он говорил, что для таких дел нужен линукс.<br />\n3. Можно ли просто брать ссылки на торренты с других трекеров, ведь для того ,чтобы торрент развивался на первых парах невозможно быть сидом многих раздач. Для этого нужен VDS с большим объемом памьяти. Вот )",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1405853475,
+      "user_id": 5472,
+      "user_title": "User",
+      "username": "mondayx"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61540,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"mondayx\">. Движок torrentpier полностью бесплатный, или условно-бесплатный.</blockquote>Полностью.<br />\n<blockquote class=\"xfBb-quote\" data-name=\"mondayx\">2. Чтобы создать трекер нужно: VPS\\VDS. Но какие требования рекомендуемые. Кстати, на VPS\\VDS какая операционка должна быть: винда, или линукс. Ведь у кореша был один игровой сервер так он говорил, что для таких дел нужен линукс.</blockquote>Эм... Ограничений кроме php 5.3+ и опционально модуля tidy никаких нет. Остальное полностью зависит от посещаемсти вашего сайта и соответственно нагрузки, которую он будет давать.<br />\n<blockquote class=\"xfBb-quote\" data-name=\"mondayx\">3. Можно ли просто брать ссылки на торренты с других трекеров, ведь для того ,чтобы торрент развивался на первых парах невозможно быть сидом многих раздач. Для этого нужен VDS с большим объемом памьяти. Вот )</blockquote>Можно, для этого надо поставить мод &quot;мультитрекера&quot; ну и парсер раздач, для того чтобы по-быстрому раздач насоздавать на ресурсе.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1405859665,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "voprosy-po-dvizku",
+  "sticky": false,
+  "tags": [],
+  "title": "Вопросы по движку",
+  "url_path": "/threads/voprosy-po-dvizku.26019/",
+  "user_id": 5472,
+  "username": "mondayx",
+  "view_count": 969
+}

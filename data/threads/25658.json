@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58051,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 25658,
+  "last_post_date": 1390331546,
+  "node_id": 80,
+  "post_date": 1390323155,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58051,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "При подключении 2 бд к сайту и более, все действия совершаются только с 1 бд.<br />\nСтоит учесть это.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1390323155,
+      "user_id": 2789,
+      "user_title": "User",
+      "username": "Sprinx"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58052,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Каким образом подключаете? Как тестируете? В общем в целом расскажите, чтобы можно было понять, что вы делаете не так.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1390323918,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58053,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Раскоментил 2 подключение, вбил данные. В админке отображается что подключена 2 бд. Но любые действия со 2 бд нельзя сделать.<br />\nДостаточно заглянуть в файл common.php<br />\n<pre class=\"xfBb-code\" data-lang=\"\">function get_db_obj ($srv_name_or_alias = &#039;db1&#039;)\n        {\n                $srv_name = $this-&gt;get_srv_name($srv_name_or_alias);\n \n                if (!is_object($this-&gt;srv[$srv_name]))\n                {\n                        $this-&gt;srv[$srv_name] = new sql_db($this-&gt;cfg[$srv_name]);\n                        $this-&gt;srv[$srv_name]-&gt;db_server = $srv_name;\n                }\n                return $this-&gt;srv[$srv_name];\n        }</pre>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1390325802,
+      "user_id": 2789,
+      "user_title": "User",
+      "username": "Sprinx"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58057,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Логично, что не будет работать. Потому что надо еще вот этот кусок кода в конфиге настроить:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$bb_cfg[&#039;db_alias&#039;] = array(\n//    &#039;alias&#039;        =&gt; &#039;srv_name&#039;\n    &#039;cap&#039;          =&gt; &#039;db1&#039;,  // BB_CAPTCHA\n);</pre>И в дальнейшем, в коде вместо (например):<pre class=\"xfBb-code\" data-lang=\"php\">DB()-&gt;query</pre>Использовать:<pre class=\"xfBb-code\" data-lang=\"php\">DB(&#039;cap&#039;)-&gt;query</pre>Для запросов к базе данных, относящейся к алиасу &#039;cap&#039;. База данных, относящаяся к алиасу, соответственно там же и меняется в конфиге. И если поставить:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$bb_cfg[&#039;db_alias&#039;] = array(\n//    &#039;alias&#039;        =&gt; &#039;srv_name&#039;\n    &#039;cap&#039;          =&gt; &#039;db2&#039;,  // BB_CAPTCHA\n);</pre>То запросы будут идти ко второй базе данных, которую вы настроили выше.<br />\n <br />\nТо есть ко всем вызовам DB надо дописать алиас для нужной таблицы (базы данных).",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1390331546,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 3,
+  "slug": "baza-dannyh",
+  "sticky": false,
+  "tags": [],
+  "title": "База данных",
+  "url_path": "/threads/baza-dannyh.25658/",
+  "user_id": 2789,
+  "username": "Sprinx",
+  "view_count": 1223
+}

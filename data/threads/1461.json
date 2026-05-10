@@ -1,0 +1,105 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 19224,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 1461,
+  "last_post_date": 1342806933,
+  "node_id": 110,
+  "post_date": 1342777184,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 19224,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Уважаемые Пользователи!<br />\n1. Прошу Вас с сегодняшнего дня обновить моды до последней <a href=\"http://code.google.com/p/torrentpier2/source/list\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">ревизии</a>, которые Вы выкладывали. В связи с тем, что когда гуляешь по форуму видишь не работающие моды. И не только с этим связанно, большинство из них не будут работать, так как нужно допиливать их до последней ревизии. И тогда будет меньше вопросов/криков/маты и т.д.<br />\n2. Ах да, чуть не забыл. <b>Новички</b> убедительная просьба проверяйте когда вы ставите моды, прежде чем добавить пост прочитайте <b>ВСЮ</b> тему.<br />\n <br />\n <br />\nИ так, кто проверял мод, отписываемся в той теме где допиливали мод. Обязательно конечный Скриншот",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1342777184,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 19225,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>DarkMod</b>, на счет скрина не совсем понял. скрин чего?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1342785719,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 19235,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Gemini_13</b>, скрин мода",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1342804942,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 19242,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Знач правильно тебя понял. Пробегусь, по тех, что выкладывал 🙂<br />\nКстати, когда выкладывается мод, можно указывать версию движка.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1342806933,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "obnovlenie-modov",
+  "sticky": false,
+  "tags": [
+    "новости"
+  ],
+  "title": "Обновление модов",
+  "url_path": "/threads/obnovlenie-modov.1461/",
+  "user_id": 22,
+  "username": "DarkMod",
+  "view_count": 2840
+}

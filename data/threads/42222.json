@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95541,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42222,
+  "last_post_date": 1705662770,
+  "node_id": 47,
+  "post_date": 1704890897,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1704889462,
+          "file_size": 18056,
+          "filename": "1704888870288.webp",
+          "height": 264,
+          "id": 5727,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1704888870288-webp.5727/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5731-87d884b06d2798ca85089faff1049c06.jpg?hash=WDx7Ssfqjm",
+          "width": 436
+        },
+        {
+          "attach_date": 1704889462,
+          "file_size": 3033,
+          "filename": "torrentpier-telegram-announcer-main.zip",
+          "height": 0,
+          "id": 5728,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/torrentpier-telegram-announcer-main-zip.5728/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 95541,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1704897751,
+      "message_parsed": "Данный скрипт позволяет искать последний релиз (запоминая его) прошедший модерацию и постить его в TG без использования MySQL<br />\nМожет хватать картинки которые выровнены вправо, магнет-ссылки, имя релиза и его URL<br />\n<br />\n<img src=\"https://torrentpier.com/attachments/5727/\" alt=\"1704888870288.png\" /><br />\n<br />\n<br />\nТребования:<br />\nPython 3.10<br />\nrequests<br />\ntelebot<br />\nbs4<br />\npython-dotenv<br />\nlxml<br />\n<br />\nНастройка:<br />\nСоздать .env файл в директории со скриптом и прописать там:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">TOKEN = bot_token\nCHANNEL_ID = channelid_int\nTRACKER_URL = tracker.ru</pre><br />\nГде bot_token - это токен вашего бота в TG, channelid_int - ID канала в числовом формате int, tracker.ru - ссылка на ваш трекер без http(s)<br />\n<br />\nЗапуск:<br />\nПоместите скрипт в cron на исполнение каждые 30 минут.<br />\n<br />\nБуду рад вашим идеям для модернизации скрипта!<br />\nPS:Изначальный кусок кода был взят у <a href=\"https://torrentpier.com/members/4602/\">vladios13</a>, за что ему спасибо",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1704890897,
+      "user_id": 10622,
+      "user_title": "User",
+      "username": "sho20"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95558,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1705662870,
+      "message_parsed": "Отлично адаптировано. 👍<br />\nКонечно, индивидуально нужно будет подгонять под свой шаблон, потому что BS4 ссылается только на определенные имена span/div.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1705662770,
+      "user_id": 4602,
+      "user_title": "User",
+      "username": "vladios13"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "posting-poslednih-relizov-v-tg-kanal",
+  "sticky": false,
+  "tags": [
+    "bot",
+    "telegram"
+  ],
+  "title": "Постинг последних релизов в TG канал",
+  "url_path": "/threads/posting-poslednih-relizov-v-tg-kanal.42222/",
+  "user_id": 10622,
+  "username": "sho20",
+  "view_count": 586
+}

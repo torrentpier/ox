@@ -1,0 +1,65 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94960,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42142,
+  "last_post_date": 1688190303,
+  "node_id": 47,
+  "post_date": 1688190303,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1688190300,
+          "file_size": 16898,
+          "filename": "220149547-41cee319-df7f-491d-a6fe-65b0b8e2c611.webp",
+          "height": 293,
+          "id": 5455,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/220149547-41cee319-df7f-491d-a6fe-65b0b8e2c611-webp.5455/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5459-3254c252501335ba3e93f2861795db37.jpg?hash=ZrXoGMQbfd",
+          "width": 633
+        }
+      ],
+      "id": 94960,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1721195003,
+      "message_parsed": "Мод выводит описание форума на странице самого форума, под названием форума. Мод присутствует начиная с версии <a href=\"https://github.com/torrentpier/torrentpier/tree/2.3.0.4-beta\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">v2.3.0.4-beta</a> последних версий.<br />\n<br />\nВерсия: <span style=\"color: rgb(226, 80, 65)\">v1.1.0</span><br />\n<br />\n<div>Spoiler content hidden.</div><div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1688190303,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "vyvod-opisania-foruma-na-stranice-foruma",
+  "sticky": false,
+  "tags": [],
+  "title": "Вывод описания форума на странице форума",
+  "url_path": "/threads/vyvod-opisania-foruma-na-stranice-foruma.42142/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 588
+}

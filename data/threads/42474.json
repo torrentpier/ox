@@ -1,0 +1,75 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 97377,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 42474,
+  "last_post_date": 1750761081,
+  "node_id": 111,
+  "post_date": 1750761081,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1750761077,
+          "file_size": 6648,
+          "filename": "logos-hexagon-green&blue@0,5x.webp",
+          "height": 343,
+          "id": 6466,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/logos-hexagon-green-blue-0-5x-webp.6466/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6470-921e5090a4f5bf87db249c0cb261be23.jpg?hash=jFIp-r3dyo",
+          "width": 302
+        }
+      ],
+      "id": 97377,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier Cattle. Версия 2.4.7</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/6466/\" alt=\"logos-hexagon-green&amp;blue@0,5x.png\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/releases/tag/v2.4.7\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.4.7 · torrentpier/torrentpier</a><br />\n<br />\n<b>Чейнджлог:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/compare/v2.4.6...v2.4.7\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Comparing v2.4.6...v2.4.7 · torrentpier/torrentpier</a><br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-bug-bug-fixes\"></a>🐛 Bug Fixes&#8203;<a class=\"hoverLink\" href=\"#-bug-bug-fixes\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(filelist)</i> Undefined property: FileTree::$length when v2 torrent only (<a href=\"https://github.com/torrentpier/torrentpier/pull/2004\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2004</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/8c161ceae0f80a3ffe57da06dbadd1f9a53272f3\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">8c161ce</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(ip-api)</i> Add error handling and logging for freeipapi.com requests (<a href=\"https://github.com/torrentpier/torrentpier/pull/2006\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2006</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/12ce6e783ec97a6c3df0e11273944a3e6cfe466d\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">12ce6e7</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-books-documentation\"></a>📚 Documentation&#8203;<a class=\"hoverLink\" href=\"#-books-documentation\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\">Changed nightly.link url in README.md (<a href=\"https://github.com/torrentpier/torrentpier/pull/1977\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1977</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/dc64426574087e69bc7e056a89ff367438e37344\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">dc64426</a>)</li>\n<li data-xf-list-type=\"ul\">Updated Requirements sections in README.md (<a href=\"https://github.com/torrentpier/torrentpier/pull/1975\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1975</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/b7bc7f91662b050082843d18b03376dc67efa3e0\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">b7bc7f9</a>)</li>\n<li data-xf-list-type=\"ul\">Fixed some typos in README.md (<a href=\"https://github.com/torrentpier/torrentpier/pull/1974\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1974</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/403fcf2aca4b2d70bfca194107f4b4f5c5ba7f03\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">403fcf2</a>)</li>\n</ul>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1750761081,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-cattle-versia-2-4-7",
+  "sticky": false,
+  "tags": [
+    "cattle",
+    "новая версия",
+    "релиз",
+    "ченжлог"
+  ],
+  "title": "TorrentPier Cattle. Версия 2.4.7",
+  "url_path": "/threads/torrentpier-cattle-versia-2-4-7.42474/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 335
+}

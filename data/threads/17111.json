@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 47377,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 17111,
+  "last_post_date": 1381475391,
+  "node_id": 57,
+  "post_date": 1381407718,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 47377,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ограничение количества скачиваемых торрентов в месяц, разными группами пользователей. Например одна группа может 3 торрента в месяц скачать, другая 5. <br />\nНе нашел такого, как реализовать? Модом или стандартными средствами?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1381407718,
+      "user_id": 4686,
+      "user_title": "User",
+      "username": "Tigra"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 47379,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Tigra</b>, включи рейтинг в конфиге.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1381410351,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 47418,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Tigra</b>, стандартными никак, нужно писать мод. В паблике похожих не видел, может кто на заказ напишет за деньгу или напишет и на паблик выложит. Но реализовать не сложно.<br />\n <br />\n<b>Dr_Brown</b>, иногда вчитывайся в вопрос, перед тем, как писать ответ :facepalm:",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1381444224,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 47441,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "При современном рынке и конкуренции среди трекеров, Ваша идея - это смерть проекта).",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1381475391,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "ogranicenie-kolicestva-skacivaemyh-torrentov",
+  "sticky": false,
+  "tags": [],
+  "title": "Ограничение количества скачиваемых торрентов",
+  "url_path": "/threads/ogranicenie-kolicestva-skacivaemyh-torrentov.17111/",
+  "user_id": 4686,
+  "username": "Tigra",
+  "view_count": 1304
+}

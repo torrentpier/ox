@@ -1,0 +1,98 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Автоматический ресайзер аватаров by belomaxorka.zip",
+      "id": 6005,
+      "local_path": null,
+      "r2_key": null,
+      "size": 11226,
+      "src_url": "https://torrentpier.com/api/resource-versions/501/download?file=6005"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "gd",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание:</b> При загрузке аватарки большего размера чем 100x100 (по умолчанию)<br />\nданный мод автоматически изменяет размер изображения под 100x100.<br />\n<b>Совместимость:</b> v2.1.5 (LTS) и ниже!<br />\n<br />\n<span style=\"color: rgb(226, 80, 65)\">Начиная с версии движка v2.4.4 данный мод будет интегрирован по умолчанию!</span>",
+  "download_count": 722,
+  "external_url": null,
+  "icon_url": null,
+  "id": 294,
+  "is_fileless": null,
+  "last_update": 1718354370,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1718353340,
+  "resource_state": "visible",
+  "slug": "avtomaticeskij-resajzer-avatarov",
+  "tag_line": "Данный мод автоматически подгоняет размер аватарки под максимально допустимый",
+  "tags": [
+    "аватарки",
+    "аватары",
+    "мод",
+    "моды",
+    "ресайзер",
+    "ресайзер аватаров"
+  ],
+  "title": "Автоматический ресайзер аватаров",
+  "url_path": "/resources/avtomaticeskij-resajzer-avatarov.294/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.1",
+  "versions": [
+    {
+      "download_count": 503,
+      "files": [
+        {
+          "filename": "[FULL] Автоматический ресайзер аватаров by belomaxorka.zip",
+          "id": 6005,
+          "local_path": null,
+          "r2_key": null,
+          "size": 11226,
+          "src_url": "https://torrentpier.com/api/resource-versions/501/download?file=6005"
+        }
+      ],
+      "id": 501,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1718354370,
+      "version_state": "visible",
+      "version_string": "v1.0.1",
+      "view_url": "https://torrentpier.com/resources/avtomaticeskij-resajzer-avatarov.294/version/501/"
+    },
+    {
+      "download_count": 220,
+      "files": [
+        {
+          "filename": "[FULL] Автоматический ресайзер аватаров by belomaxorka.zip",
+          "id": 6004,
+          "local_path": null,
+          "r2_key": null,
+          "size": 11129,
+          "src_url": "https://torrentpier.com/api/resource-versions/500/download?file=6004"
+        }
+      ],
+      "id": 500,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1718353340,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/avtomaticeskij-resajzer-avatarov.294/version/500/"
+    }
+  ],
+  "view_count": 3045
+}

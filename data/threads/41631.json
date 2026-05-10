@@ -1,0 +1,140 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 89838,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41631,
+  "last_post_date": 1485445122,
+  "node_id": 57,
+  "post_date": 1485416458,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89838,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток! Вопрос в названии темы. Как это реализовать (если можно, то поподробнее)?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1485416458,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89841,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5704/\">ExPlayer</a> автоцензор в админке в помощь",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1485426001,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89842,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\"><a href=\"https://torrentpier.com/members/5704/\">ExPlayer</a> автоцензор в админке в помощь</blockquote>Не работает он на НИКах. В автоцензере есть слово &quot;хуй&quot;, если на форуме написать, то он его заменит на &quot;[цензура]&quot;, как и прописано в админке. А вот регистрироваться с таким НИКом, оказывается можно и автоцензор на это никак не влияет.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1485431713,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89843,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5704/\">ExPlayer</a> так у нас можно указывать запрещенные ники, только не помню где",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1485442658,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89844,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<span style=\"font-size: 15px\">пользователи / Запрещенные имена </span><br />",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1485443881,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89845,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"vitalix\"><span style=\"font-size: 15px\">пользователи / Запрещенные имена </span></blockquote>точно, блин... во я тупанул 😀 Спасибо))",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1485445122,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "kak-zapretit-registraciu-nikov-soderzasih-mat",
+  "sticky": false,
+  "tags": [
+    "мат",
+    "ник",
+    "ники",
+    "регистрация"
+  ],
+  "title": "Как запретить регистрацию ников содержащих мат?",
+  "url_path": "/threads/kak-zapretit-registraciu-nikov-soderzasih-mat.41631/",
+  "user_id": 5704,
+  "username": "ExPlayer",
+  "view_count": 1378
+}

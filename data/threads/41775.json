@@ -1,0 +1,124 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 91769,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 41775,
+  "last_post_date": 1498332323,
+  "node_id": 110,
+  "post_date": 1498312908,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91769,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\n<br />\nВ самом начале своего появления в далеком 2005 году разработка движка велась основателем Meithar c использованием баг-трекера на сайте torrentpier.com, а новые версии движка публиковались и обсуждались в специально выделенном разделе на сайте torrents.ru. Только много позднее появился клуб разработчиков с доменом .info, ну и соответственно, наш сайт, для многих пользователей ставшие &quot;основными&quot;.<br />\n<br />\nС момента появления первой версии движка прошло уже почти 12 лет и сегодня случилось большое событие - домен <a href=\"https://torrentpier.com/\" class=\"link link--internal\">torrentpier.com</a> возвращается, а если быть еще более точным - становится нашим основным. Все это стало возможным благодаря прямому участию двух администраторов rutracker.org, среди которых был лично Meithar. За этот вклад в развитие движка им хотелось бы выразить огромную благодарность.<br />\n<br />\nДля чего нам вообще потребовалось менять домен? По факту домен .me тоже остается с нами, но с него будет установлен редирект и уже в новой версии и версии 2.2.3 он будет также заменен на новый. Это все предпринято лишь с одной целью - показать наше намерение стремиться к мировой экспансии и развивать движок именно в этом направлении. А что лучше всего подходит для этого, как не основная доменная зона интернета?<br />\n<br />\nПоэтому, встречайте - <a href=\"https://torrentpier.com/\" class=\"link link--internal\">TorrentPier.com</a>, наше новое доменное имя, хотелось бы верить, что как минимум на следующие 12 лет.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1498312908,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91771,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Блээ, новую зону запоминать. 😀",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1498321458,
+      "user_id": 4163,
+      "user_title": "User",
+      "username": "vitalix"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91772,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/1/\">Exile</a>, а что стало причиной закрытия старого сайта (который тоже был в домене .com)?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1498330921,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91773,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5704/\">ExPlayer</a>, ну наверное можно так же спросить что стало с .info, .su, .ru, .kz и прочими другими форумами поддержки TorrentPier - потеря интереса владельцами. В случае с рутрекером - просто разработка для себя, а сам движок тут развивали уже другие люди.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1498331867,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91774,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\"><a href=\"https://torrentpier.com/members/5704/\">ExPlayer</a>, ну наверное можно так же спросить что стало с .info, .su, .ru, .kz и прочими другими форумами поддержки TorrentPier - потеря интереса владельцами. В случае с рутрекером - просто разработка для себя, а сам движок тут развивали уже другие люди.</blockquote>Спасибо за инфу 🙂",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1498332323,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "novoe-staroe-domennoe-ima-torrentpier-com",
+  "sticky": false,
+  "tags": [
+    "meithar",
+    "torrentpier",
+    "новости",
+    "новый домен"
+  ],
+  "title": "Новое старое доменное имя. TorrentPier.com",
+  "url_path": "/threads/novoe-staroe-domennoe-ima-torrentpier-com.41775/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 1837
+}

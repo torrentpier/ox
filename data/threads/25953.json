@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 60957,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 25953,
+  "last_post_date": 1402686939,
+  "node_id": 80,
+  "post_date": 1401350616,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60957,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "page_header.php<br />\nУдалить<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$is_admin  = ($logged_in &amp;&amp; IS_ADMIN);\n$is_mod    = ($logged_in &amp;&amp; IS_MOD);</pre>Найти <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">!($is_admin || $is_mod) &amp;&amp; $user-&gt;show_ads)</pre>Заменить <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">!IS_AM &amp;&amp; $user-&gt;show_ads</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1401350616,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61112,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено в новой ревизии: <a href=\"https://code.google.com/p/torrentpier2/source/detail?r=586\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://code.google.com/p/torrentpier2/source/detail?r=586</a><br />\nСпасибо за багрепорты.<br />\n <br />\nСкачать r586 можно в центре загрузки: <a href=\"http://get.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://get.torrentpier.com/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1402686939,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 1,
+  "slug": "udalenie-peremennyh-i-ih-zamena",
+  "sticky": false,
+  "tags": [],
+  "title": "Удаление переменных и их замена",
+  "url_path": "/threads/udalenie-peremennyh-i-ih-zamena.25953/",
+  "user_id": 3170,
+  "username": "drew",
+  "view_count": 1077
+}

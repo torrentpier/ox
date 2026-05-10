@@ -1,0 +1,97 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Ограничение доступа к определенным категориям by belomaxorka.zip",
+      "id": 6028,
+      "local_path": null,
+      "r2_key": null,
+      "size": 1583,
+      "src_url": "https://torrentpier.com/api/resource-versions/508/download?file=6028"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находиться в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание:</b> Ограничивает доступ определенному пользователю к определенным категориям (форумам и топикам в них включительно). Можно указать неограниченное количество категорий. Имеется кэширование.<br />\n<b>Совместимость:</b> практически все версии. Проверялся на LTS.",
+  "download_count": 334,
+  "external_url": null,
+  "icon_url": null,
+  "id": 296,
+  "is_fileless": null,
+  "last_update": 1720287545,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1720284423,
+  "resource_state": "visible",
+  "slug": "ogranicenie-dostupa-k-opredelennym-kategoriam",
+  "tag_line": "Ограничивает доступ определенному пользователю к определенным категориям.",
+  "tags": [
+    "мод",
+    "мод категории",
+    "моды",
+    "ограничение доступа",
+    "ограничение доступа к категориям"
+  ],
+  "title": "Ограничение доступа к определенным категориям",
+  "url_path": "/resources/ogranicenie-dostupa-k-opredelennym-kategoriam.296/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.1",
+  "versions": [
+    {
+      "download_count": 236,
+      "files": [
+        {
+          "filename": "[FULL] Ограничение доступа к определенным категориям by belomaxorka.zip",
+          "id": 6028,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1583,
+          "src_url": "https://torrentpier.com/api/resource-versions/508/download?file=6028"
+        }
+      ],
+      "id": 508,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1720287545,
+      "version_state": "visible",
+      "version_string": "v1.0.1",
+      "view_url": "https://torrentpier.com/resources/ogranicenie-dostupa-k-opredelennym-kategoriam.296/version/508/"
+    },
+    {
+      "download_count": 99,
+      "files": [
+        {
+          "filename": "[FULL] Ограничение доступа к определенным категориям by belomaxorka.zip",
+          "id": 6024,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1550,
+          "src_url": "https://torrentpier.com/api/resource-versions/507/download?file=6024"
+        }
+      ],
+      "id": 507,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1720284423,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/ogranicenie-dostupa-k-opredelennym-kategoriam.296/version/507/"
+    }
+  ],
+  "view_count": 523
+}

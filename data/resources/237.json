@@ -1,0 +1,53 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]Форк: [URL='https://github.com/dimka3210/torrentpier-ulogin']dimka3210/torrentpier-ulogin · GitHub[/URL]\nИнструкция по установке: [URL='https://github.com/dimka3210/torrentpier-ulogin/commit/f1cae3160621f0148ee601502bc190d228235866']Mod · dimka3210/torrentpier-ulogin@f1cae31 · GitHub[/URL][/SPOILER]",
+    "owner": "dimka3210",
+    "sql": "no",
+    "was_paid": "yes"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание:</b> добавляет возможность авторизации через социальные сети.<br />\n<br />\n<div data-template-name=\"public:_media_site_embed_youtube\" class=\"bbMediaWrapper\" data-media-site-id=\"youtube\" data-media-key=\"qbG9BCRWFOQ\">\n\t<div class=\"bbMediaWrapper-inner\">\n\t\t<iframe src=\"https://www.youtube.com/embed/qbG9BCRWFOQ?wmode=opaque\"\n\t\t\t\tloading=\"lazy\"\n\t\t\t\twidth=\"560\" height=\"315\"\n\t\t\t\tframeborder=\"0\" allowfullscreen=\"true\"></iframe>\n\t</div>\n</div>",
+  "download_count": 315,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/237.jpg?1434292091",
+  "id": 237,
+  "is_fileless": null,
+  "last_update": 1434271774,
+  "rating_avg": 5,
+  "rating_count": 2,
+  "resource_date": 1434271774,
+  "resource_state": "visible",
+  "slug": "avtorizacia-cerez-ulogin",
+  "tag_line": "Добавляет возможность авторизации через социальные сети.",
+  "tags": [],
+  "title": "Авторизация через uLogin",
+  "url_path": "/resources/avtorizacia-cerez-ulogin.237/",
+  "user_id": 19,
+  "username": "dimka3210",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 315,
+      "files": [],
+      "id": 345,
+      "rating_avg": 5,
+      "rating_count": 2,
+      "release_date": 1434271774,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/avtorizacia-cerez-ulogin.237/version/345/"
+    }
+  ],
+  "view_count": 1080
+}

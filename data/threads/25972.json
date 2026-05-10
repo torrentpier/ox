@@ -1,0 +1,81 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61121,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 11,
+    "title": "Questions about styles for TorrentPier"
+  },
+  "id": 25972,
+  "last_post_date": 1402758307,
+  "node_id": 11,
+  "post_date": 1402750591,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1402750570,
+          "file_size": 19370,
+          "filename": "Снимок.webp",
+          "height": 143,
+          "id": 2541,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-webp.2541/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2546-ffafe74d350cdb6fd295668e5c2022e4.jpg?hash=L02s2dIh3q",
+          "width": 1338
+        }
+      ],
+      "id": 61121,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как можно убрать весь этот блок если нет постов?<br />\n <br />\n<a href=\"https://torrentpier.com/attachments/2541/\"><img src=\"https://torrentpier.com/data/attachments/2/2546-ffafe74d350cdb6fd295668e5c2022e4.jpg?hash=L02s2dIh3q\" alt=\"Снимок.webp\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1402750591,
+      "user_id": 4832,
+      "user_title": "User",
+      "username": "Screamer89"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61124,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "самый простой вариант угадать куда переместить в шаблоне<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;!-- IF NO_TOPICS --&gt;</pre> и все связанное с этой конструкцией",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1402758307,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    }
+  ],
+  "prefix_id": 42,
+  "reply_count": 1,
+  "slug": "kogda-net-tem-v-forume",
+  "sticky": false,
+  "tags": [],
+  "title": "Когда нет тем в форуме",
+  "url_path": "/threads/kogda-net-tem-v-forume.25972/",
+  "user_id": 4832,
+  "username": "Screamer89",
+  "view_count": 1987
+}

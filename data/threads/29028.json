@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 66556,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 29028,
+  "last_post_date": 1415465082,
+  "node_id": 57,
+  "post_date": 1415432711,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66556,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте, подскажите пожалуйста. Добавляю в конструктор из &quot;Других элементов&quot; кнопку &quot;Загрузить картинку&quot; которая по идее при нажатии должна отправлять на фотохост (где прописать на какой именно фотохост)?<br />\n<br />\nИ второй вопрос, после добавления кнопки &quot;Загрузить картинку&quot;<br />\nВ шаблоне просто появляется поле для ввода, перед которым стоит буква E: (E c двоеточием)<br />\n<br />\nТакже была замечена аналогичная проблема в нескольких других элементах. Как пофиксить?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1415432711,
+      "user_id": 561,
+      "user_title": "User",
+      "username": "John Smith"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66583,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"John Smith\">Здравствуйте, подскажите пожалуйста. Добавляю в конструктор из &quot;Других элементов&quot; кнопку &quot;Загрузить картинку&quot; которая по идее при нажатии должна отправлять на фотохост (где прописать на какой именно фотохост)?<br />\n<br />\nИ второй вопрос, после добавления кнопки &quot;Загрузить картинку&quot;<br />\nВ шаблоне просто появляется поле для ввода, перед которым стоит буква E: (E c двоеточием)<br />\n<br />\nТакже была замечена аналогичная проблема в нескольких других элементах. Как пофиксить?</blockquote><br />\nПо первому вопросу: в файле posting_tpl.tpl рерактируй:<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;!--load_pic_btn--&gt;\n&lt;div id=&quot;load_pic_btn&quot;&gt;&lt;input type=&quot;button&quot; style=&quot;width: 140px;&quot; value=&quot;Загрузить картинку&quot; onclick=&quot;window.open(&#039;http://fastpic.ru&#039;, &#039;_blank&#039;); return false;&quot; /&gt;&lt;/div&gt;\n&lt;!--/load_pic_btn--&gt;</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1415461134,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66584,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/threads/video-faq-rabota-s-konstruktorom-shablonov-ch-1.25844/\" class=\"link link--internal\">https://torrentpier.com/threads/video-faq-rabota-s-konstruktorom-shablonov-ch-1.25844/</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1415465082,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "konstruktor-knopka-zagruzit-kartinku",
+  "sticky": false,
+  "tags": [],
+  "title": "Конструктор. Кнопка загрузить картинку",
+  "url_path": "/threads/konstruktor-knopka-zagruzit-kartinku.29028/",
+  "user_id": 561,
+  "username": "John Smith",
+  "view_count": 1145
+}

@@ -1,0 +1,132 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_data"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95163,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 42161,
+  "last_post_date": 1695709997,
+  "node_id": 80,
+  "post_date": 1692431904,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95163,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Собственно выскакивает при выполнении всех задач в кроне в ручном режиме:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">RuntimeException thrown with message &quot;File &quot;/var/www/sitemap/sitemap_dynamic.xml&quot; is not writable.&quot;\n\nStacktrace:\n#6 RuntimeException in /var/www//vendor/samdark/sitemap/Sitemap.php:149\n#5 samdark\\sitemap\\Sitemap:createNewFile in /var/www//vendor/samdark/sitemap/Sitemap.php:276\n#4 samdark\\sitemap\\Sitemap:addItem in /var/www//src/Sitemap.php:123\n#3 TorrentPier\\Sitemap:buildDynamicSitemap in /var/www//src/Sitemap.php:166\n#2 TorrentPier\\Sitemap:createSitemap in /var/www//library/includes/cron/jobs/sitemap.php:15\n#1 require in /var/www/src/Legacy/Admin/Cron.php:38\n#0 TorrentPier\\Legacy\\Admin\\Cron:run_jobs in /var/www//admin/admin_cron.php:188</pre><br />\n<pre class=\"xfBb-code\" data-lang=\"\">{\n        $this-&gt;fileCount++;\n        $filePath = $this-&gt;getCurrentFilePath();\n        $this-&gt;writtenFilePaths[] = $filePath;\n \n        if (file_exists($filePath)) {\n            $filePath = realpath($filePath);\n            if (is_writable($filePath)) {\n                unlink($filePath);\n            } else {\n                throw new \\RuntimeException(&quot;File \\&quot;$filePath\\&quot; is not writable.&quot;);\n            }\n        }\n \n        if ($this-&gt;useGzip) {\n            if (function_exists(&#039;deflate_init&#039;) &amp;&amp; function_exists(&#039;deflate_add&#039;)) {\n                $this-&gt;writerBackend = new DeflateWriter($filePath);\n            } else {\n                $this-&gt;writerBackend = new TempFileGZIPWriter($filePath);\n            }\n        } else {</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1692431904,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95164,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "chmod 777 на sitemap стоит",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1692431922,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95165,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Lange\">chmod 777 на sitemap стоит</blockquote>Странно, ошибка как раз указывает об обратном",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1692433499,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95207,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Lange\">chmod 777 на sitemap стоит</blockquote>для папки sitemap поставьте права 777 а для файла 666",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1695392759,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95211,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"zxc\">для папки sitemap поставьте права 777 а для файла 666</blockquote>Оно и при 777 должно работать по идее)",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1695705068,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95212,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "После отработки серверным кроном файлы sitemap_dynamic.xml и sitemap_dynamic_2.xml становятся от root. И в какой-то момент начинаются ошибки.",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1695709997,
+      "user_id": 10618,
+      "user_title": "User",
+      "username": "nexo"
+    }
+  ],
+  "prefix_id": 24,
+  "reply_count": 5,
+  "slug": "osibka-sitemap",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка sitemap",
+  "url_path": "/threads/osibka-sitemap.42161/",
+  "user_id": 55,
+  "username": "Lange",
+  "view_count": 1052
+}

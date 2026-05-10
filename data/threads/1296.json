@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 16618,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1296,
+  "last_post_date": 1335929059,
+  "node_id": 57,
+  "post_date": 1335926118,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 16618,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "каждую ночь выходит эта ошибка <pre class=\"xfBb-code\" data-lang=\"\">[02-May-2012 01:10:23] PHP Warning:  mysql_connect() [&lt;a href=&#039;function.mysql-connect&#039;&gt;function.mysql-connect&lt;/a&gt;]: Can&#039;t connect to local MySQL server through socket &#039;/var/lib/mysql/mysql.sock&#039; (11) in /public_html/bt/includes/init_tr.php on line 134</pre> мне кажется что это связано с МТ, помогите исправить",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1335926118,
+      "user_id": 0,
+      "user_title": "",
+      "username": "stalker-1989"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 16619,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "line 134<br />\n <pre class=\"xfBb-code\" data-lang=\"php\">if (!$link = $connect_type($this-&gt;cfg[&#039;dbhost&#039;], $this-&gt;cfg[&#039;dbuser&#039;], $this-&gt;cfg[&#039;dbpasswd&#039;]))</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1335926975,
+      "user_id": 0,
+      "user_title": "",
+      "username": "stalker-1989"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 16620,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "нет соединения с сервером бд",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1335928116,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 16621,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "спс",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1335929059,
+      "user_id": 0,
+      "user_title": "",
+      "username": "stalker-1989"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "logi-mysql_connect",
+  "sticky": false,
+  "tags": [],
+  "title": "логи [mysql_connect()]",
+  "url_path": "/threads/logi-mysql_connect.1296/",
+  "user_id": 0,
+  "username": "stalker-1989",
+  "view_count": 1407
+}

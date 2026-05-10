@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 64984,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 27806,
+  "last_post_date": 1413806320,
+  "node_id": 57,
+  "post_date": 1413794434,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 64984,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Добрый день, ткните носом, чтоб хоть направление знать, в котором рыть. Как вывести в sidebar, там где аватарка и рейтинг, звание пользователя, количество постов и количество созданных тем?<br />\nВ идеале вывести в sidebar вот эти данные:<br />\n<br />\nhttp://s019.*******.host/i644/1410/cc/7537f5858306.png <br />\nhttp://s43.*******.host/i099/1410/19/65a7c5a67d56.png",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1413794434,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 65002,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "https://github.com/torrentpier/torrentpier/blob/master/upload/includes/functions.php#L1237 - вот переменные для функции вывода, добавлять тут же.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1413800705,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 65033,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Собственно ничего у меня не вышло. Ковырял functions.php, лезли ошибки, просто вставил в page_header.tpl код, вышло так:<br />\nhttp://i003.*******.host/1410/00/becf4fd24904.png  <br />\n<br />\nНо ссылки <b>&quot;Найти&quot;</b> ведут на индексную страницу, а нормально работают, только если я на странице профиля, количество сообщений парсится тоже только в профиле:<br />\nhttp://s019.*******.host/i603/1410/ae/fd33ff265ce3.png",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1413806320,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "dobavit-svoe-pod-avatar-v-sidebar",
+  "sticky": false,
+  "tags": [],
+  "title": "Добавить свое под аватар в sidebar",
+  "url_path": "/threads/dobavit-svoe-pod-avatar-v-sidebar.27806/",
+  "user_id": 1514,
+  "username": "Begemot",
+  "view_count": 1087
+}

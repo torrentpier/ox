@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 9636,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 753,
+  "last_post_date": 1326692036,
+  "node_id": 3,
+  "post_date": 1326661147,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9636,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"http://i32.fastpic.ru/big/2012/0115/c4/f49c0a6b771eeedb1f4cce98be0f7fc4.png\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"http://i32.fastpic.ru/thumb/2012/0115/c4/f49c0a6b771eeedb1f4cce98be0f7fc4.jpeg\" alt=\"\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1326661147,
+      "user_id": 752,
+      "user_title": "User",
+      "username": "Pacifik"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9640,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Это по моему косячет БД сайт... Но точно не знаю у нас например все норма...",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1326661397,
+      "user_id": 668,
+      "user_title": "",
+      "username": "fariyeld"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9649,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"fariyeld\">Это по моему косячет БД сайт..</blockquote>Специально для вас косячит, ага.<br />\n<br />\n<b>Pacifik</b>, в последние несколько дней проблемы с кодировками у Google Chrome случаются почти на всех сайтах. Советовал бы снять галочку автоопределения кодировки, он вроде настройки для конкретных сайтов запоминает.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1326663186,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9674,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Странно, но у меня ни на одном компьютере нет проблем, на рабочем хром, дома лиса.<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">kenny@work ~ $ uname -anr<br />\nLinux work 3.0.6-gentoo #1 SMP Wed Oct 19 15:24:51 MSK 2011 x86_64 Intel(R) Core(TM)2 Duo CPU E8400 @ 3.00GHz GenuineIntel GNU/Linux</blockquote>P.S на маке и виндовом ноуте жены тоже граблей нет.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1326692036,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "u-mena-u-odnogo-kosak-s-kodirovkoj-na-etom-forume",
+  "sticky": false,
+  "tags": [],
+  "title": "У меня у одного косяк с кодировкой на этом форуме ?",
+  "url_path": "/threads/u-mena-u-odnogo-kosak-s-kodirovkoj-na-etom-forume.753/",
+  "user_id": 752,
+  "username": "Pacifik",
+  "view_count": 1843
+}

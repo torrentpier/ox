@@ -1,0 +1,94 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Время выполнения крон задач by belomaxorka.zip",
+      "id": 6676,
+      "local_path": null,
+      "r2_key": null,
+      "size": 1981,
+      "src_url": "https://torrentpier.com/api/resource-versions/662/download?file=6676"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt",
+    "owner": "belomaxorka",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1768219459,
+      "file_size": 8864,
+      "filename": "photo_2025-11-29_21-19-19.webp",
+      "height": 168,
+      "id": 6677,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2025-11-29_21-19-19-webp.6677/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6681-5e326627d7c25fb0e1350b4545eb1d9c.jpg?hash=Efo1Ft18Z4",
+      "width": 522
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Добавляет в админ-панели отображение времени выполнения крон задач.<br />\n<b>Совместимость:</b> все версии.",
+  "download_count": 101,
+  "external_url": null,
+  "icon_url": null,
+  "id": 331,
+  "is_fileless": null,
+  "last_update": 1768219366,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1768219366,
+  "resource_state": "visible",
+  "slug": "vrema-vypolnenia-kron-zadac",
+  "tag_line": "Добавляет в админ-панели отображение времени выполнения крон задач.",
+  "tags": [
+    "cron execution",
+    "cron runtime",
+    "cron time execution",
+    "время выполнения крона",
+    "крон",
+    "мод",
+    "моды"
+  ],
+  "title": "Время выполнения крон задач",
+  "url_path": "/resources/vrema-vypolnenia-kron-zadac.331/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.0",
+  "versions": [
+    {
+      "download_count": 101,
+      "files": [
+        {
+          "filename": "[FULL] Время выполнения крон задач by belomaxorka.zip",
+          "id": 6676,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1981,
+          "src_url": "https://torrentpier.com/api/resource-versions/662/download?file=6676"
+        }
+      ],
+      "id": 662,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1768219366,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/vrema-vypolnenia-kron-zadac.331/version/662/"
+    }
+  ],
+  "view_count": 988
+}

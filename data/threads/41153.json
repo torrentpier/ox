@@ -1,0 +1,109 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 83829,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 51,
+    "title": "Templates for TorrentPier"
+  },
+  "id": 41153,
+  "last_post_date": 1680765231,
+  "node_id": 51,
+  "post_date": 1431224162,
+  "posts": [
+    {
+      "attach_count": 3,
+      "attachments": [
+        {
+          "attach_date": 1431222319,
+          "file_size": 109922,
+          "filename": "freshmaketprofile.webp",
+          "height": 2150,
+          "id": 3826,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/freshmaketprofile-webp.3826/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/3/3830-92b262048f537e6981a6d8639295ae51.jpg?hash=5HHoPdiJqD",
+          "width": 1200
+        },
+        {
+          "attach_date": 1431222325,
+          "file_size": 238276,
+          "filename": "unled1gl.webp",
+          "height": 2150,
+          "id": 3827,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/unled1gl-webp.3827/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/3/3831-1153c0a70a2bc769894148f83c9da223.jpg?hash=MJQgutgxg_",
+          "width": 1200
+        },
+        {
+          "attach_date": 1431224127,
+          "file_size": 6174995,
+          "filename": "templates-freshtorrent.zip",
+          "height": 0,
+          "id": 3828,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/templates-freshtorrent-zip.3828/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 83829,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Название: Freshtorrent (freshtorrent.ru)<br />\nАвтор: Crazy, Fate<br />\nТип: Оригинал<br />\nВерстка: Fate (2011 год)<br />\nTorrentPieer: R291 (2.1 Stable - 10-09-2011)<br />\nКомплектация: psd, tpl(html), CSS, img<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\">// Increase number of revision after update\n$bb_cfg[&#039;tp_version&#039;] = &#039;2.1 Stable&#039;;\n$bb_cfg[&#039;tp_release_state&#039;] = &#039;R291&#039;;\n$bb_cfg[&#039;tp_release_date&#039;] = &#039;10-09-2011&#039;;</pre><br />\nИсходники шаблона Freshtorrent от tp-templates. Шаблон делался на заказ, в июне-июле 2011 года. Трекер года 3 как не работает. В комлекте PSD главной страницы и страницы профиля. Присутствует верстка, но в идеале лучше верстать заново т.к. верстка отличается от psd, и это был 2011-й.<br />\n<br />\n<a href=\"https://torrentpier.com/attachments/3826/\"><img src=\"https://torrentpier.com/data/attachments/3/3830-92b262048f537e6981a6d8639295ae51.jpg?hash=5HHoPdiJqD\" alt=\"freshmaketprofile.webp\" /></a> <a href=\"https://torrentpier.com/attachments/3827/\"><img src=\"https://torrentpier.com/data/attachments/3/3831-1153c0a70a2bc769894148f83c9da223.jpg?hash=MJQgutgxg_\" alt=\"unled1gl.webp\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1431224162,
+      "user_id": 602,
+      "user_title": "User",
+      "username": "Fate"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94864,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "как перенести шаблон на bootstrap 5, есть инструкция?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1680765231,
+      "user_id": 8184,
+      "user_title": "User",
+      "username": "ivangord"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "sablon-freshtorrent-psd-maket-verstka-by-tp-templates",
+  "sticky": false,
+  "tags": [],
+  "title": "Шаблон Freshtorrent (PSD макет, верстка) by tp-templates",
+  "url_path": "/threads/sablon-freshtorrent-psd-maket-verstka-by-tp-templates.41153/",
+  "user_id": 602,
+  "username": "Fate",
+  "view_count": 3066
+}

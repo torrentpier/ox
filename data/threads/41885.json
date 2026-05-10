@@ -1,0 +1,85 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 92746,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 87,
+    "title": "Questions about HTML / CSS"
+  },
+  "id": 41885,
+  "last_post_date": 1520952296,
+  "node_id": 87,
+  "post_date": 1520940346,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1520940283,
+          "file_size": 5218,
+          "filename": "1.webp",
+          "height": 58,
+          "id": 5095,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1-webp.5095/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5099-e7b6125bc75318db7adac1626fbf966e.jpg?hash=1EhtZOrM3C",
+          "width": 755
+        }
+      ],
+      "id": 92746,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Есть одна проблемочка неполучается её решить <br />\nНужно указать линию сзади картинки и еще чтоб от картинки чуточку отступы были",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1520940346,
+      "user_id": 8350,
+      "user_title": "User",
+      "username": "aximas778"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92747,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"aximas778\">Есть одна проблемочка неполучается её решить<br />\nНужно указать линию сзади картинки и еще чтоб от картинки чуточку отступы были</blockquote>Описание тэга HR и его возможных атрибутов можно посмотреть, например, тут: <a href=\"http://htmlbook.ru/html/HR\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Тег &lt;hr&gt; | htmlbook.ru</a><br />\n<br />\nВозможно, Вам понадобится несколько тэгов HR между картинками с выравниванием. Можно попробовать использовать табличную структуру с помощью контейнера TABLE при условии невидимой границы.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1520952296,
+      "user_id": 1478,
+      "user_title": "User",
+      "username": "Nikolay90"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "nuzen-spec-po-tegu-hr",
+  "sticky": false,
+  "tags": [
+    "#hr",
+    "#слои",
+    "#фон hr"
+  ],
+  "title": "Нужен спец по тегу hr",
+  "url_path": "/threads/nuzen-spec-po-tegu-hr.41885/",
+  "user_id": 8350,
+  "username": "aximas778",
+  "view_count": 1645
+}

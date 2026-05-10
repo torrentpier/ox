@@ -1,0 +1,84 @@
+{
+  "custom_fields": {
+    "torrentpier": "223"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 62663,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 26213,
+  "last_post_date": 1529956210,
+  "node_id": 80,
+  "post_date": 1410185238,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62663,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В настройках профиля есть опция &quot;Добовлять ретрекер в торрент-файлы&quot;, однако в раздаче, в магнет-ссылку этот самый ретрекер не добавляется. Почему ? <br />\nПлиз, сделайте  &quot;Добовлять ретрекер в торрент-файлы<b> и magnet-ссылку</b>&quot;<br />\n<img src=\"https://dl.dropboxusercontent.com/u/43001898/tpeer/magtr.JPG\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1410185238,
+      "user_id": 5013,
+      "user_title": "User",
+      "username": "grey_rat"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62671,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Над подобным вообще не задумывались. Сделаем.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1410187825,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93307,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://en.wikipedia.org/wiki/Magnet_URI_scheme#Address_tracker_.28tr.29\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Magnet URI scheme - Wikipedia</a> - по спецификации только один трекер.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1529956210,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 25,
+  "reply_count": 2,
+  "slug": "dobavit-v-nastrojkah-profila-vozmoznost-dobavlenia-retrekera-v-magnet-ssylku",
+  "sticky": false,
+  "tags": [],
+  "title": "Добавить в настройках профиля возможность добавления ретрекера в магнет-ссылку",
+  "url_path": "/threads/dobavit-v-nastrojkah-profila-vozmoznost-dobavlenia-retrekera-v-magnet-ssylku.26213/",
+  "user_id": 5013,
+  "username": "grey_rat",
+  "view_count": 1730
+}

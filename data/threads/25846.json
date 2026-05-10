@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 59714,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25846,
+  "last_post_date": 1395358531,
+  "node_id": 57,
+  "post_date": 1395354980,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59714,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "откуда берётся вот этот код http://s47.*******.host/i115/1403/59/ce3d9d23b98d.jpghttp://s019.*******.host/i635/1403/1a/833250ea445c.jpg<br />\n <br />\nнужно чтоб перед название группы в которой состоит пользователь было &lt;span class=&quot;row_data&quot;&gt;",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1395354980,
+      "user_id": 0,
+      "user_title": "",
+      "username": "sockrat"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59715,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "вывод идет на аяксе, соответственно и искать надо или в ajax.php или в папке ajax (зависит от ревизии, т.к изначально функция group_membership была впилина именно в ajax.php)",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1395358531,
+      "user_id": 5166,
+      "user_title": "User",
+      "username": "RYT."
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "vstavka-koda",
+  "sticky": false,
+  "tags": [],
+  "title": "Вставка кода",
+  "url_path": "/threads/vstavka-koda.25846/",
+  "user_id": 0,
+  "username": "sockrat",
+  "view_count": 924
+}

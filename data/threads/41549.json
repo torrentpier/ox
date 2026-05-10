@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 88674,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41549,
+  "last_post_date": 1478887002,
+  "node_id": 57,
+  "post_date": 1477303610,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88674,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "В таблице bb_bt_users есть колонка u_up_total. Включает ли она в себя значение u_up_release?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1477303610,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88721,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://github.com/torrentpier/torrentpier/search?utf8=%E2%9C%93&amp;q=u_up_total\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Search Results · GitHub</a><br />\n<br />\nОбычно поиск по коду дает ответ на вопрос. Да.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1477539800,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88847,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Если включает, то формула расчета рейтинга должна быть <br />\nu_up_total/u_down_total <br />\nвместо <br />\n(u_up_total+u_up_release+u_up_bonus)/u_down_total <br />\nИли я чего не понимаю",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1478699441,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88865,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"zxc\">Или я чего не понимаю</blockquote>Давайте попробуем разобраться.<br />\n1) u_up_total - отдано всего,<br />\nu_up_release - отдано на своих релизах,<br />\nu_up_bonus - бонусные байты (кило, мега, гига - у кого что) или просто Бонус,<br />\nu_down_total  - всего скачано.<br />\n<br />\nФормула для подсчёта рейтинга верна:<br />\n<i>рейтинг</i> = (u_up_total+u_up_release+u_up_bonus)/u_down_total <br />\n<br />\nДля хранения значений каждой из указанных переменных, в таблице bb_bt_users базы, отведено отдельное поле (в частности, одним из полей является u_up_total).<br />\n<br />\n2) u_up_release - это тоже своего рода бонус, за отданное на своих раздачах, и это прибавляется к отданному всего (u_up_total). То есть, фактически происходит умножение на два. Данный подход (фактическое умножение на два), лично я считаю правильным, поскольку стимулирует пользователей трекеров делать свои раздачи.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1478887002,
+      "user_id": 1478,
+      "user_title": "User",
+      "username": "Nikolay90"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "u_up_total",
+  "sticky": false,
+  "tags": [],
+  "title": "u_up_total",
+  "url_path": "/threads/u_up_total.41549/",
+  "user_id": 6370,
+  "username": "sхс",
+  "view_count": 1054
+}

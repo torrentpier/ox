@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 27369,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 2269,
+  "last_post_date": 1361816350,
+  "node_id": 57,
+  "post_date": 1361815815,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27369,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет! прошу не ругаться. объясните чайнику куда и как вставлять коды счетчиков как rambler top 100 и так далее? облазил всё! работаю через filezilla!!!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1361815815,
+      "user_id": 4141,
+      "user_title": "User",
+      "username": "Владимир Тарнаев"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27370,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Владимир Тарнаев\">Всем привет! прошу не ругаться. объясните чайнику куда и как вставлять коды счетчиков как rambler top 100 и так далее? облазил всё! работаю через filezilla!!!</blockquote>templates/default/page_footer.tpl<br />\n<pre class=\"xfBb-code\" data-lang=\"\">вставить после \n \n&lt;!-- IF SHOW_ADMIN_LINK --&gt;\n  &lt;div class=&quot;tiny tCenter&quot;&gt;&lt;a href=&quot;{ADMIN_LINK_HREF}&quot;&gt;{L_ADMIN_PANEL}&lt;/a&gt;&lt;/div&gt;\n  &lt;br /&gt;\n  &lt;!-- ENDIF --&gt;</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1361815945,
+      "user_id": 4073,
+      "user_title": "User",
+      "username": "leex"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27371,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "да куда душа желает (sidebar, page_footer)",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1361815984,
+      "user_id": 2636,
+      "user_title": "User",
+      "username": "fail"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 27372,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Cпасибо огромное!",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1361816350,
+      "user_id": 4141,
+      "user_title": "User",
+      "username": "Владимир Тарнаев"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "scetciki-posesaemosti-kuda-vstavlat",
+  "sticky": false,
+  "tags": [],
+  "title": "счетчики посещаемости, куда вставлять??",
+  "url_path": "/threads/scetciki-posesaemosti-kuda-vstavlat.2269/",
+  "user_id": 4141,
+  "username": "Владимир Тарнаев",
+  "view_count": 1297
+}

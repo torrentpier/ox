@@ -1,0 +1,106 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "Проверка размера постера [Addon].zip",
+      "id": 4426,
+      "local_path": null,
+      "r2_key": null,
+      "size": 76612,
+      "src_url": "https://torrentpier.com/api/resource-versions/370/download?file=4426"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Добавить в jquery.pack.js\n\n[CODE]\nДобавить в jquery.pack.js\n;// js/lib/jquery/jquery.imagesloaded.js\n!function(a,b){\"use strict\";var c=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==\";a.fn.imagesLoaded=function(d){function e(){var b=a(l),c=a(m);h&&(m.length?h.reject(j,b,c):h.resolve(j)),a.isFunction(d)&&d.call(g,j,b,c)}function f(b,d){b.src!==c&&-1===a.inArray(b,k)&&(k.push(b),d?m.push(b):l.push(b),a.data(b,\"imagesLoaded\",{isBroken:d,src:b.src}),i&&h.notifyWith(a(b),[d,j,a(l),a(m)]),j.length===k.length&&(setTimeout(e),j.unbind(\".imagesLoaded\")))}var g=this,h=a.isFunction(a.Deferred)?a.Deferred():0,i=a.isFunction(h.notify),j=g.find(\"img\").add(g.filter(\"img\")),k=[],l=[],m=[];return a.isPlainObject(d)&&a.each(d,function(a,b){\"callback\"===a?d=b:h&&h[a](b)}),j.length?j.bind(\"load.imagesLoaded error.imagesLoaded\",function(a){f(a.target,\"error\"===a.type)}).each(function(d,e){var g=e.src,h=a.data(e,\"imagesLoaded\");return h&&h.src===g?void f(e,h.isBroken):e.complete&&e.naturalWidth!==b?void f(e,0===e.naturalWidth||0===e.naturalHeight):void((e.readyState||e.complete)&&(e.src=c,e.src=g))}):e(),h?h.promise(g):g}}(jQuery);\n\nНайти\n   // количество найденных ошибок при заполнении формы\n\nВставить перед\n\n   images: {/* {img_id: Image()} */},  // загружаемые для проверки картинки\n   img_wait_load: {/* {img_id: timer_id} */},  // для задержки submit пока картинки не загрузятся ИЛИ же загрузка не отвалится по timeout\n   img_load_timeout: 10000,  // ms; отмена проверки, если картинка не успела полностью загрузится за это время\n\n   load_and_check_img: function(el, img_url, max_W, max_H) {\n     var img_id = $P.md5(''+el+img_url.toLowerCase());\n\n     if ( !(img_id in TPL.images) ) {\n       TPL.images[img_id] = new Image();\n       TPL.images[img_id].src = img_url;\n     }\n     // submit будет задержан, пока TPL.img_wait_load не пустой\n     TPL.img_wait_load[img_id] = setTimeout(function(){\n       TPL.cancel_wait_load(img_id);\n     }, TPL.img_load_timeout);\n     $(TPL.images[img_id]).imagesLoaded( function(){ TPL.check_img_size(img_id, el, max_W, max_H) } );\n     TPL.add_loading_icon(el, img_id);\n   },\n\n   check_img_size: function(img_id, el, max_W, max_H) {\n     TPL.cancel_wait_load(img_id);\n     var img = TPL.images[img_id];\n     if (img.width > max_W || img.height > max_H) {\n       var err_msg_id = 'big_img_'+ img_id;\n       TPL.err_msg[err_msg_id] = 'Максимальные ширина и высота должны быть <b>'+ max_W +'</b>x<b>'+ max_H +'</b>. У вас <b>'+ img.width +'</b>x<b>'+ img.height +'</b>';\n       TPL.hl_form_err(el, err_msg_id);\n     }\n   },\n   cancel_wait_load: function(img_id) {\n     $(TPL.images[img_id]).unbind('.imagesLoaded');\n     if (TPL.img_wait_load[img_id] != null) {\n       clearTimeout(TPL.img_wait_load[img_id]);\n       delete(TPL.img_wait_load[img_id]);\n     }\n     TPL.remove_loading_icon(img_id);\n   },\n   add_loading_icon: function(el, img_id) {\n     var el_id = TPL.get_el_id(el);\n     $('#'+el_id).parent('td').append('<div id=\"'+img_id+'\" class=\"tpl-loading-icon\"><i class=\"loading-1\">загружается...</i></div>');\n     $('#'+img_id).siblings('input[type=\"text\"]').prop({readonly: true});\n   },\n   remove_loading_icon: function(img_id) {\n     $('#'+img_id).siblings('input[type=\"text\"]').prop({readonly: false});\n     $('#'+img_id).remove();\n   },\n   disable_submit_btn: function() {\n     $('#tpl-submit-btn').val('загружается...').prop({disabled: true});\n   },\n   enable_submit_btn: function() {\n     if ( $.isEmptyObject(TPL.img_wait_load) ) {\n       $('#tpl-submit-btn').val('Продолжить').prop({disabled: false});\n     }\n   },\n\nНайти\n     img_tag : /(https?:\\/\\/[^\\s\\?&;:=\\#\\\"<>]+\\.(jpg|jpeg|gif|png)(?!\\[|\\]|\\.))/ig\n\nЗаменить\n\n     img_tag : /(https?:\\/\\/[^\\s\\?&;:=\\#\\\"<>]+\\.(jpg|jpeg|gif|png)(?!\\[|\\]|\\.))/ig,\n     img_WxH : /^WxH:(\\d+)x(\\d+)$/\n\nНайти\n\n       if ($.inArray('img', at) != -1 && !TPL.reg['img'].test(el_val)) {\n         TPL.hl_form_err(el, 'not_img');\n         return true; // continue\n       }\n\nЗаменить\n\n       if ($.inArray('img', at) != -1) {\n         if (!TPL.reg['img'].test(el_val)) {\n           TPL.hl_form_err(el, 'not_img');\n           return true; // continue\n         }\n         else {\n           if ($.inArray('POSTER', at) != -1) {\n             var WxH = $.grep( at, function(n,i){ return n.match(TPL.reg['img_WxH']) });\n             if ( WxH.length && (m = WxH[0].match(TPL.reg['img_WxH'])) ) {\n               TPL.load_and_check_img(el, el_val, m[1], m[2]);\n             }\n           }\n         }\n       }\n\nНайти\n   // удаление подсветки ошибок, сброс счетчика\n   reset_f_errors: function() {\n\nЗаменить\n\n   // удаление подсветки ошибок, сброс счетчика\n   reset_f_errors: function() {\n     for (var img_id in TPL.images) {\n       TPL.cancel_wait_load(img_id);\n     }\n     TPL.f_errors_cnt = 0;\n     $('tr.tpl-err-hl-tr').removeClass('tpl-err-hl-tr');\n     $('.tpl-err-hl-input').removeClass('tpl-err-hl-input');\n     $('div.tpl-err-hint').remove();\n   },\n\nНайти\n\nfunction tpl_submit ()\n\nЗаменить\n\nfunction tpl_build_and_submit ()\n{\n   if ( TPL.build_msg_all('tpl-post-message', 'tpl-post-subject') ) {\n     tpl_submit();\n   }\n}\n\nfunction tpl_submit ()\n{\n   if ( !$.isEmptyObject(TPL.img_wait_load) ) {\n     TPL.disable_submit_btn();\n     setTimeout(function(){ tpl_submit(); }, 1000);\n   }\n   else {\n     if (!TPL.f_errors_cnt) {\n       $('#tpl-post-form').submit();\n     }\n     TPL.enable_submit_btn();\n   }\n}\n\nНайти\n     <input type=\"button\" value=\"Продолжить\" class=\"bold\" style=\"width: 150px;\" onclick=\"tpl_submit(true);\" />\n\nЗаменить\n\n     <input type=\"button\" value=\"Продолжить\" class=\"bold\" style=\"width: 150px;\" onclick=\"tpl_build_and_submit();\" />\n[/CODE]",
+    "owner": "",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1467012674,
+      "file_size": 206626,
+      "filename": "2016-06-27_163012.webp",
+      "height": 1573,
+      "id": 4420,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2016-06-27_163012-webp.4420/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4424-4cebf25038a407d3ad24e50ab7a53ca2.jpg?hash=KZRPf94dWI",
+      "width": 1902
+    }
+  ],
+  "description_parsed": "Установить по инструкции или же просто заменить файлы с архива<br />\nиспользуем вот так poster[img,POSTER,req,WxH:500x500]<br />\nрип аддона с rutracker.org<br />\n<br />\n<a href=\"https://torrentpier.com/attachments/4420/\"><img src=\"https://torrentpier.com/data/attachments/4/4424-4cebf25038a407d3ad24e50ab7a53ca2.jpg?hash=KZRPf94dWI\" alt=\"2016-06-27_163012.webp\" /></a>",
+  "download_count": 337,
+  "external_url": null,
+  "icon_url": null,
+  "id": 250,
+  "is_fileless": null,
+  "last_update": 1467081520,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1467013073,
+  "resource_state": "visible",
+  "slug": "proverka-razmera-postera",
+  "tag_line": "Проверка размера постера в шаблоне для релиза",
+  "tags": [],
+  "title": "Проверка размера постера",
+  "url_path": "/resources/proverka-razmera-postera.250/",
+  "user_id": 4866,
+  "username": "Bender",
+  "version": "1.1",
+  "versions": [
+    {
+      "download_count": 257,
+      "files": [
+        {
+          "filename": "Проверка размера постера [Addon].zip",
+          "id": 4426,
+          "local_path": null,
+          "r2_key": null,
+          "size": 76612,
+          "src_url": "https://torrentpier.com/api/resource-versions/370/download?file=4426"
+        }
+      ],
+      "id": 370,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1467081520,
+      "version_state": "visible",
+      "version_string": "1.1",
+      "view_url": "https://torrentpier.com/resources/proverka-razmera-postera.250/version/370/"
+    },
+    {
+      "download_count": 80,
+      "files": [
+        {
+          "filename": "Проверка размера постера [Addon].zip",
+          "id": 4418,
+          "local_path": null,
+          "r2_key": null,
+          "size": 76311,
+          "src_url": "https://torrentpier.com/api/resource-versions/368/download?file=4418"
+        }
+      ],
+      "id": 368,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1467013073,
+      "version_state": "visible",
+      "version_string": "2016-06-27",
+      "view_url": "https://torrentpier.com/resources/proverka-razmera-postera.250/version/368/"
+    }
+  ],
+  "view_count": 498
+}

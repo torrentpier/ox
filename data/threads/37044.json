@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 77784,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 37044,
+  "last_post_date": 1448967469,
+  "node_id": 47,
+  "post_date": 1425421469,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 77784,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Пользователь Exile разместил новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/varianty-vstavki-spojlera.188/\" class=\"link link--internal\">Варианты вставки спойлера</a> - Добавляет в редактор несколько вариантов вставки спойлера.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> добавляет в редактор несколько вариантов вставки спойлера.</blockquote><br />\n<a href=\"https://torrentpier.com/resources/varianty-vstavki-spojlera.188/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1425421469,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85971,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Затестил отлично работает. Если не трудно напиши инструкцию как создать свой bbCode. Хочу сделать bbCode для добавления в раздачу вот такой карусельки с попапом изображений. Как саму карусельку сделать с попапом изображений знаю. Напиши плиз в каких файлах что добавлять.<br />\n<a href=\"http://owlgraphic.com/owlcarousel/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Owl Carousel</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1448967469,
+      "user_id": 6580,
+      "user_title": "User",
+      "username": "CrazyBoss"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "bb-kod-varianty-vstavki-spojlera",
+  "sticky": false,
+  "tags": [],
+  "title": "BB-код: варианты вставки спойлера",
+  "url_path": "/threads/bb-kod-varianty-vstavki-spojlera.37044/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 1422
+}

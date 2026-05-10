@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 67166,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 29520,
+  "last_post_date": 1416134827,
+  "node_id": 57,
+  "post_date": 1416030259,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 67166,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Можно ли в шаблоне сделать видимым кусок кода только для участников определенной группы по аналогии с гостями?<br />\n<br />\n&lt;!-- IF IS_GUEST --&gt;<br />\nкод<br />\n&lt;!-- ENDIF --&gt;<br />\n<br />\nесть ли что-то подобное для групп?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1416030259,
+      "user_id": 561,
+      "user_title": "User",
+      "username": "John Smith"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 67200,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Добавить в page_header.php присвоение переменной шаблона нужно. Делаете запрос к таблице bb_user_group (получение id групп в которых состоит пользователь), полученные значения (пользователь может быть в нескольких группах) сравниваете с нужным (in_array функция в php), и если состоит - присваиваете переменной значение true, иначе false. Ну и этой переменной уже в шаблоне пользуетесь. Например IF_VIP и т.п.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1416134827,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "pokaz-tol-ko-dla-ucastnikov-gruppy",
+  "sticky": false,
+  "tags": [],
+  "title": "Показ только для участников группы",
+  "url_path": "/threads/pokaz-tol-ko-dla-ucastnikov-gruppy.29520/",
+  "user_id": 561,
+  "username": "John Smith",
+  "view_count": 978
+}

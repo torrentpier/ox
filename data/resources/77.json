@@ -1,0 +1,46 @@
+{
+  "category": {
+    "description": "Section with all paid modifications for TorrentPier.",
+    "id": 2,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Paid",
+    "view_url": "https://torrentpier.com/resources/categories/paid.2/"
+  },
+  "current_files": [],
+  "custom_fields": {},
+  "description_attachments": [],
+  "description_parsed": "Мод позволяет ввести учет рейтинга у пользователей по типу Вконтакте.<br />\nЧто умеет:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Функции на Ajax</li>\n<li data-xf-list-type=\"ul\">Смена цвета ленты в зависимости от рейтинга (&lt; 100 или &gt; 100)</li>\n<li data-xf-list-type=\"ul\">Просмотр последних пяти голосовавших</li>\n<li data-xf-list-type=\"ul\">До 100% можно довести за счет заполнения полей профиля (ICQ, Skype, Интересы, Откуда, Пол, День рождения, Аватар)</li>\n<li data-xf-list-type=\"ul\">Настройки модуля в администраторской панели</li>\n<li data-xf-list-type=\"ul\">За одну единицу рейтинга снимает 100 (или другое количество) сид-бонусов</li>\n<li data-xf-list-type=\"ul\">Отсылается оповещение о повышении рейтинга в ЛС</li>\n</ul>Цена договоренная (по ICQ).<br />\nICQ: <u>1240581</u><br />\nПосмотреть работу мода, можно у меня на <a href=\"http://gamesbits.net/profile.php?mode=viewprofile&amp;u=2\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">сайте</a>.<br />\nhttp://torrentpier.com/data/attachments/0/880-4573e928a39cd940bf219ca5e4d14152.jpg http://torrentpier.com/data/attachments/0/881-5b93e2ea042ddf6bb7ca55a54c93b703.jpg http://torrentpier.com/data/attachments/0/882-b12f090de7d92d8a3049809510c394b4.jpg http://torrentpier.com/data/attachments/0/883-54cba0d6e57cd616a3c1eb0777d1530a.jpg http://torrentpier.com/data/attachments/0/884-355984fbd8e05b6e854c772684739a96.jpg http://torrentpier.com/data/attachments/0/885-6c5acfb5c84c894cce68452f9dc75ea9.jpg http://torrentpier.com/data/attachments/0/886-04ef9018e67b74fc4d6a9dcc712696ae.jpg",
+  "download_count": 0,
+  "external_url": null,
+  "icon_url": null,
+  "id": 77,
+  "is_fileless": null,
+  "last_update": 1389633471,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1389633471,
+  "resource_state": "visible",
+  "slug": "rejting-profila-za-sid-bonusy-na-ajax",
+  "tag_line": "Мод позволяет ввести учет рейтинга у пользователей по типу Вконтакте",
+  "tags": [],
+  "title": "Рейтинг профиля за сид-бонусы на ajax",
+  "url_path": "/resources/rejting-profila-za-sid-bonusy-na-ajax.77/",
+  "user_id": 21,
+  "username": "RomM1",
+  "version": "1.0",
+  "versions": [
+    {
+      "download_count": 0,
+      "files": [],
+      "id": 82,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1389633471,
+      "version_state": "visible",
+      "version_string": "1.0",
+      "view_url": "https://torrentpier.com/resources/rejting-profila-za-sid-bonusy-na-ajax.77/version/82/"
+    }
+  ],
+  "view_count": 521
+}

@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 84008,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 86,
+    "title": "Questions about PHP"
+  },
+  "id": 41167,
+  "last_post_date": 1431869665,
+  "node_id": 86,
+  "post_date": 1431866262,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84008,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет, работаю со скриптом DigiSeller, и наткнулся на проблемку, когда на сайте захожу на страницу товара тогда у меня появляется ошибка <br />\n<br />\n<div>Spoiler content hidden.</div><br />\nВот код на <div>Spoiler content hidden.</div><br />\nне могу разобраться в чем проблема, как разрулить эту ситуацию?)<br />\nИли кто сможешь довести этот скрипт до ума, есть пример как он должен выглядеть и работать, естественно не бесплатно)",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1431866262,
+      "user_id": 5886,
+      "user_title": "User",
+      "username": "founder"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84009,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Проверьте кодировку файла",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1431867324,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84010,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/68/\">@Nightmare</a> UTF-8",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1431868738,
+      "user_id": 5886,
+      "user_title": "User",
+      "username": "founder"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84011,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Соррян, разобрался в чем причина) тупанул по жесткому) ошибка из-за того что он получается не может получить iP хоста, так как я на локале тестю, сейчас забросил на хостингер 😗(использую его лишь в тех случаях когда нужно убедиться что все хорошо работает на хосте) там нету ошибки) ситуация разрулена)",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1431869665,
+      "user_id": 5886,
+      "user_title": "User",
+      "username": "founder"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "osibka-file_get_contents",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка file_get_contents()",
+  "url_path": "/threads/osibka-file_get_contents.41167/",
+  "user_id": 5886,
+  "username": "founder",
+  "view_count": 1759
+}

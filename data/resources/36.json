@@ -1,0 +1,46 @@
+{
+  "category": {
+    "description": "Section with all paid modifications for TorrentPier.",
+    "id": 2,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Paid",
+    "view_url": "https://torrentpier.com/resources/categories/paid.2/"
+  },
+  "current_files": [],
+  "custom_fields": {},
+  "description_attachments": [],
+  "description_parsed": "<b>Описание:</b> Выводит в топике с релизом возрастное ограничение(выставляется во время создания (редактирования)).<br />\n<b>ICQ:</b> 590-700-200<br />\n<b>Цена: </b>600.<br />\n<ul>\n<li data-xf-list-type=\"ul\">Возможность указать свои возрастные категории</li>\n<li data-xf-list-type=\"ul\">Нет дополнительных запросов при выводе</li>\n</ul><a href=\"https://torrentpier.com/attachments/2043/\">View attachment 2043</a><a href=\"https://torrentpier.com/attachments/2044/\">View attachment 2044</a>",
+  "download_count": 0,
+  "external_url": null,
+  "icon_url": null,
+  "id": 36,
+  "is_fileless": null,
+  "last_update": 1370934537,
+  "rating_avg": 5,
+  "rating_count": 1,
+  "resource_date": 1370934537,
+  "resource_state": "visible",
+  "slug": "vyvod-vozrastnyh-ogranicenij-v-relize",
+  "tag_line": "Выводит в топике с релизом возрастное ограничение(выставляется во время создания (редактирования))",
+  "tags": [],
+  "title": "Вывод возрастных ограничений в релизе",
+  "url_path": "/resources/vyvod-vozrastnyh-ogranicenij-v-relize.36/",
+  "user_id": 97,
+  "username": "Zenden",
+  "version": "1.0",
+  "versions": [
+    {
+      "download_count": 0,
+      "files": [],
+      "id": 36,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1370934537,
+      "version_state": "visible",
+      "version_string": "1.0",
+      "view_url": "https://torrentpier.com/resources/vyvod-vozrastnyh-ogranicenij-v-relize.36/version/36/"
+    }
+  ],
+  "view_count": 601
+}

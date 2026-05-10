@@ -1,0 +1,89 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 90761,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41689,
+  "last_post_date": 1491252014,
+  "node_id": 57,
+  "post_date": 1491152468,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90761,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Друзья все перепробовал, настроил крон в весте сначала так: <br />\n<br />\n/usr/bin/php /home/admin/web/giperwarez.org/public_html/cron.php<br />\nпотом так: /usr/bin/wget -O /dev/null -q giperwarez.org/cron.php<br />\nв логах выдает ошибку <br />\nCan not run &quot;/usr/bin/wget -O /dev/null -q giperwarez.org/cron.php&quot; : file &quot;/home/admin/web/giperwarez.org/public_html/library/includes/cron/jobs/cron.php&quot; not found",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1491152468,
+      "user_id": 7773,
+      "user_title": "User",
+      "username": "krave911"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90765,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1491157783,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/7773/\">krave911</a>, cron.php находится в корне движка а не в джобах, путь не правильный<br />\n<br />\n/home/admin/web/giperwarez.org/cron.php<br />\n<br />\nобщий крон, запускает все кроны в админке. В админке крон нужно выключить.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1491157718,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90782,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/7773/\">krave911</a>, <br />\n/usr/bin/php -f /home/admin/web/site.ru/public_html/cron.php &gt;/dev/null 2&gt;&amp;1",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1491252014,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "problema-s-nastrojkoj-krona",
+  "sticky": false,
+  "tags": [
+    "крон"
+  ],
+  "title": "Проблема с настройкой крона",
+  "url_path": "/threads/problema-s-nastrojkoj-krona.41689/",
+  "user_id": 7773,
+  "username": "krave911",
+  "view_count": 1159
+}

@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 868,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 93,
+  "last_post_date": 1311919742,
+  "node_id": 57,
+  "post_date": 1311866114,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 868,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем доброго вечера!<br />\nСтолкнулся с проблемой, теперь при создании релизов (новая тема), переходит просто на белую страницу.<br />\nПоследний раз только трогал /www/домен/language/lang_russian/lang_topic_templates.php - хотел добавить свои строчки:<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$lang[&#039;TPL&#039;][&#039;VERS&#039;] = array(\n    &#039;Полная версия&#039;,\n    &#039;Демо-версия&#039;,\n    &#039;Бета-версия&#039;,\n    &#039;Альфа-версия&#039;\n    &#039;Идея&#039;\n    &#039;ОБТ&#039;\n    &#039;ЗБТ&#039;,\n);</pre><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$lang[&#039;TPL&#039;][&#039;ENGINE&#039;] = &#039;Движок&#039;;</pre><br />\nНу и в /www/домен/templates/default/topic_templates/games.tpl добавил это.<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;tr&gt;\n    &lt;td&gt;&lt;b&gt;{L_SOURCE_TYPE}&lt;/b&gt;:&lt;/td&gt;\n    &lt;td&gt;\n        &lt;select name=&quot;msg[source_type]&quot;&gt;&lt;option value=&quot;&quot;&gt;&amp;raquo; {L_SELECT}&lt;/option&gt;&lt;script type=&quot;text/javascript&quot;&gt;document.writeln(make_format_list(source_type));&lt;/script&gt;&lt;/select&gt;&amp;nbsp;\n        &lt;span class=&quot;nowrap&quot;&gt;&lt;b&gt;{L_LOCALIZATION}&lt;/b&gt;: &lt;select name=&quot;msg[localization]&quot;&gt;&lt;option value=&quot;&quot;&gt;&amp;raquo; {L_SELECT}&lt;/option&gt;&lt;script type=&quot;text/javascript&quot;&gt;document.writeln(make_format_list(localization));&lt;/script&gt;&lt;/select&gt;&lt;/span&gt;&amp;nbsp;\n        &lt;span class=&quot;nowrap&quot;&gt;&lt;b&gt;{L_MEDICINE}&lt;/b&gt;: &lt;select name=&quot;msg[medicine]&quot;&gt;&lt;option value=&quot;&quot;&gt;&amp;raquo; {L_SELECT}&lt;/option&gt;&lt;script type=&quot;text/javascript&quot;&gt;document.writeln(make_format_list(medicine));&lt;/script&gt;&lt;/select&gt;&lt;/span&gt;\n        &lt;span class=&quot;nowrap&quot;&gt;&lt;b&gt;{L_VERS}&lt;/b&gt;: &lt;select name=&quot;msg[vers]&quot;&gt;&lt;option value=&quot;&quot;&gt;&amp;raquo; {L_SELECT}&lt;/option&gt;&lt;script type=&quot;text/javascript&quot;&gt;document.writeln(make_format_list(vers));&lt;/script&gt;&lt;/select&gt;&lt;/span&gt;\n    &lt;/td&gt;\n&lt;/tr&gt;</pre><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&lt;tr&gt;\n    &lt;td&gt;&lt;b&gt;{L_ENGINE}&lt;/b&gt;:&lt;/td&gt;\n    &lt;td&gt;&lt;input type=&quot;text&quot; name=&quot;msg[engine]&quot; size=&quot;90&quot; /&gt;&lt;/td&gt;\n&lt;/tr&gt;</pre> <br />\nТеперь вообще ничего не работает.<br />\nПомогите, пожалуйста!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1311866114,
+      "user_id": 136,
+      "user_title": "User",
+      "username": "FunnyAlien"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 869,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "что в логах написано?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1311866285,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 872,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"php\">T_CONSTANT_ENCAPSED_STRING, expecting &#039;)&#039; in /home/nikiforova/data/www/gcc.salmons.ru/language/lang_russian/lang_topic_templates.php on line 143\n[28-Jul-2011 22:06:44] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting &#039;)&#039; in /home/nikiforova/data/www/gcc.salmons.ru/language/lang_russian/lang_topic_templates.php on line 143\n[28-Jul-2011 22:06:48] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting &#039;)&#039; in /home/nikiforova/data/www/gcc.salmons.ru/language/lang_russian/lang_topic_templates.php on line 143\n[28-Jul-2011 22:08:26] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting &#039;)&#039; in /home/nikiforova/data/www/gcc.salmons.ru/language/lang_russian/lang_topic_templates.php on line 143\n[28-Jul-2011 22:09:09] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting &#039;)&#039; in /home/nikiforova/data/www/gcc.salmons.ru/language/lang_russian/lang_topic_templates.php on line 143\n[28-Jul-2011 22:09:12] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting &#039;)&#039; in /home/nikiforova/data/www/gcc.salmons.ru/language/lang_russian/lang_topic_templates.php on line 143\n[28-Jul-2011 22:11:36] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting &#039;)&#039; in /home/nikiforova/data/www/gcc.salmons.ru/language/lang_russian/lang_topic_templates.php on line 143</pre>﻿<br />\n<span style=\"color: rgb(204,204,204)\"><span style=\"font-size: 10px\">--- добавлено: Jul 28, 2011 3:29 PM ---</span></span><br />\nВсе, решил.<br />\nПроблема была в том, что я забыл поставить запятые.<br />\nХорошо по логу определил строчку и выяснил причину ошибки (знаю java).<br />\nСпасибо за внимание и извините за беспокойство.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1311866957,
+      "user_id": 136,
+      "user_title": "User",
+      "username": "FunnyAlien"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 884,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"\">знаю java</blockquote>Зная один из языков высокого класса ты умудряешься забыть запятые?))",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1311884328,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 892,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Да они такие маленькие, я пока нотепад не открыл и строчку не нашел, я не мог понять в чем дело 😀",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1311919742,
+      "user_id": 136,
+      "user_title": "User",
+      "username": "FunnyAlien"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "belaa-stranica-pri-sozdanii-temy-s-relizom",
+  "sticky": false,
+  "tags": [],
+  "title": "Белая страница при создании темы с релизом",
+  "url_path": "/threads/belaa-stranica-pri-sozdanii-temy-s-relizom.93/",
+  "user_id": 136,
+  "username": "FunnyAlien",
+  "view_count": 1983
+}

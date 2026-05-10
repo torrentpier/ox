@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 14660,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1176,
+  "last_post_date": 1333291254,
+  "node_id": 57,
+  "post_date": 1333290422,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14660,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "У меня такая проблема.Когда нахожусь под админом на главной странице отображаются все форумы,вот:<br />\n <img src=\"http://king-games.at.ua/snimok.gif\" alt=\"\" /><br />\n <br />\n <br />\nно когда я выхожу из под админа,тоисть  захожу гостём<br />\nу меня нету всех этих форумов.<br />\n<img src=\"http://king-games.at.ua/snimok2.gif\" alt=\"\" /><br />\n <br />\n <br />\nмало того,он мне показывает test forum ,а хотя я его давно удалил.<br />\nкак решить эту проблему?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1333290422,
+      "user_id": 1123,
+      "user_title": "User",
+      "username": "raptoringin"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14661,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>raptoringin</b>, во первых здесь этот движок не поддерживается, а во вторых нужно почистить кеш.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1333290776,
+      "user_id": 30,
+      "user_title": "User",
+      "username": "krumax"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14662,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "всмысли<br />\nмой движок на скриншотах не соответствует вашему?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1333290981,
+      "user_id": 1123,
+      "user_title": "User",
+      "username": "raptoringin"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14663,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"raptoringin\">всмысли<br />\nмой движок на скриншотах не соответствует вашему?</blockquote>А разве это не очевидно? 😀<br />\n <br />\nВот как выглядит TPII <a href=\"http://dimka3210.ru/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://dimka3210.ru/</a>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1333291254,
+      "user_id": 30,
+      "user_title": "User",
+      "username": "krumax"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "neponatnaa-probleia",
+  "sticky": false,
+  "tags": [],
+  "title": "Непонятная проблеиа",
+  "url_path": "/threads/neponatnaa-probleia.1176/",
+  "user_id": 1123,
+  "username": "raptoringin",
+  "view_count": 1321
+}

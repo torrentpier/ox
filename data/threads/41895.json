@@ -1,0 +1,121 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 92948,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41895,
+  "last_post_date": 1529821951,
+  "node_id": 57,
+  "post_date": 1522755374,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92948,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Добрый день. Прошу помощи. Разместил ресурс, проблема с отправкой почты. Local mailbox romale999&lt;xxxxx<a href=\"mailto:rld.sever@mail.ru\">@mail.ru</a> is unavailable: user not found . Сервер SMTP Заворачивает письмо с формулировкой не правильный адрес (инвалид) ? где добавить вот эту &gt; чтоб закрыть корректно адрес. Спасибо",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1522755374,
+      "user_id": 8282,
+      "user_title": "User",
+      "username": "Romale999"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92951,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "нужно настроить почту на сервере",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1522771290,
+      "user_id": 8369,
+      "user_title": "User",
+      "username": "Ральф"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92955,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"рофф\">нужно настроить почту на сервере</blockquote>Спасибо, что не прошёл. Но, я указал проблему и это баг. Письмо уходит, но его SMTP сервер заворачивает и присылает ответ, адрес не корректный. Проблемма в том что должны быть скобки такого типа &lt; email @com&gt; а вот этой последнеq скобки &gt; закрывающей нет. Надо её исправить, я порылся вроде норма, проще сэндмаил свой засунуть. Не пойму что во всех ревизиях ни кто через SMTP не работал, все локально что ли, где такое видано, а проблема раз два у кого и тишина, ти по обновляйтесь. Время только потратиш на исправление и всё. Которого нет.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1522776479,
+      "user_id": 8282,
+      "user_title": "User",
+      "username": "Romale999"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93288,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Romale999\">Спасибо, что не прошёл. Но, я указал проблему и это баг. Письмо уходит, но его SMTP сервер заворачивает и присылает ответ, адрес не корректный. Проблемма в том что должны быть скобки такого типа &lt; email @com&gt; а вот этой последнеq скобки &gt; закрывающей нет. Надо её исправить, я порылся вроде норма, проще сэндмаил свой засунуть. Не пойму что во всех ревизиях ни кто через SMTP не работал, все локально что ли, где такое видано, а проблема раз два у кого и тишина, ти по обновляйтесь. Время только потратиш на исправление и всё. Которого нет.</blockquote>Версия движка-то какая? В одной из новых полностью почтовый компонент заменили как раз из-за проблем со старым.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1529774959,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93289,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем спасибо! исправил.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1529821951,
+      "user_id": 8282,
+      "user_title": "User",
+      "username": "Romale999"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "pocta",
+  "sticky": false,
+  "tags": [],
+  "title": "Почта",
+  "url_path": "/threads/pocta.41895/",
+  "user_id": 8282,
+  "username": "Romale999",
+  "view_count": 1389
+}

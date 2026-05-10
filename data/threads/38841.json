@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 80348,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 38841,
+  "last_post_date": 1427294235,
+  "node_id": 57,
+  "post_date": 1427281983,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 80348,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Встречал на трекерах списки рекомендуемых и запрещенных к использованию торрент клиентов, да и сам попадал, как читер, за использование µTorrent 3.4.2. Вот вопрос, а как отловить юзеров, использующих не рекомендованную софтину?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1427281983,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 80381,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Begemot\">как отловить юзеров, использующих не рекомендованную софтину?</blockquote>Поставить этот мод: <a href=\"https://torrentpier.com/threads/klient-versija-v-statistike-razdachi.1343/#post-17245\" class=\"link link--internal\">https://torrentpier.com/threads/klient-versija-v-statistike-razdachi.1343/#post-17245</a><br />\nЯ только так отлавливаю любителей запрещённых версий торрент-клиентов. Вообще, я был бы не против видеть этот мод в движке по умолчанию. Очень удобно: открыл тему, и сразу видно, кто чем качает.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1427294235,
+      "user_id": 79,
+      "user_title": "User",
+      "username": "Lynx"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "blokirovka-torrent-klientov",
+  "sticky": false,
+  "tags": [],
+  "title": "Блокировка торрент клиентов",
+  "url_path": "/threads/blokirovka-torrent-klientov.38841/",
+  "user_id": 1514,
+  "username": "Begemot",
+  "view_count": 1029
+}

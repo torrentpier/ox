@@ -1,0 +1,112 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Сортировка по ролям в списке пользователей by belomaxorka.zip",
+      "id": 5963,
+      "local_path": null,
+      "r2_key": null,
+      "size": 2035,
+      "src_url": "https://torrentpier.com/api/resource-versions/490/download?file=5963"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1704900897,
+      "file_size": 9962,
+      "filename": "photo_2024-01-09_16-41-02.webp",
+      "height": 222,
+      "id": 5729,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2024-01-09_16-41-02-webp.5729/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5733-094b796298caae11a86d4929a2bbd5e5.jpg?hash=0bv-o2tVeb",
+      "width": 538
+    }
+  ],
+  "description_parsed": "<div style=\"text-align: center\"><span style=\"color: rgb(226, 80, 65)\">Данный мод добавлен по умолчанию с v2.4.3</span>&#8203;</div><hr /><b>Описание:</b> Добавляет сортировку по ролям (Все, Пользователь, Администратор, Модератор) в список пользователей. При выборе отображает всех пользователей с конкретной ролью.",
+  "download_count": 406,
+  "external_url": null,
+  "icon_url": null,
+  "id": 281,
+  "is_fileless": null,
+  "last_update": 1712990756,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1704900914,
+  "resource_state": "visible",
+  "slug": "sortirovka-po-rolam-v-spiske-pol-zovatelej",
+  "tag_line": "Добавляет сортировку по ролям в список пользователей.",
+  "tags": [
+    "memberlist улучшения",
+    "memberlist улучшенная сортировка",
+    "мод",
+    "моды",
+    "сортировка по ролям"
+  ],
+  "title": "Сортировка по ролям в списке пользователей",
+  "url_path": "/resources/sortirovka-po-rolam-v-spiske-pol-zovatelej.281/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v2.0.0",
+  "versions": [
+    {
+      "download_count": 287,
+      "files": [
+        {
+          "filename": "[FULL] Сортировка по ролям в списке пользователей by belomaxorka.zip",
+          "id": 5963,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2035,
+          "src_url": "https://torrentpier.com/api/resource-versions/490/download?file=5963"
+        }
+      ],
+      "id": 490,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1712990756,
+      "version_state": "visible",
+      "version_string": "v2.0.0",
+      "view_url": "https://torrentpier.com/resources/sortirovka-po-rolam-v-spiske-pol-zovatelej.281/version/490/"
+    },
+    {
+      "download_count": 121,
+      "files": [
+        {
+          "filename": "[FULL] Сортировка по ролям в списке пользователей by belomaxorka.zip",
+          "id": 5730,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1398,
+          "src_url": "https://torrentpier.com/api/resource-versions/433/download?file=5730"
+        }
+      ],
+      "id": 433,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1704900914,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/sortirovka-po-rolam-v-spiske-pol-zovatelej.281/version/433/"
+    }
+  ],
+  "view_count": 1226
+}

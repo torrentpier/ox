@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 110,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 52,
+    "title": "Bug tracker archive"
+  },
+  "id": 16,
+  "last_post_date": 1309336216,
+  "node_id": 52,
+  "post_date": 1309335084,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 110,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"php\">Fatal error: Call to undefined function tidy_repair_string() in /home/site/domains/site.ru/public_html/forum/includes/bbcode.php on line 869</pre>﻿<br />\nСкажите, а что это за ошибка?<br />\nИ еще нотисы внизу страницы...<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Notice: Undefined index: node_name in /home/site/domains/site.ru/public_html/forum/includes/page_footer.php on line 61\n\nNotice: Undefined index: node_addr in /home/site/domains/site.ru/public_html/forum/includes/page_footer.php on line 61</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1309335084,
+      "user_id": 54,
+      "user_title": "",
+      "username": "iHost"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 111,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В соседней теме писали об этом: <a href=\"http://torrentpier.com/threads/call-to-undefined-function-sqlite_escape_string.11/#post-80\" class=\"link link--internal\">http://torrentpier.com/threads/call-to-undefined-function-sqlite_escape_string.11/#post-80</a><br />\nв php.ini ищи строчку php_extension=php_tidy.dll и раскомментируй её",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1309335378,
+      "user_id": 10,
+      "user_title": "User",
+      "username": "Mafiozi"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 112,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Mafiozi\">В соседней теме писали об этом: <a href=\"http://torrentpier.com/threads/call-to-undefined-function-sqlite_escape_string.11/#post-80\" class=\"link link--internal\">http://torrentpier.com/threads/call-to-undefined-function-sqlite_escape_string.11/#post-80</a><br />\nв php.ini ищи строчку php_extension=php_tidy.dll и раскомментируй её</blockquote>Плохо, я на хостинге сайт свой сделал, сейчас попросил, чтобы мне ее включили...",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1309335913,
+      "user_id": 54,
+      "user_title": "",
+      "username": "iHost"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 113,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Да уж, всегда лучше самому иметь доступ",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1309336216,
+      "user_id": 10,
+      "user_title": "User",
+      "username": "Mafiozi"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "fatal-naa-osibka",
+  "sticky": false,
+  "tags": [],
+  "title": "Фатальная ошибка!",
+  "url_path": "/threads/fatal-naa-osibka.16/",
+  "user_id": 54,
+  "username": "iHost",
+  "view_count": 1701
+}

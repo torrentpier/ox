@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 39674,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 11354,
+  "last_post_date": 1376144854,
+  "node_id": 80,
+  "post_date": 1375911264,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 39674,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Notice: Use of undefined constant BB_PRIVMSGS - assumed &#039;BB_PRIVMSGS&#039; in /var/www/callseed.php on line 49<br />\n <br />\n <br />\n49 строка $sql = &quot;INSERT INTO &quot;. BB_PRIVMSGS .&quot; (privmsgs_type, privmsgs_subject, privmsgs_from_userid, privmsgs_to_userid, privmsgs_date, privmsgs_ip)",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1375911264,
+      "user_id": 41,
+      "user_title": "User",
+      "username": "XLex"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 39677,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "#001146 Table &#039;forum.BB_PRIVMSGS&#039; doesn&#039;t exist<br />\nхотя всё есть",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1375911951,
+      "user_id": 41,
+      "user_title": "User",
+      "username": "XLex"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 39678,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Кто-нибудь еще может подтвердить, потому что ошибка крайне странная, так как константа задается в файле common.php, подключаемого в самом начале файла.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1375912147,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 40024,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>исправил</b> ! была моя вина ! руки немного не оттуда)",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1376144854,
+      "user_id": 41,
+      "user_title": "User",
+      "username": "XLex"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 3,
+  "slug": "osibka-bb_privmsgs",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка BB_PRIVMSGS",
+  "url_path": "/threads/osibka-bb_privmsgs.11354/",
+  "user_id": 41,
+  "username": "XLex",
+  "view_count": 1209
+}

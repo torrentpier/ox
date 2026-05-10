@@ -1,0 +1,156 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 96812,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 109,
+    "title": "LTS version archive"
+  },
+  "id": 42320,
+  "last_post_date": 1738482885,
+  "node_id": 109,
+  "post_date": 1731151281,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1731151262,
+          "file_size": 12342,
+          "filename": "LTS.webp",
+          "height": 100,
+          "id": 6204,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/lts-webp.6204/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6208-833c6d5c69163ad819911ac32e7a993a.jpg?hash=8VrPBjbU8j",
+          "width": 300
+        },
+        {
+          "attach_date": 1731151343,
+          "file_size": 4984817,
+          "filename": "torrentpier-lts-2.1.5-2024.10-HotFix.zip",
+          "height": 0,
+          "id": 6205,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/torrentpier-lts-2-1-5-2024-10-hotfix-zip.6205/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 96812,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier LTS. Версия 2.1.5-2024.10-HotFix [Final v9]</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/6204/\" alt=\"LTS.png\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier-lts/releases/tag/v2.1.5-2024.10-HotFix\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.1.5-2024.10-HotFix [Final v9] · torrentpier/torrentpier-lts</a><br />\n<br />\n<b>Основные изменения:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Release v2.1.5-2024.10-HotFix 🎉</li>\n<li data-xf-list-type=\"ul\">Revert &quot;Fixed incorrect page width on mobile devices&quot; due to some bugs</li>\n<li data-xf-list-type=\"ul\">Fixed broken torrent stats displaying</li>\n</ul>Для обновления на версию не нужно выполнять дополнительные запросы к базе данных.<br />\n<hr />Вероятно последняя версия из LTS. Буквально исправлять уже больше нечего, если пытаться улучшать дальше, то это уже будет не LTS. Можете смело ставить эту версию на долгую перспективу, она, пожалуй, самая стабильная из всех)<br />\n<hr /><b>CRC32</b>: 5C800A78<br />\n<b>MD5</b>: FD2C8001160F069295186FB32D7C42F2<br />\n<b>SHA-1</b>: C9A042714C80067DDE3243E8B3D8E279024D170C",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1731151281,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97037,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "На какой пхп работает",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1738481654,
+      "user_id": 10665,
+      "user_title": "User",
+      "username": "crowni"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97038,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"crowni\">На какой пхп работает</blockquote>На PHP 5.3 по 5.6.<br />\n<br />\nОбратите внимание на Final v10 версию",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1738481729,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97039,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Мне надо работает на пхп 8 . Какая версия стбилная надо ползоватся и какие модьй работает на етой версии",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1738482724,
+      "user_id": 10665,
+      "user_title": "User",
+      "username": "crowni"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97040,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Если дадите список на ли4ке с версии торентпиер каторай работает на пхп 8 и всех модьй работает на етой версии буду благодарен.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1738482885,
+      "user_id": 10665,
+      "user_title": "User",
+      "username": "crowni"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "torrentpier-lts-versia-2-1-5-2024-10-hotfix-final-v9",
+  "sticky": false,
+  "tags": [
+    "lts",
+    "lts-final",
+    "torrentpier",
+    "torrentpier-lts",
+    "новая версия",
+    "релиз",
+    "ченжлог"
+  ],
+  "title": "TorrentPier LTS. Версия 2.1.5-2024.10-HotFix [Final v9]",
+  "url_path": "/threads/torrentpier-lts-versia-2-1-5-2024-10-hotfix-final-v9.42320/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 957
+}

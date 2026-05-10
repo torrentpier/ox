@@ -1,0 +1,75 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 98267,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 43215,
+  "last_post_date": 1760540877,
+  "node_id": 111,
+  "post_date": 1760540877,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1760540874,
+          "file_size": 6648,
+          "filename": "Cattle.webp",
+          "height": 343,
+          "id": 6596,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/cattle-webp.6596/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6600-f334aab0aa2ad535c3030e5c2fb2837d.jpg?hash=jFIp-r3dyo",
+          "width": 302
+        }
+      ],
+      "id": 98267,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier Cattle. Версия 2.7.0</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/6596/\" alt=\"Cattle.webp\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/releases/tag/v2.7.0\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.7.0 · torrentpier/torrentpier</a><br />\n<br />\n<b>Чейнджлог:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/compare/v2.6.0...v2.7.0\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Comparing v2.6.0...v2.7.0 · torrentpier/torrentpier</a><br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-rocket-features\"></a>🚀 Features&#8203;<a class=\"hoverLink\" href=\"#-rocket-features\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(database)</i> Add visual markers for Nette Explorer queries in debug panel (<a href=\"https://github.com/torrentpier/torrentpier/pull/1965\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1965</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/2fd306704f21febee7d53f4b4531601ce0cb81ce\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">2fd3067</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(language)</i> Add new language variable for migration file and enhance template fallback logic (<a href=\"https://github.com/torrentpier/torrentpier/pull/1984\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1984</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/a33574c28f2eb6267a74fa6c9d97fea86527157a\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">a33574c</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(migrations)</i> Implement Phinx database migration system (<a href=\"https://github.com/torrentpier/torrentpier/pull/1976\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1976</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/fbde8cd421c9048afe70ddb41d0a9ed26d3fbef5\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">fbde8cd</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(test)</i> [<b>breaking</b>] Add comprehensive testing infrastructure with Pest PHP  (<a href=\"https://github.com/torrentpier/torrentpier/pull/1979\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1979</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/cc9d412522938a023bd2b8eb880c4d2dd307c82a\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">cc9d412</a>)</li>\n<li data-xf-list-type=\"ul\">[<b>breaking</b>] Implement Language singleton with shorthand functions (<a href=\"https://github.com/torrentpier/torrentpier/pull/1966\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1966</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/49717d3a687b95885fe9773f2597354aed4b2b60\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">49717d3</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-bug-bug-fixes\"></a>🐛 Bug Fixes&#8203;<a class=\"hoverLink\" href=\"#-bug-bug-fixes\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(database)</i> Update affected rows tracking in Database class (<a href=\"https://github.com/torrentpier/torrentpier/pull/1980\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1980</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/4f9cc9fe0f7f4a85c90001a3f5514efdf04836da\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">4f9cc9f</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-tractor-refactor\"></a>🚜 Refactor&#8203;<a class=\"hoverLink\" href=\"#-tractor-refactor\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(database)</i> Enhance error logging and various fixes (<a href=\"https://github.com/torrentpier/torrentpier/pull/1978\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1978</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/7aed6bc7d89f4ed31e7ed6c6eeecc6e08d348c24\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">7aed6bc</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(database)</i> Rename DB to Database and extract debug functionality (<a href=\"https://github.com/torrentpier/torrentpier/pull/1964\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1964</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/6c0219d53c7544b7d8a6374c0d0848945d32ae17\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">6c0219d</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(stats)</i> Improve database row fetching in tr_stats.php (<a href=\"https://github.com/torrentpier/torrentpier/pull/1985\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1985</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/728116d6dc9cf4476cce572ced5e8a7ef529ead8\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">728116d</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-gear-miscellaneous\"></a>⚙️ Miscellaneous&#8203;<a class=\"hoverLink\" href=\"#-gear-miscellaneous\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\">Update minimum PHP requirement to 8.2 (<a href=\"https://github.com/torrentpier/torrentpier/pull/1987\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1987</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/9b322c7093a634669e9f17a32ac42500f44f2496\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">9b322c7</a>)</li>\n<li data-xf-list-type=\"ul\">Removed useless composer update from workflows &amp; installer (<a href=\"https://github.com/torrentpier/torrentpier/pull/1986\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1986</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/423424e9478e0772957014fb30f5e84158067af7\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">423424e</a>)</li>\n<li data-xf-list-type=\"ul\">Added --no-dev composer flag for some workflows (<a href=\"https://github.com/torrentpier/torrentpier/pull/1982\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1982</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/e9a9e095768ba68aa5d5058a3e152ffaec916117\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">e9a9e09</a>)</li>\n<li data-xf-list-type=\"ul\">Added --no-dev composer flag for some workflows (<a href=\"https://github.com/torrentpier/torrentpier/pull/1981\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#1981</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/e8cba5dd3fc83b616f83c24991f79dc7258c5df3\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">e8cba5d</a>)</li>\n</ul>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1760540877,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-cattle-versia-2-7-0",
+  "sticky": false,
+  "tags": [
+    "cattle",
+    "новая версия",
+    "релиз",
+    "ченжлог"
+  ],
+  "title": "TorrentPier Cattle. Версия 2.7.0",
+  "url_path": "/threads/torrentpier-cattle-versia-2-7-0.43215/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 309
+}

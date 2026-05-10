@@ -1,0 +1,150 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 13344,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1090,
+  "last_post_date": 1331666684,
+  "node_id": 57,
+  "post_date": 1331321469,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1331321836,
+          "file_size": 29288,
+          "filename": "Проблема.webp",
+          "height": 460,
+          "id": 840,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/problema-webp.840/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/0/841-28008fca8b46f68536bafc8498c14ffc.jpg?hash=prm1nDiMll",
+          "width": 1343
+        }
+      ],
+      "id": 13344,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Дело такое, в созданной теме непоказывает картинку, вместо картинки смайлик переносящий в якобы существующую тему! Если ссылку на картинку делать в виде &quot;&quot; то пишет &quot;Прочтите правила размещения скриншотов в этом разделе!&quot; собственно с ссылкой в туже якобы тему что и смайл! как исправить это?<br />\n<a href=\"https://torrentpier.com/attachments/840/\"><img src=\"https://torrentpier.com/data/attachments/0/841-28008fca8b46f68536bafc8498c14ffc.jpg?hash=prm1nDiMll\" alt=\"Проблема.webp\" /></a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1331321469,
+      "user_id": 947,
+      "user_title": "User",
+      "username": "Adddiii"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13345,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<span style=\"font-size: 15px\"><b><a href=\"http://torrentpier.com/threads/%D0%BD%D0%B5-%D0%BE%D1%82%D0%BE%D0%B1%D1%80%D0%BE%D0%B6%D0%B0%D1%8E%D1%82%D1%81%D1%8F-%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0-%D0%B8-%D1%81%D0%BA%D1%80%D0%B8%D0%BD%D1%88%D0%BE%D1%82%D1%8B.1071/\" class=\"link link--internal\">не отоброжаются обложка и скриншоты.</a></b></span>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1331322347,
+      "user_id": 435,
+      "user_title": "User",
+      "username": "S.T.@.L.K.E.R."
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13346,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "скрины которые под спойлером отображаются, а вот обложка нет",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1331322532,
+      "user_id": 947,
+      "user_title": "User",
+      "username": "Adddiii"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13544,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "ктонить подскажет как сделать чтобы в топике всегда показывались изображения?? покуда непоставить опции показа : загружаемые картинки то показывается смайлик oops и переселыет в такой топик  viewtopic.php?t=52267 в первом посте скрин! сборка последняя 385",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1331660019,
+      "user_id": 947,
+      "user_title": "User",
+      "username": "Adddiii"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13545,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Adddiii</b>, обсуждалось уже раз 100... ищи читай темы..подсказка прон.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1331662241,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Bustra"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13546,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Bustra\"><b>Adddiii</b>, обсуждалось уже раз 100... ищи читай темы..подсказка прон.</blockquote>благадарю за подсказку уже понял что и где править! тему можно закрыть или удалить!!!",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1331666684,
+      "user_id": 947,
+      "user_title": "User",
+      "username": "Adddiii"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "problema-s-otobrazeniem-kartinok-v-teme",
+  "sticky": false,
+  "tags": [],
+  "title": "Проблема с отображением картинок в теме!",
+  "url_path": "/threads/problema-s-otobrazeniem-kartinok-v-teme.1090/",
+  "user_id": 947,
+  "username": "Adddiii",
+  "view_count": 1793
+}

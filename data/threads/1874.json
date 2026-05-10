@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 24956,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1874,
+  "last_post_date": 1357114109,
+  "node_id": 57,
+  "post_date": 1357111496,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24956,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всех с наступившим! ближе к теме..<br />\nУстановил моды последних коментариев, новых торрентов, популярных, их нужно размещать в page_header.tpl перед строкой сайдбара, но вот хочу я их переместить на право а точнее на второй сайдбар который с права, как мне это сделать? подскажите, в сайдбар2 вставлял - он просто не распознает ланги и переменные 🙁",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1357111496,
+      "user_id": 3266,
+      "user_title": "User",
+      "username": "extazys"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24957,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "в config.php<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">$page_cfg[&#039;show_sidebar2&#039;] = array(\n#    BB_SCRIPT =&gt; false\n    &#039;index&#039; =&gt; false,\n);</pre> <br />\nfalse меняешь на true",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1357111857,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Credo"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24959,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Оно у меня и так тру, блок то отображается - но вот эти моды не хочет отображать, не читает переменные и ланги...<br />\n<img src=\"http://data1.floomby.com/files/share/2_1_2013/lJj3L6hFWku1ZCuv5RgWLg.png\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1357112206,
+      "user_id": 3266,
+      "user_title": "User",
+      "username": "extazys"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24960,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В  page_header.tpl данные 1 сайдбара<br />\nВ page_footer.tpl второго🙂",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1357113566,
+      "user_id": 0,
+      "user_title": "",
+      "username": "co:caine"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24961,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "ооопааа, спасибо! ступил 😀",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1357114109,
+      "user_id": 3266,
+      "user_title": "User",
+      "username": "extazys"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "problema-s-modom-i-sajdbarami",
+  "sticky": false,
+  "tags": [],
+  "title": "Проблема с модом и сайдбарами",
+  "url_path": "/threads/problema-s-modom-i-sajdbarami.1874/",
+  "user_id": 3266,
+  "username": "extazys",
+  "view_count": 1138
+}

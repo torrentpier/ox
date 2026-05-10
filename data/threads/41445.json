@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 87362,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 86,
+    "title": "Questions about PHP"
+  },
+  "id": 41445,
+  "last_post_date": 1460314706,
+  "node_id": 86,
+  "post_date": 1459545109,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87362,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет, знающие люди подскажите есть возможность средствами php отправить на трекер запрос на получение информации о DHT? Я имею введу сколько сидов пиров ну т.д??",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1459545109,
+      "user_id": 5480,
+      "user_title": "User",
+      "username": "ВаленокPC"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87363,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "см. темы с мультитрекером",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1459552581,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87367,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Там не то мне нужно сделать запрос на получение инфы о локальных пирах а не о тех которые считывает трекер.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1459593701,
+      "user_id": 5480,
+      "user_title": "User",
+      "username": "ВаленокPC"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87418,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://github.com/ylqjgm/DHT\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">GitHub - ylqjgm/DHT: 一个使用PHP编写的DHT爬虫</a> - для работы с DHT нужны библиотеки такого плана. Тут китайская, но в принципе смысл понятен.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1460314706,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "dht",
+  "sticky": false,
+  "tags": [],
+  "title": "DHT",
+  "url_path": "/threads/dht.41445/",
+  "user_id": 5480,
+  "username": "ВаленокPC",
+  "view_count": 1600
+}

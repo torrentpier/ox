@@ -1,0 +1,158 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Инвайты by anton4er & belomaxorka.zip",
+      "id": 6201,
+      "local_path": null,
+      "r2_key": null,
+      "size": 20084,
+      "src_url": "https://torrentpier.com/api/resource-versions/552/download?file=6201"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом.",
+    "owner": "anton4er, belomaxorka, участники форума",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1731074553,
+      "file_size": 47626,
+      "filename": "photo_2024-11-08_20-55-20.webp",
+      "height": 428,
+      "id": 6197,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2024-11-08_20-55-20-webp.6197/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6201-cc27683b9e471699890fbec7f4bd9d5f.jpg?hash=c153EAWsI2",
+      "width": 1280
+    },
+    {
+      "attach_date": 1731074553,
+      "file_size": 8554,
+      "filename": "photo_2024-11-08_20-55-31.webp",
+      "height": 92,
+      "id": 6198,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2024-11-08_20-55-31-webp.6198/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6202-fded815bff0edce86d31006ab559dc0b.jpg?hash=YswpPGXjsI",
+      "width": 760
+    },
+    {
+      "attach_date": 1731074553,
+      "file_size": 32882,
+      "filename": "photo_2024-11-08_20-57-49.webp",
+      "height": 299,
+      "id": 6199,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2024-11-08_20-57-49-webp.6199/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6203-0ddbedf55ac57f1493040c5b81eb988b.jpg?hash=1bRxDfzqvn",
+      "width": 1143
+    },
+    {
+      "attach_date": 1731074554,
+      "file_size": 32570,
+      "filename": "photo_2024-11-08_20-58-06.webp",
+      "height": 237,
+      "id": 6200,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2024-11-08_20-58-06-webp.6200/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6204-dd86f50c1fae5321b06f02483ffdeab7.jpg?hash=FuiHHve0ki",
+      "width": 1140
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Добавляет возможность пользователям создавать персональные инвайты для приглашения новых участников. Имеется продвинутая система управления правилами выдачи инвайтов. Также в комплекте есть мод валидации инвайта на AJAX.<br />\n<b>Совместимость</b>: v2.1.5, LTS.<br />\n<hr />За основу была взята адаптация от <a href=\"https://torrentpier.com/members/824/\">anton4er</a>.<br />\nИзменения в сравнении с исходным модом:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Ники пользователей и ссылки на профили теперь формируются с помощью функций</li>\n<li data-xf-list-type=\"ul\">Исправлено отображение даты выдачи / активации инвайта</li>\n<li data-xf-list-type=\"ul\">Исправлена ошибка в сообщении о включении модуля</li>\n<li data-xf-list-type=\"ul\">Исправлены мелкие проблемы в дизайне</li>\n<li data-xf-list-type=\"ul\">Исправлена 500-ая ошибка при открытии invite.php от гостя</li>\n</ul>",
+  "download_count": 372,
+  "external_url": null,
+  "icon_url": null,
+  "id": 309,
+  "is_fileless": null,
+  "last_update": 1731084292,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1731074563,
+  "resource_state": "visible",
+  "slug": "registracia-po-invajtam",
+  "tag_line": "Добавляет возможность пользователям создавать персональные инвайты для приглашения новых участников.",
+  "tags": [
+    "выдача инвайтов",
+    "инвайт",
+    "инвайтов",
+    "инвайты",
+    "мод",
+    "мод инвайты",
+    "моды",
+    "регистрация",
+    "регистрация по инвайтам"
+  ],
+  "title": "Регистрация по инвайтам",
+  "url_path": "/resources/registracia-po-invajtam.309/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.1.1",
+  "versions": [
+    {
+      "download_count": 280,
+      "files": [
+        {
+          "filename": "[FULL] Инвайты by anton4er & belomaxorka.zip",
+          "id": 6201,
+          "local_path": null,
+          "r2_key": null,
+          "size": 20084,
+          "src_url": "https://torrentpier.com/api/resource-versions/552/download?file=6201"
+        }
+      ],
+      "id": 552,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1731084292,
+      "version_state": "visible",
+      "version_string": "v1.1.1",
+      "view_url": "https://torrentpier.com/resources/registracia-po-invajtam.309/version/552/"
+    },
+    {
+      "download_count": 93,
+      "files": [
+        {
+          "filename": "[FULL] Инвайты by anton4er & belomaxorka.zip",
+          "id": 6196,
+          "local_path": null,
+          "r2_key": null,
+          "size": 20026,
+          "src_url": "https://torrentpier.com/api/resource-versions/551/download?file=6196"
+        }
+      ],
+      "id": 551,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1731074563,
+      "version_state": "visible",
+      "version_string": "v1.1.0",
+      "view_url": "https://torrentpier.com/resources/registracia-po-invajtam.309/version/551/"
+    }
+  ],
+  "view_count": 671
+}

@@ -1,0 +1,81 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61855,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 26091,
+  "last_post_date": 1407946331,
+  "node_id": 80,
+  "post_date": 1407881128,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1407881049,
+          "file_size": 2548,
+          "filename": "Screenshot_4.webp",
+          "height": 101,
+          "id": 2597,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot_4-webp.2597/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2602-2ba1580ea79a506404f033e90a6aec61.jpg?hash=7QqSTe8SRx",
+          "width": 316
+        }
+      ],
+      "id": 61855,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Очередной ajax error на демо-версии.<br />\nПри отправке формы с изменением ника в profile.php, аякс выдает еррор:<br />\n<img src=\"https://torrentpier.com/attachments/2597/\" alt=\"Screenshot_4.webp\" /><br />\n <br />\nИ да: собираетесь ли интегрировать csrf protection в следующих ревизиях?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1407881128,
+      "user_id": 4510,
+      "user_title": "User",
+      "username": "Alex Kur"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61860,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "По поводу первого не подтверждаю.<br />\n <br />\nПо поводу второго - взял в работу. Token у нас в части мест предусмотрен, осталась сама реализация.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1407946331,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 31,
+  "reply_count": 1,
+  "slug": "csrf",
+  "sticky": false,
+  "tags": [],
+  "title": "CSRF",
+  "url_path": "/threads/csrf.26091/",
+  "user_id": 4510,
+  "username": "Alex Kur",
+  "view_count": 967
+}

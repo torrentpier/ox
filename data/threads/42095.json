@@ -1,0 +1,89 @@
+{
+  "custom_fields": {
+    "torrentpier": "221"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94614,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42095,
+  "last_post_date": 1599636219,
+  "node_id": 57,
+  "post_date": 1598420421,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94614,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Кто знает, где находится настройка уведомлений о новых личных сообщениях по умолчанию: <a href=\"https://prnt.sc/u5z8rc\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Screenshot</a> <br />\nИ как массово изменить её всем пользователям?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1598420421,
+      "user_id": 6275,
+      "user_title": "User",
+      "username": "Геннадий Ф"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94619,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Геннадий Ф\">Кто знает, где находится настройка уведомлений о новых личных сообщениях по умолчанию: <a href=\"https://prnt.sc/u5z8rc\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Screenshot</a><br />\nИ как массово изменить её всем пользователям?</blockquote><br />\nВ настройках профиля .",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1598863255,
+      "user_id": 5626,
+      "user_title": "Blocked",
+      "username": "Kryl"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94628,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Kryl\">В настройках профиля .</blockquote>В настройках профиля - это для конкретного пользователя.<br />\nИмеется ввиду как админу изменить эту настройку сразу у всех пользователей?<br />\nИ где настраивается эта настройка при регистрации пользователя?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1599636219,
+      "user_id": 6275,
+      "user_title": "User",
+      "username": "Геннадий Ф"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "uvedomlat-o-novyh-licnyh-soobseniah",
+  "sticky": false,
+  "tags": [],
+  "title": "Уведомлять о новых личных сообщениях",
+  "url_path": "/threads/uvedomlat-o-novyh-licnyh-soobseniah.42095/",
+  "user_id": 6275,
+  "username": "Геннадий Ф",
+  "view_count": 1049
+}

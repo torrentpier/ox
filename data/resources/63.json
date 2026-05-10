@@ -1,0 +1,123 @@
+{
+  "category": {
+    "description": "Icons, smileys, and other graphic elements for design.",
+    "id": 6,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Graphics and styles",
+    "view_url": "https://torrentpier.com/resources/categories/graphics-and-styles.6/"
+  },
+  "current_files": [
+    {
+      "filename": "Георгиевская лента.zip",
+      "id": 3701,
+      "local_path": null,
+      "r2_key": null,
+      "size": 9384,
+      "src_url": "https://torrentpier.com/api/resource-versions/306/download?file=3701"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]\n[CODE]#################################################\nв page_header.tpl ищем  </head> после вставляем\n#################################################\n\n<style type=\"text/css\">\n#may9 {\n    display: block;\n    position: absolute;\n    left: 0;\n    top: 0px;\n    overflow: visible;\n    width: 100px;\n    height: 100px;\n    margin: 0 0 0 0;\n    padding: 0;\n    z-index: 9999;\n    border: none;\n    float: none;\n  }\n  </style>\n</head>\n\n<body bgcolor=\"#fff\">\n\n<div id=\"may9\">\n  <img src=\"may9.png\" border=\"0\"\nstyle=\"filter:alpha(opacity=90);opacity: 0.90;-moz-opacity:0.90;\">\n</div>\n\n###########################\nзаливаем картинку в корень\n###########################\n\n#######################\nstyle=\"filter:alpha(opacity=90);opacity: 0.90;-moz-opacity:0.90;\"> цифры 90 регулируют прозрачность\n#######################[/CODE]\n[/SPOILER]",
+    "owner": "qaqra"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1429908332,
+      "file_size": 2880,
+      "filename": "may9.webp",
+      "height": 100,
+      "id": 3699,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/may9-webp.3699/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3703-778cc17185353c7c7172550ce125d867.jpg?hash=o0n1yawrqb",
+      "width": 100
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавлением украшение на сайт к 9 мая.",
+  "download_count": 480,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/63.jpg?1429908287",
+  "id": 63,
+  "is_fileless": null,
+  "last_update": 1429908637,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1389630376,
+  "resource_state": "visible",
+  "slug": "georgievskaa-lenta-v-uglu",
+  "tag_line": "Добавлением украшение на сайт к 9 мая.",
+  "tags": [],
+  "title": "Георгиевская лента в углу",
+  "url_path": "/resources/georgievskaa-lenta-v-uglu.63/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 283,
+      "files": [
+        {
+          "filename": "Георгиевская лента.zip",
+          "id": 3701,
+          "local_path": null,
+          "r2_key": null,
+          "size": 9384,
+          "src_url": "https://torrentpier.com/api/resource-versions/306/download?file=3701"
+        }
+      ],
+      "id": 306,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1429908637,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/georgievskaa-lenta-v-uglu.63/version/306/"
+    },
+    {
+      "download_count": 97,
+      "files": [
+        {
+          "filename": "Георгиевская лента.zip",
+          "id": 3700,
+          "local_path": null,
+          "r2_key": null,
+          "size": 9384,
+          "src_url": "https://torrentpier.com/api/resource-versions/305/download?file=3700"
+        }
+      ],
+      "id": 305,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1429908391,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/georgievskaa-lenta-v-uglu.63/version/305/"
+    },
+    {
+      "download_count": 101,
+      "files": [
+        {
+          "filename": "Георгиевская лента.zip",
+          "id": 2354,
+          "local_path": null,
+          "r2_key": null,
+          "size": 9333,
+          "src_url": "https://torrentpier.com/api/resource-versions/68/download?file=2354"
+        }
+      ],
+      "id": 68,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1389630376,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/georgievskaa-lenta-v-uglu.63/version/68/"
+    }
+  ],
+  "view_count": 1263
+}

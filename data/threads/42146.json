@@ -1,0 +1,137 @@
+{
+  "custom_fields": {
+    "torrentpier": "2302"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94997,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42146,
+  "last_post_date": 1689222094,
+  "node_id": 57,
+  "post_date": 1689164478,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94997,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Привет всем. Ещё не начал пользоваться, выдает такую ошибку: <br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">[12-Jul-2023 17:14:47 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /var/www/library/includes/core/mysql.php:101<br />\nStack trace:<br />\n#0 /var/www//library/includes/core/mysql.php(66): sql_db-&gt;connect()<br />\n#1 /var/www//library/includes/core/mysql.php(153): sql_db-&gt;init()<br />\n#2 /var/www//library/includes/core/mysql.php(321): sql_db-&gt;sql_query(&#039;SELECT * FROM b...&#039;)<br />\n#3 /var/www//library/includes/functions.php(1301): sql_db-&gt;fetch_rowset(&#039;SELECT * FROM b...&#039;)<br />\n#4 /var/www//library/includes/init_bb.php(441): bb_get_config(&#039;bb_config&#039;)<br />\n#5 /var/www/common.php(485): require(&#039;/var/www/mo56.r...&#039;)<br />\n#6 /var/www//index.php(6): require(&#039;/var/www/mo56.r...&#039;)<br />\n#7 {main}<br />\n  thrown in /var/www//library/includes/core/mysql.php on line 101</blockquote><br />\nТак же не нашёл мануала или ридми по установке, судя по всему, с 17 года многое тут поменялось. Версия php 7.2, mariadb 10.1.48-MariaDB-0ubuntu0.18.04.1 - Ubuntu 18.04",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1689164478,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94999,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1689176825,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Lange\">Привет всем. Ещё не начал пользоваться, выдает такую ошибку:<br />\n<br />\n<br />\nТак же не нашёл мануала или ридми по установке, судя по всему, с 17 года многое тут поменялось. Версия php 7.2, mariadb 10.1.48-MariaDB-0ubuntu0.18.04.1 - Ubuntu 18.04</blockquote>Судя по всему вы используйте LTS версию (либо 2.1.5 и ниже) (исходя из путей), а она работает только на PHP 5.3.3 по 5.6. Поставьте версию 5.6 и всё будет работать.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1689176198,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95001,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"belomaxorka\">Судя по всему вы используйте LTS версию (либо 2.1.5 и ниже) (исходя из путей), а она работает только на PHP 5.3.3 по 5.6. Поставьте версию 5.6 и всё будет работать.</blockquote>Да все верно, последнюю версию из гит брал",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1689220833,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95002,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Lange\">Да все верно, последнюю версию из гит брал</blockquote>Она не поддерживает новые версии php, ровно как и 2.1.5",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1689221360,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95003,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"belomaxorka\">Она не поддерживает новые версии php, ровно как и 2.1.5</blockquote>2.4.0 поддерживает новые версии php?<br />\n<br />\nPS Увидел на странице гита, все ок)",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1689221900,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95004,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Lange\">2.4.0 поддерживает новые версии php?<br />\n<br />\nPS Увидел на странице гита, все ок)</blockquote>Да, поддерживает) В будущем будет онли поддержка PHP 8 и выше",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1689222094,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "osibka-pri-ustanovke",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка при установке",
+  "url_path": "/threads/osibka-pri-ustanovke.42146/",
+  "user_id": 55,
+  "username": "Lange",
+  "view_count": 1003
+}

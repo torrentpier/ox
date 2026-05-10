@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 68127,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 30309,
+  "last_post_date": 1417027020,
+  "node_id": 111,
+  "post_date": 1417027007,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 68127,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1698748844,
+      "message_parsed": "<b>Ссылка: </b><a href=\"https://github.com/torrentpier/torrentpier/archive/refs/tags/v2.1.4.zip\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Прямая загрузка</a><br />\n<br />\n<b>Описание:</b><br />\n<br />\nЧетвертый ALPHA-билд.<br />\n<br />\nОсновные изменения:<br />\n<br />\n- интегрирован Zend Framework 2;<br />\n- перенос файлов из папки upload в корень проекта;<br />\n- перенос необходимых файлов для установки в папку install;<br />\n- обновление часовых поясов для России;<br />\n- исправление поддержки ssl;<br />\n- исправление подавления ошибок с помощью @;<br />\n- исправления ссылок на форум проекта;<br />\n- обновление примера конфигурации nginx, редиректы для apache;<br />\n- обновление sql-дампа (чистка мусора от xbtt, обновление формата);<br />\n- обновление bootstrap, добавление .gitignore;<br />\n- упрощение функции вывода аватара;<br />\n- перенос классов кеширования в отдельные файлы;<br />\n- исправление ошибки с начислением сидбонусов (строгая типизация);<br />\n- изменение метода поисковой строки (заработает &quot;поисковость&quot; в Яндекс.Браузер и т.п.);<br />\n- исправление ошибок с редиректом и редирект на главную страницу для отсутствующей темы;<br />\n- прочие мелкие исправления.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1417027007,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 68128,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Скачать версию можно в центре загрузки: <a href=\"https://get.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://get.torrentpier.com/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1417027020,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "versia-2-1-4-alpha-4-integrirovan-zend-framework-2-podderzka-ssl",
+  "sticky": false,
+  "tags": [],
+  "title": "Версия 2.1.4 ALPHA-4: интегрирован Zend Framework 2, поддержка ssl...",
+  "url_path": "/threads/versia-2-1-4-alpha-4-integrirovan-zend-framework-2-podderzka-ssl.30309/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 3181
+}

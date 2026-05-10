@@ -1,0 +1,91 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "golden_days_clear.zip",
+      "id": 3908,
+      "local_path": null,
+      "r2_key": null,
+      "size": 2667,
+      "src_url": "https://torrentpier.com/api/resource-versions/337/download?file=3908"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[CODE]------------------------------------------------------------------\nINSERT INTO `bb_config` VALUES ('price_golden_day', '0');\nINSERT INTO `bb_config` VALUES ('active_gold_day', '0');\nINSERT INTO `bb_config` VALUES ('points_golden_day', '0');\nINSERT INTO `bb_config` VALUES ('user_points_gold_day', '100');\n------------------------------------------------------------------\n\nОкрыть lang_admin.php\n\nв самом низу добавить\nlang_admin.php\n$lang['GOLD_DAYS'] = 'Золотые дни';\n$lang['GOLD_DAY_STATUS'] = 'Статус золотого дни';\n$lang['GOLD_DAY_PRICE'] = 'Стоимость золотого дня';\n$lang['SUM_GOLD_DAY'] = 'Уже собранная сумма';\n$lang['USER_POINTS_GOLD_DAY'] = 'Стоимость клика для пользователей';\n------------------------------------------------------------------\n\nоткрыть function.php\n\nнайти\n'adm_user_unban'     => 9,\n\nпосле добавить\n        'user_points_gold'    => 10,\n------------------------------------------------------------------\n\nОкрыть lang_log_action.php\nнайнти\n'adm_user_unban'   => 'Юзер:<br /> <b>разбанен</b>'\n\nпосле добавить\n,\n    'user_points_gold' => 'Юзер:<br /> <b>золотой день</b>'\n--------------------------------------------------------------------\n\nОткрыть\najax.php\n\nнайти\n'change_tor_status' => array('user'),\n\nпосле вставить\n'seed_points_gold_day' => array('user'),\n\nв самом низу перед последней фигурной скобкой (})\nвставить\n    function seed_points_gold_day()\n    {\n        global $userdata, $bb_cfg, $log_action;\n \n        if($userdata['user_points'] >= $bb_cfg['user_points_gold_day'])\n        {\n            $golden_day = $bb_cfg['points_golden_day'] - $bb_cfg['price_golden_day'];\n            $active = '1'.':'.(TIMENOW + 86400);\n            if($bb_cfg['points_golden_day'] >= $bb_cfg['price_golden_day'] && $bb_cfg['active_gold_day'] == '0')\n            {\n                bb_update_config(array(\n                    'points_golden_day'    => $golden_day,\n                    'active_gold_day'    => $active,\n                ));\n                $logs = 'запустил Золотой день. Дата окончанияй '. bb_date(TIMENOW + 86400).'';\n                $log_action->admin('user_points_gold', array('log_msg' => $logs));\n                $this->ajax_die('Наступили Золотые сутки!!!');\n            }\n            else\n            {\n                DB()->query(\"UPDATE \". BB_USERS .\" u, \" . BB_CONFIG . \" c\n                        SET\n                            c.config_value    = c.config_value + \" . $bb_cfg['user_points_gold_day'] . \",\n                            u.user_points    = u.user_points - \" . $bb_cfg['user_points_gold_day'] . \"\n                        WHERE\n                            u.user_id = \" . $userdata['user_id'] . \"\n                            AND c.config_name = 'points_golden_day'\n                \");\n                cache_rm_user_sessions($userdata['user_id']);\n                $logs = 'пожертвовал 100 сид поинтов';\n                $log_action->admin('user_points_gold', array('log_msg' => $logs));\n            }\n            bb_get_config(BB_CONFIG, true, true);\n        }\n        else\n        {\n            $this->ajax_die('У вас недостаточно очков за сидирование');\n        }\n        $this->ajax_die('Вы добавили ' . $bb_cfg['user_points_gold_day'] . ' сид поинтов в общую копилку. '.$bb_cfg['points_golden_day'].'');\n    }\n--------------------------------------------------------------------------\nОткрыть page_header.php\nнайти\n$template->assign_vars(array(\n    'SIMPLE_HEADER'      => !empty($gen_simple_header),\n\nперед вставить\n$active_gold_day = explode(\":\", $bb_cfg['active_gold_day']);\n\nнайти\n'U_SEARCH_SELF_BY_LAST' => \"search.php?uid={$userdata['user_id']}&amp;o=5\",\n\nпосле вставить\n'GOLD_DAY'            => ($active_gold_day[0] == '1') ? true : false, // Golden Days\n---------------------------------------------------------------------------\nОткрыть page_header.tpl\n\nнайти\n<!-- IF SEO_LINK_INDEX_PAGE --><a href=\"{U_INDEX}\"><!-- ENDIF --><img src=\"{TEMPLATES_DIR}/images/logo/logo.png\" alt=\"{SITENAME}\" /><!-- IF SEO_LINK_INDEX_PAGE --></a><!-- ENDIF -->\n\nзаменить\n<!-- IF GOLD_DAY -->\n<!-- IF SEO_LINK_INDEX_PAGE --><a href=\"{U_INDEX}\"><!-- ENDIF --><img src=\"{TEMPLATES_DIR}/images/logo/logo_gold.png\" alt=\"{SITENAME}\" title=\"Сегодня скачанное не засчитывается!!!\"/><!-- IF SEO_LINK_INDEX_PAGE --></a><!-- ENDIF -->\n<!-- ELSE -->\n<!-- IF SEO_LINK_INDEX_PAGE --><a href=\"{U_INDEX}\"><!-- ENDIF --><img src=\"{TEMPLATES_DIR}/images/logo/logo.png\" alt=\"{SITENAME}\" /><!-- IF SEO_LINK_INDEX_PAGE --></a><!-- ENDIF -->\n<!-- ENDIF / GOLD_DAY -->\n<script type=\"text/javascript\">ajax.callback.seed_points_gold_day = function(data){$('#seed_points_gold_day').html(data.html);};</script>\n<div style=\"margin: 0px 250px 0px 0px;\">\n    <span title=\"Внести общий вклад для приобритение 'Золотого дня', в размере 100 сид поинтов.\" onclick=\"ajax.exec({action: 'seed_points_gold_day'});\">+100</span>\n</div>\n---------------------------------------------------------------------------\nоткрыть tr_cleanup_and_dlstat.php\n\nнайти\n        // Update TOTAL user's dlstat\n        DB()->query(\"\n            UPDATE\n                \". BB_BT_USERS             .\" u,\n                \". NEW_BB_BT_LAST_USERSTAT .\" ub\n            SET\n                u.u_up_total       = u.u_up_total       + ub.up_add,\n                u.u_down_total     = u.u_down_total     + ub.down_add,\n                u.u_up_release     = u.u_up_release     + ub.release_add,\n                u.u_up_bonus       = u.u_up_bonus       + ub.bonus_add,\n                u.up_today         = u.up_today         + ub.up_add,\n                u.down_today       = u.down_today       + ub.down_add,\n                u.up_release_today = u.up_release_today + ub.release_add,\n                u.up_bonus_today   = u.up_bonus_today   + ub.bonus_add\n            WHERE u.user_id = ub.user_id\n        \");\n\nзаменить\n        $active_gold_day = explode(\":\", $bb_cfg['active_gold_day']);\n        if($active_gold_day[0] == '1' && (TIMENOW >= $active_gold_day[1]))\n        {\n            bb_update_config(array('active_gold_day'  => '0'));\n        }\n        // Update TOTAL user's dlstat\n        if ($active_gold_day[0] == '1')\n        {\n            DB()->query(\"\n                UPDATE\n                    \". BB_BT_USERS             .\" u,\n                    \". NEW_BB_BT_LAST_USERSTAT .\" ub\n                SET\n                    u.u_up_total   = u.u_up_total   + ub.up_add,\n                    u.u_down_total = u.u_down_total,\n                    u.u_up_release = u.u_up_release + ub.release_add,\n                    u.u_up_bonus   = u.u_up_bonus   + ub.bonus_add,\n                    u.up_today         = u.up_today         + ub.up_add,\n                    u.down_today       = u.down_today       + ub.down_add,\n                    u.up_release_today = u.up_release_today + ub.release_add,\n                    u.up_bonus_today   = u.up_bonus_today   + ub.bonus_add\n                WHERE u.user_id = ub.user_id\n            \");\n        }\n        else\n        {\n            DB()->query(\"\n                UPDATE\n                    \". BB_BT_USERS             .\" u,\n                    \". NEW_BB_BT_LAST_USERSTAT .\" ub\n                SET\n                    u.u_up_total   = u.u_up_total   + ub.up_add,\n                    u.u_down_total = u.u_down_total + ub.down_add,\n                    u.u_up_release = u.u_up_release + ub.release_add,\n                    u.u_up_bonus   = u.u_up_bonus   + ub.bonus_add,\n                    u.up_today         = u.up_today         + ub.up_add,\n                    u.down_today       = u.down_today       + ub.down_add,\n                    u.up_release_today = u.up_release_today + ub.release_add,\n                    u.up_bonus_today   = u.up_bonus_today   + ub.bonus_add\n                WHERE u.user_id = ub.user_id\n            \");\n        }\n----------------------------------------------------------------------------------\nОткырть admin_board.php\n\nнайти\n           'SEED_BONUS_USER_REGDATE' => $new['seed_bonus_user_regdate'],\nпосле вставить\n           'PRICE_GOLDEN_DAY' => $new['price_golden_day'],\n           'POINTS_GOLDEN_DAY' => $new['points_golden_day'],\n           'USER_POINTS_GOLD_DAY' => $new['user_points_gold_day'],\n----------------------------------------------------------------------------------\nОткырть admin_board.tpl\n\nнайти\n<tbody class=\"bonus_upload\"></tbody>\n\nпосле вставить\n<tr class=\"row3 med\">\n    <td class=\"bold tCenter\" colspan=\"2\">{L_GOLD_DAYS}</td>\n</tr>\n<tr>\n    <td><h4>{L_GOLD_DAY_PRICE}</h4><h6></h6></td>\n    <td>\n          <input class=\"post\" type=\"text\" name=\"price_golden_day\" value=\"{PRICE_GOLDEN_DAY}\" />\n    </td>\n</tr>\n<tr>\n    <td><h4>{L_SUM_GOLD_DAY}</h4><h6></h6></td>\n    <td>\n        <input class=\"post\" type=\"text\" type=\"radio\" name=\"points_golden_day\" value=\"{POINTS_GOLDEN_DAY}\" />\n    </td>\n</tr>\n<tr>\n    <td><h4>{L_USER_POINTS_GOLD_DAY}</h4><h6></h6></td>\n    <td>\n          <input class=\"post\" type=\"text\" size=\"5\" maxlength=\"100\" name=\"user_points_gold_day\" value=\"{USER_POINTS_GOLD_DAY}\" />\n    </td>\n</tr>[/CODE]\n[/SPOILER]",
+    "owner": "Zenden",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [],
+  "description_parsed": "<b>Описание:</b> добавляет пользователям возможность &quot;скинуться&quot; на золотой день. Чтобы запустить золотой день, необходимо достичь общей суммы пожертвований в копилку. После достижения, следующий &quot;меценат&quot; запускает золотой день.<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Сумма пожертвования устанавливается в админке</li>\n<li data-xf-list-type=\"ul\">Общая сумма при достижении которой запускается &quot;золотой день&quot; устанавливается в админке</li>\n<li data-xf-list-type=\"ul\">Текущая сумма пожертвований устанавливается в админке</li>\n</ul>",
+  "download_count": 372,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/234.jpg?1432749079",
+  "id": 234,
+  "is_fileless": null,
+  "last_update": 1432749201,
+  "rating_avg": 5,
+  "rating_count": 1,
+  "resource_date": 1432746579,
+  "resource_state": "visible",
+  "slug": "zolotoj-den-kopilka",
+  "tag_line": "Добавляет пользователям возможность \"скинуться\" на золотой день.",
+  "tags": [],
+  "title": "Золотой день (копилка)",
+  "url_path": "/resources/zolotoj-den-kopilka.234/",
+  "user_id": 97,
+  "username": "Zenden",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 275,
+      "files": [
+        {
+          "filename": "golden_days_clear.zip",
+          "id": 3908,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2667,
+          "src_url": "https://torrentpier.com/api/resource-versions/337/download?file=3908"
+        }
+      ],
+      "id": 337,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1432749201,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/zolotoj-den-kopilka.234/version/337/"
+    },
+    {
+      "download_count": 99,
+      "files": [
+        {
+          "filename": "golden_days_clear.txt",
+          "id": 3905,
+          "local_path": null,
+          "r2_key": null,
+          "size": 8367,
+          "src_url": "https://torrentpier.com/api/resource-versions/336/download?file=3905"
+        }
+      ],
+      "id": 336,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1432746579,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/zolotoj-den-kopilka.234/version/336/"
+    }
+  ],
+  "view_count": 458
+}

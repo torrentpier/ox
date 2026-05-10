@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 50926,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 19972,
+  "last_post_date": 1384258386,
+  "node_id": 57,
+  "post_date": 1384181045,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 50926,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Сменил хостинг,и теперь сайт не загрузается,просто белая страница<br />\nВ логах<br />\n<pre class=\"xfBb-code\" data-lang=\"\">[Mon Nov 11 17:07:51 2013] [error] [client xxx] PHP Warning: require(/var/www/xxx/data/www/xxx.ru/includes/init_bb.php) [&lt;a href=&#039;function.require&#039;&gt;function.require&lt;/a&gt;]: failed to open stream: \\xd0\\x9d\\xd0\\xb5\\xd1\\x82 \\xd1\\x82\\xd0\\xb0\\xd0\\xba\\xd0\\xbe\\xd0\\xb3\\xd0\\xbe \\xd1\\x84\\xd0\\xb0\\xd0\\xb9\\xd0\\xbb\\xd0\\xb0 \\xd0\\xb8\\xd0\\xbb\\xd0\\xb8 \\xd0\\xba\\xd0\\xb0\\xd1\\x82\\xd0\\xb0\\xd0\\xbb\\xd0\\xbe\\xd0\\xb3\\xd0\\xb0 in /var/www/xxx/data/www/xxx.ru/common.php on line 2096\n[Mon Nov 11 17:07:51 2013] [error] [client xxx] PHP Fatal error: require() [&lt;a href=&#039;function.require&#039;&gt;function.require&lt;/a&gt;]: Failed opening required &#039;/var/www/xxx/data/www/xxx.ru/includes/init_bb.php&#039; (include_path=&#039;.:/usr/share/pear:/usr/share/php&#039;) in /var/www/xxx/data/www/xxx.ru/common.php on line 2096</pre>Установлены следующие расширения:<br />\n<div>Spoiler content hidden.</div>РНР 5.1.6",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1384181045,
+      "user_id": 4689,
+      "user_title": "User",
+      "username": "global-parts"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 51045,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "На этой версии php все раувно работать не будет. Нужно 5.3 как минимум.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1384258302,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 51046,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Сегодня установил 5.3.3,тоже самое.Может из-зпа того что установлен sqllite3,а не sqllite  ?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1384258386,
+      "user_id": 4689,
+      "user_title": "User",
+      "username": "global-parts"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "pomogite-pozalujsta",
+  "sticky": false,
+  "tags": [],
+  "title": "Помогите пожалуйста",
+  "url_path": "/threads/pomogite-pozalujsta.19972/",
+  "user_id": 4689,
+  "username": "global-parts",
+  "view_count": 1190
+}

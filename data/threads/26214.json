@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 62665,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 58,
+    "title": "Suggestions for improving TorrentPier"
+  },
+  "id": 26214,
+  "last_post_date": 1410187149,
+  "node_id": 58,
+  "post_date": 1410186315,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62665,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Даже сам и не знаю, стоит или не стоит просить<br />\nС одной стороны сама файлообменная сеть переживает не лучшие времена, с другой стороны есть ещё сайты, на которых до сих пор ещё делают релизы раздач для осла , как например этот <a href=\"http://www.sharereactor.ru/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://www.sharereactor.ru/</a> . Соответсвенно, есть ещё и динозавры которые запускают у себя eMula и утверждают, что осёл ещё живее всех живых.<br />\n <br />\n Вопроса два :<br />\n1. Нужны ли торрентпиру ословоды ?<br />\n2. Можно ли добавить в форму оформления раздачи пустое поле &quot;ed2k-ссылка&quot;, при заполнении которого, на странице раздачи рядом со значком магнита появился бы значёк &quot;осла&quot; примерно как на раздачах <a href=\"http://www.sharereactor.ru/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://www.sharereactor.ru/</a><br />\n <br />\nP.S. <br />\nКстати, а вы знали, что на руторе раньше были ed2k ссылки в раздачах ? 🙂<br />\n<a href=\"http://rutor.org/torrent/41/polnyj-oblom_big-nothing-2006-dvdrip\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://rutor.org/torrent/41/polnyj-oblom_big-nothing-2006-dvdrip</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1410186315,
+      "user_id": 5013,
+      "user_title": "User",
+      "username": "grey_rat"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62666,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "1. Что дает осел владельцу трекера ?<br />\n2. Вопрос сам себе отпадает, при ответе на первый.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1410186634,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62668,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"\">1. Что дает осел владельцу трекера ?</blockquote>тоже, что и торрент-пользователи - оформление новых раздач на трекере, привлечение других ословодов на трекер, увеличение посещаемости, сохранение актуальности раздачи при отсутсвии торрент-пиров ( поиск в Kad )",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1410187149,
+      "user_id": 5013,
+      "user_title": "User",
+      "username": "grey_rat"
+    }
+  ],
+  "prefix_id": 41,
+  "reply_count": 2,
+  "slug": "ed2k-ssylki",
+  "sticky": false,
+  "tags": [],
+  "title": "ed2k ссылки",
+  "url_path": "/threads/ed2k-ssylki.26214/",
+  "user_id": 5013,
+  "username": "grey_rat",
+  "view_count": 1221
+}

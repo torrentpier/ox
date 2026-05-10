@@ -1,0 +1,138 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Настройка индексации при создании темы by belomaxorka.zip",
+      "id": 6543,
+      "local_path": null,
+      "r2_key": null,
+      "size": 2488,
+      "src_url": "https://torrentpier.com/api/resource-versions/652/download?file=6543"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "Мод: Улучшение индексации страниц",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1724052923,
+      "file_size": 4542,
+      "filename": "firefox_tkAbZaOvPf.webp",
+      "height": 51,
+      "id": 6150,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_tkabzaovpf-webp.6150/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6154-0c9cb944f6b775b905104e636ae9dfff.jpg?hash=15xrEJl2TK",
+      "width": 391
+    }
+  ],
+  "description_parsed": "<div style=\"text-align: center\"><span style=\"color: rgb(226, 80, 65)\">Начиная с версии v2.4.5 данный мод будет по-умолчанию</span>&#8203;</div><hr /><b>Описание:</b> Данный мод позволяет настроить индексацию темы роботами при создании.<br />\n<b>Совместимость:</b> LTS (и более ранние версии скорее всего) по v2.4.4<br />\n<br />\n<span style=\"color: rgb(226, 80, 65)\">Для работы данного мода необходимо установить <a href=\"https://torrentpier.com/resources/uluchshenie-indeksacii-stranic.304/\" class=\"link link--internal\">Улучшение индексации страниц</a>.</span>",
+  "download_count": 351,
+  "external_url": null,
+  "icon_url": null,
+  "id": 305,
+  "is_fileless": null,
+  "last_update": 1758827107,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1724052954,
+  "resource_state": "visible",
+  "slug": "nastrojka-indeksacii-pri-sozdanii-temy",
+  "tag_line": "Данный мод позволяет настроить индексацию темы роботами при создании.",
+  "tags": [
+    "nofollow",
+    "noindex",
+    "robots",
+    "мега тег robots",
+    "мета тэги",
+    "мод",
+    "моды",
+    "настройка индексации",
+    "улучшение",
+    "улучшение seo",
+    "улучшение индексации"
+  ],
+  "title": "Настройка индексации при создании темы",
+  "url_path": "/resources/nastrojka-indeksacii-pri-sozdanii-temy.305/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.1.1",
+  "versions": [
+    {
+      "download_count": 136,
+      "files": [
+        {
+          "filename": "[FULL] Настройка индексации при создании темы by belomaxorka.zip",
+          "id": 6543,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2488,
+          "src_url": "https://torrentpier.com/api/resource-versions/652/download?file=6543"
+        }
+      ],
+      "id": 652,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1758827107,
+      "version_state": "visible",
+      "version_string": "v1.1.1",
+      "view_url": "https://torrentpier.com/resources/nastrojka-indeksacii-pri-sozdanii-temy.305/version/652/"
+    },
+    {
+      "download_count": 55,
+      "files": [
+        {
+          "filename": "[FULL] Настройка индексации при создании темы by belomaxorka.zip",
+          "id": 6521,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2493,
+          "src_url": "https://torrentpier.com/api/resource-versions/650/download?file=6521"
+        }
+      ],
+      "id": 650,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1756126118,
+      "version_state": "visible",
+      "version_string": "v1.1.0",
+      "view_url": "https://torrentpier.com/resources/nastrojka-indeksacii-pri-sozdanii-temy.305/version/650/"
+    },
+    {
+      "download_count": 164,
+      "files": [
+        {
+          "filename": "[FULL] Настройка индексации при создании темы by belomaxorka.zip",
+          "id": 6149,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2126,
+          "src_url": "https://torrentpier.com/api/resource-versions/543/download?file=6149"
+        }
+      ],
+      "id": 543,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1724052954,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/nastrojka-indeksacii-pri-sozdanii-temy.305/version/543/"
+    }
+  ],
+  "view_count": 2643
+}

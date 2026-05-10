@@ -1,0 +1,257 @@
+{
+  "category": {
+    "description": "Section with all templates for TorrentPier.",
+    "id": 5,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Templates",
+    "view_url": "https://torrentpier.com/resources/categories/templates.5/"
+  },
+  "current_files": [
+    {
+      "filename": "Shift 2.1.5.zip",
+      "id": 3836,
+      "local_path": null,
+      "r2_key": null,
+      "size": 547653,
+      "src_url": "https://torrentpier.com/api/resource-versions/326/download?file=3836"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]Загрузить файлы на сервер.[/SPOILER]",
+    "owner": "makar",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1429615997,
+      "file_size": 526956,
+      "filename": "09f75382b1c1b1c2e56b02cdb1eee32c.webp",
+      "height": 6661,
+      "id": 3662,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/09f75382b1c1b1c2e56b02cdb1eee32c-webp.3662/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3666-9350bbb70b226fcf2813fb2b5bb42837.jpg?hash=jXVwpGpL3K",
+      "width": 1349
+    },
+    {
+      "attach_date": 1429615998,
+      "file_size": 144252,
+      "filename": "14c8c7603f0cd60518f5d3b0c5045cb7.webp",
+      "height": 1720,
+      "id": 3663,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/14c8c7603f0cd60518f5d3b0c5045cb7-webp.3663/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3667-973028bfa929e4f236ecc1b6ca519993.jpg?hash=GEnfvIF82G",
+      "width": 1349
+    },
+    {
+      "attach_date": 1429615999,
+      "file_size": 130436,
+      "filename": "97002f0e1130fa618f0d999e2fa4a7c9.webp",
+      "height": 1684,
+      "id": 3664,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/97002f0e1130fa618f0d999e2fa4a7c9-webp.3664/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3668-3afcc250d9487009bc1b308d3c9f5bb1.jpg?hash=VsQp9m57nb",
+      "width": 1349
+    },
+    {
+      "attach_date": 1429615999,
+      "file_size": 5514,
+      "filename": "a925740828df8600a3b9e0d34b4bfbff.webp",
+      "height": 208,
+      "id": 3665,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/a925740828df8600a3b9e0d34b4bfbff-webp.3665/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3669-a832f7c6f2ee8513d35b116089ccc253.jpg?hash=IFT40Isqpf",
+      "width": 617
+    },
+    {
+      "attach_date": 1429616000,
+      "file_size": 332912,
+      "filename": "d09b7aa21204d18b8a8f3cf67084505f.webp",
+      "height": 3435,
+      "id": 3666,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/d09b7aa21204d18b8a8f3cf67084505f-webp.3666/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3670-161d67efd12072b22a03e83f56dd0d89.jpg?hash=bOMIqAjBKB",
+      "width": 1349
+    },
+    {
+      "attach_date": 1429616001,
+      "file_size": 167808,
+      "filename": "fe369ba64a38d64224140871d6ae8c8c.webp",
+      "height": 2021,
+      "id": 3667,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/fe369ba64a38d64224140871d6ae8c8c-webp.3667/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3671-435f464b3980e131f77caf655ccd2a81.jpg?hash=OZfNNBr0Eh",
+      "width": 1349
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> шаблон, простой и современный с возможностью изменения цвета и оформления.<br />\n<br />\n[GALLERY=media, 24]Шаблон «Shift» от Exile опубликован 21 апр 2015 в 01:17[/GALLERY]",
+  "download_count": 1082,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/219.jpg?1429616086",
+  "id": 219,
+  "is_fileless": null,
+  "last_update": 1431287434,
+  "rating_avg": 5,
+  "rating_count": 4,
+  "resource_date": 1429616074,
+  "resource_state": "visible",
+  "slug": "sablon-shift",
+  "tag_line": "Шаблон, простой и современный с возможностью изменения цвета и оформления.",
+  "tags": [
+    "shift",
+    "шаблон"
+  ],
+  "title": "Шаблон «Shift»",
+  "url_path": "/resources/sablon-shift.219/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "2.1.5",
+  "versions": [
+    {
+      "download_count": 578,
+      "files": [
+        {
+          "filename": "Shift 2.1.5.zip",
+          "id": 3836,
+          "local_path": null,
+          "r2_key": null,
+          "size": 547653,
+          "src_url": "https://torrentpier.com/api/resource-versions/326/download?file=3836"
+        }
+      ],
+      "id": 326,
+      "rating_avg": 5,
+      "rating_count": 4,
+      "release_date": 1431287434,
+      "version_state": "visible",
+      "version_string": "2.1.5",
+      "view_url": "https://torrentpier.com/resources/sablon-shift.219/version/326/"
+    },
+    {
+      "download_count": 129,
+      "files": [
+        {
+          "filename": "Shift 2.1.5.zip",
+          "id": 3672,
+          "local_path": null,
+          "r2_key": null,
+          "size": 547700,
+          "src_url": "https://torrentpier.com/api/resource-versions/303/download?file=3672"
+        }
+      ],
+      "id": 303,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1429616290,
+      "version_state": "visible",
+      "version_string": "1.4.0",
+      "view_url": "https://torrentpier.com/resources/sablon-shift.219/version/303/"
+    },
+    {
+      "download_count": 100,
+      "files": [
+        {
+          "filename": "Шаблон Shift r600.zip",
+          "id": 3671,
+          "local_path": null,
+          "r2_key": null,
+          "size": 482666,
+          "src_url": "https://torrentpier.com/api/resource-versions/302/download?file=3671"
+        }
+      ],
+      "id": 302,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1429616208,
+      "version_state": "visible",
+      "version_string": "1.3.0",
+      "view_url": "https://torrentpier.com/resources/sablon-shift.219/version/302/"
+    },
+    {
+      "download_count": 111,
+      "files": [
+        {
+          "filename": "Шаблон Shift R553.zip",
+          "id": 3670,
+          "local_path": null,
+          "r2_key": null,
+          "size": 3637361,
+          "src_url": "https://torrentpier.com/api/resource-versions/301/download?file=3670"
+        }
+      ],
+      "id": 301,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1429616153,
+      "version_state": "visible",
+      "version_string": "1.2.0",
+      "view_url": "https://torrentpier.com/resources/sablon-shift.219/version/301/"
+    },
+    {
+      "download_count": 95,
+      "files": [
+        {
+          "filename": "Шаблон Shift r547.zip",
+          "id": 3669,
+          "local_path": null,
+          "r2_key": null,
+          "size": 493461,
+          "src_url": "https://torrentpier.com/api/resource-versions/300/download?file=3669"
+        }
+      ],
+      "id": 300,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1429616118,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/sablon-shift.219/version/300/"
+    },
+    {
+      "download_count": 99,
+      "files": [
+        {
+          "filename": "Шаблон Shift r545.zip",
+          "id": 3668,
+          "local_path": null,
+          "r2_key": null,
+          "size": 441155,
+          "src_url": "https://torrentpier.com/api/resource-versions/299/download?file=3668"
+        }
+      ],
+      "id": 299,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1429616074,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/sablon-shift.219/version/299/"
+    }
+  ],
+  "view_count": 5679
+}

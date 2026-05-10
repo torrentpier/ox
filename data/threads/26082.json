@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61798,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 26082,
+  "last_post_date": 1407311107,
+  "node_id": 80,
+  "post_date": 1407302999,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61798,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Не подскажите ругается:<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">[06-Aug-2014 02:02:27 UTC] PHP Notice:  Undefined variable: L in /home/admin/web/........./public_html/templates/board_disabled_exit.php on line 35</pre> <br />\n35 &lt;p style=&quot;margin: 1em 0; text-align: center;&quot;&gt;&lt;?php echo $L[&#039;BOARD_DISABLE&#039;]; ?&gt;&lt;/p&gt;",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1407302999,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61799,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Dr_Brown</b>, спасибо сейчас проверим. Пожалуйста создавайте отдельную тему",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1407306219,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61800,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправление будет в новой ревизии",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1407311107,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 2,
+  "slug": "r592-azykovaa-otklucennogo-foruma",
+  "sticky": false,
+  "tags": [],
+  "title": "R592: языковая отключенного форума",
+  "url_path": "/threads/r592-azykovaa-otklucennogo-foruma.26082/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 940
+}

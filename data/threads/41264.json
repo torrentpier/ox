@@ -1,0 +1,106 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 84998,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41264,
+  "last_post_date": 1443814734,
+  "node_id": 57,
+  "post_date": 1442483156,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84998,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Трекер на движке <b>2.1 (STABLE) [R600]. </b>Продолжительное время был отключен по независящей от меня причине. Решил восстановить работоспособность. <br />\nПри создании нового релиза в теме с шаблоном вижу нотис<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Notice: Undefined index: topic_tpl in /home/tracktorr/public_html/includes/template.php(259) : eval()&#039;d code on line 4605 Warning: require(): Filename cannot be empty in /home/tracktorr/public_html/includes/template.php(259) : eval()&#039;d code on line 4605 Fatal error: require(): Failed opening required &#039;&#039; (include_path=&#039;.:/usr/share/php:/usr/share/pear&#039;) in /home/tracktorr/public_html/includes/template.php(259) : eval()&#039;d code on line 4605</blockquote> и через секунду перебрасывает на <a href=\"https://torrentpier.com/copyright-removal/\" class=\"link link--internal\">Удаление/изменение копирайта</a>.<br />\nПри отключении шаблонов все работает.<br />\nДо прекращения работы трекера все работало с шаблонами и проблем не возникало.<br />\nЧто случилось и как это лечить? Все копирайты на месте, никогда не удалялись и не правились.<br />\nЧистая переустановка крайне не желательна, так как имеется база пользователей и раздач.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1442483156,
+      "user_id": 6463,
+      "user_title": "User",
+      "username": "leszav"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85000,
+      "is_admin": false,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Посмотрите код в оригинальном <b>page_footer.tpl</b><br />\n<br />\nДолжно быть так:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;div class=&quot;copyright tCenter&quot; id=&quot;t2t&quot;&gt;\n  {POWERED}\n  &lt;/div&gt;</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1442517314,
+      "user_id": 1546,
+      "user_title": "Administrator",
+      "username": "Conteo"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85001,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "данный код в этом файле присутствует, тем не менее, проблема сохраняется.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1442522232,
+      "user_id": 6463,
+      "user_title": "User",
+      "username": "leszav"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85100,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/6463/\">@leszav</a> перебрасывает из-за того что у вас нотис и не загрузившийся шаблон. Папку styles проверьте на наличие всех нужных файлов. И что за шаблоны используете, надеюсь не старого типа с php-файлами?",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1443814734,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "ne-rabotaut-sablony-publikacij",
+  "sticky": false,
+  "tags": [
+    "копирайт",
+    "шаблны"
+  ],
+  "title": "Не работают шаблоны публикаций",
+  "url_path": "/threads/ne-rabotaut-sablony-publikacij.41264/",
+  "user_id": 6463,
+  "username": "leszav",
+  "view_count": 1439
+}

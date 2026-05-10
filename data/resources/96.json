@@ -1,0 +1,126 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "meta_tags_mod.zip",
+      "id": 3222,
+      "local_path": null,
+      "r2_key": null,
+      "size": 3126,
+      "src_url": "https://torrentpier.com/api/resource-versions/234/download?file=3222"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]Выпонить запросы в базу\n\nALTER TABLE `bb_topics` ADD `descr` varchar(200) NOT NULL DEFAULT '', ADD `keywords` text NOT NULL, ADD `topic_image` VARCHAR( 255 ) NOT NULL DEFAULT '';\nINSERT INTO `bb_config` VALUES ('global_keywords', '');\n\nОткрыть viewtopic.php\n\nНайти\n\n// Does this topic contain DL-List?\n\nВыше добавить\n\nif (function_exists('seo_url')) $url_meta = make_url(seo_url(TOPIC_URL . $topic_id, $topic_title));\nelse $url_meta = make_url(TOPIC_URL . $topic_id);\n\nmeta_search($url_meta, $topic_title, $t_data['topic_image'], $t_data['descr'], $t_data['keywords']);\n\n\nОткрыть posting.php\n\nНайти\n\nif (defined('TORRENT_ATTACH_ID') && $bb_cfg['bt_newtopic_auto_reg'] && !$error_msg)\n\nНиже добавить\n\nif ($mode == 'newtopic' && defined('TORRENT_ATTACH_ID') || defined('TORRENT_ATTACH_ID') && $bb_cfg['bt_newtopic_auto_reg'] && !$error_msg)\n    {\n        $row = DB()->fetch_row(\"SELECT post_text FROM \". BB_POSTS_TEXT .\" WHERE post_id = $post_id\");           \n            preg_match_all('/\\[poster\\](.*?)\\[\\/poster\\]/i', $row['post_text'], $poster4, PREG_SET_ORDER);\n            preg_match_all('/\\[img=right\\](.*?)\\[\\/img\\]/i', $row['post_text'], $poster3, PREG_SET_ORDER);\n            preg_match_all('/\\[img=left\\](.*?)\\[\\/img\\]/i', $row['post_text'], $poster2, PREG_SET_ORDER);\n            preg_match_all('/\\[img\\](.*?)\\[\\/img\\]/i', $row['post_text'], $poster1, PREG_SET_ORDER);\n                $url = '';\n                if (isset($poster3[0][1])) $url = $poster3[0][1];\n                elseif (isset($poster4[0][1])) $url = $poster4[0][1];\n                elseif (isset($poster2[0][1])) $url = $poster2[0][1];\n                elseif (isset($poster1[0][1])) $url = $poster1[0][1];\n                DB()->query(\"UPDATE \". BB_TOPICS .\" SET topic_image = '$url' WHERE topic_id = $topic_id \");\n    }\n\nОткрыть includes/page_header.php\n\nНайти\n\n// FOR SEO\n$template->assign_vars(array(\n    'SEO_LINK_INDEX_PAGE'             =>    seo_link_header('index'),\n    'SEO_LINK_TRACKER_PAGE'         =>    seo_link_header('tracker'),\n    'SEO_LINK_GALLERY_PAGE'         =>    seo_link_header('gallery'),\n    'SEO_LINK_SEARCH_PAGE'             =>    seo_link_header('search'),\n    'SEO_LINK_FAQ_PAGE'             =>    seo_link_header('faq'),\n    'SEO_LINK_GROUP_PAGE'             =>    seo_link_header('groupcp'),\n    'SEO_LINK_MEMEBERLIST_PAGE'     =>    seo_link_header('memberlist'),\n));\n\nНиже вставить\n\n$template->assign_vars(array(\n    'PAGE_DESCRIPTION'    => \"<meta name=\\\"description\\\" content=\\\"\".$bb_cfg['site_desc'].\"\\\" />\\n\",\n    'PAGE_KEYWORDS'       => \"<meta name=\\\"keywords\\\" content=\\\"\".$bb_cfg['global_keywords'].\"\\\" />\\n\",\n));\n\nОткрыть includes/functions_post.php\n\nНайти\n\n$topic_dl_type = (isset($_POST['topic_dl_type']) && ($post_info['allow_reg_tracker'] || $is_auth['auth_mod'])) ? TOPIC_DL_TYPE_DL : TOPIC_DL_TYPE_NORMAL;\n\nНиже вставить\n\n$meta = create_metatags ($post_message);\n$description = $meta['description'];\n$keywords = $meta['keywords'];\n\nНайти\n\n$sql_update = \"\n                UPDATE\n                    \" . BB_TOPICS . \"\n                SET\n                    topic_title = '$post_subject',\n                    topic_type = $topic_type,\n                    topic_dl_type = $topic_dl_type \" . ((@$post_data['edit_vote'] || !empty($poll_title)) ? \",\n                    topic_vote = \" . $topic_vote : \"\") . \",\n                    is_draft = $to_draft\n                WHERE\n                    topic_id = $topic_id\n            \";\n           \nЗаменить на\n\n$sql_update = \"\n                UPDATE\n                    \" . BB_TOPICS . \"\n                SET\n                    topic_title = '$post_subject',\n                    topic_type = $topic_type,\n                    topic_dl_type = $topic_dl_type \" . ((@$post_data['edit_vote'] || !empty($poll_title)) ? \",\n                    topic_vote = \" . $topic_vote : \"\") . \",\n                    is_draft = $to_draft,\n                    keywords = '$keywords',\n                    descr = '$description'\n                WHERE\n                    topic_id = $topic_id\n            \";\n\nНайти\n\n$sql  = ($mode != \"editpost\") ? \"INSERT INTO \" . BB_TOPICS . \" (topic_title, topic_poster, topic_time, forum_id, topic_status, topic_type, topic_dl_type, topic_vote, is_draft) VALUES ('$post_subject', \" . $userdata['user_id'] . \", $current_time, $forum_id, \" . TOPIC_UNLOCKED . \", $topic_type, $topic_dl_type, $topic_vote, $to_draft)\" : $sql_update;\n\nЗаменить на\n\n$sql  = ($mode != \"editpost\") ? \"INSERT INTO \" . BB_TOPICS . \" (topic_title, topic_poster, topic_time, forum_id, topic_status, topic_type, topic_dl_type, topic_vote, is_draft, keywords, descr) VALUES ('$post_subject', \" . $userdata['user_id'] . \", $current_time, $forum_id, \" . TOPIC_UNLOCKED . \", $topic_type, $topic_dl_type, $topic_vote, $to_draft, '$keywords', '$description')\" : $sql_update;\n\nОткрыть includes/functions.php\n\nВ самый конец файла вставить\n\nfunction meta_search ($url = false, $title = false, $images = false, $description = false, $keywords = false)\n{\n    global $template, $bb_cfg;\n   \n    $title = str_replace('&quot;', '', $title);\n   \n    $description = \"<meta name=\\\"description\\\" content=\\\"$description\\\" />\\n\";\n    $keywords      = \"<meta name=\\\"keywords\\\" content=\\\"$keywords\\\" />\\n\";\n    $article      = (isset($description) || isset($keywords)) ? \"<meta property=\\\"og:type\\\" content=\\\"article\\\" />\\n\" : \"\";\n    $generator     = (isset($title) || isset($url) || isset($images)) ? \"<meta name=\\\"generator\\\" content=\\\"\".$bb_cfg['sitename'].\" (http://\".$bb_cfg['server_name'].\"/)\\\" />\\n\" : \"\";\n    $site_name     = (isset($title) || isset($url) || isset($images)) ? \"<meta property=\\\"og:site_name\\\" content=\\\"\".$bb_cfg['sitename'].\"\\\" />\\n\" : \"\";\n    $title          = (isset($title)) ? \"<meta property=\\\"og:title\\\" content=\\\"\".strip_tags($title).\"\\\" />\\n\" : \"\";\n    $url          = (isset($url)) ? \"<meta property=\\\"og:url\\\" content=\\\"$url\\\" />\\n\" : \"\";\n    $images      = (isset($images)) ? \"<meta property=\\\"og:image\\\" content=\\\"$images\\\" />\\n\" : \"\";\n   \n    $meta_tags = $description.$keywords.$generator.$site_name.$article.$title.$url.$images;\n   \n    $template->assign_vars(array('META_TAGS_HEAD' => $meta_tags));\n\n}\n\nfunction bb_substr($str, $start, $length, $charset ) {\n\n    if ( strtolower($charset) == \"utf-8\") return iconv_substr($str, $start, $length, \"utf-8\");\n    else return substr($str, $start, $length);\n\n}\n\nfunction bb_strlen($value, $charset ) {\n\n    if ( strtolower($charset) == \"utf-8\") return iconv_strlen($value, \"utf-8\");\n    else return strlen($value);\n\n}\n\nfunction create_metatags ($text)\n{\n    $keyword_count = 20;\n    $newarr = array ();\n    $meta['description'] = $meta['keywords'] = array();\n    $quotes = array (\"\\x22\", \"\\x60\", \"\\t\", '\\n', '\\r', \"\\n\", \"\\r\", '\\\\', \",\", \".\", \"/\", \"¬\", \"#\", \";\", \":\", \"@\", \"~\", \"[\", \"]\", \"{\", \"}\", \"=\", \"-\", \"+\", \")\", \"(\", \"*\", \"^\", \"%\", \"$\", \"<\", \">\", \"?\", \"!\", '\"');\n    $fastquotes = array (\"\\x22\", \"\\x60\", \"\\t\", \"\\n\", \"\\r\", '\"', '\\r', '\\n', \"$\", \"{\", \"}\", \"[\", \"]\", \"<\", \">\");\n   \n    $text = str_replace( \"&nbsp;\", \" \", $text);\n    $text = preg_replace('#\\[img=(left|right)\\].*?\\[/img\\]\\s*#isu', '', $text);\n    $text = preg_replace('#\\[img\\].*?\\[/img\\]#isu', '', $text);\n    $text = preg_replace('#http://.*? #isu', '', $text);\n    $text = preg_replace('#\\[.*?\\]#isu', ' ', $text);\n    $text = str_replace( '<br />', ' ', $text);\n    $text = strip_tags($text);\n    $text = preg_replace( \"#&(.+?);#\", \"\", $text);\n    $text = trim(str_replace( \" ,\", \"\", $text));\n       \n    $search_word = array(\"Описание\", \"О фильме\", \"Сюжет фильма\");\n    $i= array_count_values($search_word);\n   \n    if (preg_match('#Описание#is', $text) || preg_match('#О фильме#is', $text) || preg_match('#Сюжет фильма#is', $text))\n        {\n        $pos = strpos($text, 'Сюжет фильма');\n        $pos .= strpos($text, 'О фильме');\n        $pos .= strpos($text, 'Описание');       \n        $text_d = substr($text, $pos);\n        }\n    else{ $text_d = '';}\n       \n    if($text_d = ($text_d != '') ? $text_d : $text)\n        {\n        $description = str_replace($fastquotes, '', $text_d);\n        $description = str_replace(\":\", '', $description);\n        $description = preg_replace(\"/(\\s){2,}/\",' ',$description);\n        $description = str_replace($search_word, '', trim($description));\n        $meta['description'] = trim(bb_substr( stripslashes($description), 0, 190, 'utf-8' ));\n       \n    } else { $meta['description'] = ''; }\n       \n    if( trim($text) != \"\" ) {\n        $text = str_replace($quotes, ' ', $text);   \n        $arr = explode(\" \", $text);\n       \n        foreach ( $arr as $word ) {\n            if( bb_strlen( $word, 'utf-8' ) > 4 ) $newarr[] = $word;\n        }\n       \n        $arr = array_count_values( $newarr );\n        arsort( $arr );   \n        $arr = array_keys( $arr );   \n        $total = count( $arr );   \n        $offset = 0;\n        $arr = array_slice( $arr, $offset, $keyword_count );\n        $meta['keywords'] = implode( \", \", $arr );\n       \n    } else { $meta['keywords'] = ''; }\n   \n    return $meta;\n}\n\nОткрыть templates/default/page_header.tpl\n\nНайти\n\n{META}\n\nВыше добавить\n\n<!-- IF META_TAGS_HEAD -->{META_TAGS_HEAD}<!-- ELSE -->{PAGE_DESCRIPTION}{PAGE_KEYWORDS}<!-- ENDIF -->\n\nОткрыть admin/admin_board.php\n\nНайти\n\n'CONFIG_SITE_DESCRIPTION' => htmlCHR($new['site_desc']),\n\nНиже добавить\n\n'CONFIG_SITE_KEYSWORDS' => htmlCHR($new['global_keywords']),\n\nОткрыть templates/admin/admin_board.tpl\n\nНайти\n\n<tr>\n    <td><h4>{L_SITE_DESC}</h4></td>\n    <td><input class=\"post\" type=\"text\" size=\"40\" maxlength=\"255\" name=\"site_desc\" value=\"{CONFIG_SITE_DESCRIPTION}\" /></td>\n</tr>\n\nНиже вставить\n\n<tr>\n    <td><h4>{L_GLOBAL_KEYWORDS}</h4></td>\n    <td><input class=\"post\" type=\"text\" size=\"40\" maxlength=\"255\" name=\"config_site_keywords\" value=\"{CONFIG_SITE_KEYSWORDS}\" /></td>\n</tr>\n\nОткрыть language/lang_english/lang_admin.php\n\nВ самый конец файла вставить\n\n$lang['GLOBAL_KEYWORDS'] = 'Global keywords';\n\nОткрыть language/lang_russian/lang_admin.php\n\nВ самый конец файла вставить\n\n$lang['GLOBAL_KEYWORDS'] = 'Глобальные ключевые слова';[/PHP]\n[/SPOILER]",
+    "owner": "Sprinx",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1395929534,
+      "file_size": 75140,
+      "filename": "Screenshot_1.webp",
+      "height": 168,
+      "id": 2485,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot_1-webp.2485/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2490-c6d519f8a5437bf06237f704f815a828.jpg?hash=kqT3fns3Wk",
+      "width": 1881
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> генерирует мета-теги ключевых слов (keywords) и описания (description).<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Генерация мета тегов при создании тем</li>\n<li data-xf-list-type=\"ul\">Выборка description из описания, для большей индексации</li>\n<li data-xf-list-type=\"ul\">Генерация keywords из случайных слов темы или форума</li>\n<li data-xf-list-type=\"ul\">Полная совместимость с модификацией SEO URL / ЧПУ</li>\n<li data-xf-list-type=\"ul\">Дополнительная информация о сайте, для корректной работы виджетов отправки постов в социальные сети</li>\n</ul>",
+  "download_count": 1062,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/96.jpg?1425407889",
+  "id": 96,
+  "is_fileless": null,
+  "last_update": 1425407928,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1395929552,
+  "resource_state": "visible",
+  "slug": "meta-tegi-rassirennaa-versia",
+  "tag_line": "Генерирует мета-теги ключевых слов (keywords) и описания (description).",
+  "tags": [],
+  "title": "Мета-теги (расширенная версия)",
+  "url_path": "/resources/meta-tegi-rassirennaa-versia.96/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 583,
+      "files": [
+        {
+          "filename": "meta_tags_mod.zip",
+          "id": 3222,
+          "local_path": null,
+          "r2_key": null,
+          "size": 3126,
+          "src_url": "https://torrentpier.com/api/resource-versions/234/download?file=3222"
+        }
+      ],
+      "id": 234,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425407928,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/meta-tegi-rassirennaa-versia.96/version/234/"
+    },
+    {
+      "download_count": 265,
+      "files": [
+        {
+          "filename": "meta_tags_mod.txt",
+          "id": 2488,
+          "local_path": null,
+          "r2_key": null,
+          "size": 9451,
+          "src_url": "https://torrentpier.com/api/resource-versions/103/download?file=2488"
+        }
+      ],
+      "id": 103,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1395932118,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/meta-tegi-rassirennaa-versia.96/version/103/"
+    },
+    {
+      "download_count": 228,
+      "files": [
+        {
+          "filename": "meta_tags_mod.txt",
+          "id": 2484,
+          "local_path": null,
+          "r2_key": null,
+          "size": 7882,
+          "src_url": "https://torrentpier.com/api/resource-versions/102/download?file=2484"
+        }
+      ],
+      "id": 102,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1395929552,
+      "version_state": "visible",
+      "version_string": "2014-03-27",
+      "view_url": "https://torrentpier.com/resources/meta-tegi-rassirennaa-versia.96/version/102/"
+    }
+  ],
+  "view_count": 3195
+}

@@ -1,0 +1,141 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Генерация мета описания (SEO) by belomaxorka.zip",
+      "id": 6518,
+      "local_path": null,
+      "r2_key": null,
+      "size": 1676,
+      "src_url": "https://torrentpier.com/api/resource-versions/647/download?file=6518"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [],
+  "description_parsed": "<div style=\"text-align: center\"><span style=\"color: rgb(226, 80, 65)\">Начиная с версии движка v2.4.6 добавлен по умолчанию</span>&#8203;</div><hr /><b>Описание:</b> Добавляет мета описание для страниц (index.php, viewforum.php, viewtopic.php).<br />\n<b>Особенности:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Автоматически генерирует описание темы (берет первые 220 символов из первого сообщения)</li>\n<li data-xf-list-type=\"ul\">На странице форума также генерируется описание (описание форума, если оно есть)</li>\n<li data-xf-list-type=\"ul\">На главной странице выводится описание сайта (на основе одноименной настройки в админ-панели)</li>\n<li data-xf-list-type=\"ul\">Помимо стандартного мета-тега description, дабавляет og:description и twitter:description</li>\n</ul><b>Совместимость:</b> v2.1.5, LTS, v2.2.*, v2.3.*, v2.4.*.<br />\n<b>Альтернатива этому моду:</b> <a href=\"https://torrentpier.com/resources/advanced-meta-tags.91/\" class=\"link link--internal\">Advanced Meta Tags</a>.",
+  "download_count": 533,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/325.jpg?1748787576",
+  "id": 325,
+  "is_fileless": null,
+  "last_update": 1756125821,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1748787576,
+  "resource_state": "visible",
+  "slug": "generacia-meta-opisania-seo",
+  "tag_line": "Добавляет мета описание для страниц. Также автоматически генерирует описание для тем.",
+  "tags": [
+    "meta description",
+    "seo",
+    "seo оптимизация",
+    "генерация мета описания",
+    "мета описание",
+    "мета теги",
+    "мод",
+    "моды",
+    "улучшение seo"
+  ],
+  "title": "Генерация мета описания (SEO)",
+  "url_path": "/resources/generacia-meta-opisania-seo.325/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.2.0",
+  "versions": [
+    {
+      "download_count": 200,
+      "files": [
+        {
+          "filename": "[FULL] Генерация мета описания (SEO) by belomaxorka.zip",
+          "id": 6518,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1676,
+          "src_url": "https://torrentpier.com/api/resource-versions/647/download?file=6518"
+        }
+      ],
+      "id": 647,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1756125821,
+      "version_state": "visible",
+      "version_string": "v1.2.0",
+      "view_url": "https://torrentpier.com/resources/generacia-meta-opisania-seo.325/version/647/"
+    },
+    {
+      "download_count": 135,
+      "files": [
+        {
+          "filename": "[FULL] Генерация мета описания (SEO) by belomaxorka.zip",
+          "id": 6456,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1656,
+          "src_url": "https://torrentpier.com/api/resource-versions/634/download?file=6456"
+        }
+      ],
+      "id": 634,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1749449288,
+      "version_state": "visible",
+      "version_string": "v1.1.0",
+      "view_url": "https://torrentpier.com/resources/generacia-meta-opisania-seo.325/version/634/"
+    },
+    {
+      "download_count": 108,
+      "files": [
+        {
+          "filename": "[FULL] Генерация мета описания (SEO) by belomaxorka.zip",
+          "id": 6454,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1688,
+          "src_url": "https://torrentpier.com/api/resource-versions/632/download?file=6454"
+        }
+      ],
+      "id": 632,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1748788715,
+      "version_state": "visible",
+      "version_string": "v1.0.1",
+      "view_url": "https://torrentpier.com/resources/generacia-meta-opisania-seo.325/version/632/"
+    },
+    {
+      "download_count": 94,
+      "files": [
+        {
+          "filename": "[FULL] Генерация мета описания (SEO) by belomaxorka.zip",
+          "id": 6453,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1709,
+          "src_url": "https://torrentpier.com/api/resource-versions/631/download?file=6453"
+        }
+      ],
+      "id": 631,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1748787576,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/generacia-meta-opisania-seo.325/version/631/"
+    }
+  ],
+  "view_count": 2811
+}

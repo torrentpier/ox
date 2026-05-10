@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 88860,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 41564,
+  "last_post_date": 1478852818,
+  "node_id": 3,
+  "post_date": 1478819715,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88860,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Хочу сразу оговорится что нахожусь в трезвом уме)))<br />\nВообщем долго думал к какому разделу отнести эту тему, решил написать сюда)))<br />\nУже несколько дней наблюдаю ситуацию, сайт доступен с Российских ip (по крайней мере что я тестировал) только несколько минут в сутки, а в остальное время просто страница недоступна. Да да я знаю похоже на бред но это так!!! с 1:40 до 2:00 ночи примерно. Все остальное время можно зайти только через прокси, причем как на сайт так и на сервер, то есть днем не по ftp не по ssh подключится нельзя. В логах ничего необычного нет, звонил провайдеру он подтверждает что сайт и ip не блокируют, на сайте роскомнадзора есть решение на блокировку двух страниц, но не домена в целом. Как понять что происходит?? и почему появляется доступ к сайту и серверу в одно и тоже время ночью у разных провайдеров в разных регионах РФ ?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1478819715,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88861,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "У меня ситуация несколько иная)))<br />\nИспользую браузер FireFox и дополнение для него FlagFox (показывает флаг страны, на основе IP сайта). Сам трекер у меня в Нидерландах, но на работе (именно на работе) показывает флаг РФ, пинговал сайт - IP РФ, причем IP относится к провайдеру, который предоставляет нам интернет на работе. Дома всё нормально: и пинг и флаг Нидерландов. Так же несколько страниц (не сам домен) в бане у РКН.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"Protektor\">Как понять что происходит?? и почему появляется доступ к сайту и серверу в одно и тоже время ночью у разных провайдеров в разных регионах РФ ?</blockquote>Может наше правительство решило взять пример с китайцев и окутать всю страну Файрволлом?😵<br />\nЕсть еще предположение, что это происки Skynet&#039;а и нам всем скоро кердык 😏",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1478850491,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88862,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Держите сайты на нормальных хостингах, а также используйте нормальные браузеры, типа Chrome.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1478852486,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88863,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Dr_Brown\">Держите сайты на нормальных хостингах, а также используйте нормальные браузеры, типа Chrome.</blockquote>Никогда хром не нравился...",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1478852818,
+      "user_id": 5704,
+      "user_title": "User",
+      "username": "ExPlayer"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "vopros-pohozij-na-diagnoz",
+  "sticky": false,
+  "tags": [],
+  "title": "Вопрос, похожий на диагноз",
+  "url_path": "/threads/vopros-pohozij-na-diagnoz.41564/",
+  "user_id": 7243,
+  "username": "Protektor",
+  "view_count": 1221
+}

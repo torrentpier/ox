@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 5622,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 19,
+    "title": "Adaptation of modifications to TorrentPier"
+  },
+  "id": 467,
+  "last_post_date": 1321459649,
+  "node_id": 19,
+  "post_date": 1321441283,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5622,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\nПеревожу трекер с 1.0.1.5 (svn beta) версии, возникла проблема при авторизации на сайте.<br />\nШифрование пароля вашей версии отличается от моей текущей.<br />\nПодскажите в каких файлах программный код шифрования, расшифрования. как понимаю там или там шифруется с &quot;солью&quot;.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1321441283,
+      "user_id": 161,
+      "user_title": "User",
+      "username": "aiwbend"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5624,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"http://code.google.com/p/torrentpier2/source/detail?r=45\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://code.google.com/p/torrentpier2/source/detail?r=45</a><br />\n<a href=\"http://code.google.com/p/torrentpier2/source/diff?spec=svn318&amp;old=22&amp;r=315&amp;format=unidiff&amp;path=%2Ftrunk%2Finstall%2Fsql%2Fmysql.sql\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://code.google.com/p/torrentpie...mat=unidiff&amp;path=/trunk/install/sql/mysql.sql</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1321445651,
+      "user_id": 0,
+      "user_title": "",
+      "username": "frank"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5637,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "разобрался, спс",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1321459649,
+      "user_id": 161,
+      "user_title": "User",
+      "username": "aiwbend"
+    }
+  ],
+  "prefix_id": 45,
+  "reply_count": 2,
+  "slug": "sifrovanie-pol-zovatel-skih-parolej",
+  "sticky": false,
+  "tags": [],
+  "title": "Шифрование пользовательских паролей",
+  "url_path": "/threads/sifrovanie-pol-zovatel-skih-parolej.467/",
+  "user_id": 161,
+  "username": "aiwbend",
+  "view_count": 2631
+}

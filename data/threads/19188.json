@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 49866,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 19188,
+  "last_post_date": 1383601048,
+  "node_id": 57,
+  "post_date": 1383379058,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 49866,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем салют. Подскажите пожалуйста, как сделать чтобы регистрация проходила только в том случае, если, пароль будет начинаться с большой буквы, а остальные маленькие?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1383379058,
+      "user_id": 0,
+      "user_title": "",
+      "username": "барбос"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 49873,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "php.su тебе в руки, а так задай условие и в условии пропиши проверку на первую букву или же делай ucfirst пусть само задается.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1383387811,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 49875,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>барбос</b>, ну вот так можно например, правда немного не по твоему запросу<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">//\n// Check pass\n//\nfunction validate_pass($pass)\n{\n  global $lang;\n \n  if(!preg_match(&quot;~(?=[-_a-zA-Z0-9]*?[A-Z])(?=[-_a-zA-Z0-9]*?[a-z])(?=[-_a-zA-Z0-9]*?[0-9])[-_a-zA-Z0-9]{&quot;.PASS_MIN_LENGTH.&quot;,}~si&quot;, $pass))\n  {\n    return array(&#039;error&#039; =&gt; true, &#039;error_msg&#039; =&gt; $lang[&#039;PASS_INVALID&#039;]);\n  }\n  $pass = trim($pass);\n  $len = mb_strlen($pass);\n  $chars=&#039;1234567890qwertyuiopasdfghjklzxcvbn mQWERTYUIOPASDFGHJKLZXCVBNM&#039;;\n \n  if(($len &lt; PASS_MIN_LENGTH) || ($len &gt; PASS_MAX_LENGTH)) return array(&#039;error&#039; =&gt; true, &#039;error_msg&#039; =&gt; $lang[&#039;PASS_INVALID&#039;]);\n  if(strpos($chars, $pass) !== false) return array(&#039;error&#039; =&gt; true, &#039;error_msg&#039; =&gt; $lang[&#039;PASS_INVALID&#039;]);\n  if($len/2 == round($len/2)) {\n      $p1 = mb_substr($pass ,0,$len/2);\n      $p2 = mb_substr($pass,$len/2);\n      $p22 = &#039;&#039;;\n      for($i = mb_strlen($p2)-1; $i&gt;=0; $i--)\n          $p22 .= $p2[$i];\n      if($p1 == $p2 and mb_strpos($chars, $p1) and mb_strpos($chars, $p2)) return array(&#039;error&#039; =&gt; true, &#039;error_msg&#039; =&gt; $lang[&#039;PASS_INVALID&#039;]);\n      if($p1 == $p22 and mb_strpos($chars, $p1) and mb_strpos($chars, $p2)) return array(&#039;error&#039; =&gt; true, &#039;error_msg&#039; =&gt; $lang[&#039;PASS_INVALID&#039;]);\n  }\n  $chars = array();\n  for($i=0; $i&lt;$len; $i++)\n  {\n      if(isset($chars[$pass[$i]]))\n          $chars[$pass[$i]]++;\n      else\n          $chars[$pass[$i]] = 1;\n  }\n  // Считаем процент уникальности символов\n  $k = sizeof($chars) / $len * 100;\n  if($k &lt; PASS_PERCENT_UNIQ) return array(&#039;error&#039; =&gt; true, &#039;error_msg&#039; =&gt; $lang[&#039;PASS_INVALID&#039;]);\n  return array(&#039;error&#039; =&gt; false, &#039;error_msg&#039; =&gt; &#039;&#039;);\n}</pre> <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">define(&#039;PASS_MAX_LENGTH&#039;,  32);\ndefine(&#039;PASS_MIN_LENGTH&#039;,  6);\ndefine(&#039;PASS_PERCENT_UNIQ&#039;,  46);</pre> <br />\nстрока должна содержать не менее 6 букв, цифр, подчеркиваний и тире.<br />\nСтрока должна содержать хотя бы одну заглавную букву, строчную и цифру. <br />\n <br />\nПароли которые функция считает плохими: <br />\n1. Длинна &lt; 6 символов <br />\n2. Последовательность символов как на клавиатуре (123456, qwerty) <br />\n3. Повторные комбинации последовательности символов (werwer, 12341234) <br />\n4. &quot;Отражённые&quot; последовательности символов (123321, qweewq) <br />\n5. Процент уникальности символов меньше 46 (wwwfff, 000000)",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1383389234,
+      "user_id": 729,
+      "user_title": "User",
+      "username": "Wertos"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 50047,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Wertos</b>, А куда что пихать?",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1383582108,
+      "user_id": 0,
+      "user_title": "",
+      "username": "барбос"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 50055,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>барбос</b>, если честно мне лень писать, потому что некогда ((",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1383601048,
+      "user_id": 729,
+      "user_title": "User",
+      "username": "Wertos"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "zasita",
+  "sticky": false,
+  "tags": [],
+  "title": "защита",
+  "url_path": "/threads/zasita.19188/",
+  "user_id": 0,
+  "username": "барбос",
+  "view_count": 1197
+}

@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61891,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 26097,
+  "last_post_date": 1408108015,
+  "node_id": 80,
+  "post_date": 1408105627,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61891,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Приветствую<br />\n <br />\nОколо полгода назад слил репозиторий еще с свн версии в свой git через git-svn. Когда репозиторий перешел на github сделал недавно адовое слияние уже через git merge и удаленный репозиторий и все было в норме. Но сейчас опять резил слить и ОПЯТЬ АД! Одни строки с \\r\\n другие \\n. У кого то редактор автоматом делает форматирование, из-за этого слетает весь стиль и конфликты.<br />\nУЖАС!!<br />\nЕсли уже выкладываете в публичный доступ будьте добры использовать какие-то стандарты и т.д. чтобы и другим людям было легче работать и делать свой вклад в поддержку продукта.<br />\nА так годное дело делаете, за что спасибо!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1408105627,
+      "user_id": 5401,
+      "user_title": "User",
+      "username": "kiotozux"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61900,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"kiotozux\">Одни строки с \\r\\n другие \\n</blockquote>Сейчас все строки с \\n. Специально в 593 конвертировал.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1408108015,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 25,
+  "reply_count": 1,
+  "slug": "slianie-repozitoria",
+  "sticky": false,
+  "tags": [],
+  "title": "Слияние репозитория",
+  "url_path": "/threads/slianie-repozitoria.26097/",
+  "user_id": 5401,
+  "username": "kiotozux",
+  "view_count": 856
+}

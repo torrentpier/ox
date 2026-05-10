@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 17280,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 1346,
+  "last_post_date": 1353227289,
+  "node_id": 3,
+  "post_date": 1336913733,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 17280,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Попытался добавить пост в закладки (здесь на форуме), всё успешно добавилось и при обновление показывает что добавлено.<br />\nНо в профиле закладки не отображаются.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1336913733,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Alpha"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 22898,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Проверил, все добавилось и отображается. <a href=\"http://torrentpier.com/account/bookmarks\" class=\"link link--internal\">http://torrentpier.com/account/bookmarks</a> - тут смотрите?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1353227289,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "zakladki",
+  "sticky": false,
+  "tags": [],
+  "title": "Закладки",
+  "url_path": "/threads/zakladki.1346/",
+  "user_id": 0,
+  "username": "Alpha",
+  "view_count": 1530
+}

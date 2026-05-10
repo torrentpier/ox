@@ -1,0 +1,56 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 93858,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42030,
+  "last_post_date": 1544647331,
+  "node_id": 47,
+  "post_date": 1544647331,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93858,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ещё один мод для работы с музыкальными релизами. Добавляете после поля Продолжительность и поле будет подсчитывать общую продолжительность перетянутых на него аудио-файлов (только файлы поддерживаемые вашим браузером).<br />\nДля установки добавьте в конце <b>styles\\templates\\posting_tpl.tpl</b>:<br />\n<pre class=\"xfBb-code\" data-lang=\"html\">&lt;!--drag_drop_duration--&gt;\n&lt;style&gt;\n    input.drag-over {\n        border: dashed;\n        border-radius: 5px;\n    }\n&lt;/style&gt;\n&lt;script&gt;\n    TPL.el_id = Object.assign({drag_drop_duration: &#039;Drag and Drop продолжительность&#039;}, TPL.el_id);\n    $(&#039;body&#039;)\n        .on(&#039;drop&#039;, &#039;input[type=text]&#039;, e =&gt; {\n            if ($(e.target).parent().has(&#039;.drag_drop_duration&#039;).length) {\n                e.preventDefault();\n                let files = e.originalEvent.target.files || e.originalEvent.dataTransfer.files,\n                    audios = new Set,\n                    duration = 0;\n                $.each(files, (i, file) =&gt; {\n                    let audio = new Audio(URL.createObjectURL(file));\n                    audio.oncanplaythrough = () =&gt; {\n                        duration += audio.duration;\n                        audios.delete(audio);\n                        if (!audios.size) {\n                            let date = new Date(1970, 0, 1);\n                            date.setSeconds(Math.round(duration));\n                            $(e.target).val(date.toTimeString().replace(/(\\d\\d:\\d\\d:\\d\\d).*/, &#039;$1&#039;));\n                        }\n                    };\n                    audios.add(audio);\n                });\n            }\n            $(e.target).removeClass(&#039;drag-over&#039;);\n        })\n        .on(&#039;dragover&#039;, &#039;input[type=text]&#039;, e =&gt; {\n            if ($(e.target).parent().has(&#039;.drag_drop_duration&#039;).length) {\n                e.preventDefault();\n                $(e.target).addClass(&#039;drag-over&#039;);\n            }\n        })\n        .on(&#039;dragleave&#039;, &#039;input[type=text]&#039;, e =&gt; {\n            $(e.target).removeClass(&#039;drag-over&#039;);\n        });\n&lt;/script&gt;\n&lt;div id=&quot;drag_drop_duration&quot; style=&quot;display: none&quot;&gt;\n    &lt;span class=&quot;drag_drop_duration&quot;&gt;&lt;/span&gt;\n&lt;/div&gt;\n&lt;!--/drag_drop_duration--&gt;</pre>Пример работы:<br />\n<div data-template-name=\"public:_media_site_embed_youtube\" class=\"bbMediaWrapper\" data-media-site-id=\"youtube\" data-media-key=\"wE83EZNqH2I\">\n\t<div class=\"bbMediaWrapper-inner\">\n\t\t<iframe src=\"https://www.youtube.com/embed/wE83EZNqH2I?wmode=opaque\"\n\t\t\t\tloading=\"lazy\"\n\t\t\t\twidth=\"560\" height=\"315\"\n\t\t\t\tframeborder=\"0\" allowfullscreen=\"true\"></iframe>\n\t</div>\n</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1544647331,
+      "user_id": 8750,
+      "user_title": "User",
+      "username": "lufton"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "drag-and-drop-prodolzitel-nost",
+  "sticky": false,
+  "tags": [
+    "drag",
+    "drop",
+    "duration",
+    "длительность",
+    "продолжительность"
+  ],
+  "title": "Drag and Drop продолжительность",
+  "url_path": "/threads/drag-and-drop-prodolzitel-nost.42030/",
+  "user_id": 8750,
+  "username": "lufton",
+  "view_count": 803
+}

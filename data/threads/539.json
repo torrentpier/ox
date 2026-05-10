@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 6768,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 539,
+  "last_post_date": 1323209542,
+  "node_id": 57,
+  "post_date": 1323206734,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 6768,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "При попытке адаптировать мод ленты новинок (бесплатный), страница загружается, но вверху появляются нотисы :<br />\n<br />\n<span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\">Notice: Use of undefined constant BT_TORRENTS_TABLE - assumed &#039;BT_TORRENTS_TABLE&#039; in /srv/www/htdocs/pitbull-test/includes/page_header.php on line 61 Notice: Use of undefined constant POSTS_TEXT_TABLE - assumed &#039;POSTS_TEXT_TABLE&#039; in /srv/www/htdocs/pitbull-test/includes/page_header.php on line 62 Notice: Use of undefined constant TOPICS_TABLE - assumed &#039;TOPICS_TABLE&#039; in /srv/www/htdocs/pitbull-test/includes/page_header.php on line 63 Warning: mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /srv/www/htdocs/pitbull-test/includes/db/mysql.php on line 251</span></span></span><br />\n<br />\nПодскажите, как можно исправить это. Я понимаю прекрасно по английски, но все таки хочется услышать нормальный, точный ответ. Заранее спасибо.<br />\n<br />\nАх да, вот кусок кода, который требует адаптации:<br />\n<br />\n<b><span style=\"font-size: 13px\"><span style=\"font-family: 'Courier New'\"><span style=\"color: rgb(0, 102, 0)\">$porno_forums = $bb_cfg[&#039;porno_forums&#039;] ? $bb_cfg[&#039;porno_forums&#039;] : 0;</span></span></span></b><br />\n<br />\n<b><span style=\"font-size: 13px\"><span style=\"font-family: 'Courier New'\"><span style=\"color: rgb(0, 102, 0)\">$new_torrent = $db-&gt;sql_query(&quot;SELECT t.topic_id, pt.post_text, pt.post_id, tt.topic_title, tt.topic_time</span></span></span></b><br />\n<br />\n<b><span style=\"font-size: 13px\"><span style=\"font-family: 'Courier New'\"><span style=\"color: rgb(0, 102, 0)\">          FROM   &quot;.BT_TORRENTS_TABLE.&quot; AS t,</span></span></span></b><br />\n<br />\n<b><span style=\"font-size: 13px\"><span style=\"font-family: 'Courier New'\"><span style=\"color: rgb(0, 102, 0)\">                 &quot;.POSTS_TEXT_TABLE.&quot; AS pt,</span></span></span></b><br />\n<br />\n<b><span style=\"font-size: 13px\"><span style=\"font-family: 'Courier New'\"><span style=\"color: rgb(0, 102, 0)\">                 &quot;.TOPICS_TABLE.&quot; AS tt</span></span></span></b><br />\n<br />\n<b><span style=\"font-size: 13px\"><span style=\"font-family: 'Courier New'\"><span style=\"color: rgb(0, 102, 0)\">          WHERE pt.post_id = t.post_id</span></span></span></b><br />\n<br />\n<b><span style=\"font-size: 13px\"><span style=\"font-family: 'Courier New'\"><span style=\"color: rgb(0, 102, 0)\">          AND   tt.topic_id = t.topic_id</span></span></span></b><br />\n<br />\n<b><span style=\"font-size: 13px\"><span style=\"font-family: 'Courier New'\"><span style=\"color: rgb(0, 102, 0)\">          AND   tt.forum_id NOT IN (&quot;.$porno_forums.&quot;)</span></span></span></b><br />\n<br />\n<b><span style=\"font-size: 13px\"><span style=\"font-family: 'Courier New'\"><span style=\"color: rgb(0, 102, 0)\">          GROUP BY t.reg_time DESC LIMIT 30</span></span></span></b><br />\n<br />\n<b><span style=\"font-size: 13px\"><span style=\"font-family: 'Courier New'\"><span style=\"color: rgb(0, 102, 0)\">&quot;);</span></span></span></b><br />\n<br />\n<b><span style=\"font-size: 13px\"><span style=\"font-family: 'Courier New'\"><span style=\"color: rgb(0, 102, 0)\">  $i = 0;</span></span></span></b><br />\n<br />\n<b><span style=\"font-size: 13px\"><span style=\"font-family: 'Courier New'\"><span style=\"color: rgb(0, 102, 0)\">while ($tor = $db-&gt;sql_fetchrow($new_torrent))</span></span></span></b><br />\n<br />\n<b><span style=\"font-size: 13px\"><span style=\"font-family: 'Courier New'\"><span style=\"color: rgb(0, 102, 0)\">  {</span></span></span></b><br />\n<br />\n<b><span style=\"font-size: 13px\"><span style=\"font-family: 'Courier New'\"><span style=\"color: rgb(0, 102, 0)\">      $i++;</span></span></span></b><br />\n<br />\n<b><span style=\"font-size: 13px\"><span style=\"font-family: 'Courier New'\"><span style=\"color: rgb(0, 102, 0)\">      preg_match_all(&#039;/\\[img=.*?\\](.*?)\\[\\/img:.*?\\]/i&#039;, $tor[&#039;post_text&#039;], $out);</span></span></span></b><br />\n<br />\n<b><span style=\"font-size: 13px\"><span style=\"font-family: 'Courier New'\"><span style=\"color: rgb(0, 102, 0)\">    $title = $tor[&#039;topic_title&#039;];</span></span></span></b><br />\n<br />\n<b><span style=\"font-size: 13px\"><span style=\"font-family: 'Courier New'\"><span style=\"color: rgb(0, 102, 0)\">      $post_img = @$out[1][0] ? &#039;&lt;img title=&quot;$title&quot; src=&quot;&#039;.@$out[1][0].&#039;&quot; width=100 /&gt;&#039; : &#039;&lt;img title=&quot;$title&quot; src=&quot;images/no_poster.jpg&quot; width=100 /&gt;&#039;;</span></span></span></b><br />\n<br />\n<b><span style=\"font-size: 13px\"><span style=\"font-family: 'Courier New'\"><span style=\"color: rgb(0, 102, 0)\">      $last_release = &#039;&lt;a href=&quot;&#039;.TOPIC_URL.$tor[&#039;topic_id&#039;].&#039;&quot;&gt;&#039;.$post_img.&#039;&lt;/a&gt;&amp;nbsp;&#039;;</span></span></span></b><br />\n<br />\n<b><span style=\"font-size: 13px\"><span style=\"font-family: 'Courier New'\"><span style=\"color: rgb(0, 102, 0)\">      $template-&gt;assign_block_vars(&#039;last_release&#039;, array(</span></span></span></b><br />\n<br />\n<b><span style=\"font-size: 13px\"><span style=\"font-family: 'Courier New'\"><span style=\"color: rgb(0, 102, 0)\">         &#039;LAST_RELEASE&#039; =&gt; $last_release,</span></span></span></b><br />\n<br />\n<b><span style=\"font-size: 13px\"><span style=\"font-family: 'Courier New'\"><span style=\"color: rgb(0, 102, 0)\">         &#039;TITLE&#039;        =&gt; $title,));</span></span></span></b><br />\n<br />\n<b><span style=\"font-size: 13px\"><span style=\"font-family: 'Courier New'\"><span style=\"color: #006600\">  }</span></span></span></b>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1323206734,
+      "user_id": 46,
+      "user_title": "",
+      "username": "REVOLUTiON"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 6769,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"\">BT_TORRENTS_TABLE = BB_BT_TORRENTS\nPOSTS_TEXT_TABLE = BB_POSTS_TEXT\nTOPICS_TABLE = BB_TOPICS</pre>Такого намека хватит?<br />\n﻿",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1323209064,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 6770,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо, пока да)",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1323209542,
+      "user_id": 46,
+      "user_title": "",
+      "username": "REVOLUTiON"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "notisy",
+  "sticky": false,
+  "tags": [],
+  "title": "Нотисы",
+  "url_path": "/threads/notisy.539/",
+  "user_id": 46,
+  "username": "REVOLUTiON",
+  "view_count": 1301
+}

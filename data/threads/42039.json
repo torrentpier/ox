@@ -1,0 +1,69 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 93955,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 42039,
+  "last_post_date": 1549108274,
+  "node_id": 90,
+  "post_date": 1549108274,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1549108285,
+          "file_size": 7334,
+          "filename": "vmmanager.webp",
+          "height": 315,
+          "id": 5252,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/vmmanager-webp.5252/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5256-4ec2f3f6ab9956d02d45c0fbb01e514f.jpg?hash=Uppp7TYHqs",
+          "width": 600
+        }
+      ],
+      "id": 93955,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<img src=\"https://torrentpier.com/attachments/5252/\" alt=\"vmmanager.webp\" /><br />\n<br />\n1. Распродажа вечных лицензий VMmanager KVM, по 4900 рублей. Лицензии по 1 узлу. Обновления до лета 2020 года.<br />\n<br />\n<i>Старая цена вечных VMmanager KVM на сайте разработчика была 12300 рублей.<br />\nСейчас годовая VMmanager KVM на сайте разработчика стоит 6087 рублей.</i><br />\n<br />\n2. Есть и с узлами, но с просроченными обновлениями. Цена 1000р.<br />\nПродлить обновления можно будет тоже через нас со скидкой: 1 узел 1900 рублей на 1 год продление.<br />\n<br />\nВозможности VMmanager KVM <a href=\"https://www.ispsystem.ru/software/vmmanager\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://www.ispsystem.ru/software/vmmanager</a><br />\n<br />\nДля заказа и другим вопросам обращаться на <a href=\"mailto:sales@abcd.host\">sales@abcd.host</a><br />\n<a href=\"https://abcd.host/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">ABCD.HOST - Лучшие серверы, VPS/VDS, хостинг по привлекательным ценам</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1549108274,
+      "user_id": 7796,
+      "user_title": "User",
+      "username": "Differ"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "licenzii-vmmanager-kvm",
+  "sticky": false,
+  "tags": [
+    "isp",
+    "kvm",
+    "vmmanager"
+  ],
+  "title": "Лицензии VMmanager KVM",
+  "url_path": "/threads/licenzii-vmmanager-kvm.42039/",
+  "user_id": 7796,
+  "username": "Differ",
+  "view_count": 1152
+}

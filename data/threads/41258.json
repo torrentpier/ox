@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 84936,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 41258,
+  "last_post_date": 1486233812,
+  "node_id": 80,
+  "post_date": 1441933514,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84936,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"php\">  $sql = &quot;SELECT COUNT(*) AS total FROM &quot;. BB_USERS;\n   $sql .=   ($letter_sql) ? &quot; WHERE $letter_sql&quot; : &#039;&#039;;</pre>тут не учитывается NOT IN(&quot;. EXCLUDED_USERS_CSV .&quot;)<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">  $sql = &quot;SELECT COUNT(*) AS total FROM &quot;. BB_USERS;\n   $sql .= ($letter_sql) ? &quot; WHERE $letter_sql&quot; : &quot; WHERE user_id NOT IN(&quot;. EXCLUDED_USERS_CSV .&quot;)&quot;;</pre>поменять на <br />\nps коды может быть и не правильный но в пагинации учитываются бот и гость",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1441933514,
+      "user_id": 4866,
+      "user_title": "User",
+      "username": "Bender"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85101,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/4866/\">@Bender</a> ну вообще профиль бота в списке пользователей по идее должен выводиться и исключать его нет смысла. А вот с гостем да, ошибка, спасибо.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1443814802,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89490,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Взято в работу для версии 2.1.6.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1484600719,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89960,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено в 2.1.6.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1486233812,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 3,
+  "slug": "paginacia-v-memberlist",
+  "sticky": false,
+  "tags": [],
+  "title": "Пагинация в memberlist",
+  "url_path": "/threads/paginacia-v-memberlist.41258/",
+  "user_id": 4866,
+  "username": "Bender",
+  "view_count": 1156
+}

@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 24353,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1834,
+  "last_post_date": 1355971964,
+  "node_id": 57,
+  "post_date": 1355969249,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24353,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте! Как дать права Админа? Подскажите плизз...",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1355969249,
+      "user_id": 2751,
+      "user_title": "User",
+      "username": "fil"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24354,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Когда просматриваете профиль пользователя вверху справа есть ссылка &quot;Права доступа&quot;, нажмите на неё. Вы перейдете в админку, внизу из выпадающего списка выберите &quot;Администратор&quot; и нажмите &quot;Отправить&quot;.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1355970345,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Sarymian"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24361,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1355971964,
+      "user_id": 2751,
+      "user_title": "User",
+      "username": "fil"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "prava-admina",
+  "sticky": false,
+  "tags": [],
+  "title": "Права админа",
+  "url_path": "/threads/prava-admina.1834/",
+  "user_id": 2751,
+  "username": "fil",
+  "view_count": 1387
+}

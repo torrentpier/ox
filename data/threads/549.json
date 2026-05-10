@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 6939,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 549,
+  "last_post_date": 1323463316,
+  "node_id": 57,
+  "post_date": 1323413637,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 6939,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "http://s017.*******.host/i429/1112/64/46f31cb65f9a.jpg<br />\n<br />\nвот такая проблема, именно в посте кодировка Абракадабра получается. Что может быть, помогите пож-та.<br />\n<br />\nФайл .htaccess<br />\n<br />\n## Set charset server<br />\nAddDefaultCharset UTF-8<br />\n## Set charset for php mb-functions<br />\nphp_value mbstring.internal_encoding UTF-8<br />\nphp_value magic_quotes_gpc off<br />\n<br />\n## RSS MOD<br />\n#RewriteEngine On<br />\n#RewriteRule ^rss.xml$ rss.php [L]<br />\n<br />\n## Access control<br />\n&lt;FilesMatch &quot;\\.(.*sql|tpl|inc|db|log)|(config|common).php$&quot;&gt;<br />\ndeny from all<br />\n&lt;/FilesMatch&gt;",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1323413637,
+      "user_id": 597,
+      "user_title": "User",
+      "username": "leco"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 6986,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Проверьте кодировку таблицы bb_posts в базе данных.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1323463316,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "problema-kodirovki-v-poste",
+  "sticky": false,
+  "tags": [],
+  "title": "Проблема кодировки в посте",
+  "url_path": "/threads/problema-kodirovki-v-poste.549/",
+  "user_id": 597,
+  "username": "leco",
+  "view_count": 1471
+}

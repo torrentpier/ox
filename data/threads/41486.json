@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 87912,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41486,
+  "last_post_date": 1468662567,
+  "node_id": 57,
+  "post_date": 1467204419,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87912,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\nВроде всё поставил по мануалу.<br />\nЯ устанавливал так: <br />\nСкинул из архива что было в нём в папку с доменом, настроил config и файлы opensearch_desc.xml и opensearch_desc_bt.xml<br />\nВ них переименовал на свой домен, создал в базе данных базу и прописал в config данные от бд полностью.<br />\nВ БД залил из папки sql от сюда \\install\\sql<br />\nЗахожу на сайт, он мне ошибку бьёт:<br />\n<b>Fatal error</b>: DB Error [library\\includes\\online_userlist.php(39)] in <b>C:\\OpenServer\\domains\\domen.ru\\library\\includes\\core\\mysql.php</b> on line <b>804</b><br />\nОшибка из: tr_cleanup_and_dlstat.php(38) там на строчке это <b>    &quot;);</b><br />\nОшибка из: online_userlist.php(39) там на строчке <b>foreach (DB()-&gt;fetch_rowset($sql) as $u)</b><br />\n<div>Spoiler content hidden.</div><b><br />\nПомогите)<br />\nЯ новенький в этом деле, хочу разобраться для себя чисто как устроен трекер.<br />\nИ если тему не там создал, простите! перенесите куда нужно, и не надо наказывать!(<br />\n</b>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1467204419,
+      "user_id": 7333,
+      "user_title": "User",
+      "username": "Abnormal"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88015,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/7333/\">Abnormal</a>, с такой ошибкой к хостеру, у вас ограничения на mysql.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1468616581,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88020,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\"><a href=\"https://torrentpier.com/members/7333/\">Abnormal</a>, с такой ошибкой к хостеру, у вас ограничения на mysql.</blockquote>Понимаете, дело в том, что у меня нет хостера.<br />\nЭто я запускаю с моего VDS установил там веб-сервер. ( Open Server )<br />\nВсе остальные движки работают ( имею ввиду IPB/IPS/DLE/Хостинг Картинок и.т.п... )<br />\nНо вот этот... 🙁",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1468647534,
+      "user_id": 7333,
+      "user_title": "User",
+      "username": "Abnormal"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88025,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/7333/\">Abnormal</a>, <code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\">this is incompatible with sql_mode=only_full_group_by</code> - это не от движка зависит. Я удивлен на самом деле что с такой конфигурацией mysql у вас указанные движки работают.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1468661429,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88026,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\"><a href=\"https://torrentpier.com/members/7333/\">Abnormal</a>, <code style=\"font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;\nfont-size: 0.9em;\nfont-style: normal;\nline-height: 1.3em;\nbackground: #BFE6FF;\nborder: 1px solid #C6C6EA;\nborder-radius: 3.5px;\npadding: 1px 3px;\ncolor: #0F4D79;\ndisplay: inline-block;\nmargin-bottom: 2px;\">this is incompatible with sql_mode=only_full_group_by</code> - это не от движка зависит. Я удивлен на самом деле что с такой конфигурацией mysql у вас указанные движки работают.</blockquote>🙁😢",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1468662567,
+      "user_id": 7333,
+      "user_title": "User",
+      "username": "Abnormal"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "osibka-v-online_userlist",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка в online_userlist",
+  "url_path": "/threads/osibka-v-online_userlist.41486/",
+  "user_id": 7333,
+  "username": "Abnormal",
+  "view_count": 2147
+}

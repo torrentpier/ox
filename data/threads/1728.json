@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 22912,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1728,
+  "last_post_date": 1353237065,
+  "node_id": 57,
+  "post_date": 1353234763,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 22912,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток. Просматривая код, наткнулся на такие строки кода:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">global $userdata, $lang, $bb_cfg;</pre>И<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">global $user, $lang, $bb_cfg;</pre>У меня возник вопрос: Чем отличаются, две глобальные переменные, $userdata и $user?<br />\nЯ заметил лишь одно отличие. Для получения например айди юзера, при глобальной $userdata, мы пишем вот так: <pre class=\"xfBb-code\" data-lang=\"php\">$userdata[&#039;user_id&#039;];</pre>А при глобальной $user, вот так: <pre class=\"xfBb-code\" data-lang=\"php\">$user-&gt;id</pre>Так в чем собственно отличия?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1353234763,
+      "user_id": 2684,
+      "user_title": "User",
+      "username": "dredd"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 22920,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>dredd</b>, var_dump() ?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1353237065,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "nebol-soj-vopros",
+  "sticky": false,
+  "tags": [],
+  "title": "Небольшой вопрос",
+  "url_path": "/threads/nebol-soj-vopros.1728/",
+  "user_id": 2684,
+  "username": "dredd",
+  "view_count": 893
+}

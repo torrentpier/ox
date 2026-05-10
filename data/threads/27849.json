@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 65032,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 27849,
+  "last_post_date": 1413805395,
+  "node_id": 80,
+  "post_date": 1413805395,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 65032,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Задание синхронизации форумов не выполняется на относительно больших форумах. Запрос необходимо лимитировать и выполнять итерациями, иначе форум со 100000 тем выполнением этого задания полностью ложит mysql на не самом слабом сервере.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1413805395,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 31,
+  "reply_count": 0,
+  "slug": "sinhronizacia-forumov",
+  "sticky": false,
+  "tags": [],
+  "title": "Синхронизация форумов",
+  "url_path": "/threads/sinhronizacia-forumov.27849/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 939
+}

@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 20955,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1576,
+  "last_post_date": 1349259174,
+  "node_id": 57,
+  "post_date": 1349256509,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20955,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Поставил TorrentPier II</b> <b><span style=\"font-size: 12px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\">2.5 Beta (R456)</span></span></span></b><br />\n <br />\n<span style=\"font-size: 12px\"><b>Нашёл бесплатный хостинг, залил базу данных</b></span><br />\n<span style=\"font-size: 12px\"><b>Сделал всё по инструкции, всё настроил, всё работает, НО:</b></span><br />\n<span style=\"font-size: 12px\"><b>У других пользователей не скачиваются торренты </b></span><br />\n<span style=\"font-size: 12px\"><b>У меня дома компьютер(для игр) и ноутбук(для работы), также присутствует Wi-Fi</b></span><br />\n<span style=\"font-size: 12px\"><b>В основе работаю за ноутбуком</b></span><br />\n<span style=\"font-size: 12px\"><b>С компьютера у меня всё качается, а вот у других не качается(даже пробовал через телефон через Мобильную сеть качать, тоже не хочет...)</b></span><br />\n<span style=\"font-size: 12px\"><b>В чём может быть проблема и как можно её решить?</b></span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1349256509,
+      "user_id": 2733,
+      "user_title": "User",
+      "username": "Stoke"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20956,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "у тебя идет по внутреней сети как 192.168.1.2 и 192.168.1.3  передается по этим ипам а не через интернет. С которого у тебя не может не кто скавчать, это потому что защита или что либо мешает фаервол и подообное отдачи.. В точке открой порты по которым у тебя идет отдача и т.д.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1349256900,
+      "user_id": 364,
+      "user_title": "",
+      "username": "Saint"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20958,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо большое, теперь понятно<br />\nА как открыть порты в точке?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1349257400,
+      "user_id": 2733,
+      "user_title": "User",
+      "username": "Stoke"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20962,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "А я от куда знаю какая у тебя точка. К часа 23-24 приеду могу посмотреть что да как. А там почитай в гугл",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1349258756,
+      "user_id": 364,
+      "user_title": "",
+      "username": "Saint"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20963,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Хорошо",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1349259174,
+      "user_id": 2733,
+      "user_title": "User",
+      "username": "Stoke"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "problema-v-skacivanii",
+  "sticky": false,
+  "tags": [],
+  "title": "Проблема в скачивании",
+  "url_path": "/threads/problema-v-skacivanii.1576/",
+  "user_id": 2733,
+  "username": "Stoke",
+  "view_count": 1246
+}

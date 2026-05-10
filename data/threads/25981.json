@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61183,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25981,
+  "last_post_date": 1403956666,
+  "node_id": 111,
+  "post_date": 1403375542,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61183,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Ссылка</b>:<br />\n<a href=\"http://code.google.com/p/torrentpier2/source/detail?r=590\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"> http://code.google.com/p/torrentpier2/source/detail?r=590</a><br />\n<br />\n<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 590: ALTER TABLE `bb_posts` CHANGE `post_mod_comment` `mc_comment` TEXT CHARACTER SET</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">pherum83</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/install/sql/mysql.sql \n    Modify    /trunk/upload/admin/admin_words.php \n    Modify    /trunk/upload/ajax/avatar.php \n    Modify    /trunk/upload/ajax/change_user_rank.php \n    Modify    /trunk/upload/ajax/post_mod_comment.php \n    Modify    /trunk/upload/config.php \n    Modify    /trunk/upload/includes/cron/jobs/cache_gc.php \n    Modify    /trunk/upload/includes/functions_post.php \n    Modify    /trunk/upload/includes/page_header.php \n    Delete    /trunk/upload/includes/ucp/usercp_attachcp.php \n    Modify    /trunk/upload/includes/ucp/usercp_viewprofile.php \n    Modify    /trunk/upload/language/en/main.php \n    Modify    /trunk/upload/language/ru/main.php \n    Modify    /trunk/upload/language/ua/main.php \n    Modify    /trunk/upload/misc/js/bbcode.js \n    Modify    /trunk/upload/search.php \n    Modify    /trunk/upload/templates/default/css/main.css \n    Modify    /trunk/upload/templates/default/images/en/icon_mc.gif \n    Add    /trunk/upload/templates/default/images/en/icon_poll.gif \n    Modify    /trunk/upload/templates/default/images/ru/icon_mc.gif \n    Add    /trunk/upload/templates/default/images/ru/icon_poll.gif \n    Modify    /trunk/upload/templates/default/images/ua/icon_mc.gif \n    Add    /trunk/upload/templates/default/images/ua/icon_poll.gif \n    Modify    /trunk/upload/templates/default/page_header.tpl \n    Modify    /trunk/upload/templates/default/tpl_config.php \n    Modify    /trunk/upload/templates/default/usercp_register.tpl \n    Modify    /trunk/upload/templates/default/usercp_viewprofile.tpl \n    Modify    /trunk/upload/templates/default/viewforum.tpl \n    Modify    /trunk/upload/templates/default/viewtopic.tpl \n    Modify    /trunk/upload/viewforum.php \n    Modify    /trunk/upload/viewtopic.php \n\nALTER TABLE `bb_posts` CHANGE `post_mod_comment` `mc_comment` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT &#039;&#039;; ALTER TABLE `bb_posts` CHANGE `post_mod_comment_type` `mc_type` TINYINT(1) NOT NULL DEFAULT &#039;0&#039;; ALTER TABLE `bb_posts` CHANGE `post_mc_mod_id` `mc_user_id` MEDIUMINT(8) NOT NULL DEFAULT &#039;0&#039;; ALTER TABLE `bb_posts` DROP `post_mc_mod_name`; Исправлено: Автоцентор заменял не везде темы и посты Некорректная работа замены поля твиттера (ajax) Будующие закачки и т.д переставали подсвечиваться при переходе в тему Модераторские комментарии могли привести к отказу всех скриптов на странице Добавлено: Alert nаблицы для уведомлений Модераторские комментарии теперь имеют новый внешний вид Новые типы выдачи уведомлений для модераторских комментариев: Комментарий, Информация, Предупреждение, Нарушение При выдаче модераторского комментария, пользователь получает уведомление в ЛС в топиках и форумах добавлен полный путь перехода в меню навигации: Главная » Категория » Форум Исправлены различные мелкие недочеты</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1403375542,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61184,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"\">ALTER TABLE `bb_posts` CHANGE `post_mod_comment` `mc_comment` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT &#039;&#039;;\nALTER TABLE `bb_posts` CHANGE `post_mod_comment_type` `mc_type` TINYINT(1) NOT NULL DEFAULT &#039;0&#039;;\nALTER TABLE `bb_posts` CHANGE `post_mc_mod_id` `mc_user_id` MEDIUMINT(8) NOT NULL DEFAULT &#039;0&#039;;\nALTER TABLE `bb_posts` DROP `post_mc_mod_name`;</pre><br />\nИсправлено:<br />\nАвтоцентор заменял не везде темы и посты<br />\nНекорректная работа замены поля твиттера (ajax)<br />\nБудующие закачки и т.д переставали подсвечиваться при переходе в тему<br />\nМодераторские комментарии могли привести к отказу всех скриптов на странице<br />\n<br />\nДобавлено:<br />\nAlert nаблицы для уведомлений<br />\nМодераторские комментарии теперь имеют новый внешний вид<br />\nНовые типы выдачи уведомлений для модераторских комментариев: Комментарий, Информация, Предупреждение, Нарушение<br />\nПри выдаче модераторского комментария, пользователь получает уведомление в ЛС<br />\n<br />\nв топиках и форумах добавлен полный путь перехода в меню навигации:<br />\nГлавная » Категория » Форум<br />\n<br />\nИсправлены различные мелкие недочеты",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1403375600,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61204,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Добавьте кнопку &quot;Отмена&quot; при редактировании опроса, возле &quot;Отправить&quot;.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1403619846,
+      "user_id": 4610,
+      "user_title": "User",
+      "username": "lex"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61262,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Исправьте в будущей ревизии Украинский ланг:<br />\n <br />\n$lang[&#039;DATETIME&#039;][&#039;TODAY&#039;] = &#039;Сьогодні, о&#039;;<br />\n$lang[&#039;DATETIME&#039;][&#039;YESTERDAY&#039;] = &#039;Вчора, о&#039;;<br />\n <br />\n$lang[&#039;MC_TITLE&#039;] = &#039;Модераторський коментар&#039;;<br />\n <br />\n$lang[&#039;MC_FAQ&#039;] = &#039;Доданий Вами текст буде відображатися під цим повідомленням&#039;;<br />\n <br />\n$lang[&#039;GENDER_SELECT&#039;] = array(<br />\n0 =&gt; &#039;Не вказана&#039;,<br />\n1 =&gt; &#039;Чоловіча&#039;,<br />\n2 =&gt; &#039;Жіноча&#039;<br />\n);<br />\n <br />\n<blockquote class=\"xfBb-quote\" data-name=\"lex\">Добавьте кнопку &quot;Отмена&quot; при редактировании опроса, возле &quot;Отправить&quot;.</blockquote> <br />\nзачем, повторно на иконку жмешь, и поле исчезает",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1403956666,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "revision-590-alter-table-bb_posts-change-post_mod_comment-mc_comment-text-character-set",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 590: ALTER TABLE `bb_posts` CHANGE `post_mod_comment` `mc_comment` TEXT CHARACTER SET",
+  "url_path": "/threads/revision-590-alter-table-bb_posts-change-post_mod_comment-mc_comment-text-character-set.25981/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 2518
+}

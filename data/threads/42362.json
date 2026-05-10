@@ -1,0 +1,172 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 97199,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 42362,
+  "last_post_date": 1750616720,
+  "node_id": 110,
+  "post_date": 1743779374,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97199,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Приветствую всех пользователей TorrentPier!<br />\n<br />\nСегодня 4 апреля 2025 года, а это значит что проект TorrentPier празднует свой двадцатый день рождения! 🎂🍾<br />\nВсех пользователей поздравляю с этим праздником! Спасибо что остаётесь с нами! ❤️",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1743779374,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97200,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>С днём рождения TorrentPier!!<br />\nПусть будет жить вечно 🎂</b>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1743781976,
+      "user_id": 7621,
+      "user_title": "User",
+      "username": "DimaUZB2001"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97204,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "С Днём рождения.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1743840681,
+      "user_id": 8837,
+      "user_title": "User",
+      "username": "K15"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1744027465,
+          "file_size": 116880,
+          "filename": "tM4iP-6Y9TU.webp",
+          "height": 604,
+          "id": 6435,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/tm4ip-6y9tu-webp.6435/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6439-47b9ceee27969127d6c7d354410339a8.jpg?hash=oHT0i4tgk6",
+          "width": 604
+        }
+      ],
+      "id": 97209,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 1744027654,
+      "message_parsed": "7 футов под килем 🐋<br />\n<a href=\"https://torrentpier.com/attachments/6435/\"><img src=\"https://torrentpier.com/data/attachments/6/6439-47b9ceee27969127d6c7d354410339a8.jpg?hash=oHT0i4tgk6\" alt=\"tM4iP-6Y9TU.jpg\" /></a>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1744027473,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1750588962,
+          "file_size": 339554,
+          "filename": "happy_birthday_PNG31.webp",
+          "height": 1455,
+          "id": 6465,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/happy_birthday_png31-webp.6465/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6469-5338fbcedc83fc9d8abe31e5b8be828d.jpg?hash=As4KZysYlS",
+          "width": 1500
+        }
+      ],
+      "id": 97374,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Happy <img src=\"https://torrentpier.com/attachments/6465/\" alt=\"happy_birthday_PNG31.webp\" />",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1750588973,
+      "user_id": 10958,
+      "user_title": "User",
+      "username": "haribo"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97375,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ти голям лицемер си бил ве!!!",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1750616720,
+      "user_id": 10665,
+      "user_title": "User",
+      "username": "crowni"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "torrentpier-prazdnuet-ubilej-20-let",
+  "sticky": false,
+  "tags": [
+    "20 лет",
+    "20 лет вместе!",
+    "torrentpier",
+    "torrentpier 20 лет!",
+    "день рождения",
+    "юбилей"
+  ],
+  "title": "TorrentPier празднует юбилей 20 лет!",
+  "url_path": "/threads/torrentpier-prazdnuet-ubilej-20-let.42362/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 1588
+}

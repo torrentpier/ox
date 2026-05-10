@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 78183,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 96,
+    "title": "Modifications archive"
+  },
+  "id": 37277,
+  "last_post_date": 1425589019,
+  "node_id": 96,
+  "post_date": 1425588801,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 78183,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Пользователь Exile разместил новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/novye-soobschenija-s-predprosmotrom.210/\" class=\"link link--internal\">Новые сообщения (с предпросмотром)</a> - Добавляет вывод новых сообщений и тем форума в боковой панели (с предпросмотром).<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> добавляет вывод новых сообщений и тем форума в боковой панели (с предпросмотром).<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">AJAX-навигация</li>\n<li data-xf-list-type=\"ul\">Предпросмотр</li>\n<li data-xf-list-type=\"ul\">Полное кеширование</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/novye-soobschenija-s-predprosmotrom.210/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1425588801,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 78184,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Аналог <a href=\"https://torrentpier.com/resources/novye-soobschenija.122/\" class=\"link link--internal\">https://torrentpier.com/resources/novye-soobschenija.122/</a> - только чуть больше функций и нужна адаптация, скорее всего.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1425588830,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 78185,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Этот ресурс был удалён и более недоступен для скачивания.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1425589004,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 78186,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/resources/novye-soobschenija-s-predprosmotrom.49/\" class=\"link link--internal\">https://torrentpier.com/resources/novye-soobschenija-s-predprosmotrom.49/</a> - дубликат.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1425589019,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "novye-soobsenia-s-predprosmotrom-udalennyj",
+  "sticky": false,
+  "tags": [],
+  "title": "Новые сообщения (с предпросмотром) [удаленный]",
+  "url_path": "/threads/novye-soobsenia-s-predprosmotrom-udalennyj.37277/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 1467
+}

@@ -1,0 +1,162 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Контрольные суммы файлов by belomaxorka.zip",
+      "id": 5974,
+      "local_path": null,
+      "r2_key": null,
+      "size": 2313,
+      "src_url": "https://torrentpier.com/api/resource-versions/492/download?file=5974"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "yes",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1704084091,
+      "file_size": 6072,
+      "filename": "Screenshot 2024-01-01 023046.webp",
+      "height": 144,
+      "id": 5722,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot-2024-01-01-023046-webp.5722/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5726-517f1015996fe806043a21cba5439008.jpg?hash=nubfvwEvHQ",
+      "width": 1146
+    },
+    {
+      "attach_date": 1714642882,
+      "file_size": 39664,
+      "filename": "photo_2024-05-02_16-40-07.webp",
+      "height": 448,
+      "id": 5975,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2024-05-02_16-40-07-webp.5975/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5979-e31b6ff7b75bfb18cf600831374d2339.jpg?hash=JOwqaz3NWp",
+      "width": 1218
+    },
+    {
+      "attach_date": 1714642886,
+      "file_size": 28972,
+      "filename": "photo_2024-05-02_16-40-27.webp",
+      "height": 322,
+      "id": 5976,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/photo_2024-05-02_16-40-27-webp.5976/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5980-f1fb60d43eb17982f78214b84a766df6.jpg?hash=YK27QmRVhC",
+      "width": 784
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Добавляет отображение контрольной суммы (MD5) в топике для каждого загруженного файла. Это относится к вложениям которые не являются торрент-файлами &amp; изображениями. То есть хэш будет отображаться для документов, архивов и прочих файлов. MD5-хэш вычисляется в процессе загрузки файла на сервер, а не на момент открытия темы.",
+  "download_count": 504,
+  "external_url": null,
+  "icon_url": null,
+  "id": 280,
+  "is_fileless": null,
+  "last_update": 1714642385,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1704084093,
+  "resource_state": "visible",
+  "slug": "kontrol-nye-summy-fajlov",
+  "tag_line": "Добавляет отображение контрольной суммы (MD5) в топике для каждого загруженного файла.",
+  "tags": [
+    "md5",
+    "контрольная сумма md5",
+    "контрольные суммы файлов",
+    "котрольная сумма",
+    "мод",
+    "моды",
+    "отображение контрольной суммы"
+  ],
+  "title": "Контрольные суммы файлов",
+  "url_path": "/resources/kontrol-nye-summy-fajlov.280/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.2.0",
+  "versions": [
+    {
+      "download_count": 279,
+      "files": [
+        {
+          "filename": "[FULL] Контрольные суммы файлов by belomaxorka.zip",
+          "id": 5974,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2313,
+          "src_url": "https://torrentpier.com/api/resource-versions/492/download?file=5974"
+        }
+      ],
+      "id": 492,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1714642385,
+      "version_state": "visible",
+      "version_string": "v1.2.0",
+      "view_url": "https://torrentpier.com/resources/kontrol-nye-summy-fajlov.280/version/492/"
+    },
+    {
+      "download_count": 115,
+      "files": [
+        {
+          "filename": "[FULL] Контрольные суммы файлов by belomaxorka.zip",
+          "id": 5726,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1685,
+          "src_url": "https://torrentpier.com/api/resource-versions/432/download?file=5726"
+        }
+      ],
+      "id": 432,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1704101619,
+      "version_state": "visible",
+      "version_string": "v1.1.0",
+      "view_url": "https://torrentpier.com/resources/kontrol-nye-summy-fajlov.280/version/432/"
+    },
+    {
+      "download_count": 112,
+      "files": [
+        {
+          "filename": "[FULL] Контрольные суммы файлов by belomaxorka.zip",
+          "id": 5721,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1634,
+          "src_url": "https://torrentpier.com/api/resource-versions/431/download?file=5721"
+        }
+      ],
+      "id": 431,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1704084093,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/kontrol-nye-summy-fajlov.280/version/431/"
+    }
+  ],
+  "view_count": 1013
+}

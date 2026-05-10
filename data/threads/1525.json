@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 20287,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1525,
+  "last_post_date": 1347554377,
+  "node_id": 57,
+  "post_date": 1347552928,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20287,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подскажите как добавить юзеров из старого бекапа , у меня просто крон удалил юзеров и хочу из бекапа добавить назад их, но не могу просто снести таблицу так как там уже зарегистрировалось много новых юзеров<br />\nПросто не пойму какой запрос надо сделать",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1347552928,
+      "user_id": 128,
+      "user_title": "User",
+      "username": "vulkan3"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 20288,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"php\">INSERT INTO `bb_users` VALUES (...);</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1347554377,
+      "user_id": 737,
+      "user_title": "User",
+      "username": "Dream"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "kak-dobavit-uzerov-iz-starogo-bekapa",
+  "sticky": false,
+  "tags": [],
+  "title": "Как   добавить юзеров из старого бекапа ?",
+  "url_path": "/threads/kak-dobavit-uzerov-iz-starogo-bekapa.1525/",
+  "user_id": 128,
+  "username": "vulkan3",
+  "view_count": 1125
+}

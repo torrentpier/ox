@@ -1,0 +1,140 @@
+{
+  "category": {
+    "description": "Section with all templates for TorrentPier.",
+    "id": 5,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Templates",
+    "view_url": "https://torrentpier.com/resources/categories/templates.5/"
+  },
+  "current_files": [
+    {
+      "filename": "Metis TP-2.1.6.rar",
+      "id": 4933,
+      "local_path": null,
+      "r2_key": null,
+      "size": 1232759,
+      "src_url": "https://torrentpier.com/api/resource-versions/378/download?file=4933"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Install\"]\nОткрыть Viewtopic.php\nнайти\n\n//\n// Topic watch information\n//\n$s_watching_topic = $s_watching_topic_img = '';\nif ($can_watch_topic) {\n    if ($is_watching_topic) {\n        $s_watching_topic = \"<a href=\\\"\" . TOPIC_URL . $topic_id . \"&amp;unwatch=topic&amp;start=$start&amp;sid=\" . $userdata['session_id'] . '\">' . $lang['STOP_WATCHING_TOPIC'] . '</a>';\n        $s_watching_topic_img = (isset($images['topic_un_watch'])) ? \"<a href=\\\"\" . TOPIC_URL . \"$topic_id&amp;unwatch=topic&amp;start=$start&amp;sid=\" . $userdata['session_id'] . '\"><img src=\"' . $images['topic_un_watch'] . '\" alt=\"' . $lang['STOP_WATCHING_TOPIC'] . '\" title=\"' . $lang['STOP_WATCHING_TOPIC'] . '\" border=\"0\"></a>' : '';\n    } else {\n        $s_watching_topic = \"<a href=\\\"\" . TOPIC_URL . $topic_id . \"&amp;watch=topic&amp;start=$start&amp;sid=\" . $userdata['session_id'] . '\">' . $lang['START_WATCHING_TOPIC'] . '</a>';\n        $s_watching_topic_img = (isset($images['Topic_watch'])) ? \"<a href=\\\"\" . TOPIC_URL . \"$topic_id&amp;watch=topic&amp;start=$start&amp;sid=\" . $userdata['session_id'] . '\"><img src=\"' . $images['Topic_watch'] . '\" alt=\"' . $lang['START_WATCHING_TOPIC'] . '\" title=\"' . $lang['START_WATCHING_TOPIC'] . '\" border=\"0\"></a>' : '';\n    }\n}\n\nЗаменить на\n\n//\n// Topic watch information\n//\n$s_watching_topic = $s_watching_topic_img = '';\nif ($can_watch_topic) {\n    if ($is_watching_topic) {\n        $s_watching_topic = \"<a href=\\\"\" . TOPIC_URL . $topic_id . \"&amp;unwatch=topic&amp;start=$start&amp;sid=\" . $userdata['session_id'] . '\" class=\"btn btn-block btn-primary\">' . $lang['STOP_WATCHING_TOPIC'] . '</a>';\n        $s_watching_topic_img = (isset($images['topic_un_watch'])) ? \"<a href=\\\"\" . TOPIC_URL . \"$topic_id&amp;unwatch=topic&amp;start=$start&amp;sid=\" . $userdata['session_id'] . '\"><img src=\"' . $images['topic_un_watch'] . '\" alt=\"' . $lang['STOP_WATCHING_TOPIC'] . '\" title=\"' . $lang['STOP_WATCHING_TOPIC'] . '\" border=\"0\"></a>' : '';\n    } else {\n        $s_watching_topic = \"<a href=\\\"\" . TOPIC_URL . $topic_id . \"&amp;watch=topic&amp;start=$start&amp;sid=\" . $userdata['session_id'] . '\" class=\"btn btn-block btn-primary\">' . $lang['START_WATCHING_TOPIC'] . '</a>';\n        $s_watching_topic_img = (isset($images['Topic_watch'])) ? \"<a href=\\\"\" . TOPIC_URL . \"$topic_id&amp;watch=topic&amp;start=$start&amp;sid=\" . $userdata['session_id'] . '\"><img src=\"' . $images['Topic_watch'] . '\" alt=\"' . $lang['START_WATCHING_TOPIC'] . '\" title=\"' . $lang['START_WATCHING_TOPIC'] . '\" border=\"0\"></a>' : '';\n    }\n}\n\n\nоткрыть Posting.php\nнайти\n\n// Topic type selection\n$topic_type_toggle = '';\nif ($mode == 'newtopic' || ($mode == 'editpost' && $post_data['first_post'])) {\n    $template->assign_block_vars('switch_type_toggle', array());\n\n    if ($is_auth['auth_sticky']) {\n        $topic_type_toggle .= '<label><input type=\"radio\" name=\"topictype\" value=\"' . POST_STICKY . '\"';\n        if (isset($post_data['topic_type']) && ($post_data['topic_type'] == POST_STICKY || $topic_type == POST_STICKY)) {\n            $topic_type_toggle .= ' checked=\"checked\"';\n        }\n        $topic_type_toggle .= ' /> ' . $lang['POST_STICKY'] . '</label>&nbsp;&nbsp;';\n    }\n\n    if ($is_auth['auth_announce']) {\n        $topic_type_toggle .= '<label><input type=\"radio\" name=\"topictype\" value=\"' . POST_ANNOUNCE . '\"';\n        if (isset($post_data['topic_type']) && ($post_data['topic_type'] == POST_ANNOUNCE || $topic_type == POST_ANNOUNCE)) {\n            $topic_type_toggle .= ' checked=\"checked\"';\n        }\n        $topic_type_toggle .= ' /> ' . $lang['POST_ANNOUNCEMENT'] . '</label>&nbsp;&nbsp;';\n    }\n\n    if ($topic_type_toggle != '') {\n        $topic_type_toggle = $lang['POST_TOPIC_AS'] . ': <label><input type=\"radio\" name=\"topictype\" value=\"' . POST_NORMAL . '\"' . ((!isset($post_data['topic_type']) || $post_data['topic_type'] == POST_NORMAL || $topic_type == POST_NORMAL) ? ' checked=\"checked\"' : '') . ' /> ' . $lang['POST_NORMAL'] . '</label>&nbsp;&nbsp;' . $topic_type_toggle;\n    }\n}\n\n\nЗаменить на\n\n// Topic type selection\n$topic_type_toggle = '';\nif ($mode == 'newtopic' || ($mode == 'editpost' && $post_data['first_post'])) {\n    $template->assign_block_vars('switch_type_toggle', array());\n\n    if ($is_auth['auth_sticky']) {\n        $topic_type_toggle .= '<tr><td><div class=\"radio radio-success\"><input type=\"radio\" name=\"topictype\" value=\"' . POST_STICKY . '\"';\n        if (isset($post_data['topic_type']) && ($post_data['topic_type'] == POST_STICKY || $topic_type == POST_STICKY)) {\n            $topic_type_toggle .= ' checked=\"checked\"';\n        }\n        $topic_type_toggle .= ' /><label> ' . $lang['POST_STICKY'] . '</label></div></td></tr>';\n    }\n\n    if ($is_auth['auth_announce']) {\n        $topic_type_toggle .= '<tr><td><div class=\"radio radio-success\"><input type=\"radio\" name=\"topictype\" value=\"' . POST_ANNOUNCE . '\"';\n        if (isset($post_data['topic_type']) && ($post_data['topic_type'] == POST_ANNOUNCE || $topic_type == POST_ANNOUNCE)) {\n            $topic_type_toggle .= ' checked=\"checked\"';\n        }\n        $topic_type_toggle .= ' /><label>' . $lang['POST_ANNOUNCEMENT'] . '</label></div></td></tr>';\n    }\n\n    if ($topic_type_toggle != '') {\n        $topic_type_toggle = '<tr><td class=\"text-danger text-center\"><b>' .  $lang['POST_TOPIC_AS'] . '</b></td></tr>' . '<tr><td> <div class=\"radio radio-success\"><input type=\"radio\" name=\"topictype\" value=\"' . POST_NORMAL . '\"' . ((!isset($post_data['topic_type']) || $post_data['topic_type'] == POST_NORMAL || $topic_type == POST_NORMAL) ? ' checked=\"checked\"' : '') . ' /><label> ' . $lang['POST_NORMAL'] . '</label></div></td></tr>' . $topic_type_toggle;\n    }\n}\n\n\nНайти\n\n        $topic_type_toggle .= '<nobr><input type=\"checkbox\" name=\"' . $dl_type_name . '\" id=\"topic_dl_type_id\" ' . $dl_ds . $dl_ch . ' /><label for=\"topic_dl_type_id\"> ' . $lang['POST_DOWNLOAD'] . '</label></nobr>';\n    \nЗаменить на\n\n        $topic_type_toggle .= '<tr><td><div class=\"checkbox checkbox-success\"><input type=\"checkbox\" name=\"' . $dl_type_name . '\" id=\"topic_dl_type_id\" ' . $dl_ds . $dl_ch . ' /><label for=\"topic_dl_type_id\"> ' . $lang['POST_DOWNLOAD'] . '</label></div></td></tr>';\n\nВ main.php добавить\n\n// Шаблон\n$lang['FOLDERS'] = 'Папки';\n$lang['REGLOG'] = 'Логин';\n$lang['REGTITL'] = 'Пожалуйста введите логин';\n$lang['REGPASS'] = 'Пожалуйста введите пароль';\n$lang['REGLOGPASS'] = 'Пожалуйста введите логин и пароль';\n\nнайти\n\n$lang['INBOX_SIZE'] = 'Ваша папка &laquo;Входящие&raquo;<br />заполнена на <b>%d%%</b>'; // eg. Your Inbox is 50% full\n$lang['SENTBOX_SIZE'] = 'Ваша папка &laquo;Отправленные&raquo;<br />заполнена на <b>%d%%</b>';\n$lang['SAVEBOX_SIZE'] = 'Ваша папка &laquo;Сохраненные&raquo;<br />заполнена на <b>%d%%</b>';\n\nзаменить на\n\n$lang['INBOX_SIZE'] = 'Ваша папка &laquo;Входящие&raquo; заполнена на <b>%d%%</b>'; // eg. Your Inbox is 50% full\n$lang['SENTBOX_SIZE'] = 'Ваша папка &laquo;Отправленные&raquo; заполнена на <b>%d%%</b>';\n$lang['SAVEBOX_SIZE'] = 'Ваша папка &laquo;Сохраненные&raquo; заполнена на <b>%d%%</b>';\n\n\nОткрыть memberlist.php\n\nнайти\n\n// <select> mode\n$select_sort_mode = '<select name=\"mode\">';\n\nзаменить на\n\n// <select> mode\n$select_sort_mode = '<select class=\"form-control m-t\"name=\"mode\">';\n\nнайти\n\n// <select> order\n$select_sort_order = '<select name=\"order\">';\n\nзаменить на\n\n$select_sort_order = '<select class=\"form-control m-t\" name=\"order\">';\n\nНайти\n\n$select_letter .= ':&nbsp;';\n$select_letter .= ($by_letter == 'others') ? '<b>' . $lang['OTHERS'] . '</b>&nbsp;' : '<a class=\"genmed\" href=\"' . (\"memberlist.php?letter=others&amp;mode=$mode&amp;order=$sort_order\") . '\">' . $lang['OTHERS'] . '</a>&nbsp;';\n$select_letter .= ':&nbsp;';\n$select_letter .= ($by_letter == 'all') ? '<b>' . $lang['ALL'] . '</b>' : '<a class=\"genmed\" href=\"' . (\"memberlist.php?letter=all&amp;mode=$mode&amp;order=$sort_order\") . '\">' . $lang['ALL'] . '</a>';\n\nЗаменить на\n\n$select_letter .= ':&nbsp;';\n$select_letter .= ($by_letter == 'others') ? '<span class=\"label label-danger\">' . $lang['OTHERS'] . '</span>&nbsp;' : '<a href=\"' . (\"memberlist.php?letter=others&amp;mode=$mode&amp;order=$sort_order\") . '\"><span class=\"label label-success\">' . $lang['OTHERS'] . '</span></a>&nbsp;';\n$select_letter .= ($by_letter == 'all') ? '<span class=\"label label-danger\">' . $lang['ALL'] . '</span>' : '<a href=\"' . (\"memberlist.php?letter=all&amp;mode=$mode&amp;order=$sort_order\") . '\"><span class=\"label label-success\">' . $lang['ALL'] . '</span></a>';\n\n\nоткрыть viewforum.php\nнайти\n\n$sort_list = '<select name=\"sort\">' . get_forum_display_sort_option($sort_value, 'list', 'sort') . '</select>';\n$order_list = '<select name=\"order\">' . get_forum_display_sort_option($order_value, 'list', 'order') . '</select>';\n$s_display_order = '&nbsp;' . $lang['SORT_BY'] . ':&nbsp;' . $sort_list . '&nbsp;' . $order_list . '&nbsp;';\n\nЗаменить на\n\n$sort_list = '<select class=\"form-control m-b\" name=\"account\" name=\"sort\">' . get_forum_display_sort_option($sort_value, 'list', 'sort') . '</select>';\n$order_list = '<select class=\"form-control m-b\" name=\"account\" name=\"order\">' . get_forum_display_sort_option($order_value, 'list', 'order') . '</select>';\n $s_display_order = $sort_list;\n $s_display_order1 = $order_list;\n \n \nнайти\n\n    'S_DISPLAY_ORDER' => $s_display_order,\n \nПосле вставить\n\n 'S_DISPLAY_ORDER1'     => $s_display_order1,\n \nОткрыть Privmsg.php\n\nнайти\n\n    $post_pm = '<a href=\"' . $post_pm . '\">' . $lang['POST_NEW_PM'] . '</a>';\n \nЗаменить на\n\n    $post_pm = '<a href=\"' . $post_pm . '\" class=\"btn btn-primary btn-block m-b-md\">' . $lang['POST_NEW_PM'] . '</a>';\n \nнайти\n\n$inbox_url = ($folder != 'inbox' || $mode != '') ? '<a href=\"' . PM_URL . \"?folder=inbox\" . '\">' . $lang['INBOX'] . '</a>' : $lang['INBOX'];\n$outbox_url = ($folder != 'outbox' || $mode != '') ? '<a href=\"' . PM_URL . \"?folder=outbox\" . '\">' . $lang['OUTBOX'] . '</a>' : $lang['OUTBOX'];\n$sentbox_url = ($folder != 'sentbox' || $mode != '') ? '<a href=\"' . PM_URL . \"?folder=sentbox\" . '\">' . $lang['SENTBOX'] . '</a>' : $lang['SENTBOX'];\n$savebox_url = ($folder != 'savebox' || $mode != '') ? '<a href=\"' . PM_URL . \"?folder=savebox\" . '\">' . $lang['SAVEBOX'] . '</a>' : $lang['SAVEBOX'];\n\nзаменить на\n\n$inbox_url = ($folder != 'inbox' || $mode != '') ? '<a href=\"' . PM_URL . \"?folder=inbox\" . '\"><i class=\"fa fa-envelope\"></i>' . $lang['INBOX'] . '</a>' : '<a><i class=\"fa fa-envelope text-danger\"></i>' . $lang['INBOX'] . '</a>';\n$outbox_url = ($folder != 'outbox' || $mode != '') ? '<a href=\"' . PM_URL . \"?folder=outbox\" . '\"><i class=\"fa fa-paper-plane\"></i>' . $lang['OUTBOX'] . '</a>' : '<a><i class=\"fa fa-paper-plane text-danger\"></i>' . $lang['OUTBOX'] . '</a>';\n$sentbox_url = ($folder != 'sentbox' || $mode != '') ? '<a href=\"' . PM_URL . \"?folder=sentbox\" . '\"><i class=\"fa fa-external-link-square\"></i>' . $lang['SENTBOX'] . '</a>' : '<a><i class=\"fa fa-external-link-square text-danger\"></i>' . $lang['SENTBOX'] . '</a>';\n$savebox_url = ($folder != 'savebox' || $mode != '') ? '<a href=\"' . PM_URL . \"?folder=savebox\" . '\"><i class=\"fa fa-save\"></i>' . $lang['SAVEBOX'] . '</a>' : '<a><i class=\"fa fa-save text-danger\"></i>' . $lang['SAVEBOX'] . '</a>';\n\nНайти\n\n            $icon_flag = ($flag == PRIVMSGS_NEW_MAIL || $flag == PRIVMSGS_UNREAD_MAIL) ? $images['pm_unreadmsg'] : $images['pm_readmsg'];\n        \nЗаменить на\n\n            $icon_flag = ($flag == PRIVMSGS_NEW_MAIL || $flag == PRIVMSGS_UNREAD_MAIL) ? 'class=\"fa pe-7s-mail fa-2x text-success\"' : 'class=\"fa pe-7s-mail-open fa-2x\"';\n\nнайти\n\n    $post_icons = array(\n        'post_img' => '<a href=\"' . $post_urls['post'] . '\"><img src=\"' . $images['pm_postmsg'] . '\" alt=\"' . $lang['POST_NEW_PM'] . '\" border=\"0\" /></a>',\n        'post' => '<a href=\"' . $post_urls['post'] . '\">' . $lang['POST_NEW_PM'] . '</a>',\n        'reply_img' => '<a href=\"' . $post_urls['reply'] . '\"><img src=\"' . $images['pm_replymsg'] . '\" alt=\"' . $lang['POST_REPLY_PM'] . '\" border=\"0\" /></a>',\n        'reply' => '<a href=\"' . $post_urls['reply'] . '\">' . $lang['POST_REPLY_PM'] . '</a>',\n        'quote_img' => '<a href=\"' . $post_urls['quote'] . '\"><img src=\"' . $images['pm_quotemsg'] . '\" alt=\"' . $lang['POST_QUOTE_PM'] . '\" border=\"0\" /></a>',\n        'quote' => '<a href=\"' . $post_urls['quote'] . '\">' . $lang['POST_QUOTE_PM'] . '</a>',\n        'edit_img' => '<a href=\"' . $post_urls['edit'] . '\"><img src=\"' . $images['pm_editmsg'] . '\" alt=\"' . $lang['EDIT_PM'] . '\" border=\"0\" /></a>',\n        'edit' => '<a href=\"' . $post_urls['edit'] . '\">' . $lang['EDIT_PM'] . '</a>'\n    \nЗаменить на\n\n    $post_icons = array(\n        'post_img' => '<a href=\"' . $post_urls['post'] . '\"><img src=\"' . $images['pm_postmsg'] . '\" alt=\"' . $lang['POST_NEW_PM'] . '\" border=\"0\" /></a>',\n        'post' => '<a href=\"' . $post_urls['post'] . '\" class=\"btn btn-xs btn-primary\">' . $lang['POST_NEW_PM'] . '</a>',\n        'reply_img' => '<a href=\"' . $post_urls['reply'] . '\"><img src=\"' . $images['pm_replymsg'] . '\" alt=\"' . $lang['POST_REPLY_PM'] . '\" border=\"0\" /></a>',\n        'reply' => '<a href=\"' . $post_urls['reply'] . '\" class=\"btn btn-block btn-primary btn-sm m-b\">' . $lang['POST_REPLY_PM'] . '</a>',\n        'quote_img' => '<a href=\"' . $post_urls['quote'] . '\"><img src=\"' . $images['pm_quotemsg'] . '\" alt=\"' . $lang['POST_QUOTE_PM'] . '\" border=\"0\" /></a>',\n        'quote' => '<a href=\"' . $post_urls['quote'] . '\" class=\"btn btn-xs btn-primary\">' . $lang['POST_QUOTE_PM'] . '</a>',\n        'edit_img' => '<a href=\"' . $post_urls['edit'] . '\"><img src=\"' . $images['pm_editmsg'] . '\" alt=\"' . $lang['EDIT_PM'] . '\" border=\"0\" /></a>',\n        'edit' => '<a href=\"' . $post_urls['edit'] . '\" class=\"btn btn-xs btn-primary\">' . $lang['EDIT_PM'] . '</a>'\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[/SPOILER]",
+    "owner": "Адаптация - AnSan",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1506703611,
+      "file_size": 55014,
+      "filename": "tp.webp",
+      "height": 945,
+      "id": 4926,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/tp-webp.4926/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4930-24c91e12e3718b24e74e3d968decf07d.jpg?hash=X3vkzanrKN",
+      "width": 1915
+    },
+    {
+      "attach_date": 1506703621,
+      "file_size": 143638,
+      "filename": "tp1.webp",
+      "height": 944,
+      "id": 4927,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/tp1-webp.4927/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4931-475f07521c5ad604854cb778166ac75d.jpg?hash=faprilkRh3",
+      "width": 1903
+    },
+    {
+      "attach_date": 1506703637,
+      "file_size": 149650,
+      "filename": "tp2.webp",
+      "height": 944,
+      "id": 4928,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/tp2-webp.4928/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4932-dd5337c2788c5b4e658305f08dfbda76.jpg?hash=n0-2h_NX8K",
+      "width": 1905
+    },
+    {
+      "attach_date": 1506703640,
+      "file_size": 48974,
+      "filename": "tp3.webp",
+      "height": 945,
+      "id": 4929,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/tp3-webp.4929/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4933-91dbee168b1c2ed3a8a00dbc7fe83c86.jpg?hash=cndoNyLUh3",
+      "width": 1904
+    },
+    {
+      "attach_date": 1506703643,
+      "file_size": 98672,
+      "filename": "tp4.webp",
+      "height": 943,
+      "id": 4930,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/tp4-webp.4930/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4934-e39873b3aec41a36b751720c9b41ebb2.jpg?hash=OstjmqH-jw",
+      "width": 1902
+    }
+  ],
+  "description_parsed": "<a href=\"https://torrentpier.com/attachments/4926/\"><img src=\"https://torrentpier.com/data/attachments/4/4930-24c91e12e3718b24e74e3d968decf07d.jpg?hash=X3vkzanrKN\" alt=\"tp.webp\" /></a> <a href=\"https://torrentpier.com/attachments/4927/\"><img src=\"https://torrentpier.com/data/attachments/4/4931-475f07521c5ad604854cb778166ac75d.jpg?hash=faprilkRh3\" alt=\"tp1.webp\" /></a> <a href=\"https://torrentpier.com/attachments/4928/\"><img src=\"https://torrentpier.com/data/attachments/4/4932-dd5337c2788c5b4e658305f08dfbda76.jpg?hash=n0-2h_NX8K\" alt=\"tp2.webp\" /></a> <a href=\"https://torrentpier.com/attachments/4929/\"><img src=\"https://torrentpier.com/data/attachments/4/4933-91dbee168b1c2ed3a8a00dbc7fe83c86.jpg?hash=cndoNyLUh3\" alt=\"tp3.webp\" /></a> <a href=\"https://torrentpier.com/attachments/4930/\"><img src=\"https://torrentpier.com/data/attachments/4/4934-e39873b3aec41a36b751720c9b41ebb2.jpg?hash=OstjmqH-jw\" alt=\"tp4.webp\" /></a>",
+  "download_count": 358,
+  "external_url": null,
+  "icon_url": null,
+  "id": 258,
+  "is_fileless": null,
+  "last_update": 1506703669,
+  "rating_avg": 5,
+  "rating_count": 1,
+  "resource_date": 1506703669,
+  "resource_state": "visible",
+  "slug": "sablon-homer",
+  "tag_line": "Шаблон Homer для TorrentPier 2.1.6",
+  "tags": [],
+  "title": "Шаблон Homer",
+  "url_path": "/resources/sablon-homer.258/",
+  "user_id": 35,
+  "username": "AnSan",
+  "version": "2017-09-29",
+  "versions": [
+    {
+      "download_count": 358,
+      "files": [
+        {
+          "filename": "Metis TP-2.1.6.rar",
+          "id": 4933,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1232759,
+          "src_url": "https://torrentpier.com/api/resource-versions/378/download?file=4933"
+        }
+      ],
+      "id": 378,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1506703669,
+      "version_state": "visible",
+      "version_string": "2017-09-29",
+      "view_url": "https://torrentpier.com/resources/sablon-homer.258/version/378/"
+    }
+  ],
+  "view_count": 1213
+}

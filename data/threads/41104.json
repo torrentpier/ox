@@ -1,0 +1,97 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 83421,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 11,
+    "title": "Questions about styles for TorrentPier"
+  },
+  "id": 41104,
+  "last_post_date": 1429899706,
+  "node_id": 11,
+  "post_date": 1429896867,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1429896794,
+          "file_size": 23914,
+          "filename": "1.webp",
+          "height": 210,
+          "id": 3696,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1-webp.3696/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/3/3700-5ab165cd29a791cec051b04a65d3ce6d.jpg?hash=hzA3zQKkxo",
+          "width": 826
+        }
+      ],
+      "id": 83421,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ткните носом куда капнуть...",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1429896867,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 83431,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/462/\">@Virtuoz</a> я честно говоря не понял чем вызвана такая агрессия в теме на <a href=\"https://torrentpier.com/members/5868/\">@XDA</a>, потому что в кои-то веки он дал правильный совет.<br />\n<br />\n<a href=\"https://github.com/torrentpier/torrentpier/blob/master/styles/templates/default/viewtopic.tpl#L440\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://github.com/torrentpier/torrentpier/blob/master/styles/templates/default/viewtopic.tpl#L440</a> - переменная называется иначе как минимум, надо по коду шаблона смотреть что это там такое.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1429899504,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 83432,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\"><a href=\"https://torrentpier.com/members/462/\">@Virtuoz</a> я честно говоря не понял чем вызвана такая агрессия в теме на <a href=\"https://torrentpier.com/members/5868/\">@XDA</a>, потому что в кои-то веки он дал правильный совет.<br />\n<br />\n<a href=\"https://github.com/torrentpier/torrentpier/blob/master/styles/templates/default/viewtopic.tpl#L440\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://github.com/torrentpier/torrentpier/blob/master/styles/templates/default/viewtopic.tpl#L440</a> - переменная называется иначе как минимум, надо по коду шаблона смотреть что это там такое.</blockquote>Да я понимаю, что там копать но уже замучился с этим шаблоном и хотелось увидеть более развернутый ответ.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1429899706,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    }
+  ],
+  "prefix_id": 19,
+  "reply_count": 2,
+  "slug": "sablon-infinite-ot-makar",
+  "sticky": false,
+  "tags": [],
+  "title": "Шаблон «Infinite» от makar",
+  "url_path": "/threads/sablon-infinite-ot-makar.41104/",
+  "user_id": 462,
+  "username": "Virtuoz",
+  "view_count": 2166
+}

@@ -1,0 +1,125 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 90105,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 90,
+    "title": "Server administration"
+  },
+  "id": 41653,
+  "last_post_date": 1487397575,
+  "node_id": 90,
+  "post_date": 1487341200,
+  "posts": [
+    {
+      "attach_count": 4,
+      "attachments": [
+        {
+          "attach_date": 1487339484,
+          "file_size": 41512,
+          "filename": "le-module-ru.webp",
+          "height": 363,
+          "id": 4656,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/le-module-ru-webp.4656/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4660-f44438df97b1baa9dcadc218d848d351.jpg?hash=9mhNZZ2Knw",
+          "width": 910
+        },
+        {
+          "attach_date": 1487339726,
+          "file_size": 23082,
+          "filename": "le-ssl-ru.webp",
+          "height": 360,
+          "id": 4657,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/le-ssl-ru-webp.4657/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4661-66055a86d8329ff8a725e681927bcfbd.jpg?hash=a5T5tuorK9",
+          "width": 910
+        },
+        {
+          "attach_date": 1487340023,
+          "file_size": 37302,
+          "filename": "23.webp",
+          "height": 528,
+          "id": 4658,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/23-webp.4658/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4662-2df7364b7d448b2a4ce226343b71f9bb.jpg?hash=0W2JPIbJim",
+          "width": 966
+        },
+        {
+          "attach_date": 1487341177,
+          "file_size": 19658,
+          "filename": "12.webp",
+          "height": 433,
+          "id": 4659,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/12-webp.4659/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4663-6c1cdab3deba979ab3ac4ebc23316812.jpg?hash=EdQtQzoko6",
+          "width": 1100
+        }
+      ],
+      "id": 90105,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Установка вся займет порядка 10 минут. Я использовал бесплатный сертификат Let’s Encrypt.<br />\n<br />\nИ так открываем панель ispmanager и переходим во вкладку Интеграция - Модули и устанавливаем Let’s Encrypt.<br />\n<br />\n<img src=\"https://torrentpier.com/attachments/4656/\" alt=\"le-module-ru.webp\" /><br />\n<br />\nДалее открываем вкладку Настройки web - сервера - SSL- сертификаты <br />\n<br />\n<img src=\"https://torrentpier.com/attachments/4657/\" alt=\"le-ssl-ru.webp\" /> <br />\n<br />\nТут все просто, нужно заполнить все поля и нажать кнопку Ок<br />\n<br />\n<img src=\"https://torrentpier.com/attachments/4658/\" alt=\"23.webp\" /> <br />\n<br />\nПосле нажатия кнопки “Ок” на сайт установится самоподписанный сертификат. После завершения процесса проверки домена тип изменится на “Существующий”.<br />\nКак с сертификатом все сделали переходим во вкладку Система - Менеджер файлов и редактируем конфиг apache добавив строчку такого вида:<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\">SetEnvIf X-Forwarded-Proto https HTTPS=on</pre>Нажимаем сохранить. Далее нам нужно сгенерировать ключ выполнив команду:<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\">openssl dhparam -out /etc/ssl/dhparam.pem 4096</pre><br />\nДалее нам нужно отредактировать конфиг ngnix и привести его к такому виду:<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\">   ssl_stapling on;\n    ssl on;\n    ssl_certificate &quot;/var/www/httpd-cert/test/mysite.ru_le1.crtca&quot;;\n    ssl_certificate_key &quot;/var/www/httpd-cert/test/mysite.ru_le1.key&quot;;\n    ssl_dhparam /etc/ssl/dhparam.pem;\n    ssl_session_timeout 24h;\n    ssl_session_cache shared:SSL:2m;\n    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;\n    ssl_ciphers EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH;\n    ssl_prefer_server_ciphers on;\n    add_header Strict-Transport-Security &quot;max-age=31536000;&quot;;\n    add_header Content-Security-Policy-Report-Only &quot;default-src https:; script-src https: &#039;unsafe-eval&#039; &#039;unsafe-inline&#039;; style-src https: &#039;unsafe-inline&#039;; img-src https: data:; font-src https: data:; report-uri /csp-report&quot;;</pre>Ну и соответственно делаем рестарт сервера. После чего можно проверить сертификат на этом сайте <a href=\"https://www.ssllabs.com\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Qualys SSL Labs</a> <br />\n<br />\n<img src=\"https://torrentpier.com/attachments/4659/\" alt=\"12.webp\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1487341200,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 90110,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Virtuoz\">openssl dhparam -out /etc/ssl/dhparam.pem 4096</blockquote><br />\nключ не обязательно генерировать второй раз )))",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1487397575,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "ssl-sertifikat-i-ispmanager-5",
+  "sticky": false,
+  "tags": [
+    "ssl"
+  ],
+  "title": "SSL-сертификат и ISPmanager 5",
+  "url_path": "/threads/ssl-sertifikat-i-ispmanager-5.41653/",
+  "user_id": 462,
+  "username": "Virtuoz",
+  "view_count": 2280
+}

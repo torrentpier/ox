@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 60508,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 25914,
+  "last_post_date": 1400020754,
+  "node_id": 80,
+  "post_date": 1398445906,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60508,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ребят, по свободке зафиксите торрент найм стайл для кирилличсеких доменов, тоже для отображения e-mail всяких.<br />\n<a href=\"http://fastpic.ru/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"http://i56.fastpic.ru/big/2014/0425/c5/77794c0adefab0ef6b41b07cdfd631c5.jpg\" alt=\"\" /></a><br />\n<a href=\"http://fastpic.ru/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><img src=\"http://i56.fastpic.ru/big/2014/0425/97/3aacb410f338ad0d607e976818a59697.jpg\" alt=\"\" /></a><br />\n <br />\nнаоборот не транслитирует, если в punycode прописать)))",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1398445906,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60777,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Что не так, немного не понял? То что транслитерирует в панникод?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1400016585,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60782,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Dr_Brown</b>, создай 1.php и напиши echo $_SERVER[&#039;SERVER_NAME&#039;];<br />\nЧто покажет вообще ?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1400020754,
+      "user_id": 729,
+      "user_title": "User",
+      "username": "Wertos"
+    }
+  ],
+  "prefix_id": 24,
+  "reply_count": 2,
+  "slug": "kirilliceskij-domen",
+  "sticky": false,
+  "tags": [],
+  "title": "Кириллический домен",
+  "url_path": "/threads/kirilliceskij-domen.25914/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1126
+}

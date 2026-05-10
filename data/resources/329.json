@@ -1,0 +1,93 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Селектор изображений в настройке лычек by belomaxorka.zip",
+      "id": 6654,
+      "local_path": null,
+      "r2_key": null,
+      "size": 2116,
+      "src_url": "https://torrentpier.com/api/resource-versions/656/download?file=6654"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1764149777,
+      "file_size": 12214,
+      "filename": "firefox_LGWArTuNOZ.webp",
+      "height": 227,
+      "id": 6655,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/firefox_lgwartunoz-webp.6655/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6659-7a41bf05acfbfe4997ac4b752c5d48a0.jpg?hash=P12Ej0bQ06",
+      "width": 669
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Добавляет возможность удобного выбора лычек из списка доступных картинок в папке.<br />\n<b>Совместимость:</b> v2.1.5, LTS, v2.2.*, v2.3.*, v2.4.*<br />\n<hr /><div style=\"text-align: center\"><span style=\"color: rgb(226, 80, 65)\">Начиная с версии движка v2.8.8 данный мод добавлен по умолчанию</span>&#8203;</div>",
+  "download_count": 127,
+  "external_url": null,
+  "icon_url": null,
+  "id": 329,
+  "is_fileless": null,
+  "last_update": 1764149717,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1764149717,
+  "resource_state": "visible",
+  "slug": "selektor-izobrazenij-v-nastrojke-lycek",
+  "tag_line": "Добавляет возможность удобного выбора лычек из списка доступных картинок в папке.",
+  "tags": [
+    "админка",
+    "лычки",
+    "мод",
+    "моды",
+    "ранги",
+    "улучшение"
+  ],
+  "title": "Селектор изображений в настройке лычек",
+  "url_path": "/resources/selektor-izobrazenij-v-nastrojke-lycek.329/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.0",
+  "versions": [
+    {
+      "download_count": 127,
+      "files": [
+        {
+          "filename": "[FULL] Селектор изображений в настройке лычек by belomaxorka.zip",
+          "id": 6654,
+          "local_path": null,
+          "r2_key": null,
+          "size": 2116,
+          "src_url": "https://torrentpier.com/api/resource-versions/656/download?file=6654"
+        }
+      ],
+      "id": 656,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1764149717,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/selektor-izobrazenij-v-nastrojke-lycek.329/version/656/"
+    }
+  ],
+  "view_count": 1181
+}

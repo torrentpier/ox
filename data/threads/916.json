@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 11483,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 916,
+  "last_post_date": 1329299255,
+  "node_id": 57,
+  "post_date": 1328812691,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 11483,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Кто нибудь делал интеграцию что бы не приходилось два раза регистрироваться?<br />\n <br />\nСейчас у меня два проекта новых. Хотел бы регистрацию объединить. <br />\n <br />\nВроде бы на ксени естъ аутентификация phpBB  &quot;из коробки&quot;. Но как сделать всё, надо думать.<br />\n <br />\nМожет кто сталкивался? Или кто уже делал такую интеграцию.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1328812691,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ANGEL OF FIRE"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 11484,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>ANGEL OF FIRE</b>, резонный вопрос зачем?<br />\nУ тп трекер и форум все в одном",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1328815451,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 11488,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ну да. Но у меня ксенфоро то уже есть. А тут тор решил отрыть. Вот теперь и надо думать как и что.<br />\n <br />\nИмпортировать не выход из ситуации. Привыкли уже. Да и всем ксеня нравится. А вот тор всё таки нужен. На ксене тора нет.<br />\n <br />\nДа и вообще, чем больше будет таких вот возможностей, тем больше будут использовать тор именно на этом движке.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1328821570,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ANGEL OF FIRE"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 11901,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "А ничего что ксеня платный? Нахрена разводить огород форумов, тоже внятно не объяснил, в общем случае совет прост, нечем заняться кури php аннонсер и прикручивай к ксенфоро, но это здесь оффтоп.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1329281449,
+      "user_id": 4,
+      "user_title": "User",
+      "username": "diden05"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 11921,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"diden05\">А ничего что ксеня платный? Нахрена разводить огород форумов, тоже внятно не объяснил, в общем случае совет прост, нечем заняться кури php аннонсер и прикручивай к ксенфоро, но это здесь оффтоп.</blockquote> <br />\nА при чём здесь платная ксеня или нет? И это мне нужно было, так как это два разных форума. И у них разные задачи. Один для онлайн тв, другой для торрента.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1329299255,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ANGEL OF FIRE"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "integracia-xenforo-i-dvizka-torrenta",
+  "sticky": false,
+  "tags": [],
+  "title": "Интеграция XenForo и движка торрента",
+  "url_path": "/threads/integracia-xenforo-i-dvizka-torrenta.916/",
+  "user_id": 0,
+  "username": "ANGEL OF FIRE",
+  "view_count": 2087
+}

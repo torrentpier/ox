@@ -1,0 +1,86 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_data"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94918,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42132,
+  "last_post_date": 1684582541,
+  "node_id": 57,
+  "post_date": 1684582541,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1684582488,
+          "file_size": 10706,
+          "filename": "Снимок.webp",
+          "height": 385,
+          "id": 5418,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-webp.5418/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5422-523875c8ba909986421215de3fc176e2.jpg?hash=3EY7qqWUEn",
+          "width": 462
+        },
+        {
+          "attach_date": 1684582488,
+          "file_size": 12214,
+          "filename": "Снимок.webp",
+          "height": 386,
+          "id": 5419,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-webp.5419/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5423-cd47ca143891d3e43111b64861f3d12a.jpg?hash=yB_Z-Jscf0",
+          "width": 477
+        }
+      ],
+      "id": 94918,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1684582756,
+      "message_parsed": "Итак, в данном руководстве мы рассмотрим как скачать движок в виде архива через <b>GitHub</b>.<br />\n<br />\nДля начала вам нужно открыть страницу с нужным релизом (Например <a href=\"https://torrentpier.com/threads/torrentpier-bison-versija-2-3-1.42117/\" class=\"link link--internal\">2.3.1</a>):<br />\nСпустившись чуть ниже, вы увидите раздел с ссылкой на версию.<br />\n<br />\n<img src=\"https://torrentpier.com/attachments/5418/\" alt=\"Снимок.PNG\" /><br />\n<br />\n<br />\nПосле того как вы перешли по указанной ссылке, вы попадаете на <b>GitHub</b>, откуда вам и нужно загрузить архив:<br />\nСпускайтесь в самый низ страницы, там вы найдете блок с вложениями.<br />\n<br />\n<img src=\"https://torrentpier.com/attachments/5419/\" alt=\"Снимок.PNG\" /><br />\nВам здесь нужен самый первый архив, он же - <b>build-2.3.1.zip</b>.<br />\n<span style=\"color: rgb(184, 49, 47)\"><b>Примечание: Цифры в названии архива соответствуют версии движка, который вы загружаете.</b></span><br />\n<br />\nПосле нажатия на ссылку начнется загрузка архива 🎉.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1684582541,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "kak-skacat-torrentpier-cerez-github-rucnaa-ustanovka",
+  "sticky": false,
+  "tags": [],
+  "title": "Как скачать TorrentPier через GitHub [Ручная установка]",
+  "url_path": "/threads/kak-skacat-torrentpier-cerez-github-rucnaa-ustanovka.42132/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 1495
+}

@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 95494,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42215,
+  "last_post_date": 1708250489,
+  "node_id": 47,
+  "post_date": 1703742725,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95494,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/znak-zodiaka.278/\" class=\"link link--internal\">Знак зодиака</a> - Добавляет отображение знака зодиака в профиле.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> Данный мод добавляет отображение знака зодиака в профиле пользователя. Пользователь так-же может включить / отключить мод через настройки профиля. Мод отображает знак зодиака только в том случае, если у пользователя стоит дата рождения.</blockquote><br />\n<a href=\"https://torrentpier.com/resources/znak-zodiaka.278/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1703742725,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95663,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/znak-zodiaka.278/\" class=\"link link--internal\">Знак зодиака</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/znak-zodiaka.278/update/469/\" class=\"link link--internal\">Обновление v1.0.1</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Мелкие правки кода</li>\n</ul><br />\nОбновление на эту версию с предыдущей:<br />\nНайти в library/includes/ucp/viewprofile.php<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&#039;SHOW_ZODIAC&#039;          =&gt; ($profile_user_id || bf($profiledata[&#039;user_opt&#039;], &#039;user_opt&#039;, &#039;user_show_zodiac&#039;)) ? get_zodiac($profiledata[&#039;user_birthday&#039;]) : &#039;&#039;,</pre>Заменить на:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&#039;SHOW_ZODIAC&#039;          =&gt; (IS_ADMIN || $profile_user_id || bf($profiledata[&#039;user_opt&#039;], &#039;user_opt&#039;, &#039;user_show_zodiac&#039;)) ? get_zodiac($profiledata[&#039;user_birthday&#039;]) : &#039;&#039;...</pre></blockquote><br />\n<a href=\"https://torrentpier.com/resources/znak-zodiaka.278/update/469/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1706253985,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95788,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/znak-zodiaka.278/\" class=\"link link--internal\">Знак зодиака</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/znak-zodiaka.278/update/491/\" class=\"link link--internal\">Обновление v1.0.2</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Мелкие улучшения</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/znak-zodiaka.278/update/491/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1708250489,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "znak-zodiaka",
+  "sticky": false,
+  "tags": [],
+  "title": "Знак зодиака",
+  "url_path": "/threads/znak-zodiaka.42215/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 777
+}

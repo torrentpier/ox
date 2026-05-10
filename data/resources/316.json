@@ -1,0 +1,126 @@
+{
+  "category": {
+    "description": "Section with all templates for TorrentPier.",
+    "id": 5,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Templates",
+    "view_url": "https://torrentpier.com/resources/categories/templates.5/"
+  },
+  "current_files": [
+    {
+      "filename": "Шаблон BlackBit.rar",
+      "id": 6298,
+      "local_path": null,
+      "r2_key": null,
+      "size": 3863360,
+      "src_url": "https://torrentpier.com/api/resource-versions/588/download?file=6298"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "yes",
+    "installation": "Установить только чистый движок",
+    "owner": "DimaUZB2001",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1735553634,
+      "file_size": 160112,
+      "filename": "Снимок.webp",
+      "height": 961,
+      "id": 6299,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/snimok-webp.6299/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6303-cd186d8c733429b1f575137054f16580.jpg?hash=5NNiNKNIu5",
+      "width": 1920
+    },
+    {
+      "attach_date": 1735553634,
+      "file_size": 162048,
+      "filename": "Снимок1.webp",
+      "height": 958,
+      "id": 6300,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/snimok1-webp.6300/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6304-59e9b03bda2dec06c9b060cec91524a9.jpg?hash=7lt-K_Cucz",
+      "width": 1917
+    },
+    {
+      "attach_date": 1735553634,
+      "file_size": 106378,
+      "filename": "Снимок2.webp",
+      "height": 961,
+      "id": 6301,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/snimok2-webp.6301/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6305-2953ec0cf0abfb49ba370b550d411cfd.jpg?hash=0EfgOToIa8",
+      "width": 1915
+    },
+    {
+      "attach_date": 1735553634,
+      "file_size": 145174,
+      "filename": "Снимок3.webp",
+      "height": 958,
+      "id": 6302,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/snimok3-webp.6302/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6306-fcad8d1fca81a7cfbc911b1f686ab61d.jpg?hash=zgNLMjbja8",
+      "width": 1920
+    }
+  ],
+  "description_parsed": "<div style=\"text-align: center\"><b>Адаптивный шаблон.  для v2.1.5 ( LTS V10 )<br />\n<a href=\"https://torrentpier.com/attachments/6299/\"><img src=\"https://torrentpier.com/data/attachments/6/6303-cd186d8c733429b1f575137054f16580.jpg?hash=5NNiNKNIu5\" alt=\"Снимок.PNG\" /></a><a href=\"https://torrentpier.com/attachments/6300/\"><img src=\"https://torrentpier.com/data/attachments/6/6304-59e9b03bda2dec06c9b060cec91524a9.jpg?hash=7lt-K_Cucz\" alt=\"Снимок1.PNG\" /></a><a href=\"https://torrentpier.com/attachments/6301/\"><img src=\"https://torrentpier.com/data/attachments/6/6305-2953ec0cf0abfb49ba370b550d411cfd.jpg?hash=0EfgOToIa8\" alt=\"Снимок2.PNG\" /></a><a href=\"https://torrentpier.com/attachments/6302/\"><img src=\"https://torrentpier.com/data/attachments/6/6306-fcad8d1fca81a7cfbc911b1f686ab61d.jpg?hash=zgNLMjbja8\" alt=\"Снимок3.PNG\" /></a></b>&#8203;</div>",
+  "download_count": 324,
+  "external_url": null,
+  "icon_url": null,
+  "id": 316,
+  "is_fileless": null,
+  "last_update": 1735553638,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1735553638,
+  "resource_state": "visible",
+  "slug": "sablon-blackbit",
+  "tag_line": "Шаблон BlackBit для TorrentPier v2.1.5 ( LTS V10 )",
+  "tags": [],
+  "title": "Шаблон «BlackBit»",
+  "url_path": "/resources/sablon-blackbit.316/",
+  "user_id": 7621,
+  "username": "DimaUZB2001",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 324,
+      "files": [
+        {
+          "filename": "Шаблон BlackBit.rar",
+          "id": 6298,
+          "local_path": null,
+          "r2_key": null,
+          "size": 3863360,
+          "src_url": "https://torrentpier.com/api/resource-versions/588/download?file=6298"
+        }
+      ],
+      "id": 588,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1735553638,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/sablon-blackbit.316/version/588/"
+    }
+  ],
+  "view_count": 667
+}

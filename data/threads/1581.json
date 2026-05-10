@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 21030,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 11,
+    "title": "Questions about styles for TorrentPier"
+  },
+  "id": 1581,
+  "last_post_date": 1349364820,
+  "node_id": 11,
+  "post_date": 1349361068,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 21030,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как заставить этот браузер понять такой стиль:<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">.stil {text-shadow: 0 0 14px #0000FF, 0 0 3px #0000FF, 1px 1px 3px #0000FF; *color:#0000FF;}</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1349361068,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 21037,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Dr_Brown</b>, <a href=\"http://habrahabr.ru/qa/8650/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://habrahabr.ru/qa/8650/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1349364820,
+      "user_id": 30,
+      "user_title": "User",
+      "username": "krumax"
+    }
+  ],
+  "prefix_id": 19,
+  "reply_count": 1,
+  "slug": "internet-explorer-i-text-shadow",
+  "sticky": false,
+  "tags": [],
+  "title": "Internet Explorer и text-shadow",
+  "url_path": "/threads/internet-explorer-i-text-shadow.1581/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 2091
+}

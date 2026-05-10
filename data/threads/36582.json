@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 76760,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 36582,
+  "last_post_date": 1424973893,
+  "node_id": 57,
+  "post_date": 1424973893,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 76760,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1424974087,
+      "message_parsed": "Как сделать что-бы у всех был один часовой пояс, независимо какое у пользователей время<br />\nПробовал закомментить эту строчку в sessions.php<br />\n//$bb_cfg[&#039;board_timezone&#039;] = $this-&gt;data[&#039;user_timezone&#039;];<br />\nи в таблице запросом ровнял всем тайм зону<br />\nНе помогает",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1424973893,
+      "user_id": 5452,
+      "user_title": "User",
+      "username": "Ress Kent"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "odin-casovoj-poas-u-vseh-pol-zovatelej",
+  "sticky": false,
+  "tags": [],
+  "title": "Один часовой пояс у всех пользователей",
+  "url_path": "/threads/odin-casovoj-poas-u-vseh-pol-zovatelej.36582/",
+  "user_id": 5452,
+  "username": "Ress Kent",
+  "view_count": 931
+}

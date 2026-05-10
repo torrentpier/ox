@@ -1,0 +1,84 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95829,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 50,
+    "title": "Graphics and styles for TorrentPier"
+  },
+  "id": 42243,
+  "last_post_date": 1708490561,
+  "node_id": 50,
+  "post_date": 1708490561,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1708490560,
+          "file_size": 4345,
+          "filename": "icons_sources.zip",
+          "height": 0,
+          "id": 5846,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/icons_sources-zip.5846/",
+          "thumbnail_url": null,
+          "width": 0
+        },
+        {
+          "attach_date": 1708490560,
+          "file_size": 4418,
+          "filename": "Screenshot 2024-02-21 113440.webp",
+          "height": 210,
+          "id": 5847,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot-2024-02-21-113440-webp.5847/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5851-8fad53a078fe2426b133cad0a77e1e2d.jpg?hash=uzVYgzghq2",
+          "width": 544
+        }
+      ],
+      "id": 95829,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Выкладываю исходники для иконок которые используются в топике у стандартного шаблона. Пригодятся тем, кто хочет сделать свои иконки на основе стандартных.<br />\n<br />\nТак же цвет шрифта который лучше использовать: #3c618b<br />\nШрифт: Arial (Regular) 11pt<br />\n<br />\nСодержимое архива<br />\n<img src=\"https://torrentpier.com/attachments/5847/\" alt=\"Screenshot 2024-02-21 113440.webp\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1708490561,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "ishodnik-ikonki-v-topike",
+  "sticky": false,
+  "tags": [
+    "иконки в топике",
+    "исходник иконок",
+    "кастомные иконки",
+    "свои иконки"
+  ],
+  "title": "[Исходник] Иконки в топике",
+  "url_path": "/threads/ishodnik-ikonki-v-topike.42243/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 2111
+}

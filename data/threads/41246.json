@@ -1,0 +1,106 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 84842,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41246,
+  "last_post_date": 1441398395,
+  "node_id": 57,
+  "post_date": 1441383081,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84842,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Скачал позавчера TP 2.1.5 из центра загрузки, поставил, как обычно, но вот проблема - постоянно перекидывает на torrentpier.com на страницу <a href=\"https://torrentpier.com/copyright-removal/\" class=\"link link--internal\">Удаление/изменение копирайта</a><br />\n<br />\nНичего не удалял. Движок чистый.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1441383081,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84847,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Стиль какой? Если нет правок в стиле ничего не перекидывает.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1441394627,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84848,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/1/\">@Exile</a>, стиль дефолтный. Как я написал, движок был только скачан с репозитария.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1441395610,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84849,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/1/\">@Exile</a>, перекачал архив, теперь все в норме",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1441398395,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "proverka-na-nalicie-kopirajta",
+  "sticky": false,
+  "tags": [
+    "копирайт",
+    "проверка на наличие копирайта"
+  ],
+  "title": "Проверка на наличие копирайта?",
+  "url_path": "/threads/proverka-na-nalicie-kopirajta.41246/",
+  "user_id": 1514,
+  "username": "Begemot",
+  "view_count": 1300
+}

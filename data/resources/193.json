@@ -1,0 +1,86 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "индексы.zip",
+      "id": 3249,
+      "local_path": null,
+      "r2_key": null,
+      "size": 663,
+      "src_url": "https://torrentpier.com/api/resource-versions/247/download?file=3249"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]\nОткрыть: bbcode.php\n\nНайти:\n[code]\n// Quote\n$bbcode_tpl['quote_open'] = <<<HTML\n  <div class=\"q-wrap\">\n  <div class=\"q\">\n[/code]\n\nДобавить до:\n[code]\n\n// Sub\n$bbcode_tpl['sub_open'] = <<<HTML\n<sub><small>\nHTML;\n\n$bbcode_tpl['sub_close'] = <<<HTML\n</small></sub>\nHTML;\n\n// Sup\n$bbcode_tpl['sup_open'] = <<<HTML\n<sup><small>\nHTML;\n\n$bbcode_tpl['sup_close'] = <<<HTML\n</small></sup>\nHTML;\n[/code]\n\nНайти:\n[code]\n'[quote]'  => $tpl['quote_open'],\n[/code]   \n   \nДобавить до:\n[code]\n'[sub]'  => $tpl['sub_open'],\n'[/sub]'  => $tpl['sub_close'],\n'[sup]'  => $tpl['sup_open'],\n'[/sup]'  => $tpl['sup_close'],\n[/code]\n\nОткрыть: posting_editor.tpl\n\nНайти:\n\n[code]\n<input type=\"button\" value=\"{L_QUOTE}\" name=\"codeQuote\" title=\"{L_QUOTE_TITLE}\" style=\"width: 57px;\" />\n[/code]\n\nДобавить до:\n\n[code]\n<input type=\"button\" value=\"{L_SUP}\" name=\"codeSup\" title=\"{L_SUP_TITLE}\" style=\"width: 20px;\" />\n<input type=\"button\" value=\"{L_SUB}\" name=\"codeSub\" title=\"{L_SUB_TITLE}\" style=\"width: 20px;\" />\n[/code]\n\nНайти:\n\n[code]\nbbcode.addTag(\"codeQuote\", \"quote\", null, \"Q\", ctrl);\n[/code]\n\nДобавить до:\n\n[code]\nbbcode.addTag(\"codeSup\", \"sup\", null, \"\", ctrl);\nbbcode.addTag(\"codeSub\", \"sub\", null, \"\", ctrl);\n[/code]\n\nВ language/ru/main.php добавить:\n\n[code]\n$lang['SUB_TITLE'] = 'Нижний индекс: [sub]текст[/sub]';\n$lang['SUB'] = 'SUB';\n$lang['SUP_TITLE'] = 'Верхний индекс: [sup]текст[/sup]';\n$lang['SUP'] = 'SUP';\n[/code]\n[/SPOILER]",
+    "owner": "Begemot",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425423160,
+      "file_size": 24808,
+      "filename": "supsub.webp",
+      "height": 372,
+      "id": 3245,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/supsub-webp.3245/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3249-6a702b349cdeefb6b138d2b078fd5890.jpg?hash=svM_-u-INm",
+      "width": 1011
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет BB-код текста в верхнем и нижнем индексе.",
+  "download_count": 283,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/193.jpg?1425423769",
+  "id": 193,
+  "is_fileless": null,
+  "last_update": 1425423750,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1425423750,
+  "resource_state": "visible",
+  "slug": "bb-kod-tekst-v-verhnem-i-niznem-indekse",
+  "tag_line": "Добавляет BB-код текста в верхнем и нижнем индексе.",
+  "tags": [],
+  "title": "BB-код: текст в верхнем и нижнем индексе",
+  "url_path": "/resources/bb-kod-tekst-v-verhnem-i-niznem-indekse.193/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 283,
+      "files": [
+        {
+          "filename": "индексы.zip",
+          "id": 3249,
+          "local_path": null,
+          "r2_key": null,
+          "size": 663,
+          "src_url": "https://torrentpier.com/api/resource-versions/247/download?file=3249"
+        }
+      ],
+      "id": 247,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425423750,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/bb-kod-tekst-v-verhnem-i-niznem-indekse.193/version/247/"
+    }
+  ],
+  "view_count": 634
+}

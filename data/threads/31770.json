@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 69879,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 31770,
+  "last_post_date": 1425455004,
+  "node_id": 3,
+  "post_date": 1418832579,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 69879,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как вычислить представителя правообладателя MarkMonitor Anti-Piracy Team(DtecNet Antipiracy) их маил <a href=\"mailto:no-reply@dtecnet.com\">no-reply@dtecnet.com</a>, хотелось бы вычислить их ип и заблокировать, выходил на их сайты блокировал ип сайта непомогло, очевидно что это бот рассылку осуществляет как его вычислить и забанить?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1418832579,
+      "user_id": 5670,
+      "user_title": "User",
+      "username": "titann"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 69899,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "логи сервера смотри. тока сразу после того как пришлют абузу. заходишь, и ищешь в логах кто смотрел по id топика. тока себя не забань. также рекомендуется пробить найденный ап среди зарегавшихся юзеров, у меня был прецедент.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1418846601,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 77828,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как забанить бота который меняет ип, через директиву RewriteCond %{HTTP_REFERER} неудается, бот имеет такой заголовок, при том ип меняется: 173.193.113.234-dtecnet.com, пробовал вносил директиву: RewriteCond %{HTTP_REFERER} ^<a href=\"http://(.*)dtecnet.com(.*)\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://(.*)dtecnet.com(.*)</a>, непомогло.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1425455004,
+      "user_id": 5670,
+      "user_title": "User",
+      "username": "titann"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "kak-vycislit-predstavitela-pravoobladatela-markmonitor-anti-piracy-team",
+  "sticky": false,
+  "tags": [],
+  "title": "Как вычислить представителя правообладателя MarkMonitor Anti-Piracy Team",
+  "url_path": "/threads/kak-vycislit-predstavitela-pravoobladatela-markmonitor-anti-piracy-team.31770/",
+  "user_id": 5670,
+  "username": "titann",
+  "view_count": 2005
+}

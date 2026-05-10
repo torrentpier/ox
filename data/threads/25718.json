@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58547,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25718,
+  "last_post_date": 1391577098,
+  "node_id": 57,
+  "post_date": 1391491537,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58547,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем доброго времени суток!<br />\nПрошу помощи у знатоков.<br />\nСуть проблемы: Из-за конкуренции среди релизеров (кто раньше оформит релиз) в модераторском составе завелась &quot;крыса&quot;, которая снимает торренты с регистрации.<br />\nКак проследить кто это делает?<br />\nЗаранее спасибо за ответ!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1391491537,
+      "user_id": 814,
+      "user_title": "Blocked",
+      "username": "cc20net"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58548,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>cc20net</b>, использовать класс log, не забыть добавить какое действие произвел пользователь или модератор.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1391497508,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58554,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Не сталкивался но разве в админке не будет указано действие модератора или администратора?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1391523516,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58555,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "воткни в функцию tracker_unregister<br />\n <br />\nglobal $userdata;<br />\n$msg = array();<br />\n$msg[] = &#039;Date : &#039;. date(&#039;Y-m-d H:i:s&#039;);<br />\n$msg[] = &#039;Req_URI : &#039;. @$_SERVER[&#039;REQUEST_URI&#039;];<br />\n$msg[] = &#039;Referer : &#039;. @$_SERVER[&#039;HTTP_REFERER&#039;];<br />\n$msg[] = &#039;Method : &#039;. @$_SERVER[&#039;REQUEST_METHOD&#039;];<br />\n$msg[] = &#039;Username : &#039;. $userdata[&#039;username&#039;];<br />\n$msg[] = &#039;прочее&#039;;<br />\nbb_log($msg, &#039;rat&#039;);",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1391527820,
+      "user_id": 2,
+      "user_title": "User",
+      "username": "_Xz_"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58588,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>_Xz_</b>, <b>ОГРОМНОЕ</b> человеческое спасибо! Все замечательно работает",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1391577098,
+      "user_id": 814,
+      "user_title": "Blocked",
+      "username": "cc20net"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "kak-prosledit-kto-iz-moderatorov-snimaet-torrent-s-registracii",
+  "sticky": false,
+  "tags": [],
+  "title": "Как проследить кто из модераторов снимает торрент с регистрации?",
+  "url_path": "/threads/kak-prosledit-kto-iz-moderatorov-snimaet-torrent-s-registracii.25718/",
+  "user_id": 814,
+  "username": "cc20net",
+  "view_count": 1538
+}

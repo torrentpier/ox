@@ -1,0 +1,118 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Подписчики by Dredd.zip",
+      "id": 6467,
+      "local_path": null,
+      "r2_key": null,
+      "size": 9800,
+      "src_url": "https://torrentpier.com/api/resource-versions/635/download?file=6467"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в архиве с модом. Файл: Установка.txt.",
+    "owner": "Dredd",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1750842439,
+      "file_size": 80582,
+      "filename": "[torrentpier.com]3.webp",
+      "height": 923,
+      "id": 6468,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/torrentpier-com-3-webp.6468/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6472-1585eb051e21786fce83922b0f1b5512.jpg?hash=8q7T3mmfEg",
+      "width": 1280
+    },
+    {
+      "attach_date": 1750842439,
+      "file_size": 85750,
+      "filename": "[torrentpier.com]2.webp",
+      "height": 923,
+      "id": 6469,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/torrentpier-com-2-webp.6469/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6473-0b72dfd39fdb0c9531ce1def3634aefd.jpg?hash=pOFnXQ_g7d",
+      "width": 1280
+    },
+    {
+      "attach_date": 1750842439,
+      "file_size": 94736,
+      "filename": "[torrentpier.com]1.webp",
+      "height": 923,
+      "id": 6470,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/torrentpier-com-1-webp.6470/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/6/6474-4f7f7f498d3dd622ecb4314d95ed5ef9.jpg?hash=pnZ59NjpPZ",
+      "width": 1280
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> Добавляет возможность подписаться на пользователя.<br />\n<b>Совместимость:</b> v2.1.5 / LTS<br />\n<hr />Изменения:<br />\n- Адаптирован под v2.1.5 и LTS<br />\n- Исправлено множество багов<br />\n- Добавлены стили с XenForo шаблона",
+  "download_count": 231,
+  "external_url": null,
+  "icon_url": null,
+  "id": 326,
+  "is_fileless": null,
+  "last_update": 1750842469,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1750842469,
+  "resource_state": "visible",
+  "slug": "podpisciki",
+  "tag_line": "Добавляет возможность подписаться на пользователя.",
+  "tags": [
+    "мод",
+    "моды",
+    "подписчики"
+  ],
+  "title": "Подписчики",
+  "url_path": "/resources/podpisciki.326/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v2.0.0",
+  "versions": [
+    {
+      "download_count": 231,
+      "files": [
+        {
+          "filename": "[FULL] Подписчики by Dredd.zip",
+          "id": 6467,
+          "local_path": null,
+          "r2_key": null,
+          "size": 9800,
+          "src_url": "https://torrentpier.com/api/resource-versions/635/download?file=6467"
+        }
+      ],
+      "id": 635,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1750842469,
+      "version_state": "visible",
+      "version_string": "v2.0.0",
+      "view_url": "https://torrentpier.com/resources/podpisciki.326/version/635/"
+    }
+  ],
+  "view_count": 3321
+}

@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 16107,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1272,
+  "last_post_date": 1335352992,
+  "node_id": 57,
+  "post_date": 1335345589,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 16107,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здрствуйте, заметил баг с <b>{L_HOR_LINE}, button <hr /></b><hr />\n!<br />\n<a href=\"http://s-pic.ru/i/34994.png\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://s-pic.ru/i/34994.png</a> <br />\n <br />\n<a href=\"http://s-pic.ru/i/34995.png\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://s-pic.ru/i/34995.png</a><br />\n <br />\nПодскажите как исправить? В обновлении ревизий не нашел.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1335345589,
+      "user_id": 586,
+      "user_title": "User",
+      "username": "iVolodymyr"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 16108,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>iVolodymyr</b>, поиск же не отменяли...(<br />\n<a href=\"http://torrentpier.com/threads/%D1%82%D0%B5%D0%B3-hr-%D0%BD%D0%B5-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82.1094/\" class=\"link link--internal\">http://torrentpier.com/threads/тег-hr-не-работает.1094/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1335347203,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Gemini_13"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 16109,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Gemini_13</b>, спасибо, но уже сделал!",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1335347779,
+      "user_id": 586,
+      "user_title": "User",
+      "username": "iVolodymyr"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 16120,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>iVolodymyr</b>, Напиши как сделал, тема пойдет в <b>Решенные вопросы </b>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1335352992,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "hr-gorizontal-naa-linia",
+  "sticky": false,
+  "tags": [],
+  "title": "[hr] Горизонтальная линия",
+  "url_path": "/threads/hr-gorizontal-naa-linia.1272/",
+  "user_id": 586,
+  "username": "iVolodymyr",
+  "view_count": 1258
+}

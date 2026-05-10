@@ -1,0 +1,150 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95825,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 42241,
+  "last_post_date": 1739444429,
+  "node_id": 3,
+  "post_date": 1708446963,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95825,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 1718635498,
+      "message_parsed": "Собрал все паки модов что смог найти. Собирал от нескольких людей, сортировку никакую не делал.<br />\nВсё что удалось собрать разместил у себя на сервере, вдруг кому-то пригодится, качайте в общем, исследуйте.<br />\n<br />\n<span style=\"color: rgb(235, 107, 86)\">P.S - В паке содержаться старые моды! Местами есть уникальные (платные), только ради поиска таковых есть смысл качать.</span><br />\n<br />\nСсылка:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">https://archive-torrentpier.duckdns.org/</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1708446963,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 95830,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Привет всем, у кого то есть база данных для underverse?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1708860388,
+      "user_id": 1338,
+      "user_title": "User",
+      "username": "Alex39"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97079,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Привет всем, у кого то есть база данных для underverse?<br />\nСпс",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1739271515,
+      "user_id": 8887,
+      "user_title": "User",
+      "username": "boko"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1739373464,
+          "file_size": 21458,
+          "filename": "underverse.zip",
+          "height": 0,
+          "id": 6373,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/underverse-zip.6373/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 97083,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"boko\">Привет всем, у кого то есть база данных для underverse?<br />\nСпс</blockquote>Вот, очистил её полностью. Должна работать. Авторизация: admin/admin",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1739373472,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97093,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1739444353,
+      "message_parsed": "Привет <a href=\"https://torrentpier.com/members/10614/\">belomaxorka</a>,<br />\nкогда установить сайт underverse я получаю сообщение об ошибке HTTP ERROR 500<br />\nPHP Fatal error:  DB Error [includes\\datastore\\build_cat_forums.php(181)] in C:\\OSPanel\\domains\\site.com\\includes\\db\\mysql.php on line 799<br />\nвот строк 799: trigger_error($msg, E_USER_ERROR);<br />\nвот и запрос:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$data = $db-&gt;fetch_rowset(&quot;\n        SELECT topic_id, topic_time, topic_title, topic_color\n        FROM &quot;. TOPICS_TABLE .&quot;\n        WHERE forum_id NOT IN ($forbidden_guest)\n        AND   topic_dl_type = &quot; . TOPIC_DL_TYPE_DL . &quot;\n        ORDER BY topic_time DESC\n        LIMIT $discussions_count\n    &quot;);</pre><br />\nето в файле build_cat_forums.php<br />\n<br />\nи еше вот етот:<br />\n#001064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near &#039;1,603,604,605,606,608,609,610,611,612,626,613,614,615,602,664,665,666,667,668,80&#039; at line 3<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">SELECT topic_id, topic_time, topic_title, topic_color FROM bb_topics WHERE forum_id NOT IN (,1,603,604,605,606,608,609,610,611,612,626,613,614,615,602,664,665,666,667,668,800,812,841,670,834,851,939,669,941,965,966) AND topic_dl_type = 1 ORDER BY topic_time DESC LIMIT 20</pre><br />\nSource  : includes\\datastore\\build_cat_forums.php(181)<br />\nIP      : 127.0.0.1<br />\nDate    : 2025-02-13 12:36:41<br />\nAgent   : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0<br />\nReq_URI : /<br />\nReferer :<br />\nMethod  : GET<br />\nPID     : 08972<br />\nRequest : Array",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1739444270,
+      "user_id": 8887,
+      "user_title": "User",
+      "username": "boko"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97094,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"boko\">Привет <a href=\"https://torrentpier.com/members/10614/\">belomaxorka</a>,<br />\nкогда установить сайт underverse я получаю сообщение об ошибке HTTP ERROR 500<br />\nPHP Fatal error:  DB Error [includes\\datastore\\build_cat_forums.php(181)] in C:\\OSPanel\\domains\\site.com\\includes\\db\\mysql.php on line 799<br />\nвот строк 799: trigger_error($msg, E_USER_ERROR);<br />\nвот и запрос:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$data = $db-&gt;fetch_rowset(&quot;\n        SELECT topic_id, topic_time, topic_title, topic_color\n        FROM &quot;. TOPICS_TABLE .&quot;\n        WHERE forum_id NOT IN ($forbidden_guest)\n        AND   topic_dl_type = &quot; . TOPIC_DL_TYPE_DL . &quot;\n        ORDER BY topic_time DESC\n        LIMIT $discussions_count\n    &quot;);</pre><br />\nето в файле build_cat_forums.php<br />\n<br />\nи еше вот етот:<br />\n#001064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near &#039;1,603,604,605,606,608,609,610,611,612,626,613,614,615,602,664,665,666,667,668,80&#039; at line 3<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">SELECT topic_id, topic_time, topic_title, topic_color FROM bb_topics WHERE forum_id NOT IN (,1,603,604,605,606,608,609,610,611,612,626,613,614,615,602,664,665,666,667,668,800,812,841,670,834,851,939,669,941,965,966) AND topic_dl_type = 1 ORDER BY topic_time DESC LIMIT 20</pre><br />\nSource  : includes\\datastore\\build_cat_forums.php(181)<br />\nIP      : 127.0.0.1<br />\nDate    : 2025-02-13 12:36:41<br />\nAgent   : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0<br />\nReq_URI : /<br />\nReferer :<br />\nMethod  : GET<br />\nPID     : 08972<br />\nRequest : Array</blockquote>Скачай новую версию с архива.",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1739444429,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "paki-modov",
+  "sticky": false,
+  "tags": [
+    "мод пак",
+    "пак модов",
+    "паки модов",
+    "старые моды"
+  ],
+  "title": "Паки модов",
+  "url_path": "/threads/paki-modov.42241/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 1145
+}

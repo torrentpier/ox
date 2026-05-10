@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 84527,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 86,
+    "title": "Questions about PHP"
+  },
+  "id": 41210,
+  "last_post_date": 1437138532,
+  "node_id": 86,
+  "post_date": 1437138478,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84527,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Помогите пожалуйста сделать код чтобы релизы Вип пользователей <a href=\"https://torrentpier.com/threads/vip-polzovateli.396/\" class=\"link link--internal\">VIP-пользователи</a> автоматически проверялись<br />\n<br />\n<a href=\"https://torrentpier.com/threads/dopolnitelnye-prava-grupp.1667/\" class=\"link link--internal\">Дополнительные права групп</a> Брал код этого мода но он не работал.Пробывал как и там только писал для Админов все равно не работало.<br />\n<br />\nЭтот кусок кода<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"\"># ---- [ Открыть ] -------------------\n\nposting.php\n\n# ---- [ Найти ] -------------------\n\nif($bb_cfg[&#039;premod&#039;])\n\n# ---- [ Заменить на ] -------------------\n\nif ($bb_cfg[&#039;premod&#039;] &amp;&amp; !bf($userdata[&#039;group_opt&#039;], &#039;group_opt&#039;, &#039;autocheck&#039;))\n\n# ---- [ Найти ] -------------------\n\nelse tracker_register(TORRENT_ATTACH_ID, &#039;newtopic&#039;, TOR_NOT_APPROVED);\n\n# ---- [ Вставить перед ] -------------------\n\nelse if (bf($userdata[&#039;group_opt&#039;], &#039;group_opt&#039;, &#039;autocheck&#039;)) tracker_register(TORRENT_ATTACH_ID, &#039;newtopic&#039;, TOR_APPROVED);</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1437138478,
+      "user_id": 5462,
+      "user_title": "User",
+      "username": "nematik"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84528,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Подскажите какую переменную лучше всего делать для Вип мода сюда <br />\nelse if (bf($userdata[&#039;group_opt&#039;], &#039;group_opt&#039;, &#039;autocheck&#039;)) tracker_register(TORRENT_ATTACH_ID, &#039;newtopic&#039;, TOR_APPROVED);",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1437138532,
+      "user_id": 5462,
+      "user_title": "User",
+      "username": "nematik"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "pomos-s-kodom",
+  "sticky": false,
+  "tags": [],
+  "title": "Помощь с кодом",
+  "url_path": "/threads/pomos-s-kodom.41210/",
+  "user_id": 5462,
+  "username": "nematik",
+  "view_count": 1436
+}

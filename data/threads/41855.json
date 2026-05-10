@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 92428,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 58,
+    "title": "Suggestions for improving TorrentPier"
+  },
+  "id": 41855,
+  "last_post_date": 1513714470,
+  "node_id": 58,
+  "post_date": 1513181054,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92428,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Не приходилось их использовать т.к. все пользуются парсером, но появился пользователь, который заполняет в ручную и соответственно надо было создать шаблон, в итоге теперь я понимаю почему куча вопросов была по конструктору, это же пиз... какой то все элементы в одной кучи и должен методом тыка сидеть и создавать форму, или тут же в редакторе брать инфу с posting_tpl.tpl, суть предложения разделить все, если для сериалов то так и должно быть для сериалов, если для игр то так же.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1513181054,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92439,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Там всё просто, что ты ерунду несёшь? В posting_tpl.tpl лезть особо нет нужнды, если конечно своё что нибудь туда есть нужда добавить, а так все шаблоны делаются в разделе и там методом добавления скрипта прописываешь как надо. Его даже допилить можно, чтобы была возможность добавления дополнительных полей.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1513714470,
+      "user_id": 8181,
+      "user_title": "User",
+      "username": "Пират Пиратович"
+    }
+  ],
+  "prefix_id": 41,
+  "reply_count": 1,
+  "slug": "sablony-dla-relizov",
+  "sticky": false,
+  "tags": [],
+  "title": "Шаблоны для релизов",
+  "url_path": "/threads/sablony-dla-relizov.41855/",
+  "user_id": 462,
+  "username": "Virtuoz",
+  "view_count": 1307
+}

@@ -1,0 +1,99 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 98420,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      }
+    ],
+    "id": 2,
+    "title": "Resource news"
+  },
+  "id": 43251,
+  "last_post_date": 1771264645,
+  "node_id": 2,
+  "post_date": 1771264645,
+  "posts": [
+    {
+      "attach_count": 3,
+      "attachments": [
+        {
+          "attach_date": 1771264635,
+          "file_size": 83560,
+          "filename": "1771264365890.webp",
+          "height": 956,
+          "id": 6713,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1771264365890-webp.6713/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6717-5171e41309bf51b468a47926f7b49440.jpg?hash=vbATxpzei2",
+          "width": 2022
+        },
+        {
+          "attach_date": 1771264635,
+          "file_size": 75540,
+          "filename": "1771264406732.webp",
+          "height": 1258,
+          "id": 6714,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1771264406732-webp.6714/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6718-1b53ddacbd7ff0d77c7b0f4a096f7d35.jpg?hash=ZhZyb7REgZ",
+          "width": 2152
+        },
+        {
+          "attach_date": 1771264635,
+          "file_size": 59058,
+          "filename": "1771264581035.webp",
+          "height": 1056,
+          "id": 6716,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1771264581035-webp.6716/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6720-161f8b115aec5b6b82349a725ccf2fe7.jpg?hash=8nJ0TvVmgN",
+          "width": 2218
+        }
+      ],
+      "id": 98420,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Привет.<br />\n<br />\nПродолжаем серию статей о нововведениях в третьей версии. Сегодня поговорим о безопасности аккаунтов – в TorrentPier появилась полноценная двухфакторная аутентификация на базе TOTP.<br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-cto-bylo\"></a>Что было&#8203;<a class=\"hoverLink\" href=\"#-cto-bylo\" title=\"Permanent link\"></a></h3>Никакой двухфакторки не было. Пароль – единственный рубеж между злоумышленником и аккаунтом. Утек пароль – потерял аккаунт. Для обычного пользователя это неприятно, а для администратора или модератора трекера – катастрофа.<br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-cto-stalo\"></a>Что стало&#8203;<a class=\"hoverLink\" href=\"#-cto-stalo\" title=\"Permanent link\"></a></h3>В версии 3.0 добавлена полноценная двухэтапная верификация по стандарту TOTP (RFC 6238). Работает с любым приложением-аутентификатором: Google Authenticator, Authy, 1Password, Bitwarden и другими.<br />\n<br />\n<h4 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-kak-eto-vygladit-dla-pol-zovatela\"></a>Как это выглядит для пользователя&#8203;<a class=\"hoverLink\" href=\"#-kak-eto-vygladit-dla-pol-zovatela\" title=\"Permanent link\"></a></h4>В панели управления профилем появился новый раздел <code class=\"xfBb-icode\">/profile/two-step</code>. Процесс подключения:<br />\n<ol>\n<li data-xf-list-type=\"ol\">Нажимаете «Включить» – система генерирует секретный ключ</li>\n<li data-xf-list-type=\"ol\">Сканируете QR-код приложением-аутентификатором (или вводите ключ вручную)</li>\n<li data-xf-list-type=\"ol\">Вводите шестизначный код из приложения для подтверждения</li>\n<li data-xf-list-type=\"ol\">Получаете набор резервных кодов – сохраняете их в надежном месте</li>\n</ol>После включения при каждом входе система запрашивает код из приложения. Если телефон недоступен – можно ввести один из резервных кодов.<br />\n<br />\n<img src=\"https://torrentpier.com/attachments/6713/\" alt=\"1771264365890.webp\" /> <img src=\"https://torrentpier.com/attachments/6714/\" alt=\"1771264406732.webp\" /><br />\n<br />\n<h4 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-kak-rabotaet-vhod\"></a>Как работает вход&#8203;<a class=\"hoverLink\" href=\"#-kak-rabotaet-vhod\" title=\"Permanent link\"></a></h4>Процесс авторизации с 2FA:<br />\n<ol>\n<li data-xf-list-type=\"ol\">Пользователь вводит логин и пароль – пароль проверяется как обычно</li>\n<li data-xf-list-type=\"ol\">Если у пользователя включена 2FA, создается временная «pending»-сессия в кеше, привязанная к IP, с TTL 5 минут</li>\n<li data-xf-list-type=\"ol\">Показывается форма для ввода кода</li>\n<li data-xf-list-type=\"ol\">Код проверяется – временная сессия потребляется, создается настоящая сессия</li>\n<li data-xf-list-type=\"ol\">Если код неверный – счетчик ошибок. После 5 неудачных попыток – блокировка на 15 минут, pending-токен уничтожается</li>\n</ol><img src=\"https://torrentpier.com/attachments/6716/\" alt=\"1771264581035.webp\" /><br />\n<br />\n<h4 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-mery-bezopasnosti\"></a>Меры безопасности&#8203;<a class=\"hoverLink\" href=\"#-mery-bezopasnosti\" title=\"Permanent link\"></a></h4>Мы постарались закрыть типичные уязвимости:<br />\n<ul>\n<li data-xf-list-type=\"ul\"><b>Шифрование секретов.</b> AES-256-GCM, ключ задается через переменную окружения <code class=\"xfBb-icode\">TOTP_ENCRYPTION_KEY</code></li>\n<li data-xf-list-type=\"ul\"><b>Replay protection.</b> SHA-256 хеш принятого кода кешируется на время окна верификации – один код нельзя использовать дважды</li>\n<li data-xf-list-type=\"ul\"><b>Rate limiting.</b> 5 попыток, потом 15-минутный локаут</li>\n<li data-xf-list-type=\"ul\"><b>Привязка к IP.</b> Pending-сессия действительна только для того IP, с которого был введен пароль</li>\n<li data-xf-list-type=\"ul\"><b>Автологин.</b> При включении 2FA все запомненные сессии аннулируются</li>\n</ul><br />\n<h4 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-administrirovanie\"></a>Администрирование&#8203;<a class=\"hoverLink\" href=\"#-administrirovanie\" title=\"Permanent link\"></a></h4>Администратор может отключить 2FA любому пользователю через его профиль (AJAX-действие с подтверждением). При этом свою собственную 2FA администратор из админки отключить не может – только через настройки профиля. Это защита от случайного снятия 2FA с самого себя.<br />\n<br />\nСтатус 2FA виден только самому пользователю и администраторам.<br />\n<br />\n<h4 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-konfiguracia\"></a>Конфигурация&#8203;<a class=\"hoverLink\" href=\"#-konfiguracia\" title=\"Permanent link\"></a></h4>Настройки в <code class=\"xfBb-icode\">config/auth.php</code>:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&#039;two_factor&#039; =&gt; [\n    &#039;enabled&#039; =&gt; true,            // Глобальный переключатель\n    &#039;issuer&#039; =&gt; &#039;TorrentPier&#039;,    // Имя в приложении-аутентификаторе\n    &#039;digits&#039; =&gt; 6,                // Количество цифр в коде\n    &#039;period&#039; =&gt; 30,               // Период генерации в секундах\n    &#039;algorithm&#039; =&gt; &#039;sha1&#039;,        // Алгоритм HMAC\n    &#039;window&#039; =&gt; 1,                // Окно допуска (+-1 период)\n    &#039;recovery_codes_count&#039; =&gt; 8,  // Количество резервных кодов\n    &#039;max_attempts&#039; =&gt; 5,          // Попыток до блокировки\n    &#039;lockout_duration&#039; =&gt; 900,    // Длительность блокировки (сек)\n    &#039;encryption_key&#039; =&gt; env(&#039;TOTP_ENCRYPTION_KEY&#039;, &#039;&#039;),\n],</pre>Важный момент: если глобально отключить 2FA, пользователи, у которых она уже была включена, все равно смогут ее отключить в настройках. Мы не блокируем людей с включенной 2FA при смене конфигурации.<br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-cto-eto-daet\"></a>Что это дает&#8203;<a class=\"hoverLink\" href=\"#-cto-eto-daet\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><b>Защита аккаунтов.</b> Даже при утечке пароля злоумышленник не попадет в аккаунт без второго фактора</li>\n<li data-xf-list-type=\"ul\"><b>Стандартный подход.</b> TOTP по RFC 6238 – работает с десятками приложений-аутентификаторов</li>\n<li data-xf-list-type=\"ul\"><b>Резервные коды.</b> Не потеряете доступ, если телефон сломался или потерялся</li>\n<li data-xf-list-type=\"ul\"><b>Шифрование на всех уровнях.</b> Секреты зашифрованы в базе, коды захешированы, сессии привязаны к IP</li>\n<li data-xf-list-type=\"ul\"><b>Контроль для администратора.</b> Возможность сбросить 2FA пользователю при обращении в поддержку</li>\n</ul><br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-cto-dal-se\"></a>Что дальше&#8203;<a class=\"hoverLink\" href=\"#-cto-dal-se\" title=\"Permanent link\"></a></h3>Двухфакторная аутентификация – часть масштабного обновления безопасности в TorrentPier 3.0. В следующих статьях расскажем о других нововведениях.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1771264645,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-3-0-dvuhetapnaa-autentifikacia",
+  "sticky": false,
+  "tags": [
+    "2fa",
+    "3.0",
+    "auth",
+    "аутентификация",
+    "двухфакторная"
+  ],
+  "title": "TorrentPier 3.0: двухэтапная аутентификация",
+  "url_path": "/threads/torrentpier-3-0-dvuhetapnaa-autentifikacia.43251/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 474
+}

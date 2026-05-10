@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 17300,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1349,
+  "last_post_date": 1338584025,
+  "node_id": 57,
+  "post_date": 1336930358,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 17300,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток. Поставил TP2 R400. Сайт (форум) поднялся и вроде работает без проблем, захожу админом создаю удаляю темы, так же и пользователями которых создал. Но если создаю раздачу (торрент создаю так же как для rutracker, без указания треккера),  заливаю на раздачу, после чего скачиваю раздачу и загружаю себе в торрент клиент (uTorrent 3.1.3) в списке торрент треккера вижу http путь на на сайт/+доп.инф из набора символов, а в статусе HTTP Error 401. На форуме в раздаче 0 сидеров и личеров.<br />\nВ чём может быть проблема ?<br />\nСпасибо.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1336930358,
+      "user_id": 1221,
+      "user_title": "User",
+      "username": "ken"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 17877,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Проблема решена.  Возможно это уже обсуждалось, но я опишу. Трекер используется php и соответственно сайт (форум) лежит на том же хосте. Но так как сайт был запущен в тестовом режиме с Basic Auth авторизацией через Apache, то торрент клиент просто напросто не проходил эту авторизацию и соответсвенно не имел соединения с php аннонсером.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1338584025,
+      "user_id": 1221,
+      "user_title": "User",
+      "username": "ken"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "http-error-401-v-utorrent-ne-razdaet",
+  "sticky": false,
+  "tags": [],
+  "title": "HTTP Error 401 в uTorrent, не раздаёт.",
+  "url_path": "/threads/http-error-401-v-utorrent-ne-razdaet.1349/",
+  "user_id": 1221,
+  "username": "ken",
+  "view_count": 1526
+}

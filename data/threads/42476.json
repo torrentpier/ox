@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 97380,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      }
+    ],
+    "id": 54,
+    "title": "New versions"
+  },
+  "id": 42476,
+  "last_post_date": 1750844354,
+  "node_id": 54,
+  "post_date": 1750844354,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1750844345,
+          "file_size": 4930283,
+          "filename": "torrentpier-lts-2.1.5-2025.06.zip",
+          "height": 0,
+          "id": 6471,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/torrentpier-lts-2-1-5-2025-06-zip.6471/",
+          "thumbnail_url": null,
+          "width": 0
+        },
+        {
+          "attach_date": 1750844345,
+          "file_size": 12342,
+          "filename": "LTS.webp",
+          "height": 100,
+          "id": 6472,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/lts-webp.6472/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6476-833c6d5c69163ad819911ac32e7a993a.jpg?hash=8VrPBjbU8j",
+          "width": 300
+        }
+      ],
+      "id": 97380,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier LTS. Версия 2.1.5-2025.06 [Final v12]</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/6472/\" alt=\"LTS.webp\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier-lts/releases/tag/v2.1.5-2025.06\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.1.5-2025.06 [Final v12] · torrentpier/torrentpier-lts</a><br />\n<br />\n<b>Основные изменения:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">Release v2.1.5-2025.06 🎉</li>\n<li data-xf-list-type=\"ul\">Modified SQL queries in online_userlist.php to use MAX() for session data and adjusted GROUP BY clause for better accuracy</li>\n<li data-xf-list-type=\"ul\">Replace non-aggregated &#039;seeder&#039; column with MAX(seeder) in GROUP BY query</li>\n<li data-xf-list-type=\"ul\">Fixed duplicate column SQL query issues in viewtopic.php</li>\n<li data-xf-list-type=\"ul\">Fixed TorrentPier build-in emojis showing in ACP</li>\n<li data-xf-list-type=\"ul\">Fixed displaying Network news and Latest news for guests when forums are private</li>\n<li data-xf-list-type=\"ul\">Fixed displaying topics from private forums in Atom feed</li>\n<li data-xf-list-type=\"ul\">Fixed Undefined array key &quot;smile&quot; when are no smilies</li>\n<li data-xf-list-type=\"ul\">Fixed incorrect rounding in execution time counter</li>\n<li data-xf-list-type=\"ul\">Added xl (eXact Length) parameter for magnet links</li>\n<li data-xf-list-type=\"ul\">Added confirmation on smilie deleting</li>\n<li data-xf-list-type=\"ul\">Added confirmation on rank deleting</li>\n<li data-xf-list-type=\"ul\">Some other changes / improvements</li>\n</ul>Для обновления на версию не нужно выполнять дополнительные запросы к базе данных.<br />\n<hr />Вероятно последняя версия из LTS. Буквально исправлять уже больше нечего, если пытаться улучшать дальше, то это уже будет не LTS. Можете смело ставить эту версию на долгую перспективу, она, пожалуй, самая стабильная из всех).<br />\n<hr /><b>MD5</b>: 70C9BAC66DD1EE677DCA0E87BF8D086D<br />\n<b>SHA-1</b>: 725B59500BE35455D50935544D05495C30BE7749",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1750844354,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-lts-versia-2-1-5-2025-06-final-v12",
+  "sticky": false,
+  "tags": [
+    "lts",
+    "lts-final",
+    "torrentpier",
+    "torrentpier-lts",
+    "новая версия",
+    "релиз",
+    "ченжлог"
+  ],
+  "title": "TorrentPier LTS. Версия 2.1.5-2025.06 [Final v12]",
+  "url_path": "/threads/torrentpier-lts-versia-2-1-5-2025-06-final-v12.42476/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 521
+}

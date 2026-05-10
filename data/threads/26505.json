@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 63275,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 26505,
+  "last_post_date": 1411560742,
+  "node_id": 57,
+  "post_date": 1411549038,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63275,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как убрать внизу страницы слово !ВНИМАНИЕ! и текст под ним.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1411549038,
+      "user_id": 5212,
+      "user_title": "User",
+      "username": "arnoldovich"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63276,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Следующая тема - &quot;Посоветуйте хорошего юриста, меня повязали&quot;? <br />\n<br />\nПо сути вопроса - в шаблоне footer.tpl.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1411551736,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63279,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\">Следующая тема - &quot;Посоветуйте хорошего юриста, меня повязали&quot;?</blockquote><br />\nНадеюсь такого вопроса не возникнет, т.к. не собираюсь создавать торрент-треккер с варезом.<br />\n<br />\nЗа ответ, спасибо.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1411552517,
+      "user_id": 5212,
+      "user_title": "User",
+      "username": "arnoldovich"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63284,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5212/\">@arnoldovich</a> а если не секрет - с чем? Просто слабо представляю легальный контент для которого нужен аж целый торрент-трекер.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1411558363,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 63285,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Каталог бесплатных видеокурсов. Хочется, чтобы пользователи качали их не с файлообменников, а через торрент-клиенты.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1411560742,
+      "user_id": 5212,
+      "user_title": "User",
+      "username": "arnoldovich"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "kak-ubrat-vnimanie",
+  "sticky": false,
+  "tags": [],
+  "title": "Как убрать !ВНИМАНИЕ!",
+  "url_path": "/threads/kak-ubrat-vnimanie.26505/",
+  "user_id": 5212,
+  "username": "arnoldovich",
+  "view_count": 1162
+}

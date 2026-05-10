@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 24786,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 47,
+        "title": "Modifications for TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 43,
+    "title": "Modifications for TorrentPier (archive)"
+  },
+  "id": 1862,
+  "last_post_date": 1360091967,
+  "node_id": 43,
+  "post_date": 1356686492,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24786,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<span style=\"font-family: 'times new roman'\">#################################</span><br />\n<span style=\"font-family: 'times new roman'\"># Мод: тип торрента </span><br />\n<span style=\"font-family: 'times new roman'\"># Автор: mad_boy</span><br />\n<span style=\"font-family: 'times new roman'\"># Адаптировал: Dream </span><br />\n<span style=\"font-family: 'times new roman'\"># Время установки: ~1 min </span><br />\n<span style=\"font-family: 'times new roman'\">#################################</span><br />\n <br />\n<b>Сделать запрос:</b><br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">ALTER TABLE `bb_bt_torrents` ADD `private` TINYINT( 1 ) NOT NULL DEFAULT &#039;0&#039;;</pre> <br />\n<b>Установка:</b><br />\n <br />\n<div>Spoiler content hidden.</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1356686492,
+      "user_id": 737,
+      "user_title": "User",
+      "username": "Dream"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 24789,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Всё отлично работает, спасибо.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1356691693,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26617,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "что за мод ? можно скрин выложить ?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1360091642,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Виталик Виталик"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 26618,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"php\">    $private_key = (int) 0;\n    if (@$info[&#039;private&#039;])\n    {\n        $private_key = (int) 1;\n    }</pre>зачетно xD",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1360091967,
+      "user_id": 2,
+      "user_title": "User",
+      "username": "_Xz_"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "torrent-type-tip-torrenta",
+  "sticky": false,
+  "tags": [],
+  "title": "Torrent type / Тип торрента",
+  "url_path": "/threads/torrent-type-tip-torrenta.1862/",
+  "user_id": 737,
+  "username": "Dream",
+  "view_count": 2432
+}

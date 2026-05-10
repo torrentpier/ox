@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 80671,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 58,
+    "title": "Suggestions for improving TorrentPier"
+  },
+  "id": 39133,
+  "last_post_date": 1427554962,
+  "node_id": 58,
+  "post_date": 1427554962,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 80671,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Теме из диалога с одним из предствителей саппорта моего провайдера.<br />\nВобщем есть у него куча внутренних ресурсов, которые по сути одно и то же, но в различных оболочках и у каждого сайта своя база данных раздач.<br />\n<br />\nТакой вопрос существуют ли моды, или в самом движке трекера может быть встроен механизм различного отображения сайта ?<br />\n Например: <br />\n Есть торрент-трекер под адресом torrents.noname.ru который выглядит как рутрекер<br />\n Есть видеопортал video.noname.ru к примеру с таким ленточным оформлением как на <a href=\"http://dcp.sovserv.ru/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://dcp.sovserv.ru/</a><br />\nЕсть аудиопортал audio.noname.ru , с плиточным оформление типа <a href=\"http://dcsamara.net/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://dcsamara.net/</a><br />\nИ софт портал с оформлением как на рутор.орг<br />\n<br />\n Вид содержимого темы раздачи везде похож или одинаков. Но сайты разные и движки разные. <br />\nА можно ли сделать так что бы просто отображалась по разному главная страница и возможно отдельные меню категорий по разным URL , и контент для каждого подгружался из одной базы данных трекера торрентпира ?<br />\n Например на видеопортале будет выводится лента всех последних раздач торрент-трекера из категорий фильмы, сериалы, видео и пр.<br />\nНа аудио-портале - только из разделов музыки и аудикниг трекера.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1427554962,
+      "user_id": 5013,
+      "user_title": "User",
+      "username": "grey_rat"
+    }
+  ],
+  "prefix_id": 41,
+  "reply_count": 0,
+  "slug": "raznoe-otobrazenie-glavnoj-stranicy-sajta-pod-raznymi-url",
+  "sticky": false,
+  "tags": [],
+  "title": "Разное отображение главной страницы сайта под разными URL",
+  "url_path": "/threads/raznoe-otobrazenie-glavnoj-stranicy-sajta-pod-raznymi-url.39133/",
+  "user_id": 5013,
+  "username": "grey_rat",
+  "view_count": 1370
+}

@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 71481,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 32899,
+  "last_post_date": 1420745839,
+  "node_id": 57,
+  "post_date": 1420742118,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71481,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет, а у меня возникла такая проблема. При создании темы в форуме, когда жмешь отправить появляется ошибка <b>Error in posting #2</b>. В файле <b>sql_error_bb.log</b> перечислены 8 значений, которые нужно внести, как я понял в <b>bb_posts</b>, когда я внес эти значения ничего не произошло. Вот данные с лога:<br />\n<br />\n#001364 Field &#039;mc_user_id&#039; doesn&#039;t have a default value<br />\n<br />\nINSERT INTO bb_posts (topic_id, forum_id, poster_id, post_username, post_time, poster_ip, poster_rg_id, attach_rg_sig) VALUES (3, 1, 2, &#039;&#039;, 1420740780, &#039;ac11c412&#039;, 0, 0)<br />\n<br />\nSource  : includes\\functions_post.php(167) :: db1.tor<br />\nIP  : 172.17.196.18<br />\nDate  : 2015-01-08 22:13:00<br />\nAgent  : Opera/9.80 (Windows NT 5.1) Presto/2.12.388 Version/12.14<br />\nReq_URI : /posting.php<br />\nReferer : <a href=\"http://172.17.196.18/posting.php\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://172.17.196.18/posting.php</a><br />\nMethod  : POST<br />\nPID  : 01656<br />\nRequest : Array<br />\n(<br />\n  [mode] =&gt; newtopic<br />\n  [f] =&gt; 1<br />\n  [add_attachment_body] =&gt; 0<br />\n  [posted_attachments_body] =&gt; 0<br />\n  [subject] =&gt; Тест<br />\n  [fontFace] =&gt; -1<br />\n  [codeColor] =&gt; black<br />\n  [codeSize] =&gt; 12<br />\n  [codeAlign] =&gt; left<br />\n  [message] =&gt; Тест<br />\n  [post] =&gt; 1<br />\n  [notify] =&gt; on<br />\n  [topictype] =&gt; 0<br />\n  [filecomment] =&gt;<br />\n)_______________________________",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1420742118,
+      "user_id": 5890,
+      "user_title": "User",
+      "username": "Hate"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71482,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Ну как бы вот это<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Field &#039;mc_user_id&#039; doesn&#039;t have a default value</pre>говорит что не может установить значение по умолчанию в столбец. Значит его нужно обязательно передавать в <i>insert.</i> Или в самой таблице столбцу поставить значение по умолчанию (default value).",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1420742846,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 71486,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"dimka3210\">Ну как бы вот это<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Field &#039;mc_user_id&#039; doesn&#039;t have a default value</pre>говорит что не может установить значение по умолчанию в столбец. Значит его нужно обязательно передавать в <i>insert.</i> Или в самой таблице столбцу поставить значение по умолчанию (default value).</blockquote><br />\nСпасибо, помогло. Поставил столбцу <b>mc_user_id</b> значение <b>Null</b> и темы начали создаваться.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1420745839,
+      "user_id": 5890,
+      "user_title": "User",
+      "username": "Hate"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "field-mc_user_id-doesnt-have-a-default-value",
+  "sticky": false,
+  "tags": [],
+  "title": "Field 'mc_user_id' doesn't have a default value",
+  "url_path": "/threads/field-mc_user_id-doesnt-have-a-default-value.32899/",
+  "user_id": 5890,
+  "username": "Hate",
+  "view_count": 1626
+}

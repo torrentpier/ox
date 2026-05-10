@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94895,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 42128,
+  "last_post_date": 1683525932,
+  "node_id": 3,
+  "post_date": 1683444515,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94895,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте. Я новичок в данной теме, и у меня есть несколько вопросов по TorrentPier, если кто может ответить, помогите пожалуйста.<br />\n<br />\n1. Хостинг DarkHost.pro подойдёт для торрент-трекера без адулта и киношек с сериалами?<br />\n2. Какой движок поставить на хостинг? Я вижу тут несколько версий. Чем они отличаются? Что такое Bison?<br />\n3. Есть какой-то гайд как установить движок на хостинг?<br />\n<br />\nВсем заранее спасибо за ответы.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1683444515,
+      "user_id": 10676,
+      "user_title": "User",
+      "username": "kohedlo"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94898,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"kohedlo\">Здравствуйте. Я новичок в данной теме, и у меня есть несколько вопросов по TorrentPier, если кто может ответить, помогите пожалуйста.<br />\n<br />\n1. Хостинг DarkHost.pro подойдёт для торрент-трекера без адулта и киношек с сериалами?<br />\n2. Какой движок поставить на хостинг? Я вижу тут несколько версий. Чем они отличаются? Что такое Bison?<br />\n3. Есть какой-то гайд как установить движок на хостинг?<br />\n<br />\nВсем заранее спасибо за ответы.</blockquote>Здравствуйте.<br />\n1. Хостить лучше на забугор серверах. (Может тут что-то есть живое <a href=\"https://torrentpier.com/forums/xosting-i-domeny.89/\" class=\"link link--internal\">Хостинг и домены</a>)<br />\n2. LTS - самая стабильная (в основе 2.1.5), её лучше юзать. Bison это 2.3 и выше. (Bison - кодовое имя).<br />\n3. Все FAQ находятся в этом разделе (<a href=\"https://torrentpier.com/forums/video-uroki-po-torrentpier.24/\" class=\"link link--internal\">Видео-уроки по TorrentPier</a>, <a href=\"https://torrentpier.com/forums/osnovnye-voprosy-po-torrentpier.10/\" class=\"link link--internal\">Основные вопросы по TorrentPier</a>)",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1683472460,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94902,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"kohedlo\">Здравствуйте. Я новичок в данной теме, и у меня есть несколько вопросов по TorrentPier, если кто может ответить, помогите пожалуйста.<br />\n<br />\n1. Хостинг DarkHost.pro подойдёт для торрент-трекера без адулта и киношек с сериалами?<br />\n2. Какой движок поставить на хостинг? Я вижу тут несколько версий. Чем они отличаются? Что такое Bison?<br />\n3. Есть какой-то гайд как установить движок на хостинг?<br />\n<br />\nВсем заранее спасибо за ответы.</blockquote>Знаю человека, который держит на даркхосте торент трекер, полёт нормальный, рекомендую.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1683525932,
+      "user_id": 10674,
+      "user_title": "User",
+      "username": "Iris"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "voprosy-ob-torrentpier",
+  "sticky": false,
+  "tags": [],
+  "title": "Вопросы об TorrentPier",
+  "url_path": "/threads/voprosy-ob-torrentpier.42128/",
+  "user_id": 10676,
+  "username": "kohedlo",
+  "view_count": 922
+}

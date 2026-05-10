@@ -1,0 +1,114 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL][$][TP2] Weather addon.zip",
+      "id": 3230,
+      "local_path": null,
+      "r2_key": null,
+      "size": 20098,
+      "src_url": "https://torrentpier.com/api/resource-versions/237/download?file=3230"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "no",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]Автор мода: frost444\n\n//-----[Обновления]-----\\\\\n\n|--(00.00.0000)\n   1) измененный код: ---\n   2) ---\n   info: (1) ---\n  \n\\\\-----[Обновления]-----//\n\n####[ВЫПОЛНИТЬ]-----SQL\n\nALTER TABLE `bb_users` ADD `user_city` int(10) DEFAULT '0' NOT NULL AFTER `user_gender`;\n\n####[КОНЕЦ]-----SQL\n\n####[ОТКРЫТЬ]----- config.php\n\n$bb_cfg['weather'] = array(\n  'on'    => false,\n  'url'   => 'http://export.yandex.ru/weather/?city=',\n  'city'  => 28807,\n  'cache' => 30,\n);\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- page_header.php\n-----[найти]-----\n\n$template->assign_vars(array(\n    'SIMPLE_HEADER'      => !empty($gen_simple_header),\n\n-----[выше вставить]-----\n\nif($logged_in && $userdata['user_city'] > 0 && $bb_cfg['weather']['on'])\n{\n  if (!$weather = CACHE('bb_cache')->get('weather'))\n  {\n    require(BB_ROOT . 'weather.php');\n  }\n  $template->assign_vars(array(\n    'WEATHER'   => $weather,\n  ));\n}\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- usercp_register.php\n-----[найти]-----\n\nrequire(INC_DIR .'ucp/usercp_avatar.php');\n\n-----[добавить ниже]-----\n\nrequire(LANG_ROOT_DIR .\"lang_{$userdata['user_lang']}/lang_city.php\");\n                       \n-----[найти]-----\n\n            'user_lang'        => true,\n\n-----[добавить ниже]-----\n\n            'user_city'        => true,\n                       \n-----[найти]-----\n\n    /**\n    *  Пол (edit, reg)\n    */\n    case 'user_gender':\n\n-----[добавить выше]-----\n\n    /**\n    *  Город (edit, reg)\n    */\n    case 'user_city':\n        $city = isset($_POST['user_city']) ? (int) $_POST['user_city'] : $pr_data['user_city'];\n        if ($submit && $city != $pr_data['user_city'])\n        {\n            $pr_data['user_city'] = $city;\n            $db_data['user_city'] = $city;\n        }\n        $tp_data['USER_CITY'] = build_select('user_city', array_flip($lang['CITY_SELECT']), $pr_data['user_city']);\n        break;\n                       \n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- usercp_register.tpl\n-----[найти]-----\n\n<tr>\n    <th colspan=\"2\">{L_PROFILE_INFO}</th>\n</tr>\n   \n-- ниже вставить]-----\n\n<!-- IF $bb_cfg['weather']['on'] -->\n<tr>\n    <td>{L_CITY}:</td>\n    <td>{USER_CITY}</td>\n</tr>\n<!-- ENDIF -->\n\n####[СОХРАНИТЬ_ФАЙЛ]####\n\n####[ОТКРЫТЬ]----- любой.tpl\n-----[вывести]-----\n{WEATHER}\n\n####[СОХРАНИТЬ_ФАЙЛ]####[/PHP]\n[/SPOILER]",
+    "owner": "Exile, frost444",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1425419572,
+      "file_size": 15212,
+      "filename": "1.webp",
+      "height": 304,
+      "id": 3227,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/1-webp.3227/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3231-2d74d057d021f1c56986deb5f0dbbb9f.jpg?hash=mmzC2vgsuC",
+      "width": 547
+    },
+    {
+      "attach_date": 1425419572,
+      "file_size": 16554,
+      "filename": "2.webp",
+      "height": 296,
+      "id": 3228,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2-webp.3228/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3232-815c245e7b30f468140c316753dfb60d.jpg?hash=qF4Ci1VFkA",
+      "width": 617
+    },
+    {
+      "attach_date": 1425419573,
+      "file_size": 13840,
+      "filename": "3.webp",
+      "height": 336,
+      "id": 3229,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/3-webp.3229/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/3/3233-732f64a255778e0fbe6de17ab63b11c4.jpg?hash=h0-T_Ci4O3",
+      "width": 207
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет вывод прогноза погоды для указанного пользователем города. Прогноз погоды парсится с Яндекса, результат кэшируется.",
+  "download_count": 272,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/186.jpg?1425419729",
+  "id": 186,
+  "is_fileless": null,
+  "last_update": 1425419714,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1425419714,
+  "resource_state": "visible",
+  "slug": "pogoda",
+  "tag_line": "Добавляет вывод прогноза погоды для указанного пользователем города.",
+  "tags": [],
+  "title": "Погода",
+  "url_path": "/resources/pogoda.186/",
+  "user_id": 1,
+  "username": "Exile",
+  "version": "1.0.0",
+  "versions": [
+    {
+      "download_count": 272,
+      "files": [
+        {
+          "filename": "[FULL][$][TP2] Weather addon.zip",
+          "id": 3230,
+          "local_path": null,
+          "r2_key": null,
+          "size": 20098,
+          "src_url": "https://torrentpier.com/api/resource-versions/237/download?file=3230"
+        }
+      ],
+      "id": 237,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1425419714,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/pogoda.186/version/237/"
+    }
+  ],
+  "view_count": 397
+}

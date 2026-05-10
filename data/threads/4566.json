@@ -1,0 +1,153 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 30319,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 4566,
+  "last_post_date": 1369067415,
+  "node_id": 110,
+  "post_date": 1369055670,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 30319,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\n <br />\nС 7 мая 2013 года наш ресурс был недоступен. Думаю, всем хотелось бы узнать причину неработоспособности ресурса на протяжении по сути двух недель. Ниже постараюсь максимально подробно изложить причины.<br />\n <br />\nИз-за технической ошибки, на сервере остановилась запись бинарных логов базы данных, а через некоторое время упала с ошибкой и сама база. Во время данного происшествия база форума была необратимо повреждена. Из-за отсутствия бинарных логов - восстановить базу данных форума к моменту падения возможным не представилось.<br />\n <br />\n<i><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\"><span style=\"font-size: 13px\">Сисадмины делятся на тех, кто не делает бэкапы и тех кто уже делает</span></span></span></i><span style=\"font-size: 13px\"><span style=\"font-family: 'Verdana'\"><span style=\"color: #000000\"> ©</span></span></span><br />\n <br />\nБекапы мы делали. Но очень редко, что и стало нашей фатальной ошибкой. Последний бекап был от 19 марта 2013 года. Таким образом, форум был откачен на месяц с небольшим. Весь апрель, и вся работа по созданию базы данных &quot;ресурсов&quot; пошла в трубу. Все обновление форума на лицензионную версию, установки платных модификаций - пошли туда же.<br />\n <br />\nНа осознание данного факта у нас ушло три дня - изначально форум планировать запустить в откаченной на 19 марта версии сразу же после майских праздников - но опять помешали обстоятельства. Файлы форума были &quot;свежие&quot;, а база данных им далеко не соответствовала. На исправление всех возникших при этом конфликтов ушла оставшаяся неделя.<br />\n <br />\n<span style=\"color: #993300\"><b>Что мы имеем на данный момент? Форум, по состоянию на 19 марта 2013 года; чистую базу данных &quot;ресурсов&quot; для нашего движка; огромные потери как в поисковых системах, так и репутационные потери. Если сказать очень грубо - мы обосрались. Но все соотвествующие выводы из этого инцидента уже сделаны.</b></span><br />\n <br />\nСпасибо за внимание.<br />\n <br />\nPS. Пользователи, которые регистрировались в период с 19 марта по 7 мая 2013 года - должны пройти процедуру регистрации заново.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1369055670,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 30327,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Также на данный момент возможны различного рода технические ошибки форума, проблемы с локализацией и прочие глюки - над их исправлением ведется работа. Главная задача - ликвидировав конфликты все же запустить форум, так или иначе выполнена.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1369056103,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 30332,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Жалко🙁",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1369058958,
+      "user_id": 1359,
+      "user_title": "User",
+      "username": "Alexander"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 30333,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "печаль - беда..., ну главное духом не падать и всё будет ice! удачи, восстанавливайтесь",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1369059008,
+      "user_id": 4137,
+      "user_title": "User",
+      "username": "Алексей Письменский"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 30334,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "М-да нормально так на 2 месяца назад, одно обидно ценные посты в теме о багах отвалились. А не реализовоно было много...",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1369059055,
+      "user_id": 2839,
+      "user_title": "User",
+      "username": "deemon"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 30352,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ну ладно, хоть так. Обновлюсь пока на 500 ревизию.",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1369066981,
+      "user_id": 63,
+      "user_title": "User",
+      "username": "nord51"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 30353,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "ничего ровным счетом не случилось, база данных самое узкое место любого проекта, и кого-либо винить глупо.<br />\nГлавное что взлетело.....",
+      "message_state": "visible",
+      "position": 6,
+      "post_date": 1369067415,
+      "user_id": 0,
+      "user_title": "",
+      "username": "kenny"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 6,
+  "slug": "otkat-foruma-iz-za-padenia-bazy-dannyh",
+  "sticky": false,
+  "tags": [
+    "новости"
+  ],
+  "title": "Откат форума из-за падения базы данных",
+  "url_path": "/threads/otkat-foruma-iz-za-padenia-bazy-dannyh.4566/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 5873
+}

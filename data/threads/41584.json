@@ -1,0 +1,52 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 89014,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 88,
+    "title": "Search Engine Optimization (SEO)"
+  },
+  "id": 41584,
+  "last_post_date": 1480936869,
+  "node_id": 88,
+  "post_date": 1480936869,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89014,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Кто силен в .htaccess, нужно сделать 301 редирект с ссылки вида<br />\n<br />\n/viewtopic.php?t=54831?EsetProtoscanCtx=20a73f46b60<br />\n<br />\nна<br />\n<br />\n/viewtopic.php?t=54831<br />\n<br />\nт.е. убрать параметр EsetProtoscanCtx=...........<br />\n<br />\nили вообще запретить доступ тем кто приходит с такими параметрами",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1480936869,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "ubrat-iz-ssylki-opredelennye-parametry",
+  "sticky": false,
+  "tags": [
+    "301 редирект"
+  ],
+  "title": "Убрать из ссылки определенные параметры",
+  "url_path": "/threads/ubrat-iz-ssylki-opredelennye-parametry.41584/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1366
+}

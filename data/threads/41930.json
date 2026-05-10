@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 93416,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41930,
+  "last_post_date": 1532278333,
+  "node_id": 57,
+  "post_date": 1532016890,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93416,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет! Проблема такая, в релизе или в теме к примеру оставляешь короткий пост, к примеру &quot;Спасибо за релиз&quot; ну и так далее, жмешь Отправить. Выходит такая ошибка<br />\n<b><blockquote class=\"xfBb-quote\" data-name=\"\">Fatal error</blockquote></b><blockquote class=\"xfBb-quote\" data-name=\"\">: bf_bit2dec: bitfield &#039;allow_post&#039; not found in <b>/home/admin/web/emsclub.pw/public_html/library/includes/functions.php</b> on line <b>304</b></blockquote>Но почему то когда при отправлении короткого поста сперва жмешь Предосмотр, а потом отправить, пост появляется.<br />\nХотя если отправить длинный пост, к примеру рицензию или цитату от чего либо, сообщение проходит нормально.<br />\nПомогите решить проблему, спасибо!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1532016890,
+      "user_id": 8490,
+      "user_title": "User",
+      "username": "Max-1981"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93417,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Не понятно какая версия, не понятно какие аддоны ставили. Но судя по ошибке не адаптированные.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1532124771,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93419,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\">Не понятно какая версия, не понятно какие аддоны ставили. Но судя по ошибке не адаптированные.</blockquote>Версия TorrentPier II:<b>2.1.5 [ALPHA]</b>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1532248279,
+      "user_id": 8490,
+      "user_title": "User",
+      "username": "Max-1981"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93423,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Max-1981\">Версия TorrentPier II:<b>2.1.5 [ALPHA]</b></blockquote>Сижу еще на старых ревизиях, один на 2.1.5 и подобной проблемы нету, на 2.2.3 так же, проверяйте установленные модификации",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1532278333,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "osibka-otpravlenia-korotkogo-kommentaria",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка отправления короткого комментария",
+  "url_path": "/threads/osibka-otpravlenia-korotkogo-kommentaria.41930/",
+  "user_id": 8490,
+  "username": "Max-1981",
+  "view_count": 1675
+}

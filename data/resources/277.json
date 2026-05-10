@@ -1,0 +1,131 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Случайная раздача by belomaxorka.zip",
+      "id": 6066,
+      "local_path": null,
+      "r2_key": null,
+      "size": 1213,
+      "src_url": "https://torrentpier.com/api/resource-versions/523/download?file=6066"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "Находится в папке с модом. Файл Установка.txt.",
+    "owner": "belomaxorka",
+    "sql": "no",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1703066380,
+      "file_size": 7660,
+      "filename": "Screenshot 2023-12-20 164525.webp",
+      "height": 151,
+      "id": 5693,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/screenshot-2023-12-20-164525-webp.5693/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5697-672e8fb3213216c1bd1b2db20be87504.jpg?hash=RzJ_zXu9Hm",
+      "width": 384
+    }
+  ],
+  "description_parsed": "<div style=\"text-align: center\"><span style=\"color: rgb(235, 107, 86)\">Данный мод есть по умолчанию с версии v2.4.1</span>&#8203;</div><hr /><b>Описание:</b> Добавляет кнопку &quot;Случайная раздача&quot; на странице tracker.php (трекер). При нажатии на кнопку будет выбрана случайным образом раздача, после чего пользователь будет переадресован на страницу с раздачей (viewtopic.php).",
+  "download_count": 437,
+  "external_url": null,
+  "icon_url": null,
+  "id": 277,
+  "is_fileless": null,
+  "last_update": 1721194768,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1703066405,
+  "resource_state": "visible",
+  "slug": "slucajnaa-razdaca",
+  "tag_line": "Добавляет кнопку \"Случайная раздача\" на трекере.",
+  "tags": [
+    "мод",
+    "моды",
+    "раздача случайная",
+    "случайная раздача"
+  ],
+  "title": "Случайная раздача",
+  "url_path": "/resources/slucajnaa-razdaca.277/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v1.0.3",
+  "versions": [
+    {
+      "download_count": 237,
+      "files": [
+        {
+          "filename": "[FULL] Случайная раздача by belomaxorka.zip",
+          "id": 6066,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1213,
+          "src_url": "https://torrentpier.com/api/resource-versions/523/download?file=6066"
+        }
+      ],
+      "id": 523,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1721194768,
+      "version_state": "visible",
+      "version_string": "v1.0.3",
+      "view_url": "https://torrentpier.com/resources/slucajnaa-razdaca.277/version/523/"
+    },
+    {
+      "download_count": 99,
+      "files": [
+        {
+          "filename": "[FULL] Случайная раздача by belomaxorka.zip",
+          "id": 5760,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1073,
+          "src_url": "https://torrentpier.com/api/resource-versions/443/download?file=5760"
+        }
+      ],
+      "id": 443,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1706024491,
+      "version_state": "visible",
+      "version_string": "v1.0.2",
+      "view_url": "https://torrentpier.com/resources/slucajnaa-razdaca.277/version/443/"
+    },
+    {
+      "download_count": 106,
+      "files": [
+        {
+          "filename": "[FULL] Случайная раздача by belomaxorka.zip",
+          "id": 5692,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1099,
+          "src_url": "https://torrentpier.com/api/resource-versions/425/download?file=5692"
+        }
+      ],
+      "id": 425,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1703066405,
+      "version_state": "visible",
+      "version_string": "v1.0.0",
+      "view_url": "https://torrentpier.com/resources/slucajnaa-razdaca.277/version/425/"
+    }
+  ],
+  "view_count": 859
+}

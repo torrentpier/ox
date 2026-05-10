@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 44321,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 14738,
+  "last_post_date": 1379504877,
+  "node_id": 57,
+  "post_date": 1379148484,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 44321,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ребята, помогите решить проблему с магнет ссылкой (неработает)<br />\n<img src=\"http://i60.fastpic.ru/big/2013/0914/bb/68fa96b61227221324c503b50fbb19bb.jpg\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1379148484,
+      "user_id": 4106,
+      "user_title": "User",
+      "username": "sindoyun"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 44322,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ну чтоб работала, сделайте чтоб работала!",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1379150969,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Sarymian"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 44796,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "а у меня вот встречный вопрос. помогите решить проблему с моим любимым велосипедом (неработает)<br />\nна скрине все видно<br />\n<img src=\"http://c714091.r91.cf2.rackcdn.com/92bb513487f1085645d9f284d3fa92b960fe4142ec.png\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1379504877,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "problema-s-magnet-ssylkoj",
+  "sticky": false,
+  "tags": [],
+  "title": "проблема с магнет ссылкой",
+  "url_path": "/threads/problema-s-magnet-ssylkoj.14738/",
+  "user_id": 4106,
+  "username": "sindoyun",
+  "view_count": 1121
+}

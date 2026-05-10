@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 4052,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 361,
+  "last_post_date": 1318854435,
+  "node_id": 57,
+  "post_date": 1318783849,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 4052,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "помогите с этим  шаблоном..<br />\nпоменялся код опять..почените кто умеет<br />\nКто знает что они там опять поменяли ?<br />\n<span style=\"font-size: 15px\"><b><br />\n</b></span>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1318783849,
+      "user_id": 384,
+      "user_title": "User",
+      "username": "mortan77"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 4065,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "xml или html парсер?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1318790601,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 4066,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "не кидайте только в меня камни--я не знаю..как это определить?<br />\n<a href=\"http://mortan.info/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://mortan.info/</a>  это трекер<br />\n<span style=\"color: rgb(204,204,204)\"><span style=\"font-size: 10px\">--- добавлено: Oct 16, 2011 6:49 PM ---</span></span><br />\nспросил сказали что html",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1318790958,
+      "user_id": 384,
+      "user_title": "User",
+      "username": "mortan77"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 4141,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "ну так кто-нить поможет",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1318854435,
+      "user_id": 384,
+      "user_title": "User",
+      "username": "mortan77"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "sablon-video-kinopoisk-parser",
+  "sticky": false,
+  "tags": [],
+  "title": "Шаблон видео + кинопоиск-парсер",
+  "url_path": "/threads/sablon-video-kinopoisk-parser.361/",
+  "user_id": 384,
+  "username": "mortan77",
+  "view_count": 1868
+}

@@ -1,0 +1,113 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 14665,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 52,
+    "title": "Bug tracker archive"
+  },
+  "id": 1178,
+  "last_post_date": 1333309499,
+  "node_id": 52,
+  "post_date": 1333294963,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1333294717,
+          "file_size": 17728,
+          "filename": "5db454863789469db6f797d.webp",
+          "height": 248,
+          "id": 964,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/5db454863789469db6f797d-webp.964/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/0/965-6b04188baa699101ea798d41c9a9215f.jpg?hash=2gNrOYg2Qq",
+          "width": 997
+        }
+      ],
+      "id": 14665,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "На своем трекере столкнулся со следующей проблемой. После вынужденной смены движка на TP2 с версии 0.35 перестала адекватно обрабатываться статистика Сидов-Личей. Получается так что на раздачах возможно один пир или лич или сид. В таблицах базы данных трекера аналогичная картина. В каждой раздаче не более 1 юзера (установлено путем визуального просмотра). Крон обрабатывается и статистика работы пишется исправно. Логирование также мало что дало. Переключение между XBTT и PHP анонсерами не принесли никаких результатов. Конфиг файл восстановлен до дефолтного. Прошу оказать содействие.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1333294963,
+      "user_id": 1114,
+      "user_title": "User",
+      "username": "ADlab"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14677,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Это на всех раздачах? <br />\nНа них точно большего одного пира? <br />\nБаза идентична посл. свн? <br />\nВ логах ничего? <br />\nА логи самого мускуля?<br />\n<br />\nВсю инфу по логам в тему.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1333308892,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14678,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Самое странное что на всех. Я сам подключаюсь как пир и становлюсь единственным. Логи пусты. Есть подозрения на неправильно подогнанную таблицу bb_bt_tracker<br />\nкаким то расчудесным образом там оказалось<br />\n<img src=\"http://img812.imageshack.us/img812/8400/49d9a83891b24a6794a77f4.png\" alt=\"\" />",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1333309335,
+      "user_id": 1114,
+      "user_title": "User",
+      "username": "ADlab"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14679,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Разумеется когда удалил Primary индекс все заработало.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1333309499,
+      "user_id": 1114,
+      "user_title": "User",
+      "username": "ADlab"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "ne-pravil-no-rabotaet-statistika",
+  "sticky": false,
+  "tags": [],
+  "title": "Не правильно работает статистика",
+  "url_path": "/threads/ne-pravil-no-rabotaet-statistika.1178/",
+  "user_id": 1114,
+  "username": "ADlab",
+  "view_count": 2232
+}

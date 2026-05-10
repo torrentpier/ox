@@ -1,0 +1,150 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 56801,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 24793,
+  "last_post_date": 1389125178,
+  "node_id": 57,
+  "post_date": 1389121799,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1389121778,
+          "file_size": 37086,
+          "filename": "Безымянный.webp",
+          "height": 238,
+          "id": 2349,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bezymannyj-webp.2349/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2354-223511f20dd00accc09636aeb2b58ce1.jpg?hash=i6FUtoj7nH",
+          "width": 1340
+        }
+      ],
+      "id": 56801,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "В админке появилась такая байда, даже не знаю как её описать, в общем скриншот прикладываю. Может кто встречался с этим, натолкните где поправить? Само откуда то взялось, файлы не правил.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1389121799,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 56802,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Lange\">В админке появилась такая байда, даже не знаю как её описать, в общем скриншот прикладываю. Может кто встречался с этим, натолкните где поправить? Само откуда то взялось, файлы не правил.</blockquote> <br />\nТы затер в шаблоне теги шаблонизатора.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1389122166,
+      "user_id": 4510,
+      "user_title": "User",
+      "username": "Alex Kur"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 56803,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Alex Kur\">Ты затер в шаблоне теги шаблонизатора.</blockquote> <br />\nПо подробнее пожалуйста, буду очень благодарен.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1389122323,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 56804,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Lange\">По подробнее пожалуйста, буду очень благодарен.</blockquote> <br />\nСравни дефолтный шаблон со своим. Больше не скажу, прости.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1389122411,
+      "user_id": 4510,
+      "user_title": "User",
+      "username": "Alex Kur"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 56805,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Alex Kur</b>, &lt;!--******************--&gt;<br />\n&lt;!-- IF SIMPLE_HEADER --&gt;<br />\n&lt;!--==================--&gt;<br />\n <br />\n&lt;style type=&quot;text/css&quot;&gt;body { background: #E3E3E3; min-width: 10px; }&lt;/style&gt;<br />\n <br />\n&lt;!--=================--&gt;<br />\n&lt;!-- ELSEIF IN_ADMIN --&gt;<br />\n&lt;!--=================--&gt; есть они",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1389122738,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 56811,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "условие не зактыто, что тут думать и гадать",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1389125178,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "adminka",
+  "sticky": false,
+  "tags": [],
+  "title": "Админка",
+  "url_path": "/threads/adminka.24793/",
+  "user_id": 55,
+  "username": "Lange",
+  "view_count": 1707
+}

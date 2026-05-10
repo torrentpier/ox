@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 74905,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 35281,
+  "last_post_date": 1423573524,
+  "node_id": 80,
+  "post_date": 1423566891,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 74905,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вот я создал шаблон, как его сделать мультиязычным?<br />\nФорма: <br />\n<pre class=\"xfBb-code\" data-lang=\"\">&lt;-{Название} INP[title_rus]-&gt;\n&lt;-poster                  INP[poster] `URL` E[load_pic_btn] `Минимальный размер - 200х200, максимальный - 500х500` T[poster_size] -&gt;\n&lt;-{Год выпуска}           INP[{Год выпуска},4,4] -&gt;\n&lt;-{Жанр}                  INP[{Жанр},50,30] -&gt;\n&lt;-{Разработчик}           INP[{Разработчик},80,50] -&gt;\n&lt;-{Платформа}             SEL[platform_game_dvd]-&gt;\n&lt;-{Версия игры}                SEL[game_version]-&gt;\n&lt;-{Тип издания}           SEL[game_type_edition] -&gt;\n&lt;-{Язык игры}             `Язык интерфейса` SEL[game_lang]  `в том числе` INP[{в том числе},100,50] `(для многоязычных изданий)` `BR` `Язык озвучки` SEL[game_lang_sound]-&gt;\n&lt;-{Таблэтка}              SEL[game_tabletka] -&gt;\n&lt;-{Системные требования}  TXT[{Системные требования},5] -&gt;\n&lt;-{Описание}              `Описание должно быть на русском языке` `BR` TXT[{Описание},10] -&gt;\n&lt;-{Особенности RePack&#039;a}   `Заполняется, если выбран тип издания - Repack` TXT[{Особенности RePack&#039;a}]-&gt;\n&lt;-{Список изменений}       `Особенности игры, отличия от аналогичных раздач и т.п.` TXT[{Список изменений},5]-&gt;\n&lt;-{Порядок установки}     TXT[{Порядок установки},3]-&gt;\n&lt;-{Скриншоты}      `Не менее трех скриншотов одного размера, оформленных в` E[faq_game] `- увеличением по клику до оригинального размера. Размер скриншотов должен соответствовать разрешению, поддерживаемому игрой. Минимум - 640х480, максимум - 1920х1200` TXT[screenshots] E[load_pic_btn]-&gt;</pre>Сообщение:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">title_rus[HEAD,req]\nposter[img,POSTER,req]\n{Год выпуска}[]\n{Жанр}[]\n{Разработчик}[]\nplatform_game_dvd[]\ngame_version[req]\ngame_type_edition[req]\ngame_lang[req]\n{в том числе}[]\ngame_lang_sound[]\ngame_tabletka[]\n{Системные требования}[]\n{Описание}[]\n{Особенности RePack&#039;a}[]\n{Список изменений}[spoiler]\n{Порядок установки}[spoiler]\nscreenshots[spoiler,req]</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1423566891,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 74922,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/2685/\">@ler</a> в текущем исполнении - никак. Сделать аналогичный шаблон на другом языке и в зависимости от языка пользователя грузить нужный... но это опять же доработка существующего функционала и наверное не самый верный путь. Перенесу тему в баги, потому что работа в отношении шаблонов для релизов будет вестись однозначно, вариант который был впилен с рутрекера напрямую так и не был доработан по сути 🙁",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1423573219,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 74925,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Жаль. А вот со старым шаблонизатором такое осуществимо. Может зря его выпилили",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1423573524,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    }
+  ],
+  "prefix_id": 31,
+  "reply_count": 2,
+  "slug": "mul-tiazycnyj-sabon-reliza",
+  "sticky": false,
+  "tags": [],
+  "title": "Мультиязычный шабон релиза",
+  "url_path": "/threads/mul-tiazycnyj-sabon-reliza.35281/",
+  "user_id": 0,
+  "username": "ler",
+  "view_count": 1110
+}

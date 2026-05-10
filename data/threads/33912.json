@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 73097,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 33912,
+  "last_post_date": 1422028466,
+  "node_id": 57,
+  "post_date": 1422026223,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 73097,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В чем отличие?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1422026223,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 73105,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "fetch_row - вернет текущую строку или последнюю строку, которая подходит под критерий выборки в запросе<br />\nfetch_rowset - возвращает массив строк<br />\n<br />\nпримерно так",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1422028437,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 73106,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Row один индекс отдаст в массиве, set все",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1422028466,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "db-fetch_row-vs-db-fetch_rowset",
+  "sticky": false,
+  "tags": [],
+  "title": "DB()->fetch_row vs. DB()->fetch_rowset",
+  "url_path": "/threads/db-fetch_row-vs-db-fetch_rowset.33912/",
+  "user_id": 0,
+  "username": "ler",
+  "view_count": 1094
+}

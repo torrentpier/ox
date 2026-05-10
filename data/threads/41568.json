@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 88880,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41568,
+  "last_post_date": 1481747952,
+  "node_id": 57,
+  "post_date": 1479142786,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88880,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Сегодня при попытке перейти в некоторые топики стало вылетать вот такое вот сообщение &quot;Could not update topic views&quot;. Кто может подсказать как исправить ошибку? Не могу понять причину, почему на каких то сообщениях появляется ошибка о подсчете просмотров, на других нет.<br />\nЕсли я не ошибаюсь, то еще лет 5 назад сталкивался с подобным на форумном движке phpbb, но там помоему эта ошибка появлялась сразу во всех топиках. Уже не помню как там это исправлял.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1479142786,
+      "user_id": 6729,
+      "user_title": "User",
+      "username": "WinWoolF"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 89079,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "заходишь во viewtopic.php<br />\nищешь<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">if (!DB()-&gt;sql_query($sql)) {\n    message_die(GENERAL_ERROR, &quot;Could not update topic views.&quot;, &#039;&#039;, __line__,\n        __file__, $sql);\n}</pre>и перед ним вставляешь<br />\n<pre class=\"xfBb-code\" data-lang=\"\">var_dump($sql);\ndie();</pre><br />\nНу и смотрим что выдает<br />\n<br />\n<br />\nТакже через phpmyadmin попробуй сделать проверку и восстановление всех таблиц",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1481747952,
+      "user_id": 6370,
+      "user_title": "User",
+      "username": "sхс"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "could-not-update-topic-views",
+  "sticky": false,
+  "tags": [],
+  "title": "Could not update topic views",
+  "url_path": "/threads/could-not-update-topic-views.41568/",
+  "user_id": 6729,
+  "username": "WinWoolF",
+  "view_count": 1309
+}

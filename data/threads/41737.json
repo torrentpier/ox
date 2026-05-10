@@ -1,0 +1,178 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 91471,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41737,
+  "last_post_date": 1497347951,
+  "node_id": 57,
+  "post_date": 1496844886,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1496844807,
+          "file_size": 147184,
+          "filename": "log.rar",
+          "height": 0,
+          "id": 4844,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/log-rar.4844/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 91471,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Переехал 2 июня на более мощьный VPS c ОЗУ 1 гиг. Теперь все файлы  не качаются и выдаётся данная ошибка. Почистил лог 2 июня. Думаю сегодня уже должно набраться ошибок в чем дело. Помогает только перезалив торентов. Ошибка при попытке скачать торрент файл выдает ошибку &quot;This is not a bencoded file&quot; искал по форуму Перевод файла <b>functions_torrent.php</b> и <b>config.php</b> в utf-8 без BOM результата не дал. Помогло отключением опции в настройках форума <b>Aвтодобавление passkey к торрент-файлам перед их скачиванием. </b>Файл скачитается, но когда его добавляешь на закачку в торрент клиент выдают ошибку неверная кодировка файла. Новые логи прикладываю. Помогите....",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1496844886,
+      "user_id": 5984,
+      "user_title": "Blocked",
+      "username": "kenigboy2104"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91473,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Архив нормальным архиватором запакуйте.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1496865740,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 4,
+      "attachments": [
+        {
+          "attach_date": 1496900108,
+          "file_size": 403,
+          "filename": "sql_slow_tr.txt",
+          "height": 0,
+          "id": 4846,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/sql_slow_tr-txt.4846/",
+          "thumbnail_url": null,
+          "width": 0
+        },
+        {
+          "attach_date": 1496900108,
+          "file_size": 1004,
+          "filename": "sql_error_tr.txt",
+          "height": 0,
+          "id": 4847,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/sql_error_tr-txt.4847/",
+          "thumbnail_url": null,
+          "width": 0
+        },
+        {
+          "attach_date": 1496900108,
+          "file_size": 122054,
+          "filename": "sql_slow_bb.txt",
+          "height": 0,
+          "id": 4848,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/sql_slow_bb-txt.4848/",
+          "thumbnail_url": null,
+          "width": 0
+        },
+        {
+          "attach_date": 1496900307,
+          "file_size": 176344,
+          "filename": "log.zip",
+          "height": 0,
+          "id": 4849,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/log-zip.4849/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 91475,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Запаковал в zip архив",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1496900378,
+      "user_id": 5984,
+      "user_title": "Blocked",
+      "username": "kenigboy2104"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 91564,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вопрос решил<br />\nОшибка была в том что когда закачивал торренты на новый сервер закачал их не в двоичном режиме.  Чтоб перейти в двоичный режим надо в filezille  при отключенных соединениях с серверами в меню выбрать ПЕРЕДАЧА- РЕЖИМ ПЕРЕДАЧИ- ДВОИЧНЫЙ РЕЖИМ. Далее подключаемся и пере заливаем все торренты. Когда делаете бекап- учитывайте это.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1497347951,
+      "user_id": 5984,
+      "user_title": "Blocked",
+      "username": "kenigboy2104"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "problema-posle-pereezda-na-novyj-vps-this-is-not-a-bencoded-file",
+  "sticky": false,
+  "tags": [
+    "this is not a bencoded file",
+    "переезд"
+  ],
+  "title": "Проблема после переезда на новый VPS \"This is not a bencoded file\"",
+  "url_path": "/threads/problema-posle-pereezda-na-novyj-vps-this-is-not-a-bencoded-file.41737/",
+  "user_id": 5984,
+  "username": "kenigboy2104",
+  "view_count": 1300
+}

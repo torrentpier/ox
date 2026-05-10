@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 14083,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 52,
+    "title": "Bug tracker archive"
+  },
+  "id": 1138,
+  "last_post_date": 1332353780,
+  "node_id": 52,
+  "post_date": 1332353035,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14083,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте! Я ставил torrentpier несколько раз и вот работаю над заключительной версией. Но у меня в админке показывает, что кол-во пользователей 5, а на самом деле 3 (остались с прошлой версии видимо) хотя я чистил и хостинг и БД. Не подскажите как можно пересчитать статистику. Напрягает. 🙂",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1332353035,
+      "user_id": 1087,
+      "user_title": "User",
+      "username": "ruflight"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14084,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "анонимус и бот, не?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1332353180,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14085,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Locer</b>, изначально всего три пользователя: Anonymous, bot, admin<br />\n<b>ruflight</b>, смотрите в базе кто там у вас остался или очищайте кэш",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1332353764,
+      "user_id": 435,
+      "user_title": "User",
+      "username": "S.T.@.L.K.E.R."
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 14086,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо! Я не знал, что такие есть  ...",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1332353780,
+      "user_id": 1087,
+      "user_title": "User",
+      "username": "ruflight"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "nepravil-naa-statistika",
+  "sticky": false,
+  "tags": [],
+  "title": "Неправильная статистика",
+  "url_path": "/threads/nepravil-naa-statistika.1138/",
+  "user_id": 1087,
+  "username": "ruflight",
+  "view_count": 1678
+}

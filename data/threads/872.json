@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 10952,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 872,
+  "last_post_date": 1328281334,
+  "node_id": 57,
+  "post_date": 1328274642,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10952,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Добрый день!<br />\nПодскажите пожалуйста в чем может быть проблема.<br />\nТрекер запустился. Пытаюсь залогинится под админом, но после нажатия кнопки вход открывается страница 404 хостинга, при этом если вводить неправильный пароль то выдает &quot;Вы ввели неверное/неактивное имя пользователя или неверный пароль.&quot;<br />\nСоздал нового юзера и такая же ситуация.<br />\nЗаранее благодарен за помощь и просьба тапками не кидать, по поиску не нашел. Спасибо 😉",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1328274642,
+      "user_id": 862,
+      "user_title": "User",
+      "username": "Dmitry"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10955,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Возможно проблема в пути к файлам. Что написано в адресной строке браузера когда появляется ошибка 404?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1328277574,
+      "user_id": 435,
+      "user_title": "User",
+      "username": "S.T.@.L.K.E.R."
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10956,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Отправляет на страницу хостинга <a href=\"http://hostinger.com.ua/oshibka_404\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://hostinger.com.ua/oshibka_404</a> Вот адрес самого трекера ptrack.16mb.com",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1328278012,
+      "user_id": 862,
+      "user_title": "User",
+      "username": "Dmitry"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10958,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"php\">cookiePath    = &quot;/&quot;;</pre>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1328281079,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Yoko"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 10961,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "спасибо большое! 🙂",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1328281334,
+      "user_id": 862,
+      "user_title": "User",
+      "username": "Dmitry"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "posle-logina-na-treker-pokazyvaet-404-stranicu",
+  "sticky": false,
+  "tags": [],
+  "title": "После логина на трекер показывает 404 страницу",
+  "url_path": "/threads/posle-logina-na-treker-pokazyvaet-404-stranicu.872/",
+  "user_id": 862,
+  "username": "Dmitry",
+  "view_count": 1494
+}

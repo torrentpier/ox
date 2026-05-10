@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 57886,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25639,
+  "last_post_date": 1389962662,
+  "node_id": 111,
+  "post_date": 1389962662,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57886,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 559: Исправление критичной ошибки ревизии r557. Спасибо greencell за багрепорт.</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">glix08</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/upload/config.php \n    Modify    /trunk/upload/includes/functions_admin_cron.php \n\nИсправление критичной ошибки ревизии r557. Спасибо greencell за багрепорт.</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1389962662,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "revision-559-ispravlenie-kriticnoj-osibki-revizii-r557-spasibo-greencell-za-bagreport",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 559: Исправление критичной ошибки ревизии r557. Спасибо greencell за багрепорт.",
+  "url_path": "/threads/revision-559-ispravlenie-kriticnoj-osibki-revizii-r557-spasibo-greencell-za-bagreport.25639/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 961
+}

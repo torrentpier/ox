@@ -1,0 +1,46 @@
+{
+  "category": {
+    "description": "Section with all paid modifications for TorrentPier.",
+    "id": 2,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Paid",
+    "view_url": "https://torrentpier.com/resources/categories/paid.2/"
+  },
+  "current_files": [],
+  "custom_fields": {},
+  "description_attachments": [],
+  "description_parsed": "<b>Что умеет</b>:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Добавление друзей в группу друзья\\враги ajax.</li>\n<li data-xf-list-type=\"ul\">Возможность удаление друзей\\врагов ajax.</li>\n<li data-xf-list-type=\"ul\">Оповещение в лс об добавлении друга\\врага.</li>\n<li data-xf-list-type=\"ul\">Функции врагов , возможность скрыть профиль, запретить писать сообщения в лс, скрывать посты(все посты скрываются под спойлер) врага.</li>\n<li data-xf-list-type=\"ul\">Так же запреты редактируются на ajax&#039;e</li>\n</ul>Так же имеется запрет на добавление во враги администраторов.<br />\nP.S. В зависимости от желания покупателя, напишу дополнительный функционал<br />\nЦена от 30$",
+  "download_count": 0,
+  "external_url": null,
+  "icon_url": null,
+  "id": 75,
+  "is_fileless": null,
+  "last_update": 1389633208,
+  "rating_avg": 0,
+  "rating_count": 0,
+  "resource_date": 1389633208,
+  "resource_state": "visible",
+  "slug": "social-nyj-mod",
+  "tag_line": "Друзья/враги теперь и на вашем трекере",
+  "tags": [],
+  "title": "Социальный мод",
+  "url_path": "/resources/social-nyj-mod.75/",
+  "user_id": 3170,
+  "username": "drew",
+  "version": "1.0",
+  "versions": [
+    {
+      "download_count": 0,
+      "files": [],
+      "id": 80,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1389633208,
+      "version_state": "visible",
+      "version_string": "1.0",
+      "view_url": "https://torrentpier.com/resources/social-nyj-mod.75/version/80/"
+    }
+  ],
+  "view_count": 684
+}

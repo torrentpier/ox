@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 88042,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 41493,
+  "last_post_date": 1469186468,
+  "node_id": 80,
+  "post_date": 1469027316,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88042,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Движок 2.1.5 чистый.<br />\n<br />\nПроблема появилась при скачивании торрент-файла в новой раздаче. При чём, под Админом торрент-файл скачивается штатно и я встаю на раздачу. Под обычным (зарегистрированным) пользователем, при попытке скачать торрент-файл появляется ошибка error или страница с надписью &quot;Страница такая-то не работает<br />\nСайт такой-то не может обработать этот запрос.&quot;<br />\nПри этом, в строке браузера ссылка на файл dl.php<br />\n<br />\n- Все крон-задачи работают штатно.<br />\n- В логах ошибок нет.<br />\n- Кодировки файлов utf-8 без BOM проверены<br />\n- Права доступа в админке к регистрации и скачиванию торрент-файлов настроены верно, то есть выставлено для зарегистрированных пользователей.<br />\n<br />\nЧто ещё можно (нужно) проверить или куда копать?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1469027316,
+      "user_id": 1478,
+      "user_title": "User",
+      "username": "Nikolay90"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88043,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Что за версия движка? Вернее откуда скачали?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1469047360,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88045,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\">Что за версия движка? Вернее откуда скачали?</blockquote>Движок 2.1.5 чистый без модов. Скачал из центра загрузки <a href=\"http://get.torrentpier.com\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Центр загрузки TorrentPier</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1469047443,
+      "user_id": 1478,
+      "user_title": "User",
+      "username": "Nikolay90"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 88058,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ошибка была устранена. Сам накосячил.(((<br />\nТочнее, ошибок было две: некорректно отвязанный крон и в настройках форув была включена опция &quot;<br />\n<span style=\"font-size: 12px\"><b>Проверять announce url</b></span>&quot;.<br />\n<br />\nЗакройте, пожалуйста, тему.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1469186468,
+      "user_id": 1478,
+      "user_title": "User",
+      "username": "Nikolay90"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 3,
+  "slug": "osibka-pri-skacivanii-novogo-torrent-fajla",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка при скачивании нового торрент-файла",
+  "url_path": "/threads/osibka-pri-skacivanii-novogo-torrent-fajla.41493/",
+  "user_id": 1478,
+  "username": "Nikolay90",
+  "view_count": 1338
+}

@@ -1,0 +1,75 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 97597,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 42685,
+  "last_post_date": 1751826297,
+  "node_id": 111,
+  "post_date": 1751826297,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1751826289,
+          "file_size": 6648,
+          "filename": "logos-hexagon-green&blue@0,5x.webp",
+          "height": 343,
+          "id": 6478,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/logos-hexagon-green-blue-0-5x-webp.6478/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6482-921e5090a4f5bf87db249c0cb261be23.jpg?hash=jFIp-r3dyo",
+          "width": 302
+        }
+      ],
+      "id": 97597,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier Cattle. Версия 2.4.8</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/6478/\" alt=\"logos-hexagon-green&amp;blue@0,5x.webp\" /><br />\n<br />\n<b>Ссылка:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/releases/tag/v2.4.8\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.4.8 · torrentpier/torrentpier</a><br />\n<br />\n<b>Чейнджлог:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/compare/v2.4.7...v2.4.8\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Comparing v2.4.7...v2.4.8 · torrentpier/torrentpier</a><br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-bug-bug-fixes\"></a>🐛 Bug Fixes&#8203;<a class=\"hoverLink\" href=\"#-bug-bug-fixes\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(TorrentFileList)</i> Avoid array_merge reindexing for numeric folder names (<a href=\"https://github.com/torrentpier/torrentpier/pull/2014\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2014</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/a5fbc2ffc7389c30ffbb98d253ff8e936528fec1\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">a5fbc2f</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(redirect)</i> Add no-cache headers to prevent browser caching of redirects (<a href=\"https://github.com/torrentpier/torrentpier/pull/2010\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2010</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/134b3dfa5cd8e8e5ce3f10912b58afecc4f118e0\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">134b3df</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-tractor-refactor\"></a>🚜 Refactor&#8203;<a class=\"hoverLink\" href=\"#-tractor-refactor\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\">Use DEFAULT_CHARSET constant instead of hardcoded string (<a href=\"https://github.com/torrentpier/torrentpier/pull/2011\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2011</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/c2cbc77b144057d3d37cd58b635eabc6280fe137\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">c2cbc77</a>)</li>\n</ul>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1751826297,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-cattle-versia-2-4-8",
+  "sticky": false,
+  "tags": [
+    "cattle",
+    "новая версия",
+    "релиз",
+    "ченжлог"
+  ],
+  "title": "TorrentPier Cattle. Версия 2.4.8",
+  "url_path": "/threads/torrentpier-cattle-versia-2-4-8.42685/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 348
+}

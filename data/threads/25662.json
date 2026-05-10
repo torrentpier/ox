@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 58101,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 25662,
+  "last_post_date": 1390467628,
+  "node_id": 80,
+  "post_date": 1390465970,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58101,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "[23-Jan-2014 10:28:57] PHP Notice:  Use of undefined constant POSTING_URL - assumed &#039;POSTING_URL&#039; in /var/www/dr_brown/data/www/unitaz.org.ua/includes/bbcode.php on line 225<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">                    &#039;U_MORE_SMILIES&#039; =&gt; POSTING_URL .&quot;?mode=smilies&quot;,</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1390465970,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58102,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"http://code.google.com/p/torrentpier2/source/browse/trunk/upload/includes/init_bb.php#408\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://code.google.com/p/torrentpier2/source/browse/trunk/upload/includes/init_bb.php#408</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1390467293,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58103,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>PheRum</b>, я еще 566 не поставил",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1390467628,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 2,
+  "slug": "r565-undefined-constant-posting_url",
+  "sticky": false,
+  "tags": [],
+  "title": "r565 undefined constant POSTING_URL",
+  "url_path": "/threads/r565-undefined-constant-posting_url.25662/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1012
+}

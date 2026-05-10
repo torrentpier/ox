@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 999,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 106,
+  "last_post_date": 1312252606,
+  "node_id": 57,
+  "post_date": 1312198943,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 999,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте!<br />\nРазъясните пожалуйста содержимое папки install.<br />\n Для чего конкретно нужны php-fpm+nginx, sphinx и xbt. Что в них? не совсем понял.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1312198943,
+      "user_id": 145,
+      "user_title": "User",
+      "username": "Sputnik"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 1001,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Пример настройки серверного софта. Человек, занимающийся сервером, знает что там и для чего.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1312202231,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 1037,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Exile</b>,<br />\nдолжен знать, но не всегда это так (",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1312215944,
+      "user_id": 14,
+      "user_title": "User",
+      "username": "Chumaster59"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 1058,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Exile спасибо большое за ответ. Теперь буду знать куда копать ежели эти настройки мне понадобятся.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1312252606,
+      "user_id": 145,
+      "user_title": "User",
+      "username": "Sputnik"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "papka-install-v-svn",
+  "sticky": false,
+  "tags": [],
+  "title": "Папка Install в SVN",
+  "url_path": "/threads/papka-install-v-svn.106/",
+  "user_id": 145,
+  "username": "Sputnik",
+  "view_count": 1829
+}

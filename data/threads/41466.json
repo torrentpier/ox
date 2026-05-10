@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 87618,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41466,
+  "last_post_date": 1463403602,
+  "node_id": 57,
+  "post_date": 1463336111,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87618,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1463336196,
+      "message_parsed": "Скачал с <a href=\"https://github.com/torrentpier/torrentpier\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">github</a> , установка не удалась<br />\nСкачал с <a href=\"http://get.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Центра Загрузок</a> Установить удалось<br />\n<br />\nТак все же откуда взять актуальную версию?<br />\nСтавил на Open Server,при открытие страницы пишет страница не доступна",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1463336111,
+      "user_id": 6697,
+      "user_title": "User",
+      "username": "Mansel"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87622,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Актуальная версия 2.1.5, читай мануал,выполняй кажлый шаг и все встанет нормально",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1463376259,
+      "user_id": 6554,
+      "user_title": "User",
+      "username": "Fakt_37"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87623,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Mansel\">Скачал с <a href=\"https://github.com/torrentpier/torrentpier\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">github</a> , установка не удалась<br />\nСкачал с <a href=\"http://get.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Центра Загрузок</a> Установить удалось<br />\n<br />\nТак все же откуда взять актуальную версию?<br />\nСтавил на Open Server,при открытие страницы пишет страница не доступна</blockquote>Еще не факт, что ваш Open Server корректно работает, пользуйтесь инструкцией <a href=\"http://faq.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Инструкция TorrentPier II</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1463376382,
+      "user_id": 462,
+      "user_title": "User",
+      "username": "Virtuoz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87628,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "На OpenServer все работает!!! Основные шаги:<br />\nЗалил файлы в корень доменной папки;<br />\nБазу заливаешь из папки install;<br />\nПрописываешь в конфиге;<br />\nПри проблемах авторизации пишешь напрямую домен куков localhost.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1463403602,
+      "user_id": 5274,
+      "user_title": "User",
+      "username": "LargeLord"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "gde-vzat-aktual-nuu-versiu-torrentpier",
+  "sticky": false,
+  "tags": [],
+  "title": "Где взять актуальную версию TorrentPier",
+  "url_path": "/threads/gde-vzat-aktual-nuu-versiu-torrentpier.41466/",
+  "user_id": 6697,
+  "username": "Mansel",
+  "view_count": 1116
+}

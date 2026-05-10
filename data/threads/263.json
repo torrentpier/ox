@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 2815,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 263,
+  "last_post_date": 1316064855,
+  "node_id": 57,
+  "post_date": 1316015042,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 2815,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Возник такой вопрос: как подключить первый сайдбар?<br />\nк примеру в donate.php что нужно вставить что бы подключить первый сайдбар?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1316015042,
+      "user_id": 255,
+      "user_title": "",
+      "username": "Harry"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 2816,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "sidebar в конфиге:<br />\n<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$page_cfg[&#039;show_sidebar1&#039;] = array(\n#    BB_SCRIPT =&gt; true\n    &#039;index&#039;  =&gt; true,\n);</pre><br />\nСодержимое в misc\\html &gt; sidebar1.html<br />\n<br />\nДонат редактируется в donate.tpl и ссылку в sidebar",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1316015703,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 2817,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "сайдбар вылез, но хотелось бы ещё вывести данные с page_header.tpl<br />\nт.е. блок рейтинга",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1316016882,
+      "user_id": 255,
+      "user_title": "",
+      "username": "Harry"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 2835,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Harry</b>, админка -&gt; Настройки Форумов -&gt; Показывать UL/DL статистику юзера на главной странице форума",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1316064855,
+      "user_id": 11,
+      "user_title": "User",
+      "username": "XANDER-CAGE"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "sidebar-i-rejting-na-glavnoj",
+  "sticky": false,
+  "tags": [],
+  "title": "sidebar и рейтинг на главной",
+  "url_path": "/threads/sidebar-i-rejting-na-glavnoj.263/",
+  "user_id": 255,
+  "username": "Harry",
+  "view_count": 1855
+}

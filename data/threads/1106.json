@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 13523,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 52,
+    "title": "Bug tracker archive"
+  },
+  "id": 1106,
+  "last_post_date": 1354257616,
+  "node_id": 52,
+  "post_date": 1331619940,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 13523,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Столкнулся с такой проблемой, в настройках профиля, где <b>&quot;Галерея аватар&quot;</b> не могу переключаться между категориями, т.е. переходить в др. папки с аватарками. Кто ни будь сталкивался с такой проблемой? Если да, подскажите решение или же где та часть кода, отвечающая за переходы по папкам.<br />\nУ меня стоит <b>TorrenPier 2.1 Stable (R300)</b>.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1331619940,
+      "user_id": 992,
+      "user_title": "User",
+      "username": "SAVEX"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 23470,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"SAVEX\">Столкнулся с такой проблемой, в настройках профиля, где <b>&quot;Галерея аватар&quot;</b> не могу переключаться между категориями, т.е. переходить в др. папки с аватарками. Кто ни будь сталкивался с такой проблемой? Если да, подскажите решение или же где та часть кода, отвечающая за переходы по папкам.<br />\nУ меня стоит <b>TorrenPier 2.1 Stable (R300)</b>.</blockquote>На TorrenPier ll Stable (R400)  всё отлично работает.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1354257616,
+      "user_id": 3161,
+      "user_title": "User",
+      "username": "Дмитрий"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "problema-s-galereej-avatar",
+  "sticky": false,
+  "tags": [],
+  "title": "Проблема с \"Галереей аватар\"",
+  "url_path": "/threads/problema-s-galereej-avatar.1106/",
+  "user_id": 992,
+  "username": "SAVEX",
+  "view_count": 2325
+}

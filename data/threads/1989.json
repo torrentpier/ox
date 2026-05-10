@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 25348,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1989,
+  "last_post_date": 1357636732,
+  "node_id": 57,
+  "post_date": 1357592995,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25348,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"\">&lt;title&gt;&lt;!-- IF PAGE_TITLE --&gt;{PAGE_TITLE} :: {SITENAME}&lt;!-- ELSE --&gt;{SITENAME}&lt;!-- ENDIF --&gt;&lt;/title&gt;</pre>Нужно что бы на главной (индекс.пхп) не появлялся Home (Главная) а было чистое название как в конфиге, но на остальных страницах - такое как выше в коде, помогите пожалуйста.<br />\n <br />\nИ еще - не могу найти где находятся все файлы тегов, описания сайта (видел такие .xml)",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1357592995,
+      "user_id": 3266,
+      "user_title": "User",
+      "username": "extazys"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 25379,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "В конфиге нет sitename, можно взять domainname из сервера.<br />\n <br />\nindex.php<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&#039;PAGE_TITLE&#039;            =&gt; ($viewcat) ? $cat_title_html[$viewcat] : $lang[&#039;HOME&#039;],</pre>на<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&#039;PAGE_TITLE&#039;            =&gt; ($viewcat) ? $cat_title_html[$viewcat] : $_SERVER[&#039;SERVER_NAME&#039;],</pre> <br />\nНу или вместо $_SERVER[&#039;SERVER_NAME&#039;] любое &quot;ля-ля-ля&quot;",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1357636732,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "nazvanie-trekera",
+  "sticky": false,
+  "tags": [],
+  "title": "Название трекера",
+  "url_path": "/threads/nazvanie-trekera.1989/",
+  "user_id": 3266,
+  "username": "extazys",
+  "view_count": 972
+}

@@ -1,0 +1,98 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 55836,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 23983,
+  "last_post_date": 1389558997,
+  "node_id": 80,
+  "post_date": 1387960129,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 55836,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Сегодня по двум трекерам одинаковая проблема, показывает всем юзерам, у которых не задан день рождение, ближайшее день рождения 43 года, перепробывал все способы из этого поста <a href=\"http://torrentpier.com/threads/%D1%87%D1%82%D0%BE-%D1%8D%D1%82%D0%BE.21173/\" class=\"link link--internal\">http://torrentpier.com/threads/что-это.21173/</a> ничего не помогает.<br />\nУ всех поле user_birthday: 0000-00-00, т.е. по умолчанию, пытаюсь выполнить запрос:<br />\nUPDATE bb_users SET user_birthday = &#039;&#039; WHERE user_birthday = &#039;0000-00-00&#039;;<br />\nПишет что затронуто 0 строк, т.е. ничего не меняет.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1387960129,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 55855,
+      "is_admin": false,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"http://torrentpier.com/threads/%D1%87%D1%82%D0%BE-%D1%8D%D1%82%D0%BE.21173/#post-52441\" class=\"link link--internal\">что это?)</a> мне это помогло. Ревизия 553",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1387969847,
+      "user_id": 1546,
+      "user_title": "Administrator",
+      "username": "Conteo"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 55866,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>eXtatik</b>, спс",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1387981492,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57252,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://code.google.com/p/torrentpier2/source/detail?r=556\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://code.google.com/p/torrentpier2/source/detail?r=556</a>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1389558997,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 3,
+  "slug": "43-goda",
+  "sticky": false,
+  "tags": [],
+  "title": "43 года",
+  "url_path": "/threads/43-goda.23983/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1331
+}

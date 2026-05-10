@@ -1,0 +1,65 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95202,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 58,
+    "title": "Suggestions for improving TorrentPier"
+  },
+  "id": 42169,
+  "last_post_date": 1695316759,
+  "node_id": 58,
+  "post_date": 1695316759,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1695316755,
+          "file_size": 59252,
+          "filename": "Screenshot_2.webp",
+          "height": 598,
+          "id": 5522,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot_2-webp.5522/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5526-5f92135a641c57408b96e7f80a7c89d1.jpg?hash=7DiEGjwGa3",
+          "width": 3808
+        }
+      ],
+      "id": 95202,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "1.multitracker и чат - как стандартний модули<br />\n2.сделать две кнопки одельны<br />\na.загрузка изображений<br />\nb.загрузка торрента<br />\n<br />\n<img src=\"https://torrentpier.com/attachments/5522/\" alt=\"Screenshot_2.webp\" /><br />\n3.возможности добавить больше изображений  одновременно",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1695316759,
+      "user_id": 5904,
+      "user_title": "User",
+      "username": "andys"
+    }
+  ],
+  "prefix_id": 41,
+  "reply_count": 0,
+  "slug": "pozelania",
+  "sticky": false,
+  "tags": [],
+  "title": "Пожелания",
+  "url_path": "/threads/pozelania.42169/",
+  "user_id": 5904,
+  "username": "andys",
+  "view_count": 561
+}

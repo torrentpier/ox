@@ -1,0 +1,111 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 96761,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 86,
+    "title": "Questions about PHP"
+  },
+  "id": 42313,
+  "last_post_date": 1728578170,
+  "node_id": 86,
+  "post_date": 1728291376,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1728291361,
+          "file_size": 25368,
+          "filename": "viettorrent_9-4-2019.webp",
+          "height": 195,
+          "id": 6181,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/viettorrent_9-4-2019-webp.6181/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6185-96f0e6c66f727b58e2ba91624702c1d2.jpg?hash=Gh6x9Ziq7i",
+          "width": 669
+        },
+        {
+          "attach_date": 1728292239,
+          "file_size": 14840,
+          "filename": "track-1789.webp",
+          "height": 173,
+          "id": 6183,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/track-1789-webp.6183/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6187-16b72894812a33b5d918fb9770f3d8c6.jpg?hash=2jpZpHmudG",
+          "width": 800
+        }
+      ],
+      "id": 96761,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1728292243,
+      "message_parsed": "1. Есть необходимость обозначить релиз-группу на странице viewforum, чтобы было видно, что раздача нашего трекера.<br />\n<br />\n<img src=\"https://torrentpier.com/attachments/6181/\" alt=\"viettorrent_9-4-2019.png\" /><br />\n<img src=\"https://torrentpier.com/attachments/6183/\" alt=\"track-1789.webp\" /><br />\n<br />\nКак прописать условие в viewforum.php и вывести в viewforum.tpl?<br />\n<br />\n2. Также есть задумка выдавать торрент-файл нашим релизам только с нашим трекером, а мультитрекерным с анонсерами других трекеров.<br />\nСейчас всем идет одинаково и в клиенте нагромождение трекеров, зачастую нерабочих, не видно что торрент обновился, он всегда зеленый. Пользователям приходится в клиенте вручную удалять лишние трекеры.<br />\n<br />\nСнова таки, как написать условие в viewtopic.php и traker.php - наш торрент или нет (используя что релиз-группа наша и она обозначена в базе)? Буду благодарен за помощь.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1728291376,
+      "user_id": 10618,
+      "user_title": "User",
+      "username": "nexo"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96763,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"nexo\">Как прописать условие в viewforum.php и вывести в viewforum.tpl?</blockquote>Вывести релиз группу в viewforum не так сложно, на днях как будет время сделаю этот функционал, скорее всего как отдельных мод.<br />\n<br />\nНасчёт остального пока не готов ответить",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1728371659,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96775,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1728578902,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"nexo\">Также есть задумка выдавать торрент-файл нашим релизам только с нашим трекером</blockquote>Может кто подсказать как правильно сделать запрос в базу файл Torrent.php?<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$sql = &quot;SELECT poster_rg_id FROM &quot; . BB_POSTS . &quot; WHERE post_id = p.post_id&quot;;</pre>Условие по которому идет выдача трекера уже написал, не знаю как получить айди группы определенной раздачи.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1728578170,
+      "user_id": 10618,
+      "user_title": "User",
+      "username": "nexo"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "reliz-gruppa-trekera-v-viewforum-php",
+  "sticky": false,
+  "tags": [],
+  "title": "Релиз-группа трекера в viewforum.php",
+  "url_path": "/threads/reliz-gruppa-trekera-v-viewforum-php.42313/",
+  "user_id": 10618,
+  "username": "nexo",
+  "view_count": 4775
+}

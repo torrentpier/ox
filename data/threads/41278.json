@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 85137,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 86,
+    "title": "Questions about PHP"
+  },
+  "id": 41278,
+  "last_post_date": 1444693346,
+  "node_id": 86,
+  "post_date": 1444044555,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85137,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Всем привет, что то совсем голова не работает. Нужна помощь!<br />\n<br />\nКак правильно сформировать запрос на вывод топика. Поиск производится по словам в описании торрента.<br />\n<br />\nпример:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">DB()-&gt;fetch_rowset(&quot;SELECT t.*, pt.*, tor.*, ts.seeders, ts.leechers\n                    FROM &quot;. BB_TOPICS .&quot; t\n                    LEFT JOIN &quot;. BB_POSTS .&quot; p ON(p.post_id               = t.topic_last_post_id)\n                    LEFT JOIN &quot;. BB_POSTS_TEXT .&quot; pt ON(pt.post_id = p.post_id)\n                    LEFT JOIN &quot;. BB_BT_TORRENTS .&quot; tor ON(t.topic_id      = tor.topic_id)\n                    LEFT JOIN &quot;. BB_BT_TRACKER_SNAP .&quot; ts ON(tor.topic_id = ts.topic_id)\n\n                WHERE pt.post_text LIKE &#039;%&quot; . DB()-&gt;escape($data[&#039;text&#039;]) . &quot;%&#039;\n                    AND p.post_id = pt.post_id\n                    AND t.topic_id = p.topic_id\n                    AND t.topic_id = tor.topic_id\n                GROUP BY tor.topic_id\n            &quot;);</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1444044555,
+      "user_id": 5480,
+      "user_title": "User",
+      "username": "ВаленокPC"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 85235,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5480/\">@ВаленокPC</a> ну как понимаю это модификация похожих релизов, там в принципе в обсуждении варианта два как минимум было.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1444693346,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "poisk-po-slovam",
+  "sticky": false,
+  "tags": [],
+  "title": "Поиск по словам",
+  "url_path": "/threads/poisk-po-slovam.41278/",
+  "user_id": 5480,
+  "username": "ВаленокPC",
+  "view_count": 1340
+}

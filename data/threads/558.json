@@ -1,0 +1,97 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 7155,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 33,
+        "title": "Archive",
+        "type": "Category"
+      }
+    ],
+    "id": 52,
+    "title": "Bug tracker archive"
+  },
+  "id": 558,
+  "last_post_date": 1323672926,
+  "node_id": 52,
+  "post_date": 1323656400,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 7155,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Убрал раздачи с сидирования.. но на форуме я все еще в сидерах сижу. Уже 2 дня не обновляется. как с этим бороться???<br />\n<span style=\"color: rgb(204,204,204)\"><span style=\"font-size: 10px\">--- добавлено: Dec 12, 2011 2:20 AM ---</span></span><br />\nв общем все кто качал, но не сидирует все равно отображаются сидерами",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1323656400,
+      "user_id": 597,
+      "user_title": "User",
+      "username": "leco"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 7164,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>leco</b>,завис крон..дергай вручную ... или таблицы чисти<br />\nTRUNCATE `bb_bt_dlstatus_main`;<br />\nTRUNCATE `bb_bt_dlstatus_mrg`;<br />\nTRUNCATE `bb_bt_dlstatus_new`;<br />\nTRUNCATE `bb_bt_dlstatus_snap`;<br />\nTRUNCATE `bb_bt_last_torstat`;<br />\nTRUNCATE `bb_bt_last_userstat`;<br />\nTRUNCATE `buf_last_seeder`;<br />\nTRUNCATE `buf_topic_view`;",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1323664781,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Bustra"
+    },
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1323672921,
+          "file_size": 40886,
+          "filename": "Снимок.webp",
+          "height": 269,
+          "id": 311,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/snimok-webp.311/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/0/311-2472320c6d14503aa931cc1ec20bedc7.jpg?hash=pkbN4tB2vQ",
+          "width": 990
+        }
+      ],
+      "id": 7171,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>leco</b>, убедись что включена автоочистка пиров.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1323672926,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "s-siderami-gluk-ne-odnovlaetsa",
+  "sticky": false,
+  "tags": [],
+  "title": "С сидерами глюк, не одновляется",
+  "url_path": "/threads/s-siderami-gluk-ne-odnovlaetsa.558/",
+  "user_id": 597,
+  "username": "leco",
+  "view_count": 1883
+}

@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 9232,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 712,
+  "last_post_date": 1326284432,
+  "node_id": 57,
+  "post_date": 1326283870,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9232,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Есть вопрос,если рейтинг будет ниже 0.5 то пользователь сможет скачивать торренты?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1326283870,
+      "user_id": 505,
+      "user_title": "User",
+      "username": "Maksim"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9233,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Если это значение указано в конфиге и действует лимит, то нет.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1326284029,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9234,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "а подробнее можно,где указать ограничения?",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1326284221,
+      "user_id": 505,
+      "user_title": "User",
+      "username": "Maksim"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9235,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "ищите по ключевым словам - ratio и limits",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1326284432,
+      "user_id": 119,
+      "user_title": "User",
+      "username": "Basilevs"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "rejting-na-trekere",
+  "sticky": false,
+  "tags": [],
+  "title": "рейтинг на трекере",
+  "url_path": "/threads/rejting-na-trekere.712/",
+  "user_id": 505,
+  "username": "Maksim",
+  "view_count": 1461
+}

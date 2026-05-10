@@ -1,0 +1,103 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 21066,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1584,
+  "last_post_date": 1349629303,
+  "node_id": 57,
+  "post_date": 1349419201,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 21066,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "[05-Oct-2012 14:24:15] PHP Warning:  date(): It is not safe to rely on the system&#039;s timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected &#039;Europe/Moscow&#039; for &#039;MSK/4.0/no DST&#039; instead in /var/www/",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1349419201,
+      "user_id": 0,
+      "user_title": "",
+      "username": "ler"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 21068,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "в <b>.htaccess</b><br />\nphp_value date.timezone &quot;Europe/Moscow&quot;<br />\nили в <b>php.ini</b><br />\ndate.timezone = &#039; Europe/Moscow &#039;",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1349419879,
+      "user_id": 30,
+      "user_title": "User",
+      "username": "krumax"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 21156,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Europe/Moscow - даёт неверный пояс +3, верный пояс для Москвы можно задать Etc/GMT-4<br />\n <br />\nа вообще лучше перенести <b>$bb_cfg[&#039;board_timezone&#039;] = 4;</b> из БД в config.php и там же ниже этой строки прописать:<br />\n<b>if (function_exists(&#039;date_default_timezone_set&#039;)) date_default_timezone_set(&#039;Etc/GMT&#039;. -$bb_cfg[&#039;board_timezone&#039;]);</b><br />\nтогда движок будет плевать на верные или неверные настройки php, а выставлять нужные параметры как нужно движку.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1349594275,
+      "user_id": 8,
+      "user_title": "User",
+      "username": "fly_indiz"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 21204,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Тема закрыта",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1349629303,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "problema-s-datoj-php-version-5-3-3",
+  "sticky": false,
+  "tags": [],
+  "title": "Проблема с датой PHP Version 5.3.3",
+  "url_path": "/threads/problema-s-datoj-php-version-5-3-3.1584/",
+  "user_id": 0,
+  "username": "ler",
+  "view_count": 2245
+}

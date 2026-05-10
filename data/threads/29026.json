@@ -1,0 +1,113 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 66549,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 29026,
+  "last_post_date": 1415495567,
+  "node_id": 80,
+  "post_date": 1415410097,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1415410024,
+          "file_size": 298656,
+          "filename": "Безымянный.webp",
+          "height": 1060,
+          "id": 2725,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bezymannyj-webp.2725/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2729-c25c8323138bbb64a3e49e5a4ae93492.jpg?hash=iYH_UbxqQ4",
+          "width": 2572
+        }
+      ],
+      "id": 66549,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Решил сделать трекер чуть приятнее для глаз, путем добавления модов &quot;Thumbnails&quot; и &quot;Poster&quot; <br />\n<br />\nОба эти мода используют BB-коды, которые при установке я вписывал по прилагаемым инструкциям. Проблема, собственно, в том, что эти BB-коды не работают! При использовании именно двух этих кодов (добавленных собственноручно) - ничего не происходит, и они отображаются как текст! В чем может быть дело ? Жду Вашего ответа! Спасибо!👍<br />\n<br />\n<i>p.s. Стандартные BB-коды, что вписаны в движке по-умолчанию, работают (спойлер и т.п.);<br />\n<br />\nна скрине пример работы добавленного мной кода Poster. С Thumbnails та же история.<br />\n<br />\n<a href=\"https://torrentpier.com/attachments/2725/\"><img src=\"https://torrentpier.com/data/attachments/2/2729-c25c8323138bbb64a3e49e5a4ae93492.jpg?hash=iYH_UbxqQ4\" alt=\"Безымянный.webp\" /></a> </i>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1415410097,
+      "user_id": 5714,
+      "user_title": "User",
+      "username": "Dieselpower"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66552,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "По моему тема не в том разделе. Здесь баги по стандартным функциям движка.<br />\nОткуда кто знает куда вы понапихали кода ?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1415423213,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66595,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "$img_url_exp скорее всего используется - надо менять на существующую в коде переменную, а не эту удаленную.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1415489617,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 66598,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/1/\">@Exile</a> да, разобрался уже. Подсказали. Нужно поменять <b>$img_url</b>_exp на <b>$img_exp  </b><br />\n<br />\nСпасибо за отклик!",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1415495567,
+      "user_id": 5714,
+      "user_title": "User",
+      "username": "Dieselpower"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 3,
+  "slug": "problemy-s-bb-kodami",
+  "sticky": false,
+  "tags": [],
+  "title": "Проблемы с BB-кодами",
+  "url_path": "/threads/problemy-s-bb-kodami.29026/",
+  "user_id": 5714,
+  "username": "Dieselpower",
+  "view_count": 1237
+}

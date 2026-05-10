@@ -1,0 +1,81 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 62531,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 26163,
+  "last_post_date": 1410002991,
+  "node_id": 80,
+  "post_date": 1409954793,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1409954766,
+          "file_size": 44362,
+          "filename": "Screenshot_28.webp",
+          "height": 398,
+          "id": 2630,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot_28-webp.2630/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/2/2635-31cb6654b212021cacd032d92a26671a.jpg?hash=yDkiun5YTq",
+          "width": 1090
+        }
+      ],
+      "id": 62531,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Кривая кодировка атом-ленты<img src=\"https://torrentpier.com/attachments/2630/\" alt=\"Screenshot_28.webp\" /><br />\n<a href=\"http://demo.torrentpier.com/atom/f/0.atom\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://demo.torrentpier.com/atom/f/0.atom</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1409954793,
+      "user_id": 4510,
+      "user_title": "User",
+      "username": "Alex Kur"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 62542,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Может не браузером будем проверять, а специальным клиентом для чтения RSS? То что хром отображает страницы лент в кириллице - проблема хрома, а вернее отсутствия в нем поддержки RSS вообще",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1410002991,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 1,
+  "slug": "kodirovka-atom",
+  "sticky": false,
+  "tags": [],
+  "title": "Кодировка atom",
+  "url_path": "/threads/kodirovka-atom.26163/",
+  "user_id": 4510,
+  "username": "Alex Kur",
+  "view_count": 1645
+}

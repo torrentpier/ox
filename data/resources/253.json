@@ -1,0 +1,174 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "[FULL] Автоматический парсер раздач с rutor.info by _Xz_.zip",
+      "id": 6115,
+      "local_path": null,
+      "r2_key": null,
+      "size": 19451,
+      "src_url": "https://torrentpier.com/api/resource-versions/534/download?file=6115"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция по установке\"]\nЗапрос:\n[CODE=sql]CREATE TABLE IF NOT EXISTS `rutor_categories` (\n  `active` tinyint(1) NOT NULL DEFAULT '1',\n  `categorie` varchar(255) NOT NULL,\n  `forum` int(11) NOT NULL,\n  `user_id` int(11) NOT NULL DEFAULT '0',\n  `all_categorie` tinyint(1) NOT NULL DEFAULT '0'\n) ENGINE=MyISAM DEFAULT CHARSET=utf8;[/CODE]\n[CODE=sql]CREATE TABLE IF NOT EXISTS `rutor_releases` (\n  `id` int(11) NOT NULL,\n  `title` varchar(255) NOT NULL,\n  `categorie` varchar(255) NOT NULL,\n  `time` varchar(11) NOT NULL DEFAULT '0'\n) ENGINE=MyISAM DEFAULT CHARSET=utf8;[/CODE]\n\nВ ajax.php:\n[CODE=php]'rutor'               => array('admin'),[/CODE]\n[CODE=php]function rutor ()\n    {\n        global $lang, $bb_cfg;\n\n        $mode = (string) $this->request['mode'];\n\n        if($mode == 'categorie_del')\n        {\n            $categorie  = (string) urldecode($this->request['categorie']);\n\n            DB()->query(\"DELETE FROM rutor_categories WHERE categorie = '$categorie'\");\n        }\n        elseif($mode == 'change_user_id')\n        {\n           $new_user = (string) $this->request['user'];\n           $url      = (string) $this->request['url'];\n\n            if(!$url || !$new_user) bb_die('false id');\n            if(($new_user != BOT_UID) && !$new = get_userdata($new_user)) bb_die($lang['NO_USER_ID_SPECIFIED']);\n            if($new) $new_user = $new['user_id'];\n\n           DB()->query(\"UPDATE rutor_categories SET user_id = $new_user WHERE categorie = '$url'\");\n\n           $this->response['user'] = ($new) ? profile_url($new) : 'Bot';\n            $this->response['url']  = md5($url);\n            $this->response['mode'] = $mode;\n        }\n        elseif($mode == 'all_categorie')\n        {\n           $categorie  = (string) urldecode($this->request['categorie']);\n            if(!$categorie) bb_die('false id');\n\n            $row = DB()->fetch_row(\"SELECT * FROM rutor_categories WHERE categorie = '$categorie' LIMIT 1\");\n            if(!$row) bb_die('Такой записи нет в базе');\n\n           $all_categorie = (int) !$row['all_categorie'];\n\n           DB()->query(\"UPDATE rutor_categories SET all_categorie = $all_categorie WHERE categorie = '$categorie'\");\n        }\n        elseif($mode == 'active')\n        {\n           $categorie  = (string) urldecode($this->request['categorie']);\n            if(!$categorie) bb_die('false id');\n\n            $row = DB()->fetch_row(\"SELECT * FROM rutor_categories WHERE categorie = '$categorie' LIMIT 1\");\n            if(!$row) bb_die('Такой записи нет в базе');\n\n           $active = (int) !$row['active'];\n\n           DB()->query(\"UPDATE rutor_categories SET active = $active WHERE categorie = '$categorie'\");\n        }\n    }[/CODE]\n \nКрон:\n[CODE=bash]wget -O /dev/null http://................../227_rutor.php - новые релизы\n\nwget -O /dev/null http://................../228_rutor.php - копируем релизы[/CODE]\n\nфайлы в корень\n\nинтервал на усмотрение, слишком часто не стоит выставлять, быстро словите бан, оптимально настроить часа через 4-5\n[/SPOILER]",
+    "owner": "_Xz_",
+    "sql": "yes",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1474121427,
+      "file_size": 20624,
+      "filename": "1.webp",
+      "height": 219,
+      "id": 4483,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/1-webp.4483/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4487-5ed7930a6b0ed1ddcf18aeede2491aac.jpg?hash=F3gyxxBZI6",
+      "width": 903
+    },
+    {
+      "attach_date": 1474121428,
+      "file_size": 43582,
+      "filename": "2.webp",
+      "height": 411,
+      "id": 4484,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2-webp.4484/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4488-9522a04f1153f8cf0bd2f282bb11c400.jpg?hash=awjME2ky1e",
+      "width": 797
+    },
+    {
+      "attach_date": 1474121429,
+      "file_size": 28220,
+      "filename": "3.webp",
+      "height": 326,
+      "id": 4485,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/3-webp.4485/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4489-6ac02944fafde999e721d20ed25ba96b.jpg?hash=uN9hWdPxIk",
+      "width": 988
+    }
+  ],
+  "description_parsed": "Решил выложить в общественное достояние, те кто более сознательны отблагодарят:<br />\n<b>Yandex 41001729501221</b><br />\nМод работает без каких либо проблем, все те кто не знают как установить то лучше задумайтесь нужен ли вам трекер.",
+  "download_count": 1325,
+  "external_url": null,
+  "icon_url": null,
+  "id": 253,
+  "is_fileless": null,
+  "last_update": 1722232290,
+  "rating_avg": 3.28571,
+  "rating_count": 7,
+  "resource_date": 1474121574,
+  "resource_state": "visible",
+  "slug": "avtomaticeskij-parser-razdac-s-rutor-info",
+  "tag_line": "Добавляет возможность автоматически парсить раздачи с rutor.info",
+  "tags": [],
+  "title": "Автоматический парсер раздач с rutor.info",
+  "url_path": "/resources/avtomaticeskij-parser-razdac-s-rutor-info.253/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "version": "v2.0.2",
+  "versions": [
+    {
+      "download_count": 581,
+      "files": [
+        {
+          "filename": "[FULL] Автоматический парсер раздач с rutor.info by _Xz_.zip",
+          "id": 6115,
+          "local_path": null,
+          "r2_key": null,
+          "size": 19451,
+          "src_url": "https://torrentpier.com/api/resource-versions/534/download?file=6115"
+        }
+      ],
+      "id": 534,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1722232290,
+      "version_state": "visible",
+      "version_string": "v2.0.2",
+      "view_url": "https://torrentpier.com/resources/avtomaticeskij-parser-razdac-s-rutor-info.253/version/534/"
+    },
+    {
+      "download_count": 227,
+      "files": [
+        {
+          "filename": "[FULL] Автоматический парсер раздач с rutor.info by _Xz_.zip",
+          "id": 6106,
+          "local_path": null,
+          "r2_key": null,
+          "size": 19437,
+          "src_url": "https://torrentpier.com/api/resource-versions/532/download?file=6106"
+        }
+      ],
+      "id": 532,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1722151899,
+      "version_state": "visible",
+      "version_string": "v2.0.1",
+      "view_url": "https://torrentpier.com/resources/avtomaticeskij-parser-razdac-s-rutor-info.253/version/532/"
+    },
+    {
+      "download_count": 208,
+      "files": [
+        {
+          "filename": "[FULL] Автоматический парсер раздач с rutor.info by _Xz_.zip",
+          "id": 6105,
+          "local_path": null,
+          "r2_key": null,
+          "size": 19330,
+          "src_url": "https://torrentpier.com/api/resource-versions/531/download?file=6105"
+        }
+      ],
+      "id": 531,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1722138453,
+      "version_state": "visible",
+      "version_string": "v2.0.0",
+      "view_url": "https://torrentpier.com/resources/avtomaticeskij-parser-razdac-s-rutor-info.253/version/531/"
+    },
+    {
+      "download_count": 325,
+      "files": [
+        {
+          "filename": "rutor.info.zip",
+          "id": 4482,
+          "local_path": null,
+          "r2_key": null,
+          "size": 17996,
+          "src_url": "https://torrentpier.com/api/resource-versions/373/download?file=4482"
+        }
+      ],
+      "id": 373,
+      "rating_avg": 3.2857142857142856,
+      "rating_count": 7,
+      "release_date": 1474121574,
+      "version_state": "visible",
+      "version_string": "2016-09-17",
+      "view_url": "https://torrentpier.com/resources/avtomaticeskij-parser-razdac-s-rutor-info.253/version/373/"
+    }
+  ],
+  "view_count": 3224
+}

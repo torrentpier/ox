@@ -1,0 +1,65 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 95228,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 42178,
+  "last_post_date": 1696243839,
+  "node_id": 3,
+  "post_date": 1696243839,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1696243837,
+          "file_size": 1985420,
+          "filename": "tp.1.0.1.5.rev261.modded.zip",
+          "height": 0,
+          "id": 5534,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/tp-1-0-1-5-rev261-modded-zip.5534/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 95228,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Модифицированный движок трекера <b>torrentpier 1.х<br />\n<br />\nГод выпуска:</b> 2009<br />\n<b>Версия:</b>1.0.1.5<br />\n<b>Разработчик:</b> Meithar<br />\n<b>Платформа:</b> php<br />\n<b>Системные требования:</b> Рекомендуемые: =&gt;<br />\n<b>Apache 2.2.6 или lighthttpsd или NGINX<br />\nMySQL 5.0.45</b> или выше<br />\n<b>PHP 5.2.5 </b>или выше<br />\n<b>Язык интерфейса:</b> английский + русский<br />\n<br />\n<b>Описание:</b> Модифицированный движок трекера <b>torrentpier 1.х</b><br />\nЗа основу взят <b>TorrentPier SVN 1.0.1.5 r262</b><br />\n+ следующие изменения, дополнения, фиксы и внедренные моды:<br />\n<b>1.</b> Мод приглашений (Invites)<br />\n(по умолчанию отключено, включается в config.php $bb_cfg[&#039;new_user_reg_only_by_invite&#039;])<br />\n+ мод я немного дополнил, чтобы в правиле можно было указывать группу пользователей, которым разрешено выдавать инвайты<br />\n<b>2.</b> Мод массовой рассылки ЛС (Mass PM) ( пригодится админам)<br />\n<b>3.</b> Улучшил окна QuickReply, добавив недостающие в QuickReply bb-коды и смайлики<br />\n<b>4.</b> Мод список файлов раздачи (FileList on AJAX)<br />\n<b>5.</b> Мод Last added, top torrents, top users (в левой колонке новые и популярные раздачи, топ юзеров)<br />\n<b>6.</b> Мод индикации присутствия пользователя на сайте (Online Offline indicator)<br />\n<b>7.</b> Мод спасибов за релиз (Thanks_tsru)<br />\n<b>8.</b> Мод для просмотра членства пользователя в группе, просмотр в профайле (user group in viewprofile)<br />\n<b>9.</b> Мод предупреждений-банов (warnings mod) (пригодится админам и модераторам)<br />\n<b>10.</b> Мод ReadOnly (Запрет на пост) + дополнил мод для модераторов (пригодится админам и модераторам)<br />\n<b>11.</b> Мод метатегов (для индексации по словам в поисковиках, настраивается в админке)<br />\n<b>12.</b> Мод статистики пользователей в админке<br />\n<b>13.</b> Отменена возможность удаления пользователем своих прикрепленных файлов (оставлена админам)<br />\n(для избежания случайной или намеренной порчи своих раздач).<br />\nОтменена возможность снятия регистрации торрента с трекера пользователем (оставлена модераторам и админам)<br />\nДобавлена автоматическая регистрация торрента на трекере при перезаливке-обновлении торрента<br />\n(в случае если автоматическая регистрация включена в админке, по умолчанию разрешена)<br />\n<b>14.</b> У всех пользователей автоматически отображается ранк-картинка &quot;пользователь&quot; если не назначено звание<br />\n<b>15.</b> Скрины заворачиваются в спойлер.<br />\n<b>16.</b> Мод проверки важных полей при регистрации (Ajax cool register) доработанный<br />\n<b>17.</b> Мод поиска по статусу раздачи",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1696243839,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "torrentpier-svn-1-0-1-5-r262-dla-oznakomlenia",
+  "sticky": false,
+  "tags": [],
+  "title": "TORRENTPIER SVN 1.0.1.5 [R262] (для ознакомления)",
+  "url_path": "/threads/torrentpier-svn-1-0-1-5-r262-dla-oznakomlenia.42178/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 585
+}

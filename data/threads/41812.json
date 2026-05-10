@@ -1,0 +1,75 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 92169,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 41812,
+  "last_post_date": 1503486426,
+  "node_id": 57,
+  "post_date": 1503474850,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92169,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте всем! Не закидывайте сразу помидорами за возможно нубский вопрос, как сделать условие отображение настройки в профиле, например это будет &quot;скрывать мое прибывание на форуме&quot; для одной группы? <br />\nВ моем понимании это что-то вроде<br />\n&lt;!-- IF LOGGED_IN &amp;&amp; GROUP_ID --&gt;<br />\n&lt;td&gt;...&lt;/td&gt;<br />\n&lt;!-- ENDIF --&gt;",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1503474850,
+      "user_id": 7911,
+      "user_title": "User",
+      "username": "Andrew Neil"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92174,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "LOGGED_IN - это для зарегистрированных пользователей.<br />\nGROUP_ID - такого нету, но если поискать в поиске по лучше, то можно найти как сделать условии для определенных групп.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1503486426,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "uslovie-otobrazenia-dla-unikal-noj-gruppy",
+  "sticky": false,
+  "tags": [
+    "группы",
+    "скрыть",
+    "условие"
+  ],
+  "title": "Условие отображения для уникальной группы",
+  "url_path": "/threads/uslovie-otobrazenia-dla-unikal-noj-gruppy.41812/",
+  "user_id": 7911,
+  "username": "Andrew Neil",
+  "view_count": 928
+}

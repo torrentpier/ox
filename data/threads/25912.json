@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 60498,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 25912,
+  "last_post_date": 1400015224,
+  "node_id": 57,
+  "post_date": 1398323243,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60498,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вопрос такого плана, елси трекер подымать на кириллическом домене, анонсер php наш нормально будет воспринимать puny код домена, или пилить придется?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1398323243,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60504,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "должен нормально.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1398349366,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 60770,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Кириллические домены - полной воды идиотизм. Трекер работает на нем нормально, проблем не будет. Но сам факт...",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1400015224,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "kirilliceskij-domen",
+  "sticky": false,
+  "tags": [],
+  "title": "Кириллический домен",
+  "url_path": "/threads/kirilliceskij-domen.25912/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1014
+}

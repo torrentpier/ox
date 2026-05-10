@@ -1,0 +1,84 @@
+{
+  "category": {
+    "description": "Section with all paid modifications for TorrentPier.",
+    "id": 2,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Paid",
+    "view_url": "https://torrentpier.com/resources/categories/paid.2/"
+  },
+  "current_files": [
+    {
+      "filename": "PostTelegram_TorrentPier_2.1.5 - up_1.1.0.rar",
+      "id": 5657,
+      "local_path": null,
+      "r2_key": null,
+      "size": 5647,
+      "src_url": "https://torrentpier.com/api/resource-versions/410/download?file=5657"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "owner": "",
+    "sql": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1701935273,
+      "file_size": 22318,
+      "filename": "104356.webp",
+      "height": 445,
+      "id": 5642,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/104356-webp.5642/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/5/5646-43bc48163948ba80124f2d2167755180.jpg?hash=zLLsGN2ash",
+      "width": 515
+    }
+  ],
+  "description_parsed": "Цена: 200 руб.<br />\nЗа покупкой (пароль к архиву) обращаться в ЛС.",
+  "download_count": 255,
+  "external_url": null,
+  "icon_url": null,
+  "id": 273,
+  "is_fileless": null,
+  "last_update": 1702294896,
+  "rating_avg": 5,
+  "rating_count": 1,
+  "resource_date": 1701935463,
+  "resource_state": "visible",
+  "slug": "avtoposting-poslednih-relizov-v-telegram",
+  "tag_line": "PostTelegram_TorrentPier_2.1.5  Автопостинг последних релизов в  Telegram",
+  "tags": [],
+  "title": "Автопостинг последних релизов в  Telegram",
+  "url_path": "/resources/avtoposting-poslednih-relizov-v-telegram.273/",
+  "user_id": 6509,
+  "username": "yulii",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 252,
+      "files": [
+        {
+          "filename": "PostTelegram_TorrentPier_2.1.5 - up_1.1.0.rar",
+          "id": 5657,
+          "local_path": null,
+          "r2_key": null,
+          "size": 5647,
+          "src_url": "https://torrentpier.com/api/resource-versions/410/download?file=5657"
+        }
+      ],
+      "id": 410,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1702294896,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/avtoposting-poslednih-relizov-v-telegram.273/version/410/"
+    }
+  ],
+  "view_count": 790
+}

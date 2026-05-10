@@ -1,0 +1,71 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 3780,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 341,
+  "last_post_date": 1318256689,
+  "node_id": 57,
+  "post_date": 1318252561,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 3780,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как сделать вывод IP регистрации и последнего IP пользователя профиле как в TP?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1318252561,
+      "user_id": 272,
+      "user_title": "",
+      "username": "Red Bullok"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 3792,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Red Bullok\">Как сделать вывод IP регистрации и последнего IP пользователя профиле как в TP?</blockquote>Так же, как в TP. Данные для этого в базе есть.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1318256689,
+      "user_id": 0,
+      "user_title": "",
+      "username": "Nikolaich"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "kak-sdelat-vyvod-ip-registracii-i-poslednego-ip-pol-zovatela-profile-kak-v-tp",
+  "sticky": false,
+  "tags": [],
+  "title": "Как сделать вывод IP регистрации и последнего IP пользователя профиле как в TP?",
+  "url_path": "/threads/kak-sdelat-vyvod-ip-registracii-i-poslednego-ip-pol-zovatela-profile-kak-v-tp.341/",
+  "user_id": 272,
+  "username": "Red Bullok",
+  "view_count": 1183
+}

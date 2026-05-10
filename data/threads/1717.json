@@ -1,0 +1,150 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 22888,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 1717,
+  "last_post_date": 1353226585,
+  "node_id": 57,
+  "post_date": 1353223045,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1353222988,
+          "file_size": 8564,
+          "filename": "Безымянный.webp",
+          "height": 58,
+          "id": 1626,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bezymannyj-webp.1626/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/1/1627-bcd1c0fe069ceea63f7e224be9e68ca3.jpg?hash=TifS316301",
+          "width": 914
+        }
+      ],
+      "id": 22888,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "раньше было все нормально, но сейчас трекер показывает одну и ту же раздачу 2 раза. Стоит sphinx.<br />\nНики модераторов больше не окрашиваются в зеленый цвет. Подскажите, в чем может быть проблема?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1353223045,
+      "user_id": 3099,
+      "user_title": "User",
+      "username": "godtor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 22889,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Что из модов ставили? Кеш шаблона пробовали чистить?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1353223587,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 22890,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\">Что из модов ставили? Кеш шаблона пробовали чистить?</blockquote>кэш чистил. 100 раз, что только не перепробывал(",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1353224467,
+      "user_id": 3099,
+      "user_title": "User",
+      "username": "godtor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 22891,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "На первично заданный вопрос все же ответьте. Какие модификации ставили после чего это все началось? С такой проблемой встречались просто всего один раз у пользователя, чей трекер из себя представляет такой рассадник криво поставленных модов, что и не удивительно. Есть ли аналогичная проблема на чистом движке?",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1353224760,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 22893,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\">На первично заданный вопрос все же ответьте. Какие модификации ставили после чего это все началось? С такой проблемой встречались просто всего один раз у пользователя, чей трекер из себя представляет такой рассадник криво поставленных модов, что и не удивительно. Есть ли аналогичная проблема на чистом движке?</blockquote>я уже не совсем помню какие и когда ставил, проблему обнаружил не сразу, ещё заметил, с ником пропала запись &quot;присвоить звание&quot; активно только администратор, собственно модератор пропал. На чистом такого нет, все хорошо. Только вот где проблему искать....",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1353225254,
+      "user_id": 3099,
+      "user_title": "User",
+      "username": "godtor"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 22897,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "разобрался, что то типо такого должно быть в базе:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">INSERT INTO `bb_ranks` VALUES (&#039;2&#039;, &#039;Модератор&#039;, &#039;-1&#039;, &#039;1&#039;, &#039;images/ranks/mod.png&#039;, &#039;colorMod&#039;);</pre>",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1353226585,
+      "user_id": 3099,
+      "user_title": "User",
+      "username": "godtor"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 5,
+  "slug": "dvoatsa-temy-niki-bez-okraski",
+  "sticky": false,
+  "tags": [],
+  "title": "Двоятся темы, ники без окраски",
+  "url_path": "/threads/dvoatsa-temy-niki-bez-okraski.1717/",
+  "user_id": 3099,
+  "username": "godtor",
+  "view_count": 1408
+}

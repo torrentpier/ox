@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 59064,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 25776,
+  "last_post_date": 1394223909,
+  "node_id": 80,
+  "post_date": 1392363468,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59064,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Наверно в лангах пропустили....<br />\nКонтроль групп расширений: PHP Notice:  Undefined index: L_MAX_FILESIZE in ....<br />\nНа демке воспроизводится.<br />\n<div style=\"text-align: center\">&#8203;</div>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1392363468,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59065,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Кстати да... Один раз такое заметил в логах...",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1392367157,
+      "user_id": 225,
+      "user_title": "User",
+      "username": "Bullit"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59461,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено в новой ревизии: <a href=\"https://code.google.com/p/torrentpier2/source/detail?r=584\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://code.google.com/p/torrentpier2/source/detail?r=584</a><br />\nСпасибо за багрепорты.<br />\n <br />\nСкачать r584 можно в центре загрузки: <a href=\"http://get.torrentpier.com/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://get.torrentpier.com/</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1394223909,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 2,
+  "slug": "notis-v-adminke-r583",
+  "sticky": false,
+  "tags": [],
+  "title": "Нотис в админке r583",
+  "url_path": "/threads/notis-v-adminke-r583.25776/",
+  "user_id": 896,
+  "username": "Dr_Brown",
+  "view_count": 1139
+}

@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 9713,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 759,
+  "last_post_date": 1326834636,
+  "node_id": 57,
+  "post_date": 1326722444,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9713,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В Администрирование во вкладке <span style=\"color: #000000\"><a href=\"http://anisib.ru/admin/admin_extensions.php?mode=groups&amp;sid=XWhqOlds4fL56UGgzOpW\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\"><span style=\"color: #000000\">Контроль Групп Расширений изменил параметр максимальный рамер torrent файла с 120 на 300 после этого вылетела ошибка</span></a></span><br />\n <br />\nFatal error: DB Error [includes/sessions.php(110)] in /home/www/includes/db/mysql.php on line 803<br />\n <br />\nПосле чистки кук смог зайти на форум и залогинится, но когда перехожу на форумы где есть торрент то выдает ошибку<br />\nFatal error: DB Error [attach_mod/displaying_torrent.php(356)] in /home/www/includes/db/mysql.php on line 803<br />\n <br />\nИ когда отрабатывает крон вылетает первая ошибка... подскажите пожалуйста в чем ошибка? у все так?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1326722444,
+      "user_id": 149,
+      "user_title": "User",
+      "username": "demmon"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9721,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "sql лог ошибки кажи!",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1326727437,
+      "user_id": 2,
+      "user_title": "User",
+      "username": "_Xz_"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9723,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "php_err.log<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">[16-Jan-2012 22:43:17] PHP Fatal error:  DB Error [attach_mod/displaying_torrent.php(356)] in /home/www/includes/db/mysql.php on line 803\n[16-Jan-2012 22:44:13] PHP Fatal error:  DB Error [includes/cron/jobs/tr_make_snapshot.php(15)] in /home/www/includes/db/mysql.php on line 803\n[16-Jan-2012 22:45:58] PHP Fatal error:  DB Error [includes/sessions.php(110)] in /home/www/includes/db/mysql.php on line 803\n[16-Jan-2012 22:46:00] PHP Fatal error:  DB Error [includes/sessions.php(110)] in /home/www/includes/db/mysql.php on line 803\n[16-Jan-2012 22:46:02] PHP Fatal error:  DB Error [includes/sessions.php(110)] in /home/www/includes/db/mysql.php on line 803\n[16-Jan-2012 22:46:02] PHP Fatal error:  DB Error [includes/sessions.php(110)] in /home/www/includes/db/mysql.php on line 803\n[16-Jan-2012 22:46:03] PHP Fatal error:  DB Error [includes/sessions.php(110)] in /home/www/includes/db/mysql.php on line 803</pre> <br />\nsql_error_bb.log<br />\n <br />\n<pre class=\"xfBb-code\" data-lang=\"\">#000130 Incorrect file format &#039;bb_bt_tracker_snap&#039;\n \nSELECT seeders, leechers, speed_up, speed_down FROM bb_bt_tracker_snap WHERE topic_id = 120 LIMIT 1\n \nSource  : attach_mod/displaying_torrent.php(356) :: db1.anime\nIP      : 193.34.160.195\nDate    : 2012-01-16 22:43:17\nAgent  : Mozilla/5.0 (Windows NT 6.1; WOW64; rv:9.0.1) Gecko/20100101 Firefox/9.0.1\nReq_URI : /viewtopic.php?t=120&amp;view=newest\nReferer : http://192.168.1.4/index.php\nMethod  : GET\nPID    : 00927\nRequest : Array\n(\n    [t] =&gt; 120\n    [view] =&gt; newest\n)______________________________________________________________________________\n \n#000130 Incorrect file format &#039;bb_bt_tracker_snap&#039;\n \nCREATE TABLE new_tracker_snap LIKE bb_bt_tracker_snap\n \nSource  : includes/cron/jobs/tr_make_snapshot.php(15) :: db1.anime\nIP      :\nDate    : 2012-01-16 22:44:13\nAgent  :\nReq_URI :\nReferer :\nMethod  :\nPID    : 03470\nRequest : Array\n(\n)______________________________________________________________________________\n \n#000130 Incorrect file format &#039;bb_bt_torhelp&#039;\n \nSELECT u.*, s.*, th.topic_id_csv AS torhelp FROM bb_sessions s INNER JOIN bb_users u ON(u.user_id = s.session_user_id) LEFT JOIN bb_bt_torhelp th ON(u.user_id = th.user_id) WHERE s.session_id = &#039;1hHJtl0ns6Tu9md0LB7W&#039;\n \nSource  : includes/sessions.php(110) :: db1.anime\nIP      : 193.34.160.195\nDate    : 2012-01-16 22:45:58\nAgent  : Mozilla/5.0 (Windows NT 6.1; WOW64; rv:9.0.1) Gecko/20100101 Firefox/9.0.1\nReq_URI : /viewtopic.php?t=45&amp;view=newest\nReferer : http://192.168.1.4/index.php\nMethod  : GET\nPID    : 00927\nRequest : Array\n(\n    [t] =&gt; 45\n    [view] =&gt; newest\n)______________________________________________________________________________\n \n#000130 Incorrect file format &#039;bb_bt_torhelp&#039;\n \nSELECT u.*, s.*, th.topic_id_csv AS torhelp FROM bb_sessions s INNER JOIN bb_users u ON(u.user_id = s.session_user_id) LEFT JOIN bb_bt_torhelp th ON(u.user_id = th.user_id) WHERE s.session_id = &#039;1hHJtl0ns6Tu9md0LB7W&#039;\n \nSource  : includes/sessions.php(110) :: db1.anime\nIP      : 193.34.160.195\nDate    : 2012-01-16 22:46:00\nAgent  : Mozilla/5.0 (Windows NT 6.1; WOW64; rv:9.0.1) Gecko/20100101 Firefox/9.0.1\nReq_URI : /index.php\nReferer : http://192.168.1.4/viewtopic.php?t=98&amp;view=newest\nMethod  : GET\nPID    : 00928\nRequest : Array\n(\n)______________________________________________________________________________\n \n#000130 Incorrect file format &#039;bb_bt_torhelp&#039;\n \nSELECT u.*, s.*, th.topic_id_csv AS torhelp FROM bb_sessions s INNER JOIN bb_users u ON(u.user_id = s.session_user_id) LEFT JOIN bb_bt_torhelp th ON(u.user_id = th.user_id) WHERE s.session_id = &#039;1hHJtl0ns6Tu9md0LB7W&#039;\n \nSource  : includes/sessions.php(110) :: db1.anime\nIP      : 193.34.160.195\nDate    : 2012-01-16 22:46:02\nAgent  : Mozilla/5.0 (Windows NT 6.1; WOW64; rv:9.0.1) Gecko/20100101 Firefox/9.0.1\nReq_URI : /index.php\nReferer : http://192.168.1.4/viewtopic.php?t=98&amp;view=newest\nMethod  : GET\nPID    : 00924\nRequest : Array\n(\n)______________________________________________________________________________\n \n#000130 Incorrect file format &#039;bb_bt_torhelp&#039;\n \nSELECT u.*, s.*, th.topic_id_csv AS torhelp FROM bb_sessions s INNER JOIN bb_users u ON(u.user_id = s.session_user_id) LEFT JOIN bb_bt_torhelp th ON(u.user_id = th.user_id) WHERE s.session_id = &#039;1hHJtl0ns6Tu9md0LB7W&#039;\n \nSource  : includes/sessions.php(110) :: db1.anime\nIP      : 193.34.160.195\nDate    : 2012-01-16 22:46:02\nAgent  : Mozilla/5.0 (Windows NT 6.1; WOW64; rv:9.0.1) Gecko/20100101 Firefox/9.0.1\nReq_URI : /index.php\nReferer : http://192.168.1.4/viewtopic.php?t=98&amp;view=newest\nMethod  : GET\nPID    : 00926\nRequest : Array\n(\n)______________________________________________________________________________\n \n#000130 Incorrect file format &#039;bb_bt_torhelp&#039;\n \nSELECT u.*, s.*, th.topic_id_csv AS torhelp FROM bb_sessions s INNER JOIN bb_users u ON(u.user_id = s.session_user_id) LEFT JOIN bb_bt_torhelp th ON(u.user_id = th.user_id) WHERE s.session_id = &#039;1hHJtl0ns6Tu9md0LB7W&#039;\n \nSource  : includes/sessions.php(110) :: db1.anime\nIP      : 193.34.160.195\nDate    : 2012-01-16 22:46:03\nAgent  : Mozilla/5.0 (Windows NT 6.1; WOW64; rv:9.0.1) Gecko/20100101 Firefox/9.0.1\nReq_URI : /index.php\nReferer : http://192.168.1.4/viewtopic.php?t=98&amp;view=newest\nMethod  : GET\nPID    : 00925\nRequest : Array\n(\n)______________________________________________________________________________</pre>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1326728995,
+      "user_id": 149,
+      "user_title": "User",
+      "username": "demmon"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9754,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Пересоздал таблицы<br />\nbb_bt_torhelp<br />\nbb_bt_tracker_snap<br />\nОшибка больше не вылезала... возможно корява из бейкапа вытащились когда то, и только сейчас дали о себе знать.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1326769450,
+      "user_id": 149,
+      "user_title": "User",
+      "username": "demmon"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 9854,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "а может просто таблицу восстановить нужно было",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1326834636,
+      "user_id": 2,
+      "user_title": "User",
+      "username": "_Xz_"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "osibki-posle-izmenenia-parametrov",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибки после изменения параметров",
+  "url_path": "/threads/osibki-posle-izmenenia-parametrov.759/",
+  "user_id": 149,
+  "username": "demmon",
+  "view_count": 2168
+}

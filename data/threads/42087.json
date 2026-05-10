@@ -1,0 +1,104 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94500,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42087,
+  "last_post_date": 1585228219,
+  "node_id": 57,
+  "post_date": 1585139540,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1585139518,
+          "file_size": 4248,
+          "filename": "Без имени-3.webp",
+          "height": 116,
+          "id": 5323,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/bez-imeni-3-webp.5323/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5327-8589b3223dbe2ded59fef8afc4b5a1e7.jpg?hash=uJsBi83nc-",
+          "width": 1672
+        }
+      ],
+      "id": 94500,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Добрый день!<br />\nПодскажите пожалуйста,где конкретно можно изменить цвет выдаваемых сообщений модером?<br />\nОбыскал весь main.css,но увы(<br />\n<img src=\"https://torrentpier.com/attachments/5323/\" alt=\"Без имени-3.webp\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1585139540,
+      "user_id": 6316,
+      "user_title": "User",
+      "username": "KUDS"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94501,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://github.com/torrentpier/torrentpier/blob/master/styles/templates/default/css/alert.css#L73\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">torrentpier/torrentpier</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1585180792,
+      "user_id": 23,
+      "user_title": "User",
+      "username": "PheRum"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94503,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"PheRum\"><a href=\"https://github.com/torrentpier/torrentpier/blob/master/styles/templates/default/css/alert.css#L73\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">torrentpier/torrentpier</a></blockquote>Спасибо огромное!",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1585228219,
+      "user_id": 6316,
+      "user_title": "User",
+      "username": "KUDS"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "gde-pomenat-cveta",
+  "sticky": false,
+  "tags": [],
+  "title": "Где поменять цвета?",
+  "url_path": "/threads/gde-pomenat-cveta.42087/",
+  "user_id": 6316,
+  "username": "KUDS",
+  "view_count": 1889
+}

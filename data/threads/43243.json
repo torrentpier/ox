@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 98368,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 50,
+    "title": "Graphics and styles for TorrentPier"
+  },
+  "id": 43243,
+  "last_post_date": 1768730216,
+  "node_id": 50,
+  "post_date": 1768730216,
+  "posts": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1768730198,
+          "file_size": 414599,
+          "filename": "BlueEmoji.zip",
+          "height": 0,
+          "id": 6682,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/blueemoji-zip.6682/",
+          "thumbnail_url": null,
+          "width": 0
+        },
+        {
+          "attach_date": 1768730198,
+          "file_size": 24162,
+          "filename": "1768730195989.webp",
+          "height": 517,
+          "id": 6683,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1768730195989-webp.6683/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6687-ea21b562e8a688406c84ff63615a46d3.jpg?hash=wl08we2-h5",
+          "width": 709
+        }
+      ],
+      "id": 98368,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<span style=\"color: rgb(0, 0, 0)\">Набор смайликов &quot;BlueEmoji&quot;</span><br />\n<b>Количество: <span style=\"color: rgb(97, 189, 109)\">80 штук</span></b><br />\n<hr /><b>Установка: <span style=\"color: rgb(71, 85, 119)\">Извлечь содержимое архива в папку***/styles/images/smiles<br />\nЧерез админку импортировать набор BlueEmoji.pak</span></b><br />\n<hr /><img src=\"https://torrentpier.com/attachments/6683/\" alt=\"1768730195989.webp\" />",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1768730216,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "nabor-smajlikov-blueemoji",
+  "sticky": false,
+  "tags": [
+    "blue emoji",
+    "smilies",
+    "графика",
+    "синие смайлики",
+    "смайлики",
+    "стикеры",
+    "стиль"
+  ],
+  "title": "Набор смайликов \"BlueEmoji\"",
+  "url_path": "/threads/nabor-smajlikov-blueemoji.43243/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 216
+}

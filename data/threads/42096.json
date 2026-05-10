@@ -1,0 +1,73 @@
+{
+  "custom_fields": {
+    "torrentpier": "2301"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94626,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42096,
+  "last_post_date": 1599574006,
+  "node_id": 57,
+  "post_date": 1599499129,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94626,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Помогите настроить отправку почты. Вписываю сюда данные предоставленные хостером и в итоге получаю ошибку.<br />\n<div>Spoiler content hidden.</div>При запуске на домашнем компе на OpenServer, почта отправляется только с использованием гугла. яндекс и майлру также не работают",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1599499129,
+      "user_id": 9401,
+      "user_title": "User",
+      "username": "MAG3131"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94627,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Неактуально. Уже разобрался)))",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1599574006,
+      "user_id": 9401,
+      "user_title": "User",
+      "username": "MAG3131"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "ne-otpravlaetsa-pocta",
+  "sticky": false,
+  "tags": [],
+  "title": "Не отправляется почта",
+  "url_path": "/threads/ne-otpravlaetsa-pocta.42096/",
+  "user_id": 9401,
+  "username": "MAG3131",
+  "view_count": 840
+}

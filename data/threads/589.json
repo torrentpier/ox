@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 7408,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 83,
+        "title": "About everything",
+        "type": "Category"
+      }
+    ],
+    "id": 3,
+    "title": "Free communication"
+  },
+  "id": 589,
+  "last_post_date": 1324019426,
+  "node_id": 3,
+  "post_date": 1324014565,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 7408,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Люди, у всех твиттер глучит в Chrome? Просто я уже какой раз замечаю, что у меня дико виснит твиттер в Chrome, приходится постоянно запускать Opera.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1324014565,
+      "user_id": 498,
+      "user_title": "User",
+      "username": "Xeza"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 7409,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Xeza</b>, всё ок. Сижу с хрома.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1324019426,
+      "user_id": 55,
+      "user_title": "User",
+      "username": "Lange"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "grom-i-tvittar",
+  "sticky": false,
+  "tags": [],
+  "title": "Гром и твиттяр",
+  "url_path": "/threads/grom-i-tvittar.589/",
+  "user_id": 498,
+  "username": "Xeza",
+  "view_count": 1446
+}

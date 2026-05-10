@@ -1,0 +1,186 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94989,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42144,
+  "last_post_date": 1688929927,
+  "node_id": 47,
+  "post_date": 1688884445,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1688884423,
+          "file_size": 9825007,
+          "filename": "AChat_v3.0.7.Business-DG.zip",
+          "height": 0,
+          "id": 5458,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/achat_v3-0-7-business-dg-zip.5458/",
+          "thumbnail_url": null,
+          "width": 0
+        }
+      ],
+      "id": 94989,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Привет!Я новичок на этом форуме и все еще изучаю эту систему Torrentpier.Раньше у меня был трекер на Xbtit и я сделал Arrowchat работать в Xbtit и Btit.<br />\nЭта система TorrentPier я ее еще не знаю.Пробовал установить модуль чата за PHPBB но дает такая ошибка -<br />\nOops! There is an error:<br />\nArrowChat could not find your phpBB configuration file.  Check to make sure that the ArrowChat folder is located within your phpBB folder.<br />\n<br />\nМожет кто компетентный решит эту проблему?!<br />\nЗаранее спасибо!",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1688884445,
+      "user_id": 10665,
+      "user_title": "User",
+      "username": "crowni"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94990,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Я установил его, но не с файлом интеграции для PHPBB .В конце установки вы помещаете первый код в файл page_header.tpl после &lt;head&gt; и поместите второй код в файл page_footer.tpl после этих строк<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">&lt;!-- IF SHOW_SIDEBAR2 --&gt;<br />\n        &lt;!--sidebar2--&gt;<br />\n        &lt;td id=&quot;sidebar2&quot;&gt;<br />\n        &lt;div id=&quot;sidebar2-wrap&quot;&gt;<br />\n            &lt;!-- IF HTML_SIDEBAR_2 --&gt;<br />\n                &lt;?php include($V[&#039;HTML_SIDEBAR_2&#039;]); ?&gt;<br />\n            &lt;!-- ENDIF --&gt;<br />\n            &lt;img width=&quot;210&quot; class=&quot;spacer&quot; src=&quot;{SPACER}&quot; alt=&quot;&quot; /&gt;<br />\n        &lt;/div&gt;&lt;!--/sidebar2_wrap--&gt;<br />\n        &lt;/td&gt;&lt;!--/sidebar2--&gt;<br />\n    &lt;!-- ENDIF --&gt;</blockquote>создавать &lt;body&gt;&lt;/body&gt; и поместите код между ними вот так<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">&lt;body&gt;<br />\n&lt;script type=&quot;text/javascript&quot; src=&quot;/arrowchat/external.php?type=djs&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;<br />\n&lt;script type=&quot;text/javascript&quot; src=&quot;/arrowchat/external.php?type=js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;<br />\n&lt;/body&gt;</blockquote>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1688888103,
+      "user_id": 10665,
+      "user_title": "User",
+      "username": "crowni"
+    },
+    {
+      "attach_count": 5,
+      "attachments": [
+        {
+          "attach_date": 1688896784,
+          "file_size": 69512,
+          "filename": "Screenshot_2.webp",
+          "height": 600,
+          "id": 5459,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot_2-webp.5459/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5463-f9779d5a0ac2b7ecf87cb13dd731d253.jpg?hash=0uE4_2xabP",
+          "width": 1351
+        },
+        {
+          "attach_date": 1688896794,
+          "file_size": 59932,
+          "filename": "Screenshot_3.webp",
+          "height": 604,
+          "id": 5460,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot_3-webp.5460/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5464-ef7729b1dd18eaadcac4dd9124a1e5fa.jpg?hash=toIFzNPg0a",
+          "width": 1353
+        },
+        {
+          "attach_date": 1688896803,
+          "file_size": 35916,
+          "filename": "Screenshot_4.webp",
+          "height": 667,
+          "id": 5461,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot_4-webp.5461/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5465-4fce0edd8371e540363453564f15d933.jpg?hash=wfJf8vaBqQ",
+          "width": 1365
+        },
+        {
+          "attach_date": 1688896809,
+          "file_size": 69590,
+          "filename": "Screenshot_5.webp",
+          "height": 601,
+          "id": 5462,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot_5-webp.5462/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5466-4b81ef0daec12ce1a8f91ed90fbc0a96.jpg?hash=KKeA__KxDr",
+          "width": 1365
+        },
+        {
+          "attach_date": 1688896976,
+          "file_size": 59932,
+          "filename": "Screenshot_3.webp",
+          "height": 604,
+          "id": 5463,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/screenshot_3-webp.5463/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5467-ef7729b1dd18eaadcac4dd9124a1e5fa.jpg?hash=toIFzNPg0a",
+          "width": 1353
+        }
+      ],
+      "id": 94991,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Вот картинки самого чата и админки, которую я установил на свой сайт.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1688896887,
+      "user_id": 10665,
+      "user_title": "User",
+      "username": "crowni"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94992,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1688930121,
+      "message_parsed": "Это очень хороший чат 🙂<br />\n<br />\n<a href=\"https://torrentpier.com/resources/chat.157/\" class=\"link link--internal\">https://torrentpier.com/resources/chat.157/</a>",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1688929927,
+      "user_id": 8887,
+      "user_title": "User",
+      "username": "boko"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "arrowchat",
+  "sticky": false,
+  "tags": [
+    "arrowchat"
+  ],
+  "title": "Arrowchat",
+  "url_path": "/threads/arrowchat.42144/",
+  "user_id": 10665,
+  "username": "crowni",
+  "view_count": 1131
+}

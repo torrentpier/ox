@@ -1,0 +1,106 @@
+{
+  "category": {
+    "description": "Section with all free modifications for TorrentPier.",
+    "id": 3,
+    "parent_id": 8,
+    "slug": null,
+    "title": "Free",
+    "view_url": "https://torrentpier.com/resources/categories/free.3/"
+  },
+  "current_files": [
+    {
+      "filename": "Стата на главной(ajax).zip",
+      "id": 3237,
+      "local_path": null,
+      "r2_key": null,
+      "size": 6495,
+      "src_url": "https://torrentpier.com/api/resource-versions/240/download?file=3237"
+    }
+  ],
+  "custom_fields": {
+    "additional_content": "",
+    "compability_check": "yes",
+    "installation": "[SPOILER=\"Инструкция\"]\n[PHP]Все что находится в папке root, закинуть в корень сайта.\n\nОткрыть ajax.php\n\nНайти\n\n'gen_passkey'       => array('user'),\n\nНиже вставить\n\n'user_modules'        => array('user'),\n\nНайти\n\n    function index_data()\n    {\n        require(AJAX_DIR .'index_data.php');\n    }\n   \nНиже втавить\n\n    function user_modules()\n    {\n        require(AJAX_DIR .'user_modules.php');\n    }\n\nОкткрыть index.php\n\nНайти и удалить\n\n// Set tpl vars for bt_userdata\nif ($bb_cfg['bt_show_dl_stat_on_index'] && !IS_GUEST)\n{\n    show_bt_userdata($userdata['user_id']);\n}\n   \nОткрыть main.js\n\nНайти\n\n//\n// Menus\n//\n\nВыше добавить\n\n//\n// Slide Menus\n//\nvar SlideMenu = {\n    openSpeed          : 'slow',\n    hideSpeed          : 'fast',\n    getOffsetOptions   : { margin: true, border: true, padding: true, scroll: false },\n    offsetCorrection_X : -4,\n    offsetCorrection_Y : 2,\n    iframeFix          : false,\n\n    activeMenuId       : null,  //  currently opened menu (from previous click)\n    clickedMenuId      : null,  //  menu to show up\n    $root              : null,  //  root element for menu with \"href = '#clickedMenuId'\"\n    $menu              : null,  //  clicked menu\n    positioningType    : null,  //  reserved\n    outsideClickWatch  : false, //  prevent multiple $(document).click binding\n\n    clicked: function($root) {\n        $root.blur();\n        this.clickedMenuId = this.getMenuId($root);\n        this.$menu = $(this.clickedMenuId);\n        this.$root = $root;\n        this.toggle();\n    },\n\n    getMenuId: function($el) {\n        var click = $el.attr('click');\n        return click.substr(click.indexOf('#'));\n    },\n\n    setLocation: function() {\n        var CSS = this.$root.offset();\n        CSS.top  += this.$root.height() + this.offsetCorrection_Y;\n        CSS.left += this.offsetCorrection_X;\n        this.$menu.css(CSS);\n    },\n\n    fixLocation: function() {\n        var $menu = this.$menu;\n        var curLeft = parseInt($menu.css('left'));\n        var rCorner = $(document).scrollLeft() + $(window).width() - 6;\n        var maxVisibleLeft = Math.min(curLeft, Math.max(0, rCorner - $menu.width()));\n        if (curLeft != maxVisibleLeft) {\n            $menu.css('left', maxVisibleLeft);\n        }\n        var curTop = parseInt($menu.css('top'));\n        var tCorner = $(document).scrollTop() + $(window).height() - 20;\n        var maxVisibleTop = Math.min(curTop, Math.max(0, tCorner - $menu.height()));\n        if (curTop != maxVisibleTop) {\n            $menu.css('top', maxVisibleTop);\n        }\n        if (this.iframeFix) {\n            $('iframe.ie-fix-select-overlap', $menu).css({ width: $menu.width(), height: $menu.height() });\n        }\n    },\n\n    toggle: function() {\n        if (this.activeMenuId && this.activeMenuId !== this.clickedMenuId) {\n            $(this.activeMenuId).slideUp(this.hideSpeed);\n            this.$root.removeClass('active')\n        }\n        // toggle clicked menu\n        if (this.$menu.is(':visible')) {\n        }    else {\n            this.showClickedMenu();\n            if (!this.outsideClickWatch) {\n                $(document).one('mousedown', function(e){ SlideMenu.hideClickWatcher(e); });\n                this.outsideClickWatch = true;\n            }\n        }\n    },\n\n    showClickedMenu: function() {\n        this.setLocation();\n        this.$menu.slideDown(this.openSpeed);\n        this.$root.addClass('active')\n        this.fixLocation();\n        this.activeMenuId = this.clickedMenuId;\n    },\n\n    // hide if clicked outside of menu\n    hideClickWatcher: function(e) {\n        this.outsideClickWatch = false;\n        this.hide(e);\n    },\n\n    hide: function(e) {\n        if (this.$menu) {\n            this.$menu.slideUp(this.hideSpeed);\n            this.$root.removeClass('active')\n        }\n        this.activeMenuId = this.clickedMenuId = this.$menu = null;\n    }\n};\n\n$(document).ready(function(){\n    // SlideMenus\n    $('div#slideMenu').click(\n        function(e)\n        {\n            SlideMenu.clicked($(this));\n           \n            var menuClick = true;\n            $(document).bind(\"click\",function (e)\n            {\n                if (!menuClick && $(e.target).closest('div.slideMenuBlock').length == 0)\n                {\n                    SlideMenu.clicked($(this));\n                    $(document).unbind(\"click\");\n                }\n                menuClick = false;\n            });\n        }\n    );\n    $('div.slideMenuBlock').mousedown(\n        function(e)\n        {\n            e.stopPropagation();\n        }\n    )\n    // Input hints\n    $('input')\n        .filter('.hint').one('focus', function()\n        {\n            $(this).val('').removeClass('hint');\n        })\n        .end()\n        .filter('.error').one('focus', function()\n        {\n            $(this).removeClass('error');\n        });\n});   \n\n\nОткрыть templates/default/page_header.tpl\n\nНайти\n\n<link rel=\"stylesheet\" href=\"{STYLESHEET}?v={$bb_cfg['css_ver']}\" type=\"text/css\">\n\nНиже добавить\n\n<link rel=\"stylesheet\" href=\"{TPL_DIR}/slide_menu.css?v={$bb_cfg['css_ver']}\" type=\"text/css\">\n\nНайти\n\n</head>\n\nВыше втавить\n\n<script type=\"text/javascript\">\nfunction user_modules(action, mode){\n    ajax.exec({\n        action  : 'user_modules',\n        mode    : 'user_index_stats'\n    });\n    ajax.callback.user_modules = function(data) {\n     $('#user_modules').html(data.html);\n     }\n   \n}\n</script>\n\nНайти и удалить\n\n     <!-- IF SHOW_BT_USERDATA --><div id=\"user_ratio\">\n      <h3>{L_USER_RATIO}</h3>\n       <table cellpadding=\"0\">\n       <div align=\"center\">{THIS_AVATAR}</div>\n       <tr><td>{L_USER_RATIO}</td><td><!-- IF DOWN_TOTAL_BYTES gt MIN_DL_BYTES --><b>{USER_RATIO}</b><!-- ELSE --><b>{L_NONE}</b> (DL < {MIN_DL_FOR_RATIO})<!-- ENDIF --></td></tr>\n       <tr><td>{L_DOWNLOADED}</td><td class=\"leechmed\"><b>{DOWN_TOTAL}</b></td></tr>\n       <tr><td>{L_UPLOADED}</td><td class=\"seedmed\"><b>{UP_TOTAL}</b></td></tr>\n       <tr><td>{L_RELEASED}</td><td class=\"seedmed\">{RELEASED}</td></tr>\n       <tr><td>{L_BONUS}</td><td class=\"seedmed\">{UP_BONUS}</td></tr>\n       <!-- IF $bb_cfg['seed_bonus_enabled'] --><tr><td>{L_SEED_BONUS}</td><td><a href=\"profile.php?mode=bonus\"><span class=\"points bold\">{POINTS}</span></a></td></tr><!-- ENDIF -->\n       </table>\n     </div><!-- ENDIF -->\n    \nНайти\n\n<!-- IF LOGGED_IN -->\n                <!-- IF HAVE_NEW_PM || HAVE_UNREAD_PM -->\n                    <a href=\"{U_READ_PM}\" class=\"new-pm-link\"><b>{L_PRIVATE_MESSAGES}: {PM_INFO}</b></a>\n                <!-- ELSE -->\n                    <a href=\"{U_PRIVATEMSGS}\"><b>{L_PRIVATE_MESSAGES}: {PM_INFO}</b></a>\n                <!-- ENDIF -->\n            <!-- ENDIF -->\n        </td>\n\nНиже втавить       \n    \n<td width=\"120px\">\n    <div id=\"slideMenuLink\">   \n        <div id=\"slideMenu\" class=\"tabMenu\" click=\"#profile\">\n            <span id=\"SpNTit\" onclick=\"user_modules(); return false;\"><p class=\"floatR IMGslideMenu menu_profile\">{L_PROFILE}</p></span>\n            <div class=\"slideMenuBlock lEft\" id=\"profile\">       \n                <div class=\"navPopup\" style=\"margin: 0 -4px\">\n                    <div class=\"menuHeader primaryContent\"><h4 class=\"tCenter\">{L_PROFILE_USER}</h4></div>   \n                    <div class=\"secondaryContent\">\n                        <div id=\"user_modules\"></div>\n                    </div>\n                    <div class=\"sectionFooter\">\n                    <table cellpadding=\"0\" width=\"100%\">\n                        <tr>\n                            <td><a href=\"{U_CUR_DOWNLOADS}\">{L_PROFILE}</a></td>           \n                            <td><a href=\"{U_SEARCH_SELF_BY_LAST}\">{L_SEARCH_SELF}</a></td>\n                            <td><a class=\"floatLink\" href=\"{U_OPTIONS}\">{L_OPTIONS}</a></td>\n                            </tr>\n                    </table>\n                    </div>\n                </div>       \n            </div>\n        </div>\n    </div>\n</td>[/PHP]\n[/SPOILER]",
+    "owner": "Sprinx",
+    "sql": "no",
+    "was_paid": "yes"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1391764486,
+      "file_size": 30898,
+      "filename": "W1Oq4jB.webp",
+      "height": 296,
+      "id": 2424,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/w1oq4jb-webp.2424/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/2/2429-d488f5bbfc328bb87007a1392549998e.jpg?hash=zhybh59jUO",
+      "width": 583
+    }
+  ],
+  "description_parsed": "<b>Описание:</b> добавляет вывод статистики профиля на AJAX, заменяя стандартный.",
+  "download_count": 419,
+  "external_url": null,
+  "icon_url": "https://torrentpier.com/data/resource_icons/0/89.jpg?1425422323",
+  "id": 89,
+  "is_fileless": null,
+  "last_update": 1425420660,
+  "rating_avg": 5,
+  "rating_count": 1,
+  "resource_date": 1391764494,
+  "resource_state": "visible",
+  "slug": "statistika-profila-na-ajax",
+  "tag_line": "Добавляет вывод статистики профиля на AJAX, заменяя стандартный.",
+  "tags": [],
+  "title": "Статистика профиля на AJAX",
+  "url_path": "/resources/statistika-profila-na-ajax.89/",
+  "user_id": 2789,
+  "username": "Sprinx",
+  "version": "1.1.0",
+  "versions": [
+    {
+      "download_count": 279,
+      "files": [
+        {
+          "filename": "Стата на главной(ajax).zip",
+          "id": 3237,
+          "local_path": null,
+          "r2_key": null,
+          "size": 6495,
+          "src_url": "https://torrentpier.com/api/resource-versions/240/download?file=3237"
+        }
+      ],
+      "id": 240,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1425420660,
+      "version_state": "visible",
+      "version_string": "1.1.0",
+      "view_url": "https://torrentpier.com/resources/statistika-profila-na-ajax.89/version/240/"
+    },
+    {
+      "download_count": 151,
+      "files": [
+        {
+          "filename": "Стата на главной(ajax).rar",
+          "id": 2423,
+          "local_path": null,
+          "r2_key": null,
+          "size": 5581,
+          "src_url": "https://torrentpier.com/api/resource-versions/95/download?file=2423"
+        }
+      ],
+      "id": 95,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1391764494,
+      "version_state": "visible",
+      "version_string": "1.0.0",
+      "view_url": "https://torrentpier.com/resources/statistika-profila-na-ajax.89/version/95/"
+    }
+  ],
+  "view_count": 612
+}

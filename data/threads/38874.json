@@ -1,0 +1,116 @@
+{
+  "custom_fields": {
+    "torrentpier": ""
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 80382,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 38874,
+  "last_post_date": 1529867703,
+  "node_id": 80,
+  "post_date": 1427295686,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 80382,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1427295912,
+      "message_parsed": "<b>Версия:</b> 2.1.5 [ALPHA]<br />\n<b>Описание:</b><br />\nБаг состоит в том, что если ссылка является &quot;локальной&quot;<br />\n<pre class=\"xfBb-code\" data-lang=\"\">[url=/viewtopic.php?id=123]test[/url]</pre>ссылка превратится в <a href=\"http://viewtopic.php?id=123\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://viewtopic.php?id=123</a><br />\nФикс, который я написал(файл library/includes/bbcode.php):<br />\n<pre class=\"xfBb-code\" data-lang=\"\">    function url_callback ($m)\n    {\n        global $bb_cfg;\n\n        $url = trim($m[1]);\n        $url_name = (isset($m[2])) ? trim($m[2]) : $url;\n\n        if (!preg_match(&quot;#^(http|https)://#isu&quot;, $url) &amp;&amp; !preg_match(&quot;/^#/&quot;, $url) &amp;&amp; substr($url, 0, 1)!=&quot;/&quot;) {\n            $url = &#039;http://&#039; . $url;\n        }\n\n        if (in_array(parse_url($url, PHP_URL_HOST), $bb_cfg[&#039;nofollow&#039;][&#039;allowed_url&#039;]) || $bb_cfg[&#039;nofollow&#039;][&#039;disabled&#039;])\n        {\n            $link = &quot;&lt;a href=\\&quot;$url\\&quot; class=\\&quot;postLink\\&quot;&gt;$url_name&lt;/a&gt;&quot;;\n        }\n        else\n        {\n            $link = &quot;&lt;a href=\\&quot;$url\\&quot; class=\\&quot;postLink\\&quot; rel=\\&quot;nofollow\\&quot;&gt;$url_name&lt;/a&gt;&quot;;\n        }\n\n        return $link;\n    }</pre>Тоесть в этой функции заменил:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">        if (!preg_match(&quot;#^https?://#isu&quot;, $url) &amp;&amp; !preg_match(&quot;/^#/&quot;, $url)) $url = &#039;http://&#039; . $url;</pre>на:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">        if (!preg_match(&quot;#^(http|https)://#isu&quot;, $url) &amp;&amp; !preg_match(&quot;/^#/&quot;, $url) &amp;&amp; substr($url, 0, 1)!=&quot;/&quot;) {\n            $url = &#039;http://&#039; . $url;\n        }</pre><br />\nМожете проигнорировать, либо изменить данный фикс. А можете - включить его в обиход😉",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1427295686,
+      "user_id": 5497,
+      "user_title": "User",
+      "username": "killserver"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 80386,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Это костыль а не фикс.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1427297498,
+      "user_id": 2789,
+      "user_title": "User",
+      "username": "Sprinx"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 80510,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Sprinx\">Это костыль а не фикс.</blockquote>пф....делаем лучше, если &quot;не фикс&quot;.....",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1427389871,
+      "user_id": 5497,
+      "user_title": "User",
+      "username": "killserver"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 80755,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/5497/\">@killserver</a> спасибо за указание на недочет. Проблема в том что у движка действительно нет поддержки относительных ссылок. Посмотрим что сделать.",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1427661056,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93298,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"Exile\"><a href=\"https://torrentpier.com/members/5497/\">@killserver</a> спасибо за указание на недочет. Проблема в том что у движка действительно нет поддержки относительных ссылок. Посмотрим что сделать.</blockquote>В этой версии движка - ничего. Багом не является.",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1529867703,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 4,
+  "slug": "lokal-naa-ssylka",
+  "sticky": false,
+  "tags": [],
+  "title": "Локальная ссылка",
+  "url_path": "/threads/lokal-naa-ssylka.38874/",
+  "user_id": 5497,
+  "username": "killserver",
+  "view_count": 1775
+}

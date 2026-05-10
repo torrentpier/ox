@@ -1,0 +1,86 @@
+{
+  "custom_fields": {
+    "torrentpier": "223"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 92426,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 41853,
+  "last_post_date": 1529867643,
+  "node_id": 80,
+  "post_date": 1512943875,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92426,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В файле <b>privmsg.php</b> вначале <a href=\"https://github.com/torrentpier/torrentpier/blob/master/privmsg.php#L799\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">вызывается функция <b>clean_username</b></a> для ника адресата, после чего строчками ниже <a href=\"https://github.com/torrentpier/torrentpier/blob/master/privmsg.php#L801\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">вызывается функция get_userdata.</a><br />\nВнутри этой функции при формировании конечного sql-запроса происходит <a href=\"https://github.com/torrentpier/torrentpier/blob/master/library/includes/functions.php#L992\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">повторный вызов <b>clean_username.</b></a><br />\n<br />\nВсе хорошо, пока имя не содержит таких символов, как &gt;&amp;&lt;.<br />\nДопустим ник &lt;&lt;&lt;SuperNick&gt;&gt;. В базе он будет храниться как &amp;lt;&amp;lt;&amp;lt;SuperNick&amp;gt;&amp;gt;&amp;gt;<br />\nПервый вызов <b>clean_username </b>вернет  &amp;lt;&amp;lt;&amp;lt;SuperNick&amp;gt;&amp;gt;&amp;gt; и передаст его в функцию <b>get_userdata. </b>Повторный вызов<b> <b>clean_username  </b></b>вернет уже &amp;amp;lt;&amp;amp;lt;&amp;amp;lt;SuperNick&amp;amp;gt;&amp;amp;gt;&amp;amp;gt;, превращая sql-запрос в фарш.<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n в",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1512943875,
+      "user_id": 8136,
+      "user_title": "User",
+      "username": "alexTil"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 92478,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Спасибо, в 2.2.4 поправлю.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1514996407,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 93295,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено в версии 2.3.0 (TorrentPier Bison). Релиз 26 числа.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1529867643,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 2,
+  "slug": "nel-za-otpravit-ls-pol-zovatelu-s-nikom-imeusim-simvoly",
+  "sticky": false,
+  "tags": [
+    "личные сообщения"
+  ],
+  "title": "Нельзя отправить ЛС пользователю с ником, имеющим символы >&<",
+  "url_path": "/threads/nel-za-otpravit-ls-pol-zovatelu-s-nikom-imeusim-simvoly.41853/",
+  "user_id": 8136,
+  "username": "alexTil",
+  "view_count": 1138
+}

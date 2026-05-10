@@ -1,0 +1,105 @@
+{
+  "custom_fields": {
+    "torrentpier": ""
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 97664,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 42693,
+  "last_post_date": 1755093340,
+  "node_id": 57,
+  "post_date": 1755059310,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97664,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Ребят весь интернет перерыл помогайте не могу понять на стороне сборки ошибка или на стороне хостинга....<br />\n<br />\n// Email<br />\n$bb_cfg[&#039;emailer&#039;] = [<br />\n    &#039;enabled&#039; =&gt; true,<br />\n    &#039;sendmail_command&#039; =&gt; &#039;/usr/sbin/sendmail -bs&#039;,<br />\n    &#039;smtp&#039; =&gt; [<br />\n        &#039;enabled&#039; =&gt; true, // send email via external SMTP server<br />\n        &#039;host&#039; =&gt; &#039;smtp.majordomo.ru&#039;, // SMTP server host<br />\n        &#039;port&#039; =&gt; 465, // SMTP server port<br />\n        &#039;username&#039; =&gt; &#039;<a href=\"mailto:noreply@ivtorrent.ru\">noreply@ivtorrent.ru</a>&#039;, // SMTP username (if server requires it)<br />\n        &#039;password&#039; =&gt; &#039;Bnmjkllkjmnh&#039;, // SMTP password (if server requires it)<br />\n        &#039;ssl_type&#039; =&gt; &#039;ssl&#039;, // SMTP ssl type (ssl or tls)<br />\n    ],<br />\n];<br />\n$bb_cfg[&#039;extended_email_validation&#039;] = true; // DNS &amp; RFC checks for entered email addresses<br />\n<br />\n$bb_cfg[&#039;board_email&#039;] = &quot;noreply@$domain_name&quot;; // admin email address<br />\n$bb_cfg[&#039;board_email_form&#039;] = false; // can users send email to each other via board<br />\n$bb_cfg[&#039;board_email_sig&#039;] = &#039;&#039;; // this text will be attached to all emails the board sends<br />\n$bb_cfg[&#039;board_email_sitename&#039;] = $domain_name; // sitename used in all emails header<br />\n<br />\n$bb_cfg[&#039;topic_notify_enabled&#039;] = true; // Send emails to users if subscribed to the topic<br />\n$bb_cfg[&#039;pm_notify_enabled&#039;] = true; // Send emails to users if there&#039;s a new message in inbox<br />\n$bb_cfg[&#039;group_send_email&#039;] = true; // Send emails to users if user was invited/added to a group<br />\n$bb_cfg[&#039;email_change_disabled&#039;] = false; // Allow changing emails for users<br />\n$bb_cfg[&#039;show_email_visibility_settings&#039;] = true; // Allow changing privacy status of profile for users (e.g. last time seen)<br />\n<br />\n$bb_cfg[&#039;bounce_email&#039;] = &quot;bounce@$domain_name&quot;; // bounce email address<br />\n$bb_cfg[&#039;tech_admin_email&#039;] = &quot;admin@$domain_name&quot;; // email for sending error reports<br />\n$bb_cfg[&#039;abuse_email&#039;] = &quot;abuse@$domain_name&quot;; // abuse email (e.g. DMCA)<br />\n$bb_cfg[&#039;adv_email&#039;] = &quot;adv@$domain_name&quot;; // advertisement email<br />\n<br />\nСама ошибка<br />\nFailed sending email: Expected response code &quot;250&quot; but got code &quot;550&quot;, with message &quot;550 Mail from <a href=\"mailto:bounce@ivtorrent.ru\">bounce@ivtorrent.ru</a> is not allowed.&quot;.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1755059310,
+      "user_id": 11055,
+      "user_title": "User",
+      "username": "HuliGan37"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97665,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<div data-template-name=\"public:bb_code_tag_url_unfurl\">\n\t\t<a href=\"https://torrentpier.com/threads/registracija-polzovatelej.42360/\"\n\t\t\tclass=\"link link--internal\"\n\t\t\ttarget=\"\"\n\t\t\trel=\"\"\n\t\t\tdata-proxy-href=\"\">\n\t\t\thttps://torrentpier.com/threads/registracija-polzovatelej.42360/\n\t\t</a>\n\t</div>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1755059893,
+      "user_id": 7621,
+      "user_title": "User",
+      "username": "DimaUZB2001"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97666,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://stackoverflow.com/questions/57124091/error-expected-response-code-250-but-got-code-550-with-message-550-this-is-a\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Посмотри суда</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1755073357,
+      "user_id": 10665,
+      "user_title": "User",
+      "username": "crowni"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 97667,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Решено) тех поддержка хостинга помогла ошибка в скрипте<br />\n<br />\nИзмените данные настройки<br />\n$bb_cfg[&#039;bounce_email&#039;] = &quot;noreply@$domain_name&quot;; // bounce email address<br />\n<br />\n$bb_cfg[&#039;tech_admin_email&#039;] = &quot;admin@$domain_name&quot;; // email for sending error reports<br />\n<br />\n$bb_cfg[&#039;abuse_email&#039;] = &quot;abuse@$domain_name&quot;; // abuse email (e.g. DMCA)<br />\n<br />\n$bb_cfg[&#039;adv_email&#039;] = &quot;adv@$domain_name&quot;; // advertisement email<br />\n<br />\n<br />\n<br />\nНа noreply, как в $bb_cfg[&#039;bounce_email&#039;].<br />\nСотрудник поддержки • 13.08.2025 08:02:04",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1755093340,
+      "user_id": 11055,
+      "user_title": "User",
+      "username": "HuliGan37"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "osibka-smtp",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка Smtp",
+  "url_path": "/threads/osibka-smtp.42693/",
+  "user_id": 11055,
+  "username": "HuliGan37",
+  "view_count": 514
+}

@@ -1,0 +1,132 @@
+{
+  "custom_fields": {
+    "torrentpier": "no_version"
+  },
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 94177,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 42055,
+  "last_post_date": 1555962580,
+  "node_id": 80,
+  "post_date": 1555650695,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94177,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здравствуйте. Недавно столкнулись с такой проблемой, некие третьи лица получают доступ к административным и модераторским аккаунтам, не ясно каким образом. Вопрос: как найти дыру в движке и залатать ее? Подскажите хотябы в какую сторону копать, мы в тупике. Движок TorrentPier R400",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1555650695,
+      "user_id": 1066,
+      "user_title": "User",
+      "username": "shukur"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94178,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "обновись до 2,1,5 хотя-бы, очень старая версия.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1555653298,
+      "user_id": 896,
+      "user_title": "User",
+      "username": "Dr_Brown"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94179,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "У меня такая же версия, хорошо работает, слишком много изменил в двиге, хлопотно переносить, а закрыть доступ легко",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1555669178,
+      "user_id": 1338,
+      "user_title": "User",
+      "username": "Alex39"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94181,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Да я вот тоже, много изменений сделал, обновляться проблематично, но наверное всетаки прийдется.<br />\n<blockquote class=\"xfBb-quote\" data-name=\"alexandr3636\">а закрыть доступ легко</blockquote>Поведуй если не сложно",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1555685723,
+      "user_id": 1066,
+      "user_title": "User",
+      "username": "shukur"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94182,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"shukur\">Да я вот тоже, много изменений сделал, обновляться проблематично, но наверное всетаки прийдется.<br />\n<br />\nПоведуй если не сложно</blockquote>Ну каждый админ защищает свое детище, не хочу на люд выносить, могу где то лично поведать, в скайпе например",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1555686010,
+      "user_id": 1338,
+      "user_title": "User",
+      "username": "Alex39"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 94188,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"shukur\">Вопрос: как найти дыру в движке и залатать ее?</blockquote>так искать дыру в движке это даже не пол дела, у вас может быть дыра в серверном ПО можно получить достум используя уязвимости в нем, далее повысить права и после иметь полный доступ ко всему, включая базы движка, с чего вывод что дыра именно в движке не понятно.",
+      "message_state": "visible",
+      "position": 5,
+      "post_date": 1555962580,
+      "user_id": 7243,
+      "user_title": "User",
+      "username": "Protektor"
+    }
+  ],
+  "prefix_id": 25,
+  "reply_count": 5,
+  "slug": "polucenie-dostupa-k-administrativnym-i-moderatorskim-akkauntam",
+  "sticky": false,
+  "tags": [],
+  "title": "Получение доступа к административным и модераторским аккаунтам.",
+  "url_path": "/threads/polucenie-dostupa-k-administrativnym-i-moderatorskim-akkauntam.42055/",
+  "user_id": 1066,
+  "username": "shukur",
+  "view_count": 1343
+}

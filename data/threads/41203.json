@@ -1,0 +1,102 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 84401,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 87,
+    "title": "Questions about HTML / CSS"
+  },
+  "id": 41203,
+  "last_post_date": 1435350721,
+  "node_id": 87,
+  "post_date": 1435269784,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84401,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Такой вопрос. Имею код:<br />\n<br />\n<div>Spoiler content hidden.</div><br />\nСейчас по умолчанию не выбирается ни один из чекбоксов и, в то же время, их можно выбрать все сразу.<br />\n<br />\nКак мне сделать один из чекбоксов активным по умолчанию и сделать так, что если выбираешь другой, с предыдущего снималась галочка?",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1435269784,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84404,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"html\">checked=&quot;checked&quot;</pre>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1435344700,
+      "user_id": 97,
+      "user_title": "User",
+      "username": "Zenden"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84405,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Это функционал радиобаттонов. Лучше их использовать. <a href=\"http://htmlbook.ru/samhtml5/formy/pereklyuchateli\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://htmlbook.ru/samhtml5/formy/pereklyuchateli</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1435348386,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 84406,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/19/\">@dimka3210</a>, в принципе так и поступил, заменил на radio",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1435350721,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 3,
+  "slug": "kak-sdelat-cekboksy-zavisimymi",
+  "sticky": false,
+  "tags": [
+    "checkbox",
+    "html",
+    "radiobutton"
+  ],
+  "title": "Как сделать чекбоксы зависимыми",
+  "url_path": "/threads/kak-sdelat-cekboksy-zavisimymi.41203/",
+  "user_id": 1514,
+  "username": "Begemot",
+  "view_count": 2137
+}

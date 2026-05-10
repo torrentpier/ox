@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 96285,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42278,
+  "last_post_date": 1720168663,
+  "node_id": 47,
+  "post_date": 1720168663,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96285,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/kto-byl-poslednij-na-razdache.295/\" class=\"link link--internal\">Кто был последний на раздаче</a> - Добавляет отображение ника последнего, кто был на раздаче<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> Добавляет отображение ника последнего, кто был на раздаче.<br />\n<b>Совместимость:</b> все версии по-сути, проверялся на LTS.<br />\n<hr /><div style=\"text-align: center\"><span style=\"color: rgb(226, 80, 65)\">Этот мини-мод уже интегрирован по-умолчанию в v2.4.0 и выше.</span>&#8203;</div></blockquote><br />\n<a href=\"https://torrentpier.com/resources/kto-byl-poslednij-na-razdache.295/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1720168663,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "kto-byl-poslednij-na-razdace",
+  "sticky": false,
+  "tags": [],
+  "title": "Кто был последний на раздаче",
+  "url_path": "/threads/kto-byl-poslednij-na-razdace.42278/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 458
+}

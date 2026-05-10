@@ -1,0 +1,55 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 57871,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 54,
+        "title": "New versions",
+        "type": "Forum"
+      }
+    ],
+    "id": 111,
+    "title": "Version archive"
+  },
+  "id": 25630,
+  "last_post_date": 1389876901,
+  "node_id": 111,
+  "post_date": 1389876901,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 57871,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>Описание</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">Revision 538: продолжение забытого r537</blockquote><br />\n<b>Автор</b>:<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\">darkmod007</blockquote><br />\n<b>Измененные файлы в ревизии</b>: <br />\n<pre class=\"xfBb-code\" data-lang=\"php\">Changed Paths:\n    Modify    /trunk/install/sql/mysql.sql \n    Modify    /trunk/upload/config.php \n\nпродолжение забытого r537</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1389876901,
+      "user_id": 3321,
+      "user_title": "User",
+      "username": "Бот"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "revision-538-prodolzenie-zabytogo-r537",
+  "sticky": false,
+  "tags": [],
+  "title": "Revision 538: продолжение забытого r537",
+  "url_path": "/threads/revision-538-prodolzenie-zabytogo-r537.25630/",
+  "user_id": 3321,
+  "username": "Бот",
+  "view_count": 834
+}

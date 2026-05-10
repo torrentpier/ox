@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "resource",
+  "first_post_id": 96902,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 46,
+        "title": "Resources for TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 47,
+    "title": "Modifications for TorrentPier"
+  },
+  "id": 42327,
+  "last_post_date": 1734251652,
+  "node_id": 47,
+  "post_date": 1734005418,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96902,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka добавил(а) новый ресурс:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/podsvetka-nikov-po-zvaniju.312/\" class=\"link link--internal\">Подсветка ников по званию</a> - Добавляет возможность выбрать для звания определенный цвет.<br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><b>Описание:</b> Добавляет возможность выбрать для звания определенный цвет, при этом без необходимости править / добавлять css-класс. В случае если у вас указан стиль (css-класс) для звания, то цвет указанный в нём будет замен цветом который вы укажите в поле &quot;Цвет ника&quot;. Если вы не хотите для звания устанавливать цвет ника, то поле можно оставить пустым, в таком случае цвет ника и звания будет взят напрямую с css-класса.<br />\n<br />\n<b>Изменения в сравнении с...</b></blockquote><br />\n<a href=\"https://torrentpier.com/resources/podsvetka-nikov-po-zvaniju.312/\" class=\"link link--internal\">Узнать больше об этом ресурсе...</a>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1734005418,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96904,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/podsvetka-nikov-po-zvaniju.312/\" class=\"link link--internal\">Подсветка ников по званию</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/podsvetka-nikov-po-zvaniju.312/update/599/\" class=\"link link--internal\">Обновление v1.0.1</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Мелкие правки в языках</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/podsvetka-nikov-po-zvaniju.312/update/599/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1734016245,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96910,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "belomaxorka обновил(а) ресурс <a href=\"https://torrentpier.com/resources/podsvetka-nikov-po-zvaniju.312/\" class=\"link link--internal\">Подсветка ников по званию</a> новой записью:<br />\n<br />\n<a href=\"https://torrentpier.com/resources/podsvetka-nikov-po-zvaniju.312/update/602/\" class=\"link link--internal\">Обновление v1.0.2</a><br />\n<br />\n<blockquote class=\"xfBb-quote\" data-name=\"\"><ul>\n<li data-xf-list-type=\"ul\">Мелкие правки в коде</li>\n</ul></blockquote><br />\n<a href=\"https://torrentpier.com/resources/podsvetka-nikov-po-zvaniju.312/update/602/\" class=\"link link--internal\">Узнать больше об этом обновлении...</a>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1734251652,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "podsvetka-nikov-po-zvaniu",
+  "sticky": false,
+  "tags": [],
+  "title": "Подсветка ников по званию",
+  "url_path": "/threads/podsvetka-nikov-po-zvaniu.42327/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 625
+}

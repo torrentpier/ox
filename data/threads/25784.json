@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 59175,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 25784,
+  "last_post_date": 1392651997,
+  "node_id": 80,
+  "post_date": 1392651347,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59175,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"http://demo.torrentpier.com/admin/index.php\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://demo.torrentpier.com/admin/index.php</a><br />\n <br />\nтыкаем <a href=\"http://demo.torrentpier.com/admin/admin_ban.php\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">&quot;Бананилка&quot; в меню</a><br />\nвидим:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">Notice: Undefined index: Click_return_banadmin in /var/www/main/data/www/demo.torrentpier.com/admin/admin_ban.php on line 20\n \nNotice: Undefined index: Click_return_admin_index in /var/www/main/data/www/demo.torrentpier.com/admin/admin_ban.php on line 20\n \nNotice: Use of undefined constant BB_BAN_IP - assumed &#039;BB_BAN_IP&#039; in /var/www/main/data/www/demo.torrentpier.com/admin/admin_ban.php on line 230\n \nFatal error: DB Error [admin/admin_ban.php(230)] in /var/www/main/data/www/demo.torrentpier.com/includes/db/mysql.php on line 804</pre>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1392651347,
+      "user_id": 4924,
+      "user_title": "User",
+      "username": "tltorrent"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 59179,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "К текущему движку не относится, проблемы конкретно текущей версии демо - некоторый функционал в разработке пока дает ошибки.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1392651997,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 1,
+  "slug": "bananilka-na-demo",
+  "sticky": false,
+  "tags": [],
+  "title": "Бананилка на демо...",
+  "url_path": "/threads/bananilka-na-demo.25784/",
+  "user_id": 4924,
+  "username": "tltorrent",
+  "view_count": 1047
+}

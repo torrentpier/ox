@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61149,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 58,
+    "title": "Suggestions for improving TorrentPier"
+  },
+  "id": 25975,
+  "last_post_date": 1403073495,
+  "node_id": 58,
+  "post_date": 1403007443,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61149,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "последние новости как на XenForo с аватаром а также последние торренты",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1403007443,
+      "user_id": 322,
+      "user_title": "User",
+      "username": "botyk"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61161,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>botyk</b>, какой смысл это добавлять ?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1403073495,
+      "user_id": 3170,
+      "user_title": "User",
+      "username": "drew"
+    }
+  ],
+  "prefix_id": 34,
+  "reply_count": 1,
+  "slug": "novye-soobsenia",
+  "sticky": false,
+  "tags": [],
+  "title": "Новые сообщения",
+  "url_path": "/threads/novye-soobsenia.25975/",
+  "user_id": 322,
+  "username": "botyk",
+  "view_count": 1245
+}

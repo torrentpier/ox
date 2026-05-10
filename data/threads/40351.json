@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 82230,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 40351,
+  "last_post_date": 1428839643,
+  "node_id": 80,
+  "post_date": 1428839008,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 82230,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "[БАГ] Автоматическая синхранизация форумов не работает, помогите пожалуйста, после ручного синхранизации форумов темы появляються в поле подфорумов, а если не делать синхранизацию то они после создания не появляються вообще!<br />\nПомогите пожалуйста, как нибудь можно исправить этот баг?<br />\nВерсия TP: 2.1.5",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1428839008,
+      "user_id": 6137,
+      "user_title": "User",
+      "username": "freedo.m"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 82231,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Крон отвязан? Если да, то каким способом? Задания в разделе админки с крон-заданиями выполняются (счетчик выполнений растет)?",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1428839643,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 29,
+  "reply_count": 1,
+  "slug": "avtomaticeskaa-sinhronizacia-forumov-ne-rabotaet",
+  "sticky": false,
+  "tags": [],
+  "title": "Автоматическая синхронизация форумов не работает",
+  "url_path": "/threads/avtomaticeskaa-sinhronizacia-forumov-ne-rabotaet.40351/",
+  "user_id": 6137,
+  "username": "freedo.m",
+  "view_count": 980
+}

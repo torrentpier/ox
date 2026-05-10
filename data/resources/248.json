@@ -1,0 +1,188 @@
+{
+  "category": {
+    "description": "Section with all templates for TorrentPier.",
+    "id": 5,
+    "parent_id": 0,
+    "slug": null,
+    "title": "Templates",
+    "view_url": "https://torrentpier.com/resources/categories/templates.5/"
+  },
+  "current_files": [
+    {
+      "filename": "AdminLTE_TP2_2.1.5.zip",
+      "id": 4344,
+      "local_path": null,
+      "r2_key": null,
+      "size": 1196240,
+      "src_url": "https://torrentpier.com/api/resource-versions/366/download?file=4344"
+    }
+  ],
+  "custom_fields": {
+    "compability_check": "yes",
+    "installation": "----------------------------------------------------------\nfunctions.php\n----------------------------------------------------------\n// Найти\n\n     return \"\\n<select $select_params>\\n\". $this->options .\"</select>\\n\";\n\n// Заменить на\n\n     return '<select '. $select_params .' class=\"form-control\">'. $this->options .'</select>';\n\n// Найти\n\n   $profile = '<span title=\"'. $title .'\" class=\"'. $style .'\">'. $username .'</span>';\n\n//Заменить на\n\n   $profile = '<span title=\"'. $title .'\" class=\"'. $style .'\" data-toggle=\"tooltip\">'. $username .'</span>';\n\n// Найти\n\n   return '<a href=\"magnet:?xt=urn:btih:'. bin2hex($infohash) .'&tr='. urlencode($bb_cfg['bt_announce_url'] . $passkey_url) .'\"><img src=\"'. $images['icon_magnet'] .'\" width=\"12\" height=\"12\" border=\"0\" /></a>';\n\n// Заменить на\n\n   return '<a href=\"magnet:?xt=urn:btih:'. bin2hex($infohash) .'&tr='. urlencode($bb_cfg['bt_announce_url'] . $passkey_url) .'\"><i class=\"'. $images['icon_magnet'] .'\"></i></a>';\n\n// Найти\nfunction create_magnet ($infohash, $auth_key, $logged_in)\n{\n   global $bb_cfg, $_GET, $userdata, $images;\n\n   $passkey_url = ((!$logged_in || isset($_GET['no_passkey'])) && $bb_cfg['bt_tor_browse_only_reg']) ? '' : \"?{$bb_cfg['passkey_key']}=$auth_key\";\n   return '<a href=\"magnet:?xt=urn:btih:'. bin2hex($infohash) .'&tr='. urlencode($bb_cfg['bt_announce_url'] . $passkey_url) .'\"><img src=\"'. $images['icon_magnet'] .'\" width=\"12\" height=\"12\" border=\"0\" /></a>';\n}\n\n// Заменить на\n\nfunction create_magnet ($infohash, $auth_key, $logged_in)\n{\n   global $bb_cfg, $_GET, $userdata, $images;\n\n   $passkey_url = ((!$logged_in || isset($_GET['no_passkey'])) && $bb_cfg['bt_tor_browse_only_reg']) ? '' : \"?{$bb_cfg['passkey_key']}=$auth_key\";\n   return '<a href=\"magnet:?xt=urn:btih:'. bin2hex($infohash) .'&tr='. urlencode($bb_cfg['bt_announce_url'] . $passkey_url) .'\"><i class=\"'. $images['icon_magnet'] .'\"></i></a>';\n}\n\n// Найти и заменить\n\nfunction get_avatar ($user_id, $ext_id, $allow_avatar = true, $size = true, $height = '', $width = '')\n{\n   global $bb_cfg;\n\n   if ($size)\n   {\n     // TODO размеры: s, m, l + кеширование\n   }\n\n   $height = ($height != '') ? 'height=\"'. $height .'\"' : '';\n   $width  = ($width != '') ? 'width=\"'. $width .'\"' : '';\n\n   $user_avatar = '<img src=\"'. make_url($bb_cfg['avatars']['upload_path'] . $bb_cfg['avatars']['no_avatar']) .'\" alt=\"'. $user_id .'\" '. $height .' '. $width .' class=\"img-circle\" />';\n\n   if ($user_id == BOT_UID && $bb_cfg['avatars']['bot_avatar'])\n   {\n     $user_avatar = '<img src=\"'. make_url($bb_cfg['avatars']['upload_path'] . $bb_cfg['avatars']['bot_avatar']) .'\" alt=\"'. $user_id .'\" '. $height .' '. $width .' class=\"img-circle\" />';\n   }\n   else if ($allow_avatar && $ext_id)\n   {\n     if (file_exists(get_avatar_path($user_id, $ext_id)))\n     {\n       $user_avatar = '<img src=\"'. make_url(get_avatar_path($user_id, $ext_id)) .'\" alt=\"'. $user_id .'\" '. $height .' '. $width .' />';\n     }\n   }\n\n   return $user_avatar;\n}\n----------------------------------------------------------\nterms.php\n----------------------------------------------------------\n// Найти\n\n   'TERMS_HTML' => bbcode2html($bb_cfg['terms']),\n\n// Добавить\n   'PAGE_TITLE' => $lang['TERMS'],\n\n----------------------------------------------------------\ngroup.php\n----------------------------------------------------------\n// Найти\n\n       $options .= '<li class=\"pad_2\"><a href=\"'. GROUP_URL . $data['id'] .'\" class=\"med bold\">'. $text .'</a></li>';\n       $options .= ($data['rg']) ? '<ul><li class=\"med\">'. $lang['RELEASE_GROUP'] .'</li>' : '<ul>';\n       $options .= '<li class=\"seedmed\">'. $members .'</li>';\n       if (IS_AM)\n       {\n         $options .= '<li class=\"leechmed\">'. $candidates .'</li>';\n       }\n\nЗаменить на\n\n       $options .= '<li><b><a href=\"'. GROUP_URL . $data['id'] .'\">'. $text .'</a></b></li>';\n       $options .= ($data['rg']) ? '<ul><li class=\"text-muted\">'. $lang['RELEASE_GROUP'] .'</li>' : '<ul>';\n       $options .= '<li class=\"text-green\">'. $members .'</li>';\n       if (IS_AM)\n       {\n         $options .= '<li class=\"text-red\">'. $candidates .'</li>';\n       }\n\n----------------------------------------------------------\nviewforum.php\n----------------------------------------------------------\n// Найти\n$sort_list = '<select name=\"sort\">'. get_forum_display_sort_option($sort_value, 'list', 'sort') .'</select>';\n$order_list = '<select name=\"order\">'. get_forum_display_sort_option($order_value, 'list', 'order') .'</select>';\n$s_display_order = '&nbsp;'. $lang['SORT_BY'] .':&nbsp;'. $sort_list .'&nbsp;'. $order_list .'&nbsp;';\n\n// Заменить на\n$sort_list = '<select name=\"sort\" class=\"form-control\">'. get_forum_display_sort_option($sort_value, 'list', 'sort') .'</select>';\n$order_list = '<select name=\"order\" class=\"form-control\">'. get_forum_display_sort_option($order_value, 'list', 'order') .'</select>';\n$s_display_order = '<label>'. $lang['SORT_BY'] .':</label>'. $sort_list .'&nbsp;'. $order_list .'&nbsp;';\n\n----------------------------------------------------------\nconfig.php\n----------------------------------------------------------\n$bb_cfg['show_rank_text']  = true;\n\n----------------------------------------------------------\nposting.php\n----------------------------------------------------------\n\n// Найти\n\n// Topic type selection\n$topic_type_toggle = '';\nif ( $mode == 'newtopic' || ( $mode == 'editpost' && $post_data['first_post'] ) )\n{\n   $template->assign_block_vars('switch_type_toggle', array());\n\n   if( $is_auth['auth_sticky'] )\n   {\n     $topic_type_toggle .= '<label><input type=\"radio\" name=\"topictype\" value=\"' . POST_STICKY . '\"';\n     if ( isset($post_data['topic_type']) && ($post_data['topic_type'] == POST_STICKY || $topic_type == POST_STICKY) )\n     {\n       $topic_type_toggle .= ' checked=\"checked\"';\n     }\n     $topic_type_toggle .= ' /> ' . $lang['POST_STICKY'] . '</label>&nbsp;&nbsp;';\n   }\n\n   if( $is_auth['auth_announce'] )\n   {\n     $topic_type_toggle .= '<label><input type=\"radio\" name=\"topictype\" value=\"' . POST_ANNOUNCE . '\"';\n     if ( isset($post_data['topic_type']) && ($post_data['topic_type'] == POST_ANNOUNCE || $topic_type == POST_ANNOUNCE) )\n     {\n       $topic_type_toggle .= ' checked=\"checked\"';\n     }\n     $topic_type_toggle .= ' /> ' . $lang['POST_ANNOUNCEMENT'] . '</label>&nbsp;&nbsp;';\n   }\n\n   if ( $topic_type_toggle != '' )\n   {\n     $topic_type_toggle = $lang['POST_TOPIC_AS'] . ': <label><input type=\"radio\" name=\"topictype\" value=\"' . POST_NORMAL .'\"' . ( (!isset($post_data['topic_type']) || $post_data['topic_type'] == POST_NORMAL || $topic_type == POST_NORMAL) ? ' checked=\"checked\"' : '' ) . ' /> ' . $lang['POST_NORMAL'] . '</label>&nbsp;&nbsp;' . $topic_type_toggle;\n   }\n}\n\n// Заменить на\n\n// Topic type selection\n$topic_type_toggle = '';\nif ( $mode == 'newtopic' || ( $mode == 'editpost' && $post_data['first_post'] ) )\n{\n   $template->assign_block_vars('switch_type_toggle', array());\n\n   if( $is_auth['auth_sticky'] )\n   {\n     $topic_type_toggle .= '<div class=\"radio\"><label><input type=\"radio\" name=\"topictype\" value=\"' . POST_STICKY . '\"';\n     if ( isset($post_data['topic_type']) && ($post_data['topic_type'] == POST_STICKY || $topic_type == POST_STICKY) )\n     {\n       $topic_type_toggle .= ' checked=\"checked\"';\n     }\n     $topic_type_toggle .= ' /> ' . $lang['POST_STICKY'] . '</label></div>';\n   }\n\n   if( $is_auth['auth_announce'] )\n   {\n     $topic_type_toggle .= '<div class=\"radio\"><label><input type=\"radio\" name=\"topictype\" value=\"' . POST_ANNOUNCE . '\"';\n     if ( isset($post_data['topic_type']) && ($post_data['topic_type'] == POST_ANNOUNCE || $topic_type == POST_ANNOUNCE) )\n     {\n       $topic_type_toggle .= ' checked=\"checked\"';\n     }\n     $topic_type_toggle .= ' /> ' . $lang['POST_ANNOUNCEMENT'] . '</label></div>';\n   }\n\n   if ( $topic_type_toggle != '' )\n   {\n     $topic_type_toggle = $lang['POST_TOPIC_AS'] . ': <div class=\"radio\"><label><input type=\"radio\" name=\"topictype\" value=\"' . POST_NORMAL .'\"' . ( (!isset($post_data['topic_type']) || $post_data['topic_type'] == POST_NORMAL || $topic_type == POST_NORMAL) ? ' checked=\"checked\"' : '' ) . ' /> ' . $lang['POST_NORMAL'] . '</label></div>' . $topic_type_toggle;\n   }\n}\n\n// Найти\n\n//bt\n$topic_dl_type = (isset($post_info['topic_dl_type'])) ? $post_info['topic_dl_type'] : 0;\n\nif ($post_info['allow_reg_tracker'] && $post_data['first_post'] && ($topic_dl_type || $is_auth['auth_mod']))\n{\n   $sql = \"\n     SELECT tor.attach_id\n     FROM \". BB_POSTS .\" p\n     LEFT JOIN \". BB_BT_TORRENTS .\" tor ON (p.post_id = tor.post_id)\n     WHERE p.post_id = $post_id\n   \";\n   $result = DB()->fetch_row($sql);\n   if (!empty($result['attach_id']))\n   {\n     if (!$topic_type_toggle)\n     {\n       $topic_type_toggle = $lang['POST_TOPIC_AS'] . ': ';\n     }\n\n     $dl_ds = $dl_ch = $dl_hid = '';\n     $dl_type_name = 'topic_dl_type';\n     $dl_type_val = ($topic_dl_type) ? 1 : 0;\n\n     if (!$post_info['allow_reg_tracker'] && !$is_auth['auth_mod'])\n     {\n       $dl_ds = ' disabled=\"disabled\" ';\n       $dl_hid = '<input type=\"hidden\" name=\"topic_dl_type\" value=\"'. $dl_type_val .'\" />';\n       $dl_type_name = '';\n     }\n\n     $dl_ch = ($mode == 'editpost' && $post_data['first_post'] && $topic_dl_type) ? ' checked=\"checked\" ' : '';\n\n     $topic_type_toggle .= '<nobr><input type=\"checkbox\" name=\"'. $dl_type_name .'\" id=\"topic_dl_type_id\" '. $dl_ds . $dl_ch .' /><label for=\"topic_dl_type_id\"> '.$lang['POST_DOWNLOAD'].'</label></nobr>';\n     $topic_type_toggle .= $dl_hid;\n   }\n}\n//bt end\n\nЗаменить\n\n//bt\n$topic_dl_type = (isset($post_info['topic_dl_type'])) ? $post_info['topic_dl_type'] : 0;\n\nif ($post_info['allow_reg_tracker'] && $post_data['first_post'] && ($topic_dl_type || $is_auth['auth_mod']))\n{\n   $sql = \"\n     SELECT tor.attach_id\n     FROM \". BB_POSTS .\" p\n     LEFT JOIN \". BB_BT_TORRENTS .\" tor ON (p.post_id = tor.post_id)\n     WHERE p.post_id = $post_id\n   \";\n   $result = DB()->fetch_row($sql);\n   if (!empty($result['attach_id']))\n   {\n     if (!$topic_type_toggle)\n     {\n       $topic_type_toggle = '<label>'. $lang['POST_TOPIC_AS'] . '</label>';\n     }\n\n     $dl_ds = $dl_ch = $dl_hid = '';\n     $dl_type_name = 'topic_dl_type';\n     $dl_type_val = ($topic_dl_type) ? 1 : 0;\n\n     if (!$post_info['allow_reg_tracker'] && !$is_auth['auth_mod'])\n     {\n       $dl_ds = ' disabled=\"disabled\" ';\n       $dl_hid = '<input type=\"hidden\" name=\"topic_dl_type\" value=\"'. $dl_type_val .'\" />';\n       $dl_type_name = '';\n     }\n\n     $dl_ch = ($mode == 'editpost' && $post_data['first_post'] && $topic_dl_type) ? ' checked=\"checked\" ' : '';\n\n     $topic_type_toggle .= '<div class=\"checkbox\" style=\"margin-top: -5px;\"><label for=\"topic_dl_type_id\"><input type=\"checkbox\" name=\"'. $dl_type_name .'\" id=\"topic_dl_type_id\" '. $dl_ds . $dl_ch .' /> '.$lang['POST_DOWNLOAD'].'</label></div>';\n     $topic_type_toggle .= $dl_hid;\n   }\n}\n//bt end\n\n----------------------------------------------------------\ninit_bb.php\n----------------------------------------------------------\n\n// Найти\n\n$dl_link_css = array(\n   DL_STATUS_RELEASER => 'genmed',\n   DL_STATUS_WILL  => 'dlWill',\n   DL_STATUS_DOWN  => 'leechmed',\n   DL_STATUS_COMPLETE => 'seedmed',\n   DL_STATUS_CANCEL  => 'dlCancel',\n);\n\n// Заменить на\n\n$dl_link_css = array(\n   DL_STATUS_RELEASER => 'badge bg-black',\n   DL_STATUS_WILL  => 'badge bg-light-blue',\n   DL_STATUS_DOWN  => 'badge bg-red',\n   DL_STATUS_COMPLETE => 'badge bg-green',\n   DL_STATUS_CANCEL  => 'badge bg-yellow',\n);\n\n----------------------------------------------------------\nuser_register.php\n----------------------------------------------------------\n// Найти\n\n$html = '<img src=\"./styles/images/good.gif\">';\nswitch($mode)\n{\n   case 'check_name':\n     $username = clean_username($this->request['username']);\n\n     if (empty($username))\n     {\n       $html = '<img src=\"./styles/images/bad.gif\"> <span class=\"leechmed bold\">'. $lang['CHOOSE_A_NAME'] .'</span>';\n     }\n     elseif($err = validate_username($username))\n     {\n       $html = '<img src=\"./styles/images/bad.gif\"> <span class=\"leechmed bold\">'. $err .'</span>';\n     }\n   break;\n\n   case 'check_email':\n     $email = (string) $this->request['email'];\n\n     if (empty($email))\n     {\n       $html = '<img src=\"./styles/images/bad.gif\"> <span class=\"leechmed bold\">'. $lang['CHOOSE_E_MAIL'] .'</span>';\n     }\n     elseif($err = validate_email($email))\n     {\n       $html = '<img src=\"./styles/images/bad.gif\"> <span class=\"leechmed bold\">'. $err .'</span>';\n     }\n   break;\n\n   case 'check_pass':\n     $pass = (string) $this->request['pass'];\n     $pass_confirm = (string) $this->request['pass_confirm'];\n     if (empty($pass) || empty($pass_confirm))\n     {\n       $html = '<img src=\"./styles/images/bad.gif\"> <span class=\"leechmed bold\">'. $lang['CHOOSE_PASS'] .'</span>';\n     }\n     else\n     {\n       if ($pass != $pass_confirm)\n       {\n         $html = '<img src=\"./styles/images/bad.gif\"> <span class=\"leechmed bold\">'. $lang['CHOOSE_PASS_ERR'] .'</span>';\n       }\n       else\n       {\n         if (mb_strlen($pass, 'UTF-8') > 20)\n         {\n           $html = '<img src=\"./styles/images/bad.gif\"> <span class=\"leechmed bold\">'. sprintf($lang['CHOOSE_PASS_ERR_MAX'], 20) .'</span>';\n         }\n         elseif (mb_strlen($pass, 'UTF-8') < 5)\n         {\n           $html = '<img src=\"./styles/images/bad.gif\"> <span class=\"leechmed bold\">'. sprintf($lang['CHOOSE_PASS_ERR_MIN'], 5) .'</span>';\n         }\n         else\n         {\n           $text = (IS_GUEST) ? $lang['CHOOSE_PASS_REG_OK'] : $lang['CHOOSE_PASS_OK'];\n           $html = '<img src=\"./styles/images/good.gif\"> <span class=\"seedmed bold\">'. $text .'</span>';\n         }\n       }\n     }\n   break;\n}\n\n// Заменить на\n\n$html = '<i class=\"fa fa-fw fa-check text-green\"></i>';\nswitch($mode)\n{\n   case 'check_name':\n     $username = clean_username($this->request['username']);\n\n     if (empty($username))\n     {\n       $html = '<span class=\"text-red\"><i class=\"fa fa-fw fa-exclamation\"></i> '. $lang['CHOOSE_A_NAME'] .'</span>';\n     }\n     elseif($err = validate_username($username))\n     {\n       $html = '<span class=\"text-red\"><i class=\"fa fa-fw fa-exclamation\"></i> '. $err .'</span>';\n     }\n   break;\n\n   case 'check_email':\n     $email = (string) $this->request['email'];\n\n     if (empty($email))\n     {\n       $html = '<span class=\"text-red\"><i class=\"fa fa-fw fa-exclamation\"></i> '. $lang['CHOOSE_E_MAIL'] .'</span>';\n     }\n     elseif($err = validate_email($email))\n     {\n       $html = '<span class=\"text-red\"><i class=\"fa fa-fw fa-exclamation\"></i> '. $err .'</span>';\n     }\n   break;\n\n   case 'check_pass':\n     $pass = (string) $this->request['pass'];\n     $pass_confirm = (string) $this->request['pass_confirm'];\n     if (empty($pass) || empty($pass_confirm))\n     {\n       $html = '<span class=\"text-red\"><i class=\"fa fa-fw fa-exclamation\"></i> '. $lang['CHOOSE_PASS'] .'</span>';\n     }\n     else\n     {\n       if ($pass != $pass_confirm)\n       {\n         $html = '<span class=\"text-red\"><i class=\"fa fa-fw fa-exclamation\"></i> '. $lang['CHOOSE_PASS_ERR'] .'</span>';\n       }\n       else\n       {\n         if (mb_strlen($pass, 'UTF-8') > 20)\n         {\n           $html = '<span class=\"text-red\"><i class=\"fa fa-fw fa-exclamation\"></i> '. sprintf($lang['CHOOSE_PASS_ERR_MAX'], 20) .'</span>';\n         }\n         elseif (mb_strlen($pass, 'UTF-8') < 5)\n         {\n           $html = '<span class=\"text-red\"><i class=\"fa fa-fw fa-exclamation\"></i> '. sprintf($lang['CHOOSE_PASS_ERR_MIN'], 5) .'</span>';\n         }\n         else\n         {\n           $text = (IS_GUEST) ? $lang['CHOOSE_PASS_REG_OK'] : $lang['CHOOSE_PASS_OK'];\n           $html = '<img src=\"./styles/images/good.gif\"> <span class=\"seedmed bold\">'. $text .'</span>';\n         }\n       }\n     }\n   break;\n}\n\n----------------------------------------------------------\nbonus.php\n----------------------------------------------------------\n\n// Найти\n\n     $class = ($user_points >= $price) ? 'seed' : 'leech';\n\n// Заменить на\n\n     $class = ($user_points >= $price) ? 'text-gren' : 'text-red';\n\n----------------------------------------------------------\nmain.php\n----------------------------------------------------------\n\n//txtb\n$lang['ICQ_TXTB'] = '[ICQ]';\n$lang['REPLY_WITH_QUOTE_TXTB'] = '[Цитировать]';\n$lang['READ_PROFILE_TXTB'] = '[Профиль]';\n$lang['SEND_EMAIL_TXTB'] = '[E-mail]';\n$lang['VISIT_WEBSITE_TXTB'] = '[www]';\n$lang['EDIT_DELETE_POST_TXTB'] = '[Изменить]';\n$lang['SEARCH_USER_POSTS_TXTB'] = '[Поиск]';\n$lang['VIEW_IP_TXTB'] = '[ip]';\n$lang['DELETE_POST_TXTB'] = '[x]';\n$lang['MODERATE_POST_TXTB'] = '[m]';\n$lang['SEND_PM_TXTB'] = '[ЛС]';\n\nНа\n\n//txtb\n$lang['ICQ_TXTB'] = 'ICQ';\n$lang['REPLY_WITH_QUOTE_TXTB'] = 'Цитировать';\n$lang['READ_PROFILE_TXTB'] = 'Профиль';\n$lang['SEND_EMAIL_TXTB'] = 'E-mail';\n$lang['VISIT_WEBSITE_TXTB'] = 'www';\n$lang['EDIT_DELETE_POST_TXTB'] = 'Изменить';\n$lang['SEARCH_USER_POSTS_TXTB'] = 'Поиск';\n$lang['VIEW_IP_TXTB'] = 'IP';\n$lang['DELETE_POST_TXTB'] = 'Удалить';\n$lang['MODERATE_POST_TXTB'] = 'Модерировать';\n$lang['SEND_PM_TXTB'] = 'ЛС';\n\nНайти и заменить\n$lang['VIEWING_USER_PROFILE'] = '<a data-toggle=\"tooltip\" data-original-title=\"Профиль пользователя %s\"><i class=\"fa fa-fw fa-user\"></i></a>';\n$lang['VIEWING_MY_PROFILE']  = '<a href=\"%s\" data-toggle=\"tooltip\" data-original-title=\"Настройки / Изменить профиль\">Мой профиль <i class=\"fa fa-fw fa-gear\"></i></a>';\n\n----------------------------------------------------------\ntracker.php\n----------------------------------------------------------\n\n// Найти\n\n       $dl_class  = isset($tor['dl_status']) ? $dl_link_css[$tor['dl_status']] : 'genmed';\n\n// Заменить на\n\n       $dl_class  = isset($tor['dl_status']) ? $dl_status_css[$tor['dl_status']] : '';\n\n----------------------------------------------------------\nviewprofile.php\n----------------------------------------------------------\n// Найти\n\n   'PAGE_TITLE'  => sprintf($lang['VIEWING_USER_PROFILE'], $profiledata['username']),\n\n// Заменить на\n\n   'PAGE_TITLE'  => $profiledata['username'],\n\nПо желанию\n----------------------------------------------------------\nbbcode.php\n----------------------------------------------------------\nНайти\n// Image\n$bbcode_tpl['img'] = <<<HTML\n   <img class=\"postImg img-responsive\" src=\"$1\">\nHTML;\n\n$bbcode_tpl['img_aligned'] = <<<HTML\n   <var class=\"postImg img-responsive postImgAligned img-\\\\1\" title=\"\\\\2\">&#10;</var>\nHTML;",
+    "owner": "Bender",
+    "was_paid": "no"
+  },
+  "description_attachments": [
+    {
+      "attach_date": 1458637282,
+      "file_size": 77002,
+      "filename": "2016-03-22_173224.webp",
+      "height": 1136,
+      "id": 4329,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2016-03-22_173224-webp.4329/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4333-ec9bacf62e01d06c8196580baf5d9c0f.jpg?hash=I39JCS1Tj3",
+      "width": 1902
+    },
+    {
+      "attach_date": 1458637287,
+      "file_size": 66136,
+      "filename": "2016-03-22_173517.webp",
+      "height": 950,
+      "id": 4330,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2016-03-22_173517-webp.4330/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4334-77d8628467be42e2518642d090a2d225.jpg?hash=HnhlPxbzAk",
+      "width": 1904
+    },
+    {
+      "attach_date": 1458637308,
+      "file_size": 82940,
+      "filename": "2016-03-22_173550.webp",
+      "height": 949,
+      "id": 4332,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2016-03-22_173550-webp.4332/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4336-801485faec04ddd64f2fccbc1e854c2b.jpg?hash=aayWbe9bJd",
+      "width": 1903
+    },
+    {
+      "attach_date": 1458637317,
+      "file_size": 83082,
+      "filename": "2016-03-22_173821.webp",
+      "height": 949,
+      "id": 4333,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2016-03-22_173821-webp.4333/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4337-5f054a8883864fbbe3d21d53bcbbf2e6.jpg?hash=df5suvopYe",
+      "width": 1903
+    },
+    {
+      "attach_date": 1458637326,
+      "file_size": 53662,
+      "filename": "2016-03-22_173940.webp",
+      "height": 949,
+      "id": 4334,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2016-03-22_173940-webp.4334/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4338-1f9737047f80d3122a31ef087af4f7f2.jpg?hash=1ykfehAlxQ",
+      "width": 1903
+    },
+    {
+      "attach_date": 1458637333,
+      "file_size": 54078,
+      "filename": "2016-03-22_174230.webp",
+      "height": 950,
+      "id": 4335,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2016-03-22_174230-webp.4335/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4339-619a6e9693433e7f0070025bdef2ae8b.jpg?hash=PVC_tx25FI",
+      "width": 1904
+    },
+    {
+      "attach_date": 1458637339,
+      "file_size": 132280,
+      "filename": "2016-03-22_174554.webp",
+      "height": 911,
+      "id": 4336,
+      "is_audio": false,
+      "is_video": false,
+      "local_path": null,
+      "r2_key": null,
+      "src_url": "https://torrentpier.com/attachments/2016-03-22_174554-webp.4336/",
+      "thumbnail_url": "https://torrentpier.com/data/attachments/4/4340-e7fc8e83922657f4d636bf371eef7fc0.jpg?hash=MniAhUF45g",
+      "width": 1914
+    }
+  ],
+  "description_parsed": "Доброе времени суток!<br />\nШаблон AdminLTE (front end)<br />\n<br />\nВ шаблоне используются<br />\nbootstrap 3.0<br />\nfont-awesome 4.4.0<br />\njQuery-2.1.4.min<br />\niCheck v1.0.1<br />\nШаблон строился на движке 2.1.5<br />\n<br />\n<br />\n<a href=\"https://torrentpier.com/attachments/4329/\"><img src=\"https://torrentpier.com/data/attachments/4/4333-ec9bacf62e01d06c8196580baf5d9c0f.jpg?hash=I39JCS1Tj3\" alt=\"2016-03-22_173224.webp\" /></a> <a href=\"https://torrentpier.com/attachments/4330/\"><img src=\"https://torrentpier.com/data/attachments/4/4334-77d8628467be42e2518642d090a2d225.jpg?hash=HnhlPxbzAk\" alt=\"2016-03-22_173517.webp\" /></a> <a href=\"https://torrentpier.com/attachments/4332/\"><img src=\"https://torrentpier.com/data/attachments/4/4336-801485faec04ddd64f2fccbc1e854c2b.jpg?hash=aayWbe9bJd\" alt=\"2016-03-22_173550.webp\" /></a> <a href=\"https://torrentpier.com/attachments/4333/\"><img src=\"https://torrentpier.com/data/attachments/4/4337-5f054a8883864fbbe3d21d53bcbbf2e6.jpg?hash=df5suvopYe\" alt=\"2016-03-22_173821.webp\" /></a> <a href=\"https://torrentpier.com/attachments/4334/\"><img src=\"https://torrentpier.com/data/attachments/4/4338-1f9737047f80d3122a31ef087af4f7f2.jpg?hash=1ykfehAlxQ\" alt=\"2016-03-22_173940.webp\" /></a> <a href=\"https://torrentpier.com/attachments/4335/\"><img src=\"https://torrentpier.com/data/attachments/4/4339-619a6e9693433e7f0070025bdef2ae8b.jpg?hash=PVC_tx25FI\" alt=\"2016-03-22_174230.webp\" /></a> <a href=\"https://torrentpier.com/attachments/4336/\"><img src=\"https://torrentpier.com/data/attachments/4/4340-e7fc8e83922657f4d636bf371eef7fc0.jpg?hash=MniAhUF45g\" alt=\"2016-03-22_174554.webp\" /></a><br />\n<br />\np.s Если что то не так работает пишите исправлю, может что то и забыл. время от времени тут буду выкладывать адаптированные шаблоны для модификаций",
+  "download_count": 493,
+  "external_url": null,
+  "icon_url": null,
+  "id": 248,
+  "is_fileless": null,
+  "last_update": 1459131635,
+  "rating_avg": 5,
+  "rating_count": 1,
+  "resource_date": 1458638536,
+  "resource_state": "visible",
+  "slug": "sablon-adminlte-front-end",
+  "tag_line": "Шаблон для TorrentPier",
+  "tags": [],
+  "title": "Шаблон AdminLTE (front end)",
+  "url_path": "/resources/sablon-adminlte-front-end.248/",
+  "user_id": 4866,
+  "username": "Bender",
+  "version": "1.1",
+  "versions": [
+    {
+      "download_count": 367,
+      "files": [
+        {
+          "filename": "AdminLTE_TP2_2.1.5.zip",
+          "id": 4344,
+          "local_path": null,
+          "r2_key": null,
+          "size": 1196240,
+          "src_url": "https://torrentpier.com/api/resource-versions/366/download?file=4344"
+        }
+      ],
+      "id": 366,
+      "rating_avg": 0,
+      "rating_count": 0,
+      "release_date": 1459131635,
+      "version_state": "visible",
+      "version_string": "1.1",
+      "view_url": "https://torrentpier.com/resources/sablon-adminlte-front-end.248/version/366/"
+    },
+    {
+      "download_count": 134,
+      "files": [
+        {
+          "filename": "AdminLTE_TP2_2.1.5.zip",
+          "id": 4337,
+          "local_path": null,
+          "r2_key": null,
+          "size": 946723,
+          "src_url": "https://torrentpier.com/api/resource-versions/365/download?file=4337"
+        }
+      ],
+      "id": 365,
+      "rating_avg": 5,
+      "rating_count": 1,
+      "release_date": 1458638536,
+      "version_state": "visible",
+      "version_string": "1.0",
+      "view_url": "https://torrentpier.com/resources/sablon-adminlte-front-end.248/version/365/"
+    }
+  ],
+  "view_count": 1134
+}

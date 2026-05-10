@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 82598,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 86,
+    "title": "Questions about PHP"
+  },
+  "id": 40678,
+  "last_post_date": 1429833862,
+  "node_id": 86,
+  "post_date": 1429150459,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 82598,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Собственно возник вопрос. Мне как-то <b>Exile </b>помог разобраться с адаптацией php кода под TPII, но видать я совсем тупой. Не могу выдернуть данные из базы. Тогда была таблица вида:<br />\n<br />\n<div>Spoiler content hidden.</div><br />\nВ php файле было так<br />\n<br />\n<div>Spoiler content hidden.</div><br />\nТам все было понятно. Другая таблица выглядит так<br />\n<br />\n<div>Spoiler content hidden.</div><br />\nИ вот тут я зашел в тупик со своим отсутствием знаний. Никак не могу вывести в поля нужную информацию. <br />\n<br />\nПодскажите, люди добрые, как вытащить &#039;поле 1&#039;, &#039;поле 2&#039;, &#039;поле 3&#039; и &#039;поле 4&#039;",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1429150459,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 82606,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 1429191267,
+      "message_parsed": "<pre class=\"xfBb-code\" data-lang=\"php\">$row_data = DB()-&gt;fetch_row(&quot;SELECT id, infone, inftwo, infthree, inffour FROM bb_mytabletwo WHERE id={Нужное значение}&quot;);\n\n$id = $row_data[&#039;id&#039;];\n$one_data = $row_data[&#039;infone&#039;];\n$two_data = $row_data[&#039;inftwo&#039;];\n$three_data = $row_data[&#039;infthree&#039;];\n$four_data = $row_data[&#039;inffour&#039;];</pre>Если хорошо подумать, то другая таблица практические такая же как и старая",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1429164533,
+      "user_id": 68,
+      "user_title": "User",
+      "username": "Nightmare"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 83389,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/members/68/\">@Nightmare</a>, спасибо, все работает, правда почему-то выводит только по одному символу, но с этим, думаю, разберусь.",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1429833862,
+      "user_id": 1514,
+      "user_title": "User",
+      "username": "Begemot"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "dannye-iz-bazy",
+  "sticky": false,
+  "tags": [],
+  "title": "Данные из базы",
+  "url_path": "/threads/dannye-iz-bazy.40678/",
+  "user_id": 1514,
+  "username": "Begemot",
+  "view_count": 1488
+}

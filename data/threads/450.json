@@ -1,0 +1,87 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 5380,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 450,
+  "last_post_date": 1321006812,
+  "node_id": 57,
+  "post_date": 1321005030,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5380,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Как вывести опрос в sidebar?<br />\nЧто бы можно было голосовать с главной страницы",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1321005030,
+      "user_id": 152,
+      "user_title": "User",
+      "username": "levantuev"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5382,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b>sidebar1.html</b><br />\nсам опрос, думаю разберешься<br />\n<a href=\"http://net.tutsplus.com/tutorials/javascript-ajax/creating-a-dynamic-poll-with-jquery-and-php/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://net.tutsplus.com/tutorials/javascript-ajax/creating-a-dynamic-poll-with-jquery-and-php/</a>",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1321006056,
+      "user_id": 22,
+      "user_title": "User",
+      "username": "DarkMod"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5383,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Нужен ведь опрос созданный темой в TP а не отдельный модуль! Да и к чему подключение кучи лишнего всего",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1321006812,
+      "user_id": 152,
+      "user_title": "User",
+      "username": "levantuev"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "kak-vyvesti-opros-v-sidebar",
+  "sticky": false,
+  "tags": [],
+  "title": "Как вывести опрос в sidebar?",
+  "url_path": "/threads/kak-vyvesti-opros-v-sidebar.450/",
+  "user_id": 152,
+  "username": "levantuev",
+  "view_count": 1169
+}

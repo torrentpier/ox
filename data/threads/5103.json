@@ -1,0 +1,82 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 31062,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 78,
+        "title": "TorrentPier software bugs",
+        "type": "Category"
+      }
+    ],
+    "id": 80,
+    "title": "Fixed TorrentPier bugs"
+  },
+  "id": 5103,
+  "last_post_date": 1375143306,
+  "node_id": 80,
+  "post_date": 1369595514,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 31062,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "В админке кнопки включены, и даже если я скачал раздачу то в профиле не показано что я её скачал хотя статистика обновляется<br />\nАннонсер xbt",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1369595514,
+      "user_id": 41,
+      "user_title": "User",
+      "username": "XLex"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 31153,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "и подскажите в которых файлах содержится эта функция",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1369657770,
+      "user_id": 41,
+      "user_title": "User",
+      "username": "XLex"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 38482,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "решено с помошью 521ой ревизии !",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1375143306,
+      "user_id": 41,
+      "user_title": "User",
+      "username": "XLex"
+    }
+  ],
+  "prefix_id": 22,
+  "reply_count": 2,
+  "slug": "ne-rabotaut-knopki-dla-izmenenia-dl-statusa",
+  "sticky": false,
+  "tags": [],
+  "title": "Не работают кнопки для изменения DL-статуса",
+  "url_path": "/threads/ne-rabotaut-knopki-dla-izmenenia-dl-statusa.5103/",
+  "user_id": 41,
+  "username": "XLex",
+  "view_count": 1306
+}

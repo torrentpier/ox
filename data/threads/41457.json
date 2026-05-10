@@ -1,0 +1,73 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 87537,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 82,
+        "title": "To the webmaster",
+        "type": "Category"
+      }
+    ],
+    "id": 86,
+    "title": "Questions about PHP"
+  },
+  "id": 41457,
+  "last_post_date": 1462310101,
+  "node_id": 86,
+  "post_date": 1462308158,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87537,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1462308261,
+      "message_parsed": "Как настроить чтобы сайт отправлял почту с этого адреса <a href=\"mailto:assasinfil@agn.ru\">assasinfil@agn.ru</a> (gmail почта на домен не смотрите)<br />\nКопирую мой конфиг тестовый<br />\n// Email                                                                                                                                     <br />\n$bb_cfg[&#039;emailer_disabled&#039;]        = false;                                                                                                 <br />\n                                                                                                                                            <br />\n$bb_cfg[&#039;smtp_delivery&#039;]           = false; // send email via a named server instead of the local mail function                             <br />\n$bb_cfg[&#039;smtp_ssl&#039;]                = true; // use ssl connect                                                                               <br />\n$bb_cfg[&#039;smtp_host&#039;]               = &#039;smtp.gmail.com&#039;;    // SMTP server host                                                               <br />\n$bb_cfg[&#039;smtp_port&#039;]               = 465;    // SMTP server port                                                                             <br />\n$bb_cfg[&#039;smtp_username&#039;]           = &#039;<a href=\"mailto:assasinfil@agn.ru\">assasinfil@agn.ru</a>&#039;;    // enter a username if your SMTP server requires it                             <br />\n$bb_cfg[&#039;smtp_password&#039;]           = &#039;pass&#039;;    // enter a password if your SMTP server requires it                                     <br />\n                                                                                                                                            <br />\n$bb_cfg[&#039;board_email&#039;]             = &quot;<a href=\"mailto:assasinfil@agn.ru\">assasinfil@agn.ru</a>&quot;; // admin email address                                                             <br />\n$bb_cfg[&#039;board_email_form&#039;]        = false;        // can users send email to each other via board                                           <br />\n$bb_cfg[&#039;board_email_sig&#039;]         = &#039;&#039;;           // this text will be attached to all emails the board sends                               <br />\n$bb_cfg[&#039;board_email_sitename&#039;]    = $domain_name; // sitename used in all emails header                                                     <br />\n                                                                                                                                            <br />\n$bb_cfg[&#039;topic_notify_enabled&#039;]    = true;                                                                                                   <br />\n$bb_cfg[&#039;pm_notify_enabled&#039;]       = true;                                                                                                   <br />\n$bb_cfg[&#039;group_send_email&#039;]        = true;                                                                                                   <br />\n$bb_cfg[&#039;email_change_disabled&#039;]   = false;        // disable changing email by user                                                         <br />\n                                                                                                                                            <br />\n$bb_cfg[&#039;tech_admin_email&#039;]        = &quot;<a href=\"mailto:assasinfil@agn.ru\">assasinfil@agn.ru</a>&quot;; // email for sending error reports                                                 <br />\n$bb_cfg[&#039;abuse_email&#039;]             = &quot;<a href=\"mailto:assasinfil@agn.ru\">assasinfil@agn.ru</a>&quot;;                                                                                   <br />\n$bb_cfg[&#039;adv_email&#039;]               = &quot;<a href=\"mailto:assasinfil@agn.ru\">assasinfil@agn.ru</a>&quot;;                                                    при попытке отправить почту из админки вылазит ошибка Failed sending email :: PHP ::<br />\nOS Ubuntu 15.10 VPS host-food.ru",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1462308158,
+      "user_id": 6511,
+      "user_title": "User",
+      "username": "assasinfil"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 87538,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Решил проблему вот чем apt-get install sendmail<br />\nУвидел эту прогу в phpinfo",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1462310101,
+      "user_id": 6511,
+      "user_title": "User",
+      "username": "assasinfil"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "nastrojka-pocty-gmail",
+  "sticky": false,
+  "tags": [
+    "gmail",
+    "mail",
+    "php",
+    "php mail",
+    "smtp",
+    "smtp gmail"
+  ],
+  "title": "Настройка почты gmail",
+  "url_path": "/threads/nastrojka-pocty-gmail.41457/",
+  "user_id": 6511,
+  "username": "assasinfil",
+  "view_count": 1860
+}

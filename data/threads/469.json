@@ -1,0 +1,119 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 5626,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      },
+      {
+        "id": 10,
+        "title": "Main questions about TorrentPier",
+        "type": "Forum"
+      }
+    ],
+    "id": 57,
+    "title": "Section archive"
+  },
+  "id": 469,
+  "last_post_date": 1321451788,
+  "node_id": 57,
+  "post_date": 1321448136,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5626,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "Здраствуйте не подскажите как эту ошибку можна исправить<br />\n<br />\nWarning: rename(/var/www/lucifer/data/www/***/triggers/cron_running,/var/www/lucifer/data/www/***/triggers/cron_allowed): Отказано в доступе in /var/www/lucifer/data/www/***/index.php on line 396<br />\n<br />\nпоявляеться честенько когда заходишь на сайт",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1321448136,
+      "user_id": 481,
+      "user_title": "User",
+      "username": "lucifer"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5627,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>lucifer</b>, нужно права на папки проверить, как написано в readme.txt. Правда помимо этого нужно ещё также внутри этих папок проставить права и на содержащиеся в них файлы на 666.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1321449283,
+      "user_id": 71,
+      "user_title": "User",
+      "username": "ChihPyh"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5629,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "<b>ChihPyh </b>проверил права стоят везде и внутри тоже",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1321450134,
+      "user_id": 481,
+      "user_title": "User",
+      "username": "lucifer"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5631,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "как минимум на файл <b>/triggers/cron_allowed</b>, как видно из приведённого лога, права не стоят 666",
+      "message_state": "visible",
+      "position": 3,
+      "post_date": 1321450597,
+      "user_id": 71,
+      "user_title": "User",
+      "username": "ChihPyh"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 5632,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 0,
+      "message_parsed": "все верно прав не было спасибо  посмотрим что будет дальше",
+      "message_state": "visible",
+      "position": 4,
+      "post_date": 1321451788,
+      "user_id": 481,
+      "user_title": "User",
+      "username": "lucifer"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 4,
+  "slug": "osibka-na-sajte",
+  "sticky": false,
+  "tags": [],
+  "title": "Ошибка на сайте",
+  "url_path": "/threads/osibka-na-sajte.469/",
+  "user_id": 481,
+  "username": "lucifer",
+  "view_count": 1521
+}
