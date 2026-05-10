@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Search — {{ site_name }}{% endblock %}
+{% block content %}
+<nav class="breadcrumbs">
+  <a href="/">Home</a>
+  / <span class="current">Search</span>
+</nav>
+<h1>Search</h1>
+<p class="lede">
+  Full-text search will live here once the Cloudflare Worker + D1 index
+  is wired up. For now, use your browser's find or jump to a thread directly.
+</p>
+<form id="search-form" onsubmit="return false;">
+  <input type="search" id="q" placeholder="Search the archive…" autofocus disabled>
+</form>
+<p class="muted">(disabled — coming soon)</p>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Resources — {{ site_name }}{% endblock %}
+{% block content %}
+<nav class="breadcrumbs">
+  <a href="/">Home</a>
+  / <span class="current">Resources</span>
+</nav>
+<h1>Resources</h1>
+<p class="lede">{{ resource_count }} resources across {{ categories | length }} categories.</p>
+<ul class="forum-list">
+{% for cat in categories %}
+  <li>
+    <a class="forum-link" href="{{ cat.view_url | urlpath }}">{{ cat.title }}</a>
+    <span class="muted">— {{ resources_by_cat.get(cat.id, []) | length }} resources</span>
+    {% if cat.description %}<div class="muted">{{ cat.description }}</div>{% endif %}
+  </li>
+{% endfor %}
+</ul>
+{% endblock %}
