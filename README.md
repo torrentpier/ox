@@ -23,7 +23,11 @@ search powered by a small Cloudflare Worker + D1 (SQLite/FTS5).
 
 ## Status
 
-WIP — repository skeleton only. See branch `feat/archive`.
+WIP — repository skeleton only. Active branch: `feat/archive`.
+
+See [`PLAN.md`](./PLAN.md) for the full development plan, decisions log, API
+surface map and per-stage task lists. That file is the single source of truth;
+keep it up to date as work progresses.
 
 Pipeline stages, in order:
 
