@@ -12,7 +12,7 @@
       "filename": "seo.zip",
       "id": 3383,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/158/v/276/seo.zip",
       "size": 4963,
       "src_url": "https://torrentpier.com/api/resource-versions/276/download?file=3383"
     }
@@ -72,6 +72,7 @@
   "description_parsed": "<b>Описание: </b>добавляет возможность приводить ссылки в удобный формат, предпочтительный для поисковых систем.",
   "download_count": 621,
   "external_url": null,
+  "icon_r2_key": "resources/158/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/158.jpg?1425424198",
   "id": 158,
   "is_fileless": null,
@@ -96,7 +97,7 @@
           "filename": "seo.zip",
           "id": 3383,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/158/v/276/seo.zip",
           "size": 4963,
           "src_url": "https://torrentpier.com/api/resource-versions/276/download?file=3383"
         }
@@ -116,7 +117,7 @@
           "filename": "seo_5.zip",
           "id": 3253,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/158/v/251/seo_5.zip",
           "size": 4938,
           "src_url": "https://torrentpier.com/api/resource-versions/251/download?file=3253"
         }
@@ -136,7 +137,7 @@
           "filename": "seo_5.zip",
           "id": 3023,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/158/v/175/seo_5.zip",
           "size": 4842,
           "src_url": "https://torrentpier.com/api/resource-versions/175/download?file=3023"
         }

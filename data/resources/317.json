@@ -12,7 +12,7 @@
       "filename": "snowdrift.zip",
       "id": 6313,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/317/v/589/snowdrift.zip",
       "size": 11204,
       "src_url": "https://torrentpier.com/api/resource-versions/589/download?file=6313"
     }
@@ -41,6 +41,7 @@
   "description_parsed": "<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-velikolepnyj-skript-padausego-snega-na-sajt-na-js-css-sugroby\"></a><div style=\"text-align: center\"><span style=\"color: rgb(41, 105, 176)\">Великолепный скрипт падающего снега на сайт на JS+CSS + сугробы!</span>&#8203;</div><a class=\"hoverLink\" href=\"#-velikolepnyj-skript-padausego-snega-na-sajt-na-js-css-sugroby\" title=\"Permanent link\"></a></h3><div style=\"text-align: center\"><a href=\"https://torrentpier.com/attachments/6314/\"><img src=\"https://torrentpier.com/data/attachments/6/6318-981ecba63fd49dca1776b0d3904ee83e.jpg?hash=GK3--QCr8m\" alt=\"321.webp\" /></a>&#8203;</div>",
   "download_count": 296,
   "external_url": null,
+  "icon_r2_key": "resources/317/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/317.jpg?1736311736",
   "id": 317,
   "is_fileless": null,
@@ -65,7 +66,7 @@
           "filename": "snowdrift.zip",
           "id": 6313,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/317/v/589/snowdrift.zip",
           "size": 11204,
           "src_url": "https://torrentpier.com/api/resource-versions/589/download?file=6313"
         }

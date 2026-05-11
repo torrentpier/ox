@@ -12,7 +12,7 @@
       "filename": "уведомления.zip",
       "id": 3250,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/194/v/248/уведомления.zip",
       "size": 1077,
       "src_url": "https://torrentpier.com/api/resource-versions/248/download?file=3250"
     }
@@ -44,6 +44,7 @@
   "description_parsed": "<b>Описание:</b> добавляет BB-код уведомлений.",
   "download_count": 303,
   "external_url": null,
+  "icon_r2_key": "resources/194/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/194.jpg?1425423773",
   "id": 194,
   "is_fileless": null,
@@ -68,7 +69,7 @@
           "filename": "уведомления.zip",
           "id": 3250,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/194/v/248/уведомления.zip",
           "size": 1077,
           "src_url": "https://torrentpier.com/api/resource-versions/248/download?file=3250"
         }

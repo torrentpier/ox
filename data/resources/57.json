@@ -12,7 +12,7 @@
       "filename": "недавние_темы.zip",
       "id": 3217,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/57/v/232/недавние_темы.zip",
       "size": 11668,
       "src_url": "https://torrentpier.com/api/resource-versions/232/download?file=3217"
     }
@@ -44,6 +44,7 @@
   "description_parsed": "<b>Описание:</b> добавляет вывод недавно просмотренных пользователем тем (в виде постеров).",
   "download_count": 321,
   "external_url": null,
+  "icon_r2_key": "resources/57/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/57.jpg?1425506476",
   "id": 57,
   "is_fileless": null,
@@ -68,7 +69,7 @@
           "filename": "недавние_темы.zip",
           "id": 3217,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/57/v/232/недавние_темы.zip",
           "size": 11668,
           "src_url": "https://torrentpier.com/api/resource-versions/232/download?file=3217"
         }
@@ -88,7 +89,7 @@
           "filename": "недавние_темы.zip",
           "id": 3216,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/57/v/61/недавние_темы.zip",
           "size": 11668,
           "src_url": "https://torrentpier.com/api/resource-versions/61/download?file=3216"
         }

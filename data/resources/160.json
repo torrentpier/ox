@@ -12,7 +12,7 @@
       "filename": "MOD Новости сети 3Dnews.zip",
       "id": 3031,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/160/v/177/MOD Новости сети 3Dnews.zip",
       "size": 2723,
       "src_url": "https://torrentpier.com/api/resource-versions/177/download?file=3031"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание:</b> добавляет автоматический парсер новостей с известного новостного сайта 3dnews.ru.<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Мод предназначен для трекеров которые хотят увеличить индексацию своего ресурса поисковыми роботами, чем также увеличить его посещаемость</li>\n<li data-xf-list-type=\"ul\">Мод автоматически парсит новости с известного новостного сайта <a href=\"http://www.3dnews.ru/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">www.3dnews.ru</a> который является первоисточником, в связи с чем новости не попадают под фильтр поисковиков как &quot;повтор&quot;</li>\n<li data-xf-list-type=\"ul\">Новости парсятся из категорий <b>Hardware</b> и <b>Software</b> которые будут интересны любому пользователю интернета</li>\n<li data-xf-list-type=\"ul\">Мод работает через крон задачу период автопарсинга новостей устанавливаете сами, хоть раз в 5 минут, хоть раз в сутки</li>\n</ul>",
   "download_count": 299,
   "external_url": null,
+  "icon_r2_key": "resources/160/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/160.jpg?1425425743",
   "id": 160,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "MOD Новости сети 3Dnews.zip",
           "id": 3031,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/160/v/177/MOD Новости сети 3Dnews.zip",
           "size": 2723,
           "src_url": "https://torrentpier.com/api/resource-versions/177/download?file=3031"
         }

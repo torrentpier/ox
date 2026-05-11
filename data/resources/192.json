@@ -12,7 +12,7 @@
       "filename": "скролл.zip",
       "id": 3248,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/192/v/246/скролл.zip",
       "size": 705,
       "src_url": "https://torrentpier.com/api/resource-versions/246/download?file=3248"
     }
@@ -44,6 +44,7 @@
   "description_parsed": "<b>Описание:</b> добавляет BB-код прокручиваемой области.",
   "download_count": 278,
   "external_url": null,
+  "icon_r2_key": "resources/192/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/192.jpg?1425423765",
   "id": 192,
   "is_fileless": null,
@@ -68,7 +69,7 @@
           "filename": "скролл.zip",
           "id": 3248,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/192/v/246/скролл.zip",
           "size": 705,
           "src_url": "https://torrentpier.com/api/resource-versions/246/download?file=3248"
         }

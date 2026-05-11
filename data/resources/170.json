@@ -12,7 +12,7 @@
       "filename": "Grabber  автопарсер rutracker.zip",
       "id": 3111,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/170/v/204/Grabber  автопарсер rutracker.zip",
       "size": 20375,
       "src_url": "https://torrentpier.com/api/resource-versions/204/download?file=3111"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность автоматически парсить раздачи с rutracker, используя несколько аккаунтов.",
   "download_count": 508,
   "external_url": null,
+  "icon_r2_key": "resources/170/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/170.jpg?1425253705",
   "id": 170,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "Grabber  автопарсер rutracker.zip",
           "id": 3111,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/170/v/204/Grabber  автопарсер rutracker.zip",
           "size": 20375,
           "src_url": "https://torrentpier.com/api/resource-versions/204/download?file=3111"
         }

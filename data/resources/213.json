@@ -12,7 +12,7 @@
       "filename": "Order.zip",
       "id": 3530,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/213/v/279/Order.zip",
       "size": 4156,
       "src_url": "https://torrentpier.com/api/resource-versions/279/download?file=3530"
     }
@@ -58,6 +58,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность заказывать раздачи на трекере.",
   "download_count": 405,
   "external_url": null,
+  "icon_r2_key": "resources/213/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/213.jpg?1428259664",
   "id": 213,
   "is_fileless": null,
@@ -82,7 +83,7 @@
           "filename": "Order.zip",
           "id": 3530,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/213/v/279/Order.zip",
           "size": 4156,
           "src_url": "https://torrentpier.com/api/resource-versions/279/download?file=3530"
         }
@@ -102,7 +103,7 @@
           "filename": "Order.zip",
           "id": 3485,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/213/v/277/Order.zip",
           "size": 4214,
           "src_url": "https://torrentpier.com/api/resource-versions/277/download?file=3485"
         }

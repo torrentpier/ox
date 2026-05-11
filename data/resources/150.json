@@ -12,7 +12,7 @@
       "filename": "[FULL] Стол заказов.zip",
       "id": 3096,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/150/v/192/[FULL] Стол заказов.zip",
       "size": 22216,
       "src_url": "https://torrentpier.com/api/resource-versions/192/download?file=3096"
     }
@@ -100,6 +100,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность пользователям заказывать новые раздачи - фильмы с КиноПоиска.",
   "download_count": 678,
   "external_url": null,
+  "icon_r2_key": "resources/150/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/150.jpg?1425233478",
   "id": 150,
   "is_fileless": null,
@@ -124,7 +125,7 @@
           "filename": "[FULL] Стол заказов.zip",
           "id": 3096,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/150/v/192/[FULL] Стол заказов.zip",
           "size": 22216,
           "src_url": "https://torrentpier.com/api/resource-versions/192/download?file=3096"
         }
@@ -144,7 +145,7 @@
           "filename": "[FULL] Стол заказов.zip",
           "id": 3015,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/150/v/167/[FULL] Стол заказов.zip",
           "size": 13372,
           "src_url": "https://torrentpier.com/api/resource-versions/167/download?file=3015"
         }

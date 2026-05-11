@@ -12,7 +12,7 @@
       "filename": "[FULL] Набор BBCode тегов с рутрекера by belomaxorka.zip",
       "id": 6455,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/283/v/633/[FULL] Набор BBCode тегов с рутрекера by belomaxorka.zip",
       "size": 2552,
       "src_url": "https://torrentpier.com/api/resource-versions/633/download?file=6455"
     }
@@ -72,6 +72,7 @@
   "description_parsed": "<div style=\"text-align: center\"><span style=\"color: rgb(235, 107, 86)\">Внимание! Часть тегов из этого мода по умолчанию будут в версии v2.4.1</span>&#8203;</div><hr /><div style=\"text-align: center\"><span style=\"color: rgb(226, 80, 65)\">Начиная с версии движка v2.4.6 данный мод интегрирован полностью</span>&#8203;</div><hr /><b>Описание:</b>  Данный мод добавляет в BBCode редактор несколько тегов которые используются на rutracker.org. Так же эти тэги полностью работоспособны в случае парсинга раздач с рутрекера.<br />\n<br />\n<b>Список тегов:</b><br />\n<ul>\n<li data-xf-list-type=\"ul\">box | Рамка вокруг текста</li>\n<li data-xf-list-type=\"ul\">⇛   | Отступ (TAB)</li>\n<li data-xf-list-type=\"ul\">nfo | NFO</li>\n<li data-xf-list-type=\"ul\">pre | Форматированный текст</li>\n</ul>",
   "download_count": 304,
   "external_url": null,
+  "icon_r2_key": "resources/283/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/283.jpg?1706889328",
   "id": 283,
   "is_fileless": null,
@@ -103,7 +104,7 @@
           "filename": "[FULL] Набор BBCode тегов с рутрекера by belomaxorka.zip",
           "id": 6455,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/283/v/633/[FULL] Набор BBCode тегов с рутрекера by belomaxorka.zip",
           "size": 2552,
           "src_url": "https://torrentpier.com/api/resource-versions/633/download?file=6455"
         }
@@ -123,7 +124,7 @@
           "filename": "[FULL] Набор BBCode тегов с рутрекера by belomaxorka.zip",
           "id": 5785,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/283/v/447/[FULL] Набор BBCode тегов с рутрекера by belomaxorka.zip",
           "size": 1994,
           "src_url": "https://torrentpier.com/api/resource-versions/447/download?file=5785"
         }

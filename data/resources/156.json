@@ -12,7 +12,7 @@
       "filename": "Похожие темы.zip",
       "id": 3254,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/156/v/252/Похожие темы.zip",
       "size": 3385,
       "src_url": "https://torrentpier.com/api/resource-versions/252/download?file=3254"
     }
@@ -58,6 +58,7 @@
   "description_parsed": "<b>Описание:</b> добавляет вывод похожих тем при просмотре темы.",
   "download_count": 568,
   "external_url": null,
+  "icon_r2_key": "resources/156/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/156.jpg?1425424840",
   "id": 156,
   "is_fileless": null,
@@ -82,7 +83,7 @@
           "filename": "Похожие темы.zip",
           "id": 3254,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/156/v/252/Похожие темы.zip",
           "size": 3385,
           "src_url": "https://torrentpier.com/api/resource-versions/252/download?file=3254"
         }
@@ -102,7 +103,7 @@
           "filename": "Похожие темы.zip",
           "id": 3021,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/156/v/173/Похожие темы.zip",
           "size": 3385,
           "src_url": "https://torrentpier.com/api/resource-versions/173/download?file=3021"
         }

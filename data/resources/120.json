@@ -12,7 +12,7 @@
       "filename": "Cat_Description_By_Nightmare_v0.1.zip",
       "id": 3097,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/120/v/193/Cat_Description_By_Nightmare_v0.1.zip",
       "size": 1145,
       "src_url": "https://torrentpier.com/api/resource-versions/193/download?file=3097"
     }
@@ -44,6 +44,7 @@
   "description_parsed": "<b>Описание:</b> добавляет описание категории на страницу просмотра форума. <br />\n<br />\nМодификация добавляет уникальный текст для всех форумов категории на странице viewforum.php. При грамотном использовании полезен для SEO.<br />\n<br />\nОписание заполняется в language/(ru|en|uk)/main.php как <i>id категории =&gt; описание.</i> Опционально включается в config.php ($bb_cfg[&#039;cat_description&#039;]).",
   "download_count": 355,
   "external_url": null,
+  "icon_r2_key": "resources/120/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/120.jpg?1425233896",
   "id": 120,
   "is_fileless": null,
@@ -68,7 +69,7 @@
           "filename": "Cat_Description_By_Nightmare_v0.1.zip",
           "id": 3097,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/120/v/193/Cat_Description_By_Nightmare_v0.1.zip",
           "size": 1145,
           "src_url": "https://torrentpier.com/api/resource-versions/193/download?file=3097"
         }
@@ -88,7 +89,7 @@
           "filename": "Cat_Description_By_Nightmare_v0.1.rar",
           "id": 2628,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/120/v/131/Cat_Description_By_Nightmare_v0.1.rar",
           "size": 1090,
           "src_url": "https://torrentpier.com/api/resource-versions/131/download?file=2628"
         }

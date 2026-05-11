@@ -12,7 +12,7 @@
       "filename": "парковка_лс.zip",
       "id": 3099,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/163/v/195/парковка_лс.zip",
       "size": 658,
       "src_url": "https://torrentpier.com/api/resource-versions/195/download?file=3099"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание:</b> дополнение к модификации парковки пользовательских аккаунтов. Отключение личных сообщений у припаркованных аккаунтов.",
   "download_count": 268,
   "external_url": null,
+  "icon_r2_key": "resources/163/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/163.jpg?1425240885",
   "id": 163,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "парковка_лс.zip",
           "id": 3099,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/163/v/195/парковка_лс.zip",
           "size": 658,
           "src_url": "https://torrentpier.com/api/resource-versions/195/download?file=3099"
         }

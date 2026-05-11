@@ -12,7 +12,7 @@
       "filename": "блокировка_лс_парковка.zip",
       "id": 3083,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/162/v/191/блокировка_лс_парковка.zip",
       "size": 778,
       "src_url": "https://torrentpier.com/api/resource-versions/191/download?file=3083"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание:</b> дополнение к модификации парковки пользовательских аккаунтов. Отключение возможности писать у припаркованных аккаунтов.",
   "download_count": 251,
   "external_url": null,
+  "icon_r2_key": "resources/162/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/162.jpg?1425227558",
   "id": 162,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "блокировка_лс_парковка.zip",
           "id": 3083,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/162/v/191/блокировка_лс_парковка.zip",
           "size": 778,
           "src_url": "https://torrentpier.com/api/resource-versions/191/download?file=3083"
         }

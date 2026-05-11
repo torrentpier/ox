@@ -12,7 +12,7 @@
       "filename": "glum_2.0.zip",
       "id": 3716,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/228/v/319/glum_2.0.zip",
       "size": 7666,
       "src_url": "https://torrentpier.com/api/resource-versions/319/download?file=3716"
     }
@@ -58,6 +58,7 @@
   "description_parsed": "<b>Описание:</b> добавляет усовершенствованную версию глума на форум.",
   "download_count": 319,
   "external_url": null,
+  "icon_r2_key": "resources/228/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/228.jpg?1429965393",
   "id": 228,
   "is_fileless": null,
@@ -82,7 +83,7 @@
           "filename": "glum_2.0.zip",
           "id": 3716,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/228/v/319/glum_2.0.zip",
           "size": 7666,
           "src_url": "https://torrentpier.com/api/resource-versions/319/download?file=3716"
         }
@@ -102,7 +103,7 @@
           "filename": "glum_2.0.txt",
           "id": 3714,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/228/v/317/glum_2.0.txt",
           "size": 30690,
           "src_url": "https://torrentpier.com/api/resource-versions/317/download?file=3714"
         }

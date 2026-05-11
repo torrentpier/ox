@@ -12,7 +12,7 @@
       "filename": "Смена автора на аяксе.zip",
       "id": 3109,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/169/v/203/Смена автора на аяксе.zip",
       "size": 1790,
       "src_url": "https://torrentpier.com/api/resource-versions/203/download?file=3109"
     }
@@ -44,6 +44,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность менять автора сообщения / id темы. Используется AJAX.",
   "download_count": 320,
   "external_url": null,
+  "icon_r2_key": "resources/169/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/169.jpg?1425253238",
   "id": 169,
   "is_fileless": null,
@@ -68,7 +69,7 @@
           "filename": "Смена автора на аяксе.zip",
           "id": 3109,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/169/v/203/Смена автора на аяксе.zip",
           "size": 1790,
           "src_url": "https://torrentpier.com/api/resource-versions/203/download?file=3109"
         }

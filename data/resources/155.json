@@ -12,7 +12,7 @@
       "filename": "[FULL] Тотализатор 1.1.0.zip",
       "id": 3048,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/155/v/180/[FULL] Тотализатор 1.1.0.zip",
       "size": 28186,
       "src_url": "https://torrentpier.com/api/resource-versions/180/download?file=3048"
     }
@@ -142,6 +142,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность устраивать тотализатор для пользователей.<br />\n<br />\nПользователи создают события, делают ставки, после того как событие прошло, автором события выбирается победивший результат и выигравшим начисляются сид-бонусы.",
   "download_count": 440,
   "external_url": null,
+  "icon_r2_key": "resources/155/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/155.jpg?1425424639",
   "id": 155,
   "is_fileless": null,
@@ -166,7 +167,7 @@
           "filename": "[FULL] Тотализатор 1.1.0.zip",
           "id": 3048,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/155/v/180/[FULL] Тотализатор 1.1.0.zip",
           "size": 28186,
           "src_url": "https://torrentpier.com/api/resource-versions/180/download?file=3048"
         }
@@ -186,7 +187,7 @@
           "filename": "[FULL] Тотализатор 1.0.1.rar",
           "id": 3039,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/155/v/179/[FULL] Тотализатор 1.0.1.rar",
           "size": 26795,
           "src_url": "https://torrentpier.com/api/resource-versions/179/download?file=3039"
         }
@@ -206,7 +207,7 @@
           "filename": "[FULL] Тотализатор.rar",
           "id": 3019,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/155/v/172/[FULL] Тотализатор.rar",
           "size": 27506,
           "src_url": "https://torrentpier.com/api/resource-versions/172/download?file=3019"
         }

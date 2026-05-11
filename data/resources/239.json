@@ -12,7 +12,7 @@
       "filename": "Lightbox Video 1.0.0.zip",
       "id": 3965,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/239/v/348/Lightbox Video 1.0.0.zip",
       "size": 99045,
       "src_url": "https://torrentpier.com/api/resource-versions/348/download?file=3965"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание:</b> добавляет BB-код для вставки видео в Lightbox окне. Для модификации использован плагин <a href=\"http://www.aerowebstudio.net/codecanyon/jquery.lightbox/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Lightbox Evolution</a>. Дает возможность использовать сервисы:<br />\n<ul>\n<li data-xf-list-type=\"ul\">YouTube</li>\n<li data-xf-list-type=\"ul\">Rutube</li>\n<li data-xf-list-type=\"ul\">Vimeo</li>\n<li data-xf-list-type=\"ul\">Coub</li>\n<li data-xf-list-type=\"ul\">Vimple</li>\n<li data-xf-list-type=\"ul\">Dailymotion</li>\n<li data-xf-list-type=\"ul\">Metacafe</li>\n</ul>Просто вставляется ссылка на страницу видео, пример использования:<br />\n<pre class=\"xfBb-code\" data-lang=\"\">[lightvideo]http://rutube.ru/video/4f4841356db8206ea53481051c22f504/[/lightvideo] [lightvideo]http://www.youtube.com/watch?v=A3S68eGFj7A[/lightvideo]</pre>Название сервиса на кнопке определяется автоматически.<br />\n<br />\n<div data-template-name=\"public:_media_site_embed_dailymotion\" class=\"bbMediaWrapper\" data-media-site-id=\"dailymotion\" data-media-key=\"x2u5h2z\">\n\t<div class=\"bbMediaWrapper-inner\">\n\t\t<iframe src=\"https://www.dailymotion.com/embed/video/x2u5h2z?start=0&width=560&hideInfos=1\"\n\t\t\t\tloading=\"lazy\"\n\t\t\t\twidth=\"560\" height=\"315\"\n\t\t\t\tallowfullscreen\n\t\t\t\tframeborder=\"0\"></iframe>\n\t</div>\n</div>",
   "download_count": 334,
   "external_url": null,
+  "icon_r2_key": "resources/239/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/239.jpg?1438624109",
   "id": 239,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "Lightbox Video 1.0.0.zip",
           "id": 3965,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/239/v/348/Lightbox Video 1.0.0.zip",
           "size": 99045,
           "src_url": "https://torrentpier.com/api/resource-versions/348/download?file=3965"
         }

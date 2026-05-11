@@ -12,7 +12,7 @@
       "filename": "[FULL][$][TP2] Portal.zip",
       "id": 3226,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/185/v/236/[FULL][$][TP2] Portal.zip",
       "size": 19076,
       "src_url": "https://torrentpier.com/api/resource-versions/236/download?file=3226"
     }
@@ -100,6 +100,7 @@
   "description_parsed": "<b>Описание:</b> добавляет главную страницу-портал с новыми раздачами.<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Вывод последних раздач из определенных разделов</li>\n<li data-xf-list-type=\"ul\">AJAX-навигация с заменой хеша адресной строки</li>\n<li data-xf-list-type=\"ul\">Минимальная нагрузка из-за отдельного кэша<br />\n</li>\n<li data-xf-list-type=\"ul\">Поиск по тексту происходит уже по кэшу</li>\n</ul>",
   "download_count": 319,
   "external_url": null,
+  "icon_r2_key": "resources/185/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/185.jpg?1425419166",
   "id": 185,
   "is_fileless": null,
@@ -124,7 +125,7 @@
           "filename": "[FULL][$][TP2] Portal.zip",
           "id": 3226,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/185/v/236/[FULL][$][TP2] Portal.zip",
           "size": 19076,
           "src_url": "https://torrentpier.com/api/resource-versions/236/download?file=3226"
         }

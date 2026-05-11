@@ -12,7 +12,7 @@
       "filename": "эффект_прозрачности.zip",
       "id": 3861,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/64/v/328/эффект_прозрачности.zip",
       "size": 768,
       "src_url": "https://torrentpier.com/api/resource-versions/328/download?file=3861"
     }
@@ -41,6 +41,7 @@
   "description_parsed": "<b>Описание:</b> делаем прозрачные счетчики, которые при наведении курсора становятся обычными.",
   "download_count": 384,
   "external_url": null,
+  "icon_r2_key": "resources/64/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/64.jpg?1431459632",
   "id": 64,
   "is_fileless": null,
@@ -65,7 +66,7 @@
           "filename": "эффект_прозрачности.zip",
           "id": 3861,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/64/v/328/эффект_прозрачности.zip",
           "size": 768,
           "src_url": "https://torrentpier.com/api/resource-versions/328/download?file=3861"
         }
@@ -85,7 +86,7 @@
           "filename": "эффект_прозрачности.zip",
           "id": 3860,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/64/v/69/эффект_прозрачности.zip",
           "size": 768,
           "src_url": "https://torrentpier.com/api/resource-versions/69/download?file=3860"
         }

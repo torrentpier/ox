@@ -12,7 +12,7 @@
       "filename": "freeleech.zip",
       "id": 3914,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/232/v/338/freeleech.zip",
       "size": 4795,
       "src_url": "https://torrentpier.com/api/resource-versions/338/download?file=3914"
     }
@@ -114,6 +114,7 @@
   "description_parsed": "<b>Описание:</b> добавляет пользователям возможность скидываться на всеобщий фрилич (на месяц).<br />\n<br />\nПеречислять можно как с главной страницы, так и со страницы обмена сид-бонуса. Фрилич на месяц (пока не опционально).",
   "download_count": 664,
   "external_url": null,
+  "icon_r2_key": "resources/232/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/232.jpg?1432583720",
   "id": 232,
   "is_fileless": null,
@@ -138,7 +139,7 @@
           "filename": "freeleech.zip",
           "id": 3914,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/232/v/338/freeleech.zip",
           "size": 4795,
           "src_url": "https://torrentpier.com/api/resource-versions/338/download?file=3914"
         }
@@ -158,7 +159,7 @@
           "filename": "freeleech.zip",
           "id": 3893,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/232/v/334/freeleech.zip",
           "size": 4576,
           "src_url": "https://torrentpier.com/api/resource-versions/334/download?file=3893"
         }
@@ -178,7 +179,7 @@
           "filename": "freeleech.zip",
           "id": 3887,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/232/v/332/freeleech.zip",
           "size": 4825,
           "src_url": "https://torrentpier.com/api/resource-versions/332/download?file=3887"
         }
@@ -198,7 +199,7 @@
           "filename": "freeleech.zip",
           "id": 3886,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/232/v/331/freeleech.zip",
           "size": 4825,
           "src_url": "https://torrentpier.com/api/resource-versions/331/download?file=3886"
         }

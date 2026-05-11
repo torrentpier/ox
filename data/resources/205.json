@@ -12,7 +12,7 @@
       "filename": "[FULL][$][TP2] Log User.zip",
       "id": 3304,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/205/v/262/[FULL][$][TP2] Log User.zip",
       "size": 16393,
       "src_url": "https://torrentpier.com/api/resource-versions/262/download?file=3304"
     }
@@ -44,6 +44,7 @@
   "description_parsed": "<b>Описание:</b> добавляет логирование действий пользователей, их точное месторасположение на трекере.<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Запись лога перемещения пользователя по трекеру</li>\n<li data-xf-list-type=\"ul\">Живой вывод тех кто смотрит топик или форум</li>\n<li data-xf-list-type=\"ul\">Использование AJAX и sqlite3</li>\n</ul>",
   "download_count": 253,
   "external_url": null,
+  "icon_r2_key": "resources/205/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/205.jpg?1425506230",
   "id": 205,
   "is_fileless": null,
@@ -68,7 +69,7 @@
           "filename": "[FULL][$][TP2] Log User.zip",
           "id": 3304,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/205/v/262/[FULL][$][TP2] Log User.zip",
           "size": 16393,
           "src_url": "https://torrentpier.com/api/resource-versions/262/download?file=3304"
         }

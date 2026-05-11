@@ -12,7 +12,7 @@
       "filename": "Стата на главной(ajax).zip",
       "id": 3237,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/89/v/240/Стата на главной(ajax).zip",
       "size": 6495,
       "src_url": "https://torrentpier.com/api/resource-versions/240/download?file=3237"
     }
@@ -44,6 +44,7 @@
   "description_parsed": "<b>Описание:</b> добавляет вывод статистики профиля на AJAX, заменяя стандартный.",
   "download_count": 419,
   "external_url": null,
+  "icon_r2_key": "resources/89/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/89.jpg?1425422323",
   "id": 89,
   "is_fileless": null,
@@ -68,7 +69,7 @@
           "filename": "Стата на главной(ajax).zip",
           "id": 3237,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/89/v/240/Стата на главной(ajax).zip",
           "size": 6495,
           "src_url": "https://torrentpier.com/api/resource-versions/240/download?file=3237"
         }
@@ -88,7 +89,7 @@
           "filename": "Стата на главной(ajax).rar",
           "id": 2423,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/89/v/95/Стата на главной(ajax).rar",
           "size": 5581,
           "src_url": "https://torrentpier.com/api/resource-versions/95/download?file=2423"
         }

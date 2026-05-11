@@ -12,7 +12,7 @@
       "filename": "Last added, top torrents, top users Mod ajax 2.1.5.zip",
       "id": 4106,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/60/v/354/Last added, top torrents, top users Mod ajax 2.1.5.zip",
       "size": 25754,
       "src_url": "https://torrentpier.com/api/resource-versions/354/download?file=4106"
     }
@@ -114,6 +114,7 @@
   "description_parsed": "<b>Описание:</b> добавляет информационные блоки в боковой панели (самые скачиваемые/новые раздачи, топ-пользователи).",
   "download_count": 1647,
   "external_url": null,
+  "icon_r2_key": "resources/60/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/60.jpg?1425421774",
   "id": 60,
   "is_fileless": null,
@@ -138,7 +139,7 @@
           "filename": "Last added, top torrents, top users Mod ajax 2.1.5.zip",
           "id": 4106,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/60/v/354/Last added, top torrents, top users Mod ajax 2.1.5.zip",
           "size": 25754,
           "src_url": "https://torrentpier.com/api/resource-versions/354/download?file=4106"
         }
@@ -158,7 +159,7 @@
           "filename": "Last added, top torrents, top users Mod ajax 2.1.5.zip",
           "id": 3755,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/60/v/323/Last added, top torrents, top users Mod ajax 2.1.5.zip",
           "size": 7847,
           "src_url": "https://torrentpier.com/api/resource-versions/323/download?file=3755"
         }
@@ -178,7 +179,7 @@
           "filename": "Last added, top torrents, top users Mod ajax 2.1.5.zip",
           "id": 3750,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/60/v/322/Last added, top torrents, top users Mod ajax 2.1.5.zip",
           "size": 7527,
           "src_url": "https://torrentpier.com/api/resource-versions/322/download?file=3750"
         }
@@ -198,7 +199,7 @@
           "filename": "[TP2][R553] Last added, top torrents, top users Mod ajax.zip",
           "id": 3240,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/60/v/243/[TP2][R553] Last added, top torrents, top users Mod ajax.zip",
           "size": 7025,
           "src_url": "https://torrentpier.com/api/resource-versions/243/download?file=3240"
         }
@@ -218,7 +219,7 @@
           "filename": "[TP2][R553] Last added, top torrents, top users Mod ajax.rar",
           "id": 2338,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/60/v/66/[TP2][R553] Last added, top torrents, top users Mod ajax.rar",
           "size": 117244,
           "src_url": "https://torrentpier.com/api/resource-versions/66/download?file=2338"
         }
@@ -238,7 +239,7 @@
           "filename": "[TP2] Last added, top torrents, top users Mod ajax.rar",
           "id": 2328,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/60/v/64/[TP2] Last added, top torrents, top users Mod ajax.rar",
           "size": 117438,
           "src_url": "https://torrentpier.com/api/resource-versions/64/download?file=2328"
         }

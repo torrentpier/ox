@@ -12,7 +12,7 @@
       "filename": "r600.zip",
       "id": 3644,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/6/v/293/r600.zip",
       "size": 355464,
       "src_url": "https://torrentpier.com/api/resource-versions/293/download?file=3644"
     }
@@ -70,6 +70,7 @@
   "description_parsed": "<b>Описание:</b> шаблон, простой в шоколадных оттенках.",
   "download_count": 574,
   "external_url": null,
+  "icon_r2_key": "resources/6/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/6.jpg?1429570410",
   "id": 6,
   "is_fileless": null,
@@ -94,7 +95,7 @@
           "filename": "r600.zip",
           "id": 3644,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/6/v/293/r600.zip",
           "size": 355464,
           "src_url": "https://torrentpier.com/api/resource-versions/293/download?file=3644"
         }
@@ -114,7 +115,7 @@
           "filename": "tp2.R327.zip",
           "id": 3643,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/6/v/292/tp2.R327.zip",
           "size": 116227,
           "src_url": "https://torrentpier.com/api/resource-versions/292/download?file=3643"
         }
@@ -134,7 +135,7 @@
           "filename": "tp2.R327.rar",
           "id": 1970,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/6/v/6/tp2.R327.rar",
           "size": 112314,
           "src_url": "https://torrentpier.com/api/resource-versions/6/download?file=1970"
         }

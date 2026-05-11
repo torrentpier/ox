@@ -12,7 +12,7 @@
       "filename": "kb.zip",
       "id": 3186,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/180/v/217/kb.zip",
       "size": 5628,
       "src_url": "https://torrentpier.com/api/resource-versions/217/download?file=3186"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность написания сообщений с использованием виртуальной клавиатуры. Модификация, ранее включенная в основной дистрибутив движка.",
   "download_count": 265,
   "external_url": null,
+  "icon_r2_key": "resources/180/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/180.jpg?1425323873",
   "id": 180,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "kb.zip",
           "id": 3186,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/180/v/217/kb.zip",
           "size": 5628,
           "src_url": "https://torrentpier.com/api/resource-versions/217/download?file=3186"
         }

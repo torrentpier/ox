@@ -12,7 +12,7 @@
       "filename": "[FULL][$][TP2] Admin dostup.zip",
       "id": 3286,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/200/v/257/[FULL][$][TP2] Admin dostup.zip",
       "size": 8091,
       "src_url": "https://torrentpier.com/api/resource-versions/257/download?file=3286"
     }
@@ -86,6 +86,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность ограничить доступ других администраторов к элементам панели управления.<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Извещение о странице, к который не был добавлен приоритет</li>\n<li data-xf-list-type=\"ul\">Настройка и ротация уникальных доступов</li>\n<li data-xf-list-type=\"ul\">Запрет доступа к страницам</li>\n</ul>",
   "download_count": 277,
   "external_url": null,
+  "icon_r2_key": "resources/200/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/200.jpg?1425489983",
   "id": 200,
   "is_fileless": null,
@@ -110,7 +111,7 @@
           "filename": "[FULL][$][TP2] Admin dostup.zip",
           "id": 3286,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/200/v/257/[FULL][$][TP2] Admin dostup.zip",
           "size": 8091,
           "src_url": "https://torrentpier.com/api/resource-versions/257/download?file=3286"
         }

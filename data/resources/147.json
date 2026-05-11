@@ -12,7 +12,7 @@
       "filename": "[FULL] Локальная галерея TPII by Zenden.zip",
       "id": 6010,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/147/v/505/[FULL] Локальная галерея TPII by Zenden.zip",
       "size": 7046,
       "src_url": "https://torrentpier.com/api/resource-versions/505/download?file=6010"
     }
@@ -44,6 +44,7 @@
   "description_parsed": "<b>Описание:</b> добавляет локальную галерею для загрузки изображений.<br />\n<br />\nВ связи с появлением в движке функции безопасной загрузки, решил привести галерею к стандарту TorrentPier.<br />\n<ul>\n<li data-xf-list-type=\"ul\">мультизагрузка изображений</li>\n<li data-xf-list-type=\"ul\">удаление картинки с использованием AJAX</li>\n<li data-xf-list-type=\"ul\">индивидуальный вывод готовых ссылок для публикаций</li>\n<li data-xf-list-type=\"ul\">комплексный вывод готовых ссылок для публикаций</li>\n<li data-xf-list-type=\"ul\">создание миниатюр</li>\n<li data-xf-list-type=\"ul\">при удалении топика или поста, удаление &quot;связанных&quot; картинок</li>\n<li data-xf-list-type=\"ul\">просмотр пользователем загруженных им ранее картинок</li>\n<li data-xf-list-type=\"ul\">размер и дата загрузки изображения</li>\n<li data-xf-list-type=\"ul\">вывод количество и размер загруженных пользователем картинок</li>\n<li data-xf-list-type=\"ul\">возможность добавить водяной знак</li>\n</ul>Если вам понравился мод, вы можете отблагодарить автора:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Яндекс деньги: <b>410011534461433</b></li>\n<li data-xf-list-type=\"ul\">WMR-кошелёк: <b>R381249575716</b></li>\n<li data-xf-list-type=\"ul\">WMZ-кошелёк: <b>Z159805086668</b></li>\n<li data-xf-list-type=\"ul\">WME-кошелёк: <b>E317694362397</b></li>\n</ul>",
   "download_count": 3061,
   "external_url": null,
+  "icon_r2_key": "resources/147/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/147.jpg?1425420329",
   "id": 147,
   "is_fileless": null,
@@ -68,7 +69,7 @@
           "filename": "[FULL] Локальная галерея TPII by Zenden.zip",
           "id": 6010,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/147/v/505/[FULL] Локальная галерея TPII by Zenden.zip",
           "size": 7046,
           "src_url": "https://torrentpier.com/api/resource-versions/505/download?file=6010"
         }
@@ -88,7 +89,7 @@
           "filename": "[FULL] Локальная галерея TPII by Zenden.zip",
           "id": 6007,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/147/v/502/[FULL] Локальная галерея TPII by Zenden.zip",
           "size": 7020,
           "src_url": "https://torrentpier.com/api/resource-versions/502/download?file=6007"
         }
@@ -108,7 +109,7 @@
           "filename": "[FULL] Локальная галерея TPII by Zenden.zip",
           "id": 5838,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/147/v/471/[FULL] Локальная галерея TPII by Zenden.zip",
           "size": 6996,
           "src_url": "https://torrentpier.com/api/resource-versions/471/download?file=5838"
         }
@@ -128,7 +129,7 @@
           "filename": "[FULL] Локальная галерея TPII by Zenden.zip",
           "id": 5837,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/147/v/470/[FULL] Локальная галерея TPII by Zenden.zip",
           "size": 6960,
           "src_url": "https://torrentpier.com/api/resource-versions/470/download?file=5837"
         }
@@ -148,7 +149,7 @@
           "filename": "[FULL] Локальная галерея TPII by Zenden.zip",
           "id": 5704,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/147/v/426/[FULL] Локальная галерея TPII by Zenden.zip",
           "size": 6689,
           "src_url": "https://torrentpier.com/api/resource-versions/426/download?file=5704"
         }
@@ -168,7 +169,7 @@
           "filename": "[FULL] Локальная галерея TPII by Zenden.zip",
           "id": 5664,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/147/v/414/[FULL] Локальная галерея TPII by Zenden.zip",
           "size": 6567,
           "src_url": "https://torrentpier.com/api/resource-versions/414/download?file=5664"
         }
@@ -188,7 +189,7 @@
           "filename": "галерея.zip",
           "id": 3426,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/147/v/239/галерея.zip",
           "size": 6401,
           "src_url": "https://torrentpier.com/api/resource-versions/239/download?file=3426"
         }
@@ -208,7 +209,7 @@
           "filename": "галерея.7z",
           "id": 2916,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/147/v/164/галерея.7z",
           "size": 4649,
           "src_url": "https://torrentpier.com/api/resource-versions/164/download?file=2916"
         }
@@ -228,7 +229,7 @@
           "filename": "галерея.7z",
           "id": 2913,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/147/v/163/галерея.7z",
           "size": 4089,
           "src_url": "https://torrentpier.com/api/resource-versions/163/download?file=2913"
         }
@@ -248,7 +249,7 @@
           "filename": "галерея.7z",
           "id": 2889,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/147/v/162/галерея.7z",
           "size": 3629,
           "src_url": "https://torrentpier.com/api/resource-versions/162/download?file=2889"
         }
@@ -268,7 +269,7 @@
           "filename": "галерея.7z",
           "id": 2884,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/147/v/161/галерея.7z",
           "size": 2472,
           "src_url": "https://torrentpier.com/api/resource-versions/161/download?file=2884"
         }

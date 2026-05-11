@@ -12,7 +12,7 @@
       "filename": "видео_вк.zip",
       "id": 3241,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/190/v/244/видео_вк.zip",
       "size": 877,
       "src_url": "https://torrentpier.com/api/resource-versions/244/download?file=3241"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание:</b> добавляет BB-код для вставки видео из социальной сети ВКонтакте.<br />\n<br />\n<div data-template-name=\"public:_media_site_embed_youtube\" class=\"bbMediaWrapper\" data-media-site-id=\"youtube\" data-media-key=\"WrdoeeAmA8o\">\n\t<div class=\"bbMediaWrapper-inner\">\n\t\t<iframe src=\"https://www.youtube.com/embed/WrdoeeAmA8o?wmode=opaque\"\n\t\t\t\tloading=\"lazy\"\n\t\t\t\twidth=\"560\" height=\"315\"\n\t\t\t\tframeborder=\"0\" allowfullscreen=\"true\"></iframe>\n\t</div>\n</div>",
   "download_count": 220,
   "external_url": null,
+  "icon_r2_key": "resources/190/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/190.jpg?1425422299",
   "id": 190,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "видео_вк.zip",
           "id": 3241,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/190/v/244/видео_вк.zip",
           "size": 877,
           "src_url": "https://torrentpier.com/api/resource-versions/244/download?file=3241"
         }

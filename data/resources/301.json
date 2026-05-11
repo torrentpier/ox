@@ -12,7 +12,7 @@
       "filename": "[FULL] BBCode - WebTor.io онлайн просмотр.zip",
       "id": 6092,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/301/v/529/[FULL] BBCode - WebTor.io онлайн просмотр.zip",
       "size": 1243,
       "src_url": "https://torrentpier.com/api/resource-versions/529/download?file=6092"
     }
@@ -58,6 +58,7 @@
   "description_parsed": "<b>Описание:</b> Добавляет интеграцию сервиса <a href=\"https://webtor.io/#/ru/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">WebTor.io</a>. Для вставки плеера нужно в BBCode указать магнит-ссылку на торрент (можно скопировать прям из созданой раздачи).<br />\n<br />\n<b>Совместимость: </b>все версии.<br />\n<hr />❤️ Поддержать автора WebTor.io - <a href=\"https://www.patreon.com/join/pavel_tatarskiy\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Patreon</a>",
   "download_count": 228,
   "external_url": null,
+  "icon_r2_key": "resources/301/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/301.jpg?1721821868",
   "id": 301,
   "is_fileless": null,
@@ -87,7 +88,7 @@
           "filename": "[FULL] BBCode - WebTor.io онлайн просмотр.zip",
           "id": 6092,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/301/v/529/[FULL] BBCode - WebTor.io онлайн просмотр.zip",
           "size": 1243,
           "src_url": "https://torrentpier.com/api/resource-versions/529/download?file=6092"
         }

@@ -12,7 +12,7 @@
       "filename": "[FULL][$][TP2] Ajax search.zip",
       "id": 3292,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/202/v/259/[FULL][$][TP2] Ajax search.zip",
       "size": 79872,
       "src_url": "https://torrentpier.com/api/resource-versions/259/download?file=3292"
     }
@@ -72,6 +72,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность быстрого поиска на AJAX.<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Быстрый поиск по форуму или трекеру</li>\n<li data-xf-list-type=\"ul\">Подсвечивает найденные совпадения</li>\n<li data-xf-list-type=\"ul\">Текст ищется при введении его в поиске, с таймаутом, после определенного количества символов (интервал задается в конфиге)</li>\n<li data-xf-list-type=\"ul\">Навигация по найденным результатам</li>\n<li data-xf-list-type=\"ul\">Поиск пользователей</li>\n<li data-xf-list-type=\"ul\">Возможность переключения между поиском по темам и подсказкой популярных запросов</li>\n</ul>",
   "download_count": 228,
   "external_url": null,
+  "icon_r2_key": "resources/202/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/202.jpg?1425491004",
   "id": 202,
   "is_fileless": null,
@@ -96,7 +97,7 @@
           "filename": "[FULL][$][TP2] Ajax search.zip",
           "id": 3292,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/202/v/259/[FULL][$][TP2] Ajax search.zip",
           "size": 79872,
           "src_url": "https://torrentpier.com/api/resource-versions/259/download?file=3292"
         }

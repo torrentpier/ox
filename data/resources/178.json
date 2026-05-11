@@ -12,7 +12,7 @@
       "filename": "лс_проверка.zip",
       "id": 3182,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/178/v/215/лс_проверка.zip",
       "size": 325,
       "src_url": "https://torrentpier.com/api/resource-versions/215/download?file=3182"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание:</b> дополнение к модификации отключения входящих личных сообщений. Отключение личного сообщения о проверке релиза.",
   "download_count": 240,
   "external_url": null,
+  "icon_r2_key": "resources/178/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/178.jpg?1425319648",
   "id": 178,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "лс_проверка.zip",
           "id": 3182,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/178/v/215/лс_проверка.zip",
           "size": 325,
           "src_url": "https://torrentpier.com/api/resource-versions/215/download?file=3182"
         }

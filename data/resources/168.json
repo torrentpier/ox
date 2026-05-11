@@ -12,7 +12,7 @@
       "filename": "[FULL] Подарки.zip",
       "id": 3106,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/168/v/201/[FULL] Подарки.zip",
       "size": 44038,
       "src_url": "https://torrentpier.com/api/resource-versions/201/download?file=3106"
     }
@@ -72,6 +72,7 @@
   "description_parsed": "<b>Описание:</b> добавляет систему обмена виртуальными подарками между пользователями. Некий аналог системы обмена подарками в социальных сетях. Подарки покупаются за сидбонусы. У администратора есть возможность добавления неограниченного числа категорий подарков и самих подарков.",
   "download_count": 530,
   "external_url": null,
+  "icon_r2_key": "resources/168/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/168.jpg?1425252141",
   "id": 168,
   "is_fileless": null,
@@ -96,7 +97,7 @@
           "filename": "[FULL] Подарки.zip",
           "id": 3106,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/168/v/201/[FULL] Подарки.zip",
           "size": 44038,
           "src_url": "https://torrentpier.com/api/resource-versions/201/download?file=3106"
         }

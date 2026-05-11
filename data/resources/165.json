@@ -12,7 +12,7 @@
       "filename": "вычет сообщений.zip",
       "id": 3101,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/165/v/197/вычет сообщений.zip",
       "size": 375,
       "src_url": "https://torrentpier.com/api/resource-versions/197/download?file=3101"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание:</b> дополнение к модификации отключения учета сообщений в форумах (флуд-форумы). Вычет флуд-сообщений с общей статистики.",
   "download_count": 238,
   "external_url": null,
+  "icon_r2_key": "resources/165/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/165.jpg?1425241573",
   "id": 165,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "вычет сообщений.zip",
           "id": 3101,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/165/v/197/вычет сообщений.zip",
           "size": 375,
           "src_url": "https://torrentpier.com/api/resource-versions/197/download?file=3101"
         }

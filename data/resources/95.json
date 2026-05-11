@@ -12,7 +12,7 @@
       "filename": "[FULL] Contact_Us.zip",
       "id": 3202,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/95/v/226/[FULL] Contact_Us.zip",
       "size": 8242,
       "src_url": "https://torrentpier.com/api/resource-versions/226/download?file=3202"
     }
@@ -72,6 +72,7 @@
   "description_parsed": "<b>Описание:</b> добавляет форму обратной связи с администрацией. Отправлять запросы могут только гости. Администрация отвечает на запросы через администраторский раздел.",
   "download_count": 412,
   "external_url": null,
+  "icon_r2_key": "resources/95/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/95.jpg?1425407145",
   "id": 95,
   "is_fileless": null,
@@ -96,7 +97,7 @@
           "filename": "[FULL] Contact_Us.zip",
           "id": 3202,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/95/v/226/[FULL] Contact_Us.zip",
           "size": 8242,
           "src_url": "https://torrentpier.com/api/resource-versions/226/download?file=3202"
         }
@@ -116,7 +117,7 @@
           "filename": "[FULL] Contact_Us.rar",
           "id": 2472,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/95/v/101/[FULL] Contact_Us.rar",
           "size": 179834,
           "src_url": "https://torrentpier.com/api/resource-versions/101/download?file=2472"
         }

@@ -12,7 +12,7 @@
       "filename": "underverse.zip",
       "id": 3631,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/45/v/286/underverse.zip",
       "size": 305861,
       "src_url": "https://torrentpier.com/api/resource-versions/286/download?file=3631"
     }
@@ -42,6 +42,7 @@
   "description_parsed": "<b>Описание:</b> шаблон, рип с трекера Underverse.",
   "download_count": 516,
   "external_url": null,
+  "icon_r2_key": "resources/45/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/45.jpg?1429568555",
   "id": 45,
   "is_fileless": null,
@@ -66,7 +67,7 @@
           "filename": "underverse.zip",
           "id": 3631,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/45/v/286/underverse.zip",
           "size": 305861,
           "src_url": "https://torrentpier.com/api/resource-versions/286/download?file=3631"
         }
@@ -86,7 +87,7 @@
           "filename": "underverse.rar",
           "id": 2144,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/45/v/46/underverse.rar",
           "size": 274786,
           "src_url": "https://torrentpier.com/api/resource-versions/46/download?file=2144"
         }

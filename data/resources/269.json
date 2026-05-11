@@ -12,7 +12,7 @@
       "filename": "TorrentPier-Pixel-Template-2.1.0.zip",
       "id": 6476,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/269/v/636/TorrentPier-Pixel-Template-2.1.0.zip",
       "size": 3437257,
       "src_url": "https://torrentpier.com/api/resource-versions/636/download?file=6476"
     }
@@ -56,6 +56,7 @@
   "description_parsed": "<b>Описание:</b> шаблон, простой и современный с возможностью изменения цвета и оформления. Адаптивный.<br />\n<b>Совместимость:</b> последние версии LTS",
   "download_count": 816,
   "external_url": null,
+  "icon_r2_key": "resources/269/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/269.jpg?1696871755",
   "id": 269,
   "is_fileless": null,
@@ -84,7 +85,7 @@
           "filename": "TorrentPier-Pixel-Template-2.1.0.zip",
           "id": 6476,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/269/v/636/TorrentPier-Pixel-Template-2.1.0.zip",
           "size": 3437257,
           "src_url": "https://torrentpier.com/api/resource-versions/636/download?file=6476"
         }
@@ -104,7 +105,7 @@
           "filename": "TorrentPier-Pixel-Template-2.0.1.zip",
           "id": 6448,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/269/v/628/TorrentPier-Pixel-Template-2.0.1.zip",
           "size": 3437228,
           "src_url": "https://torrentpier.com/api/resource-versions/628/download?file=6448"
         }
@@ -124,7 +125,7 @@
           "filename": "Шаблон Pixel.zip",
           "id": 6434,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/269/v/623/Шаблон Pixel.zip",
           "size": 3378039,
           "src_url": "https://torrentpier.com/api/resource-versions/623/download?file=6434"
         }
@@ -144,7 +145,7 @@
           "filename": "Шаблон Pixel 2.1.5.zip",
           "id": 5554,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/269/v/400/Шаблон Pixel 2.1.5.zip",
           "size": 4004007,
           "src_url": "https://torrentpier.com/api/resource-versions/400/download?file=5554"
         }

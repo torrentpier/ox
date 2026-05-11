@@ -12,7 +12,7 @@
       "filename": "[FULL][$][TP2] Blog.zip",
       "id": 3121,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/172/v/206/[FULL][$][TP2] Blog.zip",
       "size": 174756,
       "src_url": "https://torrentpier.com/api/resource-versions/206/download?file=3121"
     }
@@ -114,6 +114,7 @@
   "description_parsed": "<b>Описание:</b> добавляет пользователям возможность вести блоги.<br />\n<br />\nОсновные возможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Добавление комментариев</li>\n<li data-xf-list-type=\"ul\">Переключение капчи, recaptcha или стандартная</li>\n<li data-xf-list-type=\"ul\">Поиск как по комментариям так и по статьям</li>\n<li data-xf-list-type=\"ul\">Облако тегов генерируется из тех которые есть в блогах</li>\n<li data-xf-list-type=\"ul\">Гибкая настройка</li>\n<li data-xf-list-type=\"ul\">Возможность добавить быструю запись в блог, при создании темы или раздачи( с редиректом в форум)</li>\n<li data-xf-list-type=\"ul\">Отдельная система доступа к категориям и новостям</li>\n<li data-xf-list-type=\"ul\">Нагрузка сведена к минимуму</li>\n</ul>",
   "download_count": 221,
   "external_url": null,
+  "icon_r2_key": "resources/172/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/172.jpg?1425254715",
   "id": 172,
   "is_fileless": null,
@@ -138,7 +139,7 @@
           "filename": "[FULL][$][TP2] Blog.zip",
           "id": 3121,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/172/v/206/[FULL][$][TP2] Blog.zip",
           "size": 174756,
           "src_url": "https://torrentpier.com/api/resource-versions/206/download?file=3121"
         }

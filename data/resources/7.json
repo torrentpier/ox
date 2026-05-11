@@ -12,7 +12,7 @@
       "filename": "Green_600.zip",
       "id": 3642,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/7/v/291/Green_600.zip",
       "size": 256537,
       "src_url": "https://torrentpier.com/api/resource-versions/291/download?file=3642"
     }
@@ -70,6 +70,7 @@
   "description_parsed": "<b>Описание:</b> шаблон, простой в темно-зеленых оттенках.",
   "download_count": 525,
   "external_url": null,
+  "icon_r2_key": "resources/7/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/7.jpg?1429569704",
   "id": 7,
   "is_fileless": null,
@@ -94,7 +95,7 @@
           "filename": "Green_600.zip",
           "id": 3642,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/7/v/291/Green_600.zip",
           "size": 256537,
           "src_url": "https://torrentpier.com/api/resource-versions/291/download?file=3642"
         }
@@ -114,7 +115,7 @@
           "filename": "tp2r375.zip",
           "id": 3638,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/7/v/290/tp2r375.zip",
           "size": 128097,
           "src_url": "https://torrentpier.com/api/resource-versions/290/download?file=3638"
         }
@@ -134,7 +135,7 @@
           "filename": "tp2r375Green.rar",
           "id": 1974,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/7/v/7/tp2r375Green.rar",
           "size": 124088,
           "src_url": "https://torrentpier.com/api/resource-versions/7/download?file=1974"
         }

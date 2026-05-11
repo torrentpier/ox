@@ -12,7 +12,7 @@
       "filename": "root.zip",
       "id": 3098,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/146/v/194/root.zip",
       "size": 33230,
       "src_url": "https://torrentpier.com/api/resource-versions/194/download?file=3098"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание:</b> добавляет генерацию ссылок ЧПУ.<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Удобная генерация и добавление ссылок</li>\n<li data-xf-list-type=\"ul\">Возможна работа без реврайтов (работает на хостингах)</li>\n<li data-xf-list-type=\"ul\">Поддержка коротких ссылок (domain.ru/topic/4437/)</li>\n</ul>SEO_ID - это ид, например топика, который передается в урл domain.ru/topic/<b>4437</b>/<br />\n<br />\nSEO_MODE - это имя файла, например топика, который передается в урл(лежит в папке page) domain.ru/<b>topic</b>/4437/",
   "download_count": 718,
   "external_url": null,
+  "icon_r2_key": "resources/146/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/146.jpg?1425233859",
   "id": 146,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "root.zip",
           "id": 3098,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/146/v/194/root.zip",
           "size": 33230,
           "src_url": "https://torrentpier.com/api/resource-versions/194/download?file=3098"
         }
@@ -73,7 +74,7 @@
           "filename": "root.zip",
           "id": 2877,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/146/v/159/root.zip",
           "size": 33232,
           "src_url": "https://torrentpier.com/api/resource-versions/159/download?file=2877"
         }

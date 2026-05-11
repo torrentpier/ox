@@ -12,7 +12,7 @@
       "filename": "redirect.zip",
       "id": 3252,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/154/v/250/redirect.zip",
       "size": 22708,
       "src_url": "https://torrentpier.com/api/resource-versions/250/download?file=3252"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание: </b>добавляет страницу-редирект на внешние сайты.",
   "download_count": 391,
   "external_url": null,
+  "icon_r2_key": "resources/154/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/154.jpg?1425423941",
   "id": 154,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "redirect.zip",
           "id": 3252,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/154/v/250/redirect.zip",
           "size": 22708,
           "src_url": "https://torrentpier.com/api/resource-versions/250/download?file=3252"
         }
@@ -73,7 +74,7 @@
           "filename": "redirect.zip",
           "id": 3020,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/154/v/171/redirect.zip",
           "size": 22708,
           "src_url": "https://torrentpier.com/api/resource-versions/171/download?file=3020"
         }

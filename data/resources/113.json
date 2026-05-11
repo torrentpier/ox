@@ -12,7 +12,7 @@
       "filename": "канонические_ссылки.zip",
       "id": 3200,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/113/v/225/канонические_ссылки.zip",
       "size": 633,
       "src_url": "https://torrentpier.com/api/resource-versions/225/download?file=3200"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "Описание: добавляет атрибут rel=&quot;canonical&quot; в заголовки страниц с одинаковым контентом. Более подробная информация про канонические ссылки есть тут: <a href=\"https://support.google.com/webmasters/answer/139066?hl=ru&amp;rd=1\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://support.google.com/webmasters/answer/139066?hl=ru&amp;rd=1</a>",
   "download_count": 352,
   "external_url": null,
+  "icon_r2_key": "resources/113/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/113.jpg?1425329787",
   "id": 113,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "канонические_ссылки.zip",
           "id": 3200,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/113/v/225/канонические_ссылки.zip",
           "size": 633,
           "src_url": "https://torrentpier.com/api/resource-versions/225/download?file=3200"
         }
@@ -73,7 +74,7 @@
           "filename": "канонические_ссылки.zip",
           "id": 3199,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/113/v/124/канонические_ссылки.zip",
           "size": 633,
           "src_url": "https://torrentpier.com/api/resource-versions/124/download?file=3199"
         }

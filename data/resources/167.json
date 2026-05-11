@@ -12,7 +12,7 @@
       "filename": "Lenta.zip",
       "id": 3105,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/167/v/200/Lenta.zip",
       "size": 26075,
       "src_url": "https://torrentpier.com/api/resource-versions/200/download?file=3105"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание:</b> добавляет ленту релизов на главной странице.",
   "download_count": 355,
   "external_url": null,
+  "icon_r2_key": "resources/167/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/167.jpg?1425251759",
   "id": 167,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "Lenta.zip",
           "id": 3105,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/167/v/200/Lenta.zip",
           "size": 26075,
           "src_url": "https://torrentpier.com/api/resource-versions/200/download?file=3105"
         }

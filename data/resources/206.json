@@ -12,7 +12,7 @@
       "filename": "[FULL][$][TP2] Tag.zip",
       "id": 3305,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/206/v/263/[FULL][$][TP2] Tag.zip",
       "size": 2637,
       "src_url": "https://torrentpier.com/api/resource-versions/263/download?file=3305"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность вывода облака поисковых тегов.",
   "download_count": 224,
   "external_url": null,
+  "icon_r2_key": "resources/206/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/206.jpg?1425496816",
   "id": 206,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "[FULL][$][TP2] Tag.zip",
           "id": 3305,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/206/v/263/[FULL][$][TP2] Tag.zip",
           "size": 2637,
           "src_url": "https://torrentpier.com/api/resource-versions/263/download?file=3305"
         }

@@ -12,7 +12,7 @@
       "filename": "[FULL] Заметки by belomaxorka.zip",
       "id": 5951,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/271/v/487/[FULL] Заметки by belomaxorka.zip",
       "size": 1581,
       "src_url": "https://torrentpier.com/api/resource-versions/487/download?file=5951"
     }
@@ -58,6 +58,7 @@
   "description_parsed": "Данный мод добавляет в администраторском разделе возможность писать и сохранять заметки. Реализовано с помощью технологии AJAX.<br />\n<br />\nПроверялся на совместимость в v2.1.5 LTS. В других более новых / старых версиях тоже должен работать.<br />\n<br />\nПреимущества мода:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Поддерживает перенос строк (в отличие от <a href=\"https://torrentpier.com/threads/zapiski-administratora.104/\" class=\"link link--internal\">оригинальной</a> версии от <a href=\"https://torrentpier.com/members/61/\">druid</a>)</li>\n<li data-xf-list-type=\"ul\">Переписан код (во многом улучшен)</li>\n<li data-xf-list-type=\"ul\">Добавлены языковые переменные</li>\n<li data-xf-list-type=\"ul\">Улучшен интерфейс</li>\n</ul><hr /><div>Spoiler content hidden.</div>",
   "download_count": 405,
   "external_url": null,
+  "icon_r2_key": "resources/271/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/271.jpg?1699518890",
   "id": 271,
   "is_fileless": null,
@@ -87,7 +88,7 @@
           "filename": "[FULL] Заметки by belomaxorka.zip",
           "id": 5951,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/271/v/487/[FULL] Заметки by belomaxorka.zip",
           "size": 1581,
           "src_url": "https://torrentpier.com/api/resource-versions/487/download?file=5951"
         }
@@ -107,7 +108,7 @@
           "filename": "[FULL] Заметки by belomaxorka.zip",
           "id": 5731,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/271/v/434/[FULL] Заметки by belomaxorka.zip",
           "size": 1576,
           "src_url": "https://torrentpier.com/api/resource-versions/434/download?file=5731"
         }
@@ -127,7 +128,7 @@
           "filename": "Заметки.zip",
           "id": 5582,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/271/v/404/Заметки.zip",
           "size": 1200,
           "src_url": "https://torrentpier.com/api/resource-versions/404/download?file=5582"
         }

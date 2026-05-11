@@ -12,7 +12,7 @@
       "filename": "tp2.R325.zip",
       "id": 3646,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/8/v/295/tp2.R325.zip",
       "size": 74768,
       "src_url": "https://torrentpier.com/api/resource-versions/295/download?file=3646"
     }
@@ -42,6 +42,7 @@
   "description_parsed": "<b>Описание:</b> шаблон, простой в бежевых тонах.",
   "download_count": 468,
   "external_url": null,
+  "icon_r2_key": "resources/8/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/8.jpg?1429570965",
   "id": 8,
   "is_fileless": null,
@@ -66,7 +67,7 @@
           "filename": "tp2.R325.zip",
           "id": 3646,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/8/v/295/tp2.R325.zip",
           "size": 74768,
           "src_url": "https://torrentpier.com/api/resource-versions/295/download?file=3646"
         }
@@ -86,7 +87,7 @@
           "filename": "tp2.R325.rar",
           "id": 1976,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/8/v/8/tp2.R325.rar",
           "size": 72698,
           "src_url": "https://torrentpier.com/api/resource-versions/8/download?file=1976"
         }

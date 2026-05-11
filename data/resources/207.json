@@ -12,7 +12,7 @@
       "filename": "[FULL][$][TP2] Rss.zip",
       "id": 3306,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/207/v/264/[FULL][$][TP2] Rss.zip",
       "size": 4020,
       "src_url": "https://torrentpier.com/api/resource-versions/264/download?file=3306"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность генерации лент RSS.<br />\n<br />\nВозможность:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Вывод новых тем из форумов в RSS</li>\n<li data-xf-list-type=\"ul\">Полное кеширование</li>\n</ul>",
   "download_count": 258,
   "external_url": null,
+  "icon_r2_key": "resources/207/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/207.jpg?1425506600",
   "id": 207,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "[FULL][$][TP2] Rss.zip",
           "id": 3306,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/207/v/264/[FULL][$][TP2] Rss.zip",
           "size": 4020,
           "src_url": "https://torrentpier.com/api/resource-versions/264/download?file=3306"
         }

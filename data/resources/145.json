@@ -12,7 +12,7 @@
       "filename": "[FULL] Чтение личных сообщений пользователей by Exile.zip",
       "id": 6726,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/145/v/668/[FULL] Чтение личных сообщений пользователей by Exile.zip",
       "size": 8063,
       "src_url": "https://torrentpier.com/api/resource-versions/668/download?file=6726"
     }
@@ -44,6 +44,7 @@
   "description_parsed": "<b>Описание:</b> модификация, добавляющая возможность чтения личных сообщений пользователей через админку. Может пригодиться при поиске спамеров и прочих нехороших людей.<br />\n<br />\nЭтичность данного действия целиком и полностью остается на совести администратора, устанавливающего это дополнение. Если есть большое желание - прочитать личные сообщения администратор ресурса сможет напрямую через базу. Данная модификация лишь несколько упрощает этот процесс и сделана исключительно ради благих целей.",
   "download_count": 960,
   "external_url": null,
+  "icon_r2_key": "resources/145/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/145.jpg?1425506483",
   "id": 145,
   "is_fileless": null,
@@ -68,7 +69,7 @@
           "filename": "[FULL] Чтение личных сообщений пользователей by Exile.zip",
           "id": 6726,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/145/v/668/[FULL] Чтение личных сообщений пользователей by Exile.zip",
           "size": 8063,
           "src_url": "https://torrentpier.com/api/resource-versions/668/download?file=6726"
         }
@@ -88,7 +89,7 @@
           "filename": "[FULL] Чтение личных сообщений пользователей by Exile.zip",
           "id": 6449,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/145/v/629/[FULL] Чтение личных сообщений пользователей by Exile.zip",
           "size": 6158,
           "src_url": "https://torrentpier.com/api/resource-versions/629/download?file=6449"
         }
@@ -108,7 +109,7 @@
           "filename": "[FULL] Чтение личных сообщений пользователей by Exile.zip",
           "id": 6433,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/145/v/622/[FULL] Чтение личных сообщений пользователей by Exile.zip",
           "size": 6137,
           "src_url": "https://torrentpier.com/api/resource-versions/622/download?file=6433"
         }
@@ -128,7 +129,7 @@
           "filename": "[FULL] Чтение личных сообщений пользователей by Exile.zip",
           "id": 6432,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/145/v/621/[FULL] Чтение личных сообщений пользователей by Exile.zip",
           "size": 5187,
           "src_url": "https://torrentpier.com/api/resource-versions/621/download?file=6432"
         }
@@ -148,7 +149,7 @@
           "filename": "[FULL] Чтение личных сообщений пользователей by Exile.zip",
           "id": 6425,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/145/v/618/[FULL] Чтение личных сообщений пользователей by Exile.zip",
           "size": 2506,
           "src_url": "https://torrentpier.com/api/resource-versions/618/download?file=6425"
         }
@@ -168,7 +169,7 @@
           "filename": "[FULL] Чтение личных сообщений пользователей by Exile.zip",
           "id": 6424,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/145/v/617/[FULL] Чтение личных сообщений пользователей by Exile.zip",
           "size": 2438,
           "src_url": "https://torrentpier.com/api/resource-versions/617/download?file=6424"
         }
@@ -188,7 +189,7 @@
           "filename": "read_ls.zip",
           "id": 3104,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/145/v/199/read_ls.zip",
           "size": 1324,
           "src_url": "https://torrentpier.com/api/resource-versions/199/download?file=3104"
         }
@@ -208,7 +209,7 @@
           "filename": "read_ls.zip",
           "id": 2872,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/145/v/158/read_ls.zip",
           "size": 1324,
           "src_url": "https://torrentpier.com/api/resource-versions/158/download?file=2872"
         }
