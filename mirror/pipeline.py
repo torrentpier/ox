@@ -291,6 +291,48 @@ def mirror_inline(data_dir: Path, r2: R2Client, dl: Downloader) -> Counter:
     return stats
 
 
+def scan_inventory(data_dir: Path) -> Counter:
+    """Walk `data/` and report what `upload` would touch.
+
+    Pure offline — no R2 / network I/O. Useful as a smoke test and a way to
+    eyeball the work the next `upload` will do.
+    """
+    stats: Counter[str] = Counter()
+    for path in sorted((data_dir / "threads").glob("*.json")):
+        data = json.loads(path.read_text(encoding="utf-8"))
+        for post in data.get("posts") or []:
+            for att in post.get("attachments") or []:
+                stats["attachment_total"] += 1
+                stats["attachment_done" if att.get("r2_key") else "attachment_pending"] += 1
+    for path in sorted((data_dir / "users").glob("*.json")):
+        u = json.loads(path.read_text(encoding="utf-8"))
+        avatar_urls = u.get("avatar_urls") or {}
+        if not (avatar_urls.get("l") or avatar_urls.get("m") or avatar_urls.get("o")):
+            continue
+        stats["avatar_total"] += 1
+        stats["avatar_done" if u.get("avatar_r2_key") else "avatar_pending"] += 1
+    for path in sorted((data_dir / "resources").glob("*.json")):
+        r = json.loads(path.read_text(encoding="utf-8"))
+        if r.get("icon_url"):
+            stats["icon_total"] += 1
+            stats["icon_done" if r.get("icon_r2_key") else "icon_pending"] += 1
+        for v in r.get("versions") or []:
+            for f in v.get("files") or []:
+                stats["res_file_total"] += 1
+                stats["res_file_done" if f.get("r2_key") else "res_file_pending"] += 1
+        for cf in r.get("current_files") or []:
+            stats["res_current_total"] += 1
+            stats["res_current_aliased" if cf.get("r2_key") else "res_current_pending"] += 1
+    inline_urls = _collect_inline_urls(data_dir)
+    stats["inline_unique_urls"] = len(inline_urls)
+    idx_path = data_dir / INLINE_INDEX_FILENAME
+    if idx_path.exists():
+        index = InlineIndex(idx_path)
+        stats["inline_index_done"] = sum(1 for v in index.by_url.values() if v.get("r2_key"))
+        stats["inline_index_failed"] = sum(1 for v in index.by_url.values() if v.get("failed"))
+    return stats
+
+
 def verify(data_dir: Path, r2: R2Client) -> Counter:
     """HEAD every recorded `r2_key`. Report and count missing objects."""
     stats: Counter[str] = Counter()

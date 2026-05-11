@@ -303,9 +303,10 @@ resources/{resource_id}/v/{version_id}/{filename}   # resource version files
   uploading twice.
 - `mirror/main.py` — CLI:
   ```
-  xf-mirror upload --data data
-  xf-mirror upload --data data --only attachments --only avatars
-  xf-mirror verify --data data
+  .venv/bin/python -m mirror upload --data data
+  .venv/bin/python -m mirror upload --data data --only attachments --only avatars
+  .venv/bin/python -m mirror verify --data data
+  .venv/bin/python -m mirror scan --data data    # offline inventory, no I/O
   ```
   Throttled to 2 rps by default; override via `MIRROR_RPS`. Sequential
   (no concurrency yet — add a `ThreadPoolExecutor` if rps×duration hurts).
@@ -526,7 +527,10 @@ manual (see "Cloudflare side" below).
    `wrangler r2 bucket create torrentpier-archive` → add
    `files-ox.torrentpier.com` custom domain → create R2 API token →
    fill `.env`. See "R2 setup (one-time, manual — user)" above.
-2. **Run the mirror (~30 min, sequential rps=2).**
+2. **Run the mirror (~30 min, sequential rps=2).** Optionally sanity-check
+   first with `.venv/bin/python -m mirror scan --data data` — pure offline
+   walk over `data/` that reports pending vs. done counts without touching
+   R2 or the network. Then:
    `.venv/bin/python -m mirror upload --data data`
    followed by `.venv/bin/python -m mirror verify --data data`. JSON files
    gain `r2_key`/`avatar_r2_key`/`icon_r2_key`; `data/inline_index.json`
