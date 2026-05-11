@@ -18,5 +18,89 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "Ress Kent",
-  "view_url": "https://torrentpier.com/members/ress-kent.5452/"
+  "view_url": "https://torrentpier.com/members/ress-kent.5452/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 1,
+      "comments": [
+        {
+          "comment_date": 1480736912,
+          "id": 198,
+          "message_parsed": "так же можешь купить оранже пи за тыш 5 с алиекспресс для торрента самый цвет, это мини пк и так же в него хаб засунуть. Людям просто не хватает этого всего, а ты взял и ушел, люди до сих пор хотят видеть твои труды.",
+          "message_state": "visible",
+          "profile_post_id": 753,
+          "user_id": 7573,
+          "username": "dcbeelinekz"
+        }
+      ],
+      "first_comment_date": 1480736912,
+      "id": 753,
+      "last_comment_date": 1480736912,
+      "message_parsed": "Тупо найди б.у роутер в олх.кз с усбпортом,  за пару штук можно найти, прицепи к основному роутеру его и будет круглосуточный хаб за которым не нужно наблюдать, все как у меня щас происходит, пашет сутками тихо в углу .не падает, не виснет ничего,",
+      "message_state": "visible",
+      "post_date": 1480736899,
+      "profile_user_id": 5452,
+      "url_path": "/profile-posts/753/",
+      "user_id": 7573,
+      "username": "dcbeelinekz",
+      "view_url": "https://torrentpier.com/profile-posts/753/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 752,
+      "last_comment_date": 0,
+      "message_parsed": "трекер-блог tbeelinekz.do.am",
+      "message_state": "visible",
+      "post_date": 1479919015,
+      "profile_user_id": 5452,
+      "url_path": "/profile-posts/752/",
+      "user_id": 7573,
+      "username": "dcbeelinekz",
+      "view_url": "https://torrentpier.com/profile-posts/752/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 751,
+      "last_comment_date": 0,
+      "message_parsed": "Когда на хабах появишься ? у нас новый список со внешкой намечается <a href=\"http://dchub.do.am\" class=\"link link--external\" rel=\"nofollow\" target=\"_blank\">http://dchub.do.am</a>",
+      "message_state": "visible",
+      "post_date": 1479918625,
+      "profile_user_id": 5452,
+      "url_path": "/profile-posts/751/",
+      "user_id": 7573,
+      "username": "dcbeelinekz",
+      "view_url": "https://torrentpier.com/profile-posts/751/"
+    },
+    {
+      "comment_count": 1,
+      "comments": [
+        {
+          "comment_date": 1421800083,
+          "id": 116,
+          "message_parsed": "http://s019.*******.ru/i607/1501/f1/5ac65815b23f.jpg",
+          "message_state": "visible",
+          "profile_post_id": 623,
+          "user_id": 5452,
+          "username": "Ress Kent"
+        }
+      ],
+      "first_comment_date": 1421800083,
+      "id": 623,
+      "last_comment_date": 1421800083,
+      "message_parsed": "Заняться нечем было, кроме как удалением форумов и тем с бетки?",
+      "message_state": "visible",
+      "post_date": 1421785483,
+      "profile_user_id": 5452,
+      "url_path": "/profile-posts/623/",
+      "user_id": 1,
+      "username": "Exile",
+      "view_url": "https://torrentpier.com/profile-posts/623/"
+    }
+  ],
+  "wall_total": 4
 }

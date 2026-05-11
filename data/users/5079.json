@@ -17,5 +17,24 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "Focuswow",
-  "view_url": "https://torrentpier.com/members/focuswow.5079/"
+  "view_url": "https://torrentpier.com/members/focuswow.5079/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 543,
+      "last_comment_date": 0,
+      "message_parsed": "Привет! настраивать трекер умеешь?",
+      "message_state": "visible",
+      "post_date": 1392135034,
+      "profile_user_id": 5079,
+      "url_path": "/profile-posts/543/",
+      "user_id": 5040,
+      "username": "Алёна",
+      "view_url": "https://torrentpier.com/profile-posts/543/"
+    }
+  ],
+  "wall_total": 1
 }

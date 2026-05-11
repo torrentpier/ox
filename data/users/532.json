@@ -18,5 +18,24 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "resonansER",
-  "view_url": "https://torrentpier.com/members/resonanser.532/"
+  "view_url": "https://torrentpier.com/members/resonanser.532/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 77,
+      "last_comment_date": 0,
+      "message_parsed": "И один в поле воин",
+      "message_state": "visible",
+      "post_date": 1321992719,
+      "profile_user_id": 532,
+      "url_path": "/profile-posts/77/",
+      "user_id": 532,
+      "username": "resonansER",
+      "view_url": "https://torrentpier.com/profile-posts/77/"
+    }
+  ],
+  "wall_total": 1
 }

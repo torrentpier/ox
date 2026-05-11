@@ -18,5 +18,24 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "Злой Сосед",
-  "view_url": "https://torrentpier.com/members/zloj-sosed.5259/"
+  "view_url": "https://torrentpier.com/members/zloj-sosed.5259/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 564,
+      "last_comment_date": 0,
+      "message_parsed": "Пум-пурум-пум-пум",
+      "message_state": "visible",
+      "post_date": 1402114010,
+      "profile_user_id": 5259,
+      "url_path": "/profile-posts/564/",
+      "user_id": 5259,
+      "username": "Злой Сосед",
+      "view_url": "https://torrentpier.com/profile-posts/564/"
+    }
+  ],
+  "wall_total": 1
 }

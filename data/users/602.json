@@ -17,5 +17,34 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "Fate",
-  "view_url": "https://torrentpier.com/members/fate.602/"
+  "view_url": "https://torrentpier.com/members/fate.602/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 1,
+      "comments": [
+        {
+          "comment_date": 1339841420,
+          "id": 23,
+          "message_parsed": "привет, в архиве админка есть. вероятно скрыта от простых админов, пропиши себя и свой юзер ид в конфиг.пхп",
+          "message_state": "visible",
+          "profile_post_id": 242,
+          "user_id": 602,
+          "username": "Fate"
+        }
+      ],
+      "first_comment_date": 1339841420,
+      "id": 242,
+      "last_comment_date": 1339841420,
+      "message_parsed": "Привет.Сможешь скинуть админку для (Мода управления рекламными материалами)?",
+      "message_state": "visible",
+      "post_date": 1339200733,
+      "profile_user_id": 602,
+      "url_path": "/profile-posts/242/",
+      "user_id": 2789,
+      "username": "Sprinx",
+      "view_url": "https://torrentpier.com/profile-posts/242/"
+    }
+  ],
+  "wall_total": 1
 }

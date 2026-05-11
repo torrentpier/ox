@@ -11,12 +11,86 @@
   "is_admin": false,
   "is_moderator": false,
   "is_staff": false,
-  "last_activity": null,
+  "last_activity": 1493824871,
   "message_count": 171,
   "register_date": 1438195776,
   "secondary_group_ids": [],
   "user_group_id": 2,
   "user_title": "User",
   "username": "redzhet",
-  "view_url": "https://torrentpier.com/members/redzhet.6346/"
+  "view_url": "https://torrentpier.com/members/redzhet.6346/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 706,
+      "last_comment_date": 0,
+      "message_parsed": "Гарик  у входа выйграл 🙂",
+      "message_state": "visible",
+      "post_date": 1448739917,
+      "profile_user_id": 6346,
+      "url_path": "/profile-posts/706/",
+      "user_id": 6346,
+      "username": "redzhet",
+      "view_url": "https://torrentpier.com/profile-posts/706/"
+    },
+    {
+      "comment_count": 1,
+      "comments": [
+        {
+          "comment_date": 1448609406,
+          "id": 192,
+          "message_parsed": "Проект оживится как только дадут доступ к 2.2.0. За фронтенд часть точно обещаю",
+          "message_state": "visible",
+          "profile_post_id": 693,
+          "user_id": 6580,
+          "username": "CrazyBoss"
+        }
+      ],
+      "first_comment_date": 1448609406,
+      "id": 693,
+      "last_comment_date": 1448609406,
+      "message_parsed": "Проект оживился сразу хоть 🙂",
+      "message_state": "visible",
+      "post_date": 1444573124,
+      "profile_user_id": 6346,
+      "url_path": "/profile-posts/693/",
+      "user_id": 6346,
+      "username": "redzhet",
+      "view_url": "https://torrentpier.com/profile-posts/693/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 682,
+      "last_comment_date": 0,
+      "message_parsed": "Нужны партнеры для создания трекера с нуля  все подробности в скайп или в лс",
+      "message_state": "visible",
+      "post_date": 1441450346,
+      "profile_user_id": 6346,
+      "url_path": "/profile-posts/682/",
+      "user_id": 6346,
+      "username": "redzhet",
+      "view_url": "https://torrentpier.com/profile-posts/682/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 679,
+      "last_comment_date": 0,
+      "message_parsed": "ничего не делаю )",
+      "message_state": "visible",
+      "post_date": 1440242054,
+      "profile_user_id": 6346,
+      "url_path": "/profile-posts/679/",
+      "user_id": 6346,
+      "username": "redzhet",
+      "view_url": "https://torrentpier.com/profile-posts/679/"
+    }
+  ],
+  "wall_total": 4
 }

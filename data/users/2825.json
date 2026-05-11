@@ -18,5 +18,24 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "FineRider",
-  "view_url": "https://torrentpier.com/members/finerider.2825/"
+  "view_url": "https://torrentpier.com/members/finerider.2825/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 410,
+      "last_comment_date": 0,
+      "message_parsed": "Google - Друг, Яндекс - Предатель, MySearch - Враг =)",
+      "message_state": "visible",
+      "post_date": 1361528489,
+      "profile_user_id": 2825,
+      "url_path": "/profile-posts/410/",
+      "user_id": 2825,
+      "username": "FineRider",
+      "view_url": "https://torrentpier.com/profile-posts/410/"
+    }
+  ],
+  "wall_total": 1
 }

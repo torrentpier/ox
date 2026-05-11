@@ -18,5 +18,39 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "JDVU",
-  "view_url": "https://torrentpier.com/members/jdvu.43/"
+  "view_url": "https://torrentpier.com/members/jdvu.43/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 475,
+      "last_comment_date": 0,
+      "message_parsed": "ты можешь удалить свои статусы в профиле",
+      "message_state": "visible",
+      "post_date": 1372700186,
+      "profile_user_id": 43,
+      "url_path": "/profile-posts/475/",
+      "user_id": 43,
+      "username": "JDVU",
+      "view_url": "https://torrentpier.com/profile-posts/475/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 420,
+      "last_comment_date": 0,
+      "message_parsed": "ололо",
+      "message_state": "visible",
+      "post_date": 1362230346,
+      "profile_user_id": 43,
+      "url_path": "/profile-posts/420/",
+      "user_id": 43,
+      "username": "JDVU",
+      "view_url": "https://torrentpier.com/profile-posts/420/"
+    }
+  ],
+  "wall_total": 2
 }

@@ -18,5 +18,54 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "Sayan",
-  "view_url": "https://torrentpier.com/members/sayan.1162/"
+  "view_url": "https://torrentpier.com/members/sayan.1162/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 303,
+      "last_comment_date": 0,
+      "message_parsed": "нужен шаблон",
+      "message_state": "visible",
+      "post_date": 1356603322,
+      "profile_user_id": 1162,
+      "url_path": "/profile-posts/303/",
+      "user_id": 1162,
+      "username": "Sayan",
+      "view_url": "https://torrentpier.com/profile-posts/303/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 278,
+      "last_comment_date": 0,
+      "message_parsed": "Нужен шаблон для Torrentpier II",
+      "message_state": "visible",
+      "post_date": 1351512145,
+      "profile_user_id": 1162,
+      "url_path": "/profile-posts/278/",
+      "user_id": 1162,
+      "username": "Sayan",
+      "view_url": "https://torrentpier.com/profile-posts/278/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 277,
+      "last_comment_date": 0,
+      "message_parsed": "Нужет шаблон для Torrentpier II",
+      "message_state": "visible",
+      "post_date": 1351512113,
+      "profile_user_id": 1162,
+      "url_path": "/profile-posts/277/",
+      "user_id": 1162,
+      "username": "Sayan",
+      "view_url": "https://torrentpier.com/profile-posts/277/"
+    }
+  ],
+  "wall_total": 3
 }

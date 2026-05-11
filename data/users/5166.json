@@ -18,5 +18,108 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "RYT.",
-  "view_url": "https://torrentpier.com/members/ryt.5166/"
+  "view_url": "https://torrentpier.com/members/ryt.5166/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 671,
+      "last_comment_date": 0,
+      "message_parsed": "Девушка у Админа есть, просто он стесняется выложить ее на рабочий стол.",
+      "message_state": "visible",
+      "post_date": 1432653437,
+      "profile_user_id": 5166,
+      "url_path": "/profile-posts/671/",
+      "user_id": 5166,
+      "username": "RYT.",
+      "view_url": "https://torrentpier.com/profile-posts/671/"
+    },
+    {
+      "comment_count": 1,
+      "comments": [
+        {
+          "comment_date": 1426076585,
+          "id": 153,
+          "message_parsed": "На глаз больно будет : )",
+          "message_state": "visible",
+          "profile_post_id": 653,
+          "user_id": 2789,
+          "username": "Sprinx"
+        }
+      ],
+      "first_comment_date": 1426076585,
+      "id": 653,
+      "last_comment_date": 1426076585,
+      "message_parsed": "Настоящий админ может на глаз определить, сколько весит файл.",
+      "message_state": "visible",
+      "post_date": 1425995455,
+      "profile_user_id": 5166,
+      "url_path": "/profile-posts/653/",
+      "user_id": 5166,
+      "username": "RYT.",
+      "view_url": "https://torrentpier.com/profile-posts/653/"
+    },
+    {
+      "comment_count": 1,
+      "comments": [
+        {
+          "comment_date": 1420160076,
+          "id": 94,
+          "message_parsed": "Что почем?",
+          "message_state": "visible",
+          "profile_post_id": 601,
+          "user_id": 1,
+          "username": "Exile"
+        }
+      ],
+      "first_comment_date": 1420160076,
+      "id": 601,
+      "last_comment_date": 1420160076,
+      "message_parsed": "неа",
+      "message_state": "visible",
+      "post_date": 1420029040,
+      "profile_user_id": 5166,
+      "url_path": "/profile-posts/601/",
+      "user_id": 5840,
+      "username": "Hopper Around",
+      "view_url": "https://torrentpier.com/profile-posts/601/"
+    },
+    {
+      "comment_count": 2,
+      "comments": [
+        {
+          "comment_date": 1420029050,
+          "id": 91,
+          "message_parsed": "нет",
+          "message_state": "visible",
+          "profile_post_id": 568,
+          "user_id": 5840,
+          "username": "Hopper Around"
+        },
+        {
+          "comment_date": 1451425318,
+          "id": 195,
+          "message_parsed": "main.css в помощь",
+          "message_state": "visible",
+          "profile_post_id": 568,
+          "user_id": 6340,
+          "username": "baxa73"
+        }
+      ],
+      "first_comment_date": 1420029050,
+      "id": 568,
+      "last_comment_date": 1451425318,
+      "message_parsed": "дарова! ты знаешь? как эту справить   должен быть красным, мой черный цветом    Роль:\tАдминистратор",
+      "message_state": "visible",
+      "post_date": 1403504947,
+      "profile_user_id": 5166,
+      "url_path": "/profile-posts/568/",
+      "user_id": 5225,
+      "username": "Sky",
+      "view_url": "https://torrentpier.com/profile-posts/568/"
+    }
+  ],
+  "wall_total": 4
 }

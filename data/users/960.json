@@ -17,5 +17,39 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "LegiOn",
-  "view_url": "https://torrentpier.com/members/legion.960/"
+  "view_url": "https://torrentpier.com/members/legion.960/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 235,
+      "last_comment_date": 0,
+      "message_parsed": "Ответил в ЛС, полностью сообщению сюда не помещается",
+      "message_state": "visible",
+      "post_date": 1337776902,
+      "profile_user_id": 960,
+      "url_path": "/profile-posts/235/",
+      "user_id": 960,
+      "username": "LegiOn",
+      "view_url": "https://torrentpier.com/profile-posts/235/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 234,
+      "last_comment_date": 0,
+      "message_parsed": "привет у меня чате ббкод не работает ты не поможеш",
+      "message_state": "visible",
+      "post_date": 1337691717,
+      "profile_user_id": 960,
+      "url_path": "/profile-posts/234/",
+      "user_id": 621,
+      "username": "Xusniddin",
+      "view_url": "https://torrentpier.com/profile-posts/234/"
+    }
+  ],
+  "wall_total": 2
 }

@@ -18,5 +18,24 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "FarabundoMarti",
-  "view_url": "https://torrentpier.com/members/farabundomarti.4450/"
+  "view_url": "https://torrentpier.com/members/farabundomarti.4450/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 494,
+      "last_comment_date": 0,
+      "message_parsed": "Если историю нельзя писать пером, её следует писать штыком!",
+      "message_state": "visible",
+      "post_date": 1373911141,
+      "profile_user_id": 4450,
+      "url_path": "/profile-posts/494/",
+      "user_id": 4450,
+      "username": "FarabundoMarti",
+      "view_url": "https://torrentpier.com/profile-posts/494/"
+    }
+  ],
+  "wall_total": 1
 }

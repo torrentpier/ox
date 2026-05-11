@@ -18,5 +18,74 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "dimka3210",
-  "view_url": "https://torrentpier.com/members/dimka3210.19/"
+  "view_url": "https://torrentpier.com/members/dimka3210.19/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 1,
+      "comments": [
+        {
+          "comment_date": 1419837019,
+          "id": 90,
+          "message_parsed": "Спасибо, исправил.",
+          "message_state": "visible",
+          "profile_post_id": 600,
+          "user_id": 1,
+          "username": "Exile"
+        }
+      ],
+      "first_comment_date": 1419837019,
+      "id": 600,
+      "last_comment_date": 1419837019,
+      "message_parsed": "Здравствуйте!<br />\nРешил оповестить, возможно и не знаете, что у вас в скрипте ошибка синтаксиса при переходе на страницу оплаты робакасса  при повышении прав",
+      "message_state": "visible",
+      "post_date": 1419785185,
+      "profile_user_id": 19,
+      "url_path": "/profile-posts/600/",
+      "user_id": 5837,
+      "username": "Foodx",
+      "view_url": "https://torrentpier.com/profile-posts/600/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 559,
+      "last_comment_date": 0,
+      "message_parsed": "Спасибо за уроки! 🙂",
+      "message_state": "visible",
+      "post_date": 1399473434,
+      "profile_user_id": 19,
+      "url_path": "/profile-posts/559/",
+      "user_id": 4818,
+      "username": "A-E",
+      "view_url": "https://torrentpier.com/profile-posts/559/"
+    },
+    {
+      "comment_count": 1,
+      "comments": [
+        {
+          "comment_date": 1375127810,
+          "id": 68,
+          "message_parsed": "В поиске всё есть.",
+          "message_state": "visible",
+          "profile_post_id": 509,
+          "user_id": 19,
+          "username": "dimka3210"
+        }
+      ],
+      "first_comment_date": 1375127810,
+      "id": 509,
+      "last_comment_date": 1375127810,
+      "message_parsed": "Привет снова!!! Не знаеш где взять нормальную RSS ленту!",
+      "message_state": "visible",
+      "post_date": 1375122002,
+      "profile_user_id": 19,
+      "url_path": "/profile-posts/509/",
+      "user_id": 3200,
+      "username": "IcYHell",
+      "view_url": "https://torrentpier.com/profile-posts/509/"
+    }
+  ],
+  "wall_total": 3
 }

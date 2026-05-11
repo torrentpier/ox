@@ -66,6 +66,20 @@
   "rating_count": 2,
   "resource_date": 1369571636,
   "resource_state": "visible",
+  "reviews": [
+    {
+      "author_response": "",
+      "id": 198,
+      "is_anonymous": false,
+      "message": "Видят только администраторы и модераторы как сделать чтоб видели все.",
+      "rating": 4,
+      "rating_date": 1771196265,
+      "rating_state": "visible",
+      "resource_id": 18,
+      "user_id": 10703,
+      "username": "MiG-HosT.Ru"
+    }
+  ],
   "slug": "lenta-novinok-novyh-razdac",
   "tag_line": "Вывод новых раздач на главную страницу с постерами",
   "tags": [

@@ -18,5 +18,43 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "ivanesko261",
-  "view_url": "https://torrentpier.com/members/ivanesko261.5847/"
+  "view_url": "https://torrentpier.com/members/ivanesko261.5847/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 2,
+      "comments": [
+        {
+          "comment_date": 1420160054,
+          "id": 92,
+          "message_parsed": "Зачем ему ссылка на этот же форум? О_о",
+          "message_state": "visible",
+          "profile_post_id": 603,
+          "user_id": 1,
+          "username": "Exile"
+        },
+        {
+          "comment_date": 1420180619,
+          "id": 98,
+          "message_parsed": "почему заменяет ссылку, на торрентс ?",
+          "message_state": "visible",
+          "profile_post_id": 603,
+          "user_id": 896,
+          "username": "Dr_Brown"
+        }
+      ],
+      "first_comment_date": 1420160054,
+      "id": 603,
+      "last_comment_date": 1420180619,
+      "message_parsed": "torrentpier.com",
+      "message_state": "visible",
+      "post_date": 1420110795,
+      "profile_user_id": 5847,
+      "url_path": "/profile-posts/603/",
+      "user_id": 896,
+      "username": "Dr_Brown",
+      "view_url": "https://torrentpier.com/profile-posts/603/"
+    }
+  ],
+  "wall_total": 1
 }

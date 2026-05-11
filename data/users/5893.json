@@ -17,5 +17,49 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "Lektor",
-  "view_url": "https://torrentpier.com/members/lektor.5893/"
+  "view_url": "https://torrentpier.com/members/lektor.5893/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 762,
+      "last_comment_date": 0,
+      "message_parsed": "Скажите у вас случайно есть ручной парсер  на <a href=\"http://pornolab.net\" class=\"link link--external\" rel=\"nofollow\" target=\"_blank\">http://pornolab.net</a>",
+      "message_state": "visible",
+      "post_date": 1484552107,
+      "profile_user_id": 5893,
+      "url_path": "/profile-posts/762/",
+      "user_id": 5984,
+      "username": "kenigboy2104",
+      "view_url": "https://torrentpier.com/profile-posts/762/"
+    },
+    {
+      "comment_count": 1,
+      "comments": [
+        {
+          "comment_date": 1429017768,
+          "id": 157,
+          "message_parsed": "Пиши в ЛС",
+          "message_state": "visible",
+          "profile_post_id": 661,
+          "user_id": 6140,
+          "username": "Gemini_13"
+        }
+      ],
+      "first_comment_date": 1429017768,
+      "id": 661,
+      "last_comment_date": 1429017768,
+      "message_parsed": "Здравствуйте, а скажите, как сделать, чтобы по умолчанию в вашем парсере стоял отмеченным пункт &quot;Скачать .torrent из источника&quot;?",
+      "message_state": "visible",
+      "post_date": 1428697942,
+      "profile_user_id": 5893,
+      "url_path": "/profile-posts/661/",
+      "user_id": 6127,
+      "username": "WorkVladimir",
+      "view_url": "https://torrentpier.com/profile-posts/661/"
+    }
+  ],
+  "wall_total": 2
 }

@@ -17,5 +17,24 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "WebMistress",
-  "view_url": "https://torrentpier.com/members/webmistress.1192/"
+  "view_url": "https://torrentpier.com/members/webmistress.1192/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 217,
+      "last_comment_date": 0,
+      "message_parsed": "&quot;...You may stop this individual, but you can&#039;t stop us all... after all, we&#039;re all alike.&quot;",
+      "message_state": "visible",
+      "post_date": 1334770041,
+      "profile_user_id": 1192,
+      "url_path": "/profile-posts/217/",
+      "user_id": 1192,
+      "username": "WebMistress",
+      "view_url": "https://torrentpier.com/profile-posts/217/"
+    }
+  ],
+  "wall_total": 1
 }

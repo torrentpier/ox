@@ -18,5 +18,64 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "botyk",
-  "view_url": "https://torrentpier.com/members/botyk.322/"
+  "view_url": "https://torrentpier.com/members/botyk.322/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 1,
+      "comments": [
+        {
+          "comment_date": 1403368349,
+          "id": 76,
+          "message_parsed": "I do not understand your language",
+          "message_state": "visible",
+          "profile_post_id": 565,
+          "user_id": 322,
+          "username": "botyk"
+        }
+      ],
+      "first_comment_date": 1403368349,
+      "id": 565,
+      "last_comment_date": 1403368349,
+      "message_parsed": "hi brother i hope you are ok i am Muslim too From Pakistan my Brother you can help me please my Brother reply me .. i will waiting for your reply Brother ... Thanks",
+      "message_state": "visible",
+      "post_date": 1403070160,
+      "profile_user_id": 322,
+      "url_path": "/profile-posts/565/",
+      "user_id": 2873,
+      "username": "Zohaib",
+      "view_url": "https://torrentpier.com/profile-posts/565/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 478,
+      "last_comment_date": 0,
+      "message_parsed": "не понял  я",
+      "message_state": "visible",
+      "post_date": 1372964831,
+      "profile_user_id": 322,
+      "url_path": "/profile-posts/478/",
+      "user_id": 322,
+      "username": "botyk",
+      "view_url": "https://torrentpier.com/profile-posts/478/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 477,
+      "last_comment_date": 0,
+      "message_parsed": "привет спасибо за шаблон может скажешь в шаблоне год рождения макс 2003 год ?как можно сделать до 2013",
+      "message_state": "visible",
+      "post_date": 1372963654,
+      "profile_user_id": 322,
+      "url_path": "/profile-posts/477/",
+      "user_id": 4263,
+      "username": "макс",
+      "view_url": "https://torrentpier.com/profile-posts/477/"
+    }
+  ],
+  "wall_total": 3
 }

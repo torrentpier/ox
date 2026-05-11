@@ -11,7 +11,7 @@
   "is_admin": false,
   "is_moderator": false,
   "is_staff": false,
-  "last_activity": null,
+  "last_activity": 1721835551,
   "message_count": 1015,
   "register_date": 1412333870,
   "secondary_group_ids": [
@@ -20,5 +20,59 @@
   "user_group_id": 2,
   "user_title": "Blocked",
   "username": "Kryl",
-  "view_url": "https://torrentpier.com/members/kryl.5626/"
+  "view_url": "https://torrentpier.com/members/kryl.5626/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 1,
+      "comments": [
+        {
+          "comment_date": 1486466142,
+          "id": 201,
+          "message_parsed": "Если что то отвечать надо не новыми сообщениями в профиле, а под профилем.",
+          "message_state": "visible",
+          "profile_post_id": 772,
+          "user_id": 1,
+          "username": "Exile"
+        }
+      ],
+      "first_comment_date": 1486466142,
+      "id": 772,
+      "last_comment_date": 1486466142,
+      "message_parsed": "Ага спасибо .",
+      "message_state": "visible",
+      "post_date": 1486450790,
+      "profile_user_id": 5626,
+      "url_path": "/profile-posts/772/",
+      "user_id": 5626,
+      "username": "Kryl",
+      "view_url": "https://torrentpier.com/profile-posts/772/"
+    },
+    {
+      "comment_count": 1,
+      "comments": [
+        {
+          "comment_date": 1486425154,
+          "id": 200,
+          "message_parsed": "Оформи в ресурсы платные, это удалю.",
+          "message_state": "visible",
+          "profile_post_id": 771,
+          "user_id": 1,
+          "username": "Exile"
+        }
+      ],
+      "first_comment_date": 1486425154,
+      "id": 771,
+      "last_comment_date": 1486425154,
+      "message_parsed": "<a href=\"https://torrentpier.com/forum/threads/registracija-i-autentifikacija-cherez-socialnye-seti.41575/\" class=\"link link--internal\">https://torrentpier.com/forum/threads/registracija-i-autentifikacija-cherez-socialnye-seti.41575/</a>",
+      "message_state": "visible",
+      "post_date": 1486316834,
+      "profile_user_id": 5626,
+      "url_path": "/profile-posts/771/",
+      "user_id": 5626,
+      "username": "Kryl",
+      "view_url": "https://torrentpier.com/profile-posts/771/"
+    }
+  ],
+  "wall_total": 2
 }

@@ -18,5 +18,24 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "diden05",
-  "view_url": "https://torrentpier.com/members/diden05.4/"
+  "view_url": "https://torrentpier.com/members/diden05.4/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 13,
+      "last_comment_date": 0,
+      "message_parsed": "Привет , у тя есть аська ? нужна твоя помощь по IP",
+      "message_state": "visible",
+      "post_date": 1310730843,
+      "profile_user_id": 4,
+      "url_path": "/profile-posts/13/",
+      "user_id": 16,
+      "username": "logon",
+      "view_url": "https://torrentpier.com/profile-posts/13/"
+    }
+  ],
+  "wall_total": 1
 }

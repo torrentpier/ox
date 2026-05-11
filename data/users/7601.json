@@ -18,5 +18,24 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "Falcon",
-  "view_url": "https://torrentpier.com/members/falcon.7601/"
+  "view_url": "https://torrentpier.com/members/falcon.7601/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 756,
+      "last_comment_date": 0,
+      "message_parsed": "всем привет!",
+      "message_state": "visible",
+      "post_date": 1482142640,
+      "profile_user_id": 7601,
+      "url_path": "/profile-posts/756/",
+      "user_id": 7601,
+      "username": "Falcon",
+      "view_url": "https://torrentpier.com/profile-posts/756/"
+    }
+  ],
+  "wall_total": 1
 }

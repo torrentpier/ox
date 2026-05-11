@@ -18,5 +18,24 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "Дмитрий К",
-  "view_url": "https://torrentpier.com/members/dmitrij-k.4003/"
+  "view_url": "https://torrentpier.com/members/dmitrij-k.4003/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 403,
+      "last_comment_date": 0,
+      "message_parsed": "аську дайте есть дело))",
+      "message_state": "visible",
+      "post_date": 1360838182,
+      "profile_user_id": 4003,
+      "url_path": "/profile-posts/403/",
+      "user_id": 0,
+      "username": "мегалайн",
+      "view_url": "https://torrentpier.com/profile-posts/403/"
+    }
+  ],
+  "wall_total": 1
 }

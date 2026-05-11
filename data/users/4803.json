@@ -18,5 +18,24 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "BigSerg",
-  "view_url": "https://torrentpier.com/members/bigserg.4803/"
+  "view_url": "https://torrentpier.com/members/bigserg.4803/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 585,
+      "last_comment_date": 0,
+      "message_parsed": "Учить ни кого не нужно, итак все умные...",
+      "message_state": "visible",
+      "post_date": 1410538278,
+      "profile_user_id": 4803,
+      "url_path": "/profile-posts/585/",
+      "user_id": 4803,
+      "username": "BigSerg",
+      "view_url": "https://torrentpier.com/profile-posts/585/"
+    }
+  ],
+  "wall_total": 1
 }

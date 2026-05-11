@@ -18,5 +18,24 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "XLex",
-  "view_url": "https://torrentpier.com/members/xlex.41/"
+  "view_url": "https://torrentpier.com/members/xlex.41/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 342,
+      "last_comment_date": 0,
+      "message_parsed": "I ♥ TP II",
+      "message_state": "visible",
+      "post_date": 1358507661,
+      "profile_user_id": 41,
+      "url_path": "/profile-posts/342/",
+      "user_id": 41,
+      "username": "XLex",
+      "view_url": "https://torrentpier.com/profile-posts/342/"
+    }
+  ],
+  "wall_total": 1
 }

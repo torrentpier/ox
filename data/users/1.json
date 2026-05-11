@@ -11,7 +11,7 @@
   "is_admin": true,
   "is_moderator": true,
   "is_staff": true,
-  "last_activity": 1778506629,
+  "last_activity": 1778520184,
   "message_count": 3056,
   "register_date": 1309131284,
   "secondary_group_ids": [
@@ -21,5 +21,49 @@
   "user_group_id": 2,
   "user_title": "Administrator",
   "username": "Exile",
-  "view_url": "https://torrentpier.com/members/exile.1/"
+  "view_url": "https://torrentpier.com/members/exile.1/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 1,
+      "comments": [
+        {
+          "comment_date": 1431380454,
+          "id": 169,
+          "message_parsed": "<a href=\"http://www.sourceguardian.com\" class=\"link link--external\" rel=\"nofollow\" target=\"_blank\">http://www.sourceguardian.com</a>",
+          "message_state": "visible",
+          "profile_post_id": 669,
+          "user_id": 22,
+          "username": "DarkMod"
+        }
+      ],
+      "first_comment_date": 1431380454,
+      "id": 669,
+      "last_comment_date": 1431380454,
+      "message_parsed": "Небольшая статистическая сводка: снятие копирайта еще не было куплено ни единого раза. Число же трекеров, где его нет - зашкаливает. Стыдно.",
+      "message_state": "visible",
+      "post_date": 1431370453,
+      "profile_user_id": 1,
+      "url_path": "/profile-posts/669/",
+      "user_id": 1,
+      "username": "Exile",
+      "view_url": "https://torrentpier.com/profile-posts/669/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 125,
+      "last_comment_date": 0,
+      "message_parsed": "Я вернулся, чо.",
+      "message_state": "visible",
+      "post_date": 1326664361,
+      "profile_user_id": 1,
+      "url_path": "/profile-posts/125/",
+      "user_id": 1,
+      "username": "Exile",
+      "view_url": "https://torrentpier.com/profile-posts/125/"
+    }
+  ],
+  "wall_total": 2
 }

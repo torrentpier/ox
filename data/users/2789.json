@@ -18,5 +18,79 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "Sprinx",
-  "view_url": "https://torrentpier.com/members/sprinx.2789/"
+  "view_url": "https://torrentpier.com/members/sprinx.2789/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 6,
+      "comments": [
+        {
+          "comment_date": 1429344612,
+          "id": 164,
+          "message_parsed": "500 рублей.",
+          "message_state": "visible",
+          "profile_post_id": 662,
+          "user_id": 2789,
+          "username": "Sprinx"
+        },
+        {
+          "comment_date": 1429213100,
+          "id": 163,
+          "message_parsed": "И по поводу запроса в базу данных что скажете?",
+          "message_state": "visible",
+          "profile_post_id": 662,
+          "user_id": 6127,
+          "username": "WorkVladimir"
+        },
+        {
+          "comment_date": 1429213079,
+          "id": 162,
+          "message_parsed": "Хорошо, спрошу по другому, за сколько вы готовы написать его снова?",
+          "message_state": "visible",
+          "profile_post_id": 662,
+          "user_id": 6127,
+          "username": "WorkVladimir"
+        },
+        {
+          "comment_date": 1429212970,
+          "id": 161,
+          "message_parsed": "У меня его нету, для себя писал, но приложить забыл.",
+          "message_state": "visible",
+          "profile_post_id": 662,
+          "user_id": 2789,
+          "username": "Sprinx"
+        },
+        {
+          "comment_date": 1429212902,
+          "id": 160,
+          "message_parsed": "Скрипт за деньги?<br />\n<br />\nНельзя ли как-то через запрос к базе данных?",
+          "message_state": "visible",
+          "profile_post_id": 662,
+          "user_id": 6127,
+          "username": "WorkVladimir"
+        },
+        {
+          "comment_date": 1429212850,
+          "id": 159,
+          "message_parsed": "Нужен скрипт, для того чтобы проставить поля.",
+          "message_state": "visible",
+          "profile_post_id": 662,
+          "user_id": 2789,
+          "username": "Sprinx"
+        }
+      ],
+      "first_comment_date": 1429212850,
+      "id": 662,
+      "last_comment_date": 1429344612,
+      "message_parsed": "Здравствуйте, я по поводу мода мета теги расширенные. А как можно сделать, чтобы у всех уже добавленных торрентов, автоматически обновились descriptions и keywords?",
+      "message_state": "visible",
+      "post_date": 1429212746,
+      "profile_user_id": 2789,
+      "url_path": "/profile-posts/662/",
+      "user_id": 6127,
+      "username": "WorkVladimir",
+      "view_url": "https://torrentpier.com/profile-posts/662/"
+    }
+  ],
+  "wall_total": 1
 }

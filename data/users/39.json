@@ -17,5 +17,69 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "Wa1k",
-  "view_url": "https://torrentpier.com/members/wa1k.39/"
+  "view_url": "https://torrentpier.com/members/wa1k.39/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 40,
+      "last_comment_date": 0,
+      "message_parsed": "Работа стоит! Когда начало?",
+      "message_state": "visible",
+      "post_date": 1316174064,
+      "profile_user_id": 39,
+      "url_path": "/profile-posts/40/",
+      "user_id": 39,
+      "username": "Wa1k",
+      "view_url": "https://torrentpier.com/profile-posts/40/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 37,
+      "last_comment_date": 0,
+      "message_parsed": "Движок TorrentPier II хороший, спасибо _Xz_, Exile, Nicolaich, и все, кто поддерживал движок!",
+      "message_state": "visible",
+      "post_date": 1315724909,
+      "profile_user_id": 39,
+      "url_path": "/profile-posts/37/",
+      "user_id": 39,
+      "username": "Wa1k",
+      "view_url": "https://torrentpier.com/profile-posts/37/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 14,
+      "last_comment_date": 0,
+      "message_parsed": "Спасибо Админам! Сняли мне бан!",
+      "message_state": "visible",
+      "post_date": 1311165062,
+      "profile_user_id": 39,
+      "url_path": "/profile-posts/14/",
+      "user_id": 39,
+      "username": "Wa1k",
+      "view_url": "https://torrentpier.com/profile-posts/14/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 7,
+      "last_comment_date": 0,
+      "message_parsed": "Жду с нетерпением TorrentPier II",
+      "message_state": "visible",
+      "post_date": 1309257553,
+      "profile_user_id": 39,
+      "url_path": "/profile-posts/7/",
+      "user_id": 39,
+      "username": "Wa1k",
+      "view_url": "https://torrentpier.com/profile-posts/7/"
+    }
+  ],
+  "wall_total": 4
 }

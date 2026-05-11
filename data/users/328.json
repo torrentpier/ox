@@ -17,5 +17,24 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "2strike",
-  "view_url": "https://torrentpier.com/members/2strike.328/"
+  "view_url": "https://torrentpier.com/members/2strike.328/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 90,
+      "last_comment_date": 0,
+      "message_parsed": "За Мир во всем Мире!",
+      "message_state": "visible",
+      "post_date": 1323663500,
+      "profile_user_id": 328,
+      "url_path": "/profile-posts/90/",
+      "user_id": 328,
+      "username": "2strike",
+      "view_url": "https://torrentpier.com/profile-posts/90/"
+    }
+  ],
+  "wall_total": 1
 }
