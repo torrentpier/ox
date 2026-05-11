@@ -12,7 +12,7 @@
       "filename": "NEW PM dialog for TorrenPier 2.zip",
       "id": 3862,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/47/v/329/NEW PM dialog for TorrenPier 2.zip",
       "size": 920331,
       "src_url": "https://torrentpier.com/api/resource-versions/329/download?file=3862"
     }
@@ -41,6 +41,7 @@
   "description_parsed": "<b>Описание:</b> добавляем всплывающее уведомление при получении ЛС на jQuery UI.",
   "download_count": 484,
   "external_url": null,
+  "icon_r2_key": "resources/47/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/47.jpg?1431460039",
   "id": 47,
   "is_fileless": null,
@@ -65,7 +66,7 @@
           "filename": "NEW PM dialog for TorrenPier 2.zip",
           "id": 3862,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/47/v/329/NEW PM dialog for TorrenPier 2.zip",
           "size": 920331,
           "src_url": "https://torrentpier.com/api/resource-versions/329/download?file=3862"
         }
@@ -85,7 +86,7 @@
           "filename": "NEW PM dialog for TorrenPier 2.zip",
           "id": 2149,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/47/v/48/NEW PM dialog for TorrenPier 2.zip",
           "size": 936779,
           "src_url": "https://torrentpier.com/api/resource-versions/48/download?file=2149"
         }

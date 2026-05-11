@@ -12,7 +12,7 @@
       "filename": "[FULL][TP2]Grabber.zip",
       "id": 3112,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/171/v/205/[FULL][TP2]Grabber.zip",
       "size": 16467,
       "src_url": "https://torrentpier.com/api/resource-versions/205/download?file=3112"
     }
@@ -44,6 +44,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность в ручном режиме парсить раздачи с трекеров.",
   "download_count": 413,
   "external_url": null,
+  "icon_r2_key": "resources/171/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/171.jpg?1425254141",
   "id": 171,
   "is_fileless": null,
@@ -68,7 +69,7 @@
           "filename": "[FULL][TP2]Grabber.zip",
           "id": 3112,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/171/v/205/[FULL][TP2]Grabber.zip",
           "size": 16467,
           "src_url": "https://torrentpier.com/api/resource-versions/205/download?file=3112"
         }

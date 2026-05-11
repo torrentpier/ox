@@ -12,7 +12,7 @@
       "filename": "meta_tags_mod.zip",
       "id": 3222,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/96/v/234/meta_tags_mod.zip",
       "size": 3126,
       "src_url": "https://torrentpier.com/api/resource-versions/234/download?file=3222"
     }
@@ -44,6 +44,7 @@
   "description_parsed": "<b>Описание:</b> генерирует мета-теги ключевых слов (keywords) и описания (description).<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Генерация мета тегов при создании тем</li>\n<li data-xf-list-type=\"ul\">Выборка description из описания, для большей индексации</li>\n<li data-xf-list-type=\"ul\">Генерация keywords из случайных слов темы или форума</li>\n<li data-xf-list-type=\"ul\">Полная совместимость с модификацией SEO URL / ЧПУ</li>\n<li data-xf-list-type=\"ul\">Дополнительная информация о сайте, для корректной работы виджетов отправки постов в социальные сети</li>\n</ul>",
   "download_count": 1062,
   "external_url": null,
+  "icon_r2_key": "resources/96/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/96.jpg?1425407889",
   "id": 96,
   "is_fileless": null,
@@ -68,7 +69,7 @@
           "filename": "meta_tags_mod.zip",
           "id": 3222,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/96/v/234/meta_tags_mod.zip",
           "size": 3126,
           "src_url": "https://torrentpier.com/api/resource-versions/234/download?file=3222"
         }
@@ -88,7 +89,7 @@
           "filename": "meta_tags_mod.txt",
           "id": 2488,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/96/v/103/meta_tags_mod.txt",
           "size": 9451,
           "src_url": "https://torrentpier.com/api/resource-versions/103/download?file=2488"
         }
@@ -108,7 +109,7 @@
           "filename": "meta_tags_mod.txt",
           "id": 2484,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/96/v/102/meta_tags_mod.txt",
           "size": 7882,
           "src_url": "https://torrentpier.com/api/resource-versions/102/download?file=2484"
         }

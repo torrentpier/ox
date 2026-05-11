@@ -12,7 +12,7 @@
       "filename": "[FULL][$][TP2] PM.zip",
       "id": 3259,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/196/v/253/[FULL][$][TP2] PM.zip",
       "size": 161526,
       "src_url": "https://torrentpier.com/api/resource-versions/253/download?file=3259"
     }
@@ -86,6 +86,7 @@
   "description_parsed": "<b>Описание:</b> добавляет систему переписок на ваш ресурс.<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Обновление личных сообщений на AJAX</li>\n<li data-xf-list-type=\"ul\">Предпросмотр сообщений во всплывающем блоке</li>\n<li data-xf-list-type=\"ul\">Редактирование на AJAX</li>\n<li data-xf-list-type=\"ul\">Поиск пользователей при создании переписки на AJAX</li>\n</ul>",
   "download_count": 244,
   "external_url": null,
+  "icon_r2_key": "resources/196/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/196.jpg?1425425510",
   "id": 196,
   "is_fileless": null,
@@ -110,7 +111,7 @@
           "filename": "[FULL][$][TP2] PM.zip",
           "id": 3259,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/196/v/253/[FULL][$][TP2] PM.zip",
           "size": 161526,
           "src_url": "https://torrentpier.com/api/resource-versions/253/download?file=3259"
         }

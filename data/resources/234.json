@@ -12,7 +12,7 @@
       "filename": "golden_days_clear.zip",
       "id": 3908,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/234/v/337/golden_days_clear.zip",
       "size": 2667,
       "src_url": "https://torrentpier.com/api/resource-versions/337/download?file=3908"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание:</b> добавляет пользователям возможность &quot;скинуться&quot; на золотой день. Чтобы запустить золотой день, необходимо достичь общей суммы пожертвований в копилку. После достижения, следующий &quot;меценат&quot; запускает золотой день.<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Сумма пожертвования устанавливается в админке</li>\n<li data-xf-list-type=\"ul\">Общая сумма при достижении которой запускается &quot;золотой день&quot; устанавливается в админке</li>\n<li data-xf-list-type=\"ul\">Текущая сумма пожертвований устанавливается в админке</li>\n</ul>",
   "download_count": 372,
   "external_url": null,
+  "icon_r2_key": "resources/234/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/234.jpg?1432749079",
   "id": 234,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "golden_days_clear.zip",
           "id": 3908,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/234/v/337/golden_days_clear.zip",
           "size": 2667,
           "src_url": "https://torrentpier.com/api/resource-versions/337/download?file=3908"
         }
@@ -73,7 +74,7 @@
           "filename": "golden_days_clear.txt",
           "id": 3905,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/234/v/336/golden_days_clear.txt",
           "size": 8367,
           "src_url": "https://torrentpier.com/api/resource-versions/336/download?file=3905"
         }

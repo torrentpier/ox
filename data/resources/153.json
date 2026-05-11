@@ -12,7 +12,7 @@
       "filename": "[FULL] Стена пользователя _Xz_ (STABLE).zip",
       "id": 3059,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/153/v/183/[FULL] Стена пользователя _Xz_ (STABLE).zip",
       "size": 6680,
       "src_url": "https://torrentpier.com/api/resource-versions/183/download?file=3059"
     }
@@ -72,6 +72,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность оставлять записи в профиле пользователя.",
   "download_count": 352,
   "external_url": null,
+  "icon_r2_key": "resources/153/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/153.jpg?1425424465",
   "id": 153,
   "is_fileless": null,
@@ -96,7 +97,7 @@
           "filename": "[FULL] Стена пользователя _Xz_ (STABLE).zip",
           "id": 3059,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/153/v/183/[FULL] Стена пользователя _Xz_ (STABLE).zip",
           "size": 6680,
           "src_url": "https://torrentpier.com/api/resource-versions/183/download?file=3059"
         }
@@ -116,7 +117,7 @@
           "filename": "[FULL] Стена пользователя _Xz_.rar",
           "id": 3017,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/153/v/170/[FULL] Стена пользователя _Xz_.rar",
           "size": 4790,
           "src_url": "https://torrentpier.com/api/resource-versions/170/download?file=3017"
         }

@@ -12,7 +12,7 @@
       "filename": "[FULL]Шаблон DarkDefault2.zip",
       "id": 6502,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/318/v/646/[FULL]Шаблон DarkDefault2.zip",
       "size": 2908695,
       "src_url": "https://torrentpier.com/api/resource-versions/646/download?file=6502"
     }
@@ -27,6 +27,7 @@
   "description_parsed": "<div style=\"text-align: center\"><b>Классический темный шаблон.</b> <b>для v2.1.5 ( LTS V10 ) и 2.4.11</b><br />&#8203;</div>",
   "download_count": 593,
   "external_url": null,
+  "icon_r2_key": "resources/318/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/318.jpg?1736668674",
   "id": 318,
   "is_fileless": null,
@@ -51,7 +52,7 @@
           "filename": "[FULL]Шаблон DarkDefault2.zip",
           "id": 6502,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/318/v/646/[FULL]Шаблон DarkDefault2.zip",
           "size": 2908695,
           "src_url": "https://torrentpier.com/api/resource-versions/646/download?file=6502"
         }
@@ -71,7 +72,7 @@
           "filename": "[FULL]Шаблон DarkDefault.zip",
           "id": 6349,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/318/v/594/[FULL]Шаблон DarkDefault.zip",
           "size": 414320,
           "src_url": "https://torrentpier.com/api/resource-versions/594/download?file=6349"
         }
@@ -91,7 +92,7 @@
           "filename": "Шаблон DarkDefault.zip",
           "id": 6317,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/318/v/590/Шаблон DarkDefault.zip",
           "size": 339419,
           "src_url": "https://torrentpier.com/api/resource-versions/590/download?file=6317"
         }

@@ -12,7 +12,7 @@
       "filename": "bl_e.zip",
       "id": 3645,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/5/v/294/bl_e.zip",
       "size": 168209,
       "src_url": "https://torrentpier.com/api/resource-versions/294/download?file=3645"
     }
@@ -56,6 +56,7 @@
   "description_parsed": "<b>Описание:</b> шаблон, простой в синих тонах.",
   "download_count": 512,
   "external_url": null,
+  "icon_r2_key": "resources/5/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/5.jpg?1429570662",
   "id": 5,
   "is_fileless": null,
@@ -80,7 +81,7 @@
           "filename": "bl_e.zip",
           "id": 3645,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/5/v/294/bl_e.zip",
           "size": 168209,
           "src_url": "https://torrentpier.com/api/resource-versions/294/download?file=3645"
         }
@@ -100,7 +101,7 @@
           "filename": "В корень сайта.rar",
           "id": 1967,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/5/v/5/В корень сайта.rar",
           "size": 162618,
           "src_url": "https://torrentpier.com/api/resource-versions/5/download?file=1967"
         }

@@ -12,7 +12,7 @@
       "filename": "Exclusive.zip",
       "id": 3633,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/9/v/288/Exclusive.zip",
       "size": 94732,
       "src_url": "https://torrentpier.com/api/resource-versions/288/download?file=3633"
     }
@@ -42,6 +42,7 @@
   "description_parsed": "<b>Описание:</b> шаблон, рип с трекера UnionPeer.",
   "download_count": 455,
   "external_url": null,
+  "icon_r2_key": "resources/9/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/9.jpg?1429569204",
   "id": 9,
   "is_fileless": null,
@@ -66,7 +67,7 @@
           "filename": "Exclusive.zip",
           "id": 3633,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/9/v/288/Exclusive.zip",
           "size": 94732,
           "src_url": "https://torrentpier.com/api/resource-versions/288/download?file=3633"
         }
@@ -86,7 +87,7 @@
           "filename": "Exclusive.rar",
           "id": 1978,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/9/v/9/Exclusive.rar",
           "size": 89540,
           "src_url": "https://torrentpier.com/api/resource-versions/9/download?file=1978"
         }

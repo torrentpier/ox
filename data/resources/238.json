@@ -12,7 +12,7 @@
       "filename": "Thumbnail Image.zip",
       "id": 5495,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/238/v/394/Thumbnail Image.zip",
       "size": 27044,
       "src_url": "https://torrentpier.com/api/resource-versions/394/download?file=5495"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание: </b>добавляет BB-код уменьшенного изображения, при клике по которому открывается просмотр  в режиме слайдшоу с затемнением.<br />\nДля реализации использован <a href=\"https://www.jqueryscript.net/lightbox/Versatile-Responsive-jQuery-LightBox-Plugin-lightcase-js.html\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">jQuery Lightbox Plugin</a>.<br />\n<br />\n<b>Пример использования:</b> <pre class=\"xfBb-code\" data-lang=\"\">[thumb]http://i6.5cm.ru/i/hQX1.jpg[/thumb]</pre>",
   "download_count": 955,
   "external_url": null,
+  "icon_r2_key": "resources/238/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/238.jpg?1434291894",
   "id": 238,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "Thumbnail Image.zip",
           "id": 5495,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/238/v/394/Thumbnail Image.zip",
           "size": 27044,
           "src_url": "https://torrentpier.com/api/resource-versions/394/download?file=5495"
         }
@@ -73,7 +74,7 @@
           "filename": "Thumbnail image 1.0.0 fix.zip",
           "id": 3964,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/238/v/347/Thumbnail image 1.0.0 fix.zip",
           "size": 31687,
           "src_url": "https://torrentpier.com/api/resource-versions/347/download?file=3964"
         }
@@ -93,7 +94,7 @@
           "filename": "Thumbnail image 1.0.0.zip",
           "id": 3951,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/238/v/346/Thumbnail image 1.0.0.zip",
           "size": 31682,
           "src_url": "https://torrentpier.com/api/resource-versions/346/download?file=3951"
         }

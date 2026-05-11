@@ -12,7 +12,7 @@
       "filename": "TorrentTube.zip",
       "id": 3360,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/148/v/274/TorrentTube.zip",
       "size": 53387,
       "src_url": "https://torrentpier.com/api/resource-versions/274/download?file=3360"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание:</b> добавляет проигрывание торрентов без их скачивания через сервис TorrentStream.",
   "download_count": 391,
   "external_url": null,
+  "icon_r2_key": "resources/148/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/148.jpg?1425425111",
   "id": 148,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "TorrentTube.zip",
           "id": 3360,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/148/v/274/TorrentTube.zip",
           "size": 53387,
           "src_url": "https://torrentpier.com/api/resource-versions/274/download?file=3360"
         }
@@ -73,7 +74,7 @@
           "filename": "TorrentTube.zip",
           "id": 3013,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/148/v/165/TorrentTube.zip",
           "size": 53559,
           "src_url": "https://torrentpier.com/api/resource-versions/165/download?file=3013"
         }

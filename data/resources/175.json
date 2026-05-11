@@ -12,7 +12,7 @@
       "filename": "nnm_graber.zip",
       "id": 3170,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/175/v/209/nnm_graber.zip",
       "size": 18655,
       "src_url": "https://torrentpier.com/api/resource-versions/209/download?file=3170"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность автоматически парсить раздачи с nnm-club, используя несколько аккаунтов.",
   "download_count": 374,
   "external_url": null,
+  "icon_r2_key": "resources/175/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/175.jpg?1425305404",
   "id": 175,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "nnm_graber.zip",
           "id": 3170,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/175/v/209/nnm_graber.zip",
           "size": 18655,
           "src_url": "https://torrentpier.com/api/resource-versions/209/download?file=3170"
         }

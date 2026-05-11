@@ -12,7 +12,7 @@
       "filename": "[FULL][$][TP2] Радио.zip",
       "id": 3235,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/187/v/238/[FULL][$][TP2] Радио.zip",
       "size": 187597,
       "src_url": "https://torrentpier.com/api/resource-versions/238/download?file=3235"
     }
@@ -86,6 +86,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность пользователем прослушивать радио со сторонних сервисов или своего IceCast.<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Вывод списка радиостанций на сервере</li>\n<li data-xf-list-type=\"ul\">Возможность смены станции без перезагрузки страницы (AJAX)</li>\n<li data-xf-list-type=\"ul\">Плеер на HTML5</li>\n</ul>",
   "download_count": 313,
   "external_url": null,
+  "icon_r2_key": "resources/187/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/187.jpg?1425420012",
   "id": 187,
   "is_fileless": null,
@@ -110,7 +111,7 @@
           "filename": "[FULL][$][TP2] Радио.zip",
           "id": 3235,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/187/v/238/[FULL][$][TP2] Радио.zip",
           "size": 187597,
           "src_url": "https://torrentpier.com/api/resource-versions/238/download?file=3235"
         }

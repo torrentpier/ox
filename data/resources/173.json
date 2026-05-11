@@ -12,7 +12,7 @@
       "filename": "[FULL] Мультитрекер by Exile.zip",
       "id": 6030,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/173/v/510/[FULL] Мультитрекер by Exile.zip",
       "size": 18621,
       "src_url": "https://torrentpier.com/api/resource-versions/510/download?file=6030"
     }
@@ -58,6 +58,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность парсить число пиров с других ресурсов.<br />\n<br />\nФактически не добавляет пиров в таблицы движка, лишь увеличивает число отображаемых на самом форуме. При скачивании, пиры будут искаться через обмен пирами и DHT.",
   "download_count": 2282,
   "external_url": null,
+  "icon_r2_key": "resources/173/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/173.jpg?1425298225",
   "id": 173,
   "is_fileless": null,
@@ -82,7 +83,7 @@
           "filename": "[FULL] Мультитрекер by Exile.zip",
           "id": 6030,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/173/v/510/[FULL] Мультитрекер by Exile.zip",
           "size": 18621,
           "src_url": "https://torrentpier.com/api/resource-versions/510/download?file=6030"
         }
@@ -102,7 +103,7 @@
           "filename": "[FULL] Мультитрекер by Exile.zip",
           "id": 6029,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/173/v/509/[FULL] Мультитрекер by Exile.zip",
           "size": 18524,
           "src_url": "https://torrentpier.com/api/resource-versions/509/download?file=6029"
         }
@@ -122,7 +123,7 @@
           "filename": "[FULL] Мультитрекер by Exile.zip",
           "id": 5752,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/173/v/439/[FULL] Мультитрекер by Exile.zip",
           "size": 17390,
           "src_url": "https://torrentpier.com/api/resource-versions/439/download?file=5752"
         }
@@ -142,7 +143,7 @@
           "filename": "[FULL] Мультитрекер by Exile.zip",
           "id": 5744,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/173/v/438/[FULL] Мультитрекер by Exile.zip",
           "size": 17602,
           "src_url": "https://torrentpier.com/api/resource-versions/438/download?file=5744"
         }
@@ -162,7 +163,7 @@
           "filename": "[FULL] Мультитрекер by Exile.zip",
           "id": 5736,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/173/v/437/[FULL] Мультитрекер by Exile.zip",
           "size": 24179,
           "src_url": "https://torrentpier.com/api/resource-versions/437/download?file=5736"
         }
@@ -182,7 +183,7 @@
           "filename": "[FULL] Мультитрекер by Exile.zip",
           "id": 5735,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/173/v/436/[FULL] Мультитрекер by Exile.zip",
           "size": 24136,
           "src_url": "https://torrentpier.com/api/resource-versions/436/download?file=5735"
         }
@@ -202,7 +203,7 @@
           "filename": "[FULL] Мультитрекер by Exile.zip",
           "id": 5733,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/173/v/435/[FULL] Мультитрекер by Exile.zip",
           "size": 17800,
           "src_url": "https://torrentpier.com/api/resource-versions/435/download?file=5733"
         }
@@ -222,7 +223,7 @@
           "filename": "FULL MULT OPEN SHARE.zip",
           "id": 3137,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/173/v/207/FULL MULT OPEN SHARE.zip",
           "size": 17197,
           "src_url": "https://torrentpier.com/api/resource-versions/207/download?file=3137"
         }

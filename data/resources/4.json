@@ -12,7 +12,7 @@
       "filename": "Parabox.zip",
       "id": 3637,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/4/v/289/Parabox.zip",
       "size": 72419,
       "src_url": "https://torrentpier.com/api/resource-versions/289/download?file=3637"
     }
@@ -70,6 +70,7 @@
   "description_parsed": "<b>Описание:</b> шаблон, рип с трекера ParaBox.",
   "download_count": 415,
   "external_url": null,
+  "icon_r2_key": "resources/4/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/4.jpg?1429569489",
   "id": 4,
   "is_fileless": null,
@@ -94,7 +95,7 @@
           "filename": "Parabox.zip",
           "id": 3637,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/4/v/289/Parabox.zip",
           "size": 72419,
           "src_url": "https://torrentpier.com/api/resource-versions/289/download?file=3637"
         }
@@ -114,7 +115,7 @@
           "filename": "Parabox (Шаблон).rar",
           "id": 1965,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/4/v/4/Parabox (Шаблон).rar",
           "size": 72142,
           "src_url": "https://torrentpier.com/api/resource-versions/4/download?file=1965"
         }

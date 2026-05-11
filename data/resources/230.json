@@ -12,7 +12,7 @@
       "filename": "kinopoisk+imdb.zip",
       "id": 3852,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/230/v/327/kinopoisk+imdb.zip",
       "size": 33631,
       "src_url": "https://torrentpier.com/api/resource-versions/327/download?file=3852"
     }
@@ -72,6 +72,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность указания рейтинга фильма на Кинопоиске и IMDB.",
   "download_count": 291,
   "external_url": null,
+  "icon_r2_key": "resources/230/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/230.jpg?1431369295",
   "id": 230,
   "is_fileless": null,
@@ -96,7 +97,7 @@
           "filename": "kinopoisk+imdb.zip",
           "id": 3852,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/230/v/327/kinopoisk+imdb.zip",
           "size": 33631,
           "src_url": "https://torrentpier.com/api/resource-versions/327/download?file=3852"
         }

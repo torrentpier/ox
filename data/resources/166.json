@@ -12,7 +12,7 @@
       "filename": "Иконки форумов.zip",
       "id": 3102,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/166/v/198/Иконки форумов.zip",
       "size": 6801,
       "src_url": "https://torrentpier.com/api/resource-versions/198/download?file=3102"
     }
@@ -44,6 +44,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность указывать свои иконки для каждого форума. Отсутствуют дополнительные поля в базе данных и нет запросов в базу данных, даже в админке",
   "download_count": 373,
   "external_url": null,
+  "icon_r2_key": "resources/166/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/166.jpg?1425243352",
   "id": 166,
   "is_fileless": null,
@@ -68,7 +69,7 @@
           "filename": "Иконки форумов.zip",
           "id": 3102,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/166/v/198/Иконки форумов.zip",
           "size": 6801,
           "src_url": "https://torrentpier.com/api/resource-versions/198/download?file=3102"
         }

@@ -12,7 +12,7 @@
       "filename": "ParsMod072.zip",
       "id": 3179,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/176/v/213/ParsMod072.zip",
       "size": 18814,
       "src_url": "https://torrentpier.com/api/resource-versions/213/download?file=3179"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность пользователям парсить раздачи с некоторых популярных трекеров.<br />\nПоддерживаемые в настоящий момент трекеры:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Rutracker</li>\n<li data-xf-list-type=\"ul\">Rutor</li>\n<li data-xf-list-type=\"ul\">NNM-Club</li>\n</ul><b>Известные баги:</b><br />\n- рутор без www в ссылке не парсит<br />\n<br />\nПоддержка автора через Webmoney:<br />\n<ul>\n<li data-xf-list-type=\"ul\">R650139346710</li>\n<li data-xf-list-type=\"ul\">U212798489152</li>\n<li data-xf-list-type=\"ul\">Z409111469631</li>\n</ul>[GALLERY=media, 19]ParsMod (парсер) 0.7.2[/GALLERY]",
   "download_count": 922,
   "external_url": null,
+  "icon_r2_key": "resources/176/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/176.jpg?1425317109",
   "id": 176,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "ParsMod072.zip",
           "id": 3179,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/176/v/213/ParsMod072.zip",
           "size": 18814,
           "src_url": "https://torrentpier.com/api/resource-versions/213/download?file=3179"
         }
@@ -73,7 +74,7 @@
           "filename": "ParsMod061.zip",
           "id": 3178,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/176/v/212/ParsMod061.zip",
           "size": 14251,
           "src_url": "https://torrentpier.com/api/resource-versions/212/download?file=3178"
         }
@@ -93,7 +94,7 @@
           "filename": "ParsMod.zip",
           "id": 3177,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/176/v/211/ParsMod.zip",
           "size": 8178,
           "src_url": "https://torrentpier.com/api/resource-versions/211/download?file=3177"
         }

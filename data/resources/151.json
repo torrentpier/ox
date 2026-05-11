@@ -12,7 +12,7 @@
       "filename": "View Cheater_v2.zip",
       "id": 3070,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/151/v/184/View Cheater_v2.zip",
       "size": 7253,
       "src_url": "https://torrentpier.com/api/resource-versions/184/download?file=3070"
     }
@@ -86,6 +86,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность отслеживания читеров на трекере.<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Обнаружение пользователей, превысивших скоростной лимит отдачи</li>\n<li data-xf-list-type=\"ul\">Настраиваемый лимит отдачи</li>\n<li data-xf-list-type=\"ul\">Возможность деактивации пользователя, отнять накрученный upload, удаление, бан</li>\n<li data-xf-list-type=\"ul\">Удобное редактирование списка</li>\n<li data-xf-list-type=\"ul\">Сортировка</li>\n</ul>",
   "download_count": 541,
   "external_url": null,
+  "icon_r2_key": "resources/151/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/151.jpg?1425425671",
   "id": 151,
   "is_fileless": null,
@@ -110,7 +111,7 @@
           "filename": "View Cheater_v2.zip",
           "id": 3070,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/151/v/184/View Cheater_v2.zip",
           "size": 7253,
           "src_url": "https://torrentpier.com/api/resource-versions/184/download?file=3070"
         }
@@ -130,7 +131,7 @@
           "filename": "View Cheater.zip",
           "id": 3061,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/151/v/182/View Cheater.zip",
           "size": 7258,
           "src_url": "https://torrentpier.com/api/resource-versions/182/download?file=3061"
         }
@@ -150,7 +151,7 @@
           "filename": "View Cheater.zip",
           "id": 3016,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/151/v/168/View Cheater.zip",
           "size": 7245,
           "src_url": "https://torrentpier.com/api/resource-versions/168/download?file=3016"
         }

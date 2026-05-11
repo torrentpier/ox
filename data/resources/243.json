@@ -12,7 +12,7 @@
       "filename": "user_todey.zip",
       "id": 4067,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/243/v/353/user_todey.zip",
       "size": 3480,
       "src_url": "https://torrentpier.com/api/resource-versions/353/download?file=4067"
     }
@@ -58,6 +58,7 @@
   "description_parsed": "<div style=\"text-align: center\"><span style=\"color: rgb(235, 107, 86)\">Используйте лучше <a href=\"https://torrentpier.com/resources/ajax-polzovateli-za-24-chasa.282/\" class=\"link link--internal\">этот</a> мод</span>&#8203;</div><hr />Просмотр пользователей посетивших ресурс за 24 часа .<br />\nВсплывающее окно аякс.",
   "download_count": 311,
   "external_url": null,
+  "icon_r2_key": "resources/243/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/243.jpg?1442394690",
   "id": 243,
   "is_fileless": null,
@@ -82,7 +83,7 @@
           "filename": "user_todey.zip",
           "id": 4067,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/243/v/353/user_todey.zip",
           "size": 3480,
           "src_url": "https://torrentpier.com/api/resource-versions/353/download?file=4067"
         }

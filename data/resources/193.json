@@ -12,7 +12,7 @@
       "filename": "индексы.zip",
       "id": 3249,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/193/v/247/индексы.zip",
       "size": 663,
       "src_url": "https://torrentpier.com/api/resource-versions/247/download?file=3249"
     }
@@ -44,6 +44,7 @@
   "description_parsed": "<b>Описание:</b> добавляет BB-код текста в верхнем и нижнем индексе.",
   "download_count": 283,
   "external_url": null,
+  "icon_r2_key": "resources/193/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/193.jpg?1425423769",
   "id": 193,
   "is_fileless": null,
@@ -68,7 +69,7 @@
           "filename": "индексы.zip",
           "id": 3249,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/193/v/247/индексы.zip",
           "size": 663,
           "src_url": "https://torrentpier.com/api/resource-versions/247/download?file=3249"
         }

@@ -12,7 +12,7 @@
       "filename": "XenForo2_2.zip",
       "id": 3350,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/211/v/271/XenForo2_2.zip",
       "size": 359527,
       "src_url": "https://torrentpier.com/api/resource-versions/271/download?file=3350"
     }
@@ -112,6 +112,7 @@
   "description_parsed": "<b>Описание:</b> шаблон, являющийся аналогом стандартного шаблона XenForo (серый стиль).",
   "download_count": 322,
   "external_url": null,
+  "icon_r2_key": "resources/211/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/211.jpg?1425589969",
   "id": 211,
   "is_fileless": null,
@@ -136,7 +137,7 @@
           "filename": "XenForo2_2.zip",
           "id": 3350,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/211/v/271/XenForo2_2.zip",
           "size": 359527,
           "src_url": "https://torrentpier.com/api/resource-versions/271/download?file=3350"
         }

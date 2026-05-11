@@ -12,7 +12,7 @@
       "filename": "[FULL] Друзья.zip",
       "id": 3287,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/201/v/258/[FULL] Друзья.zip",
       "size": 10416,
       "src_url": "https://torrentpier.com/api/resource-versions/258/download?file=3287"
     }
@@ -44,6 +44,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность пользователям указывать других пользователей как друзей.<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Добавление друзей</li>\n<li data-xf-list-type=\"ul\">Удаление друзей</li>\n<li data-xf-list-type=\"ul\">Работа на AJAX без перезагрузки страницы</li>\n</ul>",
   "download_count": 305,
   "external_url": null,
+  "icon_r2_key": "resources/201/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/201.jpg?1425506219",
   "id": 201,
   "is_fileless": null,
@@ -68,7 +69,7 @@
           "filename": "[FULL] Друзья.zip",
           "id": 3287,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/201/v/258/[FULL] Друзья.zip",
           "size": 10416,
           "src_url": "https://torrentpier.com/api/resource-versions/258/download?file=3287"
         }

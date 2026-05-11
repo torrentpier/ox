@@ -12,7 +12,7 @@
       "filename": "[FULL] Мультитрекер.zip",
       "id": 3108,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/149/v/202/[FULL] Мультитрекер.zip",
       "size": 67002,
       "src_url": "https://torrentpier.com/api/resource-versions/202/download?file=3108"
     }
@@ -58,6 +58,7 @@
   "description_parsed": "<b>Описание: </b>возможность организации мультитрекерных раздач с подгрузкой пиров с других ресурсов.<br />\n<br />\nФактически добавляет пиров с других ресурсов. При скачивании они будут сразу же переданы пользователю в общем списке пиров.",
   "download_count": 481,
   "external_url": null,
+  "icon_r2_key": "resources/149/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/149.jpg?1425252913",
   "id": 149,
   "is_fileless": null,
@@ -82,7 +83,7 @@
           "filename": "[FULL] Мультитрекер.zip",
           "id": 3108,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/149/v/202/[FULL] Мультитрекер.zip",
           "size": 67002,
           "src_url": "https://torrentpier.com/api/resource-versions/202/download?file=3108"
         }
@@ -102,7 +103,7 @@
           "filename": "[FULL] Мультитрекер.zip",
           "id": 3014,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/149/v/166/[FULL] Мультитрекер.zip",
           "size": 67002,
           "src_url": "https://torrentpier.com/api/resource-versions/166/download?file=3014"
         }

@@ -12,7 +12,7 @@
       "filename": "Упоминания.zip",
       "id": 5591,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/272/v/406/Упоминания.zip",
       "size": 1236,
       "src_url": "https://torrentpier.com/api/resource-versions/406/download?file=5591"
     }
@@ -72,6 +72,7 @@
   "description_parsed": "При указании ника / ников в тэге [@]...[/@] генерируется ссылка на профиль пользователя и сохраняется в сообщении при отправке.<br />\n<br />\nСовместимость с v2.1.5 LTS / v2.1.5 и более старыми. Для новых версий нужна минимальная адаптация.<br />\n<br />\nПреимущества мода:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Возможность указывать бесконечное количество пользователей через запятую</li>\n<li data-xf-list-type=\"ul\">Поддержка званий и их стилей. Так-же цвета ников (Админ, модератор, пользователь)</li>\n<li data-xf-list-type=\"ul\">Кнопка в BBCode редакторе (в AJAX редакторе в том числе) для быстрого вызова</li>\n<li data-xf-list-type=\"ul\">Если пользователя не существует (или гость), то отобразиться просто ник</li>\n</ul>",
   "download_count": 719,
   "external_url": null,
+  "icon_r2_key": "resources/272/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/272.jpg?1699540060",
   "id": 272,
   "is_fileless": null,
@@ -99,7 +100,7 @@
           "filename": "Упоминания.zip",
           "id": 5591,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/272/v/406/Упоминания.zip",
           "size": 1236,
           "src_url": "https://torrentpier.com/api/resource-versions/406/download?file=5591"
         }
@@ -119,7 +120,7 @@
           "filename": "Упоминания.zip",
           "id": 5586,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/272/v/405/Упоминания.zip",
           "size": 1185,
           "src_url": "https://torrentpier.com/api/resource-versions/405/download?file=5586"
         }

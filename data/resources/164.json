@@ -12,7 +12,7 @@
       "filename": "парковка.zip",
       "id": 3100,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/164/v/196/парковка.zip",
       "size": 2241,
       "src_url": "https://torrentpier.com/api/resource-versions/196/download?file=3100"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность парковки аккаунта на случай длительного отъезда. <br />\n<br />\nЕсли аккаунт припаркован, то во время чистки он не будет удален, но справедливости ради на аккаунт наложен запрет скачивания.",
   "download_count": 198,
   "external_url": null,
+  "icon_r2_key": "resources/164/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/164.jpg?1425241154",
   "id": 164,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "парковка.zip",
           "id": 3100,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/164/v/196/парковка.zip",
           "size": 2241,
           "src_url": "https://torrentpier.com/api/resource-versions/196/download?file=3100"
         }

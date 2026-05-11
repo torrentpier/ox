@@ -12,7 +12,7 @@
       "filename": "bluezeo.zip",
       "id": 3632,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/10/v/287/bluezeo.zip",
       "size": 188353,
       "src_url": "https://torrentpier.com/api/resource-versions/287/download?file=3632"
     }
@@ -42,6 +42,7 @@
   "description_parsed": "<b>Описание:</b> шаблон, аналог популярного шаблона для DLE.",
   "download_count": 477,
   "external_url": null,
+  "icon_r2_key": "resources/10/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/10.jpg?1429568812",
   "id": 10,
   "is_fileless": null,
@@ -66,7 +67,7 @@
           "filename": "bluezeo.zip",
           "id": 3632,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/10/v/287/bluezeo.zip",
           "size": 188353,
           "src_url": "https://torrentpier.com/api/resource-versions/287/download?file=3632"
         }
@@ -86,7 +87,7 @@
           "filename": "bluezeo.rar",
           "id": 1980,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/10/v/10/bluezeo.rar",
           "size": 182126,
           "src_url": "https://torrentpier.com/api/resource-versions/10/download?file=1980"
         }

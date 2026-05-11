@@ -12,7 +12,7 @@
       "filename": "Закрытые раздачи.zip",
       "id": 3078,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/87/v/189/Закрытые раздачи.zip",
       "size": 2536,
       "src_url": "https://torrentpier.com/api/resource-versions/189/download?file=3078"
     }
@@ -58,6 +58,7 @@
   "description_parsed": "<b>Описание:</b> добавляет вывод списка раздач, которые закрыты правообладателем.",
   "download_count": 353,
   "external_url": null,
+  "icon_r2_key": "resources/87/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/87.jpg?1425226683",
   "id": 87,
   "is_fileless": null,
@@ -82,7 +83,7 @@
           "filename": "Закрытые раздачи.zip",
           "id": 3078,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/87/v/189/Закрытые раздачи.zip",
           "size": 2536,
           "src_url": "https://torrentpier.com/api/resource-versions/189/download?file=3078"
         }
@@ -102,7 +103,7 @@
           "filename": "Закрытые раздачи.rar",
           "id": 2410,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/87/v/92/Закрытые раздачи.rar",
           "size": 2243,
           "src_url": "https://torrentpier.com/api/resource-versions/92/download?file=2410"
         }

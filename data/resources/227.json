@@ -12,7 +12,7 @@
       "filename": "Новые сообщения [0.5.5].zip",
       "id": 3892,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/227/v/333/Новые сообщения [0.5.5].zip",
       "size": 8125,
       "src_url": "https://torrentpier.com/api/resource-versions/333/download?file=3892"
     }
@@ -72,6 +72,7 @@
   "description_parsed": "<b>Описание:</b> добавляет вывод последних 10 сообщений с форума.<br />\n<br />\nЧто умеет:<br />\n<ol>\n<li data-xf-list-type=\"ol\">Перелистывание сообщений (AJAX)<br />\n</li>\n<li data-xf-list-type=\"ol\">Полное кеширование</li>\n<li data-xf-list-type=\"ol\">Автообновление раз в 10 минут (устанавливается из конфига)</li>\n<li data-xf-list-type=\"ol\">Предпросмотр сообщения (AJAX)</li>\n</ol>Аналогично тому, что имеется на этом форуме 🙂",
   "download_count": 831,
   "external_url": null,
+  "icon_r2_key": "resources/227/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/227.jpg?1429965203",
   "id": 227,
   "is_fileless": null,
@@ -96,7 +97,7 @@
           "filename": "Новые сообщения [0.5.5].zip",
           "id": 3892,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/227/v/333/Новые сообщения [0.5.5].zip",
           "size": 8125,
           "src_url": "https://torrentpier.com/api/resource-versions/333/download?file=3892"
         }
@@ -116,7 +117,7 @@
           "filename": "Новые сообщения [0.5.4].zip",
           "id": 3767,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/227/v/325/Новые сообщения [0.5.4].zip",
           "size": 8121,
           "src_url": "https://torrentpier.com/api/resource-versions/325/download?file=3767"
         }
@@ -136,7 +137,7 @@
           "filename": "Новые сообщения [0.5.4].zip",
           "id": 3766,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/227/v/324/Новые сообщения [0.5.4].zip",
           "size": 8121,
           "src_url": "https://torrentpier.com/api/resource-versions/324/download?file=3766"
         }
@@ -156,7 +157,7 @@
           "filename": "Новые сообщения [0.5.3].zip",
           "id": 3756,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/227/v/321/Новые сообщения [0.5.3].zip",
           "size": 6217,
           "src_url": "https://torrentpier.com/api/resource-versions/321/download?file=3756"
         }
@@ -176,7 +177,7 @@
           "filename": "install.zip",
           "id": 3715,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/227/v/318/install.zip",
           "size": 2273,
           "src_url": "https://torrentpier.com/api/resource-versions/318/download?file=3715"
         }
@@ -196,7 +197,7 @@
           "filename": "install.txt",
           "id": 3709,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/227/v/316/install.txt",
           "size": 7975,
           "src_url": "https://torrentpier.com/api/resource-versions/316/download?file=3709"
         }

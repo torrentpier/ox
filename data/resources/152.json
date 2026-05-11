@@ -12,7 +12,7 @@
       "filename": "Лог действий.zip",
       "id": 3018,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/152/v/169/Лог действий.zip",
       "size": 115891,
       "src_url": "https://torrentpier.com/api/resource-versions/169/download?file=3018"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание:</b> добавляет логирование действий пользователей, их точное месторасположение на трекере.",
   "download_count": 293,
   "external_url": null,
+  "icon_r2_key": "resources/152/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/152.jpg?1425506241",
   "id": 152,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "Лог действий.zip",
           "id": 3018,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/152/v/169/Лог действий.zip",
           "size": 115891,
           "src_url": "https://torrentpier.com/api/resource-versions/169/download?file=3018"
         }

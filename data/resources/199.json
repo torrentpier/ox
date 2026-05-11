@@ -12,7 +12,7 @@
       "filename": "[FULL][$][TP2] Addon for chat.zip",
       "id": 3281,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/199/v/256/[FULL][$][TP2] Addon for chat.zip",
       "size": 27816,
       "src_url": "https://torrentpier.com/api/resource-versions/256/download?file=3281"
     }
@@ -44,6 +44,7 @@
   "description_parsed": "<b>Описание:</b> дополнение к модификации чата. Группы для общения в чате.<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Позволяет создавать группы для общения в чате. Создавать группу могут только администраторы, также можно добавлять права на просмотр и написания текста пользователям в определенные группы</li>\n<li data-xf-list-type=\"ul\">Позволяет просматривать все сообщения чата в виде темы, с навигацией и прочими функциями</li>\n</ul>",
   "download_count": 273,
   "external_url": null,
+  "icon_r2_key": "resources/199/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/199.jpg?1425488566",
   "id": 199,
   "is_fileless": null,
@@ -68,7 +69,7 @@
           "filename": "[FULL][$][TP2] Addon for chat.zip",
           "id": 3281,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/199/v/256/[FULL][$][TP2] Addon for chat.zip",
           "size": 27816,
           "src_url": "https://torrentpier.com/api/resource-versions/256/download?file=3281"
         }

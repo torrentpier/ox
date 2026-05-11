@@ -12,7 +12,7 @@
       "filename": "отключение_лс.zip",
       "id": 3180,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/177/v/214/отключение_лс.zip",
       "size": 1211,
       "src_url": "https://torrentpier.com/api/resource-versions/214/download?file=3180"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание:</b> добавляет пользователю возможность отключения входящих личных сообщений. Каждый пользователь устанавливает настройку самостоятельно, при редактировании профиля.",
   "download_count": 279,
   "external_url": null,
+  "icon_r2_key": "resources/177/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/177.jpg?1425319034",
   "id": 177,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "отключение_лс.zip",
           "id": 3180,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/177/v/214/отключение_лс.zip",
           "size": 1211,
           "src_url": "https://torrentpier.com/api/resource-versions/214/download?file=3180"
         }

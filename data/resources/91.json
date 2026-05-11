@@ -12,7 +12,7 @@
       "filename": "install.zip",
       "id": 3077,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/91/v/188/install.zip",
       "size": 2411,
       "src_url": "https://torrentpier.com/api/resource-versions/188/download?file=3077"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<div style=\"text-align: center\"><span style=\"color: rgb(226, 80, 65)\">Рекомендуется использовать <a href=\"https://torrentpier.com/resources/generacija-meta-opisanija-seo.325/\" class=\"link link--internal\">данный мод</a></span>&#8203;</div><hr /><b>Описание:</b> генерирует мета-теги ключевых слов (keywords) и описания (description). Настройка производится в разделе: Админка -&gt; Модификации -&gt; Конфигурация.",
   "download_count": 345,
   "external_url": null,
+  "icon_r2_key": "resources/91/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/91.jpg?1425222870",
   "id": 91,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "install.zip",
           "id": 3077,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/91/v/188/install.zip",
           "size": 2411,
           "src_url": "https://torrentpier.com/api/resource-versions/188/download?file=3077"
         }
@@ -73,7 +74,7 @@
           "filename": "install.txt",
           "id": 2428,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/91/v/97/install.txt",
           "size": 11030,
           "src_url": "https://torrentpier.com/api/resource-versions/97/download?file=2428"
         }

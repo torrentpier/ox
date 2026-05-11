@@ -12,7 +12,7 @@
       "filename": "Last Post.zip",
       "id": 3074,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/49/v/185/Last Post.zip",
       "size": 8243,
       "src_url": "https://torrentpier.com/api/resource-versions/185/download?file=3074"
     }
@@ -44,6 +44,7 @@
   "description_parsed": "<b>Описание:</b> добавляет вывод новых сообщений и тем форума в боковой панели (с предпросмотром).<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">AJAX навигация</li>\n<li data-xf-list-type=\"ul\">Полное кэширование</li>\n<li data-xf-list-type=\"ul\">Предварительный просмотр</li>\n</ul>",
   "download_count": 565,
   "external_url": null,
+  "icon_r2_key": "resources/49/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/49.jpg?1425219656",
   "id": 49,
   "is_fileless": null,
@@ -68,7 +69,7 @@
           "filename": "Last Post.zip",
           "id": 3074,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/49/v/185/Last Post.zip",
           "size": 8243,
           "src_url": "https://torrentpier.com/api/resource-versions/185/download?file=3074"
         }
@@ -88,7 +89,7 @@
           "filename": "[$][TP2] Last Post.zip",
           "id": 2217,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/49/v/51/[$][TP2] Last Post.zip",
           "size": 36703,
           "src_url": "https://torrentpier.com/api/resource-versions/51/download?file=2217"
         }

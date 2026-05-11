@@ -12,7 +12,7 @@
       "filename": "проверка_подписей.zip",
       "id": 3203,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/103/v/227/проверка_подписей.zip",
       "size": 1329,
       "src_url": "https://torrentpier.com/api/resource-versions/227/download?file=3203"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность автоматической проверки изображений в подписи на соответствие условиям.<br />\n<br />\nНастройка:<br />\n<ul>\n<li data-xf-list-type=\"ul\"><b>$width</b> - максимально допустимый размер по ширине</li>\n<li data-xf-list-type=\"ul\"><b>$height</b> - максимально допустимый размер по высоте</li>\n<li data-xf-list-type=\"ul\"><b>$size</b> - максимальный размер изображений в байтах</li>\n<li data-xf-list-type=\"ul\"><b>$size_for_each</b> - &#039;FALSE&#039; - проверка суммарного веса изображений, &#039;TRUE&#039; - проверка веса каждой картинки.</li>\n<li data-xf-list-type=\"ul\"><b>$count</b> - максимально допустимое количество изображений в подписи</li>\n</ul>",
   "download_count": 319,
   "external_url": null,
+  "icon_r2_key": "resources/103/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/103.jpg?1425332908",
   "id": 103,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "проверка_подписей.zip",
           "id": 3203,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/103/v/227/проверка_подписей.zip",
           "size": 1329,
           "src_url": "https://torrentpier.com/api/resource-versions/227/download?file=3203"
         }
@@ -73,7 +74,7 @@
           "filename": "Screenshot_4.webp",
           "id": 2549,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/103/v/114/Screenshot_4.webp",
           "size": 3708,
           "src_url": "https://torrentpier.com/api/resource-versions/114/download?file=2549"
         }

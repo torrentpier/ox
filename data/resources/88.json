@@ -12,7 +12,7 @@
       "filename": "orders.zip",
       "id": 3219,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/88/v/233/orders.zip",
       "size": 7834,
       "src_url": "https://torrentpier.com/api/resource-versions/233/download?file=3219"
     }
@@ -44,6 +44,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность пользователям делать заказы на раздачи, которые они хотели бы видеть.",
   "download_count": 372,
   "external_url": null,
+  "icon_r2_key": "resources/88/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/88.jpg?1430245866",
   "id": 88,
   "is_fileless": null,
@@ -68,7 +69,7 @@
           "filename": "orders.zip",
           "id": 3219,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/88/v/233/orders.zip",
           "size": 7834,
           "src_url": "https://torrentpier.com/api/resource-versions/233/download?file=3219"
         }
@@ -88,7 +89,7 @@
           "filename": "Orders_TP_II.rar",
           "id": 2420,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/88/v/94/Orders_TP_II.rar",
           "size": 7309,
           "src_url": "https://torrentpier.com/api/resource-versions/94/download?file=2420"
         }

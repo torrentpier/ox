@@ -12,7 +12,7 @@
       "filename": "ограничить_новых.zip",
       "id": 3188,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/182/v/219/ограничить_новых.zip",
       "size": 724,
       "src_url": "https://torrentpier.com/api/resource-versions/219/download?file=3188"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность ограничивать новым пользователям возможность написания сообщений. Временной период ограничения настраивается в config.php.",
   "download_count": 256,
   "external_url": null,
+  "icon_r2_key": "resources/182/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/182.jpg?1425325177",
   "id": 182,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "ограничить_новых.zip",
           "id": 3188,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/182/v/219/ограничить_новых.zip",
           "size": 724,
           "src_url": "https://torrentpier.com/api/resource-versions/219/download?file=3188"
         }

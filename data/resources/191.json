@@ -12,7 +12,7 @@
       "filename": "ratings.zip",
       "id": 3243,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/191/v/245/ratings.zip",
       "size": 32071,
       "src_url": "https://torrentpier.com/api/resource-versions/245/download?file=3243"
     }
@@ -44,6 +44,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность вставки изображения с рейтингом фильма с IMDB и КиноПоиска.<br />\n<br />\nМодификация парсит рейтинг фильма с указанных сайтов, наносит цифры на шаблон, кеширует изображение и хранит его в папке. Время обновления данных задается в ручную (в секундах).",
   "download_count": 389,
   "external_url": null,
+  "icon_r2_key": "resources/191/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/191.jpg?1425422580",
   "id": 191,
   "is_fileless": null,
@@ -68,7 +69,7 @@
           "filename": "ratings.zip",
           "id": 3243,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/191/v/245/ratings.zip",
           "size": 32071,
           "src_url": "https://torrentpier.com/api/resource-versions/245/download?file=3243"
         }

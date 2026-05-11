@@ -12,7 +12,7 @@
       "filename": "чужие_темы.zip",
       "id": 3187,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/181/v/218/чужие_темы.zip",
       "size": 647,
       "src_url": "https://torrentpier.com/api/resource-versions/218/download?file=3187"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<div style=\"text-align: center\"><span style=\"color: rgb(235, 107, 86)\">Данный мод есть по умолчанию в версии v2.4.1 и выше! Так же в последних версиях LTS.</span>&#8203;</div><hr /><b>Описание:</b> добавляет администраторам возможность просматривать чужие отслеживаемые темы.",
   "download_count": 253,
   "external_url": null,
+  "icon_r2_key": "resources/181/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/181.jpg?1425506655",
   "id": 181,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "чужие_темы.zip",
           "id": 3187,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/181/v/218/чужие_темы.zip",
           "size": 647,
           "src_url": "https://torrentpier.com/api/resource-versions/218/download?file=3187"
         }

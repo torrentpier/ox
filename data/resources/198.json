@@ -12,7 +12,7 @@
       "filename": "similar_topics.zip",
       "id": 3279,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/198/v/255/similar_topics.zip",
       "size": 2044,
       "src_url": "https://torrentpier.com/api/resource-versions/255/download?file=3279"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание:</b> добавляет вывод похожих тем при просмотре темы  (поиск Sphinx).",
   "download_count": 316,
   "external_url": null,
+  "icon_r2_key": "resources/198/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/198.jpg?1425488070",
   "id": 198,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "similar_topics.zip",
           "id": 3279,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/198/v/255/similar_topics.zip",
           "size": 2044,
           "src_url": "https://torrentpier.com/api/resource-versions/255/download?file=3279"
         }

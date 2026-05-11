@@ -12,7 +12,7 @@
       "filename": "[FULL][$][TP2] Ads from Xenforo.zip",
       "id": 3167,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/174/v/208/[FULL][$][TP2] Ads from Xenforo.zip",
       "size": 2667114,
       "src_url": "https://torrentpier.com/api/resource-versions/208/download?file=3167"
     }
@@ -58,6 +58,7 @@
   "description_parsed": "<b>Описание:</b> добавляет администрации возможность размещать объявления для пользователей.<br />\n<br />\nВозможности:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Кеширование, AJAX<br />\n</li>\n<li data-xf-list-type=\"ul\">Внешний вид и прокрутка точь в точь как у XenForo</li>\n<li data-xf-list-type=\"ul\">Скрытие объявлений у отдельного пользователя, с запоминанием закрытых блоков</li>\n</ul>",
   "download_count": 327,
   "external_url": null,
+  "icon_r2_key": "resources/174/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/174.jpg?1425303129",
   "id": 174,
   "is_fileless": null,
@@ -82,7 +83,7 @@
           "filename": "[FULL][$][TP2] Ads from Xenforo.zip",
           "id": 3167,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/174/v/208/[FULL][$][TP2] Ads from Xenforo.zip",
           "size": 2667114,
           "src_url": "https://torrentpier.com/api/resource-versions/208/download?file=3167"
         }

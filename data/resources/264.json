@@ -12,7 +12,7 @@
       "filename": "снег.rar",
       "id": 5030,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/264/v/384/снег.rar",
       "size": 2194,
       "src_url": "https://torrentpier.com/api/resource-versions/384/download?file=5030"
     }
@@ -41,6 +41,7 @@
   "description_parsed": "Лёгкий скрипт снега для сайта<br />\n<br />\n<a href=\"https://torrentpier.com/attachments/5031/\"><img src=\"https://torrentpier.com/data/attachments/5/5035-a488444344bc2767ce3435ac042f01db.jpg?hash=dFMqqNT37e\" alt=\"localhost_viewtopic.php_t=1.webp\" /></a>",
   "download_count": 258,
   "external_url": null,
+  "icon_r2_key": "resources/264/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/264.jpg?1512999433",
   "id": 264,
   "is_fileless": null,
@@ -65,7 +66,7 @@
           "filename": "снег.rar",
           "id": 5030,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/264/v/384/снег.rar",
           "size": 2194,
           "src_url": "https://torrentpier.com/api/resource-versions/384/download?file=5030"
         }

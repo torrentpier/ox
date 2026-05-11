@@ -12,7 +12,7 @@
       "filename": "флуд_форумы.zip",
       "id": 3185,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/179/v/216/флуд_форумы.zip",
       "size": 1855,
       "src_url": "https://torrentpier.com/api/resource-versions/216/download?file=3185"
     }
@@ -29,6 +29,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность отключить учет сообщений в конкретных форумах (создать флуд-форумы). Сообщения, созданные в таких разделах, не зачисляются в статистику пользователям.",
   "download_count": 216,
   "external_url": null,
+  "icon_r2_key": "resources/179/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/179.jpg?1425323481",
   "id": 179,
   "is_fileless": null,
@@ -53,7 +54,7 @@
           "filename": "флуд_форумы.zip",
           "id": 3185,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/179/v/216/флуд_форумы.zip",
           "size": 1855,
           "src_url": "https://torrentpier.com/api/resource-versions/216/download?file=3185"
         }

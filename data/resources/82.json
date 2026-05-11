@@ -12,7 +12,7 @@
       "filename": "drafts.zip",
       "id": 3076,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/82/v/187/drafts.zip",
       "size": 9529,
       "src_url": "https://torrentpier.com/api/resource-versions/187/download?file=3076"
     }
@@ -58,6 +58,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность создания тем-черновиков.<br />\n<br />\nМодификация, ранее включенная в основной дистрибутив движка. Возможность создания тем-черновиков, которые не видит никто, кроме создавшего их пользователя или администратора, до момента их публикации.<br />\n<hr />- <a href=\"https://torrentpier.com/threads/chernoviki.25636/#post-96481\" class=\"link link--internal\">Иконка draft.gif</a><br />\n- <a href=\"https://torrentpier.com/threads/chernoviki.25636/#post-58579\" class=\"link link--internal\">Адаптация к R561</a>",
   "download_count": 346,
   "external_url": null,
+  "icon_r2_key": "resources/82/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/82.jpg?1425220509",
   "id": 82,
   "is_fileless": null,
@@ -82,7 +83,7 @@
           "filename": "drafts.zip",
           "id": 3076,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/82/v/187/drafts.zip",
           "size": 9529,
           "src_url": "https://torrentpier.com/api/resource-versions/187/download?file=3076"
         }
@@ -102,7 +103,7 @@
           "filename": "drafts.patch",
           "id": 2357,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/82/v/87/drafts.patch",
           "size": 35045,
           "src_url": "https://torrentpier.com/api/resource-versions/87/download?file=2357"
         }

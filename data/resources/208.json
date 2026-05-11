@@ -12,7 +12,7 @@
       "filename": "Новости.zip",
       "id": 3308,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/208/v/265/Новости.zip",
       "size": 4222,
       "src_url": "https://torrentpier.com/api/resource-versions/265/download?file=3308"
     }
@@ -44,6 +44,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность пользователям самим публиковать интересные новости. <br />\n<br />\nНовость предлагается пользователем, а затем автоматически публикуется в разделе новостей в сети. Поддерживаются несколько сайтов (onliner.by, iguides.ru, habrahabr.ru, gameland.ru, allgamenews.net).",
   "download_count": 230,
   "external_url": null,
+  "icon_r2_key": "resources/208/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/208.jpg?1425507863",
   "id": 208,
   "is_fileless": null,
@@ -68,7 +69,7 @@
           "filename": "Новости.zip",
           "id": 3308,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/208/v/265/Новости.zip",
           "size": 4222,
           "src_url": "https://torrentpier.com/api/resource-versions/265/download?file=3308"
         }

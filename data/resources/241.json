@@ -12,7 +12,7 @@
       "filename": "root.zip",
       "id": 4015,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/241/v/350/root.zip",
       "size": 24742,
       "src_url": "https://torrentpier.com/api/resource-versions/350/download?file=4015"
     }
@@ -111,6 +111,7 @@
   "description_parsed": "<b>Описание:</b> простая форма регистрации пользователей. В дальнейшем можно и профиль переделать, так как форма все равно в профиле отображается.",
   "download_count": 269,
   "external_url": null,
+  "icon_r2_key": "resources/241/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/241.jpg?1438634029",
   "id": 241,
   "is_fileless": null,
@@ -138,7 +139,7 @@
           "filename": "root.zip",
           "id": 4015,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/241/v/350/root.zip",
           "size": 24742,
           "src_url": "https://torrentpier.com/api/resource-versions/350/download?file=4015"
         }

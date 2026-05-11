@@ -12,7 +12,7 @@
       "filename": "новые_сообщения.zip",
       "id": 3196,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/122/v/223/новые_сообщения.zip",
       "size": 1471,
       "src_url": "https://torrentpier.com/api/resource-versions/223/download?file=3196"
     }
@@ -44,6 +44,7 @@
   "description_parsed": "<b>Описание:</b> добавляет вывод новых сообщений и тем форума в боковой панели.",
   "download_count": 795,
   "external_url": null,
+  "icon_r2_key": "resources/122/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/122.jpg?1425329174",
   "id": 122,
   "is_fileless": null,
@@ -68,7 +69,7 @@
           "filename": "новые_сообщения.zip",
           "id": 3196,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/122/v/223/новые_сообщения.zip",
           "size": 1471,
           "src_url": "https://torrentpier.com/api/resource-versions/223/download?file=3196"
         }
@@ -88,7 +89,7 @@
           "filename": "новые_сообщения.zip",
           "id": 3195,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/122/v/134/новые_сообщения.zip",
           "size": 1471,
           "src_url": "https://torrentpier.com/api/resource-versions/134/download?file=3195"
         }

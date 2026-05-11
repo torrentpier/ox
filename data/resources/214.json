@@ -12,7 +12,7 @@
       "filename": "mood.rar",
       "id": 3521,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/214/v/278/mood.rar",
       "size": 586238,
       "src_url": "https://torrentpier.com/api/resource-versions/278/download?file=3521"
     }
@@ -44,6 +44,7 @@
   "description_parsed": "<b>Описание:</b> добавляет возможность указать настроение пользователя.",
   "download_count": 214,
   "external_url": null,
+  "icon_r2_key": "resources/214/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/214.jpg?1428322545",
   "id": 214,
   "is_fileless": null,
@@ -68,7 +69,7 @@
           "filename": "mood.rar",
           "id": 3521,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/214/v/278/mood.rar",
           "size": 586238,
           "src_url": "https://torrentpier.com/api/resource-versions/278/download?file=3521"
         }

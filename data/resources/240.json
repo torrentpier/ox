@@ -12,7 +12,7 @@
       "filename": "444.zip",
       "id": 4003,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/240/v/349/444.zip",
       "size": 2393334,
       "src_url": "https://torrentpier.com/api/resource-versions/349/download?file=4003"
     }
@@ -55,6 +55,7 @@
   "description_parsed": "<b>Описание:</b> так как в движке отсутствуют страницы ошибок, то решил выложить одну 404. К странице подключены два скрипта и CSS.<br />\n<br />\nКак выглядит страница, можно посмотреть, перейдя по ссылке: <a href=\"http://60-fps.org/indx.php\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://60-fps.org/indx.php</a>",
   "download_count": 330,
   "external_url": null,
+  "icon_r2_key": "resources/240/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/240.jpg?1438610853",
   "id": 240,
   "is_fileless": null,
@@ -83,7 +84,7 @@
           "filename": "444.zip",
           "id": 4003,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/240/v/349/444.zip",
           "size": 2393334,
           "src_url": "https://torrentpier.com/api/resource-versions/349/download?file=4003"
         }

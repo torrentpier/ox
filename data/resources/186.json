@@ -12,7 +12,7 @@
       "filename": "[FULL][$][TP2] Weather addon.zip",
       "id": 3230,
       "local_path": null,
-      "r2_key": null,
+      "r2_key": "resources/186/v/237/[FULL][$][TP2] Weather addon.zip",
       "size": 20098,
       "src_url": "https://torrentpier.com/api/resource-versions/237/download?file=3230"
     }
@@ -72,6 +72,7 @@
   "description_parsed": "<b>Описание:</b> добавляет вывод прогноза погоды для указанного пользователем города. Прогноз погоды парсится с Яндекса, результат кэшируется.",
   "download_count": 272,
   "external_url": null,
+  "icon_r2_key": "resources/186/icon.jpg",
   "icon_url": "https://torrentpier.com/data/resource_icons/0/186.jpg?1425419729",
   "id": 186,
   "is_fileless": null,
@@ -96,7 +97,7 @@
           "filename": "[FULL][$][TP2] Weather addon.zip",
           "id": 3230,
           "local_path": null,
-          "r2_key": null,
+          "r2_key": "resources/186/v/237/[FULL][$][TP2] Weather addon.zip",
           "size": 20098,
           "src_url": "https://torrentpier.com/api/resource-versions/237/download?file=3230"
         }
