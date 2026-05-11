@@ -13,16 +13,30 @@
 {% if forum.description %}<p class="muted">{{ forum.description }}</p>{% endif %}
 
 {% if child_forums %}
-<h2>Sub-forums</h2>
-<ul class="forum-list">
-{% for sf in child_forums %}
-  <li>
-    <a class="forum-link" href="{{ node_url(sf) }}">{{ sf.title }}</a>
-    <span class="muted">— {{ thread_count_recursive.get(sf.node_id, 0) }} threads</span>
-    {% if sf.description %}<div class="muted">{{ sf.description }}</div>{% endif %}
-  </li>
-{% endfor %}
-</ul>
+<section class="forum-cat sub-forum-section">
+  <header class="forum-cat-head"><h2>Sub-forums</h2></header>
+  <ul class="forum-rows">
+  {% for sf in child_forums %}
+    <li class="forum-row">
+      <div class="forum-icon" aria-hidden="true">💬</div>
+      <div class="forum-info">
+        <a class="forum-link" href="{{ node_url(sf) }}">{{ sf.title }}</a>
+        {% if sf.description %}<p class="forum-desc">{{ sf.description }}</p>{% endif %}
+      </div>
+      <div class="forum-stats">
+        <div class="stat">
+          <div class="stat-label">Threads</div>
+          <div class="stat-value">{{ thread_count_recursive.get(sf.node_id, 0) | count }}</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Messages</div>
+          <div class="stat-value">{{ post_count_recursive.get(sf.node_id, 0) | count }}</div>
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
 {% endif %}
 
 {% if threads %}<h2>Threads</h2>{% endif %}

@@ -113,21 +113,23 @@ def export_one_wall(
         for raw in iter_wall(client, user_id):
             user_cache.add(raw.get("User"))
             cc = raw.get("comment_count") or 0
-            latest = raw.get("LatestComments") or []
-            if cc and cc > len(latest):
+            if cc:
+                # LatestComments in the listing is capped at the most recent
+                # few — always paginate the dedicated comments endpoint to get
+                # the full list (otherwise we silently lose older comments).
                 try:
                     comments = fetch_comments(client, raw["profile_post_id"])
                 except httpx.HTTPStatusError as e:
                     if e.response.status_code in (403, 404):
                         log.info(
-                            "profile-post %s: comments hidden (%d), using LatestComments",
+                            "profile-post %s: comments hidden (%d), falling back to LatestComments",
                             raw["profile_post_id"], e.response.status_code,
                         )
-                        comments = latest
+                        comments = raw.get("LatestComments") or []
                     else:
                         raise
             else:
-                comments = latest
+                comments = []
             for c in comments:
                 user_cache.add(c.get("User"))
             posts.append(normalise_profile_post(raw, comments))

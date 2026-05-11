@@ -5,7 +5,7 @@ detailed enough that work can be paused and resumed at any point — by the
 same or a different operator — without losing context. Update it after every
 meaningful decision or completed step.
 
-## Status snapshot (2026-05-11, end of session 3)
+## Status snapshot (2026-05-11, end of session 4)
 
 | # | Item                                                       | State |
 |---|------------------------------------------------------------|-------|
@@ -20,7 +20,10 @@ meaningful decision or completed step.
 | 1 | Exporter — `users` stage (incidental from `post.User`)     | Done — 1,096 unique authors (after sticky re-run); `UserCache.flush` now merges, preserving mirror-side fields |
 | 1 | Exporter — `resources` stage                               | Done — 230 resources, 548 versions, 511 files (62.83 MiB binary) |
 | 1 | Exporter — `profile-posts` stage                           | Done — **90 walls, 209 wall posts, 62 comments** across 1,109 users. Requires DB-side privacy reset (see "Session 3 — profile-posts ramp-up" below) because XF API enforces per-user `allow_view_profile`/`is_banned`/`visible` even for super-admin keys. |
-| 1 | Exporter — `resource-reviews` stage                        | Done — 1 text review (resource 18) + `rating_avg`/`rating_count` already present from main resources stage. |
+| 1 | Exporter — `resource-reviews` stage                        | Done — **60 reviews** across 32 resources (was 1 — fixed in session 4 by switching from global feed to per-resource enumeration via `/api/resources/{id}/reviews/`). |
+| 1 | Exporter — `resource-updates` stage                        | Done — **329 update announcements** across 120 resources (DB has 562 — investigate API filter). |
+| 1 | Exporter — thread polls (free side-effect)                 | Done — `thread.Poll` captured during the standard threads stage, no extra API calls. 17 polls captured. |
+| 1 | Exporter — `wall-owners` helper                            | Done — fetches lurker users who own a wall but never posted/commented. Used to add 8 wall owners not covered by post-author + comment-author harvest. |
 | 2 | Mirror — R2 bucket + custom domain (`files-ox.torrentpier.com`) | Done — bucket `torrentpier-archive`, custom domain live |
 | 2 | Mirror — Python uploader (boto3, ThreadPoolExecutor, atomic JSON update) | Done — concurrent (8 workers); full run ~13 min, sticky-delta + avatar re-up ~5 min |
 | 2 | Mirror — `r2_key` written into every JSON asset; inline dedupe map | Done — **3319 attachments / 506 hi-res avatars / 136 icons / 511 res-files / 549 inline live + 423 dead** |
@@ -37,6 +40,9 @@ meaningful decision or completed step.
 | 3 | Builder — visual refresh (XF-style cards, header + logo + nav, table posts) | Done |
 | 3 | Builder — wall section on `/members/{slug}.{id}/` + `/profile-posts/{id}/` + `/profile-posts/comments/{id}/` redirects | Done — 271 profile-post redirects, sanitiser/canonicaliser applied to wall + comment bodies |
 | 3 | Builder — resource page rating widget + reviews block       | Done — half-star widget driven by `rating_avg`, review cards under the version table |
+| 3 | Builder — resource page Updates timeline                    | Done — chronological updates section above Versions |
+| 3 | Builder — thread page poll widget                           | Done — bar-chart poll under the title, shown on page 1 only |
+| 3 | Builder — sub-forums UI overhaul                            | Done — index/category use pill-style chips inside a tinted "Sub-forums" plate; forum page Sub-forums block uses the same card row pattern as index. No more double-chevron artifact. |
 | 4 | Search — Python indexer (lemmatised plain text → SQL)      | Not started |
 | 4 | Search — Cloudflare D1 schema + import                     | Not started — needs `wrangler login` (this stage truly does) |
 | 4 | Search — TypeScript Worker exposing `/search?q=`           | Not started |
@@ -186,6 +192,43 @@ XenForo REST API
 Verified request budget for the exporter: ~5,300 calls at 3 rps ≈ **30 min**
 clean run (matches what was actually observed).
 
+## Session 4 — deep re-audit of API vs DB (Done)
+
+Cross-checked every content table in the source DB against the archive
+counts. The headline finding is that **forum posts are complete** — the
+"2,605-post delta" assumption from earlier sessions was wrong (the count
+in the PLAN was stale; archive has 45,473 visible posts, matches DB).
+
+Real gaps found and fixed in this session:
+
+| Area              | DB | Archive (before) | Archive (after) |
+|-------------------|----|------------------|-----------------|
+| Resource reviews  | 62 | 1   | **60** (2 on hidden resources) |
+| Resource updates  | 562 | 0  | **329** (233 likely auto-generated version entries — investigation pending) |
+| Thread polls      | 17 | 0   | **17** (free side-effect of standard thread fetch, payload always had `Poll`) |
+| Wall posts        | 217 | 209 | **217** (added 8 wall-owners that weren't in the user index) |
+| Wall comments     | 120 | 62  | **120** (always paginate dedicated comments endpoint; `LatestComments` was capped) |
+
+API endpoints discovered after re-reading openapi.json that we previously
+missed (now used):
+- `/api/resources/{id}/reviews/` and `/api/resources/{id}/updates/` (trailing
+  slash matters — without it XF returns 404)
+- `thread.Poll` embedded in `/api/threads/{id}/?with_posts=1` (always present
+  when the thread has a poll)
+
+Hard limits — XF data we cannot reach via the public API even with super
+admin + `XF-Api-Bypass-Permissions: 1`:
+- `/api/featured-content` and `/api/featured/` both 404
+- `/api/tags` 404 (bulk listing; tags are still per-thread inline)
+- `/api/resource-updates/{id}/` 404 (only the per-resource collection works)
+- `/api/profile-posts/` (bulk) 404
+- 1 hidden resource and ~20 attachments on deleted posts not exposed
+
+Other small cleanups:
+- `threads.py` now preserves the per-attachment `r2_key` from the existing
+  thread JSON when re-exporting (mirror-side state is precious and must not
+  be clobbered by a routine `--force`).
+
 ## Session 3 — profile-posts + resource-reviews (Done)
 
 What changed since the end-of-session-2 snapshot:
@@ -253,6 +296,8 @@ To re-run any stage:
 .venv/bin/python -m exporter --data data resources --force
 .venv/bin/python -m exporter --data data profile-posts    # idempotent: skips users where wall_total is already set
 .venv/bin/python -m exporter --data data resource-reviews # rewrites every data/resources/{id}.json reviews[]
+.venv/bin/python -m exporter --data data resource-updates # rewrites every data/resources/{id}.json updates[]
+.venv/bin/python -m exporter --data data wall-owners --add 285,906,5604,6109,6431,7819,10655,10660  # one-off
 ```
 
 `.env` must contain `XF_API_URL`, `XF_API_KEY`, `XF_API_USER`.

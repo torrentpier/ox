@@ -43,6 +43,28 @@
 </section>
 {% endif %}
 
+{% if resource.updates %}
+<h2>Updates</h2>
+<section class="updates">
+{% for u in resource.updates|reverse %}
+<article class="content-card update">
+  <header class="post-head">
+    <strong>{{ u.title or 'Update' }}</strong>
+    <time datetime="{{ u.post_date }}" class="muted">{{ u.post_date | timestamp }}</time>
+  </header>
+  {% if u.message_parsed %}<div class="post-body">{{ u.message_parsed | safe }}</div>{% endif %}
+  {% if u.attachments %}
+  <ul class="attachments">
+    {% for a in u.attachments %}
+    <li><a href="{{ r2_url(a.r2_key) or a.src_url }}">{{ a.filename }}</a> <span class="muted">({{ a.file_size | filesize }})</span></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</article>
+{% endfor %}
+</section>
+{% endif %}
+
 {% if resource.versions %}
 <h2>Versions</h2>
 <table class="version-table">
