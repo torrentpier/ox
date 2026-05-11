@@ -7,13 +7,32 @@
 </nav>
 <h1>Resources</h1>
 <p class="lede">{{ resource_count }} resources across {{ categories | length }} categories.</p>
-<ul class="forum-list">
-{% for cat in categories %}
-  <li>
-    <a class="forum-link" href="{{ cat.view_url | urlpath }}">{{ cat.title }}</a>
-    <span class="muted">— {{ resources_by_cat.get(cat.id, []) | length }} resources</span>
-    {% if cat.description %}<div class="muted">{{ cat.description }}</div>{% endif %}
-  </li>
-{% endfor %}
-</ul>
+
+<section class="forum-cat">
+  <ul class="forum-rows">
+  {% for cat in categories %}
+    {% set items = resources_by_cat.get(cat.id, []) %}
+    <li class="forum-row">
+      <div class="forum-icon" aria-hidden="true">📦</div>
+      <div class="forum-info">
+        <a class="forum-link" href="{{ cat.view_url | urlpath }}">{{ cat.title }}</a>
+        {% if cat.description %}<p class="forum-desc">{{ cat.description }}</p>{% endif %}
+      </div>
+      <div class="forum-stats">
+        <div class="stat">
+          <div class="stat-label">Resources</div>
+          <div class="stat-value">{{ items | length | count }}</div>
+        </div>
+      </div>
+      <div class="forum-last">
+        {% if items %}
+          {% set top = items[0] %}
+          <a class="last-title" href="{{ top.url_path }}" title="{{ top.title }}">{{ top.title }}</a>
+          <div class="last-meta muted">{{ top.last_update | timestamp }} · {{ top.username }}</div>
+        {% endif %}
+      </div>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
 {% endblock %}

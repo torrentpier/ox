@@ -27,6 +27,20 @@ def _format_size(size: int | None) -> str:
     return f"{n:.1f} TiB"
 
 
+def _format_count(n: int | None) -> str:
+    """Short numeric format used in forum-row stat columns: 276, 13.6K, 2.1M."""
+    if not n:
+        return "0"
+    n = int(n)
+    if n < 1000:
+        return str(n)
+    if n < 1_000_000:
+        s = f"{n / 1000:.1f}K"
+        return s.replace(".0K", "K")
+    s = f"{n / 1_000_000:.1f}M"
+    return s.replace(".0M", "M")
+
+
 def make_env(template_dir: Path) -> Environment:
     env = Environment(
         loader=FileSystemLoader(str(template_dir)),
@@ -37,6 +51,7 @@ def make_env(template_dir: Path) -> Environment:
     )
     env.filters["timestamp"] = _format_timestamp
     env.filters["filesize"] = _format_size
+    env.filters["count"] = _format_count
     env.filters["urlpath"] = lambda u: urlparse(u or "").path or "/"
     return env
 

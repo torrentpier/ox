@@ -188,24 +188,45 @@ def _build_indexes(meta: dict[str, Any], threads: list[dict[str, Any]], resource
     for rs in resources_by_cat.values():
         rs.sort(key=lambda r: -(r.get("last_update") or r.get("resource_date") or 0))
 
-    # Recursive thread count: own threads + threads in every descendant forum.
-    # Mirrors what XF shows on its forum index — a parent container reports
-    # the total across its subtree, not just its own immediate posts.
+    # Per-forum own post count (reply_count + 1 == number of posts in thread).
+    post_count_by_forum: dict[int, int] = {}
+    for fid, ts in threads_by_forum.items():
+        post_count_by_forum[fid] = sum(int(t.get("reply_count") or 0) + 1 for t in ts)
+
+    # Recursive aggregates: own + every descendant forum. Mirrors what XF
+    # shows on its forum index — a container reports the totals across the
+    # whole subtree, not just its own immediate threads.
     thread_count_recursive: dict[int, int] = {}
+    post_count_recursive: dict[int, int] = {}
+    latest_thread_by_forum_recursive: dict[int, dict[str, Any] | None] = {}
 
-    def _visit(node_id: int) -> int:
+    def _visit(node_id: int) -> None:
         if node_id in thread_count_recursive:
-            return thread_count_recursive[node_id]
+            return
         node = nodes_by_id.get(node_id)
-        total = 0
+        tcount = 0
+        pcount = 0
+        latest: dict[str, Any] | None = None
         if node and node.get("node_type_id") == "Forum":
-            total += len(threads_by_forum.get(node_id, []))
+            own = threads_by_forum.get(node_id, [])
+            tcount += len(own)
+            pcount += post_count_by_forum.get(node_id, 0)
+            if own:
+                latest = own[0]  # already sorted by last_post_date desc
         for child_id in tree_map.get(node_id, []):
-            total += _visit(int(child_id))
-        thread_count_recursive[node_id] = total
-        return total
+            cid = int(child_id)
+            _visit(cid)
+            tcount += thread_count_recursive.get(cid, 0)
+            pcount += post_count_recursive.get(cid, 0)
+            cand = latest_thread_by_forum_recursive.get(cid)
+            if cand:
+                if not latest or (cand.get("last_post_date") or 0) > (latest.get("last_post_date") or 0):
+                    latest = cand
+        thread_count_recursive[node_id] = tcount
+        post_count_recursive[node_id] = pcount
+        latest_thread_by_forum_recursive[node_id] = latest
 
-    for nid in nodes_by_id:
+    for nid in list(nodes_by_id):
         _visit(nid)
 
     return {
@@ -215,6 +236,8 @@ def _build_indexes(meta: dict[str, Any], threads: list[dict[str, Any]], resource
         "tree_map": tree_map,
         "threads_by_forum": threads_by_forum,
         "thread_count_recursive": thread_count_recursive,
+        "post_count_recursive": post_count_recursive,
+        "latest_thread_by_forum_recursive": latest_thread_by_forum_recursive,
         "resources_by_cat": resources_by_cat,
     }
 
@@ -280,6 +303,9 @@ def build(data_dir: Path, out_dir: Path) -> None:
     env.globals["users"] = users
     env.globals["nodes_by_id"] = idx["nodes_by_id"]
     env.globals["thread_count_recursive"] = idx["thread_count_recursive"]
+    env.globals["post_count_recursive"] = idx["post_count_recursive"]
+    env.globals["latest_thread_by_forum"] = idx["latest_thread_by_forum_recursive"]
+    env.globals["tree_map"] = idx["tree_map"]
 
     # /
     index_tmpl = env.get_template("index.html")
