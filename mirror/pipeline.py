@@ -83,16 +83,17 @@ def _content_type(filename_hint: str | None, fallback: str | None) -> str:
 
 
 def _ensure_uploaded_one(
-    task: UploadTask, r2: R2Client, dl: Downloader
+    task: UploadTask, r2: R2Client, dl: Downloader, *, force: bool = False
 ) -> tuple[UploadTask, str]:
     """Worker function: HEAD R2; download + upload otherwise.
 
+    `force=True` skips the HEAD check and always re-downloads / re-puts.
     Returns the task plus a status string used for stats and to decide whether
     to set `r2_key` on the asset (`ok` / `skipped` mean yes; anything else
     means leave it untouched).
     """
     try:
-        if r2.head(task.target_key) is not None:
+        if not force and r2.head(task.target_key) is not None:
             return task, "skipped"
         fetched = dl.fetch(task.src_url, authenticated=task.authenticated)
         if fetched is None:
@@ -119,15 +120,18 @@ def _run_uploads(
     *,
     progress_every: int = 200,
     label: str = "upload",
+    force: bool = False,
 ) -> tuple[Counter, list[tuple[UploadTask, str]]]:
     """Run uploads across `workers` threads, returning stats + per-task status."""
     stats: Counter[str] = Counter()
     results: list[tuple[UploadTask, str]] = []
     if not tasks:
         return stats, results
-    log.info("%s: %d tasks, %d workers", label, len(tasks), workers)
+    log.info("%s: %d tasks, %d workers (force=%s)", label, len(tasks), workers, force)
     with ThreadPoolExecutor(max_workers=workers) as ex:
-        futures = [ex.submit(_ensure_uploaded_one, t, r2, dl) for t in tasks]
+        futures = [
+            ex.submit(_ensure_uploaded_one, t, r2, dl, force=force) for t in tasks
+        ]
         for i, fut in enumerate(as_completed(futures), 1):
             task, status = fut.result()
             stats[f"{task.kind}_{status}"] += 1
@@ -153,7 +157,12 @@ def _apply_and_save(
 
 
 def mirror_attachments(
-    data_dir: Path, r2: R2Client, dl: Downloader, workers: int = DEFAULT_WORKERS
+    data_dir: Path,
+    r2: R2Client,
+    dl: Downloader,
+    workers: int = DEFAULT_WORKERS,
+    *,
+    force: bool = False,
 ) -> Counter:
     paths = sorted((data_dir / "threads").glob("*.json"))
     files: dict[Path, dict[str, Any]] = {}
@@ -164,7 +173,7 @@ def mirror_attachments(
         files[path] = data
         for post in data.get("posts") or []:
             for att in post.get("attachments") or []:
-                if att.get("r2_key"):
+                if att.get("r2_key") and not force:
                     pre["attachment_already_done"] += 1
                     continue
                 src = att.get("src_url")
@@ -183,15 +192,28 @@ def mirror_attachments(
                         kind="attachment",
                     )
                 )
-    stats, results = _run_uploads(tasks, r2, dl, workers, label="attachments")
+    stats, results = _run_uploads(
+        tasks, r2, dl, workers, label="attachments", force=force
+    )
     n_files = _apply_and_save(files, results)
     log.info("attachments: rewrote %d JSON files", n_files)
     stats.update(pre)
     return stats
 
 
+# Avatar size priority — highest quality first. `h` is the hi-res (retina)
+# variant XF generates from the original upload; `o` is the unmodified
+# original which can be smaller than `h` for legacy users.
+AVATAR_SIZE_PRIORITY = ("h", "o", "l", "m", "s")
+
+
 def mirror_avatars(
-    data_dir: Path, r2: R2Client, dl: Downloader, workers: int = DEFAULT_WORKERS
+    data_dir: Path,
+    r2: R2Client,
+    dl: Downloader,
+    workers: int = DEFAULT_WORKERS,
+    *,
+    force: bool = False,
 ) -> Counter:
     paths = sorted((data_dir / "users").glob("*.json"))
     files: dict[Path, dict[str, Any]] = {}
@@ -200,11 +222,14 @@ def mirror_avatars(
     for path in paths:
         user = json.loads(path.read_text(encoding="utf-8"))
         files[path] = user
-        if user.get("avatar_r2_key"):
+        if user.get("avatar_r2_key") and not force:
             pre["avatar_already_done"] += 1
             continue
         avatar_urls = user.get("avatar_urls") or {}
-        src = avatar_urls.get("l") or avatar_urls.get("m") or avatar_urls.get("o")
+        src = next(
+            (avatar_urls[s] for s in AVATAR_SIZE_PRIORITY if avatar_urls.get(s)),
+            None,
+        )
         if not src:
             pre["avatar_no_src"] += 1
             continue
@@ -220,14 +245,21 @@ def mirror_avatars(
                 kind="avatar",
             )
         )
-    stats, results = _run_uploads(tasks, r2, dl, workers, label="avatars")
+    stats, results = _run_uploads(
+        tasks, r2, dl, workers, label="avatars", force=force
+    )
     _apply_and_save(files, results)
     stats.update(pre)
     return stats
 
 
 def mirror_resources(
-    data_dir: Path, r2: R2Client, dl: Downloader, workers: int = DEFAULT_WORKERS
+    data_dir: Path,
+    r2: R2Client,
+    dl: Downloader,
+    workers: int = DEFAULT_WORKERS,
+    *,
+    force: bool = False,
 ) -> Counter:
     paths = sorted((data_dir / "resources").glob("*.json"))
     files: dict[Path, dict[str, Any]] = {}
@@ -240,7 +272,7 @@ def mirror_resources(
 
         icon = res.get("icon_url")
         if icon:
-            if res.get("icon_r2_key"):
+            if res.get("icon_r2_key") and not force:
                 pre["icon_already_done"] += 1
             else:
                 key = resource_icon_key(rid, icon)
@@ -259,7 +291,7 @@ def mirror_resources(
         for version in res.get("versions") or []:
             vid = int(version["id"])
             for f in version.get("files") or []:
-                if f.get("r2_key"):
+                if f.get("r2_key") and not force:
                     pre["res_file_already_done"] += 1
                     continue
                 src = f.get("src_url")
@@ -281,7 +313,9 @@ def mirror_resources(
                     )
                 )
 
-    stats, results = _run_uploads(tasks, r2, dl, workers, label="resources")
+    stats, results = _run_uploads(
+        tasks, r2, dl, workers, label="resources", force=force
+    )
     _apply_and_save(files, results)
     stats.update(pre)
 
@@ -355,7 +389,12 @@ def _collect_inline_urls(data_dir: Path) -> list[str]:
 
 
 def mirror_inline(
-    data_dir: Path, r2: R2Client, dl: Downloader, workers: int = DEFAULT_WORKERS
+    data_dir: Path,
+    r2: R2Client,
+    dl: Downloader,
+    workers: int = DEFAULT_WORKERS,
+    *,
+    force: bool = False,
 ) -> Counter:
     """Concurrent inline image mirror with sha256 dedupe.
 
@@ -370,12 +409,13 @@ def mirror_inline(
     urls = _collect_inline_urls(data_dir)
     pending: list[str] = []
     for url in urls:
-        if index.is_done(url):
-            stats["inline_already_done"] += 1
-            continue
-        if index.is_permanently_failed(url):
-            stats["inline_already_4xx"] += 1
-            continue
+        if not force:
+            if index.is_done(url):
+                stats["inline_already_done"] += 1
+                continue
+            if index.is_permanently_failed(url):
+                stats["inline_already_4xx"] += 1
+                continue
         pending.append(url)
     log.info(
         "inline: %d pending of %d unique URLs (%d workers)",

@@ -12,7 +12,7 @@
 {% for r in resources %}
   <li>
     <a href="{{ r.url_path }}"><strong>{{ r.title }}</strong></a>
-    {% if r.version %}<span class="muted">v{{ r.version }}</span>{% endif %}
+    {% if r.version %}<span class="muted">{{ r.version }}</span>{% endif %}
     {% if r.tag_line %}<div class="muted">{{ r.tag_line }}</div>{% endif %}
   </li>
 {% endfor %}

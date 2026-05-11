@@ -48,12 +48,15 @@ def cmd_upload(args: argparse.Namespace) -> None:
     only = set(args.only or []) or set(STAGES)
     totals: dict[str, int] = {}
     workers = args.concurrency
+    force = bool(args.force)
     for name in ("attachments", "avatars", "resources", "inline"):
         if name not in only:
             continue
-        log.info("=== stage: %s (workers=%d) ===", name, workers)
+        log.info(
+            "=== stage: %s (workers=%d, force=%s) ===", name, workers, force
+        )
         with _make_downloader() as dl:
-            stats = STAGES[name](data_dir, r2, dl, workers=workers)
+            stats = STAGES[name](data_dir, r2, dl, workers=workers, force=force)
         log.info("[%s] %s", name, dict(stats))
         for k, v in stats.items():
             totals[k] = totals.get(k, 0) + v
@@ -98,6 +101,11 @@ def build_parser() -> argparse.ArgumentParser:
         action="append",
         choices=sorted(STAGES),
         help="Limit to specific asset categories (repeatable)",
+    )
+    p_up.add_argument(
+        "--force",
+        action="store_true",
+        help="Re-upload even when r2_key is set / R2 already has the object",
     )
     p_up.set_defaults(func=cmd_upload)
 

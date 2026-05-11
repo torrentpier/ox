@@ -291,6 +291,13 @@ def build(data_dir: Path, out_dir: Path) -> None:
     for forum in idx["forums"]:
         base_url = node_url(forum)
         threads_in_forum = idx["threads_by_forum"].get(forum["node_id"], [])
+        child_ids = idx["tree_map"].get(forum["node_id"], [])
+        child_forums = [
+            idx["nodes_by_id"][cid]
+            for cid in child_ids
+            if cid in idx["nodes_by_id"]
+            and idx["nodes_by_id"][cid].get("node_type_id") == "Forum"
+        ]
         for page_no, page_threads, suffix, total_pages in _paginate(threads_in_forum, THREADS_PER_PAGE):
             page_url = f"{base_url}{suffix}"
             path = out_dir / page_url.lstrip("/") / "index.html"
@@ -299,6 +306,7 @@ def build(data_dir: Path, out_dir: Path) -> None:
                 forum_tmpl.render(
                     forum=forum,
                     threads=page_threads,
+                    child_forums=child_forums if page_no == 1 else [],
                     page_no=page_no,
                     total_pages=total_pages,
                     base_url=base_url,

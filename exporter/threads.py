@@ -131,10 +131,18 @@ def load_meta(data_dir: Path) -> dict[str, Any]:
 def iter_forum_threads(
     client: XfClient, forum_id: int
 ) -> Iterable[dict[str, Any]]:
-    """Yield every thread in a forum, paginated."""
+    """Yield every thread in a forum, paginated.
+
+    XF returns sticky / pinned threads in a separate `sticky[]` list on page 1
+    that is NOT included in `threads[]` pagination. Skipping that list misses
+    every pinned topic — yield it explicitly on the first page.
+    """
     page = 1
     while True:
         payload = client.get(f"/forums/{forum_id}/threads", page=page)
+        if page == 1:
+            for t in payload.get("sticky") or []:
+                yield t
         threads = payload.get("threads") or []
         for t in threads:
             yield t
