@@ -1,0 +1,99 @@
+"""CLI entry point for the R2 mirror pipeline."""
+
+from __future__ import annotations
+
+import argparse
+import logging
+import os
+from pathlib import Path
+
+from dotenv import load_dotenv
+
+from . import r2 as r2_mod
+from .download import Downloader
+from .pipeline import (
+    mirror_attachments,
+    mirror_avatars,
+    mirror_inline,
+    mirror_resources,
+    verify,
+)
+
+log = logging.getLogger("mirror")
+
+STAGES = {
+    "attachments": mirror_attachments,
+    "avatars": mirror_avatars,
+    "resources": mirror_resources,
+    "inline": mirror_inline,
+}
+
+
+def _make_downloader() -> Downloader:
+    load_dotenv()
+    return Downloader(
+        auth_headers={
+            "XF-Api-Key": os.environ.get("XF_API_KEY", ""),
+            "XF-Api-User": os.environ.get("XF_API_USER", "1"),
+        },
+        rps=float(os.environ.get("MIRROR_RPS", "2")),
+    )
+
+
+def cmd_upload(args: argparse.Namespace) -> None:
+    r2 = r2_mod.from_env()
+    data_dir = Path(args.data)
+    only = set(args.only or []) or set(STAGES)
+    totals: dict[str, int] = {}
+    for name in ("attachments", "avatars", "resources", "inline"):
+        if name not in only:
+            continue
+        log.info("=== stage: %s ===", name)
+        with _make_downloader() as dl:
+            stats = STAGES[name](data_dir, r2, dl)
+        log.info("[%s] %s", name, dict(stats))
+        for k, v in stats.items():
+            totals[k] = totals.get(k, 0) + v
+    log.info("totals: %s", totals)
+
+
+def cmd_verify(args: argparse.Namespace) -> None:
+    r2 = r2_mod.from_env()
+    stats = verify(Path(args.data), r2)
+    log.info("verify: %s", dict(stats))
+
+
+def build_parser() -> argparse.ArgumentParser:
+    p = argparse.ArgumentParser(prog="xf-mirror")
+    p.add_argument("--data", default="data", help="Data directory (default: data)")
+    p.add_argument("-v", "--verbose", action="store_true", help="DEBUG logging")
+    sub = p.add_subparsers(dest="cmd", required=True)
+
+    p_up = sub.add_parser("upload", help="Mirror assets to R2 (idempotent)")
+    p_up.add_argument(
+        "--only",
+        action="append",
+        choices=sorted(STAGES),
+        help="Limit to specific asset categories (repeatable)",
+    )
+    p_up.set_defaults(func=cmd_upload)
+
+    p_v = sub.add_parser("verify", help="HEAD every r2_key; report missing")
+    p_v.set_defaults(func=cmd_verify)
+    return p
+
+
+def main() -> None:
+    args = build_parser().parse_args()
+    logging.basicConfig(
+        level=logging.DEBUG if args.verbose else logging.INFO,
+        format="%(asctime)s %(levelname)s %(name)s %(message)s",
+    )
+    if not args.verbose:
+        for name in ("httpx", "botocore", "urllib3", "boto3"):
+            logging.getLogger(name).setLevel(logging.WARNING)
+    args.func(args)
+
+
+if __name__ == "__main__":
+    main()
