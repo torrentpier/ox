@@ -9,7 +9,7 @@ meaningful decision or completed step.
 
 | # | Item                                                       | State |
 |---|------------------------------------------------------------|-------|
-|   | Branch                                                     | `feat/archive` (14 commits, **not pushed yet**) |
+|   | Branch                                                     | `feat/archive` (16+ commits, **not pushed yet**) |
 |   | Repo skeleton (dirs + meta files)                          | Done (`c12ba69`) |
 |   | API surface verified (probed live)                         | Done — see "API surface" below |
 |   | Wrangler installed (Homebrew)                              | Done — 4.90.0 |
@@ -25,11 +25,12 @@ meaningful decision or completed step.
 | 3 | Builder — index + category + forum (paginated 30/page)     | Done |
 | 3 | Builder — thread (paginated 10/page) with avatars + badges | Done |
 | 3 | Builder — resource pages with version table                | Done |
-| 3 | Builder — `message_parsed` sanitiser + URL canonicaliser   | Done (sans R2 — attachments still point at torrentpier.com) |
+| 3 | Builder — `message_parsed` sanitiser + URL canonicaliser (threads/forums/members) | Done (sans R2 — attachments still point at torrentpier.com) |
 | 3 | Builder — `/resources/`, `/search/`, `sitemap.xml`, `robots.txt` | Done |
 | 3 | Builder — wire R2 URLs after mirror stage runs             | Not started |
-| 3 | Builder — `/posts/{id}/` redirect to thread anchor         | Not started |
-| 3 | Builder — `/members/{slug}.{id}/` minimal pages            | Not started |
+| 3 | Builder — `/posts/{id}/` redirect to thread anchor         | Done — 42,623 meta-refresh pages |
+| 3 | Builder — `/members/` index + `/members/{slug}.{id}/` pages | Done — 1,085 users, paginated index |
+| 3 | Builder — `dist/CNAME`, build time pinned to `meta.exported_at` (determinism) | Done — verified byte-identical on rebuild |
 | 4 | Search — Python indexer (lemmatised plain text → SQL)      | Not started |
 | 4 | Search — Cloudflare D1 schema + import                     | Not started — needs `wrangler login` |
 | 4 | Search — TypeScript Worker exposing `/search?q=`           | Not started |
@@ -326,22 +327,24 @@ To re-run:
 | `/categories/{slug}.{id}/`                 | `category.html`| Forums in a category                   |
 | `/forums/{slug}.{id}/page-N/`              | `forum.html`   | Threads in a forum, 30/page            |
 | `/threads/{slug}.{id}/page-N/`             | `thread.html`  | Posts in a thread, 10/page             |
+| `/posts/{id}/`                             | `redirect.html`| Meta-refresh + JS replace to the right thread page + `#post-{id}` |
+| `/members/`, `/members/page-N/`            | `members_index.html` | Paginated user index, 30/page    |
+| `/members/{slug}.{id}/`                    | `member.html`  | Minimal user profile                   |
 | `/resources/`                              | `resources_index.html` | Resource categories            |
 | `/resources/categories/{slug}.{id}/`       | `rcategory.html` | Resources in a category              |
 | `/resources/{slug}.{id}/`                  | `resource.html`| Resource detail with versions table    |
 | `/search/`                                 | `search.html`  | Placeholder until Worker exists        |
 | `/sitemap.xml`                             | (script)       | All canonical URLs with lastmod        |
 | `/robots.txt`                              | static         | Allow all                              |
+| `/CNAME`                                   | (script)       | `ox.torrentpier.com` for GitHub Pages  |
 
 ### Outstanding builder tasks
 
 - [ ] Wire R2 URLs into `message_parsed` rewrite + avatar rendering after mirror stage runs.
-- [ ] `/posts/{id}/` → meta-refresh redirect to `/threads/{slug}.{id}/page-N/#post-{id}` so old `/post-{id}` deep links keep working.
-- [ ] `/members/{slug}.{id}/` minimal pages (avatar, name, title, post count).
-- [ ] Determinism pass: sort iteration, freeze `build_time` to a fixed
-  source-of-truth value (e.g. exporter's `meta.exported_at`) so identical
-  `data/` produces byte-identical `dist/`.
-- [ ] `dist/CNAME` containing `ox.torrentpier.com` (for GitHub Pages).
+  Builder already canonicalises link slugs; once mirror sets `r2_key` on attachments / avatars / inline,
+  add an `asset_url_map: dict[str, str]` pass that swaps `<img src>` / `<a href>` to the R2 public URL.
+  Resolve in-post `/attachments/{id}/` variants via a global `{attachment_id → r2_key}` lookup (verified:
+  558 of 575 internal "inline" URLs are alternate forms of existing attachments — do not re-mirror).
 
 ## Stage 4 — Search worker + D1 (TODO)
 

@@ -24,17 +24,23 @@
 <article id="post-{{ post.id }}" class="post">
   <header class="post-author">
     {% set user = users.get(post.user_id) %}
-    {% if user and user.avatar_urls.get('m') %}
+    {% if user and user.avatar_urls and user.avatar_urls.get('m') %}
+      {% if user %}<a href="{{ member_url(user) }}">{% endif %}
       <img class="avatar" src="{{ user.avatar_urls.m }}" alt="" loading="lazy" width="48" height="48">
+      {% if user %}</a>{% endif %}
     {% endif %}
     <div class="post-author-text">
-      <strong>{{ post.username }}</strong>
+      {% if user %}
+        <a href="{{ member_url(user) }}"><strong>{{ post.username }}</strong></a>
+      {% else %}
+        <strong>{{ post.username }}</strong>
+      {% endif %}
       {% if post.is_admin %}<span class="badge badge-admin">Admin</span>
       {% elif post.is_moderator %}<span class="badge badge-mod">Mod</span>
       {% elif post.is_staff %}<span class="badge badge-staff">Staff</span>{% endif %}
       {% if post.user_title %}<span class="user-title">{{ post.user_title }}</span>{% endif %}
     </div>
-    <time class="post-date" datetime="{{ post.post_date }}">{{ post.post_date | timestamp }}</time>
+    <time class="post-date" datetime="{{ post.post_date }}"><a href="/posts/{{ post.id }}/" title="Permanent link">{{ post.post_date | timestamp }}</a></time>
   </header>
   <div class="post-body">{{ post.message_parsed | safe }}</div>
   {% if post.attachments %}

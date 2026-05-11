@@ -41,8 +41,22 @@ def make_env(template_dir: Path) -> Environment:
     return env
 
 
-def context_globals() -> dict[str, Any]:
+def _format_build_time(exported_at: str | None) -> str:
+    """Format the snapshot timestamp into a stable UTC string.
+
+    Pinned to the export run so identical `data/` produces identical HTML.
+    """
+    if not exported_at:
+        return "unknown"
+    try:
+        dt = datetime.fromisoformat(exported_at.replace("Z", "+00:00"))
+    except ValueError:
+        return exported_at
+    return dt.astimezone(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+
+
+def context_globals(exported_at: str | None = None) -> dict[str, Any]:
     return {
         "site_name": "TorrentPier archive",
-        "build_time": datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
+        "build_time": _format_build_time(exported_at),
     }

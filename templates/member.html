@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}{{ user.username }} — {{ site_name }}{% endblock %}
+{% block content %}
+<nav class="breadcrumbs">
+  <a href="/">Home</a>
+  / <a href="/members/">Members</a>
+  / <span class="current">{{ user.username }}</span>
+</nav>
+
+<article class="member">
+  <header class="post-author">
+    {% if user.avatar_urls and user.avatar_urls.get('l') %}
+      <img class="avatar member-avatar" src="{{ user.avatar_urls.l }}" alt="" loading="lazy" width="96" height="96">
+    {% endif %}
+    <div class="post-author-text">
+      <strong>{{ user.username }}</strong>
+      {% if user.is_admin %}<span class="badge badge-admin">Admin</span>
+      {% elif user.is_moderator %}<span class="badge badge-mod">Mod</span>
+      {% elif user.is_staff %}<span class="badge badge-staff">Staff</span>{% endif %}
+      {% if user.user_title %}<span class="user-title">{{ user.user_title }}</span>{% endif %}
+    </div>
+  </header>
+  <dl class="member-meta">
+    {% if user.register_date %}<dt>Registered</dt><dd>{{ user.register_date | timestamp }}</dd>{% endif %}
+    {% if user.last_activity %}<dt>Last activity</dt><dd>{{ user.last_activity | timestamp }}</dd>{% endif %}
+    {% if user.message_count is not none %}<dt>Messages</dt><dd>{{ user.message_count }}</dd>{% endif %}
+    {% if user.user_group_id %}<dt>Primary group</dt><dd>#{{ user.user_group_id }}</dd>{% endif %}
+  </dl>
+</article>
+{% endblock %}

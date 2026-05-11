@@ -1,16 +1,4 @@
-"""Render the static site from `data/` into `dist/`.
-
-Current scope:
-- /index.html — top-level categories with their child forums
-- /categories/{slug?}.{id}/ — single category page
-- /forums/{slug?}.{id}/ — single forum page with all its threads
-- /threads/{slug}.{id}/ — single thread, all posts on one page (no pagination)
-- /resources/categories/{slug?}.{id}/ — list resources in a category
-- /resources/{slug}.{id}/ — resource detail page
-- copies static/ as-is
-
-TODO: pagination, message_parsed rewrite, member pages, search, sitemap.
-"""
+"""Render the static site from `data/` into `dist/`."""
 
 from __future__ import annotations
 
@@ -20,6 +8,7 @@ import re
 import shutil
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlparse
 
 from .render import context_globals, make_env
 from .rewrite import rewrite_html
@@ -29,9 +18,13 @@ log = logging.getLogger(__name__)
 
 POSTS_PER_PAGE = 10  # XF default for this forum
 THREADS_PER_PAGE = 30  # XF default for this forum
+MEMBERS_PER_PAGE = 30
+
+SITE_HOST = "ox.torrentpier.com"
 
 
 SLUG_FALLBACK_RE = re.compile(r"[^a-z0-9]+")
+MEMBER_URL_RE = re.compile(r"^/members/([^/.]+)\.(\d+)/?$")
 
 
 def _paginate(items: list[Any], per_page: int) -> list[tuple[int, list[Any], str, int]]:
@@ -128,6 +121,28 @@ def node_url(node: dict[str, Any]) -> str:
     return f"/{type_path}/{slug}.{nid}/"
 
 
+def _member_slug(user: dict[str, Any]) -> str:
+    view_url = user.get("view_url") or ""
+    try:
+        path = urlparse(view_url).path or ""
+    except ValueError:
+        path = ""
+    m = MEMBER_URL_RE.match(path)
+    if m:
+        return m.group(1)
+    return _slugify(user.get("username") or f"user-{user['id']}")
+
+
+def member_url(user: dict[str, Any]) -> str:
+    return f"/members/{_member_slug(user)}.{user['id']}/"
+
+
+def _post_page_no(position: int | None, per_page: int = POSTS_PER_PAGE) -> int:
+    """Return 1-based page number that contains a post with given position."""
+    pos = int(position or 0)
+    return (pos // per_page) + 1
+
+
 def _write(out: Path, html: str) -> None:
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(html, encoding="utf-8")
@@ -171,7 +186,6 @@ def build(data_dir: Path, out_dir: Path) -> None:
     static_dir = repo_root / "static"
 
     env = make_env(template_dir)
-    env.globals.update(context_globals())
 
     meta = load_meta(data_dir)
     threads = load_threads(data_dir)
@@ -185,6 +199,9 @@ def build(data_dir: Path, out_dir: Path) -> None:
         len(users),
     )
 
+    # Pin the build timestamp to the export so identical `data/` -> identical `dist/`.
+    env.globals.update(context_globals(exported_at=meta.get("exported_at")))
+
     idx = _build_indexes(meta, threads, resources)
 
     thread_url_map: dict[int, str] = {
@@ -192,6 +209,9 @@ def build(data_dir: Path, out_dir: Path) -> None:
     }
     forum_url_map: dict[int, str] = {
         int(f["node_id"]): node_url(f) for f in idx["forums"]
+    }
+    member_url_map: dict[int, str] = {
+        int(uid): member_url(u) for uid, u in users.items()
     }
 
     if out_dir.exists():
@@ -203,6 +223,7 @@ def build(data_dir: Path, out_dir: Path) -> None:
 
     # Helpers exposed to all templates
     env.globals["node_url"] = node_url
+    env.globals["member_url"] = member_url
     env.globals["users"] = users
     env.globals["nodes_by_id"] = idx["nodes_by_id"]
 
@@ -264,6 +285,7 @@ def build(data_dir: Path, out_dir: Path) -> None:
                 post.get("message_parsed"),
                 thread_url_map=thread_url_map,
                 forum_url_map=forum_url_map,
+                member_url_map=member_url_map,
             )
         base_url = thread.get("url_path") or f"/threads/thread-{thread['id']}/"
         posts_list = thread.get("posts", [])
@@ -283,6 +305,29 @@ def build(data_dir: Path, out_dir: Path) -> None:
             thread_pages += 1
     log.info("Rendered %d thread pages (across %d threads)", thread_pages, len(threads))
 
+    # /posts/{id}/ → meta-refresh redirect into the right thread page + anchor.
+    # Old XF deep-links land here regardless of which page they belonged to.
+    redirect_tmpl = env.get_template("redirect.html")
+    redirect_count = 0
+    for thread in threads:
+        base_url = thread.get("url_path") or f"/threads/thread-{thread['id']}/"
+        for post in thread.get("posts", []):
+            pid = post.get("id")
+            if not pid:
+                continue
+            page_no = _post_page_no(post.get("position"))
+            suffix = "" if page_no == 1 else f"page-{page_no}/"
+            target = f"{base_url}{suffix}#post-{pid}"
+            _write(
+                out_dir / "posts" / str(pid) / "index.html",
+                redirect_tmpl.render(
+                    target=target,
+                    title=f"Post #{pid} in “{thread.get('title', '')}”",
+                ),
+            )
+            redirect_count += 1
+    log.info("Rendered %d post redirects", redirect_count)
+
     # /resources/{slug}.{id}/
     resource_tmpl = env.get_template("resource.html")
     for resource in resources:
@@ -290,6 +335,7 @@ def build(data_dir: Path, out_dir: Path) -> None:
             resource.get("description_parsed"),
             thread_url_map=thread_url_map,
             forum_url_map=forum_url_map,
+            member_url_map=member_url_map,
         )
         url_path = resource.get("url_path") or f"/resources/resource-{resource['id']}/"
         path = out_dir / url_path.lstrip("/") / "index.html"
@@ -330,6 +376,30 @@ def build(data_dir: Path, out_dir: Path) -> None:
         ),
     )
 
+    # /members/ — paginated index, /members/{slug}.{id}/ — per-user page
+    member_tmpl = env.get_template("member.html")
+    members_index_tmpl = env.get_template("members_index.html")
+    members_sorted = sorted(
+        users.values(),
+        key=lambda u: (-(u.get("message_count") or 0), (u.get("username") or "").lower()),
+    )
+    for u in members_sorted:
+        url = member_url(u)
+        _write(out_dir / url.lstrip("/") / "index.html", member_tmpl.render(user=u))
+    for page_no, page_users, suffix, total_pages in _paginate(members_sorted, MEMBERS_PER_PAGE):
+        page_url = f"/members/{suffix}"
+        _write(
+            out_dir / page_url.lstrip("/") / "index.html",
+            members_index_tmpl.render(
+                members=page_users,
+                page_no=page_no,
+                total_pages=total_pages,
+                base_url="/members/",
+                total=len(members_sorted),
+            ),
+        )
+    log.info("Rendered %d member pages", len(members_sorted))
+
     # /search/ — placeholder until the Cloudflare Worker is wired up
     search_tmpl = env.get_template("search.html")
     _write(out_dir / "search" / "index.html", search_tmpl.render())
@@ -337,11 +407,14 @@ def build(data_dir: Path, out_dir: Path) -> None:
     # /robots.txt
     _write(
         out_dir / "robots.txt",
-        "User-agent: *\nAllow: /\nSitemap: https://ox.torrentpier.com/sitemap.xml\n",
+        f"User-agent: *\nAllow: /\nSitemap: https://{SITE_HOST}/sitemap.xml\n",
     )
 
     # /sitemap.xml
-    _write(out_dir / "sitemap.xml", _render_sitemap(threads, resources, idx))
+    _write(out_dir / "sitemap.xml", _render_sitemap(threads, resources, idx, members_sorted))
+
+    # GitHub Pages custom-domain marker
+    _write(out_dir / "CNAME", f"{SITE_HOST}\n")
 
     log.info("Build complete: %s", out_dir)
 
@@ -350,8 +423,9 @@ def _render_sitemap(
     threads: list[dict[str, Any]],
     resources: list[dict[str, Any]],
     idx: dict[str, Any],
+    members: list[dict[str, Any]],
 ) -> str:
-    base = "https://ox.torrentpier.com"
+    base = f"https://{SITE_HOST}"
     parts: list[str] = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
@@ -388,5 +462,7 @@ def _render_sitemap(
                 r.get("last_update") or r.get("resource_date"),
             )
         )
+    for u in members:
+        parts.append(_entry(member_url(u), u.get("last_activity")))
     parts.append("</urlset>")
     return "\n".join(parts) + "\n"

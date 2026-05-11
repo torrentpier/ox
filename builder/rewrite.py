@@ -13,9 +13,14 @@ Asset URL rewriting (R2) lands in a later commit alongside the mirror stage.
 from __future__ import annotations
 
 import re
+import warnings
 from urllib.parse import urlparse
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, MarkupResemblesLocatorWarning
+
+# Many post bodies are short plain-text snippets without HTML; bs4 mistakes
+# those for filenames/URLs and emits a noisy warning per parse. Silence it.
+warnings.filterwarnings("ignore", category=MarkupResemblesLocatorWarning)
 
 # Match /threads/<anything>.{id}/<optional rest>. The slug part of the URL on
 # the source forum can be different from the slug XenForo currently produces
@@ -23,6 +28,7 @@ from bs4 import BeautifulSoup
 # the export.
 _THREAD_PATH_RE = re.compile(r"^/threads/[^/]+\.(\d+)(/.*)?$")
 _FORUM_PATH_RE = re.compile(r"^/forums/[^/]+\.(\d+)(/.*)?$")
+_MEMBER_PATH_RE = re.compile(r"^/members/[^/]+\.(\d+)(/.*)?$")
 
 INTERNAL_HOSTS = {"torrentpier.com", "www.torrentpier.com"}
 IFRAME_ALLOWED_HOSTS = {
@@ -68,10 +74,25 @@ def _canonicalise_forum_path(
     return canonical.rstrip("/") + (m.group(2) or "/")
 
 
+def _canonicalise_member_path(
+    path: str, member_url_map: dict[int, str] | None
+) -> str:
+    if not member_url_map:
+        return path
+    m = _MEMBER_PATH_RE.match(path)
+    if not m:
+        return path
+    canonical = member_url_map.get(int(m.group(1)))
+    if not canonical:
+        return path
+    return canonical.rstrip("/") + (m.group(2) or "/")
+
+
 def _to_relative_if_internal(
     href: str,
     thread_url_map: dict[int, str] | None = None,
     forum_url_map: dict[int, str] | None = None,
+    member_url_map: dict[int, str] | None = None,
 ) -> str | None:
     """Return path-only URL if `href` points at the source forum, else None."""
     if not href:
@@ -82,6 +103,7 @@ def _to_relative_if_internal(
     path = parsed.path or "/"
     path = _canonicalise_thread_path(path, thread_url_map)
     path = _canonicalise_forum_path(path, forum_url_map)
+    path = _canonicalise_member_path(path, member_url_map)
     if parsed.query:
         path += "?" + parsed.query
     if parsed.fragment:
@@ -94,6 +116,7 @@ def rewrite_html(
     *,
     thread_url_map: dict[int, str] | None = None,
     forum_url_map: dict[int, str] | None = None,
+    member_url_map: dict[int, str] | None = None,
 ) -> str:
     """Apply the sanitisation/rewrite pass. Empty input returns "".
     """
@@ -126,7 +149,7 @@ def rewrite_html(
         href = a.get("href")
         if not href:
             continue
-        rel_path = _to_relative_if_internal(href, thread_url_map, forum_url_map)
+        rel_path = _to_relative_if_internal(href, thread_url_map, forum_url_map, member_url_map)
         if rel_path is not None:
             a["href"] = rel_path
             continue

@@ -174,3 +174,12 @@ a:hover { text-decoration: underline; }
 .pagination .page-current { color: var(--muted); }
 .pagination a { padding: 0.3rem 0.7rem; border: 1px solid var(--border); border-radius: 4px; }
 .pagination a:hover { background: var(--post-bg); text-decoration: none; }
+
+/* Members */
+.member { background: var(--post-bg); border: 1px solid var(--border); border-radius: 8px; padding: 0; margin: 1rem 0; }
+.member-avatar { width: 72px; height: 72px; }
+.member-meta { display: grid; grid-template-columns: max-content 1fr; gap: 0.25rem 1rem; padding: 0.9rem 1rem; margin: 0; font-size: 0.95rem; }
+.member-meta dt { color: var(--muted); }
+.member-meta dd { margin: 0; }
+.member-table td a { font-weight: 500; }
+.post-date a { color: inherit; }
