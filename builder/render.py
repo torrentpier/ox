@@ -95,7 +95,7 @@ def context_globals(exported_at: str | None = None) -> dict[str, Any]:
         "site_url": "https://ox.torrentpier.com",
         "files_url": "https://files-ox.torrentpier.com",
         "site_description": (
-            "Static read-only archive of the TorrentPier support forum (2011–2026)."
+            "Read-only archive of the TorrentPier support forum (2011–2026)."
         ),
         "build_time": _format_build_time(exported_at),
     }
