@@ -90,7 +90,7 @@ a:hover { text-decoration: underline; }
   border-radius: 50%;
   object-fit: cover;
 }
-.post-author-text { display: flex; flex-direction: column; line-height: 1.2; gap: 0.15rem; flex: 1 1 auto; min-width: 0; }
+.post-author-text { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.2; gap: 0.15rem; flex: 1 1 auto; min-width: 0; }
 .post-author-text strong { font-size: 0.95rem; }
 .user-title { color: var(--muted); font-size: 0.8rem; }
 .post-date { color: var(--muted); font-size: 0.8rem; }

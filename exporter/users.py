@@ -7,6 +7,7 @@ so the exporter rarely needs to call `/api/users/{id}` directly.
 
 from __future__ import annotations
 
+import json
 import logging
 from pathlib import Path
 from typing import Any
@@ -15,6 +16,10 @@ from .api import XfClient
 from .io import write_json_atomic
 
 log = logging.getLogger(__name__)
+
+# Fields that downstream stages (mirror, builder) write onto users; the
+# exporter must preserve them when re-flushing a known user.
+PRESERVED_USER_FIELDS = ("avatar_r2_key",)
 
 
 def normalise_user(u: dict[str, Any]) -> dict[str, Any]:
@@ -57,7 +62,16 @@ class UserCache:
             return 0
         self.dir.mkdir(parents=True, exist_ok=True)
         for uid, user in self._by_id.items():
-            write_json_atomic(self.dir / f"{uid}.json", user)
+            path = self.dir / f"{uid}.json"
+            if path.exists():
+                try:
+                    existing = json.loads(path.read_text(encoding="utf-8"))
+                except json.JSONDecodeError:
+                    existing = {}
+                for field in PRESERVED_USER_FIELDS:
+                    if field in existing and field not in user:
+                        user[field] = existing[field]
+            write_json_atomic(path, user)
         log.info("Flushed %d users to %s", len(self._by_id), self.dir)
         return len(self._by_id)
 
