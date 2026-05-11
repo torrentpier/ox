@@ -12,6 +12,7 @@ from dotenv import load_dotenv
 from . import r2 as r2_mod
 from .download import Downloader
 from .pipeline import (
+    DEFAULT_WORKERS,
     mirror_attachments,
     mirror_avatars,
     mirror_inline,
@@ -37,7 +38,7 @@ def _make_downloader() -> Downloader:
             "XF-Api-Key": os.environ.get("XF_API_KEY", ""),
             "XF-Api-User": os.environ.get("XF_API_USER", "1"),
         },
-        rps=float(os.environ.get("MIRROR_RPS", "2")),
+        rps=float(os.environ.get("MIRROR_RPS", "20")),
     )
 
 
@@ -46,12 +47,13 @@ def cmd_upload(args: argparse.Namespace) -> None:
     data_dir = Path(args.data)
     only = set(args.only or []) or set(STAGES)
     totals: dict[str, int] = {}
+    workers = args.concurrency
     for name in ("attachments", "avatars", "resources", "inline"):
         if name not in only:
             continue
-        log.info("=== stage: %s ===", name)
+        log.info("=== stage: %s (workers=%d) ===", name, workers)
         with _make_downloader() as dl:
-            stats = STAGES[name](data_dir, r2, dl)
+            stats = STAGES[name](data_dir, r2, dl, workers=workers)
         log.info("[%s] %s", name, dict(stats))
         for k, v in stats.items():
             totals[k] = totals.get(k, 0) + v
@@ -60,7 +62,7 @@ def cmd_upload(args: argparse.Namespace) -> None:
 
 def cmd_verify(args: argparse.Namespace) -> None:
     r2 = r2_mod.from_env()
-    stats = verify(Path(args.data), r2)
+    stats = verify(Path(args.data), r2, workers=args.concurrency)
     log.info("verify: %s", dict(stats))
 
 
@@ -77,8 +79,19 @@ def build_parser() -> argparse.ArgumentParser:
     common = argparse.ArgumentParser(add_help=False)
     common.add_argument("--data", default="data", help="Data directory (default: data)")
 
+    parallel = argparse.ArgumentParser(add_help=False)
+    parallel.add_argument(
+        "--concurrency",
+        "-c",
+        type=int,
+        default=DEFAULT_WORKERS,
+        help=f"ThreadPoolExecutor worker count (default: {DEFAULT_WORKERS})",
+    )
+
     p_up = sub.add_parser(
-        "upload", parents=[common], help="Mirror assets to R2 (idempotent)"
+        "upload",
+        parents=[common, parallel],
+        help="Mirror assets to R2 (idempotent)",
     )
     p_up.add_argument(
         "--only",
@@ -89,7 +102,9 @@ def build_parser() -> argparse.ArgumentParser:
     p_up.set_defaults(func=cmd_upload)
 
     p_v = sub.add_parser(
-        "verify", parents=[common], help="HEAD every r2_key; report missing"
+        "verify",
+        parents=[common, parallel],
+        help="HEAD every r2_key; report missing",
     )
     p_v.set_defaults(func=cmd_verify)
 
