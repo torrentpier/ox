@@ -1,0 +1,66 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 22904,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 19,
+    "title": "Adaptation of modifications to TorrentPier"
+  },
+  "id": 1723,
+  "last_post_date": 1391718193,
+  "node_id": 19,
+  "post_date": 1353233765,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 22904,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "В данном разделе к размещению допускаются различные вопросы по переезду с других движков торрент-трекеров на TorrentPier II, различные советы и инструкции по данной же теме. Также возможно размещение тем с просьбами о помощи в адаптации модификаций под TorrentPier II. Все темы, не имеющие отношения к разделу, будут переноситься в соответствующие разделы или корзину.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1353233765,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 58751,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "С данного момента в разделе возможно размещение тем с просьбами о помощи в адаптации модификаций под TorrentPier II.",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1391718193,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 1,
+  "slug": "cto-mozno-razmesat-v-razdele",
+  "sticky": true,
+  "tags": [],
+  "title": "Что можно размещать в разделе?",
+  "url_path": "/threads/cto-mozno-razmesat-v-razdele.1723/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 1867
+}

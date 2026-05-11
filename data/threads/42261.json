@@ -1,0 +1,60 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 96054,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 42261,
+  "last_post_date": 1712383339,
+  "node_id": 110,
+  "post_date": 1712383339,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 96054,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток! Сегодня добавил новое звание &quot;Легенда&quot;. Оно выдается особо активным участникам форума и людям которые внесли большой вклад в развитие движка.<br />\n<br />\nЧто даёт данное звание:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Убраны лимиты везде</li>\n<li data-xf-list-type=\"ul\">Больше возможностей для управления своим профилем, сообщениями, ресурсами и так далее...</li>\n<li data-xf-list-type=\"ul\">Имя отображается в списке &quot;Команда форума&quot;</li>\n<li data-xf-list-type=\"ul\">Особый цвет ника</li>\n</ul>Уже выдал выборочно нескольким пользователям это звание. Критерии такие:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Аккаунту на форуме больше 10 лет</li>\n<li data-xf-list-type=\"ul\">Активное участие в жизни форума в прошлом / настоящем, или же некий вклад в разработку движка</li>\n<li data-xf-list-type=\"ul\">Отсутствие предупреждений за всё время</li>\n</ul>Всех получивших это звание - искренне поздравляю, вы сделали очень большой вклад в наш проект! Если я кого-то пропустил, то напишите мне в ЛС, рассмотрю каждую заявку.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1712383339,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "novoe-zvanie-legenda-sparkles",
+  "sticky": true,
+  "tags": [
+    "звание",
+    "легенды",
+    "новое звание",
+    "новости"
+  ],
+  "title": "Новое звание \"Легенда\" ✨",
+  "url_path": "/threads/novoe-zvanie-legenda-sparkles.42261/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 1286
+}

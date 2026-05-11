@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": false,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 22906,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 11,
+    "title": "Questions about styles for TorrentPier"
+  },
+  "id": 1725,
+  "last_post_date": 1353233780,
+  "node_id": 11,
+  "post_date": 1353233780,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 22906,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "В данном разделе к размещению допускаются вопросы по стилям и их изменению, а также описываем имеющиеся проблемы со стандартным стилем TorrentPier II. Все темы, не имеющие отношения к разделу, будут переноситься в соответствующие разделы или корзину.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1353233780,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "cto-mozno-razmesat-v-razdele",
+  "sticky": true,
+  "tags": [],
+  "title": "Что можно размещать в разделе?",
+  "url_path": "/threads/cto-mozno-razmesat-v-razdele.1725/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 6711
+}

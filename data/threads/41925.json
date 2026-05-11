@@ -1,0 +1,102 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 93322,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      },
+      {
+        "id": 2,
+        "title": "Resource news",
+        "type": "Forum"
+      }
+    ],
+    "id": 110,
+    "title": "News archive"
+  },
+  "id": 41925,
+  "last_post_date": 1530049799,
+  "node_id": 110,
+  "post_date": 1530049799,
+  "posts": [
+    {
+      "attach_count": 3,
+      "attachments": [
+        {
+          "attach_date": 1530049674,
+          "file_size": 21526,
+          "filename": "1530049674589.webp",
+          "height": 668,
+          "id": 5161,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": "attachments/5161/1530049674589.webp",
+          "src_url": "https://torrentpier.com/attachments/1530049674589-webp.5161/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5165-54f8adb4bd4c9e57552556a10684415e.jpg?hash=abuj8yGUjM",
+          "width": 796
+        },
+        {
+          "attach_date": 1530049726,
+          "file_size": 17822,
+          "filename": "1530049726838.webp",
+          "height": 658,
+          "id": 5162,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": "attachments/5162/1530049726838.webp",
+          "src_url": "https://torrentpier.com/attachments/1530049726838-webp.5162/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5166-80600bca35d3bcc3d31750038d2f19af.jpg?hash=04heJ1xaaa",
+          "width": 788
+        },
+        {
+          "attach_date": 1530049744,
+          "file_size": 14942,
+          "filename": "1530049744581.webp",
+          "height": 664,
+          "id": 5163,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": "attachments/5163/1530049744581.webp",
+          "src_url": "https://torrentpier.com/attachments/1530049744581-webp.5163/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/5/5167-182980e279e2e6c6a94f5576f19148aa.jpg?hash=PHoXVJupGR",
+          "width": 772
+        }
+      ],
+      "id": 93322,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "Доброго времени суток.<br />\n<br />\nНа форум добавлен <a href=\"https://crowdin.com/project/torrentpier\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">виджет перевода TorrentPier от Crowdin</a>, используя который вы сможете в несколько простых шагов существенно помочь в улучшении локализации проекта на заложенные в него языки. Для этого просто воспользуйтесь виджетом, который появился на всех страницах форума в нижнем правом углу. Для начала вам нужно выбрать язык, локализацию которого в проекте вы бы хотели улучшить, например, русский и дальше просто отвечайте на те вопросы, которые вам задает виджет. От предложения написать свой перевод предложенной фразы, до голосования за имеющиеся варианты. Пример работы с виджетом во вложении.<br />\n<br />\nСпасибо за внимание.",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1530049799,
+      "user_id": 1,
+      "user_title": "Administrator",
+      "username": "Exile"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "vidzet-perevoda-torrentpier-na-forume",
+  "sticky": true,
+  "tags": [
+    "bison",
+    "crowdin",
+    "локализация"
+  ],
+  "title": "Виджет перевода TorrentPier на форуме",
+  "url_path": "/threads/vidzet-perevoda-torrentpier-na-forume.41925/",
+  "user_id": 1,
+  "username": "Exile",
+  "view_count": 1360
+}
