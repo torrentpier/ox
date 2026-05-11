@@ -5,40 +5,43 @@ detailed enough that work can be paused and resumed at any point — by the
 same or a different operator — without losing context. Update it after every
 meaningful decision or completed step.
 
-## Status snapshot (2026-05-11)
+## Status snapshot (2026-05-11, end of session 2)
 
 | # | Item                                                       | State |
 |---|------------------------------------------------------------|-------|
-|   | Branch                                                     | `feat/archive` (16+ commits, **not pushed yet**) |
+|   | Branch                                                     | `feat/archive` (~30 commits, **still not pushed**) |
 |   | Repo skeleton (dirs + meta files)                          | Done (`c12ba69`) |
 |   | API surface verified (probed live)                         | Done — see "API surface" below |
 |   | Wrangler installed (Homebrew)                              | Done — 4.90.0 |
-|   | Cloudflare auth (`wrangler login`)                         | **Pending — must be run interactively by user** |
+|   | Cloudflare auth (`wrangler login`)                         | n/a — operator works via R2 token + `.env`, wrangler not actually used |
 |   | Python venv + deps (`uv venv`, py3.13)                     | Done — `.venv/` in repo (gitignored) |
 | 1 | Exporter — `nodes` stage                                   | Done — 34 nodes (7 categories, 27 forums) |
-| 1 | Exporter — `threads` stage                                 | Done — 3,280 threads, 42,623 posts (matches `Σ reply_count + 1` exactly) |
-| 1 | Exporter — `users` stage (incidental from `post.User`)     | Done — 1,085 unique authors |
+| 1 | Exporter — `threads` stage (incl. sticky)                  | Done — **3,304 threads, 42,868 posts** after sticky fix; matches XF UI totals across container forums |
+| 1 | Exporter — `users` stage (incidental from `post.User`)     | Done — 1,096 unique authors (after sticky re-run); `UserCache.flush` now merges, preserving mirror-side fields |
 | 1 | Exporter — `resources` stage                               | Done — 230 resources, 548 versions, 511 files (62.83 MiB binary) |
 | 2 | Mirror — R2 bucket + custom domain (`files-ox.torrentpier.com`) | Done — bucket `torrentpier-archive`, custom domain live |
-| 2 | Mirror — Python uploader (boto3, ThreadPoolExecutor, atomic JSON update) | Done — concurrent uploader; full run took ~13 min at 8 workers |
-| 2 | Mirror — `r2_key` written into every JSON asset; inline dedupe map | Done — 3197 attachments / 502 avatars / 136 icons / 511 res-files / 517+32 inline; 423 dead inline hosts recorded |
-| 3 | Builder — index + category + forum (paginated 30/page)     | Done |
-| 3 | Builder — thread (paginated 10/page) with avatars + badges | Done |
-| 3 | Builder — resource pages with version table                | Done |
-| 3 | Builder — `message_parsed` sanitiser + URL canonicaliser (threads/forums/members) | Done (sans R2 — attachments still point at torrentpier.com) |
+| 2 | Mirror — Python uploader (boto3, ThreadPoolExecutor, atomic JSON update) | Done — concurrent (8 workers); full run ~13 min, sticky-delta + avatar re-up ~5 min |
+| 2 | Mirror — `r2_key` written into every JSON asset; inline dedupe map | Done — **3319 attachments / 506 hi-res avatars / 136 icons / 511 res-files / 549 inline live + 423 dead** |
+| 2 | Mirror — `--force` flag for re-uploads (e.g. avatar `l`→`h` swap) | Done — used to upgrade every avatar from size `l` to size `h` (hi-res) |
+| 3 | Builder — index + category + forum (paginated 30/page, recursive counts, sub-forum block) | Done |
+| 3 | Builder — thread (paginated 10/page) with avatars + badges + clickable breadcrumbs | Done |
+| 3 | Builder — resource pages with version table + icon                | Done |
+| 3 | Builder — `message_parsed` sanitiser + URL canonicaliser (threads/forums/members) | Done |
 | 3 | Builder — `/resources/`, `/search/`, `sitemap.xml`, `robots.txt` | Done |
-| 3 | Builder — wire R2 URLs after mirror stage runs             | Done — `asset maps: 3197 attachments, 549 inline external` go through `rewrite_html`; templates fall back to `src_url` when `r2_key` missing |
-| 3 | Builder — `/posts/{id}/` redirect to thread anchor         | Done — 42,623 meta-refresh pages |
-| 3 | Builder — `/members/` index + `/members/{slug}.{id}/` pages | Done — 1,085 users, paginated index |
+| 3 | Builder — wire R2 URLs after mirror stage runs             | Done — attachments by id, inline by src URL, avatars + icons + version files |
+| 3 | Builder — `/posts/{id}/` redirect to thread anchor         | Done — 42,868 meta-refresh pages |
+| 3 | Builder — `/members/` index + `/members/{slug}.{id}/` pages | Done — 1,096 users, paginated index |
 | 3 | Builder — `dist/CNAME`, build time pinned to `meta.exported_at` (determinism) | Done — verified byte-identical on rebuild |
+| 3 | Builder — visual refresh (XF-style cards, header + logo + nav, table posts) | Done |
 | 4 | Search — Python indexer (lemmatised plain text → SQL)      | Not started |
-| 4 | Search — Cloudflare D1 schema + import                     | Not started — needs `wrangler login` |
+| 4 | Search — Cloudflare D1 schema + import                     | Not started — needs `wrangler login` (this stage truly does) |
 | 4 | Search — TypeScript Worker exposing `/search?q=`           | Not started |
 | 4 | Search — frontend on `/search/` page                       | Not started (placeholder lives) |
-| 5 | Deploy — GitHub Actions build + Pages deploy               | Workflow committed (`.github/workflows/build.yml`); fires on first push to `main` |
+| 5 | Deploy — GitHub Actions build + Pages deploy               | Workflow committed (`.github/workflows/build.yml`); will fire on **first push to `main`** |
 | 5 | Deploy — DNS: `ox.torrentpier.com` CNAME → Pages           | Not started |
 | 5 | Deploy — Bulk Redirect from `torrentpier.com/*` → archive  | Not started |
 | 5 | Cutover — confirm archive live, revoke super-user API key  | Not started |
+| 5 | R2 cache purge for `/avatars/*` (one-time, after avatar `h` swap) | **Pending — manual user action in Cloudflare dashboard**; old `l`-size cached on edge until purge or natural TTL |
 
 ## Source forum
 
@@ -487,23 +490,26 @@ manual (see "Cloudflare side" below).
 
 ## Open questions
 
-- [ ] Server-side size of the forum's actual attachments (not resource files).
-  User's estimate is 1–5 GB; well within the R2 free tier of 10 GB. Will be
-  measured precisely the moment the mirror stage starts (sum
-  `attachments[].file_size` across `data/threads/**.json`).
+- [x] ~~Server-side size of the forum's actual attachments.~~ Measured at
+  mirror time: 455 MiB across 3,197 attachments. Comfortable inside R2's
+  10 GiB free tier.
 - [ ] **Profile posts / resource discussion comments not exported.** The
-  public message counter on the forum is 45,473; we captured 42,623 forum
-  posts. The 2,850 delta is almost certainly profile-wall comments and
-  resource discussion threads, which live behind `/api/profile-posts/`
-  and `/api/resources/{id}/discussions/` (TBC). Decide whether to add a
-  fifth export stage.
+  public message counter on the forum is 45,473; we captured 42,868 forum
+  posts after the sticky-thread fix. The ~2,600 delta is almost certainly
+  profile-wall comments and resource discussion threads, which live behind
+  `/api/profile-posts/` and `/api/resources/{id}/discussions/` (TBC).
+  Decide whether to add a fifth export stage.
 - [ ] **YouTube iframes.** Current rewrite keeps them (relies on YouTube
   staying online). Consider downgrading to a text link "[video: …]"
   during stage 3 so the archive degrades gracefully if YouTube ever
   removes a video.
-- [ ] Consider a `/posts/{id}/` redirect page that resolves to
-  `/threads/{slug}.{id}/page-N/#post-{id}` so old XF-style deep-links
-  stay alive.
+- [x] ~~`/posts/{id}/` redirect page.~~ Implemented; 42,868 meta-refresh
+  pages link old XF-style deep-links to the right thread page + anchor.
+- [ ] **Avatar cache-busting.** Current R2 key is `avatars/{id}.jpg` —
+  any future re-upload of a user's avatar will need another manual cache
+  purge. Consider including an `avatar_hash` (or `avatar_urls` query
+  timestamp) in the key, or setting a short `Cache-Control` header on
+  PUT so the edge expires within minutes.
 
 ## How to resume — runbook for the next operator
 
@@ -521,33 +527,85 @@ manual (see "Cloudflare side" below).
 6. **Update this file in the same commit as the work that produced the
    change** — that's the contract that keeps it useful.
 
-### Recommended task order (by dependency)
+### What's left for the next session (in dependency order)
 
-1. **Cloudflare R2 setup (user, one-time).** `wrangler login` →
-   `wrangler r2 bucket create torrentpier-archive` → add
-   `files-ox.torrentpier.com` custom domain → create R2 API token →
-   fill `.env`. See "R2 setup (one-time, manual — user)" above.
-2. **Run the mirror (~30 min, sequential rps=2).** Optionally sanity-check
-   first with `.venv/bin/python -m mirror scan --data data` — pure offline
-   walk over `data/` that reports pending vs. done counts without touching
-   R2 or the network. Then:
-   `.venv/bin/python -m mirror upload --data data`
-   followed by `.venv/bin/python -m mirror verify --data data`. JSON files
-   gain `r2_key`/`avatar_r2_key`/`icon_r2_key`; `data/inline_index.json`
-   appears. Without this step, every attachment / avatar / resource file
-   on the live site 404s the moment the source forum is shut down.
-3. **Builder R2 wiring** (one focused commit). Wire the asset URL map +
-   id-based attachment alias lookup into `rewrite.py` and the templates.
-   Builder is currently ready to consume those keys once they exist.
-4. **First push to `main`.** The committed CI workflow takes care of the
-   rest — Pages picks up `dist/` automatically.
-5. **DNS cutover.** Independent of the search worker. Decide whether to
-   cut over before or after search.
-6. **Search worker + indexer (Stage 4).** Adds polish; the archive is
-   usable without it.
-7. **Profile posts / resource discussions (open question).** Decide
-   whether to add and run a fifth export stage.
-8. **Revoke the super-user API key.**
+Everything that can be done locally is done. The remaining work is split
+between **manual one-shots in the Cloudflare dashboard / on GitHub** and
+**a single new Stage 4 implementation**.
+
+1. **Purge `/avatars/*` on the R2 CDN (user, 30 seconds).** All 506 avatars
+   were re-uploaded from size `h` (hi-res) on top of the original size-`l`
+   key. R2 now serves the hi-res bytes, but the Cloudflare edge cache on
+   `files-ox.torrentpier.com` is still handing out the old size-`l`
+   versions until TTL expires.
+   Cloudflare dashboard → Caching → Configuration → Purge Cache → Custom
+   Purge → URL = `https://files-ox.torrentpier.com/avatars/*`
+   (Purge Everything works too.) After this, avatars on
+   `ox.torrentpier.com` will look noticeably crisper.
+
+2. **First push to `main` (operator + GitHub).** `git push -u origin
+   feat/archive` then open a PR into `main` and merge it (or push
+   directly to `main` if no review needed). The committed
+   `.github/workflows/build.yml` will:
+   - render `dist/` via `python -m builder build`,
+   - check `dist/CNAME == ox.torrentpier.com`,
+   - deploy to GitHub Pages.
+
+   **Before pushing**, decide whether to ship one branch with everything
+   or split into pre-cutover (mirror+builder ready) and post-cutover
+   (search). One branch is fine — the archive is already useful without
+   search, and Pages only deploys what's in `dist/`.
+
+3. **DNS flip (user, one-shot in Cloudflare dashboard).**
+   - DNS → add record: `ox` CNAME `<github-user>.github.io`, proxied.
+   - Wait ~1 min for propagation, hit `https://ox.torrentpier.com/`,
+     smoke-test 5–10 deep-link URLs from previous chats / search engines.
+   - Add Bulk Redirect list: any request to the live forum host →
+     `https://ox.torrentpier.com/$1`. URL paths are preserved by design,
+     so this is a clean cutover with no per-thread redirect rules.
+
+4. **Stage 4 — search (a session of its own).** Pipeline lives in
+   "Stage 4 — Search worker + D1 (TODO)" below. Order:
+   - `wrangler login` + `wrangler d1 create ox-archive-search`.
+   - Write `search/index.py` that walks `data/threads/` and emits a
+     deterministic `search/seed.sql` (lemmatise post bodies with
+     `pymorphy3`, sort inserts by `(thread_id, position)`).
+   - `wrangler d1 execute ox-archive-search --file=search/seed.sql --remote`.
+   - Write the ~80-line TS worker in `search-worker/` and bind it at
+     `search-ox.torrentpier.com`.
+   - Replace the `/search/` template placeholder with a real form + JS
+     calling the worker.
+
+5. **Open question: profile posts / resource discussions.** Source forum
+   says it has 45,473 messages total; this archive captured 42,868 forum
+   posts. The ~2,600 delta is almost certainly profile-wall comments and
+   resource discussion threads. Decide whether to add a fifth export stage
+   (`/api/profile-posts/` and `/api/resources/{id}/discussions/`, both
+   noted in "API surface" but not yet probed end-to-end). If yes:
+   add `exporter/profile_posts.py` + `exporter/resource_discussions.py`,
+   re-run mirror (will pick up any new attachments), re-run builder.
+
+6. **Revoke the super-user API key.** Final step after the cutover
+   smoke-test passes. XF admin panel → API keys → revoke
+   `XF_API_KEY` from `.env`. Without this the key keeps working against
+   whatever still answers on the old hostname.
+
+### Quick resume checklist
+
+```bash
+# Sanity check the build still produces what it should
+.venv/bin/python -m builder build --data data --out dist
+.venv/bin/python -m http.server 8765 --directory dist
+# open http://127.0.0.1:8765/
+
+# Sanity check mirror state without touching R2
+.venv/bin/python -m mirror scan --data data
+# expect: every _total == _done, inline_index_done ≈ 549
+
+# Sanity check what's actually in R2
+.venv/bin/python -m mirror verify --data data --concurrency 16
+# expect: only *_ok lines, no *_missing
+```
 
 ## References
 
