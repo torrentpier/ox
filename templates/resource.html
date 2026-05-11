@@ -27,6 +27,13 @@
       {% if resource.version %}— version <strong>{{ resource.version }}</strong>{% endif %}
       — {{ resource.view_count }} views, {{ resource.download_count }} downloads
     </p>
+    {% if resource.rating_count %}
+    {% set rounded = ((resource.rating_avg * 2) | round) / 2 %}
+    <p class="resource-rating" aria-label="Rated {{ resource.rating_avg }} out of 5 from {{ resource.rating_count }} ratings">
+      <span class="stars" aria-hidden="true">{% for i in range(1, 6) %}{% if i <= rounded %}★{% elif (i - 0.5) <= rounded %}⯨{% else %}☆{% endif %}{% endfor %}</span>
+      <span class="muted">{{ '%.1f'|format(resource.rating_avg) }} / 5 — {{ resource.rating_count }} rating{{ 's' if resource.rating_count != 1 else '' }}</span>
+    </p>
+    {% endif %}
   </div>
 </header>
 
@@ -72,5 +79,39 @@
 <p>
   External link: <a href="{{ resource.external_url }}" rel="noopener nofollow">{{ resource.external_url }}</a>
 </p>
+{% endif %}
+
+{% if resource.reviews %}
+<h2>Reviews</h2>
+{% for r in resource.reviews %}
+{% set r_user = users.get(r.user_id) %}
+{% set r_avatar = r2_url(r_user.avatar_r2_key) if r_user and r_user.avatar_r2_key else (r_user.avatar_urls.l if r_user and r_user.avatar_urls else None) %}
+<article class="wall-post review">
+  <header class="post-author">
+    {% if r_avatar %}
+      <a href="{{ member_url(r_user) }}"><img class="avatar" src="{{ r_avatar }}" alt="" loading="lazy" width="48" height="48"></a>
+    {% endif %}
+    <div class="post-author-text">
+      {% if r_user %}
+        <a href="{{ member_url(r_user) }}"><strong>{{ r.username }}</strong></a>
+      {% else %}
+        <strong>{{ r.username }}</strong>
+      {% endif %}
+    </div>
+  </header>
+  <div class="post-main">
+    <div class="post-head">
+      <span class="stars" aria-label="Rated {{ r.rating }} out of 5">{% for i in range(1, 6) %}{% if i <= r.rating %}★{% else %}☆{% endif %}{% endfor %}</span>
+      {% if r.rating_date %}<time datetime="{{ r.rating_date }}">{{ r.rating_date | timestamp }}</time>{% endif %}
+    </div>
+    {% if r.message %}<div class="post-body">{{ r.message }}</div>{% endif %}
+    {% if r.author_response %}
+    <div class="post-body author-response">
+      <strong>Author response:</strong> {{ r.author_response }}
+    </div>
+    {% endif %}
+  </div>
+</article>
+{% endfor %}
 {% endif %}
 {% endblock %}

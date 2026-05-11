@@ -17,9 +17,10 @@ from .io import write_json_atomic
 
 log = logging.getLogger(__name__)
 
-# Fields that downstream stages (mirror, builder) write onto users; the
-# exporter must preserve them when re-flushing a known user.
-PRESERVED_USER_FIELDS = ("avatar_r2_key",)
+# Fields that downstream stages (mirror, builder) or the profile-posts
+# stage write onto users; the exporter must preserve them when re-flushing
+# a known user via UserCache.
+PRESERVED_USER_FIELDS = ("avatar_r2_key", "wall_posts", "wall_total", "wall_access")
 
 
 def normalise_user(u: dict[str, Any]) -> dict[str, Any]:

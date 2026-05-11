@@ -28,4 +28,60 @@
     {% if user.user_group_id %}<dt>Primary group</dt><dd>#{{ user.user_group_id }}</dd>{% endif %}
   </dl>
 </article>
+
+{% if user.wall_posts %}
+<section class="wall">
+  <h2 class="wall-heading">Profile posts <span class="muted">({{ user.wall_total }})</span></h2>
+  {% for pp in user.wall_posts %}
+    {% set poster = users.get(pp.user_id) %}
+    {% set poster_avatar = r2_url(poster.avatar_r2_key) if poster and poster.avatar_r2_key else (poster.avatar_urls.l if poster and poster.avatar_urls else None) %}
+    <article id="profile-post-{{ pp.id }}" class="wall-post">
+      <header class="post-author">
+        {% if poster_avatar %}
+          <a href="{{ member_url(poster) }}"><img class="avatar" src="{{ poster_avatar }}" alt="" loading="lazy" width="48" height="48"></a>
+        {% endif %}
+        <div class="post-author-text">
+          {% if poster %}
+            <a href="{{ member_url(poster) }}"><strong>{{ pp.username }}</strong></a>
+          {% else %}
+            <strong>{{ pp.username }}</strong>
+          {% endif %}
+        </div>
+      </header>
+      <div class="post-main">
+        <div class="post-head">
+          <time datetime="{{ pp.post_date }}"><a href="/profile-posts/{{ pp.id }}/" title="Permanent link">{{ pp.post_date | timestamp }}</a></time>
+        </div>
+        <div class="post-body">{{ pp.message_parsed | safe }}</div>
+      </div>
+      {% if pp.comments %}
+      <ol class="wall-comments">
+        {% for c in pp.comments %}
+        {% set c_user = users.get(c.user_id) %}
+        {% set c_avatar = r2_url(c_user.avatar_r2_key) if c_user and c_user.avatar_r2_key else (c_user.avatar_urls.l if c_user and c_user.avatar_urls else None) %}
+        <li id="profile-post-comment-{{ c.id }}" class="wall-comment">
+          {% if c_avatar %}
+            <a href="{{ member_url(c_user) }}"><img class="avatar" src="{{ c_avatar }}" alt="" loading="lazy" width="32" height="32"></a>
+          {% endif %}
+          <div class="wall-comment-body">
+            <div class="wall-comment-head">
+              {% if c_user %}
+                <a href="{{ member_url(c_user) }}"><strong>{{ c.username }}</strong></a>
+              {% else %}
+                <strong>{{ c.username }}</strong>
+              {% endif %}
+              <time datetime="{{ c.comment_date }}"><a href="/profile-posts/comments/{{ c.id }}/">{{ c.comment_date | timestamp }}</a></time>
+            </div>
+            <div>{{ c.message_parsed | safe }}</div>
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+      {% endif %}
+    </article>
+  {% endfor %}
+</section>
+{% elif user.wall_access == 'hidden' %}
+<p class="muted wall-hidden">This member's profile posts are private.</p>
+{% endif %}
 {% endblock %}

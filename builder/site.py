@@ -483,9 +483,57 @@ def build(data_dir: Path, out_dir: Path) -> None:
         users.values(),
         key=lambda u: (-(u.get("message_count") or 0), (u.get("username") or "").lower()),
     )
+    # Sanitise wall content + build owner maps for /profile-posts/ redirects.
+    profile_post_owner: dict[int, int] = {}
+    profile_comment_owner: dict[int, int] = {}
+    for u in members_sorted:
+        for wp in u.get("wall_posts") or []:
+            profile_post_owner[int(wp["id"])] = int(u["id"])
+            wp["message_parsed"] = rewrite_html(
+                wp.get("message_parsed"),
+                thread_url_map=thread_url_map,
+                forum_url_map=forum_url_map,
+                member_url_map=member_url_map,
+                attachment_url_map=attachment_url_map,
+                inline_url_map=inline_url_map,
+            )
+            for c in wp.get("comments") or []:
+                profile_comment_owner[int(c["id"])] = int(u["id"])
+                c["message_parsed"] = rewrite_html(
+                    c.get("message_parsed"),
+                    thread_url_map=thread_url_map,
+                    forum_url_map=forum_url_map,
+                    member_url_map=member_url_map,
+                    attachment_url_map=attachment_url_map,
+                    inline_url_map=inline_url_map,
+                )
     for u in members_sorted:
         url = member_url(u)
         _write(out_dir / url.lstrip("/") / "index.html", member_tmpl.render(user=u))
+
+    # /profile-posts/{id}/ and /profile-posts/comments/{id}/ redirects
+    pp_redirects = 0
+    for pp_id, owner_id in profile_post_owner.items():
+        owner = users.get(owner_id)
+        if not owner:
+            continue
+        target = f"{member_url(owner)}#profile-post-{pp_id}"
+        _write(
+            out_dir / "profile-posts" / str(pp_id) / "index.html",
+            redirect_tmpl.render(target=target, title=f"Profile post #{pp_id}"),
+        )
+        pp_redirects += 1
+    for c_id, owner_id in profile_comment_owner.items():
+        owner = users.get(owner_id)
+        if not owner:
+            continue
+        target = f"{member_url(owner)}#profile-post-comment-{c_id}"
+        _write(
+            out_dir / "profile-posts" / "comments" / str(c_id) / "index.html",
+            redirect_tmpl.render(target=target, title=f"Profile post comment #{c_id}"),
+        )
+        pp_redirects += 1
+    log.info("Rendered %d profile-post redirects", pp_redirects)
     for page_no, page_users, suffix, total_pages in _paginate(members_sorted, MEMBERS_PER_PAGE):
         page_url = f"/members/{suffix}"
         _write(

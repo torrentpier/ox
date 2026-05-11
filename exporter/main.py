@@ -6,7 +6,7 @@ import argparse
 import logging
 from pathlib import Path
 
-from . import api, nodes, resources, threads
+from . import api, nodes, profile_posts, resource_reviews, resources, threads
 
 
 def cmd_nodes(args: argparse.Namespace) -> None:
@@ -33,6 +33,21 @@ def cmd_resources(args: argparse.Namespace) -> None:
             only_resource=args.only_resource,
             force=args.force,
         )
+
+
+def cmd_profile_posts(args: argparse.Namespace) -> None:
+    with api.from_env() as client:
+        profile_posts.export_profile_posts(
+            client,
+            Path(args.data),
+            only_user=args.only_user,
+            force=args.force,
+        )
+
+
+def cmd_resource_reviews(args: argparse.Namespace) -> None:
+    with api.from_env() as client:
+        resource_reviews.export_resource_reviews(client, Path(args.data))
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -79,6 +94,28 @@ def build_parser() -> argparse.ArgumentParser:
         help="Re-export resources even if their JSON already exists",
     )
     p_resources.set_defaults(func=cmd_resources)
+
+    p_pp = sub.add_parser(
+        "profile-posts",
+        help="Export per-user wall posts + comments into data/users/{id}.json",
+    )
+    p_pp.add_argument(
+        "--only-user",
+        type=int,
+        help="Export a single user's wall by id (debug)",
+    )
+    p_pp.add_argument(
+        "--force",
+        action="store_true",
+        help="Re-export walls even for users where wall_total is already set",
+    )
+    p_pp.set_defaults(func=cmd_profile_posts)
+
+    p_rr = sub.add_parser(
+        "resource-reviews",
+        help="Export resource reviews into data/resources/{id}.json (reviews[])",
+    )
+    p_rr.set_defaults(func=cmd_resource_reviews)
     return p
 
 
