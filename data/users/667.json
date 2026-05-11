@@ -1,0 +1,40 @@
+{
+  "avatar_urls": {
+    "h": null,
+    "l": null,
+    "m": null,
+    "o": null,
+    "s": null
+  },
+  "id": 667,
+  "is_admin": false,
+  "is_moderator": false,
+  "is_staff": false,
+  "last_activity": 1369062044,
+  "message_count": 0,
+  "register_date": 1325012358,
+  "secondary_group_ids": [],
+  "user_group_id": 2,
+  "user_title": "User",
+  "username": "arni",
+  "view_url": "https://torrentpier.com/members/arni.667/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 343,
+      "last_comment_date": 0,
+      "message_parsed": "пипец",
+      "message_state": "visible",
+      "post_date": 1358510317,
+      "profile_user_id": 667,
+      "url_path": "/profile-posts/343/",
+      "user_id": 667,
+      "username": "arni",
+      "view_url": "https://torrentpier.com/profile-posts/343/"
+    }
+  ],
+  "wall_total": 1
+}

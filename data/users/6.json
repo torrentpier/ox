@@ -18,5 +18,24 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "frost444",
-  "view_url": "https://torrentpier.com/members/frost444.6/"
+  "view_url": "https://torrentpier.com/members/frost444.6/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 188,
+      "last_comment_date": 0,
+      "message_parsed": "Наш девиз непобедим - засрем коммент и убежим!",
+      "message_state": "visible",
+      "post_date": 1332193528,
+      "profile_user_id": 6,
+      "url_path": "/profile-posts/188/",
+      "user_id": 6,
+      "username": "frost444",
+      "view_url": "https://torrentpier.com/profile-posts/188/"
+    }
+  ],
+  "wall_total": 1
 }

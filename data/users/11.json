@@ -18,5 +18,39 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "XANDER-CAGE",
-  "view_url": "https://torrentpier.com/members/xander-cage.11/"
+  "view_url": "https://torrentpier.com/members/xander-cage.11/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 212,
+      "last_comment_date": 0,
+      "message_parsed": "дайте мне свой маил",
+      "message_state": "visible",
+      "post_date": 1334562201,
+      "profile_user_id": 11,
+      "url_path": "/profile-posts/212/",
+      "user_id": 763,
+      "username": "BEST^MOD",
+      "view_url": "https://torrentpier.com/profile-posts/212/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 211,
+      "last_comment_date": 0,
+      "message_parsed": "здравствуйте я хочу установит чат в центре пожалуйста дайте мод без багов предлагаю работать в команде на моем сайте",
+      "message_state": "visible",
+      "post_date": 1334562129,
+      "profile_user_id": 11,
+      "url_path": "/profile-posts/211/",
+      "user_id": 763,
+      "username": "BEST^MOD",
+      "view_url": "https://torrentpier.com/profile-posts/211/"
+    }
+  ],
+  "wall_total": 2
 }

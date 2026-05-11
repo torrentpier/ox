@@ -11,12 +11,56 @@
   "is_admin": false,
   "is_moderator": false,
   "is_staff": false,
-  "last_activity": 1778500687,
+  "last_activity": 1778518569,
   "message_count": 153,
   "register_date": 1482933067,
   "secondary_group_ids": [],
   "user_group_id": 2,
   "user_title": "User",
   "username": "DimaUZB2001",
-  "view_url": "https://torrentpier.com/members/dimauzb2001.7621/"
+  "view_url": "https://torrentpier.com/members/dimauzb2001.7621/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 1,
+      "comments": [
+        {
+          "comment_date": 1736515935,
+          "id": 211,
+          "message_parsed": "Привет. Каком стране живёте? Если в России то это РКН творит всякую херню.",
+          "message_state": "visible",
+          "profile_post_id": 921,
+          "user_id": 7621,
+          "username": "DimaUZB2001"
+        }
+      ],
+      "first_comment_date": 1736515935,
+      "id": 921,
+      "last_comment_date": 1736515935,
+      "message_parsed": "<img src=\"https://torrentpier.com/attachments/6316/\" alt=\"2025-01-10_15-03-10.webp\" />",
+      "message_state": "visible",
+      "post_date": 1736510653,
+      "profile_user_id": 7621,
+      "url_path": "/profile-posts/921/",
+      "user_id": 6370,
+      "username": "sхс",
+      "view_url": "https://torrentpier.com/profile-posts/921/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 803,
+      "last_comment_date": 0,
+      "message_parsed": "тлд",
+      "message_state": "visible",
+      "post_date": 1549293118,
+      "profile_user_id": 7621,
+      "url_path": "/profile-posts/803/",
+      "user_id": 7621,
+      "username": "DimaUZB2001",
+      "view_url": "https://torrentpier.com/profile-posts/803/"
+    }
+  ],
+  "wall_total": 2
 }

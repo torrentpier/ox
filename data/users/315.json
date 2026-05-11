@@ -17,5 +17,24 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "InKomen",
-  "view_url": "https://torrentpier.com/members/inkomen.315/"
+  "view_url": "https://torrentpier.com/members/inkomen.315/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 66,
+      "last_comment_date": 0,
+      "message_parsed": "У тебя есть скайп ?Я тебе в онлайне покажу проблемму !Если не против",
+      "message_state": "visible",
+      "post_date": 1320668719,
+      "profile_user_id": 315,
+      "url_path": "/profile-posts/66/",
+      "user_id": 375,
+      "username": "Dmitry Salnikov",
+      "view_url": "https://torrentpier.com/profile-posts/66/"
+    }
+  ],
+  "wall_total": 1
 }

@@ -17,5 +17,69 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "nasa32",
-  "view_url": "https://torrentpier.com/members/nasa32.3322/"
+  "view_url": "https://torrentpier.com/members/nasa32.3322/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 297,
+      "last_comment_date": 0,
+      "message_parsed": "что то я тебе написать не могу ((",
+      "message_state": "visible",
+      "post_date": 1356268951,
+      "profile_user_id": 3322,
+      "url_path": "/profile-posts/297/",
+      "user_id": 1186,
+      "username": "macfleg",
+      "view_url": "https://torrentpier.com/profile-posts/297/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 296,
+      "last_comment_date": 0,
+      "message_parsed": "Как узнать ад форума?",
+      "message_state": "visible",
+      "post_date": 1356267580,
+      "profile_user_id": 3322,
+      "url_path": "/profile-posts/296/",
+      "user_id": 3302,
+      "username": "Данил Мудриченко",
+      "view_url": "https://torrentpier.com/profile-posts/296/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 294,
+      "last_comment_date": 0,
+      "message_parsed": "Привет как ты понял как сделать новости сайта?",
+      "message_state": "visible",
+      "post_date": 1356267094,
+      "profile_user_id": 3322,
+      "url_path": "/profile-posts/294/",
+      "user_id": 3302,
+      "username": "Данил Мудриченко",
+      "view_url": "https://torrentpier.com/profile-posts/294/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 293,
+      "last_comment_date": 0,
+      "message_parsed": "Привет как ты понял как сделать новости сайта?",
+      "message_state": "visible",
+      "post_date": 1356266969,
+      "profile_user_id": 3322,
+      "url_path": "/profile-posts/293/",
+      "user_id": 3302,
+      "username": "Данил Мудриченко",
+      "view_url": "https://torrentpier.com/profile-posts/293/"
+    }
+  ],
+  "wall_total": 4
 }

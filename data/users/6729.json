@@ -18,5 +18,34 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "WinWoolF",
-  "view_url": "https://torrentpier.com/members/winwoolf.6729/"
+  "view_url": "https://torrentpier.com/members/winwoolf.6729/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 1,
+      "comments": [
+        {
+          "comment_date": 1490514245,
+          "id": 202,
+          "message_parsed": "давно продан",
+          "message_state": "visible",
+          "profile_post_id": 773,
+          "user_id": 6729,
+          "username": "WinWoolF"
+        }
+      ],
+      "first_comment_date": 1490514245,
+      "id": 773,
+      "last_comment_date": 1490514245,
+      "message_parsed": "Здравствуйте, трекер <a href=\"http://karafilm.ru/\" class=\"link link--external\" rel=\"nofollow\" target=\"_blank\">http://karafilm.ru/</a> еще продается?",
+      "message_state": "visible",
+      "post_date": 1486643622,
+      "profile_user_id": 6729,
+      "url_path": "/profile-posts/773/",
+      "user_id": 5670,
+      "username": "titann",
+      "view_url": "https://torrentpier.com/profile-posts/773/"
+    }
+  ],
+  "wall_total": 1
 }

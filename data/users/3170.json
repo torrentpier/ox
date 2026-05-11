@@ -17,5 +17,146 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "drew",
-  "view_url": "https://torrentpier.com/members/drew.3170/"
+  "view_url": "https://torrentpier.com/members/drew.3170/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 3,
+      "comments": [
+        {
+          "comment_date": 1490695304,
+          "id": 203,
+          "message_parsed": "Да, пиши в лс",
+          "message_state": "visible",
+          "profile_post_id": 779,
+          "user_id": 3170,
+          "username": "drew"
+        },
+        {
+          "comment_date": 1490711430,
+          "id": 204,
+          "message_parsed": "так не могу найти где тут лс. это значит &quot;начать переписку&quot;?",
+          "message_state": "visible",
+          "profile_post_id": 779,
+          "user_id": 6110,
+          "username": "M0p94ok"
+        },
+        {
+          "comment_date": 1490712718,
+          "id": 205,
+          "message_parsed": "Да",
+          "message_state": "visible",
+          "profile_post_id": 779,
+          "user_id": 3170,
+          "username": "drew"
+        }
+      ],
+      "first_comment_date": 1490695304,
+      "id": 779,
+      "last_comment_date": 1490712718,
+      "message_parsed": "Добрый день! Ваше предложение по поводу мода &quot;Инавйты&quot; ещё актуально?",
+      "message_state": "visible",
+      "post_date": 1490690569,
+      "profile_user_id": 3170,
+      "url_path": "/profile-posts/779/",
+      "user_id": 6110,
+      "username": "M0p94ok",
+      "view_url": "https://torrentpier.com/profile-posts/779/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 540,
+      "last_comment_date": 0,
+      "message_parsed": "Привет можешь помочь?",
+      "message_state": "visible",
+      "post_date": 1391542351,
+      "profile_user_id": 3170,
+      "url_path": "/profile-posts/540/",
+      "user_id": 5072,
+      "username": "Shilov",
+      "view_url": "https://torrentpier.com/profile-posts/540/"
+    },
+    {
+      "comment_count": 2,
+      "comments": [
+        {
+          "comment_date": 1380135742,
+          "id": 70,
+          "message_parsed": "ошибка движка. все работает нормально.",
+          "message_state": "visible",
+          "profile_post_id": 520,
+          "user_id": 3170,
+          "username": "drew"
+        },
+        {
+          "comment_date": 1380138235,
+          "id": 71,
+          "message_parsed": "нотис из-за этой строки кода: &#039;S_PEGI_CHECKED&#039; =&gt; build_select(&#039;pegi&#039;, $bb_cfg[&#039;pegi&#039;], $pegi), в posting.php. а так, да, работает все четко!",
+          "message_state": "visible",
+          "profile_post_id": 520,
+          "user_id": 814,
+          "username": "cc20net"
+        }
+      ],
+      "first_comment_date": 1380135742,
+      "id": 520,
+      "last_comment_date": 1380138235,
+      "message_parsed": "Доброго времени суток!<br />\n<a href=\"http://torrentpier.com/threads/%D0%92%D0%BE%D0%B7%D1%80%D0%B0%D1%81%D1%82%D0%BD%D1%8B%D0%B5-%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B2-%D1%80%D0%B5%D0%BB%D0%B8%D0%B7%D0%B0%D1%85.15135/\" class=\"link link--internal\">http://torrentpier.com/threads/%D0%92%D0%BE%D0%B7%D1%80%D0%B0%D1%81%D1%82%D0%BD%D1%8B%D0%B5-%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B2-%D1%80%D0%B5%D0%BB%D0%B8%D0%B7%D0%B0%D1%85.15135/</a> (см. последнее мое сообщение)<br />\nНе могу понять из-за чего вылазит нотис.<br />\nПрошу помощи. Заранее благодарен!",
+      "message_state": "visible",
+      "post_date": 1380114998,
+      "profile_user_id": 3170,
+      "url_path": "/profile-posts/520/",
+      "user_id": 814,
+      "username": "cc20net",
+      "view_url": "https://torrentpier.com/profile-posts/520/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 414,
+      "last_comment_date": 0,
+      "message_parsed": "пиши kenny",
+      "message_state": "visible",
+      "post_date": 1361896096,
+      "profile_user_id": 3170,
+      "url_path": "/profile-posts/414/",
+      "user_id": 3170,
+      "username": "drew",
+      "view_url": "https://torrentpier.com/profile-posts/414/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 409,
+      "last_comment_date": 0,
+      "message_parsed": "Api - регистрация через соц сети, постинг новостей.",
+      "message_state": "visible",
+      "post_date": 1361523331,
+      "profile_user_id": 3170,
+      "url_path": "/profile-posts/409/",
+      "user_id": 3170,
+      "username": "drew",
+      "view_url": "https://torrentpier.com/profile-posts/409/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 358,
+      "last_comment_date": 0,
+      "message_parsed": "О_о",
+      "message_state": "visible",
+      "post_date": 1358741784,
+      "profile_user_id": 3170,
+      "url_path": "/profile-posts/358/",
+      "user_id": 3170,
+      "username": "drew",
+      "view_url": "https://torrentpier.com/profile-posts/358/"
+    }
+  ],
+  "wall_total": 6
 }

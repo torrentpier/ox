@@ -20,5 +20,39 @@
   "user_group_id": 2,
   "user_title": "Blocked",
   "username": "makar",
-  "view_url": "https://torrentpier.com/members/makar.1069/"
+  "view_url": "https://torrentpier.com/members/makar.1069/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 593,
+      "last_comment_date": 0,
+      "message_parsed": "Хотел бы купить шаблон, но не знаю пойдет он для  версии r600",
+      "message_state": "visible",
+      "post_date": 1416404710,
+      "profile_user_id": 1069,
+      "url_path": "/profile-posts/593/",
+      "user_id": 5464,
+      "username": "Stanislav Derevyakin",
+      "view_url": "https://torrentpier.com/profile-posts/593/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 579,
+      "last_comment_date": 0,
+      "message_parsed": "Добрый день я хотел бы приобрести у вас шаблон",
+      "message_state": "visible",
+      "post_date": 1409315207,
+      "profile_user_id": 1069,
+      "url_path": "/profile-posts/579/",
+      "user_id": 1567,
+      "username": "Kolya",
+      "view_url": "https://torrentpier.com/profile-posts/579/"
+    }
+  ],
+  "wall_total": 2
 }

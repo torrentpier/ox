@@ -17,5 +17,24 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "BEST^MOD",
-  "view_url": "https://torrentpier.com/members/best-mod.763/"
+  "view_url": "https://torrentpier.com/members/best-mod.763/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 241,
+      "last_comment_date": 0,
+      "message_parsed": "спасибо создателям движка torrentpier.com",
+      "message_state": "visible",
+      "post_date": 1338978425,
+      "profile_user_id": 763,
+      "url_path": "/profile-posts/241/",
+      "user_id": 763,
+      "username": "BEST^MOD",
+      "view_url": "https://torrentpier.com/profile-posts/241/"
+    }
+  ],
+  "wall_total": 1
 }

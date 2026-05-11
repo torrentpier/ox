@@ -18,5 +18,39 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "Андрей Семериков",
-  "view_url": "https://torrentpier.com/members/andrej-semerikov.4492/"
+  "view_url": "https://torrentpier.com/members/andrej-semerikov.4492/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 563,
+      "last_comment_date": 0,
+      "message_parsed": "Gordon_freeman_hev",
+      "message_state": "visible",
+      "post_date": 1401822154,
+      "profile_user_id": 4492,
+      "url_path": "/profile-posts/563/",
+      "user_id": 5378,
+      "username": "Виталий Федоров",
+      "view_url": "https://torrentpier.com/profile-posts/563/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 560,
+      "last_comment_date": 0,
+      "message_parsed": "пиши мне в скайп: yastreb87",
+      "message_state": "visible",
+      "post_date": 1399666366,
+      "profile_user_id": 4492,
+      "url_path": "/profile-posts/560/",
+      "user_id": 5310,
+      "username": "radio87",
+      "view_url": "https://torrentpier.com/profile-posts/560/"
+    }
+  ],
+  "wall_total": 2
 }

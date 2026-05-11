@@ -18,5 +18,54 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "ChihPyh",
-  "view_url": "https://torrentpier.com/members/chihpyh.71/"
+  "view_url": "https://torrentpier.com/members/chihpyh.71/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 511,
+      "last_comment_date": 0,
+      "message_parsed": "Свяжитесь, пожалуйста со мной, есть вопросы: ajavrik(собака)mail.ru. Только напомните мне, что вы с Торрентпьера)))",
+      "message_state": "visible",
+      "post_date": 1375433989,
+      "profile_user_id": 71,
+      "url_path": "/profile-posts/511/",
+      "user_id": 4418,
+      "username": "Rайдо",
+      "view_url": "https://torrentpier.com/profile-posts/511/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 401,
+      "last_comment_date": 0,
+      "message_parsed": "Добрый день, darkmod посоветовал обратиться к Вам по вопросу разработки шаблона к движку торрентпир",
+      "message_state": "visible",
+      "post_date": 1360751004,
+      "profile_user_id": 71,
+      "url_path": "/profile-posts/401/",
+      "user_id": 4017,
+      "username": "panv",
+      "view_url": "https://torrentpier.com/profile-posts/401/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 117,
+      "last_comment_date": 0,
+      "message_parsed": "Очень нужен ваш шаблон адаптированный под версию не ниже 336, а еще лучше под 340. Прошу ответить в ICQ 8710360",
+      "message_state": "visible",
+      "post_date": 1326187200,
+      "profile_user_id": 71,
+      "url_path": "/profile-posts/117/",
+      "user_id": 0,
+      "username": "allano",
+      "view_url": "https://torrentpier.com/profile-posts/117/"
+    }
+  ],
+  "wall_total": 3
 }

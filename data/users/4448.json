@@ -18,5 +18,34 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "Джая Джаганнатха",
-  "view_url": "https://torrentpier.com/members/dzaa-dzagannatha.4448/"
+  "view_url": "https://torrentpier.com/members/dzaa-dzagannatha.4448/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 1,
+      "comments": [
+        {
+          "comment_date": 1420814696,
+          "id": 101,
+          "message_parsed": "Форум для чего? Все вопросы там!",
+          "message_state": "visible",
+          "profile_post_id": 617,
+          "user_id": 1,
+          "username": "Exile"
+        }
+      ],
+      "first_comment_date": 1420814696,
+      "id": 617,
+      "last_comment_date": 1420814696,
+      "message_parsed": "подскажите почему кол-во &quot;скачан раз&quot; не обновляется ,статистика сидов показывает",
+      "message_state": "visible",
+      "post_date": 1420755936,
+      "profile_user_id": 4448,
+      "url_path": "/profile-posts/617/",
+      "user_id": 5875,
+      "username": "Nswers",
+      "view_url": "https://torrentpier.com/profile-posts/617/"
+    }
+  ],
+  "wall_total": 1
 }

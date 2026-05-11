@@ -18,5 +18,24 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "S.T.@.L.K.E.R.",
-  "view_url": "https://torrentpier.com/members/s-t-l-k-e-r.435/"
+  "view_url": "https://torrentpier.com/members/s-t-l-k-e-r.435/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 103,
+      "last_comment_date": 0,
+      "message_parsed": "hi",
+      "message_state": "visible",
+      "post_date": 1324696809,
+      "profile_user_id": 435,
+      "url_path": "/profile-posts/103/",
+      "user_id": 0,
+      "username": "Eee",
+      "view_url": "https://torrentpier.com/profile-posts/103/"
+    }
+  ],
+  "wall_total": 1
 }

@@ -20,5 +20,39 @@
   "user_group_id": 3,
   "user_title": "Administrator",
   "username": "Conteo",
-  "view_url": "https://torrentpier.com/members/conteo.1546/"
+  "view_url": "https://torrentpier.com/members/conteo.1546/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 719,
+      "last_comment_date": 0,
+      "message_parsed": "New Year",
+      "message_state": "visible",
+      "post_date": 1451636511,
+      "profile_user_id": 1546,
+      "url_path": "/profile-posts/719/",
+      "user_id": 1546,
+      "username": "Conteo",
+      "view_url": "https://torrentpier.com/profile-posts/719/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 718,
+      "last_comment_date": 0,
+      "message_parsed": "Всех с наступающим Новым 2016 Годом!!!",
+      "message_state": "visible",
+      "post_date": 1451592441,
+      "profile_user_id": 1546,
+      "url_path": "/profile-posts/718/",
+      "user_id": 1546,
+      "username": "Conteo",
+      "view_url": "https://torrentpier.com/profile-posts/718/"
+    }
+  ],
+  "wall_total": 2
 }

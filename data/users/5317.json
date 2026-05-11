@@ -18,5 +18,24 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "Вова",
-  "view_url": "https://torrentpier.com/members/vova.5317/"
+  "view_url": "https://torrentpier.com/members/vova.5317/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 569,
+      "last_comment_date": 0,
+      "message_parsed": "дарова у тя есть движок сайт",
+      "message_state": "visible",
+      "post_date": 1404660960,
+      "profile_user_id": 5317,
+      "url_path": "/profile-posts/569/",
+      "user_id": 5225,
+      "username": "Sky",
+      "view_url": "https://torrentpier.com/profile-posts/569/"
+    }
+  ],
+  "wall_total": 1
 }

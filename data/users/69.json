@@ -18,5 +18,134 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "iFlooder",
-  "view_url": "https://torrentpier.com/members/iflooder.69/"
+  "view_url": "https://torrentpier.com/members/iflooder.69/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 514,
+      "last_comment_date": 0,
+      "message_parsed": "Далеко забытое старое.. Вернемся)",
+      "message_state": "visible",
+      "post_date": 1376078815,
+      "profile_user_id": 69,
+      "url_path": "/profile-posts/514/",
+      "user_id": 69,
+      "username": "iFlooder",
+      "view_url": "https://torrentpier.com/profile-posts/514/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 353,
+      "last_comment_date": 0,
+      "message_parsed": "Турум пум пум =",
+      "message_state": "visible",
+      "post_date": 1358672406,
+      "profile_user_id": 69,
+      "url_path": "/profile-posts/353/",
+      "user_id": 69,
+      "username": "iFlooder",
+      "view_url": "https://torrentpier.com/profile-posts/353/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 330,
+      "last_comment_date": 0,
+      "message_parsed": "Троллинг статусами 😀",
+      "message_state": "visible",
+      "post_date": 1358447463,
+      "profile_user_id": 69,
+      "url_path": "/profile-posts/330/",
+      "user_id": 69,
+      "username": "iFlooder",
+      "view_url": "https://torrentpier.com/profile-posts/330/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 322,
+      "last_comment_date": 0,
+      "message_parsed": "Exile, не, ну сам посмотри, лучше бы было изменение статуса в профиле только 🙂",
+      "message_state": "visible",
+      "post_date": 1358441516,
+      "profile_user_id": 69,
+      "url_path": "/profile-posts/322/",
+      "user_id": 69,
+      "username": "iFlooder",
+      "view_url": "https://torrentpier.com/profile-posts/322/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 317,
+      "last_comment_date": 0,
+      "message_parsed": "Мне кажется, что новая фича статуса, будет чем то вроде чата 😀",
+      "message_state": "visible",
+      "post_date": 1358440694,
+      "profile_user_id": 69,
+      "url_path": "/profile-posts/317/",
+      "user_id": 69,
+      "username": "iFlooder",
+      "view_url": "https://torrentpier.com/profile-posts/317/"
+    },
+    {
+      "comment_count": 1,
+      "comments": [
+        {
+          "comment_date": 1356346571,
+          "id": 36,
+          "message_parsed": "Нет, не могу",
+          "message_state": "visible",
+          "profile_post_id": 301,
+          "user_id": 69,
+          "username": "iFlooder"
+        }
+      ],
+      "first_comment_date": 1356346571,
+      "id": 301,
+      "last_comment_date": 1356346571,
+      "message_parsed": "Привет можешь мне расказать где найти лычки дкя трекера и желательно в psd",
+      "message_state": "visible",
+      "post_date": 1356345310,
+      "profile_user_id": 69,
+      "url_path": "/profile-posts/301/",
+      "user_id": 3302,
+      "username": "Данил Мудриченко",
+      "view_url": "https://torrentpier.com/profile-posts/301/"
+    },
+    {
+      "comment_count": 1,
+      "comments": [
+        {
+          "comment_date": 1347026178,
+          "id": 30,
+          "message_parsed": "А я причем?",
+          "message_state": "visible",
+          "profile_post_id": 261,
+          "user_id": 69,
+          "username": "iFlooder"
+        }
+      ],
+      "first_comment_date": 1347026178,
+      "id": 261,
+      "last_comment_date": 1347026178,
+      "message_parsed": "У меня в ленте новинок баг или ошбика незнаю не выводит постер!!!",
+      "message_state": "visible",
+      "post_date": 1346475240,
+      "profile_user_id": 69,
+      "url_path": "/profile-posts/261/",
+      "user_id": 1567,
+      "username": "Kolya",
+      "view_url": "https://torrentpier.com/profile-posts/261/"
+    }
+  ],
+  "wall_total": 7
 }

@@ -18,5 +18,39 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "Alex Kur",
-  "view_url": "https://torrentpier.com/members/alex-kur.4510/"
+  "view_url": "https://torrentpier.com/members/alex-kur.4510/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 748,
+      "last_comment_date": 0,
+      "message_parsed": "Work hard die young",
+      "message_state": "visible",
+      "post_date": 1473957435,
+      "profile_user_id": 4510,
+      "url_path": "/profile-posts/748/",
+      "user_id": 4510,
+      "username": "Alex Kur",
+      "view_url": "https://torrentpier.com/profile-posts/748/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 549,
+      "last_comment_date": 0,
+      "message_parsed": "Hey, la-la-ley",
+      "message_state": "visible",
+      "post_date": 1394465288,
+      "profile_user_id": 4510,
+      "url_path": "/profile-posts/549/",
+      "user_id": 4510,
+      "username": "Alex Kur",
+      "view_url": "https://torrentpier.com/profile-posts/549/"
+    }
+  ],
+  "wall_total": 2
 }

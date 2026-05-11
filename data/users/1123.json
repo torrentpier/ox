@@ -17,5 +17,24 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "raptoringin",
-  "view_url": "https://torrentpier.com/members/raptoringin.1123/"
+  "view_url": "https://torrentpier.com/members/raptoringin.1123/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 197,
+      "last_comment_date": 0,
+      "message_parsed": "Могу свой предложить движок для совмесной прокрутке <br />\nСтоят все моды с етого форума<br />\nРабота стабильная проверено на локалке",
+      "message_state": "visible",
+      "post_date": 1333304791,
+      "profile_user_id": 1123,
+      "url_path": "/profile-posts/197/",
+      "user_id": 0,
+      "username": "T_O_M",
+      "view_url": "https://torrentpier.com/profile-posts/197/"
+    }
+  ],
+  "wall_total": 1
 }

@@ -20,5 +20,39 @@
   "user_group_id": 3,
   "user_title": "Разработчик",
   "username": "belomaxorka",
-  "view_url": "https://torrentpier.com/members/belomaxorka.10614/"
+  "view_url": "https://torrentpier.com/members/belomaxorka.10614/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 920,
+      "last_comment_date": 0,
+      "message_parsed": "привет вот проверь что выдает ошибку.<br />\n\n\t<div data-template-name=\"public:bb_code_tag_url_unfurl\">\n\t\t<a href=\"http://h984114u.beget.tech/\"\n\t\t\tclass=\"link link--external\"\n\t\t\ttarget=\"_blank\"\n\t\t\trel=\"nofollow ugc noopener\"\n\t\t\tdata-proxy-href=\"\">\n\t\t\thttp://h984114u.beget.tech/\n\t\t</a>\n\t</div>",
+      "message_state": "visible",
+      "post_date": 1732894372,
+      "profile_user_id": 10614,
+      "url_path": "/profile-posts/920/",
+      "user_id": 8837,
+      "username": "K15",
+      "view_url": "https://torrentpier.com/profile-posts/920/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 917,
+      "last_comment_date": 0,
+      "message_parsed": "Добавлена долгожданная поддержка BitTorrent v2! 🥳",
+      "message_state": "visible",
+      "post_date": 1694657653,
+      "profile_user_id": 10614,
+      "url_path": "/profile-posts/917/",
+      "user_id": 10614,
+      "username": "belomaxorka",
+      "view_url": "https://torrentpier.com/profile-posts/917/"
+    }
+  ],
+  "wall_total": 2
 }

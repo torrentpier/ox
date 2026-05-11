@@ -18,5 +18,137 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "dredd",
-  "view_url": "https://torrentpier.com/members/dredd.2684/"
+  "view_url": "https://torrentpier.com/members/dredd.2684/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 2,
+      "comments": [
+        {
+          "comment_date": 1443896495,
+          "id": 190,
+          "message_parsed": "Здравствуйте) Обязательно посмотрю маленько позже)",
+          "message_state": "visible",
+          "profile_post_id": 691,
+          "user_id": 2684,
+          "username": "dredd"
+        },
+        {
+          "comment_date": 1443931814,
+          "id": 191,
+          "message_parsed": "Спасибо большое, буду ждать! 🙂",
+          "message_state": "visible",
+          "profile_post_id": 691,
+          "user_id": 6340,
+          "username": "baxa73"
+        }
+      ],
+      "first_comment_date": 1443896495,
+      "id": 691,
+      "last_comment_date": 1443931814,
+      "message_parsed": "Здравствуйте, можете подсказать как можно включить поддержку <img src=\"http://и [thumb] в чате Лога? Заранее благодарю за помощь.\" alt=\"\" />",
+      "message_state": "visible",
+      "post_date": 1443869072,
+      "profile_user_id": 2684,
+      "url_path": "/profile-posts/691/",
+      "user_id": 6340,
+      "username": "baxa73",
+      "view_url": "https://torrentpier.com/profile-posts/691/"
+    },
+    {
+      "comment_count": 2,
+      "comments": [
+        {
+          "comment_date": 1361791097,
+          "id": 49,
+          "message_parsed": "Привет) Та там дело двух минут) Вечерком отпишу..))",
+          "message_state": "visible",
+          "profile_post_id": 412,
+          "user_id": 2684,
+          "username": "dredd"
+        },
+        {
+          "comment_date": 1361792113,
+          "id": 50,
+          "message_parsed": "Огромное спасибо)",
+          "message_state": "visible",
+          "profile_post_id": 412,
+          "user_id": 3906,
+          "username": "T-John"
+        }
+      ],
+      "first_comment_date": 1361791097,
+      "id": 412,
+      "last_comment_date": 1361792113,
+      "message_parsed": "Здарова) вчера в теме нашел где ты помог вывести ранг на главную, не поможешь с выводом картинок ранга?",
+      "message_state": "visible",
+      "post_date": 1361754652,
+      "profile_user_id": 2684,
+      "url_path": "/profile-posts/412/",
+      "user_id": 3906,
+      "username": "T-John",
+      "view_url": "https://torrentpier.com/profile-posts/412/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 360,
+      "last_comment_date": 0,
+      "message_parsed": "kenny, 😀",
+      "message_state": "visible",
+      "post_date": 1358764586,
+      "profile_user_id": 2684,
+      "url_path": "/profile-posts/360/",
+      "user_id": 2684,
+      "username": "dredd",
+      "view_url": "https://torrentpier.com/profile-posts/360/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 355,
+      "last_comment_date": 0,
+      "message_parsed": "Э рон дон дон)))",
+      "message_state": "visible",
+      "post_date": 1358683523,
+      "profile_user_id": 2684,
+      "url_path": "/profile-posts/355/",
+      "user_id": 2684,
+      "username": "dredd",
+      "view_url": "https://torrentpier.com/profile-posts/355/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 350,
+      "last_comment_date": 0,
+      "message_parsed": "привет",
+      "message_state": "visible",
+      "post_date": 1358667090,
+      "profile_user_id": 2684,
+      "url_path": "/profile-posts/350/",
+      "user_id": 0,
+      "username": "carbon",
+      "view_url": "https://torrentpier.com/profile-posts/350/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 339,
+      "last_comment_date": 0,
+      "message_parsed": "Что за последние статусы?))",
+      "message_state": "visible",
+      "post_date": 1358493786,
+      "profile_user_id": 2684,
+      "url_path": "/profile-posts/339/",
+      "user_id": 2684,
+      "username": "dredd",
+      "view_url": "https://torrentpier.com/profile-posts/339/"
+    }
+  ],
+  "wall_total": 6
 }

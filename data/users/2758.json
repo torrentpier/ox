@@ -18,5 +18,34 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "chigolberi",
-  "view_url": "https://torrentpier.com/members/chigolberi.2758/"
+  "view_url": "https://torrentpier.com/members/chigolberi.2758/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 1,
+      "comments": [
+        {
+          "comment_date": 1426499559,
+          "id": 154,
+          "message_parsed": "А при чем тут пользователь, который на форуме больше года не был? Вопрос в рамках форума задать не пробовали?",
+          "message_state": "visible",
+          "profile_post_id": 654,
+          "user_id": 1,
+          "username": "Exile"
+        }
+      ],
+      "first_comment_date": 1426499559,
+      "id": 654,
+      "last_comment_date": 1426499559,
+      "message_parsed": "Привет ты решал проблему там Invalid info_hash ? подскажи пожалусто путь до Добавил в php.ini  зарание спасибо",
+      "message_state": "visible",
+      "post_date": 1426493090,
+      "profile_user_id": 2758,
+      "url_path": "/profile-posts/654/",
+      "user_id": 6021,
+      "username": "RUTOR",
+      "view_url": "https://torrentpier.com/profile-posts/654/"
+    }
+  ],
+  "wall_total": 1
 }

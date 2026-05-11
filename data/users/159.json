@@ -17,5 +17,34 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "regenun",
-  "view_url": "https://torrentpier.com/members/regenun.159/"
+  "view_url": "https://torrentpier.com/members/regenun.159/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 1,
+      "comments": [
+        {
+          "comment_date": 1329048586,
+          "id": 13,
+          "message_parsed": "смотря какой мод неправельно поставил<br />\nповерь это из за мода)",
+          "message_state": "visible",
+          "profile_post_id": 148,
+          "user_id": 159,
+          "username": "regenun"
+        }
+      ],
+      "first_comment_date": 1329048586,
+      "id": 148,
+      "last_comment_date": 1329048586,
+      "message_parsed": "Торрент неверно закодирован, как решили проблему? как заставить торенты кодироваться в ansi, а не utf-8?",
+      "message_state": "visible",
+      "post_date": 1328935052,
+      "profile_user_id": 159,
+      "url_path": "/profile-posts/148/",
+      "user_id": 891,
+      "username": "dredd21",
+      "view_url": "https://torrentpier.com/profile-posts/148/"
+    }
+  ],
+  "wall_total": 1
 }

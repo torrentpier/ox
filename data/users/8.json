@@ -18,5 +18,34 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "fly_indiz",
-  "view_url": "https://torrentpier.com/members/fly_indiz.8/"
+  "view_url": "https://torrentpier.com/members/fly_indiz.8/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 1,
+      "comments": [
+        {
+          "comment_date": 1325797938,
+          "id": 3,
+          "message_parsed": "Денег не хватит на мод.",
+          "message_state": "visible",
+          "profile_post_id": 100,
+          "user_id": 21,
+          "username": "RomM1"
+        }
+      ],
+      "first_comment_date": 1325797938,
+      "id": 100,
+      "last_comment_date": 1325797938,
+      "message_parsed": "привет а у тебя мод мультитрекера есть",
+      "message_state": "visible",
+      "post_date": 1324582969,
+      "profile_user_id": 8,
+      "url_path": "/profile-posts/100/",
+      "user_id": 605,
+      "username": "PITBULL",
+      "view_url": "https://torrentpier.com/profile-posts/100/"
+    }
+  ],
+  "wall_total": 1
 }

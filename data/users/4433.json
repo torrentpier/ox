@@ -17,5 +17,54 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "lEx0kz",
-  "view_url": "https://torrentpier.com/members/lex0kz.4433/"
+  "view_url": "https://torrentpier.com/members/lex0kz.4433/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 548,
+      "last_comment_date": 0,
+      "message_parsed": "работаю над api",
+      "message_state": "visible",
+      "post_date": 1394307459,
+      "profile_user_id": 4433,
+      "url_path": "/profile-posts/548/",
+      "user_id": 4433,
+      "username": "lEx0kz",
+      "view_url": "https://torrentpier.com/profile-posts/548/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 510,
+      "last_comment_date": 0,
+      "message_parsed": "как вижу, тут у многих проблемы с регулярками, обращайтесь",
+      "message_state": "visible",
+      "post_date": 1375305326,
+      "profile_user_id": 4433,
+      "url_path": "/profile-posts/510/",
+      "user_id": 4433,
+      "username": "lEx0kz",
+      "view_url": "https://torrentpier.com/profile-posts/510/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 488,
+      "last_comment_date": 0,
+      "message_parsed": "зачем микроблоги в форуме ))",
+      "message_state": "visible",
+      "post_date": 1373566951,
+      "profile_user_id": 4433,
+      "url_path": "/profile-posts/488/",
+      "user_id": 4433,
+      "username": "lEx0kz",
+      "view_url": "https://torrentpier.com/profile-posts/488/"
+    }
+  ],
+  "wall_total": 3
 }

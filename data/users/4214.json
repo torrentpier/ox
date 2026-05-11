@@ -18,5 +18,24 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "Руслан Мухамедзянов",
-  "view_url": "https://torrentpier.com/members/ruslan-muhamedzanov.4214/"
+  "view_url": "https://torrentpier.com/members/ruslan-muhamedzanov.4214/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 434,
+      "last_comment_date": 0,
+      "message_parsed": "парам пам пам",
+      "message_state": "visible",
+      "post_date": 1363383217,
+      "profile_user_id": 4214,
+      "url_path": "/profile-posts/434/",
+      "user_id": 4214,
+      "username": "Руслан Мухамедзянов",
+      "view_url": "https://torrentpier.com/profile-posts/434/"
+    }
+  ],
+  "wall_total": 1
 }

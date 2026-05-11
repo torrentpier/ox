@@ -11,12 +11,31 @@
   "is_admin": false,
   "is_moderator": false,
   "is_staff": false,
-  "last_activity": null,
+  "last_activity": 1774071175,
   "message_count": 80,
   "register_date": 1444754717,
   "secondary_group_ids": [],
   "user_group_id": 2,
   "user_title": "User",
   "username": "yulii",
-  "view_url": "https://torrentpier.com/members/yulii.6509/"
+  "view_url": "https://torrentpier.com/members/yulii.6509/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 774,
+      "last_comment_date": 0,
+      "message_parsed": "Старый новичок.",
+      "message_state": "visible",
+      "post_date": 1486820740,
+      "profile_user_id": 6509,
+      "url_path": "/profile-posts/774/",
+      "user_id": 6509,
+      "username": "yulii",
+      "view_url": "https://torrentpier.com/profile-posts/774/"
+    }
+  ],
+  "wall_total": 1
 }

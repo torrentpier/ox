@@ -17,5 +17,24 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "Данил Мудриченко",
-  "view_url": "https://torrentpier.com/members/danil-mudricenko.3302/"
+  "view_url": "https://torrentpier.com/members/danil-mudricenko.3302/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 295,
+      "last_comment_date": 0,
+      "message_parsed": "В админ панели ------ модификации--------конфигурациии-------новости сайта-----из каких форумов вывоить и пишешь ид форума",
+      "message_state": "visible",
+      "post_date": 1356267105,
+      "profile_user_id": 3302,
+      "url_path": "/profile-posts/295/",
+      "user_id": 3322,
+      "username": "nasa32",
+      "view_url": "https://torrentpier.com/profile-posts/295/"
+    }
+  ],
+  "wall_total": 1
 }

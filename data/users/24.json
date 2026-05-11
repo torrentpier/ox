@@ -17,5 +17,24 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "WinsOk",
-  "view_url": "https://torrentpier.com/members/winsok.24/"
+  "view_url": "https://torrentpier.com/members/winsok.24/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 417,
+      "last_comment_date": 0,
+      "message_parsed": "Даааа.",
+      "message_state": "visible",
+      "post_date": 1361977998,
+      "profile_user_id": 24,
+      "url_path": "/profile-posts/417/",
+      "user_id": 24,
+      "username": "WinsOk",
+      "view_url": "https://torrentpier.com/profile-posts/417/"
+    }
+  ],
+  "wall_total": 1
 }

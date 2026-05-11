@@ -18,5 +18,24 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "Заряжен Стилем",
-  "view_url": "https://torrentpier.com/members/zarazen-stilem.7431/"
+  "view_url": "https://torrentpier.com/members/zarazen-stilem.7431/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 747,
+      "last_comment_date": 0,
+      "message_parsed": "Только в перед)",
+      "message_state": "visible",
+      "post_date": 1472591382,
+      "profile_user_id": 7431,
+      "url_path": "/profile-posts/747/",
+      "user_id": 7431,
+      "username": "Заряжен Стилем",
+      "view_url": "https://torrentpier.com/profile-posts/747/"
+    }
+  ],
+  "wall_total": 1
 }

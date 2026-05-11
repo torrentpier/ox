@@ -18,5 +18,34 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "extazys",
-  "view_url": "https://torrentpier.com/members/extazys.3266/"
+  "view_url": "https://torrentpier.com/members/extazys.3266/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 1,
+      "comments": [
+        {
+          "comment_date": 1355651322,
+          "id": 34,
+          "message_parsed": "спасибо, попробуем!",
+          "message_state": "visible",
+          "profile_post_id": 292,
+          "user_id": 3266,
+          "username": "extazys"
+        }
+      ],
+      "first_comment_date": 1355651322,
+      "id": 292,
+      "last_comment_date": 1355651322,
+      "message_parsed": "extazys, создать папку и в ей  прав мышкой выбрать из меню SVN обновить .... предварительно указав путь до хранилища с версиями - <a href=\"http://hosting.agava.ru/faq/tech/tortoisesvn.shtml#fifth\" class=\"link link--external\" rel=\"nofollow\" target=\"_blank\">http://hosting.agava.ru/faq/tech/tortoisesvn.shtml#fifth</a>",
+      "message_state": "visible",
+      "post_date": 1355646480,
+      "profile_user_id": 3266,
+      "url_path": "/profile-posts/292/",
+      "user_id": 782,
+      "username": "qaqra",
+      "view_url": "https://torrentpier.com/profile-posts/292/"
+    }
+  ],
+  "wall_total": 1
 }

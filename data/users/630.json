@@ -18,5 +18,54 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "notebug",
-  "view_url": "https://torrentpier.com/members/notebug.630/"
+  "view_url": "https://torrentpier.com/members/notebug.630/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 223,
+      "last_comment_date": 0,
+      "message_parsed": "Все мы в чем-то зеленые нубы, просто у каждого своя область. Может хватит играть в незаменимость?!",
+      "message_state": "visible",
+      "post_date": 1336754143,
+      "profile_user_id": 630,
+      "url_path": "/profile-posts/223/",
+      "user_id": 630,
+      "username": "notebug",
+      "view_url": "https://torrentpier.com/profile-posts/223/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 127,
+      "last_comment_date": 0,
+      "message_parsed": "флаг тебе в руки, перо тебе в зад!",
+      "message_state": "visible",
+      "post_date": 1326734803,
+      "profile_user_id": 630,
+      "url_path": "/profile-posts/127/",
+      "user_id": 630,
+      "username": "notebug",
+      "view_url": "https://torrentpier.com/profile-posts/127/"
+    },
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 92,
+      "last_comment_date": 0,
+      "message_parsed": "Надоела эта чертова авторизация через фейсбук, нихрена не авторизовывает. А обратная связь видимо не работает...",
+      "message_state": "visible",
+      "post_date": 1323885813,
+      "profile_user_id": 630,
+      "url_path": "/profile-posts/92/",
+      "user_id": 630,
+      "username": "notebug",
+      "view_url": "https://torrentpier.com/profile-posts/92/"
+    }
+  ],
+  "wall_total": 3
 }
