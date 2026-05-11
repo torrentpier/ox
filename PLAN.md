@@ -5,11 +5,11 @@ detailed enough that work can be paused and resumed at any point — by the
 same or a different operator — without losing context. Update it after every
 meaningful decision or completed step.
 
-## Status snapshot (2026-05-11, end of session 2)
+## Status snapshot (2026-05-11, end of session 3)
 
 | # | Item                                                       | State |
 |---|------------------------------------------------------------|-------|
-|   | Branch                                                     | `feat/archive` (~30 commits, **still not pushed**) |
+|   | Branch                                                     | `feat/archive` (~35 commits, **still not pushed**) |
 |   | Repo skeleton (dirs + meta files)                          | Done (`c12ba69`) |
 |   | API surface verified (probed live)                         | Done — see "API surface" below |
 |   | Wrangler installed (Homebrew)                              | Done — 4.90.0 |
@@ -19,6 +19,8 @@ meaningful decision or completed step.
 | 1 | Exporter — `threads` stage (incl. sticky)                  | Done — **3,304 threads, 42,868 posts** after sticky fix; matches XF UI totals across container forums |
 | 1 | Exporter — `users` stage (incidental from `post.User`)     | Done — 1,096 unique authors (after sticky re-run); `UserCache.flush` now merges, preserving mirror-side fields |
 | 1 | Exporter — `resources` stage                               | Done — 230 resources, 548 versions, 511 files (62.83 MiB binary) |
+| 1 | Exporter — `profile-posts` stage                           | Done — **90 walls, 209 wall posts, 62 comments** across 1,109 users. Requires DB-side privacy reset (see "Session 3 — profile-posts ramp-up" below) because XF API enforces per-user `allow_view_profile`/`is_banned`/`visible` even for super-admin keys. |
+| 1 | Exporter — `resource-reviews` stage                        | Done — 1 text review (resource 18) + `rating_avg`/`rating_count` already present from main resources stage. |
 | 2 | Mirror — R2 bucket + custom domain (`files-ox.torrentpier.com`) | Done — bucket `torrentpier-archive`, custom domain live |
 | 2 | Mirror — Python uploader (boto3, ThreadPoolExecutor, atomic JSON update) | Done — concurrent (8 workers); full run ~13 min, sticky-delta + avatar re-up ~5 min |
 | 2 | Mirror — `r2_key` written into every JSON asset; inline dedupe map | Done — **3319 attachments / 506 hi-res avatars / 136 icons / 511 res-files / 549 inline live + 423 dead** |
@@ -33,6 +35,8 @@ meaningful decision or completed step.
 | 3 | Builder — `/members/` index + `/members/{slug}.{id}/` pages | Done — 1,096 users, paginated index |
 | 3 | Builder — `dist/CNAME`, build time pinned to `meta.exported_at` (determinism) | Done — verified byte-identical on rebuild |
 | 3 | Builder — visual refresh (XF-style cards, header + logo + nav, table posts) | Done |
+| 3 | Builder — wall section on `/members/{slug}.{id}/` + `/profile-posts/{id}/` + `/profile-posts/comments/{id}/` redirects | Done — 271 profile-post redirects, sanitiser/canonicaliser applied to wall + comment bodies |
+| 3 | Builder — resource page rating widget + reviews block       | Done — half-star widget driven by `rating_avg`, review cards under the version table |
 | 4 | Search — Python indexer (lemmatised plain text → SQL)      | Not started |
 | 4 | Search — Cloudflare D1 schema + import                     | Not started — needs `wrangler login` (this stage truly does) |
 | 4 | Search — TypeScript Worker exposing `/search?q=`           | Not started |
@@ -50,7 +54,9 @@ meaningful decision or completed step.
 - Currently in read-only / maintenance mode — snapshot is consistent
 - Volume: 3,280 visible threads, 42,623 forum posts, 1,085 posting users
   (5,194 registered total; the rest are lurkers and don't appear in the
-  archive), 230 resources
+  archive), 230 resources, 209 profile-post wall messages + 62 wall comments
+  across 90 active walls (1,109 users after wall-comment authors merged in),
+  1 textual resource review.
 
 ## Target hosts
 
@@ -84,6 +90,9 @@ meaningful decision or completed step.
 | 18 | Resource description: store `description_parsed` (rendered HTML) alongside `DescriptionAttachments` so the builder renders it the same way as posts. | Mirrors the post schema (`message_parsed` + `Attachments`); avoids re-parsing BBCode. |
 | 19 | Builder URL canonicaliser rewrites every internal link in `message_parsed` to use the **current** slug for that thread/forum id. | XF in old posts often has Cyrillic slugs (e.g. `/threads/Открытие-форума.2/`) that don't match the static files we render (`/threads/otkrytie-foruma.2/`). |
 | 20 | Builder pagination: 30 threads/page on forums, 10 posts/page on threads. Page 1 lives at the bare base URL; later pages at `/page-N/`. | Matches XF defaults exactly so XF's own internal links continue to land on the right page. |
+| 21 | Profile posts are inlined into `data/users/{id}.json` under `wall_posts[]` (with nested `comments[]`) + a top-level `wall_total` and `wall_access` marker. | Volumes are tiny (max wall = 21 posts) and the data semantically belongs to a user. Keeps file count flat. |
+| 22 | Wall export resets XF privacy gates server-side: for any user with `wall_access == 'hidden'` (XF returns 403 `member_limits_viewing_profile`) we flip `xf_user_privacy.allow_view_profile = 'everyone'` plus `xf_user.is_banned = 0` and `xf_user.visible = 1` directly in MariaDB. | XF respects per-user privacy even for super-admin API keys and the `XF-Api-Bypass-Permissions` header — there is no API-side workaround. The forum is shutting down; the user owns it and explicitly authorised the change. Backup of original rows is at `/opt/xenforo/data/xf_user{,_privacy}.backup-2026-05-11.sql` on the server. |
+| 23 | Resource reviews are exported via `/api/resource-reviews` (collection) and inlined into `data/resources/{id}.json` under `reviews[]`. | XF has no `/api/resources/{id}/reviews` endpoint. Re-running the stage rewrites every resource's `reviews` list deterministically (sorted by `rating_date, id`). |
 
 ## API surface (verified against torrentpier.com on 2026-05-11)
 
@@ -112,7 +121,14 @@ Probed with a super-user key. Endpoints not listed were not checked.
 | `GET /api/resources/categories`                         | 404    | Categories only appear embedded inside resource objects                                                |
 | `GET /api/resources/{id}/icon`                          | 404    | Icon URL lives on the `resource` object                                                                |
 | `GET /api/resources/{id}/files`                         | 404    | Files are inside `versions[].files[]`                                                                  |
-| `GET /api/profile-posts/`                               | TBD    | Not yet probed — may be how to capture the missing 2,850 messages                                      |
+| `GET /api/profile-posts/`                               | 404    | No bulk collection endpoint — list per user via `/api/users/{id}/profile-posts`                        |
+| `GET /api/users/{id}/profile-posts?page=N`              | 200/403 | Wall listing, server-fixed `per_page=10`. 403 `member_limits_viewing_profile` when the user has `allow_view_profile != 'everyone'`, `is_banned == 1`, or `visible == 0` — even for super-admin tokens with `XF-Api-Bypass-Permissions: 1`. |
+| `GET /api/profile-posts/{id}/comments?page=N`           | 200    | Comments on a profile post (when `comment_count > len(LatestComments)` in the listing).                |
+| `GET /api/profile-posts/{id}?with_comments=1`           | 200    | Single profile post detail with `ProfileUser` (wall owner) and `User` (poster). `with_comments=1` is accepted but **does not embed comments** — only `LatestComments` is ever populated.  |
+| `GET /api/resource-reviews?page=N`                      | 200    | Collection of textual reviews across all resources. `pagination.total=1` on this forum. Each review carries embedded `Resource` and `User`. |
+| `GET /api/resources/{id}/reviews`                       | 404    | No per-resource endpoint. Filter the collection client-side.                                            |
+| `GET /api/resource-updates`                             | 405    | POST-only — write API for creating update announcements. No read access.                                |
+| `GET /api/media`, `/api/featured-content`               | 404    | XF Media Gallery + Featured Content add-ons not installed.                                              |
 
 ### Schema highlights
 
@@ -170,6 +186,48 @@ XenForo REST API
 Verified request budget for the exporter: ~5,300 calls at 3 rps ≈ **30 min**
 clean run (matches what was actually observed).
 
+## Session 3 — profile-posts + resource-reviews (Done)
+
+What changed since the end-of-session-2 snapshot:
+
+- New stage `exporter/profile_posts.py` (`xf-export profile-posts`) walks every
+  `data/users/{id}.json`, fetches `/api/users/{id}/profile-posts` paginated and
+  pulls the full comment list per post via `/api/profile-posts/{id}/comments`
+  when `comment_count > len(LatestComments)`. Output is merged into the user
+  JSON under `wall_posts[]` / `wall_total` / `wall_access`. Cache flush in
+  `users.py` preserves `wall_posts`, `wall_total`, `wall_access` alongside the
+  existing `avatar_r2_key`.
+- New stage `exporter/resource_reviews.py` (`xf-export resource-reviews`)
+  walks `/api/resource-reviews`, buckets reviews by `Resource.resource_id`,
+  and rewrites every `data/resources/{id}.json` under `reviews[]`
+  (deterministically sorted).
+- The XF API enforces per-user `allow_view_profile`, `is_banned`, `visible`
+  even for super-admin keys, returning `403 member_limits_viewing_profile`
+  on 58 users. **Resolved server-side** by direct DB UPDATE: full backup at
+  `/opt/xenforo/data/xf_user{,_privacy}.backup-2026-05-11.sql`, then
+  `UPDATE xf_user_privacy SET allow_view_profile='everyone' …` and
+  `UPDATE xf_user SET is_banned=0, visible=1 …` scoped to the 58 ids. After
+  the flip, `wall_access` is `ok` for every user (1,109 of 1,109).
+- Builder now renders a wall section on `/members/{slug}.{id}/` with a 120 px
+  author column matching forum posts, sanitised `message_parsed` for both
+  wall posts and comments, anchors `#profile-post-{id}` and
+  `#profile-post-comment-{id}`. New redirect families
+  `/profile-posts/{id}/` and `/profile-posts/comments/{id}/` route XF deep
+  links to the right anchor on the right member page (271 redirects total).
+- Resource pages get a half-star rating widget driven by `rating_avg` /
+  `rating_count` and a Reviews block under the version table.
+
+Volumes:
+
+| Asset                              | Count |
+|------------------------------------|-------|
+| Wall posts (`wall_posts[]`)        | 209   |
+| Wall comments (`wall_posts[].comments[]`) | 62 |
+| Active walls (`wall_total > 0`)    | 90    |
+| Inactive walls (`wall_total == 0`) | 1,019 |
+| `wall_access == 'hidden'`          | 0 (was 58 before DB reset) |
+| Textual resource reviews           | 1     |
+
 ## Stage 1 — Exporter (Done)
 
 Code in `exporter/`:
@@ -191,8 +249,10 @@ Code in `exporter/`:
 To re-run any stage:
 ```bash
 .venv/bin/python -m exporter --data data nodes
-.venv/bin/python -m exporter --data data threads        # idempotent: skips existing /threads/{id}.json
+.venv/bin/python -m exporter --data data threads          # idempotent: skips existing /threads/{id}.json
 .venv/bin/python -m exporter --data data resources --force
+.venv/bin/python -m exporter --data data profile-posts    # idempotent: skips users where wall_total is already set
+.venv/bin/python -m exporter --data data resource-reviews # rewrites every data/resources/{id}.json reviews[]
 ```
 
 `.env` must contain `XF_API_URL`, `XF_API_KEY`, `XF_API_USER`.
@@ -493,12 +553,10 @@ manual (see "Cloudflare side" below).
 - [x] ~~Server-side size of the forum's actual attachments.~~ Measured at
   mirror time: 455 MiB across 3,197 attachments. Comfortable inside R2's
   10 GiB free tier.
-- [ ] **Profile posts / resource discussion comments not exported.** The
-  public message counter on the forum is 45,473; we captured 42,868 forum
-  posts after the sticky-thread fix. The ~2,600 delta is almost certainly
-  profile-wall comments and resource discussion threads, which live behind
-  `/api/profile-posts/` and `/api/resources/{id}/discussions/` (TBC).
-  Decide whether to add a fifth export stage.
+- [x] ~~**Profile posts / resource discussion comments not exported.**~~ Done
+  in session 3: 209 wall posts + 62 wall comments + 1 review captured. The
+  ~2,400 still-missing messages are likely deleted/moderated forum posts
+  (XF counts those in the public total) — no public API for them.
 - [ ] **YouTube iframes.** Current rewrite keeps them (relies on YouTube
   staying online). Consider downgrading to a text link "[video: …]"
   during stage 3 so the archive degrades gracefully if YouTube ever
@@ -576,14 +634,11 @@ between **manual one-shots in the Cloudflare dashboard / on GitHub** and
    - Replace the `/search/` template placeholder with a real form + JS
      calling the worker.
 
-5. **Open question: profile posts / resource discussions.** Source forum
-   says it has 45,473 messages total; this archive captured 42,868 forum
-   posts. The ~2,600 delta is almost certainly profile-wall comments and
-   resource discussion threads. Decide whether to add a fifth export stage
-   (`/api/profile-posts/` and `/api/resources/{id}/discussions/`, both
-   noted in "API surface" but not yet probed end-to-end). If yes:
-   add `exporter/profile_posts.py` + `exporter/resource_discussions.py`,
-   re-run mirror (will pick up any new attachments), re-run builder.
+5. ~~Open question: profile posts / resource discussions.~~ Done in session
+   3 — see "Session 3 — profile-posts + resource-reviews" above. Server-side
+   DB UPDATE in `xf_user_privacy` + `xf_user` to unblock 58 hidden walls is
+   reversible via `/opt/xenforo/data/xf_user{,_privacy}.backup-2026-05-11.sql`
+   if needed.
 
 6. **Revoke the super-user API key.** Final step after the cutover
    smoke-test passes. XF admin panel → API keys → revoke

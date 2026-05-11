@@ -37,3 +37,8 @@ state.json
 Thumbs.db
 .vscode/
 .idea/
+
+# Playwright debug artifacts
+.playwright-mcp/
+member-*.png
+resource-*.png

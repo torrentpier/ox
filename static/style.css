@@ -546,6 +546,70 @@ h2 { font-size: 1.15rem; margin: 1.5rem 0 0.75rem; color: var(--text-dim); font-
   overflow: hidden;
 }
 
+/* ----- Wall posts (member profile) ------------------------------------ */
+
+.wall { margin-top: 1.5rem; }
+.wall-heading { margin: 0 0 0.75rem; font-size: 1.15rem; }
+
+.wall-post {
+  background: var(--post-body-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin: 0 0 1rem;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  box-shadow: var(--card-shadow);
+}
+.wall-post .post-author { padding: 0.6rem 0.5rem; }
+.wall-post .post-author .avatar { width: 48px; height: 48px; }
+.wall-post .post-author-text strong { font-size: 0.9rem; }
+
+.wall-comments {
+  grid-column: 1 / -1;
+  list-style: none;
+  padding: 0.5rem 1rem 0.75rem 1rem;
+  margin: 0;
+  border-top: 1px solid var(--border);
+  background: var(--post-side-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.wall-comment { display: flex; gap: 0.6rem; align-items: flex-start; }
+.wall-comment .avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border-strong);
+  flex-shrink: 0;
+}
+.wall-comment-body { min-width: 0; flex: 1 1 auto; }
+.wall-comment-head {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+  font-size: 0.85rem;
+}
+.wall-comment-head time { color: var(--muted); white-space: nowrap; }
+.wall-comment-head a { color: inherit; }
+.wall-hidden { margin-top: 1.5rem; font-style: italic; }
+
+.resource-rating {
+  margin: 0.35rem 0 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+.stars { color: #d97706; letter-spacing: 0.05em; }
+.review .post-head { gap: 0.75rem; }
+.author-response {
+  border-top: 1px dashed var(--border);
+  background: var(--post-side-bg);
+}
+
 /* ----- Responsive (≤ 720px) ------------------------------------------ */
 
 @media (max-width: 720px) {
@@ -574,4 +638,6 @@ h2 { font-size: 1.15rem; margin: 1.5rem 0 0.75rem; color: var(--text-dim); font-
   }
   .forum-icon { display: none; }
   .forum-stats { justify-content: flex-start; gap: 1rem; }
+
+  .wall-post { grid-template-columns: 1fr; }
 }
