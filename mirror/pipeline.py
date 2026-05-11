@@ -3,6 +3,10 @@
 Each stage is independently idempotent — an asset with a non-empty `r2_key`
 is skipped. A second `xf-mirror upload` after a clean run is a no-op.
 
+Uploads run through a `ThreadPoolExecutor`; boto3 and httpx clients are
+thread-safe under their default pools. The `Downloader._throttle` lock keeps
+the global request rate at `MIRROR_RPS` regardless of worker count.
+
 Stages:
 - attachments      — `post.attachments[]` in `data/threads/*.json`
 - avatars          — `data/users/*.json` (downloads size "l")
@@ -18,7 +22,11 @@ import json
 import logging
 import mimetypes
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from dataclasses import dataclass, field
 from pathlib import Path
+from threading import Lock
+from typing import Any
 from urllib.parse import urlparse
 
 from bs4 import BeautifulSoup
@@ -40,6 +48,21 @@ log = logging.getLogger(__name__)
 
 INTERNAL_HOSTS = {"torrentpier.com", "www.torrentpier.com"}
 INLINE_INDEX_FILENAME = "inline_index.json"
+DEFAULT_WORKERS = 8
+
+
+@dataclass
+class UploadTask:
+    """One pending upload — enough state to write back into JSON afterwards."""
+
+    src_url: str
+    target_key: str
+    asset_ref: dict[str, Any]
+    json_path: Path
+    field_name: str = "r2_key"
+    authenticated: bool = False
+    filename_hint: str | None = None
+    kind: str = "asset"  # for stats keys
 
 
 def _safe_urlparse(url: str):
@@ -59,156 +82,237 @@ def _content_type(filename_hint: str | None, fallback: str | None) -> str:
     return fallback or "application/octet-stream"
 
 
-def _ensure_uploaded(
+def _ensure_uploaded_one(
+    task: UploadTask, r2: R2Client, dl: Downloader
+) -> tuple[UploadTask, str]:
+    """Worker function: HEAD R2; download + upload otherwise.
+
+    Returns the task plus a status string used for stats and to decide whether
+    to set `r2_key` on the asset (`ok` / `skipped` mean yes; anything else
+    means leave it untouched).
+    """
+    try:
+        if r2.head(task.target_key) is not None:
+            return task, "skipped"
+        fetched = dl.fetch(task.src_url, authenticated=task.authenticated)
+        if fetched is None:
+            return task, "transport_error"
+        body, ct, status = fetched
+        if status >= 300:
+            return task, f"http_{status}"
+        r2.put(
+            task.target_key,
+            body,
+            content_type=_content_type(task.filename_hint, ct),
+        )
+        return task, "ok"
+    except Exception as e:  # boto3 ClientError, network, etc.
+        log.warning("upload error %s -> %s: %s", task.src_url, task.target_key, e)
+        return task, "error"
+
+
+def _run_uploads(
+    tasks: list[UploadTask],
     r2: R2Client,
     dl: Downloader,
-    key: str,
-    src_url: str,
+    workers: int,
     *,
-    authenticated: bool = False,
-    filename_hint: str | None = None,
-) -> bool:
-    """Make `key` exist in the bucket. HEAD first; download + upload otherwise.
-
-    Returns True on success (object now present in R2), False on failure.
-    """
-    if r2.head(key) is not None:
-        return True
-    fetched = dl.fetch(src_url, authenticated=authenticated)
-    if fetched is None:
-        return False
-    body, ct, status = fetched
-    if status >= 300:
-        return False
-    r2.put(key, body, content_type=_content_type(filename_hint, ct))
-    return True
-
-
-def mirror_attachments(data_dir: Path, r2: R2Client, dl: Downloader) -> Counter:
+    progress_every: int = 200,
+    label: str = "upload",
+) -> tuple[Counter, list[tuple[UploadTask, str]]]:
+    """Run uploads across `workers` threads, returning stats + per-task status."""
     stats: Counter[str] = Counter()
+    results: list[tuple[UploadTask, str]] = []
+    if not tasks:
+        return stats, results
+    log.info("%s: %d tasks, %d workers", label, len(tasks), workers)
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        futures = [ex.submit(_ensure_uploaded_one, t, r2, dl) for t in tasks]
+        for i, fut in enumerate(as_completed(futures), 1):
+            task, status = fut.result()
+            stats[f"{task.kind}_{status}"] += 1
+            results.append((task, status))
+            if i % progress_every == 0 or i == len(tasks):
+                log.info("%s: %d / %d %s", label, i, len(tasks), dict(stats))
+    return stats, results
+
+
+def _apply_and_save(
+    files: dict[Path, dict[str, Any]],
+    results: list[tuple[UploadTask, str]],
+) -> int:
+    """Set `r2_key` on each successful task, atomically rewrite dirty JSON."""
+    dirty: set[Path] = set()
+    for task, status in results:
+        if status in ("ok", "skipped"):
+            task.asset_ref[task.field_name] = task.target_key
+            dirty.add(task.json_path)
+    for path in dirty:
+        write_json_atomic(path, files[path])
+    return len(dirty)
+
+
+def mirror_attachments(
+    data_dir: Path, r2: R2Client, dl: Downloader, workers: int = DEFAULT_WORKERS
+) -> Counter:
     paths = sorted((data_dir / "threads").glob("*.json"))
-    for i, path in enumerate(paths, 1):
+    files: dict[Path, dict[str, Any]] = {}
+    tasks: list[UploadTask] = []
+    pre: Counter[str] = Counter()
+    for path in paths:
         data = json.loads(path.read_text(encoding="utf-8"))
-        dirty = False
+        files[path] = data
         for post in data.get("posts") or []:
             for att in post.get("attachments") or []:
                 if att.get("r2_key"):
-                    stats["attachment_skipped"] += 1
+                    pre["attachment_already_done"] += 1
                     continue
                 src = att.get("src_url")
                 if not src:
-                    stats["attachment_no_src"] += 1
+                    pre["attachment_no_src"] += 1
                     continue
-                key = attachment_key(
-                    att["id"], att.get("filename") or f"{att['id']}.bin"
+                tasks.append(
+                    UploadTask(
+                        src_url=src,
+                        target_key=attachment_key(
+                            att["id"], att.get("filename") or f"{att['id']}.bin"
+                        ),
+                        asset_ref=att,
+                        json_path=path,
+                        filename_hint=att.get("filename"),
+                        kind="attachment",
+                    )
                 )
-                if _ensure_uploaded(
-                    r2, dl, key, src, filename_hint=att.get("filename")
-                ):
-                    att["r2_key"] = key
-                    dirty = True
-                    stats["attachment_ok"] += 1
-                else:
-                    stats["attachment_failed"] += 1
-        if dirty:
-            write_json_atomic(path, data)
-        if i % 200 == 0:
-            log.info("attachments: thread %d / %d %s", i, len(paths), dict(stats))
+    stats, results = _run_uploads(tasks, r2, dl, workers, label="attachments")
+    n_files = _apply_and_save(files, results)
+    log.info("attachments: rewrote %d JSON files", n_files)
+    stats.update(pre)
     return stats
 
 
-def mirror_avatars(data_dir: Path, r2: R2Client, dl: Downloader) -> Counter:
-    stats: Counter[str] = Counter()
-    for path in sorted((data_dir / "users").glob("*.json")):
+def mirror_avatars(
+    data_dir: Path, r2: R2Client, dl: Downloader, workers: int = DEFAULT_WORKERS
+) -> Counter:
+    paths = sorted((data_dir / "users").glob("*.json"))
+    files: dict[Path, dict[str, Any]] = {}
+    tasks: list[UploadTask] = []
+    pre: Counter[str] = Counter()
+    for path in paths:
         user = json.loads(path.read_text(encoding="utf-8"))
+        files[path] = user
         if user.get("avatar_r2_key"):
-            stats["avatar_skipped"] += 1
+            pre["avatar_already_done"] += 1
             continue
         avatar_urls = user.get("avatar_urls") or {}
         src = avatar_urls.get("l") or avatar_urls.get("m") or avatar_urls.get("o")
         if not src:
-            stats["avatar_no_src"] += 1
+            pre["avatar_no_src"] += 1
             continue
         key = avatar_key(user["id"], src)
-        if _ensure_uploaded(r2, dl, key, src, filename_hint=key):
-            user["avatar_r2_key"] = key
-            write_json_atomic(path, user)
-            stats["avatar_ok"] += 1
-        else:
-            stats["avatar_failed"] += 1
+        tasks.append(
+            UploadTask(
+                src_url=src,
+                target_key=key,
+                asset_ref=user,
+                json_path=path,
+                field_name="avatar_r2_key",
+                filename_hint=key,
+                kind="avatar",
+            )
+        )
+    stats, results = _run_uploads(tasks, r2, dl, workers, label="avatars")
+    _apply_and_save(files, results)
+    stats.update(pre)
     return stats
 
 
-def mirror_resources(data_dir: Path, r2: R2Client, dl: Downloader) -> Counter:
-    stats: Counter[str] = Counter()
-    for path in sorted((data_dir / "resources").glob("*.json")):
+def mirror_resources(
+    data_dir: Path, r2: R2Client, dl: Downloader, workers: int = DEFAULT_WORKERS
+) -> Counter:
+    paths = sorted((data_dir / "resources").glob("*.json"))
+    files: dict[Path, dict[str, Any]] = {}
+    tasks: list[UploadTask] = []
+    pre: Counter[str] = Counter()
+    for path in paths:
         res = json.loads(path.read_text(encoding="utf-8"))
-        dirty = False
+        files[path] = res
         rid = int(res["id"])
 
         icon = res.get("icon_url")
-        if icon and not res.get("icon_r2_key"):
-            key = resource_icon_key(rid, icon)
-            if _ensure_uploaded(r2, dl, key, icon, filename_hint=key):
-                res["icon_r2_key"] = key
-                dirty = True
-                stats["icon_ok"] += 1
+        if icon:
+            if res.get("icon_r2_key"):
+                pre["icon_already_done"] += 1
             else:
-                stats["icon_failed"] += 1
+                key = resource_icon_key(rid, icon)
+                tasks.append(
+                    UploadTask(
+                        src_url=icon,
+                        target_key=key,
+                        asset_ref=res,
+                        json_path=path,
+                        field_name="icon_r2_key",
+                        filename_hint=key,
+                        kind="icon",
+                    )
+                )
 
-        # Version files — authenticated downloads via XF API.
         for version in res.get("versions") or []:
             vid = int(version["id"])
             for f in version.get("files") or []:
                 if f.get("r2_key"):
-                    stats["res_file_skipped"] += 1
+                    pre["res_file_already_done"] += 1
                     continue
                 src = f.get("src_url")
                 if not src:
-                    stats["res_file_no_src"] += 1
+                    pre["res_file_no_src"] += 1
                     continue
                 key = resource_file_key(
                     rid, vid, f.get("filename") or f"file-{f.get('id')}.bin"
                 )
-                if _ensure_uploaded(
-                    r2, dl, key, src,
-                    authenticated=True,
-                    filename_hint=f.get("filename"),
-                ):
-                    f["r2_key"] = key
-                    dirty = True
-                    stats["res_file_ok"] += 1
-                else:
-                    stats["res_file_failed"] += 1
+                tasks.append(
+                    UploadTask(
+                        src_url=src,
+                        target_key=key,
+                        asset_ref=f,
+                        json_path=path,
+                        authenticated=True,
+                        filename_hint=f.get("filename"),
+                        kind="res_file",
+                    )
+                )
 
-        # `current_files` is a pointer to a file inside `versions`; reuse the
-        # version-file `r2_key` instead of uploading again.
+    stats, results = _run_uploads(tasks, r2, dl, workers, label="resources")
+    _apply_and_save(files, results)
+    stats.update(pre)
+
+    # current_files: alias the matching version file's r2_key (no upload).
+    alias_dirty: set[Path] = set()
+    for path, res in files.items():
         version_keys_by_id: dict[int, str] = {}
         version_keys_by_name: dict[str, str] = {}
         for version in res.get("versions") or []:
             for f in version.get("files") or []:
-                key = f.get("r2_key")
-                if not key:
+                k = f.get("r2_key")
+                if not k:
                     continue
                 if f.get("id") is not None:
-                    version_keys_by_id[int(f["id"])] = key
+                    version_keys_by_id[int(f["id"])] = k
                 if f.get("filename"):
-                    version_keys_by_name[f["filename"]] = key
+                    version_keys_by_name[f["filename"]] = k
         for cf in res.get("current_files") or []:
             if cf.get("r2_key"):
                 continue
-            key = None
+            k = None
             if cf.get("id") is not None:
-                key = version_keys_by_id.get(int(cf["id"]))
-            if not key and cf.get("filename"):
-                key = version_keys_by_name.get(cf["filename"])
-            if key:
-                cf["r2_key"] = key
-                dirty = True
+                k = version_keys_by_id.get(int(cf["id"]))
+            if not k and cf.get("filename"):
+                k = version_keys_by_name.get(cf["filename"])
+            if k:
+                cf["r2_key"] = k
                 stats["res_current_alias"] += 1
-
-        if dirty:
-            write_json_atomic(path, res)
+                alias_dirty.add(path)
+    for path in alias_dirty:
+        write_json_atomic(path, files[path])
     return stats
 
 
@@ -250,44 +354,81 @@ def _collect_inline_urls(data_dir: Path) -> list[str]:
     return out
 
 
-def mirror_inline(data_dir: Path, r2: R2Client, dl: Downloader) -> Counter:
+def mirror_inline(
+    data_dir: Path, r2: R2Client, dl: Downloader, workers: int = DEFAULT_WORKERS
+) -> Counter:
+    """Concurrent inline image mirror with sha256 dedupe.
+
+    Two URLs that point at the same bytes share one R2 key. The persistent
+    index at `data/inline_index.json` records `url -> {sha256, r2_key, size}`
+    plus negative `{failed, status}` entries that suppress retry of permanent
+    4xx URLs.
+    """
     stats: Counter[str] = Counter()
     index = InlineIndex(data_dir / INLINE_INDEX_FILENAME)
+    lock = Lock()
     urls = _collect_inline_urls(data_dir)
-    log.info("inline: %d unique external image URLs", len(urls))
-    try:
-        for i, url in enumerate(urls, 1):
-            if index.is_done(url):
-                stats["inline_skipped"] += 1
-                continue
-            if index.is_permanently_failed(url):
-                stats["inline_skip_4xx"] += 1
-                continue
+    pending: list[str] = []
+    for url in urls:
+        if index.is_done(url):
+            stats["inline_already_done"] += 1
+            continue
+        if index.is_permanently_failed(url):
+            stats["inline_already_4xx"] += 1
+            continue
+        pending.append(url)
+    log.info(
+        "inline: %d pending of %d unique URLs (%d workers)",
+        len(pending),
+        len(urls),
+        workers,
+    )
+
+    def worker(url: str) -> str:
+        try:
             fetched = dl.fetch(url)
-            if fetched is None:
-                stats["inline_transport_error"] += 1
-                continue
-            body, ct, status = fetched
-            if status >= 300:
+        except Exception as e:
+            log.warning("inline fetch error %s: %s", url, e)
+            return "transport_error"
+        if fetched is None:
+            return "transport_error"
+        body, ct, status = fetched
+        if status >= 300:
+            with lock:
                 index.add_failed(url, status)
-                stats[f"inline_http_{status}"] += 1
-                continue
-            sha = sha256_bytes(body)
-            existing_key = index.lookup_by_hash(sha)
-            if existing_key:
-                # Same image at a different URL — alias, no upload.
-                index.add(url, sha, existing_key, size=len(body))
-                stats["inline_alias"] += 1
-                continue
-            key = inline_key(sha, url)
+            return f"http_{status}"
+        sha = sha256_bytes(body)
+        with lock:
+            existing = index.lookup_by_hash(sha)
+            if existing:
+                index.add(url, sha, existing, size=len(body))
+                return "alias"
+        key = inline_key(sha, url)
+        try:
             r2.put(key, body, content_type=_content_type(url, ct))
+        except Exception as e:
+            log.warning("inline upload error %s: %s", url, e)
+            return "upload_error"
+        with lock:
             index.add(url, sha, key, size=len(body))
-            stats["inline_uploaded"] += 1
-            if i % 50 == 0:
-                index.save()
-                log.info("inline: %d / %d %s", i, len(urls), dict(stats))
+        return "uploaded"
+
+    try:
+        if pending:
+            with ThreadPoolExecutor(max_workers=workers) as ex:
+                futures = [ex.submit(worker, u) for u in pending]
+                for i, fut in enumerate(as_completed(futures), 1):
+                    result = fut.result()
+                    stats[f"inline_{result}"] += 1
+                    if i % 50 == 0 or i == len(pending):
+                        with lock:
+                            index.save()
+                        log.info(
+                            "inline: %d / %d %s", i, len(pending), dict(stats)
+                        )
     finally:
-        index.save()
+        with lock:
+            index.save()
     return stats
 
 
@@ -333,38 +474,51 @@ def scan_inventory(data_dir: Path) -> Counter:
     return stats
 
 
-def verify(data_dir: Path, r2: R2Client) -> Counter:
-    """HEAD every recorded `r2_key`. Report and count missing objects."""
+def verify(data_dir: Path, r2: R2Client, workers: int = DEFAULT_WORKERS) -> Counter:
+    """HEAD every recorded `r2_key`. Reports missing objects."""
     stats: Counter[str] = Counter()
-    seen: set[str] = set()
 
-    def check(key: str | None, kind: str) -> None:
-        if not key or key in seen:
-            return
-        seen.add(key)
-        if r2.head(key) is None:
-            stats[f"{kind}_missing"] += 1
-            log.warning("%s missing in R2: %s", kind, key)
-        else:
-            stats[f"{kind}_ok"] += 1
+    def collect() -> list[tuple[str, str]]:
+        items: list[tuple[str, str]] = []
+        seen: set[str] = set()
 
-    for path in sorted((data_dir / "threads").glob("*.json")):
-        data = json.loads(path.read_text(encoding="utf-8"))
-        for post in data.get("posts") or []:
-            for att in post.get("attachments") or []:
-                check(att.get("r2_key"), "attachment")
-    for path in sorted((data_dir / "users").glob("*.json")):
-        u = json.loads(path.read_text(encoding="utf-8"))
-        check(u.get("avatar_r2_key"), "avatar")
-    for path in sorted((data_dir / "resources").glob("*.json")):
-        r = json.loads(path.read_text(encoding="utf-8"))
-        check(r.get("icon_r2_key"), "resource_icon")
-        for v in r.get("versions") or []:
-            for f in v.get("files") or []:
-                check(f.get("r2_key"), "resource_file")
-    idx_path = data_dir / INLINE_INDEX_FILENAME
-    if idx_path.exists():
-        index = InlineIndex(idx_path)
-        for entry in index.by_url.values():
-            check(entry.get("r2_key"), "inline")
+        def add(key: str | None, kind: str) -> None:
+            if not key or key in seen:
+                return
+            seen.add(key)
+            items.append((key, kind))
+
+        for path in sorted((data_dir / "threads").glob("*.json")):
+            data = json.loads(path.read_text(encoding="utf-8"))
+            for post in data.get("posts") or []:
+                for att in post.get("attachments") or []:
+                    add(att.get("r2_key"), "attachment")
+        for path in sorted((data_dir / "users").glob("*.json")):
+            u = json.loads(path.read_text(encoding="utf-8"))
+            add(u.get("avatar_r2_key"), "avatar")
+        for path in sorted((data_dir / "resources").glob("*.json")):
+            r = json.loads(path.read_text(encoding="utf-8"))
+            add(r.get("icon_r2_key"), "resource_icon")
+            for v in r.get("versions") or []:
+                for f in v.get("files") or []:
+                    add(f.get("r2_key"), "resource_file")
+        idx_path = data_dir / INLINE_INDEX_FILENAME
+        if idx_path.exists():
+            index = InlineIndex(idx_path)
+            for entry in index.by_url.values():
+                add(entry.get("r2_key"), "inline")
+        return items
+
+    items = collect()
+    log.info("verify: %d unique r2_keys, %d workers", len(items), workers)
+
+    def check(item: tuple[str, str]) -> tuple[str, str, bool]:
+        key, kind = item
+        return key, kind, r2.head(key) is not None
+
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        for key, kind, present in ex.map(check, items):
+            stats[f"{kind}_{'ok' if present else 'missing'}"] += 1
+            if not present:
+                log.warning("missing in R2: %s (%s)", key, kind)
     return stats

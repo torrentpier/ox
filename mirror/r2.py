@@ -34,6 +34,9 @@ class R2Client:
             config=Config(
                 signature_version="s3v4",
                 retries={"max_attempts": 5, "mode": "standard"},
+                # Default is 10; our ThreadPool reaches 16, and verify is
+                # almost all concurrent HEADs.
+                max_pool_connections=64,
             ),
             region_name="auto",
         )

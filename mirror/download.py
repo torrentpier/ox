@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import hashlib
 import logging
+import threading
 import time
 from dataclasses import dataclass, field
 
@@ -17,6 +18,7 @@ import httpx
 
 log = logging.getLogger(__name__)
 USER_AGENT = "torrentpier-archive-mirror/0.1"
+_HTTPX_LIMITS = httpx.Limits(max_connections=64, max_keepalive_connections=16)
 
 
 @dataclass
@@ -26,22 +28,26 @@ class Downloader:
     rps: float = 2.0
     _client: httpx.Client = field(init=False, repr=False)
     _last_request_at: float = field(default=0.0, init=False, repr=False)
+    _throttle_lock: threading.Lock = field(default_factory=threading.Lock, init=False, repr=False)
 
     def __post_init__(self) -> None:
         self._client = httpx.Client(
             timeout=self.timeout,
             follow_redirects=True,
             headers={"User-Agent": USER_AGENT},
+            limits=_HTTPX_LIMITS,
         )
 
     def _throttle(self) -> None:
+        """Globally cap requests at `rps` across concurrent workers."""
         if self.rps <= 0:
             return
         gap = 1.0 / self.rps
-        elapsed = time.monotonic() - self._last_request_at
-        if elapsed < gap:
-            time.sleep(gap - elapsed)
-        self._last_request_at = time.monotonic()
+        with self._throttle_lock:
+            elapsed = time.monotonic() - self._last_request_at
+            if elapsed < gap:
+                time.sleep(gap - elapsed)
+            self._last_request_at = time.monotonic()
 
     def fetch(
         self,
