@@ -111,8 +111,8 @@ export default {
       const result = await env.DB.prepare(sql).bind(ftsMatch, fetchN, offset).all<PostRow>();
       rawRows = result.results ?? [];
     } catch (err) {
-      const message = err instanceof Error ? err.message : String(err);
-      return jsonResponse({ q, error: "query_failed", message }, { status: 500 });
+      console.error("d1_query_failed", { q, offset, limit, err });
+      return jsonResponse({ q, error: "query_failed" }, { status: 500 });
     }
 
     const hasMore = rawRows.length > limit;

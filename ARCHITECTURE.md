@@ -45,20 +45,20 @@ any HTTP server at `dist/`, the archive keeps working.
 sequenceDiagram
     autonumber
     participant U as User
-    participant P as Pages<br/>(ox.torrentpier.com)
-    participant W as Worker<br/>(search-ox.torrentpier.com)
-    participant D as D1<br/>(ox-archive-search)
+    participant P as Pages
+    participant W as Worker
+    participant D as D1
 
     U->>P: GET /search/?q=торренты
-    P-->>U: search.html (form + JS)
-    Note over U: JS reads ?q= and<br/>fires fetch
+    P-->>U: search.html with form and JS
+    Note over U: JS reads q from URL,<br/>fires fetch to the Worker
     U->>W: GET /search?q=торренты&limit=20&offset=0
-    Note over W: tokenise → lowercase → ё→е<br/>→ Snowball stem<br/>→ FTS5 MATCH query
-    W->>D: SELECT ... posts_fts MATCH ?<br/>LIMIT 21 OFFSET 0
-    D-->>W: 20 rows + 1 sentinel
-    Note over W: re-tokenise body_plain<br/>build snippet with <mark>
-    W-->>U: JSON {results, has_more, ...}
-    Note over U: render cards;<br/>show "Load more" if has_more
+    Note over W: tokenise, lowercase, ё→е,<br/>Snowball stem,<br/>build FTS5 MATCH query
+    W->>D: posts_fts MATCH, LIMIT 21 OFFSET 0
+    D-->>W: 20 rows plus 1 sentinel
+    Note over W: re-tokenise body_plain,<br/>build snippet with mark tags
+    W-->>U: JSON with results and has_more
+    Note over U: render cards;<br/>show Load more when has_more
 ```
 
 The Worker fetches `limit + 1` rows instead of issuing a separate `COUNT`
@@ -76,12 +76,12 @@ sequenceDiagram
     participant Pages as Pages
     participant Web as ox.torrentpier.com
 
-    Dev->>GH: git push main<br/>(touches templates/static/builder/pyproject/data)
-    GH->>Act: workflow_dispatch (build.yml)
+    Dev->>GH: git push main touching<br/>templates, static, builder, data, or pyproject
+    GH->>Act: trigger build.yml
     Act->>Act: setup-python@v6 + pip install -e .
     Act->>Act: python -m builder build --data data --out dist
-    Act->>Act: verify dist/CNAME == "ox.torrentpier.com"
-    Act->>Pages: upload-pages-artifact@v5 (dist/)
+    Act->>Act: verify dist/CNAME equals ox.torrentpier.com
+    Act->>Pages: upload-pages-artifact@v5 from dist/
     Pages->>Pages: deploy-pages@v5
     Pages-->>Web: live within seconds
 ```

@@ -1,18 +1,18 @@
 # TorrentPier Ox Archive
 
-Static, read-only archive of the [torrentpier.com](https://torrentpier.com)
-XenForo 2 forum. Live at **[ox.torrentpier.com](https://ox.torrentpier.com)**.
+Static, read-only archive of the TorrentPier support forum (XenForo 2),
+which ran from 2011 to 2026.
 
 ## Goal
 
 Preserve every public thread, post, attachment, resource and profile-post
-from torrentpier.com as a static, read-only site served from GitHub Pages,
-with binary files hosted on Cloudflare R2 and full-text Russian search
-powered by a Cloudflare Worker + D1 (SQLite/FTS5 with Snowball stemming).
+as a static, read-only site served from GitHub Pages, with binary files
+hosted on Cloudflare R2 and full-text Russian search powered by a
+Cloudflare Worker + D1 (SQLite/FTS5 with Snowball stemming).
 
-## Status
+## Snapshot
 
-**Live.** Snapshot from 2026-05-11:
+As of 2026-05-11:
 
 | Threads | Posts  | Authors | Resources | Wall posts | Wall comments | Reviews | Polls |
 |--------:|-------:|--------:|----------:|-----------:|--------------:|--------:|------:|
