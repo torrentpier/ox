@@ -92,6 +92,32 @@ def normalise_forum(forum: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def normalise_poll(poll: dict[str, Any] | None) -> dict[str, Any] | None:
+    """Pick the public-facing fields off the embedded `Poll` object."""
+    if not poll:
+        return None
+    responses_raw = poll.get("responses") or {}
+    # XF returns responses as a dict keyed by id; turn it into an ordered list.
+    responses = [
+        {
+            "id": int(rid),
+            "text": (r or {}).get("text"),
+            "vote_count": (r or {}).get("vote_count") or 0,
+        }
+        for rid, r in sorted(responses_raw.items(), key=lambda kv: int(kv[0]))
+    ]
+    voter_count = sum(r["vote_count"] for r in responses)
+    return {
+        "id": poll.get("poll_id"),
+        "question": poll.get("question"),
+        "max_votes": poll.get("max_votes") or 1,
+        "close_date": poll.get("close_date") or 0,
+        "public_votes": bool(poll.get("public_votes", False)),
+        "voter_count": voter_count,
+        "responses": responses,
+    }
+
+
 def normalise_thread(thread: dict[str, Any], posts: list[dict[str, Any]]) -> dict[str, Any]:
     view_url = thread.get("view_url")
     return {
@@ -115,6 +141,7 @@ def normalise_thread(thread: dict[str, Any], posts: list[dict[str, Any]]) -> dic
         "user_id": thread.get("user_id"),
         "username": thread.get("username"),
         "custom_fields": thread.get("custom_fields") or {},
+        "poll": normalise_poll(thread.get("Poll")),
         "posts": [normalise_post(p) for p in posts],
     }
 
@@ -153,6 +180,34 @@ def iter_forum_threads(
         page += 1
 
 
+def _merge_preserved_attachment_keys(
+    new_thread: dict[str, Any], existing_thread: dict[str, Any] | None
+) -> None:
+    """Carry forward `r2_key` from the previous on-disk thread.
+
+    The mirror stage writes `r2_key` onto each attachment after upload; a
+    re-export of the thread must NOT clobber that field, because the mirror
+    run is expensive (full R2 inventory) and re-deriving the key elsewhere
+    is brittle.
+    """
+    if not existing_thread:
+        return
+    existing_by_id: dict[int, str] = {}
+    for p in existing_thread.get("posts") or []:
+        for a in p.get("attachments") or []:
+            r2 = a.get("r2_key")
+            if r2:
+                existing_by_id[int(a["id"])] = r2
+    if not existing_by_id:
+        return
+    for p in new_thread.get("posts") or []:
+        for a in p.get("attachments") or []:
+            if not a.get("r2_key"):
+                hit = existing_by_id.get(int(a["id"]))
+                if hit:
+                    a["r2_key"] = hit
+
+
 def export_one_thread(
     client: XfClient,
     thread_id: int,
@@ -166,6 +221,13 @@ def export_one_thread(
     if out.exists() and not force:
         log.debug("skip %s (exists)", out)
         return False
+
+    existing: dict[str, Any] | None = None
+    if out.exists():
+        try:
+            existing = json.loads(out.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            existing = None
 
     thread_meta: dict[str, Any] | None = None
     all_posts: list[dict[str, Any]] = []
@@ -189,7 +251,9 @@ def export_one_thread(
         log.warning("thread %s: no thread metadata returned", thread_id)
         return False
 
-    write_json_atomic(out, normalise_thread(thread_meta, all_posts))
+    normalised = normalise_thread(thread_meta, all_posts)
+    _merge_preserved_attachment_keys(normalised, existing)
+    write_json_atomic(out, normalised)
     log.info("Wrote %s (%d posts)", out, len(all_posts))
     return True
 

@@ -22,12 +22,14 @@
           {% if sf and sf.node_type_id == 'Forum' %}{% set _ = subs.append(sf) %}{% endif %}
         {% endfor %}
         {% if subs %}
-        <ul class="sub-forums">
-          <li><span class="sub-forums-label">Sub-forums:</span></li>
+        <div class="sub-forums-wrap">
+          <span class="sub-forums-label">Sub-forums</span>
+          <ul class="sub-forums">
           {% for sf in subs %}
             <li><a href="{{ node_url(sf) }}">{{ sf.title }}</a></li>
           {% endfor %}
-        </ul>
+          </ul>
+        </div>
         {% endif %}
       </div>
       <div class="forum-stats">

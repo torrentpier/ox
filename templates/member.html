@@ -23,9 +23,7 @@
   </header>
   <dl class="member-meta">
     {% if user.register_date %}<dt>Registered</dt><dd>{{ user.register_date | timestamp }}</dd>{% endif %}
-    {% if user.last_activity %}<dt>Last activity</dt><dd>{{ user.last_activity | timestamp }}</dd>{% endif %}
     {% if user.message_count is not none %}<dt>Messages</dt><dd>{{ user.message_count }}</dd>{% endif %}
-    {% if user.user_group_id %}<dt>Primary group</dt><dd>#{{ user.user_group_id }}</dd>{% endif %}
   </dl>
 </article>
 

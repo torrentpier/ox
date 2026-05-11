@@ -23,6 +23,28 @@
   {{ thread.reply_count }} replies, {{ thread.view_count }} views
 </p>
 
+{% if thread.poll and page_no == 1 %}
+{% set total = thread.poll.voter_count or 1 %}
+<section class="poll" aria-label="Poll">
+  <header class="poll-head">
+    <h2 class="poll-question">{{ thread.poll.question }}</h2>
+    <span class="muted">{{ thread.poll.voter_count }} vote{{ 's' if thread.poll.voter_count != 1 else '' }}</span>
+  </header>
+  <ol class="poll-responses">
+    {% for r in thread.poll.responses %}
+    {% set pct = (r.vote_count * 100 / total) if total else 0 %}
+    <li class="poll-response">
+      <div class="poll-bar"><span class="poll-bar-fill" style="width: {{ '%.1f'|format(pct) }}%"></span></div>
+      <div class="poll-text">
+        <span>{{ r.text }}</span>
+        <span class="muted">{{ r.vote_count }} ({{ '%.1f'|format(pct) }}%)</span>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+{% endif %}
+
 {% for post in page_posts %}
 <article id="post-{{ post.id }}" class="post">
   {% set user = users.get(post.user_id) %}

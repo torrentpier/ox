@@ -34,10 +34,11 @@ def normalise_review(rev: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def iter_reviews(client: XfClient) -> Iterable[dict[str, Any]]:
+def iter_reviews_for(client: XfClient, resource_id: int) -> Iterable[dict[str, Any]]:
+    """Paginate /api/resources/{id}/reviews/ and yield raw review objects."""
     page = 1
     while True:
-        payload = client.get("/resource-reviews", page=page)
+        payload = client.get(f"/resources/{resource_id}/reviews/", page=page)
         reviews = payload.get("reviews") or []
         for r in reviews:
             yield r
@@ -52,34 +53,33 @@ def export_resource_reviews(
     client: XfClient,
     data_dir: Path,
 ) -> tuple[int, int]:
-    """Returns (reviews_imported, resources_touched)."""
+    """Returns (reviews_imported, resources_touched).
+
+    The global /api/resource-reviews/ feed only shows the most recent few; we
+    have to walk each resource individually to get every review.
+    """
     resources_dir = data_dir / "resources"
     if not resources_dir.exists():
         raise FileNotFoundError(f"{resources_dir} not found — run `xf-export resources` first")
     user_cache = UserCache(data_dir / "users")
 
-    # Bucket reviews by resource_id so we can write each resource JSON once.
-    by_resource: dict[int, list[dict[str, Any]]] = {}
-    for raw in iter_reviews(client):
-        user_cache.add(raw.get("User"))
-        rid = (raw.get("Resource") or {}).get("resource_id")
-        if rid is None:
-            continue
-        by_resource.setdefault(int(rid), []).append(normalise_review(raw))
-
-    # Clear reviews on every resource (so previously-removed reviews drop).
-    for path in resources_dir.glob("*.json"):
+    total = 0
+    touched = 0
+    for path in sorted(resources_dir.glob("*.json"), key=lambda p: int(p.stem)):
         data = json.loads(path.read_text(encoding="utf-8"))
-        new_reviews = by_resource.get(int(data["id"]), [])
-        # Sort by rating_date ascending so identical exports stay deterministic.
-        new_reviews.sort(key=lambda r: (r.get("rating_date") or 0, r.get("id") or 0))
-        data["reviews"] = new_reviews
+        rid = int(data["id"])
+        reviews: list[dict[str, Any]] = []
+        for raw in iter_reviews_for(client, rid):
+            user_cache.add(raw.get("User"))
+            reviews.append(normalise_review(raw))
+        reviews.sort(key=lambda r: (r.get("rating_date") or 0, r.get("id") or 0))
+        data["reviews"] = reviews
         write_json_atomic(path, data)
+        if reviews:
+            touched += 1
+            total += len(reviews)
+            log.info("resource %d: %d reviews", rid, len(reviews))
 
-    total_reviews = sum(len(v) for v in by_resource.values())
-    log.info(
-        "Reviews export: %d reviews across %d resources",
-        total_reviews, len(by_resource),
-    )
     user_cache.flush()
-    return total_reviews, len(by_resource)
+    log.info("Reviews export: %d total across %d resources", total, touched)
+    return total, touched

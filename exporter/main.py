@@ -6,7 +6,16 @@ import argparse
 import logging
 from pathlib import Path
 
-from . import api, nodes, profile_posts, resource_reviews, resources, threads
+from . import (
+    api,
+    nodes,
+    profile_posts,
+    resource_reviews,
+    resource_updates,
+    resources,
+    threads,
+    wall_owners,
+)
 
 
 def cmd_nodes(args: argparse.Namespace) -> None:
@@ -48,6 +57,17 @@ def cmd_profile_posts(args: argparse.Namespace) -> None:
 def cmd_resource_reviews(args: argparse.Namespace) -> None:
     with api.from_env() as client:
         resource_reviews.export_resource_reviews(client, Path(args.data))
+
+
+def cmd_resource_updates(args: argparse.Namespace) -> None:
+    with api.from_env() as client:
+        resource_updates.export_resource_updates(client, Path(args.data))
+
+
+def cmd_wall_owners(args: argparse.Namespace) -> None:
+    ids = [int(x) for x in args.add.split(",") if x.strip()]
+    with api.from_env() as client:
+        wall_owners.add_wall_owners(client, Path(args.data), ids)
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -116,6 +136,23 @@ def build_parser() -> argparse.ArgumentParser:
         help="Export resource reviews into data/resources/{id}.json (reviews[])",
     )
     p_rr.set_defaults(func=cmd_resource_reviews)
+
+    p_ru = sub.add_parser(
+        "resource-updates",
+        help="Export resource update announcements into data/resources/{id}.json (updates[])",
+    )
+    p_ru.set_defaults(func=cmd_resource_updates)
+
+    p_wo = sub.add_parser(
+        "wall-owners",
+        help="Fetch wall-owner users (lurkers with wall posts) into data/users/{id}.json",
+    )
+    p_wo.add_argument(
+        "--add",
+        required=True,
+        help="Comma-separated user ids to fetch",
+    )
+    p_wo.set_defaults(func=cmd_wall_owners)
     return p
 
 
