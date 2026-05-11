@@ -4,8 +4,11 @@
 <nav class="breadcrumbs">
   <a href="/">Home</a>
 {% for crumb in thread.forum.breadcrumbs %}
-  / <span>{{ crumb.title }}</span>
+  {% set node = nodes_by_id.get(crumb.id) %}
+  / {% if node %}<a href="{{ node_url(node) }}">{{ crumb.title }}</a>{% else %}<span>{{ crumb.title }}</span>{% endif %}
 {% endfor %}
+  {% set forum_node = nodes_by_id.get(thread.forum.id) %}
+  / {% if forum_node %}<a href="{{ node_url(forum_node) }}">{{ thread.forum.title }}</a>{% else %}<span>{{ thread.forum.title }}</span>{% endif %}
   / <span class="current">{{ thread.title }}</span>
 </nav>
 

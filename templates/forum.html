@@ -4,7 +4,8 @@
 <nav class="breadcrumbs">
   <a href="/">Home</a>
 {% for crumb in forum.breadcrumbs %}
-  / <span>{{ crumb.title }}</span>
+  {% set node = nodes_by_id.get(crumb.node_id) %}
+  / {% if node %}<a href="{{ node_url(node) }}">{{ crumb.title }}</a>{% else %}<span>{{ crumb.title }}</span>{% endif %}
 {% endfor %}
   / <span class="current">{{ forum.title }}</span>
 </nav>
@@ -17,6 +18,7 @@
 {% for sf in child_forums %}
   <li>
     <a class="forum-link" href="{{ node_url(sf) }}">{{ sf.title }}</a>
+    <span class="muted">— {{ thread_count_recursive.get(sf.node_id, 0) }} threads</span>
     {% if sf.description %}<div class="muted">{{ sf.description }}</div>{% endif %}
   </li>
 {% endfor %}
