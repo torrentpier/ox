@@ -8,14 +8,26 @@
 </head>
 <body>
   <header class="site-header">
-    <a href="/" class="brand">{{ site_name }}</a>
+    <div class="site-header-inner">
+      <a href="/" class="brand">
+        <img src="https://files-ox.torrentpier.com/tp_long.svg" alt="TorrentPier" height="36">
+        <span class="brand-sub">archive</span>
+      </a>
+      <nav class="site-nav" aria-label="Sections">
+        <a href="/">Forums</a>
+        <a href="/resources/">Resources</a>
+        <a href="/members/">Members</a>
+      </nav>
+    </div>
   </header>
-  <main>
+  <main class="site-main">
 {% block content %}{% endblock %}
   </main>
   <footer class="site-footer">
-    Read-only archive of <a href="https://torrentpier.com">torrentpier.com</a>.
-    Built {{ build_time }}.
+    <div class="site-footer-inner">
+      Read-only archive of <a href="https://torrentpier.com">torrentpier.com</a>.
+      Built {{ build_time }}.
+    </div>
   </footer>
 </body>
 </html>

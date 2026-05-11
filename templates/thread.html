@@ -25,12 +25,12 @@
 
 {% for post in page_posts %}
 <article id="post-{{ post.id }}" class="post">
+  {% set user = users.get(post.user_id) %}
+  {% set avatar_src = r2_url(user.avatar_r2_key) if user and user.avatar_r2_key else (user.avatar_urls.l if user and user.avatar_urls else None) %}
   <header class="post-author">
-    {% set user = users.get(post.user_id) %}
-    {% set avatar_src = r2_url(user.avatar_r2_key) if user and user.avatar_r2_key else (user.avatar_urls.m if user and user.avatar_urls else None) %}
     {% if avatar_src %}
       <a href="{{ member_url(user) }}">
-        <img class="avatar" src="{{ avatar_src }}" alt="" loading="lazy" width="48" height="48">
+        <img class="avatar" src="{{ avatar_src }}" alt="" loading="lazy" width="72" height="72">
       </a>
     {% endif %}
     <div class="post-author-text">
@@ -44,19 +44,24 @@
       {% elif post.is_staff %}<span class="badge badge-staff">Staff</span>{% endif %}
       {% if post.user_title %}<span class="user-title">{{ post.user_title }}</span>{% endif %}
     </div>
-    <time class="post-date" datetime="{{ post.post_date }}"><a href="/posts/{{ post.id }}/" title="Permanent link">{{ post.post_date | timestamp }}</a></time>
   </header>
-  <div class="post-body">{{ post.message_parsed | safe }}</div>
-  {% if post.attachments %}
-  <ul class="attachments">
-    {% for a in post.attachments %}
-    <li>
-      <a href="{{ r2_url(a.r2_key) or a.src_url }}">{{ a.filename }}</a>
-      <span class="muted">({{ a.file_size | filesize }})</span>
-    </li>
-    {% endfor %}
-  </ul>
-  {% endif %}
+  <div class="post-main">
+    <div class="post-head">
+      <time datetime="{{ post.post_date }}"><a href="/posts/{{ post.id }}/" title="Permanent link">{{ post.post_date | timestamp }}</a></time>
+      <span class="post-num">#{{ post.position + 1 }}</span>
+    </div>
+    <div class="post-body">{{ post.message_parsed | safe }}</div>
+    {% if post.attachments %}
+    <ul class="attachments">
+      {% for a in post.attachments %}
+      <li>
+        <a href="{{ r2_url(a.r2_key) or a.src_url }}">{{ a.filename }}</a>
+        <span class="muted">({{ a.file_size | filesize }})</span>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
 </article>
 {% endfor %}
 

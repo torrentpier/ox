@@ -2,22 +2,60 @@
 {% block title %}{{ site_name }}{% endblock %}
 {% block content %}
 <h1>{{ site_name }}</h1>
-<p class="lede">
-  Snapshot of {{ thread_count }} threads and {{ resource_count }} resources.
-</p>
+<p class="lede">Snapshot of {{ thread_count }} threads and {{ resource_count }} resources from torrentpier.com.</p>
 
 {% for cat in categories %}
-<section class="category">
-  <h2><a href="{{ node_url(cat) }}">{{ cat.title }}</a></h2>
-  {% if cat.description %}<p class="muted">{{ cat.description }}</p>{% endif %}
-  <ul class="forum-list">
+<section class="forum-cat">
+  <header class="forum-cat-head">
+    <h2><a href="{{ node_url(cat) }}">{{ cat.title }}</a></h2>
+    {% if cat.description %}<p>{{ cat.description }}</p>{% endif %}
+  </header>
+  <ul class="forum-rows">
   {% for fid in tree_map.get(cat.node_id, []) %}
     {% set forum = nodes_by_id.get(fid) %}
     {% if forum and forum.node_type_id == 'Forum' %}
-    <li>
-      <a class="forum-link" href="{{ node_url(forum) }}">{{ forum.title }}</a>
-      <span class="muted">— {{ thread_count_recursive.get(forum.node_id, 0) }} threads</span>
-      {% if forum.description %}<div class="muted">{{ forum.description }}</div>{% endif %}
+    <li class="forum-row">
+      <div class="forum-icon" aria-hidden="true">💬</div>
+      <div class="forum-info">
+        <a class="forum-link" href="{{ node_url(forum) }}">{{ forum.title }}</a>
+        {% if forum.description %}<p class="forum-desc">{{ forum.description }}</p>{% endif %}
+        {% set subs = tree_map.get(forum.node_id, []) %}
+        {% set sub_forums = subs | map('int') | list %}
+        {% set has_subs = [] %}
+        {% for sid in subs %}
+          {% set sf = nodes_by_id.get(sid) %}
+          {% if sf and sf.node_type_id == 'Forum' %}{% set _ = has_subs.append(sf) %}{% endif %}
+        {% endfor %}
+        {% if has_subs %}
+        <details class="sub-forums-mini">
+          <summary>Sub-forums ({{ has_subs | length }})</summary>
+          <ul>
+          {% for sf in has_subs %}
+            <li><a href="{{ node_url(sf) }}">{{ sf.title }}</a></li>
+          {% endfor %}
+          </ul>
+        </details>
+        {% endif %}
+      </div>
+      <div class="forum-stats">
+        <div class="stat">
+          <div class="stat-label">Threads</div>
+          <div class="stat-value">{{ thread_count_recursive.get(forum.node_id, 0) | count }}</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Messages</div>
+          <div class="stat-value">{{ post_count_recursive.get(forum.node_id, 0) | count }}</div>
+        </div>
+      </div>
+      <div class="forum-last">
+        {% set lt = latest_thread_by_forum.get(forum.node_id) %}
+        {% if lt %}
+          <a class="last-title" href="{{ lt.url_path }}" title="{{ lt.title }}">{{ lt.title }}</a>
+          <div class="last-meta muted">{{ lt.last_post_date | timestamp }} · {{ lt.username }}</div>
+        {% else %}
+          <span class="muted small">no threads</span>
+        {% endif %}
+      </div>
     </li>
     {% endif %}
   {% endfor %}

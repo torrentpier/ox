@@ -10,19 +10,28 @@
   / <span class="current">{{ resource.title }}</span>
 </nav>
 
-<h1>{{ resource.title }}</h1>
-{% if resource.tag_line %}<p class="lede">{{ resource.tag_line }}</p>{% endif %}
-
-<p class="thread-meta muted">
-  By <strong>{{ resource.username }}</strong>
-  {% if resource.resource_date %}— posted {{ resource.resource_date | timestamp }}{% endif %}
-  {% if resource.last_update and resource.last_update != resource.resource_date %}— updated {{ resource.last_update | timestamp }}{% endif %}
-  {% if resource.version %}— version <strong>{{ resource.version }}</strong>{% endif %}
-  — {{ resource.view_count }} views, {{ resource.download_count }} downloads
-</p>
+<header class="resource-header">
+  {% set icon_src = r2_url(resource.icon_r2_key) or resource.icon_url %}
+  {% if icon_src %}
+    <img class="resource-icon" src="{{ icon_src }}" alt="" loading="lazy">
+  {% else %}
+    <div class="resource-icon resource-card-icon-placeholder" aria-hidden="true">📦</div>
+  {% endif %}
+  <div class="resource-header-text">
+    <h1>{{ resource.title }}</h1>
+    {% if resource.tag_line %}<p class="lede">{{ resource.tag_line }}</p>{% endif %}
+    <p class="thread-meta muted">
+      By <strong>{{ resource.username }}</strong>
+      {% if resource.resource_date %}— posted {{ resource.resource_date | timestamp }}{% endif %}
+      {% if resource.last_update and resource.last_update != resource.resource_date %}— updated {{ resource.last_update | timestamp }}{% endif %}
+      {% if resource.version %}— version <strong>{{ resource.version }}</strong>{% endif %}
+      — {{ resource.view_count }} views, {{ resource.download_count }} downloads
+    </p>
+  </div>
+</header>
 
 {% if resource.description_parsed %}
-<section class="post">
+<section class="content-card">
   <div class="post-body">{{ resource.description_parsed | safe }}</div>
 </section>
 {% endif %}

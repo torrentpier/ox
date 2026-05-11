@@ -7,13 +7,29 @@
   / <span class="current">{{ category.title }}</span>
 </nav>
 <h1>{{ category.title }}</h1>
-{% if category.description %}<p class="muted">{{ category.description }}</p>{% endif %}
-<ul class="resource-list">
+{% if category.description %}<p class="lede">{{ category.description }}</p>{% endif %}
+
+<ul class="resource-grid">
 {% for r in resources %}
-  <li>
-    <a href="{{ r.url_path }}"><strong>{{ r.title }}</strong></a>
-    {% if r.version %}<span class="muted">{{ r.version }}</span>{% endif %}
-    {% if r.tag_line %}<div class="muted">{{ r.tag_line }}</div>{% endif %}
+  <li class="resource-card">
+    {% set icon_src = r2_url(r.icon_r2_key) or r.icon_url %}
+    {% if icon_src %}
+      <img class="resource-card-icon" src="{{ icon_src }}" alt="" loading="lazy">
+    {% else %}
+      <div class="resource-card-icon resource-card-icon-placeholder" aria-hidden="true">📦</div>
+    {% endif %}
+    <div class="resource-card-body">
+      <div class="resource-card-title">
+        <a href="{{ r.url_path }}">{{ r.title }}</a>
+        {% if r.version %}<span class="version">{{ r.version }}</span>{% endif %}
+      </div>
+      {% if r.tag_line %}<div class="resource-card-tagline">{{ r.tag_line }}</div>{% endif %}
+      <div class="resource-card-meta">
+        <span>{{ r.username }}</span>
+        <span>{{ r.last_update | timestamp }}</span>
+        <span>{{ r.download_count or 0 }} downloads</span>
+      </div>
+    </div>
   </li>
 {% endfor %}
 </ul>
