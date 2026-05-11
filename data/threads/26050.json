@@ -1,0 +1,50 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 61669,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 5,
+        "title": "Torrent tracker engine TorrentPier",
+        "type": "Category"
+      }
+    ],
+    "id": 24,
+    "title": "Video tutorials on TorrentPier"
+  },
+  "id": 26050,
+  "last_post_date": 1406654323,
+  "node_id": 24,
+  "post_date": 1406654323,
+  "posts": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 61669,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "[GALLERY=media, 17]Устанавливаем GIT и скачиваем TorrentPier от Exile опубликован 15 янв 2015 в 13:32[/GALLERY]",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1406654323,
+      "user_id": 19,
+      "user_title": "User",
+      "username": "dimka3210"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 0,
+  "slug": "video-faq-ustanavlivaem-git-i-skacivaem-torrentpier",
+  "sticky": true,
+  "tags": [],
+  "title": "Видео FAQ - Устанавливаем GIT и скачиваем TorrentPier",
+  "url_path": "/threads/video-faq-ustanavlivaem-git-i-skacivaem-torrentpier.26050/",
+  "user_id": 19,
+  "username": "dimka3210",
+  "view_count": 3076
+}

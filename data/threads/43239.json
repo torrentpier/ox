@@ -1,0 +1,104 @@
+{
+  "custom_fields": {},
+  "discussion_open": true,
+  "discussion_state": "visible",
+  "discussion_type": "discussion",
+  "first_post_id": 98358,
+  "forum": {
+    "breadcrumbs": [
+      {
+        "id": 1,
+        "title": "TorrentPier.com",
+        "type": "Category"
+      }
+    ],
+    "id": 54,
+    "title": "New versions"
+  },
+  "id": 43239,
+  "last_post_date": 1768155554,
+  "node_id": 54,
+  "post_date": 1767198987,
+  "posts": [
+    {
+      "attach_count": 1,
+      "attachments": [
+        {
+          "attach_date": 1767198980,
+          "file_size": 6648,
+          "filename": "Cattle.webp",
+          "height": 343,
+          "id": 6674,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": "attachments/6674/Cattle.webp",
+          "src_url": "https://torrentpier.com/attachments/cattle-webp.6674/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/6/6678-b110be9bd73f4e34eda09812db40faef.jpg?hash=jFIp-r3dyo",
+          "width": 302
+        }
+      ],
+      "id": 98358,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<b><span style=\"font-size: 22px\">TorrentPier Cattle. v2.8.9</span></b><br />\n<br />\n<img src=\"https://torrentpier.com/attachments/6674/\" alt=\"Cattle.webp\" /><br />\n<br />\n<b>Download link:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/releases/tag/v2.8.9\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Release v2.8.9 · torrentpier/torrentpier</a><br />\n<br />\n<b>Changelog:</b><br />\n<a href=\"https://github.com/torrentpier/torrentpier/compare/v2.8.8...v2.8.9\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">Comparing v2.8.8...v2.8.9 · torrentpier/torrentpier</a><br />\n<br />\n<h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-rocket-features\"></a>🚀 Features&#8203;<a class=\"hoverLink\" href=\"#-rocket-features\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(cron)</i> Add execution time tracking for cron jobs (<a href=\"https://github.com/torrentpier/torrentpier/pull/2220\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2220</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/66b6dcf9d48b5fe580eaa6b0f5b1f7b74948ffa8\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">66b6dcf</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(install)</i> Add database drop option during installation (<a href=\"https://github.com/torrentpier/torrentpier/pull/2226\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2226</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/ec0fb14c3a85840a721d4eb52307589c43bebc99\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">ec0fb14</a>)</li>\n<li data-xf-list-type=\"ul\">Add option to apply forum permissions to subforums (<a href=\"https://github.com/torrentpier/torrentpier/pull/2223\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2223</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/1bcfd2437c5ee424952107e3983cfc5dece4ba9f\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">1bcfd24</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-bug-bug-fixes\"></a>🐛 Bug Fixes&#8203;<a class=\"hoverLink\" href=\"#-bug-bug-fixes\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(css)</i> Add dark mode support for latest news section (<a href=\"https://github.com/torrentpier/torrentpier/pull/2230\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2230</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/704a71f870185f0b22ddb448f4509dde269ecb03\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">704a71f</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(php8.5)</i> Add PHP 8.5 compatibility (<a href=\"https://github.com/torrentpier/torrentpier/pull/2207\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2207</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/a0dd7a54db3d86d11d1723952e2c47458d19917e\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">a0dd7a5</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(search)</i> Improve Manticore Search stability and query escaping (<a href=\"https://github.com/torrentpier/torrentpier/pull/2225\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2225</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/89f520cf3a8e2c0af0296de94ae6a6f83fa46c04\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">89f520c</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(security)</i> Prevent SQL injection in moderator panel topic_id parameter (<a href=\"https://github.com/torrentpier/torrentpier/pull/2216\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2216</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/6a0f6499d89fa5d6e2afa8ee53802a1ad11ece80\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">6a0f649</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-package-dependencies\"></a>📦 Dependencies&#8203;<a class=\"hoverLink\" href=\"#-package-dependencies\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(deps)</i> Bump arokettu/torrent-file from 5.3.3 to 5.3.4 (<a href=\"https://github.com/torrentpier/torrentpier/pull/2211\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2211</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/99ed1267589d727563eea1360291690d80260ee0\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">99ed126</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(deps)</i> Bump symfony/mailer from 7.3.4 to 7.3.5 (<a href=\"https://github.com/torrentpier/torrentpier/pull/2212\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2212</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/6402b7873320a23b8e832fa04eda8ebf2cde43c1\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">6402b78</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(deps)</i> Bump nette/database from 3.2.7 to 3.2.8 (<a href=\"https://github.com/torrentpier/torrentpier/pull/2213\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2213</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/b5153fd2f09452ebbc2330412b4f6c4e6842868c\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">b5153fd</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(deps)</i> Bump twig/twig from 3.21.1 to 3.22.0 (<a href=\"https://github.com/torrentpier/torrentpier/pull/2214\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2214</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/30026476f17e31167448512f173586c7857138c8\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">3002647</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(deps-dev)</i> Bump symfony/var-dumper from 7.3.4 to 7.3.5 (<a href=\"https://github.com/torrentpier/torrentpier/pull/2210\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2210</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/305555474442e04f2044dd8073cc9a26570f3607\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">3055554</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-tractor-refactor\"></a>🚜 Refactor&#8203;<a class=\"hoverLink\" href=\"#-tractor-refactor\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(admin)</i> Migrate stats pages to ajax with Nette Explorer (<a href=\"https://github.com/torrentpier/torrentpier/pull/2227\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2227</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/7e7d17f80cdd7afc18a44ccb1c7c7d39bbd23549\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">7e7d17f</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(datetime)</i> Integrate Carbon for date formatting (<a href=\"https://github.com/torrentpier/torrentpier/pull/2208\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2208</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/d749c9b48134f0d5ae2dde5f426c1f6e75e3bc80\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">d749c9b</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(image)</i> [<b>breaking</b>] Migrate from SimpleImage to Intervention Image v3 (<a href=\"https://github.com/torrentpier/torrentpier/pull/2229\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2229</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/39ffdfd6119a0ec7e44e98e82005967bd2558eae\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">39ffdfd</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(search)</i> Use $dl_link_css instead of hardcoded class names (<a href=\"https://github.com/torrentpier/torrentpier/pull/2221\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2221</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/2d873e9dbb7e35637b5ac4b82365798a19feb9ba\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">2d873e9</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(styles)</i> Remove empty selectors and duplicate rules (<a href=\"https://github.com/torrentpier/torrentpier/pull/2218\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2218</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/d61c587bb91af75f0df4b48333af656e9de1df66\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">d61c587</a>)</li>\n<li data-xf-list-type=\"ul\"><i>(timezone)</i> Replace $lang[&#039;TZ&#039;] with centralized configuration for timezone management - (<a href=\"https://github.com/torrentpier/torrentpier/commit/a9d1158e4eeb6d77e1fe180d8ec8b1f137777084\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">a9d1158</a>)</li>\n<li data-xf-list-type=\"ul\">Remove deprecated set_tpl_vars_lang method (<a href=\"https://github.com/torrentpier/torrentpier/pull/2217\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">#2217</a>) - (<a href=\"https://github.com/torrentpier/torrentpier/commit/c0c132df3f6be3e146f144da4c97be195bad45a6\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">c0c132d</a>)</li>\n</ul><h3 class=\"bbHeading\"><a class=\"u-anchorTarget\" name=\"-gear-miscellaneous\"></a>⚙️ Miscellaneous&#8203;<a class=\"hoverLink\" href=\"#-gear-miscellaneous\" title=\"Permanent link\"></a></h3><ul>\n<li data-xf-list-type=\"ul\"><i>(i18n)</i> Update composer.lock with latest dependencies and translations updates - (<a href=\"https://github.com/torrentpier/torrentpier/commit/458d6d562d301e205b57416061df2666c1d1c523\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">458d6d5</a>)</li>\n</ul>",
+      "message_state": "visible",
+      "position": 0,
+      "post_date": 1767198987,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98362,
+      "is_admin": false,
+      "is_moderator": false,
+      "is_staff": false,
+      "last_edit_date": 1768106870,
+      "message_parsed": "Deprecation Notice: Constant E_STRICT is deprecated in /usr/share/php/Composer/Util/Silencer.php:36<br />\n ubuntu 24 lts server php8.4 (torrentpier-master)",
+      "message_state": "visible",
+      "position": 1,
+      "post_date": 1768106798,
+      "user_id": 10958,
+      "user_title": "User",
+      "username": "haribo"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 98363,
+      "is_admin": true,
+      "is_moderator": true,
+      "is_staff": true,
+      "last_edit_date": 0,
+      "message_parsed": "<blockquote class=\"xfBb-quote\" data-name=\"haribo\">Deprecation Notice: Constant E_STRICT is deprecated in /usr/share/php/Composer/Util/Silencer.php:36<br />\n ubuntu 24 lts server php8.4 (torrentpier-master)</blockquote>Hi! Thanks for reporting this issue.<br />\n<br />\nThis deprecation notice occurs because PHP 8.4 has deprecated the E_STRICT constant. The constant E_STRICT was used in older PHP versions to report coding standards warnings, but it became redundant after PHP 5.4 when those checks were merged into other error levels. PHP 8.4 has now officially deprecated it.<br />\n<br />\nThe warning is coming from Composer&#039;s Silencer.php file, which still references this deprecated constant in older versions.<br />\n<br />\nPlease update Composer to the latest version:<br />\n<pre class=\"xfBb-code\" data-lang=\"bash\">composer self-update</pre>",
+      "message_state": "visible",
+      "position": 2,
+      "post_date": 1768155554,
+      "user_id": 10614,
+      "user_title": "Разработчик",
+      "username": "belomaxorka"
+    }
+  ],
+  "prefix_id": 0,
+  "reply_count": 2,
+  "slug": "torrentpier-cattle-v2-8-9",
+  "sticky": true,
+  "tags": [
+    "cattle",
+    "changelog",
+    "new version",
+    "release",
+    "update",
+    "новая версия"
+  ],
+  "title": "TorrentPier Cattle. v2.8.9",
+  "url_path": "/threads/torrentpier-cattle-v2-8-9.43239/",
+  "user_id": 10614,
+  "username": "belomaxorka",
+  "view_count": 617
+}

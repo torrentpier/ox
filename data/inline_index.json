@@ -8,6 +8,14 @@
       "failed": true,
       "status": 400
     },
+    "http://bestrepack.net/forum/images/ranks/Br_catalyst.png": {
+      "failed": true,
+      "status": 404
+    },
+    "http://bestrepack.net:8080/forum/images/ranks/Br_catalyst.png": {
+      "failed": true,
+      "status": 404
+    },
     "http://blogonovosti.com/img/modules/news/2/da/20ccea10df4740d8e6b1c957c8045da2/eb-%D0%BC%D0%B0%D1%87%D0%BE%20%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%B0.jpg": {
       "r2_key": "inline/20/20b3d34fd1d12d67da50a5b130aa7cf217d2b4342cc3d43e35af7c0721a88434.jpg",
       "sha256": "20b3d34fd1d12d67da50a5b130aa7cf217d2b4342cc3d43e35af7c0721a88434",
@@ -37,6 +45,11 @@
     "http://cdn.joxi.ru/uploads/prod/2014/03/16/fcf/1cd/75bc4ebdc6d54319dcc7a46536942226068917a3.jpg": {
       "failed": true,
       "status": 404
+    },
+    "http://cdnbunny.org/favicon.ico": {
+      "r2_key": "inline/e6/e68d4b7f22b5027fef4672cc5ba884fb52ac248fd1ca4648c9ac89d95b0e58f4.ico",
+      "sha256": "e68d4b7f22b5027fef4672cc5ba884fb52ac248fd1ca4648c9ac89d95b0e58f4",
+      "size": 894
     },
     "http://clip2net.com/clip/m120242/thumb640/1353347827-clip-24kb.png": {
       "r2_key": "inline/2b/2b1a5c4b3c6bd6413a0d2e226328102c5c6a7944945156d8ab39d2297e70a3aa.png",
@@ -136,6 +149,10 @@
       "failed": true,
       "status": 404
     },
+    "http://easycaptures.com/fs/uploaded/397/8508318239.png": {
+      "failed": true,
+      "status": 404
+    },
     "http://easycaptures.com/fs/uploaded/625/4250381780.png": {
       "r2_key": "inline/50/5056622b2d93ea0c6c73c7c9cd7406de72b2ee54d288dc86b484110dc27d2748.png",
       "sha256": "5056622b2d93ea0c6c73c7c9cd7406de72b2ee54d288dc86b484110dc27d2748",
@@ -224,6 +241,11 @@
       "sha256": "def0944f0d9a7bd8c6da4d34a390103762a0c4afbb6d22b3f2f6766a36c9801c",
       "size": 8642
     },
+    "http://gyazo.com/74d4feeba97c5d9a6ff98cfa3c569d10.png": {
+      "r2_key": "inline/ef/ef45c8d849ccc3b84b64fc65069ae8cb779a298ab0d7d7bf226a2a871b890150.png",
+      "sha256": "ef45c8d849ccc3b84b64fc65069ae8cb779a298ab0d7d7bf226a2a871b890150",
+      "size": 90107
+    },
     "http://gyazo.com/754893c2098a11b32a2c97584efa2e6f.png": {
       "r2_key": "inline/7e/7e261c07dcacb4fac113f060831a1ce29d9fe217d70245a330f31a204057d13f.png",
       "sha256": "7e261c07dcacb4fac113f060831a1ce29d9fe217d70245a330f31a204057d13f",
@@ -264,6 +286,31 @@
       "sha256": "27910dc42467aab511611b024db13f359a08f5363b6dda6a367693a77699e633",
       "size": 108136
     },
+    "http://habrastorage.org/storage1/2a512b07/140110f9/da09845e/80b64bde.png": {
+      "r2_key": "inline/db/dbfb8c233dbe67819d025dc4d9dfc9453cbae1053010bdb6d7c71d0df69bc06f.png",
+      "sha256": "dbfb8c233dbe67819d025dc4d9dfc9453cbae1053010bdb6d7c71d0df69bc06f",
+      "size": 58928
+    },
+    "http://habrastorage.org/storage1/492d2304/d5aabc86/7efb45c2/2ee1797d.png": {
+      "r2_key": "inline/2a/2a24064d38bac04ebbb6a6ac4be4362c568afd8bacdcdc98a7a565eab674c31d.png",
+      "sha256": "2a24064d38bac04ebbb6a6ac4be4362c568afd8bacdcdc98a7a565eab674c31d",
+      "size": 54019
+    },
+    "http://habrastorage.org/storage1/6d172076/0ac2567f/dc8d354a/111e0236.png": {
+      "r2_key": "inline/12/12b690251a949cdd69232dc1874b05993c9f261c20bd7219654de6eaf2cde390.png",
+      "sha256": "12b690251a949cdd69232dc1874b05993c9f261c20bd7219654de6eaf2cde390",
+      "size": 60785
+    },
+    "http://habrastorage.org/storage1/d2c7b7c6/d745e4b6/c3e0e7f1/7dfdc3a2.png": {
+      "r2_key": "inline/b7/b78c87d03cfef750d2077ae319cbf6acaaa75b8244990fda3a6d56db6f53ba91.png",
+      "sha256": "b78c87d03cfef750d2077ae319cbf6acaaa75b8244990fda3a6d56db6f53ba91",
+      "size": 35259
+    },
+    "http://habrastorage.org/storage1/f0e8c75a/1fc33887/6bd4914f/7207b6dd.png": {
+      "r2_key": "inline/0a/0a003e23dd4ffbc90b344bcfcd95535960173afa9de3baa7f6b8bc035053ce2a.png",
+      "sha256": "0a003e23dd4ffbc90b344bcfcd95535960173afa9de3baa7f6b8bc035053ce2a",
+      "size": 26642
+    },
     "http://hostingkartinok.com/image/01201110/f14d4baeb2e7b809532bbe3ce9e2303d.png": {
       "failed": true,
       "status": 404
@@ -283,6 +330,11 @@
       "sha256": "1576322ca7c17d70817a2458c23b37482e6e0411fa5aae1748873ca950ee530c",
       "size": 40637
     },
+    "http://i.imgur.com/1Fbdb5t.png": {
+      "r2_key": "inline/da/daabe2fca30022b6234a3cfdb96085f6f61bc79cbe4cfd4b2304fff368909279.png",
+      "sha256": "daabe2fca30022b6234a3cfdb96085f6f61bc79cbe4cfd4b2304fff368909279",
+      "size": 29193
+    },
     "http://i.imgur.com/2JUbltI.jpg": {
       "r2_key": "inline/64/64e333a7c3998a39a636477e45e694a73a20f69b2a1d5b3ed61640645dc9fb3a.jpg",
       "sha256": "64e333a7c3998a39a636477e45e694a73a20f69b2a1d5b3ed61640645dc9fb3a",
@@ -292,6 +344,16 @@
       "r2_key": "inline/01/014e1841c7cbc1d02087ac883be6ef2ac4bee8d0cfb8194b86b8aa80456befc6.jpg",
       "sha256": "014e1841c7cbc1d02087ac883be6ef2ac4bee8d0cfb8194b86b8aa80456befc6",
       "size": 2187
+    },
+    "http://i.imgur.com/3mIQrXZ.png": {
+      "r2_key": "inline/99/99d31c4f2c35a310e6fbea8468378dd3e2f583aa2b67ec9f8bd825dad98a82ae.png",
+      "sha256": "99d31c4f2c35a310e6fbea8468378dd3e2f583aa2b67ec9f8bd825dad98a82ae",
+      "size": 7400
+    },
+    "http://i.imgur.com/47ErndP.jpg": {
+      "r2_key": "inline/88/880d00b382f76e86a90307ac55b433667947d870414e49d9481504d128c6d420.jpg",
+      "sha256": "880d00b382f76e86a90307ac55b433667947d870414e49d9481504d128c6d420",
+      "size": 3332
     },
     "http://i.imgur.com/CErHXfR.png": {
       "r2_key": "inline/35/3587df8d764c05aac34c5657d6eca8a30900c1f1ad2f1592134f65dd8771365f.png",
@@ -312,6 +374,11 @@
       "r2_key": "inline/05/0547a75b049e485d114688652fa0bd139e8bd1f0563364cffbd9f0c601fa39e8.jpg",
       "sha256": "0547a75b049e485d114688652fa0bd139e8bd1f0563364cffbd9f0c601fa39e8",
       "size": 5515
+    },
+    "http://i.imgur.com/J30Tbag.jpg": {
+      "r2_key": "inline/9b/9b5936f4006146e4e1e9025b474c02863c0b5614132ad40db4b925a10e8bfbb9.png",
+      "sha256": "9b5936f4006146e4e1e9025b474c02863c0b5614132ad40db4b925a10e8bfbb9",
+      "size": 503
     },
     "http://i.imgur.com/JaeVmcd.png": {
       "r2_key": "inline/9b/9b5936f4006146e4e1e9025b474c02863c0b5614132ad40db4b925a10e8bfbb9.png",
@@ -392,6 +459,16 @@
       "r2_key": "inline/20/209f2a27d6fc9baf67a564873f4ed317e480633b0885987322f2dec2fd3dadd4.jpg",
       "sha256": "209f2a27d6fc9baf67a564873f4ed317e480633b0885987322f2dec2fd3dadd4",
       "size": 35191
+    },
+    "http://i.imgur.com/eiZpNmq.jpg": {
+      "r2_key": "inline/a1/a1028da5bc197bacedbe6a8da3cf30e999fb6ba8d8904c7a704f3db54d8284a8.jpg",
+      "sha256": "a1028da5bc197bacedbe6a8da3cf30e999fb6ba8d8904c7a704f3db54d8284a8",
+      "size": 2990
+    },
+    "http://i.imgur.com/fQdbwLm.png": {
+      "r2_key": "inline/80/8090fb90809b7b9a97486f09f4f6509940fe927cc4e56bf2c9a7900a87ef7c60.png",
+      "sha256": "8090fb90809b7b9a97486f09f4f6509940fe927cc4e56bf2c9a7900a87ef7c60",
+      "size": 39119
     },
     "http://i.imgur.com/fRfiB.png": {
       "r2_key": "inline/b1/b11270fb8a572116e4d4374ff7737e6ad0b04a8c6b96d454fc82ff2e258036bc.png",
@@ -502,6 +579,10 @@
       "failed": true,
       "status": 404
     },
+    "http://i2.imageban.ru/out/2012/01/13/d073b0bba46f3da4b791c7cc2681e694.png": {
+      "failed": true,
+      "status": 404
+    },
     "http://i2.imageban.ru/out/2012/08/03/333bfc1c93880f301c0081e3378da776.jpg": {
       "r2_key": "inline/5b/5b0c2dae828b7ac3ac744ec13ad1768d677d8de54653b63af7dd28bc62858acc.jpg",
       "sha256": "5b0c2dae828b7ac3ac744ec13ad1768d677d8de54653b63af7dd28bc62858acc",
@@ -533,6 +614,11 @@
       "sha256": "2a96fd58bf6efc4eacc6dedbbb0b0d630d6960bcfcfe1809540adbcc6deaa641",
       "size": 156890
     },
+    "http://i24.fastpic.ru/thumb/2011/0817/51/73c1fc42bc68266599d19bb27a54ee51.jpeg": {
+      "r2_key": "inline/0b/0bb2cda061c56911a428a949e697777ff6f111c425ea98bb028e21c841ed2c09.jpeg",
+      "sha256": "0bb2cda061c56911a428a949e697777ff6f111c425ea98bb028e21c841ed2c09",
+      "size": 4507
+    },
     "http://i26.fastpic.ru/big/2011/0822/0c/7024a1872d29f3afb1c7a9639f26f80c.png": {
       "r2_key": "inline/b4/b48c33024d77bce6196a2d6f9457ca18574686ec1e7ab16581dcc31b7627aa42.png",
       "sha256": "b48c33024d77bce6196a2d6f9457ca18574686ec1e7ab16581dcc31b7627aa42",
@@ -543,6 +629,11 @@
       "sha256": "4b4df300bdf2d9207ebf59011c62229809aeb0ccce9074868112beb2c645be85",
       "size": 3988
     },
+    "http://i26.fastpic.ru/big/2011/0823/27/9a31fb0be9763d89991f85b4c6e45227.png": {
+      "r2_key": "inline/85/855ae37a06e9b104f3c2a80cb3f3b2a4ebaf8d5ee356aa548273128bc4224955.png",
+      "sha256": "855ae37a06e9b104f3c2a80cb3f3b2a4ebaf8d5ee356aa548273128bc4224955",
+      "size": 5756
+    },
     "http://i26.fastpic.ru/big/2012/0611/76/5c2c96887edb30f68b189a9b9a579c76.png": {
       "r2_key": "inline/32/32b5b3bfb0cfb22553fe46f915ce46fee8be43f503019f0a06793bfce713f542.png",
       "sha256": "32b5b3bfb0cfb22553fe46f915ce46fee8be43f503019f0a06793bfce713f542",
@@ -552,6 +643,11 @@
       "r2_key": "inline/91/91a9d4b789c9f8ef2d905c3af58deffe590b38c99563cec713d9eec251db12cc.jpg",
       "sha256": "91a9d4b789c9f8ef2d905c3af58deffe590b38c99563cec713d9eec251db12cc",
       "size": 53529
+    },
+    "http://i26.fastpic.ru/big/2012/1006/fa/b53980361d9937f1bf0d8421ca9ca6fa.png": {
+      "r2_key": "inline/9c/9cff173b4b8535c1a999282bac6afa8e677efc02338508079e7df1f3639d58a4.png",
+      "sha256": "9cff173b4b8535c1a999282bac6afa8e677efc02338508079e7df1f3639d58a4",
+      "size": 27443
     },
     "http://i26.fastpic.ru/big/2012/1129/c5/75585dac9378078799597fc7221428c5.png": {
       "r2_key": "inline/71/71bf2c5d35a7c343aa52becb2efa0bbdee109e52202f1ebd9eb35be4e7a705e4.png",
@@ -678,6 +774,11 @@
       "sha256": "b522b00e02d35f7d9d684e56a15a7c375d0e30536cdabd0acea8ade8d682988c",
       "size": 11691
     },
+    "http://i28.fastpic.ru/big/2011/1013/55/111a0929731cb8c512680f090c143355.png": {
+      "r2_key": "inline/96/9631d96cec87a76c8c947a23b6d8c567e9c1f59d1f8facc80fb848523bbae575.png",
+      "sha256": "9631d96cec87a76c8c947a23b6d8c567e9c1f59d1f8facc80fb848523bbae575",
+      "size": 67761
+    },
     "http://i28.fastpic.ru/big/2011/1207/fa/c83b8f189c8b9f6da0d38b43fb6b2efa.jpg": {
       "r2_key": "inline/2e/2ef293d92365e4bc57a4f880ce05ce53324e12201307ea6244873933a2f12633.jpg",
       "sha256": "2ef293d92365e4bc57a4f880ce05ce53324e12201307ea6244873933a2f12633",
@@ -742,6 +843,11 @@
       "r2_key": "inline/89/89aa789027fdfd5e979614c9f9f65caf375d4bffa9219400657f1088af8faae5.jpeg",
       "sha256": "89aa789027fdfd5e979614c9f9f65caf375d4bffa9219400657f1088af8faae5",
       "size": 3025
+    },
+    "http://i28.fastpic.ru/thumb/2011/1015/12/5151a8a7a6a31453f782e1c1508d6512.jpeg": {
+      "r2_key": "inline/0d/0d11e14b3d3e4fd9a3b36bce9da4b8e0b3aa38f90163fad5105ec7809664e657.jpeg",
+      "sha256": "0d11e14b3d3e4fd9a3b36bce9da4b8e0b3aa38f90163fad5105ec7809664e657",
+      "size": 5766
     },
     "http://i28.fastpic.ru/thumb/2012/0208/37/c32a672207c3dbaa1e479d813d48c837.jpeg": {
       "r2_key": "inline/ed/ed349260d46f07243bc478eaf588be24b46b53ec029c8d6526fd6831c91ed39c.jpeg",
@@ -848,7 +954,19 @@
       "sha256": "358e40a7798f62aa37818d1972f02d342a27339dc4bdca501dd7303bac22a041",
       "size": 24258
     },
+    "http://i3.imageban.ru/out/2012/01/14/8162358bcf7fe9e30f7296a5ade8f88e.jpg": {
+      "failed": true,
+      "status": 404
+    },
+    "http://i3.imageban.ru/out/2012/07/09/06073b5558d8bdd4c60cad1dd9108284.png": {
+      "failed": true,
+      "status": 404
+    },
     "http://i3.imageban.ru/out/2012/11/16/37d8a38862b1142c8b029a81b819421b.jpg": {
+      "failed": true,
+      "status": 404
+    },
+    "http://i3.imageban.ru/out/2012/12/25/cd1b9f45db6996d277cf1fab32f96362.jpg": {
       "failed": true,
       "status": 404
     },
@@ -936,6 +1054,11 @@
       "sha256": "b9990619d69284669d29fc5207eb234d7552a9294f557957dba76d48f31fa206",
       "size": 3450
     },
+    "http://i30.fastpic.ru/big/2012/0227/3a/18542342fe11d69415cbc5da391df93a.png": {
+      "r2_key": "inline/62/62f681df2a6a62d0a86ca92eb7782cd4bdc9994a96d65430b9120d339f3d3414.png",
+      "sha256": "62f681df2a6a62d0a86ca92eb7782cd4bdc9994a96d65430b9120d339f3d3414",
+      "size": 67820
+    },
     "http://i30.fastpic.ru/big/2012/0310/94/de700d4ea6326b06c337f5a6f433fc94.png": {
       "r2_key": "inline/d8/d8a23ac42b6c208a3f0d597d25683ae5bc6773e3d832e0cb59412922fe029f84.png",
       "sha256": "d8a23ac42b6c208a3f0d597d25683ae5bc6773e3d832e0cb59412922fe029f84",
@@ -975,6 +1098,11 @@
       "r2_key": "inline/d4/d451e3ebdc21f9c102af1ed9a50379a2186029195d049a3abcef06d692aeb49d.png",
       "sha256": "d451e3ebdc21f9c102af1ed9a50379a2186029195d049a3abcef06d692aeb49d",
       "size": 17839
+    },
+    "http://i31.fastpic.ru/big/2012/0119/50/01d87789e9d529e914a3e54f93ba5d50.png": {
+      "r2_key": "inline/e3/e3233bb6180bfdf9f00a963b876dfccaaab8ecb08773b3918686dd25b065ae54.png",
+      "sha256": "e3233bb6180bfdf9f00a963b876dfccaaab8ecb08773b3918686dd25b065ae54",
+      "size": 238214
     },
     "http://i31.fastpic.ru/big/2012/0125/00/862fe9eb3beabc6cc5d0f7733cb6be00.gif": {
       "r2_key": "inline/a5/a52dc9edea5a8145547b0845c350631435128e9f6f755273a3e6b8a5b965bdf6.gif",
@@ -1161,6 +1289,16 @@
       "sha256": "a3d100c84e0c2d711b2f97d67560bab48e26cb2f53e4ee101d7641372a47ca5a",
       "size": 8172
     },
+    "http://i38.fastpic.ru/big/2012/0518/5e/ce96c2eb3213bccba0295877a3c3315e.jpg": {
+      "r2_key": "inline/81/817a9d9f01b29910d91c43aea498af4aae0ceb1e4840df10be88f39dd0218897.jpg",
+      "sha256": "817a9d9f01b29910d91c43aea498af4aae0ceb1e4840df10be88f39dd0218897",
+      "size": 151661
+    },
+    "http://i38.fastpic.ru/big/2012/0518/6a/cfce6f6b3d65339a3e290701b9b7dc6a.jpg": {
+      "r2_key": "inline/42/42e328e19c6d5a1d44b1806215e0d9a898649a05ff328c4053151116da90804d.jpg",
+      "sha256": "42e328e19c6d5a1d44b1806215e0d9a898649a05ff328c4053151116da90804d",
+      "size": 154623
+    },
     "http://i38.fastpic.ru/big/2012/0519/7c/b869953701b35af8025f3b535814a87c.png": {
       "r2_key": "inline/f1/f1d0dfb16a45cd362614719c27e484761ff9807ad63dc9b76ff8034b82fafc46.png",
       "sha256": "f1d0dfb16a45cd362614719c27e484761ff9807ad63dc9b76ff8034b82fafc46",
@@ -1286,10 +1424,20 @@
       "sha256": "5fd5d781238805ccad0c80c34f97da028780199a32a95e1d03984fb3605062a9",
       "size": 7860
     },
+    "http://i46.fastpic.ru/thumb/2013/0711/7f/95575c3a38856d4037ecc52e23502d7f.jpeg": {
+      "r2_key": "inline/05/058472cda7397dcc62388069a63c154852461e7e06471e8af4313c09b71b5b7d.jpeg",
+      "sha256": "058472cda7397dcc62388069a63c154852461e7e06471e8af4313c09b71b5b7d",
+      "size": 7802
+    },
     "http://i46.fastpic.ru/thumb/2013/0728/e5/0933c56439a5e76def0698cf54e00ae5.jpeg": {
       "r2_key": "inline/73/73183699fc1ac2150d494ae0cc9047717154ecb85c5e9b5ebb587de0735df9b7.jpeg",
       "sha256": "73183699fc1ac2150d494ae0cc9047717154ecb85c5e9b5ebb587de0735df9b7",
       "size": 4856
+    },
+    "http://i47.fastpic.ru/big/2012/1113/5d/44db733aee19e20a94c3cb75ab54bf5d.jpg": {
+      "r2_key": "inline/c7/c7b4b368e87f8e9e3053b7b3a51deb5527e1b0f154bf15d402f91d2e2ed487dd.jpg",
+      "sha256": "c7b4b368e87f8e9e3053b7b3a51deb5527e1b0f154bf15d402f91d2e2ed487dd",
+      "size": 6542
     },
     "http://i47.fastpic.ru/big/2012/1121/d2/d7d2e59eddf84b59a24cd436dad0dcd2.png": {
       "r2_key": "inline/c6/c64f04864162de4b96cf4152f6b50c7a4857567d8c8c6d870c6758ef7df69f54.png",
@@ -1401,6 +1549,23 @@
       "sha256": "01489592f2d64a487bda2680bfe8fcb9eb2cccd8e547c18b4dba104eb278a8ff",
       "size": 5459
     },
+    "http://i5.fastpic.ru/big/2010/0528/12/f83ae62c53f6e8f663ac9cee39867b12.gif": {
+      "r2_key": "inline/70/70292631771d4c742839253cbe6c4bbc9dcd23c6bb36c89fac4345d4226fb347.gif",
+      "sha256": "70292631771d4c742839253cbe6c4bbc9dcd23c6bb36c89fac4345d4226fb347",
+      "size": 234394
+    },
+    "http://i5.imageban.ru/out/2012/11/29/c295c57016fb54614276ffd52ddade61.png": {
+      "failed": true,
+      "status": 404
+    },
+    "http://i5.imageban.ru/out/2012/11/29/f20653d894b4c9ce9135526511c24232.png": {
+      "failed": true,
+      "status": 404
+    },
+    "http://i5.imageban.ru/out/2013/01/14/3f93c36d64322a3f2a1dc4b9a22a054d.jpg": {
+      "failed": true,
+      "status": 404
+    },
     "http://i5.imageban.ru/out/2014/11/01/fa26cb5b01c145e1861b50b3a4f9d26e.gif": {
       "failed": true,
       "status": 404
@@ -1410,6 +1575,18 @@
       "status": 404
     },
     "http://i5.imageban.ru/out/2014/11/26/fb85aa2a91ee6e3c88be2ff8382ccfcd.jpg": {
+      "failed": true,
+      "status": 404
+    },
+    "http://i5.imageban.ru/thumbs/2012.11.05/97ad1d33ccdca513ba8c64dba41dff40.jpg": {
+      "failed": true,
+      "status": 404
+    },
+    "http://i5.imageban.ru/thumbs/2012.11.05/b22b9c83120b8da0e4f9a412e3b5b20b.jpg": {
+      "failed": true,
+      "status": 404
+    },
+    "http://i5.imageban.ru/thumbs/2012.11.15/d9e7c6598ce6f3a4653873289643d5d1.jpg": {
       "failed": true,
       "status": 404
     },
@@ -1693,6 +1870,11 @@
       "sha256": "bfcecc761926685d8a4394aa1b43e5186f9121084da6958df8d7019f886a0fbf",
       "size": 60500
     },
+    "http://i58.fastpic.ru/thumb/2014/0107/74/89284d95c839ff8a8a81c97ba326f374.jpeg": {
+      "r2_key": "inline/5b/5bee2bce09156526848892ce5668fd3e9fc11998587ac861a54f81cf3d19d173.jpeg",
+      "sha256": "5bee2bce09156526848892ce5668fd3e9fc11998587ac861a54f81cf3d19d173",
+      "size": 3279
+    },
     "http://i59.fastpic.ru/big/2013/0829/ec/7ddc03f42aa1f6e67ee313447d88e9ec.jpg": {
       "r2_key": "inline/fb/fb6f3a5696b5dd7a1a9b61dcd52a3b7d74056b48529d09271017e7c5aaf99b64.jpg",
       "sha256": "fb6f3a5696b5dd7a1a9b61dcd52a3b7d74056b48529d09271017e7c5aaf99b64",
@@ -1806,6 +1988,31 @@
       "r2_key": "inline/c0/c0db7f1855e4c1c48c377c72f5970c7e083aea41f08d1116d9421c01f5efadbe.png",
       "sha256": "c0db7f1855e4c1c48c377c72f5970c7e083aea41f08d1116d9421c01f5efadbe",
       "size": 17222
+    },
+    "http://i63.fastpic.ru/thumb/2014/0901/42/92aa07bf665f405056e855513be8a742.jpeg?r=1": {
+      "r2_key": "inline/85/857f19e3f7c303b4216d60bcbec89ee1440771eff80d394c180553d0a79f7569.jpeg",
+      "sha256": "857f19e3f7c303b4216d60bcbec89ee1440771eff80d394c180553d0a79f7569",
+      "size": 3916
+    },
+    "http://i63.fastpic.ru/thumb/2014/0901/64/d63baddc0aa601cf153206e06b362064.jpeg?r=1": {
+      "r2_key": "inline/6a/6a2f65bb37df2fa4191999562ffb8558895b56c39ec968938691f2f71f9384a0.jpeg",
+      "sha256": "6a2f65bb37df2fa4191999562ffb8558895b56c39ec968938691f2f71f9384a0",
+      "size": 4723
+    },
+    "http://i63.fastpic.ru/thumb/2014/0901/73/12a9881f349034adf5f2d8c45404f273.jpeg?r=1": {
+      "r2_key": "inline/8d/8d5dbc1453b97432e7e07587dddbad88b03240cfd1fdc1b4dfabbaf8fd4d6296.jpeg",
+      "sha256": "8d5dbc1453b97432e7e07587dddbad88b03240cfd1fdc1b4dfabbaf8fd4d6296",
+      "size": 4322
+    },
+    "http://i63.fastpic.ru/thumb/2014/0901/7f/0e13d26d3a304db8eb844e18ebbf067f.jpeg?r=1": {
+      "r2_key": "inline/1c/1c89bfde71ceb2ac8af84dc201194c223399243fa1454c630f87b95619c38a54.jpeg",
+      "sha256": "1c89bfde71ceb2ac8af84dc201194c223399243fa1454c630f87b95619c38a54",
+      "size": 3844
+    },
+    "http://i63.fastpic.ru/thumb/2014/0901/f7/7c76de8b2169253f86a181131867c1f7.jpeg?r=1": {
+      "r2_key": "inline/23/2344efb6dba31529ef02a4b58e01550f0d9f6d5e41ed710aefc8fdfed4f8c841.jpeg",
+      "sha256": "2344efb6dba31529ef02a4b58e01550f0d9f6d5e41ed710aefc8fdfed4f8c841",
+      "size": 4206
     },
     "http://i64.fastpic.ru/big/2014/0612/fa/0d52ffaf34d9105d3db97f21ea889efa.png": {
       "r2_key": "inline/29/2930e4afad02b03a0f0548dd72ee94ed201acb46d883e0cdad25832840c92b32.png",
@@ -1988,6 +2195,10 @@
       "size": 237010
     },
     "http://i8.fastpic.ru/big/2010/0713/56/140187b11ca14151527aa1c9bb10c056.png": {
+      "failed": true,
+      "status": 404
+    },
+    "http://i8.fastpic.ru/big/2010/0715/a6/b93e34ef9e02d7ac9ffda4fa8bf03aa6.png": {
       "failed": true,
       "status": 404
     },
@@ -2320,6 +2531,16 @@
       "sha256": "6dc9c7fc93bb488bb0520a6c780a8d3c0fb5486a4711aca49b4c53fac7393023",
       "size": 114
     },
+    "http://img23.binimage.org/2a/f7/56/14012013_00631.png": {
+      "r2_key": "inline/6d/6dc9c7fc93bb488bb0520a6c780a8d3c0fb5486a4711aca49b4c53fac7393023.png",
+      "sha256": "6dc9c7fc93bb488bb0520a6c780a8d3c0fb5486a4711aca49b4c53fac7393023",
+      "size": 114
+    },
+    "http://img23.binimage.org/55/05/36/324324234.png": {
+      "r2_key": "inline/6d/6dc9c7fc93bb488bb0520a6c780a8d3c0fb5486a4711aca49b4c53fac7393023.png",
+      "sha256": "6dc9c7fc93bb488bb0520a6c780a8d3c0fb5486a4711aca49b4c53fac7393023",
+      "size": 114
+    },
     "http://img23.binimage.org/c7/16/e2/54b2d8.png": {
       "r2_key": "inline/6d/6dc9c7fc93bb488bb0520a6c780a8d3c0fb5486a4711aca49b4c53fac7393023.png",
       "sha256": "6dc9c7fc93bb488bb0520a6c780a8d3c0fb5486a4711aca49b4c53fac7393023",
@@ -2333,11 +2554,19 @@
       "failed": true,
       "status": 404
     },
+    "http://img36.imageshack.us/img36/9536/thumbbm.png": {
+      "failed": true,
+      "status": 404
+    },
     "http://img407.imageshack.us/img407/2096/44108609.jpg": {
       "failed": true,
       "status": 404
     },
     "http://img444.imageshack.us/img444/5036/thumb2xc.jpg": {
+      "failed": true,
+      "status": 404
+    },
+    "http://img535.imageshack.us/img535/8650/thumb2hl.jpg": {
       "failed": true,
       "status": 404
     },
@@ -2357,6 +2586,10 @@
       "failed": true,
       "status": 404
     },
+    "http://img689.imageshack.us/img689/1364/thumboo.jpg": {
+      "failed": true,
+      "status": 404
+    },
     "http://img692.imageshack.us/img692/4837/9999999999999m.jpg": {
       "failed": true,
       "status": 404
@@ -2366,6 +2599,10 @@
       "status": 404
     },
     "http://img705.imageshack.us/img705/7373/pravak.png": {
+      "failed": true,
+      "status": 404
+    },
+    "http://img804.imageshack.us/img804/6925/13577685.jpg": {
       "failed": true,
       "status": 404
     },
@@ -2783,10 +3020,20 @@
       "sha256": "d939afb2bfbce9d576e4d7ac2934a3e2d834f457a0d9da88926093fb6a9647f2",
       "size": 119797
     },
+    "http://s1.hostingkartinok.com/uploads/images/2012/04/f4253fbdfa84a35318cdaf247c3eb9ea.jpg": {
+      "r2_key": "inline/bf/bfce710ec599a8aef64788792fc6bc62df1b01e34134b9e1eb5344e5b6086bf3.jpg",
+      "sha256": "bfce710ec599a8aef64788792fc6bc62df1b01e34134b9e1eb5344e5b6086bf3",
+      "size": 27317
+    },
     "http://s1.hostingkartinok.com/uploads/images/2012/09/8e51a763744fc9e008d59d5be2769061.jpg": {
       "r2_key": "inline/62/62bce76e4a0a3aef28674137dade9a672b08c4766b4b53f1f3002834f044faf2.jpg",
       "sha256": "62bce76e4a0a3aef28674137dade9a672b08c4766b4b53f1f3002834f044faf2",
       "size": 367754
+    },
+    "http://s1.hostingkartinok.com/uploads/images/2012/09/9dd2645d5fbb6825442103decc267914.jpg": {
+      "r2_key": "inline/64/64384b38ca8d3b3da0a7ba9788ae91be71256fd0559bcfa88e1babe0ac2102b3.jpg",
+      "sha256": "64384b38ca8d3b3da0a7ba9788ae91be71256fd0559bcfa88e1babe0ac2102b3",
+      "size": 431522
     },
     "http://s1.hostingkartinok.com/uploads/images/2012/09/ed541b576d0d9402f4b3db471f6c32d4.jpg": {
       "r2_key": "inline/7d/7d1ab1c48c72d021eb6b32adf828f851d7bdd1c8b65cca72663b42cadf34ed55.jpg",
@@ -2823,10 +3070,19 @@
       "sha256": "5469b11d46ee2d5d0e98d9ec85270de08474ec96a48d512f56414d65a678a27d",
       "size": 50993
     },
+    "http://s18.rimg.info/39ea730d136bc795a89ea1b96a430f8f.gif": {
+      "failed": true,
+      "status": 400
+    },
     "http://s2.hostingkartinok.com/uploads/images/2012/09/365804d03e0cbac74fbec429432fc06e.jpg": {
       "r2_key": "inline/f5/f5220725cade7bb841e1bf698dc777dd617b69bce7fdd3d45c3c9dbb1e57984f.jpg",
       "sha256": "f5220725cade7bb841e1bf698dc777dd617b69bce7fdd3d45c3c9dbb1e57984f",
       "size": 299315
+    },
+    "http://s2.hostingkartinok.com/uploads/images/2012/09/7e34b608c09b4828a6749a5d776b0c15.jpg": {
+      "r2_key": "inline/fc/fcec40a8367af8a3aa2142668eb6687b6a749e5ffc05a159265ae17274ca80dc.jpg",
+      "sha256": "fcec40a8367af8a3aa2142668eb6687b6a749e5ffc05a159265ae17274ca80dc",
+      "size": 383063
     },
     "http://s2.hostingkartinok.com/uploads/images/2013/02/daa892bd8b8b97a8ef59cd52ad8f9753.jpg": {
       "failed": true,
@@ -2863,6 +3119,16 @@
       "size": 10507
     },
     "http://s2.ipicture.ru/uploads/20120117/sA76oOOG.png": {
+      "r2_key": "inline/6d/6d5d2d74408afb7c55bf20a0e792f188c56cea6ab72ae91728fdb43df6a82e1a.png",
+      "sha256": "6d5d2d74408afb7c55bf20a0e792f188c56cea6ab72ae91728fdb43df6a82e1a",
+      "size": 10507
+    },
+    "http://s2.ipicture.ru/uploads/20120620/thumbs/1iW1a51t.jpg": {
+      "r2_key": "inline/6d/6d5d2d74408afb7c55bf20a0e792f188c56cea6ab72ae91728fdb43df6a82e1a.png",
+      "sha256": "6d5d2d74408afb7c55bf20a0e792f188c56cea6ab72ae91728fdb43df6a82e1a",
+      "size": 10507
+    },
+    "http://s2.ipicture.ru/uploads/20120620/thumbs/Dd7nP9Wu.jpg": {
       "r2_key": "inline/6d/6d5d2d74408afb7c55bf20a0e792f188c56cea6ab72ae91728fdb43df6a82e1a.png",
       "sha256": "6d5d2d74408afb7c55bf20a0e792f188c56cea6ab72ae91728fdb43df6a82e1a",
       "size": 10507
@@ -2915,6 +3181,10 @@
       "failed": true,
       "status": 404
     },
+    "http://s20.rimg.info/d92ea363e7df9f9a1379455b8c9af854.gif": {
+      "failed": true,
+      "status": 400
+    },
     "http://s3.hostingkartinok.com/uploads/images/2012/09/74efbdd31d96b896381e0c9683687ba2.jpg": {
       "r2_key": "inline/b2/b2ed9394321bb4c6b4fe17dba455cabfda4e1e47432d86621dc31c58ee5bc642.jpg",
       "sha256": "b2ed9394321bb4c6b4fe17dba455cabfda4e1e47432d86621dc31c58ee5bc642",
@@ -2924,6 +3194,11 @@
       "r2_key": "inline/95/95557f7a7ad8f064cf36763b7d8dea372494942b4cb960fcb57f9d91a39edc85.jpg",
       "sha256": "95557f7a7ad8f064cf36763b7d8dea372494942b4cb960fcb57f9d91a39edc85",
       "size": 265676
+    },
+    "http://s3.hostingkartinok.com/uploads/images/2012/09/f91dc623246cc81ca6ae1dbe591ddfb8.jpg": {
+      "r2_key": "inline/af/afe399ca7f623051ec2fcb18bec8775b1c37166166095b4746c9dba9b3fde405.jpg",
+      "sha256": "afe399ca7f623051ec2fcb18bec8775b1c37166166095b4746c9dba9b3fde405",
+      "size": 223475
     },
     "http://s3.hostingkartinok.com/uploads/images/2014/01/610231532599874cea6bb44582926d3d.jpg": {
       "failed": true,
@@ -3013,6 +3288,11 @@
     "http://s7.hostingkartinok.com/uploads/images/2014/02/2054f68ea023620ee765ef85b5ee749f.jpg": {
       "failed": true,
       "status": 404
+    },
+    "http://s7.hostingkartinok.com/uploads/images/2014/02/51aa7ccd0417e7ccb471ef3b3e239fdd.png": {
+      "r2_key": "inline/08/08a1f136ace972def9eb5bf2add3126a8ec8e8fbb0f2fde5def84f12cb348ef4.png",
+      "sha256": "08a1f136ace972def9eb5bf2add3126a8ec8e8fbb0f2fde5def84f12cb348ef4",
+      "size": 17200
     },
     "http://s7.hostingkartinok.com/uploads/images/2014/02/76b2b6fd71703e4cb3ad8212f8a9bb08.jpg": {
       "failed": true,
@@ -3182,6 +3462,10 @@
       "status": 404
     },
     "http://www.malolikto.ru/wp-content/uploads/2016/10/122193716_5420033_700.jpg": {
+      "failed": true,
+      "status": 404
+    },
+    "http://www.nasa.gov/sites/default/files/iss038e042992.jpg": {
       "failed": true,
       "status": 404
     },
