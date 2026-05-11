@@ -16,6 +16,7 @@ from .pipeline import (
     mirror_avatars,
     mirror_inline,
     mirror_resources,
+    scan_inventory,
     verify,
 )
 
@@ -63,13 +64,22 @@ def cmd_verify(args: argparse.Namespace) -> None:
     log.info("verify: %s", dict(stats))
 
 
+def cmd_scan(args: argparse.Namespace) -> None:
+    stats = scan_inventory(Path(args.data))
+    log.info("scan: %s", dict(stats))
+
+
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(prog="xf-mirror")
-    p.add_argument("--data", default="data", help="Data directory (default: data)")
     p.add_argument("-v", "--verbose", action="store_true", help="DEBUG logging")
     sub = p.add_subparsers(dest="cmd", required=True)
 
-    p_up = sub.add_parser("upload", help="Mirror assets to R2 (idempotent)")
+    common = argparse.ArgumentParser(add_help=False)
+    common.add_argument("--data", default="data", help="Data directory (default: data)")
+
+    p_up = sub.add_parser(
+        "upload", parents=[common], help="Mirror assets to R2 (idempotent)"
+    )
     p_up.add_argument(
         "--only",
         action="append",
@@ -78,8 +88,17 @@ def build_parser() -> argparse.ArgumentParser:
     )
     p_up.set_defaults(func=cmd_upload)
 
-    p_v = sub.add_parser("verify", help="HEAD every r2_key; report missing")
+    p_v = sub.add_parser(
+        "verify", parents=[common], help="HEAD every r2_key; report missing"
+    )
     p_v.set_defaults(func=cmd_verify)
+
+    p_s = sub.add_parser(
+        "scan",
+        parents=[common],
+        help="Offline inventory of what upload would do (no R2 / network I/O)",
+    )
+    p_s.set_defaults(func=cmd_scan)
     return p
 
 
