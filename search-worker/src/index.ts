@@ -83,9 +83,16 @@ export default {
 
     const limitParam = parseInt(url.searchParams.get("limit") ?? "20", 10);
     const limit = Number.isFinite(limitParam) && limitParam > 0 ? Math.min(limitParam, 50) : 20;
+    const offsetParam = parseInt(url.searchParams.get("offset") ?? "0", 10);
+    const offset = Number.isFinite(offsetParam) && offsetParam >= 0
+      ? Math.min(offsetParam, 5000)
+      : 0;
 
     const ftsMatch = buildFtsMatch(stems);
 
+    // Fetch limit+1 to cheaply detect whether more results exist without a
+    // separate COUNT query against FTS5 (which would double D1 latency).
+    const fetchN = limit + 1;
     const sql = `
       SELECT t.id AS thread_id, t.title, t.slug, t.url_path, t.forum_title,
              p.id AS post_id, p.page_no,
@@ -96,17 +103,20 @@ export default {
       JOIN threads t ON t.id = p.thread_id
       WHERE posts_fts MATCH ?
       ORDER BY rank
-      LIMIT ?
+      LIMIT ? OFFSET ?
     `;
 
-    let rows: PostRow[];
+    let rawRows: PostRow[];
     try {
-      const result = await env.DB.prepare(sql).bind(ftsMatch, limit).all<PostRow>();
-      rows = result.results ?? [];
+      const result = await env.DB.prepare(sql).bind(ftsMatch, fetchN, offset).all<PostRow>();
+      rawRows = result.results ?? [];
     } catch (err) {
       const message = err instanceof Error ? err.message : String(err);
       return jsonResponse({ q, error: "query_failed", message }, { status: 500 });
     }
+
+    const hasMore = rawRows.length > limit;
+    const rows = hasMore ? rawRows.slice(0, limit) : rawRows;
 
     const stemSet = new Set(stems);
     const results = rows.map((row) => ({
@@ -119,6 +129,13 @@ export default {
       snippet: makeSnippet(row.body_plain, stemSet),
     }));
 
-    return jsonResponse({ q, count: results.length, results });
+    return jsonResponse({
+      q,
+      offset,
+      limit,
+      count: results.length,
+      has_more: hasMore,
+      results,
+    });
   },
 } satisfies ExportedHandler<Env>;

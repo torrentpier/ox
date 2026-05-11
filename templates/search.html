@@ -17,6 +17,9 @@
 
 <p id="search-status" class="muted search-status" hidden></p>
 <ol id="search-results" class="search-results"></ol>
+<div id="search-more-wrap" hidden>
+  <button type="button" id="search-more" class="search-more">Load more</button>
+</div>
 
 <template id="result-template">
   <li class="search-result">
@@ -29,10 +32,13 @@
 <script>
 (() => {
   const API = 'https://search-ox.torrentpier.com/search';
+  const PAGE = 20;
   const form = document.getElementById('search-form');
   const input = document.getElementById('q');
   const status = document.getElementById('search-status');
   const list = document.getElementById('search-results');
+  const moreWrap = document.getElementById('search-more-wrap');
+  const moreBtn = document.getElementById('search-more');
   const tpl = document.getElementById('result-template');
 
   function setStatus(msg) {
@@ -46,13 +52,7 @@
     catch { return ''; }
   }
 
-  function render(payload) {
-    list.replaceChildren();
-    if (!payload.results || payload.results.length === 0) {
-      setStatus('No matches for "' + payload.q + '"');
-      return;
-    }
-    setStatus(payload.count + ' result' + (payload.count === 1 ? '' : 's') + ' for "' + payload.q + '"');
+  function appendResults(payload) {
     for (const r of payload.results) {
       const node = tpl.content.firstElementChild.cloneNode(true);
       const link = node.querySelector('a');
@@ -69,20 +69,74 @@
   }
 
   let pending = 0;
+  let currentQuery = '';
+  let nextOffset = 0;
+
+  async function fetchPage(q, offset) {
+    const url = new URL(API);
+    url.searchParams.set('q', q);
+    url.searchParams.set('limit', String(PAGE));
+    url.searchParams.set('offset', String(offset));
+    const res = await fetch(url.toString(), { headers: { Accept: 'application/json' } });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    return await res.json();
+  }
+
   async function run(q) {
-    if (!q || q.length < 2) { list.replaceChildren(); setStatus(''); return; }
+    if (!q || q.length < 2) {
+      list.replaceChildren();
+      moreWrap.hidden = true;
+      setStatus('');
+      return;
+    }
     const seq = ++pending;
+    currentQuery = q;
+    nextOffset = 0;
+    list.replaceChildren();
+    moreWrap.hidden = true;
     setStatus('Searching…');
     try {
-      const url = new URL(API);
-      url.searchParams.set('q', q);
-      url.searchParams.set('limit', '30');
-      const res = await fetch(url.toString(), { headers: { Accept: 'application/json' } });
+      const payload = await fetchPage(q, 0);
       if (seq !== pending) return;
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-      render(await res.json());
+      if (!payload.results || payload.results.length === 0) {
+        setStatus('No matches for "' + q + '"');
+        return;
+      }
+      appendResults(payload);
+      nextOffset = (payload.offset || 0) + payload.count;
+      if (payload.has_more) {
+        moreWrap.hidden = false;
+        setStatus(`Showing ${payload.count} for "${q}" — more available`);
+      } else {
+        setStatus(`${payload.count} result${payload.count === 1 ? '' : 's'} for "${q}"`);
+      }
     } catch (e) {
       if (seq === pending) setStatus('Search failed: ' + e.message);
+    }
+  }
+
+  async function loadMore() {
+    if (!currentQuery) return;
+    const seq = pending;
+    moreBtn.disabled = true;
+    moreBtn.textContent = 'Loading…';
+    try {
+      const payload = await fetchPage(currentQuery, nextOffset);
+      if (seq !== pending) return;
+      appendResults(payload);
+      nextOffset = (payload.offset || 0) + payload.count;
+      const shown = list.children.length;
+      if (payload.has_more) {
+        setStatus(`Showing ${shown} for "${currentQuery}" — more available`);
+      } else {
+        moreWrap.hidden = true;
+        setStatus(`${shown} result${shown === 1 ? '' : 's'} for "${currentQuery}"`);
+      }
+    } catch (e) {
+      setStatus('Failed to load more: ' + e.message);
+    } finally {
+      moreBtn.disabled = false;
+      moreBtn.textContent = 'Load more';
     }
   }
 
@@ -94,6 +148,8 @@
     history.pushState({ q }, '', u);
     run(q);
   });
+
+  moreBtn.addEventListener('click', loadMore);
 
   window.addEventListener('popstate', () => {
     const q = new URLSearchParams(location.search).get('q') || '';

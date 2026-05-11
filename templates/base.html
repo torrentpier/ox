@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}{{ site_name }}{% endblock %}</title>
+  <link rel="icon" type="image/svg+xml" href="https://files-ox.torrentpier.com/ox.svg">
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -17,8 +18,19 @@
         <a href="/">Forums</a>
         <a href="/resources/">Resources</a>
         <a href="/members/">Members</a>
-        <a href="/search/">Search</a>
       </nav>
+      <form class="site-search" action="/search/" method="get" role="search">
+        <input type="search" name="q" placeholder="Search the archive…"
+               aria-label="Search the archive"
+               autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false"
+               maxlength="200">
+        <button type="submit" aria-label="Search">
+          <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true">
+            <circle cx="9" cy="9" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+            <line x1="13.5" y1="13.5" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </form>
     </div>
   </header>
   <main class="site-main">
