@@ -35,7 +35,7 @@ meaningful decision or completed step.
 | 4 | Search — Cloudflare D1 schema + import                     | Not started — needs `wrangler login` |
 | 4 | Search — TypeScript Worker exposing `/search?q=`           | Not started |
 | 4 | Search — frontend on `/search/` page                       | Not started (placeholder lives) |
-| 5 | Deploy — GitHub Actions build + Pages deploy               | Not started |
+| 5 | Deploy — GitHub Actions build + Pages deploy               | Workflow committed (`.github/workflows/build.yml`); fires on first push to `main` |
 | 5 | Deploy — DNS: `ox.torrentpier.com` CNAME → Pages           | Not started |
 | 5 | Deploy — Bulk Redirect from `torrentpier.com/*` → archive  | Not started |
 | 5 | Cutover — confirm archive live, revoke super-user API key  | Not started |
@@ -410,39 +410,20 @@ CREATE VIRTUAL TABLE posts_fts USING fts5(
   `https://search-ox.torrentpier.com/search?q=...`, render results as
   links with breadcrumbs and `<mark>`-highlighted snippet, debounce 200ms.
 
-## Stage 5 — Deploy (TODO)
+## Stage 5 — Deploy (workflow committed; awaiting first push)
 
-### `.github/workflows/build.yml`
+The workflow at `.github/workflows/build.yml` does the following on every push
+to `main` that touches `data/`, `templates/`, `static/`, `builder/`, the
+workflow itself, or `pyproject.toml`:
 
-```yaml
-name: Build & deploy
-on:
-  push:
-    branches: [main]
-    paths: ['data/**', 'templates/**', 'static/**', 'builder/**', '.github/workflows/build.yml']
-  workflow_dispatch:
+1. Set up Python 3.13 + cache pip.
+2. `pip install -e .` (installs the builder package).
+3. `python -m builder build --data data --out dist`.
+4. Assert `dist/CNAME == "ox.torrentpier.com"`.
+5. Upload `dist/` as a Pages artifact and deploy via `actions/deploy-pages@v4`.
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with: { python-version: '3.13' }
-      - run: pip install -e .
-      - run: python -m builder build --data data --out dist
-      - run: cp dist/CNAME dist/CNAME 2>/dev/null || echo ox.torrentpier.com > dist/CNAME
-      - uses: actions/upload-pages-artifact@v3
-        with: { path: ./dist }
-
-  deploy:
-    needs: build
-    permissions: { pages: write, id-token: write }
-    environment: github-pages
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/deploy-pages@v4
-```
+Concurrency group `pages` prevents overlapping deploys. The DNS flip is still
+manual (see "Cloudflare side" below).
 
 ### Cloudflare side
 
