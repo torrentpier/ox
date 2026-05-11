@@ -41,7 +41,7 @@
       <td class="num">{{ v.download_count }}</td>
       <td>
         {% for f in v.files %}
-          <a href="{{ f.src_url }}">{{ f.filename }}</a>
+          <a href="{{ r2_url(f.r2_key) or f.src_url }}">{{ f.filename }}</a>
           <span class="muted">({{ f.size | filesize }})</span>{% if not loop.last %}<br>{% endif %}
         {% endfor %}
       </td>
@@ -54,7 +54,7 @@
 <ul>
 {% for f in resource.current_files %}
   <li>
-    <a href="{{ f.src_url }}">{{ f.filename }}</a>
+    <a href="{{ r2_url(f.r2_key) or f.src_url }}">{{ f.filename }}</a>
     <span class="muted">({{ f.size | filesize }})</span>
   </li>
 {% endfor %}

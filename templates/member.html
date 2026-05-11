@@ -9,8 +9,9 @@
 
 <article class="member">
   <header class="post-author">
-    {% if user.avatar_urls and user.avatar_urls.get('l') %}
-      <img class="avatar member-avatar" src="{{ user.avatar_urls.l }}" alt="" loading="lazy" width="96" height="96">
+    {% set avatar_src = r2_url(user.avatar_r2_key) if user.avatar_r2_key else (user.avatar_urls.l if user.avatar_urls else None) %}
+    {% if avatar_src %}
+      <img class="avatar member-avatar" src="{{ avatar_src }}" alt="" loading="lazy" width="96" height="96">
     {% endif %}
     <div class="post-author-text">
       <strong>{{ user.username }}</strong>

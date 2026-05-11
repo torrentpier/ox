@@ -21,10 +21,28 @@ THREADS_PER_PAGE = 30  # XF default for this forum
 MEMBERS_PER_PAGE = 30
 
 SITE_HOST = "ox.torrentpier.com"
+R2_PUBLIC_BASE = "https://files-ox.torrentpier.com"
 
 
 SLUG_FALLBACK_RE = re.compile(r"[^a-z0-9]+")
 MEMBER_URL_RE = re.compile(r"^/members/([^/.]+)\.(\d+)/?$")
+
+
+def r2_url(key: str | None) -> str | None:
+    """Build a public URL for an R2 key. Returns None if `key` is falsy."""
+    if not key:
+        return None
+    from urllib.parse import quote
+    return f"{R2_PUBLIC_BASE}/{quote(key, safe='/')}"
+
+
+def _load_inline_index(data_dir: Path) -> dict[str, str]:
+    """`source_url -> R2 public URL` for inline images mirror successfully shipped."""
+    path = data_dir / "inline_index.json"
+    if not path.exists():
+        return {}
+    raw = json.loads(path.read_text(encoding="utf-8")).get("by_url") or {}
+    return {src: r2_url(entry["r2_key"]) for src, entry in raw.items() if entry.get("r2_key")}
 
 
 def _paginate(items: list[Any], per_page: int) -> list[tuple[int, list[Any], str, int]]:
@@ -213,6 +231,19 @@ def build(data_dir: Path, out_dir: Path) -> None:
     member_url_map: dict[int, str] = {
         int(uid): member_url(u) for uid, u in users.items()
     }
+    inline_url_map = _load_inline_index(data_dir)
+    attachment_url_map: dict[int, str] = {}
+    for t in threads:
+        for p in t.get("posts") or []:
+            for a in p.get("attachments") or []:
+                key = a.get("r2_key")
+                if key:
+                    attachment_url_map[int(a["id"])] = r2_url(key)
+    log.info(
+        "asset maps: %d attachments, %d inline external",
+        len(attachment_url_map),
+        len(inline_url_map),
+    )
 
     if out_dir.exists():
         shutil.rmtree(out_dir)
@@ -224,6 +255,7 @@ def build(data_dir: Path, out_dir: Path) -> None:
     # Helpers exposed to all templates
     env.globals["node_url"] = node_url
     env.globals["member_url"] = member_url
+    env.globals["r2_url"] = r2_url
     env.globals["users"] = users
     env.globals["nodes_by_id"] = idx["nodes_by_id"]
 
@@ -286,6 +318,8 @@ def build(data_dir: Path, out_dir: Path) -> None:
                 thread_url_map=thread_url_map,
                 forum_url_map=forum_url_map,
                 member_url_map=member_url_map,
+                attachment_url_map=attachment_url_map,
+                inline_url_map=inline_url_map,
             )
         base_url = thread.get("url_path") or f"/threads/thread-{thread['id']}/"
         posts_list = thread.get("posts", [])
@@ -336,6 +370,8 @@ def build(data_dir: Path, out_dir: Path) -> None:
             thread_url_map=thread_url_map,
             forum_url_map=forum_url_map,
             member_url_map=member_url_map,
+            attachment_url_map=attachment_url_map,
+            inline_url_map=inline_url_map,
         )
         url_path = resource.get("url_path") or f"/resources/resource-{resource['id']}/"
         path = out_dir / url_path.lstrip("/") / "index.html"

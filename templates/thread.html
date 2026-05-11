@@ -24,10 +24,11 @@
 <article id="post-{{ post.id }}" class="post">
   <header class="post-author">
     {% set user = users.get(post.user_id) %}
-    {% if user and user.avatar_urls and user.avatar_urls.get('m') %}
-      {% if user %}<a href="{{ member_url(user) }}">{% endif %}
-      <img class="avatar" src="{{ user.avatar_urls.m }}" alt="" loading="lazy" width="48" height="48">
-      {% if user %}</a>{% endif %}
+    {% set avatar_src = r2_url(user.avatar_r2_key) if user and user.avatar_r2_key else (user.avatar_urls.m if user and user.avatar_urls else None) %}
+    {% if avatar_src %}
+      <a href="{{ member_url(user) }}">
+        <img class="avatar" src="{{ avatar_src }}" alt="" loading="lazy" width="48" height="48">
+      </a>
     {% endif %}
     <div class="post-author-text">
       {% if user %}
@@ -47,7 +48,7 @@
   <ul class="attachments">
     {% for a in post.attachments %}
     <li>
-      <a href="{{ a.src_url }}">{{ a.filename }}</a>
+      <a href="{{ r2_url(a.r2_key) or a.src_url }}">{{ a.filename }}</a>
       <span class="muted">({{ a.file_size | filesize }})</span>
     </li>
     {% endfor %}
