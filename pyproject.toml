@@ -24,13 +24,14 @@ dev = [
 [project.scripts]
 xf-export = "exporter.main:main"
 xf-build = "builder.main:main"
+xf-mirror = "mirror.main:main"
 
 [build-system]
 requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
-include = ["exporter*", "builder*"]
+include = ["exporter*", "builder*", "mirror*"]
 
 [tool.ruff]
 line-length = 100

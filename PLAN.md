@@ -19,9 +19,9 @@ meaningful decision or completed step.
 | 1 | Exporter — `threads` stage                                 | Done — 3,280 threads, 42,623 posts (matches `Σ reply_count + 1` exactly) |
 | 1 | Exporter — `users` stage (incidental from `post.User`)     | Done — 1,085 unique authors |
 | 1 | Exporter — `resources` stage                               | Done — 230 resources, 548 versions, 511 files (62.83 MiB binary) |
-| 2 | Mirror — R2 bucket + custom domain                         | Not started — needs `wrangler login` |
-| 2 | Mirror — Python uploader (boto3, atomic JSON update)       | Not started |
-| 2 | Mirror — rewrite asset URLs in `data/*.json` to `r2_key`   | Not started |
+| 2 | Mirror — R2 bucket + custom domain                         | Not started — needs `wrangler login` (one-time user action) |
+| 2 | Mirror — Python uploader (boto3, atomic JSON update)       | **Code complete (`mirror/`); awaiting `wrangler login` + bucket + `.env` creds to actually run** |
+| 2 | Mirror — rewrite asset URLs in `data/*.json` to `r2_key`   | Code complete — `mirror/pipeline.py` writes `r2_key` on every uploaded asset and the inline dedupe map to `data/inline_index.json` |
 | 3 | Builder — index + category + forum (paginated 30/page)     | Done |
 | 3 | Builder — thread (paginated 10/page) with avatars + badges | Done |
 | 3 | Builder — resource pages with version table                | Done |
@@ -232,73 +232,110 @@ To re-run any stage:
 
 `data/resources/{id}.json`: `id`, `title`, `tag_line`, `slug`, `url_path`, `category` (id/title/parent/slug/view_url), `user_id`, `username`, `version`, counts, `description_parsed`, `description_attachments[]`, `current_files[]`, `versions[]` (each with `files[]` carrying `src_url` from XF `download_url`, `local_path`, `r2_key`).
 
-## Stage 2 — Mirror to Cloudflare R2 (next)
+## Stage 2 — Mirror to Cloudflare R2
 
 Goal: every binary referenced from `data/` lives in R2 under a stable, deduped
 key, and `data/threads/*.json` / `data/resources/*.json` carry `r2_key` for
 each asset.
 
-### R2 setup (one-time, manual)
+### Status: code complete, awaiting credentials
+
+The `mirror/` package is implemented and importable. It cannot run yet
+because the R2 bucket does not exist and `.env` has no R2 credentials.
+The remaining work is **all user-side, one-time setup** — see below.
+
+Expected asset inventory (measured from current `data/`):
+
+| Category        | Count | Bytes (where known)              |
+|-----------------|-------|----------------------------------|
+| Attachments     | 3,197 | 455.4 MiB                        |
+| Avatars (size l)| 502   | small (≤50 KiB each)             |
+| Resource icons  | 136   | small                            |
+| Resource files  | 511   | 62.8 MiB                         |
+| Inline external | 972 unique URLs | unknown — many likely 404 |
+
+Comfortably inside the R2 free tier (10 GiB).
+
+### R2 setup (one-time, manual — user)
 
 1. `wrangler login` — opens browser, OAuth into Cloudflare account that
    owns torrentpier.com.
-2. `wrangler r2 bucket create torrentpier-archive` — creates the bucket.
-3. In the Cloudflare dashboard → R2 → `torrentpier-archive` → Settings →
-   Custom Domains → add `files-ox.torrentpier.com`. Cloudflare will also
-   create the matching DNS record.
+2. `wrangler r2 bucket create torrentpier-archive`.
+3. Cloudflare dashboard → R2 → `torrentpier-archive` → Settings → Custom
+   Domains → add `files-ox.torrentpier.com`. Cloudflare creates the
+   matching DNS record automatically.
 4. R2 → Manage R2 API Tokens → "Create API token" with **Object Read &
    Write** on `torrentpier-archive`. Save Access Key ID + Secret Access
    Key into `.env` as `R2_ACCESS_KEY_ID` and `R2_SECRET_ACCESS_KEY`.
-5. Set `R2_ACCOUNT_ID`, `R2_BUCKET=torrentpier-archive`, `R2_ENDPOINT=https://<account_id>.r2.cloudflarestorage.com`, `R2_PUBLIC_URL=https://files-ox.torrentpier.com`.
+5. Fill `.env`: `R2_ACCOUNT_ID`, `R2_BUCKET=torrentpier-archive`,
+   `R2_ENDPOINT=https://<account_id>.r2.cloudflarestorage.com`,
+   `R2_PUBLIC_URL=https://files-ox.torrentpier.com`.
+
+The Python code uses **boto3** (S3-compatible API) against the R2 endpoint;
+wrangler is only used for the one-time bucket/domain setup above.
 
 ### Bucket layout
 
 ```
 attachments/{attachment_id}/{filename}              # XF native attachments
-avatars/{user_id}.jpg                               # standardised on size "l"
+avatars/{user_id}{ext}                              # standardised on size "l"
 inline/{sha256[:2]}/{sha256}{ext}                   # external <img src> in posts (deduped)
 resources/{resource_id}/icon{ext}                   # resource icons
 resources/{resource_id}/v/{version_id}/{filename}   # resource version files
 ```
 
-### Implementation tasks
+### Package layout (implemented)
 
-Code goes into a new `mirror/` package mirroring `exporter/` layout:
-
-- [ ] `mirror/r2.py` — boto3 S3-compatible client. Helpers: `head(key)`,
-  `put(key, body, content_type)`. Reads creds from env.
-- [ ] `mirror/scan.py` — generator that walks `data/` and yields every
-  asset that still has `r2_key=None`. Yields tuples
-  `(category, owner_json_path, asset_dict, target_r2_key)`.
-- [ ] `mirror/download.py` — fetches an asset from `src_url`. For attachments
-  and inline images: anonymous GET. For **resource version files**: must
-  use the `XfClient` from `exporter.api` because the URL is an authenticated
-  API endpoint. For **avatars**: download `avatar_urls.l` (large size).
-- [ ] `mirror/inline.py` — scans `message_parsed` for external `<img src>`
-  not already covered by an attachment, downloads the image, hashes it,
-  uploads to `inline/...`. Maintains an in-memory dedupe map keyed by sha256.
-- [ ] `mirror/main.py` — CLI:
+- `mirror/r2.py` — boto3 client (`head`, `put`, `public_url`).
+- `mirror/download.py` — `httpx`-based downloader. Anonymous by default;
+  flips to authenticated (XF-Api-Key header) for resource version files,
+  whose `download_url` is an XF API endpoint. Returns `(body, ct, status)`
+  on 2xx, `(b"", None, status)` on non-2xx, `None` on transport error.
+- `mirror/keys.py` — pure path/filename helpers; ASCII-safe, deterministic.
+- `mirror/inline.py` — `InlineIndex` persisted at `data/inline_index.json`.
+  Schema: `{by_url: {url: {sha256, r2_key, size} | {failed, status}}}`.
+  Idempotent across runs; permanent 4xx URLs are skipped on the next run.
+- `mirror/pipeline.py` — four idempotent stages
+  (`mirror_attachments`, `mirror_avatars`, `mirror_resources`,
+  `mirror_inline`) plus `verify` (HEAD every `r2_key`). HEADs before any
+  upload to make re-runs cheap. Inline dedupes by sha256 across URLs.
+  `current_files[]` aliases the matching version-file `r2_key` instead of
+  uploading twice.
+- `mirror/main.py` — CLI:
   ```
-  xf-mirror upload --data data --concurrency 8
-  xf-mirror upload --data data --only attachments
-  xf-mirror verify --data data           # HEAD every r2_key, report missing
+  xf-mirror upload --data data
+  xf-mirror upload --data data --only attachments --only avatars
+  xf-mirror verify --data data
   ```
-- [ ] After successful upload, atomically rewrite the owning JSON to set
-  `r2_key`. Idempotent: `xf-mirror upload` after a clean run is a no-op.
+  Throttled to 2 rps by default; override via `MIRROR_RPS`. Sequential
+  (no concurrency yet — add a `ThreadPoolExecutor` if rps×duration hurts).
 
-### Builder integration (after mirror)
+### Fields added to `data/*.json` by mirror
 
-- [ ] Update `builder/rewrite.py` to take an `asset_url_map: dict[str, str]`
-  (XF `direct_url`/`thumbnail_url` → R2 URL). Replace `<img src>` and
-  `<a href>` pointing at any of those URLs.
-- [ ] Update `builder/site.py` to build that map from `data/threads/**.json`
-  attachments + `data/resources/**.json` versions + `data/users/*.json`
-  avatars + the inline-image dedupe map (need to persist that map to
-  `data/inline_index.json` from the mirror stage).
-- [ ] Replace avatar URLs in `templates/thread.html` (`user.avatar_urls.m`)
-  with the R2 URL when the user has been mirrored.
-- [ ] Update `templates/resource.html` so the version download links point
-  at R2, not the XF API endpoint.
+- `data/threads/{id}.json` → each `attachments[].r2_key`.
+- `data/users/{id}.json` → new top-level `avatar_r2_key`.
+- `data/resources/{id}.json` → new top-level `icon_r2_key`; each
+  `versions[].files[].r2_key` and `current_files[].r2_key`.
+- `data/inline_index.json` — the inline dedupe map.
+
+### Builder integration (after mirror runs)
+
+Code already canonicalises slugs in internal links. The remaining wiring
+will be one focused commit once the mirror stage has run at least once:
+
+- [ ] Build an `asset_url_map` in `builder/site.py` from:
+  - `attachments[].r2_key` for every post,
+  - `users[].avatar_r2_key`,
+  - `resources[].icon_r2_key` and `versions[].files[].r2_key`,
+  - `data/inline_index.json` (`by_url`).
+- [ ] Resolve in-post `/attachments/{id}/` URL variants via a global
+  `{attachment_id → r2_key}` lookup (verified: 558 of 575 internal "inline"
+  URLs are alternate forms of existing attachments — do not re-mirror).
+- [ ] Extend `builder/rewrite.py` to accept `asset_url_map` and swap
+  `<img src>` / `<a href>` to `r2.public_url(key)`.
+- [ ] `templates/thread.html` — use R2 avatar URL when `avatar_r2_key` is set.
+- [ ] `templates/resource.html` — link version files to R2 instead of the
+  XF API endpoint.
 
 ## Stage 3 — Builder (mostly Done)
 
@@ -485,20 +522,28 @@ manual (see "Cloudflare side" below).
 
 ### Recommended task order (by dependency)
 
-1. **Mirror stage (Stage 2).** Unblocks the rest. Without it, attachments
-   and resource downloads point at torrentpier.com — the moment the
-   forum is shut down, those links 404. Also ~30 min real time to run.
-2. **Builder R2 wiring + `/posts/{id}/` redirect + `/members/`.** Quick;
-   needs the asset URL map produced by Mirror.
-3. **GitHub Actions deploy (Stage 5 first half).** Once committed and
-   pushed, every change auto-deploys. Cheap insurance.
-4. **DNS cutover.** Independent of the search worker. Decide whether to
+1. **Cloudflare R2 setup (user, one-time).** `wrangler login` →
+   `wrangler r2 bucket create torrentpier-archive` → add
+   `files-ox.torrentpier.com` custom domain → create R2 API token →
+   fill `.env`. See "R2 setup (one-time, manual — user)" above.
+2. **Run the mirror (~30 min, sequential rps=2).**
+   `.venv/bin/python -m mirror upload --data data`
+   followed by `.venv/bin/python -m mirror verify --data data`. JSON files
+   gain `r2_key`/`avatar_r2_key`/`icon_r2_key`; `data/inline_index.json`
+   appears. Without this step, every attachment / avatar / resource file
+   on the live site 404s the moment the source forum is shut down.
+3. **Builder R2 wiring** (one focused commit). Wire the asset URL map +
+   id-based attachment alias lookup into `rewrite.py` and the templates.
+   Builder is currently ready to consume those keys once they exist.
+4. **First push to `main`.** The committed CI workflow takes care of the
+   rest — Pages picks up `dist/` automatically.
+5. **DNS cutover.** Independent of the search worker. Decide whether to
    cut over before or after search.
-5. **Search worker + indexer (Stage 4).** Adds polish; the archive is
+6. **Search worker + indexer (Stage 4).** Adds polish; the archive is
    usable without it.
-6. **Profile posts / resource discussions (open question).** Decide
+7. **Profile posts / resource discussions (open question).** Decide
    whether to add and run a fifth export stage.
-7. **Revoke the super-user API key.**
+8. **Revoke the super-user API key.**
 
 ## References
 
