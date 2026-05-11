@@ -9,19 +9,20 @@ meaningful decision or completed step.
 
 | # | Item                                                       | State |
 |---|------------------------------------------------------------|-------|
-|   | Branch                                                     | `feat/archive` (~35 commits, **still not pushed**) |
+|   | Branch                                                     | **Merged** — `feat/archive` (~37 commits) → `main` via PR #1; tip is `67fa9c3e`. |
+|   | First Pages deploy                                         | **Green** — workflow run `25692657041` succeeded in 1m41s. Pages config: source=GitHub Actions, custom domain pinned to `ox.torrentpier.com`, `protected_domain_state=verified`, **`https_enforced=false`** (flip on after DNS resolves). |
 |   | Repo skeleton (dirs + meta files)                          | Done (`c12ba69`) |
 |   | API surface verified (probed live)                         | Done — see "API surface" below |
 |   | Wrangler installed (Homebrew)                              | Done — 4.90.0 |
 |   | Cloudflare auth (`wrangler login`)                         | n/a — operator works via R2 token + `.env`, wrangler not actually used |
 |   | Python venv + deps (`uv venv`, py3.13)                     | Done — `.venv/` in repo (gitignored) |
 | 1 | Exporter — `nodes` stage                                   | Done — 34 nodes (7 categories, 27 forums) |
-| 1 | Exporter — `threads` stage (incl. sticky)                  | Done — **3,304 threads, 42,868 posts** after sticky fix; matches XF UI totals across container forums |
-| 1 | Exporter — `users` stage (incidental from `post.User`)     | Done — 1,096 unique authors (after sticky re-run); `UserCache.flush` now merges, preserving mirror-side fields |
+| 1 | Exporter — `threads` stage (incl. sticky)                  | Done — **3,304 threads, 45,473 visible posts** (matches DB exactly). `threads.py` now preserves attachment `r2_key` on `--force`. |
+| 1 | Exporter — `users` stage (incidental from `post.User`)     | Done — **1,120 users** (1,096 posters + 13 wall-comment authors + 8 wall-owners + a few late commenters); `UserCache.flush` preserves `avatar_r2_key`, `wall_posts`, `wall_total`, `wall_access`. |
 | 1 | Exporter — `resources` stage                               | Done — 230 resources, 548 versions, 511 files (62.83 MiB binary) |
-| 1 | Exporter — `profile-posts` stage                           | Done — **90 walls, 209 wall posts, 62 comments** across 1,109 users. Requires DB-side privacy reset (see "Session 3 — profile-posts ramp-up" below) because XF API enforces per-user `allow_view_profile`/`is_banned`/`visible` even for super-admin keys. |
+| 1 | Exporter — `profile-posts` stage                           | Done — **98 walls, 217 wall posts, 63 visible comments** (matches DB's 60 visible-on-visible-posts + 3 cross-wall comments). Requires DB-side privacy reset (see Session 3 below) because XF API enforces per-user `allow_view_profile`/`is_banned`/`visible` even for super-admin keys. |
 | 1 | Exporter — `resource-reviews` stage                        | Done — **60 reviews** across 32 resources (was 1 — fixed in session 4 by switching from global feed to per-resource enumeration via `/api/resources/{id}/reviews/`). |
-| 1 | Exporter — `resource-updates` stage                        | Done — **329 update announcements** across 120 resources (DB has 562 — investigate API filter). |
+| 1 | Exporter — `resource-updates` stage                        | Done — **329 user-authored update announcements** across 120 resources (DB has 562 incl. 231 auto-generated "first update" entries that XF API filters out by design). |
 | 1 | Exporter — thread polls (free side-effect)                 | Done — `thread.Poll` captured during the standard threads stage, no extra API calls. 17 polls captured. |
 | 1 | Exporter — `wall-owners` helper                            | Done — fetches lurker users who own a wall but never posted/commented. Used to add 8 wall owners not covered by post-author + comment-author harvest. |
 | 2 | Mirror — R2 bucket + custom domain (`files-ox.torrentpier.com`) | Done — bucket `torrentpier-archive`, custom domain live |
@@ -34,8 +35,8 @@ meaningful decision or completed step.
 | 3 | Builder — `message_parsed` sanitiser + URL canonicaliser (threads/forums/members) | Done |
 | 3 | Builder — `/resources/`, `/search/`, `sitemap.xml`, `robots.txt` | Done |
 | 3 | Builder — wire R2 URLs after mirror stage runs             | Done — attachments by id, inline by src URL, avatars + icons + version files |
-| 3 | Builder — `/posts/{id}/` redirect to thread anchor         | Done — 42,868 meta-refresh pages |
-| 3 | Builder — `/members/` index + `/members/{slug}.{id}/` pages | Done — 1,096 users, paginated index |
+| 3 | Builder — `/posts/{id}/` redirect to thread anchor         | Done — 45,473 meta-refresh pages |
+| 3 | Builder — `/members/` index + `/members/{slug}.{id}/` pages | Done — 1,120 users, paginated index |
 | 3 | Builder — `dist/CNAME`, build time pinned to `meta.exported_at` (determinism) | Done — verified byte-identical on rebuild |
 | 3 | Builder — visual refresh (XF-style cards, header + logo + nav, table posts) | Done |
 | 3 | Builder — wall section on `/members/{slug}.{id}/` + `/profile-posts/{id}/` + `/profile-posts/comments/{id}/` redirects | Done — 271 profile-post redirects, sanitiser/canonicaliser applied to wall + comment bodies |
@@ -47,11 +48,14 @@ meaningful decision or completed step.
 | 4 | Search — Cloudflare D1 schema + import                     | Not started — needs `wrangler login` (this stage truly does) |
 | 4 | Search — TypeScript Worker exposing `/search?q=`           | Not started |
 | 4 | Search — frontend on `/search/` page                       | Not started (placeholder lives) |
-| 5 | Deploy — GitHub Actions build + Pages deploy               | Workflow committed (`.github/workflows/build.yml`); will fire on **first push to `main`** |
-| 5 | Deploy — DNS: `ox.torrentpier.com` CNAME → Pages           | Not started |
-| 5 | Deploy — Bulk Redirect from `torrentpier.com/*` → archive  | Not started |
-| 5 | Cutover — confirm archive live, revoke super-user API key  | Not started |
-| 5 | R2 cache purge for `/avatars/*` (one-time, after avatar `h` swap) | **Pending — manual user action in Cloudflare dashboard**; old `l`-size cached on edge until purge or natural TTL |
+| 5 | Deploy — GitHub Actions build + Pages deploy               | **Done** — workflow `.github/workflows/build.yml` fires on every push to `main` touching `data/`, `templates/`, `static/`, `builder/`, the workflow itself, or `pyproject.toml`. First run on the merge succeeded. |
+| 5 | Deploy — Pages site live at `<gh>.github.io`               | **Done** (technical URL). Custom domain `ox.torrentpier.com` is verified in repo Pages config; awaits DNS to actually resolve. |
+| 5 | Deploy — DNS: `ox.torrentpier.com` CNAME → Pages           | **Pending — manual user action in Cloudflare dashboard.** Add record `ox CNAME torrentpier.github.io` (DNS-only / grey cloud the first time so GitHub can verify and issue a Let's Encrypt cert; flip to proxied afterwards). |
+| 5 | Deploy — Enforce HTTPS in repo Pages settings              | **Pending** — flip after DNS resolves; GitHub auto-issues Let's Encrypt cert in ~10–30 min. Pages API currently shows `https_enforced=false`. |
+| 5 | Deploy — Bulk Redirect from `torrentpier.com/*` → archive  | **Pending — manual user action in Cloudflare.** New list item: `https://torrentpier.com/*` → `https://ox.torrentpier.com/$1` (preserve path + query, 301). |
+| 5 | R2 cache purge for `/avatars/*`                            | **Pending — manual user action in Cloudflare dashboard.** Purge URL `https://files-ox.torrentpier.com/avatars/*` once (hi-res `h` overrides the older `l` size on every key). |
+| 5 | Cutover — DB privacy restore                               | **Pending — optional.** If we want to restore the original `xf_user_privacy.allow_view_profile` + `xf_user.is_banned` + `xf_user.visible` values for the 58 affected users, the dump lives at `/opt/xenforo/data/xf_user{,_privacy}.backup-2026-05-11.sql` on `root@167.172.38.61`. Forum is dying so this is purely hygiene. |
+| 5 | Cutover — revoke super-user API key                        | **Pending — manual user action in XF admin.** Last step. Without it the key keeps working against whatever still answers on the live host. |
 
 ## Source forum
 
@@ -632,63 +636,60 @@ manual (see "Cloudflare side" below).
 
 ### What's left for the next session (in dependency order)
 
-Everything that can be done locally is done. The remaining work is split
-between **manual one-shots in the Cloudflare dashboard / on GitHub** and
-**a single new Stage 4 implementation**.
+`main` is now the source of truth (PR #1 merged at `67fa9c3e`). First
+Pages deploy is green. The archive is live at the technical URL; flip
+DNS and you're done with the cutover. Search is a separate session.
 
-1. **Purge `/avatars/*` on the R2 CDN (user, 30 seconds).** All 506 avatars
-   were re-uploaded from size `h` (hi-res) on top of the original size-`l`
-   key. R2 now serves the hi-res bytes, but the Cloudflare edge cache on
-   `files-ox.torrentpier.com` is still handing out the old size-`l`
-   versions until TTL expires.
-   Cloudflare dashboard → Caching → Configuration → Purge Cache → Custom
-   Purge → URL = `https://files-ox.torrentpier.com/avatars/*`
-   (Purge Everything works too.) After this, avatars on
-   `ox.torrentpier.com` will look noticeably crisper.
+1. **DNS flip in Cloudflare (user, ~1 min).**
+   - DNS → Records → Add: `Type=CNAME`, `Name=ox`,
+     `Target=torrentpier.github.io`, **Proxy=DNS only (grey cloud)** the
+     first time so GitHub can verify the domain and auto-issue a Let's
+     Encrypt cert. Flip to **proxied** afterwards for CF caching.
+   - Wait 1–10 min, hit `https://ox.torrentpier.com/`, smoke-test 5–10
+     deep-link URLs from previous chats / search engines.
+   - In repo Settings → Pages, flip **Enforce HTTPS** on once the cert
+     issues (Pages API currently reports `https_enforced=false`).
 
-2. **First push to `main` (operator + GitHub).** `git push -u origin
-   feat/archive` then open a PR into `main` and merge it (or push
-   directly to `main` if no review needed). The committed
-   `.github/workflows/build.yml` will:
-   - render `dist/` via `python -m builder build`,
-   - check `dist/CNAME == ox.torrentpier.com`,
-   - deploy to GitHub Pages.
+2. **Bulk Redirect in Cloudflare (user, ~1 min).** New list:
+   `https://torrentpier.com/*` → `https://ox.torrentpier.com/$1`, 301,
+   preserve path + query. URL paths are preserved by design — no
+   per-thread mapping required.
 
-   **Before pushing**, decide whether to ship one branch with everything
-   or split into pre-cutover (mirror+builder ready) and post-cutover
-   (search). One branch is fine — the archive is already useful without
-   search, and Pages only deploys what's in `dist/`.
+3. **R2 avatars cache purge (user, 30 seconds).** Cloudflare → Caching →
+   Purge → Custom → URL = `https://files-ox.torrentpier.com/avatars/*`
+   so the edge stops serving the older size-`l` bytes (R2 origin already
+   has the hi-res `h` versions on the same keys).
 
-3. **DNS flip (user, one-shot in Cloudflare dashboard).**
-   - DNS → add record: `ox` CNAME `<github-user>.github.io`, proxied.
-   - Wait ~1 min for propagation, hit `https://ox.torrentpier.com/`,
-     smoke-test 5–10 deep-link URLs from previous chats / search engines.
-   - Add Bulk Redirect list: any request to the live forum host →
-     `https://ox.torrentpier.com/$1`. URL paths are preserved by design,
-     so this is a clean cutover with no per-thread redirect rules.
-
-4. **Stage 4 — search (a session of its own).** Pipeline lives in
+4. **Stage 4 — search (own session, ~half a day).** See
    "Stage 4 — Search worker + D1 (TODO)" below. Order:
    - `wrangler login` + `wrangler d1 create ox-archive-search`.
    - Write `search/index.py` that walks `data/threads/` and emits a
      deterministic `search/seed.sql` (lemmatise post bodies with
      `pymorphy3`, sort inserts by `(thread_id, position)`).
    - `wrangler d1 execute ox-archive-search --file=search/seed.sql --remote`.
-   - Write the ~80-line TS worker in `search-worker/` and bind it at
+   - Write the ~80-line TS worker in `search-worker/` and bind it to
      `search-ox.torrentpier.com`.
    - Replace the `/search/` template placeholder with a real form + JS
      calling the worker.
 
-5. ~~Open question: profile posts / resource discussions.~~ Done in session
-   3 — see "Session 3 — profile-posts + resource-reviews" above. Server-side
-   DB UPDATE in `xf_user_privacy` + `xf_user` to unblock 58 hidden walls is
-   reversible via `/opt/xenforo/data/xf_user{,_privacy}.backup-2026-05-11.sql`
-   if needed.
+5. **Optional: roll back the live forum DB privacy patch.** If you want
+   to restore the original `allow_view_profile` / `is_banned` /
+   `visible` for the 58 users we unblocked in session 3:
+   ```bash
+   ssh root@167.172.38.61 \
+     "cd /opt/xenforo && \
+      docker compose exec -T db mysql -u xenforo -p'…' xenforo \
+        < /opt/xenforo/data/xf_user.backup-2026-05-11.sql && \
+      docker compose exec -T db mysql -u xenforo -p'…' xenforo \
+        < /opt/xenforo/data/xf_user_privacy.backup-2026-05-11.sql"
+   ```
+   (Manually substitute the password — it's in `/opt/xenforo/xenforo/src/config.php`.)
+   Forum is dying so this is purely hygiene.
 
-6. **Revoke the super-user API key.** Final step after the cutover
-   smoke-test passes. XF admin panel → API keys → revoke
-   `XF_API_KEY` from `.env`. Without this the key keeps working against
-   whatever still answers on the old hostname.
+6. **Revoke the super-user API key.** Last step after smoke-test passes.
+   XF admin panel → API keys → revoke `XF_API_KEY` from `.env`. Without
+   this the key keeps working against whatever still answers on the
+   live host.
 
 ### Quick resume checklist
 
