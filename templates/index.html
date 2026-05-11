@@ -19,22 +19,18 @@
       <div class="forum-info">
         <a class="forum-link" href="{{ node_url(forum) }}">{{ forum.title }}</a>
         {% if forum.description %}<p class="forum-desc">{{ forum.description }}</p>{% endif %}
-        {% set subs = tree_map.get(forum.node_id, []) %}
-        {% set sub_forums = subs | map('int') | list %}
-        {% set has_subs = [] %}
-        {% for sid in subs %}
+        {% set subs = [] %}
+        {% for sid in tree_map.get(forum.node_id, []) %}
           {% set sf = nodes_by_id.get(sid) %}
-          {% if sf and sf.node_type_id == 'Forum' %}{% set _ = has_subs.append(sf) %}{% endif %}
+          {% if sf and sf.node_type_id == 'Forum' %}{% set _ = subs.append(sf) %}{% endif %}
         {% endfor %}
-        {% if has_subs %}
-        <details class="sub-forums-mini">
-          <summary>Sub-forums ({{ has_subs | length }})</summary>
-          <ul>
-          {% for sf in has_subs %}
+        {% if subs %}
+        <ul class="sub-forums">
+          <li><span class="sub-forums-label">Sub-forums:</span></li>
+          {% for sf in subs %}
             <li><a href="{{ node_url(sf) }}">{{ sf.title }}</a></li>
           {% endfor %}
-          </ul>
-        </details>
+        </ul>
         {% endif %}
       </div>
       <div class="forum-stats">
@@ -46,15 +42,6 @@
           <div class="stat-label">Messages</div>
           <div class="stat-value">{{ post_count_recursive.get(forum.node_id, 0) | count }}</div>
         </div>
-      </div>
-      <div class="forum-last">
-        {% set lt = latest_thread_by_forum.get(forum.node_id) %}
-        {% if lt %}
-          <a class="last-title" href="{{ lt.url_path }}" title="{{ lt.title }}">{{ lt.title }}</a>
-          <div class="last-meta muted">{{ lt.last_post_date | timestamp }} · {{ lt.username }}</div>
-        {% else %}
-          <span class="muted small">no threads</span>
-        {% endif %}
       </div>
     </li>
     {% endif %}

@@ -72,6 +72,6 @@ def _format_build_time(exported_at: str | None) -> str:
 
 def context_globals(exported_at: str | None = None) -> dict[str, Any]:
     return {
-        "site_name": "TorrentPier archive",
+        "site_name": "TorrentPier Ox Archive",
         "build_time": _format_build_time(exported_at),
     }

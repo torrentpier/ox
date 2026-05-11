@@ -24,13 +24,6 @@
           <div class="stat-value">{{ items | length | count }}</div>
         </div>
       </div>
-      <div class="forum-last">
-        {% if items %}
-          {% set top = items[0] %}
-          <a class="last-title" href="{{ top.url_path }}" title="{{ top.title }}">{{ top.title }}</a>
-          <div class="last-meta muted">{{ top.last_update | timestamp }} · {{ top.username }}</div>
-        {% endif %}
-      </div>
     </li>
   {% endfor %}
   </ul>

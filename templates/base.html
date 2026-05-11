@@ -25,8 +25,21 @@
   </main>
   <footer class="site-footer">
     <div class="site-footer-inner">
-      Read-only archive of <a href="https://torrentpier.com">torrentpier.com</a>.
-      Built {{ build_time }}.
+      <p class="footer-lede">
+        Полный read-only архив форума
+        <a href="https://torrentpier.com">torrentpier.com</a> — сообщества
+        вокруг одноимённого торрент-трекерного движка, существовавшего с
+        2011 года. После закрытия живого форума здесь остаются все публичные
+        обсуждения, моды, темы оформления и сопутствующие файлы за весь срок
+        его работы.
+      </p>
+      <p class="footer-stats muted">
+        <strong>{{ archive_stats.threads }}</strong> тем ·
+        <strong>{{ archive_stats.posts }}</strong> сообщений ·
+        <strong>{{ archive_stats.users }}</strong> авторов ·
+        <strong>{{ archive_stats.resources }}</strong> ресурсов.
+        Снапшот сделан {{ build_time }}.
+      </p>
     </div>
   </footer>
 </body>

@@ -264,6 +264,14 @@ def build(data_dir: Path, out_dir: Path) -> None:
     # Pin the build timestamp to the export so identical `data/` -> identical `dist/`.
     env.globals.update(context_globals(exported_at=meta.get("exported_at")))
 
+    post_total = sum(int(t.get("reply_count") or 0) + 1 for t in threads)
+    env.globals["archive_stats"] = {
+        "threads": len(threads),
+        "posts": post_total,
+        "users": len(users),
+        "resources": len(resources),
+    }
+
     idx = _build_indexes(meta, threads, resources)
 
     thread_url_map: dict[int, str] = {
