@@ -41,7 +41,7 @@ jobs:
           test -f dist/CNAME
           grep -qx ox.torrentpier.com dist/CNAME
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: ./dist
 
