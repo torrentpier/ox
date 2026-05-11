@@ -65,11 +65,39 @@
   "rating_count": 1,
   "resource_date": 1369072985,
   "resource_state": "visible",
-  "reviews": [],
+  "reviews": [
+    {
+      "author_response": "",
+      "id": 7,
+      "is_anonymous": false,
+      "message": "спасибо",
+      "rating": 5,
+      "rating_date": 1384870848,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": 4773,
+      "username": "Александр Ридель"
+    }
+  ],
   "slug": "sablon-blue-ezar",
   "tag_line": "Шаблон, простой в синих тонах.",
   "tags": [],
   "title": "Шаблон «Blue Ezar»",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 312,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Обновлено описание ресурса</li>\n<li data-xf-list-type=\"ul\">Перепаковка в .zip</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1429570771,
+      "resource_id": 5,
+      "title": "Обновление 1.1.0",
+      "url_path": "/resources/sablon-blue-ezar.5/update/312/",
+      "view_url": "https://torrentpier.com/resources/sablon-blue-ezar.5/update/312/"
+    }
+  ],
   "url_path": "/resources/sablon-blue-ezar.5/",
   "user_id": 1,
   "username": "Exile",

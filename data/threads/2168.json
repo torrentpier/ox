@@ -23,6 +23,36 @@
   "id": 2168,
   "last_post_date": 1383229323,
   "node_id": 57,
+  "poll": {
+    "close_date": 0,
+    "id": 18,
+    "max_votes": 1,
+    "public_votes": false,
+    "question": "Хорошее решение отвязки?",
+    "responses": [
+      {
+        "id": 56,
+        "text": "Да",
+        "vote_count": 7
+      },
+      {
+        "id": 57,
+        "text": "Нет",
+        "vote_count": 0
+      },
+      {
+        "id": 58,
+        "text": "Можно и лучше",
+        "vote_count": 1
+      },
+      {
+        "id": 59,
+        "text": "Надо дароботать",
+        "vote_count": 1
+      }
+    ],
+    "voter_count": 9
+  },
   "post_date": 1360015999,
   "posts": [
     {

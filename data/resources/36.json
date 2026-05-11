@@ -21,11 +21,25 @@
   "rating_count": 1,
   "resource_date": 1370934537,
   "resource_state": "visible",
-  "reviews": [],
+  "reviews": [
+    {
+      "author_response": "",
+      "id": 4,
+      "is_anonymous": false,
+      "message": "Оценка от того кто подал идею =)",
+      "rating": 5,
+      "rating_date": 1370938997,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": 2825,
+      "username": "FineRider"
+    }
+  ],
   "slug": "vyvod-vozrastnyh-ogranicenij-v-relize",
   "tag_line": "Выводит в топике с релизом возрастное ограничение(выставляется во время создания (редактирования))",
   "tags": [],
   "title": "Вывод возрастных ограничений в релизе",
+  "updates": [],
   "url_path": "/resources/vyvod-vozrastnyh-ogranicenij-v-relize.36/",
   "user_id": 97,
   "username": "Zenden",

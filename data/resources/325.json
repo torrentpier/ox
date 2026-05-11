@@ -53,6 +53,47 @@
     "улучшение seo"
   ],
   "title": "Генерация мета описания (SEO)",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 654,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Обновлена инструкция</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1748788715,
+      "resource_id": 325,
+      "title": "Обновление v1.0.1",
+      "url_path": "/resources/generacia-meta-opisania-seo.325/update/654/",
+      "view_url": "https://torrentpier.com/resources/generacia-meta-opisania-seo.325/update/654/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 656,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Улучшена логика генерации мета описания</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1749449288,
+      "resource_id": 325,
+      "title": "Обновление v1.1.0 [Stable]",
+      "url_path": "/resources/generacia-meta-opisania-seo.325/update/656/",
+      "view_url": "https://torrentpier.com/resources/generacia-meta-opisania-seo.325/update/656/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 669,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Отключена генерация мета-описания для приватных тем</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1756125821,
+      "resource_id": 325,
+      "title": "Обновление v1.2.0 [Stable]",
+      "url_path": "/resources/generacia-meta-opisania-seo.325/update/669/",
+      "view_url": "https://torrentpier.com/resources/generacia-meta-opisania-seo.325/update/669/"
+    }
+  ],
   "url_path": "/resources/generacia-meta-opisania-seo.325/",
   "user_id": 10614,
   "username": "belomaxorka",

@@ -65,6 +65,47 @@
     "улучшенный логер действий"
   ],
   "title": "Расширенное логирование действий",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 591,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Добавлено: изменение статуса раздачи</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1733068409,
+      "resource_id": 311,
+      "title": "Обновление v1.1.0",
+      "url_path": "/resources/rassirennoe-logirovanie-dejstvij.311/update/591/",
+      "view_url": "https://torrentpier.com/resources/rassirennoe-logirovanie-dejstvij.311/update/591/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 592,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Добавлено: изменение типа торрента (серебро / золото)</li>\n<li data-xf-list-type=\"ul\">Добавлено: разрегистрация торрента</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1733141370,
+      "resource_id": 311,
+      "title": "Обновление v1.2.0",
+      "url_path": "/resources/rassirennoe-logirovanie-dejstvij.311/update/592/",
+      "view_url": "https://torrentpier.com/resources/rassirennoe-logirovanie-dejstvij.311/update/592/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 682,
+      "last_edit_date": 0,
+      "message_parsed": "Добавлены новые действия:<br />\n<ul>\n<li data-xf-list-type=\"ul\">Регистрация торрента</li>\n<li data-xf-list-type=\"ul\">Удаление торрента</li>\n<li data-xf-list-type=\"ul\">Опрос начат</li>\n<li data-xf-list-type=\"ul\">Опрос завершен</li>\n<li data-xf-list-type=\"ul\">Опрос удален</li>\n<li data-xf-list-type=\"ul\">Опрос создан</li>\n<li data-xf-list-type=\"ul\">Опрос отредактирован</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1767259779,
+      "resource_id": 311,
+      "title": "Обновление v1.3.0",
+      "url_path": "/resources/rassirennoe-logirovanie-dejstvij.311/update/682/",
+      "view_url": "https://torrentpier.com/resources/rassirennoe-logirovanie-dejstvij.311/update/682/"
+    }
+  ],
   "url_path": "/resources/rassirennoe-logirovanie-dejstvij.311/",
   "user_id": 10614,
   "username": "belomaxorka",

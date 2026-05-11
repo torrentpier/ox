@@ -68,6 +68,34 @@
     "улучшение"
   ],
   "title": "Смена логотипа через админку",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 679,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Исправлена работа мода на TorrentPier v2.1.5 и ниже (Спасибо <a href=\"https://torrentpier.com/members/8746/\">rgadguard2</a>)</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1764672928,
+      "resource_id": 330,
+      "title": "Обновление v1.1.0",
+      "url_path": "/resources/smena-logotipa-cerez-adminku.330/update/679/",
+      "view_url": "https://torrentpier.com/resources/smena-logotipa-cerez-adminku.330/update/679/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 681,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Добавлена возможность удаления лого</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1767189471,
+      "resource_id": 330,
+      "title": "Обновление v1.1.1",
+      "url_path": "/resources/smena-logotipa-cerez-adminku.330/update/681/",
+      "view_url": "https://torrentpier.com/resources/smena-logotipa-cerez-adminku.330/update/681/"
+    }
+  ],
   "url_path": "/resources/smena-logotipa-cerez-adminku.330/",
   "user_id": 10614,
   "username": "belomaxorka",

@@ -80,6 +80,60 @@
     "улучшения редактора bbcode"
   ],
   "title": "BBCode: Акроним",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 496,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Мелкие исправления</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1709569763,
+      "resource_id": 289,
+      "title": "Обновление v1.0.1",
+      "url_path": "/resources/bbcode-akronim.289/update/496/",
+      "view_url": "https://torrentpier.com/resources/bbcode-akronim.289/update/496/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 497,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Скорректирован размер кнопки</li>\n<li data-xf-list-type=\"ul\">Улучшены регулярные выражения (Поддержка спец. символов)</li>\n<li data-xf-list-type=\"ul\">Тег отныне недоступен из Quick Reply (Быстрый ответ)</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1709829414,
+      "resource_id": 289,
+      "title": "Обновление v2.0.0",
+      "url_path": "/resources/bbcode-akronim.289/update/497/",
+      "view_url": "https://torrentpier.com/resources/bbcode-akronim.289/update/497/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 501,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Незначительные улучшения в коде</li>\n</ul><hr /><span style=\"color: rgb(226, 80, 65)\">Обновляться с предыдущей версии смысла нет.</span>",
+      "message_state": "visible",
+      "post_date": 1710149955,
+      "resource_id": 289,
+      "title": "Обновление v2.0.1",
+      "url_path": "/resources/bbcode-akronim.289/update/501/",
+      "view_url": "https://torrentpier.com/resources/bbcode-akronim.289/update/501/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 525,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Небольшие улучшения внешнего вида</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1718537166,
+      "resource_id": 289,
+      "title": "Обновление v2.0.2",
+      "url_path": "/resources/bbcode-akronim.289/update/525/",
+      "view_url": "https://torrentpier.com/resources/bbcode-akronim.289/update/525/"
+    }
+  ],
   "url_path": "/resources/bbcode-akronim.289/",
   "user_id": 10614,
   "username": "belomaxorka",

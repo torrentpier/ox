@@ -72,6 +72,21 @@
   "tag_line": "Добавляет вывод списка раздач, которые закрыты правообладателем.",
   "tags": [],
   "title": "Закрытые раздачи",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 207,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Обновлено описание ресурса</li>\n<li data-xf-list-type=\"ul\">Перепаковка в zip</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1425224269,
+      "resource_id": 87,
+      "title": "Обновление 1.1.0",
+      "url_path": "/resources/zakrytye-razdaci.87/update/207/",
+      "view_url": "https://torrentpier.com/resources/zakrytye-razdaci.87/update/207/"
+    }
+  ],
   "url_path": "/resources/zakrytye-razdaci.87/",
   "user_id": 1,
   "username": "Exile",

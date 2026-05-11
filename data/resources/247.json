@@ -78,11 +78,25 @@
   "rating_count": 6,
   "resource_date": 1453030790,
   "resource_state": "visible",
-  "reviews": [],
+  "reviews": [
+    {
+      "author_response": "",
+      "id": 106,
+      "is_anonymous": false,
+      "message": "Ну с виду так ничего!",
+      "rating": 5,
+      "rating_date": 1453812831,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": 6737,
+      "username": "Fantom 13"
+    }
+  ],
   "slug": "sablon-adminlte",
   "tag_line": "Шаблон для админ панели",
   "tags": [],
   "title": "Шаблон AdminLTE",
+  "updates": [],
   "url_path": "/resources/sablon-adminlte.247/",
   "user_id": 35,
   "username": "AnSan",

@@ -53,11 +53,39 @@
   "rating_count": 1,
   "resource_date": 1409681247,
   "resource_state": "visible",
-  "reviews": [],
+  "reviews": [
+    {
+      "author_response": "",
+      "id": 9,
+      "is_anonymous": false,
+      "message": "Отличный мод, весомо в SEO",
+      "rating": 5,
+      "rating_date": 1409681702,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": 4447,
+      "username": "DreamHD"
+    }
+  ],
   "slug": "opisanie-kategorij",
   "tag_line": "Добавляет описание категории на страницу просмотра форума.",
   "tags": [],
   "title": "Описание категорий",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 211,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Обновлено описание ресурса</li>\n<li data-xf-list-type=\"ul\">Перепаковка в zip</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1425234212,
+      "resource_id": 120,
+      "title": "Обновление 1.1.0",
+      "url_path": "/resources/opisanie-kategorij.120/update/211/",
+      "view_url": "https://torrentpier.com/resources/opisanie-kategorij.120/update/211/"
+    }
+  ],
   "url_path": "/resources/opisanie-kategorij.120/",
   "user_id": 68,
   "username": "Nightmare",

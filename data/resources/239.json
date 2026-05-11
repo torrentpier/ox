@@ -38,11 +38,25 @@
   "rating_count": 1,
   "resource_date": 1434451363,
   "resource_state": "visible",
-  "reviews": [],
+  "reviews": [
+    {
+      "author_response": "",
+      "id": 59,
+      "is_anonymous": false,
+      "message": "Отличный и простой мод, не нужны никакие танцы с бубнами.",
+      "rating": 5,
+      "rating_date": 1437298462,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": 4606,
+      "username": "dotWizard"
+    }
+  ],
   "slug": "bb-kod-lightbox-video",
   "tag_line": "Добавляет BB-код для вставки видео в Lightbox окне.",
   "tags": [],
   "title": "BB-код: Lightbox Video",
+  "updates": [],
   "url_path": "/resources/bb-kod-lightbox-video.239/",
   "user_id": 5641,
   "username": "Skaiman",

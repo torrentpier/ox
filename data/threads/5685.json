@@ -23,6 +23,26 @@
   "id": 5685,
   "last_post_date": 1388357357,
   "node_id": 43,
+  "poll": {
+    "close_date": 0,
+    "id": 20,
+    "max_votes": 1,
+    "public_votes": false,
+    "question": "Нужны такие моды?",
+    "responses": [
+      {
+        "id": 62,
+        "text": "Нет",
+        "vote_count": 5
+      },
+      {
+        "id": 63,
+        "text": "Да",
+        "vote_count": 35
+      }
+    ],
+    "voter_count": 40
+  },
   "post_date": 1370166008,
   "posts": [
     {

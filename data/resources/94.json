@@ -55,6 +55,34 @@
   "tag_line": "Универсальная RSS лента для TorrentPier II, с поддержкой utorrent",
   "tags": [],
   "title": "RSS лента для TorrentPier II",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 117,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Переписан метод авторизация для торрент клиентов, теперь должен работать qBittorrent.</li>\n<li data-xf-list-type=\"ul\">Отказались от авторизации по реальному пасскею, теперь используется другой алгоритм.</li>\n<li data-xf-list-type=\"ul\">RSS детекторы должны определять готовую ссылку для торрент клиентов.</li>\n<li data-xf-list-type=\"ul\">В профиле изменен генератор ссылки, в соответствии с новым алгоритмом</li>\n<li data-xf-list-type=\"ul\">Значительная оптимизация кода</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1396427664,
+      "resource_id": 94,
+      "title": "RSS лента для TorrentPier II",
+      "url_path": "/resources/rss-lenta-dla-torrentpier-ii.94/update/117/",
+      "view_url": "https://torrentpier.com/resources/rss-lenta-dla-torrentpier-ii.94/update/117/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 125,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Переписан метод авторизации (теперь в сторонних клиентах привилегии отрабатывают без ошибок)</li>\n<li data-xf-list-type=\"ul\">Убран один запрос</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1398235050,
+      "resource_id": 94,
+      "title": "RSS лента для TorrentPier II",
+      "url_path": "/resources/rss-lenta-dla-torrentpier-ii.94/update/125/",
+      "view_url": "https://torrentpier.com/resources/rss-lenta-dla-torrentpier-ii.94/update/125/"
+    }
+  ],
   "url_path": "/resources/rss-lenta-dla-torrentpier-ii.94/",
   "user_id": 97,
   "username": "Zenden",

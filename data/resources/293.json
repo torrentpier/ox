@@ -80,6 +80,21 @@
     "моды"
   ],
   "title": "BBCode: DVD Кейс",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 520,
+      "last_edit_date": 1717766706,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Исправлена работа положений left/right</li>\n<li data-xf-list-type=\"ul\">Теперь изображение постера растягивается на всю ширину кейса</li>\n<li data-xf-list-type=\"ul\">Исправлена (убрана) нерабочая кнопка из Quick reply</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1717766093,
+      "resource_id": 293,
+      "title": "Обновление v1.1.0 [Stable]",
+      "url_path": "/resources/bbcode-dvd-kejs.293/update/520/",
+      "view_url": "https://torrentpier.com/resources/bbcode-dvd-kejs.293/update/520/"
+    }
+  ],
   "url_path": "/resources/bbcode-dvd-kejs.293/",
   "user_id": 10614,
   "username": "belomaxorka",

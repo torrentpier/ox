@@ -25,15 +25,6 @@
       "comment_count": 2,
       "comments": [
         {
-          "comment_date": 1443896495,
-          "id": 190,
-          "message_parsed": "Здравствуйте) Обязательно посмотрю маленько позже)",
-          "message_state": "visible",
-          "profile_post_id": 691,
-          "user_id": 2684,
-          "username": "dredd"
-        },
-        {
           "comment_date": 1443931814,
           "id": 191,
           "message_parsed": "Спасибо большое, буду ждать! 🙂",
@@ -41,6 +32,15 @@
           "profile_post_id": 691,
           "user_id": 6340,
           "username": "baxa73"
+        },
+        {
+          "comment_date": 1443896495,
+          "id": 190,
+          "message_parsed": "Здравствуйте) Обязательно посмотрю маленько позже)",
+          "message_state": "visible",
+          "profile_post_id": 691,
+          "user_id": 2684,
+          "username": "dredd"
         }
       ],
       "first_comment_date": 1443896495,
@@ -59,15 +59,6 @@
       "comment_count": 2,
       "comments": [
         {
-          "comment_date": 1361791097,
-          "id": 49,
-          "message_parsed": "Привет) Та там дело двух минут) Вечерком отпишу..))",
-          "message_state": "visible",
-          "profile_post_id": 412,
-          "user_id": 2684,
-          "username": "dredd"
-        },
-        {
           "comment_date": 1361792113,
           "id": 50,
           "message_parsed": "Огромное спасибо)",
@@ -75,6 +66,15 @@
           "profile_post_id": 412,
           "user_id": 3906,
           "username": "T-John"
+        },
+        {
+          "comment_date": 1361791097,
+          "id": 49,
+          "message_parsed": "Привет) Та там дело двух минут) Вечерком отпишу..))",
+          "message_state": "visible",
+          "profile_post_id": 412,
+          "user_id": 2684,
+          "username": "dredd"
         }
       ],
       "first_comment_date": 1361791097,

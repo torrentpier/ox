@@ -67,11 +67,39 @@
   "rating_count": 3,
   "resource_date": 1441459924,
   "resource_state": "visible",
-  "reviews": [],
+  "reviews": [
+    {
+      "author_response": "",
+      "id": 69,
+      "is_anonymous": true,
+      "message": "Полезная вещь.",
+      "rating": 5,
+      "rating_date": 1441549559,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": null,
+      "username": null
+    }
+  ],
   "slug": "pol-zovateli-za-24-casa-na-ajax-versia-1-1",
   "tag_line": "Просмотр пользователей посетивших ресурс за 24 часа",
   "tags": [],
   "title": "Пользователи за 24 часа на Ajax версия (1.1)",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 378,
+      "last_edit_date": 0,
+      "message_parsed": "Добавлен не достающий файл",
+      "message_state": "visible",
+      "post_date": 1441480561,
+      "resource_id": 243,
+      "title": "Пользователи за 24 часа на Ajax (1.1)",
+      "url_path": "/resources/pol-zovateli-za-24-casa-na-ajax-versia-1-1.243/update/378/",
+      "view_url": "https://torrentpier.com/resources/pol-zovateli-za-24-casa-na-ajax-versia-1-1.243/update/378/"
+    }
+  ],
   "url_path": "/resources/pol-zovateli-za-24-casa-na-ajax-versia-1-1.243/",
   "user_id": 5626,
   "username": "Kryl",

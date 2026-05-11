@@ -67,11 +67,39 @@
   "rating_count": 1,
   "resource_date": 1425202621,
   "resource_state": "visible",
-  "reviews": [],
+  "reviews": [
+    {
+      "author_response": "",
+      "id": 175,
+      "is_anonymous": false,
+      "message": "спасибо",
+      "rating": 5,
+      "rating_date": 1492278680,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": 7710,
+      "username": "Tahir"
+    }
+  ],
   "slug": "mul-titreker-podgruzka-vnesnih-pirov",
   "tag_line": "Добавляет возможность организации мультитрекерных раздач с подгрузкой пиров с других ресурсов.",
   "tags": [],
   "title": "Мультитрекер (подгрузка внешних пиров)",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 220,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Обновление описания ресурса</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1425252937,
+      "resource_id": 149,
+      "title": "Обновление 1.1.0",
+      "url_path": "/resources/mul-titreker-podgruzka-vnesnih-pirov.149/update/220/",
+      "view_url": "https://torrentpier.com/resources/mul-titreker-podgruzka-vnesnih-pirov.149/update/220/"
+    }
+  ],
   "url_path": "/resources/mul-titreker-podgruzka-vnesnih-pirov.149/",
   "user_id": 1,
   "username": "Exile",

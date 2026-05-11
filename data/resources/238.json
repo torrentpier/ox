@@ -38,11 +38,64 @@
   "rating_count": 3,
   "resource_date": 1434280142,
   "resource_state": "visible",
-  "reviews": [],
+  "reviews": [
+    {
+      "author_response": "",
+      "id": 60,
+      "is_anonymous": false,
+      "message": "Удобный мод, прост в настройке.",
+      "rating": 5,
+      "rating_date": 1437300005,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": 4606,
+      "username": "dotWizard"
+    },
+    {
+      "author_response": "",
+      "id": 140,
+      "is_anonymous": true,
+      "message": "это в замен этому https://torrentpier.me/threads/thumbnails.287/",
+      "rating": 5,
+      "rating_date": 1475389898,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": null,
+      "username": null
+    }
+  ],
   "slug": "bb-kod-thumbnail-image",
   "tag_line": "Добавление слайдшоу для изображений.",
   "tags": [],
   "title": "BB-код: Thumbnail Image",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 370,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлена ошибка в инструкции по установке.",
+      "message_state": "visible",
+      "post_date": 1434363280,
+      "resource_id": 238,
+      "title": "Исправление ошибки",
+      "url_path": "/resources/bb-kod-thumbnail-image.238/update/370/",
+      "view_url": "https://torrentpier.com/resources/bb-kod-thumbnail-image.238/update/370/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 420,
+      "last_edit_date": 0,
+      "message_parsed": "Обновлен плагин до последней версии",
+      "message_state": "visible",
+      "post_date": 1692120841,
+      "resource_id": 238,
+      "title": "1.0.2",
+      "url_path": "/resources/bb-kod-thumbnail-image.238/update/420/",
+      "view_url": "https://torrentpier.com/resources/bb-kod-thumbnail-image.238/update/420/"
+    }
+  ],
   "url_path": "/resources/bb-kod-thumbnail-image.238/",
   "user_id": 10614,
   "username": "belomaxorka",

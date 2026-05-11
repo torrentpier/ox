@@ -84,6 +84,34 @@
   "tag_line": "Шаблон, простой в темно-зеленых оттенках.",
   "tags": [],
   "title": "Шаблон «Green»",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 308,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Обновлено описание ресурса</li>\n<li data-xf-list-type=\"ul\">Перепаковка в .zip</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1429569734,
+      "resource_id": 7,
+      "title": "Обновление 1.1.0",
+      "url_path": "/resources/sablon-green.7/update/308/",
+      "view_url": "https://torrentpier.com/resources/sablon-green.7/update/308/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 309,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Частичная адаптация под версию 2.1.0</li>\n<li data-xf-list-type=\"ul\">Большое спасибо @puhpol</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1429569869,
+      "resource_id": 7,
+      "title": "Обновление 1.2.0",
+      "url_path": "/resources/sablon-green.7/update/309/",
+      "view_url": "https://torrentpier.com/resources/sablon-green.7/update/309/"
+    }
+  ],
   "url_path": "/resources/sablon-green.7/",
   "user_id": 1,
   "username": "Exile",

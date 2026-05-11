@@ -48,6 +48,21 @@
     "ограничение доступа к категориям"
   ],
   "title": "Ограничение доступа к определенным категориям",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 530,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Исправлена ошибка в SQL запросе (Спасибо <a href=\"https://torrentpier.com/members/5704/\">ExPlayer</a>)</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1720287545,
+      "resource_id": 296,
+      "title": "Обновление v1.0.1",
+      "url_path": "/resources/ogranicenie-dostupa-k-opredelennym-kategoriam.296/update/530/",
+      "view_url": "https://torrentpier.com/resources/ogranicenie-dostupa-k-opredelennym-kategoriam.296/update/530/"
+    }
+  ],
   "url_path": "/resources/ogranicenie-dostupa-k-opredelennym-kategoriam.296/",
   "user_id": 10614,
   "username": "belomaxorka",

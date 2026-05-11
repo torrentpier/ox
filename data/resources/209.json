@@ -72,6 +72,34 @@
   "tag_line": "Добавляет возможность обновления статистики пользователя по AJAX-запросу.",
   "tags": [],
   "title": "AJAX-статистика",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 291,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Адаптированная версия, спасибо @dredd</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1425661357,
+      "resource_id": 209,
+      "title": "Обновление 1.1.0",
+      "url_path": "/resources/ajax-statistika.209/update/291/",
+      "view_url": "https://torrentpier.com/resources/ajax-statistika.209/update/291/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 293,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Обновлена инструкция по установке</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1425676601,
+      "resource_id": 209,
+      "title": "Обновление 1.2.0",
+      "url_path": "/resources/ajax-statistika.209/update/293/",
+      "view_url": "https://torrentpier.com/resources/ajax-statistika.209/update/293/"
+    }
+  ],
   "url_path": "/resources/ajax-statistika.209/",
   "user_id": 1,
   "username": "Exile",

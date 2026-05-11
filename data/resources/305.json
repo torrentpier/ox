@@ -69,6 +69,34 @@
     "улучшение индексации"
   ],
   "title": "Настройка индексации при создании темы",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 671,
+      "last_edit_date": 1756126185,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Отключена индексация для приватных тем</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1756126118,
+      "resource_id": 305,
+      "title": "Обновление v1.1.0 [Stable]",
+      "url_path": "/resources/nastrojka-indeksacii-pri-sozdanii-temy.305/update/671/",
+      "view_url": "https://torrentpier.com/resources/nastrojka-indeksacii-pri-sozdanii-temy.305/update/671/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 673,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Теперь используется более корректная проверка прав доступа (через $is_auth)</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1758827107,
+      "resource_id": 305,
+      "title": "Обновление v1.1.1",
+      "url_path": "/resources/nastrojka-indeksacii-pri-sozdanii-temy.305/update/673/",
+      "view_url": "https://torrentpier.com/resources/nastrojka-indeksacii-pri-sozdanii-temy.305/update/673/"
+    }
+  ],
   "url_path": "/resources/nastrojka-indeksacii-pri-sozdanii-temy.305/",
   "user_id": 10614,
   "username": "belomaxorka",

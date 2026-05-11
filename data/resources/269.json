@@ -65,7 +65,20 @@
   "rating_count": 1,
   "resource_date": 1696871755,
   "resource_state": "visible",
-  "reviews": [],
+  "reviews": [
+    {
+      "author_response": "",
+      "id": 193,
+      "is_anonymous": false,
+      "message": "Ок",
+      "rating": 5,
+      "rating_date": 1703245180,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": 5626,
+      "username": "Kryl"
+    }
+  ],
   "slug": "sablon-pixel",
   "tag_line": "Шаблон Pixel для TorrentPier",
   "tags": [
@@ -74,6 +87,47 @@
     "шаблон под 2.1.5"
   ],
   "title": "Шаблон «Pixel»",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 645,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Обновлен список торрент-клиентов на странице sidebar2.html</li>\n<li data-xf-list-type=\"ul\">Исправлен баг с нерабочим аттрибутом onclick на странице sidebar2.html</li>\n<li data-xf-list-type=\"ul\">Удалён лишний тег &lt;/p&gt; на странице tracker.tpl</li>\n<li data-xf-list-type=\"ul\">Шаблон адаптирован под последнюю версию LTS, включая все правки / улучшения</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1743962532,
+      "resource_id": 269,
+      "title": "Обновление v2.0.0",
+      "url_path": "/resources/sablon-pixel.269/update/645/",
+      "view_url": "https://torrentpier.com/resources/sablon-pixel.269/update/645/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 650,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Небольшие улучшения шаблона</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1747569990,
+      "resource_id": 269,
+      "title": "Обновление v2.0.1",
+      "url_path": "/resources/sablon-pixel.269/update/650/",
+      "view_url": "https://torrentpier.com/resources/sablon-pixel.269/update/650/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 658,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Исправлено +5 найденных багов</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1750951962,
+      "resource_id": 269,
+      "title": "Обновление v2.1.0",
+      "url_path": "/resources/sablon-pixel.269/update/658/",
+      "view_url": "https://torrentpier.com/resources/sablon-pixel.269/update/658/"
+    }
+  ],
   "url_path": "/resources/sablon-pixel.269/",
   "user_id": 10614,
   "username": "belomaxorka",

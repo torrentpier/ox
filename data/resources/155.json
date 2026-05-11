@@ -156,6 +156,34 @@
   "tag_line": "Добавляет возможность устраивать тотализатор для пользователей.",
   "tags": [],
   "title": "Тотализатор",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 197,
+      "last_edit_date": 0,
+      "message_parsed": "Адаптация под последнюю версию TorrentPier",
+      "message_state": "visible",
+      "post_date": 1425211868,
+      "resource_id": 155,
+      "title": "Адаптирование под 2.1.6",
+      "url_path": "/resources/totalizator.155/update/197/",
+      "view_url": "https://torrentpier.com/resources/totalizator.155/update/197/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 198,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Перепаковка в zip</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1425212471,
+      "resource_id": 155,
+      "title": "Обновление 1.1.0",
+      "url_path": "/resources/totalizator.155/update/198/",
+      "view_url": "https://torrentpier.com/resources/totalizator.155/update/198/"
+    }
+  ],
   "url_path": "/resources/totalizator.155/",
   "user_id": 2684,
   "username": "dredd",

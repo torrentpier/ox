@@ -93,6 +93,34 @@
     "отображение контрольной суммы"
   ],
   "title": "Контрольные суммы файлов",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 455,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Исправлены ошибки в инструкции</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1704101619,
+      "resource_id": 280,
+      "title": "Обновление v1.1.0",
+      "url_path": "/resources/kontrol-nye-summy-fajlov.280/update/455/",
+      "view_url": "https://torrentpier.com/resources/kontrol-nye-summy-fajlov.280/update/455/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 514,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Исправлены мелкие ошибки</li>\n<li data-xf-list-type=\"ul\">Добавлен поиск файлов по MD5 хэшу в админке</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1714642385,
+      "resource_id": 280,
+      "title": "Обновление v1.2.0",
+      "url_path": "/resources/kontrol-nye-summy-fajlov.280/update/514/",
+      "view_url": "https://torrentpier.com/resources/kontrol-nye-summy-fajlov.280/update/514/"
+    }
+  ],
   "url_path": "/resources/kontrol-nye-summy-fajlov.280/",
   "user_id": 10614,
   "username": "belomaxorka",

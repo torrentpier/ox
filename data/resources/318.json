@@ -41,6 +41,34 @@
   "tag_line": "Шаблон DarkDefault для TorrentPier v2.1.5 ( LTS V10 )",
   "tags": [],
   "title": "Шаблон «DarkDefault»",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 616,
+      "last_edit_date": 0,
+      "message_parsed": "Исправлено все скрытых белый цветов",
+      "message_state": "visible",
+      "post_date": 1738254603,
+      "resource_id": 318,
+      "title": "Обновление v1.1.0",
+      "url_path": "/resources/sablon-darkdefault.318/update/616/",
+      "view_url": "https://torrentpier.com/resources/sablon-darkdefault.318/update/616/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 668,
+      "last_edit_date": 1755439825,
+      "message_parsed": "Адаптирован под TP 2.4.11",
+      "message_state": "visible",
+      "post_date": 1755439540,
+      "resource_id": 318,
+      "title": "Обновление 2.0.0",
+      "url_path": "/resources/sablon-darkdefault.318/update/668/",
+      "view_url": "https://torrentpier.com/resources/sablon-darkdefault.318/update/668/"
+    }
+  ],
   "url_path": "/resources/sablon-darkdefault.318/",
   "user_id": 7621,
   "username": "DimaUZB2001",

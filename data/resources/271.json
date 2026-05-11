@@ -77,6 +77,34 @@
     "записки администратора"
   ],
   "title": "Заметки администратора",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 457,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Исправлены неточности в инструкции</li>\n<li data-xf-list-type=\"ul\">Добавлен перевод на EN <span style=\"color: rgb(71, 85, 119)\">(Будет использоваться по умолчанию если в выбранном языке не окажется языковых переменных)</span></li>\n<li data-xf-list-type=\"ul\">Улучшен код</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1705056422,
+      "resource_id": 271,
+      "title": "Обновление v1.2.0",
+      "url_path": "/resources/zametki-administratora.271/update/457/",
+      "view_url": "https://torrentpier.com/resources/zametki-administratora.271/update/457/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 509,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Мелкие улучшения кода</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1712486349,
+      "resource_id": 271,
+      "title": "Обновление v1.2.1",
+      "url_path": "/resources/zametki-administratora.271/update/509/",
+      "view_url": "https://torrentpier.com/resources/zametki-administratora.271/update/509/"
+    }
+  ],
   "url_path": "/resources/zametki-administratora.271/",
   "user_id": 10614,
   "username": "belomaxorka",

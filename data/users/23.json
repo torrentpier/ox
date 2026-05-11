@@ -86,15 +86,6 @@
       "comment_count": 2,
       "comments": [
         {
-          "comment_date": 1425233821,
-          "id": 148,
-          "message_parsed": "Ладно хоть не 50 нотисов.",
-          "message_state": "visible",
-          "profile_post_id": 648,
-          "user_id": 1,
-          "username": "Exile"
-        },
-        {
           "comment_date": 1425234755,
           "id": 149,
           "message_parsed": "50 нотисов оставил для романуя))",
@@ -102,6 +93,15 @@
           "profile_post_id": 648,
           "user_id": 23,
           "username": "PheRum"
+        },
+        {
+          "comment_date": 1425233821,
+          "id": 148,
+          "message_parsed": "Ладно хоть не 50 нотисов.",
+          "message_state": "visible",
+          "profile_post_id": 648,
+          "user_id": 1,
+          "username": "Exile"
         }
       ],
       "first_comment_date": 1425233821,
@@ -120,9 +120,9 @@
       "comment_count": 3,
       "comments": [
         {
-          "comment_date": 1420160136,
-          "id": 95,
-          "message_parsed": "По самоучителю php для чайников еще.",
+          "comment_date": 1420165268,
+          "id": 97,
+          "message_parsed": "Лол? Прокомментировать нельзя? О_о",
           "message_state": "visible",
           "profile_post_id": 539,
           "user_id": 1,
@@ -138,9 +138,9 @@
           "username": "PheRum"
         },
         {
-          "comment_date": 1420165268,
-          "id": 97,
-          "message_parsed": "Лол? Прокомментировать нельзя? О_о",
+          "comment_date": 1420160136,
+          "id": 95,
+          "message_parsed": "По самоучителю php для чайников еще.",
           "message_state": "visible",
           "profile_post_id": 539,
           "user_id": 1,

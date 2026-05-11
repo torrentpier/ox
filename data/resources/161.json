@@ -72,6 +72,34 @@
   "tag_line": "Добавляет поиск раздачи по ее статусу проверки модератором.",
   "tags": [],
   "title": "Поиск по статусу раздачи",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 513,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Полностью переписан код</li>\n<li data-xf-list-type=\"ul\">Совместимость со всеми версиями</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1714024344,
+      "resource_id": 161,
+      "title": "Обновление v2.0.0",
+      "url_path": "/resources/poisk-po-statusu-razdaci.161/update/513/",
+      "view_url": "https://torrentpier.com/resources/poisk-po-statusu-razdaci.161/update/513/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 577,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Обновлен / улучшен код</li>\n<li data-xf-list-type=\"ul\">Название статуса рядом с чекбоксом теперь кликабельно (для удобства)</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1731222793,
+      "resource_id": 161,
+      "title": "Обновление v2.1.0",
+      "url_path": "/resources/poisk-po-statusu-razdaci.161/update/577/",
+      "view_url": "https://torrentpier.com/resources/poisk-po-statusu-razdaci.161/update/577/"
+    }
+  ],
   "url_path": "/resources/poisk-po-statusu-razdaci.161/",
   "user_id": 10614,
   "username": "belomaxorka",

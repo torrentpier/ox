@@ -77,6 +77,21 @@
     "моды"
   ],
   "title": "MonsterID аватар",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 548,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Исправлена проблема, когда при смене почты не применялся аватар без повторного редактирования (отчасти баг движка)</li>\n</ul><hr /><span style=\"color: rgb(226, 80, 65)\">Обновление на эту версию с v1.0.0</span><br />\n<span style=\"color: rgb(0, 0, 0)\">- В <b>library/includes/ucp/register.php</b> найти:</span><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">    $db_data[&#039;user_active&#039;] = 0;\n}\n$db_data[&#039;user_email&#039;] = $email;</pre>Вставить ниже:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">$pr_data[&#039;user_email&#039;] = $email;</pre>",
+      "message_state": "visible",
+      "post_date": 1721491447,
+      "resource_id": 299,
+      "title": "Обновление v1.0.1",
+      "url_path": "/resources/monsterid-avatar.299/update/548/",
+      "view_url": "https://torrentpier.com/resources/monsterid-avatar.299/update/548/"
+    }
+  ],
   "url_path": "/resources/monsterid-avatar.299/",
   "user_id": 10614,
   "username": "belomaxorka",

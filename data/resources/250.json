@@ -57,6 +57,21 @@
   "tag_line": "Проверка размера постера в шаблоне для релиза",
   "tags": [],
   "title": "Проверка размера постера",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 395,
+      "last_edit_date": 0,
+      "message_parsed": "аддон работал не правильно из за того что не заменил функцию tpl_submit",
+      "message_state": "visible",
+      "post_date": 1467081520,
+      "resource_id": 250,
+      "title": "Дороботка",
+      "url_path": "/resources/proverka-razmera-postera.250/update/395/",
+      "view_url": "https://torrentpier.com/resources/proverka-razmera-postera.250/update/395/"
+    }
+  ],
   "url_path": "/resources/proverka-razmera-postera.250/",
   "user_id": 4866,
   "username": "Bender",

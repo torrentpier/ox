@@ -86,6 +86,64 @@
   "tag_line": "Добавляет возможность оставлять записи в профиле пользователя.",
   "tags": [],
   "title": "Стена пользователя",
+  "updates": [
+    {
+      "attach_count": 3,
+      "attachments": [
+        {
+          "attach_date": 1425215445,
+          "file_size": 84612,
+          "filename": "1.webp",
+          "height": 923,
+          "id": 3062,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1-webp.3062/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/3/3066-ab6c5433adee677bb3d09feed33dbdd4.jpg?hash=GIzmkEmJSG",
+          "width": 1280
+        },
+        {
+          "attach_date": 1425215447,
+          "file_size": 83224,
+          "filename": "2.webp",
+          "height": 923,
+          "id": 3063,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2-webp.3063/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/3/3067-a268e901ff339507542e2630c357f1d9.jpg?hash=3pEjhlqrpl",
+          "width": 1280
+        },
+        {
+          "attach_date": 1425215449,
+          "file_size": 74198,
+          "filename": "3.webp",
+          "height": 923,
+          "id": 3064,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/3-webp.3064/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/3/3068-e24ab87b118a8926b31b6f05e10f3238.jpg?hash=eG3zqnyjWU",
+          "width": 1280
+        }
+      ],
+      "id": 201,
+      "last_edit_date": 0,
+      "message_parsed": "Не стал добавлять ббкоды, думаю, здесь они не нужны. Но если нужны, черакните, сделаем🙂<br />\n<a href=\"https://torrentpier.com/attachments/3062/\"><img src=\"https://torrentpier.com/data/attachments/3/3066-ab6c5433adee677bb3d09feed33dbdd4.jpg?hash=GIzmkEmJSG\" alt=\"1.webp\" /></a> <a href=\"https://torrentpier.com/attachments/3063/\"><img src=\"https://torrentpier.com/data/attachments/3/3067-a268e901ff339507542e2630c357f1d9.jpg?hash=3pEjhlqrpl\" alt=\"2.webp\" /></a> <a href=\"https://torrentpier.com/attachments/3064/\"><img src=\"https://torrentpier.com/data/attachments/3/3068-e24ab87b118a8926b31b6f05e10f3238.jpg?hash=eG3zqnyjWU\" alt=\"3.webp\" /></a>",
+      "message_state": "visible",
+      "post_date": 1425215457,
+      "resource_id": 153,
+      "title": "Адаптация к 2.1.6",
+      "url_path": "/resources/stena-pol-zovatela.153/update/201/",
+      "view_url": "https://torrentpier.com/resources/stena-pol-zovatela.153/update/201/"
+    }
+  ],
   "url_path": "/resources/stena-pol-zovatela.153/",
   "user_id": 2684,
   "username": "dredd",

@@ -18,6 +18,26 @@
   "id": 42152,
   "last_post_date": 1690124106,
   "node_id": 3,
+  "poll": {
+    "close_date": 0,
+    "id": 43,
+    "max_votes": 1,
+    "public_votes": true,
+    "question": "Какой вид главной лучше",
+    "responses": [
+      {
+        "id": 129,
+        "text": "1",
+        "vote_count": 5
+      },
+      {
+        "id": 130,
+        "text": "2",
+        "vote_count": 4
+      }
+    ],
+    "voter_count": 9
+  },
   "post_date": 1689790472,
   "posts": [
     {

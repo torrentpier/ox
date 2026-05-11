@@ -90,15 +90,6 @@
       "comment_count": 2,
       "comments": [
         {
-          "comment_date": 1420029050,
-          "id": 91,
-          "message_parsed": "нет",
-          "message_state": "visible",
-          "profile_post_id": 568,
-          "user_id": 5840,
-          "username": "Hopper Around"
-        },
-        {
           "comment_date": 1451425318,
           "id": 195,
           "message_parsed": "main.css в помощь",
@@ -106,6 +97,15 @@
           "profile_post_id": 568,
           "user_id": 6340,
           "username": "baxa73"
+        },
+        {
+          "comment_date": 1420029050,
+          "id": 91,
+          "message_parsed": "нет",
+          "message_state": "visible",
+          "profile_post_id": 568,
+          "user_id": 5840,
+          "username": "Hopper Around"
         }
       ],
       "first_comment_date": 1420029050,

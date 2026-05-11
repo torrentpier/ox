@@ -100,6 +100,34 @@
   "tag_line": "Добавляет возможность отслеживания читеров на трекере.",
   "tags": [],
   "title": "Античит",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 200,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Адаптированная под последние версии движка версия, спасибо @Sprinx</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1425215450,
+      "resource_id": 151,
+      "title": "Обновление 1.1.0",
+      "url_path": "/resources/anticit.151/update/200/",
+      "view_url": "https://torrentpier.com/resources/anticit.151/update/200/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 202,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Обновлено описание ресурса</li>\n<li data-xf-list-type=\"ul\">Исправления ошибок совместимости</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1425218296,
+      "resource_id": 151,
+      "title": "Обновление 1.2.0",
+      "url_path": "/resources/anticit.151/update/202/",
+      "view_url": "https://torrentpier.com/resources/anticit.151/update/202/"
+    }
+  ],
   "url_path": "/resources/anticit.151/",
   "user_id": 1,
   "username": "Exile",

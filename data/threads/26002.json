@@ -18,6 +18,36 @@
   "id": 26002,
   "last_post_date": 1405333440,
   "node_id": 3,
+  "poll": {
+    "close_date": 0,
+    "id": 26,
+    "max_votes": 1,
+    "public_votes": false,
+    "question": "Что сделать с навигацией в админке",
+    "responses": [
+      {
+        "id": 76,
+        "text": "Перенести всю навигацию в базу данных",
+        "vote_count": 2
+      },
+      {
+        "id": 77,
+        "text": "Перенести все в отдельный файл",
+        "vote_count": 5
+      },
+      {
+        "id": 78,
+        "text": "Оставить так как есть",
+        "vote_count": 1
+      },
+      {
+        "id": 79,
+        "text": "Другое (желательно объяснить как сделать)",
+        "vote_count": 3
+      }
+    ],
+    "voter_count": 11
+  },
   "post_date": 1405155729,
   "posts": [
     {
@@ -142,5 +172,5 @@
   "url_path": "/threads/admin-panel-obsuzdenie.26002/",
   "user_id": 5150,
   "username": "KaRpIkS",
-  "view_count": 2019
+  "view_count": 2026
 }

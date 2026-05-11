@@ -18,6 +18,31 @@
   "id": 311,
   "last_post_date": 1332777417,
   "node_id": 90,
+  "poll": {
+    "close_date": 0,
+    "id": 2,
+    "max_votes": 1,
+    "public_votes": true,
+    "question": "Продолжать ли работу над сборкой?",
+    "responses": [
+      {
+        "id": 3,
+        "text": "Да",
+        "vote_count": 40
+      },
+      {
+        "id": 4,
+        "text": "Нет",
+        "vote_count": 4
+      },
+      {
+        "id": 5,
+        "text": "Я в танке, мне фиолетово",
+        "vote_count": 9
+      }
+    ],
+    "voter_count": 53
+  },
   "post_date": 1317325824,
   "posts": [
     {
@@ -1212,5 +1237,5 @@
   "url_path": "/threads/lanserver-apache-php-mysql-dla-windows.311/",
   "user_id": 64,
   "username": "ZIM",
-  "view_count": 15993
+  "view_count": 15998
 }

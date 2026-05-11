@@ -64,7 +64,20 @@
   "rating_count": 3,
   "resource_date": 1438610800,
   "resource_state": "visible",
-  "reviews": [],
+  "reviews": [
+    {
+      "author_response": "",
+      "id": 61,
+      "is_anonymous": true,
+      "message": "Довольно не плохо смотрится. Хотя и раздражает мелькание.",
+      "rating": 4,
+      "rating_date": 1438678710,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": null,
+      "username": null
+    }
+  ],
   "slug": "stranica-osibki-404-s-effektom-parallaksa",
   "tag_line": "Красивая страница ошибки 404.",
   "tags": [
@@ -73,6 +86,7 @@
     "страница ошибки"
   ],
   "title": "Страница ошибки 404 с эффектом параллакса",
+  "updates": [],
   "url_path": "/resources/stranica-osibki-404-s-effektom-parallaksa.240/",
   "user_id": 5626,
   "username": "Kryl",

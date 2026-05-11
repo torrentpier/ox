@@ -66,11 +66,76 @@
   "rating_count": 3,
   "resource_date": 1446809043,
   "resource_state": "visible",
-  "reviews": [],
+  "reviews": [
+    {
+      "author_response": "",
+      "id": 84,
+      "is_anonymous": false,
+      "message": "Полезная шкуковина .. Спасибо !!!",
+      "rating": 5,
+      "rating_date": 1446821209,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": 5626,
+      "username": "Kryl"
+    },
+    {
+      "author_response": "",
+      "id": 91,
+      "is_anonymous": false,
+      "message": "Нужный мод. Спасибо за мод и крон задачу :)",
+      "rating": 5,
+      "rating_date": 1449577652,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": 5704,
+      "username": "ExPlayer"
+    },
+    {
+      "author_response": "",
+      "id": 93,
+      "is_anonymous": false,
+      "message": "Норм! Хорошая идея!",
+      "rating": 5,
+      "rating_date": 1452510555,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": 6737,
+      "username": "Fantom 13"
+    }
+  ],
   "slug": "posting-v-gruppu-vk",
   "tag_line": "Добавляет сообщение в группу ВК при новом релизе",
   "tags": [],
   "title": "Постинг в группу ВК",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 386,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Пофиксил нотис curl</li>\n<li data-xf-list-type=\"ul\">Не должен конфликтовать с лентой новинок</li>\n<li data-xf-list-type=\"ul\">Добавил скриншоты</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1448032821,
+      "resource_id": 245,
+      "title": "Обновление 0.2",
+      "url_path": "/resources/posting-v-gruppu-vk.245/update/386/",
+      "view_url": "https://torrentpier.com/resources/posting-v-gruppu-vk.245/update/386/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 388,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Добавлена крон задача, для очистки устаревших изображений.</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1449577407,
+      "resource_id": 245,
+      "title": "Обновление 0.3",
+      "url_path": "/resources/posting-v-gruppu-vk.245/update/388/",
+      "view_url": "https://torrentpier.com/resources/posting-v-gruppu-vk.245/update/388/"
+    }
+  ],
   "url_path": "/resources/posting-v-gruppu-vk.245/",
   "user_id": 2684,
   "username": "dredd",

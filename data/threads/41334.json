@@ -18,6 +18,31 @@
   "id": 41334,
   "last_post_date": 1451087946,
   "node_id": 58,
+  "poll": {
+    "close_date": 0,
+    "id": 34,
+    "max_votes": 1,
+    "public_votes": true,
+    "question": "Размещение раздачи в нескольких форумах для организации каталога",
+    "responses": [
+      {
+        "id": 103,
+        "text": "Да",
+        "vote_count": 4
+      },
+      {
+        "id": 104,
+        "text": "Нет",
+        "vote_count": 3
+      },
+      {
+        "id": 105,
+        "text": "Не знаю",
+        "vote_count": 1
+      }
+    ],
+    "voter_count": 8
+  },
   "post_date": 1448610928,
   "posts": [
     {

@@ -78,6 +78,34 @@
     "улучшения для профиля"
   ],
   "title": "Знак зодиака",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 469,
+      "last_edit_date": 1706258255,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Мелкие правки кода</li>\n</ul><hr /><span style=\"color: rgb(235, 107, 86)\">Обновление на эту версию с предыдущей:</span><br />\n- Найти в <b>library/includes/ucp/viewprofile.php</b><br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&#039;SHOW_ZODIAC&#039;          =&gt; ($profile_user_id || bf($profiledata[&#039;user_opt&#039;], &#039;user_opt&#039;, &#039;user_show_zodiac&#039;)) ? get_zodiac($profiledata[&#039;user_birthday&#039;]) : &#039;&#039;,</pre>- Заменить на:<br />\n<pre class=\"xfBb-code\" data-lang=\"php\">&#039;SHOW_ZODIAC&#039;          =&gt; (IS_ADMIN || $profile_user_id || bf($profiledata[&#039;user_opt&#039;], &#039;user_opt&#039;, &#039;user_show_zodiac&#039;)) ? get_zodiac($profiledata[&#039;user_birthday&#039;]) : &#039;&#039;,</pre>",
+      "message_state": "visible",
+      "post_date": 1706253985,
+      "resource_id": 278,
+      "title": "Обновление v1.0.1",
+      "url_path": "/resources/znak-zodiaka.278/update/469/",
+      "view_url": "https://torrentpier.com/resources/znak-zodiaka.278/update/469/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 491,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Мелкие улучшения</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1708250489,
+      "resource_id": 278,
+      "title": "Обновление v1.0.2",
+      "url_path": "/resources/znak-zodiaka.278/update/491/",
+      "view_url": "https://torrentpier.com/resources/znak-zodiaka.278/update/491/"
+    }
+  ],
   "url_path": "/resources/znak-zodiaka.278/",
   "user_id": 10614,
   "username": "belomaxorka",
