@@ -11,8 +11,7 @@
 {% for forum in forums %}
   <li>
     <a class="forum-link" href="{{ node_url(forum) }}">{{ forum.title }}</a>
-    {% set tlist = threads_by_forum.get(forum.node_id, []) %}
-    <span class="muted">— {{ tlist | length }} threads</span>
+    <span class="muted">— {{ thread_count_recursive.get(forum.node_id, 0) }} threads</span>
     {% if forum.description %}<div class="muted">{{ forum.description }}</div>{% endif %}
   </li>
 {% endfor %}

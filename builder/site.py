@@ -188,12 +188,33 @@ def _build_indexes(meta: dict[str, Any], threads: list[dict[str, Any]], resource
     for rs in resources_by_cat.values():
         rs.sort(key=lambda r: -(r.get("last_update") or r.get("resource_date") or 0))
 
+    # Recursive thread count: own threads + threads in every descendant forum.
+    # Mirrors what XF shows on its forum index — a parent container reports
+    # the total across its subtree, not just its own immediate posts.
+    thread_count_recursive: dict[int, int] = {}
+
+    def _visit(node_id: int) -> int:
+        if node_id in thread_count_recursive:
+            return thread_count_recursive[node_id]
+        node = nodes_by_id.get(node_id)
+        total = 0
+        if node and node.get("node_type_id") == "Forum":
+            total += len(threads_by_forum.get(node_id, []))
+        for child_id in tree_map.get(node_id, []):
+            total += _visit(int(child_id))
+        thread_count_recursive[node_id] = total
+        return total
+
+    for nid in nodes_by_id:
+        _visit(nid)
+
     return {
         "nodes_by_id": nodes_by_id,
         "forums": sorted(forums, key=lambda n: (n.get("display_order", 0), n.get("title") or "")),
         "categories": sorted(categories, key=lambda n: (n.get("display_order", 0), n.get("title") or "")),
         "tree_map": tree_map,
         "threads_by_forum": threads_by_forum,
+        "thread_count_recursive": thread_count_recursive,
         "resources_by_cat": resources_by_cat,
     }
 
@@ -258,6 +279,7 @@ def build(data_dir: Path, out_dir: Path) -> None:
     env.globals["r2_url"] = r2_url
     env.globals["users"] = users
     env.globals["nodes_by_id"] = idx["nodes_by_id"]
+    env.globals["thread_count_recursive"] = idx["thread_count_recursive"]
 
     # /
     index_tmpl = env.get_template("index.html")
