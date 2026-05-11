@@ -13,6 +13,7 @@ dependencies = [
     "boto3>=1.34",
     "pymorphy3>=2.0",
     "pymorphy3-dicts-ru>=2.4",
+    "snowballstemmer>=2.2",
 ]
 
 [project.optional-dependencies]
@@ -25,13 +26,14 @@ dev = [
 xf-export = "exporter.main:main"
 xf-build = "builder.main:main"
 xf-mirror = "mirror.main:main"
+xf-search = "search.main:main"
 
 [build-system]
 requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
-include = ["exporter*", "builder*", "mirror*"]
+include = ["exporter*", "builder*", "mirror*", "search*"]
 
 [tool.ruff]
 line-length = 100

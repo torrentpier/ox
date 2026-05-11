@@ -29,6 +29,10 @@ attachments/
 # Exporter state (resumable from data/threads/*.json)
 state.json
 
+# Search index artefacts (regenerable from data/threads/*.json)
+search/local.db
+search/seed.sql
+
 # Logs
 *.log
 

@@ -5,12 +5,12 @@ detailed enough that work can be paused and resumed at any point — by the
 same or a different operator — without losing context. Update it after every
 meaningful decision or completed step.
 
-## Status snapshot (2026-05-11, end of session 4)
+## Status snapshot (2026-05-12, end of session 5)
 
 | # | Item                                                       | State |
 |---|------------------------------------------------------------|-------|
 |   | Branch                                                     | **Merged** — `feat/archive` (~37 commits) → `main` via PR #1; tip is `67fa9c3e`. |
-|   | First Pages deploy                                         | **Green** — workflow run `25692657041` succeeded in 1m41s. Pages config: source=GitHub Actions, custom domain pinned to `ox.torrentpier.com`, `protected_domain_state=verified`, **`https_enforced=false`** (flip on after DNS resolves). |
+|   | First Pages deploy                                         | **Green** — workflow run `25692657041` succeeded in 1m41s. Pages config: source=GitHub Actions, custom domain pinned to `ox.torrentpier.com`, `protected_domain_state=verified`, **`https_enforced=false`** (flip on once LE issues — see DNS row). |
 |   | Repo skeleton (dirs + meta files)                          | Done (`c12ba69`) |
 |   | API surface verified (probed live)                         | Done — see "API surface" below |
 |   | Wrangler installed (Homebrew)                              | Done — 4.90.0 |
@@ -44,14 +44,14 @@ meaningful decision or completed step.
 | 3 | Builder — resource page Updates timeline                    | Done — chronological updates section above Versions |
 | 3 | Builder — thread page poll widget                           | Done — bar-chart poll under the title, shown on page 1 only |
 | 3 | Builder — sub-forums UI overhaul                            | Done — index/category use pill-style chips inside a tinted "Sub-forums" plate; forum page Sub-forums block uses the same card row pattern as index. No more double-chevron artifact. |
-| 4 | Search — Python indexer (lemmatised plain text → SQL)      | Not started |
-| 4 | Search — Cloudflare D1 schema + import                     | Not started — needs `wrangler login` (this stage truly does) |
-| 4 | Search — TypeScript Worker exposing `/search?q=`           | Not started |
-| 4 | Search — frontend on `/search/` page                       | Not started (placeholder lives) |
+| 4 | Search — Python indexer (Snowball-stemmed plain text → seed.sql) | **Done** — `search/index.py`, 45,473 posts indexed in 21s, 39 MiB seed.sql |
+| 4 | Search — Cloudflare D1 schema + import                     | **Done** — DB `ox-archive-search` (`197ca16a-…`), region APAC/SIN, 28.82 MiB after import |
+| 4 | Search — TypeScript Worker exposing `/search?q=`           | **Done** — `search-worker/`, deployed at `https://search-ox.torrentpier.com` (CF auto-provisioned DNS + cert) and `https://ox-archive-search.personal-e94.workers.dev` |
+| 4 | Search — frontend on `/search/` page                       | **Done** — real form + JS in `templates/search.html`, calls Worker, renders snippet with `<mark>` highlights |
 | 5 | Deploy — GitHub Actions build + Pages deploy               | **Done** — workflow `.github/workflows/build.yml` fires on every push to `main` touching `data/`, `templates/`, `static/`, `builder/`, the workflow itself, or `pyproject.toml`. First run on the merge succeeded. |
-| 5 | Deploy — Pages site live at `<gh>.github.io`               | **Done** (technical URL). Custom domain `ox.torrentpier.com` is verified in repo Pages config; awaits DNS to actually resolve. |
-| 5 | Deploy — DNS: `ox.torrentpier.com` CNAME → Pages           | **Pending — manual user action in Cloudflare dashboard.** Add record `ox CNAME torrentpier.github.io` (DNS-only / grey cloud the first time so GitHub can verify and issue a Let's Encrypt cert; flip to proxied afterwards). |
-| 5 | Deploy — Enforce HTTPS in repo Pages settings              | **Pending** — flip after DNS resolves; GitHub auto-issues Let's Encrypt cert in ~10–30 min. Pages API currently shows `https_enforced=false`. |
+| 5 | Deploy — Pages site live at `<gh>.github.io`               | **Done**. HTTP works at `http://ox.torrentpier.com/`. Custom domain `ox.torrentpier.com` verified in Pages config. |
+| 5 | Deploy — DNS: `ox.torrentpier.com` CNAME → Pages           | **Done** — `ox.torrentpier.com CNAME torrentpier.github.io`, resolves to GitHub Pages IPs (`185.199.108..111.153`). |
+| 5 | Deploy — Enforce HTTPS in repo Pages settings              | **Pending — waiting on LE.** Pages still serves `*.github.io` cert for the custom hostname (SAN mismatch). Until the LE cert issues, HTTPS requests fail with `CERT_AUTHORITY_INVALID`. Flip `https_enforced=true` once `gh api repos/:owner/:repo/pages` reports the cert. |
 | 5 | Deploy — Bulk Redirect from `torrentpier.com/*` → archive  | **Pending — manual user action in Cloudflare.** New list item: `https://torrentpier.com/*` → `https://ox.torrentpier.com/$1` (preserve path + query, 301). |
 | 5 | R2 cache purge for `/avatars/*`                            | **Pending — manual user action in Cloudflare dashboard.** Purge URL `https://files-ox.torrentpier.com/avatars/*` once (hi-res `h` overrides the older `l` size on every key). |
 | 5 | Cutover — DB privacy restore                               | **Pending — optional.** If we want to restore the original `xf_user_privacy.allow_view_profile` + `xf_user.is_banned` + `xf_user.visible` values for the 58 affected users, the dump lives at `/opt/xenforo/data/xf_user{,_privacy}.backup-2026-05-11.sql` on `root@167.172.38.61`. Forum is dying so this is purely hygiene. |
@@ -195,6 +195,43 @@ XenForo REST API
 
 Verified request budget for the exporter: ~5,300 calls at 3 rps ≈ **30 min**
 clean run (matches what was actually observed).
+
+## Session 5 — search live + DNS flip (Done)
+
+What changed since end of session 4:
+
+- **DNS for `ox.torrentpier.com` flipped** to GitHub Pages. Resolves to
+  `185.199.108.153` (and the three siblings). HTTP works end-to-end.
+  HTTPS still serves the default `*.github.io` cert — LE issue is in
+  flight; `https_enforced` stays `false` until the cert lands.
+- **Stage 4 search is live.** Full pipeline:
+  - `search/` package — Snowball-stemmed indexer (`ё→е` normalisation
+    applied explicitly so Python and JS agree on every word; verified
+    identical stems on 2,000 sampled corpus tokens).
+  - D1 database `ox-archive-search` populated with 3,304 threads, 45,473
+    posts, 45,473 FTS rows. 28.8 MiB on D1.
+  - `search-worker/` Worker live at `https://search-ox.torrentpier.com/`
+    (CF custom_domain + auto-issued cert). Snippet rendering is in TS
+    because FTS5 `snippet()` operates on the stemmed column and returns
+    mangled text — re-tokenising `body_plain` server-side gives us
+    correctly-formed `<mark>...</mark>` highlights.
+  - `templates/search.html` is now a real form + ~60 lines of inline JS
+    that fetches the Worker and renders result cards. `?q=...` deep
+    links work, browser back/forward syncs via `history.pushState`.
+- `.github/dependabot.yml` extended with `npm` ecosystem on
+  `/search-worker` (in addition to the original `pip` + `github-actions`
+  groups). Labels `dependencies` and `ci` exist in the repo.
+
+Design notes worth keeping:
+- `body_plain` is capped at 32K chars in the indexer because D1
+  rejects single statements over ~100 KB. Snippets are short anyway, so
+  the loss is invisible (1 post out of 45,473 was actually truncated).
+- D1 forbids `PRAGMA writable_schema`, `BEGIN TRANSACTION` and direct
+  INSERTs into FTS5 shadow tables. `iterdump()` produces all three, so
+  the indexer emits SQL by hand in a single pass instead.
+- `wrangler.jsonc` declares `custom_domain: true` on the route —
+  `wrangler deploy` auto-creates the DNS record. The CF zone for
+  `torrentpier.com` is in the same account; no manual DNS step needed.
 
 ## Session 4 — deep re-audit of API vs DB (Done)
 
@@ -450,7 +487,7 @@ will be one focused commit once the mirror stage has run at least once:
 - [ ] `templates/resource.html` — link version files to R2 instead of the
   XF API endpoint.
 
-## Stage 3 — Builder (mostly Done)
+## Stage 3 — Builder (Done)
 
 Code in `builder/`:
 - `render.py` — Jinja2 env, filters: `timestamp`, `filesize`, `urlpath`.
@@ -483,84 +520,125 @@ To re-run:
 | `/resources/`                              | `resources_index.html` | Resource categories            |
 | `/resources/categories/{slug}.{id}/`       | `rcategory.html` | Resources in a category              |
 | `/resources/{slug}.{id}/`                  | `resource.html`| Resource detail with versions table    |
-| `/search/`                                 | `search.html`  | Placeholder until Worker exists        |
+| `/search/`                                 | `search.html`  | Real form + inline JS that calls the Worker; deep-links via `?q=` |
 | `/sitemap.xml`                             | (script)       | All canonical URLs with lastmod        |
 | `/robots.txt`                              | static         | Allow all                              |
 | `/CNAME`                                   | (script)       | `ox.torrentpier.com` for GitHub Pages  |
 
-### Outstanding builder tasks
+## Stage 4 — Search worker + D1 (Done)
 
-- [ ] Wire R2 URLs into `message_parsed` rewrite + avatar rendering after mirror stage runs.
-  Builder already canonicalises link slugs; once mirror sets `r2_key` on attachments / avatars / inline,
-  add an `asset_url_map: dict[str, str]` pass that swaps `<img src>` / `<a href>` to the R2 public URL.
-  Resolve in-post `/attachments/{id}/` variants via a global `{attachment_id → r2_key}` lookup (verified:
-  558 of 575 internal "inline" URLs are alternate forms of existing attachments — do not re-mirror).
+End-to-end pipeline: Python indexer → SQL dump → D1 → TypeScript Worker
+→ JS form on `/search/`. Russian morphology via Snowball stemming.
 
-## Stage 4 — Search worker + D1 (TODO)
+### Algorithm choice
 
-### D1 schema
+Snowball Russian on both sides (`snowballstemmer` Python on the index,
+`snowball-stemmers` npm in the Worker). Critical detail: Python wrapper
+implicitly normalises `ё→е` while the JS port does **not**, so we apply
+the substitution explicitly in `search/text.py` and
+`search-worker/src/text.ts`. Verified identical output on 2,000 sampled
+corpus tokens. Pagefind was rejected earlier because it's literal-only
+for Russian — stemming fixes that.
+
+### D1 schema (live)
 
 ```sql
 CREATE TABLE threads (
-    id INTEGER PRIMARY KEY,
-    slug TEXT NOT NULL,
-    title TEXT NOT NULL,
-    forum_id INTEGER NOT NULL,
-    forum_title TEXT NOT NULL,
-    username TEXT,
-    post_date INTEGER,
-    reply_count INTEGER
+    id INTEGER PRIMARY KEY, slug TEXT, title TEXT NOT NULL,
+    forum_id INTEGER NOT NULL, forum_title TEXT NOT NULL,
+    username TEXT, post_date INTEGER, reply_count INTEGER,
+    url_path TEXT NOT NULL
 );
 CREATE TABLE posts (
-    id INTEGER PRIMARY KEY,
-    thread_id INTEGER NOT NULL,
-    page_no INTEGER NOT NULL,
-    username TEXT,
-    post_date INTEGER
+    id INTEGER PRIMARY KEY, thread_id INTEGER NOT NULL,
+    page_no INTEGER NOT NULL, position INTEGER NOT NULL,
+    username TEXT, post_date INTEGER, body_plain TEXT NOT NULL
 );
+CREATE INDEX idx_posts_thread ON posts(thread_id, position);
 CREATE VIRTUAL TABLE posts_fts USING fts5(
-    body,                   -- lemmatised plain text of the post
-    title,                  -- denormalised thread title
-    content='',             -- contentless table; originals only in posts/threads
+    body, title, content='',
     tokenize='unicode61 remove_diacritics 2'
 );
 ```
 
-### Indexer (Python, run once locally)
+Notes:
+- `body_plain` is the original text, capped at 32K chars (D1 enforces a
+  ~100 KB per-statement size; the cap keeps even the longest post inside
+  it after SQL escaping). Used by the Worker to build snippets.
+- `posts_fts.body` and `posts_fts.title` hold Snowball-stemmed text.
+  `content=''` keeps FTS5 contentless — the row data lives only in the
+  inverted index, halving on-disk footprint.
+- `slug` is nullable because one thread (id 364, title `<!-- ? -->`)
+  has no slug in the source data.
 
-- [ ] `search/index.py`: walks `data/threads/`, for each post:
-  `BeautifulSoup(...).get_text()`, normalise whitespace, lemmatise via
-  `pymorphy3` (cache lemmas per token), emit `INSERT` statements.
-- [ ] Output `search/seed.sql`. Feed to D1 in batches of ~5,000 statements
-  (D1 import limit):
+### Indexer (Python, `search/`)
+
+- `search/text.py` — `to_plain()` (BeautifulSoup `html.parser`/`lxml`,
+  whitespace normalisation, blockquote header strip), `stem_text()`
+  (`\w+` regex tokenise, lowercase, `ё→е`, Snowball on Cyrillic tokens
+  only — ASCII passes through).
+- `search/index.py` — walks `data/threads/*.json` sorted by id, inserts
+  one row per thread + one row per post + one FTS row per post. Emits a
+  plain-SQL dump in the same pass (no `iterdump` — D1 forbids
+  `PRAGMA writable_schema` and direct INSERTs into FTS5 shadow tables).
+- `search/main.py` — CLI:
   ```bash
-  wrangler d1 create ox-archive-search
-  wrangler d1 execute ox-archive-search --file=search/seed.sql --remote
+  .venv/bin/python -m search build --data data \
+      --db search/local.db --sql search/seed.sql
   ```
-- [ ] `seed.sql` should be regenerable from `data/` deterministically — keep
-  insertion order sorted by `(thread_id, position)`.
+  Output: 3,304 threads, 45,473 posts, 31.7 MiB local DB, 39 MiB seed.sql,
+  ~21 s end-to-end on this machine. Both intermediate files are
+  `.gitignore`d (regenerable from `data/`).
 
-### Worker (TypeScript, ~80 lines)
+### D1 + import
 
-- [ ] `search-worker/src/index.ts`: GET `/search?q=...` → escape FTS5 query
-  syntax, run a single SQL with `snippet(posts_fts, 0, '<mark>', '</mark>',
-  '…', 32)`, return JSON, cache 1h.
-- [ ] `search-worker/wrangler.toml`: D1 binding, route
-  `search-ox.torrentpier.com/*`.
-- [ ] Lemmatise the user query the same way as the index. Two viable options:
-  - Lemmatise on the client (small JS lemmatiser bundle) before calling.
-  - Lemmatise inside the worker using a pure-JS port of pymorphy3.
-  Decide during stage 4. **Default to the client option** — keeps the
-  worker stateless.
+- DB: `ox-archive-search` (id `197ca16a-a9d7-47d7-8bcd-5e65837c4cbb`),
+  region `APAC/SIN`. Created via `wrangler d1 create`.
+- Import: `wrangler d1 execute ox-archive-search --remote --file=search/seed.sql`.
+  Loads 94,255 statements (3,304 threads + 45,473 posts + 45,473 FTS rows
+  + schema + optimize) in ~7 s. Final DB ~28.82 MiB on D1.
+- Re-import: drop `posts_fts`, `posts`, `threads` first, then run the
+  same `wrangler` command. The seed file already includes
+  `INSERT INTO posts_fts(posts_fts) VALUES('optimize');` at the tail.
 
-### Frontend search page
+### Worker (TypeScript, `search-worker/`)
 
-- [ ] Replace `templates/search.html` placeholder with a real `<form>` +
-  `<script src="/js/search.js">`. Submit to
-  `https://search-ox.torrentpier.com/search?q=...`, render results as
-  links with breadcrumbs and `<mark>`-highlighted snippet, debounce 200ms.
+- `src/text.ts` — tokenise + Snowball stem (mirror of Python helper).
+- `src/snippet.ts` — re-tokenises `body_plain` server-side, finds the
+  first stem match, builds a ±90-char window, HTML-escapes the slices,
+  wraps each match in `<mark>...</mark>`. We **do not** use FTS5
+  `snippet()` because its output is over the stemmed column and would
+  return mangled forms.
+- `src/index.ts` — `fetch` handler. GET `/search?q=...&limit=N` (limit
+  clamped to 1..50, default 20). Validates length (2..200 chars), stems
+  the query, builds an FTS5 MATCH with each stem wrapped in double
+  quotes (implicit AND between stems), joins threads, returns JSON. CORS
+  `*`, `Cache-Control: public, max-age=3600`. URL-encode Cyrillic queries
+  (curl `--data-urlencode`); plain Cyrillic in the URL gets 400 from CF
+  edge.
+- Deploy: `wrangler.jsonc` includes a `custom_domain` route on
+  `search-ox.torrentpier.com` plus `workers_dev: true`. `wrangler deploy`
+  also auto-creates the DNS record and HTTPS cert for the custom domain.
+- URLs:
+  - `https://search-ox.torrentpier.com/search?q=...` (production)
+  - `https://ox-archive-search.personal-e94.workers.dev/search?q=...`
+    (workers.dev fallback)
 
-## Stage 5 — Deploy (workflow committed; awaiting first push)
+### Frontend `/search/`
+
+- `templates/search.html` — header, breadcrumbs, an `<input>` + Search
+  button, results `<ol>`, an HTML `<template>` for one result card. JS
+  is inline (~60 lines): on submit, fetch the Worker, render result
+  cards with `<mark>`-highlighted snippet (the only `innerHTML` site is
+  the snippet, which is escaped + only-`<mark>` from the Worker). The
+  initial query is taken from `?q=...` so deep links work, and
+  `history.pushState` keeps the URL in sync as the user searches.
+- `templates/base.html` — added a "Search" link to the site nav.
+- `static/style.css` — new `.search-form`, `.search-results`,
+  `.search-result-*`, `<mark>` styling, all using the existing CSS
+  variable palette.
+
+## Stage 5 — Deploy (Pages live, awaiting HTTPS cert)
 
 The workflow at `.github/workflows/build.yml` does the following on every push
 to `main` that touches `data/`, `templates/`, `static/`, `builder/`, the
@@ -636,43 +714,33 @@ manual (see "Cloudflare side" below).
 
 ### What's left for the next session (in dependency order)
 
-`main` is now the source of truth (PR #1 merged at `67fa9c3e`). First
-Pages deploy is green. The archive is live at the technical URL; flip
-DNS and you're done with the cutover. Search is a separate session.
+DNS is flipped, search is live, the archive is functional over HTTP. The
+remaining items are mostly Cloudflare/CF-side toggles and one optional
+DB hygiene step. None of them require this repo to change.
 
-1. **DNS flip in Cloudflare (user, ~1 min).**
-   - DNS → Records → Add: `Type=CNAME`, `Name=ox`,
-     `Target=torrentpier.github.io`, **Proxy=DNS only (grey cloud)** the
-     first time so GitHub can verify the domain and auto-issue a Let's
-     Encrypt cert. Flip to **proxied** afterwards for CF caching.
-   - Wait 1–10 min, hit `https://ox.torrentpier.com/`, smoke-test 5–10
-     deep-link URLs from previous chats / search engines.
-   - In repo Settings → Pages, flip **Enforce HTTPS** on once the cert
-     issues (Pages API currently reports `https_enforced=false`).
+1. **Wait for the Pages HTTPS cert to issue (passive, ~10–60 min from
+   the DNS flip).** Pages is still serving its default `*.github.io`
+   cert on the custom hostname, so `https://ox.torrentpier.com/` fails
+   TLS verification while `http://ox.torrentpier.com/` works fine.
+   Re-check with `gh api repos/:owner/:repo/pages` — once the API
+   reports a cert (or `curl -vI https://ox.torrentpier.com/` shows
+   `subject: ox.torrentpier.com`), flip **Settings → Pages → Enforce
+   HTTPS** on. Do **not** remove/re-add the custom domain to try to
+   force re-issuance — that resets the LE counter.
 
-2. **Bulk Redirect in Cloudflare (user, ~1 min).** New list:
+2. **Bulk Redirect in Cloudflare (user, ~1 min).** New list item:
    `https://torrentpier.com/*` → `https://ox.torrentpier.com/$1`, 301,
    preserve path + query. URL paths are preserved by design — no
-   per-thread mapping required.
+   per-thread mapping required. The old forum currently still serves
+   a live XF on `torrentpier.com` — do this only when you actively
+   want the cutover.
 
 3. **R2 avatars cache purge (user, 30 seconds).** Cloudflare → Caching →
    Purge → Custom → URL = `https://files-ox.torrentpier.com/avatars/*`
    so the edge stops serving the older size-`l` bytes (R2 origin already
    has the hi-res `h` versions on the same keys).
 
-4. **Stage 4 — search (own session, ~half a day).** See
-   "Stage 4 — Search worker + D1 (TODO)" below. Order:
-   - `wrangler login` + `wrangler d1 create ox-archive-search`.
-   - Write `search/index.py` that walks `data/threads/` and emits a
-     deterministic `search/seed.sql` (lemmatise post bodies with
-     `pymorphy3`, sort inserts by `(thread_id, position)`).
-   - `wrangler d1 execute ox-archive-search --file=search/seed.sql --remote`.
-   - Write the ~80-line TS worker in `search-worker/` and bind it to
-     `search-ox.torrentpier.com`.
-   - Replace the `/search/` template placeholder with a real form + JS
-     calling the worker.
-
-5. **Optional: roll back the live forum DB privacy patch.** If you want
+4. **Optional: roll back the live forum DB privacy patch.** If you want
    to restore the original `allow_view_profile` / `is_banned` /
    `visible` for the 58 users we unblocked in session 3:
    ```bash
@@ -686,7 +754,7 @@ DNS and you're done with the cutover. Search is a separate session.
    (Manually substitute the password — it's in `/opt/xenforo/xenforo/src/config.php`.)
    Forum is dying so this is purely hygiene.
 
-6. **Revoke the super-user API key.** Last step after smoke-test passes.
+5. **Revoke the super-user API key.** Last step after smoke-test passes.
    XF admin panel → API keys → revoke `XF_API_KEY` from `.env`. Without
    this the key keeps working against whatever still answers on the
    live host.

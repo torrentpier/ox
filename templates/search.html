@@ -6,12 +6,103 @@
   / <span class="current">Search</span>
 </nav>
 <h1>Search</h1>
-<p class="lede">
-  Full-text search will live here once the Cloudflare Worker + D1 index
-  is wired up. For now, use your browser's find or jump to a thread directly.
-</p>
-<form id="search-form" onsubmit="return false;">
-  <input type="search" id="q" placeholder="Search the archive…" autofocus disabled>
+<p class="lede">Full-text search across {{ archive_stats.posts }} posts in {{ archive_stats.threads }} threads. Russian morphology is supported (Snowball stemming).</p>
+
+<form id="search-form" class="search-form" role="search" autocomplete="off">
+  <input type="search" id="q" name="q" placeholder="Search the archive…"
+         autocapitalize="off" autocorrect="off" spellcheck="false"
+         minlength="2" maxlength="200" required autofocus>
+  <button type="submit">Search</button>
 </form>
-<p class="muted">(disabled — coming soon)</p>
+
+<p id="search-status" class="muted search-status" hidden></p>
+<ol id="search-results" class="search-results"></ol>
+
+<template id="result-template">
+  <li class="search-result">
+    <h3 class="search-result-title"><a></a></h3>
+    <p class="search-result-meta muted"></p>
+    <p class="search-result-snippet"></p>
+  </li>
+</template>
+
+<script>
+(() => {
+  const API = 'https://search-ox.torrentpier.com/search';
+  const form = document.getElementById('search-form');
+  const input = document.getElementById('q');
+  const status = document.getElementById('search-status');
+  const list = document.getElementById('search-results');
+  const tpl = document.getElementById('result-template');
+
+  function setStatus(msg) {
+    if (msg) { status.hidden = false; status.textContent = msg; }
+    else { status.hidden = true; status.textContent = ''; }
+  }
+
+  function fmtDate(ts) {
+    if (!ts) return '';
+    try { return new Date(ts * 1000).toISOString().slice(0, 10); }
+    catch { return ''; }
+  }
+
+  function render(payload) {
+    list.replaceChildren();
+    if (!payload.results || payload.results.length === 0) {
+      setStatus('No matches for "' + payload.q + '"');
+      return;
+    }
+    setStatus(payload.count + ' result' + (payload.count === 1 ? '' : 's') + ' for "' + payload.q + '"');
+    for (const r of payload.results) {
+      const node = tpl.content.firstElementChild.cloneNode(true);
+      const link = node.querySelector('a');
+      link.href = r.url;
+      link.textContent = r.title;
+      const meta = [r.forum_title];
+      if (r.post_author) meta.push(r.post_author);
+      const dt = fmtDate(r.post_date);
+      if (dt) meta.push(dt);
+      node.querySelector('.search-result-meta').textContent = meta.join(' · ');
+      node.querySelector('.search-result-snippet').innerHTML = r.snippet || '';
+      list.appendChild(node);
+    }
+  }
+
+  let pending = 0;
+  async function run(q) {
+    if (!q || q.length < 2) { list.replaceChildren(); setStatus(''); return; }
+    const seq = ++pending;
+    setStatus('Searching…');
+    try {
+      const url = new URL(API);
+      url.searchParams.set('q', q);
+      url.searchParams.set('limit', '30');
+      const res = await fetch(url.toString(), { headers: { Accept: 'application/json' } });
+      if (seq !== pending) return;
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      render(await res.json());
+    } catch (e) {
+      if (seq === pending) setStatus('Search failed: ' + e.message);
+    }
+  }
+
+  form.addEventListener('submit', (ev) => {
+    ev.preventDefault();
+    const q = input.value.trim();
+    const u = new URL(location.href);
+    if (q) u.searchParams.set('q', q); else u.searchParams.delete('q');
+    history.pushState({ q }, '', u);
+    run(q);
+  });
+
+  window.addEventListener('popstate', () => {
+    const q = new URLSearchParams(location.search).get('q') || '';
+    input.value = q;
+    run(q);
+  });
+
+  const initial = new URLSearchParams(location.search).get('q');
+  if (initial) { input.value = initial; run(initial); }
+})();
+</script>
 {% endblock %}
