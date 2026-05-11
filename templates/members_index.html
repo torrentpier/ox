@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Members — {{ site_name }}{% endblock %}
+{% block content %}
+<nav class="breadcrumbs">
+  <a href="/">Home</a>
+  / <span class="current">Members</span>
+</nav>
+
+<h1>Members</h1>
+<p class="lede">{{ total }} users who ever posted on the forum.</p>
+
+<table class="thread-table member-table">
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Title</th>
+      <th class="num">Messages</th>
+      <th>Joined</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for u in members %}
+    <tr>
+      <td>
+        <a href="{{ member_url(u) }}">{{ u.username }}</a>
+        {% if u.is_admin %}<span class="badge badge-admin">Admin</span>
+        {% elif u.is_moderator %}<span class="badge badge-mod">Mod</span>
+        {% elif u.is_staff %}<span class="badge badge-staff">Staff</span>{% endif %}
+      </td>
+      <td class="muted">{{ u.user_title or "" }}</td>
+      <td class="num">{{ u.message_count or 0 }}</td>
+      <td class="muted">{{ u.register_date | timestamp }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+{% if total_pages > 1 %}
+<nav class="pagination" aria-label="Members pages">
+  {% if page_no > 1 %}
+    <a class="page-prev" href="{{ base_url }}{% if page_no - 1 > 1 %}page-{{ page_no - 1 }}/{% endif %}">‹ prev</a>
+  {% endif %}
+  <span class="page-current">page {{ page_no }} of {{ total_pages }}</span>
+  {% if page_no < total_pages %}
+    <a class="page-next" href="{{ base_url }}page-{{ page_no + 1 }}/">next ›</a>
+  {% endif %}
+</nav>
+{% endif %}
+{% endblock %}
