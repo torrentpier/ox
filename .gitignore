@@ -47,3 +47,7 @@ Thumbs.db
 member-*.png
 resource-*.png
 .claude/
+
+.dev.vars*
+!.dev.vars.example
+!.env.example
