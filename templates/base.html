@@ -4,8 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}{{ site_name }}{% endblock %}</title>
-  <link rel="icon" type="image/svg+xml" href="https://files-ox.torrentpier.com/ox.svg">
+  <link rel="icon" type="image/svg+xml" href="{{ files_url }}/ox.svg">
   <link rel="stylesheet" href="/style.css">
+  <meta name="description" content="{% block meta_description %}{{ site_description }}{% endblock %}">
+  <meta property="og:type" content="{% block og_type %}website{% endblock %}">
+  <meta property="og:site_name" content="{{ site_name }}">
+  <meta property="og:title" content="{% block og_title %}{{ site_name }}{% endblock %}">
+  <meta property="og:description" content="{% block og_description %}{{ self.meta_description() }}{% endblock %}">
+  <meta property="og:url" content="{% block og_url %}{{ site_url }}/{% endblock %}">
+  <meta property="og:image" content="{% block og_image %}{{ files_url }}/ox.png{% endblock %}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ self.og_title() }}">
+  <meta name="twitter:description" content="{{ self.og_description() }}">
+  <meta name="twitter:image" content="{{ self.og_image() }}">
 </head>
 <body>
   <header class="site-header">

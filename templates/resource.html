@@ -1,5 +1,17 @@
 {% extends "base.html" %}
 {% block title %}{{ resource.title }} — {{ site_name }}{% endblock %}
+{% block og_type %}article{% endblock %}
+{% block og_title %}{{ resource.title }} — {{ site_name }}{% endblock %}
+{% block og_url %}{{ site_url }}{{ resource.url_path }}{% endblock %}
+{% block meta_description %}
+{%- if resource.tag_line -%}
+{{- resource.tag_line -}}
+{%- elif resource.description_parsed -%}
+{{- resource.description_parsed | plaintext(200) -}}
+{%- else -%}
+{{- resource.title -}}
+{%- endif -%}
+{% endblock %}
 {% block content %}
 <nav class="breadcrumbs">
   <a href="/">Home</a>

@@ -1,5 +1,16 @@
 {% extends "base.html" %}
 {% block title %}{{ thread.title }} — {{ site_name }}{% endblock %}
+{% block og_type %}article{% endblock %}
+{% block og_title %}{{ thread.title }} — {{ site_name }}{% endblock %}
+{% block og_url %}{{ site_url }}{{ base_url }}{% endblock %}
+{% block meta_description %}
+{%- set first = thread.posts[0] if thread.posts else None -%}
+{%- if first and first.message_parsed -%}
+{{- first.message_parsed | plaintext(200) -}}
+{%- else -%}
+{{- thread.title -}}
+{%- endif -%}
+{% endblock %}
 {% block content %}
 <nav class="breadcrumbs">
   <a href="/">Home</a>

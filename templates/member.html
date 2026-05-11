@@ -1,5 +1,15 @@
 {% extends "base.html" %}
 {% block title %}{{ user.username }} — {{ site_name }}{% endblock %}
+{% block og_type %}profile{% endblock %}
+{% block og_title %}{{ user.username }} — {{ site_name }}{% endblock %}
+{% block og_url %}{{ site_url }}{{ member_url(user) }}{% endblock %}
+{% block meta_description %}
+{%- if user.user_title -%}
+{{- user.user_title }} · {{ user.message_count or 0 }} posts on the archive.
+{%- else -%}
+Member of {{ site_name }} · {{ user.message_count or 0 }} posts on the archive.
+{%- endif -%}
+{% endblock %}
 {% block content %}
 <nav class="breadcrumbs">
   <a href="/">Home</a>

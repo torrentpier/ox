@@ -1,12 +1,15 @@
 {% extends "base.html" %}
 {% block title %}Search — {{ site_name }}{% endblock %}
+{% block og_title %}Search — {{ site_name }}{% endblock %}
+{% block og_url %}{{ site_url }}/search/{% endblock %}
+{% block meta_description %}Full-text search across {{ archive_stats.posts }} posts in {{ archive_stats.threads }} threads.{% endblock %}
 {% block content %}
 <nav class="breadcrumbs">
   <a href="/">Home</a>
   / <span class="current">Search</span>
 </nav>
 <h1>Search</h1>
-<p class="lede">Full-text search across {{ archive_stats.posts }} posts in {{ archive_stats.threads }} threads. Russian morphology is supported (Snowball stemming).</p>
+<p class="lede">Full-text search across {{ archive_stats.posts }} posts in {{ archive_stats.threads }} threads.</p>
 
 <form id="search-form" class="search-form" role="search" autocomplete="off">
   <input type="search" id="q" name="q" placeholder="Search the archive…"

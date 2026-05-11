@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 {% block title %}Resources — {{ site_name }}{% endblock %}
+{% block og_title %}Resources — {{ site_name }}{% endblock %}
+{% block og_url %}{{ site_url }}/resources/{% endblock %}
+{% block meta_description %}{{ resource_count }} resources across {{ categories | length }} categories on the {{ site_name }}.{% endblock %}
 {% block content %}
 <nav class="breadcrumbs">
   <a href="/">Home</a>

@@ -2,12 +2,30 @@
 
 from __future__ import annotations
 
+import re
+import warnings
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlparse
 
+from bs4 import BeautifulSoup, MarkupResemblesLocatorWarning
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+
+warnings.filterwarnings("ignore", category=MarkupResemblesLocatorWarning)
+
+_WS_RE = re.compile(r"\s+")
+
+
+def _plaintext(html: str | None, limit: int = 200) -> str:
+    """HTML → plain text, single-space normalised, truncated for OG descriptions."""
+    if not html:
+        return ""
+    text = BeautifulSoup(html, "lxml").get_text(separator=" ")
+    text = _WS_RE.sub(" ", text).strip()
+    if limit and len(text) > limit:
+        text = text[: limit - 1].rstrip() + "…"
+    return text
 
 
 def _format_timestamp(ts: int | None) -> str:
@@ -53,6 +71,7 @@ def make_env(template_dir: Path) -> Environment:
     env.filters["filesize"] = _format_size
     env.filters["count"] = _format_count
     env.filters["urlpath"] = lambda u: urlparse(u or "").path or "/"
+    env.filters["plaintext"] = _plaintext
     return env
 
 
@@ -73,5 +92,10 @@ def _format_build_time(exported_at: str | None) -> str:
 def context_globals(exported_at: str | None = None) -> dict[str, Any]:
     return {
         "site_name": "TorrentPier Ox Archive",
+        "site_url": "https://ox.torrentpier.com",
+        "files_url": "https://files-ox.torrentpier.com",
+        "site_description": (
+            "Static read-only archive of the TorrentPier support forum (2011–2026)."
+        ),
         "build_time": _format_build_time(exported_at),
     }

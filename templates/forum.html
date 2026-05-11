@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 {% block title %}{{ forum.title }} — {{ site_name }}{% endblock %}
+{% block og_title %}{{ forum.title }} — {{ site_name }}{% endblock %}
+{% block og_url %}{{ site_url }}{{ base_url }}{% endblock %}
+{% block meta_description %}{{ forum.description | plaintext(200) if forum.description else forum.title }}{% endblock %}
 {% block content %}
 <nav class="breadcrumbs">
   <a href="/">Home</a>
