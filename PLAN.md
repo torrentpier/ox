@@ -19,15 +19,15 @@ meaningful decision or completed step.
 | 1 | Exporter — `threads` stage                                 | Done — 3,280 threads, 42,623 posts (matches `Σ reply_count + 1` exactly) |
 | 1 | Exporter — `users` stage (incidental from `post.User`)     | Done — 1,085 unique authors |
 | 1 | Exporter — `resources` stage                               | Done — 230 resources, 548 versions, 511 files (62.83 MiB binary) |
-| 2 | Mirror — R2 bucket + custom domain                         | Not started — needs `wrangler login` (one-time user action) |
-| 2 | Mirror — Python uploader (boto3, atomic JSON update)       | **Code complete (`mirror/`); awaiting `wrangler login` + bucket + `.env` creds to actually run** |
-| 2 | Mirror — rewrite asset URLs in `data/*.json` to `r2_key`   | Code complete — `mirror/pipeline.py` writes `r2_key` on every uploaded asset and the inline dedupe map to `data/inline_index.json` |
+| 2 | Mirror — R2 bucket + custom domain (`files-ox.torrentpier.com`) | Done — bucket `torrentpier-archive`, custom domain live |
+| 2 | Mirror — Python uploader (boto3, ThreadPoolExecutor, atomic JSON update) | Done — concurrent uploader; full run took ~13 min at 8 workers |
+| 2 | Mirror — `r2_key` written into every JSON asset; inline dedupe map | Done — 3197 attachments / 502 avatars / 136 icons / 511 res-files / 517+32 inline; 423 dead inline hosts recorded |
 | 3 | Builder — index + category + forum (paginated 30/page)     | Done |
 | 3 | Builder — thread (paginated 10/page) with avatars + badges | Done |
 | 3 | Builder — resource pages with version table                | Done |
 | 3 | Builder — `message_parsed` sanitiser + URL canonicaliser (threads/forums/members) | Done (sans R2 — attachments still point at torrentpier.com) |
 | 3 | Builder — `/resources/`, `/search/`, `sitemap.xml`, `robots.txt` | Done |
-| 3 | Builder — wire R2 URLs after mirror stage runs             | Not started |
+| 3 | Builder — wire R2 URLs after mirror stage runs             | Done — `asset maps: 3197 attachments, 549 inline external` go through `rewrite_html`; templates fall back to `src_url` when `r2_key` missing |
 | 3 | Builder — `/posts/{id}/` redirect to thread anchor         | Done — 42,623 meta-refresh pages |
 | 3 | Builder — `/members/` index + `/members/{slug}.{id}/` pages | Done — 1,085 users, paginated index |
 | 3 | Builder — `dist/CNAME`, build time pinned to `meta.exported_at` (determinism) | Done — verified byte-identical on rebuild |

@@ -29,6 +29,9 @@ warnings.filterwarnings("ignore", category=MarkupResemblesLocatorWarning)
 _THREAD_PATH_RE = re.compile(r"^/threads/[^/]+\.(\d+)(/.*)?$")
 _FORUM_PATH_RE = re.compile(r"^/forums/[^/]+\.(\d+)(/.*)?$")
 _MEMBER_PATH_RE = re.compile(r"^/members/[^/]+\.(\d+)(/.*)?$")
+# `/attachments/{filename}.{id}/` and `/attachments/{id}/` shapes; an optional
+# `/forum/` prefix shows up in a handful of historical post bodies.
+_ATTACHMENT_PATH_RE = re.compile(r"^/(?:forum/)?attachments/(?:[^/]+\.)?(\d+)/?$")
 
 INTERNAL_HOSTS = {"torrentpier.com", "www.torrentpier.com"}
 IFRAME_ALLOWED_HOSTS = {
@@ -88,19 +91,40 @@ def _canonicalise_member_path(
     return canonical.rstrip("/") + (m.group(2) or "/")
 
 
+def _attachment_r2_url(
+    path: str | None, attachment_url_map: dict[int, str] | None
+) -> str | None:
+    """If `path` is an XF attachment URL we have on R2, return the R2 URL."""
+    if not path or not attachment_url_map:
+        return None
+    m = _ATTACHMENT_PATH_RE.match(path)
+    if not m:
+        return None
+    return attachment_url_map.get(int(m.group(1)))
+
+
 def _to_relative_if_internal(
     href: str,
     thread_url_map: dict[int, str] | None = None,
     forum_url_map: dict[int, str] | None = None,
     member_url_map: dict[int, str] | None = None,
+    attachment_url_map: dict[int, str] | None = None,
 ) -> str | None:
-    """Return path-only URL if `href` points at the source forum, else None."""
+    """Return a replacement URL when `href` points at the source forum.
+
+    For attachments we have on R2, returns the absolute R2 public URL. For
+    everything else, returns a path-only URL with canonical thread/forum/
+    member slugs. Returns None when `href` is not on torrentpier.com.
+    """
     if not href:
         return None
     parsed = _safe_urlparse(href)
     if parsed is None or parsed.hostname not in INTERNAL_HOSTS:
         return None
     path = parsed.path or "/"
+    r2 = _attachment_r2_url(path, attachment_url_map)
+    if r2:
+        return r2
     path = _canonicalise_thread_path(path, thread_url_map)
     path = _canonicalise_forum_path(path, forum_url_map)
     path = _canonicalise_member_path(path, member_url_map)
@@ -117,6 +141,8 @@ def rewrite_html(
     thread_url_map: dict[int, str] | None = None,
     forum_url_map: dict[int, str] | None = None,
     member_url_map: dict[int, str] | None = None,
+    attachment_url_map: dict[int, str] | None = None,
+    inline_url_map: dict[str, str] | None = None,
 ) -> str:
     """Apply the sanitisation/rewrite pass. Empty input returns "".
     """
@@ -140,6 +166,17 @@ def rewrite_html(
             iframe.decompose()
 
     for img in soup.find_all("img"):
+        src = (img.get("src") or "").strip()
+        if src:
+            # External image we mirrored to R2 by sha256
+            if inline_url_map and src in inline_url_map:
+                img["src"] = inline_url_map[src]
+            else:
+                parsed = _safe_urlparse(src)
+                if parsed is not None and parsed.hostname in INTERNAL_HOSTS:
+                    r2 = _attachment_r2_url(parsed.path or "", attachment_url_map)
+                    if r2:
+                        img["src"] = r2
         if "loading" not in img.attrs:
             img["loading"] = "lazy"
         if "decoding" not in img.attrs:
@@ -149,7 +186,13 @@ def rewrite_html(
         href = a.get("href")
         if not href:
             continue
-        rel_path = _to_relative_if_internal(href, thread_url_map, forum_url_map, member_url_map)
+        rel_path = _to_relative_if_internal(
+            href,
+            thread_url_map=thread_url_map,
+            forum_url_map=forum_url_map,
+            member_url_map=member_url_map,
+            attachment_url_map=attachment_url_map,
+        )
         if rel_path is not None:
             a["href"] = rel_path
             continue
