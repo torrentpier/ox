@@ -53,6 +53,21 @@
     "торрент-клиент"
   ],
   "title": "Бан торрент-клиента",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 571,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Добавлен <b>only_allow_mode </b>режим, при активации которого, работать будут только те клиенты, которые указаны в <b>&#039;clients&#039;</b>, а все остальные соответственно будут заблокированы.</li>\n</ul><span style=\"color: rgb(226, 80, 65)\">Будьте очень аккуратны при использовании <b>only_allow_mode </b>режима. Для обычных, публичных трекеров не рекомендуется его использовать!</span>",
+      "message_state": "visible",
+      "post_date": 1728915106,
+      "resource_id": 307,
+      "title": "Обновление v2.0.0",
+      "url_path": "/resources/ban-torrent-klienta.307/update/571/",
+      "view_url": "https://torrentpier.com/resources/ban-torrent-klienta.307/update/571/"
+    }
+  ],
   "url_path": "/resources/ban-torrent-klienta.307/",
   "user_id": 10614,
   "username": "belomaxorka",

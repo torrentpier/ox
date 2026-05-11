@@ -18,6 +18,26 @@
   "id": 25765,
   "last_post_date": 1392139180,
   "node_id": 58,
+  "poll": {
+    "close_date": 0,
+    "id": 23,
+    "max_votes": 1,
+    "public_votes": true,
+    "question": "Нужно удалить bb_posts_text?",
+    "responses": [
+      {
+        "id": 70,
+        "text": "Да",
+        "vote_count": 6
+      },
+      {
+        "id": 71,
+        "text": "Нет",
+        "vote_count": 9
+      }
+    ],
+    "voter_count": 15
+  },
   "post_date": 1392114885,
   "posts": [
     {

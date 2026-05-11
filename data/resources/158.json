@@ -86,6 +86,34 @@
   "tag_line": "Добавляет возможность приводить ссылки в удобный формат, предпочтительный для поисковых систем.",
   "tags": [],
   "title": "ЧПУ",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 269,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Обновлено описание ресурса</li>\n<li data-xf-list-type=\"ul\">Перепаковка в zip</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1425424230,
+      "resource_id": 158,
+      "title": "Обновление 1.1.0",
+      "url_path": "/resources/cpu.158/update/269/",
+      "view_url": "https://torrentpier.com/resources/cpu.158/update/269/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 294,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Адаптация под последнюю версию, спасибо @dredd</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1425846720,
+      "resource_id": 158,
+      "title": "Обновление 1.2.0",
+      "url_path": "/resources/cpu.158/update/294/",
+      "view_url": "https://torrentpier.com/resources/cpu.158/update/294/"
+    }
+  ],
   "url_path": "/resources/cpu.158/",
   "user_id": 10614,
   "username": "belomaxorka",

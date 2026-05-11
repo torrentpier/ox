@@ -1,0 +1,41 @@
+{
+  "avatar_r2_key": "avatars/906.jpg",
+  "avatar_urls": {
+    "h": "https://torrentpier.com/data/avatars/h/0/906.jpg?1758615262",
+    "l": "https://torrentpier.com/data/avatars/l/0/906.jpg?1758615262",
+    "m": "https://torrentpier.com/data/avatars/m/0/906.jpg?1758615262",
+    "o": "https://torrentpier.com/data/avatars/o/0/906.jpg?1758615262",
+    "s": "https://torrentpier.com/data/avatars/s/0/906.jpg?1758615262"
+  },
+  "id": 906,
+  "is_admin": false,
+  "is_moderator": false,
+  "is_staff": false,
+  "last_activity": 1735464142,
+  "message_count": 0,
+  "register_date": 1328982734,
+  "secondary_group_ids": [],
+  "user_group_id": 2,
+  "user_title": "User",
+  "username": "-d-i-n-i-s-",
+  "view_url": "https://torrentpier.com/members/d-i-n-i-s.906/",
+  "wall_access": "ok",
+  "wall_posts": [
+    {
+      "comment_count": 0,
+      "comments": [],
+      "first_comment_date": 0,
+      "id": 404,
+      "last_comment_date": 0,
+      "message_parsed": "поделись грошами",
+      "message_state": "visible",
+      "post_date": 1360866449,
+      "profile_user_id": 906,
+      "url_path": "/profile-posts/404/",
+      "user_id": 4080,
+      "username": "Вадим Смагин",
+      "view_url": "https://torrentpier.com/profile-posts/404/"
+    }
+  ],
+  "wall_total": 1
+}

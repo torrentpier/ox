@@ -137,6 +137,47 @@
     "обход капчи"
   ],
   "title": "Улучшенная капча",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 614,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Добавлена поддержка версий движка v2.2.0 и выше</li>\n<li data-xf-list-type=\"ul\">Исправлены ошибки</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1737471419,
+      "resource_id": 319,
+      "title": "Обновление v1.1.0",
+      "url_path": "/resources/ulucsennaa-kapca.319/update/614/",
+      "view_url": "https://torrentpier.com/resources/ulucsennaa-kapca.319/update/614/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 615,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Уменьшена ширина блока Yandex Smart Captcha</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1737794723,
+      "resource_id": 319,
+      "title": "Обновление v1.1.1",
+      "url_path": "/resources/ulucsennaa-kapca.319/update/615/",
+      "view_url": "https://torrentpier.com/resources/ulucsennaa-kapca.319/update/615/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 642,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Мелкие улучшения</li>\n<li data-xf-list-type=\"ul\">Теперь сервисы капчи работают на том же языке что и трекер</li>\n<li data-xf-list-type=\"ul\">Добавлена возможность настройки темы (светлая / темная) для <b>CloudFlare</b>, <b>HCaptcha</b></li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1743787637,
+      "resource_id": 319,
+      "title": "Обновление v1.2.0 [Stable]",
+      "url_path": "/resources/ulucsennaa-kapca.319/update/642/",
+      "view_url": "https://torrentpier.com/resources/ulucsennaa-kapca.319/update/642/"
+    }
+  ],
   "url_path": "/resources/ulucsennaa-kapca.319/",
   "user_id": 10614,
   "username": "belomaxorka",

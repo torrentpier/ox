@@ -38,11 +38,25 @@
   "rating_count": 1,
   "resource_date": 1425325151,
   "resource_state": "visible",
-  "reviews": [],
+  "reviews": [
+    {
+      "author_response": "",
+      "id": 189,
+      "is_anonymous": true,
+      "message": "!",
+      "rating": 5,
+      "rating_date": 1695718026,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": null,
+      "username": null
+    }
+  ],
   "slug": "ogranicenie-novyh-pol-zovatelej",
   "tag_line": "Добавляет возможность ограничивать новым пользователям возможность написания сообщений.",
   "tags": [],
   "title": "Ограничение новых пользователей",
+  "updates": [],
   "url_path": "/resources/ogranicenie-novyh-pol-zovatelej.182/",
   "user_id": 1,
   "username": "Exile",

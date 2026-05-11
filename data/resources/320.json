@@ -63,6 +63,47 @@
     "моды"
   ],
   "title": "Быстрое создание раздачи & топика",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 638,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Исправлена неправильная ссылка для создания раздачи</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1743313189,
+      "resource_id": 320,
+      "title": "Обновление v1.0.1 [Stable]",
+      "url_path": "/resources/bystroe-sozdanie-razdaci-topika.320/update/638/",
+      "view_url": "https://torrentpier.com/resources/bystroe-sozdanie-razdaci-topika.320/update/638/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 659,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Исправления работы мода для v2.1.5 LTS</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1751906514,
+      "resource_id": 320,
+      "title": "Обновление v1.1.0",
+      "url_path": "/resources/bystroe-sozdanie-razdaci-topika.320/update/659/",
+      "view_url": "https://torrentpier.com/resources/bystroe-sozdanie-razdaci-topika.320/update/659/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 687,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Исправлена ошибка: Undefined array key &quot;allow_reg_tracker&quot;</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1771168142,
+      "resource_id": 320,
+      "title": "Update v1.2.0",
+      "url_path": "/resources/bystroe-sozdanie-razdaci-topika.320/update/687/",
+      "view_url": "https://torrentpier.com/resources/bystroe-sozdanie-razdaci-topika.320/update/687/"
+    }
+  ],
   "url_path": "/resources/bystroe-sozdanie-razdaci-topika.320/",
   "user_id": 10614,
   "username": "belomaxorka",

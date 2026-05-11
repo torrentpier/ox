@@ -128,6 +128,47 @@
   "tag_line": "Добавляет пользователям возможность скидываться на всеобщий фрилич (на месяц).",
   "tags": [],
   "title": "Фрилич за сид-бонус",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 355,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Дополнил инструкцию</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1432266338,
+      "resource_id": 232,
+      "title": "Обновление 0.2",
+      "url_path": "/resources/frilic-za-sid-bonus.232/update/355/",
+      "view_url": "https://torrentpier.com/resources/frilic-za-sid-bonus.232/update/355/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 357,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Обновлено описание ресурса</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1432583830,
+      "resource_id": 232,
+      "title": "Обновление 1.0.0",
+      "url_path": "/resources/frilic-za-sid-bonus.232/update/357/",
+      "view_url": "https://torrentpier.com/resources/frilic-za-sid-bonus.232/update/357/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 361,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Фикс нотисов</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1433264868,
+      "resource_id": 232,
+      "title": "Обновление 1.0.1",
+      "url_path": "/resources/frilic-za-sid-bonus.232/update/361/",
+      "view_url": "https://torrentpier.com/resources/frilic-za-sid-bonus.232/update/361/"
+    }
+  ],
   "url_path": "/resources/frilic-za-sid-bonus.232/",
   "user_id": 2684,
   "username": "dredd",

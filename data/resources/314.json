@@ -76,6 +76,73 @@
     "прогресс заполнения профиля"
   ],
   "title": "Прогресс заполнения профиля",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 606,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Обновлена инструкция</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1735352849,
+      "resource_id": 314,
+      "title": "Обновление v1.0.1",
+      "url_path": "/resources/progress-zapolnenia-profila.314/update/606/",
+      "view_url": "https://torrentpier.com/resources/progress-zapolnenia-profila.314/update/606/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 607,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Устранена проблема многократного начисления прогресса при редактировании одного и того же поля</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1735375875,
+      "resource_id": 314,
+      "title": "Обновление v1.1.0",
+      "url_path": "/resources/progress-zapolnenia-profila.314/update/607/",
+      "view_url": "https://torrentpier.com/resources/progress-zapolnenia-profila.314/update/607/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 608,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Улучшен перевод</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1735394104,
+      "resource_id": 314,
+      "title": "Обновление v1.1.1",
+      "url_path": "/resources/progress-zapolnenia-profila.314/update/608/",
+      "view_url": "https://torrentpier.com/resources/progress-zapolnenia-profila.314/update/608/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 661,
+      "last_edit_date": 1752402214,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Добавлена поддержка версий TorrentPier v2.2.*, v2.3.*, v2.4.*</li>\n<li data-xf-list-type=\"ul\">Исправлено +3 найденных бага</li>\n<li data-xf-list-type=\"ul\">Добавлено новое поле: <b>user_birthday</b></li>\n<li data-xf-list-type=\"ul\">Расширены возможности добавления полей + добавлены проверки на значения по умолчанию</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1752401822,
+      "resource_id": 314,
+      "title": "Обновление v1.2.0 [Stable]",
+      "url_path": "/resources/progress-zapolnenia-profila.314/update/661/",
+      "view_url": "https://torrentpier.com/resources/progress-zapolnenia-profila.314/update/661/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 662,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Исправлена работа на старых версиях TorrentPier</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1752402080,
+      "resource_id": 314,
+      "title": "Обновление v1.2.1 [Stable]",
+      "url_path": "/resources/progress-zapolnenia-profila.314/update/662/",
+      "view_url": "https://torrentpier.com/resources/progress-zapolnenia-profila.314/update/662/"
+    }
+  ],
   "url_path": "/resources/progress-zapolnenia-profila.314/",
   "user_id": 10614,
   "username": "belomaxorka",

@@ -21,11 +21,25 @@
   "rating_count": 2,
   "resource_date": 1391767200,
   "resource_state": "visible",
-  "reviews": [],
+  "reviews": [
+    {
+      "author_response": "",
+      "id": 187,
+      "is_anonymous": false,
+      "message": "Толковый мод очень, намного более нужный и грамотный чем тот который в паблике бесплатном имелся",
+      "rating": 5,
+      "rating_date": 1580064172,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": 8855,
+      "username": "zlaya"
+    }
+  ],
   "slug": "smena-id-pol-zovatela-id-temy",
   "tag_line": "Смена id автора / id темы",
   "tags": [],
   "title": "Смена id пользователя / id темы",
+  "updates": [],
   "url_path": "/resources/smena-id-pol-zovatela-id-temy.90/",
   "user_id": 3170,
   "username": "drew",

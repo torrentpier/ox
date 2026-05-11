@@ -81,6 +81,73 @@
     "просмотр топика"
   ],
   "title": "Просмотр кода топика",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 486,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Исправлено отображение у гостей</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1707891200,
+      "resource_id": 288,
+      "title": "Обновление v1.0.1",
+      "url_path": "/resources/prosmotr-koda-topika.288/update/486/",
+      "view_url": "https://torrentpier.com/resources/prosmotr-koda-topika.288/update/486/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 488,
+      "last_edit_date": 1707996025,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Мелкие правки и улучшения</li>\n</ul><hr /><span style=\"color: rgb(235, 107, 86)\">Обновляться на данную версию особо смысла нет, если у вас всё работает.</span>",
+      "message_state": "visible",
+      "post_date": 1707995931,
+      "resource_id": 288,
+      "title": "Обновление v1.0.2",
+      "url_path": "/resources/prosmotr-koda-topika.288/update/488/",
+      "view_url": "https://torrentpier.com/resources/prosmotr-koda-topika.288/update/488/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 511,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Отключено редактирование содержимого textarea</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1712927129,
+      "resource_id": 288,
+      "title": "Обновление v1.0.3",
+      "url_path": "/resources/prosmotr-koda-topika.288/update/511/",
+      "view_url": "https://torrentpier.com/resources/prosmotr-koda-topika.288/update/511/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 579,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Небольшие улучшения отображения кнопки в режиме текстовых кнопок (txtb / text_buttons)</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1732374477,
+      "resource_id": 288,
+      "title": "Обновление v1.0.4",
+      "url_path": "/resources/prosmotr-koda-topika.288/update/579/",
+      "view_url": "https://torrentpier.com/resources/prosmotr-koda-topika.288/update/579/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 623,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Добавлен параметр $bb_cfg[&#039;show_post_bbcode_button&#039;][&#039;only_for_first_post&#039;]</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1741673522,
+      "resource_id": 288,
+      "title": "Обновление v1.0.5",
+      "url_path": "/resources/prosmotr-koda-topika.288/update/623/",
+      "view_url": "https://torrentpier.com/resources/prosmotr-koda-topika.288/update/623/"
+    }
+  ],
   "url_path": "/resources/prosmotr-koda-topika.288/",
   "user_id": 10614,
   "username": "belomaxorka",

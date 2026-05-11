@@ -18,6 +18,46 @@
   "id": 30160,
   "last_post_date": 1416929699,
   "node_id": 3,
+  "poll": {
+    "close_date": 0,
+    "id": 29,
+    "max_votes": 1,
+    "public_votes": false,
+    "question": "Какой Framework лучше подойдет!",
+    "responses": [
+      {
+        "id": 87,
+        "text": "ZF2 (Zend Framework 2)",
+        "vote_count": 4
+      },
+      {
+        "id": 88,
+        "text": "Symfony 2",
+        "vote_count": 0
+      },
+      {
+        "id": 89,
+        "text": "Yii",
+        "vote_count": 5
+      },
+      {
+        "id": 90,
+        "text": "CakePHP",
+        "vote_count": 0
+      },
+      {
+        "id": 91,
+        "text": "Kohana 3",
+        "vote_count": 0
+      },
+      {
+        "id": 92,
+        "text": "Другой ... (напишите в комментариях)",
+        "vote_count": 0
+      }
+    ],
+    "voter_count": 9
+  },
   "post_date": 1416909959,
   "posts": [
     {
@@ -190,5 +230,5 @@
   "url_path": "/threads/php-frameworks.30160/",
   "user_id": 5480,
   "username": "ВаленокPC",
-  "view_count": 1502
+  "view_count": 1512
 }

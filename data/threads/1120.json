@@ -18,6 +18,26 @@
   "id": 1120,
   "last_post_date": 1332063270,
   "node_id": 3,
+  "poll": {
+    "close_date": 0,
+    "id": 8,
+    "max_votes": 1,
+    "public_votes": true,
+    "question": "Нужно выкладывать подобное здесь",
+    "responses": [
+      {
+        "id": 18,
+        "text": "Да, пригодится",
+        "vote_count": 29
+      },
+      {
+        "id": 19,
+        "text": "Нет, каждый сам найдёт если ему нужно.",
+        "vote_count": 1
+      }
+    ],
+    "voter_count": 30
+  },
   "post_date": 1331928716,
   "posts": [
     {

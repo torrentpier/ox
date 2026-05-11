@@ -18,6 +18,26 @@
   "id": 1395,
   "last_post_date": 1339128515,
   "node_id": 3,
+  "poll": {
+    "close_date": 0,
+    "id": 10,
+    "max_votes": 1,
+    "public_votes": true,
+    "question": "Что бы Вы выбрали?",
+    "responses": [
+      {
+        "id": 22,
+        "text": "Жесткий диск",
+        "vote_count": 8
+      },
+      {
+        "id": 23,
+        "text": "Жесткий секс",
+        "vote_count": 17
+      }
+    ],
+    "voter_count": 25
+  },
   "post_date": 1338915465,
   "posts": [
     {
@@ -190,5 +210,5 @@
   "url_path": "/threads/cto-by-vy-vybrali-zestkij-disk-ili-zestkij-seks.1395/",
   "user_id": 22,
   "username": "DarkMod",
-  "view_count": 2527
+  "view_count": 2536
 }

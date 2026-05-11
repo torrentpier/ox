@@ -80,6 +80,47 @@
     "статистика"
   ],
   "title": "[AJAX] Пользователи за 24 часа",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 533,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Добавлен перевод на Украинский язык</li>\n<li data-xf-list-type=\"ul\">Используется иная формула подсчёта $day</li>\n<li data-xf-list-type=\"ul\">Добавлено ограничение на отображение 150 пользователей (списком), при этом счётчик пользователей будет отображать фактическое число пользователей.</li>\n<li data-xf-list-type=\"ul\">Список формируется случайным образом, то-есть каждый раз будут отображаться случайные 150 пользователей, дабы компенсировать ограничение. Ограничение можно увеличить, но не рекомендуется.</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1720592747,
+      "resource_id": 282,
+      "title": "Обновление v1.1.0",
+      "url_path": "/resources/ajax-pol-zovateli-za-24-casa.282/update/533/",
+      "view_url": "https://torrentpier.com/resources/ajax-pol-zovateli-za-24-casa.282/update/533/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 534,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Небольшая оптимизация кода</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1720593444,
+      "resource_id": 282,
+      "title": "Обновление v1.1.1",
+      "url_path": "/resources/ajax-pol-zovateli-za-24-casa.282/update/534/",
+      "view_url": "https://torrentpier.com/resources/ajax-pol-zovateli-za-24-casa.282/update/534/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 672,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Мод адаптирован под v2.2.*, v2.3.*, v2.4.*, 2.8.*</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1758826994,
+      "resource_id": 282,
+      "title": "Обновление v1.1.2",
+      "url_path": "/resources/ajax-pol-zovateli-za-24-casa.282/update/672/",
+      "view_url": "https://torrentpier.com/resources/ajax-pol-zovateli-za-24-casa.282/update/672/"
+    }
+  ],
   "url_path": "/resources/ajax-pol-zovateli-za-24-casa.282/",
   "user_id": 10614,
   "username": "belomaxorka",

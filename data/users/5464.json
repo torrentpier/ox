@@ -1,4 +1,5 @@
 {
+  "avatar_r2_key": "avatars/5464.jpg",
   "avatar_urls": {
     "h": "https://torrentpier.com/data/avatars/h/5/5464.jpg?1758615308",
     "l": "https://torrentpier.com/data/avatars/l/5/5464.jpg?1758615308",
@@ -17,5 +18,8 @@
   "user_group_id": 2,
   "user_title": "User",
   "username": "Stanislav Derevyakin",
-  "view_url": "https://torrentpier.com/members/stanislav-derevyakin.5464/"
+  "view_url": "https://torrentpier.com/members/stanislav-derevyakin.5464/",
+  "wall_access": "ok",
+  "wall_posts": [],
+  "wall_total": 0
 }

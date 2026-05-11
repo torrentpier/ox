@@ -72,6 +72,21 @@
   "tag_line": "Добавляет возможность заказывать раздачи на трекере.",
   "tags": [],
   "title": "Стол заказов",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 297,
+      "last_edit_date": 0,
+      "message_parsed": "Найден и исправлен баг в редактирование, плюс мелкие фиксы.",
+      "message_state": "visible",
+      "post_date": 1428510707,
+      "resource_id": 213,
+      "title": "Найден баг в редактирование.",
+      "url_path": "/resources/stol-zakazov.213/update/297/",
+      "view_url": "https://torrentpier.com/resources/stol-zakazov.213/update/297/"
+    }
+  ],
   "url_path": "/resources/stol-zakazov.213/",
   "user_id": 2789,
   "username": "Sprinx",

@@ -109,6 +109,34 @@
     "смена ника за сидбонусы"
   ],
   "title": "Смена ника за сид-бонусы",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 589,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Добавлен перевод на английский язык</li>\n<li data-xf-list-type=\"ul\">Добавлена поддержка логирования действий (отслеживание смены ника)</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1732983433,
+      "resource_id": 310,
+      "title": "Обновление v1.1.0",
+      "url_path": "/resources/smena-nika-za-sid-bonusy.310/update/589/",
+      "view_url": "https://torrentpier.com/resources/smena-nika-za-sid-bonusy.310/update/589/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 603,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Скорректирован SQL-запрос</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1734279190,
+      "resource_id": 310,
+      "title": "Обновление v1.1.1",
+      "url_path": "/resources/smena-nika-za-sid-bonusy.310/update/603/",
+      "view_url": "https://torrentpier.com/resources/smena-nika-za-sid-bonusy.310/update/603/"
+    }
+  ],
   "url_path": "/resources/smena-nika-za-sid-bonusy.310/",
   "user_id": 10614,
   "username": "belomaxorka",

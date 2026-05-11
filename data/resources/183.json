@@ -81,11 +81,63 @@
   "rating_count": 3,
   "resource_date": 1425404909,
   "resource_state": "visible",
-  "reviews": [],
+  "reviews": [
+    {
+      "author_response": "",
+      "id": 27,
+      "is_anonymous": false,
+      "message": "Годный топ!",
+      "rating": 5,
+      "rating_date": 1425411408,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": 5452,
+      "username": "Ress Kent"
+    },
+    {
+      "author_response": "",
+      "id": 101,
+      "is_anonymous": false,
+      "message": "круто ,спасибо !)",
+      "rating": 5,
+      "rating_date": 1453321411,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": 6623,
+      "username": "geepis"
+    },
+    {
+      "author_response": "",
+      "id": 180,
+      "is_anonymous": false,
+      "message": "ОК!",
+      "rating": 5,
+      "rating_date": 1509739343,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": 6509,
+      "username": "yulii"
+    }
+  ],
   "slug": "topovye-razdaci-i-pol-zovateli",
   "tag_line": "Добавляет возможность просмотра топовых раздач и пользователей за определенный период времени.",
   "tags": [],
   "title": "Топовые раздачи и пользователи",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 253,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Исправление ошибок, спасибо @PheRum </li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1425409009,
+      "resource_id": 183,
+      "title": "Обновление 1.1.0",
+      "url_path": "/resources/topovye-razdaci-i-pol-zovateli.183/update/253/",
+      "view_url": "https://torrentpier.com/resources/topovye-razdaci-i-pol-zovateli.183/update/253/"
+    }
+  ],
   "url_path": "/resources/topovye-razdaci-i-pol-zovateli.183/",
   "user_id": 1,
   "username": "Exile",

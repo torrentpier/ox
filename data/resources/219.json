@@ -121,7 +121,20 @@
   "rating_count": 4,
   "resource_date": 1429616074,
   "resource_state": "visible",
-  "reviews": [],
+  "reviews": [
+    {
+      "author_response": "",
+      "id": 134,
+      "is_anonymous": false,
+      "message": "Отличный шаб!",
+      "rating": 5,
+      "rating_date": 1475246971,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": 7481,
+      "username": "Вампир Вампирыч"
+    }
+  ],
   "slug": "sablon-shift",
   "tag_line": "Шаблон, простой и современный с возможностью изменения цвета и оформления.",
   "tags": [
@@ -129,6 +142,73 @@
     "шаблон"
   ],
   "title": "Шаблон «Shift»",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 318,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Адаптация для версии r547</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1429616118,
+      "resource_id": 219,
+      "title": "Обновление 1.1.0",
+      "url_path": "/resources/sablon-shift.219/update/318/",
+      "view_url": "https://torrentpier.com/resources/sablon-shift.219/update/318/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 319,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Адаптация для версии r553</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1429616153,
+      "resource_id": 219,
+      "title": "Обновление 1.2.0",
+      "url_path": "/resources/sablon-shift.219/update/319/",
+      "view_url": "https://torrentpier.com/resources/sablon-shift.219/update/319/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 320,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Адаптация для версии r600 (2.1.0)</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1429616208,
+      "resource_id": 219,
+      "title": "Обновление 1.3.0",
+      "url_path": "/resources/sablon-shift.219/update/320/",
+      "view_url": "https://torrentpier.com/resources/sablon-shift.219/update/320/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 321,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Адаптация для версии 2.1.5</li>\n<li data-xf-list-type=\"ul\">За предоставление шаблона в общий доступ спасибо @makar</li>\n<li data-xf-list-type=\"ul\">За адаптацию до новой версии спасибо @Virtuoz</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1429616290,
+      "resource_id": 219,
+      "title": "Обновление 1.4.0",
+      "url_path": "/resources/sablon-shift.219/update/321/",
+      "view_url": "https://torrentpier.com/resources/sablon-shift.219/update/321/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 349,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Исправление ошибки с загрузкой аватарки на версии 2.1.5</li>\n<li data-xf-list-type=\"ul\">За обновление спасибо @Virtuoz</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1431287434,
+      "resource_id": 219,
+      "title": "Обновление 2.1.5",
+      "url_path": "/resources/sablon-shift.219/update/349/",
+      "view_url": "https://torrentpier.com/resources/sablon-shift.219/update/349/"
+    }
+  ],
   "url_path": "/resources/sablon-shift.219/",
   "user_id": 1,
   "username": "Exile",

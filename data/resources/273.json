@@ -50,11 +50,52 @@
   "rating_count": 1,
   "resource_date": 1701935463,
   "resource_state": "visible",
-  "reviews": [],
+  "reviews": [
+    {
+      "author_response": "",
+      "id": 190,
+      "is_anonymous": false,
+      "message": "Все работает ! Автору спасибо !",
+      "rating": 5,
+      "rating_date": 1702646838,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": 5626,
+      "username": "Kryl"
+    }
+  ],
   "slug": "avtoposting-poslednih-relizov-v-telegram",
   "tag_line": "PostTelegram_TorrentPier_2.1.5  Автопостинг последних релизов в  Telegram",
   "tags": [],
   "title": "Автопостинг последних релизов в  Telegram",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 433,
+      "last_edit_date": 1701965914,
+      "message_parsed": "Исправлена опечатка и убрана задержка.<br />\nДля работы мода необходимо создать Телеграм бота и добавить его в Телеграм канал в администраторы с правом управления сообщениями.<br />\nтокен и @clublive свой канал добавить в config.php.",
+      "message_state": "visible",
+      "post_date": 1701956503,
+      "resource_id": 273,
+      "title": "Доработка",
+      "url_path": "/resources/avtoposting-poslednih-relizov-v-telegram.273/update/433/",
+      "view_url": "https://torrentpier.com/resources/avtoposting-poslednih-relizov-v-telegram.273/update/433/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 434,
+      "last_edit_date": 0,
+      "message_parsed": "Более подробное описание с установкой бота.",
+      "message_state": "visible",
+      "post_date": 1702294896,
+      "resource_id": 273,
+      "title": "Более подробное описание",
+      "url_path": "/resources/avtoposting-poslednih-relizov-v-telegram.273/update/434/",
+      "view_url": "https://torrentpier.com/resources/avtoposting-poslednih-relizov-v-telegram.273/update/434/"
+    }
+  ],
   "url_path": "/resources/avtoposting-poslednih-relizov-v-telegram.273/",
   "user_id": 6509,
   "username": "yulii",

@@ -26,11 +26,80 @@
   "rating_count": 4,
   "resource_date": 1464201167,
   "resource_state": "visible",
-  "reviews": [],
+  "reviews": [
+    {
+      "author_response": "",
+      "id": 120,
+      "is_anonymous": false,
+      "message": "Удачи в начинаниях !",
+      "rating": 5,
+      "rating_date": 1464201632,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": 5626,
+      "username": "Kryl"
+    },
+    {
+      "author_response": "",
+      "id": 122,
+      "is_anonymous": false,
+      "message": "если честно поставив на двиг, не понравилось",
+      "rating": 3,
+      "rating_date": 1464380756,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": 6554,
+      "username": "Fakt_37"
+    }
+  ],
   "slug": "sablon-taurus",
   "tag_line": "Шаблон Taurus",
   "tags": [],
   "title": "Шаблон Taurus",
+  "updates": [
+    {
+      "attach_count": 2,
+      "attachments": [
+        {
+          "attach_date": 1467028828,
+          "file_size": 72542,
+          "filename": "1.webp",
+          "height": 965,
+          "id": 4421,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/1-webp.4421/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4425-d236b68b2622667bc6f162a835e0fe0b.jpg?hash=P5aqKGYalp",
+          "width": 1715
+        },
+        {
+          "attach_date": 1467028837,
+          "file_size": 99036,
+          "filename": "2.webp",
+          "height": 966,
+          "id": 4422,
+          "is_audio": false,
+          "is_video": false,
+          "local_path": null,
+          "r2_key": null,
+          "src_url": "https://torrentpier.com/attachments/2-webp.4422/",
+          "thumbnail_url": "https://torrentpier.com/data/attachments/4/4426-2d4cb06a29932637391f7e5ad26d7ded.jpg?hash=YwqZFpsgAK",
+          "width": 1398
+        }
+      ],
+      "id": 394,
+      "last_edit_date": 0,
+      "message_parsed": "<a href=\"https://torrentpier.com/attachments/4422/\"><img src=\"https://torrentpier.com/data/attachments/4/4426-2d4cb06a29932637391f7e5ad26d7ded.jpg?hash=YwqZFpsgAK\" alt=\"2.webp\" /></a> <a href=\"https://torrentpier.com/attachments/4421/\"><img src=\"https://torrentpier.com/data/attachments/4/4425-d236b68b2622667bc6f162a835e0fe0b.jpg?hash=P5aqKGYalp\" alt=\"1.webp\" /></a>",
+      "message_state": "visible",
+      "post_date": 1467028861,
+      "resource_id": 249,
+      "title": "Шаблон Taurus",
+      "url_path": "/resources/sablon-taurus.249/update/394/",
+      "view_url": "https://torrentpier.com/resources/sablon-taurus.249/update/394/"
+    }
+  ],
   "url_path": "/resources/sablon-taurus.249/",
   "user_id": 35,
   "username": "AnSan",

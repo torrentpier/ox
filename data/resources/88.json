@@ -58,6 +58,47 @@
   "tag_line": "Добавляет возможность пользователям делать заказы на раздачи, которые они хотели бы видеть.",
   "tags": [],
   "title": "Стол заказов",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 102,
+      "last_edit_date": 0,
+      "message_parsed": "Добавлен автоцензор в комментах и мелкие изменения.",
+      "message_state": "visible",
+      "post_date": 1391756429,
+      "resource_id": 88,
+      "title": "Добавлен автоцензор в комментах и мелкие изменения.",
+      "url_path": "/resources/stol-zakazov.88/update/102/",
+      "view_url": "https://torrentpier.com/resources/stol-zakazov.88/update/102/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 103,
+      "last_edit_date": 0,
+      "message_parsed": "Сделать запрос в базу данных <pre class=\"xfBb-code\" data-lang=\"php\">ALTER TABLE  bb_order DROP  order_yes</pre>",
+      "message_state": "visible",
+      "post_date": 1391757592,
+      "resource_id": 88,
+      "title": "Удаление не нужной строчки в таблице, мелкие изменения",
+      "url_path": "/resources/stol-zakazov.88/update/103/",
+      "view_url": "https://torrentpier.com/resources/stol-zakazov.88/update/103/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 251,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Обновлено описание ресурса</li>\n<li data-xf-list-type=\"ul\">Перепаковка в zip</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1425407204,
+      "resource_id": 88,
+      "title": "Обновление 1.1.0",
+      "url_path": "/resources/stol-zakazov.88/update/251/",
+      "view_url": "https://torrentpier.com/resources/stol-zakazov.88/update/251/"
+    }
+  ],
   "url_path": "/resources/stol-zakazov.88/",
   "user_id": 1,
   "username": "Exile",

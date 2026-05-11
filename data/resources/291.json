@@ -91,6 +91,47 @@
     "торрентбар"
   ],
   "title": "Торрентбар",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 506,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Исправлена работа кэша</li>\n<li data-xf-list-type=\"ul\">Прочие мелкие правки в коде</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1712420721,
+      "resource_id": 291,
+      "title": "Обновление v1.1.0",
+      "url_path": "/resources/torrentbar.291/update/506/",
+      "view_url": "https://torrentpier.com/resources/torrentbar.291/update/506/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 507,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Исправлена проблема с отображением аватаров</li>\n<li data-xf-list-type=\"ul\">Исправлен черный фон у png и gif аватаров</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1712422205,
+      "resource_id": 291,
+      "title": "Обновление v1.2.0",
+      "url_path": "/resources/torrentbar.291/update/507/",
+      "view_url": "https://torrentpier.com/resources/torrentbar.291/update/507/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 508,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Обновлена инструкция</li>\n<li data-xf-list-type=\"ul\">Улучшена стабильность</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1712482210,
+      "resource_id": 291,
+      "title": "Обновление v1.2.1 [Stable]",
+      "url_path": "/resources/torrentbar.291/update/508/",
+      "view_url": "https://torrentpier.com/resources/torrentbar.291/update/508/"
+    }
+  ],
   "url_path": "/resources/torrentbar.291/",
   "user_id": 10614,
   "username": "belomaxorka",

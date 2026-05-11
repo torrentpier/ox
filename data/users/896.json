@@ -132,15 +132,6 @@
       "comment_count": 2,
       "comments": [
         {
-          "comment_date": 1412435983,
-          "id": 80,
-          "message_parsed": "Россия ядерную бомбу взорвала там? 😀",
-          "message_state": "visible",
-          "profile_post_id": 588,
-          "user_id": 1,
-          "username": "Exile"
-        },
-        {
           "comment_date": 1414837160,
           "id": 86,
           "message_parsed": "Да нет, 152 мм подарки летают с обеих сторон",
@@ -148,6 +139,15 @@
           "profile_post_id": 588,
           "user_id": 896,
           "username": "Dr_Brown"
+        },
+        {
+          "comment_date": 1412435983,
+          "id": 80,
+          "message_parsed": "Россия ядерную бомбу взорвала там? 😀",
+          "message_state": "visible",
+          "profile_post_id": 588,
+          "user_id": 1,
+          "username": "Exile"
         }
       ],
       "first_comment_date": 1412435983,

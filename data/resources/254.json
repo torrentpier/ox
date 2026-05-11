@@ -58,11 +58,25 @@
   "rating_count": 2,
   "resource_date": 1478726413,
   "resource_state": "visible",
-  "reviews": [],
+  "reviews": [
+    {
+      "author_response": "",
+      "id": 145,
+      "is_anonymous": false,
+      "message": "По моему неплохая идея (мод сам не проверял)!",
+      "rating": 5,
+      "rating_date": 1480548273,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": 6737,
+      "username": "Fantom 13"
+    }
+  ],
   "slug": "mod-noindex-nofollow",
   "tag_line": "Запрет индексации темы поисковиками при создании или редактировании",
   "tags": [],
   "title": "Мод noindex,nofollow",
+  "updates": [],
   "url_path": "/resources/mod-noindex-nofollow.254/",
   "user_id": 6370,
   "username": "sхс",

@@ -37,7 +37,20 @@
   "rating_count": 1,
   "resource_date": 1724749522,
   "resource_state": "visible",
-  "reviews": [],
+  "reviews": [
+    {
+      "author_response": "",
+      "id": 197,
+      "is_anonymous": false,
+      "message": "Супер!",
+      "rating": 5,
+      "rating_date": 1724828511,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": 10922,
+      "username": "TorSav"
+    }
+  ],
   "slug": "bbcode-podderzka-otnositel-nyh-ssylok",
   "tag_line": "Данный мод добавляет в BBCode редактор возможность задать относительную ссылку в теге [url].",
   "tags": [
@@ -50,6 +63,21 @@
     "улучшение bbcode"
   ],
   "title": "BBCode: Поддержка относительных ссылок",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 686,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Исправлена уязвимость</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1771167823,
+      "resource_id": 306,
+      "title": "Update v1.1.0",
+      "url_path": "/resources/bbcode-podderzka-otnositel-nyh-ssylok.306/update/686/",
+      "view_url": "https://torrentpier.com/resources/bbcode-podderzka-otnositel-nyh-ssylok.306/update/686/"
+    }
+  ],
   "url_path": "/resources/bbcode-podderzka-otnositel-nyh-ssylok.306/",
   "user_id": 10614,
   "username": "belomaxorka",

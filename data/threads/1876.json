@@ -23,6 +23,26 @@
   "id": 1876,
   "last_post_date": 1393692740,
   "node_id": 43,
+  "poll": {
+    "close_date": 0,
+    "id": 14,
+    "max_votes": 1,
+    "public_votes": true,
+    "question": "Пригодилось?",
+    "responses": [
+      {
+        "id": 32,
+        "text": "ДА",
+        "vote_count": 20
+      },
+      {
+        "id": 33,
+        "text": "НЕТ",
+        "vote_count": 9
+      }
+    ],
+    "voter_count": 29
+  },
   "post_date": 1357115187,
   "posts": [
     {

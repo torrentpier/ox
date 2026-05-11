@@ -18,6 +18,26 @@
   "id": 25849,
   "last_post_date": 1396219204,
   "node_id": 58,
+  "poll": {
+    "close_date": 0,
+    "id": 24,
+    "max_votes": 1,
+    "public_votes": false,
+    "question": "Нужна ли данная фича движку?",
+    "responses": [
+      {
+        "id": 72,
+        "text": "Да, делись наработками:)",
+        "vote_count": 11
+      },
+      {
+        "id": 73,
+        "text": "Нет, трекер - это трекер.",
+        "vote_count": 9
+      }
+    ],
+    "voter_count": 20
+  },
   "post_date": 1395411209,
   "posts": [
     {

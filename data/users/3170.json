@@ -24,9 +24,9 @@
       "comment_count": 3,
       "comments": [
         {
-          "comment_date": 1490695304,
-          "id": 203,
-          "message_parsed": "Да, пиши в лс",
+          "comment_date": 1490712718,
+          "id": 205,
+          "message_parsed": "Да",
           "message_state": "visible",
           "profile_post_id": 779,
           "user_id": 3170,
@@ -42,9 +42,9 @@
           "username": "M0p94ok"
         },
         {
-          "comment_date": 1490712718,
-          "id": 205,
-          "message_parsed": "Да",
+          "comment_date": 1490695304,
+          "id": 203,
+          "message_parsed": "Да, пиши в лс",
           "message_state": "visible",
           "profile_post_id": 779,
           "user_id": 3170,
@@ -82,15 +82,6 @@
       "comment_count": 2,
       "comments": [
         {
-          "comment_date": 1380135742,
-          "id": 70,
-          "message_parsed": "ошибка движка. все работает нормально.",
-          "message_state": "visible",
-          "profile_post_id": 520,
-          "user_id": 3170,
-          "username": "drew"
-        },
-        {
           "comment_date": 1380138235,
           "id": 71,
           "message_parsed": "нотис из-за этой строки кода: &#039;S_PEGI_CHECKED&#039; =&gt; build_select(&#039;pegi&#039;, $bb_cfg[&#039;pegi&#039;], $pegi), в posting.php. а так, да, работает все четко!",
@@ -98,6 +89,15 @@
           "profile_post_id": 520,
           "user_id": 814,
           "username": "cc20net"
+        },
+        {
+          "comment_date": 1380135742,
+          "id": 70,
+          "message_parsed": "ошибка движка. все работает нормально.",
+          "message_state": "visible",
+          "profile_post_id": 520,
+          "user_id": 3170,
+          "username": "drew"
         }
       ],
       "first_comment_date": 1380135742,

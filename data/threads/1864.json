@@ -18,6 +18,26 @@
   "id": 1864,
   "last_post_date": 1357134598,
   "node_id": 3,
+  "poll": {
+    "close_date": 0,
+    "id": 13,
+    "max_votes": 1,
+    "public_votes": false,
+    "question": "Как идея?",
+    "responses": [
+      {
+        "id": 30,
+        "text": "Фигня",
+        "vote_count": 3
+      },
+      {
+        "id": 31,
+        "text": "Должно получится",
+        "vote_count": 15
+      }
+    ],
+    "voter_count": 18
+  },
   "post_date": 1356841464,
   "posts": [
     {
@@ -270,5 +290,5 @@
   "url_path": "/threads/idea-dla-realizacii.1864/",
   "user_id": 19,
   "username": "dimka3210",
-  "view_count": 2678
+  "view_count": 2696
 }

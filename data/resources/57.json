@@ -58,6 +58,21 @@
   "tag_line": "Добавляет вывод недавно просмотренных пользователем тем (в виде постеров).",
   "tags": [],
   "title": "Недавно просмотренные темы",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 250,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Обновлено описание ресурса</li>\n<li data-xf-list-type=\"ul\">Перепаковка в zip</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1425406932,
+      "resource_id": 57,
+      "title": "Обновление 1.1.0",
+      "url_path": "/resources/nedavno-prosmotrennye-temy.57/update/250/",
+      "view_url": "https://torrentpier.com/resources/nedavno-prosmotrennye-temy.57/update/250/"
+    }
+  ],
   "url_path": "/resources/nedavno-prosmotrennye-temy.57/",
   "user_id": 4510,
   "username": "Alex Kur",

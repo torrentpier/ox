@@ -66,11 +66,25 @@
   "rating_count": 4,
   "resource_date": 1448725952,
   "resource_state": "visible",
-  "reviews": [],
+  "reviews": [
+    {
+      "author_response": "",
+      "id": 89,
+      "is_anonymous": true,
+      "message": "нет пояснений",
+      "rating": 1,
+      "rating_date": 1449467022,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": null,
+      "username": null
+    }
+  ],
   "slug": "lenta-posterov",
   "tag_line": "Вывод постеров в ленту",
   "tags": [],
   "title": "Лента постеров",
+  "updates": [],
   "url_path": "/resources/lenta-posterov.246/",
   "user_id": 5626,
   "username": "Kryl",

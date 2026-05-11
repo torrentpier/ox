@@ -18,6 +18,26 @@
   "id": 882,
   "last_post_date": 1328447853,
   "node_id": 3,
+  "poll": {
+    "close_date": 0,
+    "id": 6,
+    "max_votes": 1,
+    "public_votes": true,
+    "question": "Какой дизайн TP II, Вам нравится больше?",
+    "responses": [
+      {
+        "id": 13,
+        "text": "Nightmare",
+        "vote_count": 13
+      },
+      {
+        "id": 14,
+        "text": "Default",
+        "vote_count": 10
+      }
+    ],
+    "voter_count": 23
+  },
   "post_date": 1328435715,
   "posts": [
     {
@@ -174,5 +194,5 @@
   "url_path": "/threads/opros-dizajn-torrent-trekera.882/",
   "user_id": 0,
   "username": "Faben",
-  "view_count": 2300
+  "view_count": 2309
 }

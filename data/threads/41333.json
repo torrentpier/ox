@@ -18,6 +18,26 @@
   "id": 41333,
   "last_post_date": 1451087983,
   "node_id": 58,
+  "poll": {
+    "close_date": 0,
+    "id": 33,
+    "max_votes": 1,
+    "public_votes": true,
+    "question": "Нужна ли мультиязычность с переключением языков на лету",
+    "responses": [
+      {
+        "id": 101,
+        "text": "Да",
+        "vote_count": 4
+      },
+      {
+        "id": 102,
+        "text": "Нет",
+        "vote_count": 4
+      }
+    ],
+    "voter_count": 8
+  },
   "post_date": 1448609889,
   "posts": [
     {

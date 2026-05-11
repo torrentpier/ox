@@ -38,11 +38,63 @@
   "rating_count": 4,
   "resource_date": 1421441674,
   "resource_state": "visible",
-  "reviews": [],
+  "reviews": [
+    {
+      "author_response": "",
+      "id": 17,
+      "is_anonymous": false,
+      "message": "За предоставление мода, давно ожидаемого многими бесплатно.",
+      "rating": 5,
+      "rating_date": 1421446483,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": 1,
+      "username": "Exile"
+    },
+    {
+      "author_response": "",
+      "id": 22,
+      "is_anonymous": true,
+      "message": "+5",
+      "rating": 5,
+      "rating_date": 1421857368,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": null,
+      "username": null
+    },
+    {
+      "author_response": "",
+      "id": 35,
+      "is_anonymous": false,
+      "message": "Да задумка неплохая, но много недочетов в этом моде. А так спасибо! Пока - 3",
+      "rating": 3,
+      "rating_date": 1427034646,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": 5480,
+      "username": "ВаленокPC"
+    }
+  ],
   "slug": "seo-url-cpu",
   "tag_line": "Добавляет генерацию ссылок ЧПУ.",
   "tags": [],
   "title": "SEO URL / ЧПУ",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 212,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Обновлено описание ресурса</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1425234461,
+      "resource_id": 146,
+      "title": "Обновление 1.1.0",
+      "url_path": "/resources/seo-url-cpu.146/update/212/",
+      "view_url": "https://torrentpier.com/resources/seo-url-cpu.146/update/212/"
+    }
+  ],
   "url_path": "/resources/seo-url-cpu.146/",
   "user_id": 2789,
   "username": "Sprinx",

@@ -156,6 +156,47 @@
   "tag_line": "Добавляет пользователям возможность \"скинуться\" на статус золото/серебро для раздачи.",
   "tags": [],
   "title": "Пожертвование сидбонусов на золото/серебро",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 421,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Адаптировано под 2.1.5</li>\n<li data-xf-list-type=\"ul\">Исправлены баги</li>\n<li data-xf-list-type=\"ul\">Обновлена инструкция</li>\n<li data-xf-list-type=\"ul\">Добавлено дополнение &quot;Отблагодарить за Релиз СидБонусами&quot; от Bender</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1692431361,
+      "resource_id": 233,
+      "title": "Обновление 1.1.0",
+      "url_path": "/resources/pozertvovanie-sidbonusov-na-zoloto-serebro.233/update/421/",
+      "view_url": "https://torrentpier.com/resources/pozertvovanie-sidbonusov-na-zoloto-serebro.233/update/421/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 422,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">При передаче бонусов в качестве отправителя указывается пользователь отправивший бонусы, вместо bot</li>\n<li data-xf-list-type=\"ul\">Небольшие корректировки в переводе</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1692543009,
+      "resource_id": 233,
+      "title": "Обновление 1.1.1",
+      "url_path": "/resources/pozertvovanie-sidbonusov-na-zoloto-serebro.233/update/422/",
+      "view_url": "https://torrentpier.com/resources/pozertvovanie-sidbonusov-na-zoloto-serebro.233/update/422/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 423,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Исправления мелких багов</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1692547677,
+      "resource_id": 233,
+      "title": "Обновление 1.1.2",
+      "url_path": "/resources/pozertvovanie-sidbonusov-na-zoloto-serebro.233/update/423/",
+      "view_url": "https://torrentpier.com/resources/pozertvovanie-sidbonusov-na-zoloto-serebro.233/update/423/"
+    }
+  ],
   "url_path": "/resources/pozertvovanie-sidbonusov-na-zoloto-serebro.233/",
   "user_id": 10614,
   "username": "belomaxorka",

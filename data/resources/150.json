@@ -114,6 +114,21 @@
   "tag_line": "Добавляет возможность пользователям заказывать новые раздачи - фильмы с КиноПоиска.",
   "tags": [],
   "title": "Стол заказов",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 210,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Обновление описание ресурса</li>\n<li data-xf-list-type=\"ul\">Адаптированная версия, спасибо @dredd</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1425233509,
+      "resource_id": 150,
+      "title": "Обновление 1.1.0",
+      "url_path": "/resources/stol-zakazov.150/update/210/",
+      "view_url": "https://torrentpier.com/resources/stol-zakazov.150/update/210/"
+    }
+  ],
   "url_path": "/resources/stol-zakazov.150/",
   "user_id": 1,
   "username": "Exile",

@@ -18,6 +18,26 @@
   "id": 41374,
   "last_post_date": 1452858163,
   "node_id": 58,
+  "poll": {
+    "close_date": 0,
+    "id": 36,
+    "max_votes": 1,
+    "public_votes": true,
+    "question": "Согласны ли вы на реализацию этого мода?",
+    "responses": [
+      {
+        "id": 108,
+        "text": "Да!",
+        "vote_count": 6
+      },
+      {
+        "id": 109,
+        "text": "Нет!",
+        "vote_count": 3
+      }
+    ],
+    "voter_count": 9
+  },
   "post_date": 1451998196,
   "posts": [
     {

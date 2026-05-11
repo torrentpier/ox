@@ -25,15 +25,6 @@
       "comment_count": 2,
       "comments": [
         {
-          "comment_date": 1420160054,
-          "id": 92,
-          "message_parsed": "Зачем ему ссылка на этот же форум? О_о",
-          "message_state": "visible",
-          "profile_post_id": 603,
-          "user_id": 1,
-          "username": "Exile"
-        },
-        {
           "comment_date": 1420180619,
           "id": 98,
           "message_parsed": "почему заменяет ссылку, на торрентс ?",
@@ -41,6 +32,15 @@
           "profile_post_id": 603,
           "user_id": 896,
           "username": "Dr_Brown"
+        },
+        {
+          "comment_date": 1420160054,
+          "id": 92,
+          "message_parsed": "Зачем ему ссылка на этот же форум? О_о",
+          "message_state": "visible",
+          "profile_post_id": 603,
+          "user_id": 1,
+          "username": "Exile"
         }
       ],
       "first_comment_date": 1420160054,

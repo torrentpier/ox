@@ -80,11 +80,65 @@
   "rating_count": 7,
   "resource_date": 1474121574,
   "resource_state": "visible",
-  "reviews": [],
+  "reviews": [
+    {
+      "author_response": "",
+      "id": 181,
+      "is_anonymous": false,
+      "message": "ОК!",
+      "rating": 5,
+      "rating_date": 1509739474,
+      "rating_state": "visible",
+      "resource_id": null,
+      "user_id": 6509,
+      "username": "yulii"
+    }
+  ],
   "slug": "avtomaticeskij-parser-razdac-s-rutor-info",
   "tag_line": "Добавляет возможность автоматически парсить раздачи с rutor.info",
   "tags": [],
   "title": "Автоматический парсер раздач с rutor.info",
+  "updates": [
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 553,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Поправлен User-Agent (<a href=\"https://torrentpier.com/members/5704/\">ExPlayer</a>)</li>\n<li data-xf-list-type=\"ul\">Поправлен SQL-запрос (<a href=\"https://torrentpier.com/members/5704/\">ExPlayer</a>)</li>\n<li data-xf-list-type=\"ul\">Обновлен код парсинга торрент-файла (<a href=\"https://torrentpier.com/members/5704/\">ExPlayer</a>)</li>\n<li data-xf-list-type=\"ul\">Добавлена поддержка мода <a href=\"https://torrentpier.com/resources/bbcode-film-po-id.302/\" class=\"link link--internal\">BBCode: Фильм по ID</a> (<a href=\"https://torrentpier.com/members/10614/\">belomaxorka</a>)</li>\n</ul>",
+      "message_state": "visible",
+      "post_date": 1722138453,
+      "resource_id": 253,
+      "title": "Обновление v2.0.0",
+      "url_path": "/resources/avtomaticeskij-parser-razdac-s-rutor-info.253/update/553/",
+      "view_url": "https://torrentpier.com/resources/avtomaticeskij-parser-razdac-s-rutor-info.253/update/553/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 554,
+      "last_edit_date": 0,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Добавил поддержку ссылок <span style=\"color: rgb(41, 105, 176)\">(<a href=\"https://www.kinopoisk.ru/series/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">https://www.kinopoisk.ru/series/</a>) </span><span style=\"color: rgb(0, 0, 0)\">для сериалов</span></li>\n</ul><hr /><span style=\"color: rgb(226, 80, 65)\">Обновление на эту версию:</span><br />\n- Заменить файл <b>228_rutor.php</b>",
+      "message_state": "visible",
+      "post_date": 1722151899,
+      "resource_id": 253,
+      "title": "Обновление v2.0.1",
+      "url_path": "/resources/avtomaticeskij-parser-razdac-s-rutor-info.253/update/554/",
+      "view_url": "https://torrentpier.com/resources/avtomaticeskij-parser-razdac-s-rutor-info.253/update/554/"
+    },
+    {
+      "attach_count": 0,
+      "attachments": [],
+      "id": 556,
+      "last_edit_date": 1722244426,
+      "message_parsed": "<ul>\n<li data-xf-list-type=\"ul\">Добавлена поддержка ссылок вида <span style=\"color: rgb(41, 105, 176)\">(<a href=\"http://www.kinopoisk.ru/level/*/film/\" target=\"_blank\" class=\"link link--external\" rel=\"nofollow ugc noopener\">http://www.kinopoisk.ru/level/*/film/</a>)</span></li>\n<li data-xf-list-type=\"ul\"><span style=\"color: rgb(0, 0, 0)\">Исправлен нерабочий плеер для IMDB видео</span></li>\n</ul><hr /><span style=\"color: rgb(226, 80, 65)\">Обновление на эту версию:</span><br />\n- Заменить файл <b>228_rutor.php</b>",
+      "message_state": "visible",
+      "post_date": 1722232290,
+      "resource_id": 253,
+      "title": "Обновление v2.0.2",
+      "url_path": "/resources/avtomaticeskij-parser-razdac-s-rutor-info.253/update/556/",
+      "view_url": "https://torrentpier.com/resources/avtomaticeskij-parser-razdac-s-rutor-info.253/update/556/"
+    }
+  ],
   "url_path": "/resources/avtomaticeskij-parser-razdac-s-rutor-info.253/",
   "user_id": 10614,
   "username": "belomaxorka",
