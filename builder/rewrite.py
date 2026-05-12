@@ -25,10 +25,11 @@ warnings.filterwarnings("ignore", category=MarkupResemblesLocatorWarning)
 # Match /threads/<anything>.{id}/<optional rest>. The slug part of the URL on
 # the source forum can be different from the slug XenForo currently produces
 # (Cyrillic vs transliterated) — we replace it with the canonical slug from
-# the export.
-_THREAD_PATH_RE = re.compile(r"^/threads/[^/]+\.(\d+)(/.*)?$")
-_FORUM_PATH_RE = re.compile(r"^/forums/[^/]+\.(\d+)(/.*)?$")
-_MEMBER_PATH_RE = re.compile(r"^/members/[^/]+\.(\d+)(/.*)?$")
+# the export. The slug is optional: XF also accepts bare `/threads/{id}/`,
+# `/forums/{id}/`, `/members/{id}/` and historical post bodies use that form.
+_THREAD_PATH_RE = re.compile(r"^/threads/(?:[^/]+\.)?(\d+)(/.*)?$")
+_FORUM_PATH_RE = re.compile(r"^/forums/(?:[^/]+\.)?(\d+)(/.*)?$")
+_MEMBER_PATH_RE = re.compile(r"^/members/(?:[^/]+\.)?(\d+)(/.*)?$")
 # `/attachments/{filename}.{id}/` and `/attachments/{id}/` shapes; an optional
 # `/forum/` prefix shows up in a handful of historical post bodies.
 _ATTACHMENT_PATH_RE = re.compile(r"^/(?:forum/)?attachments/(?:[^/]+\.)?(\d+)/?$")
