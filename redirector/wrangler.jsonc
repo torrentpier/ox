@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ox-redirector",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-05-01",
+  "workers_dev": true,
+  "upload_source_maps": true,
+  "observability": {
+    "logs": { "enabled": true, "invocation_logs": true },
+    "traces": { "enabled": true }
+  },
+  "routes": [
+    { "pattern": "beta.torrentpier.com", "custom_domain": true },
+    { "pattern": "demo.torrentpier.com", "custom_domain": true },
+    { "pattern": "docs.torrentpier.com", "custom_domain": true },
+    { "pattern": "faq.torrentpier.com", "custom_domain": true },
+    { "pattern": "get.torrentpier.com", "custom_domain": true }
+  ]
+}

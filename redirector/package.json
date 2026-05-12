@@ -1,0 +1,15 @@
+{
+  "name": "ox-redirector",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --port 8789",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250101.0",
+    "typescript": "^6.0.3",
+    "wrangler": "^4.0.0"
+  }
+}
