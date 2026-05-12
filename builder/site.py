@@ -552,6 +552,10 @@ def build(data_dir: Path, out_dir: Path) -> None:
     search_tmpl = env.get_template("search.html")
     _write(out_dir / "search" / "index.html", search_tmpl.render())
 
+    # /404.html — GitHub Pages serves this for any unknown path.
+    not_found_tmpl = env.get_template("404.html")
+    _write(out_dir / "404.html", not_found_tmpl.render())
+
     # /robots.txt
     _write(
         out_dir / "robots.txt",

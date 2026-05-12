@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Page not found — {{ site_name }}{% endblock %}
+{% block og_title %}Page not found — {{ site_name }}{% endblock %}
+{% block og_url %}{{ site_url }}/{% endblock %}
+{% block meta_description %}This page doesn't exist in the archive.{% endblock %}
+{% block extra_head %}
+  <meta name="robots" content="noindex">
+{% endblock %}
+{% block content %}
+<nav class="breadcrumbs">
+  <a href="/">Home</a>
+  / <span class="current">Page not found</span>
+</nav>
+
+<h1>Page not found</h1>
+<p class="lede">
+  This URL doesn't match anything in the archive. The page may never
+  have existed, or you may have followed a stale link.
+</p>
+
+<p>Try one of these instead:</p>
+<ul>
+  <li><a href="/">Forum index</a></li>
+  <li><a href="/search/">Search the archive</a></li>
+  <li><a href="/resources/">Browse resources</a></li>
+  <li><a href="/members/">Browse members</a></li>
+</ul>
+{% endblock %}
