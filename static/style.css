@@ -799,6 +799,152 @@ h2 { font-size: 1.15rem; margin: 1.5rem 0 0.75rem; color: var(--text-dim); font-
 }
 .search-more:disabled { opacity: 0.6; cursor: progress; }
 
+/* ----- Sunset notice banner ------------------------------------------ */
+/* Lifted-from-sunset.torrentpier.com look: paper background, Unbounded
+   display + Spectral italic + JetBrains Mono small caps, hand-drawn
+   pen ring around the CTA. Keeps a consistent appearance regardless of
+   the archive's light/dark theme — it's a piece of another document. */
+
+.sunset-notice {
+  --sn-paper: #ece9e0;
+  --sn-ink: #0c0c0a;
+  --sn-ink-2: #2a2a26;
+  --sn-ink-3: #5b594f;
+  --sn-ink-4: #8a877a;
+  --sn-line: #b7b3a3;
+  --sn-red: #7a1a08;
+  --sn-red-darker: #5a1305;
+  margin: 0 0 2rem;
+}
+
+.sunset-notice-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: clamp(28px, 5vw, 56px);
+  padding: 22px 32px 24px;
+  background: var(--sn-paper);
+  color: var(--sn-ink);
+  border: 1px solid var(--sn-line);
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(15, 23, 42, 0.05), 0 4px 16px rgba(15, 23, 42, 0.06);
+  text-decoration: none;
+}
+.sn-body { flex: 1 1 auto; min-width: 0; }
+.sunset-notice-card:hover { text-decoration: none; }
+.sunset-notice-card:focus-visible {
+  outline: 2px solid var(--sn-red);
+  outline-offset: 3px;
+}
+
+.sn-bracket {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  color: var(--sn-ink-3);
+  pointer-events: none;
+}
+.sn-bracket::before, .sn-bracket::after {
+  content: "";
+  position: absolute;
+  background: currentColor;
+}
+.sn-bracket-tl { top: 10px; left: 10px; }
+.sn-bracket-tl::before { top: 0; left: 0; width: 1.2px; height: 11px; }
+.sn-bracket-tl::after  { top: 0; left: 0; width: 11px; height: 1.2px; }
+.sn-bracket-tr { top: 10px; right: 10px; }
+.sn-bracket-tr::before { top: 0; right: 0; width: 1.2px; height: 11px; }
+.sn-bracket-tr::after  { top: 0; right: 0; width: 11px; height: 1.2px; }
+.sn-bracket-bl { bottom: 10px; left: 10px; }
+.sn-bracket-bl::before { bottom: 0; left: 0; width: 1.2px; height: 11px; }
+.sn-bracket-bl::after  { bottom: 0; left: 0; width: 11px; height: 1.2px; }
+.sn-bracket-br { bottom: 10px; right: 10px; }
+.sn-bracket-br::before { bottom: 0; right: 0; width: 1.2px; height: 11px; }
+.sn-bracket-br::after  { bottom: 0; right: 0; width: 11px; height: 1.2px; }
+
+.sn-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--sn-ink-3);
+  margin-bottom: 14px;
+}
+.sn-mark-bar {
+  display: inline-block;
+  width: 28px;
+  height: 1.5px;
+  background: var(--sn-ink);
+}
+
+.sn-title {
+  font-family: "Unbounded", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 800;
+  font-size: clamp(22px, 2.4vw, 30px);
+  line-height: 1.12;
+  letter-spacing: -0.018em;
+  color: var(--sn-ink);
+  margin: 0 0 12px;
+}
+
+.sn-lede {
+  font-family: "Spectral", "PT Serif", Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(15px, 1.05vw, 17px);
+  line-height: 1.5;
+  color: var(--sn-ink-2);
+  margin: 0;
+  max-width: 62ch;
+}
+
+.sn-cta {
+  position: relative;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 34px 16px;
+  font-family: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sn-red);
+  transition: color 0.2s ease;
+  z-index: 1;
+}
+.sn-cta::before {
+  content: "";
+  position: absolute;
+  inset: -5px -14px;
+  z-index: -1;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 60' preserveAspectRatio='none'><path d='M 28,32 C 18,12 80,5 132,6 C 178,8 240,4 302,12 C 318,22 314,40 268,44 C 224,52 130,55 70,50 C 22,46 4,38 16,30 C 10,18 32,20 50,24' fill='none' stroke='%237a1a08' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/><path d='M 36,28 C 30,29 30,33 38,35' fill='none' stroke='%237a1a08' stroke-width='1.6' stroke-linecap='round'/></svg>");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  transform: rotate(-1.8deg);
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+.sn-cta-arrow {
+  display: inline-block;
+  font-family: "Unbounded", -apple-system, sans-serif;
+  font-weight: 900;
+  transition: transform 0.2s ease;
+}
+.sunset-notice-card:hover .sn-cta { color: var(--sn-red-darker); }
+.sunset-notice-card:hover .sn-cta::before { transform: rotate(-0.6deg) scale(1.035); }
+.sunset-notice-card:hover .sn-cta-arrow { transform: translateX(3px); }
+
+@media (forced-colors: active) {
+  .sunset-notice-card { forced-color-adjust: none; }
+}
+
 /* ----- Responsive (≤ 720px) ------------------------------------------ */
 
 @media (max-width: 720px) {
@@ -831,4 +977,11 @@ h2 { font-size: 1.15rem; margin: 1.5rem 0 0.75rem; color: var(--text-dim); font-
   .forum-stats { justify-content: flex-start; gap: 1rem; }
 
   .wall-post { grid-template-columns: 1fr; }
+
+  .sunset-notice-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 22px 24px 24px;
+  }
 }

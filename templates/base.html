@@ -17,6 +17,7 @@
   <meta name="twitter:title" content="{{ self.og_title() }}">
   <meta name="twitter:description" content="{{ self.og_description() }}">
   <meta name="twitter:image" content="{{ self.og_image() }}">
+  {% block extra_head %}{% endblock %}
 </head>
 <body>
   <header class="site-header">

@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ox-sunset",
+  "compatibility_date": "2026-05-01",
+  "workers_dev": true,
+  "placement": { "mode": "smart" },
+  "observability": {
+    "logs": { "enabled": true, "invocation_logs": true }
+  },
+  "routes": [
+    { "pattern": "sunset.torrentpier.com", "custom_domain": true }
+  ],
+  "assets": {
+    "directory": "./public",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "single-page-application"
+  }
+}

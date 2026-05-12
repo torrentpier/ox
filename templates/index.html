@@ -1,6 +1,40 @@
 {% extends "base.html" %}
 {% block title %}{{ site_name }}{% endblock %}
+{% block extra_head %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Spectral:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+{% endblock %}
 {% block content %}
+<aside class="sunset-notice">
+  <a class="sunset-notice-card" href="https://sunset.torrentpier.com/en/" hreflang="en">
+    <span class="sn-bracket sn-bracket-tl" aria-hidden="true"></span>
+    <span class="sn-bracket sn-bracket-tr" aria-hidden="true"></span>
+    <span class="sn-bracket sn-bracket-bl" aria-hidden="true"></span>
+    <span class="sn-bracket sn-bracket-br" aria-hidden="true"></span>
+
+    <div class="sn-body">
+      <span class="sn-mark">
+        <span class="sn-mark-bar" aria-hidden="true"></span>
+        <span class="sn-mark-text">sunset notice</span>
+      </span>
+
+      <h2 class="sn-title">the project's story ends here.</h2>
+
+      <p class="sn-lede">
+        On May 13, 2026, TorrentPier 3.0 shipped — the project's final
+        release. Development on the current codebase ends; this archive
+        stays online for good.
+      </p>
+    </div>
+
+    <span class="sn-cta">
+      <span class="sn-cta-text">read the full notice</span>
+      <span class="sn-cta-arrow" aria-hidden="true">→</span>
+    </span>
+  </a>
+</aside>
+
 <h1>{{ site_name }}</h1>
 <p class="lede">Snapshot of {{ thread_count }} threads and {{ resource_count }} resources from torrentpier.com.</p>
 
