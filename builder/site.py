@@ -285,15 +285,33 @@ def build(data_dir: Path, out_dir: Path) -> None:
     }
     inline_url_map = _load_inline_index(data_dir)
     attachment_url_map: dict[int, str] = {}
+    # XF post HTML embeds the attachment's thumbnail (different internal ID,
+    # served from `/data/attachments/...?hash=`), not the original. We never
+    # mirrored thumbnails — the source forum is down — so map the exact
+    # thumbnail URL to the R2 URL of the full attachment instead.
+    thumbnail_url_map: dict[str, str] = {}
+
+    def _index_attachment(a: dict) -> None:
+        key = a.get("r2_key")
+        if not key:
+            return
+        r2 = r2_url(key)
+        attachment_url_map[int(a["id"])] = r2
+        thumb = a.get("thumbnail_url")
+        if thumb:
+            thumbnail_url_map[thumb] = r2
+
     for t in threads:
         for p in t.get("posts") or []:
             for a in p.get("attachments") or []:
-                key = a.get("r2_key")
-                if key:
-                    attachment_url_map[int(a["id"])] = r2_url(key)
+                _index_attachment(a)
+    for r in resources:
+        for a in r.get("description_attachments") or []:
+            _index_attachment(a)
     log.info(
-        "asset maps: %d attachments, %d inline external",
+        "asset maps: %d attachments, %d thumbnails, %d inline external",
         len(attachment_url_map),
+        len(thumbnail_url_map),
         len(inline_url_map),
     )
 
@@ -384,6 +402,7 @@ def build(data_dir: Path, out_dir: Path) -> None:
                 member_url_map=member_url_map,
                 attachment_url_map=attachment_url_map,
                 inline_url_map=inline_url_map,
+                thumbnail_url_map=thumbnail_url_map,
             )
         base_url = thread.get("url_path") or f"/threads/thread-{thread['id']}/"
         posts_list = thread.get("posts", [])
@@ -436,6 +455,7 @@ def build(data_dir: Path, out_dir: Path) -> None:
             member_url_map=member_url_map,
             attachment_url_map=attachment_url_map,
             inline_url_map=inline_url_map,
+            thumbnail_url_map=thumbnail_url_map,
         )
         url_path = resource.get("url_path") or f"/resources/resource-{resource['id']}/"
         path = out_dir / url_path.lstrip("/") / "index.html"
@@ -496,6 +516,7 @@ def build(data_dir: Path, out_dir: Path) -> None:
                 member_url_map=member_url_map,
                 attachment_url_map=attachment_url_map,
                 inline_url_map=inline_url_map,
+                thumbnail_url_map=thumbnail_url_map,
             )
             for c in wp.get("comments") or []:
                 profile_comment_owner[int(c["id"])] = int(u["id"])
@@ -506,6 +527,7 @@ def build(data_dir: Path, out_dir: Path) -> None:
                     member_url_map=member_url_map,
                     attachment_url_map=attachment_url_map,
                     inline_url_map=inline_url_map,
+                    thumbnail_url_map=thumbnail_url_map,
                 )
     for u in members_sorted:
         url = member_url(u)

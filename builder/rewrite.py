@@ -144,6 +144,7 @@ def rewrite_html(
     member_url_map: dict[int, str] | None = None,
     attachment_url_map: dict[int, str] | None = None,
     inline_url_map: dict[str, str] | None = None,
+    thumbnail_url_map: dict[str, str] | None = None,
 ) -> str:
     """Apply the sanitisation/rewrite pass. Empty input returns "".
     """
@@ -172,6 +173,11 @@ def rewrite_html(
             # External image we mirrored to R2 by sha256
             if inline_url_map and src in inline_url_map:
                 img["src"] = inline_url_map[src]
+            # XF post HTML uses the attachment's thumbnail URL (different
+            # internal ID, lives under /data/attachments/...?hash=). The
+            # original forum is offline, so swap to the R2 full attachment.
+            elif thumbnail_url_map and src in thumbnail_url_map:
+                img["src"] = thumbnail_url_map[src]
             else:
                 parsed = _safe_urlparse(src)
                 if parsed is not None and parsed.hostname in INTERNAL_HOSTS:
